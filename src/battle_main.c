@@ -5118,8 +5118,7 @@ static void HandleEndTurn_BattleLost(void)
                 ++count;
             }
         }
-		if(GetMoney(&gSaveBlock1Ptr->money) > sWhiteOutBadgeMoney[count] * gMaxPartyLevel)
-			SetMoney(&gSaveBlock1Ptr->money, GetMoney(&gSaveBlock1Ptr->money) - sWhiteOutBadgeMoney[count] * gMaxPartyLevel);
+        RemoveMoney(&gSaveBlock1Ptr->money, sWhiteOutBadgeMoney[count] * gMaxPartyLevel);
         gBattlescriptCurrInstr = BattleScript_LocalBattleLost;
     }
 
