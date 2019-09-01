@@ -4,7 +4,7 @@ In Gen I & II and RSE, you lose half of your money when defeated. However, in FL
 This branch implements that formula (using the FLRG values).
 
 **To-Do**:
-Add in-battle message to show how much money was lost.
+* Add in-battle message to show how much money was lost.
 
 # Pokémon Emerald
 
