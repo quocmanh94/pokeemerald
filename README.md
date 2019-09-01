@@ -1,3 +1,11 @@
+# About this branch
+In Gen I & II and RSE, you lose half of your money when defeated. However, in FLRG & Gen IV onwards the amount you lose is calculated by a formula based on the amount of badges and the highest level in your Pokémon's Party. 
+
+This branch implements that formula (using the FLRG values).
+
+**To-Do**:
+Add in-battle message to show how much money was lost.
+
 # Pokémon Emerald
 
 [![Build Status][travis-badge]][travis]
