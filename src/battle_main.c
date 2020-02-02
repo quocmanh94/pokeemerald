@@ -26,7 +26,7 @@
 #include "link_rfu.h"
 #include "load_save.h"
 #include "main.h"
-#include "alloc.h"
+#include "malloc.h"
 #include "m4a.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -54,6 +54,7 @@
 #include "constants/hold_effects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/species.h"
@@ -167,8 +168,8 @@ EWRAM_DATA static u32 sUnusedUnknownArray[25] = {0};
 EWRAM_DATA u32 gBattleTypeFlags = 0;
 EWRAM_DATA u8 gBattleTerrain = 0;
 EWRAM_DATA u32 gUnknown_02022FF4 = 0;
-EWRAM_DATA struct UnknownPokemonStruct4 gUnknown_02022FF8[3] = {0}; // what is it used for?
-EWRAM_DATA struct UnknownPokemonStruct4* gUnknown_02023058 = NULL; // what is it used for?
+EWRAM_DATA struct UnknownPokemonStruct4 gMultiPartnerParty[MULTI_PARTY_SIZE] = {0};
+EWRAM_DATA static struct UnknownPokemonStruct4* sMultiPartnerPartyBuffer = NULL;
 EWRAM_DATA u8 *gUnknown_0202305C = NULL;
 EWRAM_DATA u8 *gUnknown_02023060 = NULL;
 EWRAM_DATA u8 gBattleBufferA[MAX_BATTLERS_COUNT][0x200] = {0};
@@ -455,7 +456,7 @@ const u8 gTypeEffectiveness[336] =
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
 };
 
-const u8 gTypeNames[][TYPE_NAME_LENGTH + 1] =
+const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
     _("NORMAL"),
     _("FIGHT"),
@@ -695,7 +696,7 @@ static void CB2_InitBattleInternal(void)
     if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
         gBattleTerrain = BATTLE_TERRAIN_BUILDING;
 
-    sub_80356D0();
+    InitBattleBgsVideo();
     LoadBattleTextboxAndBackground();
     ResetSpriteData();
     ResetTasks();
@@ -723,7 +724,7 @@ static void CB2_InitBattleInternal(void)
     }
 
     gMain.inBattle = TRUE;
-    gSaveBlock2Ptr->frontier.field_CA9_b = 0;
+    gSaveBlock2Ptr->frontier.disableRecordBattle = FALSE;
 
     for (i = 0; i < PARTY_SIZE; i++)
         AdjustFriendship(&gPlayerParty[i], 3);
@@ -1032,7 +1033,7 @@ static void CB2_HandleStartBattle(void)
             ResetBlockReceivedFlags();
             sub_8036EB8(2, playerMultiplayerId);
             SetAllPlayersBerryData();
-            taskId = CreateTask(sub_8035D74, 0);
+            taskId = CreateTask(InitLinkBattleVsScreen, 0);
             gTasks[taskId].data[1] = 0x10E;
             gTasks[taskId].data[2] = 0x5A;
             gTasks[taskId].data[5] = 0;
@@ -1234,7 +1235,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             ResetBlockReceivedFlags();
             sub_8036EB8(2, playerMultiplayerId);
             SetAllPlayersBerryData();
-            taskId = CreateTask(sub_8035D74, 0);
+            taskId = CreateTask(InitLinkBattleVsScreen, 0);
             gTasks[taskId].data[1] = 0x10E;
             gTasks[taskId].data[2] = 0x5A;
             gTasks[taskId].data[5] = 0;
@@ -1257,12 +1258,12 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             if (gLinkPlayers[playerMultiplayerId].id != 0)
             {
                 memcpy(gPlayerParty, gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
-                memcpy(gPlayerParty + 3, gBlockRecvBuffer[playerMultiplayerId], sizeof(struct Pokemon) * 2);
+                memcpy(gPlayerParty + MULTI_PARTY_SIZE, gBlockRecvBuffer[playerMultiplayerId], sizeof(struct Pokemon) * 2);
             }
             else
             {
                 memcpy(gPlayerParty, gBlockRecvBuffer[playerMultiplayerId], sizeof(struct Pokemon) * 2);
-                memcpy(gPlayerParty + 3, gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
+                memcpy(gPlayerParty + MULTI_PARTY_SIZE, gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
             }
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1405,22 +1406,22 @@ static void sub_80379F8(u8 arrayIdPlus)
 {
     s32 i;
 
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < (int)ARRAY_COUNT(gMultiPartnerParty); i++)
     {
-        gUnknown_02022FF8[i].species     = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_SPECIES);
-        gUnknown_02022FF8[i].heldItem    = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_HELD_ITEM);
-        GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_NICKNAME, gUnknown_02022FF8[i].nickname);
-        gUnknown_02022FF8[i].level       = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_LEVEL);
-        gUnknown_02022FF8[i].hp          = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_HP);
-        gUnknown_02022FF8[i].maxhp       = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_MAX_HP);
-        gUnknown_02022FF8[i].status      = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_STATUS);
-        gUnknown_02022FF8[i].personality = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_PERSONALITY);
-        gUnknown_02022FF8[i].gender      = GetMonGender(&gPlayerParty[arrayIdPlus + i]);
-        StripExtCtrlCodes(gUnknown_02022FF8[i].nickname);
+        gMultiPartnerParty[i].species     = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_SPECIES);
+        gMultiPartnerParty[i].heldItem    = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_HELD_ITEM);
+        GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_NICKNAME, gMultiPartnerParty[i].nickname);
+        gMultiPartnerParty[i].level       = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_LEVEL);
+        gMultiPartnerParty[i].hp          = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_HP);
+        gMultiPartnerParty[i].maxhp       = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_MAX_HP);
+        gMultiPartnerParty[i].status      = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_STATUS);
+        gMultiPartnerParty[i].personality = GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_PERSONALITY);
+        gMultiPartnerParty[i].gender      = GetMonGender(&gPlayerParty[arrayIdPlus + i]);
+        StripExtCtrlCodes(gMultiPartnerParty[i].nickname);
         if (GetMonData(&gPlayerParty[arrayIdPlus + i], MON_DATA_LANGUAGE) != LANGUAGE_JAPANESE)
-            PadNameString(gUnknown_02022FF8[i].nickname, CHAR_SPACE);
+            PadNameString(gMultiPartnerParty[i].nickname, CHAR_SPACE);
     }
-    memcpy(gUnknown_02023058, gUnknown_02022FF8, sizeof(gUnknown_02022FF8));
+    memcpy(sMultiPartnerPartyBuffer, gMultiPartnerParty, sizeof(gMultiPartnerParty));
 }
 
 static void CB2_PreInitMultiBattle(void)
@@ -1452,9 +1453,9 @@ static void CB2_PreInitMultiBattle(void)
     case 0:
         if (gReceivedRemoteLinkPlayers != 0 && IsLinkTaskFinished())
         {
-            gUnknown_02023058 = Alloc(sizeof(struct UnknownPokemonStruct4) * 3);
+            sMultiPartnerPartyBuffer = Alloc(sizeof(struct UnknownPokemonStruct4) * ARRAY_COUNT(gMultiPartnerParty));
             sub_80379F8(0);
-            SendBlock(bitmask_all_link_players_but_self(), gUnknown_02023058, sizeof(struct UnknownPokemonStruct4) * 3);
+            SendBlock(bitmask_all_link_players_but_self(), sMultiPartnerPartyBuffer, sizeof(struct UnknownPokemonStruct4) * ARRAY_COUNT(gMultiPartnerParty));
             gBattleCommunication[MULTIUSE_STATE]++;
         }
         break;
@@ -1467,24 +1468,24 @@ static void CB2_PreInitMultiBattle(void)
                 if (i == playerMultiplierId)
                     continue;
 
-                if (numPlayers == 4)
+                if (numPlayers == MAX_LINK_PLAYERS)
                 {
                     if ((!(gLinkPlayers[i].id & 1) && !(gLinkPlayers[playerMultiplierId].id & 1))
                         || (gLinkPlayers[i].id & 1 && gLinkPlayers[playerMultiplierId].id & 1))
                     {
-                        memcpy(gUnknown_02022FF8, gBlockRecvBuffer[i], sizeof(struct UnknownPokemonStruct4) * 3);
+                        memcpy(gMultiPartnerParty, gBlockRecvBuffer[i], sizeof(struct UnknownPokemonStruct4) * ARRAY_COUNT(gMultiPartnerParty));
                     }
                 }
                 else
                 {
-                    memcpy(gUnknown_02022FF8, gBlockRecvBuffer[i], sizeof(struct UnknownPokemonStruct4) * 3);
+                    memcpy(gMultiPartnerParty, gBlockRecvBuffer[i], sizeof(struct UnknownPokemonStruct4) * ARRAY_COUNT(gMultiPartnerParty));
                 }
             }
             gBattleCommunication[MULTIUSE_STATE]++;
             *savedCallback = gMain.savedCallback;
             *savedBattleTypeFlags = gBattleTypeFlags;
             gMain.savedCallback = CB2_PreInitMultiBattle;
-            sub_81B9150();
+            ShowPartyMenuToShowcaseMultiBattleParty();
         }
         break;
     case 2:
@@ -1500,13 +1501,13 @@ static void CB2_PreInitMultiBattle(void)
     case 3:
         if (gWirelessCommType)
         {
-            if (sub_8010500())
+            if (IsLinkRfuTaskFinished())
             {
                 gBattleTypeFlags = *savedBattleTypeFlags;
                 gMain.savedCallback = *savedCallback;
                 SetMainCallback2(CB2_InitBattleInternal);
-                Free(gUnknown_02023058);
-                gUnknown_02023058 = NULL;
+                Free(sMultiPartnerPartyBuffer);
+                sMultiPartnerPartyBuffer = NULL;
             }
         }
         else if (gReceivedRemoteLinkPlayers == 0)
@@ -1514,8 +1515,8 @@ static void CB2_PreInitMultiBattle(void)
             gBattleTypeFlags = *savedBattleTypeFlags;
             gMain.savedCallback = *savedCallback;
             SetMainCallback2(CB2_InitBattleInternal);
-            Free(gUnknown_02023058);
-            gUnknown_02023058 = NULL;
+            Free(sMultiPartnerPartyBuffer);
+            sMultiPartnerPartyBuffer = NULL;
         }
         break;
     }
@@ -1536,13 +1537,13 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void)
     switch (gBattleCommunication[MULTIUSE_STATE])
     {
     case 0:
-        gUnknown_02023058 = Alloc(sizeof(struct UnknownPokemonStruct4) * 3);
+        sMultiPartnerPartyBuffer = Alloc(sizeof(struct UnknownPokemonStruct4) * ARRAY_COUNT(gMultiPartnerParty));
         sub_80379F8(3);
         gBattleCommunication[MULTIUSE_STATE]++;
         *savedCallback = gMain.savedCallback;
         *savedBattleTypeFlags = gBattleTypeFlags;
         gMain.savedCallback = CB2_PreInitIngamePlayerPartnerBattle;
-        sub_81B9150();
+        ShowPartyMenuToShowcaseMultiBattleParty();
         break;
     case 1:
         if (!gPaletteFade.active)
@@ -1551,8 +1552,8 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void)
             gBattleTypeFlags = *savedBattleTypeFlags;
             gMain.savedCallback = *savedCallback;
             SetMainCallback2(CB2_InitBattleInternal);
-            Free(gUnknown_02023058);
-            gUnknown_02023058 = NULL;
+            Free(sMultiPartnerPartyBuffer);
+            sMultiPartnerPartyBuffer = NULL;
         }
         break;
     }
@@ -1620,7 +1621,7 @@ static void CB2_HandleStartMultiBattle(void)
             sub_8036EB8(4, playerMultiplayerId);
             SetAllPlayersBerryData();
             SetDeoxysStats();
-            var = CreateTask(sub_8035D74, 0);
+            var = CreateTask(InitLinkBattleVsScreen, 0);
             gTasks[var].data[1] = 0x10E;
             gTasks[var].data[2] = 0x5A;
             gTasks[var].data[5] = 0;
@@ -1675,7 +1676,7 @@ static void CB2_HandleStartMultiBattle(void)
                         break;
                     case 1:
                     case 2:
-                        memcpy(gPlayerParty + 3, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
+                        memcpy(gPlayerParty + MULTI_PARTY_SIZE, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
                         break;
                     }
                 }
@@ -1692,7 +1693,7 @@ static void CB2_HandleStartMultiBattle(void)
                             break;
                         case 1:
                         case 2:
-                            memcpy(gPlayerParty + 3, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
+                            memcpy(gPlayerParty + MULTI_PARTY_SIZE, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
                             break;
                         }
                     }
@@ -1706,7 +1707,7 @@ static void CB2_HandleStartMultiBattle(void)
                             break;
                         case 1:
                         case 2:
-                            memcpy(gEnemyParty + 3, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
+                            memcpy(gEnemyParty + MULTI_PARTY_SIZE, gBlockRecvBuffer[id], sizeof(struct Pokemon) * 2);
                             break;
                         }
                     }
@@ -2258,7 +2259,7 @@ void sub_8038D64(void)
         gBattle_BG3_X = 0;
         gBattle_BG3_Y = 0;
 
-        sub_80356D0();
+        InitBattleBgsVideo();
         LoadCompressedPalette(gBattleTextboxPalette, 0, 64);
         LoadBattleMenuWindowGfx();
         ResetSpriteData();
@@ -2269,7 +2270,7 @@ void sub_8038D64(void)
         gReservedSpritePaletteCount = 4;
         SetVBlankCallback(VBlankCB_Battle);
 
-        taskId = CreateTask(sub_8035D74, 0);
+        taskId = CreateTask(InitLinkBattleVsScreen, 0);
         gTasks[taskId].data[1] = 0x10E;
         gTasks[taskId].data[2] = 0x5A;
         gTasks[taskId].data[5] = 1;
@@ -2323,7 +2324,7 @@ static void sub_8038F34(void)
 
             for (i = 0; i < monsCount && (gLinkPlayers[i].version & 0xFF) == VERSION_EMERALD; i++);
 
-            if (!gSaveBlock2Ptr->frontier.field_CA9_b && i == monsCount)
+            if (!gSaveBlock2Ptr->frontier.disableRecordBattle && i == monsCount)
             {
                 if (FlagGet(FLAG_SYS_FRONTIER_PASS))
                 {
@@ -2454,7 +2455,7 @@ static void sub_80392A8(void)
     gBattle_BG2_Y = 0;
     gBattle_BG3_X = 0;
     gBattle_BG3_Y = 0;
-    sub_80356D0();
+    InitBattleBgsVideo();
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     LoadBattleMenuWindowGfx();
 
@@ -2602,7 +2603,7 @@ static void sub_803939C(void)
         }
         else
         {
-            BattleStringExpandPlaceholdersToDisplayedString(gText_BattleRecordCouldntBeSaved);
+            BattleStringExpandPlaceholdersToDisplayedString(BattleFrontier_BattleTowerBattleRoom_Text_RecordCouldntBeSaved);
             BattlePutTextOnWindow(gDisplayedStringBattle, 0);
             gBattleCommunication[1] = 0x80;
             gBattleCommunication[MULTIUSE_STATE]++;
@@ -3975,7 +3976,7 @@ static void TryDoEventsBeforeFirstTurn(void)
     *(&gBattleStruct->turnEffectsBattlerId) = 0;
     *(&gBattleStruct->wishPerishSongState) = 0;
     *(&gBattleStruct->wishPerishSongBattlerId) = 0;
-    gBattleScripting.atk49_state = 0;
+    gBattleScripting.moveendState = 0;
     gBattleStruct->faintedActionsState = 0;
     gBattleStruct->turnCountersTracker = 0;
     gMoveResultFlags = 0;
@@ -4038,7 +4039,7 @@ void BattleTurnPassed(void)
     gHitMarker &= ~(HITMARKER_x100000);
     gBattleScripting.animTurn = 0;
     gBattleScripting.animTargetsHit = 0;
-    gBattleScripting.atk49_state = 0;
+    gBattleScripting.moveendState = 0;
     gBattleMoveDamage = 0;
     gMoveResultFlags = 0;
 
@@ -4143,34 +4144,34 @@ u8 IsRunningFromBattleImpossible(void)
     return 0;
 }
 
-void sub_803BDA0(u8 battler)
+void SwitchPartyOrder(u8 battler)
 {
     s32 i;
-    u8 r4;
-    u8 r1;
+    u8 partyId1;
+    u8 partyId2;
 
     // gBattleStruct->field_60[battler][i]
 
-    for (i = 0; i < 3; i++)
-        gUnknown_0203CF00[i] = *(battler * 3 + i + (u8*)(gBattleStruct->field_60));
+    for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        gBattlePartyCurrentOrder[i] = *(battler * 3 + i + (u8*)(gBattleStruct->field_60));
 
-    r4 = pokemon_order_func(gBattlerPartyIndexes[battler]);
-    r1 = pokemon_order_func(*(gBattleStruct->monToSwitchIntoId + battler));
-    sub_81B8FB0(r4, r1);
+    partyId1 = GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battler]);
+    partyId2 = GetPartyIdFromBattlePartyId(*(gBattleStruct->monToSwitchIntoId + battler));
+    SwitchPartyMonSlots(partyId1, partyId2);
 
     if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
     {
-        for (i = 0; i < 3; i++)
+        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
         {
-            *(battler * 3 + i + (u8*)(gBattleStruct->field_60)) = gUnknown_0203CF00[i];
-            *(BATTLE_PARTNER(battler) * 3 + i + (u8*)(gBattleStruct->field_60)) = gUnknown_0203CF00[i];
+            *(battler * 3 + i + (u8*)(gBattleStruct->field_60)) = gBattlePartyCurrentOrder[i];
+            *(BATTLE_PARTNER(battler) * 3 + i + (u8*)(gBattleStruct->field_60)) = gBattlePartyCurrentOrder[i];
         }
     }
     else
     {
-        for (i = 0; i < 3; i++)
+        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
         {
-            *(battler * 3 + i + (u8*)(gBattleStruct->field_60)) = gUnknown_0203CF00[i];
+            *(battler * 3 + i + (u8*)(gBattleStruct->field_60)) = gBattlePartyCurrentOrder[i];
         }
     }
 }
@@ -4305,7 +4306,7 @@ static void HandleTurnActionSelectionState(void)
                         || gBattleTypeFlags & BATTLE_TYPE_ARENA
                         || gStatuses3[gActiveBattler] & STATUS3_ROOTED)
                     {
-                        BtlController_EmitChoosePokemon(0, PARTY_CANT_SWITCH, 6, ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
+                        BtlController_EmitChoosePokemon(0, PARTY_ACTION_CANT_SWITCH, PARTY_SIZE, ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
                     }
                     else if ((i = ABILITY_ON_OPPOSING_FIELD(gActiveBattler, ABILITY_SHADOW_TAG))
                              || ((i = ABILITY_ON_OPPOSING_FIELD(gActiveBattler, ABILITY_ARENA_TRAP))
@@ -4314,16 +4315,16 @@ static void HandleTurnActionSelectionState(void)
                              || ((i = AbilityBattleEffects(ABILITYEFFECT_CHECK_FIELD_EXCEPT_BATTLER, gActiveBattler, ABILITY_MAGNET_PULL, 0, 0))
                                  && IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_STEEL)))
                     {
-                        BtlController_EmitChoosePokemon(0, ((i - 1) << 4) | PARTY_ABILITY_PREVENTS, 6, gLastUsedAbility, gBattleStruct->field_60[gActiveBattler]);
+                        BtlController_EmitChoosePokemon(0, ((i - 1) << 4) | PARTY_ACTION_ABILITY_PREVENTS, PARTY_SIZE, gLastUsedAbility, gBattleStruct->field_60[gActiveBattler]);
                     }
                     else
                     {
                         if (gActiveBattler == 2 && gChosenActionByBattler[0] == B_ACTION_SWITCH)
-                            BtlController_EmitChoosePokemon(0, PARTY_CHOOSE_MON, *(gBattleStruct->monToSwitchIntoId + 0), ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
+                            BtlController_EmitChoosePokemon(0, PARTY_ACTION_CHOOSE_MON, *(gBattleStruct->monToSwitchIntoId + 0), ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
                         else if (gActiveBattler == 3 && gChosenActionByBattler[1] == B_ACTION_SWITCH)
-                            BtlController_EmitChoosePokemon(0, PARTY_CHOOSE_MON, *(gBattleStruct->monToSwitchIntoId + 1), ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
+                            BtlController_EmitChoosePokemon(0, PARTY_ACTION_CHOOSE_MON, *(gBattleStruct->monToSwitchIntoId + 1), ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
                         else
-                            BtlController_EmitChoosePokemon(0, PARTY_CHOOSE_MON, 6, ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
+                            BtlController_EmitChoosePokemon(0, PARTY_ACTION_CHOOSE_MON, PARTY_SIZE, ABILITY_NONE, gBattleStruct->field_60[gActiveBattler]);
                     }
                     MarkBattlerForControllerExec(gActiveBattler);
                     break;
@@ -4611,7 +4612,7 @@ static void HandleTurnActionSelectionState(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (gChosenActionByBattler[i] == B_ACTION_SWITCH)
-                    sub_80571DC(i, *(gBattleStruct->monToSwitchIntoId + i));
+                    SwitchPartyOrderInGameMulti(i, *(gBattleStruct->monToSwitchIntoId + i));
             }
         }
     }
@@ -5091,7 +5092,7 @@ static void HandleEndTurn_BattleLost(void)
             {
                 gBattlescriptCurrInstr = BattleScript_PrintPlayerForfeitedLinkBattle;
                 gBattleOutcome &= ~(B_OUTCOME_LINK_BATTLE_RAN);
-                gSaveBlock2Ptr->frontier.field_CA9_b = 1;
+                gSaveBlock2Ptr->frontier.disableRecordBattle = TRUE;
             }
             else
             {
@@ -5133,7 +5134,7 @@ static void HandleEndTurn_RanFromBattle(void)
     {
         gBattlescriptCurrInstr = BattleScript_PrintPlayerForfeited;
         gBattleOutcome = B_OUTCOME_FORFEITED;
-        gSaveBlock2Ptr->frontier.field_CA9_b = 1;
+        gSaveBlock2Ptr->frontier.disableRecordBattle = TRUE;
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
     {
@@ -5752,7 +5753,7 @@ static void HandleAction_Run(void)
         }
 
         gBattleOutcome |= B_OUTCOME_LINK_BATTLE_RAN;
-        gSaveBlock2Ptr->frontier.field_CA9_b = 1;
+        gSaveBlock2Ptr->frontier.disableRecordBattle = TRUE;
     }
     else
     {
@@ -5916,7 +5917,7 @@ static void HandleAction_ActionFinished(void)
     gLastHitByType[gBattlerAttacker] = 0;
     gBattleStruct->dynamicMoveType = 0;
     gDynamicBasePower = 0;
-    gBattleScripting.atk49_state = 0;
+    gBattleScripting.moveendState = 0;
     gBattleCommunication[3] = 0;
     gBattleCommunication[4] = 0;
     gBattleScripting.multihitMoveEffect = 0;
