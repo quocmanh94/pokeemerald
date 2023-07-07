@@ -1281,11 +1281,6 @@ static u32 GetStringWidthFixedWidthFont(const u8 *str, u8 fontId, u8 letterSpaci
                 ++strPos;
                 break;
             case EXT_CTRL_CODE_RESET_FONT:
-                if (letterSpacing == -1)
-                    localLetterSpacing = GetFontAttribute(fontId, FONTATTR_LETTER_SPACING);
-                else
-                    localLetterSpacing = letterSpacing;
-                break;
             case EXT_CTRL_CODE_PAUSE_UNTIL_PRESS:
             case EXT_CTRL_CODE_WAIT_SE:
             case EXT_CTRL_CODE_FILL_WINDOW:
@@ -1451,6 +1446,11 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
                 isJapanese = 0;
                 break;
             case EXT_CTRL_CODE_RESET_FONT:
+                if (letterSpacing == -1)
+                    localLetterSpacing = GetFontAttribute(fontId, FONTATTR_LETTER_SPACING);
+                else
+                    localLetterSpacing = letterSpacing;
+                break;
             case EXT_CTRL_CODE_PAUSE_UNTIL_PRESS:
             case EXT_CTRL_CODE_WAIT_SE:
             case EXT_CTRL_CODE_FILL_WINDOW:
