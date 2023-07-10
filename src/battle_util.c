@@ -4020,3 +4020,17 @@ u8 IsMonDisobedient(void)
         }
     }
 }
+
+u8 GetBattleMoveSplit(u32 moveId)
+{
+    #if B_PHYSICAL_SPECIAL_SPLIT >= GEN_4
+        return gBattleMoves[moveId].category;
+    #else
+        if (IS_MOVE_STATUS(moveId))
+            return MOVE_CATEGORY_STATUS;
+        else if (gBattleMoves[moveId].type < TYPE_MYSTERY)
+            return MOVE_CATEGORY_PHYSICAL;
+        else
+            return MOVE_CATEGORY_SPECIAL;
+    #endif
+}
