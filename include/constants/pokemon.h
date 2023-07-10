@@ -212,6 +212,11 @@
 #define FLAG_MIRROR_MOVE_AFFECTED   (1 << 4)
 #define FLAG_KINGS_ROCK_AFFECTED    (1 << 5)
 
+// Split defines.
+#define MOVE_CATEGORY_PHYSICAL  0x0
+#define MOVE_CATEGORY_SPECIAL   0x1
+#define MOVE_CATEGORY_STATUS    0x2
+
 // Growth rates
 #define GROWTH_MEDIUM_FAST  0
 #define GROWTH_ERRATIC      1
