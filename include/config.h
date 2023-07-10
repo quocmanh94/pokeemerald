@@ -55,7 +55,4 @@
 #endif
 #endif
 
-// Generation constants used in configs to define behavior
-#define GEN_4 1
-
 #endif // GUARD_CONFIG_H
