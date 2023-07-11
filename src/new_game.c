@@ -95,7 +95,6 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
-    gSaveBlock2Ptr->optionsTypeEffect = FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
     gSaveBlock2Ptr->regionMapZoom = FALSE;
 }
 
@@ -149,7 +148,6 @@ void ResetMenuAndMonGlobals(void)
 
 void NewGameInitData(void)
 {
-    bool8 typeEffectPrev = FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
         RtcReset();
 
@@ -207,7 +205,6 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
-    typeEffectPrev ? FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
 }
 
 static void ResetMiniGamesRecords(void)
