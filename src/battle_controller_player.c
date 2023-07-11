@@ -37,6 +37,7 @@
 #include "constants/rgb.h"
 #include "menu.h"
 #include "pokemon_summary_screen.h"
+#include "event_data.h"
 
 static void PlayerHandleGetMonData(void);
 static void PlayerHandleSetMonData(void);
@@ -1523,6 +1524,23 @@ static void MoveSelectionDisplayPpNumber(void)
     ConvertIntToDecimalStringN(txtPtr, moveInfo->maxPp[gMoveSelectionCursor[gActiveBattler]], STR_CONV_MODE_RIGHT_ALIGN, 2);
 
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP_REMAINING);
+}
+
+static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId)
+{
+	u8 *txtPtr;
+	struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleBufferA[gActiveBattler][4]);
+
+	txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+	txtPtr[0] = EXT_CTRL_CODE_BEGIN;
+	txtPtr++;
+	txtPtr[0] = 6;
+	txtPtr++;
+	txtPtr[0] = 1;
+	txtPtr++;
+
+	StringCopy(txtPtr, gTypeNames[gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].type]);
+	BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(targetId));
 }
 
 static void MoveSelectionDisplayMoveDescription(void)
@@ -3231,4 +3249,30 @@ static void MoveSelectionDisplaySplitIcon(void){
 	BlitBitmapToWindow(B_WIN_DUMMY, sSplitIcons_Gfx + 0x80 * moveCategory, 0, 0, 16, 16);
 	PutWindowTilemap(B_WIN_DUMMY);
 	CopyWindowToVram(B_WIN_DUMMY, 3);
+}
+
+u8 TypeEffectiveness(u8 targetId)
+{
+    u8 moveFlags;
+    u16 move;
+    struct ChooseMoveStruct *moveInfo;
+    if (FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) == TRUE)
+    {
+        return 10;
+    }
+    moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+    move = moveInfo->moves[gMoveSelectionCursor[gActiveBattler]];
+    move = gBattleMons[gActiveBattler].moves[gMoveSelectionCursor[gActiveBattler]];
+    moveFlags = AI_TypeCalc(move, gBattleMons[targetId].species, gBattleMons[targetId].ability);
+    if (moveFlags & MOVE_RESULT_NO_EFFECT) {
+        return B_WIN_TYPE_NO_EFF;
+    }
+    else if (moveFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE ) {
+        return B_WIN_TYPE_NOT_VERY_EFF;
+    }
+    else if (moveFlags & MOVE_RESULT_SUPER_EFFECTIVE) {
+        return B_WIN_TYPE_SUPER_EFF;
+    } 
+    else
+        return 10; // 10 - normal effectiveness
 }
