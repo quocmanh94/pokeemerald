@@ -368,7 +368,7 @@ static void Task_OptionMenuSave(u8 taskId)
 {
     gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
     gSaveBlock2Ptr->optionsBattleSceneOff = gTasks[taskId].tBattleSceneOff;
-    gSaveBlock2Ptr->optionsTypeEffect = gTasks[taskId].tTypeEffect == 0 ? FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    gSaveBlock2Ptr->optionsTypeEffect = gTasks[taskId].tTypeEffect == 1 ? FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
     gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
