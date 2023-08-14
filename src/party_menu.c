@@ -3164,6 +3164,8 @@ static void Task_HandleSwitchItemsYesNoInput(u8 taskId)
 {
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
+    case MENU_B_PRESSED:
+        PlaySE(SE_SELECT);
     case 0: // Yes, switch items
         RemoveBagItem(gSpecialVar_ItemId, 1);
 
@@ -3189,8 +3191,6 @@ static void Task_HandleSwitchItemsYesNoInput(u8 taskId)
             gTasks[taskId].func = Task_UpdateHeldItemSprite;
         }
         break;
-    case MENU_B_PRESSED:
-        PlaySE(SE_SELECT);
         // fallthrough
     case 1: // No
         gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
