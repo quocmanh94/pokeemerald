@@ -514,6 +514,7 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 optionsDifficulty:2; // DIFFICULTY_[EASY/NORMAL/MEDIUM]
+             u16 optionTypeEffective:1; // OPTIONS_TYPEEFFECTIVE_[ON/OFF]
              u16 regionMapZoom:1; // whether the map is zoomed in
              //u16 padding1:4;
              //u16 padding2;
