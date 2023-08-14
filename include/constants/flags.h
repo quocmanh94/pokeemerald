@@ -513,7 +513,7 @@
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
 #define FLAG_DIFFICULTY_MODE                 0x1DE
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
+#define FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW  0x1DF
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
