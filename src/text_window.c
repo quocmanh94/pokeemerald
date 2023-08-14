@@ -92,7 +92,12 @@ const struct TilesPal *GetWindowFrameTilesPal(u8 id)
 
 void LoadMessageBoxGfx(u8 windowId, u16 destOffset, u8 palOffset)
 {
-    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBox_Gfx, 0x1C0, destOffset);
+    if (gSaveBlock2Ptr->playerGender == MALE)
+        LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBoxMale_Gfx, 0x1C0, destOffset);
+    else if (gSaveBlock2Ptr->playerGender == FEMALE)
+        LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBoxFemale_Gfx, 0x1C0, destOffset);
+    else
+        LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBox_Gfx, 0x1C0, destOffset);
     LoadPalette(GetOverworldTextboxPalettePtr(), palOffset, PLTT_SIZE_4BPP);
 }
 
@@ -186,7 +191,12 @@ const u16 *GetTextWindowPalette(u8 id)
 
 const u16 *GetOverworldTextboxPalettePtr(void)
 {
-    return gMessageBox_Pal;
+    if (gSaveBlock2Ptr->playerGender == MALE)
+        return gMessageBoxMale_Pal;
+    else if (gSaveBlock2Ptr->playerGender == FEMALE)
+        return gMessageBoxFemale_Pal;
+    else
+        return gMessageBox_Pal;
 }
 
 // Effectively LoadUserWindowBorderGfx but specifying the bg directly instead of a window from that bg
