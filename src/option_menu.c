@@ -16,6 +16,7 @@
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
 #include "event_data.h"
+#include "string_util.h"
 
 #define tMenuSelection data[15]
 #define tTextSpeed data[0]
