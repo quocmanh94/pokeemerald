@@ -1615,7 +1615,80 @@ u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
     if (move == MOVE_STRUGGLE)
         return 0;
 
-    moveType = gBattleMoves[move].type;
+    if (move == MOVE_HIDDEN_POWER)
+    {
+        u8 typeBits = ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP_IV) & 1) << 0)
+                    | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_ATK_IV) & 1) << 1)
+                    | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_DEF_IV) & 1) << 2)
+                    | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_SPEED_IV) & 1) << 3)
+                    | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_SPATK_IV) & 1) << 4)
+                    | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_SPDEF_IV) & 1) << 5);
+
+        u8 type = (15 * typeBits) / 63 + 1;
+        if (type >= TYPE_MYSTERY)
+            type++;
+
+        switch (type)
+        {
+        case TYPE_NORMAL:
+            type = TYPE_NORMAL;
+            break;
+        case TYPE_FIGHTING:
+            type = TYPE_FIGHTING;
+            break;
+        case TYPE_FLYING:
+            type = TYPE_FLYING;
+            break;
+        case TYPE_POISON:
+            type = TYPE_POISON;
+            break;
+        case TYPE_GROUND:
+            type = TYPE_GROUND;
+            break;
+        case TYPE_ROCK:
+            type = TYPE_ROCK;
+            break;
+        case TYPE_BUG:
+            type = TYPE_BUG;
+            break;
+        case TYPE_GHOST:
+            type = TYPE_GHOST;
+            break;
+        case TYPE_STEEL:
+            type = TYPE_STEEL;
+            break;
+        case TYPE_FIRE:
+            type = TYPE_FIRE;
+            break;
+        case TYPE_WATER:
+            type = TYPE_WATER;
+            break;
+        case TYPE_GRASS:
+            type = TYPE_GRASS;
+            break;
+        case TYPE_ELECTRIC:
+            type = TYPE_ELECTRIC;
+            break;
+        case TYPE_PSYCHIC:
+            type = TYPE_PSYCHIC;
+            break;
+        case TYPE_ICE:
+            type = TYPE_ICE;
+            break;
+        case TYPE_DRAGON:
+            type = TYPE_DRAGON;
+            break;
+        case TYPE_DARK:
+            type = TYPE_DARK;
+            break;
+        default:
+            break;
+        }
+
+        moveType = type;
+    }
+    else
+        moveType = gBattleMoves[move].type;
 
     if (targetAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
