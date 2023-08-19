@@ -2618,10 +2618,23 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
-                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                if (sFieldMoves[j] != (MOVE_CUT) && sFieldMoves[j] != (MOVE_FLASH) && sFieldMoves[j] != (MOVE_FLY))
+                    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
                 break;
             }
         }
+    }
+
+    if (sPartyMenuInternal->numActions < 5)
+    {
+        if (CanMonLearnTMHM(&mons[slotId], ITEM_HM01 - ITEM_TM01) && FlagGet(FLAG_BADGE01_GET) && CheckBagHasItem(ITEM_HM01, 1))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES);
+
+        if (CanMonLearnTMHM(&mons[slotId], ITEM_HM05 - ITEM_TM01) && FlagGet(FLAG_BADGE02_GET) && CheckBagHasItem(ITEM_HM05, 1))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + 1);
+
+        if (CanMonLearnTMHM(&mons[slotId], ITEM_HM02 - ITEM_TM01) && FlagGet(FLAG_BADGE06_GET) && CheckBagHasItem(ITEM_HM02, 1))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + 5);
     }
 
     if (!InBattlePike())
@@ -3857,7 +3870,7 @@ static void FieldCallback_Surf(void)
 
 static bool8 SetUpFieldMove_Surf(void)
 {
-    if (PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
+    if (IsPlayerFacingSurfableFishableWater() == TRUE)
     {
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
         gPostMenuFieldCallback = FieldCallback_Surf;
@@ -6425,4 +6438,42 @@ void IsLastMonThatKnowsSurf(void)
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = TRUE;
     }
+}
+
+int MoveToHM(u16 move)
+{
+    u8 i;
+    int item;
+
+    switch (move)
+    {
+    case MOVE_CUT:
+        item = ITEM_HM01;
+        break;
+    case MOVE_FLY:
+        item = ITEM_HM02;
+        break;
+    case MOVE_SURF:
+        item = ITEM_HM03;
+        break;
+    case MOVE_STRENGTH:
+        item = ITEM_HM04;
+        break;
+    case MOVE_FLASH:
+        item = ITEM_HM05;
+        break;
+    case MOVE_ROCK_SMASH:
+        item = ITEM_HM06;
+        break;
+    case MOVE_WATERFALL:
+        item = ITEM_HM07;
+        break;
+    case MOVE_DIVE:
+        item = ITEM_HM08;
+        break;
+    default:
+        item = 0;
+        break;
+    }
+    return item;
 }
