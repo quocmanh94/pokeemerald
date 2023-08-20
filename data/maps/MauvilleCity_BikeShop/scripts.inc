@@ -52,11 +52,11 @@ MauvilleCity_BikeShop_EventScript_GetAcroBike::
 
 MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes::
 	msgbox MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes, MSGBOX_DEFAULT
-	special SwapRegisteredBike
 	release
 	end
 
 MauvilleCity_BikeShop_EventScript_AskSwitchBikes::
+	goto_if_set FLAG_GETTING_ALL_BIKES, MauvilleCity_BikeShop_EventScript_HaveAll
 	msgbox MauvilleCity_BikeShop_Text_WantToSwitchBikes, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, MauvilleCity_BikeShop_EventScript_SwitchBikes
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_BikeShop_EventScript_KeepBike
@@ -79,19 +79,22 @@ MauvilleCity_BikeShop_EventScript_KeepBike::
 	end
 
 MauvilleCity_BikeShop_EventScript_SwitchAcroForMach::
-	incrementgamestat GAME_STAT_TRADED_BIKES
 	msgbox MauvilleCity_BikeShop_Text_ExchangedAcroForMach, MSGBOX_DEFAULT
-	removeitem ITEM_ACRO_BIKE
 	giveitem ITEM_MACH_BIKE
-	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
+	setflag FLAG_GETTING_ALL_BIKES
+	release
 	end
 
 MauvilleCity_BikeShop_EventScript_SwitchMachForAcro::
-	incrementgamestat GAME_STAT_TRADED_BIKES
 	msgbox MauvilleCity_BikeShop_Text_ExchangedMachForAcro, MSGBOX_DEFAULT
-	removeitem ITEM_MACH_BIKE
 	giveitem ITEM_ACRO_BIKE
-	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
+	setflag FLAG_GETTING_ALL_BIKES
+	release
+	end
+
+MauvilleCity_BikeShop_EventScript_HaveAll::
+	msgbox MauvilleCity_BikeShop_Text_HaveAll, MSGBOX_DEFAULT
+	release
 	end
 
 MauvilleCity_BikeShop_EventScript_Assistant::
@@ -221,24 +224,25 @@ MauvilleCity_BikeShop_Text_ChoseAcroBike:
 	.string "{PLAYER} chose the ACRO BIKE.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+	.string "RYDEL: If you feel like taking the \n"
+	.string "remaining one, just come see me!$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
 	.string "RYDEL: Oh? Were you thinking about\n"
-	.string "switching BIKES?$"
+	.string "receiving all of BIKES?$"
 
 MauvilleCity_BikeShop_Text_IllSwitchBikes:
 	.string "RYDEL: Okay, no problem!\n"
-	.string "I'll switch BIKES for you!$"
+	.string "I'll give it for you!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
-	.string "for an ACRO BIKE.$"
+	.string "{PLAYER} got the ACRO BIKE.$\n"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
-	.string "for a MACH BIKE.$"
+	.string "{PLAYER} got the MACH BIKE.$"
+
+MauvilleCity_BikeShop_Text_HaveAll:
+	.string "You've got all the BIKES.$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
 	.string "RYDEL: Good, good!\n"

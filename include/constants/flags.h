@@ -516,7 +516,7 @@
 #define FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW  0x1DF
 #define FLAG_SHINY_CREATION                  0x1E0
 #define FLAG_GETTING_DAYCARE_EGG             0x1E1
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
+#define FLAG_GETTING_ALL_BIKES               0x1E2
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)
