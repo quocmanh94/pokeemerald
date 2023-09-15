@@ -97,6 +97,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->optionsDifficulty = OPTIONS_DIFFICULTY_NORMAL;
     gSaveBlock2Ptr->optionTypeEffective = FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    gSaveBlock2Ptr->optionSelfTrade = FlagSet(FLAG_SELF_TRADE);
     gSaveBlock2Ptr->regionMapZoom = FALSE;
 }
 
@@ -151,7 +152,8 @@ void ResetMenuAndMonGlobals(void)
 void NewGameInitData(void)
 {
     bool8 difficultyActive = FlagGet(FLAG_DIFFICULTY_MODE);
-    bool8 typeEffectiveActive= FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    bool8 typeEffectiveActive = FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    bool8 selfTradeActive = FlagGet(FLAG_SELF_TRADE);
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
         RtcReset();
 
@@ -210,6 +212,7 @@ void NewGameInitData(void)
     ResetContestLinkResults();
     difficultyActive ? FlagSet(FLAG_DIFFICULTY_MODE) : FlagClear(FLAG_DIFFICULTY_MODE);
     typeEffectiveActive ? FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    selfTradeActive ? FlagSet(FLAG_SELF_TRADE) : FlagClear(FLAG_SELF_TRADE);
 }
 
 static void ResetMiniGamesRecords(void)
