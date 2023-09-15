@@ -27,6 +27,7 @@
 #define tWindowFrameType data[5]
 #define tDifficulty data[0]
 #define tTypeEffective data[1]
+#define tSelfTrade data[2]
 
 enum
 {
@@ -43,6 +44,7 @@ enum
     // Page 2
     MENUITEM_DIFFICULTY = 0,
     MENUITEM_TYPEEFFECTIVE,
+    MENUITEM_SELFTRADE,
     MENUITEM_CANCEL_PAGE2,
     MENUITEM_COUNT_PAGE2,
 };
@@ -79,6 +81,7 @@ enum
 // Page 2
 #define YPOS_DIFFICULTY    (MENUITEM_DIFFICULTY * 16)
 #define YPOS_TYPEEFFECTIVE (MENUITEM_TYPEEFFECTIVE * 16)
+#define YPOS_SEFLTRADE     (MENUITEM_SELFTRADE * 16)
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
@@ -103,6 +106,8 @@ static u8   Difficulty_ProcessInput(u8 selection);
 static void Difficulty_DrawChoices(u8 selection);
 static u8   TypeEffective_ProcessInput(u8 selection);
 static void TypeEffective_DrawChoices(u8 selection);
+static u8   SelfTrade_ProcessInput(u8 selection);
+static void SelfTrade_DrawChoices(u8 selection);
 
 static void SaveOptionMenuDataFromTask(u8 taskId);
 static void DrawHeaderText(void);
@@ -130,8 +135,9 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 
 static const u8 *const sOptionMenuItemsNames_Page2[MENUITEM_COUNT_PAGE2] =
 {
-    [MENUITEM_TYPEEFFECTIVE] = gText_TypeEffective,
     [MENUITEM_DIFFICULTY] = gText_Difficulty,
+    [MENUITEM_TYPEEFFECTIVE] = gText_TypeEffective,
+    [MENUITEM_SELFTRADE] = gText_SelfTrade,
     [MENUITEM_CANCEL_PAGE2] = gText_OptionMenuCancel,
 };
 
@@ -229,6 +235,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     case PAGE_2:
         gTasks[taskId].tDifficulty = gSaveBlock2Ptr->optionsDifficulty;
         gTasks[taskId].tTypeEffective = FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+        gTasks[taskId].tSelfTrade = FlagGet(FLAG_SELF_TRADE);
 	    break;
 	}
 }
@@ -250,6 +257,7 @@ static void DrawOptions(u8 taskId)
 	case PAGE_2:
         Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
         TypeEffective_DrawChoices(gTasks[taskId].tTypeEffective);
+        SelfTrade_DrawChoices(gTasks[taskId].tSelfTrade);
 	    break;
 	}
 
@@ -524,6 +532,12 @@ static void Task_OptionMenuProcessInput_Page2(u8 taskId)
             if (previousOption != gTasks[taskId].tTypeEffective)
                 TypeEffective_DrawChoices(gTasks[taskId].tTypeEffective);
             break;
+        case MENUITEM_SELFTRADE:
+            previousOption = gTasks[taskId].tSelfTrade;
+            gTasks[taskId].tSelfTrade = SelfTrade_ProcessInput(gTasks[taskId].tSelfTrade);
+
+            if (previousOption != gTasks[taskId].tSelfTrade)
+                SelfTrade_DrawChoices(gTasks[taskId].tSelfTrade);
         }
 
         if (sArrowPressed)
@@ -550,6 +564,7 @@ static void SaveOptionMenuDataFromTask(u8 taskId)
 	case PAGE_2:
         gSaveBlock2Ptr->optionsDifficulty = gTasks[taskId].tDifficulty;
         gSaveBlock2Ptr->optionTypeEffective = gTasks[taskId].tTypeEffective == 1 ? FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+        gSaveBlock2Ptr->optionSelfTrade = gTasks[taskId].tSelfTrade == 1 ? FlagSet(FLAG_SELF_TRADE) : FlagClear(FLAG_SELF_TRADE);
     	break;
     }
 
@@ -666,29 +681,6 @@ static void BattleScene_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleSceneOff, 198), YPOS_BATTLESCENE, styles[1]);
 }
 
-static u8 TypeEffective_ProcessInput(u8 selection)
-{
-    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
-    {
-        selection ^= 1;
-        sArrowPressed = TRUE;
-    }
-
-    return selection;
-}
-
-static void TypeEffective_DrawChoices(u8 selection)
-{
-    u8 styles[2];
-
-    styles[0] = 0;
-    styles[1] = 0;
-    styles[selection] = 1;
-
-    DrawOptionMenuChoice(gText_TypeEffectiveOn, 104, YPOS_TYPEEFFECTIVE, styles[0]);
-    DrawOptionMenuChoice(gText_TypeEffectiveOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_TypeEffectiveOff, 198), YPOS_TYPEEFFECTIVE, styles[1]);
-}
-
 static u8 Difficulty_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
@@ -745,6 +737,52 @@ static void Difficulty_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_DifficultyEasy, 104, YPOS_DIFFICULTY, styles[0]);
     DrawOptionMenuChoice(gText_DifficultyNormal, xMid, YPOS_DIFFICULTY, styles[1]);
     DrawOptionMenuChoice(gText_DifficultyHard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultyHard, 198), YPOS_DIFFICULTY, styles[2]);
+}
+
+static u8 TypeEffective_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void TypeEffective_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_TypeEffectiveOn, 104, YPOS_TYPEEFFECTIVE, styles[0]);
+    DrawOptionMenuChoice(gText_TypeEffectiveOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_TypeEffectiveOff, 198), YPOS_TYPEEFFECTIVE, styles[1]);
+}
+
+static u8 SelfTrade_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void SelfTrade_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_SelfTradeOn, 104, YPOS_SEFLTRADE, styles[0]);
+    DrawOptionMenuChoice(gText_SelfTradeOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_SelfTradeOff, 198), YPOS_SEFLTRADE, styles[1]);
 }
 
 static u8 BattleStyle_ProcessInput(u8 selection)

@@ -260,7 +260,7 @@ CableClub_EventScript_SelectCableClubRoom::
 	goto_if_set FLAG_VISITED_MAUVILLE_CITY, CableClub_EventScript_CableClubUnlockedRecordCorner
 	multichoice 0, 0, MULTI_CABLE_CLUB_NO_RECORD_MIX, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_TradeCenter
+	case 0, CableClub_EventScript_Trade
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_AbortLink
 	case MULTI_B_PRESSED, CableClub_EventScript_AbortLink
@@ -269,7 +269,7 @@ CableClub_EventScript_SelectCableClubRoom::
 CableClub_EventScript_CableClubUnlockedRecordCorner::
 	multichoice 0, 0, MULTI_CABLE_CLUB_WITH_RECORD_MIX, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_TradeCenter
+	case 0, CableClub_EventScript_Trade
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_RecordCorner
 	case 3, CableClub_EventScript_AbortLink
@@ -412,6 +412,11 @@ CableClub_EventScript_ConfirmNumberAndRestart::
 	release
 	end
 
+CableClub_EventScript_Trade::
+	call_if_set FLAG_SELF_TRADE, CableClub_EventScript_TradeCenter
+	call_if_unset FLAG_SELF_TRADE, CableClub_EventScript_SelfTrade
+	end
+
 CableClub_EventScript_TradeCenter::
 	copyvar VAR_0x8007, VAR_LAST_TALKED
 	call CableClub_EventScript_CheckPartyTradeRequirements
@@ -458,6 +463,27 @@ CableClub_EventScript_EnterTradeCenter::
 	setwarp MAP_TRADE_CENTER, 5, 8
 	special DoCableClubWarp
 	waitstate
+	end
+
+CableClub_EventScript_SelfTrade::
+	lock
+	faceplayer
+	msgbox SCRIPT_SelfTrade_Text_IllTradeIfYouWant, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, CableClub_EventScript_AbortLink
+	compare VAR_RESULT, YES
+	call Common_EventScript_SaveGame
+	goto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortLink
+	special ChoosePartyMon
+	waitstate
+	compare VAR_0x8004, 255
+	goto_if_eq CableClub_EventScript_AbortLink
+	copyvar VAR_0x8005, VAR_0x8004
+	setvar VAR_0x8004, 6
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox RecordCorner_Text_ThanksForComing, MSGBOX_DEFAULT
+	release
 	end
 
 CableClub_EventScript_CheckPartyTradeRequirements::

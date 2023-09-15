@@ -312,6 +312,8 @@ extern const u8 gText_DifficultyNormal[];
 extern const u8 gText_DifficultyHard[];
 extern const u8 gText_TypeEffectiveOn[];
 extern const u8 gText_TypeEffectiveOff[];
+extern const u8 gText_SelfTradeOn[];
+extern const u8 gText_SelfTradeOff[];
 extern const u8 gText_Option[];
 extern const u8 gText_OptionMenu[];
 extern const u8 gText_SmallDot[];
@@ -324,6 +326,7 @@ extern const u8 gText_Sound[];
 extern const u8 gText_Frame[];
 extern const u8 gText_Difficulty[];
 extern const u8 gText_TypeEffective[];
+extern const u8 gText_SelfTrade[];
 extern const u8 gText_OptionMenuCancel[];
 extern const u8 gText_ButtonMode[];
 
