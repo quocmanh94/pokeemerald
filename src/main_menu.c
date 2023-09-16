@@ -638,7 +638,7 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
 
         if (IsWirelessAdapterConnected())
             tWirelessAdapterConnected = TRUE;
-        switch (gSaveFileStatus)
+        switch (gSaveFileStatus & 0xFF)
         {
             case SAVE_STATUS_OK:
                 tMenuType = HAS_SAVED_GAME;
@@ -648,6 +648,18 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
                 break;
             case SAVE_STATUS_CORRUPT:
                 CreateMainMenuErrorWindow(gText_SaveFileErased);
+                tMenuType = HAS_NO_SAVED_GAME;
+                gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
+                break;
+            case SAVE_STATUS_UPDATED:
+                CreateMainMenuErrorWindow(gText_SaveFileOldUpdated);
+                tMenuType = HAS_SAVED_GAME;
+                gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
+                break;
+            case SAVE_STATUS_OUTDATED:
+                BufferUpdateFailReason();
+                StringExpandPlaceholders(gStringVar4, gText_SaveFileOldErrored);
+                CreateMainMenuErrorWindow(gStringVar4);
                 tMenuType = HAS_NO_SAVED_GAME;
                 gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
                 break;
