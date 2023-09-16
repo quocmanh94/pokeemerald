@@ -29,6 +29,8 @@
 #include "constants/mauville_old_man.h"
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
+#include "constants/metatile_behaviors.h"
+#include "bike.h"
 
 // this file was known as evobjmv.c in Game Freak's original source
 
@@ -1387,10 +1389,13 @@ void RemoveObjectEventByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup)
 
 static void RemoveObjectEventInternal(struct ObjectEvent *objectEvent)
 {
+    u8 paletteNum;
     struct SpriteFrameImage image;
     image.size = GetObjectEventGraphicsInfo(objectEvent->graphicsId)->size;
     gSprites[objectEvent->spriteId].images = &image;
+    paletteNum = gSprites[objectEvent->spriteId].oam.paletteNum;
     DestroySprite(&gSprites[objectEvent->spriteId]);
+    FieldEffectFreePaletteIfUnused(paletteNum);
 }
 
 void RemoveAllObjectEventsExceptPlayer(void)
@@ -7670,7 +7675,7 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
     index--;
     behavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (ledgeBehaviorFuncs[index](behavior) == TRUE)
+    if (ledgeBehaviorFuncs[index](behavior) == TRUE || (gPlayerAvatar.acroBikeState == ACRO_STATE_BUNNY_HOP && MB_JUMP_EAST <= behavior && behavior <= MB_JUMP_SOUTH))
         return index + 1;
 
     return DIR_NONE;
