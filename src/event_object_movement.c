@@ -2206,52 +2206,48 @@ bool8 ScrFunc_followerfly(struct ScriptContext *ctx) {
 }
 
 // Sprite callback for light sprites
-void UpdateLightSprite(struct Sprite *sprite) {
-    s16 left =   gSaveBlock1Ptr->pos.x - 2;
-    s16 right =  gSaveBlock1Ptr->pos.x + 17;
-    s16 top =    gSaveBlock1Ptr->pos.y;
+void UpdateLightSprite(struct Sprite *sprite)
+{
+    s16 left = gSaveBlock1Ptr->pos.x - 2;
+    s16 right = gSaveBlock1Ptr->pos.x + 17;
+    s16 top = gSaveBlock1Ptr->pos.y;
     s16 bottom = gSaveBlock1Ptr->pos.y + 15;
     s16 x = sprite->data[6];
     s16 y = sprite->data[7];
     u16 sheetTileStart;
     u32 paletteNum;
     // Ripped from RemoveObjectEventIfOutsideView
-    if (!(x >= left && x <= right && y >= top && y <= bottom)) {
+    if (!(x >= left && x <= right && y >= top && y <= bottom))
+    {
         sheetTileStart = sprite->sheetTileStart;
         paletteNum = sprite->oam.paletteNum;
         DestroySprite(sprite);
         FieldEffectFreeTilesIfUnused(sheetTileStart);
         FieldEffectFreePaletteIfUnused(paletteNum);
-        Weather_SetBlendCoeffs(7, 12); // TODO: Restore original blend coeffs at dawn
+        Weather_SetBlendCoeffs(12, 12); // TODO: Restore original blend coeffs at dawn
         return;
     }
 
-    if (gTimeOfDay != TIME_OF_DAY_NIGHT) {
+    if (gTimeOfDay != TIME_OF_DAY_NIGHT)
+    {
         sprite->invisible = TRUE;
         return;
     }
 
-    /*switch (sprite->data[5]) { // lightType
+    switch (sprite->data[5])
+    { // lightType
     case 0:
-        if (gPaletteFade.active) { // if palette fade is active, don't flicker since the timer won't be updated
-            Weather_SetBlendCoeffs(7, 12);
-            sprite->invisible = FALSE;
-        } else if (gPlayerAvatar.tileTransitionState) {
-            Weather_SetBlendCoeffs(7, 12); // As long as the second coefficient stays 12, shadows will not change
-            sprite->invisible = FALSE;
-            if (GetSpritePaletteTagByPaletteNum(sprite->oam.paletteNum) == OBJ_EVENT_PAL_TAG_LIGHT_2)
-                LoadSpritePaletteInSlot(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_LIGHT)], sprite->oam.paletteNum);
-        } else if ((sprite->invisible = gTimeUpdateCounter & 1)) {
+        if (gPaletteFade.active)
+        {
             Weather_SetBlendCoeffs(12, 12);
-            if (GetSpritePaletteTagByPaletteNum(sprite->oam.paletteNum) == OBJ_EVENT_PAL_TAG_LIGHT)
-                LoadSpritePaletteInSlot(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_LIGHT_2)], sprite->oam.paletteNum);
+            sprite->invisible = FALSE;
         }
         break;
     case 1 ... 2:
         Weather_SetBlendCoeffs(12, 12);
         sprite->invisible = FALSE;
         break;
-    }*/
+    }
 }
 
 // Spawn a light at a map coordinate
@@ -2295,6 +2291,7 @@ static void SpawnLightSprite(s16 x, s16 y, s16 camX, s16 camY, u32 lightType) {
         sprite->oam.priority = 2;
         sprite->subpriority = 0xFF;
         sprite->oam.objMode = 1; // BLEND
+		break;
     }
 }
 
