@@ -734,6 +734,7 @@ const u8 gText_Blank[] = _("");
 const u8 gText_MenuOptionSave[] = _("SAVE");
 const u8 gText_MenuOptionOption[] = _("OPTION");
 const u8 gText_MenuOptionExit[] = _("EXIT");
+const u8 gText_TimeBoxClock[] = _("{STR_VAR_1}:{STR_VAR_2}:{STR_VAR_3}");
 const u8 gText_5BP[] = _("  5BP");
 const u8 gText_10BP[] = _("10BP");
 const u8 gText_15BP[] = _("15BP");

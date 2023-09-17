@@ -274,6 +274,7 @@ extern const u8 gText_MenuOptionPokenav[];
 extern const u8 gText_MenuOptionSave[];
 extern const u8 gText_MenuOptionOption[];
 extern const u8 gText_MenuOptionExit[];
+extern const u8 gText_TimeBoxClock[];
 
 // save menu texts
 extern const u8 gText_ConfirmSave[];
