@@ -1706,7 +1706,7 @@ static inline void ApplyRandomDmgMultiplier(void)
     }
 }
 
-static void Unused_ApplyRandomDmgMultiplier(void)
+static void UNUSED Unused_ApplyRandomDmgMultiplier(void)
 {
     ApplyRandomDmgMultiplier();
 }
