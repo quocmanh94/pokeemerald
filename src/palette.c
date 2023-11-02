@@ -88,6 +88,13 @@ void LoadCompressedPalette(const u32 *src, u16 offset, u16 size)
     CpuCopy16(gPaletteDecompressionBuffer, &gPlttBufferFaded[offset], size);
 }
 
+void LoadCompressedPaletteFast(const u32 *src, u16 offset, u16 size)
+{
+    LZDecompressWram(src, gPaletteDecompressionBuffer);
+    CpuFastCopy(gPaletteDecompressionBuffer, &gPlttBufferUnfaded[offset], size);
+    CpuFastCopy(&gPlttBufferUnfaded[offset], &gPlttBufferFaded[offset], size);
+}
+
 void LoadPalette(const void *src, u16 offset, u16 size)
 {
     CpuCopy16(src, &gPlttBufferUnfaded[offset], size);
@@ -586,7 +593,6 @@ static u8 UpdateFastPaletteFade(void)
 
     if (IsSoftwarePaletteFadeFinishing())
         return gPaletteFade.active ? PALETTE_FADE_STATUS_ACTIVE : PALETTE_FADE_STATUS_DONE;
-
 
     if (gPaletteFade.objPaletteToggle)
     {
