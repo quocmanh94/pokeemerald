@@ -212,7 +212,6 @@ bool8 IsBerryTreeSparkling(u8 localId, u8 mapNum, u8 mapGroup);
 u8 LoadObjectEventPalette(u16 paletteTag);
 void UpdateLightSprite(struct Sprite *sprite);
 u8 UpdateSpritePaletteByTemplate(const struct SpriteTemplate *template, struct Sprite *sprite);
-void ClearObjectEventMovement(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 CreateObjectGraphicsSpriteWithTag(u16 graphicsId, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority, u16 paletteTag);
 
 void MovementType_None(struct Sprite *);

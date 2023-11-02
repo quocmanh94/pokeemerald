@@ -105,6 +105,14 @@ static void LoadObjectReflectionPalette(struct ObjectEvent *objectEvent, struct 
         LoadObjectHighBridgeReflectionPalette(objectEvent, reflectionSprite);
     }
     else
+        LoadObjectRegularReflectionPalette(objectEvent, reflectionSprite);
+}
+
+static void ApplyPondFilter(u8 paletteNum, u16 *dest)
+{
+    u8 i, val, r, g, b;
+    u16 *src = gPlttBufferUnfaded + OBJ_PLTT_ID(paletteNum);
+    for (i = 0; i < 16; i++)
     {
         LoadObjectRegularReflectionPalette(objectEvent, reflectionSprite);
     }
