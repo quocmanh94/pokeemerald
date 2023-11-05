@@ -146,6 +146,7 @@ enum {
 };
 
 #define TAG_HELD_ITEM 55120
+#define POKE_ICON_BASE_PAL_TAG 56000
 
 #define PARTY_PAL_SELECTED     (1 << 0)
 #define PARTY_PAL_FAINTED      (1 << 1)
@@ -1066,7 +1067,13 @@ static void CreatePartyMonSprites(u8 slot)
 
         if (gMultiPartnerParty[actualSlot].species != SPECIES_NONE)
         {
+            u8 index = slot < PARTY_SIZE ? IndexOfSpritePaletteTag(POKE_ICON_BASE_PAL_TAG + slot) : 0xFF;
             CreatePartyMonIconSpriteParameterized(gMultiPartnerParty[actualSlot].species, gMultiPartnerParty[actualSlot].personality, &sPartyMenuBoxes[slot], 0, FALSE);
+            if (index < 16)
+            {
+                LoadCompressedPalette(GetMonSpritePalFromSpeciesAndPersonality(gMultiPartnerParty[actualSlot].species, 0, gMultiPartnerParty[actualSlot].personality), OBJ_PLTT_ID(index), PLTT_SIZE_4BPP);
+                gSprites[sPartyMenuBoxes[slot].monSpriteId].oam.paletteNum = index;
+            }
             CreatePartyMonHeldItemSpriteParameterized(gMultiPartnerParty[actualSlot].species, gMultiPartnerParty[actualSlot].heldItem, &sPartyMenuBoxes[slot]);
             CreatePartyMonPokeballSpriteParameterized(gMultiPartnerParty[actualSlot].species, &sPartyMenuBoxes[slot]);
             if (gMultiPartnerParty[actualSlot].hp == 0)
@@ -3929,6 +3936,7 @@ static void CreatePartyMonIconSprite(struct Pokemon *mon, struct PartyMenuBox *m
 {
     bool32 handleDeoxys = TRUE;
     u16 species2;
+    u8 index = slot < PARTY_SIZE ? IndexOfSpritePaletteTag(POKE_ICON_BASE_PAL_TAG + slot) : 0xFF;
 
     // If in a multi battle, show partners Deoxys icon as Normal forme
     if (IsMultiBattle() == TRUE && gMain.inBattle)
@@ -3936,6 +3944,7 @@ static void CreatePartyMonIconSprite(struct Pokemon *mon, struct PartyMenuBox *m
 
     species2 = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
     CreatePartyMonIconSpriteParameterized(species2, GetMonData(mon, MON_DATA_PERSONALITY), menuBox, 1, handleDeoxys);
+    SetMonIconPalette(mon, &gSprites[menuBox->monSpriteId], index);
     UpdatePartyMonHPBar(menuBox->monSpriteId, mon);
 }
 
