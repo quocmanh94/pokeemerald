@@ -105,7 +105,6 @@ static void LoadObjectReflectionPalette(struct ObjectEvent *objectEvent, struct 
         LoadObjectHighBridgeReflectionPalette(objectEvent, reflectionSprite);
     }
     else
-    {
         LoadObjectRegularReflectionPalette(objectEvent, reflectionSprite);
     }
 }

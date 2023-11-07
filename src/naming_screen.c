@@ -1418,9 +1418,18 @@ static void NamingScreen_CreatePCIcon(void)
 static void NamingScreen_CreateMonIcon(void)
 {
     u8 spriteId;
+    u8 index;
 
     LoadMonIconPalettes();
     spriteId = CreateMonIcon(sNamingScreen->monSpecies, SpriteCallbackDummy, 56, 40, 0, sNamingScreen->monPersonality, 1);
+    index = IndexOfSpritePaletteTag(56000);
+    if (index < 16)
+    {
+        u32 otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
+        const u32 *palette = GetMonSpritePalFromSpeciesAndPersonality(sNamingScreen->monSpecies, otId, sNamingScreen->monPersonality);
+        LoadCompressedPalette(palette, OBJ_PLTT_ID(index), PLTT_SIZE_4BPP);
+        gSprites[spriteId].oam.paletteNum = index;
+    }
     gSprites[spriteId].oam.priority = 3;
 }
 
