@@ -900,6 +900,7 @@ static void BuyMenuDrawObjectEvents(void)
     u8 spriteId;
     const struct ObjectEventGraphicsInfo *graphicsInfo;
     u8 weatherTemp = gWeatherPtr->palProcessingState;
+
     if (weatherTemp == WEATHER_PAL_STATE_SCREEN_FADING_OUT)
         gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_IDLE;
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
