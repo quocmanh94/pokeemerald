@@ -48,12 +48,6 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 
-#define DAY_EVO_HOUR_BEGIN       12
-#define DAY_EVO_HOUR_END         HOURS_PER_DAY
-
-#define NIGHT_EVO_HOUR_BEGIN     0
-#define NIGHT_EVO_HOUR_END       12
-
 #define FRIENDSHIP_EVO_THRESHOLD 220
 
 struct SpeciesItem
@@ -71,6 +65,7 @@ static bool8 ShouldGetStatBadgeBoost(u16 flagId, u8 battlerId);
 static u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move);
 static bool8 ShouldSkipFriendshipChange(void);
 static u8 CopyMonToPC(struct Pokemon *mon);
+static u16 GetPreEvolution(u16 species);
 
 EWRAM_DATA static u8 sLearningMoveTableID = 0;
 EWRAM_DATA u8 gPlayerPartyCount = 0;
@@ -78,7 +73,7 @@ EWRAM_DATA u8 gEnemyPartyCount = 0;
 EWRAM_DATA struct Pokemon gPlayerParty[PARTY_SIZE] = {0};
 EWRAM_DATA struct Pokemon gEnemyParty[PARTY_SIZE] = {0};
 EWRAM_DATA struct SpriteTemplate gMultiuseSpriteTemplate = {0};
-EWRAM_DATA static struct MonSpritesGfxManager *sMonSpritesGfxManagers[MON_SPR_GFX_MANAGERS_COUNT] = {NULL};
+EWRAM_DATA static struct MonSpritesGfxManager *sMonSpritesGfxManager = NULL;
 
 #include "data/battle_moves.h"
 
@@ -2217,8 +2212,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     else
         personality = Random32();
 
-    SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
-
     // Determine original trainer ID
     if (otIdType == OT_ID_RANDOM_NO_SHINY)
     {
@@ -2240,8 +2233,23 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
               | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
               | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
               | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+
+        if (FlagGet(FLAG_SHINY_CREATION) && FlagGet(FLAG_GETTING_DAYCARE_EGG))
+        {
+            u8 nature = personality % NUM_NATURES; // keep current nature
+            do
+            {
+                personality = Random32();
+                personality = ((((Random() % SHINY_ODDS) ^ (HIHALF(value) ^ LOHALF(value))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
+            } while (nature != GetNatureFromPersonality(personality));
+
+            // Clear the flag after use
+            FlagClear(FLAG_SHINY_CREATION);
+            FlagClear(FLAG_GETTING_DAYCARE_EGG);
+        }
     }
 
+    SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
 
     checksum = CalculateBoxMonChecksum(boxMon);
@@ -2996,6 +3004,8 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
 
         moveLevel = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV);
 
+        if (moveLevel == 0)
+            continue;
         if (moveLevel > (level << 9))
             break;
 
@@ -3036,6 +3046,30 @@ u16 MonTryLearningNewMove(struct Pokemon *mon, bool8 firstMove)
     }
 
     return retVal;
+}
+
+u16 MonTryLearningNewMoveEvolution(struct Pokemon *mon, bool8 firstMove)
+{
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
+
+    if (firstMove)
+    {
+        sLearningMoveTableID = 0;
+    }
+    while (gLevelUpLearnsets[species][sLearningMoveTableID] != LEVEL_UP_END)
+    {
+        u16 moveLevel;
+        moveLevel = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV);
+        while (moveLevel == 0 || moveLevel == (level << 9))
+        {
+            gMoveToLearn = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_ID);
+            sLearningMoveTableID++;
+            return GiveMoveToMon(mon, gMoveToLearn);
+        }
+        sLearningMoveTableID++;
+    }
+    return 0;
 }
 
 void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
@@ -3168,10 +3202,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (attackerHoldEffect == sHoldEffectToType[i][0]
             && type == sHoldEffectToType[i][1])
         {
-            if (IS_TYPE_PHYSICAL(type))
-                attack = (attack * (attackerHoldEffectParam + 100)) / 100;
-            else
-                spAttack = (spAttack * (attackerHoldEffectParam + 100)) / 100;
+            attack = (attack * (attackerHoldEffectParam + 100)) / 100;
+            spAttack = (spAttack * (attackerHoldEffectParam + 100)) / 100;
             break;
         }
     }
@@ -3196,7 +3228,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     // Apply abilities / field sports
     if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
-        spAttack /= 2;
+        gBattleMovePower /= 2;
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_PLUS && ABILITY_ON_FIELD2(ABILITY_MINUS))
@@ -3224,7 +3256,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
         defense /= 2;
 
-    if (IS_TYPE_PHYSICAL(type))
+    if (IS_MOVE_PHYSICAL(gCurrentMove))
     {
         if (gCritMultiplier == 2)
         {
@@ -3279,7 +3311,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (type == TYPE_MYSTERY)
         damage = 0; // is ??? type. does 0 damage.
 
-    if (IS_TYPE_SPECIAL(type))
+    if (IS_MOVE_SPECIAL(gCurrentMove))
     {
         if (gCritMultiplier == 2)
         {
@@ -3322,12 +3354,17 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && gBattleMoves[move].target == MOVE_TARGET_BOTH && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE) == 2)
             damage /= 2;
 
-        // Are effects of weather negated with cloud nine or air lock
-        if (WEATHER_HAS_EFFECT2)
+        // Any weather except sun weakens solar beam
+        if ((gBattleWeather & (B_WEATHER_RAIN | B_WEATHER_SANDSTORM | B_WEATHER_HAIL)) && gCurrentMove == MOVE_SOLAR_BEAM)
+            damage /= 2;
+    }
+
+    // Are effects of weather negated with cloud nine or air lock
+    if (WEATHER_HAS_EFFECT2)
+    {
+        // Rain weakens Fire, boosts Water
+        if (gBattleWeather & B_WEATHER_RAIN_TEMPORARY)
         {
-            // Rain weakens Fire, boosts Water
-            if (gBattleWeather & B_WEATHER_RAIN_TEMPORARY)
-            {
                 switch (type)
                 {
                 case TYPE_FIRE:
@@ -3338,10 +3375,6 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
                     break;
                 }
             }
-
-            // Any weather except sun weakens solar beam
-            if ((gBattleWeather & (B_WEATHER_RAIN | B_WEATHER_SANDSTORM | B_WEATHER_HAIL)) && gCurrentMove == MOVE_SOLAR_BEAM)
-                damage /= 2;
 
             // Sun boosts Fire, weakens Water
             if (gBattleWeather & B_WEATHER_SUN)
@@ -3361,7 +3394,6 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         // Flash fire triggered
         if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
             damage = (15 * damage) / 10;
-    }
 
     return damage + 2;
 }
@@ -3483,12 +3515,8 @@ void SetMultiuseSpriteTemplateToPokemon(u16 speciesTag, u8 battlerPosition)
 {
     if (gMonSpritesGfxPtr != NULL)
         gMultiuseSpriteTemplate = gMonSpritesGfxPtr->templates[battlerPosition];
-    else if (sMonSpritesGfxManagers[MON_SPR_GFX_MANAGER_A])
-        gMultiuseSpriteTemplate = sMonSpritesGfxManagers[MON_SPR_GFX_MANAGER_A]->templates[battlerPosition];
-    else if (sMonSpritesGfxManagers[MON_SPR_GFX_MANAGER_B])
-        gMultiuseSpriteTemplate = sMonSpritesGfxManagers[MON_SPR_GFX_MANAGER_B]->templates[battlerPosition];
-    else
-        gMultiuseSpriteTemplate = gBattlerSpriteTemplates[battlerPosition];
+    else if (sMonSpritesGfxManager)
+        gMultiuseSpriteTemplate = sMonSpritesGfxManager->templates[battlerPosition];
 
     gMultiuseSpriteTemplate.paletteTag = speciesTag;
     if (battlerPosition == B_POSITION_PLAYER_LEFT || battlerPosition == B_POSITION_PLAYER_RIGHT)
@@ -4633,7 +4661,7 @@ void RemoveBattleMonPPBonus(struct BattlePokemon *mon, u8 moveIndex)
     mon->ppBonuses &= gPPUpClearMask[moveIndex];
 }
 
-void CopyPlayerPartyMonToBattleData(u8 battlerId, u8 partyIndex)
+void CopyPlayerPartyMonToBattleData(u8 battlerId, u8 partyIndex, bool8 resetStats)
 {
     u16 *hpSwitchout;
     s32 i;
@@ -4680,10 +4708,13 @@ void CopyPlayerPartyMonToBattleData(u8 battlerId, u8 partyIndex)
     hpSwitchout = &gBattleStruct->hpOnSwitchout[GetBattlerSide(battlerId)];
     *hpSwitchout = gBattleMons[battlerId].hp;
 
-    for (i = 0; i < NUM_BATTLE_STATS; i++)
-        gBattleMons[battlerId].statStages[i] = DEFAULT_STAT_STAGE;
+    if (resetStats)
+    {
+        for (i = 0; i < NUM_BATTLE_STATS; i++)
+            gBattleMons[battlerId].statStages[i] = DEFAULT_STAT_STAGE;
 
-    gBattleMons[battlerId].status2 = 0;
+        gBattleMons[battlerId].status2 = 0;
+    }
     UpdateSentPokesToOpponentValue(battlerId);
     ClearTemporarySpeciesSpriteData(battlerId, FALSE);
 }
@@ -5009,7 +5040,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                                 if (battlerId != MAX_BATTLERS_COUNT)
                                 {
                                     gAbsentBattlerFlags &= ~gBitTable[battlerId];
-                                    CopyPlayerPartyMonToBattleData(battlerId, GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battlerId]));
+                                    CopyPlayerPartyMonToBattleData(battlerId, GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battlerId]), TRUE);
                                     if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER && gBattleResults.numRevivesUsed < 255)
                                         gBattleResults.numRevivesUsed++;
                                 }
@@ -5505,13 +5536,13 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_FRIENDSHIP_DAY:
-                RtcCalcLocalTime();
-                if (gLocalTime.hours >= DAY_EVO_HOUR_BEGIN && gLocalTime.hours < DAY_EVO_HOUR_END && friendship >= FRIENDSHIP_EVO_THRESHOLD)
+                UpdateTimeOfDay();
+                if (gTimeOfDay == TIME_OF_DAY_DAY && friendship >= FRIENDSHIP_EVO_THRESHOLD)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_FRIENDSHIP_NIGHT:
-                RtcCalcLocalTime();
-                if (gLocalTime.hours >= NIGHT_EVO_HOUR_BEGIN && gLocalTime.hours < NIGHT_EVO_HOUR_END && friendship >= FRIENDSHIP_EVO_THRESHOLD)
+                UpdateTimeOfDay();
+                if (gTimeOfDay == TIME_OF_DAY_NIGHT && friendship >= FRIENDSHIP_EVO_THRESHOLD)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_LEVEL:
@@ -6258,12 +6289,29 @@ u32 CanSpeciesLearnTMHM(u16 species, u8 tm)
     }
 }
 
+static u16 GetPreEvolution(u16 species)
+{
+    int i, j;
+
+    for (i = 1; i < NUM_SPECIES; i++)
+    {
+        for (j = 0; j < EVOS_PER_MON; j++)
+        {
+            if (gEvolutionTable[i][j].targetSpecies == species)
+                return i;
+        }
+    }
+
+    return SPECIES_NONE;
+}
+
 u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
 {
     u16 learnedMoves[MAX_MON_MOVES];
     u8 numMoves = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
+    u8 preEvLvl = (level > MAX_LEVEL_DIFF_PRE_EV) ? (level - MAX_LEVEL_DIFF_PRE_EV) : 1;
     int i, j, k;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
@@ -6274,6 +6322,12 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
         u16 moveLevel;
 
         if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
+        {
+            i = 0;
+            level = preEvLvl;
+            species = GetPreEvolution(species);
+        }
+        if (species == SPECIES_NONE)
             break;
 
         moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
@@ -6315,6 +6369,7 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
     u8 numMoves = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
+    u8 preEvLvl = (level > MAX_LEVEL_DIFF_PRE_EV) ? (level - MAX_LEVEL_DIFF_PRE_EV) : 1;
     int i, j, k;
 
     if (species == SPECIES_EGG)
@@ -6328,6 +6383,12 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
         u16 moveLevel;
 
         if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
+        {
+            i = 0;
+            level = preEvLvl;
+            species = GetPreEvolution(species);
+        }
+        if (species == SPECIES_NONE)
             break;
 
         moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
@@ -6968,10 +7029,12 @@ static bool8 ShouldSkipFriendshipChange(void)
 #define ALLOC_FAIL_BUFFER (1 << 0)
 #define ALLOC_FAIL_STRUCT (1 << 1)
 #define GFX_MANAGER_ACTIVE 0xA3 // Arbitrary value
+#define GFX_MANAGER_SPR_SIZE (MON_PIC_SIZE * 4)
+#define GFX_MANAGER_NUM_FRAMES 2
 
 static void InitMonSpritesGfx_Battle(struct MonSpritesGfxManager* gfx)
 {
-    u16 i, j;
+    u32 i, j;
     for (i = 0; i < gfx->numSprites; i++)
     {
         gfx->templates[i] = gBattlerSpriteTemplates[i];
@@ -6997,41 +7060,21 @@ static void InitMonSpritesGfx_FullParty(struct MonSpritesGfxManager* gfx)
     }
 }
 
-struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
+struct MonSpritesGfxManager *CreateMonSpritesGfxManager(void)
 {
-    u8 i;
+    u32 i;
     u8 failureFlags;
     struct MonSpritesGfxManager *gfx;
 
     failureFlags = 0;
-    managerId %= MON_SPR_GFX_MANAGERS_COUNT;
     gfx = AllocZeroed(sizeof(*gfx));
     if (gfx == NULL)
         return NULL;
 
-    switch (mode)
-    {
-    case MON_SPR_GFX_MODE_FULL_PARTY:
-        gfx->numSprites = PARTY_SIZE + 1;
-        gfx->numSprites2 = PARTY_SIZE + 1;
-        gfx->numFrames = MAX_MON_PIC_FRAMES;
-        gfx->dataSize = 1;
-        gfx->mode = MON_SPR_GFX_MODE_FULL_PARTY;
-        break;
- // case MON_SPR_GFX_MODE_BATTLE:
-    case MON_SPR_GFX_MODE_NORMAL:
-    default:
-        gfx->numSprites = MAX_BATTLERS_COUNT;
-        gfx->numSprites2 = MAX_BATTLERS_COUNT;
-        gfx->numFrames = MAX_MON_PIC_FRAMES;
-        gfx->dataSize = 1;
-        gfx->mode = MON_SPR_GFX_MODE_NORMAL;
-        break;
-    }
-
-    // Set up sprite / sprite pointer buffers
-    gfx->spriteBuffer = AllocZeroed(gfx->dataSize * MON_PIC_SIZE * MAX_MON_PIC_FRAMES * gfx->numSprites);
-    gfx->spritePointers = AllocZeroed(gfx->numSprites * 32); // ? Only * 4 is necessary, perhaps they were thinking bits.
+    gfx->numSprites = MAX_BATTLERS_COUNT;
+    gfx->numFrames = GFX_MANAGER_NUM_FRAMES;
+    gfx->spriteBuffer = AllocZeroed(GFX_MANAGER_SPR_SIZE * gfx->numSprites);
+    gfx->spritePointers = AllocZeroed(gfx->numSprites * 4);
     if (gfx->spriteBuffer == NULL || gfx->spritePointers == NULL)
     {
         failureFlags |= ALLOC_FAIL_BUFFER;
@@ -7039,7 +7082,7 @@ struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
     else
     {
         for (i = 0; i < gfx->numSprites; i++)
-            gfx->spritePointers[i] = gfx->spriteBuffer + (gfx->dataSize * MON_PIC_SIZE * MAX_MON_PIC_FRAMES * i);
+            gfx->spritePointers[i] = gfx->spriteBuffer + (GFX_MANAGER_SPR_SIZE * i);
     }
 
     // Set up sprite structs
@@ -7054,17 +7097,7 @@ struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
         for (i = 0; i < gfx->numFrames * gfx->numSprites; i++)
             gfx->frameImages[i].size = MON_PIC_SIZE;
 
-        switch (gfx->mode)
-        {
-        case MON_SPR_GFX_MODE_FULL_PARTY:
-            InitMonSpritesGfx_FullParty(gfx);
-            break;
-        case MON_SPR_GFX_MODE_NORMAL:
-        case MON_SPR_GFX_MODE_BATTLE:
-        default:
-            InitMonSpritesGfx_Battle(gfx);
-            break;
-        }
+        InitMonSpritesGfx_Battle(gfx);
     }
 
     // If either of the allocations failed free their respective members
@@ -7087,27 +7120,21 @@ struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
     }
     else
     {
-        gfx->active = GFX_MANAGER_ACTIVE;
-        sMonSpritesGfxManagers[managerId] = gfx;
+        gfx->active = TRUE;
+        sMonSpritesGfxManager = gfx;
     }
 
-    return sMonSpritesGfxManagers[managerId];
+    return sMonSpritesGfxManager;
 }
 
-void DestroyMonSpritesGfxManager(u8 managerId)
+void DestroyMonSpritesGfxManager(void)
 {
-    struct MonSpritesGfxManager *gfx;
+    struct MonSpritesGfxManager *gfx = sMonSpritesGfxManager;
 
-    managerId %= MON_SPR_GFX_MANAGERS_COUNT;
-    gfx = sMonSpritesGfxManagers[managerId];
     if (gfx == NULL)
         return;
 
-    if (gfx->active != GFX_MANAGER_ACTIVE)
-    {
-        memset(gfx, 0, sizeof(*gfx));
-    }
-    else
+    if (gfx->active)
     {
         TRY_FREE_AND_SET_NULL(gfx->frameImages);
         TRY_FREE_AND_SET_NULL(gfx->templates);
@@ -7116,20 +7143,21 @@ void DestroyMonSpritesGfxManager(u8 managerId)
         memset(gfx, 0, sizeof(*gfx));
         Free(gfx);
     }
+    else
+        memset(gfx, 0, sizeof(*gfx));
 }
 
-u8 *MonSpritesGfxManager_GetSpritePtr(u8 managerId, u8 spriteNum)
+u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
 {
-    struct MonSpritesGfxManager *gfx = sMonSpritesGfxManagers[managerId % MON_SPR_GFX_MANAGERS_COUNT];
-    if (gfx->active != GFX_MANAGER_ACTIVE)
-    {
-        return NULL;
-    }
-    else
+    struct MonSpritesGfxManager *gfx = sMonSpritesGfxManager;
+
+    if (gfx->active)
     {
         if (spriteNum >= gfx->numSprites)
             spriteNum = 0;
 
         return gfx->spritePointers[spriteNum];
     }
+
+    return NULL;
 }

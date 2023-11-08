@@ -307,6 +307,19 @@
 #define BATTLE_TERRAIN_CAVE         7
 #define BATTLE_TERRAIN_BUILDING     8
 #define BATTLE_TERRAIN_PLAIN        9
+#define BATTLE_TERRAIN_FRONTIER     10
+#define BATTLE_TERRAIN_GYM          11
+#define BATTLE_TERRAIN_LEADER       12
+#define BATTLE_TERRAIN_MAGMA        13
+#define BATTLE_TERRAIN_AQUA         14
+#define BATTLE_TERRAIN_SIDNEY       15
+#define BATTLE_TERRAIN_PHOEBE       16
+#define BATTLE_TERRAIN_GLACIA       17
+#define BATTLE_TERRAIN_DRAKE        18
+#define BATTLE_TERRAIN_CHAMPION     19
+#define BATTLE_TERRAIN_GROUDON      20
+#define BATTLE_TERRAIN_KYOGRE       21
+#define BATTLE_TERRAIN_RAYQUAZA     22
 
 #define B_WAIT_TIME_LONG  64
 #define B_WAIT_TIME_MED   48
@@ -339,7 +352,7 @@
 #define B_WIN_MOVE_NAME_3         5 // Bottom left
 #define B_WIN_MOVE_NAME_4         6 // Bottom right
 #define B_WIN_PP                  7
-#define B_WIN_DUMMY               8
+#define B_WIN_PSS_ICON            8
 #define B_WIN_PP_REMAINING        9
 #define B_WIN_MOVE_TYPE          10
 #define B_WIN_SWITCH_PROMPT      11 // "Switch which?"
@@ -355,6 +368,10 @@
 #define B_WIN_VS_OUTCOME_DRAW    21
 #define B_WIN_VS_OUTCOME_LEFT    22
 #define B_WIN_VS_OUTCOME_RIGHT   23
+#define B_WIN_TYPE_SUPER_EFF     24
+#define B_WIN_TYPE_NOT_VERY_EFF  25
+#define B_WIN_TYPE_NO_EFF        26
+#define B_WIN_MOVE_DESCRIPTION   27
 
 // The following are duplicate id values for windows that Battle Arena uses differently.
 #define ARENA_WIN_PLAYER_NAME      15
