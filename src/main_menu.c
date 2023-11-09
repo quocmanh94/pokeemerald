@@ -4,6 +4,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "data.h"
 #include "decompress.h"
 #include "event_data.h"
 #include "field_effect.h"
@@ -453,8 +454,8 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {gText_BirchBoy, NULL},
-    {gText_BirchGirl, NULL}
+    {gText_BirchBoy, {NULL}},
+    {gText_BirchGirl, {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
@@ -503,7 +504,9 @@ static const u8 *const sFemalePresetNames[] = {
     gText_DefaultNameHalie
 };
 
-// .text
+// The number of male vs. female names is assumed to be the same.
+// If they aren't, the smaller of the two sizes will be used and any extra names will be ignored.
+#define NUM_PRESET_NAMES min(ARRAY_COUNT(sMalePresetNames), ARRAY_COUNT(sFemalePresetNames))
 
 enum
 {
@@ -1084,8 +1087,8 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
             case ACTION_INVALID:
                 gTasks[taskId].tCurrItem = 0;
                 gTasks[taskId].func = Task_DisplayMainMenuInvalidActionError;
-                gPlttBufferUnfaded[0xF1] = RGB_WHITE;
-                gPlttBufferFaded[0xF1] = RGB_WHITE;
+                gPlttBufferUnfaded[BG_PLTT_ID(15) + 1] = RGB_WHITE;
+                gPlttBufferFaded[BG_PLTT_ID(15) + 1] = RGB_WHITE;
                 SetGpuReg(REG_OFFSET_BG2HOFS, 0);
                 SetGpuReg(REG_OFFSET_BG2VOFS, 0);
                 SetGpuReg(REG_OFFSET_BG1HOFS, 0);
@@ -1597,7 +1600,7 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8 taskId)
     {
         FreeAllWindowBuffers();
         FreeAndDestroyMonPicSprite(gTasks[taskId].tLotadSpriteId);
-        NewGameBirchSpeech_SetDefaultPlayerName(Random() % 20);
+        NewGameBirchSpeech_SetDefaultPlayerName(Random() % NUM_PRESET_NAMES);
         DestroyTask(taskId);
         DoNamingScreen(NAMING_SCREEN_PLAYER, gSaveBlock2Ptr->playerName, gSaveBlock2Ptr->playerGender, 0, 0, CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
     }
@@ -1898,7 +1901,7 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[brendanSpriteId].invisible = TRUE;
     gSprites[brendanSpriteId].oam.priority = 0;
     gTasks[taskId].tBrendanSpriteId = brendanSpriteId;
-    maySpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MAY), 120, 60, 0, &gDecompressionBuffer[0x800]);
+    maySpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MAY), 120, 60, 0, &gDecompressionBuffer[TRAINER_PIC_SIZE]);
     gSprites[maySpriteId].callback = SpriteCB_Null;
     gSprites[maySpriteId].invisible = TRUE;
     gSprites[maySpriteId].oam.priority = 0;
