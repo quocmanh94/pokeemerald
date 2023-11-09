@@ -569,19 +569,6 @@ void CompactPCItems(void)
     }
 }
 
-void SwapRegisteredBike(void)
-{
-    switch (gSaveBlock1Ptr->registeredItem)
-    {
-    case ITEM_MACH_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_ACRO_BIKE;
-        break;
-    case ITEM_ACRO_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_MACH_BIKE;
-        break;
-    }
-}
-
 u16 BagGetItemIdByPocketPosition(u8 pocketId, u16 pocketPos)
 {
     return gBagPockets[pocketId - 1].itemSlots[pocketPos].itemId;
@@ -941,4 +928,43 @@ ItemUseFunc ItemId_GetBattleFunc(u16 itemId)
 u8 ItemId_GetSecondaryId(u16 itemId)
 {
     return gItems[SanitizeItemId(itemId)].secondaryId;
+}
+
+bool8 CheckPCHasSpace(u16 itemId, u16 count)
+{
+    u8 i;
+    u16 ownedCount = 0;
+
+    if (InBattlePyramid() || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
+        return FALSE;
+
+    for (i = 0; i < PC_ITEMS_COUNT; i++)
+    {
+        if (gSaveBlock1Ptr->pcItems[i].itemId == itemId)
+            ownedCount = GetPCItemQuantity(&gSaveBlock1Ptr->pcItems[i].quantity);
+    }
+
+    if (ownedCount + count <= MAX_PC_ITEM_CAPACITY)
+        return TRUE;
+
+    if (count > 0)
+    {
+        for (i = 0; i < PC_ITEMS_COUNT; i++)
+        {
+            if (gSaveBlock1Ptr->pcItems[i].itemId == ITEM_NONE)
+            {
+                if (count > PC_ITEMS_COUNT)
+                    count -= PC_ITEMS_COUNT;
+                else
+                {
+                    count = 0;
+                    break;
+                }
+            }
+        }
+        if (count > 0)
+            return FALSE;
+    }
+
+    return TRUE;
 }

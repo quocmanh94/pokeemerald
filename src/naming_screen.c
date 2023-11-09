@@ -38,7 +38,8 @@ enum {
     INPUT_DPAD_RIGHT,
     INPUT_A_BUTTON,
     INPUT_B_BUTTON,
-    INPUT_LR_BUTTON,
+    INPUT_L_BUTTON,
+    INPUT_R_BUTTON,
     INPUT_SELECT,
     INPUT_START,
 };
@@ -375,6 +376,7 @@ static u8 GetTextEntryPosition(void);
 static void DeleteTextCharacter(void);
 static bool8 AddTextCharacter(void);
 static void BufferCharacter(u8);
+static void ChangeCharacter(void);
 static void SaveInputText(void);
 static void LoadGfx(void);
 static void CreateHelperTasks(void);
@@ -1395,7 +1397,7 @@ static void NamingScreen_NoIcon(void)
 
 static void NamingScreen_CreatePlayerIcon(void)
 {
-    u8 rivalGfxId;
+    u16 rivalGfxId;
     u8 spriteId;
 
     rivalGfxId = GetRivalAvatarGraphicsIdByStateIdAndGender(PLAYER_AVATAR_STATE_NORMAL, sNamingScreen->monSpecies);
@@ -1416,9 +1418,18 @@ static void NamingScreen_CreatePCIcon(void)
 static void NamingScreen_CreateMonIcon(void)
 {
     u8 spriteId;
+    u8 index;
 
     LoadMonIconPalettes();
     spriteId = CreateMonIcon(sNamingScreen->monSpecies, SpriteCallbackDummy, 56, 40, 0, sNamingScreen->monPersonality, 1);
+    index = IndexOfSpritePaletteTag(56000);
+    if (index < 16)
+    {
+        u32 otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
+        const u32 *palette = GetMonSpritePalFromSpeciesAndPersonality(sNamingScreen->monSpecies, otId, sNamingScreen->monPersonality);
+        LoadCompressedPalette(palette, OBJ_PLTT_ID(index), PLTT_SIZE_4BPP);
+        gSprites[spriteId].oam.paletteNum = index;
+    }
     gSprites[spriteId].oam.priority = 3;
 }
 
@@ -1460,6 +1471,11 @@ static bool8 HandleKeyboardEvent(void)
     else if (input == INPUT_B_BUTTON)
     {
         DeleteTextCharacter();
+        return FALSE;
+    }
+    else if (input == INPUT_R_BUTTON)
+    {
+        ChangeCharacter();
         return FALSE;
     }
     else if (input == INPUT_START)
@@ -1586,6 +1602,8 @@ static void Input_Enabled(struct Task *task)
         task->tKeyboardEvent = INPUT_A_BUTTON;
     else if (JOY_NEW(B_BUTTON))
         task->tKeyboardEvent = INPUT_B_BUTTON;
+    else if (JOY_NEW(R_BUTTON))
+        task->tKeyboardEvent = INPUT_R_BUTTON;
     else if (JOY_NEW(SELECT_BUTTON))
         task->tKeyboardEvent = INPUT_SELECT;
     else if (JOY_NEW(START_BUTTON))
@@ -1846,6 +1864,27 @@ static void BufferCharacter(u8 ch)
 {
     u8 index = GetTextEntryPosition();
     sNamingScreen->textBuffer[index] = ch;
+}
+
+static void ChangeCharacter(void)
+{
+    u8 index = GetPreviousTextCaretPosition();
+
+    if (sNamingScreen->textBuffer[index] >= CHAR_A && sNamingScreen->textBuffer[index] <= CHAR_Z)
+    {
+        sNamingScreen->textBuffer[index] = sNamingScreen->textBuffer[index] + 0x1A;
+    }
+    else if (sNamingScreen->textBuffer[index] >= CHAR_a && sNamingScreen->textBuffer[index] <= CHAR_z)
+    {
+        sNamingScreen->textBuffer[index] = sNamingScreen->textBuffer[index] - 0x1A;
+    }
+    else
+    {
+        sNamingScreen->textBuffer[index] = sNamingScreen->textBuffer[index];
+    }
+    DrawTextEntry();
+    CopyBgTilemapBufferToVram(3);
+    PlaySE(SE_SELECT);
 }
 
 static void SaveInputText(void)
@@ -2584,5 +2623,3 @@ static const struct SpritePalette sSpritePalettes[] =
     {gNamingScreenMenu_Pal[4], PALTAG_OK_BUTTON},
     {}
 };
-
-
