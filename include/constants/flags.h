@@ -512,12 +512,12 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_DIFFICULTY_MODE                 0x1DE
+#define FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW  0x1DF
+#define FLAG_SHINY_CREATION                  0x1E0
+#define FLAG_GETTING_DAYCARE_EGG             0x1E1
+#define FLAG_GETTING_ALL_BIKES               0x1E2
+#define FLAG_SELF_TRADE                      0x1E3
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4

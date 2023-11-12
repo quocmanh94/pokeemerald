@@ -90,11 +90,14 @@ static void InitPlayerTrainerId(void)
 // L=A isnt set here for some reason.
 static void SetDefaultOptions(void)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
+    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
-    gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
+    gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
+    gSaveBlock2Ptr->optionsDifficulty = OPTIONS_DIFFICULTY_NORMAL;
+    gSaveBlock2Ptr->optionTypeEffective = FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    gSaveBlock2Ptr->optionSelfTrade = FlagSet(FLAG_SELF_TRADE);
     gSaveBlock2Ptr->regionMapZoom = FALSE;
 }
 
@@ -148,6 +151,9 @@ void ResetMenuAndMonGlobals(void)
 
 void NewGameInitData(void)
 {
+    bool8 difficultyActive = FlagGet(FLAG_DIFFICULTY_MODE);
+    bool8 typeEffectiveActive = FlagGet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    bool8 selfTradeActive = FlagGet(FLAG_SELF_TRADE);
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
         RtcReset();
 
@@ -183,6 +189,7 @@ void NewGameInitData(void)
     ClearRoamerData();
     ClearRoamerLocationData();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
+    gSaveBlock1Ptr->registeredLongItem = ITEM_NONE;
     ClearBag();
     NewGameInitPCItems();
     ClearPokeblocks();
@@ -204,6 +211,9 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
+    difficultyActive ? FlagSet(FLAG_DIFFICULTY_MODE) : FlagClear(FLAG_DIFFICULTY_MODE);
+    typeEffectiveActive ? FlagSet(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW) : FlagClear(FLAG_TYPE_EFFECTIVENESS_BATTLE_SHOW);
+    selfTradeActive ? FlagSet(FLAG_SELF_TRADE) : FlagClear(FLAG_SELF_TRADE);
 }
 
 static void ResetMiniGamesRecords(void)
