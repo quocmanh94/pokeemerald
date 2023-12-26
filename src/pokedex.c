@@ -14,6 +14,7 @@
 #include "overworld.h"
 #include "palette.h"
 #include "pokedex.h"
+#include "pokedex_plus.h"
 #include "pokedex_area_screen.h"
 #include "pokedex_cry_screen.h"
 #include "scanline_effect.h"
@@ -1590,6 +1591,12 @@ static void ResetPokedexView(struct PokedexView *pokedexView)
 
 void CB2_OpenPokedex(void)
 {
+    if (HGSS_DEX)
+    {
+        CB2_OpenPokedexPlus();
+        return;
+    }
+
     switch (gMain.state)
     {
     case 0:
@@ -3937,7 +3944,12 @@ static void HighlightSubmenuScreenSelectBarItem(u8 a, u16 b)
 
 u8 DisplayCaughtMonDexPage(u16 dexNum, u32 otId, u32 personality)
 {
-    u8 taskId = CreateTask(Task_DisplayCaughtMonDexPage, 0);
+    u8 taskId = 0;
+
+    if (HGSS_DEX)
+        taskId = CreateTask(Task_DisplayCaughtMonDexPagePlus, 0);
+    else
+        taskId = CreateTask(Task_DisplayCaughtMonDexPage, 0);
 
     gTasks[taskId].tState = 0;
     gTasks[taskId].tDexNum = dexNum;

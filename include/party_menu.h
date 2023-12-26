@@ -90,5 +90,6 @@ void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 int MoveToHM(u16 move);
+bool8 CanLearnTutorMove(u16, u8);
 
 #endif // GUARD_PARTY_MENU_H
