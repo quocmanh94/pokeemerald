@@ -98,7 +98,6 @@ struct LockedAnimObjectEvents
 extern const struct OamData gObjectEventBaseOam_32x8;
 extern const struct OamData gObjectEventBaseOam_32x32;
 extern const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[];
-extern const u8 gReflectionEffectPaletteMap[];
 
 extern const u8 *const gBerryTreeObjectEventGraphicsIdTablePointers[];
 extern const struct SpriteFrameImage *const gBerryTreePicTablePointers[];
@@ -112,10 +111,7 @@ u8 GetObjectEventIdByXY(s16 x, s16 y);
 void SetObjectEventDirection(struct ObjectEvent *objectEvent, u8 direction);
 u8 GetFirstInactiveObjectEventId(void);
 void RemoveObjectEventByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup);
-void LoadPlayerObjectReflectionPalette(u16 tag, u8 slot);
-void LoadSpecialObjectReflectionPalette(u16 tag, u8 slot);
 void TryMoveObjectEventToMapCoords(u8 localId, u8 mapNum, u8 mapGroup, s16 x, s16 y);
-void PatchObjectPalette(u16 paletteTag, u8 paletteSlot);
 void SpawnObjectEventsOnReturnToField(s16 x, s16 y);
 void OverrideSecretBaseDecorationSpriteScript(u8 localId, u8 mapNum, u8 mapGroup, u8 decorCat);
 void GetMapCoordsFromSpritePos(s16 x, s16 y, s16 *destX, s16 *destY);
@@ -144,7 +140,6 @@ void ObjectEventGetLocalIdAndMap(struct ObjectEvent *objectEvent, void *localId,
 void ShiftObjectEventCoords(struct ObjectEvent *, s16 x, s16 y);
 void MoveObjectEventToMapCoords(struct ObjectEvent *, s16 x, s16 y);
 void TryOverrideObjectEventTemplateCoords(u8 localId, u8 mapNum, u8 mapGroup);
-void InitObjectEventPalettes(u8 palSlot);
 void UpdateObjectEventCurrentMovement(struct ObjectEvent *, struct Sprite *, bool8(struct ObjectEvent *, struct Sprite *));
 u8 ObjectEventFaceOppositeDirection(struct ObjectEvent *, u8 direction);
 u8 GetOppositeDirection(u8 direction);
@@ -213,7 +208,6 @@ u8 GetMoveDirectionFasterAnimNum(u8 direction);
 u8 GetMoveDirectionFastestAnimNum(u8 direction);
 u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction);
 void CameraObjectSetFollowedSpriteId(u8 objectId);
-u16 GetObjectPaletteTag(u8 palSlot);
 void UpdateObjectEventSpriteInvisibility(struct Sprite *sprite, bool8 invisible);
 s16 GetFigure8XOffset(s16 idx);
 s16 GetFigure8YOffset(s16 idx);
@@ -221,6 +215,8 @@ void CameraObjectFreeze(void);
 u8 GetObjectEventBerryTreeId(u8 objectEventId);
 void SetBerryTreeJustPicked(u8 mapId, u8 mapNumber, u8 mapGroup);
 bool8 IsBerryTreeSparkling(u8 localId, u8 mapNum, u8 mapGroup);
+u8 LoadObjectEventPalette(u16 paletteTag);
+u8 UpdateSpritePaletteByTemplate(const struct SpriteTemplate *template, struct Sprite *sprite);
 
 void MovementType_None(struct Sprite *);
 void MovementType_LookAround(struct Sprite *);
