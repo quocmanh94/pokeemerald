@@ -324,6 +324,22 @@ void MovementType_Player(struct Sprite *sprite)
     UpdateObjectEventCurrentMovement(&gObjectEvents[sprite->data[0]], sprite, (bool8 (*)(struct ObjectEvent *, struct Sprite *))ObjectEventCB2_NoMovement2);
 }
 
+static void TryHidePlayerReflection(void)
+{
+    if (gObjectEvents[gPlayerAvatar.objectEventId].hasReflection)
+    {
+        s16 x, y;
+        struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+        x = playerObjEvent->currentCoords.x;
+        y = playerObjEvent->currentCoords.y;
+        MoveCoords(DIR_SOUTH, &x, &y);
+        if (!MetatileBehavior_IsReflective(MapGridGetMetatileBehaviorAt(x, y)))
+            playerObjEvent->hideReflection = TRUE;
+        else
+            playerObjEvent->hideReflection = FALSE;
+    }
+}
+
 static u8 ObjectEventCB2_NoMovement2(void)
 {
     return 0;
@@ -336,6 +352,7 @@ void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
     HideShowWarpArrow(playerObjEvent);
     if (gPlayerAvatar.preventStep == FALSE)
     {
+        TryHidePlayerReflection();
         Bike_TryAcroBikeHistoryUpdate(newKeys, heldKeys);
         if (TryInterruptObjectEventSpecialAnim(playerObjEvent, direction) == 0)
         {
@@ -346,6 +363,7 @@ void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
                 MovePlayerAvatarUsingKeypadInput(direction, newKeys, heldKeys);
                 PlayerAllowForcedMovementIfMovingSameDirection();
             }
+            TryHidePlayerReflection();
         }
     }
 }
