@@ -821,6 +821,43 @@ static u8 GetBattleEnvironmentByMapScene(u8 mapBattleScene)
     return BATTLE_ENVIRONMENT_PLAIN;
 }
 
+static const void *GetBattleEnvironmentPalette(u16 environment)
+{
+    if (environment >= NELEMS(sBattleEnvironmentTable))
+        environment = BATTLE_ENVIRONMENT_PLAIN;
+
+    UpdateTimeOfDay();
+
+    if (environment == BATTLE_ENVIRONMENT_RAYQUAZA && gTimeOfDay == TIME_OF_DAY_NIGHT)
+        return gBattleEnvironmentPalette_Rayquaza_Night;
+
+    if (environment == BATTLE_ENVIRONMENT_POND && gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+        return gBattleEnvironmentPalette_PondWater_Cave;
+
+    if (gTimeOfDay == TIME_OF_DAY_NIGHT && gMapHeader.mapType != MAP_TYPE_INDOOR)
+    {
+        switch (environment)
+        {
+        case BATTLE_ENVIRONMENT_GRASS:
+            return gBattleEnvironmentPalette_TallGrass_Night;
+        case BATTLE_ENVIRONMENT_LONG_GRASS:
+            return gBattleEnvironmentPalette_LongGrass_Night;
+        case BATTLE_ENVIRONMENT_WATER:
+            return gBattleEnvironmentPalette_Water_Night;
+        case BATTLE_ENVIRONMENT_PLAIN:
+            return gBattleEnvironmentPalette_Plain_Night;
+        case BATTLE_ENVIRONMENT_MOUNTAIN:
+            return gBattleEnvironmentPalette_Rock_Night;
+        case BATTLE_ENVIRONMENT_SAND:
+            return gBattleEnvironmentPalette_Sand_Night;
+        case BATTLE_ENVIRONMENT_POND:
+            return gBattleEnvironmentPalette_PondWater_Night;
+        }
+    }
+
+    return sBattleEnvironmentTable[environment].palette;
+}
+
 static void LoadBattleEnvironmentGfx(u16 environment)
 {
     if (environment >= NELEMS(sBattleEnvironmentTable))
@@ -828,7 +865,7 @@ static void LoadBattleEnvironmentGfx(u16 environment)
 
     LZDecompressVram(sBattleEnvironmentTable[environment].tileset, (void *)BG_CHAR_ADDR(2));
     LZDecompressVram(sBattleEnvironmentTable[environment].tilemap, (void *)BG_SCREEN_ADDR(26));
-    LoadCompressedPalette(sBattleEnvironmentTable[environment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    LoadCompressedPalette(GetBattleEnvironmentPalette(environment), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
 }
 
 static void LoadBattleEnvironmentEntryGfx(u16 environment)
@@ -1288,7 +1325,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
         LZDecompressVram(sBattleEnvironmentTable[GetBattleEnvironmentOverride()].tilemap, (void *)BG_SCREEN_ADDR(26));
         break;
     case 5:
-        LoadCompressedPalette(sBattleEnvironmentTable[GetBattleEnvironmentOverride()].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        LoadCompressedPalette(GetBattleEnvironmentPalette(GetBattleEnvironmentOverride()), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         break;
     case 6:
         LoadBattleMenuWindowGfx();

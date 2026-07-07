@@ -45,14 +45,16 @@
 #include "constants/layouts.h"
 #include "constants/moves.h"
 #include "constants/songs.h"
+#include "constants/time_of_day.h"
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 
-#define DAY_EVO_HOUR_BEGIN       12
-#define DAY_EVO_HOUR_END         HOURS_PER_DAY
+// Real time (not the settimeofday override), matching when gTimeOfDay switches.
+#define DAY_EVO_HOUR_BEGIN       TIME_MORNING_DAY_START_HOUR
+#define DAY_EVO_HOUR_END         TIME_EVENING_NIGHT_START_HOUR
 
-#define NIGHT_EVO_HOUR_BEGIN     0
-#define NIGHT_EVO_HOUR_END       12
+#define NIGHT_EVO_HOUR_BEGIN     TIME_EVENING_NIGHT_START_HOUR
+#define NIGHT_EVO_HOUR_END       TIME_MORNING_DAY_START_HOUR
 
 #define FRIENDSHIP_EVO_THRESHOLD 220
 
@@ -5539,7 +5541,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
                 break;
             case EVO_FRIENDSHIP_NIGHT:
                 RtcCalcLocalTime();
-                if (gLocalTime.hours >= NIGHT_EVO_HOUR_BEGIN && gLocalTime.hours < NIGHT_EVO_HOUR_END && friendship >= FRIENDSHIP_EVO_THRESHOLD)
+                if ((gLocalTime.hours >= NIGHT_EVO_HOUR_BEGIN || gLocalTime.hours < NIGHT_EVO_HOUR_END) && friendship >= FRIENDSHIP_EVO_THRESHOLD)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_LEVEL:

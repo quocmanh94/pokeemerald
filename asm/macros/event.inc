@@ -1729,11 +1729,23 @@
 	.4byte \text
 	.endm
 
-	@ Equivalent to fadescreen but copies gPlttBufferUnfaded to gPaletteDecompressionBuffer on the fade out
-	@ and the reverse on the fade in, in effect saving gPlttBufferUnfaded to restore it.
-	.macro fadescreenswapbuffers mode:req
+	@ Equivalent to fadescreen but uses a hardware fade and darken/lighten blend modes,
+	@ to avoid modifying palettes at all.
+	@ Useful for fade-out/fade-in without leaving the overworld or entering a new scene.
+	@ If nowait set, doesn't wait for the fade to complete.
+	.macro fadescreenswapbuffers mode:req, nowait=0
 	.byte SCR_OP_FADESCREENSWAPBUFFERS
 	.byte \mode
+	.byte \nowait
+	.endm
+
+	@ Overrides the apparent hour used for the overworld day/night tint and street lights.
+	@ hours: 1-24 to force that hour (24 = midnight), HOURS_NO_OVERRIDE to follow the RTC again,
+	@ HOURS_BLEND_ONCE to re-apply the current tint once, or HOURS_FREEZE_BLEND to freeze it.
+	@ The override is cleared on every warp. See include/constants/time_of_day.h.
+	.macro settimeofday hours:req
+	.byte SCR_OP_SETTIMEOFDAY
+	.byte \hours
 	.endm
 
 	@ Buffers the specified trainer's class name to the given string var.
