@@ -1636,6 +1636,13 @@ static bool8 CanPlaceDecoration(u8 taskId, const struct Decoration *decoration)
         }
         break;
     }
+    if (decoration->permission == DECORPERM_SPRITE)
+    {
+        for (i = 0; i < NUM_DECORATION_FLAGS; i++)
+            if (FlagGet(FLAG_DECORATION_1 + i) == TRUE)
+                return TRUE;
+        return FALSE;
+    }
     return TRUE;
 }
 
@@ -2131,7 +2138,7 @@ static u8 AddDecorationIconObjectFromObjectEvent(u16 tilesTag, u16 paletteTag, u
     }
     else
     {
-        spriteId = CreateObjectGraphicsSprite(sPlaceDecorationGraphicsDataBuffer.decoration->tiles[0], SpriteCallbackDummy, 0, 0, 1);
+        spriteId = CreateObjectGraphicsSpriteWithTag(sPlaceDecorationGraphicsDataBuffer.decoration->tiles[0], SpriteCallbackDummy, 0, 0, 1, paletteTag);
     }
     return spriteId;
 }
