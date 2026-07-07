@@ -63,8 +63,11 @@ typedef void (*TilesetCB)(void);
 
 struct Tileset
 {
-    /*0x00*/ bool8 isCompressed;
+    /*0x00*/ u8 isCompressed:1;
+    /*0x00*/ u8 swapPalettes:7;
     /*0x01*/ bool8 isSecondary;
+    /*0x02*/ u8 lightPalettes;
+    /*0x03*/ u8 customLightColor;
     /*0x04*/ const u32 *tiles;
     /*0x08*/ const u16 (*palettes)[16];
     /*0x0C*/ const u16 *metatiles;
