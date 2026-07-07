@@ -297,10 +297,12 @@ static void None_Init(void)
 {
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 0;
+    Weather_SetTargetBlendCoeffs(9, 11, 0);
 }
 
 static void None_Main(void)
 {
+    Weather_UpdateBlend();
 }
 
 static u8 None_Finish(void)
@@ -393,6 +395,7 @@ static bool8 FadeInScreen_RainShowShade(void)
     }
 
     ApplyColorMapWithBlend(0, 32, 3, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
+    RefadeShadowColor(PALETTES_OBJECTS >> 16, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
     return TRUE;
 }
 
@@ -409,6 +412,7 @@ static bool8 FadeInScreen_Drought(void)
     }
 
     ApplyDroughtColorMapWithBlend(-6, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
+    RefadeShadowColor(PALETTES_OBJECTS >> 16, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
     return TRUE;
 }
 
@@ -419,6 +423,7 @@ static bool8 FadeInScreen_FogHorizontal(void)
 
     gWeatherPtr->fadeScreenCounter++;
     ApplyFogBlend(16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
+    RefadeShadowColor(PALETTES_OBJECTS >> 16, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
     return TRUE;
 }
 
@@ -703,6 +708,98 @@ void ApplyWeatherColorMapIfIdle_Gradual(u8 colorMapIndex, u8 targetColorMapIndex
     }
 }
 
+// These weathers fade the screen in through their own palette processing
+// (see FadeInScreenWithWeather) instead of a software palette fade.
+static bool8 UsesWeatherScreenFadeIn(u8 weather)
+{
+    switch (weather)
+    {
+    case WEATHER_RAIN:
+    case WEATHER_RAIN_THUNDERSTORM:
+    case WEATHER_DOWNPOUR:
+    case WEATHER_SNOW:
+    case WEATHER_FOG_HORIZONTAL:
+    case WEATHER_SHADE:
+    case WEATHER_DROUGHT:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
+static u16 BlendColor(u16 color, u8 coeff, u16 blendColor)
+{
+    s32 r = GET_R(color);
+    s32 g = GET_G(color);
+    s32 b = GET_B(color);
+
+    r += ((GET_R(blendColor) - r) * coeff) >> 4;
+    g += ((GET_G(blendColor) - g) * coeff) >> 4;
+    b += ((GET_B(blendColor) - b) * coeff) >> 4;
+    return RGB2(r, g, b);
+}
+
+// Shadows are semi-transparent sprites, blended over the ground as
+// (EVA * shadow + EVB * ground) / 16, and the overworld weathers use
+// EVA + EVB > 16. A screen fade blends the shadow color toward the fade color
+// like any opaque color, which leaves the blended shadow brighter than the
+// faded ground around it during a fade with white. Blending the shadow color
+// toward fadeColor * (16 - EVB) / EVA instead fades the blended result exactly
+// like the rest of the screen. For a fade with black this is black again.
+u16 GetShadowFadeColor(u16 fadeColor)
+{
+    u16 bldAlpha = GetGpuReg(REG_OFFSET_BLDALPHA);
+    s32 eva = BLDALPHA_TGT1(bldAlpha);
+    s32 evb = min(BLDALPHA_TGT2(bldAlpha), 16);
+
+    // The shadow isn't visible, so its color doesn't matter.
+    if (eva == 0)
+        return fadeColor;
+
+    // Rounded up, so a fully faded shadow blends to exactly the fade color.
+    return RGB2(min((GET_R(fadeColor) * (16 - evb) + eva - 1) / eva, 31),
+                min((GET_G(fadeColor) * (16 - evb) + eva - 1) / eva, 31),
+                min((GET_B(fadeColor) * (16 - evb) + eva - 1) / eva, 31));
+}
+
+// Blends a shadow color the way the current screen fade needs it blended.
+// Used for shadow colors written directly into gPlttBufferFaded, so they don't
+// stay unfaded while the screen fades or is faded out.
+u16 BlendShadowColorWithScreenFade(u16 color)
+{
+    switch (gWeatherPtr->palProcessingState)
+    {
+    case WEATHER_PAL_STATE_SCREEN_FADING_IN:
+        if (gWeatherPtr->fadeInFirstFrame)
+            return GetShadowFadeColor(gWeatherPtr->fadeDestColor);
+        if (UsesWeatherScreenFadeIn(gWeatherPtr->currWeather))
+            return BlendColor(color, 16 - gWeatherPtr->fadeScreenCounter, GetShadowFadeColor(gWeatherPtr->fadeDestColor));
+        break;
+    case WEATHER_PAL_STATE_SCREEN_FADING_OUT:
+        // Once the fade-out finishes, the screen stays faded until the next fade-in.
+        if (!gPaletteFade.active)
+            return BlendColor(color, gPaletteFade.y, GetShadowFadeColor(gPaletteFade.blendColor));
+        break;
+    }
+
+    if (IsSoftwarePaletteFadeActive())
+        return BlendColor(color, gPaletteFade.y, GetShadowFadeColor(gPaletteFade.blendColor));
+    return color;
+}
+
+// Hardware fades with white brighten the screen with BLDY, which doesn't
+// affect semi-transparent sprites, so the shadow color can't follow them.
+// Shadows are hidden once the screen is close to white (and while fading
+// in from white). The game's scripts only use hardware fades with black.
+#define SHADOW_HIDE_WHITE_FADE_LEVEL 10
+
+bool8 ShouldHideShadowsForScreenFade(void)
+{
+    if (IsHardwarePaletteFadeWithWhiteActive())
+        return gPaletteFade.yDec || gPaletteFade.y >= SHADOW_HIDE_WHITE_FADE_LEVEL;
+    return FALSE;
+}
+
 void FadeScreen(u8 mode, s8 delay)
 {
     u32 fadeColor;
@@ -731,21 +828,7 @@ void FadeScreen(u8 mode, s8 delay)
         return;
     }
 
-    switch (gWeatherPtr->currWeather)
-    {
-    case WEATHER_RAIN:
-    case WEATHER_RAIN_THUNDERSTORM:
-    case WEATHER_DOWNPOUR:
-    case WEATHER_SNOW:
-    case WEATHER_FOG_HORIZONTAL:
-    case WEATHER_SHADE:
-    case WEATHER_DROUGHT:
-        useWeatherPal = TRUE;
-        break;
-    default:
-        useWeatherPal = FALSE;
-        break;
-    }
+    useWeatherPal = UsesWeatherScreenFadeIn(gWeatherPtr->currWeather);
 
     if (fadeOut)
     {
@@ -776,7 +859,7 @@ bool8 IsWeatherNotFadingIn(void)
     return (gWeatherPtr->palProcessingState != WEATHER_PAL_STATE_SCREEN_FADING_IN);
 }
 
-void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
+void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex, bool8 allowFog)
 {
     u16 paletteIndex = 16 + spritePaletteIndex;
     u16 i;
@@ -805,7 +888,7 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
         {
             ApplyColorMap(paletteIndex, 1, gWeatherPtr->colorMapIndex);
         }
-        else
+        else if (allowFog)
         {
             paletteIndex = PLTT_ID(paletteIndex);
             BlendPalette(paletteIndex, 16, 12, RGB(28, 31, 28));
@@ -814,9 +897,9 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
     }
 }
 
-void ApplyWeatherColorMapToPal(u8 paletteIndex)
+void ApplyWeatherColorMapToPal(u8 paletteIndex, u8 numPalettes)
 {
-    ApplyColorMap(paletteIndex, 1, gWeatherPtr->colorMapIndex);
+    ApplyColorMap(paletteIndex, numPalettes, gWeatherPtr->colorMapIndex);
 }
 
 static bool8 UNUSED IsFirstFrameOfWeatherFadeIn(void)
@@ -830,7 +913,7 @@ static bool8 UNUSED IsFirstFrameOfWeatherFadeIn(void)
 void LoadCustomWeatherSpritePalette(const u16 *palette)
 {
     LoadPalette(palette, OBJ_PLTT_ID(gWeatherPtr->weatherPicSpritePalIndex), PLTT_SIZE_4BPP);
-    UpdateSpritePaletteWithWeather(gWeatherPtr->weatherPicSpritePalIndex);
+    UpdateSpritePaletteWithWeather(gWeatherPtr->weatherPicSpritePalIndex, TRUE);
 }
 
 static void LoadDroughtWeatherPalette(u8 *palsIndex, u8 *palsOffset)
