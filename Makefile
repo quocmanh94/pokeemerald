@@ -264,8 +264,10 @@ generated: $(AUTO_GEN_TARGETS)
 
 %.s:   ;
 %.png: ;
-%.pal: ;
 %.wav: ;
+# Touch the .pal file so gbagfx rebuilds .gbapal when the .pla changes
+%.pal: %.pla
+	@touch $@
 
 %.1bpp:   %.png  ; $(GFX) $< $@
 %.4bpp:   %.png  ; $(GFX) $< $@
