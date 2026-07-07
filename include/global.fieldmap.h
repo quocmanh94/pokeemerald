@@ -214,13 +214,12 @@ struct ObjectEvent
              u32 inShallowFlowingWater:1;
              u32 inSandPile:1;
              u32 inHotSprings:1;
-             u32 hasShadow:1;
+             u32 noShadow:1;
              u32 spriteAnimPausedBackup:1;
     /*0x03*/ u32 spriteAffineAnimPausedBackup:1;
              u32 disableJumpLandingGroundEffect:1;
              u32 fixedPriority:1;
              u32 hideReflection:1;
-             //u32 padding:4;
     /*0x04*/ u16 graphicsId;
     /*0x06*/ u8 movementType;
     /*0x07*/ u8 trainerType;
