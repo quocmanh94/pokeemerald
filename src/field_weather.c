@@ -297,10 +297,12 @@ static void None_Init(void)
 {
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 0;
+    Weather_SetTargetBlendCoeffs(9, 11, 0);
 }
 
 static void None_Main(void)
 {
+    Weather_UpdateBlend();
 }
 
 static u8 None_Finish(void)
@@ -776,7 +778,7 @@ bool8 IsWeatherNotFadingIn(void)
     return (gWeatherPtr->palProcessingState != WEATHER_PAL_STATE_SCREEN_FADING_IN);
 }
 
-void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
+void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex, bool8 allowFog)
 {
     u16 paletteIndex = 16 + spritePaletteIndex;
     u16 i;
@@ -805,7 +807,7 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
         {
             ApplyColorMap(paletteIndex, 1, gWeatherPtr->colorMapIndex);
         }
-        else
+        else if (allowFog)
         {
             paletteIndex = PLTT_ID(paletteIndex);
             BlendPalette(paletteIndex, 16, 12, RGB(28, 31, 28));
@@ -814,9 +816,9 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
     }
 }
 
-void ApplyWeatherColorMapToPal(u8 paletteIndex)
+void ApplyWeatherColorMapToPal(u8 paletteIndex, u8 numPalettes)
 {
-    ApplyColorMap(paletteIndex, 1, gWeatherPtr->colorMapIndex);
+    ApplyColorMap(paletteIndex, numPalettes, gWeatherPtr->colorMapIndex);
 }
 
 static bool8 UNUSED IsFirstFrameOfWeatherFadeIn(void)
@@ -830,7 +832,7 @@ static bool8 UNUSED IsFirstFrameOfWeatherFadeIn(void)
 void LoadCustomWeatherSpritePalette(const u16 *palette)
 {
     LoadPalette(palette, OBJ_PLTT_ID(gWeatherPtr->weatherPicSpritePalIndex), PLTT_SIZE_4BPP);
-    UpdateSpritePaletteWithWeather(gWeatherPtr->weatherPicSpritePalIndex);
+    UpdateSpritePaletteWithWeather(gWeatherPtr->weatherPicSpritePalIndex, TRUE);
 }
 
 static void LoadDroughtWeatherPalette(u8 *palsIndex, u8 *palsOffset)
