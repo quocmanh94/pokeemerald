@@ -810,7 +810,7 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
 
     for (paletteIndex = NUM_PALS_IN_PRIMARY; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
-        ApplyWeatherColorMapToPal(paletteIndex);
+        ApplyWeatherColorMapToPal(paletteIndex, 1);
 
     InitSecondaryTilesetAnimation();
     UpdateLocationHistoryForRoamer();
@@ -2106,7 +2106,7 @@ static void InitOverworldGraphicsRegisters(void)
     SetGpuReg(REG_OFFSET_WIN1V, 0xFFFF);
     SetGpuReg(REG_OFFSET_BLDCNT, gOverworldBackgroundLayerFlags[1] | gOverworldBackgroundLayerFlags[2] | gOverworldBackgroundLayerFlags[3]
                                | BLDCNT_TGT2_OBJ | BLDCNT_EFFECT_BLEND);
-    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(13, 7));
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(9, 11));
     InitOverworldBgs();
     ScheduleBgCopyTilemapToVram(1);
     ScheduleBgCopyTilemapToVram(2);

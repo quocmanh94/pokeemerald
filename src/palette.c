@@ -2,6 +2,7 @@
 #include "palette.h"
 #include "util.h"
 #include "decompress.h"
+#include "field_weather.h"
 #include "gpu_regs.h"
 #include "task.h"
 #include "constants/rgb.h"
@@ -415,6 +416,7 @@ static u8 UpdateNormalPaletteFade(void)
 {
     u16 paletteOffset;
     u16 selectedPalettes;
+    u16 blendedPalettes;
 
     if (!gPaletteFade.active)
         return PALETTE_FADE_STATUS_DONE;
@@ -447,6 +449,7 @@ static u8 UpdateNormalPaletteFade(void)
             paletteOffset = OBJ_PLTT_OFFSET;
         }
 
+        blendedPalettes = selectedPalettes;
         while (selectedPalettes)
         {
             if (selectedPalettes & 1)
@@ -458,6 +461,9 @@ static u8 UpdateNormalPaletteFade(void)
             selectedPalettes >>= 1;
             paletteOffset += 16;
         }
+
+        if (gPaletteFade.objPaletteToggle)
+            RefadeShadowColor(blendedPalettes, gPaletteFade.y, gPaletteFade.blendColor);
 
         gPaletteFade.objPaletteToggle ^= 1;
 
@@ -809,6 +815,19 @@ static void UpdateBlendRegisters(void)
         gPaletteFade.y = 0;
         gPaletteFade.active = FALSE;
     }
+}
+
+bool8 IsSoftwarePaletteFadeActive(void)
+{
+    return gPaletteFade.active
+        && gPaletteFade.mode == NORMAL_FADE;
+}
+
+bool8 IsHardwarePaletteFadeWithWhiteActive(void)
+{
+    return gPaletteFade.active
+        && gPaletteFade.mode == HARDWARE_FADE
+        && (gPaletteFade_blendCnt & BLDCNT_EFFECT_EFF_MASK) == BLDCNT_EFFECT_LIGHTEN;
 }
 
 static bool8 IsSoftwarePaletteFadeFinishing(void)
