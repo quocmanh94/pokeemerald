@@ -24,6 +24,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/time_of_day.h"
 
 struct BattleBackground
 {
@@ -757,6 +758,48 @@ void LoadBattleMenuWindowGfx(void)
     }
 }
 
+static const void *GetBattleEnvironmentPalette(u16 environment)
+{
+    if (environment >= ARRAY_COUNT(sBattleEnvironmentTable))
+        environment = BATTLE_ENVIRONMENT_PLAIN;
+
+    UpdateTimeOfDay();
+
+    if (environment == BATTLE_ENVIRONMENT_POND && gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+        return gBattleEnvironmentPalette_PondWater_Cave;
+
+    if (gTimeOfDay == TIME_OF_DAY_NIGHT && gMapHeader.mapType != MAP_TYPE_INDOOR)
+    {
+        switch (environment)
+        {
+        case BATTLE_ENVIRONMENT_GRASS:
+            return gBattleEnvironmentPalette_TallGrass_Night;
+        case BATTLE_ENVIRONMENT_LONG_GRASS:
+            return gBattleEnvironmentPalette_LongGrass_Night;
+        case BATTLE_ENVIRONMENT_WATER:
+            return gBattleEnvironmentPalette_Water_Night;
+        case BATTLE_ENVIRONMENT_PLAIN:
+            return gBattleEnvironmentPalette_Plain_Night;
+        case BATTLE_ENVIRONMENT_MOUNTAIN:
+            return gBattleEnvironmentPalette_Rock_Night;
+        case BATTLE_ENVIRONMENT_SAND:
+            return gBattleEnvironmentPalette_Sand_Night;
+        case BATTLE_ENVIRONMENT_POND:
+            return gBattleEnvironmentPalette_PondWater_Night;
+        }
+    }
+
+    return sBattleEnvironmentTable[environment].palette;
+}
+
+static const void *GetRayquazaBattleEnvironmentPalette(void)
+{
+    UpdateTimeOfDay();
+    if (gTimeOfDay == TIME_OF_DAY_NIGHT)
+        return gBattleEnvironmentPalette_Rayquaza_Night;
+    return gBattleEnvironmentPalette_Rayquaza;
+}
+
 void DrawMainBattleBackground(void)
 {
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK))
@@ -781,7 +824,7 @@ void DrawMainBattleBackground(void)
     {
         LZDecompressVram(gBattleEnvironmentTiles_Rayquaza, (void *)(BG_CHAR_ADDR(2)));
         LZDecompressVram(gBattleEnvironmentTilemap_Rayquaza, (void *)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleEnvironmentPalette_Rayquaza, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        LoadCompressedPalette(GetRayquazaBattleEnvironmentPalette(), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
     }
     else
     {
@@ -810,7 +853,7 @@ void DrawMainBattleBackground(void)
         case MAP_BATTLE_SCENE_NORMAL:
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(sBattleEnvironmentTable[gBattleEnvironment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(GetBattleEnvironmentPalette(gBattleEnvironment), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case MAP_BATTLE_SCENE_GYM:
             LZDecompressVram(gBattleEnvironmentTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1376,7 +1419,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             {
             default:
             case MAP_BATTLE_SCENE_NORMAL:
-                LoadCompressedPalette(sBattleEnvironmentTable[gBattleEnvironment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(GetBattleEnvironmentPalette(gBattleEnvironment), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAP_BATTLE_SCENE_GYM:
                 LoadCompressedPalette(gBattleEnvironmentPalette_BuildingGym, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
