@@ -477,8 +477,7 @@ struct PlayersApprentice
     /*0xB1*/ u8 questionsAnswered:4;
     /*0xB1*/ u8 leadMonId:2;
     /*0xB2*/ u8 party:3;
-             u8 saveId:2;
-             //u8 padding1:3;
+    /*0xB2*/ u8 saveId:2;
     /*0xB3*/ u8 unused;
     /*0xB4*/ u8 speciesIds[MULTI_PARTY_SIZE];
     /*0xB7*/ //u8 padding2;
@@ -648,6 +647,16 @@ struct DewfordTrend
     u16 rand;
     u16 words[2];
 }; /*size = 0x8*/
+
+struct MailStruct
+{
+    /*0x00*/ u16 words[MAIL_WORDS_COUNT];
+    /*0x12*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
+    /*0x1A*/ u8 trainerId[TRAINER_ID_LENGTH];
+    /*0x1E*/ u16 species;
+    /*0x20*/ u16 itemId;
+    // /*0x22*/ u16 isShiny; // TODO: struct is forcibly word-aligned, so we could use these last two bytes to store shininess
+};
 
 struct MauvilleManCommon
 {

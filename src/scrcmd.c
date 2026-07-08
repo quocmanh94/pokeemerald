@@ -22,6 +22,7 @@
 #include "field_tasks.h"
 #include "field_weather.h"
 #include "fieldmap.h"
+#include "gpu_regs.h"
 #include "item.h"
 #include "lilycove_lady.h"
 #include "main.h"
@@ -649,6 +650,8 @@ bool8 ScrCmd_fadescreenswapbuffers(struct ScriptContext *ctx)
     switch (mode)
     {
     case FADE_FROM_BLACK:
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(0, 0));
+        break;
     case FADE_FROM_WHITE:
         // Restore last weather blend before fading in,
         // since BLDALPHA was modified by fade-out
