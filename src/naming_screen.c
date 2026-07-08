@@ -303,10 +303,10 @@ static const u8 sPageColumnCounts[KBPAGE_COUNT] = {
     [KEYBOARD_LETTERS_UPPER] = KBCOL_COUNT,
     [KEYBOARD_SYMBOLS]       = 6
 };
-static const u8 sPageColumnXPos[KBPAGE_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_SYMBOLS]       = {0, 22, 44, 66, 88, 110}
+static const u8 sPageColumnXPos[KBPAGE_COUNT * KBCOL_COUNT] = {
+    0, 12, 24, 56, 68, 80, 92, 123, // KEYBOARD_LETTERS_LOWER
+    0, 12, 24, 56, 68, 80, 92, 123, // KEYBOARD_LETTERS_UPPER
+    0, 22, 44, 66, 88, 110          // KEYBOARD_SYMBOLS
 };
 
 static const struct NamingScreenTemplate *const sNamingScreenTemplates[];
@@ -1132,7 +1132,7 @@ static void SetCursorPos(s16 x, s16 y)
     struct Sprite *cursorSprite = &gSprites[sNamingScreen->cursorSpriteId];
 
     if (x < sPageColumnCounts[CurrentPageToKeyboardId()])
-        cursorSprite->x = sPageColumnXPos[CurrentPageToKeyboardId()][x] + 38;
+        cursorSprite->x = sPageColumnXPos[CurrentPageToKeyboardId() * KBCOL_COUNT + x] + 38;
     else
         cursorSprite->x = 0;
 
@@ -1416,9 +1416,10 @@ static void NamingScreen_CreatePCIcon(void)
 static void NamingScreen_CreateMonIcon(void)
 {
     u8 spriteId;
+    u32 otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
 
     LoadMonIconPalettes();
-    spriteId = CreateMonIcon(sNamingScreen->monSpecies, SpriteCallbackDummy, 56, 40, 0, sNamingScreen->monPersonality, 1);
+    spriteId = CreateMonIcon2(sNamingScreen->monSpecies, SpriteCallbackDummy, 56, 40, 0, otId, sNamingScreen->monPersonality, 1);
     gSprites[spriteId].oam.priority = 3;
 }
 
