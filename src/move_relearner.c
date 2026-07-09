@@ -78,8 +78,8 @@
  * DoMoveRelearnerMain: MENU_STATE_PRINT_STOP_TEACHING
  * DoMoveRelearnerMain: MENU_STATE_WAIT_FOR_STOP_TEACHING
  * DoMoveRelearnerMain: MENU_STATE_CONFIRM_STOP_TEACHING
- *   - If the player confirms, go to MENU_STATE_CHOOSE_SETUP_STATE.
- *   - If the player cancels, go back to MENU_STATE_PRINT_TRYING_TO_LEARN_PROMPT.
+ *   - If the player confirms, go back to MENU_STATE_PRINT_TRYING_TO_LEARN_PROMPT.
+ *   - If the player cancels, go to MENU_STATE_CHOOSE_SETUP_STATE.
  *
  * DoMoveRelearnerMain: MENU_STATE_PRINT_WHICH_MOVE_PROMPT
  * DoMoveRelearnerMain: MENU_STATE_SHOW_MOVE_SUMMARY_SCREEN
@@ -96,9 +96,9 @@
  *
  * DoMoveRelearnerMain: MENU_STATE_PRINT_GIVE_UP_PROMPT
  * DoMoveRelearnerMain: MENU_STATE_GIVE_UP_CONFIRM
- *   - If the player confirms, go to MENU_STATE_FADE_AND_RETURN, and set VAR_0x8004 to FALSE.
- *   - If the player cancels, go to either MENU_STATE_SETUP_BATTLE_MODE or
+ *   - If the player confirms, go to either MENU_STATE_SETUP_BATTLE_MODE or
  *     MENU_STATE_SETUP_CONTEST_MODE.
+ *   - If the player cancels, go to MENU_STATE_FADE_AND_RETURN, and set VAR_0x8004 to FALSE.
  *
  * CB2_InitLearnMoveReturnFromSelectMove:
  *   - Do most of the same stuff as CB2_InitLearnMove.
@@ -555,12 +555,12 @@ static void DoMoveRelearnerMain(void)
         {
             s8 selection = Menu_ProcessInputNoWrapClearOnChoose();
 
-            if (selection == 0)
+            if (selection == MENU_B_PRESSED || selection == 1)
             {
                 gSpecialVar_0x8004 = FALSE;
                 sMoveRelearnerStruct->state = MENU_STATE_FADE_AND_RETURN;
             }
-            else if (selection == MENU_B_PRESSED || selection == 1)
+            else if (selection == 0)
             {
                 if (sMoveRelearnerMenuState.showContestInfo == FALSE)
                 {
@@ -617,10 +617,6 @@ static void DoMoveRelearnerMain(void)
 
             if (selection == 0)
             {
-                sMoveRelearnerStruct->state = MENU_STATE_CHOOSE_SETUP_STATE;
-            }
-            else if (selection == MENU_B_PRESSED || selection == 1)
-            {
                 // What's the point? It gets set to MENU_STATE_PRINT_TRYING_TO_LEARN_PROMPT, anyway.
                 if (sMoveRelearnerMenuState.showContestInfo == FALSE)
                 {
@@ -631,6 +627,10 @@ static void DoMoveRelearnerMain(void)
                     sMoveRelearnerStruct->state = MENU_STATE_SETUP_CONTEST_MODE;
                 }
                 sMoveRelearnerStruct->state = MENU_STATE_PRINT_TRYING_TO_LEARN_PROMPT;
+            }
+            else if (selection == MENU_B_PRESSED || selection == 1)
+            {
+                sMoveRelearnerStruct->state = MENU_STATE_CHOOSE_SETUP_STATE;
             }
         }
         break;
