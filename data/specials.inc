@@ -110,6 +110,7 @@ gSpecials::
 	def_special GiveMonArtistRibbon
 	def_special TryContestGModeLinkup, waitstate=1
 	def_special SaveGame, waitstate=1
+	def_special GetItemHoldEffectParam_Script
 	def_special DoWateringBerryTreeAnim, waitstate=1
 	def_special ShowEasyChatScreen
 	def_special ShowEasyChatProfile
