@@ -264,6 +264,9 @@ bool8 AddBagItem(u16 itemId, u16 count)
         else
             slotCapacity = MAX_BERRY_CAPACITY;
 
+        if (pocket == TMHM_POCKET && !CheckBagHasItem(ITEM_TM_CASE, 1))
+            AddBagItem(ITEM_TM_CASE, 1);
+
         for (i = 0; i < itemPocket->capacity; i++)
         {
             if (newItems[i].itemId == itemId)
@@ -339,6 +342,26 @@ bool8 AddBagItem(u16 itemId, u16 count)
         memcpy(itemPocket->itemSlots, newItems, itemPocket->capacity * sizeof(struct ItemSlot));
         Free(newItems);
         return TRUE;
+    }
+}
+
+void EnsureTMCaseForOwnedTMsHMs(void)
+{
+    u8 i;
+
+    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
+        return;
+    if (CheckBagHasItem(ITEM_TM_CASE, 1))
+        return;
+
+    for (i = 0; i < gBagPockets[TMHM_POCKET].capacity; i++)
+    {
+        if (gBagPockets[TMHM_POCKET].itemSlots[i].itemId != ITEM_NONE
+         && GetBagItemQuantity(&gBagPockets[TMHM_POCKET].itemSlots[i].quantity) != 0)
+        {
+            AddBagItem(ITEM_TM_CASE, 1);
+            return;
+        }
     }
 }
 
