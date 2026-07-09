@@ -186,6 +186,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
     bool8 handleDeoxys;
     s16 switchCounter; // Used for various switch statement cases that decompress/load graphics or Pokémon data
     u8 unk_filler4[6];
+    u8 splitIconSpriteId;
 } *sMonSummaryScreen = NULL;
 EWRAM_DATA u8 gLastViewedMonIndex = 0;
 static EWRAM_DATA u8 sMoveSlotToReplace = 0;
@@ -754,6 +755,63 @@ static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 #define TAG_MON_STATUS 30001
 #define TAG_MOVE_TYPES 30002
 #define TAG_MON_MARKINGS 30003
+#define TAG_SPLIT_ICONS 30004
+
+static const u16 sSplitIcons_Pal[] = INCGFX_U16("graphics/interface/split_icons.png", ".gbapal");
+static const u32 sSplitIcons_Gfx[] = INCGFX_U32("graphics/interface/split_icons.png", ".4bpp.lz");
+
+static const struct OamData sOamData_SplitIcons =
+{
+    .size = SPRITE_SIZE(16x16),
+    .shape = SPRITE_SHAPE(16x16),
+    .priority = 0,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_SplitIcons =
+{
+    .data = sSplitIcons_Gfx,
+    .size = 16 * 16 * 3 / 2,
+    .tag = TAG_SPLIT_ICONS,
+};
+
+static const struct SpritePalette sSpritePal_SplitIcons =
+{
+    .data = sSplitIcons_Pal,
+    .tag = TAG_SPLIT_ICONS,
+};
+
+static const union AnimCmd sSpriteAnim_SplitIconPhysical[] = {
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sSpriteAnim_SplitIconSpecial[] = {
+    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sSpriteAnim_SplitIconStatus[] = {
+    ANIMCMD_FRAME(8, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd *const sSpriteAnimTable_SplitIcons[] =
+{
+    sSpriteAnim_SplitIconPhysical,
+    sSpriteAnim_SplitIconSpecial,
+    sSpriteAnim_SplitIconStatus,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_SplitIcons =
+{
+    .tileTag = TAG_SPLIT_ICONS,
+    .paletteTag = TAG_SPLIT_ICONS,
+    .oam = &sOamData_SplitIcons,
+    .anims = sSpriteAnimTable_SplitIcons,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
 
 static const struct OamData sOamData_MoveTypes =
 {
@@ -1098,6 +1156,61 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
 static const u16 sMarkings_Pal[] = INCGFX_U16("graphics/summary_screen/markings.pal", ".gbapal");
 
 // code
+static bool8 HasSplitIcon(void)
+{
+    return sMonSummaryScreen->splitIconSpriteId != SPRITE_NONE;
+}
+
+static void ShowSplitIcon(u32 category)
+{
+    u8 spriteId;
+
+    if (!HasSplitIcon())
+    {
+        spriteId = CreateSprite(&sSpriteTemplate_SplitIcons, 48, 128, 0);
+        if (spriteId == SPRITE_NONE)
+            return;
+        sMonSummaryScreen->splitIconSpriteId = spriteId;
+    }
+
+    gSprites[sMonSummaryScreen->splitIconSpriteId].invisible = FALSE;
+    StartSpriteAnim(&gSprites[sMonSummaryScreen->splitIconSpriteId], category);
+}
+
+static void HideSplitIcon(void)
+{
+    if (HasSplitIcon())
+        gSprites[sMonSummaryScreen->splitIconSpriteId].invisible = TRUE;
+}
+
+static void DestroySplitIcon(void)
+{
+    if (HasSplitIcon())
+    {
+        DestroySprite(&gSprites[sMonSummaryScreen->splitIconSpriteId]);
+        sMonSummaryScreen->splitIconSpriteId = SPRITE_NONE;
+    }
+}
+
+static u16 GetSelectedBattleMove(void)
+{
+    if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES)
+        return sMonSummaryScreen->newMove;
+
+    return sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex];
+}
+
+static void UpdateSplitIconForMove(u16 move)
+{
+    if (sMonSummaryScreen->currPageIndex != PSS_PAGE_BATTLE_MOVES || move == MOVE_NONE)
+    {
+        HideSplitIcon();
+        return;
+    }
+
+    ShowSplitIcon(gBattleMoves[move].category);
+}
+
 void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
 {
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
@@ -1132,6 +1245,7 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
     }
 
     sMonSummaryScreen->currPageIndex = sMonSummaryScreen->minPageIndex;
+    sMonSummaryScreen->splitIconSpriteId = SPRITE_NONE;
     SummaryScreen_SetAnimDelayTaskId(TASK_NONE);
 
     if (gMonSpritesGfxPtr == NULL)
@@ -1378,6 +1492,8 @@ static bool8 DecompressGraphics(void)
         break;
     case 12:
         LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+        LoadCompressedSpriteSheet(&sSpriteSheet_SplitIcons);
+        LoadSpritePalette(&sSpritePal_SplitIcons);
         sMonSummaryScreen->switchCounter = 0;
         return TRUE;
     }
@@ -1508,6 +1624,7 @@ static void FreeSummaryScreen(void)
 
 static void BeginCloseSummaryScreen(u8 taskId)
 {
+    DestroySplitIcon();
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = CloseSummaryScreen;
 }
@@ -2006,6 +2123,7 @@ static void ChangeSelectedMove(s16 *taskData, s8 direction, u8 *moveIndexPtr)
     {
         ClearWindowTilemap(PSS_LABEL_WINDOW_MOVES_POWER_ACC);
         ClearWindowTilemap(PSS_LABEL_WINDOW_MOVES_APPEAL_JAM);
+        HideSplitIcon();
         ScheduleBgCopyTilemapToVram(0);
         PositionPowerAccSlidingWindow(0, 3);
         PositionAppealJamSlidingWindow(0, 3, 0);
@@ -2025,6 +2143,7 @@ static void CloseMoveSelectMode(u8 taskId)
     ClearWindowTilemap(PSS_LABEL_WINDOW_PROMPT_SWITCH);
     PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_INFO);
     PrintMoveDetails(0);
+    DestroySplitIcon();
     TilemapFiveMovesDisplay(sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_BATTLE_MOVES][0], 3, TRUE);
     TilemapFiveMovesDisplay(sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_CONTEST_MOVES][0], 1, TRUE);
     AddAndFillMoveNamesWindow(); // This function seems to have no effect.
@@ -2258,6 +2377,7 @@ static void ShowCantForgetHMsWindow(u8 taskId)
 {
     ClearWindowTilemap(PSS_LABEL_WINDOW_MOVES_POWER_ACC);
     ClearWindowTilemap(PSS_LABEL_WINDOW_MOVES_APPEAL_JAM);
+    HideSplitIcon();
     ScheduleBgCopyTilemapToVram(0);
     PositionPowerAccSlidingWindow(0, 3);
     PositionAppealJamSlidingWindow(0, 3, 0);
@@ -2468,7 +2588,10 @@ static void Task_SlidePowerAccWindow(u8 taskId)
         if (tScrollingSpeed < 0)
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
+            {
                 PutWindowTilemap(PSS_LABEL_WINDOW_MOVES_POWER_ACC);
+                UpdateSplitIconForMove(GetSelectedBattleMove());
+            }
         }
         else
         {
@@ -2962,7 +3085,10 @@ static void ClearPageWindowTilemaps(u8 page)
         if (sMonSummaryScreen->mode == SUMMARY_MODE_SELECT_MOVE)
         {
             if (sMonSummaryScreen->newMove != MOVE_NONE || sMonSummaryScreen->firstMoveIndex != MAX_MON_MOVES)
+            {
                 ClearWindowTilemap(PSS_LABEL_WINDOW_MOVES_POWER_ACC);
+                HideSplitIcon();
+            }
         }
         else
         {
@@ -3679,17 +3805,20 @@ static void PrintMoveDetails(u16 move)
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
         {
+            UpdateSplitIconForMove(move);
             PrintMovePowerAndAccuracy(move);
             PrintTextOnWindow(windowId, gMoveDescriptionPointers[move - 1], 6, 1, 0, 0);
         }
         else
         {
+            HideSplitIcon();
             PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[gContestMoves[move].effect], 6, 1, 0, 0);
         }
         PutWindowTilemap(windowId);
     }
     else
     {
+        HideSplitIcon();
         ClearWindowTilemap(windowId);
     }
 
