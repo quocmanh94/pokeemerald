@@ -209,3 +209,17 @@ bool8 FlagGet(u16 id)
 
     return TRUE;
 }
+
+u8 GetNumBadges(void)
+{
+    u16 badgeFlag;
+    u8 count = 0;
+
+    for (badgeFlag = FLAG_BADGE01_GET; badgeFlag < FLAG_BADGE01_GET + NUM_BADGES; badgeFlag++)
+    {
+        if (FlagGet(badgeFlag))
+            count++;
+    }
+
+    return count;
+}
