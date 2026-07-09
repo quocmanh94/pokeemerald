@@ -2617,6 +2617,10 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
     u8 i, j;
+    bool8 knowsFly = MonKnowsMove(&mons[slotId], MOVE_FLY);
+    bool8 knowsFlash = MonKnowsMove(&mons[slotId], MOVE_FLASH);
+    bool8 canUseFly = CanMonLearnTMHM(&mons[slotId], ITEM_HM02 - ITEM_TM01) && FlagGet(FLAG_BADGE06_GET) && CheckBagHasItem(ITEM_HM02, 1);
+    bool8 canUseFlash = CanMonLearnTMHM(&mons[slotId], ITEM_HM05 - ITEM_TM01) && FlagGet(FLAG_BADGE02_GET) && CheckBagHasItem(ITEM_HM05, 1);
 
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
@@ -2628,11 +2632,25 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
-                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                if (sFieldMoves[j] != MOVE_CUT
+                 && sFieldMoves[j] != MOVE_FLASH
+                 && sFieldMoves[j] != MOVE_STRENGTH
+                 && sFieldMoves[j] != MOVE_SURF
+                 && sFieldMoves[j] != MOVE_FLY
+                 && sFieldMoves[j] != MOVE_ROCK_SMASH
+                 && sFieldMoves[j] != MOVE_WATERFALL
+                 && sFieldMoves[j] != MOVE_DIVE)
+                    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
                 break;
             }
         }
     }
+
+    if (sPartyMenuInternal->numActions < 5 && (knowsFly || canUseFly))
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + FIELD_MOVE_FLY);
+
+    if (sPartyMenuInternal->numActions < 5 && (knowsFlash || canUseFlash))
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + FIELD_MOVE_FLASH);
 
     if (!InBattlePike())
     {
