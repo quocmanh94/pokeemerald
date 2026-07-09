@@ -31,6 +31,7 @@
 #include "mystery_event_script.h"
 #include "palette.h"
 #include "party_menu.h"
+#include "pokemon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "overworld.h"
@@ -51,6 +52,8 @@
 #include "window.h"
 #include "constants/event_objects.h"
 #include "constants/comparison_operators.h"
+#include "constants/items.h"
+#include "constants/moves.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(void);
@@ -70,6 +73,7 @@ extern const u8 *gStdScripts[];
 extern const u8 *gStdScripts_End[];
 
 static void CloseBrailleWindow(void);
+static u16 GetHmItemForMove(u16 move);
 
 // This is defined in here so the optimizer can't see its value when compiling
 // script.c.
@@ -1716,10 +1720,36 @@ bool8 ScrCmd_setmonmove(struct ScriptContext *ctx)
     return FALSE;
 }
 
+static u16 GetHmItemForMove(u16 move)
+{
+    switch (move)
+    {
+    case MOVE_CUT:
+        return ITEM_HM01;
+    case MOVE_FLY:
+        return ITEM_HM02;
+    case MOVE_SURF:
+        return ITEM_HM03;
+    case MOVE_STRENGTH:
+        return ITEM_HM04;
+    case MOVE_FLASH:
+        return ITEM_HM05;
+    case MOVE_ROCK_SMASH:
+        return ITEM_HM06;
+    case MOVE_WATERFALL:
+        return ITEM_HM07;
+    case MOVE_DIVE:
+        return ITEM_HM08;
+    default:
+        return ITEM_NONE;
+    }
+}
+
 bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
 {
     u8 i;
     u16 move = ScriptReadHalfword(ctx);
+    u16 hmItem = GetHmItemForMove(move);
 
     gSpecialVar_Result = PARTY_SIZE;
     for (i = 0; i < PARTY_SIZE; i++)
@@ -1727,7 +1757,10 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
         u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
         if (!species)
             break;
-        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && MonKnowsMove(&gPlayerParty[i], move) == TRUE)
+        if (GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+            continue;
+        if (MonKnowsMove(&gPlayerParty[i], move) == TRUE
+         || (hmItem != ITEM_NONE && CanSpeciesLearnTMHM(species, hmItem - ITEM_TM01) && CheckBagHasItem(hmItem, 1)))
         {
             gSpecialVar_Result = i;
             gSpecialVar_0x8004 = species;
