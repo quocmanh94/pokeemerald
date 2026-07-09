@@ -1,5 +1,6 @@
 .set ITEMID, VAR_0x8000
 .set AMOUNT, VAR_0x8001
+.set IS_TM_HM, VAR_0x800A
 
 Std_ObtainItem::
 	additem ITEMID, AMOUNT
@@ -16,6 +17,7 @@ EventScript_ObtainItemMessage::
 	return
 
 EventScript_BufferPocketNameAndTryFanfare::
+	setvar IS_TM_HM, FALSE
 	switch VAR_RESULT
 	case POCKET_ITEMS,      EventScript_BufferItemsPocket
 	case POCKET_KEY_ITEMS,  EventScript_BufferKeyItemsPocket
@@ -40,6 +42,7 @@ EventScript_BufferPokeballsPocket::
 	return
 
 EventScript_BufferTMHMsPocket::
+	setvar IS_TM_HM, TRUE
 	bufferstdstring STR_VAR_3, STDSTRING_TMHMS
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedTMHM
 	return
@@ -52,7 +55,7 @@ EventScript_BufferBerriesPocket::
 EventScript_ObtainedItem::
 	message gText_ObtainedTheItem
 	waitfanfare
-	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
+	call EventScript_PutItemMessage
 	setvar VAR_RESULT, TRUE
 	return
 
@@ -120,7 +123,7 @@ EventScript_PickUpItem::
 	bufferitemnameplural STR_VAR_2, VAR_0x8004, VAR_0x8005
 	pyramid_getlocation
 	goto_if_eq VAR_RESULT, PYRAMID_LOCATION_FLOOR, EventScript_PutBattlePyramidItemInBag
-	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
+	call EventScript_PutItemMessage
 	return
 
 EventScript_PutBattlePyramidItemInBag::
@@ -178,7 +181,7 @@ EventScript_PutHiddenItemInPocket::
 	waitfanfare
 	bufferitemnameplural STR_VAR_2, VAR_0x8004, 1
 	copyvar VAR_0x8004, VAR_0x8008
-	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
+	call EventScript_PutItemMessage
 	special TryPutTreasureInvestigatorsOnAir
 	special SetHiddenItemFlag
 	releaseall
@@ -190,3 +193,12 @@ EventScript_NoRoomForHiddenItem::
 	setvar VAR_RESULT, 0
 	releaseall
 	end
+
+EventScript_PutItemMessage::
+	goto_if_eq IS_TM_HM, TRUE, EventScript_PutTMHMInTMCaseMessage
+	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
+	return
+
+EventScript_PutTMHMInTMCaseMessage::
+	msgbox gText_PutTMHMInTMCase, MSGBOX_DEFAULT
+	return

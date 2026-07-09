@@ -186,8 +186,11 @@ static void CB2_ApprenticeExitBagMenu(void);
 static void CB2_FavorLadyExitBagMenu(void);
 static void CB2_QuizLadyExitBagMenu(void);
 static void UpdatePocketItemLists(void);
+static void EnsureBagPocketIsVisible(void);
 static void InitPocketListPositions(void);
 static void InitPocketScrollPositions(void);
+static void ClearUnusedPocketIndicatorSquare(void);
+static u8 GetVisibleBagPocketIndex(u8 pocketId);
 static u8 CreateBagInputHandlerTask(u8);
 static void DrawItemListBgRow(u8);
 static void BagMenu_MoveCursorCallback(s32, bool8, struct ListMenu *);
@@ -644,6 +647,7 @@ void GoToBagMenu(u8 location, u8 pocket, MainCallback exitCallback)
             gBagPosition.exitCallback = exitCallback;
         if (pocket < POCKETS_COUNT)
             gBagPosition.pocket = pocket;
+        EnsureBagPocketIsVisible();
         if (gBagPosition.location == ITEMMENULOCATION_BERRY_TREE ||
             gBagPosition.location == ITEMMENULOCATION_BERRY_BLENDER_CRUSH)
             gBagMenu->pocketSwitchDisabled = TRUE;
@@ -741,6 +745,7 @@ static bool8 SetupBagMenu(void)
         gMain.state++;
         break;
     case 10:
+        EnsureTMCaseForOwnedTMsHMs();
         UpdatePocketItemLists();
         InitPocketListPositions();
         InitPocketScrollPositions();
@@ -830,6 +835,7 @@ static bool8 LoadBagMenu_Graphics(void)
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
             LZDecompressWram(gBagScreen_GfxTileMap, gBagMenu->tilemapBuffer);
+            ClearUnusedPocketIndicatorSquare();
             gBagMenu->graphicsLoadState++;
         }
         break;
@@ -1161,6 +1167,12 @@ static void UpdatePocketItemLists(void)
         UpdatePocketItemList(i);
 }
 
+static void EnsureBagPocketIsVisible(void)
+{
+    if (gBagPosition.pocket == TMHM_POCKET)
+        gBagPosition.pocket = KEYITEMS_POCKET;
+}
+
 void UpdatePocketListPosition(u8 pocketId)
 {
     SetCursorWithinListBounds(&gBagPosition.scrollPosition[pocketId], &gBagPosition.cursorPosition[pocketId], gBagMenu->numShownItems[pocketId], gBagMenu->numItemStacks[pocketId]);
@@ -1328,12 +1340,20 @@ static u8 GetSwitchBagPocketDirection(void)
 
 static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
 {
-    if (deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKETS_COUNT - 1)
-        *bagPocketId = 0;
-    else if (deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == 0)
-        *bagPocketId = POCKETS_COUNT - 1;
+    static const u8 sVisibleBagPockets[] = {
+        ITEMS_POCKET,
+        BALLS_POCKET,
+        BERRIES_POCKET,
+        KEYITEMS_POCKET
+    };
+    u8 visiblePocket = GetVisibleBagPocketIndex(*bagPocketId);
+
+    if (deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT)
+        visiblePocket = (visiblePocket + 1) % ARRAY_COUNT(sVisibleBagPockets);
     else
-        *bagPocketId += deltaBagPocketId;
+        visiblePocket = (visiblePocket == 0) ? ARRAY_COUNT(sVisibleBagPockets) - 1 : visiblePocket - 1;
+
+    *bagPocketId = sVisibleBagPockets[visiblePocket];
 }
 
 static void SwitchBagPocket(u8 taskId, s16 deltaBagPocketId, bool16 skipEraseList)
@@ -1432,11 +1452,38 @@ static void DrawItemListBgRow(u8 y)
 
 static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
 {
+    if (x == TMHM_POCKET)
+        return;
+
+    x = GetVisibleBagPocketIndex(x);
     if (!isCurrentPocket)
         FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 5, 3, 1, 1);
     else
         FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 5, 3, 1, 1);
     ScheduleBgCopyTilemapToVram(2);
+}
+
+static void ClearUnusedPocketIndicatorSquare(void)
+{
+    u16 *tilemap = (u16 *)gBagMenu->tilemapBuffer;
+
+    tilemap[3 * 32 + 9] = tilemap[3 * 32 + 10];
+}
+
+static u8 GetVisibleBagPocketIndex(u8 pocketId)
+{
+    switch (pocketId)
+    {
+    case ITEMS_POCKET:
+        return 0;
+    case BALLS_POCKET:
+        return 1;
+    case BERRIES_POCKET:
+        return 2;
+    case KEYITEMS_POCKET:
+    default:
+        return 3;
+    }
 }
 
 static bool8 CanSwapItems(void)

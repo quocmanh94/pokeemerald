@@ -60,6 +60,7 @@
 #include "task.h"
 #include "text.h"
 #include "text_window.h"
+#include "tm_case.h"
 #include "trade.h"
 #include "union_room.h"
 #include "window.h"
@@ -387,6 +388,7 @@ static void UpdatePartyMonAilmentGfx(u8, struct PartyMenuBox *);
 static u8 GetPartyLayoutFromBattleType(void);
 static void Task_SetSacredAshCB(u8);
 static void CB2_ReturnToBagMenu(void);
+static void ShowPartyMenuForItemUse(MainCallback callback);
 static void Task_DisplayHPRestoredMessage(u8);
 static u16 ItemEffectToMonEv(struct Pokemon *, u8);
 static void ItemEffectToStatString(u8, u8 *);
@@ -4235,7 +4237,16 @@ static void LoadPartyMenuAilmentGfx(void)
 
 void CB2_ShowPartyMenuForItemUse(void)
 {
-    MainCallback callback = CB2_ReturnToBagMenu;
+    ShowPartyMenuForItemUse(CB2_ReturnToBagMenu);
+}
+
+void CB2_ShowPartyMenuForItemUseTMCase(void)
+{
+    ShowPartyMenuForItemUse(CB2_ReturnToTMCaseFromPartyMenu);
+}
+
+static void ShowPartyMenuForItemUse(MainCallback callback)
+{
     u8 partyLayout;
     u8 menuType;
     u8 i;

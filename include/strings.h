@@ -3026,5 +3026,10 @@ extern const u8 gText_YourName[];
 extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
+extern const u8 gText_TMCase[];
+extern const u8 gText_Close[];
+extern const u8 gText_TMCaseWillBePutAway[];
+extern const u8 gText_FontSmall[];
+extern const u8 gText_FontShort[];
 
 #endif // GUARD_STRINGS_H
