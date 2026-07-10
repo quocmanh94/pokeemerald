@@ -3837,12 +3837,47 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
 {
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
     const u8 *text;
+
     if (moveIndex != 0)
     {
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
-        if (gBattleMoves[moveIndex].power < 2)
+        if (moveIndex == MOVE_HIDDEN_POWER)
+        {
+            u8 powerBits = ((GetMonData(mon, MON_DATA_HP_IV) & 2) >> 1)
+                         | ((GetMonData(mon, MON_DATA_ATK_IV) & 2) << 0)
+                         | ((GetMonData(mon, MON_DATA_DEF_IV) & 2) << 1)
+                         | ((GetMonData(mon, MON_DATA_SPEED_IV) & 2) << 2)
+                         | ((GetMonData(mon, MON_DATA_SPATK_IV) & 2) << 3)
+                         | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 2) << 4);
+            u8 power = (40 * powerBits) / 63 + 30;
+
+            ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            text = gStringVar1;
+        }
+        else if (moveIndex == MOVE_RETURN)
+        {
+            u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
+            u8 power = 10 * friendship / 25;
+
+            if (power == 0)
+                power = 1;
+            ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            text = gStringVar1;
+        }
+        else if (moveIndex == MOVE_FRUSTRATION)
+        {
+            u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
+            u8 power = 10 * (MAX_FRIENDSHIP - friendship) / 25;
+
+            if (power == 0)
+                power = 1;
+            ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            text = gStringVar1;
+        }
+        else if (gBattleMoves[moveIndex].power < 2)
         {
             text = gText_ThreeDashes;
         }
