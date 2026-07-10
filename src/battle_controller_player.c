@@ -5,6 +5,7 @@
 #include "battle_controllers.h"
 #include "battle_dome.h"
 #include "battle_interface.h"
+#include "battle_main.h"
 #include "battle_message.h"
 #include "battle_setup.h"
 #include "battle_tv.h"
@@ -28,6 +29,7 @@
 #include "text.h"
 #include "util.h"
 #include "window.h"
+#include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/items.h"
 #include "constants/moves.h"
@@ -102,6 +104,7 @@ static void MoveSelectionDisplayPPNumber(void);
 static void MoveSelectionDisplayPPString(void);
 static void MoveSelectionDisplaySplitIcon(void);
 static void MoveSelectionDisplayMoveType(void);
+static void MoveSelectionDisplayMoveTypeAgainstTarget(u8 targetId);
 static void MoveSelectionDisplayMoveNames(void);
 static void HandleMoveSwitching(void);
 static void SwitchIn_HandleSoundAndEnd(void);
@@ -388,6 +391,7 @@ static void HandleInputChooseTarget(void)
         DoBounceEffect(gActiveBattler, BOUNCE_HEALTHBOX, 7, 1);
         DoBounceEffect(gActiveBattler, BOUNCE_MON, 7, 1);
         EndBounceEffect(gMultiUsePlayerCursor, BOUNCE_HEALTHBOX);
+        MoveSelectionDisplayMoveType();
     }
     else if (JOY_NEW(DPAD_LEFT | DPAD_UP))
     {
@@ -434,6 +438,7 @@ static void HandleInputChooseTarget(void)
                 i = 0;
         } while (i == 0);
         gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
+        MoveSelectionDisplayMoveTypeAgainstTarget(gMultiUsePlayerCursor);
     }
     else if (JOY_NEW(DPAD_RIGHT | DPAD_DOWN))
     {
@@ -476,6 +481,7 @@ static void HandleInputChooseTarget(void)
                 i = 0;
         } while (i == 0);
         gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
+        MoveSelectionDisplayMoveTypeAgainstTarget(gMultiUsePlayerCursor);
     }
 }
 
@@ -549,6 +555,7 @@ static void HandleInputChooseMove(void)
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
 
             gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
+            MoveSelectionDisplayMoveTypeAgainstTarget(gMultiUsePlayerCursor);
         }
     }
     else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
@@ -1530,7 +1537,105 @@ static u8 GetHiddenPowerTypeFromMon(struct Pokemon *mon)
     return type;
 }
 
-static void MoveSelectionDisplayMoveType(void)
+static void UpdateTypeEffectivenessFlags(u8 multiplier, u16 move, u8 *flags)
+{
+    switch (multiplier)
+    {
+    case TYPE_MUL_NO_EFFECT:
+        *flags |= MOVE_RESULT_DOESNT_AFFECT_FOE;
+        *flags &= ~MOVE_RESULT_NOT_VERY_EFFECTIVE;
+        *flags &= ~MOVE_RESULT_SUPER_EFFECTIVE;
+        break;
+    case TYPE_MUL_NOT_EFFECTIVE:
+        if (gBattleMoves[move].power && !(*flags & MOVE_RESULT_NO_EFFECT))
+        {
+            if (*flags & MOVE_RESULT_SUPER_EFFECTIVE)
+                *flags &= ~MOVE_RESULT_SUPER_EFFECTIVE;
+            else
+                *flags |= MOVE_RESULT_NOT_VERY_EFFECTIVE;
+        }
+        break;
+    case TYPE_MUL_SUPER_EFFECTIVE:
+        if (gBattleMoves[move].power && !(*flags & MOVE_RESULT_NO_EFFECT))
+        {
+            if (*flags & MOVE_RESULT_NOT_VERY_EFFECTIVE)
+                *flags &= ~MOVE_RESULT_NOT_VERY_EFFECTIVE;
+            else
+                *flags |= MOVE_RESULT_SUPER_EFFECTIVE;
+        }
+        break;
+    }
+}
+
+static u8 GetMoveEffectivenessFlags(u16 move, u8 moveType, u16 targetSpecies, u8 targetAbility)
+{
+    s32 i = 0;
+    u8 flags = 0;
+    u8 type1 = gSpeciesInfo[targetSpecies].types[0];
+    u8 type2 = gSpeciesInfo[targetSpecies].types[1];
+
+    if (move == MOVE_STRUGGLE)
+        return 0;
+
+    if (targetAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    {
+        flags = MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE;
+    }
+    else
+    {
+        while (TYPE_EFFECT_ATK_TYPE(i) != TYPE_ENDTABLE)
+        {
+            if (TYPE_EFFECT_ATK_TYPE(i) == TYPE_FORESIGHT)
+            {
+                i += 3;
+                continue;
+            }
+            if (TYPE_EFFECT_ATK_TYPE(i) == moveType)
+            {
+                if (TYPE_EFFECT_DEF_TYPE(i) == type1)
+                    UpdateTypeEffectivenessFlags(TYPE_EFFECT_MULTIPLIER(i), move, &flags);
+                if (TYPE_EFFECT_DEF_TYPE(i) == type2 && type1 != type2)
+                    UpdateTypeEffectivenessFlags(TYPE_EFFECT_MULTIPLIER(i), move, &flags);
+            }
+            i += 3;
+        }
+    }
+
+    if (targetAbility == ABILITY_WONDER_GUARD
+     && (!(flags & MOVE_RESULT_SUPER_EFFECTIVE) || ((flags & (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)) == (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)))
+     && gBattleMoves[move].power)
+        flags |= MOVE_RESULT_DOESNT_AFFECT_FOE;
+    return flags;
+}
+
+static u8 GetMoveTypeEffectivenessWindow(u8 targetId)
+{
+    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[gActiveBattler]];
+    u8 moveType;
+    u8 moveFlags;
+
+    if (move == MOVE_NONE || gBattleMoves[move].power == 0)
+        return B_WIN_MOVE_TYPE;
+
+    if (move == MOVE_HIDDEN_POWER)
+        moveType = GetHiddenPowerTypeFromMon(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+    else
+        moveType = gBattleMoves[move].type;
+
+    moveFlags = GetMoveEffectivenessFlags(move, moveType, gBattleMons[targetId].species, gBattleMons[targetId].ability);
+
+    if (moveFlags & MOVE_RESULT_NO_EFFECT)
+        return B_WIN_TYPE_NO_EFF;
+    else if (moveFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE)
+        return B_WIN_TYPE_NOT_VERY_EFF;
+    else if (moveFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+        return B_WIN_TYPE_SUPER_EFF;
+    else
+        return B_WIN_MOVE_TYPE;
+}
+
+static void MoveSelectionDisplayMoveTypeWithWindow(u8 windowId)
 {
     u8 *txtPtr;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
@@ -1548,8 +1653,23 @@ static void MoveSelectionDisplayMoveType(void)
         type = gBattleMoves[move].type;
 
     StringCopy(txtPtr, gTypeNames[type]);
-    BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
+    BattlePutTextOnWindow(gDisplayedStringBattle, windowId);
     MoveSelectionDisplaySplitIcon();
+}
+
+static void MoveSelectionDisplayMoveType(void)
+{
+    u8 windowId = B_WIN_MOVE_TYPE;
+
+    if (!IsDoubleBattle())
+        windowId = GetMoveTypeEffectivenessWindow(GetBattlerAtPosition(BATTLE_OPPOSITE(GetBattlerPosition(gActiveBattler))));
+
+    MoveSelectionDisplayMoveTypeWithWindow(windowId);
+}
+
+static void MoveSelectionDisplayMoveTypeAgainstTarget(u8 targetId)
+{
+    MoveSelectionDisplayMoveTypeWithWindow(GetMoveTypeEffectivenessWindow(targetId));
 }
 
 static void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
