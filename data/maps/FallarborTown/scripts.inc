@@ -5,7 +5,6 @@ FallarborTown_MapScripts::
 FallarborTown_OnTransition:
 	setflag FLAG_VISITED_FALLARBOR_TOWN
 	setvar VAR_CONTEST_HALL_STATE, 0
-	clearflag FLAG_CONTEST_SKETCH_CREATED
 	end
 
 FallarborTown_EventScript_ExpertM::
@@ -92,4 +91,3 @@ FallarborTown_Text_TownSign:
 FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
 	.string "“New moves taught to POKéMON.”$"
-
