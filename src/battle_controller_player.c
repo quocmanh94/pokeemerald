@@ -1508,17 +1508,39 @@ static void MoveSelectionDisplaySplitIcon(void)
     CopyWindowToVram(B_WIN_PSS_ICON, COPYWIN_FULL);
 }
 
+static u8 GetHiddenPowerTypeFromMon(struct Pokemon *mon)
+{
+    u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+                | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+                | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+                | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+                | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+                | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+    u8 type = ((NUMBER_OF_MON_TYPES - 3) * typeBits) / 63 + 1;
+
+    if (type >= TYPE_MYSTERY)
+        type++;
+    return type;
+}
+
 static void MoveSelectionDisplayMoveType(void)
 {
     u8 *txtPtr;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[gActiveBattler]];
+    u8 type;
 
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
     *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;
     *(txtPtr)++ = EXT_CTRL_CODE_FONT;
     *(txtPtr)++ = FONT_NORMAL;
 
-    StringCopy(txtPtr, gTypeNames[gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].type]);
+    if (move == MOVE_HIDDEN_POWER)
+        type = GetHiddenPowerTypeFromMon(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+    else
+        type = gBattleMoves[move].type;
+
+    StringCopy(txtPtr, gTypeNames[type]);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
     MoveSelectionDisplaySplitIcon();
 }

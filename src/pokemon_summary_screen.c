@@ -4128,6 +4128,21 @@ static void SetTypeSpritePosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
     SetSpriteInvisibility(spriteArrayId, FALSE);
 }
 
+static u8 GetHiddenPowerTypeFromMon(struct Pokemon *mon)
+{
+    u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+                | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+                | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+                | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+                | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+                | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+    u8 type = ((NUMBER_OF_MON_TYPES - 3) * typeBits) / 63 + 1;
+
+    if (type >= TYPE_MYSTERY)
+        type++;
+    return type;
+}
+
 static void SetMonTypeIcons(void)
 {
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
@@ -4158,7 +4173,13 @@ static void SetMoveTypeIcons(void)
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (summary->moves[i] != MOVE_NONE)
-            SetTypeSpritePosAndPal(gBattleMoves[summary->moves[i]].type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
+        {
+            u8 type = gBattleMoves[summary->moves[i]].type;
+
+            if (summary->moves[i] == MOVE_HIDDEN_POWER)
+                type = GetHiddenPowerTypeFromMon(&sMonSummaryScreen->currentMon);
+            SetTypeSpritePosAndPal(type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
+        }
         else
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
     }
@@ -4186,7 +4207,13 @@ static void SetNewMoveTypeIcon(void)
     else
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
-            SetTypeSpritePosAndPal(gBattleMoves[sMonSummaryScreen->newMove].type, 85, 96, SPRITE_ARR_ID_TYPE + 4);
+        {
+            u8 type = gBattleMoves[sMonSummaryScreen->newMove].type;
+
+            if (sMonSummaryScreen->newMove == MOVE_HIDDEN_POWER)
+                type = GetHiddenPowerTypeFromMon(&sMonSummaryScreen->currentMon);
+            SetTypeSpritePosAndPal(type, 85, 96, SPRITE_ARR_ID_TYPE + 4);
+        }
         else
             SetTypeSpritePosAndPal(NUMBER_OF_MON_TYPES + gContestMoves[sMonSummaryScreen->newMove].contestCategory, 85, 96, SPRITE_ARR_ID_TYPE + 4);
     }
