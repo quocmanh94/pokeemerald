@@ -5525,7 +5525,22 @@ u8 GetNatureFromPersonality(u32 personality)
     return personality % NUM_NATURES;
 }
 
-// Same formula as Cmd_hiddenpowercalc
+// Same formulas as Cmd_hiddenpowercalc
+u8 GetMonHiddenPowerType(struct Pokemon *mon)
+{
+    u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+                | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+                | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+                | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+                | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+                | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+    u8 type = ((NUMBER_OF_MON_TYPES - 3) * typeBits) / 63 + 1;
+
+    if (type >= TYPE_MYSTERY)
+        type++;
+    return type;
+}
+
 u8 GetMonHiddenPowerPower(struct Pokemon *mon)
 {
     u8 powerBits = ((GetMonData(mon, MON_DATA_HP_IV) & 2) >> 1)
