@@ -37,6 +37,7 @@
 #include "random.h"
 #include "recorded_battle.h"
 #include "roamer.h"
+#include "reshow_battle_screen.h"
 #include "safari_zone.h"
 #include "scanline_effect.h"
 #include "sound.h"
@@ -112,6 +113,9 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void);
 static void ReturnFromBattleToOverworld(void);
 static void TryEvolvePokemon(void);
 static void WaitForEvoSceneToFinish(void);
+static void PlayerTryEvolution(void);
+static void WaitForEvolutionThenTryAnother(void);
+static void CB2_SetUpReshowBattleScreenAfterEvolution(void);
 static void HandleEndTurn_ContinueBattle(void);
 static void HandleEndTurn_BattleWon(void);
 static void HandleEndTurn_BattleLost(void);
@@ -145,7 +149,7 @@ EWRAM_DATA u8 gBattleTextBuff3[TEXT_BUFF_ARRAY_COUNT] = {0};
 EWRAM_DATA static u32 sFlickerArray[25] = {0};
 EWRAM_DATA u32 gBattleTypeFlags = 0;
 EWRAM_DATA u8 gBattleEnvironment = 0;
-EWRAM_DATA u32 gUnusedFirstBattleVar1 = 0; // Never read
+EWRAM_DATA bool8 gPlayerDoesNotWantToEvolve[MAX_BATTLERS_COUNT] = {FALSE};
 EWRAM_DATA struct MultiPartnerMenuPokemon gMultiPartnerParty[MULTI_PARTY_SIZE] = {0};
 EWRAM_DATA static struct MultiPartnerMenuPokemon *sMultiPartnerPartyBuffer = NULL;
 EWRAM_DATA u8 *gBattleAnimBgTileBuffer = NULL;
@@ -198,7 +202,7 @@ EWRAM_DATA u8 gMoveResultFlags = 0;
 EWRAM_DATA u32 gHitMarker = 0;
 EWRAM_DATA static u8 sUnusedBattlersArray[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gBideTarget[MAX_BATTLERS_COUNT] = {0};
-EWRAM_DATA u8 gUnusedFirstBattleVar2 = 0; // Never read
+EWRAM_DATA u8 gBattleEnvironmentBackup = 0;
 EWRAM_DATA u16 gSideStatuses[NUM_BATTLE_SIDES] = {0};
 EWRAM_DATA struct SideTimer gSideTimers[NUM_BATTLE_SIDES] = {0};
 EWRAM_DATA u32 gStatuses3[MAX_BATTLERS_COUNT] = {0};
@@ -707,6 +711,8 @@ static void CB2_InitBattleInternal(void)
         AdjustFriendship(&gPlayerParty[i], FRIENDSHIP_EVENT_LEAGUE_BATTLE);
 
     gBattleCommunication[MULTIUSE_STATE] = 0;
+    for (i = 0; i < MAX_BATTLERS_COUNT; i++)
+        gPlayerDoesNotWantToEvolve[i] = FALSE;
 }
 
 #define BUFFER_PARTY_VS_SCREEN_STATUS(party, flags, i)                      \
@@ -4009,7 +4015,7 @@ void BattleTurnPassed(void)
 
     *(&gBattleStruct->absentBattlerFlags) = gAbsentBattlerFlags;
     BattlePutTextOnWindow(gText_EmptyString3, B_WIN_MSG);
-    gBattleMainFunc = HandleTurnActionSelectionState;
+    gBattleMainFunc = PlayerTryEvolution;
     gRandomTurnNumber = Random();
 
     if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
@@ -4125,6 +4131,75 @@ enum
     STATE_WAIT_SET_BEFORE_ACTION,
     STATE_SELECTION_SCRIPT_MAY_RUN
 };
+
+#define tSpeciesToEvolveInto data[0]
+#define tPartyId             data[1]
+
+static void CB2_SetUpReshowBattleScreenAfterEvolution(void)
+{
+    gBattleEnvironment = gBattleEnvironmentBackup;
+    SetMainCallback2(ReshowBattleScreenAfterMenu);
+}
+
+static void Task_BeginBattleEvolutionScene(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        u8 partyId = gTasks[taskId].tPartyId;
+        u16 speciesToEvolveInto = gTasks[taskId].tSpeciesToEvolveInto;
+
+        FreeAllWindowBuffers();
+        gCB2_AfterEvolution = CB2_SetUpReshowBattleScreenAfterEvolution;
+        gBattleEnvironmentBackup = gBattleEnvironment;
+        DestroyTask(taskId);
+        EvolutionScene(&gPlayerParty[partyId], speciesToEvolveInto, TRUE, partyId);
+    }
+}
+
+static void PlayerTryEvolution(void)
+{
+    u8 battler;
+    u8 partyId;
+    u16 species;
+
+    for (battler = 0; battler < gBattlersCount; battler++)
+    {
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER
+            || gAbsentBattlerFlags & gBitTable[battler]
+            || gBattleMons[battler].hp == 0
+            || gPlayerDoesNotWantToEvolve[battler])
+            continue;
+
+        partyId = gBattlerPartyIndexes[battler];
+        if (!(gLeveledUpInBattle & gBitTable[partyId]))
+            continue;
+
+        gLeveledUpInBattle &= ~(gBitTable[partyId]);
+        species = GetEvolutionTargetSpecies(&gPlayerParty[partyId], EVO_MODE_NORMAL, ITEM_NONE);
+        if (species != SPECIES_NONE)
+        {
+            u8 taskId;
+
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+            gBattleMainFunc = WaitForEvolutionThenTryAnother;
+            taskId = CreateTask(Task_BeginBattleEvolutionScene, 0);
+            gTasks[taskId].tSpeciesToEvolveInto = species;
+            gTasks[taskId].tPartyId = partyId;
+            return;
+        }
+    }
+
+    gBattleMainFunc = HandleTurnActionSelectionState;
+}
+
+static void WaitForEvolutionThenTryAnother(void)
+{
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+        gBattleMainFunc = PlayerTryEvolution;
+}
+
+#undef tSpeciesToEvolveInto
+#undef tPartyId
 
 static void HandleTurnActionSelectionState(void)
 {
