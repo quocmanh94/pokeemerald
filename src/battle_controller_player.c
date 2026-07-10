@@ -16,10 +16,12 @@
 #include "link.h"
 #include "main.h"
 #include "m4a.h"
+#include "menu.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokeball.h"
 #include "pokemon.h"
+#include "pokemon_summary_screen.h"
 #include "random.h"
 #include "recorded_battle.h"
 #include "reshow_battle_screen.h"
@@ -105,6 +107,7 @@ static void MoveSelectionDisplayPPString(void);
 static void MoveSelectionDisplaySplitIcon(void);
 static void MoveSelectionDisplayMoveType(void);
 static void MoveSelectionDisplayMoveTypeAgainstTarget(u8 targetId);
+static void MoveSelectionDisplayMoveDescription(void);
 static void MoveSelectionDisplayMoveNames(void);
 static void HandleMoveSwitching(void);
 static void SwitchIn_HandleSoundAndEnd(void);
@@ -184,6 +187,8 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_ENDLINKBATTLE]            = PlayerHandleEndLinkBattle,
     [CONTROLLER_TERMINATOR_NOP]           = PlayerCmdEnd
 };
+
+static EWRAM_DATA bool8 sDescriptionSubmenu = FALSE;
 
 static const u8 sTargetIdentities[MAX_BATTLERS_COUNT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_RIGHT, B_POSITION_OPPONENT_RIGHT, B_POSITION_OPPONENT_LEFT};
 
@@ -495,7 +500,7 @@ static void HandleInputChooseMove(void)
     else
         gPlayerDpadHoldFrames = 0;
 
-    if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(A_BUTTON) && !sDescriptionSubmenu)
     {
         u8 moveTarget;
 
@@ -558,7 +563,7 @@ static void HandleInputChooseMove(void)
             MoveSelectionDisplayMoveTypeAgainstTarget(gMultiUsePlayerCursor);
         }
     }
-    else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
+    else if ((JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59) && !sDescriptionSubmenu)
     {
         PlaySE(SE_SELECT);
         BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, 0xFFFF);
@@ -574,6 +579,8 @@ static void HandleInputChooseMove(void)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
+            if (sDescriptionSubmenu)
+                MoveSelectionDisplayMoveDescription();
         }
     }
     else if (JOY_NEW(DPAD_RIGHT))
@@ -587,6 +594,8 @@ static void HandleInputChooseMove(void)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
+            if (sDescriptionSubmenu)
+                MoveSelectionDisplayMoveDescription();
         }
     }
     else if (JOY_NEW(DPAD_UP))
@@ -599,6 +608,8 @@ static void HandleInputChooseMove(void)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
+            if (sDescriptionSubmenu)
+                MoveSelectionDisplayMoveDescription();
         }
     }
     else if (JOY_NEW(DPAD_DOWN))
@@ -612,9 +623,11 @@ static void HandleInputChooseMove(void)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
+            if (sDescriptionSubmenu)
+                MoveSelectionDisplayMoveDescription();
         }
     }
-    else if (JOY_NEW(SELECT_BUTTON))
+    else if (JOY_NEW(SELECT_BUTTON) && !sDescriptionSubmenu)
     {
         if (gNumberOfMovesToChoose > 1 && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
         {
@@ -629,6 +642,25 @@ static void HandleInputChooseMove(void)
             BattlePutTextOnWindow(gText_BattleSwitchWhich, B_WIN_SWITCH_PROMPT);
             gBattlerControllerFuncs[gActiveBattler] = HandleMoveSwitching;
         }
+    }
+
+    if (sDescriptionSubmenu)
+    {
+        if (JOY_NEW(START_BUTTON) || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON))
+        {
+            sDescriptionSubmenu = FALSE;
+            FillWindowPixelBuffer(B_WIN_MOVE_DESCRIPTION, PIXEL_FILL(0));
+            ClearStdWindowAndFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
+            CopyWindowToVram(B_WIN_MOVE_DESCRIPTION, COPYWIN_GFX);
+            PlaySE(SE_SELECT);
+            MoveSelectionDisplayPPNumber();
+            MoveSelectionDisplayMoveType();
+        }
+    }
+    else if (JOY_NEW(START_BUTTON))
+    {
+        sDescriptionSubmenu = TRUE;
+        MoveSelectionDisplayMoveDescription();
     }
 }
 
@@ -1486,6 +1518,103 @@ static void MoveSelectionDisplayMoveNames(void)
         if (moveInfo->moves[i] != MOVE_NONE)
             gNumberOfMovesToChoose++;
     }
+}
+
+static u16 GetDisplayedMovePower(u16 move)
+{
+    u16 power = gBattleMoves[move].power;
+    u8 friendship = gBattleMons[gActiveBattler].friendship;
+
+    if (move == MOVE_HIDDEN_POWER)
+    {
+        u8 powerBits = ((gBattleMons[gActiveBattler].hpIV & 2) >> 1)
+                     | ((gBattleMons[gActiveBattler].attackIV & 2) << 0)
+                     | ((gBattleMons[gActiveBattler].defenseIV & 2) << 1)
+                     | ((gBattleMons[gActiveBattler].speedIV & 2) << 2)
+                     | ((gBattleMons[gActiveBattler].spAttackIV & 2) << 3)
+                     | ((gBattleMons[gActiveBattler].spDefenseIV & 2) << 4);
+
+        power = (40 * powerBits) / 63 + 30;
+    }
+    else if (move == MOVE_RETURN)
+    {
+        power = 10 * friendship / 25;
+        if (power == 0)
+            power = 1;
+    }
+    else if (move == MOVE_FRUSTRATION)
+    {
+        power = 10 * (MAX_FRIENDSHIP - friendship) / 25;
+        if (power == 0)
+            power = 1;
+    }
+
+    return power;
+}
+
+static void ConvertMovePriorityToString(u8 *dest, s8 priority)
+{
+    if (priority < 0)
+    {
+        *dest++ = CHAR_HYPHEN;
+        priority *= -1;
+    }
+
+    ConvertIntToDecimalStringN(dest, priority, STR_CONV_MODE_LEFT_ALIGN, 2);
+}
+
+static void MoveSelectionDisplayMoveDescription(void)
+{
+    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[gActiveBattler]];
+    u16 power;
+    u16 accuracy;
+    s8 priority;
+    u8 powerText[4];
+    u8 accuracyText[4];
+    u8 priorityText[5];
+    const u8 powerLabel[] = _("PWR: ");
+    const u8 accuracyLabel[] = _("ACC: ");
+    const u8 priorityLabel[] = _("PRI: ");
+    const u8 powerStart[] = _("{CLEAR_TO 0x00}");
+    const u8 accuracyStart[] = _("{CLEAR_TO 0x38}");
+    const u8 priorityStart[] = _("{CLEAR_TO 0x6D}");
+
+    if (move == MOVE_NONE)
+        return;
+
+    power = GetDisplayedMovePower(move);
+    accuracy = gBattleMoves[move].accuracy;
+    priority = gBattleMoves[move].priority;
+
+    LoadMessageBoxAndBorderGfx();
+    DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
+
+    if (power < 2 && move != MOVE_RETURN && move != MOVE_FRUSTRATION)
+        StringCopy(powerText, gText_BattleSwitchWhich5);
+    else
+        ConvertIntToDecimalStringN(powerText, power, STR_CONV_MODE_LEFT_ALIGN, 3);
+
+    if (accuracy < 2)
+        StringCopy(accuracyText, gText_BattleSwitchWhich5);
+    else
+        ConvertIntToDecimalStringN(accuracyText, accuracy, STR_CONV_MODE_LEFT_ALIGN, 3);
+
+    ConvertMovePriorityToString(priorityText, priority);
+
+    StringCopy(gDisplayedStringBattle, powerStart);
+    StringAppend(gDisplayedStringBattle, powerLabel);
+    StringAppend(gDisplayedStringBattle, powerText);
+    StringAppend(gDisplayedStringBattle, accuracyStart);
+    StringAppend(gDisplayedStringBattle, accuracyLabel);
+    StringAppend(gDisplayedStringBattle, accuracyText);
+    StringAppend(gDisplayedStringBattle, priorityStart);
+    StringAppend(gDisplayedStringBattle, priorityLabel);
+    StringAppend(gDisplayedStringBattle, priorityText);
+    StringAppend(gDisplayedStringBattle, gText_NewLine);
+    StringAppend(gDisplayedStringBattle, gMoveDescriptionPointers[move - 1]);
+    BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
+    CopyWindowToVram(B_WIN_MOVE_DESCRIPTION, COPYWIN_FULL);
 }
 
 static void MoveSelectionDisplayPPString(void)
@@ -2807,6 +2936,7 @@ static void PlayerHandleChooseMove(void)
 
 void InitMoveSelectionsVarsAndStrings(void)
 {
+    sDescriptionSubmenu = FALSE;
     MoveSelectionDisplayMoveNames();
     gMultiUsePlayerCursor = 0xFF;
     MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
