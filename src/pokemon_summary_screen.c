@@ -1842,28 +1842,22 @@ static void Task_ChangeSummaryMon(u8 taskId)
 static s8 AdvanceMonIndex(s8 delta)
 {
     struct Pokemon *mon = sMonSummaryScreen->monList.mons;
+    s8 index = sMonSummaryScreen->curMonIndex;
+    u8 i;
 
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
+    for (i = 0; i <= sMonSummaryScreen->maxMonIndex; i++)
     {
-        if (delta == -1 && sMonSummaryScreen->curMonIndex == 0)
-            return -1;
-        else if (delta == 1 && sMonSummaryScreen->curMonIndex >= sMonSummaryScreen->maxMonIndex)
-            return -1;
-        else
-            return sMonSummaryScreen->curMonIndex + delta;
-    }
-    else
-    {
-        s8 index = sMonSummaryScreen->curMonIndex;
+        index += delta;
+        if (index < 0)
+            index = sMonSummaryScreen->maxMonIndex;
+        else if (index > sMonSummaryScreen->maxMonIndex)
+            index = 0;
 
-        do
-        {
-            index += delta;
-            if (index < 0 || index > sMonSummaryScreen->maxMonIndex)
-                return -1;
-        } while (GetMonData(&mon[index], MON_DATA_IS_EGG));
-        return index;
+        if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO || !GetMonData(&mon[index], MON_DATA_IS_EGG))
+            return index == sMonSummaryScreen->curMonIndex ? -1 : index;
     }
+
+    return -1;
 }
 
 static s8 AdvanceMultiBattleMonIndex(s8 delta)
