@@ -67,6 +67,7 @@ static void StopBgAnimation(void);
 static void Task_AnimateBg(u8 taskId);
 static void RestoreBgAfterAnim(void);
 static u8 GetActivePlayerBattlerForEvolution(u8 partyId);
+static bool8 ShouldConsumeHeldItem(u16 preEvoSpecies, u16 postEvoSpecies, u16 heldItem);
 
 static const u16 sUnusedPal1[] = INCGFX_U16("graphics/evolution_scene/unused_1.pal", ".gbapal");
 static const u32 sBgAnim_Gfx[] = INCGFX_U32("graphics/evolution_scene/bg.png", ".4bpp.lz");
@@ -79,6 +80,23 @@ static const u16 sUnusedPal4[] = INCGFX_U16("graphics/evolution_scene/unused_4.p
 static const u16 sBgAnim_Pal[] = INCGFX_U16("graphics/evolution_scene/bg_anim.pal", ".gbapal");
 
 static const u8 sText_ShedinjaJapaneseName[] = _("ヌケニン");
+
+static bool8 ShouldConsumeHeldItem(u16 preEvoSpecies, u16 postEvoSpecies, u16 heldItem)
+{
+    s32 i;
+
+    for (i = 0; i < EVOS_PER_MON; i++)
+    {
+        if (gEvolutionTable[preEvoSpecies][i].targetSpecies == postEvoSpecies
+         && gEvolutionTable[preEvoSpecies][i].param == heldItem
+         && (gEvolutionTable[preEvoSpecies][i].method == EVO_HOLD_ITEM
+          || gEvolutionTable[preEvoSpecies][i].method == EVO_HOLD_ITEM_DAY
+          || gEvolutionTable[preEvoSpecies][i].method == EVO_HOLD_ITEM_NIGHT))
+            return TRUE;
+    }
+
+    return FALSE;
+}
 
 // The below table is used by Task_UpdateBgPalette to control the speed at which the bg color updates.
 // The first two values are indexes into sBgAnim_PalIndexes (indirectly, via sBgAnimPal), and are
@@ -786,6 +804,14 @@ static void Task_EvolutionScene(u8 taskId)
             BattlePutTextOnWindow(gStringVar4, B_WIN_MSG);
             PlayBGM(MUS_EVOLVED);
             gTasks[taskId].tState++;
+            if (ShouldConsumeHeldItem(gTasks[taskId].tPreEvoSpecies,
+                                      gTasks[taskId].tPostEvoSpecies,
+                                      GetMonData(mon, MON_DATA_HELD_ITEM)))
+            {
+                u16 heldItem = ITEM_NONE;
+
+                SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+            }
             SetMonData(mon, MON_DATA_SPECIES, (void *)(&gTasks[taskId].tPostEvoSpecies));
             CalculateMonStats(mon);
             EvolutionRenameMon(mon, gTasks[taskId].tPreEvoSpecies, gTasks[taskId].tPostEvoSpecies);
