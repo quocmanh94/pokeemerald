@@ -642,6 +642,9 @@ u8 GetMostSuitableMonToSwitchInto(void)
     s32 i, j;
     u8 invalidMons;
     u16 move;
+#ifdef BUGFIX
+    bool8 checkedAllMonsForSuperEffectiveMoves = FALSE;
+#endif
 
     if (*(gBattleStruct->monToSwitchIntoId + gActiveBattler) != PARTY_SIZE)
         return *(gBattleStruct->monToSwitchIntoId + gActiveBattler);
@@ -689,9 +692,13 @@ u8 GetMostSuitableMonToSwitchInto(void)
 
     while (invalidMons != (1 << PARTY_SIZE) - 1) // All mons are invalid.
     {
+#ifdef BUGFIX
+        bestDmg = 0xFF;
+#else
         bestDmg = TYPE_MUL_NO_EFFECT;
+#endif
         bestMonId = PARTY_SIZE;
-        // Find the mon whose type is the most suitable offensively.
+        // Find the mon with the best defensive type matchup.
         for (i = firstId; i < lastId; i++)
         {
             u16 species = GetMonData(&party[i], MON_DATA_SPECIES);
@@ -709,10 +716,14 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 ModulateByTypeEffectiveness(gBattleMons[opposingBattler].types[0], type1, type2, &typeDmg);
                 ModulateByTypeEffectiveness(gBattleMons[opposingBattler].types[1], type1, type2, &typeDmg);
 
+#ifdef BUGFIX
+                if (bestDmg > typeDmg)
+#else
                 /* Possible bug: this comparison gives the type that takes the most damage, when
                 a "good" AI would want to select the type that takes the least damage. Unknown if this
                 is a legitimate mistake or if it's an intentional, if weird, design choice */
                 if (bestDmg < typeDmg)
+#endif
                 {
                     bestDmg = typeDmg;
                     bestMonId = i;
@@ -734,13 +745,26 @@ u8 GetMostSuitableMonToSwitchInto(void)
                     break;
             }
 
+#ifdef BUGFIX
+            if (i != MAX_MON_MOVES || (checkedAllMonsForSuperEffectiveMoves && bestDmg <= TYPE_MUL_NOT_EFFECTIVE))
+#else
             if (i != MAX_MON_MOVES)
-                return bestMonId; // Has both the typing and at least one super effective move.
+#endif
+                return bestMonId; // Has a super effective move, or a resistant matchup after checking all moves.
 
             invalidMons |= gBitTable[bestMonId]; // Sorry buddy, we want something better.
         }
         else
         {
+#ifdef BUGFIX
+            if (!checkedAllMonsForSuperEffectiveMoves)
+            {
+                // No mon has a super effective move. Check again for a resistant defensive matchup.
+                invalidMons = 0;
+                checkedAllMonsForSuperEffectiveMoves = TRUE;
+            }
+            else
+#endif
             invalidMons = (1 << PARTY_SIZE) - 1; // No viable mon to switch.
         }
     }
