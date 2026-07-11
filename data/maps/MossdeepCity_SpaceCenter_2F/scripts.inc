@@ -258,6 +258,10 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	special SetCB2WhiteOut
 
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
+	specialvar VAR_RESULT, CountPartyAliveNonEggMons
+	goto_if_ne VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_PostBattlePartyReady
+	special HealPlayerParty
+MossdeepCity_SpaceCenter_2F_EventScript_PostBattlePartyReady::
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT
 	closemessage
 	delay 20
