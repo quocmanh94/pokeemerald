@@ -251,7 +251,26 @@
 #define EVO_LEVEL_SHEDINJA   14 // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15 // Pokémon levels up with beauty ≥ specified value
 
-#define EVOS_PER_MON 5
+// Additional evolution methods
+#define EVO_LEVEL_MALE       16 // Pokémon reaches the specified level and is male
+#define EVO_LEVEL_FEMALE     17 // Pokémon reaches the specified level and is female
+#define EVO_LEVEL_DAY        20 // Pokémon reaches the specified level during the day
+#define EVO_LEVEL_NIGHT      21 // Pokémon reaches the specified level at night
+#define EVO_LEVEL_MORNING    22 // Pokémon reaches the specified level during morning twilight
+#define EVO_LEVEL_DUSK       23 // Pokémon reaches the specified level during evening twilight
+#define EVO_HOLD_ITEM        24 // Pokémon levels up while holding the specified item
+#define EVO_HOLD_ITEM_DAY    25 // Pokémon levels up while holding the specified item during the day
+#define EVO_HOLD_ITEM_NIGHT  26 // Pokémon levels up while holding the specified item at night
+#define EVO_MOVE             27 // Pokémon levels up knowing the specified move
+#define EVO_MOVE_TYPE        28 // Pokémon levels up knowing a move of the specified type
+#define EVO_MON_IN_PARTY     30 // Pokémon levels up with the specified species in the party
+#define EVO_ITEM_MALE        31 // specified item is used on a male Pokémon
+#define EVO_ITEM_FEMALE      32 // specified item is used on a female Pokémon
+#define EVO_LEVEL_LOCATION   37 // Pokémon levels up in the specified region map section
+#define EVO_LEVEL_RAIN       38 // Pokémon reaches the specified level while it is raining
+#define EVO_LEVEL_DARK_TYPE_IN_PARTY 42 // Pokémon reaches the specified level with a Dark-type Pokémon in the party
+
+#define EVOS_PER_MON 8
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL     0
