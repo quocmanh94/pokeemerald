@@ -2,6 +2,7 @@
 #include "money.h"
 #include "graphics.h"
 #include "event_data.h"
+#include "pokemon.h"
 #include "string_util.h"
 #include "text.h"
 #include "menu.h"
@@ -9,6 +10,8 @@
 #include "sprite.h"
 #include "strings.h"
 #include "decompress.h"
+#include "constants/flags.h"
+#include "constants/species.h"
 
 #define MAX_MONEY 999999
 
@@ -69,6 +72,8 @@ static const struct CompressedSpritePalette sSpritePalette_MoneyLabel =
     .tag = MONEY_LABEL_TAG
 };
 
+static const u16 sWhiteoutBadgeMoney[NUM_BADGES + 1] = {8, 16, 24, 36, 48, 64, 80, 100, 120};
+
 u32 GetMoney(u32 *moneyPtr)
 {
     return *moneyPtr ^ gSaveBlock2Ptr->encryptionKey;
@@ -118,6 +123,36 @@ void RemoveMoney(u32 *moneyPtr, u32 toSub)
         toSet -= toSub;
 
     SetMoney(moneyPtr, toSet);
+}
+
+u32 CalculateWhiteoutMoneyLoss(void)
+{
+    u32 money;
+    u8 highestLevel = 1;
+    u8 badgeCount = 0;
+    s32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+
+        if (species != SPECIES_NONE
+         && species != SPECIES_EGG
+         && GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) > highestLevel)
+            highestLevel = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+    }
+
+    for (i = 0; i < NUM_BADGES; i++)
+    {
+        if (FlagGet(FLAG_BADGE01_GET + i))
+            badgeCount++;
+    }
+
+    money = sWhiteoutBadgeMoney[badgeCount] * highestLevel;
+    if (!IsEnoughMoney(&gSaveBlock1Ptr->money, money))
+        money = GetMoney(&gSaveBlock1Ptr->money);
+
+    return money;
 }
 
 bool8 IsEnoughForCostInVar0x8005(void)
