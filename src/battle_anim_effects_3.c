@@ -120,6 +120,7 @@ static void AnimTask_OdorSleuthMovementWaitFinish(u8);
 static void MoveOdorSleuthClone(struct Sprite *);
 static void AnimTask_TeeterDanceMovement_Step(u8);
 static void AnimTask_SlackOffSquish_Step(u8);
+static void AnimTask_HeldItemSquish_Step(u8);
 
 const union AnimCmd gScratchAnimCmds[] =
 {
@@ -5545,3 +5546,41 @@ static void AnimTask_SlackOffSquish_Step(u8 taskId)
     if (!RunAffineAnimFromTaskData(&gTasks[taskId]))
         DestroyAnimVisualTask(taskId);
 }
+
+#define tNumSquishes     data[0]
+#define tBattlerSpriteId data[15]
+
+// Squishes the mon vertically a specified number of times.
+// arg 0: battler
+// arg 1: number of squishes
+void AnimTask_HeldItemSquish(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+
+    if (gBattleAnimArgs[1] <= 0)
+    {
+        DestroyAnimVisualTask(taskId);
+        return;
+    }
+
+    task->tNumSquishes = gBattleAnimArgs[1];
+    task->tBattlerSpriteId = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
+    PrepareAffineAnimInTaskData(task, task->tBattlerSpriteId, gFacadeSquishAffineAnimCmds);
+    task->func = AnimTask_HeldItemSquish_Step;
+}
+
+static void AnimTask_HeldItemSquish_Step(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+
+    if (!RunAffineAnimFromTaskData(task))
+    {
+        if (--task->tNumSquishes == 0)
+            DestroyAnimVisualTask(taskId);
+        else
+            PrepareAffineAnimInTaskData(task, task->tBattlerSpriteId, gFacadeSquishAffineAnimCmds);
+    }
+}
+
+#undef tNumSquishes
+#undef tBattlerSpriteId
