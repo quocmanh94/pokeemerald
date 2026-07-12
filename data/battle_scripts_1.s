@@ -2949,9 +2949,24 @@ BattleScript_LocalBattleLost::
 	jumpifbattletype BATTLE_TYPE_EREADER_TRAINER, BattleScript_LocalBattleLostEnd
 	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, TRAINER_SECRET_BASE, BattleScript_LocalBattleLostEnd
 BattleScript_LocalBattleLostPrintWhiteOut::
+	jumpifbattletype BATTLE_TYPE_FRONTIER, BattleScript_LocalBattleLostFrontierWhiteOut
+	getmoneyreward
+	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostPrintTrainerWhiteOut
 	printstring STRINGID_PLAYERWHITEOUT
 	waitmessage B_WAIT_TIME_LONG
 	printstring STRINGID_PLAYERWHITEOUT2
+	waitmessage B_WAIT_TIME_LONG
+	end2
+BattleScript_LocalBattleLostFrontierWhiteOut::
+	printstring STRINGID_PLAYERWHITEOUT
+	waitmessage B_WAIT_TIME_LONG
+	printstring STRINGID_PLAYERWHITEOUT_NOMONEY
+	waitmessage B_WAIT_TIME_LONG
+	end2
+BattleScript_LocalBattleLostPrintTrainerWhiteOut::
+	printstring STRINGID_PLAYERLOSTTOENEMYTRAINER
+	waitmessage B_WAIT_TIME_LONG
+	printstring STRINGID_PLAYERPAIDPRIZEMONEY
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_LocalBattleLostEnd::
 	end2
