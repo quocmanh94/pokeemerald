@@ -21,6 +21,7 @@
 #include "overworld.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "constants/pokemon.h"
 #include "constants/region_map_sections.h"
 
 extern const struct Evolution gEvolutionTable[][EVOS_PER_MON];
@@ -31,6 +32,8 @@ static void ClearDaycareMonMail(struct DaycareMail *mail);
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
 static u8 GetDaycareCompatibilityScore(struct DayCare *daycare);
 static void DaycarePrintMonInfo(u8 windowId, u32 daycareSlotId, u8 y);
+static u32 GetDaycareEggShinyPersonality(u32 personality);
+static void SetDaycareEggPerfectIVs(struct Pokemon *egg);
 
 // RAM buffers used to assist with BuildEggMoveset()
 EWRAM_DATA static u16 sHatchedEggLevelUpMoves[EGG_LVL_UP_MOVES_ARRAY_COUNT] = {0};
@@ -572,6 +575,34 @@ static void InheritIVs(struct Pokemon *egg, struct DayCare *daycare)
     }
 }
 
+static u32 GetDaycareEggShinyPersonality(u32 personality)
+{
+    u8 nature = GetNatureFromPersonality(personality);
+    u32 otId = gSaveBlock2Ptr->playerTrainerId[0]
+             | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+             | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+             | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+    u32 shinyPersonality;
+
+    do
+    {
+        shinyPersonality = Random32();
+        shinyPersonality = ((((Random() % SHINY_ODDS) ^ (HIHALF(otId) ^ LOHALF(otId)))
+                          ^ LOHALF(shinyPersonality)) << 16) | LOHALF(shinyPersonality);
+    } while (shinyPersonality == 0 || nature != GetNatureFromPersonality(shinyPersonality));
+
+    return shinyPersonality;
+}
+
+static void SetDaycareEggPerfectIVs(struct Pokemon *egg)
+{
+    u32 i;
+    u8 iv = MAX_PER_STAT_IVS;
+
+    for (i = 0; i < NUM_STATS; i++)
+        SetMonData(egg, MON_DATA_HP_IV + i, &iv);
+}
+
 // Counts the number of egg moves a Pokémon learns and stores the moves in
 // the given array.
 static u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
@@ -788,6 +819,7 @@ static void _GiveEggFromDaycare(struct DayCare *daycare)
     AlterEggSpeciesWithIncenseItem(&species, daycare);
     SetInitialEggData(&egg, species, daycare);
     InheritIVs(&egg, daycare);
+    SetDaycareEggPerfectIVs(&egg);
     BuildEggMoveset(&egg, &daycare->mons[parentSlots[1]].mon, &daycare->mons[parentSlots[0]].mon);
 
     if (species == SPECIES_PICHU)
@@ -835,7 +867,7 @@ static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *
     u8 metLevel;
     u8 language;
 
-    personality = daycare->offspringPersonality;
+    personality = GetDaycareEggShinyPersonality(daycare->offspringPersonality);
     CreateMon(mon, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
     ball = ITEM_POKE_BALL;
