@@ -49,6 +49,7 @@
 #include "script_pokemon_util.h"
 #include "secret_base.h"
 #include "sound.h"
+#include "sprite.h"
 #include "start_menu.h"
 #include "task.h"
 #include "tileset_anims.h"
@@ -63,6 +64,7 @@
 #include "constants/layouts.h"
 #include "constants/map_types.h"
 #include "constants/region_map_sections.h"
+#include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
@@ -93,6 +95,15 @@ struct CableClubPlayer
 #define FACING_FORCED_DOWN 8
 #define FACING_FORCED_LEFT 9
 #define FACING_FORCED_RIGHT 10
+
+#define FIELD_CLOCK_GFX_TAG 0xF00D
+#define FIELD_CLOCK_PAL_TAG 0xF00E
+#define FIELD_CLOCK_CHAR_COUNT 8
+#define FIELD_CLOCK_CHAR_WIDTH 8
+#define FIELD_CLOCK_X (DISPLAY_WIDTH - FIELD_CLOCK_CHAR_COUNT * FIELD_CLOCK_CHAR_WIDTH - 4 + FIELD_CLOCK_CHAR_WIDTH / 2)
+#define FIELD_CLOCK_Y 6
+#define FIELD_CLOCK_COLON_TILE 10
+#define CLOCK_TILE_ROW(a, b, c, d, e, f, g, h) ((a) | ((b) << 4) | ((c) << 8) | ((d) << 12) | ((e) << 16) | ((f) << 20) | ((g) << 24) | ((h) << 28))
 
 extern const struct MapLayout *const gMapLayouts[];
 extern const struct MapHeader *const *const gMapGroups[];
@@ -169,6 +180,8 @@ static void SetKeyInterceptCallback(u16 (*func)(u32));
 static void SetFieldVBlankCallback(void);
 static void FieldClearVBlankHBlankCallbacks(void);
 static void TransitionMapMusic(void);
+static void UpdateFieldClockOverlay(u16 heldKeys);
+static void HideFieldClockSprites(void);
 static u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *, u16, u8);
 static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *, u8, u16, u8);
 static u16 GetCenterScreenMetatileBehavior(void);
@@ -204,7 +217,245 @@ EWRAM_DATA static mapsec_u16_t sLastMapSectionId = 0;
 EWRAM_DATA static struct InitialPlayerAvatarState sInitialPlayerAvatarState = {0};
 EWRAM_DATA static u16 sAmbientCrySpecies = 0;
 EWRAM_DATA static bool8 sIsAmbientCryWaterMon = FALSE;
+EWRAM_DATA static u8 sFieldClockSpriteIds[FIELD_CLOCK_CHAR_COUNT] = {
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE,
+    SPRITE_NONE
+};
+EWRAM_DATA static u8 sFieldClockSecond = 0xFF;
 EWRAM_DATA struct LinkPlayerObjectEvent gLinkPlayerObjectEvents[4] = {0};
+
+static const u16 sFieldClockPalette[] = {
+    RGB_BLACK,
+    RGB(2, 3, 5),
+    RGB_WHITE,
+    RGB_WHITE,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK,
+    RGB_BLACK
+};
+
+static const u32 sFieldClockTiles[] = {
+    // 0
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 1
+    CLOCK_TILE_ROW(0, 0, 1, 1, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 2, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 2
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 3
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 4
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 5
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 6
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 7
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 2, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 1, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 8
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // 9
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 2, 2, 2, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 1, 1, 1, 1, 1, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    // :
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 1, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 1, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 2, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 1, 1, 1, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0),
+    CLOCK_TILE_ROW(0, 0, 0, 0, 0, 0, 0, 0)
+};
+
+static const struct SpriteSheet sFieldClockSpriteSheet = {
+    .data = sFieldClockTiles,
+    .size = sizeof(sFieldClockTiles),
+    .tag = FIELD_CLOCK_GFX_TAG
+};
+
+static const struct SpritePalette sFieldClockSpritePalette = {
+    .data = sFieldClockPalette,
+    .tag = FIELD_CLOCK_PAL_TAG
+};
+
+static const struct OamData sFieldClockOam = {
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(8x8),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(8x8),
+    .tileNum = 0,
+    .priority = 0,
+    .paletteNum = 0,
+    .affineParam = 0
+};
+
+static const union AnimCmd sFieldClockAnim_0[] = {
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_1[] = {
+    ANIMCMD_FRAME(1, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_2[] = {
+    ANIMCMD_FRAME(2, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_3[] = {
+    ANIMCMD_FRAME(3, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_4[] = {
+    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_5[] = {
+    ANIMCMD_FRAME(5, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_6[] = {
+    ANIMCMD_FRAME(6, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_7[] = {
+    ANIMCMD_FRAME(7, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_8[] = {
+    ANIMCMD_FRAME(8, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_9[] = {
+    ANIMCMD_FRAME(9, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sFieldClockAnim_Colon[] = {
+    ANIMCMD_FRAME(FIELD_CLOCK_COLON_TILE, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd *const sFieldClockAnims[] = {
+    sFieldClockAnim_0,
+    sFieldClockAnim_1,
+    sFieldClockAnim_2,
+    sFieldClockAnim_3,
+    sFieldClockAnim_4,
+    sFieldClockAnim_5,
+    sFieldClockAnim_6,
+    sFieldClockAnim_7,
+    sFieldClockAnim_8,
+    sFieldClockAnim_9,
+    sFieldClockAnim_Colon
+};
+
+static const struct SpriteTemplate sFieldClockSpriteTemplate = {
+    .tileTag = FIELD_CLOCK_GFX_TAG,
+    .paletteTag = FIELD_CLOCK_PAL_TAG,
+    .oam = &sFieldClockOam,
+    .anims = sFieldClockAnims,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
 
 static const struct WarpData sDummyWarpData =
 {
@@ -1439,6 +1690,131 @@ bool32 IsOverworldLinkActive(void)
         return FALSE;
 }
 
+static bool8 FieldClockSpritesAreActive(void)
+{
+    u8 i;
+
+    for (i = 0; i < FIELD_CLOCK_CHAR_COUNT; i++)
+    {
+        u8 spriteId = sFieldClockSpriteIds[i];
+
+        if (spriteId == SPRITE_NONE
+         || !gSprites[spriteId].inUse
+         || gSprites[spriteId].template != &sFieldClockSpriteTemplate)
+            return FALSE;
+    }
+
+    return TRUE;
+}
+
+static bool8 LoadFieldClockSpriteGraphics(void)
+{
+    if (GetSpriteTileStartByTag(FIELD_CLOCK_GFX_TAG) == 0xFFFF)
+    {
+        LoadSpriteSheet(&sFieldClockSpriteSheet);
+        if (GetSpriteTileStartByTag(FIELD_CLOCK_GFX_TAG) == 0xFFFF)
+            return FALSE;
+    }
+
+    if (IndexOfSpritePaletteTag(FIELD_CLOCK_PAL_TAG) == 0xFF
+     && LoadSpritePalette(&sFieldClockSpritePalette) == 0xFF)
+        return FALSE;
+
+    return TRUE;
+}
+
+static void ShowFieldClockSprites(void)
+{
+    u8 i;
+
+    if (FieldClockSpritesAreActive())
+        return;
+
+    HideFieldClockSprites();
+    if (!LoadFieldClockSpriteGraphics())
+        return;
+
+    for (i = 0; i < FIELD_CLOCK_CHAR_COUNT; i++)
+    {
+        sFieldClockSpriteIds[i] = CreateSprite(&sFieldClockSpriteTemplate,
+                                               FIELD_CLOCK_X + i * FIELD_CLOCK_CHAR_WIDTH,
+                                               FIELD_CLOCK_Y,
+                                               0);
+        if (sFieldClockSpriteIds[i] == MAX_SPRITES)
+        {
+            sFieldClockSpriteIds[i] = SPRITE_NONE;
+            HideFieldClockSprites();
+            return;
+        }
+    }
+
+    sFieldClockSecond = 0xFF;
+}
+
+static void SetFieldClockSpriteDigits(u8 hours, u8 minutes, u8 seconds)
+{
+    u8 digits[FIELD_CLOCK_CHAR_COUNT];
+    u8 i;
+
+    digits[0] = hours / 10;
+    digits[1] = hours % 10;
+    digits[2] = FIELD_CLOCK_COLON_TILE;
+    digits[3] = minutes / 10;
+    digits[4] = minutes % 10;
+    digits[5] = FIELD_CLOCK_COLON_TILE;
+    digits[6] = seconds / 10;
+    digits[7] = seconds % 10;
+
+    for (i = 0; i < FIELD_CLOCK_CHAR_COUNT; i++)
+        StartSpriteAnimIfDifferent(&gSprites[sFieldClockSpriteIds[i]], digits[i]);
+}
+
+static void UpdateFieldClockSprites(void)
+{
+    RtcCalcLocalTime();
+    if (sFieldClockSecond == gLocalTime.seconds)
+        return;
+
+    sFieldClockSecond = gLocalTime.seconds;
+    SetFieldClockSpriteDigits(gLocalTime.hours, gLocalTime.minutes, gLocalTime.seconds);
+}
+
+static void UpdateFieldClockOverlay(u16 heldKeys)
+{
+    if (!(heldKeys & R_BUTTON))
+    {
+        HideFieldClockSprites();
+        return;
+    }
+
+    ShowFieldClockSprites();
+    if (FieldClockSpritesAreActive())
+        UpdateFieldClockSprites();
+}
+
+static void HideFieldClockSprites(void)
+{
+    u8 i;
+
+    for (i = 0; i < FIELD_CLOCK_CHAR_COUNT; i++)
+    {
+        u8 spriteId = sFieldClockSpriteIds[i];
+
+        if (spriteId != SPRITE_NONE
+         && gSprites[spriteId].inUse
+         && gSprites[spriteId].template == &sFieldClockSpriteTemplate)
+        {
+            DestroySprite(&gSprites[spriteId]);
+        }
+
+        sFieldClockSpriteIds[i] = SPRITE_NONE;
+    }
+
+    FreeSpriteTilesByTag(FIELD_CLOCK_GFX_TAG);
+    FreeSpritePaletteByTag(FIELD_CLOCK_PAL_TAG);
+    sFieldClockSecond = 0xFF;
+}
+
 static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
 {
     struct FieldInput inputStruct;
@@ -1451,12 +1827,18 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
         if (ProcessPlayerFieldInput(&inputStruct) == 1)
         {
             LockPlayerFieldControls();
+            HideFieldClockSprites();
             HideMapNamePopUpWindow();
         }
         else
         {
             PlayerStep(inputStruct.dpadDirection, newKeys, heldKeys);
+            UpdateFieldClockOverlay(heldKeys);
         }
+    }
+    else
+    {
+        HideFieldClockSprites();
     }
 }
 
