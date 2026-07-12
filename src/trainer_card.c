@@ -24,7 +24,7 @@
 #include "pokedex.h"
 #include "pokemon_icon.h"
 #include "graphics.h"
-#include "pokemon_icon.h"
+#include "pokemon.h"
 #include "trainer_pokemon_sprites.h"
 #include "contest_util.h"
 #include "constants/songs.h"
@@ -59,6 +59,8 @@ struct TrainerCardData
     bool8 unused_E;
     bool8 unused_F;
     bool8 hasTrades;
+    bool8 isPlayerCard;
+    u8 partyIconSpriteIds[PARTY_SIZE];
     u8 badgeCount[NUM_BADGES];
     u8 easyChatProfile[TRAINER_CARD_PROFILE_LENGTH][13];
     u8 textPlayersCard[70];
@@ -168,6 +170,8 @@ static bool8 Task_AnimateCardFlipUp(struct Task *task);
 static bool8 Task_EndCardFlip(struct Task *task);
 static void UpdateCardFlipRegs(u16);
 static void LoadMonIconGfx(void);
+static void CreateTrainerCardPartyIcons(void);
+static void DestroyTrainerCardPartyIcons(void);
 
 static const u32 sTrainerCardStickers_Gfx[]      = INCGFX_U32("graphics/trainer_card/frlg/stickers.png", ".4bpp.lz");
 static const u16 sUnused_Pal[]                   = INCGFX_U16("graphics/trainer_card/unused.pal", ".gbapal");
@@ -360,6 +364,7 @@ static void CB2_TrainerCard(void)
 
 static void CloseTrainerCard(u8 taskId)
 {
+    DestroyTrainerCardPartyIcons();
     SetMainCallback2(sData->callback2);
     FreeAllWindowBuffers();
     FREE_AND_SET_NULL(sData);
@@ -466,6 +471,7 @@ static void Task_TrainerCard(u8 taskId)
     case STATE_WAIT_FLIP_TO_BACK:
         if (IsCardFlipTaskActive() && Overworld_IsRecvQueueAtMax() != TRUE)
         {
+            CreateTrainerCardPartyIcons();
             PlaySE(SE_RG_CARD_OPEN);
             sData->mainState = STATE_HANDLE_INPUT_BACK;
         }
@@ -475,6 +481,7 @@ static void Task_TrainerCard(u8 taskId)
         {
             if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
             {
+                DestroyTrainerCardPartyIcons();
                 sData->mainState = STATE_WAIT_LINK_PARTNER;
             }
             else if (gReceivedRemoteLinkPlayers)
@@ -484,6 +491,7 @@ static void Task_TrainerCard(u8 taskId)
             }
             else
             {
+                DestroyTrainerCardPartyIcons();
                 FlipTrainerCard();
                 sData->mainState = STATE_WAIT_FLIP_TO_FRONT;
                 PlaySE(SE_RG_CARD_FLIP);
@@ -493,6 +501,7 @@ static void Task_TrainerCard(u8 taskId)
         {
            if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
            {
+               DestroyTrainerCardPartyIcons();
                sData->mainState = STATE_WAIT_LINK_PARTNER;
            }
            else
@@ -975,7 +984,8 @@ static bool8 PrintAllOnCardBack(void)
         break;
     case 6:
         PrintPokemonIconsOnCard();
-        PrintBattleFacilityStringOnCard();
+        if (!sData->isPlayerCard)
+            PrintBattleFacilityStringOnCard();
         break;
     case 7:
         PrintStickersOnCard();
@@ -1393,6 +1403,47 @@ static void LoadMonIconGfx(void)
     }
 }
 
+static void CreateTrainerCardPartyIcons(void)
+{
+    u32 personality;
+    u32 otId;
+    u16 species;
+    u8 i;
+    u8 spriteId;
+
+    if (!sData->isPlayerCard)
+        return;
+
+    for (i = 0; i < gPlayerPartyCount; i++)
+    {
+        species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+        personality = GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY);
+        otId = GetMonData(&gPlayerParty[i], MON_DATA_OT_ID);
+        spriteId = CreateMonIcon2(species, SpriteCB_MonIcon, 40 + 32 * i, 132, 1, otId, personality, TRUE);
+        if (spriteId != MAX_SPRITES)
+        {
+            sData->partyIconSpriteIds[i] = spriteId;
+            gSprites[spriteId].oam.priority = 0;
+            StartSpriteAnim(&gSprites[spriteId], 4);
+        }
+    }
+}
+
+static void DestroyTrainerCardPartyIcons(void)
+{
+    u8 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (sData->partyIconSpriteIds[i] != MAX_SPRITES)
+        {
+            FreeAndDestroyMonIconSprite(&gSprites[sData->partyIconSpriteIds[i]]);
+            sData->partyIconSpriteIds[i] = MAX_SPRITES;
+        }
+    }
+    FreeMonIconPalettes();
+}
+
 static void PrintStickersOnCard(void)
 {
     u8 i;
@@ -1805,6 +1856,7 @@ void ShowPlayerTrainerCard(void (*callback)(void))
 {
     sData = AllocZeroed(sizeof(*sData));
     sData->callback2 = callback;
+    sData->isPlayerCard = TRUE;
     if (callback == CB2_ReshowFrontierPass)
         sData->blendColor = RGB_WHITE;
     else
@@ -1840,6 +1892,7 @@ static void InitTrainerCardData(void)
     sData->onBack = FALSE;
     sData->flipBlendY = 0;
     sData->cardType = GetSetCardType();
+    memset(sData->partyIconSpriteIds, MAX_SPRITES, sizeof(sData->partyIconSpriteIds));
     for (i = 0; i < TRAINER_CARD_PROFILE_LENGTH; i++)
         CopyEasyChatWord(sData->easyChatProfile[i], sData->trainerCard.easyChatProfile[i]);
 }
