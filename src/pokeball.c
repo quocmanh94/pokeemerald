@@ -17,8 +17,8 @@
 
 static void Task_DoPokeballSendOutAnim(u8 taskId);
 static void SpriteCB_PlayerMonSendOut_1(struct Sprite *sprite);
-static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite);
-static void SpriteCB_OpponentMonSendOut(struct Sprite *sprite);
+static void SpriteCB_OpponentMonSendOut_1(struct Sprite *sprite);
+static void SpriteCB_MonSendOut_2(struct Sprite *sprite);
 static void SpriteCB_BallThrow(struct Sprite *sprite);
 static void SpriteCB_BallThrow_ReachMon(struct Sprite *sprite);
 static void SpriteCB_BallThrow_StartShrinkMon(struct Sprite *sprite);
@@ -385,13 +385,15 @@ static void Task_DoPokeballSendOutAnim(u8 taskId)
         gSprites[ballSpriteId].x = 24;
         gSprites[ballSpriteId].y = 68;
         gSprites[ballSpriteId].callback = SpriteCB_PlayerMonSendOut_1;
+        PlaySE(SE_BALL_THROW);
         break;
     case POKEBALL_OPPONENT_SENDOUT:
-        gSprites[ballSpriteId].x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X);
-        gSprites[ballSpriteId].y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y) + 24;
+        gSprites[ballSpriteId].x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X) + 24;
+        gSprites[ballSpriteId].y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y) - 16;
         gBattlerTarget = battler;
         gSprites[ballSpriteId].data[0] = 0;
-        gSprites[ballSpriteId].callback = SpriteCB_OpponentMonSendOut;
+        gSprites[ballSpriteId].callback = SpriteCB_OpponentMonSendOut_1;
+        PlaySE(SE_BALL_THROW);
         break;
     default:
         gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
@@ -916,12 +918,23 @@ static void SpriteCB_PlayerMonSendOut_1(struct Sprite *sprite)
     sprite->data[5] = -30;
     sprite->oam.affineParam = sprite->sBattler;
     InitAnimArcTranslation(sprite);
-    sprite->callback = SpriteCB_PlayerMonSendOut_2;
+    sprite->callback = SpriteCB_MonSendOut_2;
 }
 
 #define HIBYTE(x) (((x) >> 8) & 0xFF)
 
-static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite)
+static void SpriteCB_OpponentMonSendOut_1(struct Sprite *sprite)
+{
+    sprite->data[0] = 25;
+    sprite->data[2] = GetBattlerSpriteCoord(sprite->sBattler, BATTLER_COORD_X);
+    sprite->data[4] = GetBattlerSpriteCoord(sprite->sBattler, BATTLER_COORD_Y) + 24;
+    sprite->data[5] = -30;
+    sprite->oam.affineParam = sprite->sBattler;
+    InitAnimArcTranslation(sprite);
+    sprite->callback = SpriteCB_MonSendOut_2;
+}
+
+static void SpriteCB_MonSendOut_2(struct Sprite *sprite)
 {
     u32 r6;
     u32 r7;
@@ -959,6 +972,8 @@ static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite)
     {
         if (TranslateAnimHorizontalArc(sprite))
         {
+            u8 rightPosition;
+
             sprite->x += sprite->x2;
             sprite->y += sprite->y2;
             sprite->y2 = 0;
@@ -966,8 +981,13 @@ static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite)
             sprite->sBattler = sprite->oam.affineParam & 0xFF;
             sprite->data[0] = 0;
 
+            if (GetBattlerSide(sprite->sBattler) == B_SIDE_PLAYER)
+                rightPosition = B_POSITION_PLAYER_RIGHT;
+            else
+                rightPosition = B_POSITION_OPPONENT_RIGHT;
+
             if (IsDoubleBattle() && gBattleSpritesDataPtr->animationData->introAnimActive
-             && sprite->sBattler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
+             && sprite->sBattler == GetBattlerAtPosition(rightPosition))
                 sprite->callback = SpriteCB_ReleaseMon2FromBall;
             else
                 sprite->callback = SpriteCB_ReleaseMonFromBall;
@@ -985,20 +1005,6 @@ static void SpriteCB_ReleaseMon2FromBall(struct Sprite *sprite)
     {
         sprite->data[0] = 0;
         sprite->callback = SpriteCB_ReleaseMonFromBall;
-    }
-}
-
-static void SpriteCB_OpponentMonSendOut(struct Sprite *sprite)
-{
-    sprite->data[0]++;
-    if (sprite->data[0] > 15)
-    {
-        sprite->data[0] = 0;
-        if (IsDoubleBattle() && gBattleSpritesDataPtr->animationData->introAnimActive
-         && sprite->sBattler == GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))
-            sprite->callback = SpriteCB_ReleaseMon2FromBall;
-        else
-            sprite->callback = SpriteCB_ReleaseMonFromBall;
     }
 }
 
