@@ -488,7 +488,8 @@ static void ApplyColorMap(u8 startPalIndex, u8 numPalettes, s8 colorMapIndex)
         // Loop through the specified palette range and apply necessary color maps.
         while (curPalIndex < numPalettes)
         {
-            if (sPaletteColorMapTypes[curPalIndex] == COLOR_MAP_NONE || (curPalIndex >= 16 && GetSpritePaletteTagByPaletteNum(curPalIndex - 16) >> 15))
+            if (sPaletteColorMapTypes[curPalIndex] == COLOR_MAP_NONE ||
+                (curPalIndex >= 16 && IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(curPalIndex - 16))))
             {
                 // No palette change.
                 palOffset += 16;
@@ -674,7 +675,8 @@ static void ApplyFogBlend(u8 blendCoeff, u16 blendColor)
     UpdateAltBgPalettes(PALETTES_BG);
     CpuFastCopy(gPlttBufferUnfaded, gPlttBufferFaded, PLTT_BUFFER_SIZE * 2);
     UpdatePalettesWithTime(PALETTES_ALL);
-    BlendPalettesFine(0x1FFF, gPlttBufferFaded, gPlttBufferFaded, blendCoeff, blendColor);
+    // Then blend tile palettes [0, 12] faded->faded with fadeIn color
+    BlendPalettesFine(PALETTES_MAP, gPlttBufferFaded, gPlttBufferFaded, blendCoeff, blendColor);
     for (curPalIndex = 16; curPalIndex < 32; curPalIndex++)
     {
         if (LightenSpritePaletteInFog(curPalIndex))
@@ -696,7 +698,7 @@ static bool8 LightenSpritePaletteInFog(u8 paletteIndex)
 {
     u16 i;
 
-    if (paletteIndex >= 16 && (GetSpritePaletteTagByPaletteNum(i - 16) >> 15))
+    if (paletteIndex >= 16 && IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(paletteIndex - 16)))
         return FALSE;
 
     for (i = 0; i < gWeatherPtr->lightenedFogSpritePalsCount; i++)
@@ -857,6 +859,14 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex, bool8 allowFog)
         }
         break;
     }
+    // If faded out, i.e due to fadescreenswapbuffers,
+    // copy unfaded palette to pal decomp buffer so it will be restored on fade-in
+    if (gPaletteFade.y == 16)
+        CpuFastCopy(
+            gPlttBufferUnfaded + OBJ_PLTT_ID(spritePaletteIndex),
+            gPaletteDecompressionBuffer + 2 * OBJ_PLTT_ID(spritePaletteIndex),
+            PLTT_SIZE_4BPP
+        );
 }
 
 void ApplyWeatherColorMapToPal(u8 paletteIndex, u8 numPalettes)

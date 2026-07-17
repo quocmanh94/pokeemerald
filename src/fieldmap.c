@@ -848,8 +848,10 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
         }
         else if (tileset->isSecondary == TRUE)
         {
+            // All gTilesetPalettes_* arrays should have ALIGNED(4),
+            // but use CpuCopy16 just in case a secondary palette is not word-aligned
             if (skipFaded)
-                CpuFastCopy((void *)tileset->palettes[NUM_PALS_IN_PRIMARY], &gPlttBufferUnfaded[destOffset], size);
+                CpuCopy16(tileset->palettes[NUM_PALS_IN_PRIMARY], &gPlttBufferUnfaded[destOffset], size);
             else
                 LoadPaletteFast(tileset->palettes[NUM_PALS_IN_PRIMARY], destOffset, size);
             low = NUM_PALS_IN_PRIMARY;

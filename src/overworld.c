@@ -1596,10 +1596,10 @@ void UpdatePalettesWithTime(u32 palettes)
         u32 mask = 1 << 16;
         if (palettes >= 0x10000)
             for (i = 0; i < 16; i++, mask <<= 1)
-                if (GetSpritePaletteTagByPaletteNum(i) >> 15)
+                if (IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(i)))
                     palettes &= ~(mask);
 
-        palettes &= 0xFFFF1FFF;
+        palettes &= PALETTES_OBJECTS | PALETTES_MAP;
         if (!palettes)
             return;
         TimeMixPalettes(palettes, gPlttBufferUnfaded, gPlttBufferFaded, (struct BlendSettings *)&gTimeOfDayBlend[currentTimeBlend.time0], (struct BlendSettings *)&gTimeOfDayBlend[currentTimeBlend.time1], currentTimeBlend.weight);
@@ -1611,7 +1611,7 @@ u8 UpdateSpritePaletteWithTime(u8 paletteNum)
     if (MapHasNaturalLight(gMapHeader.mapType))
     {
         u16 offset;
-        if (GetSpritePaletteTagByPaletteNum(paletteNum) >> 15)
+        if (IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(paletteNum)))
             return paletteNum;
         offset = (paletteNum + 16) << 4;
         TimeMixPalettes(1, gPlttBufferUnfaded + offset, gPlttBufferFaded + offset, (struct BlendSettings *)&gTimeOfDayBlend[currentTimeBlend.time0], (struct BlendSettings *)&gTimeOfDayBlend[currentTimeBlend.time1], currentTimeBlend.weight);
@@ -1641,8 +1641,8 @@ static void OverworldBasic(void)
         UpdateTimeOfDay();
         if (cachedBlend.time0 != currentTimeBlend.time0 || cachedBlend.time1 != currentTimeBlend.time1 || cachedBlend.weight != currentTimeBlend.weight)
         {
-            UpdateAltBgPalettes(PALETTES_BG);
-            UpdatePalettesWithTime(PALETTES_ALL);
+            // Also re-apply weather color map so gradual TOD updates keep weather tint
+            ApplyWeatherColorMapIfIdle(gWeatherPtr->colorMapIndex);
         }
     }
 }

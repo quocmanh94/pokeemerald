@@ -508,7 +508,7 @@ static u8 UpdateTimeOfDayPaletteFade(void)
         u16 j = 1;
         for (i = 0; i < 16; i++, j <<= 1)
         {
-            if ((selectedPalettes & j) && !(GetSpritePaletteTagByPaletteNum(i) >> 15))
+            if ((selectedPalettes & j) && !IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(i)))
                 timePalettes |= j;
         }
     }
