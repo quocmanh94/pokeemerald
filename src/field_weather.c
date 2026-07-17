@@ -807,6 +807,37 @@ void FadeScreen(u8 mode, s8 delay)
     }
 }
 
+// Fades screen using BLDY.
+// Note: This enables blending in all windows;
+// these bits may need to be disabled later
+// (i.e. if blending lighting effects using WINOBJ).
+u16 FadeScreenHardware(u8 mode, s8 delay)
+{
+    u16 bldCnt = GetGpuReg(REG_OFFSET_BLDCNT) & BLDCNT_TGT2_ALL;
+    bldCnt |= BLDCNT_TGT1_ALL;
+    // enable blend in all windows
+    SetGpuRegBits(REG_OFFSET_WININ, WININ_WIN0_CLR | WININ_WIN1_CLR);
+    SetGpuRegBits(REG_OFFSET_WINOUT, WINOUT_WIN01_CLR);
+
+    switch (mode)
+    {
+    case FADE_FROM_BLACK:
+        BeginHardwarePaletteFade(bldCnt | BLDCNT_EFFECT_DARKEN, delay, 16, 0, TRUE);
+        break;
+    case FADE_TO_BLACK:
+        BeginHardwarePaletteFade(bldCnt | BLDCNT_EFFECT_DARKEN, delay, 0, 16, FALSE);
+        break;
+    case FADE_FROM_WHITE:
+        BeginHardwarePaletteFade(bldCnt | BLDCNT_EFFECT_LIGHTEN, delay, 16, 0, TRUE);
+        break;
+    case FADE_TO_WHITE:
+        BeginHardwarePaletteFade(bldCnt | BLDCNT_EFFECT_LIGHTEN, delay, 0, 16, FALSE);
+        break;
+    }
+
+    return 0;
+}
+
 bool8 IsWeatherNotFadingIn(void)
 {
     return (gWeatherPtr->palProcessingState != WEATHER_PAL_STATE_SCREEN_FADING_IN);
@@ -969,7 +1000,10 @@ void Weather_SetBlendCoeffs(u8 eva, u8 evb)
     gWeatherPtr->currBlendEVB = evb;
     gWeatherPtr->targetBlendEVA = eva;
     gWeatherPtr->targetBlendEVB = evb;
-    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(eva, evb));
+
+    // don't update BLDALPHA if a hardware fade is on-screen
+    if ((GetGpuReg(REG_OFFSET_BLDCNT) & BLDCNT_EFFECT_EFF_MASK) < BLDCNT_EFFECT_LIGHTEN)
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(eva, evb));
 }
 
 void Weather_SetTargetBlendCoeffs(u8 eva, u8 evb, int delay)

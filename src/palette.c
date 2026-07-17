@@ -957,11 +957,12 @@ static void UpdateBlendRegisters(void)
     SetGpuReg(REG_OFFSET_BLDCNT, (u16)gPaletteFade_blendCnt);
     SetGpuReg(REG_OFFSET_BLDY, gPaletteFade.y);
     // if TGT2 enabled, also adjust BLDALPHA and DISPCNT
-    if (((u16)gPaletteFade_blendCnt) & BLDCNT_TGT2_ALL) {
+    if (((u16)gPaletteFade_blendCnt) & BLDCNT_TGT2_ALL)
+    {
         u16 bldAlpha = GetGpuReg(REG_OFFSET_BLDALPHA);
-        u8 tgt1 = bldAlpha & 0x1F;
-        u8 tgt2 = (bldAlpha >> 8) & 0x1F;
-        u8 mode = (gPaletteFade_blendCnt & (3 << 6)) == BLDCNT_EFFECT_LIGHTEN ? FADE_FROM_WHITE : FADE_FROM_BLACK;
+        u8 tgt1 = BLDALPHA_TGT1(bldAlpha);
+        u8 tgt2 = BLDALPHA_TGT2(bldAlpha);
+        u8 mode = (gPaletteFade_blendCnt & BLDCNT_EFFECT_EFF_MASK) == BLDCNT_EFFECT_LIGHTEN ? FADE_FROM_WHITE : FADE_FROM_BLACK;
         if (!gPaletteFade.yDec)
             mode++;
 
@@ -980,7 +981,7 @@ static void UpdateBlendRegisters(void)
             );
             break;
         case FADE_TO_BLACK:
-            bldAlpha = max(0, 16 - gPaletteFade.y) & 0x1F;
+            bldAlpha = BLDALPHA_TGT1(max(0, 16 - gPaletteFade.y));
             SetGpuReg(
                 REG_OFFSET_BLDALPHA,
                 BLDALPHA_BLEND(min(tgt1, bldAlpha), min(tgt2, bldAlpha))
