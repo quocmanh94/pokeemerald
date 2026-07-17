@@ -91,7 +91,7 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_BallLight = {
 };
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_PokeCenterLight = {
-    .tileTag = TAG_NONE,
+    .tileTag = FLDEFF_TILE_TAG_POKECENTER_LIGHT,
     .paletteTag = OBJ_EVENT_PAL_TAG_NEON_LIGHT,
     .oam = &gObjectEventBaseOam_16x16,
     .anims = sAnimTable_Inanimate,
@@ -101,7 +101,7 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_PokeCenterLight = {
 };
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_MartLight = {
-    .tileTag = TAG_NONE,
+    .tileTag = FLDEFF_TILE_TAG_MART_LIGHT,
     .paletteTag = OBJ_EVENT_PAL_TAG_NEON_LIGHT,
     .oam = &gObjectEventBaseOam_16x16,
     .anims = sAnimTable_Inanimate,
