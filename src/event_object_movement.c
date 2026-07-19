@@ -2,6 +2,7 @@
 #include "malloc.h"
 #include "battle_pyramid.h"
 #include "berry.h"
+#include "bike.h"
 #include "decoration.h"
 #include "event_data.h"
 #include "event_object_movement.h"
@@ -27,6 +28,7 @@
 #include "constants/field_effects.h"
 #include "constants/items.h"
 #include "constants/mauville_old_man.h"
+#include "constants/metatile_behaviors.h"
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "field_weather.h"
@@ -7548,6 +7550,7 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
 
     u8 behavior;
     u8 index = direction;
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
 
     if (index == DIR_NONE)
         return DIR_NONE;
@@ -7559,6 +7562,15 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
 
     if (ledgeBehaviorFuncs[index](behavior) == TRUE)
         return index + 1;
+
+    if (gPlayerAvatar.acroBikeState == ACRO_STATE_BUNNY_HOP
+     && behavior >= MB_JUMP_EAST
+     && behavior <= MB_JUMP_SOUTH)
+    {
+        MoveCoords(direction, &x, &y);
+        if (GetCollisionAtCoords(playerObjEvent, x, y, direction) == COLLISION_NONE)
+            return index + 1;
+    }
 
     return DIR_NONE;
 }
