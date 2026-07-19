@@ -259,7 +259,7 @@ CableClub_EventScript_SelectCableClubRoom::
 	goto_if_set FLAG_VISITED_MAUVILLE_CITY, CableClub_EventScript_CableClubUnlockedRecordCorner
 	multichoice 0, 0, MULTI_CABLE_CLUB_NO_RECORD_MIX, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_TradeCenter
+	case 0, CableClub_EventScript_Trade
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_AbortLink
 	case MULTI_B_PRESSED, CableClub_EventScript_AbortLink
@@ -268,7 +268,7 @@ CableClub_EventScript_SelectCableClubRoom::
 CableClub_EventScript_CableClubUnlockedRecordCorner::
 	multichoice 0, 0, MULTI_CABLE_CLUB_WITH_RECORD_MIX, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_TradeCenter
+	case 0, CableClub_EventScript_Trade
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_RecordCorner
 	case 3, CableClub_EventScript_AbortLink
@@ -408,6 +408,12 @@ CableClub_EventScript_ConfirmNumberAndRestart::
 	release
 	end
 
+CableClub_EventScript_Trade::
+	msgbox CableClub_Text_TradeWithYourself, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, CableClub_EventScript_SelfTrade
+	goto CableClub_EventScript_TradeCenter
+	end
+
 CableClub_EventScript_TradeCenter::
 	copyvar VAR_0x8007, VAR_LAST_TALKED
 	call CableClub_EventScript_CheckPartyTradeRequirements
@@ -452,6 +458,26 @@ CableClub_EventScript_EnterTradeCenter::
 	special SetCableClubWarp
 	setwarp MAP_TRADE_CENTER, 5, 8
 	special DoCableClubWarp
+	end
+
+CableClub_EventScript_SelfTrade::
+	lock
+	faceplayer
+	call Common_EventScript_SaveGame
+	goto_if_eq VAR_RESULT, 0, CableClub_EventScript_AbortSelfTrade
+	special ChoosePartyMon
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, CableClub_EventScript_AbortSelfTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	setvar VAR_0x8004, INGAME_TRADE_SELF
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	msgbox RecordCorner_Text_ThanksForComing, MSGBOX_DEFAULT
+	release
+	end
+
+CableClub_EventScript_AbortSelfTrade::
+	msgbox CableClub_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	release
 	end
 
 CableClub_EventScript_CheckPartyTradeRequirements::
