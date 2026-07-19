@@ -632,6 +632,21 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
+    if (JOY_NEW(R_BUTTON))
+    {
+        u32 i;
+
+        for (i = 0; i < sNumStartMenuActions; i++)
+        {
+            if (sCurrentStartMenuActions[i] == MENU_ACTION_SAVE)
+            {
+                PlaySE(SE_SELECT);
+                gMenuCallback = StartMenuSaveCallback;
+                return FALSE;
+            }
+        }
+    }
+
     return FALSE;
 }
 
