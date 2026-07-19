@@ -485,3 +485,7 @@ CableClub_Text_ExplainWirelessClub:
 CableClub_Text_HopeYouEnjoyWirelessSystem:
 	.string "I hope you enjoy the Wireless\n"
 	.string "Communication System.$"
+
+CableClub_Text_TradeWithYourself:
+	.string "Would you like to trade a POKéMON\n"
+	.string "with yourself?$"
