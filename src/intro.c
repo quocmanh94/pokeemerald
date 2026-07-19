@@ -1107,6 +1107,8 @@ static u8 SetUpCopyrightScreen(void)
         UpdatePaletteFade();
         gMain.state++;
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        if (JOY_NEW(A_BUTTON | L_BUTTON | START_BUTTON))
+            gMain.state = COPYRIGHT_START_FADE;
         break;
     case COPYRIGHT_START_FADE:
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
