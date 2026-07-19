@@ -3357,7 +3357,6 @@ static void BufferTradeSceneStrings(void)
 {
     u8 mpId;
     u8 name[POKEMON_NAME_BUFFER_SIZE];
-    const struct InGameTrade *ingameTrade;
 
     if (sTradeAnim->isLinkTrade)
     {
@@ -3370,9 +3369,9 @@ static void BufferTradeSceneStrings(void)
     }
     else
     {
-        ingameTrade = &sIngameTrades[gSpecialVar_0x8004];
-        StringCopy(gStringVar1, ingameTrade->otName);
-        StringCopy_Nickname(gStringVar3, ingameTrade->nickname);
+        GetMonData(&gEnemyParty[0], MON_DATA_OT_NAME, gStringVar1);
+        GetMonData(&gEnemyParty[0], MON_DATA_NICKNAME, name);
+        StringCopy_Nickname(gStringVar3, name);
         GetMonData(&gPlayerParty[gSpecialVar_0x8005], MON_DATA_NICKNAME, name);
         StringCopy_Nickname(gStringVar2, name);
     }
@@ -4566,10 +4565,17 @@ u16 GetInGameTradeSpeciesInfo(void)
 static void BufferInGameTradeMonName(void)
 {
     u8 nickname[max(32, POKEMON_NAME_BUFFER_SIZE)];
-    const struct InGameTrade *inGameTrade = &sIngameTrades[gSpecialVar_0x8004];
+    u16 species;
+
     GetMonData(&gPlayerParty[gSpecialVar_0x8005], MON_DATA_NICKNAME, nickname);
     StringCopy_Nickname(gStringVar1, nickname);
-    StringCopy(gStringVar2, gSpeciesNames[inGameTrade->species]);
+
+    if (gSpecialVar_0x8004 == INGAME_TRADE_SELF)
+        species = GetMonData(&gPlayerParty[gSpecialVar_0x8005], MON_DATA_SPECIES);
+    else
+        species = sIngameTrades[gSpecialVar_0x8004].species;
+
+    StringCopy(gStringVar2, gSpeciesNames[species]);
 }
 
 static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTrade)
@@ -4647,7 +4653,18 @@ u16 GetTradeSpecies(void)
 
 void CreateInGameTradePokemon(void)
 {
-    CreateInGameTradePokemonInternal(gSpecialVar_0x8005, gSpecialVar_0x8004);
+    if (gSpecialVar_0x8004 == INGAME_TRADE_SELF)
+    {
+        u16 mailNum = GetMonData(&gPlayerParty[gSpecialVar_0x8005], MON_DATA_MAIL);
+
+        gEnemyParty[0] = gPlayerParty[gSpecialVar_0x8005];
+        if (mailNum != MAIL_NONE)
+            gTradeMail[mailNum] = gSaveBlock1Ptr->mail[mailNum];
+    }
+    else
+    {
+        CreateInGameTradePokemonInternal(gSpecialVar_0x8005, gSpecialVar_0x8004);
+    }
 }
 
 static void CB2_UpdateLinkTrade(void)
