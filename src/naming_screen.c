@@ -38,7 +38,7 @@ enum {
     INPUT_DPAD_RIGHT,
     INPUT_A_BUTTON,
     INPUT_B_BUTTON,
-    INPUT_LR_BUTTON,
+    INPUT_R_BUTTON,
     INPUT_SELECT,
     INPUT_START,
 };
@@ -375,6 +375,7 @@ static u8 GetTextEntryPosition(void);
 static void DeleteTextCharacter(void);
 static bool8 AddTextCharacter(void);
 static void BufferCharacter(u8);
+static void TogglePreviousCharacterCase(void);
 static void SaveInputText(void);
 static void LoadGfx(void);
 static void CreateHelperTasks(void);
@@ -1463,6 +1464,11 @@ static bool8 HandleKeyboardEvent(void)
         DeleteTextCharacter();
         return FALSE;
     }
+    else if (input == INPUT_R_BUTTON)
+    {
+        TogglePreviousCharacterCase();
+        return FALSE;
+    }
     else if (input == INPUT_START)
     {
         MoveCursorToOKButton();
@@ -1587,6 +1593,8 @@ static void Input_Enabled(struct Task *task)
         task->tKeyboardEvent = INPUT_A_BUTTON;
     else if (JOY_NEW(B_BUTTON))
         task->tKeyboardEvent = INPUT_B_BUTTON;
+    else if (JOY_NEW(R_BUTTON))
+        task->tKeyboardEvent = INPUT_R_BUTTON;
     else if (JOY_NEW(SELECT_BUTTON))
         task->tKeyboardEvent = INPUT_SELECT;
     else if (JOY_NEW(START_BUTTON))
@@ -1847,6 +1855,23 @@ static void BufferCharacter(u8 ch)
 {
     u8 index = GetTextEntryPosition();
     sNamingScreen->textBuffer[index] = ch;
+}
+
+static void TogglePreviousCharacterCase(void)
+{
+    u8 index = GetPreviousTextCaretPosition();
+    u8 character = sNamingScreen->textBuffer[index];
+
+    if (character >= CHAR_A && character <= CHAR_Z)
+        sNamingScreen->textBuffer[index] += CHAR_a - CHAR_A;
+    else if (character >= CHAR_a && character <= CHAR_z)
+        sNamingScreen->textBuffer[index] -= CHAR_a - CHAR_A;
+    else
+        return;
+
+    DrawTextEntry();
+    CopyBgTilemapBufferToVram(3);
+    PlaySE(SE_SELECT);
 }
 
 static void SaveInputText(void)
