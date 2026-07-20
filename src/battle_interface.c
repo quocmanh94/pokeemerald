@@ -20,6 +20,9 @@
 #include "safari_zone.h"
 #include "battle_anim.h"
 #include "data.h"
+#include "item.h"
+#include "item_icon.h"
+#include "item_use.h"
 #include "pokemon_summary_screen.h"
 #include "strings.h"
 #include "constants/battle_anim.h"
@@ -188,6 +191,8 @@ static u8 GetScaledExpFraction(s32, s32, s32, u8);
 static void MoveBattleBarGraphically(u8, u8);
 static u8 CalcBarFilledPixels(s32, s32, s32, s32 *, u8 *, u8);
 static void Debug_TestHealthBar_Helper(struct TestingBar *, s32 *, u16 *);
+static void SpriteCB_LastUsedBall(struct Sprite *sprite);
+static void SpriteCB_LastUsedBallWindow(struct Sprite *sprite);
 
 static const struct OamData sOamData_64x32 =
 {
@@ -946,6 +951,10 @@ u8 CreateBattlerHealthboxSprites(u8 battler)
     healthBarSpritePtr->hBar_HealthBoxSpriteId = healthboxLeftSpriteId;
     healthBarSpritePtr->hBar_Data6 = data6;
     healthBarSpritePtr->invisible = TRUE;
+
+    gBattleStruct->ballSpriteIds[0] = MAX_SPRITES;
+    gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
+    gLastUsedBallMenuPresent = FALSE;
 
     return healthboxLeftSpriteId;
 }
@@ -2602,3 +2611,277 @@ static void SafariTextIntoHealthboxObject(void *dest, u8 *windowTileData, u32 wi
     CpuCopy32(windowTileData, dest, windowWidth * TILE_SIZE_4BPP);
     CpuCopy32(windowTileData + 256, dest + 256, windowWidth * TILE_SIZE_4BPP);
 }
+
+#define TAG_LAST_USED_BALL_WINDOW 0xD720
+#define PAL_TAG_LAST_USED_BALL_WINDOW 0xD721
+#define TAG_LAST_USED_BALL_ICON 0xD722
+#define PAL_TAG_LAST_USED_BALL_ICON 0xD723
+
+#define LAST_USED_BALL_X_VISIBLE 14
+#define LAST_USED_BALL_X_HIDDEN -14
+#define LAST_USED_BALL_Y (IsDoubleBattle() ? 78 : 68)
+#define LAST_USED_BALL_WINDOW_X_VISIBLE LAST_USED_BALL_X_VISIBLE
+#define LAST_USED_BALL_WINDOW_X_HIDDEN LAST_USED_BALL_X_HIDDEN
+#define LAST_USED_BALL_WINDOW_Y (LAST_USED_BALL_Y - 8)
+
+#define sHide data[0]
+
+static const struct OamData sOamData_LastUsedBallWindow =
+{
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(32x64),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(32x64),
+    .tileNum = 0,
+    .priority = 1,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_LastUsedBallWindow =
+{
+    .tileTag = TAG_LAST_USED_BALL_WINDOW,
+    .paletteTag = PAL_TAG_LAST_USED_BALL_WINDOW,
+    .oam = &sOamData_LastUsedBallWindow,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_LastUsedBallWindow,
+};
+
+static const u8 sLastUsedBallWindowGfx[] = INCBIN_U8("graphics/battle_interface/last_used_ball_r_cycle.4bpp");
+static const u16 sLastUsedBallWindowPalette[] = INCBIN_U16("graphics/battle_interface/ability_pop_up.gbapal");
+
+static const struct SpriteSheet sSpriteSheet_LastUsedBallWindow =
+{
+    sLastUsedBallWindowGfx,
+    sizeof(sLastUsedBallWindowGfx),
+    TAG_LAST_USED_BALL_WINDOW,
+};
+
+static const struct SpritePalette sSpritePalette_LastUsedBallWindow =
+{
+    sLastUsedBallWindowPalette,
+    PAL_TAG_LAST_USED_BALL_WINDOW,
+};
+
+bool32 CanThrowLastUsedBall(void)
+{
+    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER
+                          | BATTLE_TYPE_FRONTIER
+                          | BATTLE_TYPE_SAFARI
+                          | BATTLE_TYPE_WALLY_TUTORIAL
+                          | BATTLE_TYPE_LINK
+                          | BATTLE_TYPE_RECORDED_LINK))
+        return FALSE;
+    if (!CanThrowBall(gActiveBattler))
+        return FALSE;
+    if (!CheckBagHasItem(gBallToDisplay, 1))
+        return FALSE;
+
+    return TRUE;
+}
+
+static void DestroyLastUsedBallWindow(struct Sprite *sprite)
+{
+    FreeSpriteTilesByTag(TAG_LAST_USED_BALL_WINDOW);
+    FreeSpritePaletteByTag(PAL_TAG_LAST_USED_BALL_WINDOW);
+    DestroySprite(sprite);
+    gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
+}
+
+static void DestroyLastUsedBallIcon(struct Sprite *sprite)
+{
+    FreeSpriteTilesByTag(TAG_LAST_USED_BALL_ICON);
+    FreeSpritePaletteByTag(PAL_TAG_LAST_USED_BALL_ICON);
+    DestroySprite(sprite);
+    gBattleStruct->ballSpriteIds[0] = MAX_SPRITES;
+}
+
+static void SpriteCB_LastUsedBallWindow(struct Sprite *sprite)
+{
+    if (sprite->sHide)
+    {
+        if (sprite->x > LAST_USED_BALL_WINDOW_X_HIDDEN)
+            sprite->x--;
+        else
+            DestroyLastUsedBallWindow(sprite);
+    }
+    else if (sprite->x < LAST_USED_BALL_WINDOW_X_VISIBLE)
+    {
+        sprite->x++;
+    }
+}
+
+static void SpriteCB_LastUsedBall(struct Sprite *sprite)
+{
+    if (sprite->sHide)
+    {
+        if (sprite->x > LAST_USED_BALL_X_HIDDEN)
+            sprite->x--;
+        else
+            DestroyLastUsedBallIcon(sprite);
+    }
+    else if (sprite->x < LAST_USED_BALL_X_VISIBLE)
+    {
+        sprite->x++;
+    }
+}
+
+static void SpriteCB_LastUsedBallSwap(struct Sprite *sprite)
+{
+    if (!gLastUsedBallMenuPresent)
+    {
+        sprite->y2 = 0;
+        sprite->callback = SpriteCB_LastUsedBall;
+    }
+    else if (sprite->y2 < 0)
+    {
+        sprite->y2++;
+    }
+    else
+    {
+        sprite->callback = SpriteCB_LastUsedBall;
+    }
+}
+
+static void TryAddLastUsedBallItemSprites(void)
+{
+    if (gLastThrownBall == ITEM_NONE || !CheckBagHasItem(gLastThrownBall, 1))
+    {
+        CompactItemsInBagPocket(&gBagPockets[BALLS_POCKET]);
+        gBallToDisplay = gBagPockets[BALLS_POCKET].itemSlots[0].itemId;
+    }
+    else if (!CheckBagHasItem(gBallToDisplay, 1))
+    {
+        gBallToDisplay = gLastThrownBall;
+    }
+
+    if (!CanThrowLastUsedBall())
+        return;
+
+    gBattleStruct->ballSpriteIds[0] = AddItemIconSprite(TAG_LAST_USED_BALL_ICON, PAL_TAG_LAST_USED_BALL_ICON, gBallToDisplay);
+    if (gBattleStruct->ballSpriteIds[0] == MAX_SPRITES)
+        return;
+
+    gSprites[gBattleStruct->ballSpriteIds[0]].x = LAST_USED_BALL_X_HIDDEN;
+    gSprites[gBattleStruct->ballSpriteIds[0]].y = LAST_USED_BALL_Y;
+    gSprites[gBattleStruct->ballSpriteIds[0]].sHide = FALSE;
+    gSprites[gBattleStruct->ballSpriteIds[0]].callback = SpriteCB_LastUsedBall;
+
+    LoadSpritePalette(&sSpritePalette_LastUsedBallWindow);
+    if (GetSpriteTileStartByTag(TAG_LAST_USED_BALL_WINDOW) == TAG_NONE)
+        LoadSpriteSheet(&sSpriteSheet_LastUsedBallWindow);
+
+    gBattleStruct->ballSpriteIds[1] = CreateSprite(&sSpriteTemplate_LastUsedBallWindow,
+                                                   LAST_USED_BALL_WINDOW_X_HIDDEN,
+                                                   LAST_USED_BALL_WINDOW_Y,
+                                                   5);
+    if (gBattleStruct->ballSpriteIds[1] == MAX_SPRITES)
+    {
+        FreeSpriteTilesByTag(TAG_LAST_USED_BALL_WINDOW);
+        FreeSpritePaletteByTag(PAL_TAG_LAST_USED_BALL_WINDOW);
+        DestroyLastUsedBallIcon(&gSprites[gBattleStruct->ballSpriteIds[0]]);
+        return;
+    }
+
+    gSprites[gBattleStruct->ballSpriteIds[1]].sHide = FALSE;
+    gLastUsedBallMenuPresent = TRUE;
+    ArrowsChangeColorLastBallCycle(FALSE);
+}
+
+static void TryHideOrRestoreLastUsedBall(bool32 hide)
+{
+    bool32 hasIcon = gBattleStruct->ballSpriteIds[0] != MAX_SPRITES;
+    bool32 hasWindow = gBattleStruct->ballSpriteIds[1] != MAX_SPRITES;
+
+    if (!hasIcon && !hasWindow)
+    {
+        gLastUsedBallMenuPresent = FALSE;
+        return;
+    }
+
+    if (hasIcon)
+        gSprites[gBattleStruct->ballSpriteIds[0]].sHide = hide;
+    if (hasWindow)
+        gSprites[gBattleStruct->ballSpriteIds[1]].sHide = hide;
+    gLastUsedBallMenuPresent = !hide && hasIcon && hasWindow;
+    if (hasWindow)
+        ArrowsChangeColorLastBallCycle(FALSE);
+}
+
+void TryHideLastUsedBall(void)
+{
+    TryHideOrRestoreLastUsedBall(TRUE);
+}
+
+void TryRestoreLastUsedBall(void)
+{
+    if (gBattleStruct->ballSpriteIds[0] != MAX_SPRITES)
+        TryHideOrRestoreLastUsedBall(FALSE);
+    else
+        TryAddLastUsedBallItemSprites();
+}
+
+void SwapBallToDisplay(bool32 sameBall)
+{
+    struct Sprite *sprite;
+
+    if (gBattleStruct->ballSpriteIds[0] == MAX_SPRITES)
+        return;
+
+    sprite = &gSprites[gBattleStruct->ballSpriteIds[0]];
+    if (!sameBall)
+    {
+        DestroyLastUsedBallIcon(sprite);
+        gBattleStruct->ballSpriteIds[0] = AddItemIconSprite(TAG_LAST_USED_BALL_ICON, PAL_TAG_LAST_USED_BALL_ICON, gBallToDisplay);
+        if (gBattleStruct->ballSpriteIds[0] == MAX_SPRITES)
+        {
+            TryHideLastUsedBall();
+            return;
+        }
+        sprite = &gSprites[gBattleStruct->ballSpriteIds[0]];
+        sprite->x = LAST_USED_BALL_X_VISIBLE;
+        sprite->y = LAST_USED_BALL_Y;
+        sprite->sHide = FALSE;
+    }
+
+    sprite->y2 = -2;
+    sprite->callback = SpriteCB_LastUsedBallSwap;
+}
+
+void ArrowsChangeColorLastBallCycle(bool32 showArrows)
+{
+    struct PlttData *arrow;
+    struct PlttData *outline;
+    struct PlttData *arrowColor;
+    struct PlttData *outlineColor;
+    u16 paletteOffset;
+
+    if (gBattleStruct->ballSpriteIds[1] == MAX_SPRITES)
+        return;
+
+    paletteOffset = (16 + gSprites[gBattleStruct->ballSpriteIds[1]].oam.paletteNum) * 16;
+    arrow = (struct PlttData *)&gPlttBufferFaded[paletteOffset + 9];
+    outline = (struct PlttData *)&gPlttBufferFaded[paletteOffset + 8];
+    if (showArrows)
+    {
+        arrowColor = (struct PlttData *)&gPlttBufferFaded[paletteOffset + 11];
+        outlineColor = (struct PlttData *)&gPlttBufferFaded[paletteOffset + 10];
+    }
+    else
+    {
+        arrowColor = (struct PlttData *)&gPlttBufferFaded[paletteOffset + 13];
+        outlineColor = arrowColor;
+    }
+
+    *arrow = *arrowColor;
+    *outline = *outlineColor;
+}
+
+#undef sHide
