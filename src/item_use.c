@@ -1,6 +1,7 @@
 #include "global.h"
 #include "item_use.h"
 #include "battle.h"
+#include "battle_anim.h"
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
 #include "berry.h"
@@ -37,6 +38,7 @@
 #include "task.h"
 #include "text.h"
 #include "tm_case.h"
+#include "util.h"
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
 #include "constants/item_effects.h"
@@ -986,23 +988,77 @@ void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+enum
+{
+    BALL_THROW_ABLE,
+    BALL_THROW_UNABLE_TWO_OPPONENTS,
+    BALL_THROW_UNABLE_SECOND_BATTLER,
+    BALL_THROW_UNABLE_NO_ROOM,
+};
+
+static bool32 IsBattlerAlive(u8 battler)
+{
+    if (battler >= gBattlersCount)
+        return FALSE;
+    if (gBattleMons[battler].hp == 0)
+        return FALSE;
+    if (gAbsentBattlerFlags & gBitTable[battler])
+        return FALSE;
+
+    return TRUE;
+}
+
+static u32 GetBallThrowableState(u8 battler)
+{
+    if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
+     && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+        return BALL_THROW_UNABLE_TWO_OPPONENTS;
+    if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)
+     && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)))
+        return BALL_THROW_UNABLE_SECOND_BATTLER;
+    if (IsPlayerPartyAndPokemonStorageFull())
+        return BALL_THROW_UNABLE_NO_ROOM;
+
+    return BALL_THROW_ABLE;
+}
+
+bool32 CanThrowBall(u8 battler)
+{
+    return GetBallThrowableState(battler) == BALL_THROW_ABLE;
+}
+
+static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Cannot throw a Poké Ball!\nThere are two Pokémon out there!\p");
+static const u8 sText_CantThrowPokeBall[] = _("Cannot throw a Poké Ball!\p");
+
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
-    if (IsPlayerPartyAndPokemonStorageFull() == FALSE) // have room for mon?
+    switch (GetBallThrowableState(gBattlerInMenuId))
     {
+    case BALL_THROW_ABLE:
         RemoveBagItem(gSpecialVar_ItemId, 1);
         if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
             Task_FadeAndCloseBagMenu(taskId);
         else
             CloseBattlePyramidBag(taskId);
-    }
-    else if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
-    {
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_BoxFull, CloseItemMessage);
-    }
-    else
-    {
-        DisplayItemMessageInBattlePyramid(taskId, gText_BoxFull, Task_CloseBattlePyramidBagMessage);
+        break;
+    case BALL_THROW_UNABLE_TWO_OPPONENTS:
+        if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+            DisplayItemMessage(taskId, FONT_NORMAL, sText_CantThrowPokeBall_TwoMons, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall_TwoMons, Task_CloseBattlePyramidBagMessage);
+        break;
+    case BALL_THROW_UNABLE_SECOND_BATTLER:
+        if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+            DisplayItemMessage(taskId, FONT_NORMAL, sText_CantThrowPokeBall, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall, Task_CloseBattlePyramidBagMessage);
+        break;
+    case BALL_THROW_UNABLE_NO_ROOM:
+        if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_BoxFull, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, gText_BoxFull, Task_CloseBattlePyramidBagMessage);
+        break;
     }
 }
 
