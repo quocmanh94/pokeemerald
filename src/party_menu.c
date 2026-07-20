@@ -5,6 +5,7 @@
 #include "battle_controllers.h"
 #include "battle_gfx_sfx_util.h"
 #include "battle_interface.h"
+#include "battle_main.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
@@ -65,6 +66,7 @@
 #include "union_room.h"
 #include "window.h"
 #include "constants/battle.h"
+#include "constants/abilities.h"
 #include "constants/battle_frontier.h"
 #include "constants/field_effects.h"
 #include "constants/item_effects.h"
@@ -4737,6 +4739,44 @@ void ItemUseCB_PPUp(u8 taskId, TaskFunc task)
     DisplayPartyMenuStdMessage(PARTY_MSG_BOOST_PP_WHICH_MOVE);
     ShowMoveSelectWindow(gPartyMenu.slotId);
     gTasks[taskId].func = Task_HandleWhichMoveInput;
+}
+
+void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
+{
+    static const u8 sText_AbilityChanged[] = _("{STR_VAR_1}'s Ability changed to\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+    u8 hiddenAbility = GetAbilityBySpecies(species, ABILITY_SLOT_HIDDEN);
+    u8 normalAbility = GetAbilityBySpecies(species, GetMonData(mon, MON_DATA_ABILITY_NUM));
+    bool8 hasHiddenAbility = GetMonData(mon, MON_DATA_HIDDEN_ABILITY);
+    u8 value;
+
+    PlaySE(SE_SELECT);
+    if (species == SPECIES_NONE
+        || GetMonData(mon, MON_DATA_IS_EGG)
+        || hiddenAbility == ABILITY_NONE
+        || (!hasHiddenAbility && hiddenAbility == normalAbility))
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    gPartyMenuUseExitCallback = TRUE;
+    value = !hasHiddenAbility;
+    SetMonData(mon, MON_DATA_HIDDEN_ABILITY, &value);
+    PlaySE(SE_USE_ITEM);
+    GetMonNickname(mon, gStringVar1);
+    StringCopy(gStringVar2, gAbilityNames[value ? hiddenAbility : normalAbility]);
+    StringExpandPlaceholders(gStringVar4, sText_AbilityChanged);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    ScheduleBgCopyTilemapToVram(2);
+    if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+    else
+        gTasks[taskId].func = Task_ClosePartyMenuAfterText;
 }
 
 u16 ItemIdToBattleMoveId(u16 item)
