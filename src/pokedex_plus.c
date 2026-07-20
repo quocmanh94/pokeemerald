@@ -314,6 +314,7 @@ struct PokemonStats
     u16 species;
     u16 ability0;
     u16 ability1;
+    u16 abilityHidden;
     u8 genderRatio;
     u8 baseHP;
     u8 baseSpeed;
@@ -4775,6 +4776,7 @@ static void SaveMonDataInStruct(void)
     sPokedexView->sPokemonStats.friendship          = gSpeciesInfo[species].friendship;
     sPokedexView->sPokemonStats.ability0            = GetAbilityBySpecies(species, 0);
     sPokedexView->sPokemonStats.ability1            = GetAbilityBySpecies(species, 1);
+    sPokedexView->sPokemonStats.abilityHidden       = GetAbilityBySpecies(species, ABILITY_SLOT_HIDDEN);
 }
 
 #define tMonSpriteId data[4]
@@ -5776,6 +5778,17 @@ static void PrintStatsScreen_Abilities(u8 taskId)
     {
         PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilityNames[ability1], abilities_x, abilities_y + 30);
         PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilityDescriptionPointers[ability1], abilities_x, abilities_y + 44);
+    }
+
+    abilityHidden = sPokedexView->sPokemonStats.abilityHidden;
+    if (abilityHidden != ABILITY_NONE && abilityHidden != ability0 && abilityHidden != ability1)
+    {
+        static const u8 sText_HiddenAbility[] = _("HIDDEN ABILITY");
+        u8 titleX = GetStringCenterAlignXOffset(0, sText_HiddenAbility, 12 * 8);
+        u8 abilityX = GetStringCenterAlignXOffset(0, gAbilityNames[abilityHidden], 12 * 8);
+
+        PrintStatsScreenTextSmallWhite(WIN_STATS_LEFT_UNUSED, sText_HiddenAbility, titleX, 3);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT_UNUSED, gAbilityNames[abilityHidden], abilityX, 17);
     }
 }
 
