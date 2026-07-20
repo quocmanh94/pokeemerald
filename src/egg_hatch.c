@@ -376,6 +376,10 @@ static void AddHatchedMonToParty(u8 id)
     GetSetPokedexFlag(species, FLAG_SET_SEEN);
     GetSetPokedexFlag(species, FLAG_SET_CAUGHT);
 
+    if (IsShinyOtIdPersonality(GetMonData(mon, MON_DATA_OT_ID, NULL),
+                               GetMonData(mon, MON_DATA_PERSONALITY, NULL)))
+        SetShinySeenFlag(species);
+
     GetMonNickname2(mon, gStringVar1);
 
     ball = ITEM_POKE_BALL;

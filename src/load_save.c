@@ -5,6 +5,7 @@
 #include "load_save.h"
 #include "main.h"
 #include "overworld.h"
+#include "pokedex.h"
 #include "pokemon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
@@ -217,6 +218,7 @@ void CopyPartyAndObjectsFromSave(void)
 {
     LoadPlayerParty();
     LoadObjectEvents();
+    ScanOwnedMonsForShinies();
 }
 
 void LoadPlayerBag(void)
