@@ -345,12 +345,62 @@ bool8 AddBagItem(u16 itemId, u16 count)
     }
 }
 
-void EnsureTMCaseForOwnedTMsHMs(void)
+static void MigrateAbilityPatchToKeyItems(void)
+{
+    u8 i;
+    bool8 foundOldAbilityPatch = FALSE;
+    struct BagPocket *itemsPocket = &gBagPockets[ITEMS_POCKET];
+
+    for (i = 0; i < itemsPocket->capacity; i++)
+    {
+        if (itemsPocket->itemSlots[i].itemId == ITEM_ABILITY_PATCH
+         && GetBagItemQuantity(&itemsPocket->itemSlots[i].quantity) != 0)
+        {
+            foundOldAbilityPatch = TRUE;
+            break;
+        }
+    }
+
+    if (!foundOldAbilityPatch)
+        return;
+    if (!CheckBagHasItem(ITEM_ABILITY_PATCH, 1) && !AddBagItem(ITEM_ABILITY_PATCH, 1))
+        return;
+
+    FlagSet(FLAG_RECEIVED_ABILITY_PATCH);
+
+    for (i = 0; i < itemsPocket->capacity; i++)
+    {
+        if (itemsPocket->itemSlots[i].itemId == ITEM_ABILITY_PATCH)
+        {
+            itemsPocket->itemSlots[i].itemId = ITEM_NONE;
+            SetBagItemQuantity(&itemsPocket->itemSlots[i].quantity, 0);
+        }
+    }
+    CompactItemsInBagPocket(itemsPocket);
+}
+
+static void EnsureAbilityPatch(void)
+{
+    if (CheckBagHasItem(ITEM_ABILITY_PATCH, 1))
+    {
+        FlagSet(FLAG_RECEIVED_ABILITY_PATCH);
+        return;
+    }
+
+    if (FlagGet(FLAG_RECEIVED_ABILITY_PATCH))
+        AddBagItem(ITEM_ABILITY_PATCH, 1);
+}
+
+void EnsureCustomKeyItems(void)
 {
     u8 i;
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return;
+
+    MigrateAbilityPatchToKeyItems();
+    EnsureAbilityPatch();
+
     if (CheckBagHasItem(ITEM_TM_CASE, 1))
         return;
 
