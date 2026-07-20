@@ -947,6 +947,11 @@ static const u8 sStickDesc[] = _(
     "raises FARFETCH'D's\n"
     "critical-hit ratio.");
 
+static const u8 sAbilityPatchDesc[] = _(
+    "Switches a POKéMON\n"
+    "between its normal and\n"
+    "Hidden Ability.");
+
 static const u8 sRedScarfDesc[] = _(
     "A hold item that\n"
     "raises COOL in\n"
