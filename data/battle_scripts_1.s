@@ -348,9 +348,11 @@ BattleScript_EffectAbsorb::
 BattleScript_AbsorbLiquidOoze::
 	manipulatedamage DMG_CHANGE_SIGN
 	setbyte cMULTISTRING_CHOOSER, B_MSG_ABSORB_OOZE
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_AbsorbPrintMessage
 BattleScript_AbsorbUpdateHp::
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
+BattleScript_AbsorbPrintMessage::
 	jumpifmovehadnoeffect BattleScript_AbsorbTryFainting
 	printfromtable gAbsorbDrainStringIds
 	waitmessage B_WAIT_TIME_LONG
@@ -851,6 +853,7 @@ BattleScript_EffectRecoilIfMiss::
 	accuracycheck BattleScript_MoveMissedDoDamage, ACC_CURR_MOVE
 	goto BattleScript_HitFromAtkString
 BattleScript_MoveMissedDoDamage::
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_PrintMoveMissed
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_LONG
@@ -3289,6 +3292,7 @@ BattleScript_LeechSeedTurnDrain::
 	goto BattleScript_LeechSeedTurnPrintAndUpdateHp
 BattleScript_LeechSeedTurnPrintLiquidOoze::
 	setbyte cMULTISTRING_CHOOSER, B_MSG_LEECH_SEED_OOZE
+	jumpifability BS_TARGET, ABILITY_MAGIC_GUARD, BattleScript_LeechSeedTurnPrintNoHpUpdate
 BattleScript_LeechSeedTurnPrintAndUpdateHp::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_TARGET
@@ -3297,6 +3301,12 @@ BattleScript_LeechSeedTurnPrintAndUpdateHp::
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
 	tryfaintmon BS_TARGET
+	end2
+
+BattleScript_LeechSeedTurnPrintNoHpUpdate::
+	printfromtable gLeechSeedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_ATTACKER
 	end2
 
 BattleScript_BideStoringEnergy::
@@ -3689,6 +3699,24 @@ BattleScript_MagicCoatBounce::
 	setmagiccoattarget BS_ATTACKER
 	return
 
+BattleScript_MagicBounceBounce::
+	attackstring
+	ppreduce
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNMOVEBOUNCEDBACK
+	waitmessage B_WAIT_TIME_LONG
+	orword gHitMarker, HITMARKER_ATTACKSTRING_PRINTED | HITMARKER_NO_PPDEDUCT | HITMARKER_ALLOW_NO_PP
+	setmagiccoattarget BS_ATTACKER
+	return
+
+BattleScript_PowderMoveNoEffect::
+	attackstring
+	ppreduce
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_ITDOESNTAFFECT
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_SnatchedMove::
 	attackstring
 	ppreduce
@@ -3795,6 +3823,13 @@ BattleScript_MoveUsedIsParalyzed::
 BattleScript_MoveUsedFlinched::
 	printstring STRINGID_PKMNFLINCHED
 	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_MoveUsedFlinchedSteadfast::
+	printstring STRINGID_PKMNFLINCHED
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	call BattleScript_AbilityActivates
 	goto BattleScript_MoveEnd
 
 BattleScript_PrintUproarOverTurns::
@@ -3953,6 +3988,7 @@ BattleScript_MoveEffectConfusion::
 BattleScript_MoveEffectRecoil::
 	jumpifmove MOVE_STRUGGLE, BattleScript_DoRecoil
 	jumpifability BS_ATTACKER, ABILITY_ROCK_HEAD, BattleScript_RecoilEnd
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_RecoilEnd
 BattleScript_DoRecoil::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_ATTACKER
@@ -4084,6 +4120,12 @@ BattleScript_SturdyPreventsOHKO::
 	pause B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_SturdyActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNPROTECTEDBY
+	pause B_WAIT_TIME_LONG
+	return
+
 BattleScript_DampStopsExplosion::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNPREVENTSUSAGE
@@ -4100,6 +4142,7 @@ BattleScript_MoveHPDrain::
 	datahpupdate BS_TARGET
 	printstring STRINGID_PKMNRESTOREDHPUSING
 	waitmessage B_WAIT_TIME_LONG
+	clearsemiinvulnerablebit
 	orbyte gMoveResultFlags, MOVE_RESULT_DOESNT_AFFECT_FOE
 	goto BattleScript_MoveEnd
 
@@ -4110,6 +4153,7 @@ BattleScript_MonMadeMoveUseless::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNSXMADEYUSELESS
 	waitmessage B_WAIT_TIME_LONG
+	clearsemiinvulnerablebit
 	orbyte gMoveResultFlags, MOVE_RESULT_DOESNT_AFFECT_FOE
 	goto BattleScript_MoveEnd
 
@@ -4155,6 +4199,12 @@ BattleScript_PSNPrevention::
 BattleScript_ObliviousPreventsAttraction::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNPREVENTSROMANCEWITH
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_ObliviousPreventsTaunt::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNSABILITYACTIVATED
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
@@ -4232,6 +4282,82 @@ BattleScript_AbilityCuredStatus::
 	waitmessage B_WAIT_TIME_LONG
 	updatestatusicon BS_SCRIPTING
 	return
+
+BattleScript_AbilityActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNSABILITYACTIVATED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_AbilityActivatesEnd3::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNSABILITYACTIVATED
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_AbilityRestoresHpEnd3::
+	printstring STRINGID_PKMNSABILITYRESTOREDHP
+	waitmessage B_WAIT_TIME_LONG
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
+	end3
+
+BattleScript_AbilityDamages::
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
+	printstring STRINGID_PKMNHURTBYABILITY
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_SCRIPTING
+	return
+
+BattleScript_AbilityDamagesEnd3::
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
+	printstring STRINGID_PKMNHURTBYABILITY
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_SCRIPTING
+	end3
+
+BattleScript_AnticipationActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNSHUDDERED
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_FriskActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNFRISKEDITEM
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_FriskActivatesTwoItems::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNFRISKEDTWOITEMS
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_HarvestActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNRECOVEREDITEM
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_ImposterActivates::
+	transformdataexecution
+	attackanimation
+	waitanimation
+	call BattleScript_AbilityActivates
+	printfromtable gTransformUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_HealerActivates::
+	call BattleScript_AbilityActivates
+	updatestatusicon BS_TARGET
+	end3
 
 BattleScript_IgnoresWhileAsleep::
 	printstring STRINGID_PKMNIGNORESASLEEP
