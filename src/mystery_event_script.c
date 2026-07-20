@@ -341,6 +341,9 @@ bool8 MEScrCmd_givepokemon(struct ScriptContext *ctx)
             u16 pokedexNum = SpeciesToNationalPokedexNum(species);
             GetSetPokedexFlag(pokedexNum, FLAG_SET_SEEN);
             GetSetPokedexFlag(pokedexNum, FLAG_SET_CAUGHT);
+            if (IsShinyOtIdPersonality(GetMonData(&gPlayerParty[PARTY_SIZE - 1], MON_DATA_OT_ID, NULL),
+                                       GetMonData(&gPlayerParty[PARTY_SIZE - 1], MON_DATA_PERSONALITY, NULL)))
+                SetShinySeenFlag(pokedexNum);
         }
 
         heldItem = GetMonData(&gPlayerParty[PARTY_SIZE - 1], MON_DATA_HELD_ITEM);
