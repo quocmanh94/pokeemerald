@@ -2447,6 +2447,8 @@ void CreateBattleTowerMon(struct Pokemon *mon, struct BattleTowerPokemon *src)
     SetMonData(mon, MON_DATA_SPDEF_EV, &src->spDefenseEV);
     value = src->abilityNum;
     SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
+    value = src->hiddenAbility;
+    SetMonData(mon, MON_DATA_HIDDEN_ABILITY, &value);
     value = src->hpIV;
     SetMonData(mon, MON_DATA_HP_IV, &value);
     value = src->attackIV;
@@ -2509,6 +2511,8 @@ void CreateBattleTowerMon_HandleLevel(struct Pokemon *mon, struct BattleTowerPok
     SetMonData(mon, MON_DATA_SPDEF_EV, &src->spDefenseEV);
     value = src->abilityNum;
     SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
+    value = src->hiddenAbility;
+    SetMonData(mon, MON_DATA_HIDDEN_ABILITY, &value);
     value = src->hpIV;
     SetMonData(mon, MON_DATA_HP_IV, &value);
     value = src->attackIV;
@@ -2623,6 +2627,7 @@ void ConvertPokemonToBattleTowerPokemon(struct Pokemon *mon, struct BattleTowerP
     dest->speedIV  = GetMonData(mon, MON_DATA_SPEED_IV, NULL);
     dest->spAttackIV  = GetMonData(mon, MON_DATA_SPATK_IV, NULL);
     dest->spDefenseIV  = GetMonData(mon, MON_DATA_SPDEF_IV, NULL);
+    dest->hiddenAbility = GetMonData(mon, MON_DATA_HIDDEN_ABILITY, NULL);
     dest->abilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM, NULL);
     dest->personality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
     GetMonData(mon, MON_DATA_NICKNAME, dest->nickname);
@@ -3953,6 +3958,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
     case MON_DATA_ABILITY_NUM:
         retVal = substruct3->abilityNum;
         break;
+    case MON_DATA_HIDDEN_ABILITY:
+        retVal = substruct3->hiddenAbility;
+        break;
     case MON_DATA_COOL_RIBBON:
         retVal = substruct3->coolRibbon;
         break;
@@ -4359,6 +4367,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
     case MON_DATA_ABILITY_NUM:
         SET8(substruct3->abilityNum);
         break;
+    case MON_DATA_HIDDEN_ABILITY:
+        SET8(substruct3->hiddenAbility);
+        break;
     case MON_DATA_COOL_RIBBON:
         SET8(substruct3->coolRibbon);
         break;
@@ -4566,18 +4577,34 @@ u8 GetMonsStateToDoubles_2(void)
 
 u8 GetAbilityBySpecies(u16 species, u8 abilityNum)
 {
-    if (abilityNum)
-        gLastUsedAbility = gSpeciesInfo[species].abilities[1];
+    if (abilityNum < NUM_ABILITY_SLOTS)
+        gLastUsedAbility = gSpeciesInfo[species].abilities[abilityNum];
     else
-        gLastUsedAbility = gSpeciesInfo[species].abilities[0];
+        gLastUsedAbility = ABILITY_NONE;
 
     return gLastUsedAbility;
+}
+
+u8 GetBoxMonAbilityNum(struct BoxPokemon *boxMon)
+{
+    u16 species = GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL);
+
+    if (GetBoxMonData(boxMon, MON_DATA_HIDDEN_ABILITY, NULL)
+        && gSpeciesInfo[species].abilities[ABILITY_SLOT_HIDDEN] != ABILITY_NONE)
+        return ABILITY_SLOT_HIDDEN;
+
+    return GetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, NULL);
+}
+
+u8 GetMonAbilityNum(struct Pokemon *mon)
+{
+    return GetBoxMonAbilityNum(&mon->box);
 }
 
 u8 GetMonAbility(struct Pokemon *mon)
 {
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
-    u8 abilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM, NULL);
+    u8 abilityNum = GetMonAbilityNum(mon);
     return GetAbilityBySpecies(species, abilityNum);
 }
 
@@ -4725,7 +4752,7 @@ void CopyPlayerPartyMonToBattleData(u8 battler, u8 partyIndex, bool8 resetStats)
     gBattleMons[battler].otId = GetMonData(&gPlayerParty[partyIndex], MON_DATA_OT_ID, NULL);
     gBattleMons[battler].types[0] = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].types[1] = gSpeciesInfo[gBattleMons[battler].species].types[1];
-    gBattleMons[battler].ability = GetAbilityBySpecies(gBattleMons[battler].species, gBattleMons[battler].abilityNum);
+    gBattleMons[battler].ability = GetMonAbility(&gPlayerParty[partyIndex]);
     GetMonData(&gPlayerParty[partyIndex], MON_DATA_NICKNAME, nickname);
     StringCopy_Nickname(gBattleMons[battler].nickname, nickname);
     GetMonData(&gPlayerParty[partyIndex], MON_DATA_OT_NAME, gBattleMons[battler].otName);
