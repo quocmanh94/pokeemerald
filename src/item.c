@@ -345,12 +345,13 @@ bool8 AddBagItem(u16 itemId, u16 count)
     }
 }
 
-void EnsureTMCaseForOwnedTMsHMs(void)
+void EnsureCustomKeyItems(void)
 {
     u8 i;
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return;
+
     if (CheckBagHasItem(ITEM_TM_CASE, 1))
         return;
 
