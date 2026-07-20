@@ -299,12 +299,14 @@ struct BattleTowerPokemon
     u32 speedIV:5;
     u32 spAttackIV:5;
     u32 spDefenseIV:5;
-    u32 gap:1;
+    u32 hiddenAbility:1;
     u32 abilityNum:1;
     u32 personality;
     u8 nickname[POKEMON_NAME_LENGTH + 1];
     u8 friendship;
 };
+
+STATIC_ASSERT(sizeof(struct BattleTowerPokemon) == 44, BattleTowerPokemonSize);
 
 struct EmeraldBattleTowerRecord
 {
@@ -360,9 +362,13 @@ struct RentalMon
     //u8 padding1[2];
     u32 personality;
     u8 ivs;
-    u8 abilityNum;
+    u8 abilityNum:1;
+    u8 hiddenAbility:1;
+    u8 unused:6;
     //u8 padding2[2];
 };
+
+STATIC_ASSERT(sizeof(struct RentalMon) == 12, RentalMonSize);
 
 struct BattleDomeTrainer
 {
