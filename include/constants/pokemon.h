@@ -23,6 +23,12 @@
 #define TYPE_DARK             17
 #define NUMBER_OF_MON_TYPES   18
 
+// Ability slots in SpeciesInfo
+#define ABILITY_SLOT_1       0
+#define ABILITY_SLOT_2       1
+#define ABILITY_SLOT_HIDDEN  2
+#define NUM_ABILITY_SLOTS    3
+
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
 #define EGG_GROUP_MONSTER             1
