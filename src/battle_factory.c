@@ -396,6 +396,7 @@ static void SetRentalsToOpponentParty(void)
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].ivs = GetBoxMonData(&gEnemyParty[i].box, MON_DATA_ATK_IV, NULL);
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].personality = GetMonData(&gEnemyParty[i], MON_DATA_PERSONALITY, NULL);
         gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].abilityNum = GetBoxMonData(&gEnemyParty[i].box, MON_DATA_ABILITY_NUM, NULL);
+        gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].hiddenAbility = GetBoxMonData(&gEnemyParty[i].box, MON_DATA_HIDDEN_ABILITY, NULL);
         SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[gFrontierTempParty[i]].itemTableId]);
     }
 }
@@ -410,6 +411,8 @@ static void SetPlayerAndOpponentParties(void)
     u16 evs;
     u8 ivs;
     u8 friendship;
+    u8 abilityNum;
+    u8 hiddenAbility;
 
     if (gSaveBlock2Ptr->frontier.lvlMode == FRONTIER_LVL_TENT)
     {
@@ -461,7 +464,10 @@ static void SetPlayerAndOpponentParties(void)
                 SetMonMoveAvoidReturn(&gPlayerParty[i], gFacilityTrainerMons[monId].moves[k], k);
             SetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP, &friendship);
             SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId]);
-            SetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM, &gSaveBlock2Ptr->frontier.rentalMons[i].abilityNum);
+            abilityNum = gSaveBlock2Ptr->frontier.rentalMons[i].abilityNum;
+            hiddenAbility = gSaveBlock2Ptr->frontier.rentalMons[i].hiddenAbility;
+            SetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM, &abilityNum);
+            SetMonData(&gPlayerParty[i], MON_DATA_HIDDEN_ABILITY, &hiddenAbility);
         }
     }
 
@@ -500,7 +506,10 @@ static void SetPlayerAndOpponentParties(void)
             for (k = 0; k < MAX_MON_MOVES; k++)
                 SetMonMoveAvoidReturn(&gEnemyParty[i], gFacilityTrainerMons[monId].moves[k], k);
             SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleFrontierHeldItems[gFacilityTrainerMons[monId].itemTableId]);
-            SetMonData(&gEnemyParty[i], MON_DATA_ABILITY_NUM, &gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].abilityNum);
+            abilityNum = gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].abilityNum;
+            hiddenAbility = gSaveBlock2Ptr->frontier.rentalMons[i + FRONTIER_PARTY_SIZE].hiddenAbility;
+            SetMonData(&gEnemyParty[i], MON_DATA_ABILITY_NUM, &abilityNum);
+            SetMonData(&gEnemyParty[i], MON_DATA_HIDDEN_ABILITY, &hiddenAbility);
         }
         break;
     }
