@@ -189,6 +189,8 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
 };
 
 static EWRAM_DATA bool8 sDescriptionSubmenu = FALSE;
+static EWRAM_DATA bool8 sAckBallUseBtn = FALSE;
+static EWRAM_DATA bool8 sBallSwapped = FALSE;
 
 static const u8 sTargetIdentities[MAX_BATTLERS_COUNT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_RIGHT, B_POSITION_OPPONENT_RIGHT, B_POSITION_OPPONENT_LEFT};
 
@@ -242,6 +244,50 @@ static void CompleteOnBankSpritePosX_0(void)
         PlayerBufferExecCompleted();
 }
 
+static u16 GetAdjacentBall(u16 ballId, bool32 next)
+{
+    u16 distinctBalls[BAG_POKEBALLS_COUNT];
+    s32 current = -1;
+    u32 count = 0;
+    u32 i;
+
+    CompactItemsInBagPocket(&gBagPockets[BALLS_POCKET]);
+    for (i = 0; i < gBagPockets[BALLS_POCKET].capacity; i++)
+    {
+        u16 itemId = gBagPockets[BALLS_POCKET].itemSlots[i].itemId;
+        bool32 alreadySeen = FALSE;
+        u32 j;
+
+        if (itemId == ITEM_NONE)
+            break;
+
+        for (j = 0; j < count; j++)
+        {
+            if (distinctBalls[j] == itemId)
+            {
+                alreadySeen = TRUE;
+                break;
+            }
+        }
+
+        if (!alreadySeen)
+        {
+            if (itemId == ballId)
+                current = count;
+            distinctBalls[count++] = itemId;
+        }
+    }
+
+    if (count <= 1 || current < 0)
+        return ballId;
+    if (next)
+        return distinctBalls[(current + 1) % count];
+    if (current == 0)
+        return distinctBalls[count - 1];
+
+    return distinctBalls[current - 1];
+}
+
 static void HandleInputChooseAction(void)
 {
     u16 itemId = gBattleBufferA[gActiveBattler][2] | (gBattleBufferA[gActiveBattler][3] << 8);
@@ -254,9 +300,73 @@ static void HandleInputChooseAction(void)
     else
         gPlayerDpadHoldFrames = 0;
 
+    if (!gLastUsedBallMenuPresent)
+    {
+        sAckBallUseBtn = FALSE;
+        sBallSwapped = FALSE;
+    }
+    else if (JOY_NEW(R_BUTTON))
+    {
+        sAckBallUseBtn = TRUE;
+        sBallSwapped = FALSE;
+        ArrowsChangeColorLastBallCycle(TRUE);
+    }
+
+    if (sAckBallUseBtn)
+    {
+        if (JOY_NEW(B_BUTTON))
+        {
+            sAckBallUseBtn = FALSE;
+            sBallSwapped = FALSE;
+            ArrowsChangeColorLastBallCycle(FALSE);
+        }
+        else if (JOY_HELD(R_BUTTON) && JOY_NEW(DPAD_RIGHT))
+        {
+            u16 nextBall = GetAdjacentBall(gBallToDisplay, TRUE);
+            bool32 sameBall = gBallToDisplay == nextBall;
+
+            sBallSwapped = TRUE;
+            if (!sameBall)
+                gBallToDisplay = nextBall;
+            SwapBallToDisplay(sameBall);
+            PlaySE(SE_SELECT);
+        }
+        else if (JOY_HELD(R_BUTTON) && JOY_NEW(DPAD_LEFT))
+        {
+            u16 prevBall = GetAdjacentBall(gBallToDisplay, FALSE);
+            bool32 sameBall = gBallToDisplay == prevBall;
+
+            sBallSwapped = TRUE;
+            if (!sameBall)
+                gBallToDisplay = prevBall;
+            SwapBallToDisplay(sameBall);
+            PlaySE(SE_SELECT);
+        }
+        else if (!JOY_HELD(R_BUTTON) && sBallSwapped)
+        {
+            sAckBallUseBtn = FALSE;
+            sBallSwapped = FALSE;
+            ArrowsChangeColorLastBallCycle(FALSE);
+        }
+        else if (!JOY_HELD(R_BUTTON))
+        {
+            sAckBallUseBtn = FALSE;
+            ArrowsChangeColorLastBallCycle(FALSE);
+            if (CanThrowLastUsedBall())
+            {
+                PlaySE(SE_SELECT);
+                TryHideLastUsedBall();
+                BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_THROW_BALL, 0);
+                PlayerBufferExecCompleted();
+            }
+        }
+        return;
+    }
+
     if (JOY_NEW(A_BUTTON))
     {
         PlaySE(SE_SELECT);
+        TryHideLastUsedBall();
 
         switch (gActionSelectionCursor[gActiveBattler])
         {
@@ -386,6 +496,7 @@ static void HandleInputChooseTarget(void)
         gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_HideAsMoveTarget;
         BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[gActiveBattler] | (gMultiUsePlayerCursor << 8));
         EndBounceEffect(gMultiUsePlayerCursor, BOUNCE_HEALTHBOX);
+        TryHideLastUsedBall();
         PlayerBufferExecCompleted();
     }
     else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
@@ -546,6 +657,7 @@ static void HandleInputChooseMove(void)
         if (!canSelectTarget)
         {
             BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[gActiveBattler] | (gMultiUsePlayerCursor << 8));
+            TryHideLastUsedBall();
             PlayerBufferExecCompleted();
         }
         else
@@ -2877,6 +2989,7 @@ static void PlayerHandleChooseAction(void)
     for (i = 0; i < 4; i++)
         ActionSelectionDestroyCursorAt(i);
 
+    TryRestoreLastUsedBall();
     ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
     BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillPkmnDo);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
