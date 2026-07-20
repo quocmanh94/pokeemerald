@@ -54,13 +54,16 @@
 
 #define CpuFastCopy(src, dest, size) CpuFastSet(src, dest, ((size)/(32/8) & 0x1FFFFF))
 
-#define DmaSetUnchecked(dmaNum, src, dest, control) \
-{                                                 \
-    vu32 *dmaRegs = (vu32 *)REG_ADDR_DMA##dmaNum; \
-    dmaRegs[0] = (vu32)(src);                     \
-    dmaRegs[1] = (vu32)(dest);                    \
-    dmaRegs[2] = (vu32)(control);                 \
-    dmaRegs[2];                                   \
+#define DmaSetUnchecked(dmaNum, src, dest, control)                                                          \
+{                                                                                                            \
+    vu32 *dmaRegs = (vu32 *)REG_ADDR_DMA##dmaNum;                                                            \
+    u32 evalSrc = (u32)(src);                                                                                \
+    u32 evalDest = (u32)(dest);                                                                              \
+    u32 evalControl = (u32)(control);                                                                        \
+    register u32 regSrc asm("r0") = evalSrc;                                                                \
+    register u32 regDest asm("r1") = evalDest;                                                              \
+    register u32 regControl asm("r2") = evalControl;                                                        \
+    asm volatile("stmia %0!, {%1, %2, %3}" : "+l"(dmaRegs) : "l"(regSrc), "l"(regDest), "l"(regControl) : "memory"); \
 }
 
 #if MODERN
