@@ -14,8 +14,11 @@
 #include "overworld.h"
 #include "palette.h"
 #include "pokedex.h"
+#include "pokedex_plus.h"
 #include "pokedex_area_screen.h"
 #include "pokedex_cry_screen.h"
+#include "pokemon.h"
+#include "pokemon_storage_system.h"
 #include "scanline_effect.h"
 #include "sound.h"
 #include "sprite.h"
@@ -1590,6 +1593,12 @@ static void ResetPokedexView(struct PokedexView *pokedexView)
 
 void CB2_OpenPokedex(void)
 {
+    if (HGSS_DEX)
+    {
+        CB2_OpenPokedexPlus();
+        return;
+    }
+
     switch (gMain.state)
     {
     case 0:
@@ -3943,7 +3952,12 @@ static void HighlightSubmenuScreenSelectBarItem(u8 a, u16 b)
 
 u8 DisplayCaughtMonDexPage(u16 dexNum, u32 otId, u32 personality)
 {
-    u8 taskId = CreateTask(Task_DisplayCaughtMonDexPage, 0);
+    u8 taskId = 0;
+
+    if (HGSS_DEX)
+        taskId = CreateTask(Task_DisplayCaughtMonDexPagePlus, 0);
+    else
+        taskId = CreateTask(Task_DisplayCaughtMonDexPage, 0);
 
     gTasks[taskId].tState = 0;
     gTasks[taskId].tDexNum = dexNum;
@@ -4318,6 +4332,75 @@ s8 GetSetPokedexFlag(u16 nationalDexNo, u8 caseID)
     return retVal;
 }
 
+void SetShinySeenFlag(u16 nationalDexNo)
+{
+    u8 index;
+    u8 bit;
+
+    if (nationalDexNo == 0 || nationalDexNo > NATIONAL_DEX_COUNT)
+        return;
+
+    nationalDexNo--;
+    index = nationalDexNo / 8;
+    bit = nationalDexNo % 8;
+    gSaveBlock1Ptr->shinySeen[index] |= 1 << bit;
+}
+
+bool8 GetShinySeenFlag(u16 nationalDexNo)
+{
+    u8 index;
+    u8 bit;
+
+    if (nationalDexNo == 0 || nationalDexNo > NATIONAL_DEX_COUNT)
+        return FALSE;
+
+    nationalDexNo--;
+    index = nationalDexNo / 8;
+    bit = nationalDexNo % 8;
+    return (gSaveBlock1Ptr->shinySeen[index] >> bit) & 1;
+}
+
+void ScanOwnedMonsForShinies(void)
+{
+    u16 box;
+    u16 slot;
+
+    for (slot = 0; slot < PARTY_SIZE; slot++)
+    {
+        u16 species = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES, NULL);
+
+        if (species != SPECIES_NONE && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG, NULL)
+         && IsShinyOtIdPersonality(GetMonData(&gPlayerParty[slot], MON_DATA_OT_ID, NULL),
+                                   GetMonData(&gPlayerParty[slot], MON_DATA_PERSONALITY, NULL)))
+            SetShinySeenFlag(SpeciesToNationalPokedexNum(species));
+    }
+
+    for (box = 0; box < TOTAL_BOXES_COUNT; box++)
+    {
+        for (slot = 0; slot < IN_BOX_COUNT; slot++)
+        {
+            struct BoxPokemon *boxMon = &gPokemonStoragePtr->boxes[box][slot];
+            u16 species = GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL);
+
+            if (species != SPECIES_NONE && !GetBoxMonData(boxMon, MON_DATA_IS_EGG, NULL)
+             && IsShinyOtIdPersonality(GetBoxMonData(boxMon, MON_DATA_OT_ID, NULL),
+                                       GetBoxMonData(boxMon, MON_DATA_PERSONALITY, NULL)))
+                SetShinySeenFlag(SpeciesToNationalPokedexNum(species));
+        }
+    }
+
+    for (slot = 0; slot < DAYCARE_MON_COUNT; slot++)
+    {
+        struct BoxPokemon *boxMon = &gSaveBlock1Ptr->daycare.mons[slot].mon;
+        u16 species = GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL);
+
+        if (species != SPECIES_NONE && !GetBoxMonData(boxMon, MON_DATA_IS_EGG, NULL)
+         && IsShinyOtIdPersonality(GetBoxMonData(boxMon, MON_DATA_OT_ID, NULL),
+                                   GetBoxMonData(boxMon, MON_DATA_PERSONALITY, NULL)))
+            SetShinySeenFlag(SpeciesToNationalPokedexNum(species));
+    }
+}
+
 u16 GetNationalPokedexCount(u8 caseID)
 {
     u16 count = 0;
@@ -4649,8 +4732,10 @@ static u16 GetNextPosition(u8 direction, u16 position, u16 min, u16 max)
     return position;
 }
 
-// Unown and Spinda use the personality of the first seen individual of that species
-// All others use personality 0
+#define POKEDEX_MALE_PERSONALITY 0xFE
+
+// Unown and Spinda use the personality of the first seen individual of that species.
+// All others use a personality that displays the male sprite when gender differences exist.
 static u32 GetPokedexMonPersonality(u16 species)
 {
     if (species == SPECIES_UNOWN || species == SPECIES_SPINDA)
@@ -4662,7 +4747,7 @@ static u32 GetPokedexMonPersonality(u16 species)
     }
     else
     {
-        return 0;
+        return POKEDEX_MALE_PERSONALITY;
     }
 }
 
