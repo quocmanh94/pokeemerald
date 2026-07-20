@@ -1347,6 +1347,31 @@ static void Cmd_get_considered_move_effect(void)
     gAIScriptPtr += 1;
 }
 
+static u8 GetSpeciesPossibleAbilities(u16 species, u8 *abilities)
+{
+    u8 count = 0;
+    u8 slot;
+
+    for (slot = 0; slot < NUM_ABILITY_SLOTS; slot++)
+    {
+        u8 ability = gSpeciesInfo[species].abilities[slot];
+        u8 i;
+
+        if (ability == ABILITY_NONE)
+            continue;
+
+        for (i = 0; i < count; i++)
+        {
+            if (abilities[i] == ability)
+                break;
+        }
+        if (i == count)
+            abilities[count++] = ability;
+    }
+
+    return count;
+}
+
 static void Cmd_get_ability(void)
 {
     u8 battler;
@@ -1374,25 +1399,14 @@ static void Cmd_get_ability(void)
             gAIScriptPtr += 2;
             return;
         }
+        {
+            u8 abilities[NUM_ABILITY_SLOTS];
+            u8 count = GetSpeciesPossibleAbilities(gBattleMons[battler].species, abilities);
 
-        if (gSpeciesInfo[gBattleMons[battler].species].abilities[0] != ABILITY_NONE)
-        {
-            if (gSpeciesInfo[gBattleMons[battler].species].abilities[1] != ABILITY_NONE)
-            {
-                // AI has no knowledge of opponent, so it guesses which ability.
-                if (Random() & 1)
-                    AI_THINKING_STRUCT->funcResult = gSpeciesInfo[gBattleMons[battler].species].abilities[0];
-                else
-                    AI_THINKING_STRUCT->funcResult = gSpeciesInfo[gBattleMons[battler].species].abilities[1];
-            }
+            if (count != 0)
+                AI_THINKING_STRUCT->funcResult = abilities[Random() % count];
             else
-            {
-                AI_THINKING_STRUCT->funcResult = gSpeciesInfo[gBattleMons[battler].species].abilities[0]; // It's definitely ability 1.
-            }
-        }
-        else
-        {
-            AI_THINKING_STRUCT->funcResult = gSpeciesInfo[gBattleMons[battler].species].abilities[1]; // AI can't actually reach this part since no Pokémon has ability 2 and no ability 1.
+                AI_THINKING_STRUCT->funcResult = ABILITY_NONE;
         }
     }
     else
@@ -1407,7 +1421,8 @@ static void Cmd_get_ability(void)
 static void Cmd_check_ability(void)
 {
     u32 battler = BattleAI_GetWantedBattler(gAIScriptPtr[1]);
-    u32 ability = gAIScriptPtr[2];
+    u8 ability;
+    u8 requestedAbility = gAIScriptPtr[2];
 
     if (gAIScriptPtr[1] == AI_TARGET || gAIScriptPtr[1] == AI_TARGET_PARTNER)
     {
@@ -1423,29 +1438,27 @@ static void Cmd_check_ability(void)
         {
             ability = gBattleMons[battler].ability;
         }
-        else if (gSpeciesInfo[gBattleMons[battler].species].abilities[0] != ABILITY_NONE)
-        {
-            if (gSpeciesInfo[gBattleMons[battler].species].abilities[1] != ABILITY_NONE)
-            {
-                u8 abilityDummyVariable = ability; // Needed to match.
-                if (gSpeciesInfo[gBattleMons[battler].species].abilities[0] != abilityDummyVariable
-                && gSpeciesInfo[gBattleMons[battler].species].abilities[1] != abilityDummyVariable)
-                {
-                    ability = gSpeciesInfo[gBattleMons[battler].species].abilities[0];
-                }
-                else
-                {
-                    ability = ABILITY_NONE;
-                }
-            }
-            else
-            {
-                ability = gSpeciesInfo[gBattleMons[battler].species].abilities[0];
-            }
-        }
         else
         {
-            ability = gSpeciesInfo[gBattleMons[battler].species].abilities[1]; // AI can't actually reach this part since no Pokémon has ability 2 and no ability 1.
+            u8 abilities[NUM_ABILITY_SLOTS];
+            u8 count = GetSpeciesPossibleAbilities(gBattleMons[battler].species, abilities);
+            u8 i;
+
+            for (i = 0; i < count; i++)
+            {
+                if (abilities[i] == requestedAbility)
+                    break;
+            }
+
+            if (i == count)
+                AI_THINKING_STRUCT->funcResult = 0;
+            else if (count == 1)
+                AI_THINKING_STRUCT->funcResult = 1;
+            else
+                AI_THINKING_STRUCT->funcResult = 2;
+
+            gAIScriptPtr += 3;
+            return;
         }
     }
     else
@@ -1454,9 +1467,9 @@ static void Cmd_check_ability(void)
         ability = gBattleMons[battler].ability;
     }
 
-    if (ability == 0)
+    if (ability == ABILITY_NONE)
         AI_THINKING_STRUCT->funcResult = 2; // Unable to answer.
-    else if (ability == gAIScriptPtr[2])
+    else if (ability == requestedAbility)
         AI_THINKING_STRUCT->funcResult = 1; // Pokémon has the ability we wanted to check.
     else
         AI_THINKING_STRUCT->funcResult = 0; // Pokémon doesn't have the ability we wanted to check.

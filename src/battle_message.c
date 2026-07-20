@@ -500,6 +500,14 @@ static const u8 sText_YouThrowABallNowRight[] = _("You throw a BALL now, right?\
 static const u8 sText_PlayerLostToEnemyTrainer[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\pPlayer lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayerPaidPrizeMoney[] = _("{B_PLAYER_NAME} paid ¥{B_BUFF1} as the prize\nmoney…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayerWhiteoutNoMoney[] = _("… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PkmnsAbilityActivated[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s\n{B_LAST_ABILITY} activated!");
+static const u8 sText_PkmnsAbilityRestoredHP[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ABILITY}\nrestored its HP!");
+static const u8 sText_PkmnHurtByAbility[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} was hurt\nby its {B_LAST_ABILITY}!");
+static const u8 sText_PkmnShuddered[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} shuddered!");
+static const u8 sText_PkmnFriskedItem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} frisked\n{B_DEF_NAME_WITH_PREFIX}'s {B_LAST_ITEM}!");
+static const u8 sText_PkmnFriskedTwoItems[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} frisked the foes'\n{B_BUFF1} and {B_BUFF2}!");
+static const u8 sText_PkmnRecoveredItem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} recovered\nits {B_LAST_ITEM}!");
+static const u8 sText_PkmnMoveBouncedBack[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nbounced {B_CURRENT_MOVE} back!");
 
 // early declaration of strings
 static const u8 sText_PkmnIncapableOfPower[];
@@ -891,6 +899,14 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNBOXLANETTESPCFULL - BATTLESTRINGS_TABLE_START] = gText_PkmnTransferredLanettesPCBoxFull,
     [STRINGID_TRAINER1WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer1WinText,
     [STRINGID_TRAINER2WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer2WinText,
+    [STRINGID_PKMNSABILITYACTIVATED - BATTLESTRINGS_TABLE_START] = sText_PkmnsAbilityActivated,
+    [STRINGID_PKMNSABILITYRESTOREDHP - BATTLESTRINGS_TABLE_START] = sText_PkmnsAbilityRestoredHP,
+    [STRINGID_PKMNHURTBYABILITY - BATTLESTRINGS_TABLE_START] = sText_PkmnHurtByAbility,
+    [STRINGID_PKMNSHUDDERED - BATTLESTRINGS_TABLE_START] = sText_PkmnShuddered,
+    [STRINGID_PKMNFRISKEDITEM - BATTLESTRINGS_TABLE_START] = sText_PkmnFriskedItem,
+    [STRINGID_PKMNRECOVEREDITEM - BATTLESTRINGS_TABLE_START] = sText_PkmnRecoveredItem,
+    [STRINGID_PKMNMOVEBOUNCEDBACK - BATTLESTRINGS_TABLE_START] = sText_PkmnMoveBouncedBack,
+    [STRINGID_PKMNFRISKEDTWOITEMS - BATTLESTRINGS_TABLE_START] = sText_PkmnFriskedTwoItems,
 };
 
 const u16 gMissStringIds[] =
