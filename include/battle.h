@@ -66,8 +66,12 @@ struct ResourceFlags
     u32 flags[MAX_BATTLERS_COUNT];
 };
 
-#define RESOURCE_FLAG_FLASH_FIRE 1
-
+#define RESOURCE_FLAG_FLASH_FIRE     (1 << 0)
+#define RESOURCE_FLAG_UNBURDEN       (1 << 1)
+#define RESOURCE_FLAG_DEFIANT_SHIFT  2
+#define RESOURCE_FLAG_DEFIANT_MASK   (7 << RESOURCE_FLAG_DEFIANT_SHIFT)
+#define RESOURCE_FLAG_MOXIE_SHIFT    5
+#define RESOURCE_FLAG_MOXIE_MASK     (3 << RESOURCE_FLAG_MOXIE_SHIFT)
 struct DisableStruct
 {
     u32 transformedMonPersonality;
@@ -97,7 +101,8 @@ struct DisableStruct
     u8 filler_17; // Unused field.
     u8 truantCounter:1;
     u8 truantSwitchInHack:1;
-    u8 filler_18_2:2; // Unused field.
+    u8 switchInAbilityDone:1;
+    u8 filler_18_3:1; // Unused field.
     u8 mimickedMoves:4;
     u8 rechargeTimer;
 };
@@ -124,6 +129,7 @@ struct ProtectStruct
     u32 flinchImmobility:1;
     u32 notFirstStrike:1;
     u32 palaceUnableToUseMove:1;
+    u32 usesBouncedMove:1;
     u32 physicalDmg;
     u32 specialDmg;
     u8 physicalBattlerId;
@@ -140,6 +146,8 @@ struct SpecialStatus
     u32 ppNotAffectedByPressure:1;
     u32 faintedHasReplacement:1;
     u32 focusBanded:1;
+    u32 stormDrainRedirected:1;
+    u32 sturdied:1;
     s32 shellBellDmg;
     s32 physicalDmg;
     s32 specialDmg;
@@ -414,6 +422,7 @@ struct BattleStruct
     bool8 anyMonHasTransformed;
     void (*savedCallback)(void);
     u16 usedHeldItems[MAX_BATTLERS_COUNT];
+    u16 consumedBerries[NUM_BATTLE_SIDES][PARTY_SIZE];
     u8 chosenItem[MAX_BATTLERS_COUNT]; // why is this an u8?
     u8 AI_itemType[2];
     u8 AI_itemFlags[2];
