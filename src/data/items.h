@@ -2774,15 +2774,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_0E2] =
+    [ITEM_ABILITY_PATCH] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("ABILITY PATCH"),
+        .itemId = ITEM_ABILITY_PATCH,
         .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .description = sAbilityPatchDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_AbilityPatch,
     },
 
     [ITEM_0E3] =

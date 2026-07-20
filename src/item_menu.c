@@ -749,7 +749,7 @@ static bool8 SetupBagMenu(void)
         gMain.state++;
         break;
     case 10:
-        EnsureTMCaseForOwnedTMsHMs();
+        EnsureCustomKeyItems();
         UpdatePocketItemLists();
         InitPocketListPositions();
         InitPocketScrollPositions();
