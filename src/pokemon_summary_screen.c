@@ -1539,7 +1539,7 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         sum->species2 = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
         sum->exp = GetMonData(mon, MON_DATA_EXP);
         sum->level = GetMonData(mon, MON_DATA_LEVEL);
-        sum->abilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM);
+        sum->abilityNum = GetMonAbilityNum(mon);
         sum->item = GetMonData(mon, MON_DATA_HELD_ITEM);
         sum->pid = GetMonData(mon, MON_DATA_PERSONALITY);
         sum->sanity = GetMonData(mon, MON_DATA_SANITY_IS_BAD_EGG);

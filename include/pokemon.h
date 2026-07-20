@@ -94,6 +94,7 @@ enum {
     MON_DATA_SPEED2,
     MON_DATA_SPATK2,
     MON_DATA_SPDEF2,
+    MON_DATA_HIDDEN_ABILITY,
 };
 
 struct PokemonSubstruct0
@@ -164,7 +165,8 @@ struct PokemonSubstruct3
  /* 0x0B */ u32 nationalRibbon:1;           // Given to purified Shadow Pokémon in Colosseum/XD.
  /* 0x0B */ u32 earthRibbon:1;              // Given to teams that have beaten Mt. Battle's 100-battle challenge in Colosseum/XD.
  /* 0x0B */ u32 worldRibbon:1;              // Distributed during Pokémon Festa '04 and '05 to tournament winners.
- /* 0x0B */ u32 unusedRibbons:4;            // Discarded in Gen 4.
+ /* 0x0B */ u32 unusedRibbons:3;            // Discarded in Gen 4.
+ /* 0x0B */ u32 hiddenAbility:1;
 
  // The functionality of this bit changed in FRLG:
  // In RS, this bit does nothing, is never set, & is accidentally unset when hatching Eggs.
@@ -315,11 +317,14 @@ struct SpeciesInfo
  /* 0x12 */ u8 friendship;
  /* 0x13 */ u8 growthRate;
  /* 0x14 */ u8 eggGroups[2];
- /* 0x16 */ u8 abilities[2];
- /* 0x18 */ u8 safariZoneFleeRate;
- /* 0x19 */ u8 bodyColor : 7;
+ /* 0x16 */ u8 abilities[NUM_ABILITY_SLOTS];
+ /* 0x19 */ u8 safariZoneFleeRate;
+ /* 0x1A */ u8 bodyColor : 7;
             u8 noFlip : 1;
 };
+
+STATIC_ASSERT(sizeof(struct PokemonSubstruct3) == 12, PokemonSubstruct3Size);
+STATIC_ASSERT(sizeof(struct BattlePokemon) == 88, BattlePokemonSize);
 
 #define MOVE_CATEGORY_PHYSICAL 0
 #define MOVE_CATEGORY_SPECIAL 1
@@ -460,6 +465,8 @@ u8 CalculateEnemyPartyCount(void);
 u8 GetMonsStateToDoubles(void);
 u8 GetMonsStateToDoubles_2(void);
 u8 GetAbilityBySpecies(u16 species, u8 abilityNum);
+u8 GetBoxMonAbilityNum(struct BoxPokemon *boxMon);
+u8 GetMonAbilityNum(struct Pokemon *mon);
 u8 GetMonAbility(struct Pokemon *mon);
 void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord);
 u8 GetSecretBaseTrainerPicIndex(void);
