@@ -14,6 +14,7 @@
 #include "field_screen_effect.h"
 #include "field_specials.h"
 #include "fldeff_misc.h"
+#include "item.h"
 #include "item_menu.h"
 #include "link.h"
 #include "match_call.h"
@@ -54,6 +55,7 @@ static bool32 TrySetupDiveDownScript(void);
 static bool32 TrySetupDiveEmergeScript(void);
 static bool8 TryStartStepBasedScript(struct MapPosition *, u16, u16);
 static bool8 CheckStandardWildEncounter(u16);
+static void SwitchBikeWithShortcut(void);
 static bool8 TryArrowWarp(struct MapPosition *, u16, u8);
 static bool8 IsWarpMetatileBehavior(u16);
 static bool8 IsArrowWarpMetatileBehavior(u16, u8);
@@ -84,6 +86,7 @@ void FieldClearPlayerInput(struct FieldInput *input)
     input->input_field_1_1 = FALSE;
     input->input_field_1_2 = FALSE;
     input->input_field_1_3 = FALSE;
+    input->pressedBikeSwitchButtons = FALSE;
     input->input_field_1_6 = FALSE;
     input->input_field_1_7 = FALSE;
     input->dpadDirection = 0;
@@ -97,6 +100,11 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
 
     if ((tileTransitionState == T_TILE_CENTER && forcedMove == FALSE) || tileTransitionState == T_NOT_MOVING)
     {
+        if ((newKeys & (L_BUTTON | R_BUTTON))
+         && (heldKeys & (L_BUTTON | R_BUTTON)) == (L_BUTTON | R_BUTTON)
+         && runningState == NOT_MOVING)
+            input->pressedBikeSwitchButtons = TRUE;
+
         if (GetPlayerSpeed() != PLAYER_SPEED_FASTEST)
         {
             if (newKeys & START_BUTTON)
@@ -180,6 +188,12 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
             return TRUE;
     }
 
+    if (input->pressedBikeSwitchButtons)
+    {
+        SwitchBikeWithShortcut();
+        return FALSE;
+    }
+
     GetInFrontOfPlayerPosition(&position);
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
     if (input->pressedAButton && TryStartInteractionScript(&position, metatileBehavior, playerDirection) == TRUE)
@@ -204,6 +218,24 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         return TRUE;
 
     return FALSE;
+}
+
+static void SwitchBikeWithShortcut(void)
+{
+    u16 oldBike;
+
+    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
+        return;
+
+    if (CheckBagHasItem(ITEM_MACH_BIKE, 1))
+        oldBike = ITEM_MACH_BIKE;
+    else if (CheckBagHasItem(ITEM_ACRO_BIKE, 1))
+        oldBike = ITEM_ACRO_BIKE;
+    else
+        return;
+
+    if (SwitchBikeItem(oldBike) != ITEM_NONE)
+        PlaySE(SE_SWITCH);
 }
 
 static void GetPlayerPosition(struct MapPosition *position)
