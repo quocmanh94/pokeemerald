@@ -90,6 +90,7 @@ enum {
     ACTION_CONFIRM_QUIZ_LADY,
     ACTION_REGISTER_TAP,
     ACTION_REGISTER_HOLD,
+    ACTION_SWITCH_BIKE,
     ACTION_DUMMY,
 };
 
@@ -200,6 +201,7 @@ static void ItemMenu_Toss(u8);
 static void ItemMenu_Register(u8);
 static void ItemMenu_RegisterHold(u8);
 static void ItemMenu_CheckWhichRegister(u8);
+static void ItemMenu_SwitchBike(u8);
 static void ItemMenu_Give(u8);
 static void ItemMenu_Cancel(u8);
 static void ItemMenu_UseInBattle(u8);
@@ -273,6 +275,7 @@ static const struct ListMenuTemplate sItemListMenu =
 const u8 gMenuText_Tap[] = _("TAP");
 const u8 gMenuText_Hold[] = _("HOLD");
 const u8 gText_RegisterHow[] = _("Register this\nitem by tapping or\nholding SELECT?");
+static const u8 sText_SwitchedToBike[] = _("Switched to the\n{STR_VAR_1}.");
 
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,      {ItemMenu_UseOutOfBattle}},
@@ -291,6 +294,7 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_CONFIRM_QUIZ_LADY] = {gMenuText_Confirm,  {ItemMenu_ConfirmQuizLady}},
     [ACTION_REGISTER_TAP]      = {gMenuText_Tap,      {ItemMenu_Register}},
     [ACTION_REGISTER_HOLD]     = {gMenuText_Hold,     {ItemMenu_RegisterHold}},
+    [ACTION_SWITCH_BIKE]       = {gText_Switch,       {ItemMenu_SwitchBike}},
     [ACTION_DUMMY]             = {gText_EmptyString2, {NULL}}
 };
 
@@ -1703,6 +1707,8 @@ static void OpenContextMenu(u8 taskId)
                 {
                     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
                         gBagMenu->contextMenuItemsBuffer[0] = ACTION_WALK;
+                    else
+                        gBagMenu->contextMenuItemsBuffer[2] = ACTION_SWITCH_BIKE;
                 }
                 break;
             case BALLS_POCKET:
@@ -2052,6 +2058,23 @@ static void Task_LoadRegisterOptions(u8 taskId)
 static void ItemMenu_CheckWhichRegister(u8 taskId)
 {
     gTasks[taskId].func = Task_LoadRegisterOptions;
+}
+
+static void ItemMenu_SwitchBike(u8 taskId)
+{
+    u16 newBike = SwitchBikeItem(gSpecialVar_ItemId);
+
+    RemoveContextWindow();
+    if (newBike == ITEM_NONE)
+    {
+        ReturnToItemList(taskId);
+        return;
+    }
+
+    gSpecialVar_ItemId = newBike;
+    CopyItemName(newBike, gStringVar1);
+    StringExpandPlaceholders(gStringVar4, sText_SwitchedToBike);
+    DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
 }
 
 static void ItemMenu_Give(u8 taskId)
