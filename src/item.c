@@ -615,6 +615,63 @@ void SwapRegisteredBike(void)
     }
 }
 
+u16 SwitchBikeItem(u16 oldBike)
+{
+    bool8 wasRegisteredTap;
+    bool8 wasRegisteredHold;
+    bool8 newBikeFound = FALSE;
+    s32 oldSlot = -1;
+    u16 newBike;
+    u32 i;
+    struct BagPocket *bagPocket = &gBagPockets[KEYITEMS_POCKET];
+
+    if (oldBike == ITEM_MACH_BIKE)
+        newBike = ITEM_ACRO_BIKE;
+    else if (oldBike == ITEM_ACRO_BIKE)
+        newBike = ITEM_MACH_BIKE;
+    else
+        return ITEM_NONE;
+
+    for (i = 0; i < bagPocket->capacity; i++)
+    {
+        if (bagPocket->itemSlots[i].itemId == oldBike)
+            oldSlot = i;
+        else if (bagPocket->itemSlots[i].itemId == newBike)
+            newBikeFound = TRUE;
+    }
+
+    if (oldSlot == -1)
+        return ITEM_NONE;
+
+    wasRegisteredTap = (gSaveBlock1Ptr->registeredItem == oldBike);
+    wasRegisteredHold = (gSaveBlock1Ptr->registeredLongItem == oldBike);
+    if (newBikeFound)
+    {
+        bagPocket->itemSlots[oldSlot].itemId = ITEM_NONE;
+        SetBagItemQuantity(&bagPocket->itemSlots[oldSlot].quantity, 0);
+        CompactItemsInBagPocket(bagPocket);
+    }
+    else
+    {
+        bagPocket->itemSlots[oldSlot].itemId = newBike;
+    }
+
+    if (wasRegisteredTap)
+    {
+        gSaveBlock1Ptr->registeredItem = newBike;
+        if (gSaveBlock1Ptr->registeredLongItem == newBike)
+            gSaveBlock1Ptr->registeredLongItem = ITEM_NONE;
+    }
+    if (wasRegisteredHold)
+    {
+        gSaveBlock1Ptr->registeredLongItem = newBike;
+        if (gSaveBlock1Ptr->registeredItem == newBike)
+            gSaveBlock1Ptr->registeredItem = ITEM_NONE;
+    }
+
+    return newBike;
+}
+
 u16 BagGetItemIdByPocketPosition(u8 pocketId, u16 pocketPos)
 {
     return gBagPockets[pocketId - 1].itemSlots[pocketPos].itemId;
