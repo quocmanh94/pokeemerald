@@ -275,6 +275,7 @@ PlayersHouse_1F_Movement_MomReturnToSeatFemale:
 PlayersHouse_1F_EventScript_Mom::
 	lock
 	faceplayer
+	call PlayersHouse_1F_EventScript_GiveAbilityPatch
 	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
 	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
 	goto_if_set FLAG_HAS_MATCH_CALL, PlayersHouse_1F_EventScript_TryRegisterMom
@@ -284,6 +285,16 @@ PlayersHouse_1F_EventScript_Mom::
 	msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT
 	release
 	end
+
+PlayersHouse_1F_EventScript_GiveAbilityPatch::
+	goto_if_set FLAG_RECEIVED_ABILITY_PATCH, Common_EventScript_NopReturn
+	checkitem ITEM_ABILITY_PATCH
+	goto_if_eq VAR_RESULT, TRUE, PlayersHouse_1F_EventScript_SetReceivedAbilityPatch
+	giveitem ITEM_ABILITY_PATCH
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+PlayersHouse_1F_EventScript_SetReceivedAbilityPatch:
+	setflag FLAG_RECEIVED_ABILITY_PATCH
+	return
 
 PlayersHouse_1F_EventScript_DontPushYourselfTooHard::
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
