@@ -73,6 +73,7 @@
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
+#include "constants/region_map_sections.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
@@ -326,6 +327,9 @@ static void Task_CancelChooseMonYesNo(u8);
 static void PartyMenuDisplayYesNoMenu(void);
 static void Task_HandleCancelChooseMonYesNoInput(u8);
 static void Task_ReturnToChooseMonAfterText(u8);
+static bool8 IsStarterGiftMon(struct Pokemon *mon);
+static void Task_PromptChangePokeBall(u8);
+static void Task_HandleChangePokeBallInput(u8);
 static void UpdateCurrentPartySelection(s8 *, s8);
 static void UpdatePartySelectionSingleLayout(s8 *, s8);
 static void UpdatePartySelectionDoubleLayout(s8 *, s8);
@@ -4834,6 +4838,162 @@ void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
         gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
     else
         gTasks[taskId].func = Task_ClosePartyMenuAfterText;
+}
+
+void ItemUseCB_PokeBall(u8 taskId, TaskFunc task)
+{
+    static const u8 sText_EggBallCannotBeChanged[] = _("An EGG's Ball can't be changed.{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_HatchedMonBallCannotBeChanged[] = _("A hatched POKéMON's Ball\ncan't be changed.{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_StarterBallCannotBeChanged[] = _("A starter POKéMON's Ball\ncan't be changed.{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_SafariBallCannotBeChanged[] = _("A SAFARI BALL can't be changed.{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_ChangePokeBallPrompt[] = _("Change {STR_VAR_1}'s Ball from\n{STR_VAR_2} to {STR_VAR_3}?");
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 oldBall = GetMonData(mon, MON_DATA_POKEBALL);
+    u16 newBall = gSpecialVar_ItemId;
+
+    PlaySE(SE_SELECT);
+    if (GetMonData(mon, MON_DATA_IS_EGG))
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(sText_EggBallCannotBeChanged, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    if (GetMonData(mon, MON_DATA_MET_LEVEL) == 0)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(sText_HatchedMonBallCannotBeChanged, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    if (IsStarterGiftMon(mon))
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(sText_StarterBallCannotBeChanged, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    if (oldBall == ITEM_SAFARI_BALL || newBall == ITEM_SAFARI_BALL)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(sText_SafariBallCannotBeChanged, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    if (oldBall == newBall)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        return;
+    }
+
+    sPartyMenuItemId = oldBall;
+    GetMonNickname(mon, gStringVar1);
+    CopyItemName(oldBall, gStringVar2);
+    CopyItemName(newBall, gStringVar3);
+    StringExpandPlaceholders(gStringVar4, sText_ChangePokeBallPrompt);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    ScheduleBgCopyTilemapToVram(2);
+    gTasks[taskId].func = Task_PromptChangePokeBall;
+}
+
+static bool8 IsStarterGiftMon(struct Pokemon *mon)
+{
+    u16 species;
+
+    if (GetMonData(mon, MON_DATA_MET_LEVEL) != 5
+        || GetMonData(mon, MON_DATA_MET_LOCATION) != MAPSEC_ROUTE_101)
+        return FALSE;
+
+    species = GetMonData(mon, MON_DATA_SPECIES);
+    switch (species)
+    {
+    case SPECIES_TREECKO:
+    case SPECIES_GROVYLE:
+    case SPECIES_SCEPTILE:
+    case SPECIES_TORCHIC:
+    case SPECIES_COMBUSKEN:
+    case SPECIES_BLAZIKEN:
+    case SPECIES_MUDKIP:
+    case SPECIES_MARSHTOMP:
+    case SPECIES_SWAMPERT:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
+static void Task_PromptChangePokeBall(u8 taskId)
+{
+    if (!IsPartyMenuTextPrinterActive())
+    {
+        PartyMenuDisplayYesNoMenu();
+        gTasks[taskId].func = Task_HandleChangePokeBallInput;
+    }
+}
+
+static void Task_HandleChangePokeBallInput(u8 taskId)
+{
+    static const u8 sText_PokeBallChanged[] = _("{STR_VAR_1} was moved to the\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 oldBall = sPartyMenuItemId;
+    u16 newBall = gSpecialVar_ItemId;
+    u8 ball;
+
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    {
+    case 0:
+        if (!RemoveBagItem(newBall, 1))
+        {
+            gPartyMenuUseExitCallback = FALSE;
+            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+            ScheduleBgCopyTilemapToVram(2);
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            break;
+        }
+
+        if (!AddBagItem(oldBall, 1))
+        {
+            AddBagItem(newBall, 1);
+            gPartyMenuUseExitCallback = FALSE;
+            DisplayPartyMenuMessage(gText_BagIsFull, TRUE);
+            ScheduleBgCopyTilemapToVram(2);
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            break;
+        }
+
+        ball = newBall;
+        SetMonData(mon, MON_DATA_POKEBALL, &ball);
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        GetMonNickname(mon, gStringVar1);
+        CopyItemName(newBall, gStringVar2);
+        StringExpandPlaceholders(gStringVar4, sText_PokeBallChanged);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        if (CheckBagHasItem(newBall, 1))
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        else
+            gTasks[taskId].func = Task_ClosePartyMenuAfterText;
+        break;
+    case MENU_B_PRESSED:
+        PlaySE(SE_SELECT);
+        // fallthrough
+    case 1:
+        gPartyMenuUseExitCallback = FALSE;
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        break;
+    }
 }
 
 u16 ItemIdToBattleMoveId(u16 item)
