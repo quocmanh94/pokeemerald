@@ -244,6 +244,7 @@ static void ExitPartyMenu(void);
 static bool8 AllocPartyMenuBg(void);
 static bool8 AllocPartyMenuBgGfx(void);
 static void InitPartyMenuWindows(u8);
+static void CreatePartySwapHint(void);
 static void InitPartyMenuBoxes(u8);
 static void LoadPartyMenuPokeballGfx(void);
 static void LoadPartyMenuAilmentGfx(void);
@@ -303,6 +304,8 @@ static void UpdatePartyToFieldOrder(void);
 static void MoveCursorToConfirm(void);
 static void HandleChooseMonCancel(u8, s8 *);
 static void HandleChooseMonSelection(u8, s8 *);
+static bool8 IsInvalidPartyMenuActionType(u8);
+static bool8 CanUsePartyMenuSelectSwap(void);
 static u16 PartyMenuButtonHandler(s8 *);
 static s8 *GetCurrentPartySlotPtr(void);
 static bool8 IsSelectedMonNotEgg(u8 *);
@@ -661,6 +664,7 @@ static bool8 ShowPartyMenu(void)
         gMain.state++;
         break;
     case 19:
+        CreatePartySwapHint();
         gMain.state++;
         break;
     case 20:
@@ -1288,6 +1292,9 @@ void Task_HandleChooseMonInput(u8 taskId)
                 MoveCursorToConfirm();
             }
             break;
+        case SELECT_BUTTON:
+            CursorCb_Switch(taskId);
+            break;
         }
     }
 }
@@ -1463,6 +1470,30 @@ static void Task_HandleCancelChooseMonYesNoInput(u8 taskId)
     }
 }
 
+static bool8 IsInvalidPartyMenuActionType(u8 partyAction)
+{
+    return (partyAction == PARTY_ACTION_SEND_OUT
+         || partyAction == PARTY_ACTION_CANT_SWITCH
+         || partyAction == PARTY_ACTION_USE_ITEM
+         || partyAction == PARTY_ACTION_ABILITY_PREVENTS
+         || partyAction == PARTY_ACTION_GIVE_ITEM
+         || partyAction == PARTY_ACTION_GIVE_PC_ITEM
+         || partyAction == PARTY_ACTION_GIVE_MAILBOX_MAIL
+         || partyAction == PARTY_ACTION_SOFTBOILED
+         || partyAction == PARTY_ACTION_CHOOSE_AND_CLOSE
+         || partyAction == PARTY_ACTION_MOVE_TUTOR
+         || partyAction == PARTY_ACTION_MINIGAME
+         || partyAction == PARTY_ACTION_REUSABLE_ITEM);
+}
+
+static bool8 CanUsePartyMenuSelectSwap(void)
+{
+    return (!InBattlePike()
+         && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD
+         && CalculatePlayerPartyCount() >= 2
+         && !IsInvalidPartyMenuActionType(gPartyMenu.action));
+}
+
 static u16 PartyMenuButtonHandler(s8 *slotPtr)
 {
     s8 movementDir;
@@ -1499,6 +1530,17 @@ static u16 PartyMenuButtonHandler(s8 *slotPtr)
 
     if (JOY_NEW(START_BUTTON))
         return START_BUTTON;
+
+    if (JOY_NEW(SELECT_BUTTON) && CanUsePartyMenuSelectSwap())
+    {
+        if (gPartyMenu.menuType != PARTY_MENU_TYPE_FIELD || *slotPtr == PARTY_SIZE + 1)
+            return 0;
+
+        if (gPartyMenu.action == PARTY_ACTION_SWITCH)
+            return A_BUTTON;
+
+        return SELECT_BUTTON;
+    }
 
     if (movementDir)
     {
@@ -2107,6 +2149,21 @@ static void InitPartyMenuWindows(u8 layout)
     LoadUserWindowBorderGfx(0, 0x4F, BG_PLTT_ID(13));
     LoadPalette(GetOverworldTextboxPalettePtr(), BG_PLTT_ID(14), PLTT_SIZE_4BPP);
     LoadPalette(gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
+}
+
+static void CreatePartySwapHint(void)
+{
+    if (CanUsePartyMenuSelectSwap())
+    {
+        u8 windowId = AddWindow(&sPartySwapHintWindowTemplate);
+        u8 x = GetStringCenterAlignXOffset(FONT_SMALL_NARROW, sText_SelectSwitch, 64);
+
+        FillWindowPixelBuffer(windowId, PIXEL_FILL(0));
+        AddTextPrinterParameterized3(windowId, FONT_SMALL_NARROW, x, 1, sFontColorTable[0], TEXT_SKIP_DRAW, sText_SelectSwitch);
+        PutWindowTilemap(windowId);
+        CopyWindowToVram(windowId, COPYWIN_GFX);
+        ScheduleBgCopyTilemapToVram(0);
+    }
 }
 
 static void CreateCancelConfirmWindows(bool8 chooseHalf)
