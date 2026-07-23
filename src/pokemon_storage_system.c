@@ -713,6 +713,7 @@ static void ResetSelectionAfterDeposit(void);
 static void InitReleaseMon(void);
 static bool8 TryHideReleaseMon(void);
 static void InitCanReleaseMonVars(void);
+static u16 GetReleaseMonHeldItem(void);
 static void ReleaseMon(void);
 static bool32 AtLeastThreeUsableMons(void);
 static s8 RunCanReleaseMon(void);
@@ -722,6 +723,7 @@ static void InitSummaryScreenData(void);
 static void SetSelectionAfterSummaryScreen(void);
 static void SetMonMarkings(u8);
 static bool8 IsRemovingLastPartyMon(void);
+static bool8 CanPlaceMon(void);
 static bool8 CanShiftMon(void);
 static bool8 IsMonBeingMoved(void);
 static void TryRefreshDisplayMon(void);
@@ -3085,6 +3087,8 @@ static void Task_DepositMenu(u8 taskId)
 
 static void Task_ReleaseMon(u8 taskId)
 {
+    u16 item;
+
     switch (sStorage->state)
     {
     case 0:
@@ -3102,9 +3106,19 @@ static void Task_ReleaseMon(u8 taskId)
             break;
         case  0: // Yes
             ClearBottomWindow();
-            InitCanReleaseMonVars();
-            InitReleaseMon();
-            sStorage->state++;
+            item = GetReleaseMonHeldItem();
+            if (item != ITEM_NONE && !CheckBagHasSpace(item, 1))
+            {
+                PlaySE(SE_FAILURE);
+                PrintMessage(MSG_BAG_FULL);
+                sStorage->state = 14;
+            }
+            else
+            {
+                InitCanReleaseMonVars();
+                InitReleaseMon();
+                sStorage->state++;
+            }
             break;
         }
         break;
@@ -3205,6 +3219,7 @@ static void Task_ReleaseMon(u8 taskId)
         }
         break;
     case 13:
+    case 14:
         if (JOY_NEW(A_BUTTON | B_BUTTON | DPAD_ANY))
         {
             ClearBottomWindow();
@@ -3975,9 +3990,15 @@ static void Task_OnBPressed(u8 taskId)
     case 0:
         if (IsMonBeingMoved())
         {
-            PlaySE(SE_FAILURE);
-            PrintMessage(MSG_HOLDING_POKE);
-            sStorage->state = 1;
+            if (CanPlaceMon())
+            {
+                PlaySE(SE_SELECT);
+                SetPokeStorageTask(Task_PlaceMon);
+            }
+            else
+            {
+                SetPokeStorageTask(Task_PokeStorageMain);
+            }
         }
         else if (IsMovingItem())
         {
@@ -7015,9 +7036,20 @@ static bool8 TryHideReleaseMon(void)
     }
 }
 
+static u16 GetReleaseMonHeldItem(void)
+{
+    if (sIsMonBeingMoved)
+        return GetMonData(&sStorage->movingMon, MON_DATA_HELD_ITEM);
+    else if (sCursorArea == CURSOR_AREA_IN_PARTY)
+        return GetMonData(&gPlayerParty[sCursorPosition], MON_DATA_HELD_ITEM);
+    else
+        return GetBoxMonDataAt(StorageGetCurrentBox(), sCursorPosition, MON_DATA_HELD_ITEM);
+}
+
 static void ReleaseMon(void)
 {
     u8 boxId;
+    u16 item = GetReleaseMonHeldItem();
 
     DestroyReleaseMonIcon();
     if (sIsMonBeingMoved)
@@ -7033,6 +7065,8 @@ static void ReleaseMon(void)
 
         PurgeMonOrBoxMon(boxId, sCursorPosition);
     }
+    if (item != ITEM_NONE)
+        AddBagItem(item, 1);
     TryRefreshDisplayMon();
 }
 
@@ -7336,6 +7370,20 @@ static bool8 IsRemovingLastPartyMon(void)
         return TRUE;
     else
         return FALSE;
+}
+
+static bool8 CanPlaceMon(void)
+{
+    if (sIsMonBeingMoved)
+    {
+        if (sCursorArea == CURSOR_AREA_IN_PARTY
+         && GetMonData(&gPlayerParty[sCursorPosition], MON_DATA_SPECIES) == SPECIES_NONE)
+            return TRUE;
+        else if (sCursorArea == CURSOR_AREA_IN_BOX
+              && GetBoxMonDataAt(StorageGetCurrentBox(), sCursorPosition, MON_DATA_SPECIES_OR_EGG) == SPECIES_NONE)
+            return TRUE;
+    }
+    return FALSE;
 }
 
 static bool8 CanShiftMon(void)
