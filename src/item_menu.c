@@ -311,6 +311,11 @@ static const u8 sContextMenuItems_KeyItemsPocket[] = {
 };
 
 static const u8 sContextMenuItems_BallsPocket[] = {
+    ACTION_USE,         ACTION_GIVE,
+    ACTION_TOSS,        ACTION_CANCEL
+};
+
+static const u8 sContextMenuItems_BallsPocketNoUse[] = {
     ACTION_GIVE,        ACTION_DUMMY,
     ACTION_TOSS,        ACTION_CANCEL
 };
@@ -1712,8 +1717,16 @@ static void OpenContextMenu(u8 taskId)
                 }
                 break;
             case BALLS_POCKET:
-                gBagMenu->contextMenuItemsPtr = sContextMenuItems_BallsPocket;
-                gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);
+                if (GetItemFieldFunc(gSpecialVar_ItemId) == NULL)
+                {
+                    gBagMenu->contextMenuItemsPtr = sContextMenuItems_BallsPocketNoUse;
+                    gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocketNoUse);
+                }
+                else
+                {
+                    gBagMenu->contextMenuItemsPtr = sContextMenuItems_BallsPocket;
+                    gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);
+                }
                 break;
             case TMHM_POCKET:
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_TmHmPocket;
