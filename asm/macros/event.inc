@@ -1796,6 +1796,11 @@
 	.2byte \quantity
 	.endm
 
+  @ Like callnative, but function expects a ctx
+  .macro callfunc func:req
+  .byte SCR_OP_CALLFUNC
+  .4byte \func
+  .endm
 
 @ Supplementary
 
@@ -2011,4 +2016,12 @@
 	.macro applywaitmovement localId:req, movements:req, map
 	applymovement \localId, \movements, \map
 	waitmovement
+	.endm
+
+	@ hide any follower pokemon if present,
+	@ putting them into their pokeball;
+	@ by default waits for their movement to finish
+	.macro hidefollower wait=1
+	callfunc ScrFunc_hidefollower
+	.2byte \wait
 	.endm
