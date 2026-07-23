@@ -1,5 +1,10 @@
 MossdeepCity_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_Gym_OnTransition
 	.byte 0
+
+MossdeepCity_Gym_OnTransition:
+	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower since it can collide with moving statues
+	end
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC

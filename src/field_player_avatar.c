@@ -1018,23 +1018,23 @@ static void PlayerRun(u8 direction)
 void PlayerOnBikeCollide(u8 direction)
 {
     PlayCollisionSoundIfNotFacingWarp(direction);
-    PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_WALK);
+    PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_FACE);
 }
 
 void PlayerOnBikeCollideWithFarawayIslandMew(u8 direction)
 {
-    PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_WALK);
+    PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_FACE);
 }
 
 static void PlayerNotOnBikeCollide(u8 direction)
 {
     PlayCollisionSoundIfNotFacingWarp(direction);
-    PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_WALK);
+    PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_FACE);
 }
 
 static void PlayerNotOnBikeCollideWithFarawayIslandMew(u8 direction)
 {
-    PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_WALK);
+    PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_FACE);
 }
 
 void PlayerFaceDirection(u8 direction)

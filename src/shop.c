@@ -36,6 +36,7 @@
 #include "tv.h"
 #include "constants/decorations.h"
 #include "constants/flags.h"
+#include "constants/event_objects.h"
 #include "constants/items.h"
 #include "constants/metatile_behaviors.h"
 #include "constants/rgb.h"
@@ -1057,7 +1058,8 @@ static void BuyMenuCollectObjectEventData(void)
         {
             u8 objEventId = GetObjectEventIdByXY(facingX - 4 + x, facingY - 2 + y);
 
-            if (objEventId != OBJECT_EVENTS_COUNT)
+            // skip if invalid or an overworld pokemon that is not following the player
+            if (objEventId != OBJECT_EVENTS_COUNT && !(gObjectEvents[objEventId].active && gObjectEvents[objEventId].graphicsId >= OBJ_EVENT_GFX_MON_BASE && gObjectEvents[objEventId].localId != OBJ_EVENT_ID_FOLLOWER))
             {
                 sShopData->viewportObjects[numObjects][OBJ_EVENT_ID] = objEventId;
                 sShopData->viewportObjects[numObjects][X_COORD] = x;
@@ -1092,6 +1094,8 @@ static void BuyMenuDrawObjectEvents(void)
     u8 spriteId;
     const struct ObjectEventGraphicsInfo *graphicsInfo;
     u8 weatherTemp = gWeatherPtr->palProcessingState;
+    // This function runs during fadeout, so the weather palette processing state must be temporarily changed,
+    // so that time-blending will work properly
     if (weatherTemp == WEATHER_PAL_STATE_SCREEN_FADING_OUT)
         gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_IDLE;
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)

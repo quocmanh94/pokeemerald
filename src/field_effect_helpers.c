@@ -7,19 +7,19 @@
 #include "fieldmap.h"
 #include "gpu_regs.h"
 #include "metatile_behavior.h"
+#include "palette.h"
 #include "sound.h"
 #include "sprite.h"
 #include "trig.h"
-#include "constants/field_effects.h"
-#include "constants/songs.h"
 #include "constants/event_objects.h"
-#include "palette.h"
+#include "constants/field_effects.h"
 #include "constants/rgb.h"
-
+#include "constants/songs.h"
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF // duplicate of define in event_object_movement.c
 #define PAL_TAG_REFLECTION_OFFSET 0x2000 // reflection tag value is paletteTag + 0x2000
 #define PAL_RAW_REFLECTION_OFFSET 0x4000 // raw reflection tag is paletteNum + 0x4000
 #define HIGH_BRIDGE_PAL_TAG 0x4010
+// Build a unique tag for reflection's palette based on based tag, or paletteNum
 #define REFLECTION_PAL_TAG(tag, num) ((tag) == TAG_NONE ? (num) + PAL_RAW_REFLECTION_OFFSET : (tag) + PAL_TAG_REFLECTION_OFFSET)
 
 static void UpdateObjectReflectionSprite(struct Sprite *);
@@ -190,6 +190,7 @@ static void UpdateObjectReflectionSprite(struct Sprite *reflectionSprite)
 {
     struct ObjectEvent *objectEvent = &gObjectEvents[reflectionSprite->sReflectionObjEventId];
     struct Sprite *mainSprite = &gSprites[objectEvent->spriteId];
+
     if (!objectEvent->active || !objectEvent->hasReflection || objectEvent->localId != reflectionSprite->sReflectionObjEventLocalId)
     {
         reflectionSprite->inUse = FALSE;
@@ -224,6 +225,7 @@ static void UpdateObjectReflectionSprite(struct Sprite *reflectionSprite)
     reflectionSprite->subspriteTables = mainSprite->subspriteTables;
     reflectionSprite->invisible = mainSprite->invisible;
     reflectionSprite->x = mainSprite->x;
+    // sReflectionVerticalOffset is only set for high bridges
     reflectionSprite->y = mainSprite->y + GetReflectionVerticalOffset(objectEvent) + reflectionSprite->sReflectionVerticalOffset;
     reflectionSprite->centerToCornerVecX = mainSprite->centerToCornerVecX;
     reflectionSprite->centerToCornerVecY = mainSprite->centerToCornerVecY;
@@ -264,6 +266,7 @@ u8 CreateWarpArrowSprite(void)
     if (spriteId != MAX_SPRITES)
     {
         struct Sprite *sprite = &gSprites[spriteId];
+        // Can use either gender's palette, so try to use the one that should be loaded
         sprite->oam.paletteNum = LoadObjectEventPalette(gSaveBlock2Ptr->playerGender ? FLDEFF_PAL_TAG_MAY : FLDEFF_PAL_TAG_BRENDAN);
         sprite->oam.priority = 1;
         sprite->coordOffsetEnabled = TRUE;
@@ -338,7 +341,7 @@ u32 FldEff_Shadow(void)
     graphicsInfo = GetObjectEventGraphicsInfo(objectEvent->graphicsId);
     if (graphicsInfo->shadowSize == SHADOW_SIZE_NONE)
         return 0;
-    LoadSpriteSheetByTemplate(gFieldEffectObjectTemplatePointers[sShadowEffectTemplateIds[graphicsInfo->shadowSize]], 0);
+    LoadSpriteSheetByTemplate(gFieldEffectObjectTemplatePointers[sShadowEffectTemplateIds[graphicsInfo->shadowSize]], 0, 0);
     spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[sShadowEffectTemplateIds[graphicsInfo->shadowSize]], 0, 0, 149);
     if (spriteId != MAX_SPRITES)
     {
@@ -737,6 +740,42 @@ u32 FldEff_DeepSandFootprints(void)
     return spriteId;
 }
 
+u32 FldEff_TracksBug(void)
+{
+	u8 spriteId;
+	struct Sprite *sprite;
+
+	SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+	spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_TRACKS_BUG], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+	if (spriteId != MAX_SPRITES)
+	{
+		sprite = &gSprites[spriteId];
+		sprite->coordOffsetEnabled = TRUE;
+		sprite->oam.priority = gFieldEffectArguments[3];
+		sprite->data[7] = FLDEFF_TRACKS_BUG;
+		StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+	}
+	return 0;
+}
+
+u32 FldEff_TracksSpot(void)
+{
+	u8 spriteId;
+	struct Sprite *sprite;
+
+	SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+	spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_TRACKS_SPOT], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+	if (spriteId != MAX_SPRITES)
+	{
+		sprite = &gSprites[spriteId];
+		sprite->coordOffsetEnabled = TRUE;
+		sprite->oam.priority = gFieldEffectArguments[3];
+		sprite->data[7] = FLDEFF_TRACKS_SPOT;
+		StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+	}
+	return 0;
+}
+
 u32 FldEff_BikeTireTracks(void)
 {
     u8 spriteId;
@@ -752,6 +791,24 @@ u32 FldEff_BikeTireTracks(void)
         StartSpriteAnim(sprite, gFieldEffectArguments[4]);
     }
     return spriteId;
+}
+
+u32 FldEff_TracksSlither(void)
+{
+	u8 spriteId;
+	struct Sprite *sprite;
+
+	SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+	spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_TRACKS_SLITHER], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+	if (spriteId != MAX_SPRITES)
+	{
+		sprite = &gSprites[spriteId];
+		sprite->coordOffsetEnabled = TRUE;
+		sprite->oam.priority = gFieldEffectArguments[3];
+		sprite->data[7] = FLDEFF_TRACKS_SLITHER;
+		StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+	}
+	return spriteId;
 }
 
 void (*const gFadeFootprintsTireTracksFuncs[])(struct Sprite *) = {
@@ -1159,6 +1216,7 @@ u32 FldEff_SurfBlob(void)
         struct Sprite *sprite = &gSprites[spriteId];
         sprite->coordOffsetEnabled = TRUE;
         sprite->sPlayerObjId = gFieldEffectArguments[2];
+        // Can use either gender's palette, so try to use the one that should be loaded
         sprite->oam.paletteNum = LoadObjectEventPalette(gSaveBlock2Ptr->playerGender ? FLDEFF_PAL_TAG_MAY : FLDEFF_PAL_TAG_BRENDAN);
         sprite->sVelocity = -1;
         sprite->sPrevX = -1;
@@ -1489,7 +1547,7 @@ static u32 ShowDisguiseFieldEffect(u8 fldEff, u8 fldEffObj, u8 paletteNum)
     if (spriteId != MAX_SPRITES)
     {
         struct Sprite *sprite = &gSprites[spriteId];
-        sprite->oam.paletteNum = LoadObjectEventPalette(gFieldEffectObjectTemplatePointers[fldEffObj]->paletteTag);
+        UpdateSpritePaletteByTemplate(gFieldEffectObjectTemplatePointers[fldEffObj], sprite);
         sprite->coordOffsetEnabled ++;
         sprite->sFldEff = fldEff;
         sprite->sLocalId = gFieldEffectArguments[0];
