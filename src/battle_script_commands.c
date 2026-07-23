@@ -10102,6 +10102,13 @@ static void Cmd_pickup(void)
                 heldItem = GetBattlePyramidPickupItemId();
                 SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
             }
+            else if (species == SPECIES_SHUCKLE
+                  && heldItem == ITEM_ORAN_BERRY
+                  && Random() % 16 == 0)
+            {
+                heldItem = ITEM_BERRY_JUICE;
+                SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
+            }
         }
     }
     else
@@ -10138,6 +10145,13 @@ static void Cmd_pickup(void)
                         break;
                     }
                 }
+            }
+            else if (species == SPECIES_SHUCKLE
+                  && heldItem == ITEM_ORAN_BERRY
+                  && Random() % 16 == 0)
+            {
+                heldItem = ITEM_BERRY_JUICE;
+                SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
             }
         }
     }
