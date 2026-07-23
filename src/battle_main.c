@@ -73,6 +73,7 @@ static void CB2_HandleStartMultiBattle(void);
 static void CB2_HandleStartBattle(void);
 static void TryCorrectShedinjaLanguage(struct Pokemon *mon);
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 firstTrainer);
+static u8 GetTrainerClassBall(u8 trainerClass);
 static void BattleMainCB1(void);
 static void CB2_EndLinkBattle(void);
 static void EndLinkBattleInSteps(void);
@@ -278,6 +279,60 @@ const struct SpriteTemplate gUnusedBattleInitSprite =
 };
 
 static const u8 sText_ShedinjaJpnName[] = _("ヌケニン"); // Nukenin
+
+static const u8 sTrainerClassBallTable[TRAINER_CLASS_RS_PROTAG + 1] =
+{
+    [TRAINER_CLASS_TEAM_AQUA] = ITEM_NET_BALL,
+    [TRAINER_CLASS_PKMN_BREEDER] = ITEM_LUXURY_BALL,
+    [TRAINER_CLASS_COOLTRAINER] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_BIRD_KEEPER] = ITEM_NEST_BALL,
+    [TRAINER_CLASS_COLLECTOR] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_SWIMMER_M] = ITEM_DIVE_BALL,
+    [TRAINER_CLASS_EXPERT] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_AQUA_ADMIN] = ITEM_GREAT_BALL,
+    [TRAINER_CLASS_AQUA_LEADER] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_AROMA_LADY] = ITEM_NET_BALL,
+    [TRAINER_CLASS_INTERVIEWER] = ITEM_TIMER_BALL,
+    [TRAINER_CLASS_TUBER_F] = ITEM_NET_BALL,
+    [TRAINER_CLASS_TUBER_M] = ITEM_NET_BALL,
+    [TRAINER_CLASS_LADY] = ITEM_LUXURY_BALL,
+    [TRAINER_CLASS_BEAUTY] = ITEM_LUXURY_BALL,
+    [TRAINER_CLASS_RICH_BOY] = ITEM_LUXURY_BALL,
+    [TRAINER_CLASS_POKEMANIAC] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_GUITARIST] = ITEM_TIMER_BALL,
+    [TRAINER_CLASS_CAMPER] = ITEM_NEST_BALL,
+    [TRAINER_CLASS_PICNICKER] = ITEM_NEST_BALL,
+    [TRAINER_CLASS_BUG_MANIAC] = ITEM_NET_BALL,
+    [TRAINER_CLASS_GENTLEMAN] = ITEM_LUXURY_BALL,
+    [TRAINER_CLASS_ELITE_FOUR] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_LEADER] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_WINSTRATE] = ITEM_GREAT_BALL,
+    [TRAINER_CLASS_CHAMPION] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_FISHERMAN] = ITEM_DIVE_BALL,
+    [TRAINER_CLASS_TRIATHLETE] = ITEM_TIMER_BALL,
+    [TRAINER_CLASS_DRAGON_TAMER] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_PARASOL_LADY] = ITEM_NET_BALL,
+    [TRAINER_CLASS_SWIMMER_F] = ITEM_DIVE_BALL,
+    [TRAINER_CLASS_TWINS] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_SAILOR] = ITEM_DIVE_BALL,
+    [TRAINER_CLASS_COOLTRAINER_2] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_MAGMA_ADMIN] = ITEM_GREAT_BALL,
+    [TRAINER_CLASS_RIVAL] = ITEM_PREMIER_BALL,
+    [TRAINER_CLASS_BUG_CATCHER] = ITEM_NET_BALL,
+    [TRAINER_CLASS_PKMN_RANGER] = ITEM_NEST_BALL,
+    [TRAINER_CLASS_MAGMA_LEADER] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_YOUNG_COUPLE] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_OLD_COUPLE] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_SIS_AND_BRO] = ITEM_REPEAT_BALL,
+    [TRAINER_CLASS_SALON_MAIDEN] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_DOME_ACE] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_PALACE_MAVEN] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_ARENA_TYCOON] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_FACTORY_HEAD] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_PIKE_QUEEN] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_PYRAMID_KING] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_RS_PROTAG] = ITEM_MASTER_BALL,
+};
 
 const struct OamData gOamData_BattleSpriteOpponentSide =
 {
@@ -1968,6 +2023,14 @@ static void SpriteCB_UnusedBattleInit_Main(struct Sprite *sprite)
     }
 }
 
+static u8 GetTrainerClassBall(u8 trainerClass)
+{
+    if (trainerClass <= TRAINER_CLASS_RS_PROTAG && sTrainerClassBallTable[trainerClass] != ITEM_NONE)
+        return sTrainerClassBallTable[trainerClass];
+
+    return ITEM_POKE_BALL;
+}
+
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 firstTrainer)
 {
     u32 nameHash = 0;
@@ -2000,6 +2063,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
         for (i = 0; i < monsCount; i++)
         {
+            u8 ball;
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
@@ -2078,6 +2142,9 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 break;
             }
             }
+
+            ball = GetTrainerClassBall(gTrainers[trainerNum].trainerClass);
+            SetMonData(&party[i], MON_DATA_POKEBALL, &ball);
         }
 
         gBattleTypeFlags |= gTrainers[trainerNum].doubleBattle;
