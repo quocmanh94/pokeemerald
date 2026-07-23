@@ -4,6 +4,7 @@
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "field_camera.h"
+#include "field_effect.h"
 #include "fieldmap.h"
 #include "gpu_regs.h"
 #include "menu.h"

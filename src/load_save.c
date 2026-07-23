@@ -14,6 +14,7 @@
 #include "gba/flash_internal.h"
 #include "decoration_inventory.h"
 #include "agb_flash.h"
+#include "constants/event_objects.h"
 
 static void ApplyNewEncryptionKeyToAllEncryptedData(u32 encryptionKey);
 
@@ -189,6 +190,9 @@ void SaveObjectEvents(void)
         graphicsId = gObjectEvents[i].graphicsId;
         gSaveBlock1Ptr->objectEvents[i].graphicsId = (graphicsId >> 8) | (graphicsId << 8);
         gSaveBlock1Ptr->objectEvents[i].spriteId = 127;
+        // Vanilla readers must not load the runtime-only follower object.
+        if (gObjectEvents[i].localId == OBJ_EVENT_ID_FOLLOWER)
+            gSaveBlock1Ptr->objectEvents[i].active = FALSE;
     }
 }
 
@@ -205,6 +209,11 @@ void LoadObjectEvents(void)
         if (gObjectEvents[i].spriteId != 127)
             gObjectEvents[i].graphicsId &= 0xFF;
         gObjectEvents[i].spriteId = 0;
+        // Try to restore saved inactive follower
+        if (gObjectEvents[i].localId == OBJ_EVENT_ID_FOLLOWER &&
+            !gObjectEvents[i].active &&
+            gObjectEvents[i].graphicsId >= OBJ_EVENT_GFX_MON_BASE)
+            gObjectEvents[i].active = TRUE;
     }
 }
 
