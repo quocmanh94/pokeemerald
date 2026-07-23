@@ -120,6 +120,8 @@ static const u8 sFontColorTable[][3] =
     {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_DARK_GRAY},  // Unused
 };
 
+static const u8 sText_SelectSwitch[] = _("SEL: SWITCH");
+
 static const struct WindowTemplate sSinglePartyMenuWindowTemplate[] =
 {
     { // Party mon 1
@@ -392,6 +394,17 @@ static const struct WindowTemplate sCancelButtonWindowTemplate =
     .height = 2,
     .paletteNum = 3,
     .baseBlock = 0x1C7,
+};
+
+static const struct WindowTemplate sPartySwapHintWindowTemplate =
+{
+    .bg = 0,
+    .tilemapLeft = 3,
+    .tilemapTop = 14,
+    .width = 8,
+    .height = 2,
+    .paletteNum = 3,
+    .baseBlock = 0x1B7,
 };
 
 static const struct WindowTemplate sMultiCancelButtonWindowTemplate =
