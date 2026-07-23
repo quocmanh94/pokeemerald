@@ -39,21 +39,20 @@ static bool32 AllMonsFainted(void)
     return TRUE;
 }
 
-static void FaintFromFieldPoison(u8 partyIdx)
+static void RecoverFromFieldPoison(u8 partyIdx)
 {
     struct Pokemon *pokemon = &gPlayerParty[partyIdx];
     u32 status = STATUS1_NONE;
 
-    AdjustFriendship(pokemon, FRIENDSHIP_EVENT_FAINT_FIELD_PSN);
     SetMonData(pokemon, MON_DATA_STATUS, &status);
     GetMonData(pokemon, MON_DATA_NICKNAME, gStringVar1);
     StringGet_Nickname(gStringVar1);
 }
 
-static bool32 MonFaintedFromPoison(u8 partyIdx)
+static bool32 MonSurvivedFieldPoison(u8 partyIdx)
 {
     struct Pokemon *pokemon = &gPlayerParty[partyIdx];
-    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 0 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 1 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
         return TRUE;
 
     return FALSE;
@@ -70,10 +69,10 @@ static void Task_TryFieldPoisonWhiteOut(u8 taskId)
     case 0:
         for (; tPartyIdx < PARTY_SIZE; tPartyIdx++)
         {
-            if (MonFaintedFromPoison(tPartyIdx))
+            if (MonSurvivedFieldPoison(tPartyIdx))
             {
-                FaintFromFieldPoison(tPartyIdx);
-                ShowFieldMessage(gText_PkmnFainted_FldPsn);
+                RecoverFromFieldPoison(tPartyIdx);
+                ShowFieldMessage(gText_PkmnSurvived_FldPsn);
                 tState++;
                 return;
             }
@@ -131,7 +130,9 @@ s32 DoPoisonFieldEffect(void)
         {
             // Apply poison damage
             hp = GetMonData(pokemon, MON_DATA_HP);
-            if (hp == 0 || --hp == 0)
+            if (hp > 1)
+                hp--;
+            if (hp == 1)
                 numFainted++;
 
             SetMonData(pokemon, MON_DATA_HP, &hp);
