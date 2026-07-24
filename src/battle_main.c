@@ -4706,6 +4706,17 @@ static void HandleTurnActionSelectionState(void)
                     gHitMarker |= HITMARKER_RUN;
                     gChosenActionByBattler[gActiveBattler] = B_ACTION_RUN;
                     gBattleCommunication[gActiveBattler] = STATE_WAIT_ACTION_CONFIRMED_STANDBY;
+
+                    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+                    {
+                        u8 partner = GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(gActiveBattler)));
+
+                        gChosenActionByBattler[partner] = B_ACTION_RUN;
+                        gBattleCommunication[partner] = STATE_WAIT_ACTION_CONFIRMED;
+                        gBattlerAttacker = gActiveBattler;
+                        gBattleOutcome = B_OUTCOME_FORFEITED;
+                        gBattleMainFunc = HandleEndTurn_RanFromBattle;
+                    }
                 }
                 else
                 {
