@@ -423,6 +423,7 @@ static void Task_HandleStopLearningMoveYesNoInput(u8);
 static void Task_TryLearningNextMoveAfterText(u8);
 static void BufferMonStatsToTaskData(struct Pokemon *, s16 *);
 static void UpdateMonDisplayInfoAfterRareCandy(u8, struct Pokemon *);
+static void Task_RareCandyEvoAtMaxLevel(u8);
 static void Task_DisplayLevelUpStatsPg1(u8);
 static void DisplayLevelUpStatsPg1(u8);
 static void Task_DisplayLevelUpStatsPg2(u8);
@@ -5298,6 +5299,21 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     }
     else
     {
+        u16 targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE);
+
+        if (targetSpecies != SPECIES_NONE)
+        {
+            PlaySE(SE_SELECT);
+            gPartyMenuUseExitCallback = TRUE;
+            PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
+            RemoveBagItem(gSpecialVar_ItemId, 1);
+            GetMonNickname(mon, gStringVar1);
+            StringExpandPlaceholders(gStringVar4, gText_RareCandyUsedNoLevelUp);
+            DisplayPartyMenuMessage(gStringVar4, TRUE);
+            ScheduleBgCopyTilemapToVram(2);
+            gTasks[taskId].func = Task_RareCandyEvoAtMaxLevel;
+            return;
+        }
         cannotUseEffect = TRUE;
     }
     PlaySE(SE_SELECT);
@@ -5320,6 +5336,15 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         DisplayPartyMenuMessage(gStringVar4, TRUE);
         ScheduleBgCopyTilemapToVram(2);
         gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
+    }
+}
+
+static void Task_RareCandyEvoAtMaxLevel(u8 taskId)
+{
+    if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && JOY_NEW(A_BUTTON | B_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        PartyMenuTryEvolution(taskId);
     }
 }
 
