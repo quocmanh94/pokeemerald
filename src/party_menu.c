@@ -3109,6 +3109,7 @@ static void SwitchPartyMon(void)
     struct PartyMenuBox *menuBoxes[2];
     struct Pokemon *mon1, *mon2;
     struct Pokemon *monBuffer;
+    u16 surfMonSlot;
 
     menuBoxes[0] = &sPartyMenuBoxes[gPartyMenu.slotId];
     menuBoxes[1] = &sPartyMenuBoxes[gPartyMenu.slotId2];
@@ -3123,6 +3124,15 @@ static void SwitchPartyMon(void)
     SwitchMenuBoxSprites(&menuBoxes[0]->itemSpriteId, &menuBoxes[1]->itemSpriteId);
     SwitchMenuBoxSprites(&menuBoxes[0]->monSpriteId, &menuBoxes[1]->monSpriteId);
     SwitchMenuBoxSprites(&menuBoxes[0]->statusSpriteId, &menuBoxes[1]->statusSpriteId);
+
+    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+    {
+        surfMonSlot = VarGet(VAR_SURF_MON_SLOT);
+        if (surfMonSlot == gPartyMenu.slotId)
+            VarSet(VAR_SURF_MON_SLOT, gPartyMenu.slotId2);
+        else if (surfMonSlot == gPartyMenu.slotId2)
+            VarSet(VAR_SURF_MON_SLOT, gPartyMenu.slotId);
+    }
 }
 
 // Finish switching mons or using Softboiled
