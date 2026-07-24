@@ -1346,13 +1346,26 @@ static void Task_ReturnToItemListAfterItemPurchase(u8 taskId)
 
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
+        u16 premierBallsToAdd = tItemCount / 10;
+
+        if (GetItemPocket(tItemId) != POCKET_POKE_BALLS)
+            premierBallsToAdd = 0;
+        while (premierBallsToAdd > 0 && !CheckBagHasSpace(ITEM_PREMIER_BALL, premierBallsToAdd))
+            premierBallsToAdd--;
+
         PlaySE(SE_SELECT);
 
-        // Purchasing 10+ Poke Balls gets the player a Premier Ball
-        if (tItemId == ITEM_POKE_BALL && tItemCount >= 10 && AddBagItem(ITEM_PREMIER_BALL, 1) == TRUE)
-            BuyMenuDisplayMessage(taskId, gText_ThrowInPremierBall, BuyMenuReturnToItemList);
+        if (premierBallsToAdd > 0 && AddBagItem(ITEM_PREMIER_BALL, premierBallsToAdd))
+        {
+            ConvertIntToDecimalStringN(gStringVar1, premierBallsToAdd, STR_CONV_MODE_LEFT_ALIGN, MAX_ITEM_DIGITS);
+            BuyMenuDisplayMessage(taskId,
+                                  premierBallsToAdd == 1 ? gText_ThrowInPremierBall : gText_ThrowInPremierBalls,
+                                  BuyMenuReturnToItemList);
+        }
         else
+        {
             BuyMenuReturnToItemList(taskId);
+        }
     }
 }
 
