@@ -100,7 +100,11 @@ static void PlayerCmdEnd(void);
 
 static void PlayerBufferRunCommand(void);
 static void HandleInputChooseTarget(void);
+static void HandleInputShowTargets(void);
 static void HandleInputChooseMove(void);
+static void HideShownTargets(void);
+static bool8 IsTargetBattlerAlive(u8 battler);
+static void TryShowAsTarget(u8 battler);
 static void MoveSelectionCreateCursorAt(u8, u8);
 static void MoveSelectionDestroyCursorAt(u8);
 static void MoveSelectionDisplayPPNumber(void);
@@ -602,9 +606,65 @@ static void HandleInputChooseTarget(void)
     }
 }
 
+static void HideShownTargets(void)
+{
+    s32 i;
+
+    for (i = 0; i < MAX_BATTLERS_COUNT; i++)
+    {
+        if (IsTargetBattlerAlive(i)
+         && gBattleSpritesDataPtr->healthBoxesData[i].healthboxIsBouncing
+         && i != gActiveBattler)
+        {
+            gSprites[gBattlerSpriteIds[i]].callback = SpriteCB_HideAsMoveTarget;
+            EndBounceEffect(i, BOUNCE_HEALTHBOX);
+        }
+    }
+}
+
+static bool8 IsTargetBattlerAlive(u8 battler)
+{
+    return !(gAbsentBattlerFlags & gBitTable[battler]) && gBattleMons[battler].hp != 0;
+}
+
+static void HandleInputShowTargets(void)
+{
+    if (JOY_HELD(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
+        gPlayerDpadHoldFrames++;
+    else
+        gPlayerDpadHoldFrames = 0;
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        HideShownTargets();
+        BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[gActiveBattler] | (gMultiUsePlayerCursor << 8));
+        TryHideLastUsedBall();
+        PlayerBufferExecCompleted();
+    }
+    else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
+    {
+        PlaySE(SE_SELECT);
+        HideShownTargets();
+        gBattlerControllerFuncs[gActiveBattler] = HandleInputChooseMove;
+        DoBounceEffect(gActiveBattler, BOUNCE_HEALTHBOX, 7, 1);
+        DoBounceEffect(gActiveBattler, BOUNCE_MON, 7, 1);
+        MoveSelectionDisplayMoveType();
+    }
+}
+
+static void TryShowAsTarget(u8 battler)
+{
+    if (IsTargetBattlerAlive(battler))
+    {
+        DoBounceEffect(battler, BOUNCE_HEALTHBOX, 15, 1);
+        gSprites[gBattlerSpriteIds[battler]].callback = SpriteCB_ShowAsMoveTarget;
+    }
+}
+
 static void HandleInputChooseMove(void)
 {
-    bool32 canSelectTarget = FALSE;
+    u8 canSelectTarget = 0;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
 
     if (JOY_HELD(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
@@ -637,31 +697,56 @@ static void HandleInputChooseMove(void)
         if (!gBattleBufferA[gActiveBattler][1]) // not a double battle
         {
             if (moveTarget & MOVE_TARGET_USER_OR_SELECTED && !gBattleBufferA[gActiveBattler][2])
-                canSelectTarget++;
+                canSelectTarget = 1;
         }
         else // double battle
         {
             if (!(moveTarget & (MOVE_TARGET_RANDOM | MOVE_TARGET_BOTH | MOVE_TARGET_DEPENDS | MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_USER)))
-                canSelectTarget++; // either selected or user
+                canSelectTarget = 1; // either selected or user
 
             if (moveInfo->currentPP[gMoveSelectionCursor[gActiveBattler]] == 0)
             {
-                canSelectTarget = FALSE;
+                canSelectTarget = 0;
             }
             else if (!(moveTarget & (MOVE_TARGET_USER | MOVE_TARGET_USER_OR_SELECTED)) && CountAliveMonsInBattle(BATTLE_ALIVE_EXCEPT_ACTIVE) <= 1)
             {
                 gMultiUsePlayerCursor = GetDefaultMoveTarget(gActiveBattler);
-                canSelectTarget = FALSE;
+                canSelectTarget = 0;
+            }
+
+            if (moveInfo->currentPP[gMoveSelectionCursor[gActiveBattler]] != 0
+             && moveTarget & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_BOTH | MOVE_TARGET_FOES_AND_ALLY))
+            {
+                u8 targetCount = 0;
+                u8 opposingTarget = gMultiUsePlayerCursor;
+                u8 opposingPartner = BATTLE_PARTNER(opposingTarget);
+                u8 playerPartner = BATTLE_PARTNER(gActiveBattler);
+
+                if (IsTargetBattlerAlive(opposingTarget))
+                    targetCount++;
+                if (IsTargetBattlerAlive(opposingPartner))
+                    targetCount++;
+                if (moveTarget & MOVE_TARGET_FOES_AND_ALLY && IsTargetBattlerAlive(playerPartner))
+                    targetCount++;
+
+                if (targetCount > 1)
+                {
+                    TryShowAsTarget(opposingTarget);
+                    TryShowAsTarget(opposingPartner);
+                    if (moveTarget & MOVE_TARGET_FOES_AND_ALLY)
+                        TryShowAsTarget(playerPartner);
+                    canSelectTarget = 2;
+                }
             }
         }
 
-        if (!canSelectTarget)
+        if (canSelectTarget == 0)
         {
             BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[gActiveBattler] | (gMultiUsePlayerCursor << 8));
             TryHideLastUsedBall();
             PlayerBufferExecCompleted();
         }
-        else
+        else if (canSelectTarget == 1)
         {
             gBattlerControllerFuncs[gActiveBattler] = HandleInputChooseTarget;
 
@@ -674,6 +759,10 @@ static void HandleInputChooseMove(void)
 
             gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
             MoveSelectionDisplayMoveTypeAgainstTarget(gMultiUsePlayerCursor);
+        }
+        else
+        {
+            gBattlerControllerFuncs[gActiveBattler] = HandleInputShowTargets;
         }
     }
     else if ((JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59) && !sDescriptionSubmenu)
