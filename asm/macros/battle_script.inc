@@ -664,6 +664,10 @@
 	.byte \id
 	.endm
 
+	.macro showabilitypopup battler:req
+	various \battler, VARIOUS_ABILITY_POPUP
+	.endm
+
 	.macro setprotectlike
 	.byte B_SCR_OP_SETPROTECTLIKE
 	.endm

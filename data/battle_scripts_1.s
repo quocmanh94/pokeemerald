@@ -2471,6 +2471,7 @@ BattleScript_PrintBankAbilityMadeIneffective::
 	copybyte sBATTLER, sBATTLER_WITH_ABILITY
 BattleScript_PrintAbilityMadeIneffective::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSXMADEITINEFFECTIVE
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
@@ -2600,6 +2601,7 @@ BattleScript_TeeterDanceLoopIncrement::
 
 BattleScript_TeeterDanceOwnTempoPrevents::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPREVENTSCONFUSIONWITH
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_TeeterDanceDoMoveEndIncrement
@@ -3072,6 +3074,7 @@ BattleScript_SmokeBallEscape::
 	end2
 
 BattleScript_RanAwayUsingMonAbility::
+	showabilitypopup BS_ATTACKER
 	printstring STRINGID_PKMNFLEDUSING
 	waitmessage B_WAIT_TIME_LONG
 	end2
@@ -4007,6 +4010,7 @@ BattleScript_ItemSteal::
 
 BattleScript_DrizzleActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNMADEITRAIN
 	waitstate
 	playanimation BS_BATTLER_0, B_ANIM_RAIN_CONTINUES
@@ -4014,6 +4018,7 @@ BattleScript_DrizzleActivates::
 	end3
 
 BattleScript_SpeedBoostActivates::
+	showabilitypopup BS_ATTACKER
 	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_PKMNRAISEDSPEED
 	waitmessage B_WAIT_TIME_LONG
@@ -4021,11 +4026,13 @@ BattleScript_SpeedBoostActivates::
 
 BattleScript_TraceActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNTRACED
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
 BattleScript_RainDishActivates::
+	showabilitypopup BS_ATTACKER
 	printstring STRINGID_PKMNSXRESTOREDHPALITTLE2
 	waitmessage B_WAIT_TIME_LONG
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
@@ -4035,6 +4042,7 @@ BattleScript_RainDishActivates::
 
 BattleScript_SandstreamActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSXWHIPPEDUPSANDSTORM
 	waitstate
 	playanimation BS_BATTLER_0, B_ANIM_SANDSTORM_CONTINUES
@@ -4042,6 +4050,7 @@ BattleScript_SandstreamActivates::
 	end3
 
 BattleScript_ShedSkinActivates::
+	showabilitypopup BS_ATTACKER
 	printstring STRINGID_PKMNSXCUREDYPROBLEM
 	waitmessage B_WAIT_TIME_LONG
 	updatestatusicon BS_ATTACKER
@@ -4060,6 +4069,7 @@ BattleScript_CastformChange::
 	end3
 
 BattleScript_DoCastformChange::
+	showabilitypopup BS_SCRIPTING
 	docastformchangeanimation
 	waitstate
 	printstring STRINGID_PKMNTRANSFORMED
@@ -4073,6 +4083,7 @@ BattleScript_IntimidateActivatesEnd3::
 BattleScript_PauseIntimidateActivates:
 	pause B_WAIT_TIME_SHORT
 BattleScript_IntimidateActivates::
+	showabilitypopup BS_SCRIPTING
 	setbyte gBattlerTarget, 0
 	setstatchanger STAT_ATK, 1, TRUE
 BattleScript_IntimidateActivatesLoop:
@@ -4094,12 +4105,14 @@ BattleScript_IntimidateActivatesReturn:
 	return
 BattleScript_IntimidatePrevented:
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PREVENTEDFROMWORKING
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_IntimidateActivatesLoopIncrement
 
 BattleScript_DroughtActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSXINTENSIFIEDSUN
 	waitstate
 	playanimation BS_BATTLER_0, B_ANIM_SUN_CONTINUES
@@ -4116,18 +4129,21 @@ BattleScript_TookAttack::
 
 BattleScript_SturdyPreventsOHKO::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPROTECTEDBY
 	pause B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_SturdyActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPROTECTEDBY
 	pause B_WAIT_TIME_LONG
 	return
 
 BattleScript_DampStopsExplosion::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_ABILITY_BATTLER
 	printstring STRINGID_PKMNPREVENTSUSAGE
 	pause B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
@@ -4137,6 +4153,7 @@ BattleScript_MoveHPDrain_PPLoss::
 BattleScript_MoveHPDrain::
 	attackstring
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
 	healthbarupdate BS_TARGET
 	datahpupdate BS_TARGET
@@ -4151,6 +4168,7 @@ BattleScript_MonMadeMoveUseless_PPLoss::
 BattleScript_MonMadeMoveUseless::
 	attackstring
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXMADEYUSELESS
 	waitmessage B_WAIT_TIME_LONG
 	clearsemiinvulnerablebit
@@ -4162,60 +4180,70 @@ BattleScript_FlashFireBoost_PPLoss::
 BattleScript_FlashFireBoost::
 	attackstring
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printfromtable gFlashFireStringIds
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_AbilityPreventsPhasingOut::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNANCHORSITSELFWITH
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_AbilityNoStatLoss::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_BRNPrevention::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_EFFECT_BATTLER
 	printfromtable gBRNPreventionStringIds
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_PRLZPrevention::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_EFFECT_BATTLER
 	printfromtable gPRLZPreventionStringIds
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_PSNPrevention::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_EFFECT_BATTLER
 	printfromtable gPSNPreventionStringIds
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_ObliviousPreventsAttraction::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPREVENTSROMANCEWITH
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_ObliviousPreventsTaunt::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSABILITYACTIVATED
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_FlinchPrevention::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXPREVENTSFLINCHING
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_OwnTempoPrevents::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNPREVENTSCONFUSIONWITH
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
@@ -4224,12 +4252,14 @@ BattleScript_SoundproofProtected::
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXBLOCKSY
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_AbilityNoSpecificStatLoss::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXPREVENTSYLOSS
 	waitmessage B_WAIT_TIME_LONG
 	setbyte cMULTISTRING_CHOOSER, B_MSG_STAT_FELL_EMPTY
@@ -4237,16 +4267,19 @@ BattleScript_AbilityNoSpecificStatLoss::
 
 BattleScript_StickyHoldActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXMADEYINEFFECTIVE
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_ColorChangeActivates::
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNCHANGEDTYPEWITH
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_RoughSkinActivates::
+	showabilitypopup BS_TARGET
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
@@ -4256,6 +4289,7 @@ BattleScript_RoughSkinActivates::
 	return
 
 BattleScript_CuteCharmActivates::
+	showabilitypopup BS_TARGET
 	status2animation BS_ATTACKER, STATUS2_INFATUATION
 	printstring STRINGID_PKMNSXINFATUATEDY
 	waitmessage B_WAIT_TIME_LONG
@@ -4268,16 +4302,19 @@ BattleScript_ApplySecondaryEffect::
 
 BattleScript_SynchronizeActivates::
 	waitstate
+	showabilitypopup BS_SCRIPTING
 	seteffectprimary
 	return
 
 BattleScript_NoItemSteal::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_TARGET
 	printstring STRINGID_PKMNSXMADEYINEFFECTIVE
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_AbilityCuredStatus::
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSXCUREDITSYPROBLEM
 	waitmessage B_WAIT_TIME_LONG
 	updatestatusicon BS_SCRIPTING
@@ -4285,17 +4322,20 @@ BattleScript_AbilityCuredStatus::
 
 BattleScript_AbilityActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSABILITYACTIVATED
 	waitmessage B_WAIT_TIME_LONG
 	return
 
 BattleScript_AbilityActivatesEnd3::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSABILITYACTIVATED
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
 BattleScript_AbilityRestoresHpEnd3::
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSABILITYRESTOREDHP
 	waitmessage B_WAIT_TIME_LONG
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
@@ -4304,6 +4344,7 @@ BattleScript_AbilityRestoresHpEnd3::
 	end3
 
 BattleScript_AbilityDamages::
+	showabilitypopup BS_SCRIPTING
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_SCRIPTING
 	datahpupdate BS_SCRIPTING
@@ -4313,6 +4354,7 @@ BattleScript_AbilityDamages::
 	return
 
 BattleScript_AbilityDamagesEnd3::
+	showabilitypopup BS_SCRIPTING
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_SCRIPTING
 	datahpupdate BS_SCRIPTING
@@ -4323,24 +4365,28 @@ BattleScript_AbilityDamagesEnd3::
 
 BattleScript_AnticipationActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNSHUDDERED
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
 BattleScript_FriskActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNFRISKEDITEM
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
 BattleScript_FriskActivatesTwoItems::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNFRISKEDTWOITEMS
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
 BattleScript_HarvestActivates::
 	pause B_WAIT_TIME_SHORT
+	showabilitypopup BS_SCRIPTING
 	printstring STRINGID_PKMNRECOVEREDITEM
 	waitmessage B_WAIT_TIME_LONG
 	end3
