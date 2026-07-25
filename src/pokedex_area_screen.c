@@ -378,6 +378,8 @@ static mapsec_u16_t GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 
 static bool8 MapHasSpecies(const struct WildPokemonHeader *info, u16 species)
 {
+    u16 i;
+
     // If this is a header for Altering Cave, skip it if it's not the current Altering Cave encounter set
     if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_ALTERING_CAVE)
     {
@@ -400,6 +402,37 @@ static bool8 MapHasSpecies(const struct WildPokemonHeader *info, u16 species)
         return TRUE;
     if (MonListHasSpecies(info->rockSmashMonsInfo, species, NUM_ROCK_SMASH_MONS_ENCOUNTER_SLOTS))
         return TRUE;
+
+    for (i = 0; gTimeBasedWildMonHeaders[i].mapGroup != MAP_GROUP(MAP_UNDEFINED); i++)
+    {
+        const struct TimeBasedWildPokemonHeader *timeHeader = &gTimeBasedWildMonHeaders[i];
+        u16 numSlots;
+
+        if (timeHeader->mapGroup != info->mapGroup || timeHeader->mapNum != info->mapNum)
+            continue;
+
+        switch (timeHeader->area)
+        {
+        case WILD_AREA_LAND:
+            numSlots = NUM_LAND_MONS_ENCOUNTER_SLOTS;
+            break;
+        case WILD_AREA_WATER:
+            numSlots = NUM_WATER_MONS_ENCOUNTER_SLOTS;
+            break;
+        case WILD_AREA_ROCKS:
+            numSlots = NUM_ROCK_SMASH_MONS_ENCOUNTER_SLOTS;
+            break;
+        case WILD_AREA_FISHING:
+            numSlots = NUM_FISHING_MONS_ENCOUNTER_SLOTS;
+            break;
+        default:
+            continue;
+        }
+
+        if (MonListHasSpecies(timeHeader->monsInfo, species, numSlots))
+            return TRUE;
+    }
+
     return FALSE;
 }
 
