@@ -42,6 +42,50 @@ const struct WildPokemon {{ encounter.base_label }}_FishingMons[] =
 
 const struct WildPokemonInfo {{ encounter.base_label }}_FishingMonsInfo = { {{encounter.fishing_mons.encounter_rate}}, {{ encounter.base_label }}_FishingMons };
 {% endif %}
+{% if existsIn(encounter, "time_based_mons") %}
+## for time_encounter in encounter.time_based_mons
+{% if existsIn(time_encounter, "land_mons") %}
+const struct WildPokemon {{ encounter.base_label }}_{{ time_encounter.time }}_LandMons[] =
+{
+## for wild_mon in time_encounter.land_mons.mons
+    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ wild_mon.species }} },
+## endfor
+};
+
+const struct WildPokemonInfo {{ encounter.base_label }}_{{ time_encounter.time }}_LandMonsInfo = { {{ time_encounter.land_mons.encounter_rate }}, {{ encounter.base_label }}_{{ time_encounter.time }}_LandMons };
+{% endif %}
+{% if existsIn(time_encounter, "water_mons") %}
+const struct WildPokemon {{ encounter.base_label }}_{{ time_encounter.time }}_WaterMons[] =
+{
+## for wild_mon in time_encounter.water_mons.mons
+    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ wild_mon.species }} },
+## endfor
+};
+
+const struct WildPokemonInfo {{ encounter.base_label }}_{{ time_encounter.time }}_WaterMonsInfo = { {{ time_encounter.water_mons.encounter_rate }}, {{ encounter.base_label }}_{{ time_encounter.time }}_WaterMons };
+{% endif %}
+{% if existsIn(time_encounter, "rock_smash_mons") %}
+const struct WildPokemon {{ encounter.base_label }}_{{ time_encounter.time }}_RockSmashMons[] =
+{
+## for wild_mon in time_encounter.rock_smash_mons.mons
+    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ wild_mon.species }} },
+## endfor
+};
+
+const struct WildPokemonInfo {{ encounter.base_label }}_{{ time_encounter.time }}_RockSmashMonsInfo = { {{ time_encounter.rock_smash_mons.encounter_rate }}, {{ encounter.base_label }}_{{ time_encounter.time }}_RockSmashMons };
+{% endif %}
+{% if existsIn(time_encounter, "fishing_mons") %}
+const struct WildPokemon {{ encounter.base_label }}_{{ time_encounter.time }}_FishingMons[] =
+{
+## for wild_mon in time_encounter.fishing_mons.mons
+    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ wild_mon.species }} },
+## endfor
+};
+
+const struct WildPokemonInfo {{ encounter.base_label }}_{{ time_encounter.time }}_FishingMonsInfo = { {{ time_encounter.fishing_mons.encounter_rate }}, {{ encounter.base_label }}_{{ time_encounter.time }}_FishingMons };
+{% endif %}
+## endfor
+{% endif %}
 ## endfor
 
 const struct WildPokemonHeader {{ wild_encounter_group.label }}[] =
@@ -65,4 +109,29 @@ const struct WildPokemonHeader {{ wild_encounter_group.label }}[] =
         .fishingMonsInfo = NULL,
     },
 };
+{% if wild_encounter_group.for_maps %}
+
+const struct TimeBasedWildPokemonHeader gTimeBasedWildMonHeaders[] =
+{
+## for encounter in wild_encounter_group.encounters
+{% if existsIn(encounter, "time_based_mons") %}
+## for time_encounter in encounter.time_based_mons
+{% if existsIn(time_encounter, "land_mons") %}
+    { MAP_GROUP({{ encounter.map }}), MAP_NUM({{ encounter.map }}), {{ time_encounter.time }}, WILD_AREA_LAND, &{{ encounter.base_label }}_{{ time_encounter.time }}_LandMonsInfo },
+{% endif %}
+{% if existsIn(time_encounter, "water_mons") %}
+    { MAP_GROUP({{ encounter.map }}), MAP_NUM({{ encounter.map }}), {{ time_encounter.time }}, WILD_AREA_WATER, &{{ encounter.base_label }}_{{ time_encounter.time }}_WaterMonsInfo },
+{% endif %}
+{% if existsIn(time_encounter, "rock_smash_mons") %}
+    { MAP_GROUP({{ encounter.map }}), MAP_NUM({{ encounter.map }}), {{ time_encounter.time }}, WILD_AREA_ROCKS, &{{ encounter.base_label }}_{{ time_encounter.time }}_RockSmashMonsInfo },
+{% endif %}
+{% if existsIn(time_encounter, "fishing_mons") %}
+    { MAP_GROUP({{ encounter.map }}), MAP_NUM({{ encounter.map }}), {{ time_encounter.time }}, WILD_AREA_FISHING, &{{ encounter.base_label }}_{{ time_encounter.time }}_FishingMonsInfo },
+{% endif %}
+## endfor
+{% endif %}
+## endfor
+    { MAP_GROUP(MAP_UNDEFINED), MAP_NUM(MAP_UNDEFINED), WILD_TIME_DAY, WILD_AREA_LAND, NULL },
+};
+{% endif %}
 ## endfor
