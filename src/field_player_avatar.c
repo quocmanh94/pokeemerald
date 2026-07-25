@@ -1842,37 +1842,35 @@ static bool8 Fishing_ShowDots(struct Task *task)
 
 static bool8 Fishing_CheckForBite(struct Task *task)
 {
-    bool8 bite;
+    static const u8 sBiteChances[] =
+    {
+        [OLD_ROD] = 25,
+        [GOOD_ROD] = 50,
+        [SUPER_ROD] = 75,
+    };
+    u32 biteChance;
 
     AlignFishingAnimationFrames();
     task->tStep++;
-    bite = FALSE;
-
     if (!DoesCurrentMapHaveFishingMons())
     {
         task->tStep = FISHING_NO_BITE;
     }
     else
     {
+        biteChance = sBiteChances[task->tFishingRod];
         if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
         {
             u8 ability = GetMonAbility(&gPlayerParty[0]);
-            if (ability == ABILITY_SUCTION_CUPS || ability  == ABILITY_STICKY_HOLD)
-            {
-                if (Random() % 100 > 14)
-                    bite = TRUE;
-            }
+
+            if (ability == ABILITY_SUCTION_CUPS || ability == ABILITY_STICKY_HOLD)
+                biteChance = min(100, biteChance * 2);
         }
 
-        if (!bite)
-        {
-            if (Random() & 1)
-                task->tStep = FISHING_NO_BITE;
-            else
-                bite = TRUE;
-        }
+        if (Random() % 100 >= biteChance)
+            task->tStep = FISHING_NO_BITE;
 
-        if (bite == TRUE)
+        if (task->tStep != FISHING_NO_BITE)
             StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingBiteDirectionAnimNum(GetPlayerFacingDirection()));
     }
     return TRUE;
