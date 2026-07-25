@@ -1107,10 +1107,18 @@ static bool32 SelectMatchCallTrainer(void)
         return FALSE;
 
     matchCallId = GetTrainerMatchCallId(sMatchCallState.trainerId);
-    if (TrainerIsEligibleForRematch(matchCallId) && GetRematchTrainerLocation(matchCallId) == gMapHeader.regionMapSectionId)
-        return TRUE;
+    if (gSaveBlock2Ptr->optionsMatchCalls == OPTIONS_MATCH_CALLS_REMATCH)
+    {
+        if (TrainerIsEligibleForRematch(matchCallId) && GetRematchTrainerLocation(matchCallId) == gMapHeader.regionMapSectionId)
+            return TRUE;
 
-    return ShouldTrainerRequestBattle(matchCallId);
+        return ShouldTrainerRequestBattle(matchCallId);
+    }
+
+    if (GetRematchTrainerLocation(matchCallId) == gMapHeader.regionMapSectionId && !TrainerIsEligibleForRematch(matchCallId))
+        return FALSE;
+
+    return TRUE;
 }
 
 // Ignores registrable non-trainer NPCs, and special trainers like Wally and the gym leaders.

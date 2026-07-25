@@ -84,20 +84,25 @@ void ClearRoamerLocationData(void)
 
 static void CreateInitialRoamerMon(bool16 createLatios)
 {
-    u8 nature;
-
     if (!createLatios)
         ROAMER->species = SPECIES_LATIAS;
     else
         ROAMER->species = SPECIES_LATIOS;
 
-    if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)
-     && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE)
-        nature = GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY) % NUM_NATURES;
+    if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+        CreateMon(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     else
-        nature = Random() % NUM_NATURES;
+    {
+        u8 nature;
 
-    CreateMonWithNature(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, nature);
+        if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)
+         && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE)
+            nature = GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY) % NUM_NATURES;
+        else
+            nature = Random() % NUM_NATURES;
+
+        CreateMonWithNature(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, nature);
+    }
     ROAMER->level = 40;
     ROAMER->status = 0;
     ROAMER->active = TRUE;

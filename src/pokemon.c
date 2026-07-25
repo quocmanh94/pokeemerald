@@ -5266,9 +5266,14 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             dataUnsigned = gBattleScripting.levelUpHP;
                             break;
                         case ITEM6_HEAL_HP_QUARTER:
-                            dataUnsigned = GetMonData(mon, MON_DATA_MAX_HP, NULL) / 4;
-                            if (dataUnsigned == 0)
-                                dataUnsigned = 1;
+                            if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+                                dataUnsigned = 30;
+                            else
+                            {
+                                dataUnsigned = GetMonData(mon, MON_DATA_MAX_HP, NULL) / 4;
+                                if (dataUnsigned == 0)
+                                    dataUnsigned = 1;
+                            }
                             break;
                         }
 
@@ -7021,7 +7026,8 @@ void SetWildMonHeldItem(void)
         u16 chanceNotRare = 95;
         if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG, 0)
             && (GetMonAbility(&gPlayerParty[0]) == ABILITY_COMPOUND_EYES
-             || GetMonAbility(&gPlayerParty[0]) == ABILITY_SUPER_LUCK))
+             || (!gSaveBlock2Ptr->optionsModernSmallMechanicsOff
+              && GetMonAbility(&gPlayerParty[0]) == ABILITY_SUPER_LUCK)))
         {
             chanceNoItem = 20;
             chanceNotRare = 80;
