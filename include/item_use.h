@@ -37,6 +37,8 @@ bool32 CanThrowBall(u8 battler);
 void Task_UseDigEscapeRopeOnField(u8 taskId);
 bool8 CanUseDigOrEscapeRopeOnCurMap(void);
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId);
+bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, s16 *data);
+u8 GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY);
 
 enum ItemTMHMOrEvolutionStone
 {

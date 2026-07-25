@@ -26,6 +26,7 @@
 #include "menu.h"
 #include "menu_helpers.h"
 #include "metatile_behavior.h"
+#include "oras_dowse.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -52,10 +53,8 @@ static void Task_UseItemfinder(u8);
 static void Task_CloseItemfinderMessage(u8);
 static void Task_HiddenItemNearby(u8);
 static void Task_StandingOnHiddenItem(u8);
-static bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *, u8);
-static u8 GetDirectionToHiddenItem(s16, s16);
 static void PlayerFaceHiddenItem(u8);
-static void CheckForHiddenItemsInMapConnection(u8);
+static void CheckForHiddenItemsInMapConnection(s16 *data);
 static void Task_OpenRegisteredPokeblockCase(u8);
 static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
@@ -71,7 +70,7 @@ static void UseTMHM(u8);
 static void Task_StartUseRepel(u8);
 static void Task_UseRepel(u8);
 static void Task_CloseCantUseKeyItemMessage(u8);
-static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
+static void SetDistanceOfClosestHiddenItem(s16 *data, s16 itemDistanceX, s16 itemDistanceY);
 static void CB2_OpenPokeblockFromBag(void);
 
 // EWRAM variables
@@ -292,10 +291,10 @@ void ItemUseOutOfBattle_Itemfinder(u8 var)
 
 static void ItemUseOnFieldCB_Itemfinder(u8 taskId)
 {
-    if (ItemfinderCheckForHiddenItems(gMapHeader.events, taskId) == TRUE)
-        gTasks[taskId].func = Task_UseItemfinder;
+    if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER))
+        gTasks[taskId].func = Task_UseORASDowsingMachine;
     else
-        DisplayItemMessageOnField(taskId, gText_ItemFinderNothing, Task_CloseItemfinderMessage);
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 }
 
 // Define itemfinder task data
@@ -351,11 +350,11 @@ static void Task_CloseItemfinderMessage(u8 taskId)
     DestroyTask(taskId);
 }
 
-static bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, u8 taskId)
+bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, s16 *data)
 {
     s16 playerX, playerY, i, distanceX, distanceY;
     PlayerGetDestCoords(&playerX, &playerY);
-    gTasks[taskId].tItemFound = FALSE;
+    tItemFound = FALSE;
 
     for (i = 0; i < events->bgEventCount; i++)
     {
@@ -368,15 +367,12 @@ static bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, u8 ta
             // Player can see 7 metatiles on either side horizontally
             // and 5 metatiles on either side vertically
             if (distanceX >= -7 && distanceX <= 7 && distanceY >= -5 && distanceY <= 5)
-                SetDistanceOfClosestHiddenItem(taskId, distanceX, distanceY);
+                SetDistanceOfClosestHiddenItem(data, distanceX, distanceY);
         }
     }
 
-    CheckForHiddenItemsInMapConnection(taskId);
-    if (gTasks[taskId].tItemFound == TRUE)
-        return TRUE;
-    else
-        return FALSE;
+    CheckForHiddenItemsInMapConnection(data);
+    return tItemFound;
 }
 
 static bool8 IsHiddenItemPresentAtCoords(const struct MapEvents *events, s16 x, s16 y)
@@ -437,7 +433,7 @@ static bool8 IsHiddenItemPresentInConnection(const struct MapConnection *connect
 #undef localX
 #undef localY
 
-static void CheckForHiddenItemsInMapConnection(u8 taskId)
+static void CheckForHiddenItemsInMapConnection(s16 *data)
 {
     s16 playerX, playerY;
     s16 x, y;
@@ -462,15 +458,14 @@ static void CheckForHiddenItemsInMapConnection(u8 taskId)
             {
                 const struct MapConnection *conn = GetMapConnectionAtPos(x, y);
                 if (conn && IsHiddenItemPresentInConnection(conn, x, y) == TRUE)
-                    SetDistanceOfClosestHiddenItem(taskId, x - playerX, y - playerY);
+                    SetDistanceOfClosestHiddenItem(data, x - playerX, y - playerY);
             }
         }
     }
 }
 
-static void SetDistanceOfClosestHiddenItem(u8 taskId, s16 itemDistanceX, s16 itemDistanceY)
+static void SetDistanceOfClosestHiddenItem(s16 *data, s16 itemDistanceX, s16 itemDistanceY)
 {
-    s16 *data = gTasks[taskId].data;
     s16 oldItemAbsX, oldItemAbsY, newItemAbsX, newItemAbsY;
 
     if (tItemFound == FALSE)
@@ -523,7 +518,7 @@ static void SetDistanceOfClosestHiddenItem(u8 taskId, s16 itemDistanceX, s16 ite
     }
 }
 
-static u8 GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY)
+u8 GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY)
 {
     s16 absX, absY;
 
