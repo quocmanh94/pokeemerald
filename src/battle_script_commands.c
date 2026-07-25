@@ -6865,6 +6865,9 @@ static void Cmd_various(void)
         BtlController_EmitPlayFanfareOrBGM(B_COMM_TO_CONTROLLER, MUS_VICTORY_TRAINER, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
+    case VARIOUS_ABILITY_POPUP:
+        CreateAbilityPopUp(gActiveBattler, gBattleMons[gActiveBattler].ability);
+        break;
     }
 
     gBattlescriptCurrInstr += 3;

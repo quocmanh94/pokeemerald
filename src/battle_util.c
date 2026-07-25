@@ -769,6 +769,9 @@ u8 GetBattlerForBattleScript(u8 caseId)
     case BS_SCRIPTING:
         ret = gBattleScripting.battler;
         break;
+    case BS_ABILITY_BATTLER:
+        ret = gBattleScripting.battlerWithAbility;
+        break;
     case BS_FAINTED:
         ret = gBattlerFainted;
         break;
@@ -3732,6 +3735,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 {
                     gLastUsedAbility = ABILITY_INTIMIDATE;
                     gStatuses3[i] &= ~STATUS3_INTIMIDATE_POKES;
+                    gBattleScripting.battler = i;
                     BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivatesEnd3);
                     gBattleStruct->intimidateBattler = i;
                     effect++;
@@ -3821,6 +3825,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 {
                     gLastUsedAbility = ABILITY_INTIMIDATE;
                     gStatuses3[i] &= ~STATUS3_INTIMIDATE_POKES;
+                    gBattleScripting.battler = i;
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_IntimidateActivates;
                     gBattleStruct->intimidateBattler = i;
