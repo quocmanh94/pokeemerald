@@ -1,6 +1,7 @@
 #include "global.h"
 #include "option_menu.h"
 #include "bg.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
 #include "list_menu.h"
@@ -19,6 +20,7 @@
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "constants/vars.h"
 
 #define OPTIONS_ON_SCREEN 5
 #define OPTION_ROW_HEIGHT 16
@@ -28,6 +30,7 @@ enum
 {
     PAGE_GENERAL,
     PAGE_BATTLE,
+    PAGE_GAMEPLAY,
     PAGE_COUNT,
 };
 
@@ -39,8 +42,26 @@ enum
     OPTION_SOUND,
     OPTION_BUTTON_MODE,
     OPTION_FRAME_TYPE,
+    OPTION_DIFFICULTY,
+    OPTION_POKEMON_FOLLOWERS,
+    OPTION_POKEDEX_THEME,
+    OPTION_BATTLE_BAR_SPEED,
+    OPTION_TYPE_EFFECTIVENESS,
+    OPTION_CATCH_AND_SWAP,
+    OPTION_ABILITY_POPUPS,
+    OPTION_PUSH_B_TO_RUN,
+    OPTION_MATCH_CALLS,
+    OPTION_MODERN_SMALL_MECHANICS,
+    OPTION_MID_BATTLE_EVOLUTION,
     OPTION_SAVE,
     OPTION_COUNT,
+};
+
+enum
+{
+    DIFFICULTY_SELECTION_EASY,
+    DIFFICULTY_SELECTION_NORMAL,
+    DIFFICULTY_SELECTION_HARD,
 };
 
 enum
@@ -97,6 +118,14 @@ static u8 FrameType_ProcessInput(u8 selection);
 static void FrameType_DrawChoices(u8 selection, u8 y);
 static u8 ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection, u8 y);
+static u8 Toggle_ProcessInput(u8 selection);
+static u8 Difficulty_ProcessInput(u8 selection);
+static void DrawTwoChoices(const u8 *left, const u8 *right, u8 selection, u8 y);
+static void OnOff_DrawChoices(u8 selection, u8 y);
+static void Difficulty_DrawChoices(u8 selection, u8 y);
+static void PokedexTheme_DrawChoices(u8 selection, u8 y);
+static void BattleBarSpeed_DrawChoices(u8 selection, u8 y);
+static void MatchCalls_DrawChoices(u8 selection, u8 y);
 static void DrawHeaderText(void);
 static void DrawVisibleOptions(void);
 static void DrawDescriptionText(void);
@@ -110,8 +139,31 @@ static const u8 sEqualSignGfx[] = INCGFX_U8("graphics/interface/option_menu_equa
 
 static const u8 sText_PageGeneral[] = _("GENERAL");
 static const u8 sText_PageBattle[] = _("BATTLE");
+static const u8 sText_PageGameplay[] = _("GAMEPLAY");
 static const u8 sText_LButton[] = _("{L_BUTTON}");
 static const u8 sText_RButton[] = _("{R_BUTTON}");
+
+static const u8 sText_Difficulty[] = _("DIFFICULTY");
+static const u8 sText_PokemonFollowers[] = _("FOLLOWERS");
+static const u8 sText_PokedexTheme[] = _("POKEDEX THEME");
+static const u8 sText_BattleBarSpeed[] = _("BATTLE BARS");
+static const u8 sText_TypeEffectiveness[] = _("TYPE MATCHUPS");
+static const u8 sText_CatchAndSwap[] = _("CATCH & SWAP");
+static const u8 sText_AbilityPopups[] = _("ABILITY POPUPS");
+static const u8 sText_PushBToRun[] = _("PUSH B TO RUN");
+static const u8 sText_MatchCalls[] = _("MATCH CALLS");
+static const u8 sText_ModernSmallMechanics[] = _("MODERN MECHANICS");
+static const u8 sText_MidBattleEvolution[] = _("MID-BATTLE EVO");
+static const u8 sText_On[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
+static const u8 sText_Off[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
+static const u8 sText_Easy[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EASY");
+static const u8 sText_Normal[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+static const u8 sText_Hard[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}HARD");
+static const u8 sText_Light[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LIGHT");
+static const u8 sText_Dark[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}DARK");
+static const u8 sText_Fast[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 sText_Rematch[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}REMATCH");
+static const u8 sText_All[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ALL");
 
 static const u8 sText_DescTextSpeedSlow[] = _("Display text at a relaxed speed.");
 static const u8 sText_DescTextSpeedMid[] = _("Display text at the standard speed.");
@@ -126,6 +178,29 @@ static const u8 sText_DescButtonNormal[] = _("Use the standard button controls."
 static const u8 sText_DescButtonLR[] = _("Use L and R as left and right on\nsupported screens.");
 static const u8 sText_DescButtonLEqualsA[] = _("Use the L Button as another A Button.");
 static const u8 sText_DescFrameType[] = _("Choose the border used for text boxes.");
+static const u8 sText_DescDifficultyEasy[] = _("Lower opposing Trainer Pokemon levels.");
+static const u8 sText_DescDifficultyNormal[] = _("Use the standard Trainer Pokemon levels.");
+static const u8 sText_DescDifficultyHard[] = _("Raise opposing Trainer Pokemon levels.");
+static const u8 sText_DescFollowersOn[] = _("Show the first usable Pokemon behind\nthe player.");
+static const u8 sText_DescFollowersOff[] = _("Keep the following Pokemon hidden.");
+static const u8 sText_DescPokedexLight[] = _("Use the light HGSS Pokedex palette.");
+static const u8 sText_DescPokedexDark[] = _("Use the dark HGSS Pokedex palette.");
+static const u8 sText_DescBattleBarsFast[] = _("Use faster HP bar movement.");
+static const u8 sText_DescBattleBarsNormal[] = _("Use the original HP bar movement.");
+static const u8 sText_DescTypeEffectivenessOn[] = _("Show move effectiveness before\nselecting a target.");
+static const u8 sText_DescTypeEffectivenessOff[] = _("Show only the selected move's type.");
+static const u8 sText_DescCatchAndSwapOn[] = _("Offer to swap a newly caught Pokemon\ninto a full party.");
+static const u8 sText_DescCatchAndSwapOff[] = _("Send newly caught Pokemon to the PC\nwhen the party is full.");
+static const u8 sText_DescAbilityPopupsOn[] = _("Show ability banners during battle.");
+static const u8 sText_DescAbilityPopupsOff[] = _("Hide ability banners during battle.");
+static const u8 sText_DescPushBToRunOn[] = _("Let B move the battle cursor to RUN.");
+static const u8 sText_DescPushBToRunOff[] = _("Keep the normal B Button behavior.");
+static const u8 sText_DescMatchCallsRematch[] = _("Allow overworld Match Calls only for\nrematch requests.");
+static const u8 sText_DescMatchCallsAll[] = _("Allow all normal overworld Match Calls.");
+static const u8 sText_DescModernSmallMechanicsOn[] = _("Use modern poison, Berry, and\noverworld ability mechanics.");
+static const u8 sText_DescModernSmallMechanicsOff[] = _("Use the original Emerald small\nmechanics.");
+static const u8 sText_DescMidBattleEvolutionOn[] = _("Allow eligible Pokemon to evolve\nduring battle.");
+static const u8 sText_DescMidBattleEvolutionOff[] = _("Only check evolution after battle.");
 static const u8 sText_DescSave[] = _("Save these settings and return.");
 
 static const u8 *const sTextSpeedDescriptions[] =
@@ -165,12 +240,80 @@ static const u8 *const sFrameTypeDescriptions[] =
     sText_DescFrameType,
 };
 
+static const u8 *const sDifficultyDescriptions[] =
+{
+    sText_DescDifficultyEasy,
+    sText_DescDifficultyNormal,
+    sText_DescDifficultyHard,
+};
+
+static const u8 *const sFollowerDescriptions[] =
+{
+    sText_DescFollowersOn,
+    sText_DescFollowersOff,
+};
+
+static const u8 *const sPokedexThemeDescriptions[] =
+{
+    sText_DescPokedexLight,
+    sText_DescPokedexDark,
+};
+
+static const u8 *const sBattleBarSpeedDescriptions[] =
+{
+    sText_DescBattleBarsFast,
+    sText_DescBattleBarsNormal,
+};
+
+static const u8 *const sTypeEffectivenessDescriptions[] =
+{
+    sText_DescTypeEffectivenessOn,
+    sText_DescTypeEffectivenessOff,
+};
+
+static const u8 *const sCatchAndSwapDescriptions[] =
+{
+    sText_DescCatchAndSwapOn,
+    sText_DescCatchAndSwapOff,
+};
+
+static const u8 *const sAbilityPopupDescriptions[] =
+{
+    sText_DescAbilityPopupsOn,
+    sText_DescAbilityPopupsOff,
+};
+
+static const u8 *const sPushBToRunDescriptions[] =
+{
+    sText_DescPushBToRunOn,
+    sText_DescPushBToRunOff,
+};
+
+static const u8 *const sMatchCallDescriptions[] =
+{
+    sText_DescMatchCallsRematch,
+    sText_DescMatchCallsAll,
+};
+
+static const u8 *const sModernSmallMechanicsDescriptions[] =
+{
+    sText_DescModernSmallMechanicsOn,
+    sText_DescModernSmallMechanicsOff,
+};
+
+static const u8 *const sMidBattleEvolutionDescriptions[] =
+{
+    sText_DescMidBattleEvolutionOn,
+    sText_DescMidBattleEvolutionOff,
+};
+
 static const u8 sGeneralPageItems[] =
 {
     OPTION_TEXT_SPEED,
     OPTION_SOUND,
     OPTION_BUTTON_MODE,
     OPTION_FRAME_TYPE,
+    OPTION_POKEDEX_THEME,
     OPTION_SAVE,
 };
 
@@ -178,6 +321,21 @@ static const u8 sBattlePageItems[] =
 {
     OPTION_BATTLE_SCENE,
     OPTION_BATTLE_STYLE,
+    OPTION_DIFFICULTY,
+    OPTION_BATTLE_BAR_SPEED,
+    OPTION_TYPE_EFFECTIVENESS,
+    OPTION_ABILITY_POPUPS,
+    OPTION_SAVE,
+};
+
+static const u8 sGameplayPageItems[] =
+{
+    OPTION_POKEMON_FOLLOWERS,
+    OPTION_CATCH_AND_SWAP,
+    OPTION_PUSH_B_TO_RUN,
+    OPTION_MATCH_CALLS,
+    OPTION_MODERN_SMALL_MECHANICS,
+    OPTION_MID_BATTLE_EVOLUTION,
     OPTION_SAVE,
 };
 
@@ -231,6 +389,94 @@ static const struct OptionMenuItem sOptionMenuItems[OPTION_COUNT] =
         .descriptions = sFrameTypeDescriptions,
         .descriptionCount = ARRAY_COUNT(sFrameTypeDescriptions),
     },
+    [OPTION_DIFFICULTY] =
+    {
+        .name = sText_Difficulty,
+        .processInput = Difficulty_ProcessInput,
+        .drawChoices = Difficulty_DrawChoices,
+        .descriptions = sDifficultyDescriptions,
+        .descriptionCount = ARRAY_COUNT(sDifficultyDescriptions),
+    },
+    [OPTION_POKEMON_FOLLOWERS] =
+    {
+        .name = sText_PokemonFollowers,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sFollowerDescriptions,
+        .descriptionCount = ARRAY_COUNT(sFollowerDescriptions),
+    },
+    [OPTION_POKEDEX_THEME] =
+    {
+        .name = sText_PokedexTheme,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = PokedexTheme_DrawChoices,
+        .descriptions = sPokedexThemeDescriptions,
+        .descriptionCount = ARRAY_COUNT(sPokedexThemeDescriptions),
+    },
+    [OPTION_BATTLE_BAR_SPEED] =
+    {
+        .name = sText_BattleBarSpeed,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = BattleBarSpeed_DrawChoices,
+        .descriptions = sBattleBarSpeedDescriptions,
+        .descriptionCount = ARRAY_COUNT(sBattleBarSpeedDescriptions),
+    },
+    [OPTION_TYPE_EFFECTIVENESS] =
+    {
+        .name = sText_TypeEffectiveness,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sTypeEffectivenessDescriptions,
+        .descriptionCount = ARRAY_COUNT(sTypeEffectivenessDescriptions),
+    },
+    [OPTION_CATCH_AND_SWAP] =
+    {
+        .name = sText_CatchAndSwap,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sCatchAndSwapDescriptions,
+        .descriptionCount = ARRAY_COUNT(sCatchAndSwapDescriptions),
+    },
+    [OPTION_ABILITY_POPUPS] =
+    {
+        .name = sText_AbilityPopups,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sAbilityPopupDescriptions,
+        .descriptionCount = ARRAY_COUNT(sAbilityPopupDescriptions),
+    },
+    [OPTION_PUSH_B_TO_RUN] =
+    {
+        .name = sText_PushBToRun,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sPushBToRunDescriptions,
+        .descriptionCount = ARRAY_COUNT(sPushBToRunDescriptions),
+    },
+    [OPTION_MATCH_CALLS] =
+    {
+        .name = sText_MatchCalls,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = MatchCalls_DrawChoices,
+        .descriptions = sMatchCallDescriptions,
+        .descriptionCount = ARRAY_COUNT(sMatchCallDescriptions),
+    },
+    [OPTION_MODERN_SMALL_MECHANICS] =
+    {
+        .name = sText_ModernSmallMechanics,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sModernSmallMechanicsDescriptions,
+        .descriptionCount = ARRAY_COUNT(sModernSmallMechanicsDescriptions),
+    },
+    [OPTION_MID_BATTLE_EVOLUTION] =
+    {
+        .name = sText_MidBattleEvolution,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = OnOff_DrawChoices,
+        .descriptions = sMidBattleEvolutionDescriptions,
+        .descriptionCount = ARRAY_COUNT(sMidBattleEvolutionDescriptions),
+    },
     [OPTION_SAVE] =
     {
         .name = gText_OptionMenuCancel,
@@ -250,8 +496,16 @@ static const struct OptionMenuPage sOptionMenuPages[PAGE_COUNT] =
     {
         .title = sText_PageBattle,
         .previousTitle = sText_PageGeneral,
+        .nextTitle = sText_PageGameplay,
         .items = sBattlePageItems,
         .itemCount = ARRAY_COUNT(sBattlePageItems),
+    },
+    [PAGE_GAMEPLAY] =
+    {
+        .title = sText_PageGameplay,
+        .previousTitle = sText_PageBattle,
+        .items = sGameplayPageItems,
+        .itemCount = ARRAY_COUNT(sGameplayPageItems),
     },
 };
 
@@ -389,6 +643,28 @@ void CB2_InitOptionMenu(void)
         sOptions->selections[OPTION_SOUND] = gSaveBlock2Ptr->optionsSound;
         sOptions->selections[OPTION_BUTTON_MODE] = gSaveBlock2Ptr->optionsButtonMode;
         sOptions->selections[OPTION_FRAME_TYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
+        switch (VarGet(VAR_DIFFICULTY))
+        {
+        case DIFFICULTY_EASY:
+            sOptions->selections[OPTION_DIFFICULTY] = DIFFICULTY_SELECTION_EASY;
+            break;
+        case DIFFICULTY_HARD:
+            sOptions->selections[OPTION_DIFFICULTY] = DIFFICULTY_SELECTION_HARD;
+            break;
+        default:
+            sOptions->selections[OPTION_DIFFICULTY] = DIFFICULTY_SELECTION_NORMAL;
+            break;
+        }
+        sOptions->selections[OPTION_POKEMON_FOLLOWERS] = gSaveBlock2Ptr->optionsPokemonFollowersOff;
+        sOptions->selections[OPTION_POKEDEX_THEME] = gSaveBlock2Ptr->optionsPokedexTheme;
+        sOptions->selections[OPTION_BATTLE_BAR_SPEED] = gSaveBlock2Ptr->optionsBattleBarSpeed;
+        sOptions->selections[OPTION_TYPE_EFFECTIVENESS] = gSaveBlock2Ptr->optionsTypeEffectivenessOff;
+        sOptions->selections[OPTION_CATCH_AND_SWAP] = gSaveBlock2Ptr->optionsCatchAndSwapOff;
+        sOptions->selections[OPTION_ABILITY_POPUPS] = gSaveBlock2Ptr->optionsAbilityPopupsOff;
+        sOptions->selections[OPTION_PUSH_B_TO_RUN] = gSaveBlock2Ptr->optionsPushBToRunOff;
+        sOptions->selections[OPTION_MATCH_CALLS] = gSaveBlock2Ptr->optionsMatchCalls;
+        sOptions->selections[OPTION_MODERN_SMALL_MECHANICS] = gSaveBlock2Ptr->optionsModernSmallMechanicsOff;
+        sOptions->selections[OPTION_MID_BATTLE_EVOLUTION] = gSaveBlock2Ptr->optionsMidBattleEvolutionOff;
         gMain.state++;
         break;
     case 3:
@@ -495,6 +771,28 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = sOptions->selections[OPTION_SOUND];
     gSaveBlock2Ptr->optionsButtonMode = sOptions->selections[OPTION_BUTTON_MODE];
     gSaveBlock2Ptr->optionsWindowFrameType = sOptions->selections[OPTION_FRAME_TYPE];
+    switch (sOptions->selections[OPTION_DIFFICULTY])
+    {
+    case DIFFICULTY_SELECTION_EASY:
+        VarSet(VAR_DIFFICULTY, DIFFICULTY_EASY);
+        break;
+    case DIFFICULTY_SELECTION_HARD:
+        VarSet(VAR_DIFFICULTY, DIFFICULTY_HARD);
+        break;
+    default:
+        VarSet(VAR_DIFFICULTY, DIFFICULTY_NORMAL);
+        break;
+    }
+    gSaveBlock2Ptr->optionsPokemonFollowersOff = sOptions->selections[OPTION_POKEMON_FOLLOWERS];
+    gSaveBlock2Ptr->optionsPokedexTheme = sOptions->selections[OPTION_POKEDEX_THEME];
+    gSaveBlock2Ptr->optionsBattleBarSpeed = sOptions->selections[OPTION_BATTLE_BAR_SPEED];
+    gSaveBlock2Ptr->optionsTypeEffectivenessOff = sOptions->selections[OPTION_TYPE_EFFECTIVENESS];
+    gSaveBlock2Ptr->optionsCatchAndSwapOff = sOptions->selections[OPTION_CATCH_AND_SWAP];
+    gSaveBlock2Ptr->optionsAbilityPopupsOff = sOptions->selections[OPTION_ABILITY_POPUPS];
+    gSaveBlock2Ptr->optionsPushBToRunOff = sOptions->selections[OPTION_PUSH_B_TO_RUN];
+    gSaveBlock2Ptr->optionsMatchCalls = sOptions->selections[OPTION_MATCH_CALLS];
+    gSaveBlock2Ptr->optionsModernSmallMechanicsOff = sOptions->selections[OPTION_MODERN_SMALL_MECHANICS];
+    gSaveBlock2Ptr->optionsMidBattleEvolutionOff = sOptions->selections[OPTION_MID_BATTLE_EVOLUTION];
 
     if (sOptions->arrowTaskId != TASK_NONE)
     {
@@ -794,6 +1092,72 @@ static void ButtonMode_DrawChoices(u8 selection, u8 y)
     xLR = (widthNormal - widthLR - widthLA) / 2 + 104;
     DrawOptionMenuChoice(gText_ButtonTypeLR, xLR, y, styles[1]);
     DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), y, styles[2]);
+}
+
+static u8 Toggle_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+        selection ^= 1;
+    return selection;
+}
+
+static u8 Difficulty_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_RIGHT))
+    {
+        if (selection < DIFFICULTY_SELECTION_HARD)
+            selection++;
+        else
+            selection = DIFFICULTY_SELECTION_EASY;
+    }
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        if (selection > DIFFICULTY_SELECTION_EASY)
+            selection--;
+        else
+            selection = DIFFICULTY_SELECTION_HARD;
+    }
+    return selection;
+}
+
+static void DrawTwoChoices(const u8 *left, const u8 *right, u8 selection, u8 y)
+{
+    u8 styles[2] = {0};
+
+    styles[selection] = 1;
+    DrawOptionMenuChoice(left, 104, y, styles[0]);
+    DrawOptionMenuChoice(right, GetStringRightAlignXOffset(FONT_NORMAL, right, 198), y, styles[1]);
+}
+
+static void OnOff_DrawChoices(u8 selection, u8 y)
+{
+    DrawTwoChoices(sText_On, sText_Off, selection, y);
+}
+
+static void Difficulty_DrawChoices(u8 selection, u8 y)
+{
+    u8 styles[3] = {0};
+    s32 normalX = 151 - GetStringWidth(FONT_NORMAL, sText_Normal, 0) / 2;
+
+    styles[selection] = 1;
+    DrawOptionMenuChoice(sText_Easy, 104, y, styles[DIFFICULTY_SELECTION_EASY]);
+    DrawOptionMenuChoice(sText_Normal, normalX, y, styles[DIFFICULTY_SELECTION_NORMAL]);
+    DrawOptionMenuChoice(sText_Hard, GetStringRightAlignXOffset(FONT_NORMAL, sText_Hard, 198), y, styles[DIFFICULTY_SELECTION_HARD]);
+}
+
+static void PokedexTheme_DrawChoices(u8 selection, u8 y)
+{
+    DrawTwoChoices(sText_Light, sText_Dark, selection, y);
+}
+
+static void BattleBarSpeed_DrawChoices(u8 selection, u8 y)
+{
+    DrawTwoChoices(sText_Fast, sText_Normal, selection, y);
+}
+
+static void MatchCalls_DrawChoices(u8 selection, u8 y)
+{
+    DrawTwoChoices(sText_Rematch, sText_All, selection, y);
 }
 
 static void DrawHeaderText(void)

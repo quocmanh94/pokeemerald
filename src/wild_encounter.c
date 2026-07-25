@@ -419,7 +419,8 @@ static u8 PickWildMonNature(void)
     }
     // Check Synchronize for a Pokémon with the same ability.
     if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)
-        && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE)
+        && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE
+        && (!gSaveBlock2Ptr->optionsModernSmallMechanicsOff || Random() % 2 == 0))
     {
         return GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY) % NUM_NATURES;
     }
@@ -590,7 +591,7 @@ static bool8 WildEncounterCheck(u32 encounterRate, bool8 ignoreAbility)
             encounterRate *= 2;
         else if (ability == ABILITY_SAND_VEIL && gSaveBlock1Ptr->weather == WEATHER_SANDSTORM)
             encounterRate /= 2;
-        else if (ability == ABILITY_INFILTRATOR)
+        else if (ability == ABILITY_INFILTRATOR && !gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
             encounterRate /= 2;
     }
     if (encounterRate > MAX_ENCOUNTER_RATE)
@@ -1037,6 +1038,8 @@ static bool8 TryGetAbilityInfluencedWildMonIndex(const struct WildPokemon *wildM
 
 static bool8 TryGetModernAbilityInfluencedWildMonIndex(const struct WildPokemon *wildMon, u8 type, u8 ability, u8 *monIndex, u32 size)
 {
+    if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+        return FALSE;
     if (GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
         return FALSE;
     if (GetMonAbility(&gPlayerParty[0]) != ability)

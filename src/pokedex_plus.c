@@ -423,6 +423,7 @@ static void Task_WaitForExitSearchResultsInfoScreen(u8);
 static void Task_ReturnToPokedexFromSearchResults(u8);
 static void Task_ClosePokedexFromSearchResultsStartMenu(u8);
 static bool8 LoadPokedexListPage(u8);
+static bool8 IsPokedexDarkModeEnabled(void);
 static void LoadPokedexBgPalette(bool8);
 static void FreeWindowAndBgBuffers(void);
 static void CreatePokedexList(u8, u8);
@@ -2336,9 +2337,14 @@ static void Task_ClosePokedex(u8 taskId)
     }
 }
 
+static bool8 IsPokedexDarkModeEnabled(void)
+{
+    return gSaveBlock2Ptr->optionsPokedexTheme == OPTIONS_POKEDEX_THEME_DARK;
+}
+
 static void LoadPokedexBgPalette(bool8 isSearchResults)
 {
-    if (!HGSS_DARK_MODE)
+    if (!IsPokedexDarkModeEnabled())
     {
         if (isSearchResults == TRUE)
             LoadPalette(sPokedexPlus_SearchResults_Pal + 1, 1, PLTT_SIZEOF(95));
@@ -2404,7 +2410,7 @@ static bool8 LoadPokedexListPage(u8 page)
         FreeAllSpritePalettes();
         gReservedSpritePaletteCount = 8;
         LoadCompressedSpriteSheet(&sInterfaceSpriteSheet[0]);
-        LoadSpritePalette(&sInterfaceSpritePalette[HGSS_DARK_MODE]);
+        LoadSpritePalette(&sInterfaceSpritePalette[IsPokedexDarkModeEnabled()]);
         LoadSpritePalettes(sStatBarSpritePal);
         CreateInterfaceSprites(page);
         gMain.state++;
@@ -4106,14 +4112,14 @@ static void Task_HandleCaughtMonPageInput(u8 taskId)
     // Flicker caught screen color
     else if (++gTasks[taskId].tPalTimer & 16)
     {
-        if (!HGSS_DARK_MODE)
+        if (!IsPokedexDarkModeEnabled())
             LoadPalette(sPokedexPlus_Default_Pal + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
         else
             LoadPalette(sPokedexPlus_Default_dark_Pal + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
     }
     else
     {
-        if (!HGSS_DARK_MODE)
+        if (!IsPokedexDarkModeEnabled())
             LoadPalette(sPokedexPlus_Default_Pal + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
         else
             LoadPalette(sPokedexPlus_Default_dark_Pal + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
@@ -6658,7 +6664,7 @@ static void LoadPlayArrowPalette(bool8 cryPlaying)
 {
     u16 color;
 
-    if (!HGSS_DARK_MODE)
+    if (!IsPokedexDarkModeEnabled())
     {
         if (cryPlaying)
             color = RGB(29, 9, 4);
@@ -6678,7 +6684,7 @@ static void LoadPlayArrowPalette(bool8 cryPlaying)
 
 static void TryLoadDarkModeArrowPalette(void)
 {
-    if (HGSS_DARK_MODE)
+    if (IsPokedexDarkModeEnabled())
     {
         u16 colors[] = {RGB(9, 9, 9), RGB(3, 3, 3)};
         u32 paletteNum = IndexOfSpritePaletteTag(sSpritePalette_Arrow.tag);
@@ -7143,7 +7149,7 @@ static void Task_LoadSearchMenu(u8 taskId)
                 CopyToBgTilemapBuffer(3, sPokedexPlus_ScreenSearchHoenn_Tilemap, 0, 0);
             else
                 CopyToBgTilemapBuffer(3, sPokedexPlus_ScreenSearchNational_Tilemap, 0, 0);
-            if (!HGSS_DARK_MODE)
+            if (!IsPokedexDarkModeEnabled())
                 LoadPalette(sPokedexPlus_MenuSearch_Pal + 1, 1, PLTT_SIZEOF(63));
             else
                 LoadPalette(sPokedexPlus_MenuSearch_dark_Pal + 1, 1, PLTT_SIZEOF(63));
@@ -7152,7 +7158,7 @@ static void Task_LoadSearchMenu(u8 taskId)
         break;
     case 1:
         LoadCompressedSpriteSheet(&sInterfaceSpriteSheet[0]);
-        LoadSpritePalette(&sInterfaceSpritePalette[HGSS_DARK_MODE]);
+        LoadSpritePalette(&sInterfaceSpritePalette[IsPokedexDarkModeEnabled()]);
         LoadSpritePalettes(sStatBarSpritePal);
         CreateSearchParameterScrollArrows(taskId);
         for (i = 0; i < NUM_TASK_DATA; i++)
