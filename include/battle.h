@@ -455,6 +455,7 @@ struct BattleStruct
     u8 arenaLostOpponentMons;
     u8 alreadyStatusedMoveAttempt; // As bits for battlers; For example when using Thunder Wave on an already paralyzed Pokémon.
     u8 ballSpriteIds[2];
+    u8 activeAbilityPopUps;
 };
 
 // The palaceFlags member of struct BattleStruct contains 1 flag per move to indicate which moves the AI should consider,
