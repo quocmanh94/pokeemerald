@@ -449,7 +449,8 @@ static void HandleInputChooseAction(void)
             BtlController_EmitTwoReturnValues(B_COMM_TO_ENGINE, B_ACTION_CANCEL_PARTNER, 0);
             PlayerBufferExecCompleted();
         }
-        else if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+        else if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+              && !gSaveBlock2Ptr->optionsPushBToRunOff)
         {
             PlaySE(SE_SELECT);
             ActionSelectionDestroyCursorAt(gActionSelectionCursor[gActiveBattler]);
@@ -1992,7 +1993,7 @@ static void MoveSelectionDisplayMoveType(void)
 {
     u8 windowId = B_WIN_MOVE_TYPE;
 
-    if (!IsDoubleBattle())
+    if (!gSaveBlock2Ptr->optionsTypeEffectivenessOff && !IsDoubleBattle())
         windowId = GetMoveTypeEffectivenessWindow(GetBattlerAtPosition(BATTLE_OPPOSITE(GetBattlerPosition(gActiveBattler))));
 
     MoveSelectionDisplayMoveTypeWithWindow(windowId);
@@ -2000,7 +2001,12 @@ static void MoveSelectionDisplayMoveType(void)
 
 static void MoveSelectionDisplayMoveTypeAgainstTarget(u8 targetId)
 {
-    MoveSelectionDisplayMoveTypeWithWindow(GetMoveTypeEffectivenessWindow(targetId));
+    u8 windowId = B_WIN_MOVE_TYPE;
+
+    if (!gSaveBlock2Ptr->optionsTypeEffectivenessOff)
+        windowId = GetMoveTypeEffectivenessWindow(targetId);
+
+    MoveSelectionDisplayMoveTypeWithWindow(windowId);
 }
 
 static void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)

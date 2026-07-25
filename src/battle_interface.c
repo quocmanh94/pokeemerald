@@ -2253,7 +2253,10 @@ s32 MoveBattleBar(u8 battler, u8 healthboxSpriteId, u8 whichBar, u8 unused)
 
     if (whichBar == HEALTH_BAR) // health bar
     {
-        u16 hpFraction = max(gBattleSpritesDataPtr->battleBars[battler].maxValue / (B_HEALTHBAR_PIXELS / 2), 1);
+        u16 hpFraction = 1;
+
+        if (gSaveBlock2Ptr->optionsBattleBarSpeed == OPTIONS_BATTLE_BAR_FAST)
+            hpFraction = max(gBattleSpritesDataPtr->battleBars[battler].maxValue / (B_HEALTHBAR_PIXELS / 2), 1);
 
         currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battler].maxValue,
                     gBattleSpritesDataPtr->battleBars[battler].oldValue,
@@ -2869,6 +2872,9 @@ void CreateAbilityPopUp(u8 battler, u16 ability)
     u8 taskId;
     u16 tileTag;
     bool32 slideRight;
+
+    if (gSaveBlock2Ptr->optionsAbilityPopupsOff)
+        return;
 
     if (gBattleStruct->activeAbilityPopUps & gBitTable[battler])
         return;

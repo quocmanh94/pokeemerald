@@ -47,7 +47,6 @@
 // Uncomment to fix some identified minor bugs
 #define BUGFIX
 #define HGSS_DEX TRUE
-#define HGSS_DARK_MODE FALSE
 #define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES FALSE
 
 // Various undefined behavior bugs may or may not prevent compilation with
