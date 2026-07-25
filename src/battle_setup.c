@@ -15,6 +15,7 @@
 #include "script_pokemon_util.h"
 #include "palette.h"
 #include "window.h"
+#include "wild_encounter.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
 #include "tv.h"
@@ -637,8 +638,13 @@ u8 BattleSetup_GetEnvironmentId(void)
 {
     u16 tileBehavior;
     s16 x, y;
+    bool8 useFishingTile = gIsFishingEncounter;
 
-    PlayerGetDestCoords(&x, &y);
+    gIsFishingEncounter = FALSE;
+    if (useFishingTile)
+        GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
+    else
+        PlayerGetDestCoords(&x, &y);
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))
