@@ -4116,9 +4116,14 @@ u8 ItemBattleEffects(u8 caseID, u8 battler, bool8 moveTurn)
             case HOLD_EFFECT_RESTORE_PCT_HP:
                 if (gBattleMons[battler].hp <= gBattleMons[battler].maxHP / 2 && !moveTurn)
                 {
-                    gBattleMoveDamage = gBattleMons[battler].maxHP * battlerHoldEffectParam / 100;
-                    if (gBattleMoveDamage == 0)
-                        gBattleMoveDamage = 1;
+                    if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+                        gBattleMoveDamage = 30;
+                    else
+                    {
+                        gBattleMoveDamage = gBattleMons[battler].maxHP * battlerHoldEffectParam / 100;
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
+                    }
                     if (gBattleMons[battler].hp + gBattleMoveDamage > gBattleMons[battler].maxHP)
                         gBattleMoveDamage = gBattleMons[battler].maxHP - gBattleMons[battler].hp;
                     gBattleMoveDamage *= -1;

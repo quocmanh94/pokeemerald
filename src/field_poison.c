@@ -40,20 +40,24 @@ static bool32 AllMonsFainted(void)
     return TRUE;
 }
 
-static void RecoverFromFieldPoison(u8 partyIdx)
+static void HandleFieldPoisonRecovery(u8 partyIdx)
 {
     struct Pokemon *pokemon = &gPlayerParty[partyIdx];
     u32 status = STATUS1_NONE;
 
+    if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+        AdjustFriendship(pokemon, FRIENDSHIP_EVENT_FAINT_FIELD_PSN);
     SetMonData(pokemon, MON_DATA_STATUS, &status);
     GetMonData(pokemon, MON_DATA_NICKNAME, gStringVar1);
     StringGet_Nickname(gStringVar1);
 }
 
-static bool32 MonSurvivedFieldPoison(u8 partyIdx)
+static bool32 MonNeedsFieldPoisonRecovery(u8 partyIdx)
 {
     struct Pokemon *pokemon = &gPlayerParty[partyIdx];
-    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 1 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+    u32 targetHp = gSaveBlock2Ptr->optionsModernSmallMechanicsOff ? 0 : 1;
+
+    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == targetHp && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
         return TRUE;
 
     return FALSE;
@@ -70,10 +74,13 @@ static void Task_TryFieldPoisonWhiteOut(u8 taskId)
     case 0:
         for (; tPartyIdx < PARTY_SIZE; tPartyIdx++)
         {
-            if (MonSurvivedFieldPoison(tPartyIdx))
+            if (MonNeedsFieldPoisonRecovery(tPartyIdx))
             {
-                RecoverFromFieldPoison(tPartyIdx);
-                ShowFieldMessage(gText_PkmnSurvived_FldPsn);
+                HandleFieldPoisonRecovery(tPartyIdx);
+                if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+                    ShowFieldMessage(gText_PkmnFainted_FldPsn);
+                else
+                    ShowFieldMessage(gText_PkmnSurvived_FldPsn);
                 tState++;
                 return;
             }
@@ -81,7 +88,7 @@ static void Task_TryFieldPoisonWhiteOut(u8 taskId)
         tState = 2; // Finished checking party
         break;
     case 1:
-        // Wait for "{mon} fainted" message, then return to party loop
+        // Wait for the poison status message, then return to the party loop.
         if (IsFieldMessageBoxHidden())
             tState--;
         break;
@@ -132,10 +139,18 @@ s32 DoPoisonFieldEffect(void)
         {
             // Apply poison damage
             hp = GetMonData(pokemon, MON_DATA_HP);
-            if (hp > 1)
-                hp--;
-            if (hp == 1)
-                numFainted++;
+            if (gSaveBlock2Ptr->optionsModernSmallMechanicsOff)
+            {
+                if (hp == 0 || --hp == 0)
+                    numFainted++;
+            }
+            else
+            {
+                if (hp > 1)
+                    hp--;
+                if (hp == 1)
+                    numFainted++;
+            }
 
             SetMonData(pokemon, MON_DATA_HP, &hp);
             numPoisoned++;

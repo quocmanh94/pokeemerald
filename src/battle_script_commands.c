@@ -10172,7 +10172,8 @@ static void Cmd_pickup(void)
                 heldItem = GetBattlePyramidPickupItemId();
                 SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
             }
-            else if (species == SPECIES_SHUCKLE
+            else if (!gSaveBlock2Ptr->optionsModernSmallMechanicsOff
+                  && species == SPECIES_SHUCKLE
                   && heldItem == ITEM_ORAN_BERRY
                   && Random() % 16 == 0)
             {
@@ -10216,7 +10217,8 @@ static void Cmd_pickup(void)
                     }
                 }
             }
-            else if (species == SPECIES_SHUCKLE
+            else if (!gSaveBlock2Ptr->optionsModernSmallMechanicsOff
+                  && species == SPECIES_SHUCKLE
                   && heldItem == ITEM_ORAN_BERRY
                   && Random() % 16 == 0)
             {
@@ -10613,7 +10615,7 @@ static void Cmd_givecaughtmon(void)
     switch (gBattleCommunication[MULTIUSE_STATE])
     {
     case GIVE_CAUGHT_MON_CHECK_PARTY_SIZE:
-        if (CalculatePlayerPartyCount() == PARTY_SIZE)
+        if (CalculatePlayerPartyCount() == PARTY_SIZE && !gSaveBlock2Ptr->optionsCatchAndSwapOff)
         {
             GetMonNickname(caughtMon, gStringVar1);
             PrepareStringBattle(STRINGID_SENDCAUGHTMONPARTYORBOX, gBattlerAttacker);
