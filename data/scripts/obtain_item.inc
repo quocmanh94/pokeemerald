@@ -201,6 +201,7 @@ EventScript_FoundHiddenItem::
 	end
 
 EventScript_PutHiddenItemInPocket::
+	callnative Script_ClearDowsingColor
 	waitmessage
 	waitfanfare
 	bufferitemnameplural STR_VAR_2, VAR_0x8004, VAR_0x8005
@@ -209,6 +210,7 @@ EventScript_PutHiddenItemInPocket::
 	call EventScript_PutItemMessage
 	special TryPutTreasureInvestigatorsOnAir
 	special SetHiddenItemFlag
+	callnative Script_UpdateDowseState
 	releaseall
 	end
 

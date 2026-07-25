@@ -72,6 +72,7 @@
 #define FLDEFF_TRACKS_SLITHER            67
 #define FLDEFF_TRACKS_SPOT               68
 #define FLDEFF_TRACKS_BUG                69
+#define FLDEFF_ORAS_DOWSE                70
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1
@@ -113,6 +114,8 @@
 #define FLDEFFOBJ_TRACKS_SLITHER        37
 #define FLDEFFOBJ_TRACKS_SPOT           38
 #define FLDEFFOBJ_TRACKS_BUG            39
+#define FLDEFFOBJ_ORAS_DOWSE_BRENDAN    40
+#define FLDEFFOBJ_ORAS_DOWSE_MAY        41
 
 #define FLDEFF_PAL_TAG_CUT_GRASS          0x1000
 #define FLDEFF_PAL_TAG_SECRET_POWER_TREE  0x1003
@@ -126,6 +129,7 @@
 #define FLDEFF_PAL_TAG_SMALL_SPARKLE      0x100F
 #define FLDEFF_PAL_TAG_HOF_MONITOR        0x1010
 #define FLDEFF_PAL_TAG_UNKNOWN            0x1011
+#define FLDEFF_PAL_TAG_ORAS_DOWSE         0x1014
 #define FLDEFF_PAL_TAG_BRENDAN            0x1100 // OBJ_EVENT_PAL_TAG_BRENDAN
 #define FLDEFF_PAL_TAG_MAY                0x1110 // OBJ_EVENT_PAL_TAG_MAY
 #define FLDEFF_PAL_TAG_NPC_1              0x1103 // OBJ_EVENT_PAL_TAG_NPC_1
