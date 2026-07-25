@@ -1214,8 +1214,9 @@
 	.byte B_SCR_OP_HANDLEBALLTHROW
 	.endm
 
-	.macro givecaughtmon
+	.macro givecaughtmon passInstr:req
 	.byte B_SCR_OP_GIVECAUGHTMON
+	.4byte \passInstr
 	.endm
 
 	.macro trysetcaughtmondexflags ptr:req
@@ -1227,9 +1228,8 @@
 	.byte B_SCR_OP_DISPLAYDEXINFO
 	.endm
 
-	.macro trygivecaughtmonnick ptr:req
+	.macro trygivecaughtmonnick
 	.byte B_SCR_OP_TRYGIVECAUGHTMONNICK
-	.4byte \ptr
 	.endm
 
 	.macro subattackerhpbydmg

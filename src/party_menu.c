@@ -311,6 +311,8 @@ static bool8 CanUsePartyMenuSelectSwap(void);
 static u16 PartyMenuButtonHandler(s8 *);
 static s8 *GetCurrentPartySlotPtr(void);
 static bool8 IsSelectedMonNotEgg(u8 *);
+static bool8 IsPartyMonBattling(u8 partyId);
+static bool8 IsPartyMonSurfing(u8 partyId);
 static void PartyMenuRemoveWindow(u8 *);
 static void CB2_SetUpExitToBattleScreen(void);
 static void Task_ClosePartyMenuAfterText(u8);
@@ -1379,6 +1381,40 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                 TryEnterMonForMinigame(taskId, (u8)*slotPtr);
             }
             break;
+        case PARTY_ACTION_SEND_MON_TO_BOX:
+        {
+            u8 partyId = GetPartyIdFromBattleSlot((u8)*slotPtr);
+
+            if (ItemIsMail(GetMonData(&gPlayerParty[partyId], MON_DATA_HELD_ITEM)))
+            {
+                PlaySE(SE_FAILURE);
+                DisplayPartyMenuMessage(gText_CannotSendMailMonToBox, FALSE);
+                ScheduleBgCopyTilemapToVram(2);
+                gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            }
+            else if (IsPartyMonSurfing(partyId))
+            {
+                PlaySE(SE_FAILURE);
+                DisplayPartyMenuMessage(gText_CannotSendSurfMonToBox, FALSE);
+                ScheduleBgCopyTilemapToVram(2);
+                gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            }
+            else if (IsPartyMonBattling(partyId))
+            {
+                PlaySE(SE_FAILURE);
+                DisplayPartyMenuMessage(gText_CannotSendActiveMonToBox, FALSE);
+                ScheduleBgCopyTilemapToVram(2);
+                gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            }
+            else
+            {
+                PlaySE(SE_SELECT);
+                gSelectedMonPartyId = partyId;
+                gPartyMenuUseExitCallback = TRUE;
+                Task_ClosePartyMenu(taskId);
+            }
+            break;
+        }
         default:
         case PARTY_ACTION_ABILITY_PREVENTS:
         case PARTY_ACTION_SWITCHING:
@@ -1399,6 +1435,32 @@ static bool8 IsSelectedMonNotEgg(u8 *slotPtr)
     return TRUE;
 }
 
+static bool8 IsPartyMonBattling(u8 partyId)
+{
+    u8 battler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+
+    if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
+        return FALSE;
+
+    if (!(gAbsentBattlerFlags & (1u << battler)) && gBattlerPartyIndexes[battler] == partyId)
+        return TRUE;
+
+    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    {
+        battler = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        if (!(gAbsentBattlerFlags & (1u << battler)) && gBattlerPartyIndexes[battler] == partyId)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 IsPartyMonSurfing(u8 partyId)
+{
+    return (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)
+         && VarGet(VAR_SURF_MON_SLOT) == partyId);
+}
+
 static void HandleChooseMonCancel(u8 taskId, s8 *slotPtr)
 {
     switch (gPartyMenu.action)
@@ -1414,6 +1476,12 @@ static void HandleChooseMonCancel(u8 taskId, s8 *slotPtr)
     case PARTY_ACTION_MINIGAME:
         PlaySE(SE_SELECT);
         CancelParticipationPrompt(taskId);
+        break;
+    case PARTY_ACTION_SEND_MON_TO_BOX:
+        PlaySE(SE_SELECT);
+        gSelectedMonPartyId = PARTY_SIZE + 1;
+        gPartyMenuUseExitCallback = TRUE;
+        Task_ClosePartyMenu(taskId);
         break;
     default:
         PlaySE(SE_SELECT);
@@ -1489,7 +1557,8 @@ static bool8 IsInvalidPartyMenuActionType(u8 partyAction)
          || partyAction == PARTY_ACTION_CHOOSE_AND_CLOSE
          || partyAction == PARTY_ACTION_MOVE_TUTOR
          || partyAction == PARTY_ACTION_MINIGAME
-         || partyAction == PARTY_ACTION_REUSABLE_ITEM);
+         || partyAction == PARTY_ACTION_REUSABLE_ITEM
+         || partyAction == PARTY_ACTION_SEND_MON_TO_BOX);
 }
 
 static bool8 CanUsePartyMenuSelectSwap(void)
@@ -1813,7 +1882,10 @@ static void Task_ReturnToChooseMonAfterText(u8 taskId)
         }
         else
         {
-            DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
+            if (gPartyMenu.action == PARTY_ACTION_SEND_MON_TO_BOX)
+                DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON_FOR_BOX);
+            else
+                DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_MON);
             gTasks[taskId].func = Task_HandleChooseMonInput;
         }
     }
@@ -6140,7 +6212,12 @@ static u8 GetPartyLayoutFromBattleType(void)
 
 void OpenPartyMenuInBattle(u8 partyAction)
 {
-    InitPartyMenu(PARTY_MENU_TYPE_IN_BATTLE, GetPartyLayoutFromBattleType(), partyAction, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_SetUpReshowBattleScreenAfterMenu);
+    u8 partyMessage = PARTY_MSG_CHOOSE_MON;
+
+    if (partyAction == PARTY_ACTION_SEND_MON_TO_BOX)
+        partyMessage = PARTY_MSG_CHOOSE_MON_FOR_BOX;
+
+    InitPartyMenu(PARTY_MENU_TYPE_IN_BATTLE, GetPartyLayoutFromBattleType(), partyAction, FALSE, partyMessage, Task_HandleChooseMonInput, CB2_SetUpReshowBattleScreenAfterMenu);
     ReshowBattleScreenDummy();
     UpdatePartyToBattleOrder();
 }
