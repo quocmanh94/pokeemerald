@@ -11,6 +11,7 @@
 #include "main.h"
 #include "m4a.h"
 #include "palette.h"
+#include "party_menu.h"
 #include "pokeball.h"
 #include "pokeblock.h"
 #include "pokemon.h"
@@ -21,6 +22,7 @@
 #include "util.h"
 #include "window.h"
 #include "constants/battle_anim.h"
+#include "constants/party_menu.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
@@ -85,6 +87,8 @@ static void SafariCmdEnd(void);
 static void SafariBufferRunCommand(void);
 static void SafariBufferExecCompleted(void);
 static void CompleteWhenChosePokeblock(void);
+static void OpenPartyMenuToChooseMon(void);
+static void WaitForMonSelection(void);
 
 static void (*const sSafariBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
 {
@@ -292,6 +296,33 @@ static void CompleteWhenChosePokeblock(void)
     }
 }
 
+static void OpenPartyMenuToChooseMon(void)
+{
+    if (!gPaletteFade.active)
+    {
+        u8 caseId;
+
+        gBattlerControllerFuncs[gActiveBattler] = WaitForMonSelection;
+        caseId = gTasks[gBattleControllerData[gActiveBattler]].data[0];
+        DestroyTask(gBattleControllerData[gActiveBattler]);
+        FreeAllWindowBuffers();
+        OpenPartyMenuInBattle(caseId);
+    }
+}
+
+static void WaitForMonSelection(void)
+{
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+    {
+        if (gPartyMenuUseExitCallback == TRUE)
+            BtlController_EmitChosenMonReturnValue(B_COMM_TO_ENGINE, gSelectedMonPartyId, gBattlePartyCurrentOrder);
+        else
+            BtlController_EmitChosenMonReturnValue(B_COMM_TO_ENGINE, PARTY_SIZE, NULL);
+
+        SafariBufferExecCompleted();
+    }
+}
+
 static void CompleteOnFinishedBattleAnimation(void)
 {
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animFromTableActive)
@@ -487,7 +518,19 @@ static void SafariHandleChooseItem(void)
 
 static void SafariHandleChoosePokemon(void)
 {
-    SafariBufferExecCompleted();
+    s32 i;
+
+    for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+        gBattlePartyCurrentOrder[i] = gBattleBufferA[gActiveBattler][4 + i];
+
+    gBattleControllerData[gActiveBattler] = CreateTask(TaskDummy, 0xFF);
+    gTasks[gBattleControllerData[gActiveBattler]].data[0] = gBattleBufferA[gActiveBattler][1] & 0xF;
+    *(&gBattleStruct->battlerPreventingSwitchout) = gBattleBufferA[gActiveBattler][1] >> 4;
+    *(&gBattleStruct->prevSelectedPartySlot) = gBattleBufferA[gActiveBattler][2];
+    *(&gBattleStruct->abilityPreventingSwitchout) = gBattleBufferA[gActiveBattler][3];
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+    gBattlerControllerFuncs[gActiveBattler] = OpenPartyMenuToChooseMon;
+    gBattlerInMenuId = gActiveBattler;
 }
 
 static void SafariHandleCmd23(void)
