@@ -222,6 +222,7 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon);
 u8 ItemIdToBallId(u16 ballItem);
 u8 AnimateBallOpenParticles(u8 x, u8 y, u8 priority, u8 subpriority, u8 ballId);
 u8 LaunchBallFadeMonTask(bool8 unfadeLater, u8 spritePalNum, u32 selectedPalettes, u8 ballId);
+bool32 IsCriticalCapture(void);
 
 // battle_anim_utility_funcs.c
 void InitStatsChangeAnimation(u8 taskId);

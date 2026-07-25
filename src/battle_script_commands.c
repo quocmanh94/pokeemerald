@@ -75,6 +75,7 @@ static void DrawLevelUpWindow2(void);
 static void PutMonIconOnLvlUpBanner(void);
 static void DrawLevelUpBannerText(void);
 static void SpriteCB_MonIconOnLvlUpBanner(struct Sprite *sprite);
+static bool32 TryCriticalCapture(u32 odds);
 
 static void Cmd_attackcanceler(void);
 static void Cmd_accuracycheck(void);
@@ -10479,7 +10480,10 @@ static void Cmd_handleballthrow(void)
         }
         else
         {
-            ballMultiplier = sBallCatchBonuses[gLastUsedItem - ITEM_ULTRA_BALL];
+            if (gLastUsedItem == ITEM_MASTER_BALL)
+                ballMultiplier = 10;
+            else
+                ballMultiplier = sBallCatchBonuses[gLastUsedItem - ITEM_ULTRA_BALL];
         }
 
         odds = (catchRate * ballMultiplier / 10)
@@ -10504,8 +10508,19 @@ static void Cmd_handleballthrow(void)
             }
         }
 
-        if (odds > 254) // mon caught
+        gBattleSpritesDataPtr->animationData->isCriticalCapture = FALSE;
+        gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = FALSE;
+
+        if (gLastUsedItem != ITEM_MASTER_BALL && TryCriticalCapture(odds))
         {
+            gBattleSpritesDataPtr->animationData->isCriticalCapture = TRUE;
+        }
+
+        if (gLastUsedItem == ITEM_MASTER_BALL || odds > 254) // mon caught
+        {
+            if (IsCriticalCapture())
+                gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = TRUE;
+
             BtlController_EmitBallThrowAnim(B_COMM_TO_CONTROLLER, BALL_3_SHAKES_SUCCESS);
             MarkBattlerForControllerExec(gActiveBattler);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
@@ -10519,19 +10534,20 @@ static void Cmd_handleballthrow(void)
         else // mon may be caught, calculate shakes
         {
             u8 shakes;
+            u8 maxShakes = IsCriticalCapture() ? 1 : BALL_3_SHAKES_SUCCESS;
 
             odds = Sqrt(Sqrt(16711680 / odds));
             odds = 1048560 / odds;
 
-            for (shakes = 0; shakes < BALL_3_SHAKES_SUCCESS && Random() < odds; shakes++);
+            for (shakes = 0; shakes < maxShakes && Random() < odds; shakes++);
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
-                shakes = BALL_3_SHAKES_SUCCESS; // why calculate the shakes before that check?
+            if (shakes == maxShakes && IsCriticalCapture())
+                gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = TRUE;
 
             BtlController_EmitBallThrowAnim(B_COMM_TO_CONTROLLER, shakes);
             MarkBattlerForControllerExec(gActiveBattler);
 
-            if (shakes == BALL_3_SHAKES_SUCCESS) // mon caught, copy of the code above
+            if (shakes == maxShakes) // mon caught, copy of the code above
             {
                 gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
                 SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &gLastUsedItem);
@@ -10543,11 +10559,37 @@ static void Cmd_handleballthrow(void)
             }
             else // not caught
             {
-                gBattleCommunication[MULTISTRING_CHOOSER] = shakes;
+                if (IsCriticalCapture())
+                    gBattleCommunication[MULTISTRING_CHOOSER] = BALL_3_SHAKES_FAIL;
+                else
+                    gBattleCommunication[MULTISTRING_CHOOSER] = shakes;
                 gBattlescriptCurrInstr = BattleScript_ShakeBallThrow;
             }
         }
     }
+}
+
+static bool32 TryCriticalCapture(u32 odds)
+{
+    u32 numCaught = GetNationalPokedexCount(FLAG_GET_CAUGHT);
+
+    if (numCaught > (NATIONAL_DEX_COUNT * 600) / 650)
+        odds = (odds * 250) / 100;
+    else if (numCaught > (NATIONAL_DEX_COUNT * 450) / 650)
+        odds *= 2;
+    else if (numCaught > (NATIONAL_DEX_COUNT * 300) / 650)
+        odds = (odds * 150) / 100;
+    else if (numCaught > (NATIONAL_DEX_COUNT * 150) / 650)
+        ;
+    else if (numCaught > (NATIONAL_DEX_COUNT * 30) / 650)
+        odds /= 2;
+    else
+        return FALSE;
+
+    if (odds > 255)
+        odds = 255;
+
+    return (Random() % 256) < odds / 6;
 }
 
 static void Cmd_givecaughtmon(void)
