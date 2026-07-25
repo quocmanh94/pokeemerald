@@ -2070,6 +2070,7 @@ extern const u8 gText_PkmnTransferredSomeonesPCBoxFull[];
 extern const u8 gText_PkmnTransferredLanettesPCBoxFull[];
 extern const u8 gText_PkmnTransferredSomeonesPC[];
 extern const u8 gText_PkmnTransferredLanettesPC[];
+extern const u8 gText_PkmnSentToPCAfterCatch[];
 
 // hall of fame
 extern const u8 gText_LeagueChamp[];
@@ -2103,6 +2104,7 @@ extern const u8 gDaycareText_PlayOther[];
 extern const u8 gText_ChoosePokemon[];
 extern const u8 gText_ChoosePokemonCancel[];
 extern const u8 gText_ChoosePokemonConfirm[];
+extern const u8 gText_SendWhichMonToPC[];
 extern const u8 gText_MoveToWhere[];
 extern const u8 gText_TeachWhichPokemon[];
 extern const u8 gText_UseOnWhichPokemon[];
@@ -2126,6 +2128,9 @@ extern const u8 gText_BoostPP[];
 extern const u8 gText_DoWhatWithItem[];
 extern const u8 gText_DoWhatWithMail[];
 extern const u8 gText_AlreadyHoldingOne[];
+extern const u8 gText_CannotSendActiveMonToBox[];
+extern const u8 gText_CannotSendSurfMonToBox[];
+extern const u8 gText_CannotSendMailMonToBox[];
 extern const u8 gText_NoUse[];
 extern const u8 gText_Able[];
 extern const u8 gText_First_PM[];

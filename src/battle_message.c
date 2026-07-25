@@ -65,6 +65,7 @@ static const u8 sText_PkmnForgotMove[] = _("{B_BUFF1} forgot\n{B_BUFF2}.\p");
 static const u8 sText_StopLearningMove[] = _("{PAUSE 32}Continue learning\n{B_BUFF2}?");
 static const u8 sText_DidNotLearnMove[] = _("{B_BUFF1} did not learn\n{B_BUFF2}.\p");
 static const u8 sText_UseNextPkmn[] = _("Use next POKéMON?");
+static const u8 sText_AddCaughtMonToParty[] = _("Add {STR_VAR_1} to your party?");
 static const u8 sText_AttackMissed[] = _("{B_ATK_NAME_WITH_PREFIX}'s\nattack missed!");
 static const u8 sText_PkmnProtectedItself[] = _("{B_DEF_NAME_WITH_PREFIX}\nprotected itself!");
 static const u8 sText_AvoidedDamage[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\ndamage with {B_DEF_ABILITY}!");
@@ -907,6 +908,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNRECOVEREDITEM - BATTLESTRINGS_TABLE_START] = sText_PkmnRecoveredItem,
     [STRINGID_PKMNMOVEBOUNCEDBACK - BATTLESTRINGS_TABLE_START] = sText_PkmnMoveBouncedBack,
     [STRINGID_PKMNFRISKEDTWOITEMS - BATTLESTRINGS_TABLE_START] = sText_PkmnFriskedTwoItems,
+    [STRINGID_SENDCAUGHTMONPARTYORBOX - BATTLESTRINGS_TABLE_START] = sText_AddCaughtMonToParty,
+    [STRINGID_PKMNSENTTOPCAFTERCATCH - BATTLESTRINGS_TABLE_START] = gText_PkmnSentToPCAfterCatch,
 };
 
 const u16 gMissStringIds[] =
@@ -1269,10 +1272,11 @@ const u16 gFlashFireStringIds[] =
 
 const u16 gCaughtMonStringIds[] =
 {
-    [B_MSG_SENT_SOMEONES_PC]  = STRINGID_PKMNTRANSFERREDSOMEONESPC,
-    [B_MSG_SENT_LANETTES_PC]  = STRINGID_PKMNTRANSFERREDLANETTESPC,
-    [B_MSG_SOMEONES_BOX_FULL] = STRINGID_PKMNBOXSOMEONESPCFULL,
-    [B_MSG_LANETTES_BOX_FULL] = STRINGID_PKMNBOXLANETTESPCFULL,
+    [B_MSG_SENT_SOMEONES_PC]   = STRINGID_PKMNTRANSFERREDSOMEONESPC,
+    [B_MSG_SENT_LANETTES_PC]   = STRINGID_PKMNTRANSFERREDLANETTESPC,
+    [B_MSG_SOMEONES_BOX_FULL]  = STRINGID_PKMNBOXSOMEONESPCFULL,
+    [B_MSG_LANETTES_BOX_FULL]  = STRINGID_PKMNBOXLANETTESPCFULL,
+    [B_MSG_SWAPPED_INTO_PARTY] = STRINGID_PKMNSENTTOPCAFTERCATCH,
 };
 
 const u16 gTrappingMoves[NUM_TRAPPING_MOVES + 1] =

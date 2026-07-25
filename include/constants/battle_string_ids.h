@@ -389,8 +389,10 @@
 #define STRINGID_PKMNRECOVEREDITEM          389
 #define STRINGID_PKMNMOVEBOUNCEDBACK        390
 #define STRINGID_PKMNFRISKEDTWOITEMS        391
+#define STRINGID_SENDCAUGHTMONPARTYORBOX    392
+#define STRINGID_PKMNSENTTOPCAFTERCATCH     393
 
-#define BATTLESTRINGS_COUNT                 392
+#define BATTLESTRINGS_COUNT                 394
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -540,10 +542,12 @@
 #define B_MSG_WEAKEN_FIRE     1
 
 // gCaughtMonStringIds
-#define B_MSG_SENT_SOMEONES_PC  0
-#define B_MSG_SENT_LANETTES_PC  1
-#define B_MSG_SOMEONES_BOX_FULL 2
-#define B_MSG_LANETTES_BOX_FULL 3
+#define B_MSG_NO_MESSAGE_SKIP    0
+#define B_MSG_SENT_SOMEONES_PC   1
+#define B_MSG_SENT_LANETTES_PC   2
+#define B_MSG_SOMEONES_BOX_FULL  3
+#define B_MSG_LANETTES_BOX_FULL  4
+#define B_MSG_SWAPPED_INTO_PARTY 5
 
 // gInobedientStringIds
 #define B_MSG_LOAFING            0
