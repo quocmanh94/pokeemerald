@@ -80,6 +80,7 @@ static void DestroyBallOpenAnimationParticle(struct Sprite *);
 static void FanOutBallOpenParticles_Step1(struct Sprite *);
 static void RepeatBallOpenParticleAnimation_Step1(struct Sprite *);
 static void PremierBallOpenParticleAnimation_Step1(struct Sprite *);
+static void SpriteCB_CriticalCaptureBallMovement(struct Sprite *sprite);
 static void Task_FadeMon_ToBallColor(u8);
 static void Task_FadeMon_ToNormal(u8);
 static void Task_FadeMon_ToNormal_Step(u8);
@@ -999,7 +1000,10 @@ static void SpriteCB_Ball_Bounce(struct Sprite *sprite)
         phase = 0;
         sprite->y += Cos(phase, 40);
         sprite->y2 = -Cos(phase, sprite->sAmplitude);
-        sprite->callback = SpriteCB_Ball_Bounce_Step;
+        if (IsCriticalCapture())
+            sprite->callback = SpriteCB_CriticalCaptureBallMovement;
+        else
+            sprite->callback = SpriteCB_Ball_Bounce_Step;
     }
 }
 
@@ -1240,7 +1244,15 @@ static void SpriteCB_Ball_Wobble_Step(struct Sprite *sprite)
     case BALL_NEXT_MOVE:
         SHAKE_INC(sprite->sState);
         shakes = SHAKES(sprite->sState);
-        if (shakes == gBattleSpritesDataPtr->animationData->ballThrowCaseId)
+        if (IsCriticalCapture())
+        {
+            sprite->affineAnimPaused = TRUE;
+            if (gBattleSpritesDataPtr->animationData->criticalCaptureSuccess)
+                sprite->callback = SpriteCB_Ball_Capture;
+            else
+                sprite->callback = SpriteCB_Ball_Release;
+        }
+        else if (shakes == gBattleSpritesDataPtr->animationData->ballThrowCaseId)
         {
             sprite->affineAnimPaused = TRUE;
             sprite->callback = SpriteCB_Ball_Release;
@@ -1274,6 +1286,52 @@ static void SpriteCB_Ball_Wobble_Step(struct Sprite *sprite)
             PlaySE(SE_BALL);
         }
         break;
+    }
+}
+
+bool32 IsCriticalCapture(void)
+{
+    return gBattleSpritesDataPtr->animationData->isCriticalCapture;
+}
+
+static void SpriteCB_CriticalCaptureBallMovement(struct Sprite *sprite)
+{
+    bool8 lastBounce = FALSE;
+    s16 bounceCount = sprite->data[3] >> 8;
+
+    if (bounceCount == 0)
+        PlaySE(SE_BALL);
+
+    switch (sprite->data[3] & 0xFF)
+    {
+    case 0:
+        if (bounceCount < 3)
+            sprite->x2++;
+
+        if (++sprite->data[5] >= 3)
+            sprite->data[3] += 257;
+        break;
+    case 1:
+        if (bounceCount < 3 || sprite->x2 != 0)
+            sprite->x2--;
+
+        if (--sprite->data[5] <= 0)
+        {
+            sprite->data[5] = 0;
+            sprite->data[3] &= -0x100;
+        }
+
+        if (bounceCount >= 6)
+            lastBounce = TRUE;
+        break;
+    }
+
+    if (lastBounce)
+    {
+        sprite->data[3] = 0;
+        sprite->data[4] = 40;
+        sprite->data[5] = 0;
+        sprite->callback = SpriteCB_Ball_Bounce_Step;
     }
 }
 
