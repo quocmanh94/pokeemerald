@@ -85,6 +85,7 @@ enum {
     MENU_ITEM,
     MENU_GIVE,
     MENU_TAKE_ITEM,
+    MENU_MOVE_ITEM,
     MENU_MAIL,
     MENU_TAKE_MAIL,
     MENU_READ,
@@ -478,6 +479,8 @@ static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
 static void CursorCb_Give(u8);
 static void CursorCb_TakeItem(u8);
+static void CursorCb_MoveItem(u8);
+static void Task_HandleMoveItemInput(u8);
 static void CursorCb_Mail(u8);
 static void CursorCb_Read(u8);
 static void CursorCb_TakeMail(u8);
@@ -2682,6 +2685,9 @@ static u8 DisplaySelectionWindow(u8 windowType)
     case SELECTWINDOW_ITEM:
         window = sItemGiveTakeWindowTemplate;
         break;
+    case SELECTWINDOW_PYRAMID:
+        window = sItemPyramidTakeTossWindowTemplate;
+        break;
     case SELECTWINDOW_MAIL:
         window = sMailReadTakeWindowTemplate;
         break;
@@ -2876,7 +2882,7 @@ static bool8 CreateSelectionWindow(u8 taskId)
         if (item != ITEM_NONE)
         {
             SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, GetPartyMenuActionsType(mon));
-            DisplaySelectionWindow(SELECTWINDOW_ITEM);
+            DisplaySelectionWindow(SELECTWINDOW_PYRAMID);
             CopyItemName(item, gStringVar2);
             DisplayPartyMenuStdMessage(PARTY_MSG_ALREADY_HOLDING_ONE);
         }
@@ -3471,6 +3477,97 @@ static void CursorCb_TakeItem(u8 taskId)
     gTasks[taskId].func = Task_UpdateHeldItemSprite;
 }
 
+static void CursorCb_MoveItem(u8 taskId)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = GetMonData(mon, MON_DATA_HELD_ITEM);
+
+    PlaySE(SE_SELECT);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+
+    if (item == ITEM_NONE)
+    {
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnNotHolding);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = Task_UpdateHeldItemSprite;
+        return;
+    }
+
+    gPartyMenu.action = PARTY_ACTION_SWITCH;
+    CopyItemName(item, gStringVar2);
+    DisplayPartyMenuStdMessage(PARTY_MSG_MOVE_ITEM_WHERE);
+    AnimatePartySlot(gPartyMenu.slotId, 1);
+    gPartyMenu.slotId2 = gPartyMenu.slotId;
+    gTasks[taskId].func = Task_HandleMoveItemInput;
+}
+
+static void Task_HandleMoveItemInput(u8 taskId)
+{
+    u16 sourceItem;
+    u16 targetItem;
+    u8 buffer[100];
+
+    if (gPaletteFade.active || MenuHelpers_ShouldWaitForLinkRecv())
+        return;
+
+    switch (PartyMenuButtonHandler(&gPartyMenu.slotId2))
+    {
+    case 2: // B pressed or A pressed on Cancel
+        HandleChooseMonCancel(taskId, &gPartyMenu.slotId2);
+        break;
+    case 1: // A pressed on a Pokemon
+        if (gPartyMenu.slotId == gPartyMenu.slotId2
+         || GetMonData(&gPlayerParty[gPartyMenu.slotId2], MON_DATA_IS_EGG))
+        {
+            PlaySE(SE_FAILURE);
+            return;
+        }
+
+        targetItem = GetMonData(&gPlayerParty[gPartyMenu.slotId2], MON_DATA_HELD_ITEM);
+        if (ItemIsMail(targetItem))
+        {
+            PlaySE(SE_FAILURE);
+            return;
+        }
+
+        PlaySE(SE_SELECT);
+        gPartyMenu.action = PARTY_ACTION_CHOOSE_MON;
+        sourceItem = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_HELD_ITEM);
+        SetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_HELD_ITEM, &targetItem);
+        SetMonData(&gPlayerParty[gPartyMenu.slotId2], MON_DATA_HELD_ITEM, &sourceItem);
+        UpdatePartyMonHeldItemSprite(&gPlayerParty[gPartyMenu.slotId], &sPartyMenuBoxes[gPartyMenu.slotId]);
+        UpdatePartyMonHeldItemSprite(&gPlayerParty[gPartyMenu.slotId2], &sPartyMenuBoxes[gPartyMenu.slotId2]);
+
+        if (targetItem == ITEM_NONE)
+        {
+            GetMonNickname(&gPlayerParty[gPartyMenu.slotId2], gStringVar1);
+            CopyItemName(sourceItem, gStringVar2);
+            StringExpandPlaceholders(gStringVar4, gText_PkmnWasGivenItem);
+        }
+        else
+        {
+            GetMonNickname(&gPlayerParty[gPartyMenu.slotId], gStringVar1);
+            CopyItemName(sourceItem, gStringVar2);
+            StringExpandPlaceholders(buffer, gText_XsYAnd);
+            StringAppend(buffer, gText_XsYWereSwapped);
+            GetMonNickname(&gPlayerParty[gPartyMenu.slotId2], gStringVar1);
+            CopyItemName(targetItem, gStringVar2);
+            StringExpandPlaceholders(gStringVar4, buffer);
+        }
+
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        AnimatePartySlot(gPartyMenu.slotId, 0);
+        gPartyMenu.slotId = gPartyMenu.slotId2;
+        AnimatePartySlot(gPartyMenu.slotId, 1);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = Task_UpdateHeldItemSprite;
+        break;
+    }
+}
+
 static void CursorCb_Toss(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
@@ -3668,7 +3765,7 @@ static void CursorCb_Cancel2(u8 taskId)
     }
     else
     {
-        DisplaySelectionWindow(SELECTWINDOW_ITEM);
+        DisplaySelectionWindow(SELECTWINDOW_PYRAMID);
         CopyItemName(GetMonData(mon, MON_DATA_HELD_ITEM), gStringVar2);
         DisplayPartyMenuStdMessage(PARTY_MSG_ALREADY_HOLDING_ONE);
     }
