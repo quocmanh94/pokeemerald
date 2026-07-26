@@ -10,6 +10,8 @@
 #include "pokemon_storage_system.h"
 #include "trainer_hill.h"
 #include "link.h"
+#include "main.h"
+#include "sprite.h"
 #include "constants/game_stat.h"
 
 static u16 CalculateChecksum(void *, u16);
@@ -135,8 +137,17 @@ static bool32 SetDamagedSectorBits(u8 op, u8 sectorId)
     return retVal;
 }
 
+static void VBlankCB_Saving(void)
+{
+    AnimateSprites();
+    BuildOamBuffer();
+    LoadOam();
+    ProcessSpriteCopyRequests();
+}
+
 static u8 WriteSaveSectorOrSlot(u16 sectorId, const struct SaveSectorLocation *locations)
 {
+    IntrCallback previousVBlankCallback;
     u32 status;
     u16 i;
 
@@ -158,8 +169,11 @@ static u8 WriteSaveSectorOrSlot(u16 sectorId, const struct SaveSectorLocation *l
         gSaveCounter++;
         status = SAVE_STATUS_OK;
 
+        previousVBlankCallback = gMain.vblankCallback;
+        SetVBlankCallback(VBlankCB_Saving);
         for (i = 0; i < NUM_SECTORS_PER_SLOT; i++)
             HandleWriteSector(i, locations);
+        SetVBlankCallback(previousVBlankCallback);
 
         if (gDamagedSaveSectors)
         {
