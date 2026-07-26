@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "field_weather.h"
 #include "pokemon.h"
+#include "pokemon_storage_system.h"
 #include "random.h"
 #include "overworld.h"
 #include "rtc.h"
@@ -42,11 +43,24 @@ void UpdateMirageRnd(u16 days)
 bool8 IsMirageIslandPresent(void)
 {
     u16 rnd = GetMirageRnd() >> 16;
-    int i;
+    u32 box;
+    u32 slot;
+    u32 i;
 
     for (i = 0; i < PARTY_SIZE; i++)
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) && (GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY) & 0xFFFF) == rnd)
             return TRUE;
+
+    for (box = 0; box < TOTAL_BOXES_COUNT; box++)
+    {
+        for (slot = 0; slot < IN_BOX_COUNT; slot++)
+        {
+            struct BoxPokemon *boxMon = &gPokemonStoragePtr->boxes[box][slot];
+
+            if (boxMon->hasSpecies && (boxMon->personality & 0xFFFF) == rnd)
+                return TRUE;
+        }
+    }
 
     return FALSE;
 }
