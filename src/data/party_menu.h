@@ -650,6 +650,7 @@ static const u8 *const sActionStringTable[] =
     [PARTY_MSG_ALREADY_HOLDING_ONE]    = gText_AlreadyHoldingOne,
     [PARTY_MSG_CHOOSE_MON_FOR_BOX]     = gText_SendWhichMonToPC,
     [PARTY_MSG_MOVE_ITEM_WHERE]        = gText_MoveItemWhere,
+    [PARTY_MSG_CHOOSE_MON_FOR_SPECIES] = gText_ChoosePokemonForSpecies,
 };
 
 static const u8 *const sDescriptionStringTable[] =

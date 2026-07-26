@@ -2103,6 +2103,7 @@ extern const u8 gDaycareText_PlayOther[];
 
 // party menu
 extern const u8 gText_ChoosePokemon[];
+extern const u8 gText_ChoosePokemonForSpecies[];
 extern const u8 gText_ChoosePokemonCancel[];
 extern const u8 gText_ChoosePokemonConfirm[];
 extern const u8 gText_SendWhichMonToPC[];

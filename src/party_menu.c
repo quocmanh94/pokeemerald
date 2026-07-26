@@ -346,6 +346,7 @@ static void Task_CancelParticipationYesNo(u8);
 static void Task_HandleCancelParticipationYesNoInput(u8);
 static u16 GetTutorMove(u8);
 static bool8 ShouldUseChooseMonText(void);
+static bool8 TryBufferSpeciesToSwitchFor(void);
 static void SetPartyMonFieldSelectionActions(struct Pokemon *, u8);
 static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *);
 static u8 GetPartySlotEntryStatus(s8);
@@ -2643,6 +2644,8 @@ void DisplayPartyMenuStdMessage(u32 stringId)
                 stringId = PARTY_MSG_CHOOSE_MON_AND_CONFIRM;
             else if (!ShouldUseChooseMonText())
                 stringId = PARTY_MSG_CHOOSE_MON_OR_CANCEL;
+            else if (TryBufferSpeciesToSwitchFor())
+                stringId = PARTY_MSG_CHOOSE_MON_FOR_SPECIES;
         }
         DrawStdFrameWithCustomTileAndPalette(*windowPtr, FALSE, 0x4F, 13);
         StringExpandPlaceholders(gStringVar4, sActionStringTable[stringId]);
@@ -2668,6 +2671,28 @@ static bool8 ShouldUseChooseMonText(void)
             return TRUE;
     }
     return FALSE;
+}
+
+static bool8 TryBufferSpeciesToSwitchFor(void)
+{
+    u8 battler;
+    u8 partyId;
+    u16 species = SPECIES_NONE;
+
+    if (!gMain.inBattle || gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        return FALSE;
+
+    battler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+    partyId = gBattleStruct->monToSwitchIntoId[battler];
+    if (partyId < PARTY_SIZE)
+        species = GetMonData(&gEnemyParty[partyId], MON_DATA_SPECIES);
+    if (species == SPECIES_NONE || species >= NUM_SPECIES)
+        species = gBattleMons[battler].species;
+    if (species == SPECIES_NONE || species >= NUM_SPECIES)
+        return FALSE;
+
+    StringCopy(gStringVar2, gSpeciesNames[species]);
+    return TRUE;
 }
 
 static u8 DisplaySelectionWindow(u8 windowType)
