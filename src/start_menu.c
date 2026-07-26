@@ -3,6 +3,7 @@
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
 #include "bg.h"
+#include "decompress.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_object_lock.h"
@@ -34,6 +35,7 @@
 #include "scanline_effect.h"
 #include "script.h"
 #include "sound.h"
+#include "sprite.h"
 #include "start_menu.h"
 #include "strings.h"
 #include "string_util.h"
@@ -46,6 +48,55 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+
+#define TAG_SAVE_THROBBER 0x5356
+
+static const u32 sSaveThrobber_Gfx[] = INCGFX_U32("graphics/text_window/throbber.png", ".4bpp.lz");
+
+static const struct OamData sOam_SaveThrobber =
+{
+    .shape = SPRITE_SHAPE(32x64),
+    .size = SPRITE_SIZE(32x64),
+    .priority = 0,
+};
+
+static const union AnimCmd sAnim_SaveThrobber[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(64, 4),
+    ANIMCMD_FRAME(96, 4),
+    ANIMCMD_FRAME(128, 4),
+    ANIMCMD_FRAME(160, 4),
+    ANIMCMD_FRAME(192, 4),
+    ANIMCMD_FRAME(224, 4),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_SaveThrobber[] =
+{
+    sAnim_SaveThrobber,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_SaveThrobber =
+{
+    .data = sSaveThrobber_Gfx,
+    .size = 0x2000,
+    .tag = TAG_SAVE_THROBBER,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_SaveThrobber =
+{
+    .tileTag = TAG_SAVE_THROBBER,
+    .paletteTag = TAG_SAVE_THROBBER,
+    .oam = &sOam_SaveThrobber,
+    .anims = sAnims_SaveThrobber,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+
+EWRAM_DATA static u8 sSaveThrobberSpriteIdPlusOne = 0;
 
 // Menu actions
 enum
@@ -125,6 +176,8 @@ static u8 SaveSuccessCallback(void);
 static u8 SaveReturnSuccessCallback(void);
 static u8 SaveErrorCallback(void);
 static u8 SaveReturnErrorCallback(void);
+static void ShowSaveThrobber(void);
+static void HideSaveThrobber(void);
 static u8 BattlePyramidConfirmRetireCallback(void);
 static u8 BattlePyramidRetireYesNoCallback(void);
 static u8 BattlePyramidRetireInputCallback(void);
@@ -1084,8 +1137,46 @@ static u8 SaveOverwriteInputCallback(void)
     return SAVE_IN_PROGRESS;
 }
 
+static void ShowSaveThrobber(void)
+{
+    u8 spriteId;
+    struct SpritePalette palette =
+    {
+        .data = GetOverworldTextboxPalettePtr(),
+        .tag = TAG_SAVE_THROBBER,
+    };
+
+    if (sSaveThrobberSpriteIdPlusOne != 0)
+        return;
+
+    LoadCompressedSpriteSheet(&sSpriteSheet_SaveThrobber);
+    LoadSpritePalette(&palette);
+    spriteId = CreateSprite(&sSpriteTemplate_SaveThrobber, 217, 123, 2);
+    if (spriteId == MAX_SPRITES)
+    {
+        FreeSpriteTilesByTag(TAG_SAVE_THROBBER);
+        FreeSpritePaletteByTag(TAG_SAVE_THROBBER);
+    }
+    else
+    {
+        sSaveThrobberSpriteIdPlusOne = spriteId + 1;
+    }
+}
+
+static void HideSaveThrobber(void)
+{
+    if (sSaveThrobberSpriteIdPlusOne == 0)
+        return;
+
+    DestroySprite(&gSprites[sSaveThrobberSpriteIdPlusOne - 1]);
+    sSaveThrobberSpriteIdPlusOne = 0;
+    FreeSpriteTilesByTag(TAG_SAVE_THROBBER);
+    FreeSpritePaletteByTag(TAG_SAVE_THROBBER);
+}
+
 static u8 SaveSavingMessageCallback(void)
 {
+    ShowSaveThrobber();
     ShowSaveMessage(gText_SavingDontTurnOff, SaveDoSaveCallback);
     return SAVE_IN_PROGRESS;
 }
@@ -1106,6 +1197,8 @@ static u8 SaveDoSaveCallback(void)
     {
         saveStatus = TrySavingData(SAVE_NORMAL);
     }
+
+    HideSaveThrobber();
 
     if (saveStatus == SAVE_STATUS_OK)
         ShowSaveMessage(gText_PlayerSavedGame, SaveSuccessCallback);
