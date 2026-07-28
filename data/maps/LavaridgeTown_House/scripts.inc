@@ -16,11 +16,15 @@ LavaridgeTown_House_EventScript_Zigzagoon::
 	end
 
 LavaridgeTown_House_Text_WifeWarmingEggInHotSprings:
-	.string "My wife's warming an EGG in the hot\n"
-	.string "springs. This is what she told me.\p"
-	.string "She left two POKéMON with the DAY CARE.\n"
-	.string "And they discovered that EGG!$"
+	.string "Vợ tôi đang ủ ấm một EGG trong suối\n"
+	.string "nước nóng. Cô ấy kể với tôi thế này.\p"
+	.string "Cô ấy gửi hai POKéMON ở DAY CARE. Rồi\n"
+	.string "người ta phát hiện ra EGG đó!$"
 
 LavaridgeTown_House_Text_Zigzagoon:
-	.string "ZIGZAGOON: Pshoo!$"
+	.string "ZIGZAGOON: Phù!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LavaridgeTown_House_Text_WifeWarmingEggInHotSprings
+	.global LavaridgeTown_House_Text_Zigzagoon
+@ END GENERATED LOCALIZATION EXPORTS

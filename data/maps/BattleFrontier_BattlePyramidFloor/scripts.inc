@@ -126,606 +126,750 @@ BattlePyramid_Retire::
 
 @ Also used by Trainer Hill
 BattleFacility_TrainerBattle_PlaceholderText:
-	.string "This is a sample message.$"
+	.string "Đây là một tin nhắn mẫu.$"
 
 gText_BattlePyramidConfirmRest::
-	.string "Your BATTLE PYRAMID quest will be\n"
-	.string "saved so that you may quit for now.\l"
-	.string "Is that okay?$"
+	.string "Tiến trình chinh phục BATTLE PYRAMID\n"
+	.string "của bạn sẽ được lưu để bạn có thể tạm\l"
+	.string "thoát. Bạn đồng ý chứ?$"
 
 gText_BattlePyramidConfirmRetire::
-	.string "Are you sure you want to quit your\n"
-	.string "PYRAMID quest?$"
+	.string "Bạn có chắc muốn từ bỏ hành trình\n"
+	.string "chinh phục PYRAMID không?$"
 
 BattlePyramid_Text_ExitHintUp1::
-	.string "This floor's exit is in\n"
-	.string "that direction: {UP_ARROW}$"
+	.string "Lối ra của tầng này nằm\n"
+	.string "ở hướng đó: {UP_ARROW}$"
 
 BattlePyramid_Text_ExitHintLeft1::
-	.string "This floor's exit is in\n"
-	.string "that direction: {LEFT_ARROW}$"
+	.string "Lối ra của tầng này nằm\n"
+	.string "ở hướng đó: {LEFT_ARROW}$"
 
 BattlePyramid_Text_ExitHintRight1::
-	.string "This floor's exit is in\n"
-	.string "that direction: {RIGHT_ARROW}$"
+	.string "Lối ra của tầng này nằm\n"
+	.string "ở hướng đó: {RIGHT_ARROW}$"
 
 BattlePyramid_Text_ExitHintDown1::
-	.string "This floor's exit is in\n"
-	.string "that direction: {DOWN_ARROW}$"
+	.string "Lối ra của tầng này nằm\n"
+	.string "ở hướng đó: {DOWN_ARROW}$"
 
 BattlePyramid_Text_ExitHintUp2::
-	.string "The exit on this floor is in\n"
-	.string "the {UP_ARROW} direction.$"
+	.string "Lối ra ở tầng này nằm\n"
+	.string "theo hướng {UP_ARROW}.$"
 
 BattlePyramid_Text_ExitHintLeft2::
-	.string "The exit on this floor is in\n"
-	.string "the {LEFT_ARROW} direction.$"
+	.string "Lối ra ở tầng này nằm\n"
+	.string "theo hướng {LEFT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintRight2::
-	.string "The exit on this floor is in\n"
-	.string "the {RIGHT_ARROW} direction.$"
+	.string "Lối ra ở tầng này nằm\n"
+	.string "theo hướng {RIGHT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintDown2::
-	.string "The exit on this floor is in\n"
-	.string "the {DOWN_ARROW} direction.$"
+	.string "Lối ra ở tầng này nằm\n"
+	.string "theo hướng {DOWN_ARROW}.$"
 
 BattlePyramid_Text_ExitHintUp3::
-	.string "The exit is over\n"
-	.string "that {UP_ARROW} way.$"
+	.string "Lối ra ở phía\n"
+	.string "hướng {UP_ARROW} kia.$"
 
 BattlePyramid_Text_ExitHintLeft3::
-	.string "The exit is over\n"
-	.string "that {LEFT_ARROW} way.$"
+	.string "Lối ra ở phía\n"
+	.string "hướng {LEFT_ARROW} kia.$"
 
 BattlePyramid_Text_ExitHintRight3::
-	.string "The exit is over\n"
-	.string "that {RIGHT_ARROW} way.$"
+	.string "Lối ra ở phía\n"
+	.string "hướng {RIGHT_ARROW} kia.$"
 
 BattlePyramid_Text_ExitHintDown3::
-	.string "The exit is over\n"
-	.string "that {DOWN_ARROW} way.$"
+	.string "Lối ra ở phía\n"
+	.string "hướng {DOWN_ARROW} kia.$"
 
 BattlePyramid_Text_ExitHintUp4::
-	.string "On this floor, the exit is somewhere\n"
-	.string "in the {UP_ARROW} direction.$"
+	.string "Ở tầng này, lối ra nằm đâu đó\n"
+	.string "theo hướng {UP_ARROW}.$"
 
 BattlePyramid_Text_ExitHintLeft4::
-	.string "On this floor, the exit is somewhere\n"
-	.string "in the {LEFT_ARROW} direction.$"
+	.string "Ở tầng này, lối ra nằm đâu đó\n"
+	.string "theo hướng {LEFT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintRight4::
-	.string "On this floor, the exit is somewhere\n"
-	.string "in the {RIGHT_ARROW} direction.$"
+	.string "Ở tầng này, lối ra nằm đâu đó\n"
+	.string "theo hướng {RIGHT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintDown4::
-	.string "On this floor, the exit is somewhere\n"
-	.string "in the {DOWN_ARROW} direction.$"
+	.string "Ở tầng này, lối ra nằm đâu đó\n"
+	.string "theo hướng {DOWN_ARROW}.$"
 
 BattlePyramid_Text_ExitHintUp5::
-	.string "The exit?\n"
-	.string "It's that {UP_ARROW} way.$"
+	.string "Lối ra à?\n"
+	.string "Ở hướng {UP_ARROW} đó.$"
 
 BattlePyramid_Text_ExitHintLeft5::
-	.string "The exit?\n"
-	.string "It's that {LEFT_ARROW} way.$"
+	.string "Lối ra à?\n"
+	.string "Ở hướng {LEFT_ARROW} đó.$"
 
 BattlePyramid_Text_ExitHintRight5::
-	.string "The exit?\n"
-	.string "It's that {RIGHT_ARROW} way.$"
+	.string "Lối ra à?\n"
+	.string "Ở hướng {RIGHT_ARROW} đó.$"
 
 BattlePyramid_Text_ExitHintDown5::
-	.string "The exit?\n"
-	.string "It's that {DOWN_ARROW} way.$"
+	.string "Lối ra à?\n"
+	.string "Ở hướng {DOWN_ARROW} đó.$"
 
 BattlePyramid_Text_ExitHintUp6::
-	.string "The exit happens to be in\n"
-	.string "the {UP_ARROW} direction.$"
+	.string "Lối ra tình cờ nằm\n"
+	.string "theo hướng {UP_ARROW}.$"
 
 BattlePyramid_Text_ExitHintLeft6::
-	.string "The exit happens to be in\n"
-	.string "the {LEFT_ARROW} direction.$"
+	.string "Lối ra tình cờ nằm\n"
+	.string "theo hướng {LEFT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintRight6::
-	.string "The exit happens to be in\n"
-	.string "the {RIGHT_ARROW} direction.$"
+	.string "Lối ra tình cờ nằm\n"
+	.string "theo hướng {RIGHT_ARROW}.$"
 
 BattlePyramid_Text_ExitHintDown6::
-	.string "The exit happens to be in\n"
-	.string "the {DOWN_ARROW} direction.$"
+	.string "Lối ra tình cờ nằm\n"
+	.string "theo hướng {DOWN_ARROW}.$"
 
 BattlePyramid_Text_EightItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are eight items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn tám vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_SevenItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are seven items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn bảy vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_SixItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are six items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn sáu vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_FiveItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are five items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn năm vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_FourItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are four items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn bốn vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_ThreeItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are three items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn ba vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_TwoItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There are two items left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn hai vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_OneItemRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There is one item left to\n"
-	.string "be found.$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Vẫn còn một vật phẩm chưa được tìm\n"
+	.string "thấy.$"
 
 BattlePyramid_Text_ZeroItemsRemaining1::
-	.string "Are you looking for items?\p"
-	.string "There isn't anything left to\n"
-	.string "be found!$"
+	.string "Bạn đang tìm vật phẩm à?\p"
+	.string "Không còn gì để tìm nữa!$"
 
 BattlePyramid_Text_EightItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are eight items\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Có tám vật phẩm nằm rải rác quanh đây.$"
 
 BattlePyramid_Text_SevenItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are seven items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn bảy vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_SixItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are six items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn sáu vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_FiveItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are five items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn năm vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_FourItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are four items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn bốn vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_ThreeItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are three items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn ba vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_TwoItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There are two items left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Vẫn còn hai vật phẩm nằm rải rác quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_OneItemRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There is just one item\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Chỉ có một vật phẩm nằm đâu đó quanh\n"
+	.string "đây.$"
 
 BattlePyramid_Text_ZeroItemsRemaining2::
-	.string "Because you won, I'll tell you\n"
-	.string "a little secret!\p"
-	.string "There isn't anything left\n"
-	.string "lying around here.$"
+	.string "Vì bạn đã thắng, tôi sẽ bật mí một bí\n"
+	.string "mật nhỏ!\p"
+	.string "Quanh đây không còn gì nữa.$"
 
 BattlePyramid_Text_EightItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are eight items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn tám vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_SevenItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are seven items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn bảy vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_SixItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are six items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn sáu vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_FiveItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are five items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn năm vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_FourItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are four items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn bốn vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_ThreeItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are three items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn ba vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_TwoItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are two items left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này vẫn còn hai vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_OneItemRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there's but one item left\n"
-	.string "waiting to be found on this floor.$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này chỉ còn một vật phẩm\n"
+	.string "đang chờ được tìm thấy.$"
 
 BattlePyramid_Text_ZeroItemsRemaining3::
-	.string "How's your stock of items holding up?\p"
-	.string "I reckon there are no more items\n"
-	.string "waiting to be found on this floor.\l"
-	.string "You take care now!$"
+	.string "Vật phẩm dự trữ của bạn còn đủ dùng\n"
+	.string "chứ?\p"
+	.string "Tôi đoán tầng này không còn vật phẩm\n"
+	.string "nào chờ được tìm thấy nữa. Bảo trọng\l"
+	.string "nhé!$"
 
 BattlePyramid_Text_EightItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be eight more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn tám vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_SevenItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be seven more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn bảy vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_SixItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be six more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn sáu vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_FiveItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be five more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn năm vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_FourItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be four more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn bốn vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_ThreeItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be three more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn ba vật phẩm trên mặt đất.$"
 
 BattlePyramid_Text_TwoItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be two more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ vẫn còn hai vật phẩm trên mặt đất.$"
 
 BattlePyramid_Text_OneItemRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appears to be only one more\n"
-	.string "item on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ chỉ còn một vật phẩm trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_ZeroItemsRemaining4::
-	.string "You're strong, so you've earned\n"
-	.string "a hint!\p"
-	.string "There appear to be no more\n"
-	.string "items on the ground.$"
+	.string "Bạn mạnh lắm, nên xứng đáng nhận một\n"
+	.string "gợi ý!\p"
+	.string "Có vẻ không còn vật phẩm nào trên mặt\n"
+	.string "đất.$"
 
 BattlePyramid_Text_EightItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are eight items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có tám\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_SevenItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are seven items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có bảy\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_SixItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are six items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có sáu\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_FiveItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are five items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có năm\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_FourItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are four items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có bốn\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_ThreeItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are three items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có ba\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_TwoItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are two items…$"
+	.string "Nghe nói ở tầng này của PYRAMID có hai\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_OneItemRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there is one item…$"
+	.string "Nghe nói ở tầng này của PYRAMID có một\n"
+	.string "vật phẩm...$"
 
 BattlePyramid_Text_ZeroItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
-	.string "I hear there are no items…$"
+	.string "Nghe nói ở tầng này của PYRAMID không\n"
+	.string "có vật phẩm nào...$"
 
 BattlePyramid_Text_EightItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are eight more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn tám vật phẩm.$"
 
 BattlePyramid_Text_SevenItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are seven more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn bảy vật phẩm.$"
 
 BattlePyramid_Text_SixItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are six more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn sáu vật phẩm.$"
 
 BattlePyramid_Text_FiveItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are five more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn năm vật phẩm.$"
 
 BattlePyramid_Text_FourItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are four more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn bốn vật phẩm.$"
 
 BattlePyramid_Text_ThreeItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are three more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn ba vật phẩm.$"
 
 BattlePyramid_Text_TwoItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are two more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn hai vật phẩm.$"
 
 BattlePyramid_Text_OneItemRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there is one more\n"
-	.string "item on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này vẫn còn một vật phẩm.$"
 
 BattlePyramid_Text_ZeroItemsRemaining6::
-	.string "Have you collected any items?\p"
-	.string "I believe there are no more\n"
-	.string "items on this floor.$"
+	.string "Bạn đã thu thập được vật phẩm nào\n"
+	.string "chưa?\p"
+	.string "Tôi tin tầng này không còn vật phẩm nào\n"
+	.string "nữa.$"
 
 BattlePyramid_Text_SevenTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still seven tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn bảy\n"
+	.string "HLV đáng gờm!$"
 
 BattlePyramid_Text_SixTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still six tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn sáu\n"
+	.string "HLV đáng gờm!$"
 
 BattlePyramid_Text_FiveTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still five tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn năm\n"
+	.string "HLV đáng gờm!$"
 
 BattlePyramid_Text_FourTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still four tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn bốn\n"
+	.string "HLV đáng gờm!$"
 
 BattlePyramid_Text_ThreeTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still three tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn ba HLV\n"
+	.string "đáng gờm!$"
 
 BattlePyramid_Text_TwoTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there are still two tough\n"
-	.string "TRAINERS other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn hai HLV\n"
+	.string "đáng gờm!$"
 
 BattlePyramid_Text_OneTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "But there's still one tough\n"
-	.string "TRAINER other than me!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Nhưng ngoài tôi ra vẫn còn một HLV\n"
+	.string "đáng gờm!$"
 
 BattlePyramid_Text_ZeroTrainersRemaining1::
-	.string "You were really awesome!\p"
-	.string "There's no one left that\n"
-	.string "can beat you!$"
+	.string "Bạn thật sự rất tuyệt!\p"
+	.string "Không còn ai có thể đánh bại bạn nữa!$"
 
 BattlePyramid_Text_SevenTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are seven TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn bảy HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_SixTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are six TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn sáu HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_FiveTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are five TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn năm HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_FourTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are four TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn bốn HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_ThreeTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are three TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn ba HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_TwoTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are two TRAINERS left!\n"
-	.string "Someone will humble you!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn hai HLV! Sẽ có\n"
+	.string "người cho bạn biết thế nào là khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_OneTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there's one TRAINER left!\n"
-	.string "I'm sure you will be humbled!$"
+	.string "Bực mình quá!\p"
+	.string "Nhưng vẫn còn một HLV! Tôi chắc\n"
+	.string "chắn người đó sẽ khiến bạn biết khiêm\l"
+	.string "tốn!$"
 
 BattlePyramid_Text_ZeroTrainersRemaining2::
-	.string "This is so upsetting!\p"
-	.string "But there are no more TRAINERS\n"
-	.string "who can engage you!$"
+	.string "Thật đáng buồn!\p"
+	.string "Nhưng chẳng còn HLV nào có thể\n"
+	.string "đấu với bạn nữa!$"
 
 BattlePyramid_Text_SevenTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are seven more TRAINERS\n"
-	.string "on this floor. Can you beat them all?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn bảy HLV.\n"
+	.string "Bạn có thể đánh bại tất cả không?$"
 
 BattlePyramid_Text_SixTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are six more TRAINERS\n"
-	.string "on this floor. Can you beat them all?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn sáu HLV.\n"
+	.string "Bạn có thể đánh bại tất cả không?$"
 
 BattlePyramid_Text_FiveTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are five more TRAINERS\n"
-	.string "on this floor. Can you beat them all?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn năm HLV.\n"
+	.string "Bạn có thể đánh bại tất cả không?$"
 
 BattlePyramid_Text_FourTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are four more TRAINERS\n"
-	.string "on this floor. Can you beat them all?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn bốn HLV.\n"
+	.string "Bạn có thể đánh bại tất cả không?$"
 
 BattlePyramid_Text_ThreeTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are three more TRAINERS\n"
-	.string "on this floor. Can you beat them all?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn ba HLV. Bạn\n"
+	.string "có thể đánh bại tất cả không?$"
 
 BattlePyramid_Text_TwoTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there are two more TRAINERS\n"
-	.string "on this floor. Can you beat them both?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn hai HLV.\n"
+	.string "Bạn có thể đánh bại cả hai không?$"
 
 BattlePyramid_Text_OneTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "But there's still one more TRAINER\n"
-	.string "on this floor. Can you prevail?$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Nhưng tầng này vẫn còn một HLV.\n"
+	.string "Bạn có thể chiến thắng không?$"
 
 BattlePyramid_Text_ZeroTrainersRemaining3::
-	.string "That's pretty impressive!\p"
-	.string "You've gone through all the TRAINERS\n"
-	.string "on this floor.$"
+	.string "Khá ấn tượng đấy!\p"
+	.string "Bạn đã vượt qua tất cả HLV trên\n"
+	.string "tầng này.$"
 
 BattlePyramid_Text_SevenTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the seven TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch bảy HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_SixTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the six TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch sáu HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_FiveTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the five TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch năm HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_FourTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the four TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch bốn HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_ThreeTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the three TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch ba HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_TwoTrainersRemaining4::
-	.string "Maybe you could sweep through\n"
-	.string "the two TRAINERS left on this floor.$"
+	.string "Có lẽ bạn có thể quét sạch hai HLV\n"
+	.string "còn lại trên tầng này.$"
 
 BattlePyramid_Text_OneTrainersRemaining4::
-	.string "Maybe you could complete your sweep\n"
-	.string "with the one TRAINER left on this floor.$"
+	.string "Có lẽ bạn có thể hoàn tất cuộc càn quét\n"
+	.string "với HLV cuối cùng trên tầng này.$"
 
 BattlePyramid_Text_ZeroTrainersRemaining4::
-	.string "There isn't a single person left who\n"
-	.string "can defeat you now…$"
+	.string "Giờ chẳng còn một ai có thể đánh bại\n"
+	.string "bạn...$"
 
 BattlePyramid_Text_SevenTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the seven expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại bảy HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_SixTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the six expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại sáu HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_FiveTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the five expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại năm HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_FourTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the four expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại bốn HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_ThreeTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the three expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại ba HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_TwoTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the two expert TRAINERS who remain.$"
+	.string "Có lẽ bạn đủ sức đánh bại hai HLV\n"
+	.string "lão luyện còn lại.$"
 
 BattlePyramid_Text_OneTrainersRemaining5::
-	.string "You may have what it takes to beat\n"
-	.string "the one expert TRAINER who remains.$"
+	.string "Có lẽ bạn đủ sức đánh bại HLV lão\n"
+	.string "luyện cuối cùng.$"
 
 BattlePyramid_Text_ZeroTrainersRemaining5::
-	.string "Your skills are beyond reproach.\p"
-	.string "There are no more TRAINERS here\n"
-	.string "who have any chance of beating you.$"
+	.string "Kỹ năng của bạn thật không chê vào đâu\n"
+	.string "được.\p"
+	.string "Không còn HLV nào ở đây có cơ hội\n"
+	.string "đánh bại bạn.$"
 
 BattlePyramid_Text_SevenTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the seven remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "bảy HLV còn lại không?$"
 
 BattlePyramid_Text_SixTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the six remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "sáu HLV còn lại không?$"
 
 BattlePyramid_Text_FiveTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the five remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "năm HLV còn lại không?$"
 
 BattlePyramid_Text_FourTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the four remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "bốn HLV còn lại không?$"
 
 BattlePyramid_Text_ThreeTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the three remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "ba HLV còn lại không?$"
 
 BattlePyramid_Text_TwoTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the two remaining TRAINERS?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "hai HLV còn lại không?$"
 
 BattlePyramid_Text_OneTrainersRemaining6::
-	.string "Can you keep winning against\n"
-	.string "the last remaining TRAINER?$"
+	.string "Bạn có thể tiếp tục chiến thắng trước\n"
+	.string "HLV cuối cùng không?$"
 
 BattlePyramid_Text_ZeroTrainersRemaining6::
-	.string "There aren't any TRAINERS left that\n"
-	.string "can take you on now…$"
+	.string "Giờ chẳng còn HLV nào có thể đối\n"
+	.string "đầu với bạn...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFacility_TrainerBattle_PlaceholderText
+	.global gText_BattlePyramidConfirmRest
+	.global gText_BattlePyramidConfirmRetire
+	.global BattlePyramid_Text_ExitHintUp1
+	.global BattlePyramid_Text_ExitHintLeft1
+	.global BattlePyramid_Text_ExitHintRight1
+	.global BattlePyramid_Text_ExitHintDown1
+	.global BattlePyramid_Text_ExitHintUp2
+	.global BattlePyramid_Text_ExitHintLeft2
+	.global BattlePyramid_Text_ExitHintRight2
+	.global BattlePyramid_Text_ExitHintDown2
+	.global BattlePyramid_Text_ExitHintUp3
+	.global BattlePyramid_Text_ExitHintLeft3
+	.global BattlePyramid_Text_ExitHintRight3
+	.global BattlePyramid_Text_ExitHintDown3
+	.global BattlePyramid_Text_ExitHintUp4
+	.global BattlePyramid_Text_ExitHintLeft4
+	.global BattlePyramid_Text_ExitHintRight4
+	.global BattlePyramid_Text_ExitHintDown4
+	.global BattlePyramid_Text_ExitHintUp5
+	.global BattlePyramid_Text_ExitHintLeft5
+	.global BattlePyramid_Text_ExitHintRight5
+	.global BattlePyramid_Text_ExitHintDown5
+	.global BattlePyramid_Text_ExitHintUp6
+	.global BattlePyramid_Text_ExitHintLeft6
+	.global BattlePyramid_Text_ExitHintRight6
+	.global BattlePyramid_Text_ExitHintDown6
+	.global BattlePyramid_Text_EightItemsRemaining1
+	.global BattlePyramid_Text_SevenItemsRemaining1
+	.global BattlePyramid_Text_SixItemsRemaining1
+	.global BattlePyramid_Text_FiveItemsRemaining1
+	.global BattlePyramid_Text_FourItemsRemaining1
+	.global BattlePyramid_Text_ThreeItemsRemaining1
+	.global BattlePyramid_Text_TwoItemsRemaining1
+	.global BattlePyramid_Text_OneItemRemaining1
+	.global BattlePyramid_Text_ZeroItemsRemaining1
+	.global BattlePyramid_Text_EightItemsRemaining2
+	.global BattlePyramid_Text_SevenItemsRemaining2
+	.global BattlePyramid_Text_SixItemsRemaining2
+	.global BattlePyramid_Text_FiveItemsRemaining2
+	.global BattlePyramid_Text_FourItemsRemaining2
+	.global BattlePyramid_Text_ThreeItemsRemaining2
+	.global BattlePyramid_Text_TwoItemsRemaining2
+	.global BattlePyramid_Text_OneItemRemaining2
+	.global BattlePyramid_Text_ZeroItemsRemaining2
+	.global BattlePyramid_Text_EightItemsRemaining3
+	.global BattlePyramid_Text_SevenItemsRemaining3
+	.global BattlePyramid_Text_SixItemsRemaining3
+	.global BattlePyramid_Text_FiveItemsRemaining3
+	.global BattlePyramid_Text_FourItemsRemaining3
+	.global BattlePyramid_Text_ThreeItemsRemaining3
+	.global BattlePyramid_Text_TwoItemsRemaining3
+	.global BattlePyramid_Text_OneItemRemaining3
+	.global BattlePyramid_Text_ZeroItemsRemaining3
+	.global BattlePyramid_Text_EightItemsRemaining4
+	.global BattlePyramid_Text_SevenItemsRemaining4
+	.global BattlePyramid_Text_SixItemsRemaining4
+	.global BattlePyramid_Text_FiveItemsRemaining4
+	.global BattlePyramid_Text_FourItemsRemaining4
+	.global BattlePyramid_Text_ThreeItemsRemaining4
+	.global BattlePyramid_Text_TwoItemsRemaining4
+	.global BattlePyramid_Text_OneItemRemaining4
+	.global BattlePyramid_Text_ZeroItemsRemaining4
+	.global BattlePyramid_Text_EightItemsRemaining5
+	.global BattlePyramid_Text_SevenItemsRemaining5
+	.global BattlePyramid_Text_SixItemsRemaining5
+	.global BattlePyramid_Text_FiveItemsRemaining5
+	.global BattlePyramid_Text_FourItemsRemaining5
+	.global BattlePyramid_Text_ThreeItemsRemaining5
+	.global BattlePyramid_Text_TwoItemsRemaining5
+	.global BattlePyramid_Text_OneItemRemaining5
+	.global BattlePyramid_Text_ZeroItemsRemaining5
+	.global BattlePyramid_Text_EightItemsRemaining6
+	.global BattlePyramid_Text_SevenItemsRemaining6
+	.global BattlePyramid_Text_SixItemsRemaining6
+	.global BattlePyramid_Text_FiveItemsRemaining6
+	.global BattlePyramid_Text_FourItemsRemaining6
+	.global BattlePyramid_Text_ThreeItemsRemaining6
+	.global BattlePyramid_Text_TwoItemsRemaining6
+	.global BattlePyramid_Text_OneItemRemaining6
+	.global BattlePyramid_Text_ZeroItemsRemaining6
+	.global BattlePyramid_Text_SevenTrainersRemaining1
+	.global BattlePyramid_Text_SixTrainersRemaining1
+	.global BattlePyramid_Text_FiveTrainersRemaining1
+	.global BattlePyramid_Text_FourTrainersRemaining1
+	.global BattlePyramid_Text_ThreeTrainersRemaining1
+	.global BattlePyramid_Text_TwoTrainersRemaining1
+	.global BattlePyramid_Text_OneTrainersRemaining1
+	.global BattlePyramid_Text_ZeroTrainersRemaining1
+	.global BattlePyramid_Text_SevenTrainersRemaining2
+	.global BattlePyramid_Text_SixTrainersRemaining2
+	.global BattlePyramid_Text_FiveTrainersRemaining2
+	.global BattlePyramid_Text_FourTrainersRemaining2
+	.global BattlePyramid_Text_ThreeTrainersRemaining2
+	.global BattlePyramid_Text_TwoTrainersRemaining2
+	.global BattlePyramid_Text_OneTrainersRemaining2
+	.global BattlePyramid_Text_ZeroTrainersRemaining2
+	.global BattlePyramid_Text_SevenTrainersRemaining3
+	.global BattlePyramid_Text_SixTrainersRemaining3
+	.global BattlePyramid_Text_FiveTrainersRemaining3
+	.global BattlePyramid_Text_FourTrainersRemaining3
+	.global BattlePyramid_Text_ThreeTrainersRemaining3
+	.global BattlePyramid_Text_TwoTrainersRemaining3
+	.global BattlePyramid_Text_OneTrainersRemaining3
+	.global BattlePyramid_Text_ZeroTrainersRemaining3
+	.global BattlePyramid_Text_SevenTrainersRemaining4
+	.global BattlePyramid_Text_SixTrainersRemaining4
+	.global BattlePyramid_Text_FiveTrainersRemaining4
+	.global BattlePyramid_Text_FourTrainersRemaining4
+	.global BattlePyramid_Text_ThreeTrainersRemaining4
+	.global BattlePyramid_Text_TwoTrainersRemaining4
+	.global BattlePyramid_Text_OneTrainersRemaining4
+	.global BattlePyramid_Text_ZeroTrainersRemaining4
+	.global BattlePyramid_Text_SevenTrainersRemaining5
+	.global BattlePyramid_Text_SixTrainersRemaining5
+	.global BattlePyramid_Text_FiveTrainersRemaining5
+	.global BattlePyramid_Text_FourTrainersRemaining5
+	.global BattlePyramid_Text_ThreeTrainersRemaining5
+	.global BattlePyramid_Text_TwoTrainersRemaining5
+	.global BattlePyramid_Text_OneTrainersRemaining5
+	.global BattlePyramid_Text_ZeroTrainersRemaining5
+	.global BattlePyramid_Text_SevenTrainersRemaining6
+	.global BattlePyramid_Text_SixTrainersRemaining6
+	.global BattlePyramid_Text_FiveTrainersRemaining6
+	.global BattlePyramid_Text_FourTrainersRemaining6
+	.global BattlePyramid_Text_ThreeTrainersRemaining6
+	.global BattlePyramid_Text_TwoTrainersRemaining6
+	.global BattlePyramid_Text_OneTrainersRemaining6
+	.global BattlePyramid_Text_ZeroTrainersRemaining6
+@ END GENERATED LOCALIZATION EXPORTS

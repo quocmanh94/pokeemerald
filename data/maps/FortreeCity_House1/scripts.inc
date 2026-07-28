@@ -59,38 +59,49 @@ FortreeCity_House1_EventScript_Zigzagoon::
 	end
 
 FortreeCity_House1_Text_YouWillTradeWontYou:
-	.string "Wrooooaaar! I need it!\n"
-	.string "I have to get me a {STR_VAR_1}!\l"
-	.string "I'll do anything for it!\p"
-	.string "…Uh… Did you hear that?\n"
-	.string "My shout from the bottom of my heart?\p"
-	.string "Having heard that, you will trade\n"
-	.string "your {STR_VAR_1} for my {STR_VAR_2},\l"
-	.string "won't you?$"
+	.string "Gàoooo! Tôi cần nó! Tôi nhất định phải\n"
+	.string "có một {STR_VAR_1}! Tôi sẽ làm\l"
+	.string "bất cứ điều gì để có nó!\p"
+	.string "...Ờ... Bạn có nghe thấy không? Tiếng hét\n"
+	.string "từ tận đáy lòng tôi ấy?\p"
+	.string "Nghe được rồi thì bạn sẽ đổi\n"
+	.string "{STR_VAR_1} của mình lấy\l"
+	.string "{STR_VAR_2} của tôi, phải không?$"
 
 FortreeCity_House1_Text_MonYouTakeCare:
-	.string "Oh, yeah, right on!\p"
-	.string "{STR_VAR_1}, welcome!\n"
-	.string "{STR_VAR_2}, you take care!$"
+	.string "Ồ, tuyệt, đúng ý tôi rồi!\p"
+	.string "Chào mừng {STR_VAR_1}!\n"
+	.string "{STR_VAR_2}, hãy tự chăm sóc\l"
+	.string "mình nhé!$"
 
 FortreeCity_House1_Text_ThisIsntAMon:
-	.string "Uh, no, I don't think so.\n"
-	.string "That isn't a {STR_VAR_1}.$"
+	.string "Ờ, không, tôi không nghĩ vậy. Đó không\n"
+	.string "phải là {STR_VAR_1}.$"
 
 FortreeCity_House1_Text_YouWontTradeMe:
-	.string "No? You won't trade me?\n"
-	.string "Even after I bared my heart to you?$"
+	.string "Không ư? Bạn không chịu đổi với tôi\n"
+	.string "sao? Ngay cả sau khi tôi đã dốc hết lòng\l"
+	.string "mình với bạn?$"
 
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
-	.string "I'm going to make VOLBEAT super\n"
-	.string "strong from this moment on!\p"
-	.string "I hope you do the same with PLUSLE!$"
+	.string "Từ giờ, tôi sẽ huấn luyện VOLBEAT trở\n"
+	.string "nên siêu mạnh!\p"
+	.string "Tôi hy vọng bạn cũng làm vậy với\n"
+	.string "PLUSLE!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
-	.string "Trading POKéMON with others…\p"
-	.string "It's as if you're trading your own\n"
-	.string "memories with other people.$"
+	.string "Trao đổi POKéMON với người khác...\p"
+	.string "Cứ như thể bạn đang trao đổi chính\n"
+	.string "những ký ức của mình với họ vậy.$"
 
 FortreeCity_House1_Text_Zigzagoon:
 	.string "ZIGZAGOON: Gumomoh?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_House1_Text_YouWillTradeWontYou
+	.global FortreeCity_House1_Text_MonYouTakeCare
+	.global FortreeCity_House1_Text_ThisIsntAMon
+	.global FortreeCity_House1_Text_YouWontTradeMe
+	.global FortreeCity_House1_Text_GoingToMakeVolbeatStrong
+	.global FortreeCity_House1_Text_TradingMemoriesWithOthers
+@ END GENERATED LOCALIZATION EXPORTS

@@ -28,28 +28,34 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
-	.string "Listen, kid, are you working\n"
-	.string "on a POKéDEX?\p"
-	.string "Hmm… Go to the SAFARI ZONE.\n"
-	.string "That's my suggestion.$"
+	.string "Nghe này, nhóc đang hoàn thành POKéDEX\n"
+	.string "à?\p"
+	.string "Hừm... Hãy đến SAFARI ZONE. Đó là lời\n"
+	.string "khuyên của tôi.$"
 
 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
-	.string "Have you done anything at\n"
-	.string "the RECORD CORNER?\p"
-	.string "It's pretty neat. It mixes and matches\n"
-	.string "the records of TRAINERS.\p"
-	.string "I don't know quite how it works,\n"
-	.string "but it's cool. It's exciting, even!$"
+	.string "Bạn đã thử làm gì ở RECORD CORNER\n"
+	.string "chưa?\p"
+	.string "Chỗ đó khá hay. Nó trộn và ghép các bản\n"
+	.string "ghi của HLV.\p"
+	.string "Tôi không rõ nó hoạt động thế nào,\n"
+	.string "nhưng thú vị lắm. Thậm chí còn rất hào\l"
+	.string "hứng nữa!$"
 
 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
-	.string "Oh, wow, you have a POKéNAV!\n"
-	.string "And it's just like mine!\p"
-	.string "Do you know about POKéNAV's\n"
-	.string "MATCH CALL system?\p"
-	.string "Access it, and you can chat with\n"
-	.string "registered TRAINERS anytime.\p"
-	.string "It also shows you which TRAINERS\n"
-	.string "want a rematch with you.\p"
-	.string "It's really nifty! Those DEVON guys\n"
-	.string "sure know what they're doing!$"
+	.string "Ồ, tuyệt thật, bạn có POKéNAV! Nó giống\n"
+	.string "hệt của tôi!\p"
+	.string "Bạn có biết hệ thống MATCH CALL của\n"
+	.string "POKéNAV không?\p"
+	.string "Mở nó ra, bạn có thể trò chuyện với các\n"
+	.string "HLV đã đăng ký bất cứ lúc nào.\p"
+	.string "Nó còn cho biết HLV nào muốn tái\n"
+	.string "đấu với bạn.\p"
+	.string "Tiện thật đấy! Mấy người bên DEVON\n"
+	.string "đúng là rất giỏi!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_PokemonCenter_1F_Text_GoToSafariZone
+	.global FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat
+	.global FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav
+@ END GENERATED LOCALIZATION EXPORTS

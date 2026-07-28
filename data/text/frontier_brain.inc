@@ -1,108 +1,131 @@
 @ Battle Tower
 gText_AnabelWonSilver::
-	.string "It's very disappointing…$"
+	.string "Thật đáng thất vọng...$"
 
 gText_AnabelDefeatSilver::
-	.string "Okay, I understand…$"
+	.string "Được rồi, tôi hiểu...$"
 
 gText_AnabelWonGold::
-	.string "I'm terribly sorry…$"
+	.string "Tôi vô cùng xin lỗi...$"
 
 gText_AnabelDefeatGold::
-	.string "Thank you…$"
+	.string "Cảm ơn bạn...$"
 
 @ Battle Dome
 gText_TuckerWonSilver::
-	.string "Ahahaha! Aren't you embarrassed?\n"
-	.string "Everyone's watching!$"
+	.string "Ahahaha! Cậu không thấy xấu hổ sao?\n"
+	.string "Mọi người đang nhìn đấy!$"
 
 gText_TuckerDefeatSilver::
-	.string "Grr…\n"
-	.string "What the…$"
+	.string "Grr... Cái quái...$"
 
 gText_TuckerWonGold::
-	.string "My DOME ACE title isn't just for show!$"
+	.string "Danh hiệu DOME ACE của ta không chỉ để\n"
+	.string "trưng đâu!$"
 
 gText_TuckerDefeatGold::
-	.string "Ahahaha!\n"
-	.string "You're inspiring!$"
+	.string "Ahahaha! Cậu thật truyền cảm hứng!$"
 
 @ Battle Factory
 gText_NolandWonSilver::
-	.string "Way to work!\n"
-	.string "That was a good lesson, eh?$"
+	.string "Khá lắm! Vừa học được một bài hay, phải\n"
+	.string "không?$"
 
 gText_NolandDefeatSilver::
-	.string "Good job!\n"
-	.string "You know what you're doing!$"
+	.string "Tốt lắm! Cậu biết mình đang làm gì đấy!$"
 
 gText_NolandWonGold::
-	.string "Hey, hey, hey!\n"
-	.string "You're finished already?$"
+	.string "Này, này, này! Cậu xong đời nhanh vậy\n"
+	.string "sao?$"
 
 gText_NolandDefeatGold::
-	.string "What happened here?$"
+	.string "Chuyện gì vừa xảy ra thế này?$"
 
 @ Battle Pike
 gText_LucyWonSilver::
-	.string "Humph…$"
+	.string "Hừm...$"
 
 gText_LucyDefeatSilver::
-	.string "Urk…$"
+	.string "Ực...$"
 
 gText_LucyWonGold::
-	.string "Hah!$"
+	.string "Ha!$"
 
 gText_LucyDefeatGold::
-	.string "Darn!$"
+	.string "Chết tiệt!$"
 
 @ Battle Arena
 gText_GretaWonSilver::
-	.string "Oh, come on!\n"
-	.string "You have to try harder than that!$"
+	.string "Ôi, thôi nào! Cậu phải cố hơn thế chứ!$"
 
 gText_GretaDefeatSilver::
-	.string "No way!\n"
-	.string "Good job!$"
+	.string "Không thể nào! Giỏi lắm!$"
 
 gText_GretaWonGold::
-	.string "Heheh!\n"
-	.string "What did you expect?$"
+	.string "Heheh! Cậu mong đợi gì chứ?$"
 
 gText_GretaDefeatGold::
-	.string "Huh?\n"
-	.string "Are you serious?!$"
+	.string "Hả? Cậu nghiêm túc đấy sao?!$"
 
 @ Battle Palace
 gText_SpenserWonSilver::
-	.string "Your POKéMON are wimpy because\n"
-	.string "you're wimpy as a TRAINER!$"
+	.string "POKéMON của ngươi yếu đuối vì HLV\n"
+	.string "như ngươi cũng yếu đuối!$"
 
 gText_SpenserDefeatSilver::
-	.string "Ah…\n"
-	.string "Now this is something else…$"
+	.string "À... Chuyện này lại khác hẳn...$"
 
 gText_SpenserWonGold::
-	.string "Gwahahaha!\n"
-	.string "My brethren, we have nothing to fear!$"
+	.string "Gwahahaha! Hỡi các chiến hữu, chúng ta\n"
+	.string "chẳng có gì phải sợ!$"
 
 gText_SpenserDefeatGold::
-	.string "Gwah!\n"
-	.string "Hahahaha!$"
+	.string "Gwah! Hahahaha!$"
 
 @ Battle Pyramid
 gText_BrandonWonSilver::
-	.string "Hey! What's wrong with you!\n"
-	.string "Let's see some effort! Get up!$"
+	.string "Này! Có chuyện gì với bạn vậy! Cố gắng\n"
+	.string "lên xem nào! Đứng dậy!$"
 
 gText_BrandonDefeatSilver::
-	.string "That's it! You've done great!\n"
-	.string "You've worked hard for this!$"
+	.string "Đúng thế! Bạn làm tốt lắm! Bao công sức\n"
+	.string "của bạn đã được đền đáp!$"
 
 gText_BrandonWonGold::
-	.string "Hey! Don't you give up now!\n"
-	.string "Get up! Don't lose faith in yourself!$"
+	.string "Này! Đừng bỏ cuộc lúc này! Đứng dậy!\n"
+	.string "Đừng đánh mất niềm tin vào bản thân!$"
 
 gText_BrandonDefeatGold::
-	.string "That's it! You've done it!\n"
-	.string "You kept working for this!$"
+	.string "Đúng thế! Bạn làm được rồi! Bao nỗ lực\n"
+	.string "bền bỉ của bạn đã được đền đáp!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_AnabelWonSilver
+	.global gText_AnabelDefeatSilver
+	.global gText_AnabelWonGold
+	.global gText_AnabelDefeatGold
+	.global gText_TuckerWonSilver
+	.global gText_TuckerDefeatSilver
+	.global gText_TuckerWonGold
+	.global gText_TuckerDefeatGold
+	.global gText_NolandWonSilver
+	.global gText_NolandDefeatSilver
+	.global gText_NolandWonGold
+	.global gText_NolandDefeatGold
+	.global gText_LucyWonSilver
+	.global gText_LucyDefeatSilver
+	.global gText_LucyWonGold
+	.global gText_LucyDefeatGold
+	.global gText_GretaWonSilver
+	.global gText_GretaDefeatSilver
+	.global gText_GretaWonGold
+	.global gText_GretaDefeatGold
+	.global gText_SpenserWonSilver
+	.global gText_SpenserDefeatSilver
+	.global gText_SpenserWonGold
+	.global gText_SpenserDefeatGold
+	.global gText_BrandonWonSilver
+	.global gText_BrandonDefeatSilver
+	.global gText_BrandonWonGold
+	.global gText_BrandonDefeatGold
+@ END GENERATED LOCALIZATION EXPORTS

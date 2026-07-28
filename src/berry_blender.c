@@ -259,12 +259,12 @@ static const u16 sEmpty_Pal[16 * 14] = {0};
 static const u8 sUnusedText_YesNo[] = _("YES\nNO");
 static const u8 sUnusedText_2[] = _("▶");
 static const u8 sUnusedText_Space[] = _(" ");
-static const u8 sUnusedText_Terminating[] = _("Terminating.");
-static const u8 sUnusedText_LinkPartnerNotFound[] = _("Link partner(s) not found.\nPlease try again.\p");
+static const u8 sUnusedText_Terminating[] = _("Đang kết thúc.");
+static const u8 sUnusedText_LinkPartnerNotFound[] = _("Không tìm thấy người kết nối.\nVui lòng thử lại.\p");
 
-static const u8 sText_BerryBlenderStart[] = _("Starting up the BERRY BLENDER.\pPlease select a BERRY from your BAG\nto put in the BERRY BLENDER.\p");
+static const u8 sText_BerryBlenderStart[] = _("Đang khởi động BERRY BLENDER.\pHãy chọn một BERRY trong BAG\nđể cho vào BERRY BLENDER.\p");
 static const u8 sText_NewParagraph[] = _("\p");
-static const u8 sText_WasMade[] = _(" was made!");
+static const u8 sText_WasMade[] = _(" đã được tạo!");
 static const u8 sText_Mister[] = _("MISTER");
 static const u8 sText_Laddie[] = _("LADDIE");
 static const u8 sText_Lassie[] = _("LASSIE");
@@ -283,13 +283,13 @@ static const u8 *const sBlenderOpponentsNames[] =
 };
 
 static const u8 sText_PressAToStart[] = _("Press the A Button to start.");
-static const u8 sText_PleaseWaitAWhile[] = _("Please wait a while.");
-static const u8 sText_CommunicationStandby[] = _("Communication standby…");
-static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Would you like to blend another BERRY?");
-static const u8 sText_RunOutOfBerriesForBlending[] = _("You've run out of BERRIES for\nblending in the BERRY BLENDER.\p");
-static const u8 sText_YourPokeblockCaseIsFull[] = _("Your {POKEBLOCK} CASE is full.\p");
-static const u8 sText_HasNoBerriesToPut[] = _(" has no BERRIES to put in\nthe BERRY BLENDER.");
-static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("'s {POKEBLOCK} CASE is full.\p");
+static const u8 sText_PleaseWaitAWhile[] = _("Vui lòng chờ một lát.");
+static const u8 sText_CommunicationStandby[] = _("Đang chờ liên lạc…");
+static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Bạn muốn trộn thêm một BERRY không?");
+static const u8 sText_RunOutOfBerriesForBlending[] = _("Bạn đã hết BERRIES để trộn\ntrong BERRY BLENDER.\p");
+static const u8 sText_YourPokeblockCaseIsFull[] = _("{POKEBLOCK} CASE của bạn đã đầy.\p");
+static const u8 sText_HasNoBerriesToPut[] = _(" không có BERRIES để cho vào\nBERRY BLENDER.");
+static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _(" không còn chỗ trong\n{POKEBLOCK} CASE.\p");
 static const u8 sText_BlendingResults[] = _("RESULTS OF BLENDING");
 static const u8 sText_BerryUsed[] = _("BERRY USED");
 static const u8 sText_SpaceBerry[] = _(" BERRY");
@@ -302,8 +302,8 @@ static const u8 sText_Dot[] = _(".");
 static const u8 sText_NewLine[] = _("\n");
 static const u8 sText_Space[] = _(" ");
 static const u8 sText_Ranking[] = _("RANKING");
-static const u8 sText_TheLevelIs[] = _("The level is ");
-static const u8 sText_TheFeelIs[] = _(", and the feel is ");
+static const u8 sText_TheLevelIs[] = _("Cấp độ là ");
+static const u8 sText_TheFeelIs[] = _(", độ mịn là ");
 static const u8 sText_Dot2[] = _(".");
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -3902,3 +3902,20 @@ static bool32 PrintMessage(s16 *textState, const u8 *string, s32 textSpeed)
 
     return FALSE;
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C00579 = sUnusedText_Terminating;
+const u8 *const gLocalizationSource_C00580 = sUnusedText_LinkPartnerNotFound;
+const u8 *const gLocalizationSource_C00581 = sText_BerryBlenderStart;
+const u8 *const gLocalizationSource_C00582 = sText_WasMade;
+const u8 *const gLocalizationSource_C00583 = sText_PleaseWaitAWhile;
+const u8 *const gLocalizationSource_C00584 = sText_CommunicationStandby;
+const u8 *const gLocalizationSource_C00585 = sText_WouldLikeToBlendAnotherBerry;
+const u8 *const gLocalizationSource_C00586 = sText_RunOutOfBerriesForBlending;
+const u8 *const gLocalizationSource_C00587 = sText_YourPokeblockCaseIsFull;
+const u8 *const gLocalizationSource_C00588 = sText_HasNoBerriesToPut;
+const u8 *const gLocalizationSource_C00589 = sText_ApostropheSPokeblockCaseIsFull;
+const u8 *const gLocalizationSource_C00590 = sText_TheLevelIs;
+const u8 *const gLocalizationSource_C00591 = sText_TheFeelIs;
+// END GENERATED LOCALIZATION EXPORTS

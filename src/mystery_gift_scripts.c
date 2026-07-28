@@ -3,7 +3,7 @@
 #include "mystery_gift_server.h"
 #include "mystery_gift.h"
 
-static const u8 sText_CanceledReadingCard[] = _("Canceled reading\nthe Card.");
+static const u8 sText_CanceledReadingCard[] = _("Đã hủy đọc\nCARD.");
 
 
 //==================
@@ -215,3 +215,8 @@ const struct MysteryGiftServerCmd gMysteryGiftServerScript_SendWonderCard[] = {
     {SVR_GOTO_IF_EQ, HAS_NO_CARD, sServerScript_SendCard},
     {SVR_GOTO, .ptr = sServerScript_HasCard} // HAS_SAME_CARD
 };
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02639 = sText_CanceledReadingCard;
+// END GENERATED LOCALIZATION EXPORTS

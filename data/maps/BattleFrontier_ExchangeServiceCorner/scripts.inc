@@ -431,291 +431,335 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 	end
 
 BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
-	.string "Hello, this is the EXCHANGE SERVICE\n"
+	.string "Xin chào, đây là EXCHANGE SERVICE\n"
 	.string "CORNER.\p"
-	.string "We exchange the Battle Points you\n"
-	.string "have collected for lovely prizes.\p"
-	.string "Please choose a prize from this list.$"
+	.string "Chúng tôi đổi số Battle Points bạn đã\n"
+	.string "tích lũy lấy những phần thưởng đáng\l"
+	.string "yêu.\p"
+	.string "Vui lòng chọn một phần thưởng trong\n"
+	.string "danh sách này.$"
 
 @ Unused
 BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
-	.string "Please choose a prize from this list.$"
+	.string "Vui lòng chọn một phần thưởng trong\n"
+	.string "danh sách này.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
-	.string "You've chosen the KISS POSTER.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn KISS POSTER. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
-	.string "You've chosen the KISS CUSHION.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn KISS CUSHION. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll:
-	.string "You've chosen the SMOOCHUM DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn SMOOCHUM DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll:
-	.string "You've chosen the TOGEPI DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn TOGEPI DOLL. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
-	.string "You've chosen the MEOWTH DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn MEOWTH DOLL. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
-	.string "You've chosen the CLEFAIRY DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CLEFAIRY DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
-	.string "You've chosen the DITTO DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn DITTO DOLL. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
-	.string "You've chosen the CYNDAQUIL DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CYNDAQUIL DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
-	.string "You've chosen the CHIKORITA DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CHIKORITA DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
-	.string "You've chosen the TOTODILE DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn TOTODILE DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll:
-	.string "You've chosen the LAPRAS DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn LAPRAS DOLL. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
-	.string "You've chosen the SNORLAX DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn SNORLAX DOLL. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
-	.string "You've chosen the VENUSAUR DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn VENUSAUR DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
-	.string "You've chosen the CHARIZARD DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CHARIZARD DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
-	.string "You've chosen the BLASTOISE DOLL.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn BLASTOISE DOLL. Đúng\n"
+	.string "không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
-	.string "You've chosen the PROTEIN.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn PROTEIN. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium:
-	.string "You've chosen the CALCIUM.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CALCIUM. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron:
-	.string "You've chosen the IRON.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn IRON. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc:
-	.string "You've chosen the ZINC.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn ZINC. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
-	.string "You've chosen the CARBOS.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CARBOS. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
-	.string "You've chosen the HP UP.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn HP UP. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
-	.string "You've chosen the BRIGHTPOWDER.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn BRIGHTPOWDER. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
-	.string "You've chosen the WHITE HERB.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn WHITE HERB. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
-	.string "You've chosen the QUICK CLAW.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn QUICK CLAW. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
-	.string "You've chosen the MENTAL HERB.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn MENTAL HERB. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
-	.string "You've chosen the CHOICE BAND.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn CHOICE BAND. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
-	.string "You've chosen the KING'S ROCK.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn KING'S ROCK. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
-	.string "You've chosen the FOCUS BAND.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn FOCUS BAND. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:
-	.string "You've chosen the SCOPE LENS.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn SCOPE LENS. Đúng không?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
-	.string "You've chosen the LEFTOVERS.\n"
-	.string "Is that correct?$"
+	.string "Bạn đã chọn LEFTOVERS. Đúng chứ?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
-	.string "Thank you!\n"
-	.string "We'll send it to your PC at home.$"
+	.string "Cảm ơn bạn! Chúng tôi sẽ gửi nó đến PC\n"
+	.string "ở nhà của bạn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
-	.string "Here is your prize!$"
+	.string "Đây là phần thưởng của bạn!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
-	.string "I'm so sorry…\n"
-	.string "You don't have enough Battle Points…$"
+	.string "Thành thật xin lỗi... Bạn không có đủ\n"
+	.string "Battle Points...$"
 
 BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
-	.string "I'm so sorry…\n"
-	.string "Your PC appears to be full…$"
+	.string "Thành thật xin lỗi... PC của bạn có vẻ đã\n"
+	.string "đầy...$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
-	.string "I'm so sorry…\n"
-	.string "You don't have space to hold it…$"
+	.string "Thành thật xin lỗi... Bạn không còn chỗ\n"
+	.string "để cất nó...$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
-	.string "Thank you very much.\p"
-	.string "Please visit us when you have\n"
-	.string "saved up Battle Points.$"
+	.string "Xin chân thành cảm ơn.\p"
+	.string "Hãy ghé lại khi bạn đã tích đủ Battle\n"
+	.string "Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
-	.string "Oh, they're so nice!\n"
-	.string "I wish I had them!\l"
-	.string "Cute cushions!\l"
-	.string "Big plush DOLLS!\l"
-	.string "Little plush DOLLS!\l"
-	.string "I wish I had them all!$"
+	.string "Ôi, chúng đẹp quá! Ước gì mình có\n"
+	.string "chúng! Những chiếc đệm dễ thương!\l"
+	.string "DOLLS bông cỡ lớn! DOLLS bông cỡ nhỏ!\l"
+	.string "Ước gì mình có hết!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
-	.string "Leave it to your mommy!\p"
-	.string "If it's anything you want, I'll go\n"
-	.string "through anything to get it, honey!$"
+	.string "Cứ để mẹ lo!\p"
+	.string "Chỉ cần là thứ con muốn, mẹ sẽ làm mọi\n"
+	.string "cách để lấy cho con, cưng à!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
-	.string "If I can get hold of the items here,\n"
-	.string "my POKéMON will get tougher.\p"
-	.string "You bet they will!\n"
-	.string "No question about it!$"
+	.string "Nếu lấy được những món đồ ở đây,\n"
+	.string "POKéMON của tôi sẽ mạnh hơn.\p"
+	.string "Chắc chắn là thế! Không phải bàn cãi!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
-	.string "Hah?\n"
-	.string "What are you gawking at?\p"
-	.string "I don't like you staring at my plush\n"
-	.string "doll like that.\p"
-	.string "If you want it, go get one yourself!\n"
-	.string "Isn't that right, SMOOCHUM?$"
+	.string "Hả? Nhìn chằm chằm gì thế?\p"
+	.string "Tôi không thích bạn cứ nhìn con búp bê\n"
+	.string "bông của tôi như vậy.\p"
+	.string "Muốn thì tự đi kiếm một con đi! Đúng\n"
+	.string "không, SMOOCHUM?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
-	.string "Did you know?\p"
-	.string "If you stretch your record at any of\n"
-	.string "the BATTLE facilities, they start\l"
-	.string "giving you more and more Battle Points.$"
+	.string "Bạn biết không?\p"
+	.string "Nếu kéo dài chuỗi thành tích tại bất kỳ\n"
+	.string "cơ sở trận đấu nào, họ sẽ thưởng cho\l"
+	.string "bạn ngày càng nhiều Battle Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
-	.string "A large poster with a SMOOCHUM print.$"
+	.string "Một tấm áp phích lớn in hình SMOOCHUM.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
-	.string "A SMOOCHUM cushion.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một chiếc đệm SMOOCHUM. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
-	.string "A SMOOCHUM DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một SMOOCHUM DOLL. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
-	.string "A TOGEPI DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một TOGEPI DOLL. Đặt nó lên thảm hoặc\n"
+	.string "bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
-	.string "A MEOWTH DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một MEOWTH DOLL. Đặt nó lên thảm hoặc\n"
+	.string "bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-	.string "A CLEFAIRY DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một CLEFAIRY DOLL. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
-	.string "A DITTO DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một DITTO DOLL. Đặt nó lên thảm hoặc\n"
+	.string "bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-	.string "A CYNDAQUIL DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một CYNDAQUIL DOLL. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-	.string "A CHIKORITA DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một CHIKORITA DOLL. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
-	.string "A TOTODILE DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một TOTODILE DOLL. Đặt nó lên thảm\n"
+	.string "hoặc bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-	.string "A large DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "Một DOLL cỡ lớn. Đặt nó lên thảm hoặc\n"
+	.string "bàn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
-	.string "Raises the stat ATTACK of one\n"
-	.string "POKéMON.$"
+	.string "Tăng chỉ số ATTACK của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "Raises the stat SP. ATK of one\n"
-	.string "POKéMON.$"
+	.string "Tăng chỉ số SP. ATK của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
-	.string "Raises the stat DEFENSE of one\n"
-	.string "POKéMON.$"
+	.string "Tăng chỉ số DEFENSE của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc::
-	.string "Raises the stat SP. DEF of one\n"
-	.string "POKéMON.$"
+	.string "Tăng chỉ số SP. DEF của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::
-	.string "Raises the stat SPEED of one\n"
-	.string "POKéMON.$"
+	.string "Tăng chỉ số SPEED của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc::
-	.string "Raises the HP of one POKéMON.$"
+	.string "Tăng HP của một POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
-	.string "A hold item that gradually restores\n"
-	.string "HP in battle.$"
+	.string "Vật phẩm cầm tay giúp dần hồi phục HP\n"
+	.string "trong trận đấu.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
-	.string "A hold item that restores any\n"
-	.string "lowered stat.$"
+	.string "Vật phẩm cầm tay giúp khôi phục mọi chỉ\n"
+	.string "số đã bị giảm.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
-	.string "A hold item that occasionally allows\n"
-	.string "the first strike.$"
+	.string "Vật phẩm cầm tay đôi khi cho phép ra\n"
+	.string "đòn trước.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
-	.string "A hold item that snaps POKéMON out\n"
-	.string "of infatuation.$"
+	.string "Vật phẩm cầm tay giúp POKéMON thoát\n"
+	.string "khỏi trạng thái mê đắm.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
-	.string "A hold item that casts a glare to\n"
-	.string "reduce accuracy.$"
+	.string "Vật phẩm cầm tay phát ra ánh chói làm\n"
+	.string "giảm độ chính xác.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "Raises a move's power, but permits\n"
-	.string "only that move.$"
+	.string "Tăng sức mạnh của một chiêu thức,\n"
+	.string "nhưng chỉ cho phép dùng chiêu đó.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
-	.string "A hold item that may cause flinching\n"
-	.string "when the foe is hit.$"
+	.string "Vật phẩm cầm tay có thể khiến đối thủ\n"
+	.string "nao núng khi trúng đòn.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
-	.string "A hold item that occasionally\n"
-	.string "prevents fainting.$"
+	.string "Vật phẩm cầm tay đôi khi giúp tránh bị\n"
+	.string "hạ gục.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
-	.string "A hold item that raises the\n"
-	.string "critical-hit rate.$"
+	.string "Vật phẩm cầm tay làm tăng tỷ lệ ra đòn\n"
+	.string "chí mạng.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize
+	.global BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens
+	.global BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers
+	.global BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC
+	.global BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize
+	.global BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints
+	.global BattleFrontier_ExchangeServiceCorner_Text_PCIsFull
+	.global BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt
+	.global BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints
+	.global BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls
+	.global BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant
+	.global BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher
+	.global BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll
+	.global BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord
+	.global BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_IronDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ZincDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc
+	.global BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc
+@ END GENERATED LOCALIZATION EXPORTS

@@ -79,66 +79,81 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "Hello and welcome to the DEVON\n"
+	.string "Xin chào và chào mừng đến với DEVON\n"
 	.string "CORPORATION.\p"
-	.string "We're proud producers of items and\n"
-	.string "medicine that enhance your life.$"
+	.string "Chúng tôi tự hào sản xuất các vật phẩm\n"
+	.string "và thuốc men giúp cuộc sống tốt đẹp\l"
+	.string "hơn.$"
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
-	.string "One of our research staff stupidly\n"
-	.string "got robbed of an important parcel.$"
+	.string "Một nhân viên nghiên cứu của chúng tôi\n"
+	.string "đã ngu ngốc để kẻ khác cướp mất một\l"
+	.string "kiện hàng quan trọng.$"
 
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct:
-	.string "Hey, those RUNNING SHOES!\n"
-	.string "They're one of our products!\p"
-	.string "It makes me happy when I see someone\n"
-	.string "using something we made.$"
+	.string "Này, đôi RUNNING SHOES đó! Chúng là một\n"
+	.string "trong các sản phẩm của chúng tôi!\p"
+	.string "Tôi rất vui khi thấy có người sử dụng\n"
+	.string "sản phẩm do chúng tôi làm ra.$"
 
 RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright:
-	.string "That stolen parcel…\p"
-	.string "Well, sure it's important, but it's not\n"
-	.string "anything that anyone can use.\p"
-	.string "In my estimation, that robber must not\n"
-	.string "have been very bright.$"
+	.string "Kiện hàng bị đánh cắp đó...\p"
+	.string "Đúng là nó quan trọng, nhưng không phải\n"
+	.string "thứ mà ai cũng có thể sử dụng.\p"
+	.string "Theo tôi thấy, tên trộm ấy chắc chẳng\n"
+	.string "thông minh gì.$"
 
 RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered:
-	.string "It sounds like they've recovered\n"
-	.string "the ripped-off DEVON GOODS.$"
+	.string "Có vẻ DEVON GOODS bị cướp đã được lấy\n"
+	.string "lại rồi.$"
 
 RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter:
-	.string "I'm sorry, only authorized people\n"
-	.string "are allowed to enter here.$"
+	.string "Xin lỗi, chỉ người được ủy quyền mới\n"
+	.string "được phép vào đây.$"
 
 RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed:
-	.string "It's beyond stupid.\n"
-	.string "How could we get robbed?$"
+	.string "Ngu ngốc hết chỗ nói. Sao chúng ta lại\n"
+	.string "để bị cướp chứ?$"
 
 RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere:
-	.string "Hi, there!\n"
-	.string "You're always welcome here!$"
+	.string "Xin chào! Bạn luôn được chào đón ở\n"
+	.string "đây!$"
 
 RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
-	.string "Samples of rocks and metal are\n"
-	.string "displayed in the glass case.\p"
-	.string "There's a panel with some writing\n"
-	.string "on it…\p"
-	.string "“DEVON CORPORATION got its start as\n"
-	.string "a producer of stones from quarries.\p"
-	.string "“The company also produced iron from\n"
-	.string "filings in the sand.\p"
-	.string "“From that humble start as a producer\n"
-	.string "of raw materials, DEVON developed.\p"
-	.string "“DEVON is now a manufacturer of a wide\n"
-	.string "range of industrial products.”$"
+	.string "Các mẫu đá và kim loại được trưng bày\n"
+	.string "trong tủ kính.\p"
+	.string "Trên đó có một tấm bảng ghi...\p"
+	.string "“DEVON CORPORATION khởi đầu bằng việc\n"
+	.string "sản xuất đá lấy từ các mỏ.\p"
+	.string "Công ty cũng sản xuất sắt từ mạt sắt\n"
+	.string "trong cát.\p"
+	.string "Từ khởi đầu khiêm tốn với vai trò nhà\n"
+	.string "sản xuất nguyên liệu thô, DEVON đã phát\l"
+	.string "triển.\p"
+	.string "Giờ đây, DEVON là nhà sản xuất nhiều\n"
+	.string "loại sản phẩm công nghiệp.“$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
-	.string "Prototypes and test products fill\n"
-	.string "the glass display case.\p"
-	.string "There's a panel with a description…\p"
-	.string "“In addition to industrial products,\n"
-	.string "DEVON now markets sundries and\l"
-	.string "pharmaceuticals for better lifestyles.\p"
-	.string "“Recently, DEVON has begun marketing\n"
-	.string "tools for POKéMON TRAINERS, including\l"
-	.string "POKé BALLS and POKéNAV systems.”$"
+	.string "Các nguyên mẫu và sản phẩm thử nghiệm\n"
+	.string "được trưng bày đầy trong tủ kính.\p"
+	.string "Trên đó có một tấm bảng mô tả...\p"
+	.string "“Ngoài sản phẩm công nghiệp, DEVON hiện\n"
+	.string "còn kinh doanh hàng tiêu dùng và dược\l"
+	.string "phẩm nhằm nâng cao chất lượng cuộc\l"
+	.string "sống.\p"
+	.string "Gần đây, DEVON đã bắt đầu kinh doanh\n"
+	.string "công cụ dành cho HLV POKéMON, bao\l"
+	.string "gồm POKé BALLS và hệ thống POKéNAV.“$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp
+	.global RustboroCity_DevonCorp_1F_Text_StaffGotRobbed
+	.global RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct
+	.global RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright
+	.global RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered
+	.global RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter
+	.global RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed
+	.global RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere
+	.global RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay
+	.global RustboroCity_DevonCorp_1F_Text_ProductDisplay
+@ END GENERATED LOCALIZATION EXPORTS

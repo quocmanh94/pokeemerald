@@ -262,106 +262,125 @@ BattleFrontier_BattlePikeThreePathRoom_Movement_HintGiverReturnToPos:
 	step_end
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1:
-	.string "You are currently in\n"
-	.string "the 1st room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 1...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3:
-	.string "You are currently in\n"
-	.string "the 3rd room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 3...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5:
-	.string "You are currently in\n"
-	.string "the 5th room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 5...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7:
-	.string "You are currently in\n"
-	.string "the 7th room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 7...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9:
-	.string "You are currently in\n"
-	.string "the 9th room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 9...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11:
-	.string "You are currently in\n"
-	.string "the 11th room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 11...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13:
-	.string "You are currently in\n"
-	.string "the 13th room…$"
+	.string "Bạn hiện đang ở căn phòng thứ 13...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge:
-	.string "Will you continue with\n"
-	.string "your challenge?$"
+	.string "Bạn có muốn tiếp tục thử thách không?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit:
-	.string "Would you like to save your challenge\n"
-	.string "and quit the game for now?$"
+	.string "Bạn có muốn lưu tiến trình thử thách\n"
+	.string "rồi tạm thoát trò chơi không?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge:
-	.string "Do you wish to retire from your\n"
-	.string "Battle Choice challenge?$"
+	.string "Bạn có muốn rút lui khỏi thử thách\n"
+	.string "Battle Choice không?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume:
-	.string "We've been awaiting your return…\p"
-	.string "Before resuming your Battle Choice\n"
-	.string "challenge, let me save the game…$"
+	.string "Chúng tôi vẫn đang chờ bạn quay lại...\p"
+	.string "Trước khi tiếp tục thử thách Battle\n"
+	.string "Choice, xin hãy để tôi lưu trò chơi...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_PleaseEnjoyChallenge:
-	.string "Please do enjoy your Battle Choice\n"
-	.string "challenge…$"
+	.string "Chúc bạn tận hưởng thử thách Battle\n"
+	.string "Choice...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData:
-	.string "I am saving your data…\n"
-	.string "A little time, please…$"
+	.string "Tôi đang lưu dữ liệu của bạn... Xin chờ\n"
+	.string "một lát...$"
 
 BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack:
-	.string "The path is blocked!\n"
-	.string "And there is no turning back…$"
+	.string "Lối đi đã bị chặn! Và cũng không thể\n"
+	.string "quay lại...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose:
-	.string "I beg your pardon, but…\p"
-	.string "Are you perhaps finding it difficult\n"
-	.string "to choose your path?$"
+	.string "Xin thứ lỗi, nhưng...\p"
+	.string "Có phải bạn đang khó chọn lối đi không?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence:
-	.string "I see…\n"
-	.string "I apologize for my impertinence…$"
+	.string "Tôi hiểu rồi... Xin lỗi vì đã mạo muội...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath:
-	.string "Ah, let me see… There is something\n"
-	.string "about the path on the right…$"
+	.string "À, để tôi xem... Lối bên phải có điều gì\n"
+	.string "đó...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath:
-	.string "Ah, let me see… There is something\n"
-	.string "about the path in the center…$"
+	.string "À, để tôi xem... Lối ở giữa có điều gì\n"
+	.string "đó...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath:
-	.string "Ah, let me see… There is something\n"
-	.string "about the path on the left…$"
+	.string "À, để tôi xem... Lối bên trái có điều gì\n"
+	.string "đó...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon:
-	.string "It seems to have the distinct aroma\n"
-	.string "of POKéMON wafting around it…$"
+	.string "Hình như quanh lối đó phảng phất mùi\n"
+	.string "đặc trưng của POKéMON...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople:
-	.string "Is it… A TRAINER?\n"
-	.string "I sense the presence of people…$"
+	.string "Có phải... Một HLV? Tôi cảm nhận\n"
+	.string "được có người...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering:
-	.string "I seem to have heard something…\n"
-	.string "It may have been whispering…$"
+	.string "Hình như tôi vừa nghe thấy gì đó... Có\n"
+	.string "lẽ là tiếng thì thầm...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga:
-	.string "For some odd reason, I felt a wave\n"
-	.string "of nostalgia coming from it…$"
+	.string "Vì lý do kỳ lạ nào đó, tôi cảm thấy một\n"
+	.string "làn hoài niệm tỏa ra từ lối ấy...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent:
-	.string "I am sorry to say…\p"
-	.string "A terrifying event, yes, a horrible one,\n"
-	.string "is about to befall you…\p"
-	.string "I urge you to pay the utmost care\n"
-	.string "and prepare for the worst…$"
+	.string "Tôi rất tiếc phải nói rằng...\p"
+	.string "Một chuyện kinh hoàng, đúng vậy, một\n"
+	.string "chuyện vô cùng khủng khiếp sắp giáng\l"
+	.string "xuống bạn...\p"
+	.string "Tôi khuyên bạn phải hết sức cẩn thận và\n"
+	.string "chuẩn bị cho tình huống tồi tệ nhất...$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence:
-	.string "From every path I sense a dreadful\n"
-	.string "presence…$"
+	.string "Tôi cảm nhận được một luồng khí đáng\n"
+	.string "sợ từ mọi lối đi...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_PleaseEnjoyChallenge
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData
+	.global BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent
+	.global BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence
+@ END GENERATED LOCALIZATION EXPORTS

@@ -269,167 +269,195 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 	end
 
 SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
-	.string "Yes? If you're looking for STERN,\n"
-	.string "that would be me.\p"
-	.string "Ah! Those must be the parts I ordered\n"
-	.string "from MR. STONE of DEVON.\p"
-	.string "Thank you! That's great!\n"
-	.string "We can prepare for our expedition now.$"
+	.string "Sao? Nếu cháu đang tìm STERN thì chính\n"
+	.string "là tôi đây.\p"
+	.string "A! Đây hẳn là số linh kiện tôi đã đặt từ\n"
+	.string "MR. STONE của DEVON.\p"
+	.string "Cảm ơn cháu! Tuyệt quá! Giờ chúng tôi\n"
+	.string "có thể chuẩn bị cho chuyến thám hiểm\l"
+	.string "rồi.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
-	.string "Hehehe, hold it!\n"
-	.string "We'll take those parts!$"
+	.string "Hehehe, đứng lại! Bọn ta sẽ lấy số linh\n"
+	.string "kiện đó!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
-	.string "CAPT. STERN: Wh-what?\n"
-	.string "Who are you people?$"
+	.string "CAPT. STERN: C-cái gì? Các người là ai?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "We're TEAM AQUA!\p"
-	.string "Our BOSS wants those parts!\n"
-	.string "Shut your yap and fork them over!$"
+	.string "Bọn ta là TEAM AQUA!\p"
+	.string "Thủ lĩnh bọn ta muốn số linh kiện đó! Im\n"
+	.string "miệng và giao chúng ra đây!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
-	.string "Awaaaah!\n"
-	.string "A kid beat me!$"
+	.string "Aaaaa! Mình lại bị một đứa trẻ đánh bại!$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
-	.string "Oh, man, what a disaster…\n"
-	.string "The BOSS is going to be furious…$"
+	.string "Ôi trời, nguy rồi... Thủ lĩnh sẽ nổi giận\n"
+	.string "mất...$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
-	.string "Humph, sniveling wimp!\n"
-	.string "Let me take care of this!$"
+	.string "Hừ, đồ mít ướt vô dụng! Để ta xử lý vụ\n"
+	.string "này!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
-	.string "What?!\n"
-	.string "I lost, too!$"
+	.string "Cái gì?! Cả ta cũng thua sao!$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
-	.string "Now what? If we don't get the parts,\n"
-	.string "we're in for it!\p"
-	.string "Arrgh, I didn't count on being meddled\n"
-	.string "with by some meddling kid!$"
+	.string "Giờ phải làm sao? Không lấy được linh\n"
+	.string "kiện thì bọn ta tiêu đời!\p"
+	.string "Arrgh, ta không ngờ lại bị một đứa trẻ\n"
+	.string "lắm chuyện phá đám!$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
-	.string "I came to see what was taking so\n"
-	.string "long to snatch some parts, and you\l"
-	.string "simps are held up by a mere child?$"
+	.string "Ta đến xem tại sao cướp vài linh kiện mà\n"
+	.string "lâu thế, vậy mà lũ ngốc các ngươi lại bị\l"
+	.string "một đứa trẻ cản đường sao?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "We are TEAM AQUA,\n"
-	.string "and we love the sea!\p"
-	.string "And I am TEAM AQUA's leader,\n"
+	.string "Bọn ta là TEAM AQUA, những người yêu\n"
+	.string "biển cả!\p"
+	.string "Còn ta là thủ lĩnh của TEAM AQUA,\n"
 	.string "ARCHIE!\p"
-	.string "What makes you interfere with us?\p"
-	.string "…No! You can't be!\n"
-	.string "You're not one of TEAM MAGMA?\p"
-	.string "Wait, that can't be right.\n"
-	.string "You're not dressed for the part.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "POKéMON, people… All life depends on\n"
-	.string "the sea.\p"
-	.string "So, TEAM AQUA is dedicated to\n"
-	.string "the expansion of the sea.\p"
-	.string "Don't you agree? What we are doing\n"
-	.string "is a magnificent undertaking.\p"
-	.string "Ah, fine…\n"
-	.string "You're still too young to understand\l"
-	.string "our noble objective.\p"
-	.string "But, I warn you, don't even consider\n"
-	.string "interfering with our plans again.\p"
-	.string "The consequences will cost you\n"
-	.string "dearly!\p"
-	.string "And don't you forget it!$"
+	.string "Tại sao ngươi lại cản trở bọn ta?\p"
+	.string "...Không! Không thể nào! Ngươi đâu phải\n"
+	.string "người của TEAM MAGMA?\p"
+	.string "Khoan, không đúng. Ngươi đâu có ăn mặc\n"
+	.string "giống bọn chúng.\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "POKéMON, con người... Mọi sự sống đều\n"
+	.string "phụ thuộc vào biển cả.\p"
+	.string "Vì thế, TEAM AQUA quyết tâm mở rộng\n"
+	.string "biển cả.\p"
+	.string "Ngươi không đồng ý sao? Việc bọn ta\n"
+	.string "đang làm là một sự nghiệp vô cùng vĩ\l"
+	.string "đại.\p"
+	.string "Hừ, thôi được... Ngươi vẫn còn quá trẻ\n"
+	.string "để hiểu mục tiêu cao quý của bọn ta.\p"
+	.string "Nhưng ta cảnh cáo ngươi, đừng bao giờ\n"
+	.string "nghĩ đến chuyện cản trở kế hoạch của\l"
+	.string "bọn ta lần nữa.\p"
+	.string "Ngươi sẽ phải trả một cái giá rất đắt!\p"
+	.string "Nhớ lấy điều đó!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
-	.string "CAPT. STERN: You're…\n"
-	.string "Ah, okay, you're {PLAYER}{KUN}…\p"
-	.string "Anyway, that was a tense situation!\n"
-	.string "Thank you for saving us!\p"
-	.string "Oh, yes, I almost forgot that you\n"
-	.string "even brought the parts from DEVON!$"
+	.string "CAPT. STERN: Cháu là... À, phải rồi, cháu\n"
+	.string "là {PLAYER}{KUN}...\p"
+	.string "Dù sao thì vừa rồi thật căng thẳng! Cảm\n"
+	.string "ơn cháu đã cứu chúng tôi!\p"
+	.string "Ô, phải rồi, tôi suýt quên rằng cháu còn\n"
+	.string "mang linh kiện từ DEVON đến nữa!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
-	.string "CAPT. STERN: Whoops!\n"
-	.string "There's no time to lose!\p"
-	.string "We have to set out on our ocean-floor\n"
-	.string "expedition really soon.\p"
-	.string "Thanks again, but now I've got\n"
-	.string "to go!\p"
-	.string "Feel free to wander around and check\n"
-	.string "out our facilities, though.$"
+	.string "CAPT. STERN: Ôi! Không còn thời gian\n"
+	.string "nữa!\p"
+	.string "Chúng tôi sắp phải lên đường thám hiểm\n"
+	.string "đáy đại dương.\p"
+	.string "Cảm ơn cháu lần nữa, nhưng giờ tôi phải\n"
+	.string "đi rồi!\p"
+	.string "Tuy vậy, cháu cứ tự nhiên tham quan và\n"
+	.string "xem các thiết bị ở đây nhé.$"
 
 SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip:
-	.string "I saw a model of a ship here.\p"
-	.string "It reminded me of the ABANDONED SHIP\n"
-	.string "near DEWFORD TOWN…$"
+	.string "Tôi đã thấy một mô hình con tàu ở đây.\p"
+	.string "Nó khiến tôi nhớ đến ABANDONED SHIP\n"
+	.string "gần DEWFORD TOWN...$"
 
 SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
-	.string "Don't you dare run around inside\n"
-	.string "the MUSEUM!$"
+	.string "Cấm chạy lung tung bên trong MUSEUM!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine:
-	.string "Wow, the submarine's awesome!\n"
-	.string "I want to go for a ride!$"
+	.string "Chà, tàu ngầm tuyệt thật! Tôi muốn\n"
+	.string "được đi thử!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample1:
-	.string "“WATER QUALITY SAMPLE 1,” the\n"
-	.string "label says.\p"
-	.string "The sea is all connected, but the\n"
-	.string "water seems to differ by region.$"
+	.string "Trên nhãn ghi WATER QUALITY SAMPLE 1.\p"
+	.string "Biển thông với nhau khắp nơi, nhưng\n"
+	.string "nước biển dường như lại khác nhau tùy\l"
+	.string "từng khu vực.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample2:
-	.string "“WATER QUALITY SAMPLE 2,” the\n"
-	.string "label says.\p"
-	.string "Does the saltiness of seawater differ\n"
-	.string "by region, too?$"
+	.string "Trên nhãn ghi WATER QUALITY SAMPLE 2.\p"
+	.string "Độ mặn của nước biển cũng khác nhau\n"
+	.string "tùy từng khu vực sao?$"
 
 SlateportCity_OceanicMuseum_2F_Text_PressureExperiment:
-	.string "A rubber ball is expanding and\n"
-	.string "shrinking.\p"
-	.string "“In the sea, the weight of water itself\n"
-	.string "exerts pressure.\p"
-	.string "“In shallow water, the pressure is not\n"
-	.string "very heavy.\p"
-	.string "“However, in extremely deep water,\n"
-	.string "the pressure can reach even tens of\l"
-	.string "thousands of tons on a small area.”$"
+	.string "Một quả bóng cao su đang phồng lên rồi\n"
+	.string "co lại.\p"
+	.string "Trong biển, chính trọng lượng của\n"
+	.string "nước tạo ra áp suất.\p"
+	.string "Ở vùng nước nông, áp suất không quá\n"
+	.string "lớn.\p"
+	.string "Nhưng ở nơi cực kỳ sâu, áp lực trên\n"
+	.string "một diện tích nhỏ có thể lên tới hàng\l"
+	.string "chục nghìn tấn.$"
 
 SlateportCity_OceanicMuseum_2F_Text_HoennModel:
-	.string "“MODEL OF HOENN REGION”\p"
-	.string "It's a miniature diorama of the\n"
-	.string "HOENN region.\p"
-	.string "Where is LITTLEROOT TOWN on this?$"
+	.string "MODEL OF HOENN REGION\p"
+	.string "Đây là một sa bàn thu nhỏ của vùng\n"
+	.string "HOENN.\p"
+	.string "LITTLEROOT TOWN nằm ở đâu trên đây\n"
+	.string "nhỉ?$"
 
 SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay:
-	.string "It's a display on the flow of seawater.\p"
-	.string "“Near the bottom of the sea, water\n"
-	.string "flows due to differences in such\l"
-	.string "factors as temperature and salinity.”$"
+	.string "Đây là phần trưng bày về sự lưu chuyển\n"
+	.string "của nước biển.\p"
+	.string "Gần đáy biển, nước lưu chuyển do sự\n"
+	.string "khác biệt về những yếu tố như nhiệt độ\l"
+	.string "và độ mặn.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
-	.string "It's a display on the flow of seawater.\p"
-	.string "“Toward the surface, seawater flows\n"
-	.string "as currents driven by the winds.”$"
+	.string "Đây là phần trưng bày về sự lưu chuyển\n"
+	.string "của nước biển.\p"
+	.string "Gần mặt biển, nước biển tạo thành\n"
+	.string "những dòng hải lưu do gió thúc đẩy.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
-	.string "“THE FERRY S.S. TIDAL\p"
-	.string "“A scale replica of the ship under\n"
-	.string "construction at STERN'S SHIPYARD.”$"
+	.string "PHÀ S.S. TIDAL\p"
+	.string "Mô hình thu nhỏ theo đúng tỷ lệ của con\n"
+	.string "tàu đang được đóng tại STERN'S\l"
+	.string "SHIPYARD.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "“SUBMARINE EXPLORER 1\p"
-	.string "“A replica of the high-performance\n"
-	.string "ocean floor exploration submarine.”$"
+	.string "SUBMARINE EXPLORER 1\p"
+	.string "Mô hình của tàu ngầm thám hiểm đáy đại\n"
+	.string "dương hiệu suất cao.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
-	.string "“SUBMERSIBLE POD\p"
-	.string "“A replica of a compact, unmanned\n"
-	.string "pod for seafloor exploration.”$"
+	.string "SUBMERSIBLE POD\p"
+	.string "Mô hình của một khoang thám hiểm đáy\n"
+	.string "biển nhỏ gọn, không người lái.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
-	.string "“S.S. ANNE\p"
-	.string "“A replica of the luxury liner that\n"
-	.string "circles the globe.”$"
+	.string "S.S. ANNE\p"
+	.string "Mô hình của chiếc tàu biển sang trọng\n"
+	.string "đi vòng quanh thế giới.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts
+	.global SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts
+	.global SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou
+	.global SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua
+	.global SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat
+	.global SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious
+	.global SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis
+	.global SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat
+	.global SlateportCity_OceanicMuseum_2F_Text_MeddlingKid
+	.global SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong
+	.global SlateportCity_OceanicMuseum_2F_Text_ArchieWarning
+	.global SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs
+	.global SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo
+	.global SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip
+	.global SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum
+	.global SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine
+	.global SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample1
+	.global SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample2
+	.global SlateportCity_OceanicMuseum_2F_Text_PressureExperiment
+	.global SlateportCity_OceanicMuseum_2F_Text_HoennModel
+	.global SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay
+	.global SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay
+	.global SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica
+	.global SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica
+	.global SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica
+	.global SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica
+@ END GENERATED LOCALIZATION EXPORTS

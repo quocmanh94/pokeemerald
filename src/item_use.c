@@ -1034,8 +1034,8 @@ bool32 CanThrowBall(u8 battler)
     return GetBallThrowableState(battler) == BALL_THROW_ABLE;
 }
 
-static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Cannot throw a Poké Ball!\nThere are two Pokémon out there!\p");
-static const u8 sText_CantThrowPokeBall[] = _("Cannot throw a Poké Ball!\p");
+static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Không thể ném POKé BALL!\nCó hai POKéMON đối thủ!\p");
+static const u8 sText_CantThrowPokeBall[] = _("Không thể ném POKé BALL!\p");
 
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
@@ -1240,3 +1240,9 @@ void ItemUseOutOfBattle_CannotUse(u8 taskId)
 }
 
 #undef tUsingRegisteredKeyItem
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02626 = sText_CantThrowPokeBall_TwoMons;
+const u8 *const gLocalizationSource_C02627 = sText_CantThrowPokeBall;
+// END GENERATED LOCALIZATION EXPORTS

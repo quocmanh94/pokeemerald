@@ -19,16 +19,21 @@ SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
 	return
 
 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs:
-	.string "MT. PYRE…\p"
-	.string "At its peak are two orbs placed side\n"
-	.string "by side. Did you know?$"
+	.string "MT. PYRE...\p"
+	.string "Trên đỉnh núi có hai quả cầu được đặt\n"
+	.string "cạnh nhau. Bạn có biết không?$"
 
 SootopolisCity_House2_Text_YesTwoOrbsSideBySide:
-	.string "Yes, two orbs side by side…\p"
-	.string "The sight of them together…\n"
-	.string "It is somehow soothing…$"
+	.string "Đúng vậy, hai quả cầu nằm cạnh nhau...\p"
+	.string "Cảnh chúng ở bên nhau... Không hiểu sao\n"
+	.string "lại khiến lòng người thanh thản...$"
 
 SootopolisCity_House2_Text_OughtToVisitAndSee:
-	.string "Is that so?\n"
-	.string "Perhaps you ought to visit and see…$"
+	.string "Vậy sao? Có lẽ bạn nên tới đó tận mắt\n"
+	.string "xem thử...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs
+	.global SootopolisCity_House2_Text_YesTwoOrbsSideBySide
+	.global SootopolisCity_House2_Text_OughtToVisitAndSee
+@ END GENERATED LOCALIZATION EXPORTS

@@ -10,19 +10,22 @@ PetalburgCity_House1_EventScript_Woman::
 	end
 
 PetalburgCity_House1_Text_TravelingIsWonderful:
-	.string "Traveling is wonderful!\p"
-	.string "When I was young, I roamed the seas\n"
-	.string "and the mountains!$"
+	.string "Du hành thật tuyệt!\p"
+	.string "Khi còn trẻ, tôi từng ngao du khắp biển\n"
+	.string "cả và núi non!$"
 
 PetalburgCity_House1_Text_GoOnAdventure:
-	.string "Sigh…\p"
-	.string "I wish I could go on an adventure\n"
-	.string "with some POKéMON…\p"
-	.string "Crawl through some damp grass…\n"
-	.string "Climb rocky, rugged mountains…\p"
-	.string "Cross the raging seas…\n"
-	.string "Wander about in dark caves…\p"
-	.string "And, sometimes, even get a little\n"
-	.string "homesick…\p"
-	.string "It must be fabulous to travel!$"
+	.string "Thở dài...\p"
+	.string "Giá mà tôi có thể phiêu lưu cùng vài\n"
+	.string "POKéMON...\p"
+	.string "Bò qua những bãi cỏ ẩm ướt... Leo lên\n"
+	.string "những ngọn núi đá gập ghềnh...\p"
+	.string "Vượt qua biển động dữ dội... Lang thang\n"
+	.string "trong những hang động tối tăm...\p"
+	.string "Và đôi khi còn hơi nhớ nhà...\p"
+	.string "Du hành hẳn phải tuyệt vời lắm!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_House1_Text_TravelingIsWonderful
+	.global PetalburgCity_House1_Text_GoOnAdventure
+@ END GENERATED LOCALIZATION EXPORTS

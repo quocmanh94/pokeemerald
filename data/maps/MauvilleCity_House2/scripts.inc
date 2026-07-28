@@ -41,25 +41,32 @@ MauvilleCity_House2_EventScript_DeclineTrade::
 	end
 
 MauvilleCity_House2_Text_BuyHarborMailAtSlateport:
-	.string "If I had a BIKE, it'd be easy to cycle to\n"
-	.string "SLATEPORT for some shopping.\p"
-	.string "I'd be able to buy HARBOR MAIL at the\n"
-	.string "POKéMON MART in SLATEPORT…$"
+	.string "Nếu có BIKE, tôi có thể dễ dàng đạp xe\n"
+	.string "đến SLATEPORT mua sắm.\p"
+	.string "Tôi sẽ mua được HARBOR MAIL tại\n"
+	.string "POKéMON MART ở SLATEPORT...$"
 
 MauvilleCity_House2_Text_TradeHarborMailForCoinCase:
-	.string "Oh! You have HARBOR MAIL?\n"
-	.string "Will you trade it for a COIN CASE?$"
+	.string "Ồ! Bạn có HARBOR MAIL sao? Bạn đổi nó\n"
+	.string "lấy COIN CASE nhé?$"
 
 MauvilleCity_House2_Text_IllTradeYouCoinCase:
-	.string "Oh, I'm so happy!\n"
-	.string "Okay, I'll trade you a COIN CASE!$"
+	.string "Ôi, tôi vui quá! Được rồi, tôi sẽ đổi cho\n"
+	.string "bạn một COIN CASE!$"
 
 MauvilleCity_House2_Text_UseCoinCaseAtGameCorner:
-	.string "That COIN CASE can be used\n"
-	.string "at the GAME CORNER.$"
+	.string "Bạn có thể dùng COIN CASE đó tại GAME\n"
+	.string "CORNER.$"
 
 MauvilleCity_House2_Text_ThatsDisappointing:
-	.string "Oh, that's disappointing.\p"
-	.string "A COIN CASE is needed for the\n"
-	.string "GAME CORNER.$"
+	.string "Ôi, thật đáng tiếc.\p"
+	.string "Muốn chơi ở GAME CORNER thì phải có\n"
+	.string "COIN CASE.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_House2_Text_BuyHarborMailAtSlateport
+	.global MauvilleCity_House2_Text_TradeHarborMailForCoinCase
+	.global MauvilleCity_House2_Text_IllTradeYouCoinCase
+	.global MauvilleCity_House2_Text_UseCoinCaseAtGameCorner
+	.global MauvilleCity_House2_Text_ThatsDisappointing
+@ END GENERATED LOCALIZATION EXPORTS

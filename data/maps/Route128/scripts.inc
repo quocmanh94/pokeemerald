@@ -242,61 +242,70 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "ARCHIE: What happened…\n"
-	.string "What is this wretched scene…\p"
-	.string "Did I…make a horrible mistake?$"
+	.string "ARCHIE: Chuyện gì đã xảy ra... Cảnh\n"
+	.string "tượng khủng khiếp này là sao...\p"
+	.string "Chẳng lẽ ta... đã phạm một sai lầm kinh\n"
+	.string "khủng?$"
 
 Route128_Text_ArchieIOnlyWanted:
-	.string "I…\n"
-	.string "I only wanted…$"
+	.string "Ta... Ta chỉ muốn...$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "MAXIE: Do you understand now,\n"
-	.string "ARCHIE?\p"
-	.string "Do you finally see how disastrous\n"
-	.string "your dream turned out to be?\p"
-	.string "We have to hurry! We have to do\n"
-	.string "something before the situation goes\l"
-	.string "completely out of control!$"
+	.string "MAXIE: Giờ anh hiểu chưa, ARCHIE?\p"
+	.string "Cuối cùng anh đã thấy giấc mơ của mình\n"
+	.string "dẫn đến tai họa thế nào chưa?\p"
+	.string "Chúng ta phải nhanh lên! Phải làm gì đó\n"
+	.string "trước khi tình hình hoàn toàn mất kiểm\l"
+	.string "soát!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "MAXIE: {PLAYER}, don't say anything.\p"
-	.string "I know that I have no right to be\n"
-	.string "critical of ARCHIE…\p"
-	.string "But the way things are now, I doubt\n"
-	.string "that we humans will be capable of\l"
-	.string "doing anything about it.\p"
-	.string "But neither can we stand by and\n"
-	.string "just watch helplessly.\p"
-	.string "The responsibility for putting an end\n"
-	.string "to this falls to ARCHIE and me…$"
+	.string "MAXIE: {PLAYER}, đừng nói gì cả.\p"
+	.string "Ta biết mình không có quyền chỉ trích\n"
+	.string "ARCHIE...\p"
+	.string "Nhưng với tình hình hiện giờ, ta e rằng\n"
+	.string "con người chúng ta chẳng thể làm gì\l"
+	.string "được.\p"
+	.string "Nhưng chúng ta cũng không thể chỉ\n"
+	.string "đứng nhìn trong bất lực.\p"
+	.string "Trách nhiệm chấm dứt chuyện này thuộc\n"
+	.string "về ARCHIE và ta...$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "MAXIE: This defies belief…\p"
-	.string "Those super-ancient POKéMON…\p"
-	.string "Their power is unbelievable.\n"
-	.string "They've upset the balance of nature…$"
+	.string "MAXIE: Thật không thể tin nổi...\p"
+	.string "Những POKéMON siêu cổ đại đó...\p"
+	.string "Sức mạnh của chúng thật khó tin. Chúng\n"
+	.string "đã phá vỡ sự cân bằng của tự nhiên...$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "STEVEN: {PLAYER}{KUN}!\n"
-	.string "What is happening?$"
+	.string "STEVEN: {PLAYER}{KUN}! Đang xảy ra\n"
+	.string "chuyện gì vậy?$"
 
 Route128_Text_StevenWholeWorldWillDrown:
-	.string "This is terrible…\p"
-	.string "After the scorching heat wave ended,\n"
-	.string "this deluge began.\p"
-	.string "If this doesn't stop, all of HOENN…\n"
-	.string "No, the whole world will drown.\p"
-	.string "This huge rain cloud is spreading\n"
-	.string "from above SOOTOPOLIS…\p"
-	.string "What in the world is taking place there?\p"
-	.string "There's no point arguing here…\n"
-	.string "SOOTOPOLIS might provide answers…$"
+	.string "Thật khủng khiếp...\p"
+	.string "Ngay sau khi đợt nắng nóng thiêu đốt\n"
+	.string "kết thúc, trận đại hồng thủy này lại bắt\l"
+	.string "đầu.\p"
+	.string "Nếu nó không dừng lại, toàn HOENN...\n"
+	.string "Không, cả thế giới sẽ chìm trong nước.\p"
+	.string "Đám mây mưa khổng lồ này đang lan ra từ\n"
+	.string "phía trên SOOTOPOLIS...\p"
+	.string "Rốt cuộc nơi đó đang xảy ra chuyện gì?\p"
+	.string "Tranh luận ở đây cũng vô ích... Có lẽ\n"
+	.string "SOOTOPOLIS sẽ cho ta câu trả lời...$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "{PLAYER}{KUN}…\n"
-	.string "I don't know what you intend to do,\l"
-	.string "but don't do anything reckless.\p"
-	.string "Okay.\n"
-	.string "I'm going to SOOTOPOLIS.$"
+	.string "{PLAYER}{KUN}... Tôi không biết cậu\n"
+	.string "định làm gì, nhưng đừng hành động liều\l"
+	.string "lĩnh.\p"
+	.string "Được rồi. Tôi sẽ đến SOOTOPOLIS.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route128_Text_ArchieWhatHappened
+	.global Route128_Text_ArchieIOnlyWanted
+	.global Route128_Text_MaxieDoYouUnderstandNow
+	.global Route128_Text_MaxieResposibilityFallsToArchieAndMe
+	.global Route128_Text_MaxieThisDefiesBelief
+	.global Route128_Text_StevenWhatIsHappening
+	.global Route128_Text_StevenWholeWorldWillDrown
+	.global Route128_Text_StevenImGoingToSootopolis
+@ END GENERATED LOCALIZATION EXPORTS

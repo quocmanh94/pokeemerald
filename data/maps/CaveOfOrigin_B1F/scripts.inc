@@ -60,59 +60,66 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 	end
 
 CaveOfOrigin_B1F_Text_WallaceStory:
-	.string "Ah, so you are {PLAYER}{KUN}?\n"
-	.string "I've heard tales of your exploits.\p"
-	.string "My name is WALLACE.\p"
-	.string "I was once the GYM LEADER of\n"
-	.string "SOOTOPOLIS, but something came up.\p"
-	.string "So now, I've entrusted my mentor JUAN\n"
-	.string "with the GYM's operation.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "GROUDON and KYOGRE, the two POKéMON\n"
-	.string "wreaking havoc here, are considered\l"
-	.string "to be super-ancient POKéMON.\p"
-	.string "But there aren't just two super-\n"
-	.string "ancient POKéMON.\p"
-	.string "There is one more somewhere.\p"
-	.string "Somewhere, there is a super-\n"
-	.string "ancient POKéMON named RAYQUAZA.\p"
-	.string "It's said that it was RAYQUAZA that\n"
-	.string "becalmed the two combatants in\l"
-	.string "the distant past.\p"
-	.string "But even I have no clue as to\n"
-	.string "RAYQUAZA's whereabouts…$"
+	.string "À, vậy cậu là {PLAYER}{KUN}? Tôi đã\n"
+	.string "nghe kể về những chiến công của cậu.\p"
+	.string "Tên tôi là WALLACE.\p"
+	.string "Tôi từng là GYM LEADER của SOOTOPOLIS,\n"
+	.string "nhưng rồi có việc xảy ra.\p"
+	.string "Vì vậy, giờ tôi đã giao việc điều hành\n"
+	.string "GYM cho người thầy JUAN của mình.\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "GROUDON và KYOGRE, hai POKéMON đang\n"
+	.string "tàn phá nơi đây, được xem là những\l"
+	.string "POKéMON siêu cổ đại.\p"
+	.string "Nhưng không chỉ có hai POKéMON siêu cổ\n"
+	.string "đại.\p"
+	.string "Vẫn còn một POKéMON nữa ở đâu đó.\p"
+	.string "Ở một nơi nào đó có POKéMON siêu cổ đại\n"
+	.string "mang tên RAYQUAZA.\p"
+	.string "Tương truyền chính RAYQUAZA đã dẹp\n"
+	.string "yên cuộc giao tranh giữa hai bên trong\l"
+	.string "quá khứ xa xưa.\p"
+	.string "Nhưng ngay cả tôi cũng không biết\n"
+	.string "RAYQUAZA đang ở đâu...$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
-	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
-	.string "know where RAYQUAZA is now?\p"
-	.string "If you do, please tell me.$"
+	.string "WALLACE: {PLAYER}{KUN}, có lẽ cậu biết\n"
+	.string "RAYQUAZA hiện đang ở đâu chăng?\p"
+	.string "Nếu biết, xin hãy nói cho tôi.$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
-	.string "WALLACE: The CAVE OF ORIGIN?\p"
-	.string "But that's right here!\n"
-	.string "I need you to do better than that!\p"
-	.string "Please, I need you to think about\n"
-	.string "where RAYQUAZA might be right now.$"
+	.string "WALLACE: CAVE OF ORIGIN ư?\p"
+	.string "Nhưng đó chính là nơi này! Câu trả lời\n"
+	.string "đó chưa được!\p"
+	.string "Xin cậu hãy suy nghĩ xem RAYQUAZA có\n"
+	.string "thể đang ở đâu vào lúc này.$"
 
 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
-	.string "WALLACE: MT. PYRE?\p"
-	.string "But when I met the old lady there\n"
-	.string "earlier, she made no mention of it.\p"
-	.string "I very much doubt that the old lady\n"
-	.string "would try to hide something from me…\p"
-	.string "{PLAYER}{KUN}, could you think about this\n"
-	.string "more carefully for me?$"
+	.string "WALLACE: MT. PYRE ư?\p"
+	.string "Nhưng khi tôi gặp bà lão ở đó lúc nãy,\n"
+	.string "bà ấy không hề nhắc đến chuyện này.\p"
+	.string "Tôi rất khó tin rằng bà ấy lại cố giấu tôi\n"
+	.string "điều gì...\p"
+	.string "{PLAYER}{KUN}, cậu có thể suy nghĩ kỹ\n"
+	.string "hơn giúp tôi không?$"
 
 CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
-	.string "WALLACE: Huh? You don't remember?\n"
-	.string "Hmm… That's a problem…\p"
-	.string "Can't you remember somehow?$"
+	.string "WALLACE: Hả? Cậu không nhớ sao? Hmm...\n"
+	.string "Rắc rối rồi đây...\p"
+	.string "Cậu không thể cố nhớ lại được sao?$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
-	.string "WALLACE: The SKY PILLAR?\p"
-	.string "That's it!\n"
-	.string "It must be the SKY PILLAR!\p"
-	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
-	.string "We'll head to the SKY PILLAR right away!$"
+	.string "WALLACE: SKY PILLAR ư?\p"
+	.string "Đúng rồi! Nhất định là SKY PILLAR!\p"
+	.string "{PLAYER}{KUN}, không thể lãng phí\n"
+	.string "thêm giây phút nào nữa! Chúng ta sẽ\l"
+	.string "đến SKY PILLAR ngay lập tức!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global CaveOfOrigin_B1F_Text_WallaceStory
+	.global CaveOfOrigin_B1F_Text_WhereIsRayquaza
+	.global CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin
+	.global CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat
+	.global CaveOfOrigin_B1F_Text_CantYouRememberSomehow
+	.global CaveOfOrigin_B1F_Text_WellHeadToSkyPillar
+@ END GENERATED LOCALIZATION EXPORTS

@@ -66,70 +66,83 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex:
-	.string "I'm the GAME DESIGNER.\p"
-	.string "Oh, is that right?\n"
-	.string "You're working on a POKéDEX?\p"
-	.string "It's tough trying to complete it,\n"
-	.string "but don't give up.\p"
-	.string "If you do complete it, please come\n"
-	.string "show me.$"
+	.string "Tôi là GAME DESIGNER.\p"
+	.string "Ồ, vậy sao? Bạn đang hoàn thành một\n"
+	.string "POKéDEX à?\p"
+	.string "Hoàn thành nó khó lắm, nhưng đừng bỏ\n"
+	.string "cuộc.\p"
+	.string "Nếu hoàn thành được, hãy đến cho tôi\n"
+	.string "xem nhé.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis:
-	.string "Wow! That's awesome!\n"
-	.string "Yep, it's totally awesome!\p"
-	.string "This POKéDEX is completely filled!\n"
-	.string "You really must love POKéMON!\p"
-	.string "I'm so impressed!\p"
-	.string "Let me give you something in\n"
-	.string "recognition of your feat!$"
+	.string "Chà! Tuyệt vời quá! Đúng vậy, thật sự\n"
+	.string "tuyệt vời!\p"
+	.string "POKéDEX này đã được hoàn thành toàn\n"
+	.string "bộ! Bạn hẳn phải yêu POKéMON lắm!\p"
+	.string "Tôi thực sự rất ấn tượng!\p"
+	.string "Hãy để tôi tặng bạn thứ này để ghi nhận\n"
+	.string "thành tích đó!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer:
-	.string "Me? You're talking to me?\n"
-	.string "I'm the PROGRAMMER.\p"
-	.string "I wonder what the SLOTS are\n"
-	.string "like here.$"
+	.string "Tôi á? Bạn đang nói với tôi sao? Tôi là\n"
+	.string "PROGRAMMER.\p"
+	.string "Không biết SLOTS ở đây thế nào nhỉ.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist:
-	.string "I'm the GRAPHIC ARTIST! Aren't the\n"
-	.string "POKéMON of HOENN interesting?$"
+	.string "Tôi là GRAPHIC ARTIST! POKéMON ở HOENN\n"
+	.string "thú vị lắm phải không?$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute:
-	.string "The girl TUBERS, they're cute, hey?\n"
-	.string "To battle against a cute TUBER…\p"
-	.string "Whoop, it's so awesome!\p"
-	.string "And the TWINS! Aren't they cute?\n"
-	.string "A 2-on-2 battle with TWINS…\p"
-	.string "Whoop, it's unbearably fun!$"
+	.string "Mấy bé gái TUBERS dễ thương quá nhỉ?\n"
+	.string "Được đấu với một TUBER dễ thương...\p"
+	.string "Úi chao, tuyệt vời quá!\p"
+	.string "Còn TWINS nữa! Chẳng phải họ rất dễ\n"
+	.string "thương sao? Một trận đấu 2 đấu 2 với\l"
+	.string "TWINS...\p"
+	.string "Úi chao, vui không chịu nổi!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart:
-	.string "The sea breeze tickles my heart.\n"
-	.string "It feels wonderful here!$"
+	.string "Làn gió biển khẽ mơn man trái tim tôi. Ở\n"
+	.string "đây thật tuyệt vời!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
-	.string "You never know when and where\n"
-	.string "people will challenge you.\p"
-	.string "That's why I never leave home without\n"
-	.string "my GAME BOY ADVANCE.$"
+	.string "Bạn chẳng bao giờ biết người ta sẽ\n"
+	.string "thách đấu mình lúc nào và ở đâu.\p"
+	.string "Vì vậy, tôi không bao giờ ra khỏi nhà mà\n"
+	.string "thiếu GAME BOY ADVANCE.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
-	.string "SCOTT: … … … … …\n"
-	.string "… … … … … Zzz…\p"
-	.string "… … … … … Huh?!\n"
-	.string "Oh, sorry, sorry! I was snoozing!\p"
-	.string "I came to check out this POKéMON\n"
-	.string "CONTEST thing.\p"
-	.string "I have to admit, it does look quite\n"
-	.string "entertaining, but…\p"
-	.string "Consider me a purist--I prefer\n"
-	.string "battles and tough TRAINERS.\p"
-	.string "But that's just me.\p"
-	.string "{PLAYER}{KUN}, I hope you'll enjoy everything\n"
-	.string "like the GYMS, CONTESTS, BATTLE TENT,\l"
-	.string "the whole works!$"
+	.string "SCOTT: ... ... ... ... ... ... ... ... ... ... Khò...\p"
+	.string "... ... ... ... ... Hả?! Ôi, xin lỗi, xin lỗi! Tôi\n"
+	.string "ngủ gật mất!\p"
+	.string "Tôi đến xem thử cái gọi là POKéMON\n"
+	.string "CONTEST này.\p"
+	.string "Phải công nhận trông nó khá thú vị,\n"
+	.string "nhưng...\p"
+	.string "Cứ coi tôi là người theo trường phái\n"
+	.string "thuần túy, tôi thích chiến đấu và\l"
+	.string "những HLV mạnh mẽ hơn.\p"
+	.string "Nhưng đó chỉ là sở thích của riêng tôi.\p"
+	.string "{PLAYER}{KUN}, tôi mong bạn sẽ tận\n"
+	.string "hưởng mọi thứ, từ GYMS, các cuộc thi,\l"
+	.string "BATTLE TENT cho đến tất tần tật những\l"
+	.string "điều khác!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
-	.string "SCOTT: I think it does take strategy\n"
-	.string "to win a CONTEST.\p"
-	.string "Devising CONTEST strategies is one way\n"
-	.string "of becoming a better TRAINER, I'd say.$"
+	.string "SCOTT: Tôi nghĩ muốn thắng một cuộc thi\n"
+	.string "thì đúng là cần chiến thuật.\p"
+	.string "Theo tôi, xây dựng chiến thuật cho\n"
+	.string "cuộc thi cũng là một cách để trở thành\l"
+	.string "HLV giỏi hơn.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex
+	.global LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis
+	.global LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer
+	.global LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist
+	.global LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute
+	.global LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart
+	.global LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy
+	.global LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles
+	.global LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy
+@ END GENERATED LOCALIZATION EXPORTS

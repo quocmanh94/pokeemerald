@@ -302,44 +302,54 @@ Route110_TrickHousePuzzle3_EventScript_Alan::
 	end
 
 Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is coveted.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER ai cũng ngưỡng mộ.” ... ...\n"
+	.string "... ... ... ... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle3_Text_JustinIntro:
-	.string "I keep coming back to this same place!$"
+	.string "Tôi cứ quay lại đúng chỗ này mãi!$"
 
 Route110_TrickHousePuzzle3_Text_JustinDefeat:
-	.string "I'm already having trouble, and then\n"
-	.string "you have to beat me? It's not fair!$"
+	.string "Tôi đã rối đủ đường rồi, thế mà bạn còn\n"
+	.string "đánh bại tôi nữa sao? Bất công quá!$"
 
 Route110_TrickHousePuzzle3_Text_JustinPostBattle:
-	.string "It's full of doors here!\n"
-	.string "It's too small and dark in here! Help!$"
+	.string "Ở đây toàn là cửa! Chỗ này vừa chật\n"
+	.string "vừa tối! Cứu với!$"
 
 Route110_TrickHousePuzzle3_Text_MarthaIntro:
-	.string "I don't know what's going on here.\n"
-	.string "I'm starting to feel sad…$"
+	.string "Tôi chẳng hiểu ở đây đang xảy ra\n"
+	.string "chuyện gì. Tôi bắt đầu thấy buồn rồi...$"
 
 Route110_TrickHousePuzzle3_Text_MarthaDefeat:
-	.string "You… You're awful!$"
+	.string "Bạn... Bạn thật quá đáng!$"
 
 Route110_TrickHousePuzzle3_Text_MarthaPostBattle:
-	.string "I know I'm weak!\n"
-	.string "And, I have no sense of direction!$"
+	.string "Tôi biết mình yếu rồi! Lại còn mù\n"
+	.string "phương hướng nữa!$"
 
 Route110_TrickHousePuzzle3_Text_AlanIntro:
-	.string "I don't get it. What would anyone want\n"
-	.string "with a house this bizarre?$"
+	.string "Tôi không hiểu. Ai lại muốn có một ngôi\n"
+	.string "nhà kỳ quái đến thế chứ?$"
 
 Route110_TrickHousePuzzle3_Text_AlanDefeat:
-	.string "I don't get it.\n"
-	.string "How did I lose?$"
+	.string "Tôi không hiểu. Sao tôi lại thua được?$"
 
 Route110_TrickHousePuzzle3_Text_AlanPostBattle:
-	.string "I don't get it.\n"
-	.string "How many traps are in this house?\p"
-	.string "You may be the one to solve that.$"
+	.string "Tôi không hiểu. Ngôi nhà này có bao\n"
+	.string "nhiêu cái bẫy vậy?\p"
+	.string "Có lẽ bạn sẽ là người tìm ra câu trả lời.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle3_Text_JustinIntro
+	.global Route110_TrickHousePuzzle3_Text_JustinDefeat
+	.global Route110_TrickHousePuzzle3_Text_JustinPostBattle
+	.global Route110_TrickHousePuzzle3_Text_MarthaIntro
+	.global Route110_TrickHousePuzzle3_Text_MarthaDefeat
+	.global Route110_TrickHousePuzzle3_Text_MarthaPostBattle
+	.global Route110_TrickHousePuzzle3_Text_AlanIntro
+	.global Route110_TrickHousePuzzle3_Text_AlanDefeat
+	.global Route110_TrickHousePuzzle3_Text_AlanPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

@@ -19,11 +19,16 @@ LilycoveCity_House2_EventScript_ReceivedRest::
 	end
 
 LilycoveCity_House2_Text_NotAwakeYetHaveThis:
-	.string "Huh? What? What's that?\p"
-	.string "I'm not near awake yet…\n"
-	.string "You can have this…$"
+	.string "Hả? Gì cơ? Cái gì vậy?\p"
+	.string "Tôi vẫn chưa tỉnh ngủ hẳn... Cái này cho\n"
+	.string "bạn...$"
 
 LilycoveCity_House2_Text_SleepIsEssential:
-	.string "Yawn…\p"
-	.string "Sleep is essential for good health…\n"
-	.string "Sleep and regain health…$"
+	.string "Ngáp...\p"
+	.string "Ngủ rất cần thiết để có sức khỏe tốt...\n"
+	.string "Hãy ngủ để hồi phục sức khỏe...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_House2_Text_NotAwakeYetHaveThis
+	.global LilycoveCity_House2_Text_SleepIsEssential
+@ END GENERATED LOCALIZATION EXPORTS

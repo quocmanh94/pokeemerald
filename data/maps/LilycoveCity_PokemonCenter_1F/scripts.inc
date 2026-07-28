@@ -49,18 +49,24 @@ LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone::
 	end
 
 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon:
-	.string "I wonder how many kinds of POKéMON\n"
-	.string "there are in the world.\p"
-	.string "It'd be great to cross seas and\n"
-	.string "trade POKéMON with people far away.$"
+	.string "Không biết trên thế giới có bao nhiêu\n"
+	.string "loài POKéMON nhỉ.\p"
+	.string "Giá mà có thể vượt biển và trao đổi\n"
+	.string "POKéMON với những người ở phương xa\l"
+	.string "thì tuyệt biết bao.$"
 
 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels:
-	.string "I've been hearing about some rotten\n"
-	.string "scoundrels who steal POKéMON and rip\l"
-	.string "off METEORITES.$"
+	.string "Tôi nghe nói có một lũ vô lại chuyên trộm\n"
+	.string "POKéMON và cuỗm METEORITES.$"
 
 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels:
-	.string "Those rotten scoundrels who steal\n"
-	.string "POKéMON and rip off METEORITES…\p"
-	.string "I haven't seen them around recently.$"
+	.string "Lũ vô lại chuyên trộm POKéMON và cuỗm\n"
+	.string "METEORITES ấy...\p"
+	.string "Gần đây tôi không thấy chúng xuất hiện\n"
+	.string "nữa.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon
+	.global LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels
+	.global LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels
+@ END GENERATED LOCALIZATION EXPORTS

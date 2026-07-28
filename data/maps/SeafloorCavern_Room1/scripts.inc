@@ -12,25 +12,32 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 	end
 
 SeafloorCavern_Room1_Text_Grunt1Intro:
-	.string "We don't need a kid around!\n"
-	.string "Go on home already!$"
+	.string "Bọn ta không cần trẻ con lảng vảng ở\n"
+	.string "đây! Mau về nhà đi!$"
 
 SeafloorCavern_Room1_Text_Grunt1Defeat:
-	.string "I want to go home…$"
+	.string "Ta muốn về nhà...$"
 
 SeafloorCavern_Room1_Text_Grunt1PostBattle:
-	.string "I want to get a promotion so I can\n"
-	.string "boss around the GRUNTS…$"
+	.string "Ta muốn được thăng chức để có thể sai\n"
+	.string "khiến đám lính...$"
 
 SeafloorCavern_Room1_Text_Grunt2Intro:
-	.string "That submarine… It's tiny inside.\n"
-	.string "I'm sore all over!$"
+	.string "Chiếc tàu ngầm đó... Bên trong bé tí. Ta\n"
+	.string "đau nhức khắp người!$"
 
 SeafloorCavern_Room1_Text_Grunt2Defeat:
-	.string "Losing makes me sore!$"
+	.string "Thua trận khiến ta đau quá!$"
 
 SeafloorCavern_Room1_Text_Grunt2PostBattle:
-	.string "That submarine we jacked, man,\n"
-	.string "it's brutal as a ride.\l"
-	.string "It's way too tight in there!$"
+	.string "Chiếc tàu ngầm bọn ta cuỗm được đi xóc\n"
+	.string "kinh khủng. Bên trong lại còn chật ních!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SeafloorCavern_Room1_Text_Grunt1Intro
+	.global SeafloorCavern_Room1_Text_Grunt1Defeat
+	.global SeafloorCavern_Room1_Text_Grunt1PostBattle
+	.global SeafloorCavern_Room1_Text_Grunt2Intro
+	.global SeafloorCavern_Room1_Text_Grunt2Defeat
+	.global SeafloorCavern_Room1_Text_Grunt2PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

@@ -83,86 +83,97 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande::
 	end
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeech:
-	.string "WALLY: I lost to you, {PLAYER}, but I'm\n"
-	.string "not feeling down anymore.\p"
-	.string "Because I have a new purpose in life.\n"
-	.string "Together with my RALTS, I'm going\l"
-	.string "to challenge POKéMON GYMS and become\l"
-	.string "a great TRAINER.\p"
-	.string "Please watch me, {PLAYER}.\n"
-	.string "I'm going to be stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "WALLY: Tớ đã thua cậu, {PLAYER},\n"
+	.string "nhưng giờ tớ không còn buồn nữa.\p"
+	.string "Vì tớ đã có một mục tiêu mới trong đời.\n"
+	.string "Cùng với RALTS, tớ sẽ thách đấu các\l"
+	.string "POKéMON GYM và trở thành một HLV\l"
+	.string "xuất sắc.\p"
+	.string "Hãy dõi theo tớ nhé, {PLAYER}. Tớ sẽ\n"
+	.string "trở nên mạnh hơn cậu.\p"
+	.string "Khi đó, tớ sẽ lại thách đấu với cậu.$"
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
-	.string "WALLY: Please watch me, {PLAYER}.\n"
-	.string "I'm going to get stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "WALLY: Hãy dõi theo tớ nhé, {PLAYER}.\n"
+	.string "Tớ sẽ trở nên mạnh hơn cậu.\p"
+	.string "Khi đó, tớ sẽ lại thách đấu với cậu.$"
 
 VerdanturfTown_WandasHouse_Text_WallysNextDoor:
-	.string "UNCLE: Oh! {PLAYER}{KUN}!\n"
-	.string "WALLY's next door.\p"
-	.string "But, boy, there's something I have to\n"
-	.string "tell you.\p"
-	.string "This natural environment is doing\n"
-	.string "wonders for WALLY's health.\p"
-	.string "Maybe it's not just the environment.\n"
-	.string "It could be POKéMON that are giving\l"
-	.string "the boy hope.$"
+	.string "CHÚ: Ồ! {PLAYER}{KUN}! WALLY đang ở\n"
+	.string "nhà bên cạnh.\p"
+	.string "Nhưng này cháu, chú có chuyện phải nói\n"
+	.string "với cháu.\p"
+	.string "Môi trường tự nhiên nơi đây rất tốt\n"
+	.string "cho sức khỏe của WALLY.\p"
+	.string "Có lẽ không chỉ nhờ môi trường. Biết\n"
+	.string "đâu chính POKéMON đã mang lại hy vọng\l"
+	.string "cho thằng bé.$"
 
 VerdanturfTown_WandasHouse_Text_WallySlippedOff:
-	.string "WALLY's gone away…\n"
-	.string "He slipped off on his own…$"
+	.string "WALLY đi mất rồi... Thằng bé đã lặng lẽ đi\n"
+	.string "một mình...$"
 
 VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
-	.string "UNCLE: Is that right?\n"
-	.string "WALLY's gone away that far all by\l"
-	.string "himself…\p"
-	.string "Well, I have to give him credit--he is\n"
-	.string "my little brother's son.$"
+	.string "CHÚ: Vậy sao? WALLY đã tự mình đi xa\n"
+	.string "đến thế...\p"
+	.string "Dù sao cũng phải công nhận thằng bé\n"
+	.string "giỏi. Đúng là con trai của em chú.$"
 
 VerdanturfTown_WandasHouse_Text_MeetWanda:
-	.string "WANDA: You are?\n"
-	.string "Oh, right, I get it!\p"
-	.string "You're the {PLAYER} who WALLY was\n"
-	.string "telling me about.\p"
-	.string "I'm WALLY's cousin.\n"
-	.string "Glad to meet you!\p"
-	.string "I think WALLY's become a lot more lively\n"
-	.string "and healthy since he came here.$"
+	.string "WANDA: Cậu là...? À, phải rồi, tớ hiểu rồi!\p"
+	.string "Cậu chính là {PLAYER} mà WALLY đã kể\n"
+	.string "với tớ.\p"
+	.string "Tớ là chị họ của WALLY. Rất vui được\n"
+	.string "gặp cậu!\p"
+	.string "Tớ thấy WALLY đã khỏe mạnh và hoạt bát\n"
+	.string "hơn nhiều kể từ khi đến đây.$"
 
 VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
-	.string "WANDA: Don't worry about WALLY.\n"
-	.string "He'll be just fine.\p"
-	.string "I know my little cousin, and he has\n"
-	.string "POKéMON with him, too.$"
+	.string "WANDA: Đừng lo cho WALLY. Em ấy sẽ ổn\n"
+	.string "thôi.\p"
+	.string "Tớ hiểu em họ mình, hơn nữa em ấy còn\n"
+	.string "có POKéMON bên cạnh.$"
 
 VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay:
-	.string "Thanks to you, I can see my girlfriend\n"
-	.string "every day.\l"
-	.string "Happy? You bet I am!$"
+	.string "Nhờ có bạn, ngày nào tôi cũng có thể\n"
+	.string "gặp bạn gái. Có vui không ư? Dĩ nhiên là\l"
+	.string "có rồi!$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven:
-	.string "My daughter's boyfriend is a very\n"
-	.string "driven and passionate sort of person.\p"
-	.string "He's been digging a tunnel nonstop\n"
-	.string "just so he can see my daughter.\p"
-	.string "My daughter's a little concerned,\n"
-	.string "so she goes out to the tunnel a lot.$"
+	.string "Bạn trai của con gái tôi là một chàng\n"
+	.string "trai vô cùng quyết tâm và nhiệt huyết.\p"
+	.string "Cậu ấy đào đường hầm không ngừng\n"
+	.string "nghỉ chỉ để có thể gặp con gái tôi.\p"
+	.string "Con gái tôi hơi lo cho cậu ấy nên\n"
+	.string "thường xuyên ra đường hầm.$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
-	.string "It's amazing. My daughter's boyfriend\n"
-	.string "was digging the tunnel by hand!\p"
-	.string "It's so incredible!$"
+	.string "Thật đáng kinh ngạc. Bạn trai của con\n"
+	.string "gái tôi đã đào đường hầm bằng tay\l"
+	.string "không!\p"
+	.string "Quả là phi thường!$"
 
 VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
-	.string "If anything were to happen to WALLY,\n"
-	.string "I would never be able to look his\l"
-	.string "parents in PETALBURG in the eye…$"
+	.string "Nếu WALLY xảy ra chuyện gì, tôi sẽ\n"
+	.string "không bao giờ còn mặt mũi nhìn ba mẹ\l"
+	.string "thằng bé ở PETALBURG...$"
 
 VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
-	.string "WALLY was in EVER GRANDE?\p"
-	.string "His parents in PETALBURG would be\n"
-	.string "astonished to hear that!$"
+	.string "WALLY đã đến EVER GRANDE sao?\p"
+	.string "Ba mẹ thằng bé ở PETALBURG mà nghe tin\n"
+	.string "này chắc sẽ kinh ngạc lắm!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_WandasHouse_Text_StrongerSpeech
+	.global VerdanturfTown_WandasHouse_Text_StrongerSpeechShort
+	.global VerdanturfTown_WandasHouse_Text_WallysNextDoor
+	.global VerdanturfTown_WandasHouse_Text_WallySlippedOff
+	.global VerdanturfTown_WandasHouse_Text_WallyGoneThatFar
+	.global VerdanturfTown_WandasHouse_Text_MeetWanda
+	.global VerdanturfTown_WandasHouse_Text_DontWorryAboutWally
+	.global VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay
+	.global VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven
+	.global VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging
+	.global VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally
+	.global VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande
+@ END GENERATED LOCALIZATION EXPORTS

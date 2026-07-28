@@ -82,30 +82,36 @@ FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest:
 	step_end
 
 FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
-	.string "Oh, hello.\n"
-	.string "You are?\p"
-	.string "Okay, your name's {PLAYER}{KUN}.\n"
-	.string "I can see that you're a TRAINER.\p"
-	.string "So that means you use the POKéMON\n"
-	.string "Storage System I developed.\p"
-	.string "How I arrived at that conclusion is\n"
-	.string "a simple deductive process.\p"
-	.string "You spoke to me because you wanted\n"
-	.string "to access something on this PC.\p"
-	.string "Oh, I'm sorry. I'm LANETTE.\p"
-	.string "Honestly, I'm glad to meet you--it's\n"
-	.string "great you're using the Storage System.\p"
-	.string "If you could, please visit me at home.\n"
-	.string "My house is on ROUTE 114.$"
+	.string "Ồ, chào em. Em là...?\p"
+	.string "Được rồi, tên em là {PLAYER}{KUN}. Chị\n"
+	.string "nhận ra em là một HLV.\p"
+	.string "Vậy nghĩa là em có dùng POKéMON\n"
+	.string "Storage System do chị phát triển.\p"
+	.string "Chị suy ra điều đó bằng một phép suy\n"
+	.string "luận rất đơn giản.\p"
+	.string "Em bắt chuyện với chị vì muốn truy cập\n"
+	.string "thứ gì đó trên chiếc PC này.\p"
+	.string "Ồ, chị xin lỗi. Chị là LANETTE.\p"
+	.string "Thật lòng mà nói, chị rất vui được gặp\n"
+	.string "em, và cũng rất vui vì em đang dùng\l"
+	.string "Storage System.\p"
+	.string "Nếu có thể, hãy ghé thăm chị ở nhà nhé.\n"
+	.string "Nhà chị nằm trên ROUTE 114.$"
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
-	.string "I wonder what POKéMON looked like\n"
-	.string "long, long ago?\p"
-	.string "Maybe the FOSSIL MANIAC at the edge\n"
-	.string "of town will know.$"
+	.string "Không biết POKéMON từ thời xa xưa\n"
+	.string "trông như thế nào nhỉ?\p"
+	.string "Có lẽ FOSSIL MANIAC ở rìa thị trấn sẽ\n"
+	.string "biết.$"
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:
-	.string "In the fields of FALLARBOR, we plant\n"
-	.string "seedlings of hardy trees that thrive\l"
-	.string "even in volcanic ash.$"
+	.string "Trên những cánh đồng ở FALLARBOR,\n"
+	.string "chúng tôi trồng cây non thuộc các giống\l"
+	.string "khỏe mạnh, có thể sinh trưởng ngay cả\l"
+	.string "trong tro núi lửa.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FallarborTown_PokemonCenter_1F_Text_LanetteGreeting
+	.global FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown
+	.global FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees
+@ END GENERATED LOCALIZATION EXPORTS

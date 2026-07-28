@@ -148,119 +148,148 @@ JaggedPass_EventScript_Autumn::
 	end
 
 JaggedPass_Text_EricIntro:
-	.string "MT. CHIMNEY's JAGGED PASS…\p"
-	.string "Now this is what I've always wanted\n"
-	.string "in a mountain.\p"
-	.string "This jagged bumpiness…\n"
-	.string "It rocks my soul!$"
+	.string "JAGGED PASS của MT. CHIMNEY...\p"
+	.string "Đây chính là kiểu núi mà tôi hằng ao\n"
+	.string "ước.\p"
+	.string "Địa hình gập ghềnh lởm chởm này... làm\n"
+	.string "tâm hồn tôi rung động!$"
 
 JaggedPass_Text_EricDefeat:
-	.string "Losing left me bitter!$"
+	.string "Thua trận khiến tôi cay cú quá!$"
 
 JaggedPass_Text_EricPostBattle:
-	.string "Yes, I did lose at POKéMON…\p"
-	.string "But, when it comes to the love of\n"
-	.string "the mountains, I have you beat!$"
+	.string "Đúng, tôi đã thua trong trận POKéMON...\p"
+	.string "Nhưng về tình yêu dành cho núi non thì\n"
+	.string "tôi hơn bạn!$"
 
 JaggedPass_Text_DianaIntro:
-	.string "This place isn't your casual hike.\n"
-	.string "It's not suited for a picnic.$"
+	.string "Nơi này không dành cho một chuyến đi\n"
+	.string "bộ thong thả. Càng không thích hợp để\l"
+	.string "dã ngoại.$"
 
 JaggedPass_Text_DianaDefeat:
-	.string "Ohhh, no!\n"
-	.string "The ground is too bumpy…$"
+	.string "Ôi, không! Mặt đất gập ghềnh quá...$"
 
 JaggedPass_Text_DianaPostBattle:
-	.string "Did you know?\p"
-	.string "Some people cleverly ride their\n"
-	.string "bicycles up this horribly bumpy pass.$"
+	.string "Bạn có biết không?\p"
+	.string "Có những người khéo léo đến mức đạp\n"
+	.string "xe lên được con đèo gập ghềnh khủng\l"
+	.string "khiếp này đấy.$"
 
 JaggedPass_Text_DianaRegister:
-	.string "Will you ever be back in this area?\n"
-	.string "If you do return, I'd like a rematch.$"
+	.string "Bạn có quay lại khu vực này nữa không?\n"
+	.string "Nếu có, tôi muốn tái đấu với bạn.$"
 
 JaggedPass_Text_DianaRematchIntro:
-	.string "Picnics are fun wherever you go.\n"
-	.string "Just like POKéMON!$"
+	.string "Đi dã ngoại ở đâu cũng vui. POKéMON\n"
+	.string "cũng vậy!$"
 
 JaggedPass_Text_DianaRematchDefeat:
-	.string "I only lost because the ground is\n"
-	.string "too bumpy!$"
+	.string "Tôi thua chỉ vì mặt đất gập ghềnh quá\n"
+	.string "thôi!$"
 
 JaggedPass_Text_DianaPostRematch:
-	.string "I'll forget about losing and just\n"
-	.string "enjoy this bumpy hike.$"
+	.string "Tôi sẽ quên trận thua và tận hưởng\n"
+	.string "chuyến đi bộ gập ghềnh này.$"
 
 JaggedPass_Text_EthanIntro:
-	.string "JAGGED PASS is hard to walk on.\n"
-	.string "It's a good place for training.$"
+	.string "JAGGED PASS rất khó đi. Đây là nơi\n"
+	.string "thích hợp để rèn luyện.$"
 
 JaggedPass_Text_EthanDefeat:
-	.string "It was all over while we were still\n"
-	.string "trying to find a good footing…$"
+	.string "Trận đấu đã kết thúc khi chúng tôi còn\n"
+	.string "đang lo tìm chỗ đứng vững...$"
 
 JaggedPass_Text_EthanPostBattle:
-	.string "If I had an ACRO BIKE, I'd be able to\n"
-	.string "jump ledges.$"
+	.string "Nếu có ACRO BIKE, tôi sẽ nhảy qua được\n"
+	.string "các gờ đá.$"
 
 JaggedPass_Text_EthanRegister:
-	.string "When I get more used to this bumpiness,\n"
-	.string "I'll be sure to win!\p"
-	.string "Can you register me in your POKéNAV?$"
+	.string "Khi quen hơn với địa hình gập ghềnh\n"
+	.string "này, nhất định tôi sẽ thắng!\p"
+	.string "Bạn đăng ký tôi vào POKéNAV được\n"
+	.string "không?$"
 
 JaggedPass_Text_EthanRematchIntro:
-	.string "I got used to this bumpiness.\n"
-	.string "I sing while I climb now.$"
+	.string "Tôi đã quen với địa hình gập ghềnh này\n"
+	.string "rồi. Giờ leo núi tôi còn vừa đi vừa hát\l"
+	.string "nữa.$"
 
 JaggedPass_Text_EthanRematchDefeat:
-	.string "It's still not easy to battle on this\n"
-	.string "bumpy ground…$"
+	.string "Chiến đấu trên mặt đất gập ghềnh này\n"
+	.string "vẫn chẳng dễ chút nào...$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "I should get an ACRO BIKE from RYDEL\n"
-	.string "in MAUVILLE CITY…$"
+	.string "Mình nên đến gặp RYDEL ở MAUVILLE\n"
+	.string "CITY để lấy một chiếc ACRO BIKE...$"
 
 JaggedPass_Text_GruntIntro:
-	.string "Wah!\n"
-	.string "What are you doing here?\p"
-	.string "What am I doing in a place like this?\p"
-	.string "What business is it of yours?$"
+	.string "Á! Ngươi làm gì ở đây?\p"
+	.string "Ta làm gì tại một nơi thế này ư?\p"
+	.string "Liên quan gì đến ngươi?$"
 
 JaggedPass_Text_GruntDefeat:
-	.string "Urrrgh…\p"
-	.string "I should've ducked into our HIDEOUT\n"
-	.string "right away…$"
+	.string "Ưưư...\p"
+	.string "Lẽ ra ta phải chui ngay vào HIDEOUT...$"
 
 JaggedPass_Text_GoWhereverYouWant:
-	.string "Okay, oh-kay!\n"
-	.string "I admit it--you're strong!\p"
-	.string "Don't worry about me.\n"
-	.string "Go wherever you want!$"
+	.string "Được rồi, được rồi! Ta thừa nhận\n"
+	.string "ngươi rất mạnh!\p"
+	.string "Đừng bận tâm đến ta. Muốn đi đâu thì\n"
+	.string "đi!$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-	.string "Oh! This boulder is shaking in response\n"
-	.string "to the MAGMA EMBLEM!$"
+	.string "Ồ! Tảng đá này đang rung lên vì phản\n"
+	.string "ứng với MAGMA EMBLEM!$"
 
 JaggedPass_Text_JulioIntro:
-	.string "Aiyeeh! It's awfully scary to shoot\n"
-	.string "down the mountain in one go!$"
+	.string "Ái chà! Lao một mạch xuống núi đáng sợ\n"
+	.string "quá!$"
 
 JaggedPass_Text_JulioDefeat:
-	.string "I feel like I'm falling apart…$"
+	.string "Tôi có cảm giác cả người sắp rã ra rồi...$"
 
 JaggedPass_Text_JulioPostBattle:
-	.string "My bicycle bounced around so much,\n"
-	.string "my rear end's sore…$"
+	.string "Xe đạp của tôi nảy dữ quá, làm ê cả\n"
+	.string "mông...$"
 
 JaggedPass_Text_AutumnIntro:
-	.string "I climb this hill every day.\n"
-	.string "I have confidence in my strength!$"
+	.string "Ngày nào tôi cũng leo ngọn đồi này. Tôi\n"
+	.string "rất tự tin vào sức mạnh của mình!$"
 
 JaggedPass_Text_AutumnDefeat:
-	.string "Hmm…\n"
-	.string "What went wrong?$"
+	.string "Hừm... Có chuyện gì không ổn nhỉ?$"
 
 JaggedPass_Text_AutumnPostBattle:
-	.string "What is that odd rock protrusion\n"
-	.string "a little up the hill from here?$"
+	.string "Mỏm đá kỳ lạ nhô lên ở phía trên đồi kia\n"
+	.string "là gì vậy?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global JaggedPass_Text_EricIntro
+	.global JaggedPass_Text_EricDefeat
+	.global JaggedPass_Text_EricPostBattle
+	.global JaggedPass_Text_DianaIntro
+	.global JaggedPass_Text_DianaDefeat
+	.global JaggedPass_Text_DianaPostBattle
+	.global JaggedPass_Text_DianaRegister
+	.global JaggedPass_Text_DianaRematchIntro
+	.global JaggedPass_Text_DianaRematchDefeat
+	.global JaggedPass_Text_DianaPostRematch
+	.global JaggedPass_Text_EthanIntro
+	.global JaggedPass_Text_EthanDefeat
+	.global JaggedPass_Text_EthanPostBattle
+	.global JaggedPass_Text_EthanRegister
+	.global JaggedPass_Text_EthanRematchIntro
+	.global JaggedPass_Text_EthanRematchDefeat
+	.global JaggedPass_Text_EthanPostRematch
+	.global JaggedPass_Text_GruntIntro
+	.global JaggedPass_Text_GruntDefeat
+	.global JaggedPass_Text_GoWhereverYouWant
+	.global JaggedPass_Text_BoulderShakingInResponseToEmblem
+	.global JaggedPass_Text_JulioIntro
+	.global JaggedPass_Text_JulioDefeat
+	.global JaggedPass_Text_JulioPostBattle
+	.global JaggedPass_Text_AutumnIntro
+	.global JaggedPass_Text_AutumnDefeat
+	.global JaggedPass_Text_AutumnPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

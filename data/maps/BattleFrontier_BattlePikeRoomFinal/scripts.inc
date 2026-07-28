@@ -35,6 +35,9 @@ BattleFrontier_BattlePikeRoomFinal_EventScript_TurnPlayerNorth::
 	end
 
 BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease:
-	.string "Congratulations…\n"
-	.string "Now, this way, please…$"
+	.string "Xin chúc mừng... Bây giờ, xin mời đi lối\n"
+	.string "này...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease
+@ END GENERATED LOCALIZATION EXPORTS

@@ -422,196 +422,226 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
-	.string "here ahead of us!\p"
-	.string "We can't fall behind!$"
+	.string "Không! Bọn tay sai TEAM MAGMA đã đến\n"
+	.string "đây trước chúng ta!\p"
+	.string "Không thể để bị tụt lại!$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+	.string "Ta cứ tưởng ngươi là một tên MAGMAS\n"
+	.string "quay lại...$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "Yeah, so you are strong…\n"
-	.string "But there're a lot of us!$"
+	.string "Ừ, công nhận ngươi mạnh... Nhưng bọn ta\n"
+	.string "đông lắm!$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "Hah!\n"
-	.string "Too bad for you!\p"
-	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM MAGMA.\p"
-	.string "But since you arrived now, you have\n"
-	.string "to take on us toughies!$"
+	.string "Ha! Xui cho ngươi rồi!\p"
+	.string "Nếu đến sớm hơn, ngươi chỉ phải đấu\n"
+	.string "với lũ TEAM MAGMA yếu nhớt.\p"
+	.string "Nhưng vì bây giờ mới tới, ngươi phải\n"
+	.string "đối đầu với những kẻ mạnh như bọn ta!$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "Urgh… I should've let you take on\n"
-	.string "TEAM MAGMA first…$"
+	.string "Hự... Lẽ ra ta nên để ngươi đấu với\n"
+	.string "TEAM MAGMA trước...$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "You don't know anything!\n"
-	.string "So why are you messing with us?$"
+	.string "Ngươi chẳng biết gì cả! Vậy tại sao còn\n"
+	.string "xen vào chuyện của bọn ta?$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "You…\n"
-	.string "We saw you at MT. CHIMNEY.\p"
-	.string "You don't belong to either TEAM,\n"
-	.string "so why would you be here?$"
+	.string "Ngươi... Bọn ta đã thấy ngươi ở MT.\n"
+	.string "CHIMNEY.\p"
+	.string "Ngươi không thuộc TEAM nào, vậy tới\n"
+	.string "đây làm gì?$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "If you're going to mess with anyone,\n"
-	.string "let it be TEAM MAGMA…$"
+	.string "Nếu muốn gây chuyện với ai thì hãy nhắm\n"
+	.string "vào TEAM MAGMA...$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "Heh, it doesn't matter!\n"
-	.string "We bought ourselves some time!\p"
-	.string "The BOSS should have snatched what\n"
-	.string "he was after!$"
+	.string "Hừ, chẳng sao cả! Bọn ta đã câu được\n"
+	.string "chút thời gian!\p"
+	.string "Chắc thủ lĩnh đã lấy thứ mình muốn\n"
+	.string "rồi!$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "Oh, I know!\n"
-	.string "You tried to join TEAM MAGMA,\l"
-	.string "but they wouldn't have you!\p"
-	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+	.string "Ồ, ta biết rồi! Ngươi muốn gia nhập TEAM\n"
+	.string "MAGMA nhưng chúng không chịu nhận!\p"
+	.string "Đừng tưởng TEAM AQUA của bọn ta sẽ\n"
+	.string "cho ngươi gia nhập!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+	.string "Nếu ngươi muốn gia nhập TEAM AQUA đến\n"
+	.string "thế, bọn ta có thể cân nhắc...$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "We have a great combination going\n"
-	.string "with us members and our leader.$"
+	.string "Các thành viên bọn ta và thủ lĩnh phối\n"
+	.string "hợp vô cùng ăn ý.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
-	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
-	.string "Fufufu… Now we can bring our ultimate\n"
-	.string "objective to fruition!\p"
-	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+	.string "ARCHIE: MAXIE của TEAM MAGMA đã đi\n"
+	.string "trước chúng ta, nhưng ta cũng lấy\l"
+	.string "được thứ mình muốn.\p"
+	.string "RED ORB được gìn giữ tại MT. PYRE... Giờ\n"
+	.string "nó đã thuộc về ta, ARCHIE!\p"
+	.string "Hư hư hư... Giờ chúng ta có thể hoàn\n"
+	.string "thành mục tiêu tối thượng!\p"
+	.string "Được rồi, TEAM! Rút lui!$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "Oh, no…\n"
-	.string "This cannot happen…\p"
-	.string "Not only the BLUE ORB, but even\n"
-	.string "the RED ORB has been taken…\p"
-	.string "The BLUE ORB and RED ORB must never\n"
-	.string "be separated. They belong together.\p"
-	.string "What are those men trying to do with\n"
-	.string "the two ORBS?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Oh, yes. Was it TEAM MAGMA who came\n"
-	.string "and took the BLUE ORB first?\p"
-	.string "Well, in their haste, they left this\n"
-	.string "behind.\p"
-	.string "I couldn't imagine what exactly it\n"
-	.string "could be.\p"
-	.string "I would like you to have it.\n"
-	.string "Perhaps it will be useful in some way.$"
+	.string "Ôi, không... Chuyện này không thể xảy\n"
+	.string "ra...\p"
+	.string "Không chỉ BLUE ORB mà ngay cả RED ORB\n"
+	.string "cũng đã bị lấy đi...\p"
+	.string "BLUE ORB và RED ORB tuyệt đối không\n"
+	.string "được tách rời. Chúng phải luôn ở bên\l"
+	.string "nhau.\p"
+	.string "Những kẻ đó định làm gì với hai ORBS?\p"
+	.string ". . . . . . . . . . . .\p"
+	.string "À, phải rồi. Có phải TEAM MAGMA đã đến\n"
+	.string "lấy BLUE ORB trước không?\p"
+	.string "Vì quá vội vàng, chúng đã bỏ lại thứ\n"
+	.string "này.\p"
+	.string "Ta không thể đoán được chính xác nó là\n"
+	.string "gì.\p"
+	.string "Ta muốn cháu giữ lấy. Có lẽ nó sẽ hữu\n"
+	.string "ích theo cách nào đó.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "The BLUE ORB and RED ORB taken by\n"
-	.string "those sinister men…\p"
-	.string "They must never be apart…\n"
-	.string "I fear something terrible will happen…$"
+	.string "BLUE ORB và RED ORB đã bị những kẻ hiểm\n"
+	.string "độc đó lấy đi...\p"
+	.string "Chúng tuyệt đối không được xa nhau...\n"
+	.string "Ta e rằng một chuyện khủng khiếp sẽ xảy\l"
+	.string "ra...$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "Oh, my goodness…\p"
-	.string "You say that both GROUDON and KYOGRE\n"
-	.string "have been awakened?\p"
-	.string "It is said that the BLUE ORB and\n"
-	.string "the RED ORB quelled the rage of\l"
-	.string "the two POKéMON…\p"
-	.string "It is also said that the true owner\n"
-	.string "of the ORBS still exists.\p"
-	.string "However, no one knows who, or what\n"
-	.string "exactly, the ORBS belong to.\p"
-	.string "It could be a human, or perhaps\n"
-	.string "a POKéMON, but no one knows.$"
+	.string "Ôi trời...\p"
+	.string "Cháu nói cả GROUDON lẫn KYOGRE đều đã\n"
+	.string "thức tỉnh sao?\p"
+	.string "Tương truyền BLUE ORB và RED ORB từng\n"
+	.string "xoa dịu cơn thịnh nộ của hai POKéMON\l"
+	.string "đó...\p"
+	.string "Người ta cũng kể rằng chủ nhân thực\n"
+	.string "sự của các ORBS vẫn còn tồn tại.\p"
+	.string "Tuy nhiên, không ai biết chủ nhân ấy là\n"
+	.string "ai, hay chính xác các ORBS thuộc về thứ\l"
+	.string "gì.\p"
+	.string "Có thể là một con người, hoặc một\n"
+	.string "POKéMON, nhưng không ai biết cả.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "The two men who took the ORBS came\n"
-	.string "back to return them on their own.\p"
-	.string "Those men…\n"
-	.string "Perhaps they are not so evil after all…$"
+	.string "Hai người đàn ông đã lấy các ORBS tự\n"
+	.string "mình quay lại trả chúng.\p"
+	.string "Hai người đó... Có lẽ họ cũng không hoàn\n"
+	.string "toàn xấu xa...$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "The embodiments of the land, sea,\n"
-	.string "and the sky…\p"
-	.string "That is said to be the identities of\n"
-	.string "the super-ancient POKéMON…\p"
-	.string "In the same way that we humans and\n"
-	.string "POKéMON have life, our world, too,\l"
-	.string "is alive…\p"
-	.string "The super-ancient POKéMON have\n"
-	.string "taught us that…$"
+	.string "Hiện thân của đất liền, biển cả và bầu\n"
+	.string "trời...\p"
+	.string "Tương truyền đó chính là bản chất của\n"
+	.string "những POKéMON siêu cổ đại...\p"
+	.string "Cũng như con người và POKéMON có sinh\n"
+	.string "mệnh, thế giới của chúng ta cũng đang\l"
+	.string "sống...\p"
+	.string "Những POKéMON siêu cổ đại đã dạy chúng\n"
+	.string "ta điều đó...$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on…\p"
-	.string "This is a high place where one can\n"
-	.string "see all of HOENN…\p"
-	.string "The disembodied spirits of POKéMON\n"
-	.string "must find solace here…\p"
-	.string "Is it coincidence that you are here…\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+	.string "MT. PYRE là nơi chúng ta xoa dịu linh hồn\n"
+	.string "của những POKéMON đã khuất...\p"
+	.string "Từ nơi cao này có thể nhìn thấy toàn\n"
+	.string "cõi HOENN...\p"
+	.string "Những linh hồn POKéMON đã rời thân xác\n"
+	.string "hẳn sẽ tìm được sự an nghỉ tại đây...\p"
+	.string "Việc cháu có mặt nơi này liệu có phải\n"
+	.string "tình cờ...\p"
+	.string "Cháu có muốn nghe câu chuyện của ta\n"
+	.string "không? Một câu chuyện được lưu truyền\l"
+	.string "từ lâu tại vùng HOENN?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "infernos and vicious storms.\p"
-	.string "The BLUE ORB and the RED ORB brought\n"
-	.string "an end to the calamity.\p"
-	.string "Light poured from the two ORBS and\n"
-	.string "becalmed the enraged adversaries.\p"
-	.string "The pair, made docile, dove deep into\n"
-	.string "the sea where eventually they\l"
-	.string "disappeared…$"
+	.string "Chuyện xảy ra từ rất, rất lâu về\n"
+	.string "trước...\p"
+	.string "Thế giới bị tàn phá bởi cuộc đụng độ dữ\n"
+	.string "dội giữa POKéMON của đất liền và\l"
+	.string "POKéMON của biển cả...\p"
+	.string "POKéMON của đất liền nâng núi cao và\n"
+	.string "tạo nên các lục địa...\p"
+	.string "POKéMON của biển cả dâng những con\n"
+	.string "sóng khổng lồ và tạo nên đại dương...\p"
+	.string "Trận quyết đấu khốc liệt của chúng kéo\n"
+	.string "dài không dứt.\p"
+	.string "Thế giới chìm trong biển lửa khổng lồ\n"
+	.string "và những cơn bão hung tàn.\p"
+	.string "BLUE ORB và RED ORB đã chấm dứt tai\n"
+	.string "họa.\p"
+	.string "Ánh sáng tuôn ra từ hai ORBS và xoa dịu\n"
+	.string "những đối thủ đang nổi giận.\p"
+	.string "Khi đã trở nên hiền hòa, cả hai lặn sâu\n"
+	.string "xuống biển rồi cuối cùng biến mất...$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "I see…\n"
-	.string "Well, that, too, is fine…$"
+	.string "Ta hiểu rồi... Như vậy cũng không sao...$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …$"
+	.string "MAXIE: {PLAYER}...\p"
+	.string ". . . . . . . . . . . .$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "It is my role to pass on the legends\n"
-	.string "of HOENN to future generations.\p"
-	.string "And the crisis that just ended in\n"
-	.string "SOOTOPOLIS rewrote a legend…\p"
-	.string "Have you the time to hear the new\n"
-	.string "legend of HOENN?$"
+	.string "Vai trò của ta là truyền lại những huyền\n"
+	.string "thoại của HOENN cho các thế hệ mai sau.\p"
+	.string "Và cuộc khủng hoảng vừa kết thúc tại\n"
+	.string "SOOTOPOLIS đã viết lại một huyền\l"
+	.string "thoại...\p"
+	.string "Cháu có thời gian nghe huyền thoại mới\n"
+	.string "của HOENN không?$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "fires and vicious storms.\p"
-	.string "It was then that the POKéMON of\n"
-	.string "the sky descended from a storm.\p"
-	.string "The POKéMON, shining a vivid green,\n"
-	.string "becalmed the two enraged POKéMON.\p"
-	.string "Then, its duty done, the green POKéMON\n"
-	.string "flew off into the wild blue yonder…$"
+	.string "Chuyện xảy ra từ rất, rất lâu về\n"
+	.string "trước...\p"
+	.string "Thế giới bị tàn phá bởi cuộc đụng độ dữ\n"
+	.string "dội giữa POKéMON của đất liền và\l"
+	.string "POKéMON của biển cả...\p"
+	.string "POKéMON của đất liền nâng núi cao và\n"
+	.string "tạo nên các lục địa...\p"
+	.string "POKéMON của biển cả dâng những con\n"
+	.string "sóng khổng lồ và tạo nên đại dương...\p"
+	.string "Trận quyết đấu khốc liệt của chúng kéo\n"
+	.string "dài không dứt.\p"
+	.string "Thế giới chìm trong biển lửa khổng lồ\n"
+	.string "và những cơn bão hung tàn.\p"
+	.string "Chính lúc ấy, POKéMON của bầu trời từ\n"
+	.string "trong cơn bão hạ xuống.\p"
+	.string "POKéMON tỏa ánh sáng xanh rực rỡ ấy đã\n"
+	.string "xoa dịu hai POKéMON đang nổi giận.\p"
+	.string "Sau khi hoàn thành sứ mệnh, POKéMON\n"
+	.string "màu xanh bay vào khoảng trời xanh\l"
+	.string "thẳm...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_Summit_Text_Grunt1Intro
+	.global MtPyre_Summit_Text_Grunt1Defeat
+	.global MtPyre_Summit_Text_Grunt1PostBattle
+	.global MtPyre_Summit_Text_Grunt2Intro
+	.global MtPyre_Summit_Text_Grunt2Defeat
+	.global MtPyre_Summit_Text_Grunt2PostBattle
+	.global MtPyre_Summit_Text_Grunt3Intro
+	.global MtPyre_Summit_Text_Grunt3Defeat
+	.global MtPyre_Summit_Text_Grunt3PostBattle
+	.global MtPyre_Summit_Text_Grunt4Intro
+	.global MtPyre_Summit_Text_Grunt4Defeat
+	.global MtPyre_Summit_Text_Grunt4PostBattle
+	.global MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo
+	.global MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis
+	.global MtPyre_Summit_Text_OrbsHaveBeenTaken
+	.global MtPyre_Summit_Text_GroudonKyogreAwakened
+	.global MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs
+	.global MtPyre_Summit_Text_SuperAncientPokemonTaughtUs
+	.global MtPyre_Summit_Text_WillYouHearOutMyTale
+	.global MtPyre_Summit_Text_GroudonKyogreTale
+	.global MtPyre_Summit_Text_WellThatTooIsFine
+	.global MtPyre_Summit_Text_MaxieSilence
+	.global MtPyre_Summit_Text_HearTheNewLegendOfHoenn
+	.global MtPyre_Summit_Text_HoennTrioTale
+@ END GENERATED LOCALIZATION EXPORTS

@@ -20,29 +20,32 @@ MysteryGiftScript_VisitingTrainerArrived:
 	end
 
 sText_MysteryGiftVisitingTrainerInstructions:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "By holding this WONDER CARD, you\n"
-	.string "may take part in a survey at a\l"
-	.string "POKéMON MART.\p"
-	.string "Use these surveys to invite\n"
-	.string "TRAINERS to SOOTOPOLIS CITY.\p"
-	.string "…Let me give you a secret\n"
-	.string "password for a survey:\p"
-	.string "“GIVE ME\n"
-	.string "AWESOME TRAINER”\p"
-	.string "Write that in on a survey and send\n"
-	.string "it to the WIRELESS\l"
-	.string "COMMUNICATION SYSTEM.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Khi giữ WONDER CARD này, bạn có thể\n"
+	.string "tham gia một cuộc khảo sát tại POKéMON\l"
+	.string "MART.\p"
+	.string "Hãy dùng các cuộc khảo sát này để mời\n"
+	.string "HLV đến SOOTOPOLIS CITY.\p"
+	.string "...Để tôi cho bạn biết mật khẩu bí mật\n"
+	.string "của một cuộc khảo sát:\p"
+	.string "GIVE ME AWESOME TRAINER\p"
+	.string "Hãy điền câu đó vào khảo sát rồi gửi\n"
+	.string "đến WIRELESS COMMUNICATION SYSTEM.$"
 
 sText_MysteryGiftVisitingTrainerArrived:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "A TRAINER has arrived in\n"
-	.string "SOOTOPOLIS CITY looking for you.\p"
-	.string "We hope you will enjoy\n"
-	.string "battling the visiting TRAINER.\p"
-	.string "You may invite other TRAINERS by\n"
-	.string "entering other passwords.\p"
-	.string "Try looking for other passwords\n"
-	.string "that may work.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Một HLV đã đến SOOTOPOLIS CITY để\n"
+	.string "tìm bạn.\p"
+	.string "Hy vọng bạn sẽ tận hưởng trận đấu với\n"
+	.string "vị HLV ghé thăm này.\p"
+	.string "Bạn có thể mời những HLV khác\n"
+	.string "bằng cách nhập các mật khẩu khác.\p"
+	.string "Hãy thử tìm thêm những mật khẩu có thể\n"
+	.string "dùng được.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftVisitingTrainerInstructions
+	.global sText_MysteryGiftVisitingTrainerArrived
+@ END GENERATED LOCALIZATION EXPORTS

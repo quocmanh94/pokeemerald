@@ -37,13 +37,17 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad::
 	end
 
 Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad:
-	.string "On CYCLING ROAD, you can go all out\n"
-	.string "and cycle as fast as you'd like.\p"
-	.string "It feels great to go that fast, but try\n"
-	.string "not to crash into anyone!$"
+	.string "Trên CYCLING ROAD, cậu có thể dốc hết\n"
+	.string "sức và đạp nhanh tùy thích.\p"
+	.string "Chạy nhanh như vậy rất đã, nhưng cố\n"
+	.string "đừng đâm vào ai nhé!$"
 
 Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk:
-	.string "Sorry, you can't walk on CYCLING\n"
-	.string "ROAD. It's too dangerous.\p"
-	.string "Please come back with a BIKE.$"
+	.string "Xin lỗi, cậu không thể đi bộ trên\n"
+	.string "CYCLING ROAD. Nguy hiểm lắm.\p"
+	.string "Hãy quay lại khi có BIKE.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad
+	.global Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk
+@ END GENERATED LOCALIZATION EXPORTS

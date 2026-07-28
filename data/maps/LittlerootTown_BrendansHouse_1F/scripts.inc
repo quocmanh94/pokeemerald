@@ -284,153 +284,183 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "MOM: See, {PLAYER}?\n"
-	.string "Isn't it nice in here, too?$"
+	.string "MẸ: Thấy chưa, {PLAYER}? Trong này\n"
+	.string "cũng đẹp đúng không?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "The mover's POKéMON do all the work\n"
-	.string "of moving us in and cleaning up after.\l"
-	.string "This is so convenient!\p"
-	.string "{PLAYER}, your room is upstairs.\n"
-	.string "Go check it out, dear!\p"
-	.string "DAD bought you a new clock to mark\n"
-	.string "our move here.\l"
-	.string "Don't forget to set it!$"
+	.string "POKéMON của đội chuyển nhà lo hết việc\n"
+	.string "chuyển đồ vào và dọn dẹp sau đó. Tiện\l"
+	.string "lợi quá!\p"
+	.string "{PLAYER}, phòng của con ở trên tầng.\n"
+	.string "Lên xem đi, con yêu!\p"
+	.string "BA đã mua cho con một chiếc đồng hồ\n"
+	.string "mới để kỷ niệm ngày chúng ta chuyển\l"
+	.string "đến đây. Đừng quên chỉnh giờ nhé!$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
-	.string "MOM: Well, {PLAYER}?\p"
-	.string "Aren't you interested in seeing your\n"
-	.string "very own room?$"
+	.string "MẸ: Sao nào, {PLAYER}?\p"
+	.string "Con không muốn lên xem căn phòng riêng\n"
+	.string "của mình à?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "MOM: {PLAYER}.\p"
-	.string "Go set the clock in your room, honey.$"
+	.string "MẸ: {PLAYER}.\p"
+	.string "Lên chỉnh đồng hồ trong phòng đi, con\n"
+	.string "yêu.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
-	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"
-	.string "Quick! Come quickly!$"
+	.string "MẸ: Ôi! {PLAYER}, {PLAYER}! Mau lên!\n"
+	.string "Lại đây nhanh!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
-	.string "MOM: Look! It's PETALBURG GYM!\n"
-	.string "Maybe DAD will be on!$"
+	.string "MẸ: Nhìn kìa! Là PETALBURG GYM! Có khi\n"
+	.string "BA sẽ lên hình đấy!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
-	.string "MOM: Oh… It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
-	.string "Too bad.$"
+	.string "MẸ: Ôi... Hết rồi.\p"
+	.string "Hình như BA vừa lên hình, nhưng chúng\n"
+	.string "ta bỏ lỡ mất. Tiếc thật.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
-	.string "Oh, yes.\n"
-	.string "One of DAD's friends lives in town.\p"
-	.string "PROF. BIRCH is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "À phải rồi. Một người bạn của BA sống\n"
+	.string "trong thị trấn này.\p"
+	.string "Ông ấy tên là PROF. BIRCH.\p"
+	.string "Ông ấy sống ngay nhà bên, nên con hãy\n"
+	.string "sang tự giới thiệu nhé.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "MOM: See you, honey!$"
+	.string "MẸ: Gặp lại sau nhé, con yêu!$"
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
-	.string "MOM: Did you introduce yourself to\n"
-	.string "PROF. BIRCH?$"
+	.string "MẸ: Con đã sang chào PROF. BIRCH\n"
+	.string "chưa?$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "MOM: How are you doing, {PLAYER}?\n"
-	.string "You look a little tired.\p"
-	.string "I think you should rest a bit.$"
+	.string "MẸ: Con thế nào rồi, {PLAYER}? Trông\n"
+	.string "con hơi mệt.\p"
+	.string "Mẹ nghĩ con nên nghỉ ngơi một chút.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "MOM: Take care, honey!$"
+	.string "MẸ: Nhớ giữ gìn nhé, con yêu!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "MOM: Oh? Did DAD give you that BADGE?\p"
-	.string "Then here's something from your MOM!$"
+	.string "MẸ: Ồ? BA trao cho con BADGE đó à?\p"
+	.string "Vậy thì MẸ tặng con món này!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
-	.string "Don't push yourself too hard, dear.\n"
-	.string "You can always come home.\p"
-	.string "Go for it, honey!$"
+	.string "Đừng cố quá sức nhé con. Con luôn có\n"
+	.string "thể về nhà.\p"
+	.string "Cố lên nhé, con yêu!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "MOM: What is that, honey? A POKéNAV?\n"
-	.string "Someone from DEVON gave it to you?\p"
-	.string "Well, honey, how about registering\n"
-	.string "your mom?\p"
-	.string "… … …$"
+	.string "MẸ: Gì vậy con? POKéNAV à? Người của\n"
+	.string "DEVON tặng con sao?\p"
+	.string "Nào con, đăng ký MẸ vào nhé?\p"
+	.string "... ... ...$"
 
 PlayersHouse_1F_Text_RegisteredMom:
-	.string "Registered MOM\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký MẸ vào POKéNAV.$"
 
 PlayersHouse_1F_Text_Vigoroth1:
 	.string "Fugiiiiih!$"
 
 PlayersHouse_1F_Text_Vigoroth2:
-	.string "Huggoh, uggo uggo…$"
+	.string "Huggoh, uggo uggo...$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
-	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "PHÓNG VIÊN: ...Sau đây là bản tin từ\n"
+	.string "phía trước PETALBURG GYM.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
-	.string "There is a movie on TV.\p"
-	.string "Two men are dancing on a big piano\n"
-	.string "keyboard.\p"
-	.string "Better get going!$"
+	.string "Có một bộ phim trên TV.\p"
+	.string "Hai người đàn ông đang nhảy trên một\n"
+	.string "bàn phím piano khổng lồ.\p"
+	.string "Nên đi thôi!$"
 
 PlayersHouse_1F_Text_RunningShoesManual:
-	.string "It's the instruction booklet for the\n"
+	.string "Đây là sách hướng dẫn sử dụng RUNNING\n"
+	.string "SHOES.\p"
+	.string "Nhấn B Button để chạy khi đang mang\n"
 	.string "RUNNING SHOES.\p"
-	.string "“Press the B Button to run while\n"
-	.string "wearing your RUNNING SHOES.\p"
-	.string "“Lace up your RUNNING SHOES and hit\n"
-	.string "the road running!”$"
+	.string "Hãy buộc dây RUNNING SHOES rồi chạy\n"
+	.string "thẳng ra đường!$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
-	.string "DAD: Hm?\p"
-	.string "Hey, it's {PLAYER}!\p"
-	.string "It's been a while since I saw you,\n"
-	.string "but you look…stronger, somehow.\p"
-	.string "That's the impression I get.\n"
-	.string "But your old man hasn't given up yet!\p"
-	.string "Oh, yes, I have something for you.\n"
-	.string "This came to you from someone named\l"
-	.string "MR. BRINEY.$"
+	.string "BA: Hửm?\p"
+	.string "Này, {PLAYER} đây mà!\p"
+	.string "Lâu rồi ba chưa gặp con, nhưng trông\n"
+	.string "con... có vẻ mạnh hơn.\p"
+	.string "Ba có cảm giác như vậy. Nhưng ông già\n"
+	.string "này vẫn chưa chịu thua đâu!\p"
+	.string "À phải, ba có thứ này cho con. Một\n"
+	.string "người tên MR. BRINEY gửi nó đến cho\l"
+	.string "con.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
-	.string "DAD: Hm, a TICKET for a ferry?\p"
-	.string "If I recall, there are ferry ports in\n"
-	.string "SLATEPORT and LILYCOVE.$"
+	.string "BA: Hừm, một TICKET đi phà à?\p"
+	.string "Nếu ba nhớ không lầm, SLATEPORT và\n"
+	.string "LILYCOVE đều có bến phà.$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
-	.string "I'd better get back to PETALBURG GYM.\p"
-	.string "MOM, thanks for looking after the house\n"
-	.string "while I'm away.$"
+	.string "Ba nên quay lại PETALBURG GYM.\p"
+	.string "MẸ, cảm ơn em đã trông nom nhà cửa lúc\n"
+	.string "anh vắng nhà.$"
 
 PlayersHouse_1F_Text_DadShouldStayLonger:
-	.string "MOM: That DAD of yours…\p"
-	.string "He comes home for the first time in a\n"
-	.string "while, but all he talks about is POKéMON.\p"
-	.string "He should relax and stay a little longer.$"
+	.string "MẸ: BA của con thật là...\p"
+	.string "Lâu lắm mới về nhà, vậy mà ông ấy chỉ\n"
+	.string "nói chuyện POKéMON.\p"
+	.string "Ông ấy nên nghỉ ngơi và ở lại thêm một\n"
+	.string "chút.$"
 
 PlayersHouse_1F_Text_IsThatABreakingStory:
-	.string "MOM: Is that a breaking news story?$"
+	.string "MẸ: Đó có phải tin nóng không?$"
 
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
-	.string "We bring you this emergency\n"
-	.string "news flash!\p"
-	.string "In various HOENN locales, there have\n"
-	.string "been reports of a BZZT…colored\l"
-	.string "POKéMON in flight.\p"
-	.string "The identity of this POKéMON is\n"
-	.string "currently unknown.\p"
-	.string "We now return you to the regular\n"
-	.string "movie program.$"
+	.string "Bản tin khẩn cấp!\p"
+	.string "Tại nhiều nơi ở HOENN, đã có báo cáo về\n"
+	.string "một POKéMON màu BZZT... đang bay.\p"
+	.string "Danh tính của POKéMON này hiện vẫn\n"
+	.string "chưa rõ.\p"
+	.string "Sau đây, xin mời quý vị tiếp tục theo\n"
+	.string "dõi bộ phim đang phát.$"
 
 PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "MOM: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that POKéMON was?$"
+	.string "MẸ: {PLAYER}, con có nghe thấy\n"
+	.string "không?\p"
+	.string "Phát thanh viên nói POKéMON đó có màu\n"
+	.string "gì?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "MOM: Well, isn't that something!\n"
-	.string "There are still unknown POKéMON.$"
+	.string "MẸ: Thật đáng ngạc nhiên! Vẫn còn\n"
+	.string "những POKéMON chưa được biết đến.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PlayersHouse_1F_Text_IsntItNiceInHere
+	.global PlayersHouse_1F_Text_MoversPokemonGoSetClock
+	.global PlayersHouse_1F_Text_ArentYouInterestedInRoom
+	.global PlayersHouse_1F_Text_GoSetTheClock
+	.global PlayersHouse_1F_Text_OhComeQuickly
+	.global PlayersHouse_1F_Text_MaybeDadWillBeOn
+	.global PlayersHouse_1F_Text_ItsOverWeMissedHim
+	.global PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor
+	.global PlayersHouse_1F_Text_SeeYouHoney
+	.global PlayersHouse_1F_Text_DidYouMeetProfBirch
+	.global PlayersHouse_1F_Text_YouShouldRestABit
+	.global PlayersHouse_1F_Text_TakeCareHoney
+	.global PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom
+	.global PlayersHouse_1F_Text_DontPushYourselfTooHard
+	.global PlayersHouse_1F_Text_IsThatAPokenav
+	.global PlayersHouse_1F_Text_RegisteredMom
+	.global PlayersHouse_1F_Text_Vigoroth2
+	.global PlayersHouse_1F_Text_ReportFromPetalburgGym
+	.global PlayersHouse_1F_Text_TheresAMovieOnTV
+	.global PlayersHouse_1F_Text_RunningShoesManual
+	.global PlayersHouse_1F_Text_TicketFromBrineyCameForYou
+	.global PlayersHouse_1F_Text_PortsInSlateportLilycove
+	.global PlayersHouse_1F_Text_BetterGetBackToGym
+	.global PlayersHouse_1F_Text_DadShouldStayLonger
+	.global PlayersHouse_1F_Text_IsThatABreakingStory
+	.global PlayersHouse_1F_Text_LatiEmergencyNewsFlash
+	.global PlayersHouse_1F_Text_WhatColorDidTheySay
+	.global PlayersHouse_1F_Text_StillUnknownPokemon
+@ END GENERATED LOCALIZATION EXPORTS

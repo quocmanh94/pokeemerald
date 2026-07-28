@@ -22,54 +22,64 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 	end
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
-	.string "What, what, what?\p"
-	.string "Only TEAM MAGMA members are supposed\n"
-	.string "to be in here!\p"
-	.string "But you're not dressed in TEAM MAGMA's\n"
-	.string "uniform…\p"
-	.string "You rouse my suspicion!\n"
-	.string "Battle with me!$"
+	.string "Gì, gì, gì cơ?\p"
+	.string "Chỉ thành viên TEAM MAGMA mới được\n"
+	.string "phép vào đây!\p"
+	.string "Nhưng ngươi không mặc đồng phục TEAM\n"
+	.string "MAGMA...\p"
+	.string "Đáng ngờ quá! Đấu với ta!$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
-	.string "Aiyiyi…\n"
-	.string "My pride as a TEAM MAGMA member…$"
+	.string "Aiyiyi... Niềm kiêu hãnh của một thành\n"
+	.string "viên TEAM MAGMA...$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
-	.string "If you suffer from chills, you should\n"
-	.string "join TEAM MAGMA.$"
+	.string "Nếu hay bị lạnh run, ngươi nên gia nhập\n"
+	.string "TEAM MAGMA.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
-	.string "Hold it right there!\p"
-	.string "You don't really expect me to keep\n"
-	.string "my trap shut and let you waltz by me?$"
+	.string "Đứng lại đó!\p"
+	.string "Ngươi thật sự nghĩ ta sẽ ngậm miệng và\n"
+	.string "để ngươi ung dung đi qua sao?$"
 
 MagmaHideout_2F_1R_Text_Grunt3Defeat:
-	.string "Ooh wow!\n"
-	.string "I concede!$"
+	.string "Ồ, ghê thật! Ta xin thua!$"
 
 MagmaHideout_2F_1R_Text_Grunt3PostBattle:
-	.string "Maybe it would've been better if I did\n"
-	.string "just let you go unchallenged…$"
+	.string "Có lẽ cứ để ngươi đi mà không thách\n"
+	.string "đấu còn hơn...$"
 
 MagmaHideout_2F_1R_Text_Grunt4Intro:
-	.string "Ahah!\n"
-	.string "An intruder!$"
+	.string "A ha! Có kẻ xâm nhập!$"
 
 MagmaHideout_2F_1R_Text_Grunt4Defeat:
-	.string "Graaah!$"
+	.string "Graaa!$"
 
 MagmaHideout_2F_1R_Text_Grunt4PostBattle:
-	.string "I've already lost.\p"
-	.string "Do I really need to keep running\n"
-	.string "around in a circle?$"
+	.string "Ta thua rồi.\p"
+	.string "Ta thật sự vẫn phải chạy vòng vòng thế\n"
+	.string "này sao?$"
 
 MagmaHideout_2F_1R_Text_Grunt5Intro:
-	.string "Oh, oh!\n"
-	.string "An intruder!$"
+	.string "Ối, ối! Có kẻ xâm nhập!$"
 
 MagmaHideout_2F_1R_Text_Grunt5Defeat:
-	.string "Mutter…$"
+	.string "Lầm bầm...$"
 
 MagmaHideout_2F_1R_Text_Grunt5PostBattle:
-	.string "Actually, I'm no expert at battling…$"
+	.string "Thật ra, tôi đâu có giỏi chiến đấu...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MagmaHideout_2F_1R_Text_Grunt14Intro
+	.global MagmaHideout_2F_1R_Text_Grunt14Defeat
+	.global MagmaHideout_2F_1R_Text_Grunt14PostBattle
+	.global MagmaHideout_2F_1R_Text_Grunt3Intro
+	.global MagmaHideout_2F_1R_Text_Grunt3Defeat
+	.global MagmaHideout_2F_1R_Text_Grunt3PostBattle
+	.global MagmaHideout_2F_1R_Text_Grunt4Intro
+	.global MagmaHideout_2F_1R_Text_Grunt4Defeat
+	.global MagmaHideout_2F_1R_Text_Grunt4PostBattle
+	.global MagmaHideout_2F_1R_Text_Grunt5Intro
+	.global MagmaHideout_2F_1R_Text_Grunt5Defeat
+	.global MagmaHideout_2F_1R_Text_Grunt5PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

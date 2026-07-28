@@ -57,30 +57,31 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
-	.string "Hey!\n"
-	.string "I remember your face!\p"
-	.string "If you're here, it must mean that\n"
-	.string "you're about to mess with us again!\p"
-	.string "A punk like you, do you really think\n"
-	.string "you can take on TEAM AQUA?\p"
-	.string "I'd say you're too early by about\n"
-	.string "a trillion years!\p"
-	.string "You're a perfect fit for the likes of\n"
-	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "Này! Ta nhớ mặt ngươi!\p"
+	.string "Ngươi đã đến đây thì chắc lại định phá\n"
+	.string "bọn ta chứ gì!\p"
+	.string "Một nhóc ranh như ngươi mà cũng nghĩ\n"
+	.string "mình có thể đối đầu với TEAM AQUA sao?\p"
+	.string "Ta nói ngươi còn non cả nghìn tỷ năm!\p"
+	.string "Ngươi chỉ xứng nhập bọn với TEAM\n"
+	.string "MAGMA thôi!\p"
+	.string "Nhắc đến TEAM MAGMA, nghe nói chúng đã\n"
+	.string "xuất hiện gần MOSSDEEP.\p"
+	.string "Lũ côn đồ đó chẳng hợp với biển chút\n"
+	.string "nào!$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
-	.string "A punk like you, do you really think\n"
-	.string "you can take on TEAM AQUA?\p"
-	.string "I'd say you're too early by about\n"
-	.string "a trillion years!\p"
-	.string "You're a perfect fit for the likes of\n"
-	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "Một nhóc ranh như ngươi mà cũng nghĩ\n"
+	.string "mình có thể đối đầu với TEAM AQUA sao?\p"
+	.string "Ta nói ngươi còn non cả nghìn tỷ năm!\p"
+	.string "Ngươi chỉ xứng nhập bọn với TEAM\n"
+	.string "MAGMA thôi!\p"
+	.string "Nhắc đến TEAM MAGMA, nghe nói chúng đã\n"
+	.string "xuất hiện gần MOSSDEEP.\p"
+	.string "Lũ côn đồ đó chẳng hợp với biển chút\n"
+	.string "nào!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep
+	.global SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
+@ END GENERATED LOCALIZATION EXPORTS

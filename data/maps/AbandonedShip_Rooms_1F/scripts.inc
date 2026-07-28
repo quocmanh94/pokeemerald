@@ -32,46 +32,58 @@ AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
 	end
 
 AbandonedShip_Rooms_1F_Text_TakingALookAround:
-	.string "Ships of this sort are rare, so I'm\n"
-	.string "taking a look around.\p"
-	.string "Hmhm…\n"
-	.string "There appear to be other cabins…$"
+	.string "Loại tàu này hiếm lắm nên tôi đang đi\n"
+	.string "xem một vòng.\p"
+	.string "Hừm... Có vẻ vẫn còn những phòng khác...$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaIntro:
-	.string "What on earth would compel you to\n"
-	.string "come here? You must be curious!$"
+	.string "Điều gì trên đời lại thôi thúc bạn tới\n"
+	.string "đây vậy? Hẳn bạn tò mò lắm!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaDefeat:
-	.string "Not just curious, but also strong…$"
+	.string "Không chỉ tò mò mà còn mạnh nữa...$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostBattle:
-	.string "The man next door…\p"
-	.string "He says he's just sightseeing,\n"
-	.string "but I don't know about that.$"
+	.string "Người đàn ông ở phòng bên...\p"
+	.string "Ông ta bảo chỉ đến tham quan, nhưng tôi\n"
+	.string "thấy chưa chắc đâu.$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRegister:
-	.string "You're such a tough TRAINER!\n"
-	.string "Let me register you as a memento!$"
+	.string "Bạn đúng là một HLV cừ khôi! Cho\n"
+	.string "tôi đăng ký bạn để làm kỷ niệm nhé!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro:
-	.string "What on earth would compel you to\n"
-	.string "come back? You must really be curious!$"
+	.string "Điều gì trên đời lại thôi thúc bạn quay\n"
+	.string "lại vậy? Hẳn bạn thật sự tò mò lắm!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat:
-	.string "Aren't you too strong?$"
+	.string "Bạn có mạnh quá không vậy?$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostRematch:
-	.string "I'm sure that man's up to something!\n"
-	.string "He just acts so suspiciously!$"
+	.string "Tôi chắc chắn người đàn ông đó đang âm\n"
+	.string "mưu gì đó! Hành động của ông ta đáng\l"
+	.string "ngờ lắm!$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusIntro:
-	.string "Waaah!\n"
-	.string "I've been found! …Huh?$"
+	.string "Ááá! Bị phát hiện rồi! ...Hả?$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusDefeat:
-	.string "Oh, you're not my mom.$"
+	.string "Ồ, bạn không phải mẹ tôi.$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
-	.string "I'm in trouble with my mom, so I ran.\n"
-	.string "Keep it a secret where I am!$"
+	.string "Tôi bị mẹ mắng nên đã bỏ chạy. Đừng tiết\n"
+	.string "lộ tôi đang ở đâu nhé!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Rooms_1F_Text_TakingALookAround
+	.global AbandonedShip_Rooms_1F_Text_ThaliaIntro
+	.global AbandonedShip_Rooms_1F_Text_ThaliaDefeat
+	.global AbandonedShip_Rooms_1F_Text_ThaliaPostBattle
+	.global AbandonedShip_Rooms_1F_Text_ThaliaRegister
+	.global AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro
+	.global AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat
+	.global AbandonedShip_Rooms_1F_Text_ThaliaPostRematch
+	.global AbandonedShip_Rooms_1F_Text_DemetriusIntro
+	.global AbandonedShip_Rooms_1F_Text_DemetriusDefeat
+	.global AbandonedShip_Rooms_1F_Text_DemetriusPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

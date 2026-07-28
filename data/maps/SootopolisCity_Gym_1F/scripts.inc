@@ -176,144 +176,164 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-	.string "Yo! How's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
-	.string "a master of WATER-type POKéMON.\p"
-	.string "And, to get to JUAN, an icy floor\n"
-	.string "will hamper your progress…\p"
-	.string "Listen, I'm sorry, but that's all the\n"
-	.string "advice that I have for you.\p"
-	.string "The rest of the way, you have to\n"
-	.string "go for it yourself!$"
+	.string "Chào! Mọi chuyện thế nào, {PLAYER},\n"
+	.string "người đang hướng tới ngôi CHAMPION?\p"
+	.string "SOOTOPOLIS GYM LEADER JUAN là bậc thầy\n"
+	.string "về POKéMON hệ WATER.\p"
+	.string "Và để tới được chỗ JUAN, sàn băng sẽ\n"
+	.string "cản trở bước tiến của bạn...\p"
+	.string "Xin lỗi nhé, nhưng tôi chỉ có thể khuyên\n"
+	.string "bạn được đến thế thôi.\p"
+	.string "Quãng đường còn lại, bạn phải tự mình\n"
+	.string "cố gắng!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even JUAN, who\n"
-	.string "was supposedly the best in all HOENN!\p"
-	.string "Okay! Check out your TRAINER CARD.\p"
-	.string "If you've gotten all the BADGES, you're\n"
-	.string "set for the POKéMON LEAGUE challenge!$"
+	.string "Chà! Bạn đã đánh bại cả JUAN, người\n"
+	.string "được xem là mạnh nhất HOENN!\p"
+	.string "Được rồi! Hãy xem TRAINER CARD của\n"
+	.string "bạn.\p"
+	.string "Nếu đã thu thập đủ BADGES, bạn đã sẵn\n"
+	.string "sàng thách đấu POKéMON LEAGUE!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Let me ask you.\n"
-	.string "Did you know?\l"
-	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught WALLACE everything\n"
-	.string "there is to know about POKéMON.\p"
-	.string "Once, I had given up my position as\n"
-	.string "the GYM LEADER.\p"
-	.string "In my place, I had entrusted WALLACE\n"
-	.string "with the GYM.\p"
-	.string "However, a compelling reason arose for\n"
-	.string "me to make a comeback.\p"
-	.string "Ah, but enough chatter.\n"
-	.string "Let us begin our match, shall we?\p"
-	.string "Please, you shall bear witness to\n"
-	.string "our artistry.\p"
-	.string "A grand illusion of water sculpted\n"
-	.string "by POKéMON and myself!$"
+	.string "Để ta hỏi ngươi một điều. Ngươi có biết\n"
+	.string "không? À, ta không nên úp mở như thế.\p"
+	.string "Chính ta là người đã truyền dạy cho\n"
+	.string "WALLACE mọi kiến thức về POKéMON.\p"
+	.string "Có một thời, ta đã từ bỏ vị trí GYM\n"
+	.string "LEADER.\p"
+	.string "Ta giao lại GYM cho WALLACE thay mình\n"
+	.string "cai quản.\p"
+	.string "Tuy nhiên, một lý do không thể chối từ\n"
+	.string "đã khiến ta phải trở lại.\p"
+	.string "À, nhưng trò chuyện thế là đủ rồi. Chúng\n"
+	.string "ta bắt đầu trận đấu nhé?\p"
+	.string "Xin hãy chiêm ngưỡng nghệ thuật của\n"
+	.string "chúng ta.\p"
+	.string "Một ảo cảnh nước tráng lệ được tạc\n"
+	.string "nên bởi POKéMON và chính ta!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "Ahahaha, excellent!\n"
-	.string "Very well, you are the winner.\p"
-	.string "From you, I sense the brilliant shine\n"
-	.string "of skill that will overcome all.\p"
-	.string "However, compared with me or even\n"
-	.string "WALLACE, you are lacking in elegance.\p"
-	.string "Perhaps I should make you a loan\n"
-	.string "of my outfit?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Hahaha, I merely jest!\p"
-	.string "Rather than my clothes, I shall reward\n"
-	.string "you with this, the RAIN BADGE!$"
+	.string "Ahahaha, xuất sắc! Được lắm, ngươi là\n"
+	.string "người chiến thắng.\p"
+	.string "Từ ngươi, ta cảm nhận được ánh sáng\n"
+	.string "kỹ năng rực rỡ có thể vượt qua mọi thử\l"
+	.string "thách.\p"
+	.string "Tuy nhiên, so với ta hay thậm chí\n"
+	.string "WALLACE, ngươi vẫn thiếu đôi chút\l"
+	.string "thanh lịch.\p"
+	.string "Có lẽ ta nên cho ngươi mượn trang phục\n"
+	.string "của mình?\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "Hahaha, ta chỉ đùa thôi!\p"
+	.string "Thay vì quần áo của ta, ta sẽ trao cho\n"
+	.string "ngươi phần thưởng này, RAIN BADGE!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} received the RAIN BADGE\n"
-	.string "from JUAN.$"
+	.string "{PLAYER} đã nhận RAIN BADGE từ JUAN.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the RAIN BADGE shall assure you\n"
-	.string "the full obedience of all your POKéMON\l"
-	.string "to your every command.\p"
-	.string "The RAIN BADGE also allows the use\n"
-	.string "of the HM move WATERFALL to scale\l"
-	.string "walls of cascading water.\p"
-	.string "And, so that you never forget the\n"
-	.string "battle we shared, take this…$"
+	.string "RAIN BADGE sẽ bảo đảm mọi POKéMON của\n"
+	.string "ngươi hoàn toàn tuân theo mọi mệnh\l"
+	.string "lệnh.\p"
+	.string "RAIN BADGE cũng cho phép sử dụng HM\n"
+	.string "chiêu WATERFALL để vượt lên những\l"
+	.string "vách nước đổ.\p"
+	.string "Và để ngươi không bao giờ quên trận\n"
+	.string "đấu giữa chúng ta, hãy nhận lấy thứ\l"
+	.string "này...$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
-	.string "The TECHNICAL MACHINE I handed you\n"
-	.string "contains WATER PULSE.\p"
-	.string "In use, it will occasionally confuse\n"
-	.string "the target with ultrasonic waves.\p"
-	.string "… … … … … …$"
+	.string "TECHNICAL MACHINE ta trao cho ngươi\n"
+	.string "chứa WATER PULSE.\p"
+	.string "Khi sử dụng, đôi lúc nó sẽ khiến mục\n"
+	.string "tiêu bối rối bằng sóng siêu âm.\p"
+	.string "... ... ... ... ... ...$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered GYM LEADER JUAN\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký GYM LEADER JUAN vào\n"
+	.string "POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "The TRAINERS who have gathered all\n"
-	.string "the GYM BADGES of HOENN should make\l"
-	.string "way to the ultimate destination.\p"
-	.string "The POKéMON LEAGUE.\p"
-	.string "Travel to the easternmost reaches\n"
-	.string "of HOENN, to the island EVER GRANDE.\p"
-	.string "There, you shall find the POKéMON\n"
+	.string "Những HLV đã thu thập đủ GYM\n"
+	.string "BADGES của HOENN nên tiến đến đích\l"
+	.string "cuối cùng.\p"
+	.string "POKéMON LEAGUE.\p"
+	.string "Hãy tới vùng cực đông HOENN, đến hòn\n"
+	.string "đảo EVER GRANDE.\p"
+	.string "Tại đó, ngươi sẽ tìm thấy POKéMON\n"
 	.string "LEAGUE.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
-	.string "There remains but one BADGE to\n"
-	.string "obtain in HOENN.\p"
-	.string "If you wish to challenge the POKéMON\n"
-	.string "LEAGUE, you must obtain the last\l"
-	.string "BADGE from the GYM in FORTREE.$"
+	.string "Ở HOENN vẫn còn một BADGE ngươi chưa\n"
+	.string "giành được.\p"
+	.string "Nếu muốn thách đấu POKéMON LEAGUE,\n"
+	.string "ngươi phải lấy BADGE cuối cùng từ GYM\l"
+	.string "ở FORTREE.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
 	.string "SOOTOPOLIS CITY POKéMON GYM$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "SOOTOPOLIS CITY POKéMON GYM\p"
-	.string "JUAN'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "JUAN'S CERTIFIED TRAINERS: {PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "JUAN: Ah, this GYM had returned to its\n"
-	.string "usual state of serenity…\p"
-	.string "But our young typhoon has returned\n"
-	.string "to put us to the test again!\p"
-	.string "Well, my friend, most certainly!\p"
-	.string "I shall be delighted to dance with you\n"
-	.string "as often as you wish!$"
+	.string "JUAN: À, GYM này vừa trở lại vẻ thanh\n"
+	.string "bình vốn có...\p"
+	.string "Nhưng cơn cuồng phong trẻ tuổi của\n"
+	.string "chúng ta đã quay lại để thử thách mọi\l"
+	.string "người lần nữa!\p"
+	.string "Được thôi, bạn của ta, tất nhiên rồi!\p"
+	.string "Ta rất vui lòng khiêu vũ cùng ngươi bao\n"
+	.string "nhiêu lần tùy thích!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
-	.string "Ahahaha, you are the winner!\n"
-	.string "You have defeated me again!$"
+	.string "Ahahaha, ngươi đã thắng! Ngươi lại\n"
+	.string "đánh bại ta rồi!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "JUAN: If I told you to become my\n"
-	.string "apprentice, you will refuse, I am sure.\p"
-	.string "I would like to make a gift of my coat\n"
-	.string "to you.\p"
-	.string "But again, you will refuse.\n"
-	.string "I imagine that to be so.\p"
-	.string "And that, my friend, is a certain sign\n"
-	.string "of nobility!$"
+	.string "JUAN: Nếu ta bảo ngươi trở thành học\n"
+	.string "trò của mình, chắc chắn ngươi sẽ từ\l"
+	.string "chối.\p"
+	.string "Ta muốn tặng chiếc áo khoác của mình\n"
+	.string "cho ngươi.\p"
+	.string "Nhưng một lần nữa, ngươi cũng sẽ từ\n"
+	.string "chối. Ta đoán là vậy.\p"
+	.string "Và điều đó, bạn của ta, chính là dấu\n"
+	.string "hiệu rõ ràng của khí chất cao quý!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "JUAN: Ah, this GYM had returned to its\n"
-	.string "usual state of serenity…\p"
-	.string "But our young typhoon has returned\n"
-	.string "to put us to the test again!\p"
-	.string "Well, my friend, most certainly!\n"
-	.string "I shall be delighted to dance with you…\p"
-	.string "Ah, no, no, no.\n"
-	.string "You have with you but one POKéMON.\p"
-	.string "I wish that you would return with\n"
-	.string "two, perhaps more, POKéMON, please.$"
+	.string "JUAN: À, GYM này vừa trở lại vẻ thanh\n"
+	.string "bình vốn có...\p"
+	.string "Nhưng cơn cuồng phong trẻ tuổi của\n"
+	.string "chúng ta đã quay lại để thử thách mọi\l"
+	.string "người lần nữa!\p"
+	.string "Được thôi, bạn của ta, tất nhiên rồi! Ta\n"
+	.string "rất vui lòng khiêu vũ cùng ngươi...\p"
+	.string "À, không, không, không. Ngươi chỉ mang\n"
+	.string "theo một POKéMON.\p"
+	.string "Xin hãy quay lại cùng hai POKéMON, hoặc\n"
+	.string "nhiều hơn.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_Gym_1F_Text_GymGuideAdvice
+	.global SootopolisCity_Gym_1F_Text_GymGuidePostVictory
+	.global SootopolisCity_Gym_1F_Text_JuanIntro
+	.global SootopolisCity_Gym_1F_Text_JuanDefeat
+	.global SootopolisCity_Gym_1F_Text_ReceivedRainBadge
+	.global SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis
+	.global SootopolisCity_Gym_1F_Text_ExplainWaterPulse
+	.global SootopolisCity_Gym_1F_Text_RegisteredJuan
+	.global SootopolisCity_Gym_1F_Text_JuanPostBattle
+	.global SootopolisCity_Gym_1F_Text_GoGetFortreeBadge
+	.global SootopolisCity_Gym_1F_Text_GymStatueCertified
+	.global SootopolisCity_Gym_1F_Text_JuanPreRematch
+	.global SootopolisCity_Gym_1F_Text_JuanRematchDefeat
+	.global SootopolisCity_Gym_1F_Text_JuanPostRematch
+	.global SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS

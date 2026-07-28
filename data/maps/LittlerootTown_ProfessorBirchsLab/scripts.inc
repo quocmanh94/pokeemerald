@@ -657,338 +657,385 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
-	.string "Hunh? PROF. BIRCH?\p"
-	.string "The PROF's away on fieldwork.\n"
-	.string "Ergo, he isn't here.\p"
-	.string "Oh, let me explain what fieldwork is.\p"
-	.string "It is to study things in the natural\n"
-	.string "environment, like fields and mountains,\l"
-	.string "instead of a laboratory.\p"
-	.string "The PROF isn't one for doing desk work.\n"
-	.string "He's the type of person who would\l"
-	.string "rather go outside and experience\l"
-	.string "things than read about them here.$"
+	.string "Hả? PROF. BIRCH sao?\p"
+	.string "PROF. đang đi khảo sát thực địa. Vì vậy,\n"
+	.string "ông ấy không có ở đây.\p"
+	.string "À, để tôi giải thích khảo sát thực địa\n"
+	.string "là gì.\p"
+	.string "Đó là nghiên cứu sự vật trong môi\n"
+	.string "trường tự nhiên như đồng cỏ và núi\l"
+	.string "non, thay vì trong phòng thí nghiệm.\p"
+	.string "PROF. không thích ngồi bàn giấy. Ông ấy\n"
+	.string "thuộc kiểu người thà ra ngoài tự mình\l"
+	.string "trải nghiệm còn hơn ngồi đây đọc sách.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
-	.string "The PROF isn't one for doing desk work.\n"
-	.string "He's the type of person who would\l"
-	.string "rather go outside and experience\l"
-	.string "things than read about them here.$"
+	.string "PROF. không thích ngồi bàn giấy. Ông ấy\n"
+	.string "thuộc kiểu người thà ra ngoài tự mình\l"
+	.string "trải nghiệm còn hơn ngồi đây đọc sách.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
-	.string "PROF. BIRCH is studying the habitats\n"
-	.string "and distribution of POKéMON.\p"
-	.string "The PROF enjoys {RIVAL}'s help, too.\n"
-	.string "There's a lot of love there.$"
+	.string "PROF. BIRCH đang nghiên cứu môi\n"
+	.string "trường sống và sự phân bố của\l"
+	.string "POKéMON.\p"
+	.string "PROF. cũng rất vui khi được {RIVAL}\n"
+	.string "giúp đỡ. Hai người rất thương nhau.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
-	.string "PROF. BIRCH: So, {PLAYER}{KUN}.\p"
-	.string "I've heard so much about you from\n"
-	.string "your father.\p"
-	.string "I've heard that you don't have your\n"
-	.string "own POKéMON yet.\p"
-	.string "But the way you battled earlier,\n"
-	.string "you pulled it off with aplomb!\p"
-	.string "I guess you have your father's blood\n"
-	.string "in your veins after all!\p"
-	.string "Oh, yes. As thanks for rescuing me,\n"
-	.string "I'd like you to have the POKéMON you\l"
-	.string "used earlier.\p"
-	.string "{PLAYER} received the {STR_VAR_1}!$"
+	.string "PROF. BIRCH: Vậy là, {PLAYER}{KUN}.\p"
+	.string "Bác đã nghe ba cháu kể rất nhiều về\n"
+	.string "cháu.\p"
+	.string "Bác nghe nói cháu vẫn chưa có POKéMON\n"
+	.string "của riêng mình.\p"
+	.string "Nhưng trong trận đấu vừa rồi, cháu xử\n"
+	.string "lý thật xuất sắc!\p"
+	.string "Quả nhiên trong người cháu có dòng máu\n"
+	.string "của ba mình!\p"
+	.string "À phải. Để cảm ơn cháu đã cứu bác, bác\n"
+	.string "muốn tặng cháu POKéMON mà cháu vừa\l"
+	.string "dùng.\p"
+	.string "{PLAYER} đã nhận {STR_VAR_1}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
-	.string "PROF. BIRCH: While you're at it, why not\n"
-	.string "give a nickname to that {STR_VAR_1}?$"
+	.string "PROF. BIRCH: Tiện thể, sao cháu không\n"
+	.string "đặt biệt danh cho {STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "PROF. BIRCH: If you work at POKéMON\n"
-	.string "and gain experience, I think you'll make\l"
-	.string "an extremely good TRAINER.\p"
-	.string "My kid, {RIVAL}, is also studying\n"
-	.string "POKéMON while helping me out.\p"
-	.string "{PLAYER}{KUN}, don't you think it might be\n"
-	.string "a good idea to go see {RIVAL}?$"
+	.string "PROF. BIRCH: Nếu chăm chỉ rèn luyện\n"
+	.string "cùng POKéMON và tích lũy kinh nghiệm,\l"
+	.string "bác tin cháu sẽ trở thành một HLV\l"
+	.string "cực kỳ giỏi.\p"
+	.string "Con bác, {RIVAL}, cũng đang giúp bác\n"
+	.string "nghiên cứu POKéMON.\p"
+	.string "{PLAYER}{KUN}, cháu có nghĩ mình nên đi\n"
+	.string "gặp {RIVAL} không?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
-	.string "PROF. BIRCH: Great!\n"
-	.string "{RIVAL} should be happy, too.\p"
-	.string "Get {RIVAL} to teach you what it\n"
-	.string "means to be a TRAINER.$"
+	.string "PROF. BIRCH: Tuyệt! {RIVAL} chắc\n"
+	.string "cũng sẽ vui.\p"
+	.string "Hãy nhờ {RIVAL} dạy cháu ý nghĩa\n"
+	.string "của việc làm một HLV.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
-	.string "PROF. BIRCH: Oh, don't be that way.\n"
-	.string "You should go meet my kid.$"
+	.string "PROF. BIRCH: Ôi, đừng như vậy chứ. Cháu\n"
+	.string "nên đi gặp con bác.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
-	.string "PROF. BIRCH: {RIVAL}?\n"
-	.string "Gone home, I think.\p"
-	.string "Or maybe that kid's scrabbling around\n"
-	.string "in tall grass again somewhere…\p"
-	.string "If you or your POKéMON get tired,\n"
-	.string "you should get some rest at home.$"
+	.string "PROF. BIRCH: {RIVAL} à? Bác nghĩ là\n"
+	.string "về nhà rồi.\p"
+	.string "Hoặc có khi lại đang lục lọi trong bãi cỏ\n"
+	.string "cao nào đó...\p"
+	.string "Nếu cháu hoặc POKéMON mệt, hãy về nhà\n"
+	.string "nghỉ ngơi.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
-	.string "PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "I heard you beat {RIVAL} on\n"
-	.string "your first try. That's excellent!\p"
-	.string "{RIVAL}'s been helping with my research\n"
-	.string "for a long time.\p"
-	.string "{RIVAL} has an extensive history as\n"
-	.string "a TRAINER already.\p"
-	.string "Here, {PLAYER}{KUN}, I ordered this for my\n"
-	.string "research, but I think you should have\l"
-	.string "this POKéDEX.$"
+	.string "PROF. BIRCH: Ồ, chào {PLAYER}{KUN}!\p"
+	.string "Bác nghe nói cháu đã thắng {RIVAL}\n"
+	.string "ngay lần thử đầu tiên. Xuất sắc lắm!\p"
+	.string "{RIVAL} đã giúp bác nghiên cứu từ\n"
+	.string "lâu rồi.\p"
+	.string "{RIVAL} đã có rất nhiều kinh nghiệm\n"
+	.string "làm HLV.\p"
+	.string "Đây, {PLAYER}{KUN}, bác đặt mua\n"
+	.string "POKéDEX này để nghiên cứu, nhưng bác\l"
+	.string "nghĩ cháu nên giữ nó.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
-	.string "{PLAYER} received the POKéDEX!$"
+	.string "{PLAYER} đã nhận POKéDEX!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
-	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
-	.string "tool that automatically makes a record\l"
-	.string "of any POKéMON you meet or catch.\p"
-	.string "My kid, {RIVAL}, goes everywhere\n"
-	.string "with it.\p"
-	.string "Whenever my kid catches a rare POKéMON\n"
-	.string "and records its data in the POKéDEX,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "PROF. BIRCH: POKéDEX là thiết bị công\n"
+	.string "nghệ cao tự động ghi lại mọi POKéMON\l"
+	.string "cháu gặp hoặc bắt được.\p"
+	.string "Con bác, {RIVAL}, luôn mang nó đi\n"
+	.string "khắp nơi.\p"
+	.string "Mỗi khi bắt được POKéMON hiếm và ghi\n"
+	.string "dữ liệu vào POKéDEX, {RIVAL} lại đi\l"
+	.string "tìm bác lúc bác đang khảo sát thực địa\l"
+	.string "để khoe cho bác xem.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
-	.string "PROF. BIRCH: Countless POKéMON\n"
-	.string "await you!\p"
-	.string "Argh, I'm getting the itch to get out\n"
-	.string "and do fieldwork again!$"
+	.string "PROF. BIRCH: Vô số POKéMON đang chờ\n"
+	.string "cháu!\p"
+	.string "A, bác lại ngứa chân muốn đi khảo sát\n"
+	.string "thực địa rồi!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "MAY: Oh, wow, {PLAYER}{KUN}!\n"
-	.string "You got a POKéDEX, too!\p"
-	.string "That's great! Just like me!\n"
-	.string "I've got something for you, too!$"
+	.string "MAY: Ôi, tuyệt quá, {PLAYER}{KUN}! Cậu\n"
+	.string "cũng có POKéDEX rồi!\p"
+	.string "Hay thật! Giống mình rồi! Mình cũng có\n"
+	.string "thứ này cho cậu!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "MAY: It's fun if you can get a lot of\n"
-	.string "POKéMON!\p"
-	.string "I'm going to look all over the place\n"
-	.string "because I want different POKéMON.\p"
-	.string "If I find any cute POKéMON, I'll catch\n"
-	.string "them with POKé BALLS!$"
+	.string "MAY: Bắt được nhiều POKéMON vui lắm!\p"
+	.string "Mình sẽ tìm khắp nơi vì muốn gặp nhiều\n"
+	.string "POKéMON khác nhau.\p"
+	.string "Nếu thấy POKéMON nào dễ thương, mình\n"
+	.string "sẽ bắt bằng POKé BALLS!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
-	.string "Oh? Your BAG's full.$"
+	.string "Ồ? TÚI ĐỒ của cậu đầy rồi.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "MAY: I wonder where I should go look\n"
-	.string "for POKéMON next?$"
+	.string "MAY: Không biết tiếp theo mình nên đi\n"
+	.string "đâu tìm POKéMON nhỉ?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "BRENDAN: Huh…\n"
-	.string "So you got a POKéDEX, too.\p"
-	.string "Well then, here.\n"
-	.string "I'll give you these.$"
+	.string "BRENDAN: Hừm... Vậy là cậu cũng có\n"
+	.string "POKéDEX.\p"
+	.string "Thế thì cầm lấy. Tớ cho cậu mấy thứ\n"
+	.string "này.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "BRENDAN: You know it's more fun to\n"
-	.string "have a whole bunch of POKéMON.\p"
-	.string "I'm going to explore all over the place\n"
-	.string "to find different POKéMON.\p"
-	.string "If I find any cool POKéMON, you bet\n"
-	.string "I'll try to get them with POKé BALLS.$"
+	.string "BRENDAN: Cậu biết đấy, có thật nhiều\n"
+	.string "POKéMON sẽ vui hơn.\p"
+	.string "Tớ sẽ khám phá khắp nơi để tìm nhiều\n"
+	.string "POKéMON khác nhau.\p"
+	.string "Nếu thấy POKéMON nào ngầu, chắc chắn\n"
+	.string "tớ sẽ thử bắt bằng POKé BALLS.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
-	.string "Hey, your BAG's full.$"
+	.string "Này, TÚI ĐỒ của cậu đầy rồi.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "BRENDAN: Where should I look for\n"
-	.string "POKéMON next…$"
+	.string "BRENDAN: Tiếp theo nên đi đâu tìm\n"
+	.string "POKéMON đây...$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
-	.string "It's a serious-looking machine.\n"
-	.string "The PROF must use this for research.$"
+	.string "Đây là một cỗ máy trông rất chuyên\n"
+	.string "dụng. Hẳn PROF. dùng nó để nghiên cứu.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
-	.string "It's a PC used for research.\n"
-	.string "Better not mess around with it.$"
+	.string "Đây là PC dùng cho nghiên cứu. Tốt hơn\n"
+	.string "hết đừng nghịch vào.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
-	.string "It's crammed with books on POKéMON.$"
+	.string "Có đầy sách về POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
-	.string "It's a book that's too hard to read.$"
+	.string "Đây là một cuốn sách quá khó đọc.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
-	.string "PROF. BIRCH: Now…\p"
-	.string "{PLAYER}{KUN} and {RIVAL}, I've had the two\n"
-	.string "of you help me study POKéMON.\p"
-	.string "Thanks to your help, new facts\n"
-	.string "are coming to light.\p"
-	.string "It appears that in the HOENN region,\n"
-	.string "there are also POKéMON from other\l"
-	.string "regions.\p"
-	.string "It goes to show how rich and varied\n"
-	.string "the natural environments of HOENN\l"
-	.string "happen to be.\p"
-	.string "That's why I think it's necessary for\n"
-	.string "me to upgrade your POKéDEX to\l"
-	.string "the NATIONAL Mode.\p"
-	.string "Here, let me see your POKéDEX units.$"
+	.string "PROF. BIRCH: Bây giờ...\p"
+	.string "{PLAYER}{KUN} và {RIVAL}, hai cháu\n"
+	.string "đã giúp bác nghiên cứu POKéMON.\p"
+	.string "Nhờ sự giúp đỡ của hai cháu, nhiều sự\n"
+	.string "thật mới đang dần được làm sáng tỏ.\p"
+	.string "Có vẻ ở vùng HOENN cũng có POKéMON đến\n"
+	.string "từ những vùng khác.\p"
+	.string "Điều đó cho thấy môi trường tự nhiên ở\n"
+	.string "HOENN phong phú và đa dạng đến mức\l"
+	.string "nào.\p"
+	.string "Vì vậy, bác thấy cần nâng cấp POKéDEX\n"
+	.string "của hai cháu lên NATIONAL Mode.\p"
+	.string "Nào, đưa POKéDEX của hai cháu cho bác\n"
+	.string "xem.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
 	.string "MAY: Eheheh!\p"
-	.string "It's so cool that even my POKéDEX\n"
-	.string "is getting updated!\p"
-	.string "It's because you went out and caught\n"
-	.string "so many POKéMON, {PLAYER}{KUN}!$"
+	.string "Tuyệt quá, ngay cả POKéDEX của mình\n"
+	.string "cũng được cập nhật!\p"
+	.string "Tất cả là nhờ cậu đã đi khắp nơi và bắt\n"
+	.string "được rất nhiều POKéMON đấy,\l"
+	.string "{PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "BRENDAN: I went out all over HOENN\n"
-	.string "and checked out POKéMON.\p"
-	.string "You can thank me for getting\n"
-	.string "the NATIONAL Mode POKéDEX.\p"
-	.string "Yep, you're lucky, {PLAYER}!$"
+	.string "BRENDAN: Tớ đã đi khắp HOENN để tìm\n"
+	.string "hiểu POKéMON.\p"
+	.string "Cậu có NATIONAL Mode POKéDEX là nhờ\n"
+	.string "tớ đấy.\p"
+	.string "Ừ, cậu may mắn thật, {PLAYER}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
-	.string "PROF. BIRCH: Okay, all done!$"
+	.string "PROF. BIRCH: Được rồi, xong cả!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "to the NATIONAL Mode!$"
+	.string "POKéDEX của {PLAYER} đã được nâng\n"
+	.string "cấp lên NATIONAL Mode!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
-	.string "PROF. BIRCH: But listen.\n"
-	.string "You've become the CHAMPION,\l"
-	.string "but your POKéMON journey isn't over.\p"
-	.string "There is no end to the road\n"
-	.string "that is POKéMON.\p"
-	.string "Somewhere, there is a grassy patch\n"
-	.string "that's waiting for you!$"
+	.string "PROF. BIRCH: Nhưng nghe này. Cháu đã\n"
+	.string "trở thành CHAMPION, nhưng hành trình\l"
+	.string "POKéMON của cháu vẫn chưa kết thúc.\p"
+	.string "Con đường POKéMON không bao giờ có\n"
+	.string "điểm dừng.\p"
+	.string "Ở đâu đó, vẫn có một bãi cỏ đang chờ\n"
+	.string "cháu!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "MAY: I think I'll take a short break\n"
-	.string "from fieldwork.\p"
-	.string "I think I'll help the PROF here for\n"
-	.string "a while.$"
+	.string "MAY: Mình nghĩ mình sẽ tạm nghỉ công\n"
+	.string "việc khảo sát thực địa một thời gian.\p"
+	.string "Mình sẽ ở đây giúp PROF. một thời gian.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "BRENDAN: For the time being,\n"
-	.string "I'm taking a break from fieldwork.\p"
-	.string "I'll be helping out the PROF here\n"
-	.string "for a while.$"
+	.string "BRENDAN: Tạm thời, tớ sẽ nghỉ công việc\n"
+	.string "khảo sát thực địa.\p"
+	.string "Tớ sẽ ở đây giúp PROF. một thời gian.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
-	.string "Let's have a look at your POKéDEX.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Yes, there's no doubt about it.\p"
-	.string "You really have completed the HOENN\n"
-	.string "region's POKéDEX.\p"
-	.string "That's more than just impressive.\p"
-	.string "I have a gift for you.\p"
-	.string "Consider it my show of appreciation\n"
-	.string "for the fantastic work you've done.\p"
-	.string "My gift is a rare POKéMON only found\n"
-	.string "in another region!\p"
-	.string "You can have any one of these\n"
-	.string "three POKéMON!$"
+	.string "PROF. BIRCH: Ồ, {PLAYER}{KUN}! Để bác\n"
+	.string "xem POKéDEX của cháu nào.\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "Đúng, không còn nghi ngờ gì nữa.\p"
+	.string "Cháu thật sự đã hoàn thành POKéDEX\n"
+	.string "của vùng HOENN.\p"
+	.string "Thành tích đó thật phi thường.\p"
+	.string "Bác có món quà cho cháu.\p"
+	.string "Hãy coi đây là lời cảm ơn của bác cho\n"
+	.string "công sức tuyệt vời của cháu.\p"
+	.string "Quà của bác là một POKéMON hiếm chỉ có\n"
+	.string "ở vùng khác!\p"
+	.string "Cháu có thể chọn một trong ba POKéMON\n"
+	.string "này!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
-	.string "PROF. BIRCH: These are rare POKéMON\n"
-	.string "only found in another region!\p"
-	.string "You can have any one of these\n"
-	.string "three POKéMON!$"
+	.string "PROF. BIRCH: Đây là những POKéMON hiếm\n"
+	.string "chỉ có ở vùng khác!\p"
+	.string "Cháu có thể chọn một trong ba POKéMON\n"
+	.string "này!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "PROF. BIRCH: The FIRE POKéMON\n"
-	.string "CYNDAQUIL caught your eye!\p"
-	.string "You're as sharp as ever!\p"
-	.string "So the CYNDAQUIL is your choice?$"
+	.string "PROF. BIRCH: Cháu để mắt đến FIRE\n"
+	.string "POKéMON CYNDAQUIL rồi!\p"
+	.string "Cháu vẫn tinh mắt như mọi khi!\p"
+	.string "Vậy cháu chọn CYNDAQUIL à?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
-	.string "PROF. BIRCH: The WATER POKéMON\n"
-	.string "TOTODILE is your choice!\p"
-	.string "You know how to pick a good one.\p"
-	.string "So, you'll take the TOTODILE?$"
+	.string "PROF. BIRCH: Cháu chọn WATER POKéMON\n"
+	.string "TOTODILE!\p"
+	.string "Cháu biết cách chọn con tốt đấy.\p"
+	.string "Vậy cháu sẽ lấy TOTODILE chứ?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "PROF. BIRCH: The GRASS POKéMON\n"
-	.string "CHIKORITA is your choice!\p"
-	.string "You sure know what you're doing.\p"
-	.string "So, you'll take the CHIKORITA?$"
+	.string "PROF. BIRCH: Cháu chọn GRASS POKéMON\n"
+	.string "CHIKORITA!\p"
+	.string "Cháu đúng là biết mình đang làm gì.\p"
+	.string "Vậy cháu sẽ lấy CHIKORITA chứ?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
-	.string "PROF. BIRCH: Take your time before\n"
-	.string "you decide.\p"
-	.string "They're all invaluable POKéMON.$"
+	.string "PROF. BIRCH: Cứ từ từ suy nghĩ trước\n"
+	.string "khi quyết định.\p"
+	.string "Cả ba đều là những POKéMON vô giá.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
-	.string "PROF. BIRCH: I see!\n"
-	.string "You picked a fine POKéMON!$"
+	.string "PROF. BIRCH: Ra vậy! Cháu đã chọn một\n"
+	.string "POKéMON rất tuyệt!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
-	.string "{PLAYER} received the {STR_VAR_1}\n"
-	.string "from PROF. BIRCH!$"
+	.string "{PLAYER} đã nhận {STR_VAR_1}\n"
+	.string "từ PROF. BIRCH!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_1} you received?$"
+	.string "Bạn có muốn đặt biệt danh cho\n"
+	.string "{STR_VAR_1} vừa nhận không?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
-	.string "PROF. BIRCH: Listen, {PLAYER}{KUN}.\n"
-	.string "You've completed the HOENN POKéDEX,\l"
-	.string "but your POKéMON journey isn't over.\p"
-	.string "There is no end to the road\n"
-	.string "that is POKéMON.\p"
-	.string "Somewhere, there is a grassy patch\n"
-	.string "that's waiting for you!$"
+	.string "PROF. BIRCH: Nghe này, {PLAYER}{KUN}.\n"
+	.string "Cháu đã hoàn thành HOENN POKéDEX,\l"
+	.string "nhưng hành trình POKéMON của cháu vẫn\l"
+	.string "chưa kết thúc.\p"
+	.string "Con đường POKéMON không bao giờ có\n"
+	.string "điểm dừng.\p"
+	.string "Ở đâu đó, vẫn có một bãi cỏ đang chờ\n"
+	.string "cháu!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "You received the promised POKéMON.\n"
-	.string "Better leave the others alone.$"
+	.string "Bạn đã nhận POKéMON được hứa tặng.\n"
+	.string "Tốt hơn hết hãy để những con còn lại\l"
+	.string "yên.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "Oh, you don't have any room for\n"
-	.string "this POKéMON.$"
+	.string "Ồ, bạn không còn chỗ cho POKéMON này.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "MAY: {PLAYER}{KUN}, after this…\n"
-	.string "What are you going to do?\p"
-	.string "Are you going to keep battling\n"
-	.string "and sharpening your skills?\p"
-	.string "Or are you going to try filling\n"
-	.string "the NATIONAL POKéDEX?\p"
-	.string "I'm staying here to help the PROF.$"
+	.string "MAY: {PLAYER}{KUN}, sau chuyện này...\n"
+	.string "Cậu định làm gì?\p"
+	.string "Cậu sẽ tiếp tục chiến đấu để mài giũa kỹ\n"
+	.string "năng?\p"
+	.string "Hay sẽ thử hoàn thành NATIONAL\n"
+	.string "POKéDEX?\p"
+	.string "Mình sẽ ở đây giúp PROF.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "BRENDAN: Rather than collecting\n"
-	.string "POKéMON, I prefer slowly and \l"
-	.string "steadily raising the one I chose.$"
+	.string "BRENDAN: Thay vì sưu tầm POKéMON, tớ\n"
+	.string "thích từ từ và kiên trì nuôi lớn\l"
+	.string "POKéMON mình đã chọn hơn.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\n"
-	.string "Have you gone to that place,\l"
-	.string "the BATTLE FRONTIER?$"
+	.string "MAY: Ồ, chào {PLAYER}{KUN}! Cậu đã đến\n"
+	.string "nơi gọi là BATTLE FRONTIER chưa?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "BRENDAN: Hey, {PLAYER}!\n"
-	.string "Have you gone out to that place,\l"
-	.string "the BATTLE FRONTIER?$"
+	.string "BRENDAN: Này, {PLAYER}! Cậu đã đến\n"
+	.string "nơi gọi là BATTLE FRONTIER chưa?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "SCOTT: Hi, hi, {PLAYER}!\n"
-	.string "It's me, SCOTT.\p"
-	.string "I'm aboard the S.S. TIDAL now.\n"
-	.string "It feels great to be on the sea!\p"
-	.string "By the way…\p"
-	.string "There's this place that I'd like to\n"
-	.string "invite you to for a visit.\p"
-	.string "If you're interested, board a ferry\n"
-	.string "at either SLATEPORT or LILYCOVE.\p"
-	.string "I'll fill you in on the details when\n"
-	.string "we meet. I'll be waiting!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+	.string "... ... ... ... ... ... ... ... ... ... ... Bíp!\p"
+	.string "SCOTT: Chào, chào, {PLAYER}! Tôi đây,\n"
+	.string "SCOTT.\p"
+	.string "Giờ tôi đang ở trên S.S. TIDAL. Ra khơi\n"
+	.string "thật tuyệt!\p"
+	.string "Nhân tiện...\p"
+	.string "Có một nơi tôi muốn mời cậu đến tham\n"
+	.string "quan.\p"
+	.string "Nếu hứng thú, hãy lên phà ở SLATEPORT\n"
+	.string "hoặc LILYCOVE.\p"
+	.string "Khi gặp nhau tôi sẽ nói chi tiết. Tôi sẽ\n"
+	.string "chờ!\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... Cạch!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork
+	.global LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork
+	.global LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo
+	.global LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon
+	.global LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival
+	.global LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou
+	.global LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay
+	.global LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome
+	.global LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex
+	.global LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
+	.global LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex
+	.global LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese
+	.global LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls
+	.global LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese
+	.global LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls
+	.global LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext
+	.global LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine
+	.global LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch
+	.global LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead
+	.global LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe
+	.global LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone
+	.global LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
+	.global LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork
+	.global LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil
+	.global LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile
+	.global LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita
+	.global LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable
+	.global LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter
+	.global LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter
+	.global LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting
+	.global LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone
+	.global LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly
+	.global LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier
+	.global LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier
+	.global LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall
+@ END GENERATED LOCALIZATION EXPORTS

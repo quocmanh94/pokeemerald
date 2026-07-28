@@ -63,79 +63,88 @@ SlateportCity_SternsShipyard_1F_EventScript_Briney::
 	end
 
 SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails:
-	.string "Umm… If this goes here, and that\n"
-	.string "goes over there…\p"
-	.string "Then where does this thing go?\n"
-	.string "And what about that doohickey?\p"
-	.string "Aaargh! I can't make heads or tails\n"
-	.string "of this!$"
+	.string "Ờm... Nếu cái này đặt ở đây, còn cái kia\n"
+	.string "đặt bên đó...\p"
+	.string "Vậy thứ này đặt ở đâu? Còn cái đồ lỉnh\n"
+	.string "kỉnh kia thì sao?\p"
+	.string "Aaargh! Tôi chẳng hiểu đầu cua tai nheo\n"
+	.string "gì cả!$"
 
 SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
-	.string "Hm?\n"
-	.string "Hi, I'm DOCK.\p"
-	.string "CAPT. STERN commissioned me to\n"
-	.string "design a ferry.\p"
-	.string "Oh! That there…\n"
-	.string "Are they DEVON GOODS?\p"
-	.string "But, hmm…\n"
-	.string "This won't do…\p"
-	.string "CAPT. STERN went off somewhere.\n"
-	.string "He said he had some work to do.\p"
-	.string "Could I get you to go find CAPT.\n"
-	.string "STERN and deliver that to him?$"
+	.string "Hửm? Chào, tôi là DOCK.\p"
+	.string "CAPT. STERN đã giao cho tôi thiết kế một\n"
+	.string "chiếc phà.\p"
+	.string "Ô! Thứ đằng kia... Có phải DEVON GOODS\n"
+	.string "không?\p"
+	.string "Nhưng, hừm... Không ổn rồi...\p"
+	.string "CAPT. STERN đã đi đâu đó. Ông ấy nói\n"
+	.string "mình có việc cần làm.\p"
+	.string "Cháu có thể tìm CAPT. STERN và giao món\n"
+	.string "đồ đó cho ông ấy được không?$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern:
-	.string "DOCK: Where could CAPT. STERN have\n"
-	.string "gone off to?\p"
-	.string "Could you go find CAPT. STERN and\n"
-	.string "deliver that parcel to him?$"
+	.string "DOCK: CAPT. STERN đã đi đâu rồi nhỉ?\p"
+	.string "Cháu có thể tìm CAPT. STERN và giao\n"
+	.string "kiện hàng đó cho ông ấy được không?$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran:
-	.string "DOCK: Shipbuilding is an art.\p"
-	.string "A lot of things can't be figured out\n"
-	.string "just by calculating.\p"
-	.string "I really could use advice from a veteran\n"
-	.string "who knows the seas…$"
+	.string "DOCK: Đóng tàu là một nghệ thuật.\p"
+	.string "Có rất nhiều thứ không thể chỉ dựa vào\n"
+	.string "tính toán mà hiểu được.\p"
+	.string "Tôi thật sự cần lời khuyên từ một thủy\n"
+	.string "thủ kỳ cựu am hiểu biển cả...$"
 
 SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs:
-	.string "DOCK: Hi! MR. BRINEY's joined us to\n"
-	.string "lend us his help.\p"
-	.string "Thanks to the veteran sailor, the\n"
-	.string "ferry is steadily coming together.$"
+	.string "DOCK: Chào! MR. BRINEY đã tham gia\n"
+	.string "giúp đỡ chúng tôi.\p"
+	.string "Nhờ người thủy thủ kỳ cựu ấy, chiếc\n"
+	.string "phà đang dần thành hình.$"
 
 SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
-	.string "DOCK: The ferry is finally ready!\p"
-	.string "The new S.S. TIDAL is truly a marvel\n"
-	.string "of technology!\p"
-	.string "But, I get the feeling that we can\n"
-	.string "make something even better.\p"
-	.string "You know, there's never an end to\n"
-	.string "technology's march.$"
+	.string "DOCK: Cuối cùng chiếc phà cũng hoàn\n"
+	.string "thành!\p"
+	.string "S.S. TIDAL mới thật sự là một kỳ quan\n"
+	.string "công nghệ!\p"
+	.string "Nhưng tôi có cảm giác chúng ta vẫn có\n"
+	.string "thể tạo ra thứ còn tuyệt vời hơn.\p"
+	.string "Cậu biết đấy, bước tiến của công nghệ\n"
+	.string "không bao giờ dừng lại.$"
 
 SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock:
-	.string "MR. BRINEY: Ah, {PLAYER}{KUN}!\n"
-	.string "It's been too long!\p"
-	.string "Aye, since I met you, this old sea dog's\n"
-	.string "been feeling frisky!\p"
-	.string "So I've decided to help DOCK make\n"
-	.string "a ferry.\p"
-	.string "Aye, after all, a ferry would be able\n"
-	.string "to carry a lot of people.\p"
-	.string "But, you know, that DOCK is really\n"
-	.string "something special.\p"
-	.string "With his knack for technology and\n"
-	.string "my experience, I'm sure that we can\l"
-	.string "build one great ship, aye!$"
+	.string "MR. BRINEY: A, {PLAYER}{KUN}! Lâu lắm\n"
+	.string "rồi mới gặp cháu!\p"
+	.string "Ừ, từ khi gặp cháu, lão sói biển này cảm\n"
+	.string "thấy sung sức hẳn!\p"
+	.string "Vì thế, ta đã quyết định giúp DOCK đóng\n"
+	.string "một chiếc phà.\p"
+	.string "Ừ, dù sao phà cũng có thể chở được rất\n"
+	.string "nhiều người.\p"
+	.string "Nhưng cháu biết không, DOCK thật sự là\n"
+	.string "một người đặc biệt.\p"
+	.string "Với tài công nghệ của cậu ấy và kinh\n"
+	.string "nghiệm của ta, chúng ta nhất định có\l"
+	.string "thể đóng nên một con tàu tuyệt vời, ừ!$"
 
 SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing:
-	.string "The seasons, the weather, where\n"
-	.string "the moon sits in the sky…\p"
-	.string "These and other conditions make\n"
-	.string "the sea change its expression.\p"
-	.string "That's right!\n"
-	.string "The sea is like a living thing!$"
+	.string "Mùa, thời tiết, vị trí của mặt trăng\n"
+	.string "trên bầu trời...\p"
+	.string "Những điều kiện này và nhiều yếu tố\n"
+	.string "khác khiến biển thay đổi sắc thái.\p"
+	.string "Đúng vậy! Biển cả giống như một sinh\n"
+	.string "vật sống!$"
 
 SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily:
-	.string "I get seasick real easily.\n"
-	.string "So I get to help out here instead.$"
+	.string "Tôi rất dễ bị say sóng. Vì vậy, thay vào\n"
+	.string "đó tôi được phụ giúp ở đây.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails
+	.global SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern
+	.global SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern
+	.global SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran
+	.global SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs
+	.global SlateportCity_SternsShipyard_1F_Text_FerryIsReady
+	.global SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock
+	.global SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing
+	.global SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily
+@ END GENERATED LOCALIZATION EXPORTS

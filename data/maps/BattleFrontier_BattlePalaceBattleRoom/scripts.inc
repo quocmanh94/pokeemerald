@@ -442,134 +442,164 @@ BattleFrontier_BattlePalaceBattleRoom_Movement_SpenserEnter:
 	step_end
 
 BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons:
-	.string "Excellent…\n"
-	.string "Let me restore your POKéMON.$"
+	.string "Tuyệt lắm... Để tôi hồi phục cho POKéMON\n"
+	.string "của bạn.$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent:
-	.string "The 2nd opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 2. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent:
-	.string "The 3rd opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 3. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent:
-	.string "The 4th opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 4. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent:
-	.string "The 5th opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 5. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent:
-	.string "The 6th opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 6. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent:
-	.string "The 7th opponent is next.\n"
-	.string "Are you prepared?$"
+	.string "Tiếp theo là đối thủ thứ 7. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame:
-	.string "Would you like to save and quit\n"
-	.string "the game?$"
+	.string "Bạn có muốn lưu rồi thoát trò chơi\n"
+	.string "không?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge:
-	.string "Do you wish to quit your challenge?$"
+	.string "Bạn có muốn từ bỏ thử thách không?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SavingData:
-	.string "Saving the data.\n"
-	.string "Have patience…$"
+	.string "Đang lưu dữ liệu. Xin hãy kiên nhẫn...$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch:
-	.string "Do you wish to record your latest\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "Bạn có muốn ghi lại trận đấu mới nhất\n"
+	.string "vào FRONTIER PASS không?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven:
-	.string "And now…\p"
-	.string "By winning consistently, you have\n"
-	.string "earned the privilege of challenging\l"
-	.string "our master, the PALACE MAVEN…$"
+	.string "Và giờ...\p"
+	.string "Nhờ liên tiếp giành chiến thắng, bạn đã\n"
+	.string "giành được quyền thách đấu chủ nhân\l"
+	.string "của chúng tôi, PALACE MAVEN...$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven:
-	.string "I shall send for the PALACE MAVEN.\n"
-	.string "Are you ready?$"
+	.string "Tôi sẽ cho mời PALACE MAVEN. Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser:
-	.string "Let great fanfare announce the arrival\n"
-	.string "of the PALACE MAVEN, SPENSER!$"
+	.string "Hãy để khúc nhạc tưng bừng báo hiệu\n"
+	.string "PALACE MAVEN, SPENSER đã đến!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro:
-	.string "SPENSER: My physical being is with\n"
-	.string "POKéMON always!\p"
-	.string "My heart beats as one with\n"
-	.string "POKéMON always!\p"
-	.string "Young one of a TRAINER!\n"
-	.string "Do you believe in your POKéMON?\p"
-	.string "Can you believe them through\n"
-	.string "and through?\p"
-	.string "If your bonds of trust are frail,\n"
-	.string "you will never beat my brethren!$"
+	.string "SPENSER: Thân xác ta luôn ở bên\n"
+	.string "POKéMON!\p"
+	.string "Trái tim ta luôn hòa cùng nhịp đập với\n"
+	.string "POKéMON!\p"
+	.string "Hỡi HLV trẻ tuổi! Ngươi có tin vào\n"
+	.string "POKéMON của mình không?\p"
+	.string "Ngươi có thể tin chúng tuyệt đối\n"
+	.string "không?\p"
+	.string "Nếu sợi dây tín nhiệm giữa các ngươi\n"
+	.string "mong manh, ngươi sẽ không bao giờ đánh\l"
+	.string "bại được những người anh em của ta!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons:
-	.string "The bond you share with your POKéMON!\n"
-	.string "Prove it to me here!$"
+	.string "Mối liên kết giữa ngươi và POKéMON! Hãy\n"
+	.string "chứng minh cho ta ngay tại đây!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle:
 	.string "SPENSER: Gwahahah!\p"
-	.string "Hah, you never fell for my bluster!\n"
-	.string "Sorry for trying that stunt!\p"
-	.string "Here!\n"
-	.string "Bring me the thing!$"
+	.string "Ha, ngươi chẳng hề mắc lừa màn phô\n"
+	.string "trương của ta! Xin lỗi vì đã giở trò đó!\p"
+	.string "Đây! Mang thứ đó đến cho ta!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass:
-	.string "My, my, if only you could maintain that\n"
-	.string "facade of distinguished authority…\p"
-	.string "Here!\n"
-	.string "Let's see your FRONTIER PASS!$"
+	.string "Ôi chao, giá mà ngài giữ nổi cái vẻ quyền\n"
+	.string "uy đạo mạo đó...\p"
+	.string "Đây! Đưa FRONTIER PASS cho tôi xem\n"
+	.string "nào!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol:
-	.string "The Spirits Symbol was embossed on\n"
-	.string "the FRONTIER PASS!$"
+	.string "Spirits Symbol đã được dập nổi lên\n"
+	.string "FRONTIER PASS!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime:
-	.string "SPENSER: Your POKéMON's eyes are \n"
-	.string "truly clear and unclouded.\p"
-	.string "I will eagerly await the next\n"
-	.string "opportunity to see you.$"
+	.string "SPENSER: Đôi mắt POKéMON của ngươi\n"
+	.string "thật sự trong trẻo, không chút vẩn đục.\p"
+	.string "Ta sẽ háo hức chờ lần tiếp theo được\n"
+	.string "gặp ngươi.$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack:
-	.string "SPENSER: Gwahahah!\n"
-	.string "You've battled your way up again?\p"
-	.string "You must have developed a truly\n"
-	.string "formidable bond with your POKéMON.\p"
-	.string "So be it!\p"
-	.string "This time, I won't bluster or hold back.\n"
-	.string "This time, there's no fooling around.\p"
-	.string "Ready now?\n"
-	.string "Prepare to lose!$"
+	.string "SPENSER: Gwahahah! Ngươi lại chiến đấu\n"
+	.string "để lên được đến đây sao?\p"
+	.string "Hẳn ngươi đã vun đắp một mối liên kết\n"
+	.string "thật đáng gờm với POKéMON của mình.\p"
+	.string "Vậy thì được!\p"
+	.string "Lần này, ta sẽ không phô trương hay\n"
+	.string "nương tay. Lần này, không đùa giỡn\l"
+	.string "nữa.\p"
+	.string "Sẵn sàng chưa? Chuẩn bị thua đi!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah:
-	.string "… … …Kaaah!$"
+	.string "... ... ...Kaaah!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable:
-	.string "SPENSER: Well, that was some display!\n"
-	.string "Even fully unleashed, my brethren\l"
-	.string "could not overpower you.\p"
-	.string "Your team spirit is truly admirable!\p"
-	.string "Here!\n"
-	.string "Bring me that thing, will you?$"
+	.string "SPENSER: Chà, thật là một màn trình\n"
+	.string "diễn! Ngay cả khi bung hết sức, những\l"
+	.string "người anh em của ta vẫn không thể áp\l"
+	.string "đảo ngươi.\p"
+	.string "Tinh thần đồng đội của các ngươi thật\n"
+	.string "đáng khâm phục!\p"
+	.string "Đây! Mang thứ đó đến cho ta, được\n"
+	.string "chứ?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass:
-	.string "My, my, if only you could maintain\n"
-	.string "a certain level of decorum…\p"
-	.string "Gaaah, here!\n"
-	.string "Hurry with that FRONTIER PASS, you!$"
+	.string "Ôi chao, giá mà ngài giữ được chút\n"
+	.string "phong thái đúng mực...\p"
+	.string "Gaaah, đây! Mau đưa FRONTIER PASS đây\n"
+	.string "nào!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine:
-	.string "The Spirits Symbol took on\n"
-	.string "a golden shine!$"
+	.string "Spirits Symbol đã tỏa ánh vàng!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain:
 	.string "SPENSER: Gwahahah!\p"
-	.string "Come see me time and again!\n"
-	.string "My brethren and I will be waiting!$"
+	.string "Hãy đến gặp ta hết lần này đến lần\n"
+	.string "khác! Ta và những người anh em sẽ chờ\l"
+	.string "ngươi!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
+	.global BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
+@ END GENERATED LOCALIZATION EXPORTS

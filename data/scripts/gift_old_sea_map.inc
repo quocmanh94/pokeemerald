@@ -35,24 +35,32 @@ OldSeaMap_Obtained:
 	end
 
 sText_MysteryGiftOldSeaMapForYou:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "Let me confirm--you are {PLAYER}?\p"
-	.string "We received this OLD SEA MAP\n"
-	.string "addressed to you.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Để tôi xác nhận, bạn là {PLAYER}, đúng\n"
+	.string "không?\p"
+	.string "Chúng tôi đã nhận được OLD SEA MAP đề\n"
+	.string "tên người nhận là bạn.$"
 
 sText_MysteryGiftOldSeaMapUseAtPort:
-	.string "It appears to be for use at the\n"
-	.string "LILYCOVE CITY port.\p"
-	.string "Why not give it a try and see what\n"
-	.string "it is about?$"
+	.string "Có vẻ món này được dùng tại cảng\n"
+	.string "LILYCOVE CITY.\p"
+	.string "Sao bạn không thử dùng xem nó có tác\n"
+	.string "dụng gì?$"
 
 sText_MysteryGiftOldSeaMapThankYou:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.$"
 
 sText_MysteryGiftOldSeaMapBagFull:
-	.string "Oh, I'm sorry, {PLAYER}.\n"
-	.string "Your BAG's KEY ITEMS POCKET is full.\p"
-	.string "Please store something on your PC,\n"
-	.string "then come back for this.$"
+	.string "Ồ, tôi xin lỗi, {PLAYER}. KEY ITEMS\n"
+	.string "POCKET trong TÚI ĐỒ của bạn đã đầy.\p"
+	.string "Hãy cất thứ gì đó vào PC rồi quay lại\n"
+	.string "nhận món này.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftOldSeaMapForYou
+	.global sText_MysteryGiftOldSeaMapUseAtPort
+	.global sText_MysteryGiftOldSeaMapThankYou
+	.global sText_MysteryGiftOldSeaMapBagFull
+@ END GENERATED LOCALIZATION EXPORTS

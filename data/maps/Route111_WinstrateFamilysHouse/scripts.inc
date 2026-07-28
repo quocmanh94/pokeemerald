@@ -57,46 +57,54 @@ Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection::
 	end
 
 Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
-	.string "You're the first TRAINER I've seen who\n"
-	.string "deploys POKéMON so masterfully.\p"
-	.string "But, I should tell you--my son is\n"
-	.string "stronger than you.\p"
-	.string "He even took the POKéMON LEAGUE\n"
-	.string "challenge, I'll have you know.$"
+	.string "Bạn là HLV đầu tiên tôi gặp có thể\n"
+	.string "điều khiển POKéMON tài tình đến vậy.\p"
+	.string "Nhưng tôi phải nói rằng con trai tôi còn\n"
+	.string "mạnh hơn bạn.\p"
+	.string "Nó thậm chí đã tham gia thử thách\n"
+	.string "POKéMON LEAGUE đấy.$"
 
 Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
-	.string "We use this MACHO BRACE to more\n"
-	.string "effectively strengthen our POKéMON\l"
-	.string "in training.\p"
-	.string "Since you've beaten all of us here,\n"
-	.string "I don't know if you need it, but we\l"
-	.string "would like you to have our MACHO BRACE.$"
+	.string "Chúng tôi dùng MACHO BRACE này để rèn\n"
+	.string "luyện POKéMON hiệu quả hơn.\p"
+	.string "Bạn đã đánh bại tất cả chúng tôi nên\n"
+	.string "không biết còn cần nó không, nhưng gia\l"
+	.string "đình tôi muốn tặng bạn chiếc MACHO\l"
+	.string "BRACE này.$"
 
 Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles:
-	.string "When it comes to POKéMON battles,\n"
-	.string "we tend to be pretty passionate.$"
+	.string "Nhắc đến đấu POKéMON là cả gia đình\n"
+	.string "chúng tôi thường nhiệt tình lắm.$"
 
 Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers:
-	.string "Mommy is stronger than Daddy.\p"
-	.string "I'm stronger than Mommy.\p"
-	.string "And Grandma's stronger than me!\p"
-	.string "But my big brother is even stronger\n"
-	.string "than Grandma.$"
+	.string "Mẹ mạnh hơn Ba.\p"
+	.string "Mình mạnh hơn Mẹ.\p"
+	.string "Còn Bà lại mạnh hơn mình!\p"
+	.string "Nhưng anh trai mình còn mạnh hơn cả Bà.$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrong:
-	.string "There's no question that you're strong.\p"
-	.string "But if you were to battle my grandson,\n"
-	.string "you'd end up crying in frustration.\p"
-	.string "He's much stronger than any TRAINER\n"
-	.string "our family knows.\p"
-	.string "He must be challenging the POKéMON\n"
-	.string "LEAGUE CHAMPION by now.\p"
-	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "Không thể phủ nhận rằng ngươi rất\n"
+	.string "mạnh.\p"
+	.string "Nhưng nếu đấu với cháu trai ta, ngươi\n"
+	.string "sẽ phải khóc vì bất lực.\p"
+	.string "Nó mạnh hơn bất kỳ HLV nào mà gia\n"
+	.string "đình ta biết.\p"
+	.string "Có lẽ giờ nó đang thách đấu CHAMPION\n"
+	.string "của POKéMON LEAGUE.\p"
+	.string "Với tài năng của cháu ta, biết đâu nó đã\n"
+	.string "trở thành CHAMPION rồi!$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
-	.string "My grandson must be challenging the\n"
-	.string "POKéMON LEAGUE CHAMPION by now.\p"
-	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "Có lẽ giờ cháu trai ta đang thách đấu\n"
+	.string "CHAMPION của POKéMON LEAGUE.\p"
+	.string "Với tài năng của cháu ta, biết đâu nó đã\n"
+	.string "trở thành CHAMPION rồi!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou
+	.global Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace
+	.global Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles
+	.global Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers
+	.global Route111_WinstrateFamilysHouse_Text_GrandsonStrong
+	.global Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort
+@ END GENERATED LOCALIZATION EXPORTS

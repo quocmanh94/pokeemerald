@@ -284,55 +284,70 @@ Route124_DivingTreasureHuntersHouse_EventScript_ShardTradeBoard::
 	end
 
 Route124_DivingTreasureHuntersHouse_Text_Greeting:
-	.string "I'm the DIVING TREASURE HUNTER!\p"
-	.string "I'm the awesome dude who makes\n"
-	.string "deep-sea dives to gather treasures\l"
-	.string "resting at the bottom.$"
+	.string "Tôi là DIVING TREASURE HUNTER!\p"
+	.string "Tôi là người hùng chuyên lặn xuống biển\n"
+	.string "sâu để thu thập kho báu nằm dưới đáy\l"
+	.string "biển.$"
 
 Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards:
-	.string "Tell me, have you seen any SHARDS of\n"
-	.string "tools made in ancient times?$"
+	.string "Nói tôi nghe, bạn có thấy SHARDS nào\n"
+	.string "của những công cụ được chế tạo từ\l"
+	.string "thời cổ đại không?$"
 
 Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
-	.string "You haven't got any treasures\n"
-	.string "for me…\p"
-	.string "If you see any SHARDS, like the RED\n"
-	.string "SHARD, you've got to trade it with me!$"
+	.string "Bạn không có kho báu nào cho tôi cả...\p"
+	.string "Nếu thấy SHARDS nào như RED SHARD,\n"
+	.string "nhất định phải đem đổi với tôi nhé!$"
 
 Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou:
-	.string "Oh, hey! That…\n"
-	.string "That's a SHARD! I'm looking for those!\p"
-	.string "Oh, man, you've got to trade that\n"
-	.string "with me! I'll give you something good!$"
+	.string "Ồ, này! Đó... Đó là một SHARD! Tôi đang\n"
+	.string "tìm chúng đấy!\p"
+	.string "Trời ơi, bạn nhất định phải đổi nó với\n"
+	.string "tôi! Tôi sẽ cho bạn một món đồ tốt!$"
 
 Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade:
-	.string "What do you want to trade?$"
+	.string "Bạn muốn đổi thứ gì?$"
 
 Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone:
-	.string "You'll trade your {STR_VAR_1} for\n"
-	.string "my {STR_VAR_2}, then?$"
+	.string "Vậy bạn sẽ đổi {STR_VAR_1} của\n"
+	.string "mình lấy {STR_VAR_2} của tôi\l"
+	.string "chứ?$"
 
 Route124_DivingTreasureHuntersHouse_Text_ItsADeal:
-	.string "It's a done deal!\n"
-	.string "Use that wisely!$"
+	.string "Thỏa thuận xong nhé! Hãy dùng nó thật\n"
+	.string "khôn ngoan!$"
 
 Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse:
-	.string "Do you want to trade something else?$"
+	.string "Bạn có muốn đổi thứ khác không?$"
 
 Route124_DivingTreasureHuntersHouse_Text_BagFull:
-	.string "Whoops, your BAG's full.\n"
-	.string "Get rid of some items, friend!$"
+	.string "Ôi, TÚI ĐỒ của bạn đầy rồi. Bỏ bớt\n"
+	.string "vài món đi, bạn nhé!$"
 
 Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind:
-	.string "No? That's a downer.\n"
-	.string "Well, if you change your mind, come back.$"
+	.string "Không à? Chán thật. Nếu đổi ý thì hãy\n"
+	.string "quay lại nhé.$"
 
 Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
-	.string "{CLEAR_TO 10}Wanted item{CLEAR_TO 124}Trade item\n"
+	.string "{CLEAR_TO 10}Vật phẩm cần{CLEAR_TO 124}Vật phẩm đổi\n"
 	.string "{CLEAR_TO 15}RED SHARD{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}FIRE STONE{CLEAR_TO 200}\p"
-	.string "{CLEAR_TO 10}Wanted item{CLEAR_TO 124}Trade item\n"
+	.string "{CLEAR_TO 10}Vật phẩm cần{CLEAR_TO 124}Vật phẩm đổi\n"
 	.string "{CLEAR_TO 6}YELLOW SHARD{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 115}THUNDERSTONE{CLEAR_TO 200}\p"
-	.string "{CLEAR_TO 10}Wanted item{CLEAR_TO 124}Trade item\n"
+	.string "{CLEAR_TO 10}Vật phẩm cần{CLEAR_TO 124}Vật phẩm đổi\n"
 	.string "{CLEAR_TO 12}BLUE SHARD{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 121}WATER STONE{CLEAR_TO 200}\p"
-	.string "{CLEAR_TO 10}Wanted item{CLEAR_TO 124}Trade item\n"
+	.string "{CLEAR_TO 10}Vật phẩm cần{CLEAR_TO 124}Vật phẩm đổi\n"
 	.string "{CLEAR_TO 8}GREEN SHARD{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}LEAF STONE$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route124_DivingTreasureHuntersHouse_Text_Greeting
+	.global Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards
+	.global Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards
+	.global Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou
+	.global Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade
+	.global Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone
+	.global Route124_DivingTreasureHuntersHouse_Text_ItsADeal
+	.global Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse
+	.global Route124_DivingTreasureHuntersHouse_Text_BagFull
+	.global Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind
+	.global Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard
+@ END GENERATED LOCALIZATION EXPORTS

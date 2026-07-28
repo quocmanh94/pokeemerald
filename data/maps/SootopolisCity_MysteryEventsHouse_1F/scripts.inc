@@ -163,65 +163,79 @@ SootopolisCity_MysteryEventsHouse_1F_Movement_OldManMoveAsideRight:
 	step_end
 
 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles:
-	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
-	.string "Now that I've become an old buzzard,\n"
-	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "Ngày trẻ, ta từng chu du khắp thế giới\n"
+	.string "với tư cách HLV POKéMON.\p"
+	.string "Giờ đã thành lão già khọm, thú vui duy\n"
+	.string "nhất của ta là xem các HLV trẻ\l"
+	.string "tuổi thi đấu.$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked:
-	.string "The door appears to be locked.$"
+	.string "Cánh cửa có vẻ đã bị khóa.$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer:
-	.string "A TRAINER named {STR_VAR_1}\n"
-	.string "is visiting my home.\p"
-	.string "Would you like to challenge\n"
-	.string "{STR_VAR_1}?$"
+	.string "Một HLV tên {STR_VAR_1}\n"
+	.string "đang ghé thăm nhà ta.\p"
+	.string "Cháu có muốn thách đấu\n"
+	.string "{STR_VAR_1} không?$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle:
-	.string "You won't battle? I'm disappointed\n"
-	.string "that I can't see you battle…$"
+	.string "Cháu không đấu sao? Tiếc quá, ta không\n"
+	.string "được xem cháu thi đấu...$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3:
-	.string "Oh, good, good!\p"
-	.string "But my house isn't all that sturdy.\p"
-	.string "Could I ask you to keep it down to\n"
-	.string "a 3-on-3 match?$"
+	.string "Ồ, tốt lắm, tốt lắm!\p"
+	.string "Nhưng nhà ta không được chắc chắn cho\n"
+	.string "lắm.\p"
+	.string "Ta có thể nhờ hai cháu chỉ đấu 3 chọi 3\n"
+	.string "thôi không?$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle:
-	.string "Before you two battle, you should\n"
-	.string "save your progress.$"
+	.string "Trước khi hai cháu thi đấu, cháu nên\n"
+	.string "lưu tiến trình.$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch:
-	.string "I hope to see a good match!$"
+	.string "Ta mong sẽ được xem một trận thật hay!$"
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Tie:
 	.string "{STR_VAR_1}$"
 
 SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw:
-	.string "The match ended up a draw.$"
+	.string "Trận đấu đã kết thúc với kết quả hòa.$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff:
-	.string "So, it became a standoff.\p"
-	.string "It was a brilliant match in which\n"
-	.string "neither side conceded a step!$"
+	.string "Vậy là hai bên bất phân thắng bại.\p"
+	.string "Một trận đấu tuyệt vời, không bên nào\n"
+	.string "chịu nhường dù chỉ một bước!$"
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Won:
 	.string "{STR_VAR_1}$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative:
-	.string "That was superlative!\p"
-	.string "Why, it was like seeing myself in\n"
-	.string "my youth again!$"
+	.string "Tuyệt hảo!\p"
+	.string "Cứ như ta đang được nhìn lại chính\n"
+	.string "mình thuở trẻ vậy!$"
 
 @ Unused
 SootopolisCity_MysteryEventsHouse_1F_Text_StrVar1Lost:
 	.string "{STR_VAR_1}$"
 
 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou:
-	.string "Ah, too bad for you!\p"
-	.string "But it was a good match.\n"
-	.string "I hope you can win next time.$"
+	.string "À, tiếc cho cháu quá!\p"
+	.string "Nhưng đó là một trận đấu hay. Mong lần\n"
+	.string "sau cháu sẽ thắng.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch
+	.global SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative
+	.global SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
+@ END GENERATED LOCALIZATION EXPORTS

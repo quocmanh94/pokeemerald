@@ -69,65 +69,77 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	end
 
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
-	.string "The BOSS got interested in\n"
-	.string "the research they have going here,\l"
-	.string "so he sent us out.\p"
-	.string "You quit meddling!$"
+	.string "Thủ lĩnh quan tâm đến nghiên cứu đang\n"
+	.string "được tiến hành ở đây nên đã phái bọn\l"
+	.string "ta tới.\p"
+	.string "Đừng có xen vào!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
-	.string "Blast it…\n"
-	.string "Blasted by a kid…$"
+	.string "Khốn thật... Lại bị một đứa nhóc đánh\n"
+	.string "bại...$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
-	.string "Our BOSS knows everything.\p"
-	.string "But I'm just a GRUNT. What would I know\n"
-	.string "about what he's thinking?$"
+	.string "Thủ lĩnh của bọn ta biết mọi thứ.\p"
+	.string "Nhưng ta chỉ là lính quèn. Làm sao ta\n"
+	.string "biết ông ấy đang nghĩ gì chứ?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Huh?\n"
-	.string "What's a kid doing here?$"
+	.string "Hả? Một đứa nhóc làm gì ở đây?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "Huh?\n"
-	.string "I lost?!$"
+	.string "Hả? Ta thua rồi sao?!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
-	.string "Oh, no…\n"
-	.string "I'll catch an earful for losing to a kid…\p"
-	.string "I should just take a nap in the bed…$"
+	.string "Ôi không... Ta sẽ bị mắng cho một trận vì\n"
+	.string "thua một đứa nhóc mất...\p"
+	.string "Hay là cứ nằm xuống giường ngủ một\n"
+	.string "giấc...$"
 
 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
-	.string "While I was sleeping, everyone went\n"
-	.string "upstairs!$"
+	.string "Trong lúc tôi ngủ, mọi người đã lên tầng\n"
+	.string "trên hết rồi!$"
 
 Route119_WeatherInstitute_1F_Text_WowYoureStrong:
-	.string "Wow, you're really strong!\p"
-	.string "I wish I could be a POKéMON TRAINER\n"
-	.string "like you!$"
+	.string "Chà, bạn mạnh thật đấy!\p"
+	.string "Ước gì tôi cũng có thể trở thành\n"
+	.string "HLV POKéMON như bạn!$"
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
-	.string "The PROFESSOR loves rain.\n"
-	.string "That's a fact.\p"
-	.string "But if it keeps raining, people will be in\n"
-	.string "trouble. That's another fact.\p"
-	.string "And thus, the PROFESSOR is studying\n"
-	.string "if the rain can be put to good use.$"
+	.string "PROFESSOR rất yêu mưa. Đó là sự thật.\p"
+	.string "Nhưng nếu mưa cứ kéo dài, mọi người sẽ\n"
+	.string "gặp rắc rối. Đó cũng là sự thật.\p"
+	.string "Vì vậy, PROFESSOR đang nghiên cứu cách\n"
+	.string "tận dụng mưa sao cho có ích.$"
 
 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
-	.string "On the 2nd floor of the INSTITUTE,\n"
-	.string "we study the weather patterns over\l"
-	.string "the HOENN region.\p"
-	.string "We've been noticing temporary and\n"
-	.string "isolated cases of droughts and\l"
-	.string "heavy rain lately…$"
+	.string "Ở tầng 2 của INSTITUTE, chúng tôi\n"
+	.string "nghiên cứu các kiểu thời tiết trên toàn\l"
+	.string "vùng HOENN.\p"
+	.string "Gần đây, chúng tôi nhận thấy có những\n"
+	.string "đợt hạn hán và mưa lớn tạm thời chỉ\l"
+	.string "xảy ra tại từng khu vực riêng lẻ...$"
 
 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
-	.string "Hello!\n"
-	.string "We've been saved by your actions!\p"
-	.string "What I don't understand is what on\n"
-	.string "earth the AQUAS were up to.$"
+	.string "Xin chào! Nhờ hành động của bạn mà\n"
+	.string "chúng tôi đã được cứu!\p"
+	.string "Điều tôi không hiểu là bọn AQUAS rốt\n"
+	.string "cuộc đang âm mưu chuyện gì.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
-	.string "There's a bed…\n"
-	.string "Let's take a rest.$"
+	.string "Có một chiếc giường... Nghỉ ngơi một lát\n"
+	.string "thôi.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route119_WeatherInstitute_1F_Text_Grunt1Intro
+	.global Route119_WeatherInstitute_1F_Text_Grunt1Defeat
+	.global Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
+	.global Route119_WeatherInstitute_1F_Text_Grunt4Intro
+	.global Route119_WeatherInstitute_1F_Text_Grunt4Defeat
+	.global Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
+	.global Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
+	.global Route119_WeatherInstitute_1F_Text_WowYoureStrong
+	.global Route119_WeatherInstitute_1F_Text_ProfStudyingRain
+	.global Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
+	.global Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
+	.global Route119_WeatherInstitute_1F_Text_TakeRestInBed
+@ END GENERATED LOCALIZATION EXPORTS

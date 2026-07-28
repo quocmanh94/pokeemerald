@@ -102,99 +102,117 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
-	.string "Do you know the POKéMON SEEDOT?\n"
-	.string "It's hardly ever seen in SOOTOPOLIS.\p"
-	.string "Anyway, I love big SEEDOT.\n"
-	.string "The bigger the better.\p"
-	.string "But my younger brother, he says that\n"
-	.string "LOTAD is bigger.\p"
-	.string "That's silly.\n"
-	.string "SEEDOT has to be bigger than that!\p"
-	.string "Huh? Do you have a SEEDOT with you?\n"
-	.string "P-p-please, show me!$"
+	.string "Bạn có biết POKéMON SEEDOT không? Ở\n"
+	.string "SOOTOPOLIS gần như chẳng bao giờ thấy\l"
+	.string "nó.\p"
+	.string "Dù sao thì tôi rất thích SEEDOT lớn.\n"
+	.string "Càng lớn càng tốt.\p"
+	.string "Nhưng em trai tôi lại bảo LOTAD lớn hơn.\p"
+	.string "Thật vô lý. SEEDOT nhất định phải lớn\n"
+	.string "hơn chứ!\p"
+	.string "Hả? Bạn có mang theo SEEDOT sao?\n"
+	.string "L-l-làm ơn, cho tôi xem với!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad:
-	.string "{STR_VAR_2} inches!\n"
-	.string "Oh, my gosh, this is a big one!\p"
-	.string "It might even beat the big LOTAD\n"
-	.string "my younger brother saw!\p"
-	.string "Thanks for showing me.\n"
-	.string "This is my thanks!$"
+	.string "{STR_VAR_2} inch! Trời ơi, con\n"
+	.string "này lớn thật!\p"
+	.string "Có khi nó còn vượt qua LOTAD khổng lồ\n"
+	.string "mà em trai tôi từng thấy!\p"
+	.string "Cảm ơn bạn đã cho tôi xem. Đây là quà\n"
+	.string "cảm ơn!$"
 
 @ Unused
 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1:
-	.string "{PLAYER} received a POTION.$"
+	.string "{PLAYER} đã nhận một POTION.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1:
-	.string "Hunh?\n"
-	.string "Your BAG is crammed full.$"
+	.string "Hả? TÚI ĐỒ của bạn đầy cứng rồi.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot:
-	.string "{STR_VAR_2} inches, is it?\p"
-	.string "Hmm… I've seen a bigger SEEDOT\n"
-	.string "than this one.$"
+	.string "{STR_VAR_2} inch sao?\p"
+	.string "Hmm... Tôi từng thấy một SEEDOT lớn hơn\n"
+	.string "con này.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot:
-	.string "Oh, now this is quite something…\n"
-	.string "But it's not a SEEDOT!$"
+	.string "Ồ, con này cũng thật ấn tượng... Nhưng\n"
+	.string "nó đâu phải SEEDOT!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot:
-	.string "You don't have a big SEEDOT?\n"
-	.string "That's too bad…\p"
-	.string "If you get a big SEEDOT, please\n"
-	.string "come show me.$"
+	.string "Bạn không có SEEDOT lớn sao? Tiếc\n"
+	.string "thật...\p"
+	.string "Nếu tìm được một SEEDOT lớn, xin hãy\n"
+	.string "mang tới cho tôi xem.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
-	.string "The biggest SEEDOT in history!\n"
-	.string "{STR_VAR_2}'s {STR_VAR_3}-inch giant!\p"
-	.string "A SEEDOT bigger than a LOTAD\n"
-	.string "always wanted!$"
+	.string "SEEDOT lớn nhất lịch sử! Con khổng lồ\n"
+	.string "dài {STR_VAR_3} inch của\l"
+	.string "{STR_VAR_2}!\p"
+	.string "Một SEEDOT lớn hơn LOTAD, đúng như\n"
+	.string "mong ước!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
-	.string "Do you know the POKéMON LOTAD?\n"
-	.string "It's rarely seen in SOOTOPOLIS.\p"
-	.string "I love, I mean love, big LOTAD!\p"
-	.string "My big brother says that SEEDOT is\n"
-	.string "bigger.\p"
-	.string "But that's wrong! Everyone knows that\n"
-	.string "LOTAD is a lot bigger.\p"
-	.string "Hunh? Do you have a LOTAD?\n"
-	.string "P-p-please show me!$"
+	.string "Bạn có biết POKéMON LOTAD không? Ở\n"
+	.string "SOOTOPOLIS hiếm khi thấy nó.\p"
+	.string "Tôi thích, phải nói là cực kỳ thích\n"
+	.string "những LOTAD lớn!\p"
+	.string "Anh trai tôi bảo SEEDOT lớn hơn.\p"
+	.string "Nhưng anh ấy sai rồi! Ai cũng biết LOTAD\n"
+	.string "lớn hơn rất nhiều.\p"
+	.string "Hả? Bạn có LOTAD sao? L-l-làm ơn cho\n"
+	.string "tôi xem với!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot:
-	.string "{STR_VAR_2} inches!\n"
-	.string "Wow, that is big!\p"
-	.string "It might be even bigger than the huge\n"
-	.string "SEEDOT my big brother saw.\p"
-	.string "Thanks for showing me!\n"
-	.string "This is my thanks!$"
+	.string "{STR_VAR_2} inch! Chà, lớn thật\n"
+	.string "đấy!\p"
+	.string "Có khi nó còn lớn hơn SEEDOT khổng lồ\n"
+	.string "mà anh trai tôi từng thấy.\p"
+	.string "Cảm ơn bạn đã cho tôi xem! Đây là quà\n"
+	.string "cảm ơn!$"
 
 @ Unused
 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion2:
-	.string "{PLAYER} received a POTION.$"
+	.string "{PLAYER} đã nhận một POTION.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2:
-	.string "Hunh?\n"
-	.string "Your BAG is crammed full.$"
+	.string "Hả? TÚI ĐỒ của bạn đầy ắp rồi.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad:
-	.string "{STR_VAR_2} inches?\p"
-	.string "Hmm… I've seen a bigger LOTAD\n"
-	.string "than this one here.$"
+	.string "{STR_VAR_2} inch à?\p"
+	.string "Ừm... Tôi từng thấy một LOTAD còn lớn\n"
+	.string "hơn con này.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad:
-	.string "Well, isn't this something!\n"
-	.string "But it's no LOTAD!$"
+	.string "Ồ, cũng ra trò đấy! Nhưng đây đâu phải\n"
+	.string "LOTAD!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad:
-	.string "Don't you have a big LOTAD?\n"
-	.string "How disappointing…\p"
-	.string "If you get a big LOTAD, please\n"
-	.string "come show me!$"
+	.string "Bạn không có LOTAD lớn à? Thất vọng\n"
+	.string "thật...\p"
+	.string "Nếu bắt được một LOTAD lớn, nhớ mang\n"
+	.string "đến cho tôi xem nhé!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory:
-	.string "The biggest LOTAD in history!\n"
-	.string "{STR_VAR_2}'s {STR_VAR_3}-inch colossus!\p"
-	.string "A LOTAD bigger than a SEEDOT\n"
-	.string "always wanted!$"
+	.string "LOTAD lớn nhất lịch sử! Gã khổng lồ dài\n"
+	.string "{STR_VAR_3} inch của\l"
+	.string "{STR_VAR_2}!\p"
+	.string "Một LOTAD lớn hơn cả SEEDOT mà tôi\n"
+	.string "hằng mong ước!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot
+	.global SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad
+	.global SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1
+	.global SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1
+	.global SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
+	.global SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot
+	.global SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot
+	.global SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory
+	.global SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad
+	.global SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot
+	.global SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion2
+	.global SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2
+	.global SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
+	.global SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad
+	.global SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad
+	.global SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
+@ END GENERATED LOCALIZATION EXPORTS

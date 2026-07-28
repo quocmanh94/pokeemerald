@@ -120,18 +120,23 @@ EverGrandeCity_PokemonLeague_1F_Movement_RightGuardOutOfWay:
 	step_end
 
 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges:
-	.string "Beyond this point, only those TRAINERS\n"
-	.string "who have collected all the GYM BADGES\l"
-	.string "are permitted to enter.\p"
-	.string "TRAINER, let us confirm that you have\n"
-	.string "all the GYM BADGES.$"
+	.string "Từ đây trở đi, chỉ những HLV đã\n"
+	.string "thu thập đủ mọi GYM BADGES mới được\l"
+	.string "phép vào.\p"
+	.string "HLV, hãy để chúng tôi xác nhận rằng\n"
+	.string "bạn có đủ mọi GYM BADGES.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
-	.string "You haven't obtained all the BADGES.\p"
-	.string "If you're bound for the POKéMON\n"
-	.string "LEAGUE, you must return with them.$"
+	.string "Bạn chưa giành được đủ BADGES.\p"
+	.string "Nếu muốn đến POKéMON LEAGUE, bạn phải\n"
+	.string "quay lại khi đã có đủ.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:
-	.string "TRAINER! Believe in yourself and your\n"
-	.string "POKéMON, and go forth!$"
+	.string "HLV! Hãy tin vào bản thân và\n"
+	.string "POKéMON của bạn, rồi tiến lên!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+	.global EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+	.global EverGrandeCity_PokemonLeague_1F_Text_GoForth
+@ END GENERATED LOCALIZATION EXPORTS

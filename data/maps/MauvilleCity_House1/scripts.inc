@@ -20,27 +20,35 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Woohoo!\p"
-	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
-	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
+	.string "Tôi nghe mọi người gọi mình là ROCK\n"
+	.string "SMASH GUY, nhưng nghe vậy hơi hạ thấp\l"
+	.string "tôi.\p"
+	.string "Tôi nghĩ mình đáng được tôn trọng hơn\n"
+	.string "một chút, chẳng hạn gọi là ROCK SMASH\l"
+	.string "DUDE.\p"
 	.string "Woohoo!\p"
-	.string "Anyways, your POKéMON look pretty\n"
-	.string "strong.\p"
-	.string "I like that!\n"
-	.string "Here, take this HIDDEN MACHINE!$"
+	.string "Dù sao thì POKéMON của bạn trông khá\n"
+	.string "mạnh.\p"
+	.string "Tôi thích thế! Này, nhận lấy HIDDEN\n"
+	.string "MACHINE này!$"
 
 MauvilleCity_House1_Text_ExplainRockSmash:
-	.string "That HM contains ROCK SMASH.\p"
-	.string "If you come across large boulders\n"
-	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
-	.string "them right out of your way!\p"
-	.string "Yes, sir! Smash rocks aside, I say!\n"
+	.string "HM đó chứa ROCK SMASH.\p"
+	.string "Nếu bạn gặp những tảng đá lớn chắn\n"
+	.string "đường...\p"
+	.string "Thì cứ dùng chiêu HM đó và đập chúng\n"
+	.string "văng khỏi lối đi!\p"
+	.string "Chính thế! Cứ đập đá sang một bên!\n"
 	.string "Woohoo!$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
+	.string "À đúng rồi, khi bạn đập một tảng đá, có\n"
+	.string "thể một POKéMON đang ẩn bên trong sẽ\l"
+	.string "bay vọt ra.\p"
 	.string "Woohoo!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_House1_Text_ImRockSmashDudeTakeThis
+	.global MauvilleCity_House1_Text_ExplainRockSmash
+	.global MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock
+@ END GENERATED LOCALIZATION EXPORTS

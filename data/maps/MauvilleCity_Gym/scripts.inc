@@ -257,129 +257,126 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
-	.string "If you challenge him with WATER-type\n"
-	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "Này, mọi chuyện sao rồi, {PLAYER},\n"
+	.string "CHAMPION tương lai?\p"
+	.string "WATTSON, LEADER của MAUVILLE GYM, sử\n"
+	.string "dụng POKéMON hệ ELECTRIC.\p"
+	.string "Nếu thách đấu ông ấy bằng POKéMON hệ\n"
+	.string "WATER, chúng sẽ bị giật tung! Bzzt!\p"
+	.string "Ông ấy còn lắp đầy những cánh cửa điều\n"
+	.string "khiển bằng công tắc khắp GYM! Đúng là\l"
+	.string "lập dị!\p"
+	.string "Nào, cố lên!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "Chà, cậu đúng là gây sốc! Cậu đã tiếp\n"
+	.string "điện để mở cánh cửa rồi!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "Linh hồn điện của ta sẽ nghiền tan giấc\n"
+	.string "mơ của ngươi, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "Đúng là một màn điện giật cắm điện, tăng\n"
+	.string "âm và quá tải hết cỡ, anh bạn!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "POKéMON and rock, it's all about heart,\n"
+	.string "POKéMON và rock, tất cả nằm ở trái tim,\n"
 	.string "whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "Tôi đã được WATTSON rèn luyện! Đừng\n"
+	.string "hòng thắng tôi dễ dàng!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "Unplugged and turned off…$"
+	.string "Bị rút phích, tắt điện mất rồi...$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "WATTSON, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "WATTSON, GYM LEADER của chúng tôi, đã\n"
+	.string "sống lâu lắm rồi.\p"
+	.string "Ông ấy đã chiến đấu từ trước khi ba\n"
+	.string "cậu ra đời cơ, ông già gân ấy đấy.$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "GYM này có cả câu đố đấy! Vui không?$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "It's no fun to lose…$"
+	.string "Thua chẳng vui chút nào...$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "WATTSON says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "WATTSON bảo ông ấy thích giăng những\n"
+	.string "cái bẫy nhỏ bằng công tắc.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "Với sức quyến rũ của tôi và các chiêu\n"
+	.string "thức của POKéMON, bạn sẽ phải sốc!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "I'm shocked by your power!$"
+	.string "Sức mạnh của bạn làm tôi sốc quá!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "Tôi nghe nói WATTSON là người sáng lập\n"
+	.string "MAUVILLE.\p"
+	.string "Ông ấy đã là HLV từ rất lâu trước\n"
+	.string "khi chúng tôi trở thành HLV. Hẳn\l"
+	.string "ông ấy biết đủ thứ!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "I love shiny things!$"
+	.string "Tôi mê những thứ lấp lánh!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "Oh…\n"
-	.string "My eyes are frazzled…$"
+	.string "Ôi... Mắt tôi hoa lên rồi...$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE GYM's WATTSON has a shiny\n"
-	.string "forehead. It makes me happy!$"
+	.string "WATTSON của MAUVILLE GYM có cái trán\n"
+	.string "bóng loáng. Nhìn mà tôi vui quá!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "Ta đã từ bỏ kế hoạch cải tạo thành phố\n"
+	.string "rồi.\p"
+	.string "Vì thế, ta dành thời gian làm những cái\n"
+	.string "bẫy cửa trong GYM của mình.\p"
+	.string "Ồ? Cháu đến đây làm gì?\p"
+	.string "Gì cơ? Cháu nói đã vượt qua mọi cánh\n"
+	.string "cửa ta giăng bẫy ư?\p"
+	.string "Wahahahah! Thú vị thật đấy!\p"
+	.string "Vậy thì ta, WATTSON, LEADER của\n"
+	.string "MAUVILLE GYM, sẽ cho cháu nếm mùi điện\l"
+	.string "giật!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "Wahahahah!\n"
-	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
-	.string "Take this BADGE!$"
+	.string "Wahahahah! Được thôi, ta thua rồi!\p"
+	.string "Cháu khiến ta phấn khích đấy! Hãy nhận\n"
+	.string "BADGE này!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "{PLAYER} đã nhận DYNAMO BADGE từ\n"
+	.string "WATTSON.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm…\n"
-	.string "You should take this, too!$"
+	.string "Có DYNAMO BADGE, POKéMON có thể dùng\n"
+	.string "ROCK SMASH ngoài trận đấu.\p"
+	.string "Nó cũng sẽ giúp POKéMON của cháu nhanh\n"
+	.string "hơn một chút.\p"
+	.string "Hừm... Cháu cũng nên nhận thứ này!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
-	.string "… … … … … …$"
+	.string "TM34 đó chứa SHOCK WAVE.\p"
+	.string "Đây là một chiêu đáng tin cậy, không\n"
+	.string "bao giờ trượt! Cháu cứ tin ở nó!\p"
+	.string "... ... ... ... ... ...$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered GYM LEADER WATTSON\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký GYM LEADER WATTSON vào\n"
+	.string "POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "Thấy một HLV trẻ đầy triển vọng\n"
+	.string "như cháu, ta tràn trề lạc quan!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "Wahahahah! Tiến lên và nỗ lực hết mình\n"
+	.string "đi, người trẻ!$"
 
 MauvilleCity_Gym_Text_GymStatue:
 	.string "MAUVILLE CITY POKéMON GYM$"
@@ -390,32 +387,61 @@ MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "WATTSON: Ah-ha! Here at last!\n"
-	.string "I know what you want.\l"
-	.string "You want to battle my POKéMON!\p"
+	.string "WATTSON: A ha! Cuối cùng cháu cũng đến!\n"
+	.string "Ta biết cháu muốn gì. Cháu muốn đấu với\l"
+	.string "POKéMON của ta!\p"
 	.string "Wahahahaha!\p"
-	.string "I'll make sparks fly from you!\n"
-	.string "Don't say I didn't warn you!$"
+	.string "Ta sẽ khiến tia lửa bắn ra từ người\n"
+	.string "cháu! Đừng bảo là ta chưa cảnh báo\l"
+	.string "nhé!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
-	.string "Oof…\n"
-	.string "Our batteries ran dry…$"
+	.string "Ối... Pin của chúng ta cạn rồi...$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "WATTSON: We'll have to recharge our\n"
-	.string "batteries again.\p"
-	.string "When we're fully charged up, we'll\n"
-	.string "gladly accept your challenge.\p"
-	.string "So, come back again sometime,\n"
-	.string "won't you?$"
+	.string "WATTSON: Chúng ta lại phải sạc pin thôi.\p"
+	.string "Khi đã sạc đầy, chúng ta sẽ vui lòng\n"
+	.string "chấp nhận lời thách đấu của cháu.\p"
+	.string "Vậy nên lúc nào đó hãy quay lại nhé?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "WATTSON: Ah-ha! Here at last!\n"
-	.string "I know what you want.\l"
-	.string "You want to battle my POKéMON!\p"
+	.string "WATTSON: A ha! Cuối cùng cháu cũng đến!\n"
+	.string "Ta biết cháu muốn gì. Cháu muốn đấu với\l"
+	.string "POKéMON của ta!\p"
 	.string "Wahahahaha!\p"
-	.string "Oops! Wait!\n"
-	.string "You've only one POKéMON with you!\p"
-	.string "Come see me with two or more\n"
-	.string "POKéMON, all right?$"
+	.string "Ối! Khoan đã! Cháu chỉ mang theo một\n"
+	.string "POKéMON!\p"
+	.string "Hãy quay lại gặp ta khi có ít nhất hai\n"
+	.string "POKéMON, được chứ?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_Gym_Text_GymGuideAdvice
+	.global MauvilleCity_Gym_Text_GymGuidePostVictory
+	.global MauvilleCity_Gym_Text_KirkIntro
+	.global MauvilleCity_Gym_Text_KirkDefeat
+	.global MauvilleCity_Gym_Text_KirkPostBattle
+	.global MauvilleCity_Gym_Text_ShawnIntro
+	.global MauvilleCity_Gym_Text_ShawnDefeat
+	.global MauvilleCity_Gym_Text_ShawnPostBattle
+	.global MauvilleCity_Gym_Text_BenIntro
+	.global MauvilleCity_Gym_Text_BenDefeat
+	.global MauvilleCity_Gym_Text_BenPostBattle
+	.global MauvilleCity_Gym_Text_VivianIntro
+	.global MauvilleCity_Gym_Text_VivianDefeat
+	.global MauvilleCity_Gym_Text_VivianPostBattle
+	.global MauvilleCity_Gym_Text_AngeloIntro
+	.global MauvilleCity_Gym_Text_AngeloDefeat
+	.global MauvilleCity_Gym_Text_AngeloPostBattle
+	.global MauvilleCity_Gym_Text_WattsonIntro
+	.global MauvilleCity_Gym_Text_WattsonDefeat
+	.global MauvilleCity_Gym_Text_ReceivedDynamoBadge
+	.global MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis
+	.global MauvilleCity_Gym_Text_ExplainShockWave
+	.global MauvilleCity_Gym_Text_RegisteredWattson
+	.global MauvilleCity_Gym_Text_WattsonPostBattle
+	.global MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor
+	.global MauvilleCity_Gym_Text_WattsonPreRematch
+	.global MauvilleCity_Gym_Text_WattsonRematchDefeat
+	.global MauvilleCity_Gym_Text_WattsonPostRematch
+	.global MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS

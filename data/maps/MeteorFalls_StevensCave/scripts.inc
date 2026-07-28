@@ -27,31 +27,38 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
-	.string "STEVEN: Oh, wow, {PLAYER}{KUN}.\n"
-	.string "I'm amazed you knew where to find me.\p"
-	.string "Do you, uh…maybe think of me as\n"
-	.string "just a rock maniac?\p"
-	.string "No, that can't be right.\p"
-	.string "We battled alongside each other at\n"
-	.string "the SOOTOPOLIS SPACE CENTER.\p"
-	.string "You should have a very good idea\n"
-	.string "about how good I am.\p"
-	.string "Okay, {PLAYER}{KUN}, if you're going to mount\n"
-	.string "a serious challenge, expect the worst!$"
+	.string "STEVEN: Ồ, tuyệt thật, {PLAYER}{KUN}.\n"
+	.string "Tôi rất ngạc nhiên khi cậu biết tìm tôi\l"
+	.string "ở đâu.\p"
+	.string "Chẳng lẽ, ờ... cậu chỉ xem tôi là một kẻ\n"
+	.string "cuồng đá thôi sao?\p"
+	.string "Không, chắc chắn không phải vậy.\p"
+	.string "Chúng ta từng sát cánh chiến đấu tại\n"
+	.string "SOOTOPOLIS SPACE CENTER.\p"
+	.string "Hẳn cậu hiểu rất rõ thực lực của tôi.\p"
+	.string "Được rồi, {PLAYER}{KUN}, nếu định\n"
+	.string "nghiêm túc thách đấu, hãy chuẩn bị cho\l"
+	.string "tình huống tồi tệ nhất!$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
-	.string "You…\n"
-	.string "I had no idea you'd become so strong…$"
+	.string "Cậu... Tôi không ngờ cậu đã trở nên\n"
+	.string "mạnh đến vậy...$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "STEVEN: Come to think of it, ever since\n"
-	.string "our paths first crossed in GRANITE\l"
-	.string "CAVE in DEWFORD, I had this feeling.\p"
-	.string "I thought that you would eventually\n"
-	.string "become the CHAMPION.\p"
-	.string "My predictions usually come true.\p"
-	.string "And where will you go from here?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Fufufu, even I couldn't tell you that.$"
+	.string "STEVEN: Nghĩ lại thì ngay từ lần đầu\n"
+	.string "chúng ta gặp nhau tại GRANITE CAVE ở\l"
+	.string "DEWFORD, tôi đã có linh cảm này.\p"
+	.string "Tôi nghĩ rồi sẽ có ngày cậu trở thành\n"
+	.string "CHAMPION.\p"
+	.string "Những dự đoán của tôi thường thành\n"
+	.string "sự thật.\p"
+	.string "Từ đây, cậu sẽ đi về đâu?\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "Fufufu, ngay cả tôi cũng không thể nói\n"
+	.string "cho cậu biết.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst
+	.global MeteorFalls_StevensCave_Text_StevenDefeat
+	.global MeteorFalls_StevensCave_Text_MyPredictionCameTrue
+@ END GENERATED LOCALIZATION EXPORTS

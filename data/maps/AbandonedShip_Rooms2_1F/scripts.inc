@@ -50,100 +50,127 @@ AbandonedShip_Rooms2_1F_EventScript_Garrison::
 	end
 
 AbandonedShip_Rooms2_1F_Text_DanIntro:
-	.string "DAN: While searching for treasures,\n"
-	.string "we discovered a TRAINER!$"
+	.string "DAN: Trong lúc tìm kho báu, chúng tôi lại\n"
+	.string "phát hiện ra một HLV!$"
 
 AbandonedShip_Rooms2_1F_Text_DanDefeat:
-	.string "DAN: We couldn't win even though\n"
-	.string "we worked together…$"
+	.string "DAN: Dù phối hợp với nhau, chúng tôi vẫn\n"
+	.string "không thắng nổi...$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostBattle:
-	.string "DAN: We can't find any treasures…\n"
-	.string "I wonder if someone got them already?$"
+	.string "DAN: Chúng tôi chẳng tìm thấy kho báu\n"
+	.string "nào... Không biết có ai lấy hết rồi\l"
+	.string "không?$"
 
 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons:
-	.string "DAN: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "DAN: Bạn còn chẳng có đủ hai POKéMON.\n"
+	.string "Như vậy thì đừng mong đánh bại được\l"
+	.string "chúng tôi.$"
 
 AbandonedShip_Rooms2_1F_Text_KiraIntro:
-	.string "KIRA: Oh?\n"
-	.string "We were searching for treasures.\l"
-	.string "But we discovered a TRAINER instead!$"
+	.string "KIRA: Ồ? Chúng tôi đang tìm kho báu.\n"
+	.string "Nhưng thay vào đó lại phát hiện ra một\l"
+	.string "HLV!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraDefeat:
-	.string "KIRA: Ooh, so strong!$"
+	.string "KIRA: Ôi, mạnh quá!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraPostBattle:
-	.string "KIRA: Where could the treasures be?\p"
-	.string "I've already decided what I'm buying\n"
-	.string "when we find the treasures!$"
+	.string "KIRA: Kho báu có thể ở đâu nhỉ?\p"
+	.string "Tôi đã quyết định sẽ mua gì khi tìm\n"
+	.string "thấy kho báu rồi!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons:
-	.string "KIRA: Oh, you don't have two POKéMON?\n"
-	.string "We'll have to battle some other time!$"
+	.string "KIRA: Ồ, bạn không có hai POKéMON à? Vậy\n"
+	.string "để khi khác chúng ta đấu nhé!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRegister:
-	.string "KIRA: Oh, you make me so angry!\n"
-	.string "I'm going to register you for that!$"
+	.string "KIRA: Ôi, bạn làm tôi tức quá! Vì thế tôi\n"
+	.string "sẽ đăng ký bạn!$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchIntro:
-	.string "DAN: We've been searching for\n"
-	.string "treasures all this time.\p"
-	.string "Our POKéMON have grown stronger, too.\n"
-	.string "Let us show you, okay?$"
+	.string "DAN: Suốt thời gian qua, chúng tôi vẫn\n"
+	.string "luôn tìm kiếm kho báu.\p"
+	.string "POKéMON của chúng tôi cũng đã mạnh\n"
+	.string "hơn. Để chúng tôi cho bạn xem nhé?$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchDefeat:
-	.string "DAN: You're strong, as usual!$"
+	.string "DAN: Bạn vẫn mạnh như mọi khi!$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostRematch:
-	.string "DAN: We can't find any treasures,\n"
-	.string "we lose at POKéMON…\p"
-	.string "I want to go home… But if I say that,\n"
-	.string "she gets all angry with me…$"
+	.string "DAN: Kho báu thì không tìm thấy, đấu\n"
+	.string "POKéMON lại thua...\p"
+	.string "Tôi muốn về nhà... Nhưng hễ tôi nói vậy\n"
+	.string "là cô ấy lại nổi giận với tôi...$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons:
-	.string "DAN: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "DAN: Bạn còn chẳng có đủ hai POKéMON.\n"
+	.string "Như vậy thì đừng mong đánh bại được\l"
+	.string "chúng tôi.$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchIntro:
-	.string "KIRA: Oh? We meet again!\p"
-	.string "Just like us, you still haven't given up\n"
-	.string "searching for treasures, have you?\p"
-	.string "Want to make it so the loser has\n"
-	.string "to give up searching?$"
+	.string "KIRA: Ồ? Chúng ta lại gặp nhau rồi!\p"
+	.string "Giống chúng tôi, bạn vẫn chưa từ bỏ\n"
+	.string "việc tìm kho báu, đúng không?\p"
+	.string "Hay là ai thua thì phải bỏ cuộc tìm kiếm\n"
+	.string "nhé?$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat:
-	.string "KIRA: Oh, we lost again…$"
+	.string "KIRA: Ôi, chúng tôi lại thua rồi...$"
 
 AbandonedShip_Rooms2_1F_Text_KiraPostRematch:
-	.string "KIRA: We're not leaving until we raise\n"
-	.string "our POKéMON some more and we find\l"
-	.string "the treasures here!$"
+	.string "KIRA: Chúng tôi sẽ không rời đi cho đến\n"
+	.string "khi luyện POKéMON mạnh hơn nữa và tìm\l"
+	.string "thấy kho báu ở đây!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons:
-	.string "KIRA: Oh, you don't have two POKéMON?\n"
-	.string "We'll have to battle some other time!$"
+	.string "KIRA: Ồ, bạn không có hai POKéMON à? Vậy\n"
+	.string "để khi khác chúng ta đấu nhé!$"
 
 AbandonedShip_Rooms2_1F_Text_JaniIntro:
-	.string "I'm not good at swimming,\n"
-	.string "but I am good at battles!$"
+	.string "Tôi bơi không giỏi, nhưng đấu thì rất\n"
+	.string "giỏi!$"
 
 AbandonedShip_Rooms2_1F_Text_JaniDefeat:
-	.string "Oops.\n"
-	.string "That didn't go very well.$"
+	.string "Ối. Không được suôn sẻ cho lắm.$"
 
 AbandonedShip_Rooms2_1F_Text_JaniPostBattle:
-	.string "Walking around barefoot in this ship\n"
-	.string "is kind of gross.$"
+	.string "Đi chân trần quanh con tàu này thấy ghê\n"
+	.string "ghê.$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonIntro:
-	.string "Strength and compassion…\n"
-	.string "Those are a TRAINER's treasures!$"
+	.string "Sức mạnh và lòng nhân ái... Đó chính là\n"
+	.string "kho báu của một HLV!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat:
-	.string "Ah, there is something about you\n"
-	.string "that sparkles.$"
+	.string "À, ở bạn có điều gì đó thật rạng ngời.$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle:
-	.string "In a cabin somewhere on board,\n"
-	.string "I saw something sparkle.$"
+	.string "Tôi đã thấy thứ gì đó lấp lánh trong\n"
+	.string "một căn phòng nào đó trên tàu.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Rooms2_1F_Text_DanIntro
+	.global AbandonedShip_Rooms2_1F_Text_DanDefeat
+	.global AbandonedShip_Rooms2_1F_Text_DanPostBattle
+	.global AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons
+	.global AbandonedShip_Rooms2_1F_Text_KiraIntro
+	.global AbandonedShip_Rooms2_1F_Text_KiraDefeat
+	.global AbandonedShip_Rooms2_1F_Text_KiraPostBattle
+	.global AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons
+	.global AbandonedShip_Rooms2_1F_Text_KiraRegister
+	.global AbandonedShip_Rooms2_1F_Text_DanRematchIntro
+	.global AbandonedShip_Rooms2_1F_Text_DanRematchDefeat
+	.global AbandonedShip_Rooms2_1F_Text_DanPostRematch
+	.global AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons
+	.global AbandonedShip_Rooms2_1F_Text_KiraRematchIntro
+	.global AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat
+	.global AbandonedShip_Rooms2_1F_Text_KiraPostRematch
+	.global AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons
+	.global AbandonedShip_Rooms2_1F_Text_JaniIntro
+	.global AbandonedShip_Rooms2_1F_Text_JaniDefeat
+	.global AbandonedShip_Rooms2_1F_Text_JaniPostBattle
+	.global AbandonedShip_Rooms2_1F_Text_GarrisonIntro
+	.global AbandonedShip_Rooms2_1F_Text_GarrisonDefeat
+	.global AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

@@ -353,224 +353,254 @@ BattleFrontier_BattleArenaLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena:
-	.string "Where the battling spirit of TRAINERS\n"
-	.string "is put to the test!\p"
-	.string "I welcome you to the BATTLE ARENA!\p"
-	.string "I am your guide to the Set KO Tourney!$"
+	.string "Nơi tinh thần chiến đấu của các\n"
+	.string "HLV được thử thách!\p"
+	.string "Chào mừng bạn đến với BATTLE ARENA!\p"
+	.string "Tôi sẽ hướng dẫn bạn tham gia Set KO\n"
+	.string "Tourney!$"
 
 BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge:
-	.string "Now, do you wish to take\n"
-	.string "the BATTLE ARENA challenge?$"
+	.string "Giờ bạn có muốn nhận thử thách BATTLE\n"
+	.string "ARENA không?$"
 
 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Chúng tôi mong được đón nhận thử\n"
+	.string "thách của bạn vào dịp khác!$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
-	.string "In the BATTLE ARENA, we undertake\n"
-	.string "the Set KO Tourney.\p"
-	.string "All participants enter with a team of\n"
-	.string "three POKéMON.\p"
-	.string "The three POKéMON must be lined up in\n"
-	.string "the order in which they are to appear.\p"
-	.string "During battle, the POKéMON will appear\n"
-	.string "one at a time in the preset order.\p"
-	.string "Once a POKéMON enters battle, it must\n"
-	.string "remain out until the match is decided.\p"
-	.string "If a match remains undecided in\n"
-	.string "three turns, it goes to judging.\p"
-	.string "If you wish to interrupt your challenge,\n"
-	.string "please save the game.\p"
-	.string "If you don't save, you will not be able\n"
-	.string "to continue with your challenge.\p"
-	.string "If you pull off the feat of beating\n"
-	.string "seven TRAINERS in succession,\l"
-	.string "we will present you with Battle Points.$"
+	.string "Tại BATTLE ARENA, chúng tôi tổ chức Set\n"
+	.string "KO Tourney.\p"
+	.string "Mọi người tham gia đều phải dùng một\n"
+	.string "đội gồm ba POKéMON.\p"
+	.string "Ba POKéMON phải được xếp theo thứ tự\n"
+	.string "ra trận.\p"
+	.string "Trong trận đấu, các POKéMON sẽ lần\n"
+	.string "lượt xuất hiện theo thứ tự đã định.\p"
+	.string "Một khi POKéMON đã vào trận, nó phải\n"
+	.string "tiếp tục chiến đấu cho đến khi có kết\l"
+	.string "quả.\p"
+	.string "Nếu sau ba lượt vẫn chưa phân thắng\n"
+	.string "bại, trận đấu sẽ được chấm điểm.\p"
+	.string "Nếu muốn tạm dừng thử thách, hãy lưu\n"
+	.string "trò chơi.\p"
+	.string "Nếu không lưu, bạn sẽ không thể tiếp\n"
+	.string "tục thử thách.\p"
+	.string "Nếu lập thành tích thắng liên tiếp bảy\n"
+	.string "HLV, bạn sẽ được trao Battle\l"
+	.string "Points.$"
 
 BattleFrontier_BattleArenaLobby_Text_OkayToSave:
-	.string "Before showing you to the BATTLE\n"
-	.string "ARENA, you must save. Is that okay?$"
+	.string "Trước khi đưa bạn vào BATTLE ARENA,\n"
+	.string "bạn phải lưu trò chơi. Bạn đồng ý chứ?$"
 
 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
-	.string "The BATTLE ARENA offers two levels\n"
-	.string "of challenge, Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
+	.string "BATTLE ARENA có hai cấp độ thử thách:\n"
+	.string "Level 50 và Open Level. Bạn chọn cấp độ\l"
+	.string "nào?$"
 
 BattleFrontier_BattleArenaLobby_Text_SelectThreeMons:
-	.string "Very well, now select your\n"
-	.string "three POKéMON, please.$"
+	.string "Được rồi, giờ xin hãy chọn ba POKéMON\n"
+	.string "của bạn.$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "To qualify, you must bring three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not hold the same\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Thí sinh thân mến!\p"
+	.string "Bạn không có đủ ba POKéMON hợp lệ để\n"
+	.string "tham gia.\p"
+	.string "Để đủ điều kiện, bạn phải mang theo ba\n"
+	.string "loài POKéMON khác nhau.\p"
+	.string "Chúng cũng không được giữ những vật\n"
+	.string "phẩm cùng loại.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Khi đã chuẩn bị xong, xin hãy quay lại.$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "To qualify, you must bring three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "The three different POKéMON\n"
-	.string "must all be Level 50 or lower.\p"
-	.string "They also must not hold the same\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Thí sinh thân mến!\p"
+	.string "Bạn không có đủ ba POKéMON hợp lệ để\n"
+	.string "tham gia.\p"
+	.string "Để đủ điều kiện, bạn phải mang theo ba\n"
+	.string "loài POKéMON khác nhau.\p"
+	.string "Cả ba POKéMON khác nhau đều phải ở\n"
+	.string "Level 50 trở xuống.\p"
+	.string "Chúng cũng không được giữ những vật\n"
+	.string "phẩm cùng loại.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Khi đã chuẩn bị xong, xin hãy quay lại.$"
 
 BattleFrontier_BattleArenaLobby_Text_GuideYouToArena:
-	.string "I shall now guide you to\n"
-	.string "the BATTLE ARENA.$"
+	.string "Giờ tôi sẽ dẫn bạn đến BATTLE ARENA.$"
 
 BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown:
-	.string "My dear challenger!\p"
-	.string "You did not save the game before\n"
-	.string "shutting down, did you?\p"
-	.string "It is unfortunate, but that has\n"
-	.string "resulted in your disqualification\l"
-	.string "from your challenge.\p"
-	.string "You may, of course, start with a fresh\n"
-	.string "challenge.$"
+	.string "Thí sinh thân mến!\p"
+	.string "Bạn đã không lưu trò chơi trước khi\n"
+	.string "tắt máy, đúng không?\p"
+	.string "Thật đáng tiếc, điều đó khiến bạn bị\n"
+	.string "loại khỏi thử thách.\p"
+	.string "Tất nhiên, bạn có thể bắt đầu một thử\n"
+	.string "thách mới.$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins:
-	.string "We congratulate you for your splendid\n"
-	.string "string of wins over seven TRAINERS!$"
+	.string "Chúng tôi xin chúc mừng chuỗi chiến\n"
+	.string "thắng xuất sắc của bạn trước bảy\l"
+	.string "HLV!$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordAchievement:
-	.string "Your achievement will be recorded.\n"
-	.string "Please wait while I save the game.$"
+	.string "Thành tích của bạn sẽ được ghi lại. Xin\n"
+	.string "chờ trong khi tôi lưu trò chơi.$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize:
-	.string "In commemoration of your 7-win streak,\n"
-	.string "we present you with this prize.$"
+	.string "Để kỷ niệm chuỗi bảy trận thắng, chúng\n"
+	.string "tôi xin trao cho bạn phần thưởng này.$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} đã nhận phần thưởng\n"
 	.string "{STR_VAR_1}.$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize:
-	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
-	.string "I urge you to clear space and\n"
-	.string "return for your prize.$"
+	.string "Ồ? TÚI ĐỒ của bạn có vẻ đã đầy.\p"
+	.string "Hãy dọn chỗ rồi quay lại nhận phần\n"
+	.string "thưởng.$"
 
 BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave:
-	.string "Thank you so much for participating!\p"
-	.string "Please wait while I save the game.$"
+	.string "Cảm ơn bạn rất nhiều vì đã tham gia!\p"
+	.string "Xin chờ trong khi tôi lưu trò chơi.$"
 
 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Chúng tôi mong được đón nhận thử\n"
+	.string "thách của bạn vào dịp khác!$"
 
 BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
-	.string "We have been looking forward to\n"
-	.string "your arrival.\p"
-	.string "Before I show you to the BATTLE\n"
-	.string "ARENA, I must save the game.\l"
-	.string "Please wait.$"
+	.string "Chúng tôi đã rất mong chờ bạn đến.\p"
+	.string "Trước khi đưa bạn vào BATTLE ARENA,\n"
+	.string "tôi phải lưu trò chơi. Xin chờ một chút.$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
-	.string "Shall I record your last BATTLE ARENA\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "Tôi có nên ghi lại trận đấu BATTLE ARENA\n"
+	.string "vừa rồi vào FRONTIER PASS không?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
-	.string "I lost on the REFEREE's decision…\p"
-	.string "I don't think it was a good idea to only\n"
-	.string "use defensive moves and not attack…$"
+	.string "Tôi thua do phán quyết của trọng tài...\p"
+	.string "Có lẽ chỉ dùng các chiêu phòng thủ mà\n"
+	.string "không tấn công không phải ý hay...$"
 
 BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked:
-	.string "I won in judging!\p"
-	.string "Landing hits consistently on\n"
-	.string "the opponent's POKéMON worked!$"
+	.string "Tôi đã thắng ở phần chấm điểm!\p"
+	.string "Liên tục đánh trúng POKéMON của đối\n"
+	.string "thủ quả nhiên có hiệu quả!$"
 
 BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw:
-	.string "Our match was declared a draw.\p"
-	.string "When we ran out of time, both my\n"
-	.string "POKéMON and the opponent's had about\l"
-	.string "the same amount of HP left.$"
+	.string "Trận đấu của chúng tôi được xử hòa.\p"
+	.string "Khi hết thời gian, POKéMON của tôi và\n"
+	.string "của đối thủ còn lượng HP gần như ngang\l"
+	.string "nhau.$"
 
 BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant:
-	.string "In the BATTLE ARENA, the order of\n"
-	.string "POKéMON is totally important.\p"
-	.string "For example, if your first POKéMON\n"
-	.string "has certain type disadvantages,\l"
-	.string "try making your second POKéMON one\l"
-	.string "with moves that are super effective\l"
-	.string "against the first one.\p"
-	.string "I think that will be a good way of\n"
-	.string "making an effective team.$"
+	.string "Tại BATTLE ARENA, thứ tự POKéMON cực\n"
+	.string "kỳ quan trọng.\p"
+	.string "Ví dụ, nếu POKéMON đầu tiên của bạn bất\n"
+	.string "lợi trước một số hệ, hãy chọn POKéMON\l"
+	.string "thứ hai có các chiêu cực kỳ hiệu quả\l"
+	.string "với POKéMON đầu tiên.\p"
+	.string "Tôi nghĩ đó là cách hay để tạo nên một\n"
+	.string "đội hình hiệu quả.$"
 
 BattleFrontier_BattleArenaLobby_Text_RulesAreListed:
-	.string "The Set KO Tourney's rules are listed.$"
+	.string "Luật của Set KO Tourney được ghi ở\n"
+	.string "đây.$"
 
 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Bạn muốn đọc mục nào?$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules:
-	.string "The Set KO Tourney has special rules,\n"
-	.string "unlike standard battles.\p"
-	.string "First, one battle lasts only\n"
-	.string "three turns.\p"
-	.string "If the outcome is not decided after\n"
-	.string "three turns, it goes to judging.\p"
-	.string "The REFEREE will choose the winner\n"
-	.string "based on how the POKéMON battled.\p"
-	.string "Also, a POKéMON cannot be switched out\n"
-	.string "until its battle's outcome is decided.$"
+	.string "Set KO Tourney có những luật đặc biệt,\n"
+	.string "khác với các trận đấu thông thường.\p"
+	.string "Trước hết, mỗi trận chỉ kéo dài ba\n"
+	.string "lượt.\p"
+	.string "Nếu sau ba lượt vẫn chưa có kết quả,\n"
+	.string "trận đấu sẽ được chấm điểm.\p"
+	.string "Trọng tài sẽ chọn bên thắng dựa trên\n"
+	.string "cách các POKéMON chiến đấu.\p"
+	.string "Ngoài ra, POKéMON không thể đổi ra cho\n"
+	.string "đến khi phần đấu của nó có kết quả.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
-	.string "The first judging factor is “Mind.”\n"
-	.string "This factor evaluates how aggressive\l"
-	.string "the battlers were.\p"
-	.string "The judging is based on how often\n"
-	.string "the TRAINERS ordered the use of\l"
-	.string "offensive moves.$"
+	.string "Yếu tố chấm điểm đầu tiên là Mind. Yếu\n"
+	.string "tố này đánh giá mức độ chủ động tấn\l"
+	.string "công của hai bên.\p"
+	.string "Điểm số dựa trên tần suất các HLV\n"
+	.string "ra lệnh dùng chiêu tấn công.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
-	.string "The second judging factor is “Skill.”\n"
-	.string "This factor evaluates how effectively\l"
-	.string "POKéMON moves were used.\p"
-	.string "If a move worked successfully,\n"
-	.string "the Skill rating goes up.\p"
-	.string "If a move failed, the Skill rating\n"
-	.string "is lowered.\p"
-	.string "If it was an offensive move, the Skill\n"
-	.string "rating goes up if the move was “super\l"
-	.string "effective” and goes down if it was\l"
-	.string "“not very effective.”\p"
-	.string "The Skill rating will not go up for\n"
-	.string "moves such as PROTECT and DETECT.\p"
-	.string "If the opponent used PROTECT or\n"
-	.string "DETECT, and your POKéMON failed to\l"
-	.string "hit with a move, its Skill rating will not\l"
-	.string "go down.$"
+	.string "Yếu tố chấm điểm thứ hai là Skill. Yếu tố\n"
+	.string "này đánh giá mức độ hiệu quả khi sử\l"
+	.string "dụng các chiêu của POKéMON.\p"
+	.string "Nếu một chiêu phát huy tác dụng, điểm\n"
+	.string "Skill sẽ tăng.\p"
+	.string "Nếu một chiêu thất bại, điểm Skill sẽ\n"
+	.string "giảm.\p"
+	.string "Với chiêu tấn công, điểm Skill sẽ tăng\n"
+	.string "nếu chiêu cực kỳ hiệu quả và giảm nếu\l"
+	.string "chiêu không hiệu quả lắm.\p"
+	.string "Điểm Skill sẽ không tăng với những\n"
+	.string "chiêu như PROTECT và DETECT.\p"
+	.string "Nếu đối thủ dùng PROTECT hoặc DETECT\n"
+	.string "khiến chiêu của POKéMON bên bạn không\l"
+	.string "trúng, điểm Skill của nó sẽ không giảm.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules:
-	.string "The third judging factor is “Body.”\n"
-	.string "This factor is based on how much HP\l"
-	.string "remained at the end of a battle.\p"
-	.string "The rating takes into account how much\n"
-	.string "HP a POKéMON had at the start of\l"
-	.string "battle, and what remained at the end.$"
+	.string "Yếu tố chấm điểm thứ ba là Body. Yếu tố\n"
+	.string "này dựa trên lượng HP còn lại khi trận\l"
+	.string "đấu kết thúc.\p"
+	.string "Điểm số xét cả lượng HP mà POKéMON có\n"
+	.string "lúc bắt đầu trận đấu và lượng còn lại\l"
+	.string "khi kết thúc.$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon:
-	.string "A victory snatched from the ARENA\n"
-	.string "TYCOON, and a seven-TRAINER sweep!\p"
-	.string "We congratulate you on your most\n"
-	.string "splendid challenge!$"
+	.string "Đánh bại ARENA TYCOON và quét sạch bảy\n"
+	.string "HLV!\p"
+	.string "Xin chúc mừng màn thử thách vô cùng\n"
+	.string "xuất sắc của bạn!$"
 
 BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints:
-	.string "My dear challenger, in recognition of\n"
-	.string "your indefatigable spirit, please\l"
-	.string "accept these Battle Point(s).$"
+	.string "Thí sinh thân mến, để ghi nhận tinh thần\n"
+	.string "bền bỉ của bạn, xin hãy nhận số Battle\l"
+	.string "Point(s) này.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena
+	.global BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge
+	.global BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge
+	.global BattleFrontier_BattleArenaLobby_Text_ExplainChallenge
+	.global BattleFrontier_BattleArenaLobby_Text_OkayToSave
+	.global BattleFrontier_BattleArenaLobby_Text_WhichLevelMode
+	.global BattleFrontier_BattleArenaLobby_Text_SelectThreeMons
+	.global BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen
+	.global BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50
+	.global BattleFrontier_BattleArenaLobby_Text_GuideYouToArena
+	.global BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown
+	.global BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins
+	.global BattleFrontier_BattleArenaLobby_Text_RecordAchievement
+	.global BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize
+	.global BattleFrontier_BattleArenaLobby_Text_ReceivedPrize
+	.global BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize
+	.global BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave
+	.global BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2
+	.global BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame
+	.global BattleFrontier_BattleArenaLobby_Text_RecordLastMatch
+	.global BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack
+	.global BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked
+	.global BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw
+	.global BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant
+	.global BattleFrontier_BattleArenaLobby_Text_RulesAreListed
+	.global BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading
+	.global BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules
+	.global BattleFrontier_BattleArenaLobby_Text_ExplainMindRules
+	.global BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules
+	.global BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules
+	.global BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon
+	.global BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints
+@ END GENERATED LOCALIZATION EXPORTS

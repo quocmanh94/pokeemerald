@@ -43,93 +43,109 @@ MtPyre_2F_EventScript_Zander::
 	end
 
 MtPyre_2F_Text_MemoriesOfSkitty:
-	.string "Memories of my darling SKITTY…\n"
-	.string "My eyes overflow thinking about it.$"
+	.string "Những kỷ niệm về SKITTY yêu dấu của\n"
+	.string "tôi... Nghĩ đến thôi là nước mắt lại trào\l"
+	.string "ra.$"
 
 MtPyre_2F_Text_TumbledFromFloorAbove:
-	.string "Ooch, ouch… There are holes in the\n"
-	.string "ground here and there.\p"
-	.string "I didn't notice and took a tumble from\n"
-	.string "the floor above.$"
+	.string "Ui da, đau quá... Mặt đất ở đây chỗ nào\n"
+	.string "cũng có lỗ.\p"
+	.string "Tôi không để ý nên ngã từ tầng trên\n"
+	.string "xuống.$"
 
 MtPyre_2F_Text_MarkIntro:
-	.string "Hey! Are you searching for POKéMON?\n"
-	.string "You came along after me! You're rude!$"
+	.string "Này! Bạn cũng đi tìm POKéMON à? Bạn đi\n"
+	.string "theo sau tôi! Thật bất lịch sự!$"
 
 MtPyre_2F_Text_MarkDefeat:
-	.string "Ayieeeeh!\n"
-	.string "I'm sorry, forgive me, please!$"
+	.string "Ááá! Tôi xin lỗi, làm ơn tha cho tôi!$"
 
 MtPyre_2F_Text_MarkPostBattle:
-	.string "People don't come here often, so\n"
-	.string "I thought there'd be rare POKéMON.$"
+	.string "Ít người đến đây, nên tôi tưởng sẽ có\n"
+	.string "POKéMON hiếm.$"
 
 MtPyre_2F_Text_LukeIntro:
-	.string "LUKE: We're here on a dare.\p"
-	.string "Heheh, if I show her how cool I am,\n"
-	.string "she'll fall for me. I know it!\p"
-	.string "I know! I'll cream you and show her\n"
-	.string "how cool I am!$"
+	.string "LUKE: Bọn tôi đến đây để thử gan.\p"
+	.string "Hê hê, nếu cho cô ấy thấy mình ngầu thế\n"
+	.string "nào, cô ấy sẽ mê tôi ngay. Chắc chắn!\p"
+	.string "Biết rồi! Tôi sẽ hạ đẹp bạn và cho cô ấy\n"
+	.string "thấy tôi ngầu cỡ nào!$"
 
 MtPyre_2F_Text_LukeDefeat:
-	.string "LUKE: Whoopsie!$"
+	.string "LUKE: Ôi chết!$"
 
 MtPyre_2F_Text_LukePostBattle:
-	.string "LUKE: Well, we lost but that's okay!\n"
-	.string "I'm right here by your side.\l"
-	.string "We'll make it through this dare!$"
+	.string "LUKE: Bọn tôi thua nhưng không sao! Anh\n"
+	.string "vẫn ở ngay bên em. Chúng ta sẽ vượt\l"
+	.string "qua màn thử gan này!$"
 
 MtPyre_2F_Text_LukeNotEnoughMons:
-	.string "LUKE: If you want to take me on,\n"
-	.string "bring some more POKéMON.\p"
-	.string "If you don't, I won't be able to show\n"
-	.string "off to my girl how cool I am!$"
+	.string "LUKE: Muốn đấu với tôi thì hãy mang\n"
+	.string "thêm POKéMON đến.\p"
+	.string "Không thì tôi đâu thể cho bạn gái thấy\n"
+	.string "tôi ngầu thế nào!$"
 
 MtPyre_2F_Text_DezIntro:
-	.string "DEZ: I came here on a dare with my\n"
-	.string "boyfriend.\p"
-	.string "It's really scary, but I'm with my\n"
-	.string "boyfriend. It's okay.\p"
-	.string "I know! I'll get my boyfriend to look\n"
-	.string "cool by beating you!$"
+	.string "DEZ: Tôi đến đây thử gan cùng bạn trai.\p"
+	.string "Nơi này đáng sợ thật, nhưng có bạn\n"
+	.string "trai bên cạnh nên tôi không sao.\p"
+	.string "Biết rồi! Tôi sẽ giúp bạn trai mình trông\n"
+	.string "thật ngầu bằng cách đánh bại bạn!$"
 
 MtPyre_2F_Text_DezDefeat:
-	.string "DEZ: Waaaah! I'm scared!$"
+	.string "DEZ: Oaaa! Tôi sợ quá!$"
 
 MtPyre_2F_Text_DezPostBattle:
-	.string "DEZ: We're lovey-dovey, so we don't\n"
-	.string "care if we lose!$"
+	.string "DEZ: Bọn tôi yêu nhau say đắm, nên thua\n"
+	.string "cũng chẳng sao!$"
 
 MtPyre_2F_Text_DezNotEnoughMons:
-	.string "DEZ: If you want to challenge us, you\n"
-	.string "should bring at least two POKéMON.\p"
-	.string "My boyfriend's strong.\n"
-	.string "Just one POKéMON won't do at all.$"
+	.string "DEZ: Muốn thách đấu bọn tôi thì bạn\n"
+	.string "phải mang ít nhất hai POKéMON.\p"
+	.string "Bạn trai tôi mạnh lắm. Chỉ một POKéMON\n"
+	.string "thì hoàn toàn không đủ đâu.$"
 
 MtPyre_2F_Text_LeahIntro:
-	.string "You are an unfamiliar sight…\n"
-	.string "Depart before anything befalls you!$"
+	.string "Ngươi là kẻ lạ mặt... Hãy rời đi trước\n"
+	.string "khi tai họa ập đến!$"
 
 MtPyre_2F_Text_LeahDefeat:
-	.string "Hmm…\n"
-	.string "You're durable.$"
+	.string "Hừm... Ngươi cứng cỏi đấy.$"
 
 MtPyre_2F_Text_LeahPostBattle:
-	.string "Our family has been TRAINERS here\n"
-	.string "since my great-grandmother's time…\p"
-	.string "It is my duty to protect this\n"
-	.string "mountain…$"
+	.string "Gia tộc ta đã làm HLV ở đây từ\n"
+	.string "thời cụ cố...\p"
+	.string "Bảo vệ ngọn núi này là bổn phận của ta...$"
 
 MtPyre_2F_Text_ZanderIntro:
-	.string "Kiyaaaaah!\n"
-	.string "I'm terrified!$"
+	.string "Kiaaaa! Tôi sợ chết khiếp!$"
 
 MtPyre_2F_Text_ZanderDefeat:
-	.string "Nooooooo!\n"
-	.string "I lost my wits!$"
+	.string "Khôngggg! Tôi hoảng loạn mất rồi!$"
 
 MtPyre_2F_Text_ZanderPostBattle:
-	.string "I get freaked out every time I see\n"
-	.string "anything move…\p"
-	.string "I shouldn't have come here to train…$"
+	.string "Cứ thấy bất cứ thứ gì cử động là tôi\n"
+	.string "lại hoảng hốt...\p"
+	.string "Lẽ ra tôi không nên đến đây luyện tập...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_2F_Text_MemoriesOfSkitty
+	.global MtPyre_2F_Text_TumbledFromFloorAbove
+	.global MtPyre_2F_Text_MarkIntro
+	.global MtPyre_2F_Text_MarkDefeat
+	.global MtPyre_2F_Text_MarkPostBattle
+	.global MtPyre_2F_Text_LukeIntro
+	.global MtPyre_2F_Text_LukeDefeat
+	.global MtPyre_2F_Text_LukePostBattle
+	.global MtPyre_2F_Text_LukeNotEnoughMons
+	.global MtPyre_2F_Text_DezIntro
+	.global MtPyre_2F_Text_DezDefeat
+	.global MtPyre_2F_Text_DezPostBattle
+	.global MtPyre_2F_Text_DezNotEnoughMons
+	.global MtPyre_2F_Text_LeahIntro
+	.global MtPyre_2F_Text_LeahDefeat
+	.global MtPyre_2F_Text_LeahPostBattle
+	.global MtPyre_2F_Text_ZanderIntro
+	.global MtPyre_2F_Text_ZanderDefeat
+	.global MtPyre_2F_Text_ZanderPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

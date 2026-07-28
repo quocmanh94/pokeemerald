@@ -294,212 +294,240 @@ BattleFrontier_ReceptionGate_EventScript_ExitFrontierPassGuide::
 	end
 
 BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
-	.string "Is it your first time here?\n"
-	.string "Please step this way!$"
+	.string "Đây là lần đầu bạn đến phải không? Xin\n"
+	.string "mời đi lối này!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
-	.string "Welcome to the BATTLE FRONTIER!$"
+	.string "Tuyến đầu của những trận chiến\n"
+	.string "POKéMON! Chào mừng đến BATTLE\l"
+	.string "FRONTIER!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
-	.string "For a first-time visitor, we issue\n"
-	.string "the FRONTIER PASS.\p"
-	.string "It's for use at all the facilities\n"
-	.string "in the BATTLE FRONTIER.\p"
-	.string "Here you are!$"
+	.string "Với khách đến lần đầu, chúng tôi sẽ cấp\n"
+	.string "FRONTIER PASS.\p"
+	.string "Nó được dùng tại tất cả cơ sở trong\n"
+	.string "BATTLE FRONTIER.\p"
+	.string "Của bạn đây!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
-	.string "{PLAYER} obtained\n"
-	.string "the FRONTIER PASS.$"
+	.string "{PLAYER} nhận được FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "{PLAYER} placed the TRAINER CARD\n"
-	.string "in the FRONTIER PASS.$"
+	.string "{PLAYER} đặt TRAINER CARD vào\n"
+	.string "FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "We hope you enjoy all that the BATTLE\n"
-	.string "FRONTIER has to offer!$"
+	.string "Chúc bạn tận hưởng mọi điều tuyệt vời\n"
+	.string "mà BATTLE FRONTIER mang lại!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
-	.string "???: Well, if it isn't {PLAYER}{KUN}!\n"
-	.string "You came out here!$"
+	.string "???: Chà, chẳng phải {PLAYER}{KUN}\n"
+	.string "sao! Cậu cũng đến tận đây à!$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "GUIDE: Oh! MR. SCOTT, sir!\n"
-	.string "Good day to you, sir!$"
+	.string "HƯỚNG DẪN: Ôi, ngài SCOTT!\n"
+	.string "Chào ngài ạ!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SCOTT: It's great to see you here,\n"
-	.string "it really is!\p"
-	.string "I hope you'll take your time and\n"
-	.string "explore everywhere.\p"
-	.string "Naturally, I hope you'll also experience\n"
-	.string "the pure essence of battling.\p"
-	.string "I also have my quarters here, so feel\n"
-	.string "free to visit if you have time.$"
+	.string "SCOTT: Thật tuyệt khi thấy cháu ở đây,\n"
+	.string "thật đấy!\p"
+	.string "Ta mong cháu sẽ thong thả khám phá mọi\n"
+	.string "nơi.\p"
+	.string "Tất nhiên, ta cũng mong cháu cảm nhận\n"
+	.string "được tinh hoa thuần túy của chiến đấu.\p"
+	.string "Ta cũng có chỗ ở riêng tại đây, nên nếu\n"
+	.string "có thời gian cứ ghé thăm nhé.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "I'm your guide to the various facilities\n"
-	.string "here in the BATTLE FRONTIER.$"
+	.string "Tôi là người hướng dẫn bạn về các cơ\n"
+	.string "sở khác nhau tại BATTLE FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
-	.string "Which would you like to learn about?$"
+	.string "Bạn muốn tìm hiểu về nơi nào?$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
-	.string "It is the gigantic tower considered\n"
-	.string "to be the BATTLE FRONTIER's symbol.\p"
-	.string "There are four kinds of BATTLE ROOMS\n"
-	.string "in the tower for SINGLE, DOUBLE, MULTI,\l"
-	.string "and LINK MULTI BATTLES.$"
+	.string "Đó là tòa tháp khổng lồ được xem là\n"
+	.string "biểu tượng của BATTLE FRONTIER.\p"
+	.string "Trong tháp có bốn loại BATTLE ROOMS\n"
+	.string "dành cho SINGLE, DOUBLE, MULTI và LINK\l"
+	.string "MULTI BATTLES.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
-	.string "The BATTLE DOME is the large building\n"
-	.string "shaped like a huge egg.\p"
-	.string "Events named Battle Tourneys are held\n"
-	.string "in this facility.\p"
-	.string "The Battle Tourneys are offered in\n"
-	.string "two courses--for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "BATTLE DOME là tòa nhà lớn có hình quả\n"
+	.string "trứng khổng lồ.\p"
+	.string "Các sự kiện mang tên Battle Tourneys\n"
+	.string "được tổ chức tại đây.\p"
+	.string "Battle Tourneys có hai nội dung: SINGLE\n"
+	.string "và DOUBLE BATTLES.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
-	.string "The BATTLE PALACE is the red building\n"
-	.string "on the right of the BATTLE FRONTIER.\p"
-	.string "There are two kinds of BATTLE HALLS\n"
-	.string "for SINGLE and DOUBLE BATTLES.$"
+	.string "BATTLE PALACE là tòa nhà màu đỏ nằm\n"
+	.string "bên phải BATTLE FRONTIER.\p"
+	.string "Có hai loại BATTLE HALLS dành cho\n"
+	.string "SINGLE và DOUBLE BATTLES.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
-	.string "The BATTLE ARENA is the dojo-like\n"
-	.string "building at the center-right of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Set KO Tourney\n"
-	.string "takes place at the BATTLE ARENA.$"
+	.string "BATTLE ARENA là tòa nhà giống võ đường\n"
+	.string "nằm ở khu vực giữa bên phải BATTLE\l"
+	.string "FRONTIER.\p"
+	.string "Một sự kiện mang tên Set KO Tourney\n"
+	.string "được tổ chức tại BATTLE ARENA.$"
 
 BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
-	.string "The BATTLE FACTORY is the large\n"
-	.string "building that is the closest to us.\p"
-	.string "An event called the Battle Swap\n"
-	.string "is conducted there.\p"
-	.string "The Battle Swap event is offered in\n"
-	.string "two courses for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "BATTLE FACTORY là tòa nhà lớn ở gần\n"
+	.string "chúng ta nhất.\p"
+	.string "Một sự kiện mang tên Battle Swap được\n"
+	.string "tổ chức tại đó.\p"
+	.string "Battle Swap có hai nội dung dành cho\n"
+	.string "SINGLE và DOUBLE BATTLES.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
-	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Battle Choice\n"
-	.string "is conducted there.$"
+	.string "BATTLE PIKE là tòa nhà có hình một\n"
+	.string "POKéMON nằm ở khu vực giữa bên trái\l"
+	.string "BATTLE FRONTIER.\p"
+	.string "Một sự kiện mang tên Battle Choice\n"
+	.string "được tổ chức tại đó.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
-	.string "The BATTLE PYRAMID is the enormous\n"
-	.string "pyramid.\p"
-	.string "An event called the Battle Quest\n"
-	.string "is conducted there.$"
+	.string "BATTLE PYRAMID là kim tự tháp khổng lồ.\p"
+	.string "Một sự kiện mang tên Battle Quest\n"
+	.string "được tổ chức tại đó.$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "The RANKING HALL is located near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "There, you may see the most fantastic\n"
-	.string "records left by the TRAINERS that\l"
-	.string "took on the many challenges of\l"
-	.string "the BATTLE FRONTIER.$"
+	.string "RANKING HALL nằm gần BATTLE TOWER.\p"
+	.string "Tại đó, bạn có thể xem những kỷ lục\n"
+	.string "tuyệt vời nhất do các HLV từng\l"
+	.string "đương đầu với vô số thử thách tại\l"
+	.string "BATTLE FRONTIER để lại.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The EXCHANGE SERVICE CORNER is near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "The Battle Points you have earned in\n"
-	.string "the BATTLE FRONTIER may be exchanged\l"
-	.string "for fabulous prizes there.$"
+	.string "EXCHANGE SERVICE CORNER nằm gần\n"
+	.string "BATTLE TOWER.\p"
+	.string "Tại đó, bạn có thể đổi Battle Points\n"
+	.string "kiếm được ở BATTLE FRONTIER lấy\l"
+	.string "những phần thưởng tuyệt vời.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "I'm your guide to the basic rules that\n"
-	.string "are common to all the challenges\l"
-	.string "offered by the facilities in the BATTLE\l"
-	.string "FRONTIER.$"
+	.string "Tôi sẽ hướng dẫn bạn những quy tắc cơ\n"
+	.string "bản áp dụng chung cho mọi thử thách tại\l"
+	.string "các cơ sở của BATTLE FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
-	.string "What would you like to learn about?$"
+	.string "Bạn muốn tìm hiểu về điều gì?$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
-	.string "All the challenges at the BATTLE\n"
-	.string "FRONTIER's facilities come in\l"
-	.string "two courses--Level 50 and Open Level.$"
+	.string "Mọi thử thách tại các cơ sở của BATTLE\n"
+	.string "FRONTIER đều có hai nội dung: Level 50\l"
+	.string "và Open Level.$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "The Level 50 course is open to POKéMON\n"
-	.string "up to and including Level 50.\p"
-	.string "Please keep in mind, however, that\n"
-	.string "no TRAINER you face will have any\l"
-	.string "POKéMON below Level 50.\p"
-	.string "This course is the entry level for\n"
-	.string "battles at the BATTLE FRONTIER.\p"
-	.string "To begin, we hope you will challenge\n"
-	.string "this course.$"
+	.string "Nội dung Level 50 dành cho các POKéMON\n"
+	.string "có Level không quá 50.\p"
+	.string "Tuy nhiên, xin lưu ý rằng không HLV\n"
+	.string "nào bạn đối đầu sử dụng POKéMON dưới\l"
+	.string "Level 50.\p"
+	.string "Đây là nội dung nhập môn cho các trận\n"
+	.string "đấu tại BATTLE FRONTIER.\p"
+	.string "Trước tiên, chúng tôi hy vọng bạn sẽ\n"
+	.string "thử sức với nội dung này.$"
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
-	.string "The Open Level course places no limit\n"
-	.string "on the levels of POKéMON entering\l"
-	.string "challenges.\p"
-	.string "The levels of your opponents will\n"
-	.string "be adjusted to match the levels of\l"
-	.string "your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 60.$"
+	.string "Nội dung Open Level không giới hạn\n"
+	.string "Level của các POKéMON tham gia thử\l"
+	.string "thách.\p"
+	.string "Level của đối thủ sẽ được điều chỉnh\n"
+	.string "cho phù hợp với Level của POKéMON bên\l"
+	.string "bạn.\p"
+	.string "Tuy nhiên, không HLV nào bạn đối\n"
+	.string "đầu sử dụng POKéMON dưới Level 60.$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
-	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of POKéMON,\n"
-	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
-	.string "challenges will depend on the facility.\p"
-	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
-	.string "permitted.$"
+	.string "Hầu như mọi loài POKéMON đều có thể\n"
+	.string "tham gia thử thách tại tất cả các cơ\l"
+	.string "sở.\p"
+	.string "Tuy nhiên, EGGS và một số loài POKéMON\n"
+	.string "nhất định không được phép tham gia.\p"
+	.string "Số lượng POKéMON cần thiết cho mỗi thử\n"
+	.string "thách tùy thuộc vào từng cơ sở.\p"
+	.string "Tuy nhiên, mọi cơ sở đều không cho phép\n"
+	.string "sử dụng từ hai POKéMON cùng loài trở\l"
+	.string "lên.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
-	.string "When entering a challenge at a BATTLE\n"
-	.string "FRONTIER facility, POKéMON may not\l"
-	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
-	.string "entering a challenge are holding\l"
-	.string "different items.$"
+	.string "Khi tham gia thử thách tại một cơ sở\n"
+	.string "của BATTLE FRONTIER, các POKéMON\l"
+	.string "không được giữ cùng một loại vật phẩm.\p"
+	.string "Xin hãy bảo đảm rằng mọi POKéMON tham\n"
+	.string "gia thử thách đều giữ những vật phẩm\l"
+	.string "khác nhau.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "I'm your guide to the FRONTIER PASS.$"
+	.string "Tôi sẽ hướng dẫn bạn về FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
-	.string "Which would you like to learn about?$"
+	.string "Bạn muốn tìm hiểu về mục nào?$"
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
-	.string "There are seven facilities at\n"
-	.string "the BATTLE FRONTIER.\p"
-	.string "TRAINERS who gain recognition for\n"
-	.string "their abilities may be rewarded with\l"
-	.string "symbols from each of the facilities.\p"
-	.string "To earn a symbol, TRAINERS may need\n"
-	.string "to defeat other TRAINERS in a row,\l"
-	.string "and may need to win events repeatedly.\p"
-	.string "It's certainly not easy to win symbols.\n"
-	.string "I wish you the best of luck!$"
+	.string "BATTLE FRONTIER có bảy cơ sở.\p"
+	.string "Những HLV được công nhận về\n"
+	.string "năng lực có thể nhận được biểu tượng\l"
+	.string "từ mỗi cơ sở.\p"
+	.string "Để giành biểu tượng, HLV có thể\n"
+	.string "phải đánh bại nhiều HLV liên tiếp\l"
+	.string "và chiến thắng các sự kiện nhiều lần.\p"
+	.string "Giành được biểu tượng chắc chắn\n"
+	.string "không hề dễ dàng. Chúc bạn may mắn!$"
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
-	.string "It is possible to record one battle\n"
-	.string "on your FRONTIER PASS.\p"
-	.string "You may record a battle you had with\n"
-	.string "a friend or friends.\p"
-	.string "Or you may record a battle conducted\n"
-	.string "at the BATTLE FRONTIER excluding\l"
-	.string "matches at the BATTLE PIKE or\l"
-	.string "the BATTLE PYRAMID.\p"
-	.string "You may choose to record your match\n"
-	.string "at the end of a battle.$"
+	.string "Bạn có thể lưu lại một trận đấu trên\n"
+	.string "FRONTIER PASS.\p"
+	.string "Bạn có thể lưu một trận đấu với một\n"
+	.string "hoặc nhiều người bạn.\p"
+	.string "Bạn cũng có thể lưu một trận đấu diễn\n"
+	.string "ra tại BATTLE FRONTIER, ngoại trừ các\l"
+	.string "trận ở BATTLE PIKE hoặc BATTLE\l"
+	.string "PYRAMID.\p"
+	.string "Khi trận đấu kết thúc, bạn có thể chọn\n"
+	.string "lưu lại trận đó.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
-	.string "Battle Points are rewards given to\n"
-	.string "TRAINERS who battled outstandingly\l"
-	.string "at the BATTLE FRONTIER.\p"
-	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the EXCHANGE SERVICE\l"
-	.string "CORNER.$"
+	.string "Battle Points là phần thưởng dành cho\n"
+	.string "các HLV có màn thể hiện xuất sắc\l"
+	.string "tại BATTLE FRONTIER.\p"
+	.string "Bạn có thể đổi Battle Points lấy phần\n"
+	.string "thưởng tại EXCHANGE SERVICE CORNER.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay
+	.global BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier
+	.global BattleFrontier_ReceptionGate_Text_IssueFrontierPass
+	.global BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass
+	.global BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass
+	.global BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier
+	.global BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame
+	.global BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay
+	.global BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere
+	.global BattleFrontier_ReceptionGate_Text_YourGuideToFacilities
+	.global BattleFrontier_ReceptionGate_Text_LearnAboutWhich2
+	.global BattleFrontier_ReceptionGate_Text_BattleTowerInfo
+	.global BattleFrontier_ReceptionGate_Text_BattleDomeInfo
+	.global BattleFrontier_ReceptionGate_Text_BattlePalaceInfo
+	.global BattleFrontier_ReceptionGate_Text_BattleArenaInfo
+	.global BattleFrontier_ReceptionGate_Text_BattleFactoryInfo
+	.global BattleFrontier_ReceptionGate_Text_BattlePikeInfo
+	.global BattleFrontier_ReceptionGate_Text_BattlePyramidInfo
+	.global BattleFrontier_ReceptionGate_Text_RankingHallInfo
+	.global BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo
+	.global BattleFrontier_ReceptionGate_Text_YourGuideToRules
+	.global BattleFrontier_ReceptionGate_Text_LearnAboutWhat
+	.global BattleFrontier_ReceptionGate_Text_LevelModeInfo
+	.global BattleFrontier_ReceptionGate_Text_Level50Info
+	.global BattleFrontier_ReceptionGate_Text_OpenLevelInfo
+	.global BattleFrontier_ReceptionGate_Text_MonEntryInfo
+	.global BattleFrontier_ReceptionGate_Text_HoldItemsInfo
+	.global BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass
+	.global BattleFrontier_ReceptionGate_Text_LearnAboutWhich1
+	.global BattleFrontier_ReceptionGate_Text_SymbolsInfo
+	.global BattleFrontier_ReceptionGate_Text_RecordedBattleInfo
+	.global BattleFrontier_ReceptionGate_Text_BattlePointsInfo
+@ END GENERATED LOCALIZATION EXPORTS

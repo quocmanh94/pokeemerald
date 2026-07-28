@@ -51,69 +51,72 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 	end
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here! He's gone off to\n"
-	.string "snatch something important!\p"
-	.string "… …\n"
-	.string "Where did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+	.string "Gì? Gì? Bạn muốn gì ở TEAM AQUA?\p"
+	.string "Thủ lĩnh chúng tôi vắng mặt! Ông ấy\n"
+	.string "đi cướp một thứ quan trọng rồi!\p"
+	.string "... ... Ông ấy đi đâu ư?\p"
+	.string "Wahaha! Bạn thật sự nghĩ tôi sẽ nói cho\n"
+	.string "bạn chuyện quan trọng đến thế sao?$"
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
-	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is trying to\n"
-	.string "awaken an awesome POKéMON at their\l"
-	.string "HIDEOUT.\p"
-	.string "But where might their HIDEOUT be?$"
+	.string "Gì? Gì? Bạn là lính quèn của TEAM MAGMA\n"
+	.string "à?\p"
+	.string "Tôi nghe nói TEAM MAGMA đang định đánh\n"
+	.string "thức một POKéMON hùng mạnh tại\l"
+	.string "HIDEOUT của chúng.\p"
+	.string "Nhưng HIDEOUT đó có thể ở đâu nhỉ?$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here!\n"
-	.string "He's gone off to jack a submarine!\p"
-	.string "… …\n"
-	.string "Where did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+	.string "Gì? Gì? Bạn muốn gì ở TEAM AQUA?\p"
+	.string "Thủ lĩnh chúng tôi vắng mặt! Ông ấy\n"
+	.string "đi cướp một chiếc tàu ngầm rồi!\p"
+	.string "... ... Ông ấy đi đâu ư?\p"
+	.string "Wahaha! Bạn thật sự nghĩ tôi sẽ nói cho\n"
+	.string "bạn chuyện quan trọng đến thế sao?$"
 
 AquaHideout_1F_Text_BossIsOnRoute122:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here! He's on his way to\n"
-	.string "MT. PYRE on ROUTE 122!\p"
-	.string "… …\n"
-	.string "Why did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+	.string "Gì? Gì? Bạn muốn gì ở TEAM AQUA?\p"
+	.string "Thủ lĩnh chúng tôi vắng mặt! Ông ấy\n"
+	.string "đang trên đường đến MT. PYRE ở ROUTE\l"
+	.string "122!\p"
+	.string "... ... Tại sao ông ấy đến đó ư?\p"
+	.string "Wahaha! Bạn thật sự nghĩ tôi sẽ nói cho\n"
+	.string "bạn chuyện quan trọng đến thế sao?$"
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
-	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is after\n"
-	.string "an awesome POKéMON at MT. CHIMNEY.\p"
-	.string "But what is that POKéMON like?$"
+	.string "Gì? Gì? Bạn là lính quèn của TEAM MAGMA\n"
+	.string "à?\p"
+	.string "Tôi nghe nói TEAM MAGMA đang nhắm tới\n"
+	.string "một POKéMON hùng mạnh ở MT. CHIMNEY.\p"
+	.string "Nhưng POKéMON đó trông như thế nào\n"
+	.string "nhỉ?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
-	.string "What? What? What do you want with\n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here!\n"
-	.string "He's on his way to SLATEPORT CITY!\p"
-	.string "… …\n"
-	.string "Why did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+	.string "Gì? Gì? Bạn muốn gì ở TEAM AQUA?\p"
+	.string "Thủ lĩnh chúng tôi vắng mặt! Ông ấy\n"
+	.string "đang trên đường đến SLATEPORT CITY!\p"
+	.string "... ... Tại sao ông ấy đến đó ư?\p"
+	.string "Wahaha! Bạn thật sự nghĩ tôi sẽ nói cho\n"
+	.string "bạn chuyện quan trọng đến thế sao?$"
 
 AquaHideout_1F_Text_Grunt1Intro:
-	.string "Ayiyiyi!\n"
-	.string "Suspicious character spotted!$"
+	.string "Ái chà chà! Phát hiện nhân vật khả nghi!$"
 
 AquaHideout_1F_Text_Grunt1Defeat:
-	.string "Grrrrr…\n"
-	.string "I lost it!$"
+	.string "Grrrrr... Tôi thua mất rồi!$"
 
 AquaHideout_1F_Text_Grunt1PostBattle:
-	.string "I took the loss for the TEAM,\n"
-	.string "but I did my job…$"
+	.string "Tôi đã chịu thua vì TEAM, nhưng cũng\n"
+	.string "hoàn thành nhiệm vụ...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AquaHideout_1F_Text_OurBossIsSnatchingSomething
+	.global AquaHideout_1F_Text_WhereMightMagmaHideoutBe
+	.global AquaHideout_1F_Text_BossWentToJackASubmarine
+	.global AquaHideout_1F_Text_BossIsOnRoute122
+	.global AquaHideout_1F_Text_TeamMagmaAtMtChimney
+	.global AquaHideout_1F_Text_BossIsInSlateportCity
+	.global AquaHideout_1F_Text_Grunt1Intro
+	.global AquaHideout_1F_Text_Grunt1Defeat
+	.global AquaHideout_1F_Text_Grunt1PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

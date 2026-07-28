@@ -349,122 +349,133 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
-	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
-	.string "we were jumped by an odd thug…\p"
-	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "Ôi trời, tôi biết phải làm sao đây?\p"
+	.string "PEEKO và tôi đang đi dạo thì bị một tên\n"
+	.string "côn đồ kỳ quặc tập kích...\p"
+	.string "Tên khốn đó đã bắt PEEKO yêu quý của\n"
+	.string "tôi đi mất!\p"
+	.string "Gừừừừừừừừ! PEEKO!$"
 
 Route116_Text_WantToDigTunnel:
-	.string "Nnn… Roar!\p"
-	.string "I want to dig that tunnel!$"
+	.string "Ừừ... Gừ!\p"
+	.string "Tôi muốn đào đường hầm đó!$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
-	.string "Nnn… Roar!\n"
-	.string "What's going on?\p"
-	.string "I was digging the tunnel without any\n"
-	.string "tools when some goon ordered me out!\p"
-	.string "That tunnel's filled with POKéMON\n"
-	.string "that react badly to loud noises.\l"
-	.string "They could cause an uproar.\p"
-	.string "That's why we stopped using heavy\n"
-	.string "equipment for tunneling…\p"
-	.string "I'm worried that the goon will do\n"
-	.string "something stupid and startle the\l"
-	.string "POKéMON into an uproar.$"
+	.string "Ừừ... Gừ! Chuyện gì thế này?\p"
+	.string "Tôi đang đào đường hầm bằng tay không\n"
+	.string "thì một tên du côn đuổi tôi ra ngoài!\p"
+	.string "Đường hầm đó đầy POKéMON phản ứng dữ\n"
+	.string "dội với tiếng ồn lớn. Chúng có thể gây\l"
+	.string "náo loạn.\p"
+	.string "Vì vậy chúng tôi mới ngừng dùng máy\n"
+	.string "móc hạng nặng để đào hầm...\p"
+	.string "Tôi lo tên du côn đó sẽ làm chuyện ngu\n"
+	.string "ngốc rồi khiến POKéMON hoảng sợ và náo\l"
+	.string "loạn.$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
-	.string "Nnn… Roar!\p"
-	.string "That goofy goon hightailed it out of\n"
-	.string "the tunnel! I can go back to digging!$"
+	.string "Ừừ... Gừ!\p"
+	.string "Tên du côn ngốc nghếch đó đã chạy mất\n"
+	.string "dép khỏi đường hầm! Tôi có thể quay lại\l"
+	.string "đào rồi!$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
-	.string "Oh! It's you!\p"
-	.string "You're that person who not only helped\n"
-	.string "me in PETALBURG WOODS, but also got\l"
-	.string "back my stolen package and then even\l"
-	.string "graciously delivered it to SLATEPORT!\p"
-	.string "CAPT. STERN informed us that the\n"
-	.string "package arrived, too!\p"
-	.string "I thank you very, very much!\p"
-	.string "Why, if I were a rain cloud, I would\n"
-	.string "shower you with gratitude and hail\l"
-	.string "you as a hero!\p"
-	.string "For you, the most wonderful TRAINER,\n"
-	.string "I bear good news!\p"
-	.string "Recently, our company developed\n"
-	.string "a new kind of POKé BALL.\p"
-	.string "As a token of our appreciation, this\n"
-	.string "is our gift to our wonderful TRAINER!$"
+	.string "Ồ! Là bạn!\p"
+	.string "Bạn chính là người không chỉ giúp tôi ở\n"
+	.string "PETALBURG WOODS, mà còn lấy lại kiện\l"
+	.string "hàng bị đánh cắp rồi hào hiệp giao nó\l"
+	.string "đến tận SLATEPORT!\p"
+	.string "CAPT. STERN cũng đã báo cho chúng tôi\n"
+	.string "rằng kiện hàng đã đến nơi!\p"
+	.string "Tôi vô cùng, vô cùng cảm ơn bạn!\p"
+	.string "Nếu là một đám mây mưa, tôi sẽ trút\n"
+	.string "xuống bạn cơn mưa biết ơn và tung hô\l"
+	.string "bạn như một người hùng!\p"
+	.string "Tôi có tin vui dành cho bạn, HLV\n"
+	.string "tuyệt vời nhất!\p"
+	.string "Gần đây, công ty chúng tôi đã phát\n"
+	.string "triển một loại POKé BALL mới.\p"
+	.string "Để bày tỏ lòng biết ơn, đây là món quà\n"
+	.string "chúng tôi dành tặng HLV tuyệt vời!$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
-	.string "Please do try it out!\n"
-	.string "Thank you and bye-bye!$"
+	.string "Loại POKé BALL mới của chúng tôi sẽ\n"
+	.string "được bán tại POKéMON MART ở RUSTBORO.\p"
+	.string "Xin hãy dùng thử nhé! Cảm ơn và tạm\n"
+	.string "biệt!$"
 
 Route116_Text_BagIsJamPacked:
-	.string "Your BAG is jam-packed.\n"
-	.string "I can't give you this REPEAT BALL.$"
+	.string "TÚI ĐỒ của bạn đã đầy. Tôi không thể\n"
+	.string "đưa bạn REPEAT BALL này.$"
 
 Route116_Text_TokenOfAppreciation:
-	.string "As a token of our appreciation for\n"
-	.string "your delivering our package, I have\l"
-	.string "a gift of a new kind of POKé BALL\l"
-	.string "for our most wonderful TRAINER!$"
+	.string "Để cảm ơn bạn đã giao kiện hàng, tôi có\n"
+	.string "một loại POKé BALL mới muốn tặng cho\l"
+	.string "HLV tuyệt vời nhất!$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
-	.string "I dropped my glasses…\n"
-	.string "Can you help me find them?$"
+	.string "Tôi làm rơi kính rồi... Bạn có thể giúp\n"
+	.string "tôi tìm không?$"
 
 Route116_Text_MayISeeThoseGlasses:
-	.string "Those glasses!\n"
-	.string "May I see them for a second?$"
+	.string "Cặp kính đó! Cho tôi xem một lát được\n"
+	.string "không?$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here…$"
+	.string "Hmm... Đây là BLACKGLASSES. Không phải\n"
+	.string "thứ tôi đang tìm...\p"
+	.string "Có lẽ kính của tôi không ở quanh đây...$"
 
 Route116_Text_CantFindGlassesNotHere:
-	.string "Hmm…\n"
-	.string "I can't find my glasses anywhere…\l"
-	.string "Maybe they're not around here…$"
+	.string "Hmm... Tôi tìm mãi mà chẳng thấy kính\n"
+	.string "đâu... Có lẽ nó không ở quanh đây...$"
 
 Route116_Text_NotWhatImLookingFor:
-	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…$"
+	.string "Hmm... Đây là BLACKGLASSES. Không phải\n"
+	.string "thứ tôi đang tìm...$"
 
 Route116_Text_RouteSignRustboro:
 	.string "ROUTE 116\n"
 	.string "{LEFT_ARROW} RUSTBORO CITY$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
-	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+	.string "RUSTURF TUNNEL “Nối liền RUSTBORO và\n"
+	.string "VERDANTURF\p"
+	.string "“Dự án đường hầm đã bị hủy bỏ.”$"
 
 Route116_Text_TunnelersRestHouse:
 	.string "TUNNELER'S REST HOUSE$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "TRAINER TIPS\p"
-	.string "If you want to stop a POKéMON from\n"
-	.string "evolving, press the B Button while it\l"
-	.string "is trying to evolve.\l"
-	.string "The startled POKéMON will stop.\p"
-	.string "This is called an evolution cancel.$"
+	.string "Nếu muốn ngăn một POKéMON tiến hóa, hãy\n"
+	.string "nhấn B Button khi nó đang tiến hóa.\l"
+	.string "POKéMON bị giật mình sẽ dừng lại.\p"
+	.string "Việc này gọi là hủy tiến hóa.$"
 
 Route116_Text_TrainerTipsBagHasPockets:
 	.string "TRAINER TIPS\p"
-	.string "Your BAG has several POCKETS.\p"
-	.string "Items you obtain are automatically\n"
-	.string "placed in the appropriate POCKETS.\p"
-	.string "No TRAINER can afford to be without\n"
-	.string "a BAG of their own.$"
+	.string "TÚI ĐỒ của bạn có nhiều POCKETS.\p"
+	.string "Vật phẩm bạn nhận được sẽ tự động\n"
+	.string "được xếp vào POCKETS phù hợp.\p"
+	.string "HLV nào cũng cần có TÚI ĐỒ riêng\n"
+	.string "mình.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route116_Text_ScoundrelMadeOffWithPeeko
+	.global Route116_Text_WantToDigTunnel
+	.global Route116_Text_DiggingTunnelWhenGoonOrderedMeOut
+	.global Route116_Text_GoonHightailedItOutOfTunnel
+	.global Route116_Text_ThankYouTokenOfAppreciation
+	.global Route116_Text_NewBallAvailableAtMart
+	.global Route116_Text_BagIsJamPacked
+	.global Route116_Text_TokenOfAppreciation
+	.global Route116_Text_CanYouHelpMeFindGlasses
+	.global Route116_Text_MayISeeThoseGlasses
+	.global Route116_Text_NotWhatImLookingForMaybeTheyArentHere
+	.global Route116_Text_CantFindGlassesNotHere
+	.global Route116_Text_NotWhatImLookingFor
+	.global Route116_Text_RusturfTunnelSign
+	.global Route116_Text_TrainerTipsBToStopEvolution
+	.global Route116_Text_TrainerTipsBagHasPockets
+@ END GENERATED LOCALIZATION EXPORTS

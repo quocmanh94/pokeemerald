@@ -300,124 +300,144 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "I got this from STEVEN, but I don't\n"
-	.string "know what it's good for.\p"
-	.string "I think it's called KING'S ROCK.\n"
-	.string "Do you want it?$"
+	.string "Tôi nhận thứ này từ STEVEN, nhưng\n"
+	.string "chẳng biết nó có tác dụng gì.\p"
+	.string "Hình như nó được gọi là KING'S ROCK.\n"
+	.string "Bạn có muốn lấy không?$"
 
 MossdeepCity_Text_YouCanKeepIt:
-	.string "Why would you want it?\n"
-	.string "You're weird.\p"
-	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "Sao bạn lại muốn nó chứ? Bạn kỳ quặc\n"
+	.string "thật.\p"
+	.string "Cứ giữ lấy, nhưng phải giấu STEVEN đấy\n"
+	.string "nhé.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "STEVEN's house is right over there!$"
+	.string "Nhà của STEVEN ở ngay đằng kia!$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
-	.string "Yeah, you think so, too! What are you\n"
-	.string "supposed to do with some weird rock?$"
+	.string "Phải, bạn cũng nghĩ vậy đúng không! Một\n"
+	.string "hòn đá kỳ quặc thì dùng để làm gì chứ?$"
 
 MossdeepCity_Text_WailmerWatching:
-	.string "Around MOSSDEEP, you can see wild\n"
-	.string "WAILMER.\p"
-	.string "It's called, uh…\n"
-	.string "What was it now…\p"
-	.string "WAI, WAI, WAI…\p"
-	.string "WAILMER watching!$"
+	.string "Quanh MOSSDEEP, bạn có thể nhìn thấy\n"
+	.string "WAILMER hoang dã.\p"
+	.string "Hoạt động đó gọi là, ờ... Là gì nhỉ...\p"
+	.string "WAI, WAI, WAI...\p"
+	.string "Ngắm WAILMER!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
-	.string "The island's SPACE CENTER has been\n"
-	.string "launching huge rockets.\p"
-	.string "There's been some kind of an uproar\n"
-	.string "over a letter they received recently.$"
+	.string "SPACE CENTER trên đảo vẫn đang phóng\n"
+	.string "những tên lửa khổng lồ.\p"
+	.string "Gần đây, một lá thư họ nhận được đã\n"
+	.string "gây ra vụ náo động gì đó.$"
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
-	.string "The island's SPACE CENTER has been\n"
-	.string "launching huge rockets.$"
+	.string "SPACE CENTER trên đảo vẫn đang phóng\n"
+	.string "những tên lửa khổng lồ.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
-	.string "I heard from a SAILOR buddy that\n"
-	.string "TEAM AQUA set up shop in LILYCOVE.\p"
-	.string "I also heard that someone came along\n"
-	.string "and wiped the floor with them!\p"
-	.string "But MOSSDEEP here's been targeted\n"
-	.string "by that TEAM MAGMA.\p"
-	.string "If you want to know what they're up to,\n"
-	.string "go visit the SPACE CENTER.$"
+	.string "Tôi nghe một người bạn SAILOR kể rằng\n"
+	.string "TEAM AQUA đã lập căn cứ tại LILYCOVE.\p"
+	.string "Tôi còn nghe nói có người xuất hiện và\n"
+	.string "đánh cho chúng tơi bời!\p"
+	.string "Nhưng MOSSDEEP này lại trở thành mục\n"
+	.string "tiêu của TEAM MAGMA.\p"
+	.string "Nếu muốn biết chúng đang mưu tính gì,\n"
+	.string "hãy đến SPACE CENTER.$"
 
 MossdeepCity_Text_FeelReliefOnLand:
-	.string "I'm a SAILOR, so the sea's obviously\n"
-	.string "more important to me.\p"
-	.string "But you know? When I get back on land\n"
-	.string "after a long voyage, I do feel relief!$"
+	.string "Tôi là SAILOR, nên biển cả hiển nhiên\n"
+	.string "quan trọng với tôi hơn.\p"
+	.string "Nhưng bạn biết không? Sau một chuyến\n"
+	.string "hải trình dài, lúc trở lại đất liền tôi\l"
+	.string "thật sự cảm thấy nhẹ nhõm!$"
 
 MossdeepCity_Text_NiceIfWorldCoveredByFlowers:
-	.string "Wouldn't it be nice?\p"
-	.string "If the whole world was covered in\n"
-	.string "plants and flowers like this island?$"
+	.string "Sẽ tuyệt lắm, phải không?\p"
+	.string "Nếu cả thế giới đều được phủ đầy cây\n"
+	.string "cỏ và hoa lá như hòn đảo này?$"
 
 MossdeepCity_Text_LifeNeedsSeaToLive:
-	.string "All life needs the sea to live, even\n"
-	.string "though it makes its home on the land.\p"
-	.string "Life, having run its course, becomes\n"
-	.string "soil and returns to the land.\p"
-	.string "And the sea is always connected to\n"
-	.string "the land.\p"
-	.string "Yes, like the very shoreline here.$"
+	.string "Mọi sinh vật đều cần biển để sống, dù\n"
+	.string "chúng cư ngụ trên đất liền.\p"
+	.string "Khi cuộc đời kết thúc, sinh vật trở\n"
+	.string "thành đất và quay về với đất liền.\p"
+	.string "Biển cũng luôn kết nối với đất liền.\p"
+	.string "Phải, giống như chính bờ biển nơi đây.$"
 
 MossdeepCity_Text_SurfExhilarating:
-	.string "A voyage on a ship is fine.\p"
-	.string "But crossing the sea with POKéMON\n"
-	.string "using SURF…\p"
-	.string "Now that's an exhilarating trip!\n"
-	.string "Wouldn't you agree, youngster?$"
+	.string "Du ngoạn bằng tàu cũng thú vị.\p"
+	.string "Nhưng vượt biển cùng POKéMON bằng\n"
+	.string "SURF...\p"
+	.string "Đó mới là một chuyến đi đầy phấn khích!\n"
+	.string "Cháu cũng thấy vậy chứ?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
-	.string "This rock has a special meaning to\n"
-	.string "the people at the SPACE CENTER.\p"
-	.string "They put it here as their wish for\n"
-	.string "their rockets to fly safely.\p"
-	.string "When you make a wish, what do you use?\n"
-	.string "Do you wish upon a star?\p"
-	.string "I use a wish tag to make it happen.\n"
-	.string "That's what I do.$"
+	.string "Tảng đá này mang ý nghĩa đặc biệt đối\n"
+	.string "với những người tại SPACE CENTER.\p"
+	.string "Họ đặt nó ở đây để cầu mong tên lửa\n"
+	.string "luôn bay an toàn.\p"
+	.string "Khi ước nguyện, bạn dùng thứ gì? Bạn\n"
+	.string "có ước dưới một vì sao không?\p"
+	.string "Tôi dùng thẻ ước để biến điều ước\n"
+	.string "thành sự thật. Tôi luôn làm vậy.$"
 
 MossdeepCity_Text_ItsAWhiteRock:
-	.string "It's a white rock.$"
+	.string "Đó là một tảng đá màu trắng.$"
 
 MossdeepCity_Text_GymSign:
-	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
-	.string "“The mystic combination!”$"
+	.string "MOSSDEEP CITY POKéMON GYM LEADERS:\n"
+	.string "LIZA & TATE\p"
+	.string "Sự kết hợp huyền bí!$"
 
 MossdeepCity_Text_CitySign:
-	.string "MOSSDEEP CITY\n"
-	.string "“Our slogan: Cherish POKéMON!”$"
+	.string "MOSSDEEP CITY: Khẩu hiệu của chúng tôi\n"
+	.string "là Hãy trân trọng POKéMON!$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "MOSSDEEP SPACE CENTER\n"
-	.string "“The closest place to space.”$"
+	.string "MOSSDEEP SPACE CENTER: Nơi gần không\n"
+	.string "gian nhất.$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"
-	.string "I'm doing great!\p"
-	.string "I'd heard MOSSDEEP's GYM LEADER is\n"
-	.string "pretty strong, so I decided to come\l"
-	.string "take a look-see for myself.\p"
-	.string "But there's something wrong about\n"
-	.string "this town.\p"
-	.string "People are going on about a warning\n"
-	.string "letter and the SPACE CENTER…\p"
-	.string "I don't think it concerns me in any\n"
-	.string "way, though.$"
+	.string "SCOTT: {PLAYER}{KUN}, khỏe chứ? Tôi\n"
+	.string "thì tuyệt lắm!\p"
+	.string "Tôi nghe nói GYM LEADER của MOSSDEEP\n"
+	.string "khá mạnh, nên quyết định tự mình đến\l"
+	.string "xem thử.\p"
+	.string "Nhưng thị trấn này có gì đó không ổn.\p"
+	.string "Mọi người cứ bàn tán về một lá thư\n"
+	.string "cảnh cáo và SPACE CENTER...\p"
+	.string "Dù vậy, tôi không nghĩ chuyện đó liên\n"
+	.string "quan gì đến mình.$"
 
 MossdeepCity_Text_SootopolisNewGymLeader:
-	.string "Ahh… It feels great letting the waves\n"
-	.string "wash over my feet…\p"
-	.string "Speaking of the waves, you know that\n"
-	.string "island city SOOTOPOLIS?\p"
-	.string "I think the GYM there had a new\n"
-	.string "LEADER come in.\p"
-	.string "People tell me the new LEADER once\n"
-	.string "mentored WALLACE.$"
+	.string "A... Cảm giác sóng biển vỗ vào chân thật\n"
+	.string "dễ chịu...\p"
+	.string "Nhắc đến sóng biển, bạn biết thành phố\n"
+	.string "đảo SOOTOPOLIS chứ?\p"
+	.string "Hình như GYM ở đó vừa có một LEADER\n"
+	.string "mới.\p"
+	.string "Mọi người nói vị LEADER mới từng là\n"
+	.string "thầy của WALLACE.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_Text_WantKingsRockStevenGaveMe
+	.global MossdeepCity_Text_YouCanKeepIt
+	.global MossdeepCity_Text_StevensHouseOverThere
+	.global MossdeepCity_Text_WhatToDoWithWeirdRock
+	.global MossdeepCity_Text_WailmerWatching
+	.global MossdeepCity_Text_SpaceCenterReceivedLetter
+	.global MossdeepCity_Text_SpaceCenterLaunchingRockets
+	.global MossdeepCity_Text_MossdeepTargetedByMagma
+	.global MossdeepCity_Text_FeelReliefOnLand
+	.global MossdeepCity_Text_NiceIfWorldCoveredByFlowers
+	.global MossdeepCity_Text_LifeNeedsSeaToLive
+	.global MossdeepCity_Text_SurfExhilarating
+	.global MossdeepCity_Text_SpecialSpaceCenterRock
+	.global MossdeepCity_Text_ItsAWhiteRock
+	.global MossdeepCity_Text_GymSign
+	.global MossdeepCity_Text_CitySign
+	.global MossdeepCity_Text_SpaceCenterSign
+	.global MossdeepCity_Text_ScottSomethingWrongWithTown
+	.global MossdeepCity_Text_SootopolisNewGymLeader
+@ END GENERATED LOCALIZATION EXPORTS

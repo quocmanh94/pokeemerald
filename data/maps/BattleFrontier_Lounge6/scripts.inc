@@ -44,32 +44,36 @@ BattleFrontier_Lounge6_EventScript_TradeCompleted::
 	end
 
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
-	.string "My POKéMON is a {STR_VAR_2}.\n"
-	.string "Do you know it?\l"
-	.string "It's quite cute and rather nice.\p"
-	.string "This little one, I could trade with\n"
-	.string "pride!\p"
-	.string "Would you like to trade me a {STR_VAR_1}\n"
-	.string "for my {STR_VAR_2}?$"
+	.string "POKéMON của tôi là một\n"
+	.string "{STR_VAR_2}. Bạn biết loài đó\l"
+	.string "chứ? Nó khá dễ thương và rất ngoan.\p"
+	.string "Tôi rất tự hào khi đem bé này ra trao\n"
+	.string "đổi!\p"
+	.string "Bạn có muốn đổi một {STR_VAR_1}\n"
+	.string "lấy {STR_VAR_2} của tôi không?$"
 
 BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt:
-	.string "Oh, it's adorable!\n"
-	.string "Thank you!\l"
-	.string "I promise I'll be good to it!\p"
-	.string "Oh! I hope you'll be good to\n"
-	.string "my {STR_VAR_2}, too!$"
+	.string "Ôi, đáng yêu quá! Cảm ơn bạn! Tôi hứa sẽ\n"
+	.string "đối xử thật tốt với nó!\p"
+	.string "À! Tôi cũng mong bạn sẽ đối xử tốt với\n"
+	.string "{STR_VAR_2} của tôi!$"
 
 BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon:
-	.string "Oh, I'm sorry!\n"
-	.string "I don't intend to trade for anything\l"
-	.string "but a {STR_VAR_1}.$"
+	.string "Ôi, tôi xin lỗi! Tôi chỉ định trao đổi để\n"
+	.string "lấy một {STR_VAR_1} thôi.$"
 
 BattleFrontier_Lounge6_Text_WellThatsFineToo:
-	.string "Oh, you won't?\n"
-	.string "Well, that's fine, too.\l"
-	.string "Please come visit us again.$"
+	.string "Ồ, bạn không muốn sao? Không sao cả.\n"
+	.string "Hãy ghé thăm chúng tôi lần nữa nhé.$"
 
 BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
-	.string "Giggle!\n"
-	.string "A SKITTY is so much cuter than I had\l"
-	.string "imagined. I'm delighted!$"
+	.string "Hí hí! SKITTY dễ thương hơn tôi tưởng\n"
+	.string "rất nhiều. Tôi vui quá!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge6_Text_WouldYouLikeToTrade
+	.global BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt
+	.global BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon
+	.global BattleFrontier_Lounge6_Text_WellThatsFineToo
+	.global BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined
+@ END GENERATED LOCALIZATION EXPORTS

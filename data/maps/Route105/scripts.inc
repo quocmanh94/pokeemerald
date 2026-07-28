@@ -77,21 +77,21 @@ Route105_EventScript_AndresRematch::
 	end
 
 Route104_Text_DadPokenavCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "DAD: Oh, {PLAYER}?\p"
-	.string "… … … … … …\n"
-	.string "Where are you now?\l"
-	.string "It sounds windy wherever you are.\p"
-	.string "I just heard from DEVON's MR. STONE\n"
-	.string "about your POKéNAV, so I decided\l"
-	.string "to give you a call.\p"
-	.string "It sounds like you're doing fine,\n"
-	.string "so that's fine with me.\p"
-	.string "You take care now.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+	.string "... ... ... ... ... ... ... ... ... ... ... Bíp!\p"
+	.string "BA: Ồ, {PLAYER} đấy à?\p"
+	.string "... ... ... ... ... ... Con đang ở đâu vậy? Chỗ\n"
+	.string "con nghe có vẻ nhiều gió lắm.\p"
+	.string "Ba vừa nghe MR. STONE của DEVON kể về\n"
+	.string "POKéNAV của con nên gọi thử.\p"
+	.string "Nghe có vẻ con vẫn ổn, vậy là ba yên tâm\n"
+	.string "rồi.\p"
+	.string "Nhớ giữ gìn sức khỏe nhé.\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... Tách!$"
 
 Route104_Text_RegisteredDadInPokenav:
-	.string "Registered DAD NORMAN\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký BA NORMAN vào POKéNAV.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route104_Text_DadPokenavCall
+	.global Route104_Text_RegisteredDadInPokenav
+@ END GENERATED LOCALIZATION EXPORTS

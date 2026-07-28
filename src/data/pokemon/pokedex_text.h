@@ -1,2321 +1,2845 @@
 const u8 gDummyPokedexText[] = _(
-    "This is a newly discovered POKéMON.\n"
-    "It is currently under investigation.\n"
-    "No detailed information is available\n"
-    "at this time.");
+    "Đây là một POKéMON mới được phát hiện và\n"
+    "đang được nghiên cứu. Hiện chưa có thông\n"
+    "tin chi tiết nào."
+);
 
 const u8 gBulbasaurPokedexText[] = _(
-    "BULBASAUR can be seen napping in bright\n"
-    "sunlight. There is a seed on its back.\n"
-    "By soaking up the sun's rays, the seed\n"
-    "grows progressively larger.");
+    "Có thể thấy BULBASAUR nằm ngủ dưới nắng.\n"
+    "Hạt giống trên lưng lớn dần khi hấp thụ ánh\n"
+    "mặt trời."
+);
 
 const u8 gIvysaurPokedexText[] = _(
-    "To support its bulb, IVYSAUR's legs\n"
-    "grow sturdy. If it spends more time lying in\n"
-    "the sunlight, the bud will soon bloom into\n"
-    "a large flower.");
+    "Chân IVYSAUR trở nên vững chắc để đỡ búp\n"
+    "cây. Nếu nằm dưới nắng lâu hơn, nụ cây sẽ\n"
+    "sớm nở thành một bông hoa lớn."
+);
 
 const u8 gVenusaurPokedexText[] = _(
-    "VENUSAUR's flower is said to take on vivid\n"
-    "colors if it gets plenty of nutrition and\n"
-    "sunlight. The flower's aroma soothes the\n"
-    "emotions of people.");
+    "Hoa của VENUSAUR được cho là sẽ rực rỡ hơn\n"
+    "khi nhận đủ dinh dưỡng và ánh nắng. Hương\n"
+    "hoa giúp con người xoa dịu cảm xúc."
+);
 
 const u8 gCharmanderPokedexText[] = _(
-    "The flame that burns at the tip of its\n"
-    "tail is an indication of its emotions.\n"
-    "The flame wavers when CHARMANDER is\n"
-    "happy, and blazes when it is enraged.");
+    "Ngọn lửa ở chóp đuôi thể hiện cảm xúc của\n"
+    "CHARMANDER. Nó lay động khi vui và bùng cháy\n"
+    "dữ dội khi tức giận."
+);
 
 const u8 gCharmeleonPokedexText[] = _(
-    "Without pity, its sharp claws destroy foes.\n"
-    "If it encounters a strong enemy, it\n"
-    "becomes agitated, and the flame on its\n"
-    "tail flares with a bluish white color.");
+    "Nó dùng vuốt sắc tàn nhẫn tiêu diệt đối thủ.\n"
+    "Khi gặp kẻ mạnh, nó trở nên kích động và\n"
+    "ngọn lửa trên đuôi bùng lên màu trắng xanh."
+);
 
 const u8 gCharizardPokedexText[] = _(
-    "A CHARIZARD flies about in search of\n"
-    "strong opponents. It breathes intense\n"
-    "flames that can melt any material. However,\n"
-    "it will never torch a weaker foe.");
+    "CHARIZARD bay khắp nơi tìm đối thủ mạnh. Hơi\n"
+    "lửa dữ dội của nó có thể nung chảy mọi vật\n"
+    "liệu, nhưng nó không bao giờ thiêu đốt kẻ\n"
+    "yếu hơn."
+);
 
 const u8 gSquirtlePokedexText[] = _(
-    "Its shell is not just for protection.\n"
-    "Its rounded shape and the grooves on its\n"
-    "surface minimize resistance in water,\n"
-    "enabling SQUIRTLE to swim at high speeds.");
+    "Mai của nó không chỉ để bảo vệ. Hình dáng\n"
+    "tròn và các rãnh trên bề mặt giảm sức cản\n"
+    "của nước, giúp SQUIRTLE bơi với tốc độ cao."
+);
 
 const u8 gWartortlePokedexText[] = _(
-    "Its large tail is covered with rich, thick\n"
-    "fur that deepens in color with age.\n"
-    "The scratches on its shell are evidence\n"
-    "of this POKéMON's toughness in battle.");
+    "Chiếc đuôi lớn phủ lớp lông dày, mượt và sẫm\n"
+    "màu dần theo tuổi tác. Các vết xước trên mai\n"
+    "chứng tỏ POKéMON này rất gan lì trong chiến\n"
+    "đấu."
+);
 
 const u8 gBlastoisePokedexText[] = _(
-    "The waterspouts that protrude from its\n"
-    "shell are highly accurate. Their bullets of\n"
-    "water can precisely nail tin cans from\n"
-    "a distance of over 160 feet.");
+    "Các vòi phun nhô khỏi mai có độ chính xác rất\n"
+    "cao. Đạn nước của chúng có thể bắn trúng lon\n"
+    "thiếc từ cách hơn 160 feet."
+);
 
 const u8 gCaterpiePokedexText[] = _(
-    "Its voracious appetite compels it to\n"
-    "devour leaves bigger than itself without\n"
-    "hesitation. It releases a terribly strong\n"
-    "odor from its antennae.");
+    "Cơn đói dữ dội khiến nó không ngần ngại ăn\n"
+    "ngấu nghiến những chiếc lá lớn hơn mình. Râu\n"
+    "của nó tỏa ra mùi cực kỳ nồng nặc."
+);
 
 const u8 gMetapodPokedexText[] = _(
-    "Its shell is as hard as an iron slab.\n"
-    "A METAPOD does not move very much\n"
-    "because it is preparing its soft innards\n"
-    "for evolution inside the shell.");
+    "Mai của nó cứng như tấm sắt. METAPOD hầu\n"
+    "như không cử động vì đang chuẩn bị phần cơ\n"
+    "thể mềm bên trong mai cho quá trình tiến hóa."
+);
 
 const u8 gButterfreePokedexText[] = _(
-    "It has a superior ability to search for\n"
-    "delicious honey from flowers. It can seek,\n"
-    "extract, and carry honey from flowers\n"
-    "blooming over six miles away.");
+    "Nó đặc biệt giỏi tìm mật hoa thơm ngon. Nó có\n"
+    "thể tìm, hút và mang mật từ những bông hoa\n"
+    "nở cách xa hơn sáu dặm."
+);
 
 const u8 gWeedlePokedexText[] = _(
-    "A WEEDLE has an extremely acute sense\n"
-    "of smell. It distinguishes its favorite\n"
-    "kinds of leaves from those it dislikes by\n"
-    "sniffing with its big red proboscis (nose).");
+    "WEEDLE có khứu giác cực nhạy. Nó dùng chiếc\n"
+    "vòi đỏ lớn (mũi) để ngửi và phân biệt loại lá\n"
+    "ưa thích với loại không thích."
+);
 
 const u8 gKakunaPokedexText[] = _(
-    "It remains virtually immobile while it\n"
-    "clings to a tree. However, on the inside,\n"
-    "it busily prepares for evolution. This is\n"
-    "evident from how hot its shell becomes.");
+    "Nó gần như bất động khi bám trên cây, nhưng\n"
+    "bên trong lại tất bật chuẩn bị tiến hóa. Chiếc\n"
+    "mai nóng lên là bằng chứng cho điều đó."
+);
 
 const u8 gBeedrillPokedexText[] = _(
-    "A BEEDRILL is extremely territorial.\n"
-    "For safety reasons, no one should \n"
-    "ever approach its nest. If angered,\n"
-    "they will attack in a swarm.");
+    "BEEDRILL có ý thức lãnh thổ cực cao. Vì an\n"
+    "toàn, không ai nên đến gần tổ của chúng. Nếu\n"
+    "nổi giận, cả đàn sẽ tấn công."
+);
 
 const u8 gPidgeyPokedexText[] = _(
-    "It has an extremely sharp sense of\n"
-    "direction. It can unerringly return home to\n"
-    "its nest, however far it may be removed\n"
-    "from its familiar surroundings.");
+    "Nó có khả năng định hướng cực nhạy, luôn\n"
+    "tìm được đường về tổ dù bị đưa xa khỏi môi\n"
+    "trường quen thuộc đến đâu."
+);
 
 const u8 gPidgeottoPokedexText[] = _(
-    "This POKéMON flies around, patrolling its\n"
-    "large territory. If its living space is\n"
-    "violated, it shows no mercy in thoroughly\n"
-    "punishing the foe with its sharp claws.");
+    "POKéMON này bay tuần tra lãnh thổ rộng lớn.\n"
+    "Nếu nơi sinh sống bị xâm phạm, nó sẽ dùng\n"
+    "vuốt sắc trừng trị đối thủ không thương\n"
+    "tiếc."
+);
 
 const u8 gPidgeotPokedexText[] = _(
-    "This POKéMON has gorgeous, glossy\n"
-    "feathers. Many TRAINERS are so captivated\n"
-    "by the beautiful feathers on its head that\n"
-    "they choose PIDGEOT as their POKéMON.");
+    "POKéMON này có bộ lông óng mượt tuyệt đẹp.\n"
+    "Nhiều HLV bị lông vũ trên đầu nó mê hoặc\n"
+    "đến mức chọn PIDGEOT làm POKéMON của mình."
+);
 
 const u8 gRattataPokedexText[] = _(
-    "A RATTATA is cautious in the extreme.\n"
-    "Even while it is asleep, it constantly\n"
-    "moves its ears and listens for danger.\n"
-    "It will make its nest anywhere.");
+    "RATTATA cảnh giác cao độ. Ngay cả khi ngủ, nó\n"
+    "vẫn liên tục cử động tai để nghe ngóng nguy\n"
+    "hiểm. Nó có thể làm tổ ở bất cứ đâu."
+);
 
 const u8 gRaticatePokedexText[] = _(
-    "A RATICATE's sturdy fangs grow steadily.\n"
-    "To keep them ground down, it gnaws on\n"
-    "rocks and logs. It may even chew on the\n"
-    "walls of houses.");
+    "Răng nanh chắc khỏe của RATICATE mọc không\n"
+    "ngừng. Nó gặm đá và khúc gỗ để mài răng, đôi\n"
+    "khi còn nhai cả tường nhà."
+);
 
 const u8 gSpearowPokedexText[] = _(
-    "Its loud cry can be heard over half a mile\n"
-    "away. If its high, keening cry is heard\n"
-    "echoing all around, it is a sign that they\n"
-    "are warning each other of danger.");
+    "Tiếng kêu lớn của nó vang xa hơn nửa dặm.\n"
+    "Nếu tiếng rít cao vút vọng khắp nơi, đó là\n"
+    "dấu hiệu chúng đang cảnh báo nguy hiểm cho\n"
+    "nhau."
+);
 
 const u8 gFearowPokedexText[] = _(
-    "Its long neck and elongated beak are\n"
-    "ideal for catching prey in soil or water.\n"
-    "It deftly moves this extended and skinny\n"
-    "beak to pluck prey.");
+    "Chiếc cổ dài và mỏ thuôn rất thích hợp để\n"
+    "bắt con mồi trong đất hoặc nước. Nó khéo léo\n"
+    "dùng chiếc mỏ dài, mảnh để nhặt con mồi."
+);
 
 const u8 gEkansPokedexText[] = _(
-    "An EKANS curls itself up in a spiral while\n"
-    "it rests. This position allows it to quickly\n"
-    "respond to an enemy from any direction\n"
-    "with a threat from its upraised head.");
+    "EKANS cuộn mình thành vòng xoắn khi nghỉ\n"
+    "ngơi. Tư thế này giúp nó nhanh chóng đối phó\n"
+    "kẻ địch từ mọi hướng bằng chiếc đầu ngẩng\n"
+    "cao đe dọa."
+);
 
 const u8 gArbokPokedexText[] = _(
-    "This POKéMON has a terrifically strong\n"
-    "constricting power. It can even flatten\n"
-    "steel oil drums. Once it wraps its body\n"
-    "around its foe, escaping is impossible.");
+    "POKéMON này có sức siết cực mạnh, đủ làm bẹp\n"
+    "cả thùng dầu bằng thép. Một khi nó quấn\n"
+    "quanh đối thủ thì không thể thoát được."
+);
 
 const u8 gPikachuPokedexText[] = _(
-    "It stores electricity in the electric sacs\n"
-    "on its cheeks. When it releases pent-up\n"
-    "energy in a burst, the electric power is\n"
-    "equal to a lightning bolt.");
+    "Nó tích điện trong các túi điện ở má. Khi giải\n"
+    "phóng năng lượng dồn nén thành một luồng,\n"
+    "sức điện mạnh ngang tia sét."
+);
 
 const u8 gRaichuPokedexText[] = _(
-    "If it stores too much electricity, its\n"
-    "behavior turns aggressive. To avoid this,\n"
-    "it occasionally discharges excess energy\n"
-    "and calms itself down.");
+    "Nếu tích quá nhiều điện, nó sẽ trở nên hung\n"
+    "hăng. Để tránh điều đó, nó thỉnh thoảng\n"
+    "phóng bớt năng lượng dư thừa rồi bình tĩnh\n"
+    "lại."
+);
 
 const u8 gSandshrewPokedexText[] = _(
-    "When it curls up in a ball, it can make any\n"
-    "attack bounce off harmlessly. Its hide has\n"
-    "turned tough and solid as a result of\n"
-    "living in the desert.");
+    "Khi cuộn thành quả bóng, nó có thể khiến mọi\n"
+    "đòn tấn công bật ra mà không gây hại. Sống\n"
+    "trong sa mạc đã khiến da nó trở nên cứng\n"
+    "chắc."
+);
 
 const u8 gSandslashPokedexText[] = _(
-    "It curls up in a ball to protect itself from\n"
-    "enemy attacks. It also curls up to prevent\n"
-    "heatstroke during the daytime when\n"
-    "temperatures rise sharply.");
+    "Nó cuộn thành quả bóng để tự bảo vệ trước\n"
+    "đòn tấn công của đối thủ, đồng thời tránh bị\n"
+    "sốc nhiệt vào ban ngày khi nhiệt độ tăng vọt."
+);
 
 const u8 gNidoranFPokedexText[] = _(
-    "Its highly toxic barbs are thought to have\n"
-    "developed as protection for this small-\n"
-    "bodied POKéMON. When enraged, it releases\n"
-    "a horrible toxin from its horn.");
+    "Gai cực độc được cho là đã phát triển để\n"
+    "bảo vệ cơ thể nhỏ bé của POKéMON này. Khi nổi\n"
+    "giận, chiếc sừng tiết ra độc tố khủng khiếp."
+);
 
 const u8 gNidorinaPokedexText[] = _(
-    "When it is with its friends or\n"
-    "family, its barbs are tucked away to\n"
-    "prevent injury. It appears to become\n"
-    "nervous if separated from the others.");
+    "Khi ở bên bạn bè hoặc gia đình, nó thu gai lại\n"
+    "để tránh gây thương tích. Nó dường như trở\n"
+    "nên lo lắng nếu bị tách khỏi những cá thể\n"
+    "khác."
+);
 
 const u8 gNidoqueenPokedexText[] = _(
-    "It is adept at sending foes flying with\n"
-    "harsh tackles using its tough, scaly body.\n"
-    "This POKéMON is at its strongest when\n"
-    "it is defending its young.");
+    "Nó giỏi dùng cơ thể cứng cáp đầy vảy thực\n"
+    "hiện những cú húc dữ dội, đánh văng đối thủ.\n"
+    "POKéMON này mạnh nhất khi bảo vệ con non."
+);
 
 const u8 gNidoranMPokedexText[] = _(
-    "The male NIDORAN has developed muscles\n"
-    "that freely move its ears in any direction.\n"
-    "Even the slightest sound does not escape\n"
-    "this POKéMON's notice.");
+    "NIDORAN đực đã phát triển các cơ giúp tai\n"
+    "xoay tự do theo mọi hướng. POKéMON này\n"
+    "không bỏ sót dù chỉ là âm thanh nhỏ nhất."
+);
 
 const u8 gNidorinoPokedexText[] = _(
-    "Its horn is harder than a diamond.\n"
-    "If it senses a hostile presence, all the\n"
-    "barbs on its back bristle up at once, and it\n"
-    "challenges the foe with all its might.");
+    "Sừng của nó cứng hơn kim cương. Khi cảm\n"
+    "nhận sự thù địch, mọi chiếc gai trên lưng\n"
+    "đồng loạt dựng lên và nó dùng toàn lực thách\n"
+    "đấu đối thủ."
+);
 
 const u8 gNidokingPokedexText[] = _(
-    "A NIDOKING's thick tail packs enormously\n"
-    "destructive power capable of toppling\n"
-    "a metal transmission tower. Once it goes\n"
-    "on a rampage, there is no stopping it.");
+    "Chiếc đuôi dày của NIDOKING có sức phá hoại\n"
+    "khủng khiếp, đủ quật đổ một tháp truyền tải\n"
+    "bằng kim loại. Khi nó nổi điên, không gì ngăn\n"
+    "nổi."
+);
 
 const u8 gClefairyPokedexText[] = _(
-    "On every night of a full moon, they come\n"
-    "out to play. When dawn arrives, the tired\n"
-    "CLEFAIRY go to sleep nestled up against\n"
-    "each other in deep and quiet mountains.");
+    "Chúng ra ngoài vui chơi vào mỗi đêm trăng\n"
+    "tròn. Khi bình minh đến, những CLEFAIRY mệt\n"
+    "mỏi nép sát nhau ngủ trong vùng núi sâu yên\n"
+    "tĩnh."
+);
 
 const u8 gClefablePokedexText[] = _(
-    "A CLEFABLE uses its wings to skip lightly \n"
-    "as if it were flying. Its bouncy step\n"
-    "lets it even walk on water. On quiet,\n"
-    "moonlit nights, it strolls on lakes.");
+    "CLEFABLE dùng đôi cánh nhảy nhẹ như đang\n"
+    "bay. Bước chân bồng bềnh giúp nó đi cả trên\n"
+    "mặt nước. Vào đêm trăng yên tĩnh, nó dạo\n"
+    "chơi trên hồ."
+);
 
 const u8 gVulpixPokedexText[] = _(
-    "It can freely control fire, making fiery\n"
-    "orbs fly like will-o'-the-wisps. Just\n"
-    "before evolution, its six tails grow hot \n"
-    "as if on fire.");
+    "Nó tự do điều khiển lửa, khiến những quả cầu\n"
+    "lửa bay như ma trơi. Ngay trước khi tiến\n"
+    "hóa, sáu chiếc đuôi của nó nóng lên như đang\n"
+    "bốc cháy."
+);
 
 const u8 gNinetalesPokedexText[] = _(
-    "It has long been said that each of the\n"
-    "nine tails embody an enchanted power.\n"
-    "A long-lived NINETALES will have fur that\n"
-    "shines like gold.");
+    "Tương truyền mỗi chiếc trong chín chiếc\n"
+    "đuôi đều mang một sức mạnh phép thuật.\n"
+    "NINETALES sống lâu sẽ có bộ lông sáng như\n"
+    "vàng."
+);
 
 const u8 gJigglypuffPokedexText[] = _(
-    "Nothing can avoid falling asleep hearing a\n"
-    "JIGGLYPUFF's song. The sound waves of its\n"
-    "singing voice match the brain waves of\n"
-    "someone in a deep sleep.");
+    "Không ai nghe tiếng hát của JIGGLYPUFF mà\n"
+    "không ngủ thiếp đi. Sóng âm từ giọng hát của\n"
+    "nó trùng với sóng não của người đang ngủ\n"
+    "sâu."
+);
 
 const u8 gWigglytuffPokedexText[] = _(
-    "Its fur is the ultimate in luxuriousness.\n"
-    "Sleeping alongside a WIGGLYTUFF is simply\n"
-    "divine. Its body expands seemingly without\n"
-    "end when it inhales.");
+    "Bộ lông của nó mềm mại sang trọng bậc nhất.\n"
+    "Ngủ cạnh WIGGLYTUFF thật tuyệt diệu. Khi hít\n"
+    "vào, cơ thể nó dường như phồng lên vô tận."
+);
 
 const u8 gZubatPokedexText[] = _(
-    "While living in pitch-black caverns, their\n"
-    "eyes gradually grew shut and deprived\n"
-    "them of vision. They use ultrasonic waves\n"
-    "to detect obstacles.");
+    "Sống trong hang tối đen khiến mắt chúng dần\n"
+    "khép kín và mất thị lực. Chúng dùng sóng siêu\n"
+    "âm để phát hiện chướng ngại vật."
+);
 
 const u8 gGolbatPokedexText[] = _(
-    "Its fangs easily puncture even thick\n"
-    "animal hide. It loves to feast on the blood\n"
-    "of people and POKéMON. It flits about in\n"
-    "darkness and strikes from behind.");
+    "Răng nanh của nó dễ dàng xuyên thủng cả da\n"
+    "thú dày. Nó thích hút máu người và POKéMON,\n"
+    "bay lượn trong bóng tối rồi tấn công từ phía\n"
+    "sau."
+);
 
 const u8 gOddishPokedexText[] = _(
-    "This POKéMON grows by absorbing moonlight.\n"
-    "During the daytime, it buries itself in the\n"
-    "ground, leaving only its leaves exposed to\n"
-    "avoid detection by its enemies.");
+    "POKéMON này lớn lên nhờ hấp thụ ánh trăng.\n"
+    "Ban ngày, nó vùi mình dưới đất, chỉ để lộ lá\n"
+    "nhằm tránh bị đối thủ phát hiện."
+);
 
 const u8 gGloomPokedexText[] = _(
-    "A horribly noxious honey drools from its\n"
-    "mouth. One whiff of the honey can result\n"
-    "in memory loss. Some fans are said to\n"
-    "enjoy this overwhelming stink, however.");
+    "Mật hôi thối khủng khiếp chảy từ miệng nó.\n"
+    "Chỉ ngửi một hơi cũng có thể mất trí nhớ. Dù\n"
+    "vậy, có người hâm mộ lại thích mùi nồng nặc\n"
+    "ấy."
+);
 
 const u8 gVileplumePokedexText[] = _(
-    "In seasons when it produces more pollen,\n"
-    "the air around a VILEPLUME turns yellow\n"
-    "with the powder as it walks. The pollen is\n"
-    "highly toxic and causes paralysis.");
+    "Vào mùa nhiều phấn hoa, không khí quanh\n"
+    "VILEPLUME vàng lên theo từng bước chân.\n"
+    "Phấn hoa cực độc và gây tê liệt."
+);
 
 const u8 gParasPokedexText[] = _(
-    "A PARAS has parasitic tochukaso\n"
-    "mushrooms growing on its back. They grow\n"
-    "by drawing nutrients from the host. They\n"
-    "are valued as a medicine for long life.");
+    "Nấm tochukaso ký sinh mọc trên lưng PARAS\n"
+    "và lớn lên bằng cách hút dinh dưỡng từ vật\n"
+    "chủ. Chúng được coi trọng như một loại\n"
+    "thuốc trường thọ."
+);
 
 const u8 gParasectPokedexText[] = _(
-    "PARASECT are known to infest the roots of\n"
-    "large trees en masse and drain nutrients.\n"
-    "When an infested tree dies, they move\n"
-    "onto another tree all at once.");
+    "PARASECT thường ký sinh hàng loạt ở rễ cây\n"
+    "lớn và hút dinh dưỡng. Khi cây đó chết, cả\n"
+    "đàn đồng loạt chuyển sang một cây khác."
+);
 
 const u8 gVenonatPokedexText[] = _(
-    "Its coat of thin, stiff hair that covers\n"
-    "its entire body is said to have evolved\n"
-    "for protection. Its large eyes never fail\n"
-    "to spot even miniscule prey.");
+    "Lớp lông mảnh, cứng phủ toàn thân được cho\n"
+    "là đã tiến hóa để bảo vệ nó. Đôi mắt lớn luôn\n"
+    "phát hiện được cả con mồi nhỏ li ti."
+);
 
 const u8 gVenomothPokedexText[] = _(
-    "VENOMOTH are nocturnal--they only are\n"
-    "active at night. Their favorite prey are\n"
-    "insects that gather around streetlights,\n"
-    "attracted by the light in the darkness.");
+    "VENOMOTH sống về đêm và chỉ hoạt động khi\n"
+    "trời tối. Con mồi ưa thích là những côn trùng\n"
+    "bị ánh sáng thu hút, tụ tập quanh đèn đường."
+);
 
 const u8 gDiglettPokedexText[] = _(
-    "DIGLETT are raised in most farms.\n"
-    "The reason is simple--wherever they\n"
-    "burrow, the soil is left perfectly tilled\n"
-    "for growing delicious crops.");
+    "DIGLETT được nuôi ở hầu hết nông trại. Lý do\n"
+    "rất đơn giản: nơi nào chúng đào hang, đất\n"
+    "nơi đó được xới hoàn hảo để trồng nông sản\n"
+    "thơm ngon."
+);
 
 const u8 gDugtrioPokedexText[] = _(
-    "Because the triplets originally split from\n"
-    "one body, they think exactly alike.\n"
-    "They work cooperatively to burrow\n"
-    "endlessly through the ground.");
+    "Vốn tách ra từ cùng một cơ thể, bộ ba suy\n"
+    "nghĩ hệt nhau. Chúng phối hợp đào xuyên lòng\n"
+    "đất không ngừng nghỉ."
+);
 
 const u8 gMeowthPokedexText[] = _(
-    "MEOWTH withdraw their sharp claws into\n"
-    "their paws to silently sneak about.\n"
-    "For some reason, this POKéMON loves\n"
-    "shiny coins that glitter with light.");
+    "MEOWTH thu móng vuốt sắc vào bàn chân để lén\n"
+    "đi không tiếng động. Vì lý do nào đó, POKéMON\n"
+    "này rất mê những đồng xu sáng lấp lánh."
+);
 
 const u8 gPersianPokedexText[] = _(
-    "A PERSIAN's six bold whiskers sense air\n"
-    "movements to determine what is in its\n"
-    "vicinity. It becomes docile if grabbed\n"
-    "by the whiskers.");
+    "Sáu sợi ria nổi bật của PERSIAN cảm nhận\n"
+    "chuyển động không khí để xác định những gì\n"
+    "ở quanh nó. Nắm vào ria sẽ khiến nó trở nên\n"
+    "ngoan ngoãn."
+);
 
 const u8 gPsyduckPokedexText[] = _(
-    "When its headache intensifies, it starts\n"
-    "using strange powers. However, it has no\n"
-    "recollection of its powers, so it always\n"
-    "looks befuddled and bewildered.");
+    "Khi cơn đau đầu dữ dội hơn, nó bắt đầu dùng\n"
+    "sức mạnh kỳ lạ. Nhưng vì không nhớ gì về\n"
+    "sức mạnh ấy, nó luôn trông bối rối và ngơ\n"
+    "ngác."
+);
 
 const u8 gGolduckPokedexText[] = _(
-    "A GOLDUCK is an adept swimmer.\n"
-    "It sometimes joins competitive swimmers\n"
-    "in training. It uses psychic powers when\n"
-    "its forehead shimmers with light.");
+    "GOLDUCK bơi rất giỏi, đôi khi còn tập cùng\n"
+    "các vận động viên bơi lội thi đấu. Khi trán\n"
+    "lóe sáng, nó sử dụng sức mạnh tâm linh."
+);
 
 const u8 gMankeyPokedexText[] = _(
-    "When it starts shaking and its nasal\n"
-    "breathing turns rough, it's a sure sign\n"
-    "of anger. However, since this happens\n"
-    "instantly, there is no time to flee.");
+    "Khi nó run lên và hơi thở qua mũi trở nên\n"
+    "nặng nề, chắc chắn nó đang tức giận. Nhưng\n"
+    "trạng thái này xuất hiện tức thì, không còn\n"
+    "thời gian để chạy trốn."
+);
 
 const u8 gPrimeapePokedexText[] = _(
-    "When it becomes furious, its blood\n"
-    "circulation becomes more robust, and\n"
-    "its muscles are made stronger. But it\n"
-    "also becomes much less intelligent.");
+    "Khi nổi cơn thịnh nộ, máu của nó lưu thông\n"
+    "mạnh hơn, khiến cơ bắp khỏe hơn. Nhưng trí\n"
+    "thông minh của nó cũng giảm đi rất nhiều."
+);
 
 const u8 gGrowlithePokedexText[] = _(
-    "Its superb sense of smell ensures that\n"
-    "this POKéMON won't forget any scent,\n"
-    "no matter what. It uses its sense of smell\n"
-    "to detect the emotions of others.");
+    "Khứu giác tuyệt vời giúp POKéMON này không\n"
+    "bao giờ quên bất kỳ mùi nào. Nó còn dùng\n"
+    "khứu giác để nhận biết cảm xúc của kẻ khác."
+);
 
 const u8 gArcaninePokedexText[] = _(
-    "This fleet-footed POKéMON is said to run\n"
-    "over 6,200 miles in a single day and night.\n"
-    "The fire that blazes wildly within its body\n"
-    "is its source of power.");
+    "POKéMON nhanh chân này được cho là chạy\n"
+    "hơn 6.200 dặm trong một ngày đêm. Ngọn lửa\n"
+    "cháy dữ dội trong cơ thể là nguồn sức mạnh\n"
+    "của nó."
+);
 
 const u8 gPoliwagPokedexText[] = _(
-    "It is possible to see this POKéMON's spiral\n"
-    "innards right through its thin skin.\n"
-    "However, the skin is also very flexible.\n"
-    "Even sharp fangs bounce right off it.");
+    "Có thể nhìn xuyên làn da mỏng để thấy nội\n"
+    "tạng xoắn ốc của nó. Tuy vậy, da nó rất đàn\n"
+    "hồi; ngay cả nanh sắc cũng bật ngược ra."
+);
 
 const u8 gPoliwhirlPokedexText[] = _(
-    "Its body surface is always wet and slick\n"
-    "with an oily fluid. Because of this greasy\n"
-    "covering, it can easily slip and slide out\n"
-    "of the clutches of any enemy in battle.");
+    "Bề mặt cơ thể luôn ướt và trơn nhờ một lớp\n"
+    "dịch dầu. Lớp phủ này giúp nó dễ dàng tuột\n"
+    "khỏi vòng kìm giữ của mọi đối thủ khi chiến\n"
+    "đấu."
+);
 
 const u8 gPoliwrathPokedexText[] = _(
-    "Its highly developed muscles never grow\n"
-    "fatigued, however much it exercises.\n"
-    "This POKéMON can swim back and forth\n"
-    "across the Pacific Ocean without effort.");
+    "Cơ bắp phát triển cao của nó không bao giờ\n"
+    "mỏi, dù luyện tập bao nhiêu. POKéMON này có\n"
+    "thể bơi qua lại Pacific Ocean mà không tốn\n"
+    "sức."
+);
 
 const u8 gAbraPokedexText[] = _(
-    "A POKéMON that sleeps 18 hours a day.\n"
-    "Observation revealed that it uses\n"
-    "TELEPORT to change its location once\n"
-    "every hour.");
+    "POKéMON này ngủ 18 giờ mỗi ngày. Quan sát\n"
+    "cho thấy cứ mỗi giờ, nó dùng TELEPORT một\n"
+    "lần để đổi vị trí."
+);
 
 const u8 gKadabraPokedexText[] = _(
-    "It is rumored that a boy with psychic\n"
-    "abilities suddenly transformed into\n"
-    "KADABRA while he was assisting research\n"
-    "into extrasensory powers.");
+    "Có lời đồn rằng một cậu bé có năng lực tâm\n"
+    "linh đột nhiên biến thành KADABRA khi đang\n"
+    "hỗ trợ nghiên cứu về sức mạnh ngoại cảm."
+);
 
 const u8 gAlakazamPokedexText[] = _(
-    "While it has strong psychic abilities and\n"
-    "high intelligence, an ALAKAZAM's muscles\n"
-    "are very weak. It uses psychic power to\n"
-    "move its body.");
+    "Dù có năng lực tâm linh mạnh và trí thông\n"
+    "minh cao, cơ bắp của ALAKAZAM rất yếu. Nó\n"
+    "dùng sức mạnh tâm linh để di chuyển cơ thể."
+);
 
 const u8 gMachopPokedexText[] = _(
-    "It continually undertakes strenuous\n"
-    "training to master all forms of martial\n"
-    "arts. Its strength lets it easily hoist\n"
-    "a sumo wrestler onto its shoulders.");
+    "Nó không ngừng luyện tập khắc nghiệt để\n"
+    "tinh thông mọi môn võ. Sức mạnh của nó đủ để\n"
+    "dễ dàng nhấc một đô vật sumo lên vai."
+);
 
 const u8 gMachokePokedexText[] = _(
-    "A belt is worn by a MACHOKE to keep its\n"
-    "overwhelming power under control.\n"
-    "Because it is so dangerous, no one has\n"
-    "ever removed the belt.");
+    "MACHOKE đeo một chiếc đai để kiềm chế sức\n"
+    "mạnh áp đảo. Vì việc tháo đai quá nguy hiểm,\n"
+    "chưa từng có ai làm điều đó."
+);
 
 const u8 gMachampPokedexText[] = _(
-    "It is impossible to defend against punches\n"
-    "and chops doled out by its four arms.\n"
-    "Its fighting spirit flares up when it faces\n"
-    "a tough opponent.");
+    "Không thể phòng thủ trước những cú đấm và\n"
+    "đòn chặt từ bốn cánh tay của nó. Tinh thần\n"
+    "chiến đấu bùng lên khi nó gặp đối thủ mạnh."
+);
 
 const u8 gBellsproutPokedexText[] = _(
-    "A BELLSPROUT's thin and flexible body lets\n"
-    "it bend and sway to avoid any attack,\n"
-    "however strong it may be. From its mouth,\n"
-    "it leaks a fluid that melts even iron.");
+    "Cơ thể mảnh và dẻo giúp BELLSPROUT uốn lượn\n"
+    "né mọi đòn tấn công, dù mạnh đến đâu. Chất\n"
+    "lỏng rỉ từ miệng nó có thể làm tan cả sắt."
+);
 
 const u8 gWeepinbellPokedexText[] = _(
-    "At night, a WEEPINBELL hangs on to a tree\n"
-    "branch with its hooked rear and sleeps.\n"
-    "If it moves around in its sleep, it may\n"
-    "wake up to find itself on the ground.");
+    "Ban đêm, WEEPINBELL dùng phần đuôi có móc\n"
+    "bám vào cành cây để ngủ. Nếu cựa quậy trong\n"
+    "giấc ngủ, nó có thể tỉnh dậy và thấy mình nằm\n"
+    "dưới đất."
+);
 
 const u8 gVictreebelPokedexText[] = _(
-    "The long vine extending from its head is\n"
-    "waved about as if it were a living thing to\n"
-    "attract prey. When an unsuspecting victim\n"
-    "approaches, it is swallowed whole.");
+    "Dây leo dài trên đầu nó ve vẩy như sinh vật\n"
+    "sống để dụ con mồi. Khi nạn nhân mất cảnh\n"
+    "giác tiến lại gần, nó sẽ nuốt chửng toàn bộ."
+);
 
 const u8 gTentacoolPokedexText[] = _(
-    "Its body is almost entirely composed of\n"
-    "water. It ensnares its foe with its two\n"
-    "long tentacles, then stabs with the poison\n"
-    "stingers at their tips.");
+    "Cơ thể nó gần như hoàn toàn là nước. Nó\n"
+    "quấn chặt đối thủ bằng hai xúc tu dài, rồi đâm\n"
+    "bằng các ngòi độc ở đầu xúc tu."
+);
 
 const u8 gTentacruelPokedexText[] = _(
-    "It lives in complex rock formations on\n"
-    "the ocean floor and traps prey using its\n"
-    "80 tentacles. Its red orbs glow when it\n"
-    "grows excited or agitated.");
+    "Nó sống trong các cấu trúc đá phức tạp dưới\n"
+    "đáy biển và dùng 80 xúc tu để bắt mồi. Những\n"
+    "quả cầu đỏ phát sáng khi nó phấn khích hoặc\n"
+    "kích động."
+);
 
 const u8 gGeodudePokedexText[] = _(
-    "It climbs mountain paths using only the\n"
-    "power of its arms. Because they look just\n"
-    "like boulders lining paths, hikers may step\n"
-    "on them without noticing.");
+    "Nó chỉ dùng sức mạnh đôi tay để leo đường\n"
+    "núi. Vì trông hệt những tảng đá ven đường,\n"
+    "nó có thể bị người đi bộ giẫm lên mà không\n"
+    "hay."
+);
 
 const u8 gGravelerPokedexText[] = _(
-    "They descend from mountains by tumbling\n"
-    "down steep slopes. They are so brutal,\n"
-    "they smash aside obstructing trees and\n"
-    "massive boulders with thunderous tackles.");
+    "Chúng xuống núi bằng cách lăn dọc sườn dốc.\n"
+    "Chúng hung bạo đến mức dùng những cú húc\n"
+    "vang như sấm để phá tan cây cối và đá tảng\n"
+    "cản đường."
+);
 
 const u8 gGolemPokedexText[] = _(
-    "It is said to live in volcanic craters\n"
-    "on mountain peaks. Once a year, it sheds\n"
-    "its hide and grows larger. The shed hide\n"
-    "crumbles and returns to the soil.");
+    "Tương truyền nó sống trong miệng núi lửa\n"
+    "trên đỉnh núi. Mỗi năm, nó lột da và lớn hơn.\n"
+    "Lớp da cũ vụn ra rồi trở về với đất."
+);
 
 const u8 gPonytaPokedexText[] = _(
-    "A PONYTA is very weak at birth. It can\n"
-    "barely stand up. Its legs become stronger\n"
-    "as it stumbles and falls while trying to\n"
-    "keep up with its parent.");
+    "PONYTA rất yếu khi mới sinh và gần như không\n"
+    "đứng nổi. Chân nó khỏe dần qua những lần vấp\n"
+    "ngã khi cố theo kịp ba mẹ."
+);
 
 const u8 gRapidashPokedexText[] = _(
-    "It usually canters casually in the fields\n"
-    "and plains. But once a RAPIDASH turns\n"
-    "serious, its fiery manes flare and blaze\n"
-    "as it gallops its way up to 150 mph.");
+    "Nó thường thong thả chạy nước kiệu trên\n"
+    "đồng cỏ và đồng bằng. Khi RAPIDASH nghiêm\n"
+    "túc, bờm lửa bùng cháy lúc nó phi nước đại\n"
+    "tới 150 dặm/giờ."
+);
 
 const u8 gSlowpokePokedexText[] = _(
-    "It catches prey by dipping its tail in\n"
-    "water at the side of a river. But it often\n"
-    "forgets what it is doing and spends entire\n"
-    "days just loafing at water's edge.");
+    "Nó bắt mồi bằng cách nhúng đuôi xuống nước\n"
+    "bên bờ sông. Nhưng nó thường quên mình\n"
+    "đang làm gì và nằm lười bên mép nước suốt\n"
+    "cả ngày."
+);
 
 const u8 gSlowbroPokedexText[] = _(
-    "Its tail has a SHELLDER firmly attached\n"
-    "with a bite. As a result, the tail can't be\n"
-    "used for fishing anymore. This forces it\n"
-    "to reluctantly swim and catch prey.");
+    "Một SHELLDER cắn chặt vào đuôi nó, khiến\n"
+    "chiếc đuôi không thể dùng để câu cá nữa. Vì\n"
+    "thế, nó đành miễn cưỡng bơi đi bắt mồi."
+);
 
 const u8 gMagnemitePokedexText[] = _(
-    "The units at its sides are extremely\n"
-    "powerful magnets. They generate enough\n"
-    "magnetism to draw in iron objects from\n"
-    "over 300 feet away.");
+    "Các bộ phận hai bên cơ thể là những nam châm\n"
+    "cực mạnh. Chúng tạo ra từ tính đủ sức hút\n"
+    "vật bằng sắt từ khoảng cách hơn 300 feet."
+);
 
 const u8 gMagnetonPokedexText[] = _(
-    "It is actually three MAGNEMITE linked\n"
-    "by magnetism. It generates powerful radio\n"
-    "waves that raise temperatures by 3.6\n"
-    "degrees F within a 3,300-foot radius.");
+    "Nó thực chất là ba MAGNEMITE liên kết bằng\n"
+    "từ tính. Sóng vô tuyến mạnh của nó làm nhiệt\n"
+    "độ tăng 3,6 độ F trong bán kính 3.300 feet."
+);
 
 const u8 gFarfetchdPokedexText[] = _(
-    "It is always seen with a stick from a plant.\n"
-    "Apparently, there are good sticks and bad\n"
-    "sticks. This POKéMON occasionally fights\n"
-    "with others over choice sticks.");
+    "Nó luôn mang theo một cành cây. Dường như\n"
+    "cành cây cũng có loại tốt và xấu. POKéMON này\n"
+    "đôi khi đánh nhau với đồng loại để giành\n"
+    "cành ưng ý."
+);
 
 const u8 gDoduoPokedexText[] = _(
-    "Even while eating or sleeping, one of the\n"
-    "heads remains always vigilant for any sign\n"
-    "of danger. When threatened, it flees at\n"
-    "over 60 miles per hour.");
+    "Ngay cả lúc ăn hay ngủ, một đầu vẫn luôn cảnh\n"
+    "giác trước mọi dấu hiệu nguy hiểm. Khi bị đe\n"
+    "dọa, nó chạy trốn với tốc độ hơn 60 dặm/giờ."
+);
 
 const u8 gDodrioPokedexText[] = _(
-    "A peculiar POKéMON species with three\n"
-    "heads. It vigorously races across grassy\n"
-    "plains even in arid seasons with little\n"
-    "rainfall.");
+    "Một loài POKéMON kỳ lạ có ba đầu. Ngay cả\n"
+    "trong mùa khô hạn ít mưa, nó vẫn chạy hết\n"
+    "tốc lực qua những đồng cỏ."
+);
 
 const u8 gSeelPokedexText[] = _(
-    "SEEL hunt for prey in frigid, ice-covered\n"
-    "seas. When it needs to breathe, it punches\n"
-    "a hole through the ice with the sharply\n"
-    "protruding section of its head.");
+    "SEEL săn mồi trong vùng biển băng giá phủ kín\n"
+    "băng. Khi cần thở, nó dùng phần nhô sắc trên\n"
+    "đầu đục một lỗ xuyên qua băng."
+);
 
 const u8 gDewgongPokedexText[] = _(
-    "It loves to snooze on bitterly cold ice.\n"
-    "The sight of this POKéMON sleeping on\n"
-    "a glacier was mistakenly thought to be\n"
-    "a mermaid by a mariner long ago.");
+    "Nó thích ngủ trên lớp băng lạnh buốt. Thuở\n"
+    "xưa, một thủy thủ từng nhầm POKéMON đang\n"
+    "ngủ trên sông băng này là nàng tiên cá."
+);
 
 const u8 gGrimerPokedexText[] = _(
-    "Born from polluted sludge in the sea,\n"
-    "GRIMER's favorite food is anything filthy.\n"
-    "They feed on wastewater pumped out from\n"
-    "factories.");
+    "Sinh ra từ bùn ô nhiễm dưới biển, GRIMER\n"
+    "thích ăn mọi thứ bẩn thỉu. Chúng ăn nước\n"
+    "thải do các nhà máy xả ra."
+);
 
 const u8 gMukPokedexText[] = _(
-    "It prefers warm and humid habitats.\n"
-    "In the summertime, the toxic substances\n"
-    "in its body intensify, making MUK reek like\n"
-    "putrid kitchen garbage.");
+    "Nó ưa môi trường ấm và ẩm. Vào mùa hè, độc\n"
+    "chất trong cơ thể mạnh hơn, khiến MUK bốc\n"
+    "mùi như rác bếp thối rữa."
+);
 
 const u8 gShellderPokedexText[] = _(
-    "At night, it burrows a hole in the seafloor\n"
-    "with its broad tongue to make a place to\n"
-    "sleep. While asleep, it closes its shell,\n"
-    "but leaves its tongue hanging out.");
+    "Ban đêm, nó dùng chiếc lưỡi rộng đào lỗ dưới\n"
+    "đáy biển làm chỗ ngủ. Khi ngủ, nó khép vỏ\n"
+    "nhưng vẫn để lưỡi thè ra ngoài."
+);
 
 const u8 gCloysterPokedexText[] = _(
-    "It swims in the sea by swallowing water,\n"
-    "then jetting it out toward the rear.\n"
-    "The CLOYSTER shoots spikes from its\n"
-    "shell using the same system.");
+    "Nó bơi bằng cách nuốt nước biển rồi phụt về\n"
+    "phía sau. CLOYSTER cũng dùng cơ chế ấy để\n"
+    "bắn gai từ vỏ."
+);
 
 const u8 gGastlyPokedexText[] = _(
-    "When exposed to a strong wind, a GASTLY's\n"
-    "gaseous body quickly dwindles away.\n"
-    "They cluster under the eaves of houses\n"
-    "to escape the ravages of wind.");
+    "Khi gặp gió mạnh, cơ thể khí của GASTLY\n"
+    "nhanh chóng tan đi. Chúng tụ dưới mái hiên\n"
+    "nhà để tránh sự tàn phá của gió."
+);
 
 const u8 gHaunterPokedexText[] = _(
-    "If a HAUNTER beckons you while it is\n"
-    "floating in darkness, don't approach it.\n"
-    "This POKéMON will try to lick you with its\n"
-    "tongue and steal your life away.");
+    "Nếu HAUNTER nổi trong bóng tối và vẫy gọi\n"
+    "bạn, đừng lại gần. POKéMON này sẽ cố liếm bạn\n"
+    "bằng lưỡi và cướp đi sinh mạng của bạn."
+);
 
 const u8 gGengarPokedexText[] = _(
-    "Deep in the night, your shadow cast by\n"
-    "a streetlight may suddenly overtake you.\n"
-    "It is actually a GENGAR running past\n"
-    "you, pretending to be your shadow.");
+    "Giữa đêm khuya, chiếc bóng do đèn đường hắt\n"
+    "ra có thể bất chợt vượt lên trước bạn. Thật\n"
+    "ra đó là GENGAR chạy ngang, giả làm bóng của\n"
+    "bạn."
+);
 
 const u8 gOnixPokedexText[] = _(
-    "There is a magnet in its brain that\n"
-    "prevents an ONIX from losing direction\n"
-    "while tunneling. As it grows older, its body\n"
-    "becomes steadily rounder and smoother.");
+    "Trong não nó có một nam châm giúp ONIX không\n"
+    "mất phương hướng khi đào hầm. Càng lớn\n"
+    "tuổi, cơ thể nó càng tròn và nhẵn hơn."
+);
 
 const u8 gDrowzeePokedexText[] = _(
-    "If your nose becomes itchy while you are\n"
-    "sleeping, it's a sure sign that a DROWZEE is\n"
-    "standing above your pillow and trying to\n"
-    "eat your dream through your nostrils.");
+    "Nếu mũi bạn ngứa khi ngủ, chắc chắn DROWZEE\n"
+    "đang đứng phía trên gối và cố ăn giấc mơ của\n"
+    "bạn qua lỗ mũi."
+);
 
 const u8 gHypnoPokedexText[] = _(
-    "The arcing movement and glitter of the\n"
-    "pendulum in a HYPNO's hand lull the foe\n"
-    "into deep hypnosis. While searching for\n"
-    "prey, it polishes the pendulum.");
+    "Chuyển động vòng cung và ánh lấp lánh của\n"
+    "con lắc trong tay HYPNO đưa đối thủ vào\n"
+    "trạng thái thôi miên sâu. Khi săn mồi, nó đánh\n"
+    "bóng con lắc."
+);
 
 const u8 gKrabbyPokedexText[] = _(
-    "KRABBY live in holes dug into beaches.\n"
-    "On sandy shores with little in the way\n"
-    "of food, they can be seen squabbling with\n"
-    "each other over territory.");
+    "KRABBY sống trong các hang đào trên bãi\n"
+    "biển. Ở những bờ cát khan hiếm thức ăn,\n"
+    "chúng thường tranh giành lãnh thổ với nhau."
+);
 
 const u8 gKinglerPokedexText[] = _(
-    "It waves its huge, oversized claw in the\n"
-    "air to communicate with others.\n"
-    "But since the claw is so heavy, this\n"
-    "POKéMON quickly tires.");
+    "Nó vung chiếc càng khổng lồ trong không\n"
+    "trung để giao tiếp với đồng loại. Nhưng chiếc\n"
+    "càng quá nặng nên POKéMON này nhanh chóng\n"
+    "mệt lả."
+);
 
 const u8 gVoltorbPokedexText[] = _(
-    "It bears an uncanny and unexplained\n"
-    "resemblance to a POKé BALL. Because it\n"
-    "explodes at the slightest shock, even\n"
-    "veteran TRAINERS treat it with caution.");
+    "Nó giống POKé BALL đến kỳ lạ mà không rõ lý\n"
+    "do. Vì phát nổ chỉ bởi một va chạm nhẹ, ngay\n"
+    "cả HLV kỳ cựu cũng luôn dè chừng."
+);
 
 const u8 gElectrodePokedexText[] = _(
-    "They appear in great numbers at electric\n"
-    "power plants. Because they feed on\n"
-    "electricity, they cause massive and\n"
-    "chaotic blackouts in nearby cities.");
+    "Chúng tụ tập rất đông tại các nhà máy điện.\n"
+    "Vì ăn điện, chúng gây ra những đợt mất điện\n"
+    "nghiêm trọng và hỗn loạn ở các thành phố lân\n"
+    "cận."
+);
 
 const u8 gExeggcutePokedexText[] = _(
-    "It consists of six eggs that care for each\n"
-    "other. The eggs attract each other and\n"
-    "spin around. When cracks increasingly\n"
-    "appear, it is close to evolution.");
+    "Nó gồm sáu quả trứng chăm sóc lẫn nhau.\n"
+    "Chúng hút nhau rồi xoay tròn. Khi ngày càng\n"
+    "có nhiều vết nứt, nó sắp tiến hóa."
+);
 
 const u8 gExeggutorPokedexText[] = _(
-    "Originally from the tropics, EXEGGUTOR's\n"
-    "heads grow larger from exposure to strong\n"
-    "sunlight. It is said that when the heads\n"
-    "fall, they group to form an EXEGGCUTE.");
+    "Có nguồn gốc nhiệt đới, đầu của EXEGGUTOR\n"
+    "lớn lên dưới ánh nắng gay gắt. Tương truyền\n"
+    "những chiếc đầu rụng xuống sẽ tụ lại thành\n"
+    "EXEGGCUTE."
+);
 
 const u8 gCubonePokedexText[] = _(
-    "It pines for the mother it will never see\n"
-    "again. Seeing a likeness of its mother in\n"
-    "the full moon, it cries. The stains on the\n"
-    "skull it wears are from its tears.");
+    "Nó thương nhớ người mẹ không bao giờ còn\n"
+    "gặp lại. Thấy bóng mẹ trong trăng tròn, nó bật\n"
+    "khóc. Nước mắt đã để lại vết ố trên chiếc sọ\n"
+    "nó đội."
+);
 
 const u8 gMarowakPokedexText[] = _(
-    "A MAROWAK is the evolved form of a CUBONE\n"
-    "that has grown tough by overcoming the\n"
-    "grief of losing its mother. Its tempered\n"
-    "and hardened spirit is not easily broken.");
+    "MAROWAK là dạng tiến hóa của CUBONE, trở nên\n"
+    "cứng cỏi sau khi vượt qua nỗi đau mất mẹ.\n"
+    "Tinh thần đã được tôi luyện của nó rất khó\n"
+    "khuất phục."
+);
 
 const u8 gHitmonleePokedexText[] = _(
-    "Its legs freely stretch and contract.\n"
-    "Using these springlike limbs, it bowls over\n"
-    "foes with devastating kicks. After battle,\n"
-    "it rubs down its tired legs.");
+    "Chân nó có thể tự do co duỗi. Với đôi chân\n"
+    "như lò xo, nó quật ngã đối thủ bằng những cú\n"
+    "đá dữ dội. Sau trận đấu, nó xoa bóp đôi chân\n"
+    "mỏi."
+);
 
 const u8 gHitmonchanPokedexText[] = _(
-    "A HITMONCHAN is said to possess the\n"
-    "spirit of a boxer who aimed to become the\n"
-    "world champion. Having an indomitable\n"
-    "spirit means that it will never give up.");
+    "HITMONCHAN được cho là mang linh hồn của\n"
+    "một võ sĩ quyền Anh từng quyết tâm trở\n"
+    "thành vô địch thế giới. Với ý chí bất khuất,\n"
+    "nó không bao giờ bỏ cuộc."
+);
 
 const u8 gLickitungPokedexText[] = _(
-    "Whenever it sees something unfamiliar,\n"
-    "it always licks the object because it\n"
-    "memorizes things by texture and taste.\n"
-    "It is somewhat put off by sour things.");
+    "Gặp vật lạ, nó luôn liếm để ghi nhớ kết cấu và\n"
+    "mùi vị. Nó hơi khó chịu với những thứ có vị\n"
+    "chua."
+);
 
 const u8 gKoffingPokedexText[] = _(
-    "Getting up close to a KOFFING will give\n"
-    "you a chance to observe, through its thin\n"
-    "skin, the toxic gases swirling inside. It\n"
-    "blows up at the slightest stimulation.");
+    "Đến gần KOFFING, có thể nhìn qua lớp da mỏng\n"
+    "và thấy khí độc cuộn xoáy bên trong. Nó phát\n"
+    "nổ dù chỉ chịu kích thích rất nhẹ."
+);
 
 const u8 gWeezingPokedexText[] = _(
-    "By diluting its toxic gases with a special\n"
-    "process, the highest grade of perfume can\n"
-    "be extracted. To WEEZING, gases emanating\n"
-    "from garbage are the ultimate feast.");
+    "Qua quy trình đặc biệt pha loãng khí độc của\n"
+    "nó, người ta có thể chiết xuất nước hoa\n"
+    "thượng hạng. Với WEEZING, khí từ rác là món\n"
+    "ngon tuyệt đỉnh."
+);
 
 const u8 gRhyhornPokedexText[] = _(
-    "Once it starts running, it doesn't stop.\n"
-    "Its tiny brain makes it so stupid that it\n"
-    "can't remember why it started running in\n"
-    "the first place.");
+    "Một khi bắt đầu chạy, nó sẽ không dừng lại.\n"
+    "Bộ não bé xíu khiến nó ngốc đến mức chẳng\n"
+    "nhớ nổi vì sao mình bắt đầu chạy."
+);
 
 const u8 gRhydonPokedexText[] = _(
-    "Its horn, which rotates like a drill,\n"
-    "destroys tall buildings with one strike.\n"
-    "It stands on its hind legs, and its brain\n"
-    "is well developed.");
+    "Chiếc sừng xoay như mũi khoan có thể phá\n"
+    "hủy nhà cao tầng chỉ bằng một cú đánh. Nó\n"
+    "đứng bằng hai chân sau và có bộ não phát\n"
+    "triển tốt."
+);
 
 const u8 gChanseyPokedexText[] = _(
-    "CHANSEY lay nutritionally excellent eggs\n"
-    "every day. The eggs are so delicious, they\n"
-    "are eagerly devoured by even those people\n"
-    "who have lost their appetite.");
+    "CHANSEY đẻ những quả trứng giàu dinh dưỡng\n"
+    "mỗi ngày. Trứng ngon đến mức ngay cả người\n"
+    "mất khẩu vị cũng háo hức ăn."
+);
 
 const u8 gTangelaPokedexText[] = _(
-    "Its vines snap off easily and painlessly\n"
-    "if they are grabbed, allowing it to make a\n"
-    "quick getaway. The lost vines are replaced\n"
-    "by new growth the very next day.");
+    "Khi bị túm, dây leo của nó dễ dàng đứt ra mà\n"
+    "không gây đau, giúp nó nhanh chóng trốn\n"
+    "thoát. Chỉ hôm sau, dây mới sẽ mọc thay thế."
+);
 
 const u8 gKangaskhanPokedexText[] = _(
-    "If you come across a young KANGASKHAN\n"
-    "playing by itself, never try to catch it.\n"
-    "The baby's parent is sure to be in the area,\n"
-    "and it will become violently enraged.");
+    "Nếu gặp KANGASKHAN con đang chơi một mình,\n"
+    "tuyệt đối đừng bắt nó. Ba mẹ nó chắc chắn ở\n"
+    "gần và sẽ nổi giận dữ dội."
+);
 
 const u8 gHorseaPokedexText[] = _(
-    "By cleverly flicking the fins on its back\n"
-    "side to side, it moves in any direction\n"
-    "while facing forward. It spits ink to\n"
-    "escape if it senses danger.");
+    "Khéo léo quẫy vây lưng sang hai bên, nó có\n"
+    "thể di chuyển theo mọi hướng mà vẫn nhìn về\n"
+    "phía trước. Khi cảm thấy nguy hiểm, nó phun\n"
+    "mực để trốn."
+);
 
 const u8 gSeadraPokedexText[] = _(
-    "The poisonous barbs all over its body are\n"
-    "highly valued as ingredients for making\n"
-    "traditional herbal medicine. It shows no\n"
-    "mercy to anything approaching its nest.");
+    "Gai độc khắp cơ thể nó rất quý để làm thuốc\n"
+    "thảo dược truyền thống. Nó không khoan\n"
+    "nhượng với bất cứ thứ gì đến gần tổ."
+);
 
 const u8 gGoldeenPokedexText[] = _(
-    "In the springtime, schools of GOLDEEN\n"
-    "can be seen swimming up falls and rivers.\n"
-    "It metes out staggering damage with its\n"
-    "single horn.");
+    "Vào mùa xuân, có thể thấy đàn GOLDEEN bơi\n"
+    "ngược thác và sông. Chiếc sừng duy nhất của\n"
+    "nó gây sát thương khủng khiếp."
+);
 
 const u8 gSeakingPokedexText[] = _(
-    "It punches holes in boulders on stream-\n"
-    "beds. This is a clever innovation that\n"
-    "prevents its eggs from being attacked or\n"
-    "washed away by the current.");
+    "Nó đục lỗ trong đá tảng dưới lòng suối. Cách\n"
+    "làm khôn ngoan này giúp trứng không bị tấn\n"
+    "công hoặc cuốn trôi theo dòng nước."
+);
 
 const u8 gStaryuPokedexText[] = _(
-    "It gathers with others in the night and\n"
-    "makes its red core glow on and off with\n"
-    "the twinkling stars. It can regenerate\n"
-    "limbs if they are severed from its body.");
+    "Ban đêm, chúng tụ tập và làm lõi đỏ chớp sáng\n"
+    "theo những vì sao lấp lánh. Nó có thể tái tạo\n"
+    "các chi bị đứt khỏi cơ thể."
+);
 
 const u8 gStarmiePokedexText[] = _(
-    "People in ancient times imagined that\n"
-    "STARMIE were transformed from the\n"
-    "reflections of stars that twinkled on\n"
-    "gentle waves at night.");
+    "Người xưa tưởng rằng STARMIE được biến\n"
+    "thành từ hình ảnh phản chiếu của những vì\n"
+    "sao lấp lánh trên làn sóng êm dịu ban đêm."
+);
 
 const u8 gMrMimePokedexText[] = _(
-    "A MR. MIME is a master of pantomime. It can\n"
-    "convince others that something unseeable\n"
-    "actually exists. Once believed, the\n"
-    "imaginary object does become real.");
+    "MR. MIME là bậc thầy kịch câm. Nó khiến người\n"
+    "khác tin rằng vật vô hình thực sự tồn tại.\n"
+    "Một khi được tin là có thật, vật tưởng\n"
+    "tượng ấy sẽ hiện hữu."
+);
 
 const u8 gScytherPokedexText[] = _(
-    "Its blindingly fast speed adds to the\n"
-    "sharpness of its twin forearm scythes.\n"
-    "The scythes can slice through thick logs\n"
-    "in one wicked stroke.");
+    "Tốc độ nhanh đến hoa mắt càng làm đôi lưỡi\n"
+    "hái trên cẳng tay nó thêm sắc bén. Chúng có\n"
+    "thể chém đứt khúc gỗ dày chỉ bằng một nhát\n"
+    "hiểm hóc."
+);
 
 const u8 gJynxPokedexText[] = _(
-    "A JYNX sashays rhythmically as if it were\n"
-    "dancing. Its motions are so bouncingly\n"
-    "alluring, people seeing it are compelled to\n"
-    "shake their hips without noticing.");
+    "JYNX uyển chuyển theo nhịp như đang khiêu\n"
+    "vũ. Động tác nhún nhảy cuốn hút đến mức\n"
+    "người nhìn phải lắc hông lúc nào không hay."
+);
 
 const u8 gElectabuzzPokedexText[] = _(
-    "When a storm approaches, it competes with\n"
-    "others to scale heights that are likely to\n"
-    "be stricken by lightning. Some towns use\n"
-    "ELECTABUZZ in place of lightning rods.");
+    "Khi bão đến, chúng tranh nhau leo lên nơi cao\n"
+    "dễ bị sét đánh. Một số thị trấn dùng\n"
+    "ELECTABUZZ thay cho cột thu lôi."
+);
 
 const u8 gMagmarPokedexText[] = _(
-    "In battle, it blows out intense flames from\n"
-    "all over its body to intimidate its foe.\n"
-    "These fiery bursts create heat waves that\n"
-    "ignite grass and trees in the area.");
+    "Trong trận đấu, nó phun lửa dữ dội từ khắp\n"
+    "cơ thể để uy hiếp đối thủ. Những luồng lửa\n"
+    "tạo sóng nhiệt, đốt cháy cỏ cây quanh vùng."
+);
 
 const u8 gPinsirPokedexText[] = _(
-    "Their pincers are strong enough to\n"
-    "shatter thick logs. Because they dislike\n"
-    "cold, PINSIR burrow and sleep under\n"
-    "the ground on chilly nights.");
+    "Cặp càng của chúng đủ mạnh để nghiền nát\n"
+    "khúc gỗ dày. Vì ghét lạnh, PINSIR đào hang và\n"
+    "ngủ dưới đất vào những đêm rét."
+);
 
 const u8 gTaurosPokedexText[] = _(
-    "It is not satisfied unless it is rampaging\n"
-    "at all times. If there is no opponent for\n"
-    "TAUROS to battle, it will charge at thick\n"
-    "trees and knock them down to calm itself.");
+    "Nó chỉ thỏa mãn khi luôn được tung hoành.\n"
+    "Nếu không có đối thủ, TAUROS sẽ húc đổ cây\n"
+    "lớn để tự trấn tĩnh."
+);
 
 const u8 gMagikarpPokedexText[] = _(
-    "Its swimming muscles are weak, so it is\n"
-    "easily washed away by currents. In places\n"
-    "where water pools, you can see many\n"
-    "MAGIKARP deposited there by the flow.");
+    "Cơ bơi yếu khiến nó dễ bị dòng nước cuốn đi.\n"
+    "Ở những nơi nước đọng, có thể thấy nhiều\n"
+    "MAGIKARP bị dòng chảy dồn lại."
+);
 
 const u8 gGyaradosPokedexText[] = _(
-    "It is an extremely vicious and violent\n"
-    "POKéMON. When humans begin to fight,\n"
-    "it will appear and burn everything to the\n"
-    "ground with intensely hot flames.");
+    "Đây là POKéMON cực kỳ hung ác và bạo lực. Khi\n"
+    "con người giao chiến, nó sẽ xuất hiện rồi\n"
+    "dùng lửa nóng dữ dội thiêu rụi mọi thứ."
+);
 
 const u8 gLaprasPokedexText[] = _(
-    "People have driven LAPRAS almost to the\n"
-    "point of extinction. In the evenings,\n"
-    "it is said to sing plaintively as it seeks\n"
-    "what few others of its kind still remain.");
+    "Con người đã đẩy LAPRAS đến sát bờ tuyệt\n"
+    "chủng. Tương truyền vào buổi tối, nó buồn bã\n"
+    "cất tiếng hát để tìm số ít đồng loại còn sót\n"
+    "lại."
+);
 
 const u8 gDittoPokedexText[] = _(
-    "A DITTO rearranges its cell structure to\n"
-    "transform itself. However, if it tries to\n"
-    "change based on its memory, it will get\n"
-    "details wrong.");
+    "DITTO sắp xếp lại cấu trúc tế bào để biến\n"
+    "hình. Tuy nhiên, nếu biến đổi dựa vào trí\n"
+    "nhớ, nó sẽ tái tạo sai một số chi tiết."
+);
 
 const u8 gEeveePokedexText[] = _(
-    "An EEVEE has an unstable genetic makeup\n"
-    "that suddenly mutates due to its\n"
-    "environment. Radiation from various\n"
-    "STONES causes this POKéMON to evolve.");
+    "EEVEE có cấu trúc gene bất ổn, dễ đột biến\n"
+    "bất ngờ do môi trường. Bức xạ từ nhiều loại\n"
+    "STONES khiến POKéMON này tiến hóa."
+);
 
 const u8 gVaporeonPokedexText[] = _(
-    "VAPOREON underwent a spontaneous\n"
-    "mutation and grew fins and gills that\n"
-    "allow them to live underwater. They have\n"
-    "the ability to freely control water.");
+    "VAPOREON đã đột biến tự phát, mọc vây và\n"
+    "mang để sống dưới nước. Nó có khả năng tự\n"
+    "do điều khiển nước."
+);
 
 const u8 gJolteonPokedexText[] = _(
-    "Its cells generate weak power that is\n"
-    "amplified by its fur's static electricity\n"
-    "to drop thunderbolts. The bristling fur is\n"
-    "made of electrically charged needles.");
+    "Tế bào nó tạo ra dòng điện yếu, được tĩnh\n"
+    "điện trong lông khuếch đại để phóng sét. Bộ\n"
+    "lông dựng đứng gồm những chiếc kim tích\n"
+    "điện."
+);
 
 const u8 gFlareonPokedexText[] = _(
-    "FLAREON's fluffy fur releases heat into\n"
-    "the air so that its body does not get\n"
-    "excessively hot. Its body temperature can\n"
-    "rise to a maximum of 1,650 degrees F.");
+    "Bộ lông xù của FLAREON tỏa nhiệt ra không\n"
+    "khí để cơ thể không quá nóng. Thân nhiệt của\n"
+    "nó có thể đạt tối đa 1.650 độ F."
+);
 
 const u8 gPorygonPokedexText[] = _(
-    "It is capable of reverting itself entirely\n"
-    "back to program data in order to enter\n"
-    "cyberspace. A PORYGON is copy-\n"
-    "protected so it cannot be duplicated.");
+    "Nó có thể hoàn toàn trở lại thành dữ liệu\n"
+    "chương trình để bước vào không gian mạng.\n"
+    "PORYGON được chống sao chép nên không thể\n"
+    "nhân bản."
+);
 
 const u8 gOmanytePokedexText[] = _(
-    "One of the ancient and long-since-extinct\n"
-    "POKéMON that have been regenerated\n"
-    "from fossils by humans. If attacked,\n"
-    "it withdraws into its hard shell.");
+    "Đây là một POKéMON cổ đại đã tuyệt chủng từ\n"
+    "lâu, được con người tái tạo từ hóa thạch.\n"
+    "Khi bị tấn công, nó rút vào chiếc vỏ cứng."
+);
 
 const u8 gOmastarPokedexText[] = _(
-    "An OMASTAR uses its tentacles to capture\n"
-    "its prey. It is believed to have become\n"
-    "extinct because its shell grew too large,\n"
-    "making its movements slow and ponderous.");
+    "OMASTAR dùng xúc tu bắt con mồi. Người ta\n"
+    "cho rằng nó tuyệt chủng vì chiếc vỏ phát\n"
+    "triển quá lớn, khiến việc di chuyển chậm chạp\n"
+    "và nặng nề."
+);
 
 const u8 gKabutoPokedexText[] = _(
-    "It is a POKéMON that has been regenerated\n"
-    "from a fossil. However, in rare cases, living\n"
-    "examples have been discovered. KABUTO\n"
-    "have not changed for 300 million years.");
+    "Đây là POKéMON được tái tạo từ hóa thạch,\n"
+    "nhưng đôi khi vẫn phát hiện cá thể còn sống.\n"
+    "KABUTO không hề thay đổi suốt 300 triệu năm."
+);
 
 const u8 gKabutopsPokedexText[] = _(
-    "KABUTOPS once swam underwater to hunt \n"
-    "for prey. It was apparently evolving from\n"
-    "being a water dweller to living on land as\n"
-    "evident from changes in its gills and legs.");
+    "KABUTOPS từng bơi dưới nước để săn mồi.\n"
+    "Những thay đổi ở mang và chân cho thấy nó\n"
+    "đang tiến hóa từ loài sống dưới nước sang\n"
+    "sống trên cạn."
+);
 
 const u8 gAerodactylPokedexText[] = _(
-    "AERODACTYL is a POKéMON from the age\n"
-    "of dinosaurs. It was regenerated from DNA\n"
-    "extracted from amber. It is imagined to\n"
-    "have been the king of the skies.");
+    "AERODACTYL là POKéMON từ thời khủng long,\n"
+    "được tái tạo bằng DNA chiết xuất từ hổ\n"
+    "phách. Nó được hình dung là vua của bầu\n"
+    "trời."
+);
 
 const u8 gSnorlaxPokedexText[] = _(
-    "SNORLAX's typical day consists of nothing\n"
-    "more than eating and sleeping. It is such\n"
-    "a docile POKéMON that there are children\n"
-    "who use its big belly as a place to play.");
+    "Mỗi ngày, SNORLAX chẳng làm gì ngoài ăn và\n"
+    "ngủ. POKéMON này hiền đến mức trẻ em có thể\n"
+    "dùng chiếc bụng lớn của nó làm chỗ vui chơi."
+);
 
 const u8 gArticunoPokedexText[] = _(
-    "ARTICUNO is a legendary bird POKéMON that\n"
-    "can control ice. The flapping of its wings\n"
-    "chills the air. As a result, it is said that\n"
-    "when this POKéMON flies, snow will fall.");
+    "ARTICUNO là POKéMON chim huyền thoại có thể\n"
+    "điều khiển băng. Đôi cánh nó làm lạnh không\n"
+    "khí, nên tương truyền tuyết sẽ rơi khi nó\n"
+    "bay."
+);
 
 const u8 gZapdosPokedexText[] = _(
-    "ZAPDOS is a legendary bird POKéMON that\n"
-    "has the ability to control electricity.\n"
-    "It usually lives in thunderclouds. It gains\n"
-    "power if it is stricken by lightning bolts.");
+    "ZAPDOS là POKéMON chim huyền thoại có thể\n"
+    "điều khiển điện. Nó thường sống trong mây\n"
+    "giông và trở nên mạnh hơn khi bị sét đánh."
+);
 
 const u8 gMoltresPokedexText[] = _(
-    "MOLTRES is a legendary bird POKéMON\n"
-    "that can control fire. If injured, it is said\n"
-    "to dip its body in the molten magma of\n"
-    "a volcano to burn and heal itself.");
+    "MOLTRES là POKéMON chim huyền thoại có thể\n"
+    "điều khiển lửa. Khi bị thương, nó được cho\n"
+    "là nhúng mình vào magma núi lửa để thiêu đốt\n"
+    "và tự chữa lành."
+);
 
 const u8 gDratiniPokedexText[] = _(
-    "A DRATINI continually molts and sloughs\n"
-    "off its old skin. It does so because the\n"
-    "life energy within its body steadily builds\n"
-    "to reach uncontrollable levels.");
+    "DRATINI liên tục lột bỏ lớp da cũ. Nó làm vậy\n"
+    "vì sinh lực trong cơ thể không ngừng tăng\n"
+    "lên, dần đạt mức không thể kiểm soát."
+);
 
 const u8 gDragonairPokedexText[] = _(
-    "A DRAGONAIR stores an enormous amount of\n"
-    "energy inside its body. It is said to alter\n"
-    "the weather around it by loosing energy\n"
-    "from the crystals on its neck and tail.");
+    "DRAGONAIR tích trữ năng lượng khổng lồ\n"
+    "trong cơ thể. Tương truyền nó thay đổi thời\n"
+    "tiết quanh mình bằng cách giải phóng năng\n"
+    "lượng từ tinh thể ở cổ và đuôi."
+);
 
 const u8 gDragonitePokedexText[] = _(
-    "It can circle the globe in just 16 hours.\n"
-    "It is a kindhearted POKéMON that leads\n"
-    "lost and foundering ships in a storm\n"
-    "to the safety of land.");
+    "Nó có thể bay vòng quanh địa cầu chỉ trong\n"
+    "16 giờ. POKéMON tốt bụng này dẫn những con\n"
+    "tàu lạc lối, sắp chìm giữa bão về đất liền an\n"
+    "toàn."
+);
 
 const u8 gMewtwoPokedexText[] = _(
-    "A POKéMON that was created by genetic\n"
-    "manipulation. However, even though the\n"
-    "scientific power of humans made its body,\n"
-    "they failed to give it a warm heart.");
+    "Một POKéMON được tạo ra bằng thao tác di\n"
+    "truyền. Dù khoa học của con người tạo nên\n"
+    "cơ thể nó, họ vẫn không thể trao cho nó một\n"
+    "trái tim ấm áp."
+);
 
 const u8 gMewPokedexText[] = _(
-    "A MEW is said to possess the genes of all\n"
-    "POKéMON. It is capable of making itself\n"
-    "invisible at will, so it entirely avoids\n"
-    "notice even if it approaches people.");
+    "MEW được cho là mang gene của mọi POKéMON.\n"
+    "Nó có thể tùy ý trở nên vô hình, nên dù đến\n"
+    "gần con người cũng hoàn toàn không bị phát\n"
+    "hiện."
+);
 
 const u8 gChikoritaPokedexText[] = _(
-    "It waves its leaf around to keep foes\n"
-    "at bay. However, a sweet fragrance also\n"
-    "wafts from the leaf, creating a friendly\n"
-    "atmosphere that becalms the battlers.");
+    "Nó vung chiếc lá để ngăn đối thủ đến gần.\n"
+    "Nhưng lá cũng tỏa hương ngọt ngào, tạo bầu\n"
+    "không khí thân thiện khiến các bên giao đấu\n"
+    "bình tâm."
+);
 
 const u8 gBayleefPokedexText[] = _(
-    "A BAYLEEF's neck is ringed by curled-up\n"
-    "leaves. Inside each leaf is a small tree\n"
-    "shoot. The fragrance of this shoot\n"
-    "makes people peppy.");
+    "Quanh cổ BAYLEEF là những chiếc lá cuộn lại.\n"
+    "Trong mỗi lá có một chồi cây nhỏ, tỏa hương\n"
+    "khiến con người trở nên phấn chấn."
+);
 
 const u8 gMeganiumPokedexText[] = _(
-    "The fragrance of a MEGANIUM's flower\n"
-    "soothes and calms emotions. In battle,\n"
-    "it gives off more of its becalming scent\n"
-    "to blunt the foe's fighting spirit.");
+    "Hương hoa của MEGANIUM xoa dịu và làm cảm\n"
+    "xúc lắng lại. Khi chiến đấu, nó tỏa nhiều\n"
+    "hương êm dịu hơn để làm giảm ý chí chiến đấu\n"
+    "của đối thủ."
+);
 
 const u8 gCyndaquilPokedexText[] = _(
-    "It flares flames from its back to protect\n"
-    "itself. The fire burns vigorously if the\n"
-    "POKéMON is angry. When it is tired,\n"
-    "it sputters with incomplete combustion.");
+    "Nó phun lửa từ lưng để tự vệ. Lửa cháy dữ\n"
+    "dội khi POKéMON này tức giận; lúc mệt, lửa\n"
+    "phì phò do cháy không hoàn toàn."
+);
 
 const u8 gQuilavaPokedexText[] = _(
-    "It intimidates foes with intense gusts of\n"
-    "flames and superheated air. Its quick\n"
-    "nimbleness lets it dodge attacks even\n"
-    "while scorching an enemy.");
+    "Nó uy hiếp đối thủ bằng những luồng lửa dữ\n"
+    "dội và khí nóng cực độ. Sự nhanh nhẹn giúp\n"
+    "nó vừa thiêu đốt kẻ địch vừa né các đòn tấn\n"
+    "công."
+);
 
 const u8 gTyphlosionPokedexText[] = _(
-    "It can hide behind a shimmering heat haze\n"
-    "that it creates using its intense flames.\n"
-    "TYPHLOSION create blazing explosive\n"
-    "blasts that burn everything to cinders.");
+    "Nó ẩn mình sau màn khí nóng lung linh do ngọn\n"
+    "lửa dữ dội tạo ra. TYPHLOSION gây những vụ\n"
+    "nổ rực lửa, thiêu mọi thứ thành tro."
+);
 
 const u8 gTotodilePokedexText[] = _(
-    "Despite its small body, TOTODILE's jaws\n"
-    "are very powerful. While it may think it is\n"
-    "just playfully nipping, its bite has enough\n"
-    "strength to cause serious injury.");
+    "Dù thân hình nhỏ bé, hàm TOTODILE rất khỏe.\n"
+    "Nó có thể chỉ nghĩ mình đang cắn đùa, nhưng\n"
+    "lực cắn đủ mạnh để gây thương tích nghiêm\n"
+    "trọng."
+);
 
 const u8 gCroconawPokedexText[] = _(
-    "Once its jaws clamp down on its foe, it will\n"
-    "absolutely not let go. Because the tips of\n"
-    "its fangs are forked back like fishhooks,\n"
-    "they become irremovably embedded.");
+    "Một khi đã ngoạm đối thủ, nó nhất quyết\n"
+    "không nhả. Đầu nanh chẻ ngược như lưỡi câu\n"
+    "nên cắm sâu đến mức không thể gỡ ra."
+);
 
 const u8 gFeraligatrPokedexText[] = _(
-    "It opens its huge mouth to intimidate\n"
-    "enemies. In battle, it runs using its thick\n"
-    "and powerful hind legs to charge the\n"
-    "foe with incredible speed.");
+    "Nó há chiếc miệng khổng lồ để uy hiếp kẻ địch.\n"
+    "Khi chiến đấu, đôi chân sau to khỏe giúp nó\n"
+    "lao vào đối thủ với tốc độ đáng kinh ngạc."
+);
 
 const u8 gSentretPokedexText[] = _(
-    "They take turns standing guard when it\n"
-    "is time to sleep. The sentry awakens the\n"
-    "others if it senses danger. If one becomes\n"
-    "separated, it turns sleepless with fear.");
+    "Khi ngủ, chúng thay phiên canh gác. Con trực\n"
+    "sẽ đánh thức cả đàn nếu cảm thấy nguy hiểm.\n"
+    "SENTRET bị tách đàn sẽ sợ hãi đến mất ngủ."
+);
 
 const u8 gFurretPokedexText[] = _(
-    "A FURRET has a very slim build. When under\n"
-    "attack, it can squirm through narrow\n"
-    "spaces and get away. In spite of its short\n"
-    "limbs, it is very nimble and fleet.");
+    "FURRET có thân hình rất mảnh. Khi bị tấn\n"
+    "công, nó có thể luồn qua khe hẹp để trốn\n"
+    "thoát. Dù chân ngắn, nó vẫn cực kỳ nhanh\n"
+    "nhẹn."
+);
 
 const u8 gHoothootPokedexText[] = _(
-    "It has an internal organ that senses\n"
-    "the earth's rotation. Using this special\n"
-    "organ, a HOOTHOOT begins hooting at\n"
-    "precisely the same time every day.");
+    "Nó có cơ quan bên trong cảm nhận sự tự quay\n"
+    "của Trái Đất. Nhờ đó, HOOTHOOT cất tiếng kêu\n"
+    "đúng vào cùng một thời điểm mỗi ngày."
+);
 
 const u8 gNoctowlPokedexText[] = _(
-    "It unfailingly catches prey in darkness.\n"
-    "NOCTOWL owe their success to superior\n"
-    "vision that allows them to see in minimal\n"
-    "light, and to their supple and silent wings.");
+    "NOCTOWL luôn bắt được con mồi trong bóng\n"
+    "tối nhờ thị lực vượt trội ở nơi ánh sáng yếu\n"
+    "cùng đôi cánh mềm dẻo, không gây tiếng động."
+);
 
 const u8 gLedybaPokedexText[] = _(
-    "LEDYBA communicate using a fluid that\n"
-    "they secrete from where the legs join the\n"
-    "body. They are said to convey feelings to\n"
-    "others by altering the fluid's scent.");
+    "LEDYBA giao tiếp bằng chất lỏng tiết ra ở chỗ\n"
+    "chân nối với cơ thể. Chúng được cho là\n"
+    "truyền đạt cảm xúc bằng cách thay đổi mùi\n"
+    "của chất này."
+);
 
 const u8 gLedianPokedexText[] = _(
-    "It is said that in lands with clean air,\n"
-    "where the stars fill the sky, there live\n"
-    "many LEDIAN. For good reason, they use\n"
-    "the light of the stars as energy.");
+    "Người ta nói nhiều LEDIAN sống ở những vùng\n"
+    "không khí trong lành, nơi trời đầy sao, vì\n"
+    "chúng dùng ánh sao làm năng lượng."
+);
 
 const u8 gSpinarakPokedexText[] = _(
-    "The web it spins can be considered its\n"
-    "second nervous system. It is said that a\n"
-    "SPINARAK determines its prey by the tiny\n"
-    "vibrations it feels through the web.");
+    "Tấm lưới nó giăng có thể xem như hệ thần\n"
+    "kinh thứ hai. SPINARAK được cho là nhận biết\n"
+    "con mồi qua những rung động cực nhỏ truyền\n"
+    "trên lưới."
+);
 
 const u8 gAriadosPokedexText[] = _(
-    "Its feet are tipped with tiny hooked claws\n"
-    "that enable it to scuttle on ceilings and\n"
-    "vertical walls. It constricts its foe with\n"
-    "thin and strong silk webbing.");
+    "Chân nó có vuốt móc tí hon, giúp bò trên trần\n"
+    "và tường đứng. Nó siết chặt đối thủ bằng\n"
+    "những sợi tơ mảnh nhưng bền chắc."
+);
 
 const u8 gCrobatPokedexText[] = _(
-    "Over the course of evolution, its hind legs\n"
-    "turned into wings. By alternately resting\n"
-    "its front and rear wings, it can fly all day\n"
-    "without having to stop.");
+    "Trong quá trình tiến hóa, chân sau của nó\n"
+    "biến thành cánh. Bằng cách luân phiên cho\n"
+    "cánh trước và sau nghỉ, CROBAT có thể bay\n"
+    "cả ngày không cần dừng lại."
+);
 
 const u8 gChinchouPokedexText[] = _(
-    "When it senses danger, it discharges\n"
-    "positive and negative electricity from its\n"
-    "two antennae. It lives in depths beyond\n"
-    "sunlight's reach.");
+    "Khi cảm thấy nguy hiểm, nó phóng điện dương\n"
+    "và âm từ hai chiếc râu. CHINCHOU sống ở độ\n"
+    "sâu mà ánh mặt trời không thể chiếu tới."
+);
 
 const u8 gLanturnPokedexText[] = _(
-    "The light-emitting orbs on its back are\n"
-    "very bright. They are formed from a part of\n"
-    "its dorsal fin. This POKéMON illuminates\n"
-    "the inky darkness of deep seas.");
+    "Các cầu phát sáng trên lưng nó rất rực rỡ và\n"
+    "được tạo thành từ một phần vây lưng.\n"
+    "POKéMON này soi sáng bóng tối đen đặc dưới\n"
+    "biển sâu."
+);
 
 const u8 gPichuPokedexText[] = _(
-    "It is still inept at retaining electricity.\n"
-    "When it is startled, it discharges power\n"
-    "accidentally. It gets better at holding\n"
-    "power as it grows older.");
+    "Nó vẫn chưa giỏi tích trữ điện. Khi giật\n"
+    "mình, PICHU vô tình phóng điện. Khả năng giữ\n"
+    "điện của nó tốt dần lên theo tuổi."
+);
 
 const u8 gCleffaPokedexText[] = _(
-    "On nights with many shooting stars,\n"
-    "CLEFFA can be seen dancing in a ring.\n"
-    "They dance until daybreak, when they\n"
-    "quench their thirst with the morning dew.");
+    "Vào những đêm có nhiều sao băng, có thể thấy\n"
+    "CLEFFA nhảy thành vòng tròn. Chúng nhảy tới\n"
+    "bình minh rồi uống sương mai để giải khát."
+);
 
 const u8 gIgglybuffPokedexText[] = _(
-    "Its soft and pliable body is very bouncy.\n"
-    "When it sings continuously with all its\n"
-    "might, its body steadily turns a deepening\n"
-    "pink color.");
+    "Cơ thể mềm dẻo của nó nảy rất tốt. Khi\n"
+    "IGGLYBUFF hát liên tục bằng hết sức, cơ thể\n"
+    "nó dần chuyển sang sắc hồng ngày càng đậm."
+);
 
 const u8 gTogepiPokedexText[] = _(
-    "As its energy, it uses the feelings of\n"
-    "compassion and pleasure exuded by\n"
-    "people and POKéMON. It stores up happy\n"
-    "feelings in its shell, then shares them out.");
+    "Nó dùng lòng trắc ẩn và niềm vui tỏa ra từ\n"
+    "con người cùng POKéMON làm năng lượng.\n"
+    "TOGEPI tích cảm xúc hạnh phúc trong vỏ rồi\n"
+    "chia sẻ chúng."
+);
 
 const u8 gTogeticPokedexText[] = _(
-    "It is said to be a POKéMON that brings good\n"
-    "fortune. When it spots someone who is pure\n"
-    "of heart, a TOGETIC appears and shares its\n"
-    "happiness with that person.");
+    "TOGETIC được cho là POKéMON mang lại may\n"
+    "mắn. Khi thấy người có trái tim thuần khiết,\n"
+    "nó sẽ xuất hiện và chia sẻ niềm hạnh phúc với\n"
+    "người ấy."
+);
 
 const u8 gNatuPokedexText[] = _(
-    "It runs up short trees that grow on the\n"
-    "savanna to peck at new shoots.\n"
-    "A NATU's eyes look as if they are\n"
-    "always observing something.");
+    "Nó chạy lên những cây thấp ở thảo nguyên để\n"
+    "mổ chồi non. Đôi mắt NATU trông như lúc nào\n"
+    "cũng quan sát một điều gì đó."
+);
 
 const u8 gXatuPokedexText[] = _(
-    "It has the enigmatic power of foreseeing\n"
-    "the future. Some people in different lands\n"
-    "have long believed that XATU are\n"
-    "emissaries from another world.");
+    "Nó có năng lực bí ẩn nhìn thấy tương lai. Từ\n"
+    "lâu, người dân ở nhiều vùng đất tin rằng\n"
+    "XATU là sứ giả đến từ một thế giới khác."
+);
 
 const u8 gMareepPokedexText[] = _(
-    "Its fluffy wool rubs together and builds\n"
-    "a static charge. The more energy is\n"
-    "charged, the more brightly the lightbulb\n"
-    "at the tip of its tail glows.");
+    "Lớp lông bông xù cọ vào nhau, tạo điện tích\n"
+    "tĩnh. Càng tích nhiều năng lượng, bóng đèn\n"
+    "ở chóp đuôi MAREEP càng phát sáng mạnh."
+);
 
 const u8 gFlaaffyPokedexText[] = _(
-    "Its fleece quality changes to generate\n"
-    "strong static electricity with a small\n"
-    "amount of wool. The bare, slick parts of its\n"
-    "hide are shielded against electricity.");
+    "Bộ lông của nó biến đổi, chỉ cần một lượng\n"
+    "lông nhỏ vẫn tạo ra tĩnh điện mạnh. Những\n"
+    "vùng da trơn nhẵn không lông giúp cách điện."
+);
 
 const u8 gAmpharosPokedexText[] = _(
-    "It gives off so much light that it can be\n"
-    "seen even from space. People in the old\n"
-    "days used its light to send signals back\n"
-    "and forth with others far away.");
+    "Nó phát ra ánh sáng mạnh đến mức có thể nhìn\n"
+    "thấy từ ngoài không gian. Ngày xưa, người ta\n"
+    "dùng ánh sáng ấy để trao đổi tín hiệu từ xa."
+);
 
 const u8 gBellossomPokedexText[] = _(
-    "Its flower petals deepen in color through\n"
-    "exposure to sunlight. When cloudy weather\n"
-    "persists, it does a dance that is thought\n"
-    "to be a ritual for summoning the sun.");
+    "Cánh hoa đậm màu hơn khi hấp thụ ánh nắng.\n"
+    "Nếu trời nhiều mây kéo dài, BELLOSSOM nhảy\n"
+    "một điệu được cho là nghi lễ gọi mặt trời."
+);
 
 const u8 gMarillPokedexText[] = _(
-    "Its body is covered with water-repellent\n"
-    "fur. Because of the fur, it can swim\n"
-    "through water at high speed without being\n"
-    "slowed by the water's resistance.");
+    "Cơ thể nó phủ lông chống thấm nước. Nhờ\n"
+    "vậy, MARILL có thể bơi rất nhanh mà không bị\n"
+    "sức cản của nước làm chậm."
+);
 
 const u8 gAzumarillPokedexText[] = _(
-    "It lives in water virtually all day long.\n"
-    "Its body color and pattern act as\n"
-    "camouflage that makes it tough for\n"
-    "enemies to spot in water.");
+    "Nó sống dưới nước gần như cả ngày. Màu sắc\n"
+    "và hoa văn trên cơ thể AZUMARILL giúp ngụy\n"
+    "trang, khiến kẻ địch khó phát hiện nó trong\n"
+    "nước."
+);
 
 const u8 gSudowoodoPokedexText[] = _(
-    "It mimics a tree to avoid being attacked\n"
-    "by enemies. But since its forelegs\n"
-    "remain green throughout the year, it is\n"
-    "easily identified as a fake in the winter.");
+    "Nó giả làm cây để tránh bị kẻ địch tấn công.\n"
+    "Nhưng vì hai chân trước xanh quanh năm,\n"
+    "SUDOWOODO dễ bị nhận ra là cây giả vào mùa\n"
+    "đông."
+);
 
 const u8 gPolitoedPokedexText[] = _(
-    "The curled hair on its head proves its\n"
-    "status as a king. It is said that the\n"
-    "longer and curlier the hair, the more\n"
-    "respect it earns from its peers.");
+    "Lọn tóc xoăn trên đầu chứng tỏ địa vị vua\n"
+    "của nó. Tóc càng dài và xoăn, POLITOED càng\n"
+    "được đồng loại kính trọng."
+);
 
 const u8 gHoppipPokedexText[] = _(
-    "This POKéMON drifts and floats with the\n"
-    "wind. If it senses the approach of strong\n"
-    "winds, a HOPPIP links leaves with others\n"
-    "to prepare against being blown away.");
+    "POKéMON này trôi nổi theo gió. Khi cảm nhận\n"
+    "gió mạnh sắp đến, HOPPIP nối lá với đồng loại\n"
+    "để chuẩn bị, tránh bị thổi bay."
+);
 
 const u8 gSkiploomPokedexText[] = _(
-    "It blossoms when the temperature rises\n"
-    "above 64 degrees F. Because its flower's\n"
-    "blooming changes with the temperature,\n"
-    "it is sometimes used as a thermometer.");
+    "Hoa nở khi nhiệt độ vượt 64 độ F. Vì độ nở\n"
+    "thay đổi theo nhiệt độ, SKIPLOOM đôi khi\n"
+    "được dùng làm nhiệt kế."
+);
 
 const u8 gJumpluffPokedexText[] = _(
-    "JUMPLUFF ride warm southern winds to\n"
-    "cross the sea and fly to foreign lands.\n"
-    "This POKéMON lands when it encounters\n"
-    "cold air while it is floating.");
+    "JUMPLUFF cưỡi gió nam ấm áp, vượt biển đến\n"
+    "những vùng đất xa lạ. POKéMON này sẽ hạ\n"
+    "xuống khi gặp không khí lạnh lúc đang trôi\n"
+    "nổi."
+);
 
 const u8 gAipomPokedexText[] = _(
-    "Its tail ends with a dexterous, handlike\n"
-    "appendage. However, because it uses the\n"
-    "tail so much, AIPOM's real hands have\n"
-    "become rather clumsy.");
+    "Đuôi nó kết thúc bằng một bộ phận khéo léo\n"
+    "giống bàn tay. Nhưng vì dùng đuôi quá nhiều,\n"
+    "đôi tay thật của AIPOM trở nên khá vụng về."
+);
 
 const u8 gSunkernPokedexText[] = _(
-    "SUNKERN try to minimize movement to\n"
-    "conserve the nutrients they have stored\n"
-    "in their bodies for evolution. They will\n"
-    "not eat, subsisting only on morning dew.");
+    "SUNKERN cố giảm vận động để dành dưỡng\n"
+    "chất tích trong cơ thể cho quá trình tiến\n"
+    "hóa. Chúng không ăn, chỉ sống nhờ sương mai."
+);
 
 const u8 gSunfloraPokedexText[] = _(
-    "SUNFLORA convert solar energy into\n"
-    "nutrition. They are highly active in the\n"
-    "warm daytime but suddenly stop moving as\n"
-    "soon as the sun sets.");
+    "SUNFLORA biến năng lượng mặt trời thành\n"
+    "dưỡng chất. Chúng hoạt động rất mạnh vào\n"
+    "ban ngày ấm áp, nhưng ngừng hẳn ngay khi mặt\n"
+    "trời lặn."
+);
 
 const u8 gYanmaPokedexText[] = _(
-    "It can see 360 degrees without moving\n"
-    "its eyes. It is a great flier capable of\n"
-    "making sudden stops and turning midair to\n"
-    "quickly chase down targeted prey.");
+    "Nó nhìn được 360 độ mà không cần đảo mắt.\n"
+    "YANMA bay rất giỏi, có thể đột ngột dừng và\n"
+    "đổi hướng giữa không trung để nhanh chóng\n"
+    "đuổi kịp con mồi."
+);
 
 const u8 gWooperPokedexText[] = _(
-    "WOOPER usually live in water but come\n"
-    "out onto land seeking food occasionally.\n"
-    "On land, they coat their bodies with a\n"
-    "gooey, toxic film.");
+    "WOOPER thường sống dưới nước nhưng đôi\n"
+    "khi lên cạn tìm thức ăn. Trên cạn, chúng phủ\n"
+    "cơ thể bằng một lớp màng nhớt có độc."
+);
 
 const u8 gQuagsirePokedexText[] = _(
-    "A QUAGSIRE hunts by leaving its mouth wide\n"
-    "open in water and waiting for its prey to\n"
-    "blunder in. Because it doesn't move, it\n"
-    "does not get very hungry.");
+    "QUAGSIRE săn mồi bằng cách há miệng dưới\n"
+    "nước và chờ con mồi vô tình bơi vào. Vì\n"
+    "không phải di chuyển, nó không thấy quá đói."
+);
 
 const u8 gEspeonPokedexText[] = _(
-    "An ESPEON is extremely loyal to any\n"
-    "TRAINER it considers to be worthy. It is\n"
-    "said to have developed precognitive\n"
-    "powers to protect its TRAINER from harm.");
+    "ESPEON cực kỳ trung thành với bất kỳ\n"
+    "HLV nào nó cho là xứng đáng. Nó được\n"
+    "cho là có năng lực thấy trước tương lai để\n"
+    "bảo vệ HLV khỏi nguy hiểm."
+);
 
 const u8 gUmbreonPokedexText[] = _(
-    "UMBREON evolved from exposure to the\n"
-    "moon's energy pulses. It lurks in darkness\n"
-    "and waits for its foes to move. The rings\n"
-    "on its body glow when it leaps to attack.");
+    "UMBREON tiến hóa do tiếp xúc với những xung\n"
+    "năng lượng từ mặt trăng. Nó ẩn trong bóng\n"
+    "tối chờ đối thủ hành động; các vòng trên cơ\n"
+    "thể phát sáng khi nó lao ra tấn công."
+);
 
 const u8 gMurkrowPokedexText[] = _(
-    "MURKROW were feared as the alleged\n"
-    "bearers of ill fortune. It shows strong\n"
-    "interest in anything that sparkles. It will\n"
-    "even try to steal rings from women.");
+    "MURKROW từng bị khiếp sợ vì được cho là\n"
+    "mang đến vận rủi. Nó đặc biệt thích vật lấp\n"
+    "lánh, thậm chí còn tìm cách trộm nhẫn của\n"
+    "phụ nữ."
+);
 
 const u8 gSlowkingPokedexText[] = _(
-    "It undertakes research every day to\n"
-    "solve the mysteries of the world.\n"
-    "However, it apparently forgets everything\n"
-    "if the SHELLDER on its head comes off.");
+    "Nó nghiên cứu mỗi ngày để giải đáp những bí\n"
+    "ẩn của thế giới. Nhưng dường như SLOWKING\n"
+    "sẽ quên sạch mọi thứ nếu SHELLDER trên đầu\n"
+    "rơi ra."
+);
 
 const u8 gMisdreavusPokedexText[] = _(
-    "A MISDREAVUS frightens people with a\n"
-    "creepy, sobbing cry. It apparently uses\n"
-    "its red spheres to absorb the fear of foes\n"
-    "as its nutrition.");
+    "MISDREAVUS dọa người bằng tiếng khóc nức\n"
+    "nở rùng rợn. Dường như nó dùng các quả cầu\n"
+    "đỏ để hấp thụ nỗi sợ của đối thủ làm dinh\n"
+    "dưỡng."
+);
 
 const u8 gUnownPokedexText[] = _(
-    "This POKéMON is shaped like ancient text\n"
-    "characters. Although research is ongoing,\n"
-    "it is a mystery as to which came first,\n"
-    "the ancient writings or the various UNOWN.");
+    "POKéMON này có hình dạng như ký tự cổ. Dù\n"
+    "vẫn đang được nghiên cứu, chưa ai biết chữ\n"
+    "viết cổ hay các UNOWN xuất hiện trước."
+);
 
 const u8 gWobbuffetPokedexText[] = _(
-    "Usually docile, a WOBBUFFET strikes back\n"
-    "ferociously if its black tail is attacked.\n"
-    "It makes its lair in caves where it waits\n"
-    "for nightfall.");
+    "WOBBUFFET thường hiền lành, nhưng sẽ phản\n"
+    "kích dữ dội nếu chiếc đuôi đen bị tấn công.\n"
+    "Nó làm hang trong động và chờ đêm xuống."
+);
 
 const u8 gGirafarigPokedexText[] = _(
-    "A GIRAFARIG is an herbivore--it eats\n"
-    "grass and tree shoots. While it is eating,\n"
-    "its tail makes chewing and swallowing\n"
-    "motions as if it were also eating.");
+    "GIRAFARIG là loài ăn cỏ, dùng cỏ và chồi cây\n"
+    "làm thức ăn. Khi nó ăn, chiếc đuôi cũng nhai\n"
+    "và nuốt như thể đang ăn cùng."
+);
 
 const u8 gPinecoPokedexText[] = _(
-    "A PINECO hangs from a tree branch and\n"
-    "waits for prey. While eating, if it is\n"
-    "disturbed by someone shaking its tree, it\n"
-    "falls on the ground and suddenly explodes.");
+    "PINECO treo mình trên cành cây để chờ con\n"
+    "mồi. Nếu có người rung cây lúc nó đang ăn, nó\n"
+    "sẽ rơi xuống đất rồi bất ngờ phát nổ."
+);
 
 const u8 gForretressPokedexText[] = _(
-    "It keeps itself inside its steel shell.\n"
-    "The shell is opened when it is catching\n"
-    "prey, but it is so quick that the shell's\n"
-    "inside cannot be seen.");
+    "Nó luôn ẩn trong lớp vỏ thép. Vỏ chỉ mở khi\n"
+    "bắt con mồi, nhưng khép lại nhanh đến mức\n"
+    "không ai nhìn thấy được bên trong."
+);
 
 const u8 gDunsparcePokedexText[] = _(
-    "Its drill-tipped tail is used to burrow into\n"
-    "the ground backwards. This POKéMON is\n"
-    "known to make its nest in complex shapes\n"
-    "deep under the ground.");
+    "Nó dùng chiếc đuôi có đầu như mũi khoan để\n"
+    "đào lùi xuống đất. POKéMON này nổi tiếng với\n"
+    "những chiếc tổ hình dạng phức tạp nằm sâu\n"
+    "dưới lòng đất."
+);
 
 const u8 gGligarPokedexText[] = _(
-    "It glides without making a single sound.\n"
-    "It grasps the face of its foe using its\n"
-    "hind and large front claws, then stabs\n"
-    "with its poison barb.");
+    "Nó lượn đi không một tiếng động, dùng chân\n"
+    "sau và đôi càng trước lớn kẹp lấy mặt đối\n"
+    "thủ rồi đâm bằng ngạnh độc."
+);
 
 const u8 gSteelixPokedexText[] = _(
-    "STEELIX live even further underground\n"
-    "than ONIX. This POKéMON is known to dig\n"
-    "toward the earth's core, reaching a depth\n"
-    "of over six-tenths of a mile underground.");
+    "STEELIX sống sâu dưới lòng đất hơn cả ONIX.\n"
+    "POKéMON này đào về phía lõi Trái Đất và có\n"
+    "thể xuống sâu hơn 0,6 dặm."
+);
 
 const u8 gSnubbullPokedexText[] = _(
-    "By baring its fangs and making a scary\n"
-    "face, it sends smaller POKéMON scurrying\n"
-    "in terror. The SNUBBULL does seem a\n"
-    "little sad at making its foes flee.");
+    "Nó nhe nanh, làm mặt đáng sợ khiến các\n"
+    "POKéMON nhỏ hơn hoảng hốt bỏ chạy. SNUBBULL\n"
+    "dường như hơi buồn vì đã dọa đối thủ chạy\n"
+    "mất."
+);
 
 const u8 gGranbullPokedexText[] = _(
-    "It has a particularly well-developed lower\n"
-    "jaw. The huge fangs are heavy, causing\n"
-    "it to tilt its head. Unless it is startled, it\n"
-    "will not try to bite.");
+    "Hàm dưới của nó đặc biệt phát triển. Cặp\n"
+    "nanh khổng lồ nặng đến mức khiến đầu nó\n"
+    "nghiêng sang một bên. Nó sẽ không cắn trừ\n"
+    "khi bị giật mình."
+);
 
 const u8 gQwilfishPokedexText[] = _(
-    "A QWILFISH uses the pressure of water\n"
-    "it swallows to shoot toxic quills all at\n"
-    "once from all over its body. It finds\n"
-    "swimming to be somewhat challenging.");
+    "QWILFISH dùng áp lực từ lượng nước đã\n"
+    "nuốt để đồng loạt phóng gai độc khắp cơ thể.\n"
+    "Việc bơi lội khá khó khăn đối với nó."
+);
 
 const u8 gScizorPokedexText[] = _(
-    "A SCIZOR has a body with the hardness of\n"
-    "steel. It is not easily fazed by ordinary\n"
-    "sorts of attacks. It flaps its wings to\n"
-    "regulate its body temperature.");
+    "SCIZOR có cơ thể cứng như thép nên khó bị\n"
+    "nao núng trước những đòn tấn công thông\n"
+    "thường. Nó vỗ cánh để điều hòa thân nhiệt."
+);
 
 const u8 gShucklePokedexText[] = _(
-    "A SHUCKLE hides under rocks, keeping its\n"
-    "body concealed inside its shell while\n"
-    "eating stored berries. The berries mix with\n"
-    "its body fluids to become a juice.");
+    "SHUCKLE ẩn dưới đá, giấu cơ thể trong mai và\n"
+    "ăn số quả mọng dự trữ. Quả mọng hòa với dịch\n"
+    "cơ thể của nó thành nước ép."
+);
 
 const u8 gHeracrossPokedexText[] = _(
-    "They gather in forests seeking the sweet\n"
-    "sap of trees. It is completely clad in a\n"
-    "steel-hard shell. It is proud of its horn,\n"
-    "which it uses to fling foes.");
+    "HERACROSS tụ tập trong rừng để tìm nhựa\n"
+    "cây ngọt. Toàn thân nó bọc trong lớp vỏ cứng\n"
+    "như thép. Nó rất tự hào về chiếc sừng dùng\n"
+    "để hất văng đối thủ."
+);
 
 const u8 gSneaselPokedexText[] = _(
-    "A SNEASEL scales trees by punching its\n"
-    "hooked claws into the bark. It seeks out\n"
-    "unguarded nests and steals eggs for food\n"
-    "while the parents are away.");
+    "SNEASEL trèo cây bằng cách cắm móng vuốt\n"
+    "cong vào vỏ. Nó tìm tổ không được canh giữ\n"
+    "và trộm trứng làm thức ăn khi ba mẹ chúng\n"
+    "vắng mặt."
+);
 
 const u8 gTeddiursaPokedexText[] = _(
-    "It licks its palms that are sweetened by\n"
-    "being soaked in honey. A TEDDIURSA makes\n"
-    "its own honey by blending fruits and pollen\n"
-    "collected by BEEDRILL.");
+    "Nó liếm đôi bàn tay ngọt vì thấm mật.\n"
+    "TEDDIURSA tự làm mật bằng cách trộn trái cây\n"
+    "với phấn hoa do BEEDRILL thu thập."
+);
 
 const u8 gUrsaringPokedexText[] = _(
-    "In forests, it is said that there are many\n"
-    "streams and towering trees where an\n"
-    "URSARING gathers food. It walks through\n"
-    "its forest collecting food every day.");
+    "Người ta nói trong rừng có nhiều dòng suối\n"
+    "và cây cao nơi URSARING kiếm thức ăn. Hằng\n"
+    "ngày, nó đi khắp khu rừng của mình để thu\n"
+    "thập thức ăn."
+);
 
 const u8 gSlugmaPokedexText[] = _(
-    "It is a species of POKéMON that lives in\n"
-    "volcanic areas. If its body cools, its skin\n"
-    "hardens and immobilizes it. To avoid that,\n"
-    "it sleeps near magma.");
+    "POKéMON này sống ở vùng núi lửa. Nếu cơ thể\n"
+    "nguội đi, da nó sẽ cứng lại khiến nó bất động.\n"
+    "Để tránh điều đó, nó ngủ gần magma."
+);
 
 const u8 gMagcargoPokedexText[] = _(
-    "The shell on its back is made of hardened\n"
-    "magma. Tens of thousands of years spent\n"
-    "living in volcanic craters have turned\n"
-    "MAGCARGO's bodies into magma.");
+    "Chiếc mai trên lưng nó được tạo từ magma\n"
+    "đông cứng. Hàng chục nghìn năm sống trong\n"
+    "miệng núi lửa đã biến cơ thể MAGCARGO thành\n"
+    "magma."
+);
 
 const u8 gSwinubPokedexText[] = _(
-    "It roots for food by rubbing its snout\n"
-    "against the ground. Its favorite food is a\n"
-    "mushroom that grows under dried grass.\n"
-    "It occasionally roots out hot springs.");
+    "Nó cọ mõm xuống đất để tìm thức ăn. Món yêu\n"
+    "thích là loại nấm mọc dưới cỏ khô. Đôi khi nó\n"
+    "còn đào trúng suối nước nóng."
+);
 
 const u8 gPiloswinePokedexText[] = _(
-    "A PILOSWINE is covered by a thick coat\n"
-    "of long hair for enduring freezing cold.\n"
-    "It uses its tusks to dig up food that has\n"
-    "been buried under ice.");
+    "PILOSWINE được phủ lớp lông dài và dày để\n"
+    "chịu cái lạnh buốt giá. Nó dùng ngà đào thức\n"
+    "ăn bị chôn dưới băng."
+);
 
 const u8 gCorsolaPokedexText[] = _(
-    "CORSOLA live in warm southern seas.\n"
-    "If the sea becomes polluted, the beautiful\n"
-    "coral stalks become discolored and crumble\n"
-    "away in tatters.");
+    "CORSOLA sống ở những vùng biển ấm phía nam.\n"
+    "Nếu biển ô nhiễm, các nhánh san hô xinh đẹp\n"
+    "sẽ đổi màu rồi vỡ vụn thành từng mảnh."
+);
 
 const u8 gRemoraidPokedexText[] = _(
-    "A REMORAID uses its abdominal muscles\n"
-    "to forcefully expel swallowed water, then\n"
-    "shoot down flying prey. When evolution\n"
-    "approaches, it travels down rivers.");
+    "REMORAID dùng cơ bụng phun mạnh lượng\n"
+    "nước đã nuốt để bắn hạ con mồi đang bay. Khi\n"
+    "sắp tiến hóa, nó xuôi theo các dòng sông."
+);
 
 const u8 gOctilleryPokedexText[] = _(
-    "It ensnares its foe with its suction-\n"
-    "cupped tentacles before delivering the\n"
-    "finishing blow. If the foe turns out to be\n"
-    "too strong, it spews ink to escape.");
+    "Nó dùng các xúc tu có giác hút trói đối thủ\n"
+    "rồi tung đòn kết liễu. Nếu đối thủ quá mạnh,\n"
+    "nó phun mực để trốn thoát."
+);
 
 const u8 gDelibirdPokedexText[] = _(
-    "It carries food bundled up in its tail.\n"
-    "There was a famous explorer who\n"
-    "managed to scale Mt. Everest thanks\n"
-    "to a DELIBIRD sharing its food.");
+    "Nó mang thức ăn gói trong đuôi. Từng có một\n"
+    "nhà thám hiểm nổi tiếng chinh phục được Mt.\n"
+    "Everest nhờ DELIBIRD chia sẻ thức ăn."
+);
 
 const u8 gMantinePokedexText[] = _(
-    "On sunny days, schools of MANTINE can be\n"
-    "seen elegantly leaping over the waves.\n"
-    "It is not bothered by the REMORAID that\n"
-    "hitches rides.");
+    "Vào ngày nắng, có thể thấy đàn MANTINE\n"
+    "duyên dáng nhảy qua những con sóng. Nó\n"
+    "không hề bận tâm khi REMORAID bám theo để đi\n"
+    "nhờ."
+);
 
 const u8 gSkarmoryPokedexText[] = _(
-    "A POKéMON that has a body and wings of\n"
-    "steel. People in the past used feathers\n"
-    "fallen from SKARMORY to make swords and\n"
-    "knives.");
+    "POKéMON này có cơ thể và đôi cánh bằng thép.\n"
+    "Người xưa từng dùng những chiếc lông rụng\n"
+    "của SKARMORY để làm kiếm và dao."
+);
 
 const u8 gHoundourPokedexText[] = _(
-    "HOUNDOUR communicate with each other\n"
-    "using a variety of cries to corner their\n"
-    "prey. This POKéMON's remarkable teamwork\n"
-    "is simply unparalleled.");
+    "HOUNDOUR dùng nhiều loại tiếng kêu để liên\n"
+    "lạc và dồn con mồi vào đường cùng. Khả năng\n"
+    "phối hợp của POKéMON này không gì sánh\n"
+    "bằng."
+);
 
 const u8 gHoundoomPokedexText[] = _(
-    "In a HOUNDOOM pack, the one with its horns\n"
-    "raked sharply back serves a leadership\n"
-    "role. They choose their leader by fighting\n"
-    "among themselves.");
+    "Trong đàn HOUNDOOM, con có cặp sừng cong\n"
+    "quặp mạnh về phía sau giữ vai trò thủ lĩnh.\n"
+    "Chúng chiến đấu với nhau để chọn ra thủ\n"
+    "lĩnh."
+);
 
 const u8 gKingdraPokedexText[] = _(
-    "It sleeps quietly, deep on the seafloor.\n"
-    "When it comes up to the surface, it\n"
-    "creates a huge whirlpool that can swallow\n"
-    "even ships.");
+    "Nó lặng lẽ ngủ sâu dưới đáy biển. Khi trồi lên\n"
+    "mặt nước, nó tạo ra xoáy nước khổng lồ có\n"
+    "thể nuốt chửng cả tàu thuyền."
+);
 
 const u8 gPhanpyPokedexText[] = _(
-    "PHANPY's big ears serve as broad fans.\n"
-    "When it becomes hot, it flaps the ears\n"
-    "busily to cool down. Even the young are\n"
-    "very strong.");
+    "Đôi tai lớn của PHANPY giống như hai chiếc\n"
+    "quạt rộng. Khi trời nóng, nó liên tục vẫy tai\n"
+    "để làm mát. Ngay cả con non cũng rất khỏe."
+);
 
 const u8 gDonphanPokedexText[] = _(
-    "A DONPHAN is so strong it can easily haul\n"
-    "a dump truck. Its hide has toughened to a\n"
-    "rock-hard state. An ordinary sort of\n"
-    "attack won't even leave a scratch.");
+    "DONPHAN khỏe đến mức dễ dàng kéo được xe\n"
+    "ben. Da nó cứng như đá, nên đòn tấn công\n"
+    "thông thường còn không để lại nổi một vết\n"
+    "xước."
+);
 
 const u8 gPorygon2PokedexText[] = _(
-    "It was created by humans using the power\n"
-    "of science. It has been given artificial\n"
-    "intelligence that enables it to learn new\n"
-    "gestures and emotions on its own.");
+    "Con người tạo ra nó bằng sức mạnh khoa học.\n"
+    "Trí tuệ nhân tạo cho phép nó tự học những\n"
+    "cử chỉ và cảm xúc mới."
+);
 
 const u8 gStantlerPokedexText[] = _(
-    "STANTLER's magnificent antlers were\n"
-    "once traded at high prices as works of art.\n"
-    "As a result, this POKéMON was hunted\n"
-    "close to extinction.");
+    "Cặp gạc tuyệt đẹp của STANTLER từng được\n"
+    "bán với giá cao như tác phẩm nghệ thuật. Vì\n"
+    "vậy, POKéMON này đã bị săn đến gần tuyệt\n"
+    "chủng."
+);
 
 const u8 gSmearglePokedexText[] = _(
-    "A SMEARGLE marks its territory using a\n"
-    "fluid that leaks out from the tip of its\n"
-    "tail. About 5,000 different marks left by\n"
-    "this POKéMON have been found.");
+    "SMEARGLE đánh dấu lãnh thổ bằng chất lỏng\n"
+    "tiết ra từ chóp đuôi. Người ta đã tìm thấy\n"
+    "khoảng 5.000 dấu hiệu khác nhau do POKéMON\n"
+    "này để lại."
+);
 
 const u8 gTyroguePokedexText[] = _(
-    "TYROGUE become stressed out if they do\n"
-    "not get to train every day. When raising\n"
-    "this POKéMON, the TRAINER must establish\n"
-    "a regular training schedule.");
+    "TYROGUE sẽ căng thẳng nếu không được rèn\n"
+    "luyện mỗi ngày. Khi nuôi POKéMON này, HLV\n"
+    "phải lập một lịch tập luyện đều đặn."
+);
 
 const u8 gHitmontopPokedexText[] = _(
-    "Its technique of kicking while spinning is\n"
-    "a remarkable mix of both offense and\n"
-    "defense. HITMONTOP travel faster\n"
-    "spinning than they do walking.");
+    "Kỹ thuật vừa xoay vừa đá của nó kết hợp\n"
+    "xuất sắc giữa tấn công và phòng thủ.\n"
+    "HITMONTOP di chuyển bằng cách xoay nhanh\n"
+    "hơn đi bộ."
+);
 
 const u8 gSmoochumPokedexText[] = _(
-    "It actively runs about, but also falls\n"
-    "often. Whenever it falls, it will check its\n"
-    "reflection on a lake's surface to make\n"
-    "sure its face hasn't become dirty.");
+    "Nó năng động chạy khắp nơi nhưng cũng\n"
+    "thường bị ngã. Mỗi lần ngã, nó soi mình trên\n"
+    "mặt hồ để chắc chắn khuôn mặt chưa bị bẩn."
+);
 
 const u8 gElekidPokedexText[] = _(
-    "If it touches metal and discharges the\n"
-    "electricity it has stored in its body, an\n"
-    "ELEKID begins swinging its arms in circles\n"
-    "to recharge itself.");
+    "Khi chạm vào kim loại và phóng hết điện tích\n"
+    "trong cơ thể, ELEKID bắt đầu xoay hai tay\n"
+    "thành vòng tròn để tự nạp lại điện."
+);
 
 const u8 gMagbyPokedexText[] = _(
-    "If a MAGBY is spouting yellow flames from\n"
-    "its mouth, it is in good health. When it is\n"
-    "fatigued, black smoke will be mixed in with\n"
-    "the flames.");
+    "Nếu MAGBY phun lửa vàng từ miệng, nó đang\n"
+    "khỏe mạnh. Khi mệt mỏi, ngọn lửa sẽ lẫn thêm\n"
+    "khói đen."
+);
 
 const u8 gMiltankPokedexText[] = _(
-    "It gives over five gallons of milk daily.\n"
-    "Its sweet milk is enjoyed by children and\n"
-    "grown-ups alike. People who can't drink\n"
-    "milk turn it into yogurt and eat it instead.");
+    "Nó cho hơn 5 gallon sữa mỗi ngày. Sữa ngọt\n"
+    "được cả trẻ em lẫn người lớn yêu thích.\n"
+    "Người không uống được sữa sẽ làm thành\n"
+    "sữa chua để ăn."
+);
 
 const u8 gBlisseyPokedexText[] = _(
-    "If it senses sadness with its fluffy fur,\n"
-    "a BLISSEY will rush over to the sad person,\n"
-    "however far away, to share an egg of\n"
-    "happiness that brings a smile to any face.");
+    "Nếu bộ lông mềm cảm nhận được nỗi buồn,\n"
+    "BLISSEY sẽ chạy đến dù người buồn ở xa đến\n"
+    "đâu và tặng một quả trứng hạnh phúc khiến\n"
+    "bất kỳ ai cũng mỉm cười."
+);
 
 const u8 gRaikouPokedexText[] = _(
-    "RAIKOU embodies the speed of lightning.\n"
-    "Its roars send shock waves shuddering\n"
-    "through the air and ground as if\n"
-    "lightning bolts were crashing down.");
+    "RAIKOU hiện thân cho tốc độ của sét. Tiếng\n"
+    "gầm tạo ra sóng xung kích làm rung chuyển\n"
+    "không khí và mặt đất như sét đang giáng\n"
+    "xuống."
+);
 
 const u8 gEnteiPokedexText[] = _(
-    "ENTEI embodies the passion of magma.\n"
-    "It is thought to have been born in the\n"
-    "eruption of a volcano. It blasts fire that\n"
-    "consumes all that it touches.");
+    "ENTEI hiện thân cho sức nóng mãnh liệt của\n"
+    "magma. Nó được cho là sinh ra từ một vụ núi\n"
+    "lửa phun trào và phóng lửa thiêu rụi mọi thứ\n"
+    "chạm phải."
+);
 
 const u8 gSuicunePokedexText[] = _(
-    "SUICUNE embodies the compassion of\n"
-    "a pure spring of water. It runs across\n"
-    "the land with gliding elegance. It has the\n"
-    "power to purify dirty water.");
+    "SUICUNE hiện thân cho lòng nhân từ của dòng\n"
+    "suối tinh khiết. Nó lướt đi duyên dáng khắp\n"
+    "mặt đất và có sức mạnh thanh lọc nước bẩn."
+);
 
 const u8 gLarvitarPokedexText[] = _(
-    "A LARVITAR is born deep under the ground.\n"
-    "It must eat its way through the soil above\n"
-    "and reach the surface for it to see its\n"
-    "parents' faces.");
+    "LARVITAR sinh ra sâu dưới lòng đất. Nó phải\n"
+    "ăn xuyên qua lớp đất phía trên để lên mặt\n"
+    "đất rồi mới được nhìn thấy cha mẹ."
+);
 
 const u8 gPupitarPokedexText[] = _(
-    "A PUPITAR creates a gas inside its body\n"
-    "that it ejects under compression to propel\n"
-    "itself like a jet. Its body can withstand\n"
-    "a collision with solid steel.");
+    "PUPITAR tạo khí trong cơ thể rồi phun ra\n"
+    "dưới áp suất cao để lao đi như phản lực. Cơ\n"
+    "thể nó chịu được cả va chạm với thép đặc."
+);
 
 const u8 gTyranitarPokedexText[] = _(
-    "A TYRANITAR is so overwhelmingly powerful,\n"
-    "it can bring down a whole mountain to make\n"
-    "its nest. It roams in mountains seeking\n"
-    "new opponents to fight.");
+    "TYRANITAR mạnh đến mức có thể phá sập cả\n"
+    "ngọn núi để làm tổ. Nó lang thang trong núi,\n"
+    "tìm những đối thủ mới để chiến đấu."
+);
 
 const u8 gLugiaPokedexText[] = _(
-    "LUGIA is so powerful even a light\n"
-    "fluttering of its wings can blow apart\n"
-    "houses. As a result, it chooses to live out\n"
-    "of sight deep under the sea.");
+    "LUGIA mạnh đến mức chỉ khẽ vỗ cánh cũng có\n"
+    "thể thổi tan nhà cửa. Vì vậy, nó chọn sống\n"
+    "khuất tầm mắt ở nơi sâu thẳm dưới biển."
+);
 
 const u8 gHoOhPokedexText[] = _(
-    "Its feathers--which glow in seven colors\n"
-    "depending on the angle at which they are\n"
-    "struck by light--are thought to bring joy.\n"
-    "It is said to live at the foot of a rainbow.");
+    "Những chiếc lông phát sáng bảy màu tùy góc\n"
+    "chiếu của ánh sáng được cho là mang lại niềm\n"
+    "vui. Tương truyền nó sống ở chân cầu vồng."
+);
 
 const u8 gCelebiPokedexText[] = _(
-    "This POKéMON came from the future by\n"
-    "crossing over time. It is thought that so\n"
-    "long as CELEBI appears, a bright and\n"
-    "shining future awaits us.");
+    "POKéMON này vượt thời gian từ tương lai\n"
+    "đến. Người ta tin rằng chừng nào CELEBI còn\n"
+    "xuất hiện, một tương lai tươi sáng vẫn đang\n"
+    "chờ đón chúng ta."
+);
 
 const u8 gTreeckoPokedexText[] = _(
-    "It makes its nest in a giant tree in the\n"
-    "forest. It ferociously guards against\n"
-    "anything nearing its territory. It is said\n"
-    "to be the protector of the forest's trees.");
+    "Nó làm tổ trên một cây cổ thụ trong rừng và\n"
+    "dữ dội chống lại mọi kẻ đến gần lãnh thổ. Nó\n"
+    "được xem là thần hộ mệnh của cây rừng."
+);
 
 const u8 gGrovylePokedexText[] = _(
-    "Leaves grow out of this POKéMON's body.\n"
-    "They help obscure a GROVYLE from the eyes\n"
-    "of its enemies while it is in a thickly\n"
-    "overgrown forest.");
+    "Lá mọc trên cơ thể POKéMON này, giúp GROVYLE\n"
+    "ẩn khỏi tầm mắt kẻ thù trong những khu rừng\n"
+    "rậm rạp."
+);
 
 const u8 gSceptilePokedexText[] = _(
-    "In the jungle, its power is without equal.\n"
-    "This POKéMON carefully grows trees and\n"
-    "plants. It regulates its body temperature\n"
-    "by basking in sunlight.");
+    "Sức mạnh của nó vô địch trong rừng nhiệt\n"
+    "đới. POKéMON này tận tâm chăm cây cối và\n"
+    "điều hòa thân nhiệt bằng cách phơi nắng."
+);
 
 const u8 gTorchicPokedexText[] = _(
-    "If attacked, it strikes back by spitting\n"
-    "balls of fire it forms in its stomach.\n"
-    "A TORCHIC dislikes darkness because it\n"
-    "can't see its surroundings.");
+    "Khi bị tấn công, nó phun những quả cầu lửa\n"
+    "tạo ra trong bụng để đáp trả. TORCHIC ghét\n"
+    "bóng tối vì không thể nhìn thấy xung quanh."
+);
 
 const u8 gCombuskenPokedexText[] = _(
-    "It lashes out with 10 kicks per second.\n"
-    "Its strong fighting instinct compels it\n"
-    "to keep up its offensive until the\n"
-    "opponent gives up.");
+    "Nó tung 10 cú đá mỗi giây. Bản năng chiến đấu\n"
+    "mãnh liệt khiến nó liên tục tấn công cho đến\n"
+    "khi đối thủ chịu thua."
+);
 
 const u8 gBlazikenPokedexText[] = _(
-    "It learns martial arts that use punches\n"
-    "and kicks. Every several years, its old\n"
-    "feathers burn off, and new, supple\n"
-    "feathers grow back in their place.");
+    "Nó luyện võ bằng những cú đấm và đá. Cứ vài\n"
+    "năm, lớp lông cũ lại cháy rụi, nhường chỗ cho\n"
+    "lớp lông mới mềm dẻo."
+);
 
 const u8 gMudkipPokedexText[] = _(
-    "On land, it can powerfully lift large\n"
-    "boulders by planting its four feet and\n"
-    "heaving. It sleeps by burying itself in soil\n"
-    "at the water's edge.");
+    "Trên cạn, nó trụ vững bốn chân rồi dùng sức\n"
+    "nhấc những tảng đá lớn. Nó ngủ bằng cách vùi\n"
+    "mình trong đất bên mép nước."
+);
 
 const u8 gMarshtompPokedexText[] = _(
-    "Its toughened hind legs enable it to stand\n"
-    "upright. Because it weakens if its skin\n"
-    "dries out, it replenishes fluids by playing\n"
-    "in mud.");
+    "Đôi chân sau rắn chắc giúp nó đứng thẳng. Da\n"
+    "khô sẽ khiến nó suy yếu, nên nó chơi trong\n"
+    "bùn để bổ sung độ ẩm."
+);
 
 const u8 gSwampertPokedexText[] = _(
-    "If it senses the approach of a storm and\n"
-    "a tidal wave, it protects its seaside nest\n"
-    "by piling up boulders. It swims as fast as\n"
-    "a jet ski.");
+    "Khi cảm nhận bão và sóng thần đang đến, nó\n"
+    "chất đá bảo vệ tổ ven biển. Nó bơi nhanh\n"
+    "ngang một chiếc mô tô nước."
+);
 
 const u8 gPoochyenaPokedexText[] = _(
-    "It savagely threatens foes with bared\n"
-    "fangs. It chases after fleeing targets\n"
-    "tenaciously. It turns tail and runs,\n"
-    "however, if the foe strikes back.");
+    "Nó nhe nanh hung dữ đe dọa đối thủ và dai\n"
+    "dẳng truy đuổi con mồi bỏ chạy. Nhưng nếu bị\n"
+    "phản công, nó sẽ quay đầu tháo chạy."
+);
 
 const u8 gMightyenaPokedexText[] = _(
-    "In the wild, MIGHTYENA live in a pack.\n"
-    "They never defy their leader's orders.\n"
-    "They defeat foes with perfectly\n"
-    "coordinated teamwork.");
+    "Trong tự nhiên, MIGHTYENA sống theo đàn và\n"
+    "không bao giờ trái lệnh con đầu đàn. Chúng\n"
+    "hạ đối thủ bằng lối phối hợp hoàn hảo."
+);
 
 const u8 gZigzagoonPokedexText[] = _(
-    "Rubbing its nose against the ground, it\n"
-    "always wanders about back and forth in\n"
-    "search of something. It is distinguished\n"
-    "by the zigzag footprints it leaves.");
+    "Nó áp mũi xuống đất, luôn đi tới đi lui để tìm\n"
+    "kiếm. Dấu chân ngoằn ngoèo để lại là đặc điểm\n"
+    "nhận biết của nó."
+);
 
 const u8 gLinoonePokedexText[] = _(
-    "It is exceedingly fast if it only has to run\n"
-    "in a straight line. When it spots pond-\n"
-    "dwelling prey underwater, it quickly leaps\n"
-    "in and catches it with its sharp claws.");
+    "Nó chạy cực nhanh theo đường thẳng. Khi\n"
+    "phát hiện con mồi dưới ao, nó lập tức lao\n"
+    "xuống và dùng móng vuốt sắc bắt lấy."
+);
 
 const u8 gWurmplePokedexText[] = _(
-    "It sticks to tree branches and eats\n"
-    "leaves. The thread it spits from its mouth,\n"
-    "which becomes gooey when it touches\n"
-    "air, slows the movement of its foes.");
+    "Nó bám vào cành cây và ăn lá. Sợi tơ phun từ\n"
+    "miệng trở nên dính khi gặp không khí, làm đối\n"
+    "thủ di chuyển chậm lại."
+);
 
 const u8 gSilcoonPokedexText[] = _(
-    "It prepares for evolution using the\n"
-    "energy it stored while it was a WURMPLE.\n"
-    "It keeps watch over the surroundings with\n"
-    "its two eyes.");
+    "Nó dùng năng lượng tích trữ từ thời còn là\n"
+    "WURMPLE để chuẩn bị tiến hóa. Hai mắt luôn\n"
+    "dõi theo mọi thứ xung quanh."
+);
 
 const u8 gBeautiflyPokedexText[] = _(
-    "Its colorfully patterned wings are its\n"
-    "most prominent feature. It flies through\n"
-    "flower-covered fields collecting pollen.\n"
-    "It attacks ferociously when angered.");
+    "Đôi cánh mang hoa văn rực rỡ là đặc điểm nổi\n"
+    "bật nhất. Nó bay qua đồng hoa thu thập phấn\n"
+    "và tấn công dữ dội khi nổi giận."
+);
 
 const u8 gCascoonPokedexText[] = _(
-    "To avoid detection by its enemies, it hides\n"
-    "motionlessly beneath large leaves and in\n"
-    "the gaps of branches. It also attaches\n"
-    "dead leaves to its body for camouflage.");
+    "Để tránh kẻ thù phát hiện, nó bất động dưới\n"
+    "lá lớn hoặc giữa các kẽ cành, đồng thời gắn\n"
+    "lá khô lên cơ thể để ngụy trang."
+);
 
 const u8 gDustoxPokedexText[] = _(
-    "It is a nocturnal POKéMON that flies from\n"
-    "fields and mountains to the attraction of\n"
-    "streetlights at night. It looses highly\n"
-    "toxic powder from its wings.");
+    "POKéMON sống về đêm này bị đèn đường thu\n"
+    "hút, bay đến từ đồng ruộng và núi đồi. Cánh\n"
+    "nó phát tán bột cực độc."
+);
 
 const u8 gLotadPokedexText[] = _(
-    "This POKéMON lives in ponds with clean\n"
-    "water. It is known to ferry small POKéMON\n"
-    "across ponds by carrying them on the\n"
-    "broad leaf on its head.");
+    "POKéMON này sống trong ao nước sạch. Nó\n"
+    "thường chở POKéMON nhỏ qua ao trên chiếc lá\n"
+    "rộng ở đầu."
+);
 
 const u8 gLombrePokedexText[] = _(
-    "In the evening, it takes great delight in\n"
-    "popping out of rivers and startling people.\n"
-    "It feeds on aquatic moss that grows on\n"
-    "rocks in the riverbed.");
+    "Buổi tối, nó thích nhảy khỏi sông để dọa mọi\n"
+    "người. Thức ăn của nó là rêu nước mọc trên\n"
+    "đá dưới lòng sông."
+);
 
 const u8 gLudicoloPokedexText[] = _(
-    "When it hears festive music, all the cells\n"
-    "in its body become stimulated, and it\n"
-    "begins moving in rhythm. It does not\n"
-    "quail even when it faces a tough opponent.");
+    "Khi nghe nhạc lễ hội, mọi tế bào trong cơ thể\n"
+    "nó phấn chấn và chuyển động theo nhịp. Nó\n"
+    "không nao núng trước đối thủ mạnh."
+);
 
 const u8 gSeedotPokedexText[] = _(
-    "It hangs off branches and absorbs\n"
-    "nutrients. When it finishes eating, its\n"
-    "body becomes so heavy that it drops to\n"
-    "the ground with a thump.");
+    "Nó treo mình trên cành để hấp thụ dinh\n"
+    "dưỡng. Ăn xong, cơ thể nặng đến mức rơi\n"
+    "bịch xuống đất."
+);
 
 const u8 gNuzleafPokedexText[] = _(
-    "A forest-dwelling POKéMON that is skilled\n"
-    "at climbing trees. Its long and pointed\n"
-    "nose is its weak point. It loses power if\n"
-    "the nose is gripped.");
+    "POKéMON sống trong rừng này rất giỏi trèo\n"
+    "cây. Chiếc mũi dài nhọn là điểm yếu; nếu bị nắm\n"
+    "mũi, nó sẽ mất sức."
+);
 
 const u8 gShiftryPokedexText[] = _(
-    "It is said to arrive on chilly, wintry winds.\n"
-    "Feared from long ago as the guardian of\n"
-    "forests, this POKéMON lives in a deep\n"
-    "forest where people do not venture.");
+    "Tương truyền nó đến theo những cơn gió mùa\n"
+    "đông lạnh giá. Từ xa xưa, POKéMON này được\n"
+    "kính sợ như thần hộ rừng và sống nơi rừng\n"
+    "sâu không người lui tới."
+);
 
 const u8 gTaillowPokedexText[] = _(
-    "Although it is small, it is very courageous.\n"
-    "It will take on a larger SKARMORY on an\n"
-    "equal footing. However, its will weakens if\n"
-    "it becomes hungry.");
+    "Dù nhỏ bé, nó rất can đảm và có thể đối đầu\n"
+    "ngang sức với SKARMORY lớn hơn. Tuy nhiên, ý\n"
+    "chí của nó suy yếu khi đói."
+);
 
 const u8 gSwellowPokedexText[] = _(
-    "A SWELLOW dives upon prey from far above.\n"
-    "It never misses its targets. It takes to\n"
-    "the skies in search of lands with a warm\n"
-    "climate.");
+    "SWELLOW bổ nhào xuống con mồi từ rất cao và\n"
+    "không bao giờ trượt mục tiêu. Nó bay khắp\n"
+    "trời tìm những vùng đất có khí hậu ấm áp."
+);
 
 const u8 gWingullPokedexText[] = _(
-    "It makes its nest on a sheer cliff at the\n"
-    "edge of the sea. It has trouble keeping\n"
-    "its wings flapping in flight. Instead, it\n"
-    "soars on updrafts.");
+    "Nó làm tổ trên vách đá dựng đứng sát biển.\n"
+    "Do khó vỗ cánh liên tục khi bay, nó thường\n"
+    "lượn theo luồng khí nóng bốc lên."
+);
 
 const u8 gPelipperPokedexText[] = _(
-    "It skims the tops of waves as it flies.\n"
-    "When it spots prey, it uses its large beak\n"
-    "to scoop up the victim with water.\n"
-    "It protects its eggs in its beak.");
+    "Nó bay sượt trên đầu ngọn sóng. Khi thấy con\n"
+    "mồi, nó dùng chiếc mỏ lớn xúc cả nước lẫn con\n"
+    "mồi lên. Nó cũng bảo vệ trứng trong mỏ."
+);
 
 const u8 gRaltsPokedexText[] = _(
-    "A RALTS has the power to sense the\n"
-    "emotions of people and POKéMON with the\n"
-    "horns on its head. It takes cover if it\n"
-    "senses any hostility.");
+    "RALTS dùng cặp sừng trên đầu để cảm nhận\n"
+    "cảm xúc của con người và POKéMON. Nó sẽ ẩn\n"
+    "náu nếu cảm thấy bất kỳ sự thù địch nào."
+);
 
 const u8 gKirliaPokedexText[] = _(
-    "A KIRLIA has the psychic power to create \n"
-    "a rip in the dimensions and see into the\n"
-    "future. It is said to dance with pleasure\n"
-    "on sunny mornings.");
+    "KIRLIA có năng lực tâm linh xé mở không gian\n"
+    "để nhìn thấy tương lai. Tương truyền nó vui\n"
+    "sướng nhảy múa vào những buổi sáng đầy\n"
+    "nắng."
+);
 
 const u8 gGardevoirPokedexText[] = _(
-    "It apparently does not feel the pull of\n"
-    "gravity because it supports itself with\n"
-    "psychic power. It will give its life to\n"
-    "protect its TRAINER.");
+    "Dường như nó không chịu tác động của trọng\n"
+    "lực vì tự nâng cơ thể bằng năng lực tâm\n"
+    "linh. Nó sẵn sàng hy sinh để bảo vệ HLV."
+);
 
 const u8 gSurskitPokedexText[] = _(
-    "They gather on puddles after evening\n"
-    "downpours, gliding across the surface\n"
-    "of water as if sliding. It secretes honey\n"
-    "with a sweet aroma from its head.");
+    "Sau những trận mưa chiều, chúng tụ tập trên\n"
+    "vũng nước và lướt đi như trượt trên mặt\n"
+    "nước. Đầu chúng tiết ra mật có hương thơm\n"
+    "ngọt ngào."
+);
 
 const u8 gMasquerainPokedexText[] = _(
-    "It intimidates foes with the large eyelike\n"
-    "patterns on its antennae. Because it can't\n"
-    "fly if its wings get wet, it shelters itself\n"
-    "from rain under large trees and eaves.");
+    "Nó dọa đối thủ bằng hoa văn lớn như mắt trên\n"
+    "râu. Vì cánh ướt sẽ không bay được, nó trú\n"
+    "mưa dưới cây lớn và mái hiên."
+);
 
 const u8 gShroomishPokedexText[] = _(
-    "It loves to eat damp, composted soil in\n"
-    "forests. If you enter a forest after a\n"
-    "long rain, you can see many SHROOMISH\n"
-    "feasting on composted soil.");
+    "Nó thích ăn đất mùn ẩm trong rừng. Sau một\n"
+    "trận mưa kéo dài, có thể thấy rất nhiều\n"
+    "SHROOMISH đang ăn đất mùn."
+);
 
 const u8 gBreloomPokedexText[] = _(
-    "It scatters spores from holes in the cap\n"
-    "on its head. It loves warm and humid\n"
-    "climates. It feeds on trees and plants in\n"
-    "fields and forests.");
+    "Nó phát tán bào tử từ các lỗ trên mũ nấm ở\n"
+    "đầu. Nó ưa khí hậu nóng ẩm và ăn cây cối\n"
+    "ngoài đồng cũng như trong rừng."
+);
 
 const u8 gSlakothPokedexText[] = _(
-    "It sleeps virtually all day and night long.\n"
-    "It doesn't change its nest its entire life,\n"
-    "but it sometimes travels great distances\n"
-    "by swimming in rivers.");
+    "Nó ngủ gần như suốt ngày đêm và cả đời\n"
+    "không đổi tổ. Tuy vậy, đôi khi nó bơi theo\n"
+    "sông để đi những quãng đường rất xa."
+);
 
 const u8 gVigorothPokedexText[] = _(
-    "It can't keep still because its blood boils\n"
-    "with energy. It runs through the fields\n"
-    "and mountains all day to calm itself. If it\n"
-    "doesn't, it can't sleep at night.");
+    "Máu sục sôi năng lượng khiến nó không thể\n"
+    "ngồi yên. Nó chạy khắp đồng núi cả ngày để\n"
+    "bình tâm; nếu không, ban đêm nó sẽ không ngủ\n"
+    "được."
+);
 
 const u8 gSlakingPokedexText[] = _(
-    "Hordes of SLAKING gather around trees\n"
-    "when fruits come into season. They wait\n"
-    "around patiently for ripened fruits to fall\n"
-    "out of the trees.");
+    "Khi đến mùa quả chín, từng đàn SLAKING tụ\n"
+    "tập quanh cây và kiên nhẫn chờ quả chín rụng\n"
+    "xuống."
+);
 
 const u8 gNincadaPokedexText[] = _(
-    "It makes its nest at the roots of a mighty\n"
-    "tree. Using its whiskerlike antennae, it\n"
-    "probes its surroundings in the\n"
-    "pitch-black darkness of soil.");
+    "Nó làm tổ dưới rễ một cây cổ thụ. Trong lòng\n"
+    "đất tối đen, nó dùng cặp râu như ria để thăm\n"
+    "dò xung quanh."
+);
 
 const u8 gNinjaskPokedexText[] = _(
-    "Because it darts about vigorously at high\n"
-    "speed, it is very difficult to see. Hearing\n"
-    "its distinctive cries for too long induces\n"
-    "a headache.");
+    "Nó lao đi mạnh mẽ với tốc độ cao nên rất khó\n"
+    "nhìn thấy. Nghe tiếng kêu đặc trưng của nó\n"
+    "quá lâu sẽ gây đau đầu."
+);
 
 const u8 gShedinjaPokedexText[] = _(
-    "A peculiar POKéMON that floats in air even\n"
-    "though its wings remain completely still.\n"
-    "The inside of its body is hollow and\n"
-    "utterly dark.");
+    "Một POKéMON kỳ lạ lơ lửng trong không trung\n"
+    "dù đôi cánh hoàn toàn bất động. Bên trong cơ\n"
+    "thể nó rỗng và tối đen."
+);
 
 const u8 gWhismurPokedexText[] = _(
-    "Its cries equal a jet plane in volume.\n"
-    "It inhales through its ear canals. Because\n"
-    "of this system, it can cry continually\n"
-    "without having to catch its breath.");
+    "Tiếng kêu của nó lớn ngang máy bay phản lực.\n"
+    "Nó hít vào qua ống tai, nhờ đó có thể kêu\n"
+    "liên tục mà không cần lấy hơi."
+);
 
 const u8 gLoudredPokedexText[] = _(
-    "It positions the round speakers on its\n"
-    "head to assail foes with ultrasonic waves\n"
-    "at massive volume. It builds power by\n"
-    "stomping the ground.");
+    "Nó hướng các loa tròn trên đầu về phía đối\n"
+    "thủ rồi dội sóng siêu âm cực lớn. Nó giậm chân\n"
+    "xuống đất để tích tụ sức mạnh."
+);
 
 const u8 gExploudPokedexText[] = _(
-    "It has sound-generating organs all over\n"
-    "its body. It communicates with others by\n"
-    "adjusting the tone and volume of the cries\n"
-    "it emits.");
+    "Khắp cơ thể nó đều có cơ quan tạo âm thanh.\n"
+    "Nó giao tiếp bằng cách điều chỉnh cao độ và\n"
+    "âm lượng tiếng kêu."
+);
 
 const u8 gMakuhitaPokedexText[] = _(
-    "It loves to toughen up its body above all\n"
-    "else. If you hear quaking rumbles in a cave,\n"
-    "it is the sound of MAKUHITA undertaking\n"
-    "strenuous training.");
+    "Trên hết, nó thích rèn luyện cơ thể. Nếu nghe\n"
+    "tiếng rung chuyển trong hang, đó là âm thanh\n"
+    "MAKUHITA đang khổ luyện."
+);
 
 const u8 gHariyamaPokedexText[] = _(
-    "It has the habit of challenging others\n"
-    "without hesitation to tests of strength.\n"
-    "It's been known to stand on train tracks\n"
-    "and stop trains using forearm thrusts.");
+    "Nó có thói quen không ngần ngại thách kẻ\n"
+    "khác thi sức mạnh. Nó từng đứng trên đường\n"
+    "ray và dùng cẳng tay đẩy dừng tàu hỏa."
+);
 
 const u8 gAzurillPokedexText[] = _(
-    "Its tail, which is packed with nutrition,\n"
-    "is very bouncy like a rubber ball. On sunny\n"
-    "days they gather at the edge of water and\n"
-    "splash about for fun.");
+    "Chiếc đuôi giàu dinh dưỡng của nó nảy như\n"
+    "quả bóng cao su. Vào ngày nắng, chúng tụ tập\n"
+    "bên mép nước và vui đùa bắn nước."
+);
 
 const u8 gNosepassPokedexText[] = _(
-    "Its body emits a powerful magnetism.\n"
-    "It feeds on prey that is pulled in by the\n"
-    "force. Its magnetism is stronger in cold\n"
-    "seasons.");
+    "Cơ thể nó phát ra từ lực mạnh, hút con mồi\n"
+    "đến làm thức ăn. Từ lực của nó mạnh hơn vào\n"
+    "những mùa lạnh."
+);
 
 const u8 gSkittyPokedexText[] = _(
-    "A SKITTY's adorably cute behavior makes it\n"
-    "highly popular. In battle, it makes its tail\n"
-    "puff out. It threatens foes with a sharp\n"
-    "growl.");
+    "Hành vi đáng yêu khiến SKITTY rất được yêu\n"
+    "thích. Khi chiến đấu, nó xù phồng đuôi và đe\n"
+    "dọa đối thủ bằng tiếng gầm gừ đanh thép."
+);
 
 const u8 gDelcattyPokedexText[] = _(
-    "Rather than keeping a permanent lair,\n"
-    "it habitually seeks comfortable spots and\n"
-    "sleeps there. It is nocturnal and becomes\n"
-    "active at dusk.");
+    "Thay vì giữ hang ổ cố định, nó thường tìm\n"
+    "nơi thoải mái để ngủ. Loài này sống về đêm và\n"
+    "bắt đầu hoạt động lúc chạng vạng."
+);
 
 const u8 gSableyePokedexText[] = _(
-    "It digs branching holes in caves using its\n"
-    "sharp claws in search of food--raw gems.\n"
-    "A SABLEYE lurks in darkness and is seen\n"
-    "only rarely.");
+    "Nó dùng vuốt sắc đào các ngách phân nhánh\n"
+    "trong hang để tìm đá quý thô làm thức ăn.\n"
+    "SABLEYE ẩn trong bóng tối nên rất hiếm khi\n"
+    "được thấy."
+);
 
 const u8 gMawilePokedexText[] = _(
-    "Its giant jaws are actually steel horns\n"
-    "that transformed. It fools foes into\n"
-    "complacency with its adorable gestures,\n"
-    "then chomps them with its huge jaws.");
+    "Bộ hàm khổng lồ thực ra là đôi sừng thép đã\n"
+    "biến đổi. Nó dùng cử chỉ đáng yêu khiến đối\n"
+    "thủ lơ là rồi ngoạm bằng bộ hàm lớn."
+);
 
 const u8 gAronPokedexText[] = _(
-    "A POKéMON that is clad in steel armor.\n"
-    "A new suit of armor is made when it evolves.\n"
-    "The old, discarded armor is salvaged as\n"
-    "metal for making iron products.");
+    "POKéMON này khoác giáp thép. Bộ giáp mới\n"
+    "hình thành khi nó tiến hóa; giáp cũ bị loại bỏ\n"
+    "được thu hồi làm kim loại để chế tạo đồ sắt."
+);
 
 const u8 gLaironPokedexText[] = _(
-    "When two LAIRON meet in the wild, they\n"
-    "fight for territory by bashing into each\n"
-    "other with their steel bodies. The sound\n"
-    "of their collision carries for miles.");
+    "Khi hai LAIRON gặp nhau ngoài tự nhiên,\n"
+    "chúng húc cơ thể thép vào nhau để tranh\n"
+    "lãnh thổ. Tiếng va chạm vang xa hàng dặm."
+);
 
 const u8 gAggronPokedexText[] = _(
-    "Its iron horns grow longer a little at\n"
-    "a time. They are used to determine the\n"
-    "AGGRON's age. The gouges in its armor are\n"
-    "worn with pride as mementos from battles.");
+    "Sừng sắt của nó dài dần và cho biết tuổi của\n"
+    "AGGRON. Nó tự hào mang những vết lõm trên\n"
+    "giáp như kỷ vật từ các trận chiến."
+);
 
 const u8 gMedititePokedexText[] = _(
-    "It continually meditates for hours every\n"
-    "day. As a result of rigorous and dedicated\n"
-    "yoga training, it has tempered its\n"
-    "spiritual power so much it can fly.");
+    "Nó thiền nhiều giờ mỗi ngày. Nhờ chuyên tâm\n"
+    "rèn luyện yoga nghiêm khắc, sức mạnh tinh\n"
+    "thần của nó được tôi luyện đến mức có thể\n"
+    "bay."
+);
 
 const u8 gMedichamPokedexText[] = _(
-    "Through crushingly harsh yoga training, it\n"
-    "gained the power to foretell its foe's\n"
-    "actions. It battles with elegant, dance-\n"
-    "like movement.");
+    "Qua quá trình luyện yoga khắc nghiệt tột\n"
+    "cùng, nó có thể đoán trước hành động của\n"
+    "đối thủ. Nó chiến đấu bằng những động tác\n"
+    "thanh nhã như múa."
+);
 
 const u8 gElectrikePokedexText[] = _(
-    "It generates electricity using friction\n"
-    "from the atmosphere. In seasons with\n"
-    "especially arid air, its entire body blazes\n"
-    "with violent showers of sparks.");
+    "Nó tạo điện bằng ma sát với khí quyển. Vào\n"
+    "mùa không khí đặc biệt khô, toàn thân nó\n"
+    "bừng sáng giữa những trận mưa tia lửa dữ\n"
+    "dội."
+);
 
 const u8 gManectricPokedexText[] = _(
-    "Because lightning falls in their vicinities,\n"
-    "MANECTRIC were thought to have been born\n"
-    "from lightning. In battle, they create\n"
-    "thunderclouds.");
+    "Vì sét thường đánh xuống quanh MANECTRIC,\n"
+    "người ta từng cho rằng chúng sinh ra từ sét.\n"
+    "Khi chiến đấu, chúng tạo ra mây giông."
+);
 
 const u8 gPluslePokedexText[] = _(
-    "It has the trait of cheering on its fellow\n"
-    "POKéMON. By shorting out the electricity\n"
-    "it releases from its paws, it creates\n"
-    "pom-poms for cheering.");
+    "Nó có thói quen cổ vũ các POKéMON đồng đội.\n"
+    "Bằng cách làm chập dòng điện phóng từ bàn\n"
+    "chân, nó tạo ra những chùm bông cổ vũ."
+);
 
 const u8 gMinunPokedexText[] = _(
-    "At a meeting of POKéMON academics, it was\n"
-    "announced that simultaneous exposure to\n"
-    "electricity from a PLUSLE and MINUN will\n"
-    "promote circulation and boost vitality.");
+    "Tại hội nghị của các học giả POKéMON, người\n"
+    "ta công bố rằng tiếp xúc đồng thời với điện\n"
+    "từ PLUSLE và MINUN giúp tuần hoàn máu và\n"
+    "tăng sinh lực."
+);
 
 const u8 gVolbeatPokedexText[] = _(
-    "With their taillights lit, VOLBEAT fly in\n"
-    "a swarm, drawing geometric designs in the\n"
-    "night sky. They move their nests if their\n"
-    "pond water becomes dirty.");
+    "VOLBEAT thắp sáng đuôi, bay thành đàn và vẽ\n"
+    "các hình học trên trời đêm. Chúng chuyển tổ\n"
+    "nếu nước trong ao trở nên bẩn."
+);
 
 const u8 gIllumisePokedexText[] = _(
-    "A nocturnal POKéMON that becomes active\n"
-    "upon nightfall. It leads a VOLBEAT swarm\n"
-    "to draw patterns in the night sky. Over 200\n"
-    "different patterns have been confirmed.");
+    "POKéMON sống về đêm này hoạt động khi trời\n"
+    "tối. Nó dẫn đàn VOLBEAT vẽ hình trên trời\n"
+    "đêm; hơn 200 kiểu hình đã được xác nhận."
+);
 
 const u8 gRoseliaPokedexText[] = _(
-    "A ROSELIA that drinks nutritionally rich\n"
-    "springwater blooms with lovely flowers.\n"
-    "The fragrance of its flowers has the\n"
-    "effect of making its foes careless.");
+    "ROSELIA uống nước suối giàu dinh dưỡng sẽ\n"
+    "nở hoa tuyệt đẹp. Hương hoa khiến đối thủ\n"
+    "mất cảnh giác."
+);
 
 const u8 gGulpinPokedexText[] = _(
-    "This POKéMON's stomach fluid can even\n"
-    "digest scrap iron. In one gulp, it can\n"
-    "swallow something that is as large as\n"
-    "itself.");
+    "Dịch dạ dày của POKéMON này tiêu hóa được\n"
+    "cả sắt vụn. Chỉ với một lần nuốt, nó có thể\n"
+    "nuốt vật lớn bằng chính cơ thể mình."
+);
 
 const u8 gSwalotPokedexText[] = _(
-    "Its powerful stomach acid is capable of\n"
-    "digesting almost anything. The one thing\n"
-    "in the whole world a SWALOT can't digest is\n"
-    "its own stomach.");
+    "Axit dạ dày cực mạnh của nó tiêu hóa được\n"
+    "gần như mọi thứ. Thứ duy nhất trên đời\n"
+    "SWALOT không thể tiêu hóa là chính dạ dày\n"
+    "của mình."
+);
 
 const u8 gCarvanhaPokedexText[] = _(
-    "CARVANHA attack ships in swarms, making\n"
-    "them sink. Although it is said to be a very\n"
-    "vicious POKéMON, it timidly flees as soon\n"
-    "as it finds itself alone.");
+    "CARVANHA tấn công tàu theo đàn và khiến\n"
+    "chúng chìm. Tuy nổi tiếng là POKéMON hung dữ,\n"
+    "nó lại nhút nhát bỏ chạy ngay khi chỉ còn một\n"
+    "mình."
+);
 
 const u8 gSharpedoPokedexText[] = _(
-    "The vicious and sly gangster of the sea.\n"
-    "Its skin is specially textured to minimize\n"
-    "drag in water. Its speed tops out at over\n"
-    "75 miles per hour.");
+    "Tên côn đồ hung ác, xảo quyệt của biển cả. Da\n"
+    "nó có kết cấu đặc biệt giúp giảm lực cản của\n"
+    "nước. Tốc độ tối đa vượt 75 dặm/giờ."
+);
 
 const u8 gWailmerPokedexText[] = _(
-    "While this POKéMON usually lives in the sea,\n"
-    "it can survive on land, although not too\n"
-    "long. It loses vitality if its body becomes\n"
-    "dried out.");
+    "POKéMON này thường sống dưới biển nhưng\n"
+    "vẫn có thể tồn tại trên cạn trong thời gian\n"
+    "ngắn. Nó mất sinh lực nếu cơ thể bị khô."
+);
 
 const u8 gWailordPokedexText[] = _(
-    "It breathes through nostrils that it\n"
-    "raises above the sea. By inhaling to its\n"
-    "maximum capacity, a WAILORD can dive close\n"
-    "to 10,000 feet beneath the waves.");
+    "Nó thở qua lỗ mũi nhô lên khỏi mặt biển. Khi\n"
+    "hít vào hết sức, WAILORD có thể lặn xuống\n"
+    "gần 10.000 feet dưới những con sóng."
+);
 
 const u8 gNumelPokedexText[] = _(
-    "A NUMEL stores boiling magma in the hump\n"
-    "on its back. It is a hardy POKéMON that can\n"
-    "transport a 220-pound load. It has served\n"
-    "humans at work since long ago.");
+    "NUMEL trữ dung nham sôi trong bướu trên\n"
+    "lưng. POKéMON khỏe bền này chở được 220\n"
+    "pound và đã giúp con người làm việc từ xa\n"
+    "xưa."
+);
 
 const u8 gCameruptPokedexText[] = _(
-    "A POKéMON that lives in the crater of\n"
-    "a volcano. Every 10 years, the volcanoes\n"
-    "on its back erupt violently. Research is\n"
-    "under way on the cause of eruption.");
+    "POKéMON này sống trong miệng núi lửa. Cứ 10\n"
+    "năm, các núi lửa trên lưng nó lại phun trào\n"
+    "dữ dội. Nguyên nhân hiện vẫn đang được\n"
+    "nghiên cứu."
+);
 
 const u8 gTorkoalPokedexText[] = _(
-    "It battles using energy it gets from\n"
-    "burning coal. When loosing smoke from its\n"
-    "nostrils, it lets off a sound that is\n"
-    "similar to a locomotive's horn.");
+    "Nó chiến đấu bằng năng lượng từ việc đốt\n"
+    "than. Khi nhả khói qua lỗ mũi, nó phát ra âm\n"
+    "thanh giống tiếng còi đầu máy xe lửa."
+);
 
 const u8 gSpoinkPokedexText[] = _(
-    "A POKéMON that manipulates psychic power\n"
-    "at will. It doesn't stop bouncing even when\n"
-    "it is asleep. It loves eating mushrooms\n"
-    "that grow underground.");
+    "POKéMON này tùy ý điều khiển sức mạnh tâm\n"
+    "linh. Nó không ngừng nảy ngay cả khi ngủ và\n"
+    "rất thích ăn nấm mọc dưới lòng đất."
+);
 
 const u8 gGrumpigPokedexText[] = _(
-    "It stores power in the black pearls on its\n"
-    "forehead. When it uses psychic power, it\n"
-    "performs an odd dance step. Its style of\n"
-    "dancing became hugely popular overseas.");
+    "Nó tích trữ sức mạnh trong những viên ngọc\n"
+    "đen trên trán. Khi dùng sức mạnh tâm linh, nó\n"
+    "múa những bước kỳ lạ từng cực kỳ thịnh\n"
+    "hành ở nước ngoài."
+);
 
 const u8 gSpindaPokedexText[] = _(
-    "It is distinguished by a pattern of\n"
-    "spots that is always different. Its\n"
-    "unsteady, tottering walk has the\n"
-    "effect of fouling its foe's aim.");
+    "Mỗi cá thể có một hoa văn đốm khác biệt. Dáng\n"
+    "đi lảo đảo, chệnh choạng của nó khiến đối thủ\n"
+    "khó ngắm chính xác."
+);
 
 const u8 gTrapinchPokedexText[] = _(
-    "Its big jaws crunch through boulders.\n"
-    "Because its head is so big, it has a hard\n"
-    "time getting back upright if it tips over\n"
-    "onto its back.");
+    "Bộ hàm lớn của nó nghiền nát được đá tảng.\n"
+    "Vì đầu quá to, nó rất khó đứng dậy nếu ngã\n"
+    "ngửa."
+);
 
 const u8 gVibravaPokedexText[] = _(
-    "It looses ultrasonic waves by rubbing its\n"
-    "wings together. Since a VIBRAVA's wings\n"
-    "are still in the process of growing, it can\n"
-    "only fly short distances.");
+    "Nó phát sóng siêu âm bằng cách cọ hai cánh\n"
+    "vào nhau. Vì cánh của VIBRAVA vẫn đang phát\n"
+    "triển, nó chỉ bay được những quãng ngắn."
+);
 
 const u8 gFlygonPokedexText[] = _(
-    "The flapping of its wings sounds like\n"
-    "singing. To prevent detection by enemies,\n"
-    "it hides itself by flapping up a cloud of\n"
-    "desert sand.");
+    "Tiếng vỗ cánh của nó nghe như tiếng hát. Để\n"
+    "tránh bị kẻ địch phát hiện, nó ẩn mình bằng\n"
+    "cách đánh tung một đám mây cát sa mạc."
+);
 
 const u8 gCacneaPokedexText[] = _(
-    "CACNEA live in deserts with virtually no\n"
-    "rainfall. It battles by swinging its thick,\n"
-    "spiked arms. Once a year, a yellow flower\n"
-    "blooms.");
+    "CACNEA sống ở sa mạc hầu như không mưa. Nó\n"
+    "chiến đấu bằng cách vung đôi tay dày đầy\n"
+    "gai. Mỗi năm, một bông hoa vàng lại nở."
+);
 
 const u8 gCacturnePokedexText[] = _(
-    "After spending thousands of years in\n"
-    "harsh deserts, its blood transformed into\n"
-    "the same substances as sand. It is\n"
-    "nocturnal, so it hunts at night.");
+    "Sau hàng nghìn năm trong sa mạc khắc nghiệt,\n"
+    "máu nó biến thành những chất giống như cát.\n"
+    "Là loài sống về đêm, nó đi săn khi trời tối."
+);
 
 const u8 gSwabluPokedexText[] = _(
-    "A POKéMON that has wings like cottony\n"
-    "clouds. After enduring winter, in which\n"
-    "little food is available, SWABLU flocks\n"
-    "move closer to towns in the spring.");
+    "POKéMON này có đôi cánh như mây bông. Sau\n"
+    "mùa đông khan hiếm thức ăn, đàn SWABLU tiến\n"
+    "gần các thị trấn hơn vào mùa xuân."
+);
 
 const u8 gAltariaPokedexText[] = _(
-    "It hums in a beautiful soprano voice.\n"
-    "It flies among white clouds in the blue\n"
-    "sky. It launches intensely hot fireballs\n"
-    "from its mouth.");
+    "Nó ngân nga bằng giọng nữ cao tuyệt đẹp và\n"
+    "bay giữa mây trắng trên trời xanh. Từ miệng,\n"
+    "nó phóng ra những quả cầu lửa cực nóng."
+);
 
 const u8 gZangoosePokedexText[] = _(
-    "When it battles, it stands on its hind legs\n"
-    "and attacks with its sharply clawed\n"
-    "forelegs. Its fur bristles if it encounters\n"
-    "any SEVIPER.");
+    "Khi chiến đấu, nó đứng bằng hai chân sau và\n"
+    "tấn công bằng đôi chân trước có vuốt sắc.\n"
+    "Lông nó dựng lên mỗi khi gặp SEVIPER."
+);
 
 const u8 gSeviperPokedexText[] = _(
-    "SEVIPER and ZANGOOSE are eternal rivals.\n"
-    "It counters a ZANGOOSE's dazzling agility\n"
-    "with its swordlike tail, which also oozes\n"
-    "a horrible poison.");
+    "SEVIPER và ZANGOOSE là kình địch muôn thuở.\n"
+    "Nó đối phó sự nhanh nhẹn chói mắt của\n"
+    "ZANGOOSE bằng chiếc đuôi như kiếm, rỉ ra\n"
+    "chất độc khủng khiếp."
+);
 
 const u8 gLunatonePokedexText[] = _(
-    "It becomes very active on the night of\n"
-    "a full moon. This POKéMON was first\n"
-    "discovered 40 years ago at the site of\n"
-    "a meteor strike.");
+    "Nó hoạt động rất mạnh vào đêm trăng tròn.\n"
+    "POKéMON này được phát hiện lần đầu cách\n"
+    "đây 40 năm tại một địa điểm thiên thạch va\n"
+    "xuống."
+);
 
 const u8 gSolrockPokedexText[] = _(
-    "Solar energy is the source of this \n"
-    "POKéMON's power. On sunny days, groups of\n"
-    "SOLROCK line up facing the sun and absorb\n"
-    "its light.");
+    "Năng lượng mặt trời là nguồn sức mạnh của\n"
+    "POKéMON này. Vào ngày nắng, các nhóm\n"
+    "SOLROCK xếp hàng hướng về mặt trời để hấp\n"
+    "thụ ánh sáng."
+);
 
 const u8 gBarboachPokedexText[] = _(
-    "Its body is covered with a slimy film.\n"
-    "The film acts as a barrier to prevent germs\n"
-    "in muddy water from entering the\n"
-    "BARBOACH's body.");
+    "Cơ thể nó phủ một màng nhớt. Lớp màng này\n"
+    "tạo thành rào chắn, ngăn mầm bệnh trong\n"
+    "nước bùn xâm nhập cơ thể BARBOACH."
+);
 
 const u8 gWhiscashPokedexText[] = _(
-    "Mysteriously, it can foretell earthquakes.\n"
-    "In the daytime, it sleeps in mud at the\n"
-    "bottom of a pond. When it awakens, it\n"
-    "continually feeds throughout the night.");
+    "Một cách bí ẩn, nó có thể dự báo động đất.\n"
+    "Ban ngày nó ngủ trong bùn dưới đáy ao; khi\n"
+    "thức dậy, nó ăn liên tục suốt đêm."
+);
 
 const u8 gCorphishPokedexText[] = _(
-    "Once it grips prey with its large pincers,\n"
-    "it will never let go, no matter what.\n"
-    "It is a hardy POKéMON that can thrive\n"
-    "in any environment.");
+    "Một khi đã kẹp con mồi bằng đôi càng lớn, nó\n"
+    "nhất quyết không buông. POKéMON khỏe bền\n"
+    "này có thể sinh trưởng trong mọi môi trường."
+);
 
 const u8 gCrawdauntPokedexText[] = _(
-    "A brutish POKéMON that loves to battle.\n"
-    "A veteran CRAWDAUNT that has prevailed in\n"
-    "hundreds of battles has giant pincers\n"
-    "marked with countless scars.");
+    "POKéMON thô bạo này rất thích chiến đấu.\n"
+    "CRAWDAUNT kỳ cựu thắng hàng trăm trận có\n"
+    "đôi càng khổng lồ mang vô số vết sẹo."
+);
 
 const u8 gBaltoyPokedexText[] = _(
-    "A BALTOY moves by spinning on its single\n"
-    "foot. It has been depicted in murals \n"
-    "adorning the walls of a once-bustling city\n"
-    "in an ancient age.");
+    "BALTOY di chuyển bằng cách xoay trên bàn\n"
+    "chân duy nhất. Hình nó xuất hiện trên các\n"
+    "bích họa trang trí tường một thành phố\n"
+    "từng phồn thịnh thời cổ đại."
+);
 
 const u8 gClaydolPokedexText[] = _(
-    "A CLAYDOL sleeps while hovering in midair.\n"
-    "Its arms are separate from its body.\n"
-    "They are kept floating by the POKéMON's\n"
-    "manipulation of psychic power.");
+    "CLAYDOL ngủ khi lơ lửng giữa không trung.\n"
+    "Các cánh tay tách rời cơ thể và được giữ\n"
+    "nổi nhờ sức mạnh tâm linh do POKéMON này\n"
+    "điều khiển."
+);
 
 const u8 gLileepPokedexText[] = _(
-    "It disguises itself as seaweed by making\n"
-    "its tentacles sway. Unsuspecting prey\n"
-    "that come too close are swallowed whole.\n"
-    "It became extinct 100 million years ago.");
+    "Nó giả làm rong biển bằng cách đung đưa xúc\n"
+    "tu. Con mồi mất cảnh giác đến quá gần sẽ bị\n"
+    "nuốt chửng. Nó đã tuyệt chủng 100 triệu năm\n"
+    "trước."
+);
 
 const u8 gCradilyPokedexText[] = _(
-    "It drags its heavy body along the\n"
-    "seafloor. It makes its nest in the shallows\n"
-    "of warm seas. CRADILY can be seen on\n"
-    "beaches when the tide goes out.");
+    "Nó lê thân hình nặng nề dọc đáy biển và làm\n"
+    "tổ ở vùng nước nông của biển ấm. Có thể thấy\n"
+    "CRADILY trên bãi biển khi thủy triều rút."
+);
 
 const u8 gAnorithPokedexText[] = _(
-    "It was resurrected from a fossil using the\n"
-    "power of science. It swims by undulating\n"
-    "the eight wings at its sides. They were\n"
-    "feet that adapted to life in the sea.");
+    "Nó được hồi sinh từ hóa thạch nhờ khoa học.\n"
+    "Nó bơi bằng cách uốn lượn tám cánh bên hông,\n"
+    "vốn là chân đã thích nghi với đời sống dưới\n"
+    "biển."
+);
 
 const u8 gArmaldoPokedexText[] = _(
-    "ARMALDO usually lives on land. However,\n"
-    "when it hunts for prey, it dives beneath\n"
-    "the ocean. It swims around using its two\n"
-    "large wings.");
+    "ARMALDO thường sống trên cạn. Tuy nhiên, khi\n"
+    "săn mồi, nó lặn xuống biển và bơi bằng hai\n"
+    "chiếc cánh lớn."
+);
 
 const u8 gFeebasPokedexText[] = _(
-    "FEEBAS live in ponds that are heavily\n"
-    "infested with weeds. Because of its\n"
-    "hopelessly shabby appearance, it\n"
-    "seems as if few TRAINERS raise it.");
+    "FEEBAS sống trong những ao đầy cỏ dại. Vì vẻ\n"
+    "ngoài xấu xí thảm hại, dường như rất ít\n"
+    "HLV nuôi nó."
+);
 
 const u8 gMiloticPokedexText[] = _(
-    "It is said to live at the bottom of\n"
-    "large lakes. Considered to be the most\n"
-    "beautiful of all POKéMON, it has been\n"
-    "depicted in paintings and statues.");
+    "Nghe nói nó sống dưới đáy các hồ lớn. Được\n"
+    "xem là POKéMON đẹp nhất, nó đã được khắc\n"
+    "họa trong nhiều tranh vẽ và tượng."
+);
 
 const u8 gCastformPokedexText[] = _(
-    "It alters its form depending on the\n"
-    "weather. Changes in the climate such as\n"
-    "the temperature and humidity appear to\n"
-    "affect its cellular structure.");
+    "Nó đổi hình dạng theo thời tiết. Những biến\n"
+    "đổi khí hậu như nhiệt độ và độ ẩm dường như\n"
+    "tác động đến cấu trúc tế bào của nó."
+);
 
 const u8 gKecleonPokedexText[] = _(
-    "A POKéMON that has the ability to alter its\n"
-    "body colors to match its surroundings.\n"
-    "A KECLEON reverts to its original colors if\n"
-    "it is startled.");
+    "POKéMON này có thể đổi màu cơ thể cho giống\n"
+    "môi trường xung quanh. KECLEON sẽ trở lại\n"
+    "màu ban đầu nếu bị giật mình."
+);
 
 const u8 gShuppetPokedexText[] = _(
-    "This POKéMON roams about deep in the\n"
-    "night seeking such negative emotions as\n"
-    "grudges and envy. It retreats to its nest\n"
-    "when the sun begins to rise.");
+    "POKéMON này lang thang trong đêm khuya để\n"
+    "tìm những cảm xúc tiêu cực như oán hận và\n"
+    "đố kỵ. Khi mặt trời bắt đầu mọc, nó trở về tổ."
+);
 
 const u8 gBanettePokedexText[] = _(
-    "An abandoned plush doll became this\n"
-    "POKéMON. They are said to live in garbage\n"
-    "dumps and wander about in search of the\n"
-    "children that threw them away.");
+    "Một con búp bê nhồi bông bị bỏ rơi đã biến\n"
+    "thành POKéMON này. Chúng được cho là sống ở\n"
+    "bãi rác và lang thang tìm những đứa trẻ đã\n"
+    "vứt chúng đi."
+);
 
 const u8 gDuskullPokedexText[] = _(
-    "A glare from its single scarlet eye makes\n"
-    "even burly grown-ups freeze in utter fear.\n"
-    "It is a nocturnal POKéMON that roams\n"
-    "about under the cloak of darkness.");
+    "Ánh nhìn từ con mắt đỏ thẫm duy nhất khiến\n"
+    "cả người lớn lực lưỡng cũng cứng đờ vì\n"
+    "khiếp sợ. POKéMON sống về đêm này lang thang\n"
+    "dưới màn đêm."
+);
 
 const u8 gDusclopsPokedexText[] = _(
-    "It is thought that its body is hollow with\n"
-    "only a spectral ball of fire burning inside.\n"
-    "However, no one has been able to\n"
-    "confirm this theory as fact.");
+    "Người ta cho rằng cơ thể nó rỗng, bên trong\n"
+    "chỉ có một quả cầu lửa ma quái cháy sáng. Tuy\n"
+    "nhiên, chưa ai xác nhận được giả thuyết này."
+);
 
 const u8 gTropiusPokedexText[] = _(
-    "It flies by flapping its broad leaves.\n"
-    "The bunch of fruit that grows around its\n"
-    "neck is deliciously sweet. In the spring,\n"
-    "it scatters pollen from its neck.");
+    "Nó bay bằng cách vỗ những chiếc lá rộng.\n"
+    "Chùm quả mọc quanh cổ ngọt tuyệt. Vào mùa\n"
+    "xuân, nó phát tán phấn hoa từ cổ."
+);
 
 const u8 gChimechoPokedexText[] = _(
-    "They fly about very actively when the hot\n"
-    "season arrives. They communicate among\n"
-    "themselves using seven different and\n"
-    "distinguishing cries.");
+    "Khi mùa nóng đến, chúng bay lượn rất năng\n"
+    "động. Chúng giao tiếp với nhau bằng bảy\n"
+    "tiếng kêu khác biệt, dễ nhận biết."
+);
 
 const u8 gAbsolPokedexText[] = _(
-    "It sharply senses even subtle changes in\n"
-    "the sky and the land to predict natural\n"
-    "disasters. It is a long-lived POKéMON that\n"
-    "has a life-span of 100 years.");
+    "Nó cảm nhận nhạy bén cả những thay đổi nhỏ\n"
+    "trên trời và mặt đất để dự báo thiên tai.\n"
+    "POKéMON sống lâu này có tuổi thọ 100 năm."
+);
 
 const u8 gWynautPokedexText[] = _(
-    "A WYNAUT loves to eat sweet fruits.\n"
-    "It cleverly picks fruits using its earlike\n"
-    "arms. They gather in fruit gardens, drawn\n"
-    "by the fragrance.");
+    "WYNAUT rất thích ăn quả ngọt. Nó khéo léo hái\n"
+    "quả bằng đôi tay giống tai. Mùi hương thu\n"
+    "hút chúng tụ tập trong các vườn cây ăn quả."
+);
 
 const u8 gSnoruntPokedexText[] = _(
-    "They tend to move about in groups of\n"
-    "around five SNORUNT. In snowy regions,\n"
-    "it is said that when they are seen late at\n"
-    "night, snowfall will arrive by morning.");
+    "Chúng thường di chuyển theo nhóm khoảng\n"
+    "năm SNORUNT. Ở vùng tuyết, người ta nói rằng\n"
+    "nếu thấy chúng vào đêm khuya thì sáng hôm\n"
+    "sau tuyết sẽ rơi."
+);
 
 const u8 gGlaliePokedexText[] = _(
-    "A GLALIE has the power to instantaneously\n"
-    "freeze moisture in the atmosphere.\n"
-    "A dazzling cloud of diamondlike ice\n"
-    "crystals forms around its body.");
+    "GLALIE có thể lập tức đóng băng hơi ẩm\n"
+    "trong khí quyển. Một đám mây lấp lánh gồm các\n"
+    "tinh thể băng như kim cương hình thành\n"
+    "quanh cơ thể nó."
+);
 
 const u8 gSphealPokedexText[] = _(
-    "It is completely covered with plushy fur.\n"
-    "As a result, it never feels the cold even\n"
-    "when it is rolling about on ice floes or\n"
-    "diving in the sea.");
+    "Cơ thể nó phủ kín bộ lông mềm mượt. Vì vậy,\n"
+    "nó không bao giờ thấy lạnh dù lăn trên các\n"
+    "tảng băng trôi hay lặn dưới biển."
+);
 
 const u8 gSealeoPokedexText[] = _(
-    "SEALEO live in herds on ice floes. Using its\n"
-    "powerful flippers, it shatters ice.\n"
-    "It dives into the sea to hunt prey five\n"
-    "times a day.");
+    "SEALEO sống thành đàn trên các tảng băng\n"
+    "trôi. Nó dùng chân chèo khỏe để đập vỡ băng\n"
+    "và lặn xuống biển săn mồi năm lần mỗi ngày."
+);
 
 const u8 gWalreinPokedexText[] = _(
-    "To protect its herd, the leader battles\n"
-    "anything that invades its territory, even\n"
-    "at the cost of its life. Its tusks may snap\n"
-    "off in battle.");
+    "Để bảo vệ đàn, con đầu đàn chiến đấu với mọi\n"
+    "kẻ xâm phạm lãnh thổ, dù phải trả giá bằng\n"
+    "mạng sống. Cặp ngà của nó có thể gãy trong\n"
+    "trận chiến."
+);
 
 const u8 gClamperlPokedexText[] = _(
-    "A CLAMPERL slams its shell closed on prey\n"
-    "to prevent escape. The pearl it creates\n"
-    "upon evolution is said to be infused with\n"
-    "a mysterious energy.");
+    "CLAMPERL khép mạnh vỏ để kẹp chặt con mồi,\n"
+    "ngăn nó trốn thoát. Viên ngọc tạo ra khi tiến\n"
+    "hóa được cho là chứa một nguồn năng lượng\n"
+    "bí ẩn."
+);
 
 const u8 gHuntailPokedexText[] = _(
-    "To withstand the crushing pressure of\n"
-    "water deep under the sea, its spine is very\n"
-    "thick and sturdy. Its tail, which is shaped\n"
-    "like a small fish, has eyes that light up.");
+    "Để chịu được áp lực nghiền nát dưới biển\n"
+    "sâu, xương sống của nó rất dày và chắc.\n"
+    "Chiếc đuôi hình cá nhỏ có đôi mắt phát sáng."
+);
 
 const u8 gGorebyssPokedexText[] = _(
-    "A GOREBYSS siphons the body fluids of prey\n"
-    "through its thin, tubular mouth. Its light\n"
-    "pink body color turns vivid when it\n"
-    "finishes feeding.");
+    "GOREBYSS hút dịch cơ thể con mồi qua chiếc\n"
+    "miệng mảnh hình ống. Màu hồng nhạt của cơ\n"
+    "thể trở nên rực rỡ sau khi nó ăn xong."
+);
 
 const u8 gRelicanthPokedexText[] = _(
-    "A POKéMON that was once believed to have\n"
-    "been extinct. The species has not changed\n"
-    "its form for 100 million years. It walks on\n"
-    "the seafloor using its pectoral fins.");
+    "POKéMON này từng bị cho là đã tuyệt chủng.\n"
+    "Loài này không đổi hình dạng suốt 100 triệu\n"
+    "năm và dùng vây ngực để đi dưới đáy biển."
+);
 
 const u8 gLuvdiscPokedexText[] = _(
-    "LUVDISC make the branches of CORSOLA\n"
-    "their nests. There is a custom from long\n"
-    "ago of giving a LUVDISC as a gift to\n"
-    "express one's feelings of love.");
+    "LUVDISC làm tổ trên các nhánh của CORSOLA.\n"
+    "Từ xa xưa, người ta có tục tặng LUVDISC để\n"
+    "bày tỏ tình yêu."
+);
 
 const u8 gBagonPokedexText[] = _(
-    "Although it is small, this POKéMON is very\n"
-    "powerful because its body is a bundle of\n"
-    "muscles. It launches head-butts with its\n"
-    "ironlike skull.");
+    "Dù nhỏ bé, POKéMON này rất mạnh vì toàn thân\n"
+    "là những bó cơ. Nó tung những cú húc đầu\n"
+    "bằng hộp sọ cứng như sắt."
+);
 
 const u8 gShelgonPokedexText[] = _(
-    "It hardly eats while it awaits evolution.\n"
-    "It becomes hardier by enduring hunger.\n"
-    "Its shell peels off the instant it begins\n"
-    "to evolve.");
+    "Nó hầu như không ăn trong lúc chờ tiến hóa\n"
+    "và trở nên cứng cáp hơn nhờ chịu đói. Lớp\n"
+    "vỏ bong ra ngay khi nó bắt đầu tiến hóa."
+);
 
 const u8 gSalamencePokedexText[] = _(
-    "After many long years, its cellular\n"
-    "structure underwent a sudden mutation to\n"
-    "grow wings. When angered, it loses all\n"
-    "thought and rampages out of control.");
+    "Sau nhiều năm dài, cấu trúc tế bào của nó đột\n"
+    "biến bất ngờ và mọc cánh. Khi nổi giận, nó mất\n"
+    "hết lý trí rồi cuồng loạn ngoài tầm kiểm soát."
+);
 
 const u8 gBeldumPokedexText[] = _(
-    "When BELDUM gather in a swarm, they move\n"
-    "in perfect unison as if they were but one\n"
-    "POKéMON. They communicate with each other\n"
-    "using brain waves.");
+    "Khi BELDUM tụ thành đàn, chúng di chuyển\n"
+    "đồng bộ hoàn hảo như thể chỉ là một POKéMON.\n"
+    "Chúng giao tiếp với nhau bằng sóng não."
+);
 
 const u8 gMetangPokedexText[] = _(
-    "The claws tipping its arms pack the\n"
-    "destructive power to tear through thick\n"
-    "iron sheets as if they were silk. It flies\n"
-    "at over 60 miles per hour.");
+    "Những móng vuốt ở đầu cánh tay có sức phá\n"
+    "hủy đủ xé tấm sắt dày như lụa. Nó bay với tốc\n"
+    "độ hơn 60 dặm một giờ."
+);
 
 const u8 gMetagrossPokedexText[] = _(
-    "METAGROSS has four brains that are joined\n"
-    "by a complex neural network. As a result of\n"
-    "integration, this POKéMON is smarter than\n"
-    "a supercomputer.");
+    "METAGROSS có bốn bộ não nối với nhau bằng\n"
+    "một mạng thần kinh phức tạp. Nhờ sự hợp\n"
+    "nhất này, POKéMON này thông minh hơn siêu\n"
+    "máy tính."
+);
 
 const u8 gRegirockPokedexText[] = _(
-    "A POKéMON that is made entirely of rocks\n"
-    "and boulders. If parts of its body chip off\n"
-    "in battle, REGIROCK repairs itself by\n"
-    "adding new rocks.");
+    "POKéMON này được tạo hoàn toàn từ những\n"
+    "hòn đá và tảng đá. Nếu cơ thể sứt mẻ trong\n"
+    "trận chiến, REGIROCK sẽ tự sửa chữa bằng\n"
+    "cách gắn thêm đá mới."
+);
 
 const u8 gRegicePokedexText[] = _(
-    "Its entire body is made of Antarctic ice.\n"
-    "After extensive studies, researchers\n"
-    "believe the ice was formed during an\n"
-    "ice age.");
+    "Toàn bộ cơ thể nó làm từ băng Nam Cực. Sau\n"
+    "nhiều nghiên cứu, các nhà khoa học tin rằng\n"
+    "lớp băng này hình thành trong một kỷ băng\n"
+    "hà."
+);
 
 const u8 gRegisteelPokedexText[] = _(
-    "Its body is harder than any other kind of\n"
-    "metal. The body metal is composed of a\n"
-    "mysterious substance. Not only is it hard,\n"
-    "it shrinks and stretches flexibly.");
+    "Cơ thể nó cứng hơn mọi kim loại khác và\n"
+    "được cấu thành từ một chất bí ẩn. Không chỉ\n"
+    "cứng, nó còn có thể co lại và kéo giãn linh\n"
+    "hoạt."
+);
 
 const u8 gLatiasPokedexText[] = _(
-    "They make a small herd of only several\n"
-    "members. They rarely make contact with\n"
-    "people or other POKéMON. They disappear\n"
-    "if they sense enemies.");
+    "Chúng chỉ tạo thành đàn nhỏ vài thành viên\n"
+    "và hiếm khi tiếp xúc với con người hay\n"
+    "POKéMON khác. Nếu cảm nhận thấy kẻ thù,\n"
+    "chúng sẽ biến mất."
+);
 
 const u8 gLatiosPokedexText[] = _(
-    "Even in hiding, it can detect the locations\n"
-    "of others and sense their emotions since\n"
-    "it has telepathy. Its intelligence allows\n"
-    "it to understand human languages.");
+    "Ngay cả khi ẩn mình, nó vẫn có thể định vị kẻ\n"
+    "khác và cảm nhận cảm xúc nhờ thần giao cách\n"
+    "cảm. Trí thông minh giúp nó hiểu ngôn ngữ con\n"
+    "người."
+);
 
 const u8 gKyogrePokedexText[] = _(
-    "KYOGRE has appeared in mythology as the\n"
-    "creator of the sea. After long years of\n"
-    "feuding with GROUDON, it took to sleep at\n"
-    "the bottom of the sea.");
+    "Trong thần thoại, KYOGRE được xem là đấng\n"
+    "tạo ra biển cả. Sau nhiều năm đối đầu với\n"
+    "GROUDON, nó ngủ yên dưới đáy biển."
+);
 
 const u8 gGroudonPokedexText[] = _(
-    "GROUDON has appeared in mythology as the\n"
-    "creator of the land. It sleeps in magma\n"
-    "underground and is said to make volcanoes\n"
-    "erupt on awakening.");
+    "Trong thần thoại, GROUDON được xem là đấng\n"
+    "tạo ra đất liền. Nó ngủ trong magma dưới lòng\n"
+    "đất và được cho là khiến núi lửa phun trào\n"
+    "khi thức giấc."
+);
 
 const u8 gRayquazaPokedexText[] = _(
-    "A POKéMON that flies endlessly in the\n"
-    "ozone layer. It is said it would descend\n"
-    "to the ground if KYOGRE and GROUDON\n"
-    "were to fight.");
+    "POKéMON này bay không ngừng trong tầng\n"
+    "ozone. Người ta nói nó sẽ hạ xuống mặt đất\n"
+    "nếu KYOGRE và GROUDON giao chiến."
+);
 
 const u8 gJirachiPokedexText[] = _(
-    "JIRACHI is said to make wishes come true.\n"
-    "While it sleeps, a tough crystalline shell\n"
-    "envelops the body to protect it from\n"
-    "enemies.");
+    "Nghe nói JIRACHI có thể biến điều ước thành\n"
+    "hiện thực. Khi ngủ, một lớp vỏ tinh thể cứng\n"
+    "bao bọc cơ thể để bảo vệ nó khỏi kẻ thù."
+);
 
 const u8 gDeoxysPokedexText[] = _(
-    "A POKéMON that mutated from an\n"
-    "extraterrestrial virus exposed to a laser\n"
-    "beam. Its body is configured for superior\n"
-    "agility and speed.");
+    "POKéMON này đột biến từ một virus ngoài Trái\n"
+    "Đất bị chiếu tia laser. Cơ thể nó được cấu\n"
+    "tạo để đạt độ nhanh nhẹn và tốc độ vượt\n"
+    "trội."
+);
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C00718 = gDummyPokedexText;
+const u8 *const gLocalizationSource_C00719 = gBulbasaurPokedexText;
+const u8 *const gLocalizationSource_C00720 = gIvysaurPokedexText;
+const u8 *const gLocalizationSource_C00721 = gVenusaurPokedexText;
+const u8 *const gLocalizationSource_C00722 = gCharmanderPokedexText;
+const u8 *const gLocalizationSource_C00723 = gCharmeleonPokedexText;
+const u8 *const gLocalizationSource_C00724 = gCharizardPokedexText;
+const u8 *const gLocalizationSource_C00725 = gSquirtlePokedexText;
+const u8 *const gLocalizationSource_C00726 = gWartortlePokedexText;
+const u8 *const gLocalizationSource_C00727 = gBlastoisePokedexText;
+const u8 *const gLocalizationSource_C00728 = gCaterpiePokedexText;
+const u8 *const gLocalizationSource_C00729 = gMetapodPokedexText;
+const u8 *const gLocalizationSource_C00730 = gButterfreePokedexText;
+const u8 *const gLocalizationSource_C00731 = gWeedlePokedexText;
+const u8 *const gLocalizationSource_C00732 = gKakunaPokedexText;
+const u8 *const gLocalizationSource_C00733 = gBeedrillPokedexText;
+const u8 *const gLocalizationSource_C00734 = gPidgeyPokedexText;
+const u8 *const gLocalizationSource_C00735 = gPidgeottoPokedexText;
+const u8 *const gLocalizationSource_C00736 = gPidgeotPokedexText;
+const u8 *const gLocalizationSource_C00737 = gRattataPokedexText;
+const u8 *const gLocalizationSource_C00738 = gRaticatePokedexText;
+const u8 *const gLocalizationSource_C00739 = gSpearowPokedexText;
+const u8 *const gLocalizationSource_C00740 = gFearowPokedexText;
+const u8 *const gLocalizationSource_C00741 = gEkansPokedexText;
+const u8 *const gLocalizationSource_C00742 = gArbokPokedexText;
+const u8 *const gLocalizationSource_C00743 = gPikachuPokedexText;
+const u8 *const gLocalizationSource_C00744 = gRaichuPokedexText;
+const u8 *const gLocalizationSource_C00745 = gSandshrewPokedexText;
+const u8 *const gLocalizationSource_C00746 = gSandslashPokedexText;
+const u8 *const gLocalizationSource_C00747 = gNidoranFPokedexText;
+const u8 *const gLocalizationSource_C00748 = gNidorinaPokedexText;
+const u8 *const gLocalizationSource_C00749 = gNidoqueenPokedexText;
+const u8 *const gLocalizationSource_C00750 = gNidoranMPokedexText;
+const u8 *const gLocalizationSource_C00751 = gNidorinoPokedexText;
+const u8 *const gLocalizationSource_C00752 = gNidokingPokedexText;
+const u8 *const gLocalizationSource_C00753 = gClefairyPokedexText;
+const u8 *const gLocalizationSource_C00754 = gClefablePokedexText;
+const u8 *const gLocalizationSource_C00755 = gVulpixPokedexText;
+const u8 *const gLocalizationSource_C00756 = gNinetalesPokedexText;
+const u8 *const gLocalizationSource_C00757 = gJigglypuffPokedexText;
+const u8 *const gLocalizationSource_C00758 = gWigglytuffPokedexText;
+const u8 *const gLocalizationSource_C00759 = gZubatPokedexText;
+const u8 *const gLocalizationSource_C00760 = gGolbatPokedexText;
+const u8 *const gLocalizationSource_C00761 = gOddishPokedexText;
+const u8 *const gLocalizationSource_C00762 = gGloomPokedexText;
+const u8 *const gLocalizationSource_C00763 = gVileplumePokedexText;
+const u8 *const gLocalizationSource_C00764 = gParasPokedexText;
+const u8 *const gLocalizationSource_C00765 = gParasectPokedexText;
+const u8 *const gLocalizationSource_C00766 = gVenonatPokedexText;
+const u8 *const gLocalizationSource_C00767 = gVenomothPokedexText;
+const u8 *const gLocalizationSource_C00768 = gDiglettPokedexText;
+const u8 *const gLocalizationSource_C00769 = gDugtrioPokedexText;
+const u8 *const gLocalizationSource_C00770 = gMeowthPokedexText;
+const u8 *const gLocalizationSource_C00771 = gPersianPokedexText;
+const u8 *const gLocalizationSource_C00772 = gPsyduckPokedexText;
+const u8 *const gLocalizationSource_C00773 = gGolduckPokedexText;
+const u8 *const gLocalizationSource_C00774 = gMankeyPokedexText;
+const u8 *const gLocalizationSource_C00775 = gPrimeapePokedexText;
+const u8 *const gLocalizationSource_C00776 = gGrowlithePokedexText;
+const u8 *const gLocalizationSource_C00777 = gArcaninePokedexText;
+const u8 *const gLocalizationSource_C00778 = gPoliwagPokedexText;
+const u8 *const gLocalizationSource_C00779 = gPoliwhirlPokedexText;
+const u8 *const gLocalizationSource_C00780 = gPoliwrathPokedexText;
+const u8 *const gLocalizationSource_C00781 = gAbraPokedexText;
+const u8 *const gLocalizationSource_C00782 = gKadabraPokedexText;
+const u8 *const gLocalizationSource_C00783 = gAlakazamPokedexText;
+const u8 *const gLocalizationSource_C00784 = gMachopPokedexText;
+const u8 *const gLocalizationSource_C00785 = gMachokePokedexText;
+const u8 *const gLocalizationSource_C00786 = gMachampPokedexText;
+const u8 *const gLocalizationSource_C00787 = gBellsproutPokedexText;
+const u8 *const gLocalizationSource_C00788 = gWeepinbellPokedexText;
+const u8 *const gLocalizationSource_C00789 = gVictreebelPokedexText;
+const u8 *const gLocalizationSource_C00790 = gTentacoolPokedexText;
+const u8 *const gLocalizationSource_C00791 = gTentacruelPokedexText;
+const u8 *const gLocalizationSource_C00792 = gGeodudePokedexText;
+const u8 *const gLocalizationSource_C00793 = gGravelerPokedexText;
+const u8 *const gLocalizationSource_C00794 = gGolemPokedexText;
+const u8 *const gLocalizationSource_C00795 = gPonytaPokedexText;
+const u8 *const gLocalizationSource_C00796 = gRapidashPokedexText;
+const u8 *const gLocalizationSource_C00797 = gSlowpokePokedexText;
+const u8 *const gLocalizationSource_C00798 = gSlowbroPokedexText;
+const u8 *const gLocalizationSource_C00799 = gMagnemitePokedexText;
+const u8 *const gLocalizationSource_C00800 = gMagnetonPokedexText;
+const u8 *const gLocalizationSource_C00801 = gFarfetchdPokedexText;
+const u8 *const gLocalizationSource_C00802 = gDoduoPokedexText;
+const u8 *const gLocalizationSource_C00803 = gDodrioPokedexText;
+const u8 *const gLocalizationSource_C00804 = gSeelPokedexText;
+const u8 *const gLocalizationSource_C00805 = gDewgongPokedexText;
+const u8 *const gLocalizationSource_C00806 = gGrimerPokedexText;
+const u8 *const gLocalizationSource_C00807 = gMukPokedexText;
+const u8 *const gLocalizationSource_C00808 = gShellderPokedexText;
+const u8 *const gLocalizationSource_C00809 = gCloysterPokedexText;
+const u8 *const gLocalizationSource_C00810 = gGastlyPokedexText;
+const u8 *const gLocalizationSource_C00811 = gHaunterPokedexText;
+const u8 *const gLocalizationSource_C00812 = gGengarPokedexText;
+const u8 *const gLocalizationSource_C00813 = gOnixPokedexText;
+const u8 *const gLocalizationSource_C00814 = gDrowzeePokedexText;
+const u8 *const gLocalizationSource_C00815 = gHypnoPokedexText;
+const u8 *const gLocalizationSource_C00816 = gKrabbyPokedexText;
+const u8 *const gLocalizationSource_C00817 = gKinglerPokedexText;
+const u8 *const gLocalizationSource_C00818 = gVoltorbPokedexText;
+const u8 *const gLocalizationSource_C00819 = gElectrodePokedexText;
+const u8 *const gLocalizationSource_C00820 = gExeggcutePokedexText;
+const u8 *const gLocalizationSource_C00821 = gExeggutorPokedexText;
+const u8 *const gLocalizationSource_C00822 = gCubonePokedexText;
+const u8 *const gLocalizationSource_C00823 = gMarowakPokedexText;
+const u8 *const gLocalizationSource_C00824 = gHitmonleePokedexText;
+const u8 *const gLocalizationSource_C00825 = gHitmonchanPokedexText;
+const u8 *const gLocalizationSource_C00826 = gLickitungPokedexText;
+const u8 *const gLocalizationSource_C00827 = gKoffingPokedexText;
+const u8 *const gLocalizationSource_C00828 = gWeezingPokedexText;
+const u8 *const gLocalizationSource_C00829 = gRhyhornPokedexText;
+const u8 *const gLocalizationSource_C00830 = gRhydonPokedexText;
+const u8 *const gLocalizationSource_C00831 = gChanseyPokedexText;
+const u8 *const gLocalizationSource_C00832 = gTangelaPokedexText;
+const u8 *const gLocalizationSource_C00833 = gKangaskhanPokedexText;
+const u8 *const gLocalizationSource_C00834 = gHorseaPokedexText;
+const u8 *const gLocalizationSource_C00835 = gSeadraPokedexText;
+const u8 *const gLocalizationSource_C00836 = gGoldeenPokedexText;
+const u8 *const gLocalizationSource_C00837 = gSeakingPokedexText;
+const u8 *const gLocalizationSource_C00838 = gStaryuPokedexText;
+const u8 *const gLocalizationSource_C00839 = gStarmiePokedexText;
+const u8 *const gLocalizationSource_C00840 = gMrMimePokedexText;
+const u8 *const gLocalizationSource_C00841 = gScytherPokedexText;
+const u8 *const gLocalizationSource_C00842 = gJynxPokedexText;
+const u8 *const gLocalizationSource_C00843 = gElectabuzzPokedexText;
+const u8 *const gLocalizationSource_C00844 = gMagmarPokedexText;
+const u8 *const gLocalizationSource_C00845 = gPinsirPokedexText;
+const u8 *const gLocalizationSource_C00846 = gTaurosPokedexText;
+const u8 *const gLocalizationSource_C00847 = gMagikarpPokedexText;
+const u8 *const gLocalizationSource_C00848 = gGyaradosPokedexText;
+const u8 *const gLocalizationSource_C00849 = gLaprasPokedexText;
+const u8 *const gLocalizationSource_C00850 = gDittoPokedexText;
+const u8 *const gLocalizationSource_C00851 = gEeveePokedexText;
+const u8 *const gLocalizationSource_C00852 = gVaporeonPokedexText;
+const u8 *const gLocalizationSource_C00853 = gJolteonPokedexText;
+const u8 *const gLocalizationSource_C00854 = gFlareonPokedexText;
+const u8 *const gLocalizationSource_C00855 = gPorygonPokedexText;
+const u8 *const gLocalizationSource_C00856 = gOmanytePokedexText;
+const u8 *const gLocalizationSource_C00857 = gOmastarPokedexText;
+const u8 *const gLocalizationSource_C00858 = gKabutoPokedexText;
+const u8 *const gLocalizationSource_C00859 = gKabutopsPokedexText;
+const u8 *const gLocalizationSource_C00860 = gAerodactylPokedexText;
+const u8 *const gLocalizationSource_C00861 = gSnorlaxPokedexText;
+const u8 *const gLocalizationSource_C00862 = gArticunoPokedexText;
+const u8 *const gLocalizationSource_C00863 = gZapdosPokedexText;
+const u8 *const gLocalizationSource_C00864 = gMoltresPokedexText;
+const u8 *const gLocalizationSource_C00865 = gDratiniPokedexText;
+const u8 *const gLocalizationSource_C00866 = gDragonairPokedexText;
+const u8 *const gLocalizationSource_C00867 = gDragonitePokedexText;
+const u8 *const gLocalizationSource_C00868 = gMewtwoPokedexText;
+const u8 *const gLocalizationSource_C00869 = gMewPokedexText;
+const u8 *const gLocalizationSource_C00870 = gChikoritaPokedexText;
+const u8 *const gLocalizationSource_C00871 = gBayleefPokedexText;
+const u8 *const gLocalizationSource_C00872 = gMeganiumPokedexText;
+const u8 *const gLocalizationSource_C00873 = gCyndaquilPokedexText;
+const u8 *const gLocalizationSource_C00874 = gQuilavaPokedexText;
+const u8 *const gLocalizationSource_C00875 = gTyphlosionPokedexText;
+const u8 *const gLocalizationSource_C00876 = gTotodilePokedexText;
+const u8 *const gLocalizationSource_C00877 = gCroconawPokedexText;
+const u8 *const gLocalizationSource_C00878 = gFeraligatrPokedexText;
+const u8 *const gLocalizationSource_C00879 = gSentretPokedexText;
+const u8 *const gLocalizationSource_C00880 = gFurretPokedexText;
+const u8 *const gLocalizationSource_C00881 = gHoothootPokedexText;
+const u8 *const gLocalizationSource_C00882 = gNoctowlPokedexText;
+const u8 *const gLocalizationSource_C00883 = gLedybaPokedexText;
+const u8 *const gLocalizationSource_C00884 = gLedianPokedexText;
+const u8 *const gLocalizationSource_C00885 = gSpinarakPokedexText;
+const u8 *const gLocalizationSource_C00886 = gAriadosPokedexText;
+const u8 *const gLocalizationSource_C00887 = gCrobatPokedexText;
+const u8 *const gLocalizationSource_C00888 = gChinchouPokedexText;
+const u8 *const gLocalizationSource_C00889 = gLanturnPokedexText;
+const u8 *const gLocalizationSource_C00890 = gPichuPokedexText;
+const u8 *const gLocalizationSource_C00891 = gCleffaPokedexText;
+const u8 *const gLocalizationSource_C00892 = gIgglybuffPokedexText;
+const u8 *const gLocalizationSource_C00893 = gTogepiPokedexText;
+const u8 *const gLocalizationSource_C00894 = gTogeticPokedexText;
+const u8 *const gLocalizationSource_C00895 = gNatuPokedexText;
+const u8 *const gLocalizationSource_C00896 = gXatuPokedexText;
+const u8 *const gLocalizationSource_C00897 = gMareepPokedexText;
+const u8 *const gLocalizationSource_C00898 = gFlaaffyPokedexText;
+const u8 *const gLocalizationSource_C00899 = gAmpharosPokedexText;
+const u8 *const gLocalizationSource_C00900 = gBellossomPokedexText;
+const u8 *const gLocalizationSource_C00901 = gMarillPokedexText;
+const u8 *const gLocalizationSource_C00902 = gAzumarillPokedexText;
+const u8 *const gLocalizationSource_C00903 = gSudowoodoPokedexText;
+const u8 *const gLocalizationSource_C00904 = gPolitoedPokedexText;
+const u8 *const gLocalizationSource_C00905 = gHoppipPokedexText;
+const u8 *const gLocalizationSource_C00906 = gSkiploomPokedexText;
+const u8 *const gLocalizationSource_C00907 = gJumpluffPokedexText;
+const u8 *const gLocalizationSource_C00908 = gAipomPokedexText;
+const u8 *const gLocalizationSource_C00909 = gSunkernPokedexText;
+const u8 *const gLocalizationSource_C00910 = gSunfloraPokedexText;
+const u8 *const gLocalizationSource_C00911 = gYanmaPokedexText;
+const u8 *const gLocalizationSource_C00912 = gWooperPokedexText;
+const u8 *const gLocalizationSource_C00913 = gQuagsirePokedexText;
+const u8 *const gLocalizationSource_C00914 = gEspeonPokedexText;
+const u8 *const gLocalizationSource_C00915 = gUmbreonPokedexText;
+const u8 *const gLocalizationSource_C00916 = gMurkrowPokedexText;
+const u8 *const gLocalizationSource_C00917 = gSlowkingPokedexText;
+const u8 *const gLocalizationSource_C00918 = gMisdreavusPokedexText;
+const u8 *const gLocalizationSource_C00919 = gUnownPokedexText;
+const u8 *const gLocalizationSource_C00920 = gWobbuffetPokedexText;
+const u8 *const gLocalizationSource_C00921 = gGirafarigPokedexText;
+const u8 *const gLocalizationSource_C00922 = gPinecoPokedexText;
+const u8 *const gLocalizationSource_C00923 = gForretressPokedexText;
+const u8 *const gLocalizationSource_C00924 = gDunsparcePokedexText;
+const u8 *const gLocalizationSource_C00925 = gGligarPokedexText;
+const u8 *const gLocalizationSource_C00926 = gSteelixPokedexText;
+const u8 *const gLocalizationSource_C00927 = gSnubbullPokedexText;
+const u8 *const gLocalizationSource_C00928 = gGranbullPokedexText;
+const u8 *const gLocalizationSource_C00929 = gQwilfishPokedexText;
+const u8 *const gLocalizationSource_C00930 = gScizorPokedexText;
+const u8 *const gLocalizationSource_C00931 = gShucklePokedexText;
+const u8 *const gLocalizationSource_C00932 = gHeracrossPokedexText;
+const u8 *const gLocalizationSource_C00933 = gSneaselPokedexText;
+const u8 *const gLocalizationSource_C00934 = gTeddiursaPokedexText;
+const u8 *const gLocalizationSource_C00935 = gUrsaringPokedexText;
+const u8 *const gLocalizationSource_C00936 = gSlugmaPokedexText;
+const u8 *const gLocalizationSource_C00937 = gMagcargoPokedexText;
+const u8 *const gLocalizationSource_C00938 = gSwinubPokedexText;
+const u8 *const gLocalizationSource_C00939 = gPiloswinePokedexText;
+const u8 *const gLocalizationSource_C00940 = gCorsolaPokedexText;
+const u8 *const gLocalizationSource_C00941 = gRemoraidPokedexText;
+const u8 *const gLocalizationSource_C00942 = gOctilleryPokedexText;
+const u8 *const gLocalizationSource_C00943 = gDelibirdPokedexText;
+const u8 *const gLocalizationSource_C00944 = gMantinePokedexText;
+const u8 *const gLocalizationSource_C00945 = gSkarmoryPokedexText;
+const u8 *const gLocalizationSource_C00946 = gHoundourPokedexText;
+const u8 *const gLocalizationSource_C00947 = gHoundoomPokedexText;
+const u8 *const gLocalizationSource_C00948 = gKingdraPokedexText;
+const u8 *const gLocalizationSource_C00949 = gPhanpyPokedexText;
+const u8 *const gLocalizationSource_C00950 = gDonphanPokedexText;
+const u8 *const gLocalizationSource_C00951 = gPorygon2PokedexText;
+const u8 *const gLocalizationSource_C00952 = gStantlerPokedexText;
+const u8 *const gLocalizationSource_C00953 = gSmearglePokedexText;
+const u8 *const gLocalizationSource_C00954 = gTyroguePokedexText;
+const u8 *const gLocalizationSource_C00955 = gHitmontopPokedexText;
+const u8 *const gLocalizationSource_C00956 = gSmoochumPokedexText;
+const u8 *const gLocalizationSource_C00957 = gElekidPokedexText;
+const u8 *const gLocalizationSource_C00958 = gMagbyPokedexText;
+const u8 *const gLocalizationSource_C00959 = gMiltankPokedexText;
+const u8 *const gLocalizationSource_C00960 = gBlisseyPokedexText;
+const u8 *const gLocalizationSource_C00961 = gRaikouPokedexText;
+const u8 *const gLocalizationSource_C00962 = gEnteiPokedexText;
+const u8 *const gLocalizationSource_C00963 = gSuicunePokedexText;
+const u8 *const gLocalizationSource_C00964 = gLarvitarPokedexText;
+const u8 *const gLocalizationSource_C00965 = gPupitarPokedexText;
+const u8 *const gLocalizationSource_C00966 = gTyranitarPokedexText;
+const u8 *const gLocalizationSource_C00967 = gLugiaPokedexText;
+const u8 *const gLocalizationSource_C00968 = gHoOhPokedexText;
+const u8 *const gLocalizationSource_C00969 = gCelebiPokedexText;
+const u8 *const gLocalizationSource_C00970 = gTreeckoPokedexText;
+const u8 *const gLocalizationSource_C00971 = gGrovylePokedexText;
+const u8 *const gLocalizationSource_C00972 = gSceptilePokedexText;
+const u8 *const gLocalizationSource_C00973 = gTorchicPokedexText;
+const u8 *const gLocalizationSource_C00974 = gCombuskenPokedexText;
+const u8 *const gLocalizationSource_C00975 = gBlazikenPokedexText;
+const u8 *const gLocalizationSource_C00976 = gMudkipPokedexText;
+const u8 *const gLocalizationSource_C00977 = gMarshtompPokedexText;
+const u8 *const gLocalizationSource_C00978 = gSwampertPokedexText;
+const u8 *const gLocalizationSource_C00979 = gPoochyenaPokedexText;
+const u8 *const gLocalizationSource_C00980 = gMightyenaPokedexText;
+const u8 *const gLocalizationSource_C00981 = gZigzagoonPokedexText;
+const u8 *const gLocalizationSource_C00982 = gLinoonePokedexText;
+const u8 *const gLocalizationSource_C00983 = gWurmplePokedexText;
+const u8 *const gLocalizationSource_C00984 = gSilcoonPokedexText;
+const u8 *const gLocalizationSource_C00985 = gBeautiflyPokedexText;
+const u8 *const gLocalizationSource_C00986 = gCascoonPokedexText;
+const u8 *const gLocalizationSource_C00987 = gDustoxPokedexText;
+const u8 *const gLocalizationSource_C00988 = gLotadPokedexText;
+const u8 *const gLocalizationSource_C00989 = gLombrePokedexText;
+const u8 *const gLocalizationSource_C00990 = gLudicoloPokedexText;
+const u8 *const gLocalizationSource_C00991 = gSeedotPokedexText;
+const u8 *const gLocalizationSource_C00992 = gNuzleafPokedexText;
+const u8 *const gLocalizationSource_C00993 = gShiftryPokedexText;
+const u8 *const gLocalizationSource_C00994 = gTaillowPokedexText;
+const u8 *const gLocalizationSource_C00995 = gSwellowPokedexText;
+const u8 *const gLocalizationSource_C00996 = gWingullPokedexText;
+const u8 *const gLocalizationSource_C00997 = gPelipperPokedexText;
+const u8 *const gLocalizationSource_C00998 = gRaltsPokedexText;
+const u8 *const gLocalizationSource_C00999 = gKirliaPokedexText;
+const u8 *const gLocalizationSource_C01000 = gGardevoirPokedexText;
+const u8 *const gLocalizationSource_C01001 = gSurskitPokedexText;
+const u8 *const gLocalizationSource_C01002 = gMasquerainPokedexText;
+const u8 *const gLocalizationSource_C01003 = gShroomishPokedexText;
+const u8 *const gLocalizationSource_C01004 = gBreloomPokedexText;
+const u8 *const gLocalizationSource_C01005 = gSlakothPokedexText;
+const u8 *const gLocalizationSource_C01006 = gVigorothPokedexText;
+const u8 *const gLocalizationSource_C01007 = gSlakingPokedexText;
+const u8 *const gLocalizationSource_C01008 = gNincadaPokedexText;
+const u8 *const gLocalizationSource_C01009 = gNinjaskPokedexText;
+const u8 *const gLocalizationSource_C01010 = gShedinjaPokedexText;
+const u8 *const gLocalizationSource_C01011 = gWhismurPokedexText;
+const u8 *const gLocalizationSource_C01012 = gLoudredPokedexText;
+const u8 *const gLocalizationSource_C01013 = gExploudPokedexText;
+const u8 *const gLocalizationSource_C01014 = gMakuhitaPokedexText;
+const u8 *const gLocalizationSource_C01015 = gHariyamaPokedexText;
+const u8 *const gLocalizationSource_C01016 = gAzurillPokedexText;
+const u8 *const gLocalizationSource_C01017 = gNosepassPokedexText;
+const u8 *const gLocalizationSource_C01018 = gSkittyPokedexText;
+const u8 *const gLocalizationSource_C01019 = gDelcattyPokedexText;
+const u8 *const gLocalizationSource_C01020 = gSableyePokedexText;
+const u8 *const gLocalizationSource_C01021 = gMawilePokedexText;
+const u8 *const gLocalizationSource_C01022 = gAronPokedexText;
+const u8 *const gLocalizationSource_C01023 = gLaironPokedexText;
+const u8 *const gLocalizationSource_C01024 = gAggronPokedexText;
+const u8 *const gLocalizationSource_C01025 = gMedititePokedexText;
+const u8 *const gLocalizationSource_C01026 = gMedichamPokedexText;
+const u8 *const gLocalizationSource_C01027 = gElectrikePokedexText;
+const u8 *const gLocalizationSource_C01028 = gManectricPokedexText;
+const u8 *const gLocalizationSource_C01029 = gPluslePokedexText;
+const u8 *const gLocalizationSource_C01030 = gMinunPokedexText;
+const u8 *const gLocalizationSource_C01031 = gVolbeatPokedexText;
+const u8 *const gLocalizationSource_C01032 = gIllumisePokedexText;
+const u8 *const gLocalizationSource_C01033 = gRoseliaPokedexText;
+const u8 *const gLocalizationSource_C01034 = gGulpinPokedexText;
+const u8 *const gLocalizationSource_C01035 = gSwalotPokedexText;
+const u8 *const gLocalizationSource_C01036 = gCarvanhaPokedexText;
+const u8 *const gLocalizationSource_C01037 = gSharpedoPokedexText;
+const u8 *const gLocalizationSource_C01038 = gWailmerPokedexText;
+const u8 *const gLocalizationSource_C01039 = gWailordPokedexText;
+const u8 *const gLocalizationSource_C01040 = gNumelPokedexText;
+const u8 *const gLocalizationSource_C01041 = gCameruptPokedexText;
+const u8 *const gLocalizationSource_C01042 = gTorkoalPokedexText;
+const u8 *const gLocalizationSource_C01043 = gSpoinkPokedexText;
+const u8 *const gLocalizationSource_C01044 = gGrumpigPokedexText;
+const u8 *const gLocalizationSource_C01045 = gSpindaPokedexText;
+const u8 *const gLocalizationSource_C01046 = gTrapinchPokedexText;
+const u8 *const gLocalizationSource_C01047 = gVibravaPokedexText;
+const u8 *const gLocalizationSource_C01048 = gFlygonPokedexText;
+const u8 *const gLocalizationSource_C01049 = gCacneaPokedexText;
+const u8 *const gLocalizationSource_C01050 = gCacturnePokedexText;
+const u8 *const gLocalizationSource_C01051 = gSwabluPokedexText;
+const u8 *const gLocalizationSource_C01052 = gAltariaPokedexText;
+const u8 *const gLocalizationSource_C01053 = gZangoosePokedexText;
+const u8 *const gLocalizationSource_C01054 = gSeviperPokedexText;
+const u8 *const gLocalizationSource_C01055 = gLunatonePokedexText;
+const u8 *const gLocalizationSource_C01056 = gSolrockPokedexText;
+const u8 *const gLocalizationSource_C01057 = gBarboachPokedexText;
+const u8 *const gLocalizationSource_C01058 = gWhiscashPokedexText;
+const u8 *const gLocalizationSource_C01059 = gCorphishPokedexText;
+const u8 *const gLocalizationSource_C01060 = gCrawdauntPokedexText;
+const u8 *const gLocalizationSource_C01061 = gBaltoyPokedexText;
+const u8 *const gLocalizationSource_C01062 = gClaydolPokedexText;
+const u8 *const gLocalizationSource_C01063 = gLileepPokedexText;
+const u8 *const gLocalizationSource_C01064 = gCradilyPokedexText;
+const u8 *const gLocalizationSource_C01065 = gAnorithPokedexText;
+const u8 *const gLocalizationSource_C01066 = gArmaldoPokedexText;
+const u8 *const gLocalizationSource_C01067 = gFeebasPokedexText;
+const u8 *const gLocalizationSource_C01068 = gMiloticPokedexText;
+const u8 *const gLocalizationSource_C01069 = gCastformPokedexText;
+const u8 *const gLocalizationSource_C01070 = gKecleonPokedexText;
+const u8 *const gLocalizationSource_C01071 = gShuppetPokedexText;
+const u8 *const gLocalizationSource_C01072 = gBanettePokedexText;
+const u8 *const gLocalizationSource_C01073 = gDuskullPokedexText;
+const u8 *const gLocalizationSource_C01074 = gDusclopsPokedexText;
+const u8 *const gLocalizationSource_C01075 = gTropiusPokedexText;
+const u8 *const gLocalizationSource_C01076 = gChimechoPokedexText;
+const u8 *const gLocalizationSource_C01077 = gAbsolPokedexText;
+const u8 *const gLocalizationSource_C01078 = gWynautPokedexText;
+const u8 *const gLocalizationSource_C01079 = gSnoruntPokedexText;
+const u8 *const gLocalizationSource_C01080 = gGlaliePokedexText;
+const u8 *const gLocalizationSource_C01081 = gSphealPokedexText;
+const u8 *const gLocalizationSource_C01082 = gSealeoPokedexText;
+const u8 *const gLocalizationSource_C01083 = gWalreinPokedexText;
+const u8 *const gLocalizationSource_C01084 = gClamperlPokedexText;
+const u8 *const gLocalizationSource_C01085 = gHuntailPokedexText;
+const u8 *const gLocalizationSource_C01086 = gGorebyssPokedexText;
+const u8 *const gLocalizationSource_C01087 = gRelicanthPokedexText;
+const u8 *const gLocalizationSource_C01088 = gLuvdiscPokedexText;
+const u8 *const gLocalizationSource_C01089 = gBagonPokedexText;
+const u8 *const gLocalizationSource_C01090 = gShelgonPokedexText;
+const u8 *const gLocalizationSource_C01091 = gSalamencePokedexText;
+const u8 *const gLocalizationSource_C01092 = gBeldumPokedexText;
+const u8 *const gLocalizationSource_C01093 = gMetangPokedexText;
+const u8 *const gLocalizationSource_C01094 = gMetagrossPokedexText;
+const u8 *const gLocalizationSource_C01095 = gRegirockPokedexText;
+const u8 *const gLocalizationSource_C01096 = gRegicePokedexText;
+const u8 *const gLocalizationSource_C01097 = gRegisteelPokedexText;
+const u8 *const gLocalizationSource_C01098 = gLatiasPokedexText;
+const u8 *const gLocalizationSource_C01099 = gLatiosPokedexText;
+const u8 *const gLocalizationSource_C01100 = gKyogrePokedexText;
+const u8 *const gLocalizationSource_C01101 = gGroudonPokedexText;
+const u8 *const gLocalizationSource_C01102 = gRayquazaPokedexText;
+const u8 *const gLocalizationSource_C01103 = gJirachiPokedexText;
+const u8 *const gLocalizationSource_C01104 = gDeoxysPokedexText;
+// END GENERATED LOCALIZATION EXPORTS

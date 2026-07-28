@@ -24,22 +24,27 @@ MysteryGiftScript_BattleCardInfo:
 	end
 
 sText_MysteryGiftBattleCountCard:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "Your BATTLE COUNT CARD keeps\n"
-	.string "track of your battle record against\l"
-	.string "TRAINERS with the same CARD.\p"
-	.string "Look for and battle TRAINERS who\n"
-	.string "have the same CARD as you.\p"
-	.string "You may check the overall rankings\n"
-	.string "by reading the NEWS.\p"
-	.string "Please do give it a try!$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "BATTLE COUNT CARD sẽ ghi lại thành tích\n"
+	.string "chiến đấu của bạn với những HLV\l"
+	.string "có cùng CARD.\p"
+	.string "Hãy tìm và chiến đấu với những\n"
+	.string "HLV có cùng CARD với bạn.\p"
+	.string "Bạn có thể xem bảng xếp hạng tổng thể\n"
+	.string "bằng cách đọc NEWS.\p"
+	.string "Nhất định hãy thử nhé!$"
 
 sText_MysteryGiftBattleCountCard_WonPrize:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "Congratulations!\p"
-	.string "You have won a prize for winning\n"
-	.string "three battles!\p"
-	.string "We hope you will be inspired to\n"
-	.string "battle some more.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Xin chúc mừng!\p"
+	.string "Bạn đã giành được phần thưởng vì\n"
+	.string "thắng ba trận!\p"
+	.string "Hy vọng điều này sẽ thôi thúc bạn chiến\n"
+	.string "đấu nhiều hơn nữa.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftBattleCountCard
+	.global sText_MysteryGiftBattleCountCard_WonPrize
+@ END GENERATED LOCALIZATION EXPORTS

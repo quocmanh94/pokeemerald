@@ -45,21 +45,25 @@ BattleFrontier_Mart_EventScript_Boy::
 	end
 
 BattleFrontier_Mart_Text_ChaperonGrandson:
-	.string "We came here to chaperon our\n"
-	.string "grandson.\p"
-	.string "But since we're here, we thought\n"
-	.string "we should get some souvenirs.$"
+	.string "Chúng tôi đến đây để trông chừng cháu\n"
+	.string "trai.\p"
+	.string "Nhưng đã đến tận đây rồi, chúng tôi\n"
+	.string "nghĩ nên mua ít quà lưu niệm.$"
 
 BattleFrontier_Mart_Text_ProteinMakeNiceGift:
-	.string "Dear, what do you think of this?\n"
-	.string "Wouldn't this make a nice gift?\p"
-	.string "It's…PRO…TE…IN?\n"
-	.string "It sounds delicious, doesn't it?$"
+	.string "Mình ơi, mình thấy món này thế nào?\n"
+	.string "Chẳng phải sẽ là một món quà hay sao?\p"
+	.string "Nó là... PRO...TE...IN à? Nghe ngon lắm,\n"
+	.string "phải không?$"
 
 BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
-	.string "A lot of the BATTLE FRONTIER's\n"
-	.string "facilities don't allow the use of items\l"
-	.string "during battles.\p"
-	.string "That rule makes things tougher than\n"
-	.string "they already are!$"
+	.string "Nhiều cơ sở ở BATTLE FRONTIER không\n"
+	.string "cho phép dùng vật phẩm trong trận đấu.\p"
+	.string "Luật đó khiến mọi thứ vốn đã khó lại\n"
+	.string "càng khó hơn!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Mart_Text_ChaperonGrandson
+	.global BattleFrontier_Mart_Text_ProteinMakeNiceGift
+	.global BattleFrontier_Mart_Text_FacilitiesDontAllowItems
+@ END GENERATED LOCALIZATION EXPORTS

@@ -37,41 +37,51 @@ Route110_TrickHousePuzzle1_EventScript_Robin::
 	end
 
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is fabulous.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} viết mật mã lên cửa.\p"
+	.string "“TRICK MASTER thật tuyệt vời.” ... ... ...\n"
+	.string "... ... ... ... ...\p"
+	.string "Ổ khóa bật mở!$"
 
 Route110_TrickHousePuzzle1_Text_SallyIntro:
-	.string "I'll hack and slash my way to victory\n"
-	.string "with the CUT we just learned!$"
+	.string "Tôi sẽ dùng CUT vừa học, chặt phăng mọi\n"
+	.string "thứ để mở đường đến chiến thắng!$"
 
 Route110_TrickHousePuzzle1_Text_SallyDefeat:
-	.string "Why are you so serious?$"
+	.string "Sao bạn nghiêm túc quá vậy?$"
 
 Route110_TrickHousePuzzle1_Text_SallyPostBattle:
-	.string "I never get tired of hacking\n"
-	.string "and slashing!$"
+	.string "Tôi chặt chém mãi mà chẳng bao giờ\n"
+	.string "chán!$"
 
 Route110_TrickHousePuzzle1_Text_EddieIntro:
-	.string "I wandered into this weird house\n"
-	.string "by accident…$"
+	.string "Tôi vô tình đi lạc vào ngôi nhà kỳ quặc\n"
+	.string "này...$"
 
 Route110_TrickHousePuzzle1_Text_EddieDefeat:
-	.string "And now I've lost…$"
+	.string "Giờ lại còn thua nữa...$"
 
 Route110_TrickHousePuzzle1_Text_EddiePostBattle:
-	.string "I lost my way, I lost a battle, and I'm\n"
-	.string "now even more lost… I can't get out…$"
+	.string "Tôi bị lạc đường, thua trận, giờ lại\n"
+	.string "càng lạc hơn... Tôi không ra được...$"
 
 Route110_TrickHousePuzzle1_Text_RobinIntro:
-	.string "Just who is the TRICK MASTER?$"
+	.string "Rốt cuộc TRICK MASTER là ai?$"
 
 Route110_TrickHousePuzzle1_Text_RobinDefeat:
-	.string "I lost while I was lost in thought!$"
+	.string "Tôi mải suy nghĩ nên thua mất rồi!$"
 
 Route110_TrickHousePuzzle1_Text_RobinPostBattle:
-	.string "You're strong!\n"
-	.string "Just who are you?$"
+	.string "Bạn mạnh thật! Rốt cuộc bạn là ai?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle1_Text_SallyIntro
+	.global Route110_TrickHousePuzzle1_Text_SallyDefeat
+	.global Route110_TrickHousePuzzle1_Text_SallyPostBattle
+	.global Route110_TrickHousePuzzle1_Text_EddieIntro
+	.global Route110_TrickHousePuzzle1_Text_EddieDefeat
+	.global Route110_TrickHousePuzzle1_Text_EddiePostBattle
+	.global Route110_TrickHousePuzzle1_Text_RobinIntro
+	.global Route110_TrickHousePuzzle1_Text_RobinDefeat
+	.global Route110_TrickHousePuzzle1_Text_RobinPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

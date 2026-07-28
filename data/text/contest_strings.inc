@@ -1,195 +1,194 @@
 @ Contest move effect descriptions
 
 gText_HighlyAppealingMove::
-	.string "A highly appealing move.$"
+	.string "Một chiêu thức cực kỳ cuốn hút.$"
 
 gText_UserMoreEasilyStartled::
-	.string "After this move, the user is\n"
-	.string "more easily startled.$"
+	.string "Sau chiêu thức này, người dùng dễ bị\n"
+	.string "giật mình hơn.$"
 
 gText_GreatAppealButNoMoreToEnd::
-	.string "Makes a great appeal, but\n"
-	.string "allows no more to the end.$"
+	.string "Rất cuốn hút, nhưng không thể\n"
+	.string "trình diễn thêm.$"
 
 gText_UsedRepeatedlyWithoutBoringJudge::
-	.string "Can be repeatedly used\n"
-	.string "without boring the JUDGE.$"
+	.string "Có thể dùng liên tiếp mà không làm\n"
+	.string "GIÁM KHẢO chán.$"
 
 gText_AvoidStartledByOthersOnce::
-	.string "Can avoid being startled\n"
-	.string "by others once.$"
+	.string "Có thể tránh bị các POKéMON khác làm\n"
+	.string "giật mình một lần.$"
 
 gText_AvoidStartledByOthers::
-	.string "Can avoid being startled\n"
-	.string "by others.$"
+	.string "Có thể tránh bị các POKéMON khác làm\n"
+	.string "giật mình.$"
 
 gText_AvoidStartledByOthersLittle::
-	.string "Can avoid being startled\n"
-	.string "by others a little.$"
+	.string "Giúp phần nào tránh bị các POKéMON khác\n"
+	.string "làm giật mình.$"
 
 gText_UserLessLikelyStartled::
-	.string "After this move, the user is\n"
-	.string "less likely to be startled.$"
+	.string "Sau chiêu thức này, người dùng ít bị\n"
+	.string "giật mình hơn.$"
 
 gText_SlightlyStartleFrontMon::
-	.string "Slightly startles the\n"
-	.string "POKéMON in front.$"
+	.string "Làm POKéMON ngay phía trước hơi giật\n"
+	.string "mình.$"
 
 gText_SlightlyStartleAppealed::
-	.string "Slightly startles those\n"
-	.string "that have made appeals.$"
+	.string "Làm những POKéMON đã trình diễn hơi\n"
+	.string "giật mình.$"
 
 gText_StartleAppealedBeforeUser::
-	.string "Startles the POKéMON that\n"
-	.string "appealed before the user.$"
+	.string "Làm POKéMON trình diễn ngay trước\n"
+	.string "người dùng giật mình.$"
 
 gText_StartleAllAppealed::
-	.string "Startles all POKéMON that\n"
-	.string "have done their appeals.$"
+	.string "Làm tất cả POKéMON đã trình diễn giật\n"
+	.string "mình.$"
 
 gText_BadlyStartleFrontMon::
-	.string "Badly startles the\n"
-	.string "POKéMON in front.$"
+	.string "Làm POKéMON ngay phía trước giật mình\n"
+	.string "dữ dội.$"
 
 gText_BadlyStartleAppealed::
-	.string "Badly startles those that\n"
-	.string "have made appeals.$"
+	.string "Làm những POKéMON đã trình diễn giật\n"
+	.string "mình dữ dội.$"
 
 gText_StartleAppealedBeforeUser2::
-	.string "Startles the POKéMON that\n"
-	.string "appealed before the user.$"
+	.string "Làm POKéMON trình diễn ngay trước\n"
+	.string "người dùng giật mình.$"
 
 gText_StartleAllAppealed2::
-	.string "Startles all POKéMON that\n"
-	.string "have done their appeals.$"
+	.string "Làm tất cả POKéMON đã trình diễn giật\n"
+	.string "mình.$"
 
 gText_ShiftJudgesAttentionFromOthers::
-	.string "Shifts the JUDGE's\n"
-	.string "attention from others.$"
+	.string "Chuyển sự chú ý của GIÁM KHẢO\n"
+	.string "khỏi các POKéMON khác.$"
 
 gText_StartleMonHasJudgesAttention::
-	.string "Startles the POKéMON that\n"
-	.string "has the JUDGE's attention.$"
+	.string "Làm POKéMON đang được GIÁM KHẢO\n"
+	.string "chú ý giật mình.$"
 
 gText_JamOthersMissesTurn::
-	.string "Jams the others, and misses\n"
-	.string "one turn of appeals.$"
+	.string "Cản trở đối thủ, nhưng mất một lượt\n"
+	.string "trình diễn.$"
 
 gText_StartleMonsMadeSameTypeAppeal::
-	.string "Startles POKéMON that\n"
-	.string "made a same-type appeal.$"
+	.string "Làm các POKéMON đã trình diễn cùng loại\n"
+	.string "giật mình.$"
 
 gText_BadlyStartleCoolAppeals::
-	.string "Badly startles POKéMON\n"
-	.string "that made COOL appeals.$"
+	.string "Làm các POKéMON đã trình diễn COOL\n"
+	.string "giật mình dữ dội.$"
 
 gText_BadlyStartleBeautyAppeals::
-	.string "Badly startles POKéMON\n"
-	.string "that made BEAUTY appeals.$"
+	.string "Làm các POKéMON đã trình diễn BEAUTY\n"
+	.string "giật mình dữ dội.$"
 
 gText_BadlyStartleCuteAppeals::
-	.string "Badly startles POKéMON\n"
-	.string "that made CUTE appeals.$"
+	.string "Làm các POKéMON đã trình diễn CUTE\n"
+	.string "giật mình dữ dội.$"
 
 gText_BadlyStartleSmartAppeals::
-	.string "Badly startles POKéMON\n"
-	.string "that made SMART appeals.$"
+	.string "Làm các POKéMON đã trình diễn SMART\n"
+	.string "giật mình dữ dội.$"
 
 gText_BadlyStartleToughAppeals::
-	.string "Badly startles POKéMON\n"
-	.string "that made TOUGH appeals.$"
+	.string "Làm các POKéMON đã trình diễn TOUGH\n"
+	.string "giật mình dữ dội.$"
 
 gText_MakeMonAfterUserNervous::
-	.string "Makes one POKéMON after\n"
-	.string "the user nervous.$"
+	.string "Làm một POKéMON phía sau căng\n"
+	.string "thẳng.$"
 
 gText_MakeAllMonsAfterUserNervous::
-	.string "Makes all POKéMON after\n"
-	.string "the user nervous.$"
+	.string "Làm mọi POKéMON phía sau căng\n"
+	.string "thẳng.$"
 
 gText_WorsenConditionOfThoseMadeAppeals::
-	.string "Worsens the condition of\n"
-	.string "those that made appeals.$"
+	.string "Làm giảm phong độ của những POKéMON\n"
+	.string "đã trình diễn.$"
 
 gText_BadlyStartleMonsGoodCondition::
-	.string "Badly startles POKéMON in\n"
-	.string "good condition.$"
+	.string "Làm POKéMON có phong độ tốt\n"
+	.string "giật mình dữ dội.$"
 
 gText_AppealGreatIfPerformedFirst::
-	.string "The appeal works great if\n"
-	.string "performed first.$"
+	.string "Hiệu quả cao nếu trình diễn\n"
+	.string "đầu tiên.$"
 
 gText_AppealGreatIfPerformedLast::
-	.string "The appeal works great if\n"
-	.string "performed last.$"
+	.string "Hiệu quả cao nếu trình diễn\n"
+	.string "cuối cùng.$"
 
 gText_AppealAsGoodAsThoseBeforeIt::
-	.string "Makes the appeal as good\n"
-	.string "as those before it.$"
+	.string "Giúp màn trình diễn hay ngang những\n"
+	.string "màn trước đó.$"
 
 gText_AppealAsGoodAsOneBeforeIt::
-	.string "Makes the appeal as good\n"
-	.string "as the one before it.$"
+	.string "Giúp màn trình diễn hay ngang màn ngay\n"
+	.string "trước đó.$"
 
 gText_AppealBetterLaterItsPerformed::
-	.string "The appeal works better\n"
-	.string "the later it is performed.$"
+	.string "Càng thực hiện muộn, màn trình diễn\n"
+	.string "càng hiệu quả.$"
 
 gText_AppealVariesDependingOnTiming::
-	.string "The appeal's quality varies\n"
-	.string "depending on its timing.$"
+	.string "Hiệu quả thay đổi theo thời điểm\n"
+	.string "trình diễn.$"
 
 gText_WorksWellIfSameTypeAsBefore::
-	.string "Works well if it's the same\n"
-	.string "type as the one before.$"
+	.string "Đạt hiệu quả cao nếu cùng loại với màn\n"
+	.string "ngay trước đó.$"
 
 gText_WorksWellIfDifferentTypeAsBefore::
-	.string "Works well if different in\n"
-	.string "type than the one before.$"
+	.string "Đạt hiệu quả cao nếu khác loại với màn\n"
+	.string "ngay trước đó.$"
 
 gText_AffectedByAppealInFront::
-	.string "Affected by how well the\n"
-	.string "appeal in front goes.$"
+	.string "Phụ thuộc màn trình diễn ngay\n"
+	.string "trước đó.$"
 
 gText_UpsConditionHelpsPreventNervousness::
-	.string "Ups the user's condition.\n"
-	.string "Helps prevent nervousness.$"
+	.string "Tăng phong độ và giúp tránh\n"
+	.string "căng thẳng.$"
 
 gText_AppealWorksWellIfConditionGood::
-	.string "The appeal works well if the\n"
-	.string "user's condition is good.$"
+	.string "Hiệu quả cao khi phong độ\n"
+	.string "tốt.$"
 
 gText_NextAppealMadeEarlier::
-	.string "The next appeal can be\n"
-	.string "made earlier next turn.$"
+	.string "Lượt sau có thể trình diễn\n"
+	.string "sớm hơn.$"
 
 gText_NextAppealMadeLater::
-	.string "The next appeal can be\n"
-	.string "made later next turn.$"
+	.string "Lượt sau có thể trình diễn\n"
+	.string "muộn hơn.$"
 
 gText_TurnOrderMoreEasilyScrambled::
-	.string "Makes the next turn's order\n"
-	.string "more easily scrambled.$"
+	.string "Khiến thứ tự biểu diễn ở lượt sau dễ bị\n"
+	.string "xáo trộn hơn.$"
 
 gText_ScrambleOrderOfNextAppeals::
-	.string "Scrambles the order of\n"
-	.string "appeals on the next turn.$"
+	.string "Xáo trộn thứ tự biểu diễn ở lượt sau.$"
 
 gText_AppealExcitesAudienceInAnyContest::
-	.string "An appeal that excites the\n"
-	.string "audience in any CONTEST.$"
+	.string "Làm khán giả phấn khích trong\n"
+	.string "mọi cuộc thi.$"
 
 gText_BadlyStartlesMonsGoodAppeals::
-	.string "Badly startles all POKéMON\n"
-	.string "that made good appeals.$"
+	.string "Làm POKéMON trình diễn tốt\n"
+	.string "giật mình dữ dội.$"
 
 gText_AppealBestMoreCrowdExcited::
-	.string "The appeal works best the\n"
-	.string "more the crowd is excited.$"
+	.string "Đám đông càng phấn khích,\n"
+	.string "hiệu quả càng cao.$"
 
 gText_TemporarilyStopCrowdExcited::
-	.string "Temporarily stops the\n"
-	.string "crowd from growing excited.$"
+	.string "Tạm thời ngăn đám đông trở nên phấn\n"
+	.string "khích.$"
 
 @ Unused move names
 
@@ -250,523 +249,688 @@ gContestMoveTypeToughText::
 	.string "TOUGH$"
 
 gText_AppealNumWhichMoveWillBePlayed::
-	.string "Appeal no. {STR_VAR_1}!\n"
-	.string "Which move will be played?$"
+	.string "Lượt biểu diễn số {STR_VAR_1}!\n"
+	.string "Sẽ dùng chiêu nào?$"
 
 gText_AppealNumButItCantParticipate::
-	.string "Appeal no. {STR_VAR_1}!\n"
-	.string "But it can't participate!$"
+	.string "Lượt biểu diễn số {STR_VAR_1}!\n"
+	.string "Nhưng không thể tham gia!$"
 
 gText_MonAppealedWithMove::
-	.string "{STR_VAR_1} appealed with\n"
+	.string "{STR_VAR_1} biểu diễn bằng\n"
 	.string "{STR_VAR_2}!$"
 
 gText_MonWasWatchingOthers::
-	.string "{STR_VAR_1} was watching\n"
-	.string "the others.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} đứng quan sát\n"
+	.string "những POKéMON khác.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AllOutOfAppealTime::
-	.string "We're all out of\n"
-	.string "Appeal Time!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Thời gian biểu diễn đã hết!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 @ Unused appeal result texts
 
 gText_ButAppealWasJammed::
-	.string "But the appeal was\n"
-	.string "jammed.$"
+	.string "Nhưng màn biểu diễn đã bị phá rối.$"
 
 gText_FollowedAnotherMonsLead::
-	.string "It followed another\n"
-	.string "POKéMON's lead.$"
+	.string "Nó làm theo màn biểu diễn của một\n"
+	.string "POKéMON khác.$"
 
 gText_ButItMessedUp::
-	.string "But it messed up.$"
+	.string "Nhưng nó đã làm hỏng.$"
 
 gText_WentBetterThanUsual::
-	.string "It went better than\n"
-	.string "usual.$"
+	.string "Mọi chuyện diễn ra tốt hơn thường lệ.$"
 
 gText_JudgeLookedAwayForSomeReason::
-	.string "The JUDGE looked away\n"
-	.string "for some reason.$"
+	.string "Không hiểu sao GIÁM KHẢO lại nhìn\n"
+	.string "sang chỗ khác.$"
 
 gText_WorkedHardToBuildOnPastMistakes::
-	.string "It worked hard to build on\n"
-	.string "past mistakes.$"
+	.string "Nó nỗ lực rút kinh nghiệm từ những sai\n"
+	.string "lầm trước đó.$"
 
 gText_CantMakeAnyMoreMoves::
-	.string "It can't make any more\n"
-	.string "moves.$"
+	.string "Nó không thể thực hiện thêm chiêu nào\n"
+	.string "nữa.$"
 
 gText_WorkedFrighteninglyWell::
-	.string "It worked frighteningly\n"
-	.string "well.$"
+	.string "Nó phát huy hiệu quả tốt đến đáng sợ.$"
 
 gText_WorkedHardAsStandoutMon::
-	.string "It worked as hard as the\n"
-	.string "standout POKéMON.$"
+	.string "Nó nỗ lực không kém POKéMON nổi bật\n"
+	.string "nhất.$"
 
 gText_JudgedLookedOnExpectantly::
-	.string "The JUDGE looked on\n"
-	.string "expectantly.$"
+	.string "GIÁM KHẢO chăm chú quan sát\n"
+	.string "với vẻ mong đợi.$"
 
 gText_WorkedRatherWell::
-	.string "It worked rather well.$"
+	.string "Nó phát huy hiệu quả khá tốt.$"
 
 gText_WorkedLittleBetterThanUsual::
-	.string "It worked a little better\n"
-	.string "than usual.$"
+	.string "Nó phát huy hiệu quả tốt hơn thường lệ\n"
+	.string "một chút.$"
 
 @ Round result texts
 
 gText_MonFailedToStandOutAtAll::
-	.string "{STR_VAR_1} failed to\n"
-	.string "stand out at all…{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} hoàn toàn không tạo\n"
+	.string "được ấn tượng.{PAUSE_UNTIL_PRESS}$"
 
 gText_MonDidntStandOutVeryMuch::
-	.string "{STR_VAR_1} didn't stand\n"
-	.string "out very much…{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} không tạo được mấy\n"
+	.string "ấn tượng.{PAUSE_UNTIL_PRESS}$"
 
 gText_MonCaughtALittleAttention::
-	.string "{STR_VAR_1} caught a\n"
-	.string "little attention.{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} thu hút được một\n"
+	.string "chút chú ý.{PAUSE_UNTIL_PRESS}$"
 
 gText_MonAttractedALotOfAttention::
-	.string "{STR_VAR_1} attracted a\n"
-	.string "lot of attention.{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} thu hút rất nhiều sự\n"
+	.string "chú ý.{PAUSE_UNTIL_PRESS}$"
 
 gText_MonCommandedTotalAttention::
-	.string "{STR_VAR_1} commanded\n"
-	.string "total attention.{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} thu hút toàn bộ sự\n"
+	.string "chú ý.{PAUSE_UNTIL_PRESS}$"
 
 gText_MonHasntMadeItsAppeal::
-	.string "{STR_VAR_1} hasn't made\n"
-	.string "its appeal.{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1} vẫn chưa biểu diễn.{PAUSE_UNTIL_PRESS}$"
 
 @ Unused
 gText_AnticipationSwelledForMonsAppealNext2::
-	.string "Anticipation swelled for\n"
-	.string "{STR_VAR_1}'s appeal next.$"
+	.string "Mọi người càng háo hức chờ màn biểu\n"
+	.string "diễn tiếp theo của {STR_VAR_1}.$"
 
 gText_EmptyContestString::
 	.string "$"
 
 gText_JudgesViewsOnMonHeldFirm::
-	.string "The JUDGE 's views on\n"
-	.string "{STR_VAR_1} held firm.$"
+	.string "Nhận định của GIÁM KHẢO về\n"
+	.string "{STR_VAR_1} vẫn không thay đổi.$"
 
 gText_MonsXChangedPerceptions::
-	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
-	.string "changed perceptions.$"
+	.string "{STR_VAR_1} đã thay đổi cách\n"
+	.string "nhìn của mọi người bằng\l"
+	.string "{STR_VAR_3}.$"
 
 gText_MonsAppealEffectWoreOff::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "effect wore off.$"
+	.string "Hiệu ứng từ màn biểu diễn của\n"
+	.string "{STR_VAR_1} đã hết.$"
 
 gText_SpecialAppealsEffectWoreOff::
-	.string "The special appeal's\n"
-	.string "effect wore off.$"
+	.string "Hiệu ứng của màn biểu diễn đặc biệt đã\n"
+	.string "hết.$"
 
 gText_EveryonesAppealsMadeToLookSame::
-	.string "Everyone's appeals were\n"
-	.string "made to look the same.$"
+	.string "Màn biểu diễn của tất cả đều trông\n"
+	.string "giống nhau.$"
 
 gText_CheapenedMonsAppeal::
-	.string "It cheapened\n"
-	.string "{STR_VAR_2}'s appeal.$"
+	.string "Nó làm màn biểu diễn của\n"
+	.string "{STR_VAR_2} kém nổi bật.$"
 
 gText_CheapenedAppealOfThoseAhead::
-	.string "It cheapened the appeal\n"
-	.string "of those ahead.$"
+	.string "Nó làm màn biểu diễn của các POKéMON\n"
+	.string "phía trước kém nổi bật.$"
 
 gText_StoleAttentionAwayFromMon::
-	.string "It stole attention away\n"
-	.string "from {STR_VAR_2}.$"
+	.string "Nó cướp mất sự chú ý vốn dành cho\n"
+	.string "{STR_VAR_2}.$"
 
 gText_CheapenedMonsAppeal2::
-	.string "It cheapened\n"
-	.string "{STR_VAR_2}'s appeal.$"
+	.string "Nó làm màn biểu diễn của\n"
+	.string "{STR_VAR_2} kém nổi bật.$"
 
 gText_SeverelyCheapenedOtherAppeals::
-	.string "It severely cheapened\n"
-	.string "other appeals.$"
+	.string "Nó làm các màn biểu diễn khác kém nổi\n"
+	.string "bật đi rất nhiều.$"
 
 gText_AnticipationSwelledForMonsAppealNext::
-	.string "Anticipation swelled for\n"
-	.string "{STR_VAR_1}'s appeal next.$"
+	.string "Mọi người càng háo hức chờ màn biểu\n"
+	.string "diễn tiếp theo của {STR_VAR_1}.$"
 
 gText_CheapenedAppealOfThoseAhead2::
-	.string "It cheapened the appeal\n"
-	.string "of those ahead.$"
+	.string "Nó làm màn biểu diễn của các POKéMON\n"
+	.string "phía trước kém nổi bật.$"
 
 gText_CheapenedJudgesFavoriteAppeal::
-	.string "It cheapened the JUDGE's\n"
-	.string "favorite appeal.$"
+	.string "Nó làm màn biểu diễn yêu thích của\n"
+	.string "GIÁM KHẢO kém nổi bật.$"
 
 gText_AppealsOfOthersCheapenedByHalf::
-	.string "The appeals of others\n"
-	.string "were cheapened by half.$"
+	.string "Sức hút của các màn biểu diễn khác bị\n"
+	.string "giảm một nửa.$"
 
 gText_StoodOutToMakeUpForBeingJammed::
-	.string "It stood out to make up\n"
-	.string "for being jammed.$"
+	.string "Nó trở nên nổi bật để bù lại việc bị phá\n"
+	.string "rối.$"
 
 gText_CantParticipateInAppealsAnyMore::
-	.string "It can't participate in\n"
-	.string "appeals any more.$"
+	.string "Nó không thể tiếp tục tham gia biểu\n"
+	.string "diễn.$"
 
 gText_TouchedJudgeForFantasticAppeal::
-	.string "It touched the JUDGE for\n"
-	.string "a fantastic appeal.$"
+	.string "Màn biểu diễn tuyệt vời của nó đã chạm\n"
+	.string "đến GIÁM KHẢO.$"
 
 gText_AnticipationRoseForUpcomingAppeals::
-	.string "Anticipation rose for\n"
-	.string "upcoming appeals.$"
+	.string "Sự mong đợi dành cho các màn biểu diễn\n"
+	.string "sắp tới tăng lên.$"
 
 gText_StoodOutAsMuchAsSpecialAppeals::
-	.string "It stood out as much as\n"
-	.string "special appeals.$"
+	.string "Nó nổi bật ngang với những màn biểu\n"
+	.string "diễn đặc biệt.$"
 
 gText_StoodOutAsMuchAsMon::
-	.string "It stood out as much as\n"
-	.string "{STR_VAR_1}.$"
+	.string "Nó nổi bật ngang với {STR_VAR_1}.$"
 
 gText_JammedAppealsMadeEvenLessNoticeable::
-	.string "Jammed appeals were made\n"
-	.string "even less noticeable.$"
+	.string "Những màn biểu diễn bị phá rối càng khó\n"
+	.string "được chú ý hơn.$"
 
 gText_EveryonesAppealsMadeSame::
-	.string "Everyone's appeals were\n"
-	.string "made the same.$"
+	.string "Màn biểu diễn của tất cả trở nên giống\n"
+	.string "nhau.$"
 
 @ Appeal result texts
 
 gText_BecameMoreConsciousOfOtherMons::
-	.string "It became more conscious\n"
-	.string "of the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó để tâm hơn đến những POKéMON khác.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonCantMakeAnAppealAfterThis::
-	.string "{STR_VAR_1} can't make an\n"
-	.string "appeal after this.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} sẽ không thể biểu\n"
+	.string "diễn sau lượt này.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_SettledDownJustLittleBit::
-	.string "It settled down just a\n"
-	.string "little bit.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó chỉ bình tĩnh lại đôi chút.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_BecameObliviousToOtherMons::
-	.string "It became oblivious to\n"
-	.string "the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó hoàn toàn không còn để tâm đến\n"
+	.string "những POKéMON khác.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_BecameLessAwareOfOtherMons::
-	.string "It became less aware of\n"
-	.string "the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó ít để tâm đến những POKéMON khác\n"
+	.string "hơn.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_StoppedCaringAboutOtherMons::
-	.string "It stopped caring about\n"
-	.string "other POKéMON much.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó hầu như không còn quan tâm đến\n"
+	.string "những POKéMON khác.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToStartleOtherMons::
-	.string "It tried to startle the\n"
-	.string "other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cố làm những POKéMON khác giật mình.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToDazzleOthers::
-	.string "It tried to dazzle the\n"
-	.string "others.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cố làm những đối thủ khác choáng\n"
+	.string "ngợp.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_JudgeLookedAwayFromMon::
-	.string "The JUDGE looked away\n"
-	.string "from {STR_VAR_1}.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "GIÁM KHẢO tránh nhìn {STR_VAR_1}.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToUnnerveNextMon::
-	.string "It tried to unnerve the\n"
-	.string "next POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cố làm POKéMON tiếp theo căng thẳng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonBecameNervous::
-	.string "{STR_VAR_1} became\n"
-	.string "nervous.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} trở nên căng thẳng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AppealTriedToUnnerveWaitingMons::
-	.string "The appeal tried to\n"
-	.string "unnerve waiting POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn đã cố làm những POKéMON\n"
+	.string "đang chờ căng thẳng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TauntedMonsDoingWell::
-	.string "It taunted POKéMON\n"
-	.string "doing well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó khiêu khích những POKéMON đang thể\n"
+	.string "hiện tốt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonRegainedItsForm::
-	.string "{STR_VAR_1} regained its\n"
-	.string "form.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} đã lấy lại phong độ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToJamMonDoingWell::
-	.string "It tried to jam POKéMON\n"
-	.string "doing well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cố phá rối những POKéMON đang thể\n"
+	.string "hiện tốt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_StandoutMonHustledEvenMore::
-	.string "The standout {STR_VAR_1}\n"
-	.string "hustled even more.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Vốn đã nổi bật, {STR_VAR_1} càng\n"
+	.string "nỗ lực hơn nữa.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_LargelyUnnoticedMonWorkedHard::
-	.string "The largely unnoticed\n"
-	.string "{STR_VAR_1} worked hard.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Dù hầu như không được chú ý,\n"
+	.string "{STR_VAR_1} vẫn nỗ lực hết mình.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_WorkedAsMuchAsMonBefore::
-	.string "It worked as much as\n"
-	.string "POKéMON before it.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó nỗ lực ngang với POKéMON biểu diễn\n"
+	.string "trước mình.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotGoWell::
-	.string "{STR_VAR_1}'s appeal did\n"
-	.string "not go well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1}\n"
+	.string "không suôn sẻ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_WorkedAsMuchAsPrecedingMon::
-	.string "It worked as much as the\n"
-	.string "preceding POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó nỗ lực ngang với POKéMON ngay\n"
+	.string "trước đó.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotGoWell2::
-	.string "{STR_VAR_1}'s appeal did\n"
-	.string "not go well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1}\n"
+	.string "không suôn sẻ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotGoWell3::
-	.string "{STR_VAR_1}'s appeal did\n"
-	.string "not go well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1}\n"
+	.string "không suôn sẻ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentSlightlyWell::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went slightly well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1} có\n"
+	.string "phần suôn sẻ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentPrettyWell::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went pretty well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1}\n"
+	.string "diễn ra khá tốt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentExcellently::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went excellently.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn biểu diễn của {STR_VAR_1}\n"
+	.string "diễn ra xuất sắc.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWasDud::
-	.string "{STR_VAR_1}'s appeal was\n"
-	.string "a dud.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "thất bại thảm hại.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotWorkVeryWell::
-	.string "{STR_VAR_1}'s appeal did\n"
-	.string "not work very well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "không được suôn sẻ lắm.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentSlightlyWell2::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went slightly well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "cũng khá ổn.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentPrettyWell2::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went pretty well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "khá tốt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentVeryWell::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went very well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "rất tốt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealWentExcellently2::
-	.string "{STR_VAR_1}'s appeal\n"
-	.string "went excellently.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Màn trình diễn của {STR_VAR_1}\n"
+	.string "thật xuất sắc.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_SameTypeAsOneBeforeGood::
-	.string "It's the same type as the\n"
-	.string "POKéMON before--good!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cùng loại với POKéMON trước, tốt\n"
+	.string "lắm!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_NotSameTypeAsOneBeforeGood::
-	.string "It's not the same type as\n"
-	.string "the one before--good!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó không cùng loại với phần trước, tốt\n"
+	.string "lắm!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_StoodOutMuchMoreThanMonBefore::
-	.string "It stood out much more\n"
-	.string "than the POKéMON before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó nổi bật hơn hẳn POKéMON trước.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_DidntDoAsWellAsMonBefore::
-	.string "It didn't do as well as the\n"
-	.string "POKéMON before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó thể hiện không tốt bằng POKéMON\n"
+	.string "trước.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsConditionRoseAboveUsual::
-	.string "{STR_VAR_1}'s condition\n"
-	.string "rose above usual.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Phong độ của {STR_VAR_1} đã\n"
+	.string "vượt mức bình thường.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsHotStatusMadeGreatAppeal::
-	.string "{STR_VAR_1}'s hot status\n"
-	.string "made it a great appeal!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Trạng thái sung sức của\n"
+	.string "{STR_VAR_1} đã tạo nên màn trình\l"
+	.string "diễn tuyệt vời!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MovedUpInLineForNextAppeal::
-	.string "It moved up in line for\n"
-	.string "the next appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó được xếp lên trước cho lượt trình\n"
+	.string "diễn tiếp theo.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MovedBackInLineForNextAppeal::
-	.string "It moved back in line once\n"
-	.string "for the next appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó bị lùi lại một vị trí cho lượt trình\n"
+	.string "diễn tiếp theo.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_ScrambledUpOrderForNextTurn::
-	.string "It scrambled up the\n"
-	.string "order for the next turn.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó làm đảo lộn thứ tự của lượt tiếp\n"
+	.string "theo.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_JudgeLookedAtMonExpectantly::
-	.string "The JUDGE looked at\n"
-	.string "{STR_VAR_1} expectantly.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "GIÁM KHẢO nhìn {STR_VAR_1} đầy kỳ\n"
+	.string "vọng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AppealComboWentOverWell::
-	.string "The appeal combo went\n"
-	.string "over well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Chuỗi trình diễn đã thành công.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AppealComboWentOverVeryWell::
-	.string "The appeal combo went\n"
-	.string "over very well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Chuỗi trình diễn đã rất thành công.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AppealComboWentOverExcellently::
-	.string "The appeal combo went\n"
-	.string "over excellently.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Chuỗi trình diễn đã thành công xuất\n"
+	.string "sắc.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonManagedToAvertGaze::
-	.string "{STR_VAR_1} managed to\n"
-	.string "avert its gaze.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} đã kịp ngoảnh mặt đi.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonManagedToAvoidSeeingIt::
-	.string "{STR_VAR_1} managed to\n"
-	.string "avoid seeing it.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} đã tránh nhìn vào\n"
+	.string "đó.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonIsntFazedByThatSortOfThing::
-	.string "{STR_VAR_1} isn't fazed\n"
-	.string "by that sort of thing.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} không hề nao núng\n"
+	.string "trước chuyện đó.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonBecameALittleDistracted::
-	.string "{STR_VAR_1} became a\n"
-	.string "little distracted.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} hơi mất tập trung.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToStartleOtherPokemon::
-	.string "It tried to startle the\n"
-	.string "other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó cố làm các POKéMON khác giật mình.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonLookedDownOutOfDistraction::
-	.string "{STR_VAR_1} looked down\n"
-	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} mất tập trung nên\n"
+	.string "cúi xuống.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonTurnedBackOutOfDistraction::
-	.string "{STR_VAR_1} turned back\n"
-	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} mất tập trung nên\n"
+	.string "quay lưng lại.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonCouldntHelpUtteringCry::
-	.string "{STR_VAR_1} couldn't help\n"
-	.string "uttering a cry.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} không kìm được\n"
+	.string "tiếng kêu.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonCouldntHelpLeapingUp::
-	.string "{STR_VAR_1} couldn't help\n"
-	.string "leaping up.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} không kìm được mà\n"
+	.string "nhảy dựng lên.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonTrippedOutOfDistraction::
-	.string "{STR_VAR_1} tripped over\n"
-	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} mất tập trung nên\n"
+	.string "vấp ngã.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonWasTooNervousToMove::
-	.string "{STR_VAR_1} was too\n"
-	.string "nervous to move.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} căng thẳng đến mức\n"
+	.string "không thể cử động.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_ButItMessedUp2::
-	.string "But it messed up.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nhưng nó đã làm hỏng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_ButItFailedToMakeTargetNervous::
-	.string "But it failed to make\n"
-	.string "the target nervous.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nhưng nó không làm mục tiêu căng thẳng\n"
+	.string "được.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_ButItFailedToMakeAnyoneNervous::
-	.string "But it failed to make\n"
-	.string "anyone nervous.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nhưng nó chẳng làm ai căng thẳng được.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_ButItWasIgnored::
-	.string "But it was ignored…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nhưng nó bị phớt lờ...{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_CouldntImproveItsCondition::
-	.string "But it couldn't improve\n"
-	.string "its condition…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nhưng nó không thể cải thiện phong\n"
+	.string "độ...{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_BadConditionResultedInWeakAppeal::
-	.string "Its bad condition\n"
-	.string "resulted in a weak appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Phong độ kém khiến màn trình diễn trở\n"
+	.string "nên yếu ớt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonWasUnaffected::
-	.string "{STR_VAR_1} was\n"
-	.string "unaffected.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} không bị ảnh hưởng.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_RepeatedAppeal::
-	.string "{STR_VAR_1} disappointed\n"
-	.string "by repeating an appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} khiến khán giả thất\n"
+	.string "vọng vì lặp lại màn trình diễn.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsXWentOverGreat::
-	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
-	.string "went over great.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_3} của\n"
+	.string "{STR_VAR_1} được hưởng ứng\l"
+	.string "nhiệt liệt.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsXDidntGoOverWell::
-	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
-	.string "didn't go over well here…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_3} của\n"
+	.string "{STR_VAR_1} không được đón\l"
+	.string "nhận tại đây...{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsXGotTheCrowdGoing::
-	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
-	.string "got the crowd going.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_3} của\n"
+	.string "{STR_VAR_1} khiến đám đông phấn\l"
+	.string "khích.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonCantAppealNextTurn::
-	.string "{STR_VAR_1} can't appeal\n"
-	.string "next turn…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_1} không thể trình diễn\n"
+	.string "ở lượt tiếp theo...{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AttractedCrowdsAttention::
-	.string "It attracted the crowd's\n"
-	.string "attention.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Nó thu hút sự chú ý của đám đông.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_CrowdContinuesToWatchMon::
-	.string "The crowd continues to\n"
-	.string "watch {STR_VAR_3}.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "Đám đông vẫn tiếp tục dõi theo\n"
+	.string "{STR_VAR_3}.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsMoveIsIgnored::
-	.string "{STR_VAR_1}'s\n"
-	.string "{STR_VAR_2} is ignored.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "{STR_VAR_2} của\n"
+	.string "{STR_VAR_1} bị phớt lờ.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_Contest_Shyness::
-	.string "shyness$"
+	.string "sự rụt rè$"
 
 gText_Contest_Anxiety::
-	.string "anxiety$"
+	.string "sự lo âu$"
 
 gText_Contest_Laziness::
-	.string "laziness$"
+	.string "sự lười biếng$"
 
 gText_Contest_Hesitancy::
-	.string "hesitancy$"
+	.string "sự do dự$"
 
 gText_Contest_Fear::
-	.string "fear$"
+	.string "nỗi sợ hãi$"
 
 gText_Contest_Coolness::
-	.string "coolness$"
+	.string "vẻ ngầu$"
 
 gText_Contest_Beauty::
-	.string "beauty$"
+	.string "vẻ đẹp$"
 
 gText_Contest_Cuteness::
-	.string "cuteness$"
+	.string "vẻ đáng yêu$"
 
 gText_Contest_Smartness::
-	.string "smartness$"
+	.string "sự thông minh$"
 
 gText_Contest_Toughness::
-	.string "toughness$"
+	.string "sự cứng cỏi$"
 
 @ Unused
 gText_Tension::
 	.string "TENSION$"
 
 gText_CoolMove::
-	.string "COOL Move$"
+	.string "Chiêu COOL$"
 
 gText_BeautyMove::
-	.string "BEAUTY Move$"
+	.string "Chiêu BEAUTY$"
 
 gText_CuteMove::
-	.string "CUTE Move$"
+	.string "Chiêu CUTE$"
 
 gText_SmartMove::
-	.string "SMART Move$"
+	.string "Chiêu SMART$"
 
 gText_ToughMove::
-	.string "TOUGH Move$"
+	.string "Chiêu TOUGH$"
 
 gText_3QuestionMarks::
 	.string "???$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_HighlyAppealingMove
+	.global gText_UserMoreEasilyStartled
+	.global gText_GreatAppealButNoMoreToEnd
+	.global gText_UsedRepeatedlyWithoutBoringJudge
+	.global gText_AvoidStartledByOthersOnce
+	.global gText_AvoidStartledByOthers
+	.global gText_AvoidStartledByOthersLittle
+	.global gText_UserLessLikelyStartled
+	.global gText_SlightlyStartleFrontMon
+	.global gText_SlightlyStartleAppealed
+	.global gText_StartleAppealedBeforeUser
+	.global gText_StartleAllAppealed
+	.global gText_BadlyStartleFrontMon
+	.global gText_BadlyStartleAppealed
+	.global gText_StartleAppealedBeforeUser2
+	.global gText_StartleAllAppealed2
+	.global gText_ShiftJudgesAttentionFromOthers
+	.global gText_StartleMonHasJudgesAttention
+	.global gText_JamOthersMissesTurn
+	.global gText_StartleMonsMadeSameTypeAppeal
+	.global gText_BadlyStartleCoolAppeals
+	.global gText_BadlyStartleBeautyAppeals
+	.global gText_BadlyStartleCuteAppeals
+	.global gText_BadlyStartleSmartAppeals
+	.global gText_BadlyStartleToughAppeals
+	.global gText_MakeMonAfterUserNervous
+	.global gText_MakeAllMonsAfterUserNervous
+	.global gText_WorsenConditionOfThoseMadeAppeals
+	.global gText_BadlyStartleMonsGoodCondition
+	.global gText_AppealGreatIfPerformedFirst
+	.global gText_AppealGreatIfPerformedLast
+	.global gText_AppealAsGoodAsThoseBeforeIt
+	.global gText_AppealAsGoodAsOneBeforeIt
+	.global gText_AppealBetterLaterItsPerformed
+	.global gText_AppealVariesDependingOnTiming
+	.global gText_WorksWellIfSameTypeAsBefore
+	.global gText_WorksWellIfDifferentTypeAsBefore
+	.global gText_AffectedByAppealInFront
+	.global gText_UpsConditionHelpsPreventNervousness
+	.global gText_AppealWorksWellIfConditionGood
+	.global gText_NextAppealMadeEarlier
+	.global gText_NextAppealMadeLater
+	.global gText_TurnOrderMoreEasilyScrambled
+	.global gText_ScrambleOrderOfNextAppeals
+	.global gText_AppealExcitesAudienceInAnyContest
+	.global gText_BadlyStartlesMonsGoodAppeals
+	.global gText_AppealBestMoreCrowdExcited
+	.global gText_TemporarilyStopCrowdExcited
+	.global gText_AppealNumWhichMoveWillBePlayed
+	.global gText_AppealNumButItCantParticipate
+	.global gText_MonAppealedWithMove
+	.global gText_MonWasWatchingOthers
+	.global gText_AllOutOfAppealTime
+	.global gText_ButAppealWasJammed
+	.global gText_FollowedAnotherMonsLead
+	.global gText_ButItMessedUp
+	.global gText_WentBetterThanUsual
+	.global gText_JudgeLookedAwayForSomeReason
+	.global gText_WorkedHardToBuildOnPastMistakes
+	.global gText_CantMakeAnyMoreMoves
+	.global gText_WorkedFrighteninglyWell
+	.global gText_WorkedHardAsStandoutMon
+	.global gText_JudgedLookedOnExpectantly
+	.global gText_WorkedRatherWell
+	.global gText_WorkedLittleBetterThanUsual
+	.global gText_MonFailedToStandOutAtAll
+	.global gText_MonDidntStandOutVeryMuch
+	.global gText_MonCaughtALittleAttention
+	.global gText_MonAttractedALotOfAttention
+	.global gText_MonCommandedTotalAttention
+	.global gText_MonHasntMadeItsAppeal
+	.global gText_AnticipationSwelledForMonsAppealNext2
+	.global gText_JudgesViewsOnMonHeldFirm
+	.global gText_MonsXChangedPerceptions
+	.global gText_MonsAppealEffectWoreOff
+	.global gText_SpecialAppealsEffectWoreOff
+	.global gText_EveryonesAppealsMadeToLookSame
+	.global gText_CheapenedMonsAppeal
+	.global gText_CheapenedAppealOfThoseAhead
+	.global gText_StoleAttentionAwayFromMon
+	.global gText_CheapenedMonsAppeal2
+	.global gText_SeverelyCheapenedOtherAppeals
+	.global gText_AnticipationSwelledForMonsAppealNext
+	.global gText_CheapenedAppealOfThoseAhead2
+	.global gText_CheapenedJudgesFavoriteAppeal
+	.global gText_AppealsOfOthersCheapenedByHalf
+	.global gText_StoodOutToMakeUpForBeingJammed
+	.global gText_CantParticipateInAppealsAnyMore
+	.global gText_TouchedJudgeForFantasticAppeal
+	.global gText_AnticipationRoseForUpcomingAppeals
+	.global gText_StoodOutAsMuchAsSpecialAppeals
+	.global gText_StoodOutAsMuchAsMon
+	.global gText_JammedAppealsMadeEvenLessNoticeable
+	.global gText_EveryonesAppealsMadeSame
+	.global gText_BecameMoreConsciousOfOtherMons
+	.global gText_MonCantMakeAnAppealAfterThis
+	.global gText_SettledDownJustLittleBit
+	.global gText_BecameObliviousToOtherMons
+	.global gText_BecameLessAwareOfOtherMons
+	.global gText_StoppedCaringAboutOtherMons
+	.global gText_TriedToStartleOtherMons
+	.global gText_TriedToDazzleOthers
+	.global gText_JudgeLookedAwayFromMon
+	.global gText_TriedToUnnerveNextMon
+	.global gText_MonBecameNervous
+	.global gText_AppealTriedToUnnerveWaitingMons
+	.global gText_TauntedMonsDoingWell
+	.global gText_MonRegainedItsForm
+	.global gText_TriedToJamMonDoingWell
+	.global gText_StandoutMonHustledEvenMore
+	.global gText_LargelyUnnoticedMonWorkedHard
+	.global gText_WorkedAsMuchAsMonBefore
+	.global gText_MonsAppealDidNotGoWell
+	.global gText_WorkedAsMuchAsPrecedingMon
+	.global gText_MonsAppealDidNotGoWell2
+	.global gText_MonsAppealDidNotGoWell3
+	.global gText_MonsAppealWentSlightlyWell
+	.global gText_MonsAppealWentPrettyWell
+	.global gText_MonsAppealWentExcellently
+	.global gText_MonsAppealWasDud
+	.global gText_MonsAppealDidNotWorkVeryWell
+	.global gText_MonsAppealWentSlightlyWell2
+	.global gText_MonsAppealWentPrettyWell2
+	.global gText_MonsAppealWentVeryWell
+	.global gText_MonsAppealWentExcellently2
+	.global gText_SameTypeAsOneBeforeGood
+	.global gText_NotSameTypeAsOneBeforeGood
+	.global gText_StoodOutMuchMoreThanMonBefore
+	.global gText_DidntDoAsWellAsMonBefore
+	.global gText_MonsConditionRoseAboveUsual
+	.global gText_MonsHotStatusMadeGreatAppeal
+	.global gText_MovedUpInLineForNextAppeal
+	.global gText_MovedBackInLineForNextAppeal
+	.global gText_ScrambledUpOrderForNextTurn
+	.global gText_JudgeLookedAtMonExpectantly
+	.global gText_AppealComboWentOverWell
+	.global gText_AppealComboWentOverVeryWell
+	.global gText_AppealComboWentOverExcellently
+	.global gText_MonManagedToAvertGaze
+	.global gText_MonManagedToAvoidSeeingIt
+	.global gText_MonIsntFazedByThatSortOfThing
+	.global gText_MonBecameALittleDistracted
+	.global gText_TriedToStartleOtherPokemon
+	.global gText_MonLookedDownOutOfDistraction
+	.global gText_MonTurnedBackOutOfDistraction
+	.global gText_MonCouldntHelpUtteringCry
+	.global gText_MonCouldntHelpLeapingUp
+	.global gText_MonTrippedOutOfDistraction
+	.global gText_MonWasTooNervousToMove
+	.global gText_ButItMessedUp2
+	.global gText_ButItFailedToMakeTargetNervous
+	.global gText_ButItFailedToMakeAnyoneNervous
+	.global gText_ButItWasIgnored
+	.global gText_CouldntImproveItsCondition
+	.global gText_BadConditionResultedInWeakAppeal
+	.global gText_MonWasUnaffected
+	.global gText_RepeatedAppeal
+	.global gText_MonsXWentOverGreat
+	.global gText_MonsXDidntGoOverWell
+	.global gText_MonsXGotTheCrowdGoing
+	.global gText_MonCantAppealNextTurn
+	.global gText_AttractedCrowdsAttention
+	.global gText_CrowdContinuesToWatchMon
+	.global gText_MonsMoveIsIgnored
+	.global gText_Contest_Shyness
+	.global gText_Contest_Anxiety
+	.global gText_Contest_Laziness
+	.global gText_Contest_Hesitancy
+	.global gText_Contest_Fear
+	.global gText_Contest_Coolness
+	.global gText_Contest_Beauty
+	.global gText_Contest_Cuteness
+	.global gText_Contest_Smartness
+	.global gText_Contest_Toughness
+	.global gText_CoolMove
+	.global gText_BeautyMove
+	.global gText_CuteMove
+	.global gText_SmartMove
+	.global gText_ToughMove
+@ END GENERATED LOCALIZATION EXPORTS

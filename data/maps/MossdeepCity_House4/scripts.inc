@@ -40,22 +40,28 @@ MossdeepCity_House4_EventScript_Skitty::
 	end
 
 MossdeepCity_House4_Text_BrotherLikesToFindBases:
-	.string "My little brother says he likes to go\n"
-	.string "find people's SECRET BASES.$"
+	.string "Em trai tôi bảo nó thích đi tìm SECRET\n"
+	.string "BASES của mọi người.$"
 
 MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle:
-	.string "My little brother says he likes to\n"
-	.string "visit people's SECRET BASES and have\l"
-	.string "POKéMON battles.$"
+	.string "Em trai tôi bảo nó thích ghé thăm\n"
+	.string "SECRET BASES của mọi người và đấu\l"
+	.string "POKéMON.$"
 
 MossdeepCity_House4_Text_YouMadeSecretBaseNearX:
-	.string "Was it you who made a SECRET BASE\n"
-	.string "near {STR_VAR_1}?$"
+	.string "Có phải bạn là người đã dựng SECRET\n"
+	.string "BASE gần {STR_VAR_1} không?$"
 
 MossdeepCity_House4_Text_MakeSecretBase:
-	.string "You should make a SECRET BASE\n"
-	.string "somewhere. I'll go find it!$"
+	.string "Bạn nên dựng một SECRET BASE ở đâu đó\n"
+	.string "đi. Tôi sẽ đi tìm nó!$"
 
 MossdeepCity_House4_Text_Skitty:
 	.string "SKITTY: Miyaan?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_House4_Text_BrotherLikesToFindBases
+	.global MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle
+	.global MossdeepCity_House4_Text_YouMadeSecretBaseNearX
+	.global MossdeepCity_House4_Text_MakeSecretBase
+@ END GENERATED LOCALIZATION EXPORTS

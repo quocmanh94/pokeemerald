@@ -695,130 +695,157 @@ Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle::
 	return
 
 Route110_TrickHouseEntrance_Text_YoureBeingWatched:
-	.string "You're being watched…$"
+	.string "Có người đang theo dõi...$"
 
 Route110_TrickHouseEntrance_Text_ConcealedBeneathDesk:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "beneath this desk? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn dưới chiếc bàn\n"
+	.string "này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedBehindTree:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "behind this tree? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn sau cái cây này?\n"
+	.string "Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedInDresser:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "in this dresser? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn trong chiếc tủ\n"
+	.string "ngăn kéo này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConealedBeyondWindow:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "beyond this window? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn phía bên kia cửa\n"
+	.string "sổ này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedInPlanter:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "in this planter? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn trong bồn cây\n"
+	.string "này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedInCupboard:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "in this cupboard? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn trong chiếc tủ\n"
+	.string "này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedBehindWindow:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "behind this window? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn sau cửa sổ này?\n"
+	.string "Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion:
-	.string "Hah? Grrr…\p"
-	.string "How did you know I concealed myself\n"
-	.string "beneath this cushion? You're sharp!$"
+	.string "Hả? Gừừ...\p"
+	.string "Sao ngươi biết ta ẩn dưới chiếc đệm\n"
+	.string "này? Sắc bén lắm!$"
 
 Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster:
-	.string "Behold!\p"
-	.string "For I am the greatest living mystery\n"
-	.string "of a man in all of HOENN!\l"
-	.string "They call me…\p"
-	.string "The TRICK MASTER!\n"
-	.string "Wahahaha! Glad to meet you!$"
+	.string "Hãy chiêm ngưỡng!\p"
+	.string "Bởi ta là người đàn ông bí ẩn nhất còn\n"
+	.string "sống trên toàn HOENN! Người ta gọi ta\l"
+	.string "là...\p"
+	.string "TRICK MASTER! Wahahaha! Rất hân hạnh\n"
+	.string "được gặp ngươi!$"
 
 Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse:
-	.string "You, you've come to challenge\n"
-	.string "my TRICK HOUSE, haven't you?\p"
-	.string "That's why you're here, isn't it?\n"
-	.string "Yes, it is!\p"
-	.string "Consider your challenge accepted!\p"
-	.string "Enter through the scroll there,\n"
-	.string "and let your challenge commence!\p"
-	.string "I shall be waiting in the back!$"
+	.string "Ngươi, ngươi đến để thách thức TRICK\n"
+	.string "HOUSE của ta, đúng không?\p"
+	.string "Vì thế ngươi mới ở đây, đúng không?\n"
+	.string "Đúng vậy!\p"
+	.string "Ta chấp nhận lời thách đấu!\p"
+	.string "Hãy đi qua cuộn giấy đằng kia và bắt\n"
+	.string "đầu thử thách!\p"
+	.string "Ta sẽ đợi ở phía sau!$"
 
 Route110_TrickHouseEntrance_Text_ItsAScroll:
-	.string "It's a scroll.$"
+	.string "Đó là một cuộn giấy.$"
 
 Route110_TrickHouseEntrance_Text_GoInHoleBehindScroll:
-	.string "There is a big hole behind the scroll!\p"
-	.string "Want to go in?$"
+	.string "Có một cái lỗ lớn phía sau cuộn giấy!\p"
+	.string "Muốn chui vào không?$"
 
 Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote:
-	.string "There is a note affixed to the scroll…\p"
-	.string "“I am leaving on a journey.\n"
-	.string "Don't look for me. TRICK MASTER”$"
+	.string "Có một mảnh giấy được gắn vào cuộn\n"
+	.string "giấy...\p"
+	.string "“Ta lên đường đây. Đừng tìm ta. TRICK\n"
+	.string "MASTER”$"
 
 Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick:
-	.string "For the next time, I'll use this trick,\n"
-	.string "and that scheme, and those ruses…\p"
-	.string "Mufufufu… If I may say so, it's\n"
-	.string "brilliantly difficult, even for me!$"
+	.string "Lần tới, ta sẽ dùng trò này, kế kia và cả\n"
+	.string "những mánh nọ...\p"
+	.string "Mufufufu... Ta phải tự công nhận rằng\n"
+	.string "nó khó một cách xuất sắc, ngay cả với\l"
+	.string "ta!$"
 
 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges:
-	.string "Hah? What?!\n"
-	.string "Oh, it's you!\p"
-	.string "I'm in the midst of devising new tricky\n"
-	.string "challenges!\p"
-	.string "It's not too much to ask for a bit more\n"
-	.string "time for me to think, is it now?\l"
-	.string "You wouldn't begrudge me that?\l"
-	.string "Come back in a little while!$"
+	.string "Hả? Gì?! Ồ, là ngươi!\p"
+	.string "Ta đang bận nghĩ ra những thử thách\n"
+	.string "mưu mẹo mới!\p"
+	.string "Cho ta thêm chút thời gian suy nghĩ\n"
+	.string "đâu có quá đáng, phải không? Ngươi\l"
+	.string "không nỡ từ chối chứ? Lát nữa hãy\l"
+	.string "quay lại!$"
 
 Route110_TrickHouseEntrance_Text_YoureHereToAcceptReward:
-	.string "Ah, it's you! You're here to accept the\n"
-	.string "reward from before, isn't that right?\l"
-	.string "Yes, right I am!\p"
-	.string "Here!\n"
-	.string "I'll give it to you now!$"
+	.string "À, là ngươi! Ngươi đến nhận phần\n"
+	.string "thưởng lần trước, đúng không? Phải,\l"
+	.string "đúng là ta!\p"
+	.string "Đây! Ta sẽ đưa cho ngươi ngay!$"
 
 Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward:
-	.string "Hah?\n"
-	.string "Did you not come to claim your reward?$"
+	.string "Hả? Ngươi không đến nhận phần thưởng\n"
+	.string "sao?$"
 
 Route110_TrickHouseEntrance_Text_MechadollWhichTent:
-	.string "MECHADOLL 5 I AM!\n"
-	.string "IF REWARD IS NOT TAKEN BY YOU,\l"
-	.string "THEN TRICK MASTER YOU CANNOT FOLLOW.\p"
-	.string "RED TENT OR BLUE TENT,\n"
-	.string "WHICH DO YOU PREFER?$"
+	.string "TA LÀ MECHADOLL 5! NẾU NGƯƠI KHÔNG\n"
+	.string "NHẬN PHẦN THƯỞNG, NGƯƠI KHÔNG THỂ ĐI\l"
+	.string "THEO TRICK MASTER.\p"
+	.string "NGƯƠI THÍCH RED TENT HAY BLUE TENT?$"
 
 Route110_TrickHouseEntrance_Text_ThenFarewell:
-	.string "THEN FAREWELL.$"
+	.string "VẬY THÌ TẠM BIỆT.$"
 
 Route110_TrickHouseEntrance_Text_PCFullAgain:
-	.string "YOUR PC STATUS: FULL AGAIN.\n"
-	.string "MEAN, YOU ARE.$"
+	.string "TRẠNG THÁI PC CỦA NGƯƠI: LẠI ĐẦY.\n"
+	.string "NGƯƠI, THẬT XẤU TÍNH.$"
 
 Route110_TrickHousePuzzle_Text_FoundAScroll:
-	.string "{PLAYER} found a scroll.$"
+	.string "{PLAYER} tìm thấy một cuộn giấy.$"
 
 Route110_TrickHousePuzzle_Text_MemorizedSecretCode:
-	.string "{PLAYER} memorized the secret code\n"
-	.string "written on the scroll.$"
+	.string "{PLAYER} ghi nhớ mật mã viết trên\n"
+	.string "cuộn giấy.$"
 
 Route110_TrickHousePuzzle_Text_SecretCodeWrittenOnIt:
-	.string "A secret code is written on it.$"
+	.string "Trên đó có viết một mật mã.$"
 
 Route110_TrickHouseEntrance_Text_DoorLockedWriteSecretCodeHere:
-	.string "The door is locked.\p"
-	.string "…On closer inspection, this is written\n"
-	.string "on it: “Write the secret code here.”$"
+	.string "Cửa bị khóa.\p"
+	.string "...Nhìn kỹ hơn, trên đó viết: “Hãy viết\n"
+	.string "mật mã vào đây.”$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHouseEntrance_Text_YoureBeingWatched
+	.global Route110_TrickHouseEntrance_Text_ConcealedBeneathDesk
+	.global Route110_TrickHouseEntrance_Text_ConcealedBehindTree
+	.global Route110_TrickHouseEntrance_Text_ConcealedInDresser
+	.global Route110_TrickHouseEntrance_Text_ConealedBeyondWindow
+	.global Route110_TrickHouseEntrance_Text_ConcealedInPlanter
+	.global Route110_TrickHouseEntrance_Text_ConcealedInCupboard
+	.global Route110_TrickHouseEntrance_Text_ConcealedBehindWindow
+	.global Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion
+	.global Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster
+	.global Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse
+	.global Route110_TrickHouseEntrance_Text_ItsAScroll
+	.global Route110_TrickHouseEntrance_Text_GoInHoleBehindScroll
+	.global Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote
+	.global Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick
+	.global Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges
+	.global Route110_TrickHouseEntrance_Text_YoureHereToAcceptReward
+	.global Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward
+	.global Route110_TrickHouseEntrance_Text_MechadollWhichTent
+	.global Route110_TrickHouseEntrance_Text_ThenFarewell
+	.global Route110_TrickHouseEntrance_Text_PCFullAgain
+	.global Route110_TrickHousePuzzle_Text_FoundAScroll
+	.global Route110_TrickHousePuzzle_Text_MemorizedSecretCode
+	.global Route110_TrickHousePuzzle_Text_SecretCodeWrittenOnIt
+	.global Route110_TrickHouseEntrance_Text_DoorLockedWriteSecretCodeHere
+@ END GENERATED LOCALIZATION EXPORTS

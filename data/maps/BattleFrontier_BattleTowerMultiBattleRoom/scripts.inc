@@ -438,63 +438,80 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft:
 	step_end
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet:
-	.string "The 2nd set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 2. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet:
-	.string "The 3rd set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 3. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet:
-	.string "The 4th set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 4. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet:
-	.string "The 5th set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 5. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet:
-	.string "The 6th set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 6. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet:
-	.string "The 7th set of opponents is next.\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là nhóm đối thủ thứ 7. Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_2ndOpponentSetNext:
-	.string "The 2nd set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 2. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_3rdOpponentSetNext:
-	.string "The 3rd set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 3. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_4thOpponentSetNext:
-	.string "The 4th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 4. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_5thOpponentSetNext:
-	.string "The 5th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 5. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext:
-	.string "The 6th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 6. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_7thOpponentSetNext:
-	.string "The 7th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "Tiếp theo là nhóm đối thủ thứ 7. Hãy cố\n"
+	.string "gắng hết sức!$"
 
 gText_LinkStandby3::
-	.string "Link standby…$"
+	.string "Đang chờ kết nối...$"
 
 gText_YourPartnerHasRetired::
-	.string "Your partner has retired.\p"
-	.string "Your BATTLE ROOM challenge\n"
-	.string "will be canceled.$"
+	.string "Đồng đội của bạn đã bỏ cuộc.\p"
+	.string "Thử thách BATTLE ROOM của bạn sẽ bị\n"
+	.string "hủy.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_2ndOpponentSetNext
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_3rdOpponentSetNext
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_4thOpponentSetNext
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_5thOpponentSetNext
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext
+	.global BattleFrontier_BattleTowerMultiBattleRoom_Text_7thOpponentSetNext
+	.global gText_LinkStandby3
+	.global gText_YourPartnerHasRetired
+@ END GENERATED LOCALIZATION EXPORTS

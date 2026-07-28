@@ -50,19 +50,23 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
-	.string "Hmm…\p"
-	.string "An attacking move…\n"
-	.string "Or a defensive move…\p"
-	.string "It's no easy matter to decide which TM\n"
-	.string "moves should be taught to POKéMON…$"
+	.string "Hmm...\p"
+	.string "Một chiêu tấn công... Hay một chiêu\n"
+	.string "phòng thủ...\p"
+	.string "Quyết định nên dạy chiêu TM nào cho\n"
+	.string "POKéMON chẳng dễ chút nào...$"
 
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
-	.string "There are so many different kinds of\n"
-	.string "TM moves.\p"
-	.string "A catalog I read said there are fifty\n"
-	.string "different kinds.$"
+	.string "Có rất nhiều loại chiêu TM khác nhau.\p"
+	.string "Một cuốn danh mục tôi từng đọc nói rằng\n"
+	.string "có năm mươi loại.$"
 
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
-	.string "I'd like to get all the different TMs,\n"
-	.string "but a POKéMON learns only four moves.$"
+	.string "Tôi muốn kiếm đủ mọi TM, nhưng mỗi\n"
+	.string "POKéMON chỉ học được bốn chiêu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM
+	.global LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs
+	.global LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
+@ END GENERATED LOCALIZATION EXPORTS

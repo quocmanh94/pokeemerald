@@ -47,12 +47,17 @@ NewMauville_Entrance_EventScript_DontOpenDoor::
 	end
 
 NewMauville_Entrance_Text_DoorIsLocked:
-	.string "The door is locked.$"
+	.string "Cửa đã bị khóa.$"
 
 NewMauville_Entrance_Text_UseBasementKey:
-	.string "Use the BASEMENT KEY?$"
+	.string "Dùng BASEMENT KEY?$"
 
 NewMauville_Entrance_Text_UsedBasementKey:
-	.string "{PLAYER} used the BASEMENT KEY.\p"
-	.string "The door opened!$"
+	.string "{PLAYER} đã dùng BASEMENT KEY.\p"
+	.string "Cửa đã mở!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global NewMauville_Entrance_Text_DoorIsLocked
+	.global NewMauville_Entrance_Text_UseBasementKey
+	.global NewMauville_Entrance_Text_UsedBasementKey
+@ END GENERATED LOCALIZATION EXPORTS

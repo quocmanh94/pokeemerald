@@ -11,16 +11,23 @@ AbandonedShip_Corridors_1F_EventScript_Charlie::
 	end
 
 AbandonedShip_Corridors_1F_Text_CharlieIntro:
-	.string "What's so funny about having my inner\n"
-	.string "tube aboard the ship?$"
+	.string "Có gì buồn cười khi tôi mang phao bơi\n"
+	.string "lên tàu chứ?$"
 
 AbandonedShip_Corridors_1F_Text_CharlieDefeat:
-	.string "Whoa, you overwhelmed me!$"
+	.string "Ôi, bạn áp đảo tôi hoàn toàn rồi!$"
 
 AbandonedShip_Corridors_1F_Text_CharliePostBattle:
-	.string "It's not easy throwing POKé BALLS\n"
-	.string "while hanging on to an inner tube!$"
+	.string "Vừa bám vào phao bơi vừa ném POKé\n"
+	.string "BALLS đâu có dễ!$"
 
 AbandonedShip_Corridors_1F_Text_IsntItFunHere:
-	.string "Isn't it fun here?\n"
-	.string "I get excited just being here!$"
+	.string "Ở đây vui quá phải không? Chỉ cần có\n"
+	.string "mặt ở đây là tôi đã thấy phấn khích rồi!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Corridors_1F_Text_CharlieIntro
+	.global AbandonedShip_Corridors_1F_Text_CharlieDefeat
+	.global AbandonedShip_Corridors_1F_Text_CharliePostBattle
+	.global AbandonedShip_Corridors_1F_Text_IsntItFunHere
+@ END GENERATED LOCALIZATION EXPORTS

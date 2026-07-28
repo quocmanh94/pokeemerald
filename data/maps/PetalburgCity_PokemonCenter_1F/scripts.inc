@@ -53,42 +53,45 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
-	.string "That PC-based POKéMON Storage\n"
-	.string "System…\p"
-	.string "Whoever made it must be some kind\n"
-	.string "of a scientific wizard!$"
+	.string "POKéMON Storage System dùng PC đó...\p"
+	.string "Người tạo ra nó hẳn phải là một phù\n"
+	.string "thủy khoa học!$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+	.string "Khi POKéMON của tôi ăn ORAN BERRY, nó\n"
+	.string "đã hồi lại HP!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
-	.string "There are many types of POKéMON.\p"
-	.string "All types have their strengths and\n"
-	.string "weaknesses against other types.\p"
-	.string "Depending on the types of POKéMON,\n"
-	.string "a battle could be easy or hard.$"
+	.string "Có rất nhiều hệ POKéMON.\p"
+	.string "Mỗi hệ đều có điểm mạnh và điểm yếu khi\n"
+	.string "đối đầu với các hệ khác.\p"
+	.string "Tùy vào hệ của POKéMON, một trận đấu có\n"
+	.string "thể dễ dàng hoặc khó khăn.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your TREECKO\n"
-	.string "is a GRASS type.\p"
-	.string "It's strong against the WATER and\n"
-	.string "GROUND types.\p"
-	.string "But, it's weak against FIRE-type\n"
-	.string "POKéMON.$"
+	.string "Chẳng hạn, TREECKO của bạn thuộc hệ\n"
+	.string "GRASS.\p"
+	.string "Nó mạnh trước hệ WATER và GROUND.\p"
+	.string "Nhưng lại yếu trước POKéMON hệ FIRE.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your TORCHIC\n"
-	.string "is a FIRE type.\p"
-	.string "It's strong against the GRASS and\n"
-	.string "BUG types.\p"
-	.string "But, it's weak against WATER-type\n"
-	.string "POKéMON.$"
+	.string "Chẳng hạn, TORCHIC của bạn thuộc hệ\n"
+	.string "FIRE.\p"
+	.string "Nó mạnh trước hệ GRASS và BUG.\p"
+	.string "Nhưng lại yếu trước POKéMON hệ WATER.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your MUDKIP\n"
-	.string "is a WATER type.\p"
-	.string "It's strong against the FIRE type.\p"
-	.string "But, it's weak against GRASS-type\n"
-	.string "and ELECTRIC-type POKéMON.$"
+	.string "Chẳng hạn, MUDKIP của bạn thuộc hệ\n"
+	.string "WATER.\p"
+	.string "Nó mạnh trước hệ FIRE.\p"
+	.string "Nhưng lại yếu trước POKéMON hệ GRASS\n"
+	.string "và ELECTRIC.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem
+	.global PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP
+	.global PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon
+	.global PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType
+	.global PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType
+	.global PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType
+@ END GENERATED LOCALIZATION EXPORTS

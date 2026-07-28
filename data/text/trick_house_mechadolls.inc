@@ -59,7 +59,7 @@ gTrickHouse_Mechadoll_HarborMail::
 	.string "HARBOR MAIL$"
 
 gTrickHouse_Mechadoll_SamePrice::
-	.string "Same price$"
+	.string "Cùng giá$"
 
 gTrickHouse_Mechadoll_60Yen::
 	.string "¥60$"
@@ -68,37 +68,37 @@ gTrickHouse_Mechadoll_55Yen::
 	.string "¥55$"
 
 gTrickHouse_Mechadoll_Nothing::
-	.string "Nothing$"
+	.string "Không có gì$"
 
 gTrickHouse_Mechadoll_CostMore::
-	.string "They will cost more.$"
+	.string "Chúng sẽ đắt hơn.$"
 
 gTrickHouse_Mechadoll_CostLess::
-	.string "They will cost less.$"
+	.string "Chúng sẽ rẻ hơn.$"
 
 gTrickHouse_Mechadoll_SamePrice2::
-	.string "Same price$"
+	.string "Cùng giá$"
 
 gTrickHouse_Mechadoll_Male::
-	.string "Male$"
+	.string "Giống đực$"
 
 gTrickHouse_Mechadoll_Female::
-	.string "Female$"
+	.string "Giống cái$"
 
 gTrickHouse_Mechadoll_Neither::
-	.string "Neither$"
+	.string "Không bên nào$"
 
 gTrickHouse_Mechadoll_ElderlyMen::
-	.string "Elderly men$"
+	.string "Những ông lão$"
 
 gTrickHouse_Mechadoll_ElderlyLadies::
-	.string "Elderly ladies$"
+	.string "Những bà lão$"
 
 gTrickHouse_Mechadoll_SameNumber::
-	.string "Same number$"
+	.string "Bằng nhau$"
 
 gTrickHouse_Mechadoll_None::
-	.string "None$"
+	.string "Không có$"
 
 gTrickHouse_Mechadoll_One::
 	.string "1$"
@@ -132,3 +132,18 @@ gTrickHouse_Mechadoll_Seven2::
 
 gTrickHouse_Mechadoll_Eight2::
 	.string "8$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gTrickHouse_Mechadoll_SamePrice
+	.global gTrickHouse_Mechadoll_Nothing
+	.global gTrickHouse_Mechadoll_CostMore
+	.global gTrickHouse_Mechadoll_CostLess
+	.global gTrickHouse_Mechadoll_SamePrice2
+	.global gTrickHouse_Mechadoll_Male
+	.global gTrickHouse_Mechadoll_Female
+	.global gTrickHouse_Mechadoll_Neither
+	.global gTrickHouse_Mechadoll_ElderlyMen
+	.global gTrickHouse_Mechadoll_ElderlyLadies
+	.global gTrickHouse_Mechadoll_SameNumber
+	.global gTrickHouse_Mechadoll_None
+@ END GENERATED LOCALIZATION EXPORTS

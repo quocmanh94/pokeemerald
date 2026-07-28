@@ -76,100 +76,113 @@ RustboroCity_Flat1_2F_EventScript_PokeDoll::
 	end
 
 RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
-	.string "Oh, it's so hard every day…\p"
-	.string "What's hard?\n"
-	.string "You need to ask?\p"
-	.string "It's trying to figure out what to\n"
-	.string "make for meals every day.\p"
-	.string "It really isn't easy coming up with\n"
-	.string "meals every day.$"
+	.string "Ôi, ngày nào cũng khổ quá...\p"
+	.string "Khổ chuyện gì à? Còn phải hỏi sao?\p"
+	.string "Là nghĩ xem mỗi ngày nên nấu món gì\n"
+	.string "đấy.\p"
+	.string "Ngày nào cũng nghĩ thực đơn thật\n"
+	.string "chẳng dễ chút nào.$"
 
 RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
-	.string "Oh, hello!\n"
-	.string "Welcome to the PEPPER household.\p"
-	.string "I have a question for you.\n"
-	.string "Have you ever baby-sat?\p"
-	.string "You see, I'm a new father, so raising\n"
-	.string "a child is all new to me.\p"
-	.string "And I have a problem. My daughter\n"
-	.string "WALDA doesn't laugh enough.\p"
-	.string "I think she'd laugh for me if I told\n"
-	.string "her something funny.\p"
-	.string "Do you know of a funny word or\n"
-	.string "phrase you can tell me?$"
+	.string "Ồ, xin chào! Chào mừng đến với gia đình\n"
+	.string "PEPPER.\p"
+	.string "Tôi muốn hỏi bạn một chuyện. Bạn đã\n"
+	.string "từng trông trẻ chưa?\p"
+	.string "Tôi mới làm cha nên chuyện nuôi dạy con\n"
+	.string "vẫn hoàn toàn mới mẻ.\p"
+	.string "Mà tôi đang gặp một vấn đề. Con gái tôi,\n"
+	.string "WALDA, chẳng mấy khi cười.\p"
+	.string "Tôi nghĩ con bé sẽ cười nếu tôi nói điều\n"
+	.string "gì đó vui vui.\p"
+	.string "Bạn có biết từ hay câu nào hài hước để\n"
+	.string "chỉ tôi không?$"
 
 RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase:
-	.string "I've been saying “{STR_VAR_1}”\n"
-	.string "to amuse her lately.\p"
-	.string "Do you know of a better word or\n"
-	.string "a phrase that might work?$"
+	.string "Gần đây tôi vẫn nói\n"
+	.string "“{STR_VAR_1}” để chọc con bé\l"
+	.string "cười.\p"
+	.string "Bạn có biết từ hay câu nào hay hơn và\n"
+	.string "có thể hiệu nghiệm không?$"
 
 RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion:
-	.string "Oh, that's wonderful.\n"
-	.string "So, let's hear it, your suggestion.$"
+	.string "Ồ, tuyệt quá. Vậy hãy cho tôi nghe đề\n"
+	.string "xuất của bạn nào.$"
 
 RustboroCity_Flat1_2F_Text_OhIsThatRight:
-	.string "Oh, is that right?\p"
-	.string "Well, if you come up with a good\n"
-	.string "suggestion, I'm all ears.$"
+	.string "Ồ, vậy sao?\p"
+	.string "Nếu nghĩ ra đề xuất nào hay, tôi rất sẵn\n"
+	.string "lòng lắng nghe.$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry2:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+	.string "À, tôi hiểu rồi. Vậy chúng ta thử xem\n"
+	.string "nhé?$"
 
 RustboroCity_Flat1_2F_Text_OhShesLaughing:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Oh, yes! She's laughing!\n"
-	.string "Oh, I am as delighted as she!$"
+	.string "{STR_VAR_1}. {STR_VAR_1}.\p"
+	.string "Ôi, đúng rồi! Con bé đang cười! Tôi cũng\n"
+	.string "vui chẳng kém gì con bé!$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+	.string "À, tôi hiểu rồi. Vậy chúng ta thử xem\n"
+	.string "nhé?$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "{STR_VAR_1}. {STR_VAR_1}.\p"
+	.string "Hừm... Con bé chẳng cười chút nào. Có lẽ\n"
+	.string "WALDA là một đứa trẻ rất nghiêm túc...$"
 
 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I'd better think for myself, then.\p"
-	.string "Hmm…\n"
-	.string "How about “{STR_VAR_1}”?\l"
-	.string "Let's see if that will work.$"
+	.string "Ồ, vậy là bạn không biết từ nào hay. Thế\n"
+	.string "thì tôi đành tự nghĩ vậy.\p"
+	.string "Hừm... “{STR_VAR_1}” thì sao\n"
+	.string "nhỉ? Để xem có hiệu nghiệm không.$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "{STR_VAR_1}. {STR_VAR_1}.\p"
+	.string "Hừm... Con bé chẳng cười chút nào. Có lẽ\n"
+	.string "WALDA là một đứa trẻ rất nghiêm túc...$"
 
 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I guess I'll try to amuse her with\l"
-	.string "the saying I used before.\p"
-	.string "Anyways, if you have a good suggestion,\n"
-	.string "don't hesitate in telling me, okay?$"
+	.string "Ồ, vậy là bạn không biết từ nào hay.\n"
+	.string "Chắc tôi sẽ thử chọc con bé cười bằng\l"
+	.string "câu trước đây vậy.\p"
+	.string "Dù sao, nếu nghĩ ra đề xuất nào hay thì\n"
+	.string "cứ nói với tôi nhé?$"
 
 RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
-	.string "Thank you!\p"
-	.string "Thanks to you, my darling WALDA\n"
-	.string "laughed for me!\p"
-	.string "Actually, I may not look all that\n"
-	.string "special, but I'm one of DEVON\l"
-	.string "CORPORATION's top researchers.\p"
-	.string "So, how about I do something in return\n"
-	.string "for you?\p"
-	.string "I know, I'll add some new wallpaper\n"
-	.string "patterns for the BOXES in the PC\l"
-	.string "POKéMON Storage System.\p"
-	.string "In the wallpaper pattern menu,\n"
-	.string "select “FRIENDS.”\p"
-	.string "That will give you access to the new\n"
-	.string "wallpaper patterns.$"
+	.string "Cảm ơn bạn!\p"
+	.string "Nhờ bạn mà WALDA yêu quý của tôi đã\n"
+	.string "cười rồi!\p"
+	.string "Thật ra, trông tôi có vẻ chẳng đặc biệt\n"
+	.string "gì, nhưng tôi là một trong những nhà\l"
+	.string "nghiên cứu hàng đầu của DEVON\l"
+	.string "CORPORATION.\p"
+	.string "Vậy để tôi làm gì đó đáp lễ bạn nhé?\p"
+	.string "Tôi biết rồi, tôi sẽ thêm vài mẫu hình\n"
+	.string "nền mới cho các BOXES trong PC POKéMON\l"
+	.string "Storage System.\p"
+	.string "Trong trình đơn chọn mẫu hình nền, hãy\n"
+	.string "chọn “FRIENDS.”\p"
+	.string "Sau đó bạn sẽ sử dụng được các mẫu\n"
+	.string "hình nền mới.$"
 
 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
-	.string "It's a POKéMON plush DOLL!$"
+	.string "Đó là một con DOLL nhồi bông hình\n"
+	.string "POKéMON!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard
+	.global RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase
+	.global RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase
+	.global RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion
+	.global RustboroCity_Flat1_2F_Text_OhIsThatRight
+	.global RustboroCity_Flat1_2F_Text_LetsGiveItATry2
+	.global RustboroCity_Flat1_2F_Text_OhShesLaughing
+	.global RustboroCity_Flat1_2F_Text_LetsGiveItATry
+	.global RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll
+	.global RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase
+	.global RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2
+	.global RustboroCity_Flat1_2F_Text_OhYouDontKnowAny
+	.global RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper
+	.global RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll
+@ END GENERATED LOCALIZATION EXPORTS

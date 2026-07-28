@@ -200,152 +200,170 @@ RustboroCity_PokemonSchool_EventScript_ScottWatchStudents::
 	end
 
 RustboroCity_PokemonSchool_Text_BlackboardListsStatusChanges:
-	.string "The blackboard lists status changes\n"
-	.string "that may affect POKéMON in battle.$"
+	.string "Trên bảng đen có liệt kê các trạng thái\n"
+	.string "có thể ảnh hưởng đến POKéMON trong\l"
+	.string "trận đấu.$"
 
 RustboroCity_PokemonSchool_Text_ReadWhichTopic:
-	.string "Which topic do you want to read?$"
+	.string "Bạn muốn đọc chủ đề nào?$"
 
 RustboroCity_PokemonSchool_Text_ExplainPoison:
-	.string "If a POKéMON is poisoned, it will\n"
-	.string "steadily lose HP.\p"
-	.string "The effects of poison remain after\n"
-	.string "a battle.\p"
-	.string "A poisoned POKéMON's HP will drop\n"
-	.string "while it is traveling.\p"
-	.string "Heal a poisoning using an ANTIDOTE.$"
+	.string "Nếu một POKéMON bị trúng độc, nó sẽ liên\n"
+	.string "tục mất HP.\p"
+	.string "Tác dụng của độc vẫn còn sau trận đấu.\p"
+	.string "HP của POKéMON bị trúng độc sẽ giảm\n"
+	.string "trong lúc di chuyển.\p"
+	.string "Hãy dùng ANTIDOTE để giải độc.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
-	.string "If a POKéMON becomes paralyzed,\n"
-	.string "its SPEED drops.\p"
-	.string "It may also not be able to move while\n"
-	.string "it is in battle.\p"
-	.string "Paralysis remains after battle.\n"
-	.string "Cure it using a PARLYZ HEAL.$"
+	.string "Nếu một POKéMON bị tê liệt, SPEED của nó\n"
+	.string "sẽ giảm.\p"
+	.string "Trong trận đấu, đôi khi nó cũng không\n"
+	.string "thể hành động.\p"
+	.string "Tình trạng tê liệt vẫn còn sau trận đấu.\n"
+	.string "Hãy dùng PARLYZ HEAL để chữa trị.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
-	.string "If a POKéMON falls asleep, it will be\n"
-	.string "unable to attack.\p"
-	.string "A POKéMON may wake up on its own,\n"
-	.string "but if a battle ends while it is\l"
-	.string "sleeping, it will stay asleep.\p"
-	.string "Wake it up using an AWAKENING.$"
+	.string "Nếu một POKéMON ngủ thiếp đi, nó sẽ\n"
+	.string "không thể tấn công.\p"
+	.string "POKéMON có thể tự tỉnh lại, nhưng nếu\n"
+	.string "trận đấu kết thúc khi nó vẫn đang ngủ,\l"
+	.string "trạng thái đó sẽ tiếp tục.\p"
+	.string "Hãy dùng AWAKENING để đánh thức nó.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
-	.string "A burn reduces ATTACK power, and it\n"
-	.string "steadily reduces the victim's HP.\p"
-	.string "A burn lingers after battle.\n"
-	.string "Cure a burn using a BURN HEAL.$"
+	.string "Bỏng làm giảm sức mạnh ATTACK và liên\n"
+	.string "tục rút HP của nạn nhân.\p"
+	.string "Trạng thái bỏng vẫn còn sau trận đấu.\n"
+	.string "Hãy dùng BURN HEAL để chữa trị.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "If a POKéMON is frozen, it becomes\n"
-	.string "completely helpless.\p"
-	.string "It will remain frozen after battle.\n"
-	.string "Thaw it out using an ICE HEAL.$"
+	.string "Nếu một POKéMON bị đóng băng, nó sẽ\n"
+	.string "hoàn toàn không thể hành động.\p"
+	.string "Trạng thái đóng băng vẫn còn sau trận\n"
+	.string "đấu. Hãy dùng ICE HEAL để làm tan băng.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
-	.string "Students who don't study get a little\n"
-	.string "taste of my QUICK CLAW.\p"
-	.string "Whether or not you are a good student \n"
-	.string "will be evident from the way you use\l"
-	.string "this item.$"
+	.string "Học sinh không chịu học sẽ được nếm\n"
+	.string "mùi QUICK CLAW của tôi.\p"
+	.string "Bạn có phải học sinh giỏi hay không sẽ\n"
+	.string "thể hiện qua cách bạn sử dụng món đồ\l"
+	.string "này.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw:
-	.string "A POKéMON holding the QUICK CLAW will\n"
-	.string "occasionally speed up and get to move\l"
-	.string "before its opponent.\p"
-	.string "There are many other items that are\n"
-	.string "meant to be held by POKéMON.\p"
-	.string "Just those alone will give you many\n"
-	.string "topics to study!$"
+	.string "POKéMON giữ QUICK CLAW đôi khi sẽ tăng\n"
+	.string "tốc và ra đòn trước đối thủ.\p"
+	.string "Còn có nhiều món đồ khác dành cho\n"
+	.string "POKéMON cầm giữ.\p"
+	.string "Chỉ riêng chúng thôi cũng đã cho bạn\n"
+	.string "rất nhiều chủ đề để học rồi!$"
 
 RustboroCity_PokemonSchool_Text_TradingRightNow:
-	.string "I'm trading POKéMON with my friend\n"
-	.string "right now.$"
+	.string "Tớ đang trao đổi POKéMON với bạn mình.$"
 
 RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
-	.string "I always wanted a SEEDOT, and\n"
-	.string "I'm finally getting one!$"
+	.string "Tớ luôn muốn có một SEEDOT, và cuối\n"
+	.string "cùng cũng sắp nhận được rồi!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
-	.string "POKéMON can hold items, but they\n"
-	.string "don't know what to do with man-made\l"
-	.string "items like POTION and ANTIDOTE.$"
+	.string "POKéMON có thể giữ đồ, nhưng chúng\n"
+	.string "không biết phải làm gì với những món do\l"
+	.string "con người chế tạo như POTION và\l"
+	.string "ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
-	.string "You know how some POKéMON moves can\n"
-	.string "confuse a POKéMON?\p"
-	.string "A confused POKéMON will sometimes\n"
-	.string "attack itself without meaning to.\p"
-	.string "But once it leaves battle, it will\n"
-	.string "return to normal.$"
+	.string "Bạn biết một số chiêu của POKéMON có\n"
+	.string "thể khiến POKéMON rơi vào trạng thái\l"
+	.string "hoang mang chứ?\p"
+	.string "POKéMON đang hoang mang đôi khi sẽ vô\n"
+	.string "tình tự tấn công chính mình.\p"
+	.string "Nhưng khi rời khỏi trận đấu, nó sẽ trở\n"
+	.string "lại bình thường.$"
 
 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
-	.string "A POKéMON holding a BERRY will heal\n"
-	.string "itself…\p"
-	.string "There are many kinds of items that\n"
-	.string "POKéMON can hold…\p"
-	.string "Boy, it sure is hard taking notes\n"
-	.string "down…$"
+	.string "POKéMON giữ BERRY sẽ tự hồi phục...\p"
+	.string "Có rất nhiều loại đồ mà POKéMON có thể\n"
+	.string "cầm giữ...\p"
+	.string "Trời ạ, ghi chép lại thật vất vả...$"
 
 RustboroCity_PokemonSchool_Text_StudentsNotes:
-	.string "It's this student's notebook…\p"
-	.string "POKéMON are to be caught using\n"
-	.string "POKé BALLS.\p"
-	.string "Up to six POKéMON can accompany\n"
-	.string "a TRAINER.\p"
-	.string "A TRAINER is someone who catches\n"
-	.string "POKéMON, raises them, and battles\l"
-	.string "with them.\p"
-	.string "A TRAINER's mission is to defeat\n"
-	.string "the strong TRAINERS who await\l"
-	.string "challengers in POKéMON GYMS.$"
+	.string "Đây là vở ghi chép của học sinh này...\p"
+	.string "Phải dùng POKé BALLS để bắt POKéMON.\p"
+	.string "Một HLV có thể mang theo tối đa\n"
+	.string "sáu POKéMON.\p"
+	.string "HLV là người bắt, nuôi dưỡng và\n"
+	.string "cùng POKéMON chiến đấu.\p"
+	.string "Nhiệm vụ của HLV là đánh bại những\n"
+	.string "HLV mạnh đang chờ người thách\l"
+	.string "đấu tại các POKéMON GYMS.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
-	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
-	.string "I've been traveling everywhere in\n"
-	.string "search of outstanding TRAINERS.\p"
-	.string "More specifically, I'm looking for\n"
-	.string "POKéMON battle experts.\p"
-	.string "So, what brings you to this SCHOOL?\n"
-	.string "Are you a TRAINER, too?\p"
-	.string "The first thing you should do is to\n"
-	.string "have a POKéMON learn the move CUT.\p"
-	.string "If I remember correctly, someone in\n"
-	.string "this town has CUT.$"
+	.string "Xin chào? Chúng ta từng gặp nhau rồi\n"
+	.string "phải không? Hình như là ở PETALBURG\l"
+	.string "CITY.\p"
+	.string "Để tôi tự giới thiệu. Tôi tên SCOTT.\p"
+	.string "Tôi đã đi khắp nơi để tìm kiếm những\n"
+	.string "HLV xuất sắc.\p"
+	.string "Nói chính xác hơn, tôi đang tìm các\n"
+	.string "chuyên gia chiến đấu POKéMON.\p"
+	.string "Vậy điều gì đưa bạn đến SCHOOL này?\n"
+	.string "Bạn cũng là HLV sao?\p"
+	.string "Việc đầu tiên bạn nên làm là cho một\n"
+	.string "POKéMON học chiêu CUT.\p"
+	.string "Nếu tôi nhớ không nhầm, có người trong\n"
+	.string "thành phố này sở hữu CUT.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "SCOTT: Hmm…\p"
-	.string "The talent levels of the students here\n"
-	.string "are unknown. The potential's there.$"
+	.string "SCOTT: Hừm...\p"
+	.string "Chưa thể biết trình độ tài năng của học\n"
+	.string "sinh ở đây đến đâu. Nhưng họ có tiềm\l"
+	.string "năng.$"
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
-	.string "SCOTT: Oh, what's that?\p"
-	.string "It's a STONE BADGE, isn't it?\n"
-	.string "That's pretty impressive, I'd say.\p"
-	.string "But, you know, I would've loved to see\n"
-	.string "you in battle.\p"
-	.string "It's hard to tell what you're like as\n"
-	.string "a TRAINER from a LEAGUE BADGE.$"
+	.string "SCOTT: Ồ, cái gì thế?\p"
+	.string "Đó là STONE BADGE phải không? Tôi phải\n"
+	.string "nói là khá ấn tượng đấy.\p"
+	.string "Nhưng bạn biết không, tôi rất muốn tận\n"
+	.string "mắt xem bạn chiến đấu.\p"
+	.string "Chỉ nhìn một LEAGUE BADGE thì khó biết\n"
+	.string "bạn là HLV như thế nào.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
-	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
-	.string "I've been traveling everywhere in\n"
-	.string "search of outstanding TRAINERS.\p"
-	.string "More specifically, I'm looking for\n"
-	.string "POKéMON battle experts.\p"
-	.string "Oh, what's that?\n"
-	.string "It's a STONE BADGE, isn't it?\p"
-	.string "That's pretty impressive, I'd say, for\n"
-	.string "a starting TRAINER like yourself.\p"
-	.string "But, you know, I would've loved to see\n"
-	.string "you in battle.\p"
-	.string "It's hard to tell what you're like as\n"
-	.string "a TRAINER from a LEAGUE BADGE.$"
+	.string "Xin chào? Chúng ta từng gặp nhau rồi\n"
+	.string "phải không? Hình như là ở PETALBURG\l"
+	.string "CITY.\p"
+	.string "Để tôi tự giới thiệu. Tôi tên SCOTT.\p"
+	.string "Tôi đã đi khắp nơi để tìm kiếm những\n"
+	.string "HLV xuất sắc.\p"
+	.string "Nói chính xác hơn, tôi đang tìm các\n"
+	.string "chuyên gia chiến đấu POKéMON.\p"
+	.string "Ồ, cái gì thế? Đó là STONE BADGE phải\n"
+	.string "không?\p"
+	.string "Với một HLV mới vào nghề như bạn,\n"
+	.string "tôi phải nói là khá ấn tượng đấy.\p"
+	.string "Nhưng bạn biết không, tôi rất muốn tận\n"
+	.string "mắt xem bạn chiến đấu.\p"
+	.string "Chỉ nhìn một LEAGUE BADGE thì khó biết\n"
+	.string "bạn là HLV như thế nào.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_PokemonSchool_Text_BlackboardListsStatusChanges
+	.global RustboroCity_PokemonSchool_Text_ReadWhichTopic
+	.global RustboroCity_PokemonSchool_Text_ExplainPoison
+	.global RustboroCity_PokemonSchool_Text_ExplainParalysis
+	.global RustboroCity_PokemonSchool_Text_ExplainSleep
+	.global RustboroCity_PokemonSchool_Text_ExplainBurn
+	.global RustboroCity_PokemonSchool_Text_ExplainFreeze
+	.global RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw
+	.global RustboroCity_PokemonSchool_Text_ExplainQuickClaw
+	.global RustboroCity_PokemonSchool_Text_TradingRightNow
+	.global RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot
+	.global RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems
+	.global RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself
+	.global RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry
+	.global RustboroCity_PokemonSchool_Text_StudentsNotes
+	.global RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut
+	.global RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown
+	.global RustboroCity_PokemonSchool_Text_ScottStoneBadge
+	.global RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge
+@ END GENERATED LOCALIZATION EXPORTS

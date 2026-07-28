@@ -63,33 +63,37 @@ FortreeCity_House4_EventScript_Wingull::
 	end
 
 FortreeCity_House4_Text_BringsWorldCloserTogether:
-	.string "By being together with POKéMON,\n"
-	.string "people make more and more friends.\p"
-	.string "And that brings the world closer\n"
-	.string "together. I think it's wonderful!$"
+	.string "Khi sống bên POKéMON, con người ngày\n"
+	.string "càng kết thêm nhiều bạn bè.\p"
+	.string "Và điều đó khiến cả thế giới xích lại\n"
+	.string "gần nhau hơn. Tôi thấy thật tuyệt vời!$"
 
 FortreeCity_House4_Text_GoBirdPokemon:
-	.string "There!\n"
-	.string "Go, BIRD POKéMON!$"
+	.string "Nào! Bay đi, BIRD POKéMON!$"
 
 FortreeCity_House4_Text_AskedWingullToRunErrand:
-	.string "Heheh, I asked my WINGULL to run\n"
-	.string "an errand for me.$"
+	.string "Hì hì, tôi nhờ WINGULL đi làm giúp một\n"
+	.string "việc.$"
 
 FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
-	.string "Good!\n"
-	.string "Welcome back, WINGULL!\p"
-	.string "Huh? What is this?\n"
-	.string "What is it holding?\p"
-	.string "A MENTAL HERB?\n"
-	.string "It must have picked it up somewhere.\p"
-	.string "But I'm not a TRAINER, so you can\n"
-	.string "have it.$"
+	.string "Tốt lắm! Mừng em trở về, WINGULL!\p"
+	.string "Hả? Cái gì đây? Nó đang cầm gì vậy?\p"
+	.string "Một MENTAL HERB sao? Chắc nó nhặt\n"
+	.string "được ở đâu đó.\p"
+	.string "Nhưng tôi không phải HLV, nên bạn\n"
+	.string "cứ nhận lấy đi.$"
 
 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
-	.string "Thanks to my WINGULL, I have friends\n"
-	.string "who live far away.$"
+	.string "Nhờ WINGULL, tôi có những người bạn\n"
+	.string "sống ở rất xa.$"
 
 FortreeCity_House4_Text_Wingull:
 	.string "WINGULL: Pihyoh!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_House4_Text_BringsWorldCloserTogether
+	.global FortreeCity_House4_Text_GoBirdPokemon
+	.global FortreeCity_House4_Text_AskedWingullToRunErrand
+	.global FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb
+	.global FortreeCity_House4_Text_FriendsFarAwayThanksToWingull
+@ END GENERATED LOCALIZATION EXPORTS

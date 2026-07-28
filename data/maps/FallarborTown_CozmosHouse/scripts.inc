@@ -65,54 +65,63 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 	end
 
 FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
-	.string "PROF. COZMO: Oh…\n"
-	.string "I never should have let myself be\l"
-	.string "conned into telling TEAM MAGMA where\l"
-	.string "you can find METEORITES…\p"
-	.string "That METEORITE from METEOR FALLS…\n"
-	.string "It's never going to be mine now…$"
+	.string "PROF. COZMO: Ôi... Đáng lẽ tôi không nên\n"
+	.string "để mình bị lừa rồi nói cho TEAM MAGMA\l"
+	.string "biết nơi có thể tìm thấy METEORITES...\p"
+	.string "Viên METEORITE từ METEOR FALLS ấy...\n"
+	.string "Giờ nó sẽ chẳng bao giờ thuộc về tôi...$"
 
 FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
-	.string "Oh!\n"
-	.string "Hah?\p"
-	.string "That item…\p"
-	.string "Could it be?\p"
-	.string "Is it the METEORITE that TEAM MAGMA\n"
-	.string "took from METEOR FALLS?\p"
-	.string "Please, may I have it?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "Ồ! Hả?\p"
+	.string "Món đồ đó...\p"
+	.string "Chẳng lẽ là...\p"
+	.string "Đó có phải viên METEORITE mà TEAM\n"
+	.string "MAGMA đã lấy từ METEOR FALLS không?\p"
+	.string "Xin bạn hãy cho tôi nó được không?\p"
+	.string "Tôi không xin miễn phí đâu. Bạn đổi nó\n"
+	.string "lấy TM này nhé?$"
 
 FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
-	.string "PROF. COZMO: This TM, it represents\n"
-	.string "my feeling of gratitude.\l"
-	.string "Please use it!$"
+	.string "PROF. COZMO: TM này thể hiện lòng biết\n"
+	.string "ơn của tôi. Xin hãy sử dụng nó!$"
 
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
-	.string "PROF. COZMO: Oh, I can't believe it.\n"
-	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "PROF. COZMO: Ôi, tôi không thể tin nổi.\n"
+	.string "Thật sự tuyệt vời quá!\p"
+	.string "Nó sẽ giúp ích rất nhiều cho nghiên cứu\n"
+	.string "của tôi!$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
-	.string "PROF. COZMO: Oh, but…\n"
-	.string "I'm crushed with disappointment…$"
+	.string "PROF. COZMO: Ôi, nhưng... Tôi thất vọng\n"
+	.string "đến suy sụp mất...$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "PROF. COZMO: Please, may I have that\n"
-	.string "METEORITE?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "PROF. COZMO: Xin bạn hãy cho tôi viên\n"
+	.string "METEORITE đó được không?\p"
+	.string "Tôi không xin miễn phí đâu. Bạn đổi nó\n"
+	.string "lấy TM này nhé?$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
-	.string "PROF. COZMO went off to METEOR FALLS\n"
-	.string "on ROUTE 114 with some people from\l"
-	.string "TEAM MAGMA.$"
+	.string "PROF. COZMO đã đến METEOR FALLS trên\n"
+	.string "ROUTE 114 cùng vài người của TEAM\l"
+	.string "MAGMA.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
-	.string "Poor PROF. COZMO…\n"
-	.string "He's so depressed… I feel sorry for him.$"
+	.string "Tội nghiệp PROF. COZMO... Ông ấy buồn bã\n"
+	.string "quá... Tôi thấy thương ông ấy.$"
 
 FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
-	.string "Look at PROF. COZMO…\n"
-	.string "He's so happy! I think it's cute.$"
+	.string "Nhìn PROF. COZMO kìa... Ông ấy vui quá!\n"
+	.string "Trông thật đáng yêu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow
+	.global FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt
+	.global FallarborTown_CozmosHouse_Text_PleaseUseThisTM
+	.global FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch
+	.global FallarborTown_CozmosHouse_Text_CrushedWithDisappointment
+	.global FallarborTown_CozmosHouse_Text_MayIHaveMeteorite
+	.global FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls
+	.global FallarborTown_CozmosHouse_Text_FeelSorryForCozmo
+	.global FallarborTown_CozmosHouse_Text_CozmoIsSoHappy
+@ END GENERATED LOCALIZATION EXPORTS

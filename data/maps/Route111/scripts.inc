@@ -562,86 +562,83 @@ Route111_EventScript_TrainerHillSign::
 	end
 
 Route111_Text_BattleOurFamily:
-	.string "Hello! I take it you're a traveler.\p"
-	.string "How's this? What do you say to taking\n"
-	.string "on our family of four in a series of\l"
-	.string "POKéMON battles?$"
+	.string "Xin chào! Có vẻ bạn là khách lữ hành.\p"
+	.string "Thế này nhé? Bạn có muốn lần lượt đấu\n"
+	.string "POKéMON với cả bốn người trong gia\l"
+	.string "đình chúng tôi không?$"
 
 Route111_Text_IsThatSo:
-	.string "Is that so?\n"
-	.string "Drop in, if you change your mind!$"
+	.string "Vậy sao? Nếu đổi ý thì cứ ghé vào nhé!$"
 
 Route111_Text_VictorIntro:
-	.string "That's the spirit! I like you!$"
+	.string "Phải thế chứ! Tôi thích bạn rồi đấy!$"
 
 Route111_Text_VictorDefeat:
-	.string "Aiyah!\n"
-	.string "You're a lot tougher than I expected!$"
+	.string "Ái chà! Bạn mạnh hơn tôi tưởng nhiều!$"
 
 Route111_Text_VictorPostBattle:
-	.string "Hey, all!\n"
-	.string "I've found a pretty strong TRAINER!$"
+	.string "Mọi người ơi! Tôi tìm được một HLV\n"
+	.string "khá mạnh này!$"
 
 Route111_Text_VictoriaIntro:
-	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the TRAINER to beat\n"
-	.string "my husband, though.\p"
-	.string "It's my turn to battle now!$"
+	.string "Ôi trời! Bạn còn trẻ quá nhỉ?\p"
+	.string "Nhưng đánh bại được chồng tôi thì hẳn\n"
+	.string "bạn phải là một HLV tài giỏi.\p"
+	.string "Giờ đến lượt tôi đấu!$"
 
 Route111_Text_VictoriaDefeat:
-	.string "Oh, gosh!\n"
-	.string "I can't get over how strong you are!$"
+	.string "Ôi trời ơi! Tôi vẫn không thể tin nổi bạn\n"
+	.string "mạnh đến thế!$"
 
 Route111_Text_VictoriaPostBattle:
-	.string "There's a strong TRAINER here!\n"
-	.string "This one's really strong!$"
+	.string "Ở đây có một HLV mạnh lắm! Người\n"
+	.string "này thật sự rất mạnh!$"
 
 Route111_Text_ViviIntro:
-	.string "You're stronger than Mommy? Wow!\p"
-	.string "But I'm strong, too!\n"
-	.string "Really! Honestly!$"
+	.string "Bạn còn mạnh hơn cả Mẹ sao? Oa!\p"
+	.string "Nhưng mình cũng mạnh lắm! Thật đấy!\n"
+	.string "Mình không nói dối đâu!$"
 
 Route111_Text_ViviDefeat:
-	.string "Huh? Did I just lose?$"
+	.string "Hả? Mình vừa thua sao?$"
 
 Route111_Text_ViviPostBattle:
-	.string "This stinks…\p"
-	.string "…Snivel… Grandma!$"
+	.string "Tệ quá...\p"
+	.string "Hức... Bà ơi!$"
 
 Route111_Text_VickyIntro:
-	.string "How dare you make my granddaughter\n"
-	.string "cry!\p"
-	.string "For that, I'm going to smack you!\n"
-	.string "Prepare to lose!$"
+	.string "Sao ngươi dám làm cháu gái ta khóc!\p"
+	.string "Ta sẽ cho ngươi một trận vì chuyện đó!\n"
+	.string "Chuẩn bị thua đi!$"
 
 Route111_Text_VickyDefeat:
-	.string "Kwah! You are strong…\n"
-	.string "My granddaughter was right…$"
+	.string "Khà! Ngươi mạnh thật... Cháu gái ta nói\n"
+	.string "đúng...$"
 
 Route111_Text_VickyPostBattle:
-	.string "If you're not in any hurry,\n"
-	.string "visit with us awhile.$"
+	.string "Nếu không vội thì hãy vào chơi với gia\n"
+	.string "đình ta một lát.$"
 
 Route111_Text_ToughToKeepWinningUpTheRanks:
-	.string "If you don't raise your POKéMON some\n"
-	.string "more, it could be tough to keep winning\l"
-	.string "up through the ranks.\p"
-	.string "I've heard the POKéMON LEAGUE's\n"
-	.string "ELITE FOUR are far stronger than\l"
-	.string "any GYM LEADER.$"
+	.string "Nếu không rèn luyện POKéMON thêm, bạn\n"
+	.string "sẽ khó lòng tiếp tục chiến thắng khi\l"
+	.string "tiến lên những cấp cao hơn.\p"
+	.string "Tôi nghe nói ELITE FOUR của POKéMON\n"
+	.string "LEAGUE mạnh hơn bất kỳ GYM LEADER nào\l"
+	.string "rất nhiều.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
-	.string "I challenged the WINSTRATE family,\n"
-	.string "but four matches in a row is tough\l"
-	.string "going… They destroyed me.$"
+	.string "Tôi đã thách đấu gia đình WINSTRATE,\n"
+	.string "nhưng đánh liền bốn trận quả là quá\l"
+	.string "sức... Họ đánh tôi tan tác.$"
 
 Route111_Text_RouteSignMauville:
 	.string "ROUTE 111\n"
 	.string "{DOWN_ARROW} MAUVILLE CITY$"
 
 Route111_Text_WinstrateHouseSign:
-	.string "“Our family's hearts beat as one!”\n"
-	.string "THE WINSTRATE'S HOUSE$"
+	.string "“Cả gia đình đồng tâm như một!”\n"
+	.string "NHÀ GIA ĐÌNH WINSTRATE$"
 
 Route111_Text_RouteSign112:
 	.string "ROUTE 111\n"
@@ -652,66 +649,90 @@ Route111_Text_RouteSign113:
 	.string "{LEFT_ARROW} ROUTE 113$"
 
 Route111_Text_OldLadysRestStopSign:
-	.string "OLD LADY'S REST STOP\n"
-	.string "“Come in and rest your tired bones.”$"
+	.string "OLD LADY'S REST STOP “Hãy vào nghỉ cho\n"
+	.string "đỡ mỏi mệt.”$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "TRAINER TIPS\p"
-	.string "One of the indicators of a POKéMON's\n"
-	.string "powerfulness is SP. ATK. It stands for\l"
-	.string "“SPECIAL ATTACK.”\p"
-	.string "Likewise, SP. DEF stands for “SPECIAL\n"
-	.string "DEFENSE.”$"
+	.string "Một trong những chỉ số thể hiện sức\n"
+	.string "mạnh của POKéMON là SP. ATK. Đây là viết\l"
+	.string "tắt của “SPECIAL ATTACK.”\p"
+	.string "Tương tự, SP. DEF là viết tắt của\n"
+	.string "“SPECIAL DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
-	.string "There should be a tower made of sand\n"
-	.string "around here somewhere.\p"
-	.string "But for some reason, it can be seen\n"
-	.string "sometimes, and sometimes not.\p"
-	.string "That's why I call it the MIRAGE TOWER.$"
+	.string "Đâu đó quanh đây phải có một tòa tháp\n"
+	.string "làm bằng cát.\p"
+	.string "Nhưng chẳng hiểu sao lúc thì nhìn thấy,\n"
+	.string "lúc lại không.\p"
+	.string "Vì vậy tôi gọi nó là MIRAGE TOWER.$"
 
 Route111_Text_MirageTowerClearlyVisible:
-	.string "I see it!\n"
-	.string "The tower of sand!\p"
-	.string "The sand tower they called a mirage\n"
-	.string "is clearly visible!\p"
-	.string "But it looks so fragile…\n"
-	.string "It could crumble away anytime…\p"
-	.string "I want to go inside it, but I can't\n"
-	.string "get my courage up for it…$"
+	.string "Tôi thấy rồi! Tòa tháp bằng cát!\p"
+	.string "Tòa tháp cát mà người ta tưởng là ảo\n"
+	.string "ảnh đang hiện ra rõ mồn một!\p"
+	.string "Nhưng trông nó mong manh quá... Có thể\n"
+	.string "sụp xuống bất cứ lúc nào...\p"
+	.string "Tôi muốn vào trong, nhưng không sao lấy\n"
+	.string "hết can đảm được...$"
 
 Route111_Text_ThatWasShockingSandRainedDown:
-	.string "Whoa…\n"
-	.string "That was shocking.\p"
-	.string "Sand rained down in chunks all of\n"
-	.string "a sudden.\p"
-	.string "What was it like inside?\n"
-	.string "Were there sandy ghosts and such?$"
+	.string "Chà... Thật hết hồn.\p"
+	.string "Những khối cát đột nhiên đổ xuống như\n"
+	.string "mưa.\p"
+	.string "Bên trong thế nào? Có ma cát hay thứ gì\n"
+	.string "tương tự không?$"
 
 Route111_Text_MirageTowerHasntBeenSeenSince:
-	.string "Since I spoke to you, the tower of sand\n"
-	.string "hasn't been seen.\p"
-	.string "Perhaps it really was\n"
-	.string "the MIRAGE TOWER…$"
+	.string "Từ lần nói chuyện với bạn, tòa tháp cát\n"
+	.string "không xuất hiện nữa.\p"
+	.string "Có lẽ đó thật sự là MIRAGE TOWER...$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "The CLAW FOSSIL disappeared into\n"
-	.string "the sand…$"
+	.string "CLAW FOSSIL đã biến mất trong cát...$"
 
 Route111_Text_RootFossilDisappeared:
-	.string "The ROOT FOSSIL disappeared into\n"
-	.string "the sand…$"
+	.string "ROOT FOSSIL đã biến mất trong cát...$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
-	.string "Oh, no!\p"
-	.string "My uncle in MAUVILLE told me to take\n"
-	.string "ROCK SMASH with me if I was going to\l"
-	.string "ROUTE 111!\p"
-	.string "My uncle? He lives across from\n"
-	.string "the bike shop in MAUVILLE.$"
+	.string "Ôi không!\p"
+	.string "Chú tôi ở MAUVILLE đã dặn phải mang\n"
+	.string "theo ROCK SMASH nếu định đến ROUTE\l"
+	.string "111!\p"
+	.string "Chú tôi à? Ông ấy sống đối diện cửa\n"
+	.string "hàng xe đạp ở MAUVILLE.$"
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} TRAINER HILL ENTRANCE\p"
-	.string "“Scale the heights, you hot-blooded\n"
-	.string "TRAINERS!”$"
+	.string "“Hãy chinh phục đỉnh cao,\n"
+	.string "những HLV đầy nhiệt huyết!”$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route111_Text_BattleOurFamily
+	.global Route111_Text_IsThatSo
+	.global Route111_Text_VictorIntro
+	.global Route111_Text_VictorDefeat
+	.global Route111_Text_VictorPostBattle
+	.global Route111_Text_VictoriaIntro
+	.global Route111_Text_VictoriaDefeat
+	.global Route111_Text_VictoriaPostBattle
+	.global Route111_Text_ViviIntro
+	.global Route111_Text_ViviDefeat
+	.global Route111_Text_ViviPostBattle
+	.global Route111_Text_VickyIntro
+	.global Route111_Text_VickyDefeat
+	.global Route111_Text_VickyPostBattle
+	.global Route111_Text_ToughToKeepWinningUpTheRanks
+	.global Route111_Text_WinstrateFamilyDestroyedMe
+	.global Route111_Text_WinstrateHouseSign
+	.global Route111_Text_OldLadysRestStopSign
+	.global Route111_Text_TrainerTipsSpAtkSpDef
+	.global Route111_Text_ShouldBeMirageTowerAroundHere
+	.global Route111_Text_MirageTowerClearlyVisible
+	.global Route111_Text_ThatWasShockingSandRainedDown
+	.global Route111_Text_MirageTowerHasntBeenSeenSince
+	.global Route111_Text_ClawFossilDisappeared
+	.global Route111_Text_RootFossilDisappeared
+	.global Route111_Text_MauvilleUncleToldMeToTakeRockSmash
+	.global Route111_Text_TrainerHillSign
+@ END GENERATED LOCALIZATION EXPORTS

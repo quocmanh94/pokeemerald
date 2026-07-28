@@ -270,32 +270,38 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "The clock is stopped…\p"
-	.string "Better set it and start it!$"
+	.string "Đồng hồ đã dừng...\p"
+	.string "Phải chỉnh giờ rồi cho nó chạy thôi!$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "MOM: {PLAYER}, how do you like your\n"
-	.string "new room?\p"
-	.string "Good! Everything's put away neatly!\p"
-	.string "They finished moving everything in\n"
-	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
-	.string "Oh, you should make sure that\n"
-	.string "everything's all there on your desk.$"
+	.string "MẸ: {PLAYER}, con thấy phòng mới thế\n"
+	.string "nào?\p"
+	.string "Tốt quá! Mọi thứ được cất gọn gàng rồi!\p"
+	.string "Dưới nhà họ cũng chuyển đồ xong cả rồi.\p"
+	.string "Đội chuyển nhà POKéMON tiện thật!\p"
+	.string "À, con nhớ kiểm tra xem đồ trên bàn đã\n"
+	.string "đầy đủ chưa nhé.$"
 
 PlayersHouse_2F_Text_Notebook:
-	.string "{PLAYER} flipped open the notebook.\p"
-	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
-	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
-	.string "The remaining pages are blank…$"
+	.string "{PLAYER} mở cuốn sổ.\p"
+	.string "ADVENTURE RULE NO. 1 Mở MENU bằng\n"
+	.string "START.\p"
+	.string "ADVENTURE RULE NO. 2 Ghi lại tiến trình\n"
+	.string "bằng SAVE.\p"
+	.string "Những trang còn lại đều trống...$"
 
 Common_Text_LookCloserAtMap:
-	.string "{PLAYER} took a closer look at the\n"
-	.string "HOENN region map.$"
+	.string "{PLAYER} nhìn kỹ bản đồ vùng HOENN.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "Đó là Nintendo GameCube.\p"
+	.string "Một Game Boy Advance được kết nối để\n"
+	.string "dùng làm Controller.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PlayersHouse_2F_Text_ClockIsStopped
+	.global PlayersHouse_2F_Text_HowDoYouLikeYourRoom
+	.global PlayersHouse_2F_Text_Notebook
+	.global Common_Text_LookCloserAtMap
+	.global PlayersHouse_2F_Text_ItsAGameCube
+@ END GENERATED LOCALIZATION EXPORTS

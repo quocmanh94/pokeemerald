@@ -98,71 +98,85 @@ LilycoveCity_House3_EventScript_WereDoingContest::
 	end
 
 LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks:
-	.string "Oh, my, my! Are you traveling alone?\n"
-	.string "But you're so young! Good for you!\p"
-	.string "I'm sure my kids could learn a thing\n"
-	.string "or two from you!\p"
-	.string "Me? I'm a master of {POKEBLOCK}S.\p"
-	.string "If I get serious just a little, why,\n"
-	.string "I can concoct great {POKEBLOCK}S.\p"
-	.string "Would you like to learn from me,\n"
-	.string "a master of {POKEBLOCK}S?$"
+	.string "Ôi trời! Cháu đi du lịch một mình sao?\n"
+	.string "Nhưng cháu còn nhỏ thế này! Giỏi lắm!\p"
+	.string "Các con của bà chắc chắn có thể học\n"
+	.string "được đôi điều từ cháu!\p"
+	.string "Bà á? Bà là bậc thầy về {POKEBLOCK}S.\p"
+	.string "Chỉ cần nghiêm túc một chút thôi, bà có\n"
+	.string "thể pha chế ra những {POKEBLOCK}S\l"
+	.string "tuyệt hảo.\p"
+	.string "Cháu có muốn học từ bà, một bậc thầy về\n"
+	.string "{POKEBLOCK}S không?$"
 
 LilycoveCity_House3_Text_OhAreYouSure:
-	.string "Oh? Are you sure?\p"
-	.string "You shouldn't always try to do\n"
-	.string "everything by yourself, dear!$"
+	.string "Ồ? Cháu chắc chứ?\p"
+	.string "Đừng lúc nào cũng cố tự làm mọi thứ một\n"
+	.string "mình, cháu nhé!$"
 
 LilycoveCity_House3_Text_ExplainPokeblocks:
-	.string "Oh, good! You're a smart soul!\n"
-	.string "This is a bit long, so listen up!\p"
-	.string "Are you ready?\p"
-	.string "If you look at {POKEBLOCK}S, you should see\n"
-	.string "that they are rated on how they feel.\p"
-	.string "The lower the feel rating,\n"
-	.string "the better it is. Don't forget this!\p"
-	.string "A good {POKEBLOCK} has a low feel\n"
-	.string "rating and a high level.\p"
-	.string "A POKéMON can eat more good\n"
-	.string "{POKEBLOCK}S than ordinary ones, too.\p"
-	.string "And this is important.\p"
-	.string "If you want to make smooth {POKEBLOCK}S,\n"
-	.string "use different kinds of BERRIES.\p"
-	.string "Don't be stingy--the kinds of BERRIES\n"
-	.string "affect the smoothness of {POKEBLOCK}S.\p"
-	.string "And another thing.\p"
-	.string "The more people blending BERRIES,\n"
-	.string "the smoother the {POKEBLOCK}S.\p"
-	.string "That's why you should talk to other\n"
-	.string "people and make {POKEBLOCK}S together.\p"
-	.string "That's about all you need to know to\n"
-	.string "make good {POKEBLOCK}S.\p"
-	.string "If everyone had POKéMON they love,\n"
-	.string "smooth {POKEBLOCK}S, and a loving family,\l"
-	.string "the world would be a happier place.\p"
-	.string "Don't give up, dear!$"
+	.string "Ồ, tốt lắm! Cháu thông minh đấy! Phần\n"
+	.string "này hơi dài nên hãy nghe kỹ nhé!\p"
+	.string "Cháu sẵn sàng chưa?\p"
+	.string "Khi xem {POKEBLOCK}S, cháu sẽ thấy\n"
+	.string "chúng được đánh giá bằng chỉ số độ\l"
+	.string "mịn.\p"
+	.string "Chỉ số độ mịn càng thấp thì càng tốt.\n"
+	.string "Đừng quên điều này!\p"
+	.string "Một {POKEBLOCK} tốt có chỉ số độ mịn\n"
+	.string "thấp và cấp độ cao.\p"
+	.string "POKéMON cũng có thể ăn nhiều\n"
+	.string "{POKEBLOCK}S tốt hơn so với loại bình\l"
+	.string "thường.\p"
+	.string "Và điều này rất quan trọng.\p"
+	.string "Nếu muốn làm {POKEBLOCK}S mịn, hãy dùng\n"
+	.string "nhiều loại BERRIES khác nhau.\p"
+	.string "Đừng keo kiệt, loại BERRIES được dùng\n"
+	.string "sẽ ảnh hưởng đến độ mịn của\l"
+	.string "{POKEBLOCK}S.\p"
+	.string "Còn một điều nữa.\p"
+	.string "Càng có nhiều người trộn BERRIES thì\n"
+	.string "{POKEBLOCK}S càng mịn.\p"
+	.string "Vì vậy, cháu nên trò chuyện với người\n"
+	.string "khác và cùng nhau làm {POKEBLOCK}S.\p"
+	.string "Đó gần như là mọi điều cháu cần biết để\n"
+	.string "làm ra {POKEBLOCK}S tốt.\p"
+	.string "Nếu mọi người đều có POKéMON mình yêu\n"
+	.string "quý, những {POKEBLOCK}S mịn và một gia\l"
+	.string "đình yêu thương, thế giới sẽ hạnh phúc\l"
+	.string "hơn.\p"
+	.string "Đừng bỏ cuộc nhé, cháu!$"
 
 LilycoveCity_House3_Text_HappyToHaveQuadruplets:
-	.string "When my wife gave birth to quadruplets,\n"
-	.string "you bet I was shocked.\p"
-	.string "But, now, seeing them play together,\n"
-	.string "it makes me happy.$"
+	.string "Khi vợ tôi sinh bốn, tôi thật sự rất sốc.\p"
+	.string "Nhưng giờ đây, nhìn các con chơi cùng\n"
+	.string "nhau khiến tôi cảm thấy hạnh phúc.$"
 
 LilycoveCity_House3_Text_GoingToWinMultiBattles:
-	.string "We're having MULTI BATTLES, but I know\n"
-	.string "I'm going to win.$"
+	.string "Bọn mình đang đấu MULTI BATTLES,\n"
+	.string "nhưng mình biết chắc mình sẽ thắng.$"
 
 LilycoveCity_House3_Text_LikeMixingAtRecordCorner:
-	.string "We like mixing stuff at\n"
-	.string "the RECORD CORNER.\p"
-	.string "But what gets mixed up?$"
+	.string "Bọn mình thích trộn đủ thứ ở RECORD\n"
+	.string "CORNER.\p"
+	.string "Nhưng rốt cuộc thứ gì được trộn nhỉ?$"
 
 LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender:
-	.string "We're going to make super {POKEBLOCK}S\n"
-	.string "with a BERRY BLENDER!$"
+	.string "Bọn mình sẽ dùng BERRY BLENDER để làm\n"
+	.string "ra {POKEBLOCK}S siêu hạng!$"
 
 LilycoveCity_House3_Text_GoingToEnterContest:
-	.string "I want to brag about how tough my\n"
-	.string "POKéMON is, so we're going to enter\l"
-	.string "a CONTEST together.$"
+	.string "Tôi muốn khoe POKéMON của mình cứng\n"
+	.string "cỏi đến mức nào, nên cả hai sẽ cùng\l"
+	.string "tham gia một cuộc thi.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks
+	.global LilycoveCity_House3_Text_OhAreYouSure
+	.global LilycoveCity_House3_Text_ExplainPokeblocks
+	.global LilycoveCity_House3_Text_HappyToHaveQuadruplets
+	.global LilycoveCity_House3_Text_GoingToWinMultiBattles
+	.global LilycoveCity_House3_Text_LikeMixingAtRecordCorner
+	.global LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender
+	.global LilycoveCity_House3_Text_GoingToEnterContest
+@ END GENERATED LOCALIZATION EXPORTS

@@ -28,35 +28,42 @@ Route116_TunnelersRestHouse_EventScript_TunnelOpened::
 	end
 
 Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
-	.string "That RUSTURF TUNNEL there…\p"
-	.string "At first, we had a huge work crew boring\n"
-	.string "through rock with the latest machinery.\l"
-	.string "But, we had to stop.\p"
-	.string "It turns out that we would have had\n"
-	.string "a negative effect on wild POKéMON in\l"
-	.string "the area.\p"
-	.string "So, we've got nothing to do but loll\n"
-	.string "around here doing nothing.$"
+	.string "RUSTURF TUNNEL đằng kia...\p"
+	.string "Ban đầu, chúng tôi có cả một đội thi\n"
+	.string "công đông đảo dùng máy móc hiện đại\l"
+	.string "nhất để khoan xuyên đá. Nhưng rồi phải\l"
+	.string "dừng lại.\p"
+	.string "Hóa ra công trình sẽ gây ảnh hưởng xấu\n"
+	.string "đến POKéMON hoang dã trong khu vực.\p"
+	.string "Thế nên chúng tôi chẳng còn việc gì\n"
+	.string "ngoài ngồi đây chơi không.$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
-	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
-	.string "He's desperate to get through.\p"
-	.string "He says that if he digs little by little\n"
-	.string "without using machines, he won't\l"
-	.string "disturb POKéMON, and he'll avoid\l"
-	.string "harming the natural environment.\p"
-	.string "I wonder if he made it through yet.$"
+	.string "Có một người đàn ông đang một mình\n"
+	.string "đào đường tới VERDANTURF. Ông ấy\l"
+	.string "quyết tâm phải đào thông.\p"
+	.string "Ông ấy nói rằng nếu cứ đào từng chút\n"
+	.string "một mà không dùng máy móc thì sẽ không\l"
+	.string "quấy rầy POKéMON và cũng tránh làm hại\l"
+	.string "môi trường tự nhiên.\p"
+	.string "Không biết ông ấy đã đào thông chưa\n"
+	.string "nhỉ.$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "To get to VERDANTURF without using\n"
-	.string "this TUNNEL, you'd have to cross the\l"
-	.string "sea to DEWFORD, sail on to SLATEPORT,\l"
-	.string "then travel through MAUVILLE.$"
+	.string "Muốn đến VERDANTURF mà không đi qua\n"
+	.string "TUNNEL này, bạn phải vượt biển tới\l"
+	.string "DEWFORD, đi thuyền tiếp đến SLATEPORT,\l"
+	.string "rồi băng qua MAUVILLE.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Did you hear? The TUNNEL to VERDANTURF\n"
-	.string "has gone through!\p"
-	.string "Sometimes, if you hope strongly enough,\n"
-	.string "dreams do come true.$"
+	.string "Bạn nghe tin chưa? TUNNEL đến\n"
+	.string "VERDANTURF đã được đào thông rồi!\p"
+	.string "Đôi khi, chỉ cần đủ lòng mong mỏi thì\n"
+	.string "ước mơ thật sự sẽ thành hiện thực.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route116_TunnelersRestHouse_Text_WeHadToStopBoring
+	.global Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf
+	.global Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel
+	.global Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough
+@ END GENERATED LOCALIZATION EXPORTS

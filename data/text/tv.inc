@@ -1,2997 +1,3565 @@
 LilycoveCity_ContestLobby_Text_InterviewRequest:
-	.string "Oh, hello! You were in a POKéMON\n"
-	.string "CONTEST, weren't you?\l"
-	.string "It's easy to tell from your POKéMON.\p"
-	.string "I'm a reporter. I'm working on a story\n"
-	.string "on POKéMON CONTESTS.\p"
-	.string "If I may, would you be willing to answer\n"
-	.string "a few questions?$"
+	.string "Ồ, xin chào! Bạn vừa tham gia một\n"
+	.string "POKéMON CONTEST, đúng không? Nhìn\l"
+	.string "POKéMON của bạn là biết ngay.\p"
+	.string "Tôi là phóng viên. Tôi đang làm một\n"
+	.string "phóng sự về POKéMON CONTESTS.\p"
+	.string "Nếu được, bạn có thể trả lời vài câu hỏi\n"
+	.string "không?$"
 
 LilycoveCity_ContestLobby_Text_DescribeContest:
-	.string "Oh, you will?\n"
-	.string "Thank you.\p"
-	.string "Briefly, how would you describe the\n"
-	.string "CONTEST you just entered?$"
+	.string "Ồ, bạn đồng ý sao? Cảm ơn nhé.\p"
+	.string "Nói ngắn gọn, bạn sẽ miêu tả cuộc thi\n"
+	.string "vừa tham gia như thế nào?$"
 
 LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX:
-	.string "Ah, I see.\n"
-	.string "That's a very edifying comment.\p"
-	.string "You get a good feel for what\n"
-	.string "the CONTEST was like.\p"
-	.string "I've got one last question.\p"
-	.string "When you hear the word “{STR_VAR_2},”\n"
-	.string "what image do you get?$"
+	.string "À, tôi hiểu rồi. Một nhận xét rất bổ ích.\p"
+	.string "Qua đó có thể cảm nhận khá rõ cuộc thi\n"
+	.string "đã diễn ra thế nào.\p"
+	.string "Tôi còn một câu hỏi cuối cùng.\p"
+	.string "Khi nghe từ “{STR_VAR_2}”, bạn\n"
+	.string "hình dung ra điều gì?$"
 
 LilycoveCity_ContestLobby_Text_ThatsAllForInterview:
-	.string "I see!\p"
-	.string "So that's how you imagine the concept\n"
-	.string "of “{STR_VAR_2}” to be.\p"
-	.string "Thank you!\n"
-	.string "You've given me some good ideas.\p"
-	.string "I think I can write a good story on\n"
-	.string "POKéMON CONTESTS now.\p"
-	.string "Maybe, just maybe, this story will even\n"
-	.string "make it to television.\l"
-	.string "I hope you'll look forward to it!$"
+	.string "Tôi hiểu rồi!\p"
+	.string "Vậy đó là cách bạn hình dung khái niệm\n"
+	.string "“{STR_VAR_2}”.\p"
+	.string "Cảm ơn bạn! Bạn đã cho tôi vài ý tưởng\n"
+	.string "rất hay.\p"
+	.string "Giờ tôi nghĩ mình có thể viết một phóng\n"
+	.string "sự hay về POKéMON CONTESTS.\p"
+	.string "Biết đâu phóng sự này còn được phát\n"
+	.string "trên truyền hình. Hãy đón xem nhé!$"
 
 LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe:
-	.string "Oh, too bad…\p"
-	.string "Well, if you come across a good story,\n"
-	.string "please do share it with me.$"
+	.string "Ồ, tiếc quá...\p"
+	.string "Nếu bắt gặp câu chuyện nào hay, hãy kể\n"
+	.string "cho tôi nghe nhé.$"
 
 LilycoveCity_ContestLobby_Text_LookingForwardToNextContest:
-	.string "I'll be looking forward to your next\n"
-	.string "POKéMON CONTEST.$"
+	.string "Tôi rất mong chờ POKéMON CONTEST tiếp\n"
+	.string "theo của bạn.$"
 
 gTVBravoTrainerText00::
-	.string "Yeah!\n"
-	.string "It's BRAVO TRAINER time!\p"
-	.string "Today, we're going to profile a POKéMON\n"
-	.string "belonging to {STR_VAR_1}.\p"
-	.string "Now, this POKéMON boasts a {STR_VAR_3}\n"
-	.string "Rank in the {STR_VAR_2} Category.$"
+	.string "Đúng rồi! Đến giờ BRAVO TRAINER rồi!\p"
+	.string "Hôm nay, chúng ta sẽ giới thiệu một\n"
+	.string "POKéMON của {STR_VAR_1}.\p"
+	.string "POKéMON này đạt hạng\n"
+	.string "{STR_VAR_3} trong hạng mục\l"
+	.string "{STR_VAR_2}.$"
 
 gTVBravoTrainerText01::
-	.string "Introducing {STR_VAR_2} the\n"
+	.string "Xin giới thiệu {STR_VAR_2}, một\n"
 	.string "{STR_VAR_1}!\p"
-	.string "The nickname {STR_VAR_2}…\p"
-	.string "Even the nickname exudes an air that\n"
-	.string "proclaims “{STR_VAR_3}”!$"
-
-gTVBravoTrainerText02::
-	.string "Anyway, when the TRAINER {STR_VAR_1}\n"
-	.string "entered the POKéMON in a CONTEST,\l"
-	.string "we managed to get a few impassioned\l"
-	.string "quotes about the trusty partner.$"
-
-gTVBravoTrainerText03::
-	.string "Asked about the CONTEST afterwards,\n"
-	.string "{STR_VAR_1} happily replied with a huge\l"
-	.string "grin, “{STR_VAR_2}!”\p"
-	.string "Well, sure, {STR_VAR_1}'s POKéMON came in\n"
-	.string "number {STR_VAR_3} in the CONTEST.\p"
-	.string "That line perfectly suits {STR_VAR_1}\n"
-	.string "right now, I'd say!$"
-
-gTVBravoTrainerText04::
-	.string "Asked about the CONTEST afterwards,\n"
-	.string "{STR_VAR_1} replied with a tinge of\l"
-	.string "bitterness, “{STR_VAR_2}.”\p"
-	.string "Well, sure, {STR_VAR_1}'s POKéMON came in\n"
-	.string "number {STR_VAR_3} in the CONTEST.\p"
-	.string "{STR_VAR_1}'s disappointment comes across\n"
-	.string "loud and clear, I'd say!$"
-
-gTVBravoTrainerText05::
-	.string "Wouldn't you also like to know what\n"
-	.string "{STR_VAR_1} imagines {STR_VAR_2} to be?\p"
-	.string "You bet we did!\n"
-	.string "So we asked, of course!\p"
-	.string "The answer is all perfectly condensed:\n"
-	.string "“{STR_VAR_3}!”\p"
-	.string "That's what the concept of {STR_VAR_2}\n"
-	.string "represents to {STR_VAR_1}!$"
-
-gTVBravoTrainerText06::
-	.string "The last move {STR_VAR_2} used by\n"
-	.string "the {STR_VAR_1} is entirely about\l"
+	.string "Biệt danh {STR_VAR_2}...\p"
+	.string "Ngay cả biệt danh ấy cũng toát lên khí\n"
+	.string "chất như đang tuyên bố\l"
 	.string "“{STR_VAR_3}”!$"
 
+gTVBravoTrainerText02::
+	.string "Dù sao, khi HLV {STR_VAR_1}\n"
+	.string "đưa POKéMON này dự cuộc thi, chúng tôi\l"
+	.string "đã ghi lại được vài lời đầy nhiệt huyết\l"
+	.string "về người bạn đồng hành đáng tin cậy\l"
+	.string "ấy.$"
+
+gTVBravoTrainerText03::
+	.string "Khi được hỏi về cuộc thi sau đó,\n"
+	.string "{STR_VAR_1} nở nụ cười thật\l"
+	.string "tươi và vui vẻ đáp:\l"
+	.string "“{STR_VAR_2}!”\p"
+	.string "Quả thật, POKéMON của\n"
+	.string "{STR_VAR_1} đã xếp thứ\l"
+	.string "{STR_VAR_3} trong cuộc thi.\p"
+	.string "Tôi thấy câu nói ấy lúc này hợp với\n"
+	.string "{STR_VAR_1} vô cùng!$"
+
+gTVBravoTrainerText04::
+	.string "Khi được hỏi về cuộc thi sau đó,\n"
+	.string "{STR_VAR_1} hơi cay đắng đáp:\l"
+	.string "“{STR_VAR_2}.”\p"
+	.string "Quả thật, POKéMON của\n"
+	.string "{STR_VAR_1} đã xếp thứ\l"
+	.string "{STR_VAR_3} trong cuộc thi.\p"
+	.string "Có thể cảm nhận rõ sự thất vọng của\n"
+	.string "{STR_VAR_1}!$"
+
+gTVBravoTrainerText05::
+	.string "Hẳn bạn cũng muốn biết\n"
+	.string "{STR_VAR_1} hình dung\l"
+	.string "{STR_VAR_2} là gì, đúng không?\p"
+	.string "Chắc chắn rồi! Vì thế, tất nhiên chúng\n"
+	.string "tôi đã hỏi!\p"
+	.string "Câu trả lời được gói gọn hoàn hảo\n"
+	.string "trong: “{STR_VAR_3}!”\p"
+	.string "Đối với {STR_VAR_1}, khái niệm\n"
+	.string "{STR_VAR_2} chính là như vậy!$"
+
+gTVBravoTrainerText06::
+	.string "Chiêu cuối cùng, {STR_VAR_2}, mà\n"
+	.string "{STR_VAR_1} sử dụng hoàn toàn\l"
+	.string "thể hiện “{STR_VAR_3}”!$"
+
 gTVBravoTrainerText07::
-	.string "Bravo, {STR_VAR_1}!\n"
-	.string "Bravo, {STR_VAR_2}!\p"
-	.string "I hope we can count on seeing\n"
-	.string "{STR_VAR_1} scale even greater heights!\p"
-	.string "That's all the time we have!\n"
-	.string "Until next time, see you!$"
+	.string "Hoan hô, {STR_VAR_1}! Hoan hô,\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Hy vọng chúng ta sẽ được thấy\n"
+	.string "{STR_VAR_1} vươn tới những tầm\l"
+	.string "cao hơn nữa!\p"
+	.string "Chương trình đến đây là hết! Hẹn gặp\n"
+	.string "lại lần sau!$"
 
 gTVBravoTrainerText08::
-	.string "Introducing the TRAINER's {STR_VAR_1}!$"
+	.string "Xin giới thiệu {STR_VAR_1} của\n"
+	.string "HLV!$"
 
 BattleFrontier_BattleTowerLobby_Text_InterviewRequest::
-	.string "Hello! You're the TRAINER who just had\n"
-	.string "a battle, right?\p"
-	.string "I'm gathering interviews with TRAINERS\n"
-	.string "all over the place.\p"
-	.string "May I get a few words from you about\n"
-	.string "your impressions on battling?$"
+	.string "Xin chào! Bạn là HLV vừa đấu trận\n"
+	.string "xong, đúng không?\p"
+	.string "Tôi đang phỏng vấn HLV ở khắp mọi\n"
+	.string "nơi.\p"
+	.string "Tôi có thể xin bạn vài lời về cảm nhận\n"
+	.string "sau trận đấu không?$"
 
 BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut::
-	.string "You will? Really?\n"
-	.string "Thank you!\l"
-	.string "Then, uh…\p"
-	.string "How did things turn out in\n"
-	.string "the BATTLE TOWER today?\p"
-	.string "Were you satisfied with the battle?\n"
-	.string "Or are you unhappy?$"
+	.string "Bạn đồng ý sao? Thật chứ? Cảm ơn bạn!\n"
+	.string "Vậy thì, ừm...\p"
+	.string "Hôm nay ở BATTLE TOWER, kết quả thế\n"
+	.string "nào?\p"
+	.string "Bạn hài lòng với trận đấu chứ? Hay bạn\n"
+	.string "thấy không vui?$"
 
 BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou::
-	.string "Oh…\n"
-	.string "Sorry we disturbed you.\p"
-	.string "Please give us an interview the next\n"
-	.string "time you visit the BATTLE TOWER.$"
+	.string "Ồ... Xin lỗi vì đã làm phiền bạn.\p"
+	.string "Lần tới khi đến BATTLE TOWER, hãy cho\n"
+	.string "chúng tôi phỏng vấn nhé.$"
 
 BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle::
-	.string "Well, of course!\p"
-	.string "That unmistakable look of satisfaction\n"
-	.string "on your face…\p"
-	.string "It's obvious that you've had a great\n"
-	.string "battle.$"
+	.string "Quả nhiên!\p"
+	.string "Vẻ mãn nguyện hiện rõ trên khuôn mặt\n"
+	.string "bạn...\p"
+	.string "Rõ ràng bạn vừa có một trận đấu tuyệt\n"
+	.string "vời.$"
 
 BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned::
-	.string "Oh, I see…\p"
-	.string "Well, it certainly is difficult to make a\n"
-	.string "battle turn out exactly as planned.$"
+	.string "Ồ, tôi hiểu...\p"
+	.string "Quả thật, rất khó để trận đấu diễn ra\n"
+	.string "đúng như kế hoạch.$"
 
 BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle::
-	.string "Oh, oh, may I ask one more question?\p"
-	.string "If you were to describe your\n"
-	.string "impressions about this battle with\l"
-	.string "one saying, what would it be?$"
+	.string "Ồ, tôi có thể hỏi thêm một câu nữa\n"
+	.string "không?\p"
+	.string "Nếu gói gọn cảm nhận về trận đấu này\n"
+	.string "trong một câu, bạn sẽ nói gì?$"
 
 BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine::
-	.string "Oh, that is stunningly cool!\p"
-	.string "That's a great line!\n"
-	.string "I hope you'll do great next time, too.\p"
-	.string "I hope to see you again!$"
+	.string "Ôi, ngầu không tưởng!\p"
+	.string "Đúng là một câu tuyệt vời! Hy vọng lần\n"
+	.string "tới bạn cũng sẽ thi đấu thật tốt.\p"
+	.string "Mong sớm gặp lại bạn!$"
 
 BattleFrontier_BattleTowerLobby_Text_SilentType::
-	.string "Oh, I see…\p"
-	.string "Still, being the silent type is also\n"
-	.string "cool, isn't it?\p"
-	.string "I hope you'll give me the opportunity\n"
-	.string "to share your thoughts again!$"
+	.string "Ồ, tôi hiểu...\p"
+	.string "Nhưng kiểu người ít nói cũng rất ngầu,\n"
+	.string "đúng không?\p"
+	.string "Hy vọng bạn sẽ lại cho tôi cơ hội được\n"
+	.string "nghe những suy nghĩ của bạn!$"
 
 BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle::
-	.string "I'll be looking forward to your\n"
-	.string "next battle!$"
+	.string "Tôi rất mong chờ trận đấu tiếp theo của\n"
+	.string "bạn!$"
 
 BravoTrainerBattleTower_Text_Intro::
-	.string "Yeah!\n"
-	.string "It's BRAVO TRAINER time!\p"
-	.string "Today, we're going to profile {STR_VAR_1},\n"
-	.string "who took the BATTLE TOWER challenge!\p"
-	.string "For the challenge, {STR_VAR_1} entered\n"
-	.string "one wicked {STR_VAR_2}.$"
+	.string "Vâng! Đã đến giờ BRAVO TRAINER!\p"
+	.string "Hôm nay, chúng ta sẽ giới thiệu\n"
+	.string "{STR_VAR_1}, người đã tham gia\l"
+	.string "thử thách BATTLE TOWER!\p"
+	.string "Trong thử thách này, {STR_VAR_1}\n"
+	.string "đã đưa một {STR_VAR_2} cực kỳ\l"
+	.string "lợi hại vào thi đấu.$"
 
 BravoTrainerBattleTower_Text_NewRecord::
-	.string "The pair set a new record of {STR_VAR_2} wins\n"
-	.string "in a row in {STR_VAR_1} competition!\l"
-	.string "Bravo, TRAINER!$"
+	.string "Cặp đôi đã lập kỷ lục mới với\n"
+	.string "{STR_VAR_2} trận thắng liên tiếp\l"
+	.string "trong hạng đấu {STR_VAR_1}! Hoan\l"
+	.string "hô, HLV!$"
 
 BravoTrainerBattleTower_Text_Lost::
-	.string "The twosome finally succumbed to\n"
-	.string "{STR_VAR_1} in match number {STR_VAR_2}.\l"
-	.string "Nice try, TRAINER!\p"
-	.string "But, hey, it's just bad luck to run into\n"
-	.string "{STR_VAR_1} so early in the challenge.\p"
-	.string "We asked the TRAINER for impressions\n"
-	.string "on the match with {STR_VAR_1}.$"
+	.string "Cặp đôi cuối cùng đã để thua\n"
+	.string "{STR_VAR_1} ở trận thứ\l"
+	.string "{STR_VAR_2}. Nỗ lực đáng khen,\l"
+	.string "HLV!\p"
+	.string "Nhưng mà, gặp phải {STR_VAR_1}\n"
+	.string "quá sớm trong thử thách chỉ là do\l"
+	.string "không may thôi.\p"
+	.string "Chúng tôi đã hỏi HLV về cảm nghĩ\n"
+	.string "sau trận đấu với {STR_VAR_1}.$"
 
 BravoTrainerBattleTower_Text_Won::
-	.string "The twosome won it all by defeating\n"
-	.string "{STR_VAR_1}'s {STR_VAR_2} thoroughly.\l"
-	.string "Bravo, TRAINER!\p"
-	.string "Knocking off even {STR_VAR_1}…\n"
-	.string "It defies belief! Simply astounding!\p"
-	.string "We asked the TRAINER for impressions\n"
-	.string "on the moment of glory.$"
+	.string "Cặp đôi đã giành chiến thắng chung\n"
+	.string "cuộc sau khi đánh bại hoàn toàn\l"
+	.string "{STR_VAR_2} của\l"
+	.string "{STR_VAR_1}. Hoan hô, HLV!\p"
+	.string "Hạ được cả {STR_VAR_1}... Thật\n"
+	.string "khó tin! Quá sức ngoạn mục!\p"
+	.string "Chúng tôi đã hỏi HLV về cảm nghĩ\n"
+	.string "trong khoảnh khắc vinh quang ấy.$"
 
 BravoTrainerBattleTower_Text_LostFinal::
-	.string "After a string of wins, the pair finally\n"
-	.string "succumbed to {STR_VAR_1}'s {STR_VAR_2},\l"
-	.string "their final hurdle.\p"
-	.string "Nice try, TRAINER!\p"
-	.string "Still, you have to give credit.\n"
-	.string "You don't see many famous combinations\l"
-	.string "like {STR_VAR_1} and {STR_VAR_2}.\p"
-	.string "We asked the TRAINER for impressions\n"
-	.string "on battling the celebrity pair.$"
+	.string "Sau một chuỗi chiến thắng, cặp đôi cuối\n"
+	.string "cùng đã để thua {STR_VAR_2} của\l"
+	.string "{STR_VAR_1}, chướng ngại cuối\l"
+	.string "cùng của họ.\p"
+	.string "Nỗ lực đáng khen, HLV!\p"
+	.string "Dù vậy, cũng phải công nhận đối thủ.\n"
+	.string "Không mấy khi ta được thấy một bộ đôi\l"
+	.string "nổi tiếng như {STR_VAR_1} và\l"
+	.string "{STR_VAR_2}.\p"
+	.string "Chúng tôi đã hỏi HLV về cảm nghĩ\n"
+	.string "khi giao đấu với bộ đôi danh tiếng này.$"
 
 BravoTrainerBattleTower_Text_Satisfied::
-	.string "This is what the TRAINER had to say:\n"
-	.string "“I'm satisfied!”\p"
-	.string "Now isn't that a refreshing reply?\n"
-	.string "Bravo, TRAINER!\p"
-	.string "Isn't it out-and-out awesome to be\n"
-	.string "able to battle to full satisfaction?\p"
-	.string "I found out exactly how satisfied\n"
-	.string "when I heard the TRAINER say this:$"
+	.string "HLV đã nói thế này: “Tôi hài lòng!”\p"
+	.string "Quả là một câu trả lời đầy sảng khoái,\n"
+	.string "phải không? Hoan hô, HLV!\p"
+	.string "Được chiến đấu thỏa thích đến mức\n"
+	.string "hoàn toàn mãn nguyện chẳng phải tuyệt\l"
+	.string "vời sao?\p"
+	.string "Tôi đã biết HLV hài lòng đến mức\n"
+	.string "nào khi nghe câu này:$"
 
 BravoTrainerBattleTower_Text_Unsatisfied::
-	.string "This is what the TRAINER had to say:\n"
-	.string "“I'm not satisfied…”\p"
-	.string "Our TRAINER was obviously a little down\n"
-	.string "when that was uttered.\p"
-	.string "Still, it's not easy to be able to battle\n"
-	.string "with complete satisfaction, am I right?\p"
-	.string "Anyway, I found out how dissatisfied\n"
-	.string "our TRAINER was when I heard this:$"
+	.string "HLV đã nói thế này: “Tôi chưa hài\n"
+	.string "lòng...”\p"
+	.string "Rõ ràng HLV của chúng ta hơi buồn\n"
+	.string "khi thốt ra câu ấy.\p"
+	.string "Nhưng để có thể hoàn toàn mãn nguyện\n"
+	.string "sau một trận đấu đâu phải chuyện dễ\l"
+	.string "dàng, đúng không?\p"
+	.string "Dù sao, tôi đã biết HLV của chúng\n"
+	.string "ta thất vọng đến mức nào khi nghe câu\l"
+	.string "này:$"
 
 BravoTrainerBattleTower_Text_None1::
-	.string "None$"
+	.string "Không có$"
 
 BravoTrainerBattleTower_Text_None2::
-	.string "None$"
+	.string "Không có$"
 
 BravoTrainerBattleTower_Text_None3::
-	.string "None$"
+	.string "Không có$"
 
 BravoTrainerBattleTower_Text_None4::
-	.string "None$"
+	.string "Không có$"
 
 BravoTrainerBattleTower_Text_Response::
 	.string "“{STR_VAR_1}.”$"
 
 BravoTrainerBattleTower_Text_ResponseSatisfied::
-	.string "“{STR_VAR_1}.”\n"
-	.string "Now isn't that great?\p"
-	.string "It really expresses {STR_VAR_2}'s joy,\n"
-	.string "I'd say.\p"
-	.string "That battle with {STR_VAR_3} at the\n"
-	.string "end… It really was what you'd call\l"
-	.string "“{STR_VAR_1}”!$"
+	.string "“{STR_VAR_1}.” Chẳng phải tuyệt\n"
+	.string "lắm sao?\p"
+	.string "Tôi thấy câu ấy thực sự thể hiện niềm\n"
+	.string "vui của {STR_VAR_2}.\p"
+	.string "Trận đấu cuối cùng với\n"
+	.string "{STR_VAR_3}... Quả đúng là điều mà\l"
+	.string "người ta gọi là “{STR_VAR_1}”!$"
 
 BravoTrainerBattleTower_Text_ResponseUnsatisfied::
-	.string "“{STR_VAR_1}.”\n"
-	.string "Now isn't that fitting?\p"
-	.string "That battle with {STR_VAR_3} at the\n"
-	.string "end… You can't describe it as anything\l"
-	.string "else but “{STR_VAR_1}”!\p"
-	.string "{STR_VAR_2}'s disappointment comes across\n"
-	.string "loud and clear, I'd say!$"
+	.string "“{STR_VAR_1}.” Chẳng phải quá\n"
+	.string "phù hợp sao?\p"
+	.string "Trận đấu cuối cùng với\n"
+	.string "{STR_VAR_3}... Không thể dùng từ\l"
+	.string "nào khác ngoài “{STR_VAR_1}” để\l"
+	.string "miêu tả!\p"
+	.string "Tôi thấy nỗi thất vọng của\n"
+	.string "{STR_VAR_2} đã được thể hiện rõ\l"
+	.string "ràng!$"
 
 BravoTrainerBattleTower_Text_Outro::
-	.string "Bravo, {STR_VAR_1}!\n"
-	.string "Bravo, {STR_VAR_2}!\p"
-	.string "I hope we can count on seeing\n"
-	.string "{STR_VAR_1} scale even greater heights!\p"
-	.string "That's all the time we have!\n"
-	.string "Until next time, see you!$"
+	.string "Hoan hô, {STR_VAR_1}! Hoan hô,\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Hy vọng chúng ta sẽ được chứng kiến\n"
+	.string "{STR_VAR_1} vươn tới những tầm\l"
+	.string "cao hơn nữa!\p"
+	.string "Chương trình hôm nay đến đây là hết!\n"
+	.string "Hẹn gặp lại lần sau!$"
 
 SlateportCity_PokemonFanClub_Text_InterviewRequestHasName:
-	.string "Wow!\p"
-	.string "It's plain to see that you lavish your\n"
-	.string "love on your {STR_VAR_1}.\p"
-	.string "Okay, it's named {STR_VAR_2}.\p"
-	.string "Can I ask you a favor?\p"
-	.string "I'm a TV reporter, and I'm running\n"
-	.string "a survey on POKéMON.\p"
-	.string "Would you be willing to answer a few\n"
-	.string "simple questions for me?$"
+	.string "Chà!\p"
+	.string "Nhìn là biết bạn dành rất nhiều tình\n"
+	.string "yêu cho {STR_VAR_1}.\p"
+	.string "Ra là nó có tên {STR_VAR_2}.\p"
+	.string "Tôi có thể nhờ bạn một việc không?\p"
+	.string "Tôi là phóng viên truyền hình và đang\n"
+	.string "thực hiện một cuộc khảo sát về\l"
+	.string "POKéMON.\p"
+	.string "Bạn có sẵn lòng trả lời vài câu hỏi đơn\n"
+	.string "giản không?$"
 
 SlateportCity_PokemonFanClub_Text_HereGoesQuickAnswers:
-	.string "Great! Thank you!\p"
-	.string "Okay, here goes.\n"
-	.string "I just need quick answers, okay?$"
+	.string "Tuyệt quá! Cảm ơn bạn!\p"
+	.string "Được rồi, bắt đầu nhé. Tôi chỉ cần\n"
+	.string "những câu trả lời ngắn gọn thôi, được\l"
+	.string "chứ?$"
 
 SlateportCity_PokemonFanClub_Text_DescribeFeelingsFirstMetMon:
-	.string "When you first met {STR_VAR_1},\n"
-	.string "what did you feel?\p"
-	.string "How would you describe your feelings\n"
-	.string "at the time?$"
+	.string "Khi lần đầu gặp {STR_VAR_1}, bạn\n"
+	.string "đã cảm thấy thế nào?\p"
+	.string "Bạn sẽ miêu tả cảm xúc lúc ấy ra sao?$"
 
 SlateportCity_PokemonFanClub_Text_LikenMonToSomethingYouLike:
-	.string "Your {STR_VAR_1} is cared for lovingly.\p"
-	.string "If you were to liken it to something\n"
-	.string "that you like, what would it be?$"
+	.string "Bạn chăm sóc {STR_VAR_1} bằng\n"
+	.string "tất cả tình yêu thương.\p"
+	.string "Nếu ví nó với một thứ mà bạn thích, đó\n"
+	.string "sẽ là gì?$"
 
 SlateportCity_PokemonFanClub_Text_WhatAttractedYouAboutMon:
-	.string "This question also relates to your\n"
-	.string "beloved {STR_VAR_1}.\p"
-	.string "What was it about {STR_VAR_1} that\n"
-	.string "attracted you?$"
+	.string "Câu hỏi này cũng liên quan đến\n"
+	.string "{STR_VAR_1} yêu quý của bạn.\p"
+	.string "Điều gì ở {STR_VAR_1} đã thu hút\n"
+	.string "bạn?$"
 
 SlateportCity_PokemonFanClub_Text_WhatDoPokemonMeanToYou:
-	.string "Okay, that makes sense.\p"
-	.string "The next question might be a little\n"
-	.string "on the tough side.\p"
-	.string "Here goes…\p"
-	.string "What do POKéMON mean to you?$"
+	.string "Được rồi, nghe hợp lý đấy.\p"
+	.string "Câu tiếp theo có lẽ sẽ hơi khó một chút.\p"
+	.string "Câu hỏi là...\p"
+	.string "POKéMON có ý nghĩa thế nào đối với\n"
+	.string "bạn?$"
 
 SlateportCity_PokemonFanClub_Text_ThatsAllForInterview:
-	.string "I see!\p"
-	.string "Hmhm…\p"
-	.string "Okay!\n"
-	.string "Thanks for helping me out.\p"
-	.string "It was fun and enlightening\n"
-	.string "chatting with you.\p"
-	.string "It's possible that our interview will\n"
-	.string "end up on TV. Tune in and check!\p"
-	.string "Okay, that's all.\n"
-	.string "Bye-bye!$"
+	.string "Tôi hiểu rồi!\p"
+	.string "Hừm hừm...\p"
+	.string "Được rồi! Cảm ơn bạn đã giúp tôi.\p"
+	.string "Cuộc trò chuyện với bạn vừa thú vị vừa\n"
+	.string "giúp tôi hiểu thêm nhiều điều.\p"
+	.string "Có thể cuộc phỏng vấn của chúng ta sẽ\n"
+	.string "được phát trên TV đấy. Nhớ đón xem\l"
+	.string "nhé!\p"
+	.string "Được rồi, đến đây là hết. Tạm biệt!$"
 
 SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe:
-	.string "Oh, okay…\p"
-	.string "Well, if you get the urge to tell me\n"
-	.string "about POKéMON, I'll be here!$"
+	.string "Ồ, được thôi...\p"
+	.string "Nếu lúc nào bạn muốn kể cho tôi nghe về\n"
+	.string "POKéMON, tôi sẽ ở đây!$"
 
 SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews:
-	.string "I enjoy this job--you get to learn\n"
-	.string "about POKéMON by doing interviews.$"
+	.string "Tôi thích công việc này, vì qua những\n"
+	.string "cuộc phỏng vấn, tôi có thể hiểu thêm về\l"
+	.string "POKéMON.$"
 
 SlateportCity_PokemonFanClub_Text_InterviewRequest:
-	.string "Hi, you seem to be very close to your\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Do you know what?\n"
-	.string "I'm a TV reporter.\p"
-	.string "I travel around interviewing people\n"
-	.string "about POKéMON.\p"
-	.string "I'm wondering if you'd be willing to tell\n"
-	.string "me a little about your {STR_VAR_1}?$"
+	.string "Chào bạn, có vẻ bạn và\n"
+	.string "{STR_VAR_1} rất thân thiết.\p"
+	.string "Bạn biết không? Tôi là phóng viên\n"
+	.string "truyền hình.\p"
+	.string "Tôi đi khắp nơi để phỏng vấn mọi người\n"
+	.string "về POKéMON.\p"
+	.string "Bạn có sẵn lòng kể cho tôi đôi điều về\n"
+	.string "{STR_VAR_1} không?$"
 
 SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon:
-	.string "Wow, thank you!\p"
-	.string "Okay, then, please tell me anything\n"
-	.string "you'd like about your {STR_VAR_1}.$"
+	.string "Chà, cảm ơn bạn!\p"
+	.string "Vậy hãy kể cho tôi bất cứ điều gì bạn\n"
+	.string "muốn về {STR_VAR_1} nhé.$"
 
 SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2:
-	.string "Wow…\n"
-	.string "That's an interesting account.\p"
-	.string "You really are tight with {STR_VAR_1},\n"
-	.string "aren't you?\p"
-	.string "I get the feeling that your account\n"
-	.string "will make a great TV story.\p"
-	.string "I promise that I'll turn this into\n"
-	.string "an entertaining show.\l"
-	.string "Keep your eyes out for it.\p"
-	.string "Okay, that's all.\n"
-	.string "Bye-bye!$"
+	.string "Chà... Câu chuyện thật thú vị.\p"
+	.string "Bạn và {STR_VAR_1} thực sự rất\n"
+	.string "gắn bó, phải không?\p"
+	.string "Tôi có cảm giác câu chuyện của bạn sẽ\n"
+	.string "trở thành một phóng sự truyền hình\l"
+	.string "tuyệt vời.\p"
+	.string "Tôi hứa sẽ biến nó thành một chương\n"
+	.string "trình thật hấp dẫn. Nhớ đón xem nhé.\p"
+	.string "Được rồi, đến đây là hết. Tạm biệt!$"
 
 gTVFanClubOpinionsText00::
-	.string "WE ARE THE POKéMON FAN CLUB!\p"
-	.string "We're on the air!\p"
-	.string "On this program, we get your opinions,\n"
-	.string "and I shout them out on your behalf!\l"
-	.string "Isn't it a fantastic program concept?\p"
-	.string "Today, we bring you this report from\n"
-	.string "our reporter, who we sent out to the\l"
+	.string "CHÚNG TA LÀ POKéMON FAN CLUB!\p"
+	.string "Chúng tôi đang lên sóng!\p"
+	.string "Trong chương trình này, chúng tôi sẽ\n"
+	.string "lắng nghe ý kiến của bạn, rồi thay bạn\l"
+	.string "hét thật to những điều ấy! Ý tưởng\l"
+	.string "chương trình tuyệt vời quá, phải\l"
+	.string "không?\p"
+	.string "Hôm nay, chúng tôi xin gửi đến quý vị\n"
+	.string "bản tin từ phóng viên được cử tới\l"
 	.string "POKéMON FAN CLUB.\p"
-	.string "So, just who is today's featured\n"
-	.string "POKéMON fan?\p"
-	.string "… … … … … … … …\p"
+	.string "Vậy ai là người hâm mộ POKéMON được\n"
+	.string "giới thiệu hôm nay?\p"
+	.string "... ... ... ... ... ... ... ...\p"
 	.string "{STR_VAR_1}!\p"
-	.string "So, let's hear what {STR_VAR_1} has to\n"
-	.string "say about {STR_VAR_3} the {STR_VAR_2}.\p"
-	.string "And, I will shout those words of love\n"
-	.string "out loud on TV!\p"
-	.string "Hoo-hah!\p"
-	.string "Let's shout!$"
+	.string "Hãy cùng nghe {STR_VAR_1} nói gì\n"
+	.string "về {STR_VAR_3}, một\l"
+	.string "{STR_VAR_2}.\p"
+	.string "Và tôi sẽ hét thật to những lời yêu\n"
+	.string "thương ấy trên TV!\p"
+	.string "Hú-hà!\p"
+	.string "Cùng hô nào!$"
 
 gTVFanClubOpinionsText01::
-	.string "We asked {STR_VAR_1}, “When you first\n"
-	.string "laid eyes on your {STR_VAR_2}, what was\l"
-	.string "your initial thought?”\p"
+	.string "Chúng tôi đã hỏi {STR_VAR_1}:\n"
+	.string "“Khi lần đầu nhìn thấy\l"
+	.string "{STR_VAR_2} của mình, bạn đã\l"
+	.string "nghĩ gì?”\p"
 	.string "“{STR_VAR_3}!”\p"
-	.string "Yeahah! That's a mighty fine shout!\p"
-	.string "Doesn't it bring back memories of those\n"
-	.string "days long gone by?$"
+	.string "Tuyệt! Quả là một tiếng hô đầy khí thế!\p"
+	.string "Nó có khiến bạn nhớ lại những ngày\n"
+	.string "tháng xa xưa ấy không?$"
 
 gTVFanClubOpinionsText02::
-	.string "We asked {STR_VAR_1}, “If you were to\n"
-	.string "liken your {STR_VAR_2} to something,\l"
-	.string "it would be…”\p"
-	.string "… … … … … … … …\p"
+	.string "Chúng tôi đã hỏi {STR_VAR_1}:\n"
+	.string "“Nếu ví {STR_VAR_2} của bạn với\l"
+	.string "một thứ gì đó, thì đó sẽ là...”\p"
+	.string "... ... ... ... ... ... ... ...\p"
 	.string "“{STR_VAR_3}!”\p"
-	.string "Whoah-oh, now that's an original idea!\p"
-	.string "You sure can sense the intensity of\n"
-	.string "feeling the TRAINER has for\l"
-	.string "{STR_VAR_2}.$"
+	.string "Chà, quả là một ý tưởng độc đáo!\p"
+	.string "Ta có thể cảm nhận rõ tình cảm mãnh liệt\n"
+	.string "mà HLV dành cho {STR_VAR_2}.$"
 
 gTVFanClubOpinionsText03::
-	.string "And let's see…\n"
-	.string "What was it about that {STR_VAR_2}\l"
-	.string "that so attracted {STR_VAR_1}?\p"
-	.string "… … … … … … … …\p"
+	.string "Và xem nào... Điều gì ở\n"
+	.string "{STR_VAR_2} ấy đã thu hút\l"
+	.string "{STR_VAR_1} đến vậy?\p"
+	.string "... ... ... ... ... ... ... ...\p"
 	.string "“{STR_VAR_3}!”\p"
-	.string "Whoa! Such a spectacular declaration!\p"
-	.string "The TRAINER's love for the {STR_VAR_2}\n"
-	.string "comes across loud and clear!$"
+	.string "Chà! Quả là một lời tuyên bố ngoạn mục!\p"
+	.string "Tình yêu mà HLV dành cho\n"
+	.string "{STR_VAR_2} đã được thể hiện rõ\l"
+	.string "ràng!$"
 
 gTVFanClubOpinionsText04::
-	.string "Hm? Oh, there's still more.\n"
-	.string "Let's check it out!\p"
-	.string "Let me see, now…\p"
-	.string "We asked {STR_VAR_1}, “What do POKéMON\n"
-	.string "mean to you?”\p"
-	.string "… … … … … …\p"
+	.string "Hửm? Ồ, vẫn còn nữa. Hãy cùng xem nào!\p"
+	.string "Để tôi xem...\p"
+	.string "Chúng tôi đã hỏi {STR_VAR_1}:\n"
+	.string "“POKéMON có ý nghĩa thế nào đối với\l"
+	.string "bạn?”\p"
+	.string "... ... ... ... ... ...\p"
 	.string "“{STR_VAR_3}!”\p"
-	.string "Bravo!\p"
-	.string "That's the best shout I've had all day!\p"
+	.string "Hoan hô!\p"
+	.string "Đó là tiếng hô tuyệt nhất tôi được\n"
+	.string "nghe cả ngày hôm nay!\p"
 	.string "“{STR_VAR_3}!”\p"
-	.string "It makes you want to shout it out loud\n"
-	.string "again and again!\p"
-	.string "Now that we've had a great shout, it's\n"
-	.string "time to say good-bye until next time!\p"
-	.string "So, let's all have one last shout!\n"
-	.string "All together now…\p"
+	.string "Nghe mà chỉ muốn hét thật to hết lần\n"
+	.string "này đến lần khác!\p"
+	.string "Sau một tiếng hô tuyệt vời như vậy, đã\n"
+	.string "đến lúc nói lời tạm biệt và hẹn gặp lại!\p"
+	.string "Vậy tất cả chúng ta hãy cùng hô lần\n"
+	.string "cuối nào! Cùng nhau nhé...\p"
 	.string "“{STR_VAR_3}!”$"
 
 gTVFanClubText00::
-	.string "WE ARE THE POKéMON FAN CLUB!\p"
-	.string "We're on the air!\p"
-	.string "Today, we'll get rolling with the\n"
+	.string "CHÚNG TA LÀ POKéMON FAN CLUB!\p"
+	.string "Chúng tôi đang lên sóng!\p"
+	.string "Hôm nay, chúng ta sẽ mở màn với\n"
 	.string "POKéMON SURVEY CORNER.\p"
-	.string "Out of all the tales woven by POKéMON\n"
-	.string "and TRAINERS, what startling new drama\l"
-	.string "will grab our attention today?\p"
-	.string "Let me see…\p"
-	.string "This one!\p"
-	.string "We'll start with this letter!\p"
-	.string "It's a letter from {STR_VAR_1} about a\n"
-	.string "beloved {STR_VAR_2}.\p"
-	.string "Let's see how passionately our writer\n"
-	.string "can express love for the {STR_VAR_2}!\l"
-	.string "Hmhm…$"
+	.string "Trong vô số câu chuyện được dệt nên\n"
+	.string "bởi POKéMON và HLV, vở kịch mới\l"
+	.string "đầy bất ngờ nào sẽ thu hút sự chú ý\l"
+	.string "của chúng ta hôm nay?\p"
+	.string "Để tôi xem...\p"
+	.string "Cái này!\p"
+	.string "Chúng ta sẽ bắt đầu với lá thư này!\p"
+	.string "Đây là thư của {STR_VAR_1} viết\n"
+	.string "về một {STR_VAR_2} yêu quý.\p"
+	.string "Hãy xem người viết có thể bày tỏ tình\n"
+	.string "yêu dành cho {STR_VAR_2} nồng\l"
+	.string "nhiệt đến mức nào! Hừm hừm...$"
 
 gTVFanClubText01::
-	.string "Whoah!\n"
-	.string "What an amazing letter!$"
+	.string "Chà! Quả là một lá thư tuyệt vời!$"
 
 gTVFanClubText02::
-	.string "I loved it, so here it is again!$"
+	.string "Tôi thích quá, nên xin đọc lại lần nữa!$"
 
 gTVFanClubText03::
-	.string "A great letter bears reading over\n"
-	.string "and over!$"
+	.string "Một lá thư hay đáng để đọc đi đọc lại!$"
 
 gTVFanClubText04::
-	.string "The bit “{STR_VAR_3},” that really\n"
-	.string "accentuates emotional impact!\p"
-	.string "It's a great letter that has real\n"
-	.string "heartfelt depth!$"
+	.string "Đoạn “{STR_VAR_3}” thực sự làm\n"
+	.string "cảm xúc thêm phần mạnh mẽ!\p"
+	.string "Đây là một lá thư tuyệt vời với tình\n"
+	.string "cảm sâu sắc xuất phát từ trái tim!$"
 
 gTVFanClubText05::
-	.string "Especially that “{STR_VAR_3}” bit!\p"
-	.string "I love how “{STR_VAR_3}” is used!$"
+	.string "Đặc biệt là đoạn “{STR_VAR_3}”!\p"
+	.string "Tôi rất thích cách dùng\n"
+	.string "“{STR_VAR_3}”!$"
 
 gTVFanClubText06::
-	.string "By the way, and it's not important,\n"
-	.string "but “{STR_VAR_3}” is a great saying.\p"
-	.string "I've been using “{STR_VAR_3}” a lot\n"
-	.string "in conversations lately.$"
+	.string "Nhân tiện, dù không quan trọng lắm,\n"
+	.string "nhưng “{STR_VAR_3}” là một câu\l"
+	.string "nói rất hay.\p"
+	.string "Gần đây tôi thường xuyên dùng\n"
+	.string "“{STR_VAR_3}” khi trò chuyện.$"
 
 gTVFanClubText07::
-	.string "If I had to score this letter,\n"
-	.string "I'd give it {STR_VAR_3} points.\p"
-	.string "Next time, I'll be expecting an even\n"
-	.string "better letter, {STR_VAR_1}!\p"
-	.string "A-whoops, will you look at the time?\n"
-	.string "Time to say good-bye until next time!$"
+	.string "Nếu phải chấm điểm lá thư này, tôi sẽ\n"
+	.string "cho {STR_VAR_3} điểm.\p"
+	.string "Lần sau, tôi mong chờ một lá thư còn\n"
+	.string "hay hơn nữa đấy, {STR_VAR_1}!\p"
+	.string "Ôi chao, nhìn giờ kìa! Đã đến lúc nói lời\n"
+	.string "tạm biệt và hẹn gặp lại!$"
 
 SlateportCity_OceanicMuseum_1F_Text_InterviewRequest:
-	.string "Oh?\n"
-	.string "Do you perhaps like POKéMON?\p"
-	.string "I'm on assignment with the TV network.\p"
-	.string "I'm gathering stories on POKéMON and\n"
-	.string "TRAINERS that occurred recently.\p"
-	.string "If you don't mind, could you tell me\n"
-	.string "something about yourself?$"
+	.string "Ồ? Có phải bạn thích POKéMON không?\p"
+	.string "Tôi đang làm nhiệm vụ cho đài truyền\n"
+	.string "hình.\p"
+	.string "Tôi đang thu thập những câu chuyện gần\n"
+	.string "đây về POKéMON và HLV.\p"
+	.string "Nếu không phiền, bạn có thể kể cho tôi\n"
+	.string "đôi điều về mình không?$"
 
 SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort:
-	.string "I'm gathering stories on POKéMON and\n"
-	.string "TRAINERS that occurred recently.\p"
-	.string "If you don't mind, could you tell me\n"
-	.string "something about yourself?$"
+	.string "Tôi đang thu thập những câu chuyện gần\n"
+	.string "đây về POKéMON và HLV.\p"
+	.string "Nếu không phiền, bạn có thể kể cho tôi\n"
+	.string "đôi điều về mình không?$"
 
 SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon:
-	.string "Oh, you will?\n"
-	.string "Thank you!\p"
-	.string "Then, please, tell me anything of\n"
-	.string "interest that you experienced recently\l"
-	.string "involving POKéMON.$"
+	.string "Ồ, bạn đồng ý sao? Cảm ơn bạn!\p"
+	.string "Vậy hãy kể cho tôi bất cứ trải nghiệm\n"
+	.string "thú vị nào gần đây có liên quan đến\l"
+	.string "POKéMON.$"
 
 SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory:
-	.string "Oh, I see…\p"
-	.string "Well, if you do have an interesting\n"
-	.string "story to tell, please let me know.$"
+	.string "Ồ, tôi hiểu rồi...\p"
+	.string "Nếu có câu chuyện thú vị nào muốn kể,\n"
+	.string "xin hãy cho tôi biết nhé.$"
 
 SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview:
-	.string "Oh, what an uplifting story!\p"
-	.string "I'll be sure to get your story told\n"
-	.string "on television.\p"
-	.string "It should be aired sometime, I think,\n"
-	.string "so please look forward to it.$"
+	.string "Ồ, thật là một câu chuyện truyền cảm\n"
+	.string "hứng!\p"
+	.string "Tôi nhất định sẽ đưa câu chuyện của\n"
+	.string "bạn lên truyền hình.\p"
+	.string "Tôi nghĩ nó sẽ được phát sóng vào một\n"
+	.string "lúc nào đó, nên hãy chờ đón nhé.$"
 
 SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory:
-	.string "Hmmm…\n"
-	.string "I've got a good story for a TV program.\p"
-	.string "I'd better write it up in a hurry!$"
+	.string "Hừm... Mình đã có một câu chuyện hay\n"
+	.string "cho chương trình TV.\p"
+	.string "Phải mau chóng viết lại mới được!$"
 
 gTVRecentHappeningsText00::
-	.string "Hello, it's time for RECENT HAPPENINGS.\p"
-	.string "For POKéMON TRAINERS, every day\n"
-	.string "is a storybook tale.\p"
-	.string "What we want to do is to introduce you\n"
-	.string "to some of these POKéMON tales.\p"
-	.string "Today, we bring you the story\n"
-	.string "of the TRAINER {STR_VAR_1}.\p"
-	.string "What did {STR_VAR_1} experience recently?\n"
-	.string "Let's find out.\p"
-	.string "Let's see…$"
+	.string "Xin chào, đã đến giờ RECENT\n"
+	.string "HAPPENINGS.\p"
+	.string "Đối với HLV POKéMON, mỗi ngày đều\n"
+	.string "là một câu chuyện như trong sách.\p"
+	.string "Điều chúng tôi muốn làm là giới thiệu\n"
+	.string "đến quý vị một vài câu chuyện POKéMON\l"
+	.string "như thế.\p"
+	.string "Hôm nay, chúng tôi mang đến câu chuyện\n"
+	.string "của HLV {STR_VAR_1}.\p"
+	.string "Gần đây {STR_VAR_1} đã trải qua\n"
+	.string "chuyện gì? Hãy cùng tìm hiểu.\p"
+	.string "Xem nào...$"
 
 gTVRecentHappeningsText01::
-	.string "Wasn't that enlightening?\p"
-	.string "The story gives you a clear idea of what\n"
-	.string "{STR_VAR_1} has experienced recently.\l"
-	.string "It's as if we were there as witnesses!$"
+	.string "Thật đáng để suy ngẫm, phải không?\p"
+	.string "Câu chuyện giúp ta hình dung rõ những\n"
+	.string "gì {STR_VAR_1} đã trải qua gần\l"
+	.string "đây. Cứ như chính chúng ta cũng có mặt\l"
+	.string "để chứng kiến vậy!$"
 
 gTVRecentHappeningsText02::
-	.string "“{STR_VAR_3}.” That\n"
-	.string "accents the tale and gives it depth.$"
+	.string "“{STR_VAR_3}.” Câu ấy tạo điểm\n"
+	.string "nhấn và chiều sâu cho câu chuyện.$"
 
 gTVRecentHappeningsText03::
-	.string "“{STR_VAR_3}.”\n"
-	.string "That gives the tale a sense of place.\l"
-	.string "It lets us envision the tale's setting.$"
+	.string "“{STR_VAR_3}.” Câu ấy mang đến\n"
+	.string "cảm giác rõ nét về địa điểm, giúp chúng\l"
+	.string "ta hình dung ra bối cảnh của câu\l"
+	.string "chuyện.$"
 
 gTVRecentHappeningsText04::
-	.string "The “{STR_VAR_3}”\n"
-	.string "section of the tale is very expressive.$"
+	.string "Đoạn “{STR_VAR_3}” trong câu\n"
+	.string "chuyện được diễn đạt rất sinh động.$"
 
 gTVRecentHappeningsText05::
-	.string "{STR_VAR_1} has recounted a wonderful\n"
-	.string "tale involving POKéMON.\p"
-	.string "And now {STR_VAR_1}'s tale is indelibly\n"
-	.string "etched into your soul, too.\p"
-	.string "That's it for today.\n"
-	.string "Please tune in next time.$"
+	.string "{STR_VAR_1} đã kể lại một câu\n"
+	.string "chuyện tuyệt vời có liên quan đến\l"
+	.string "POKéMON.\p"
+	.string "Và giờ đây, câu chuyện của\n"
+	.string "{STR_VAR_1} cũng đã khắc sâu vào\l"
+	.string "tâm trí quý vị.\p"
+	.string "Chương trình hôm nay đến đây là hết.\n"
+	.string "Xin mời đón xem lần sau.$"
 
 gTVMassOutbreakText00::
-	.string "Greetings!\n"
-	.string "It's time for POKéMON NEWS.\p"
-	.string "We've just received word of a very\n"
-	.string "rare occurrence.\p"
-	.string "There have been reports of a mass\n"
-	.string "outbreak of {STR_VAR_2} in the vicinity\l"
-	.string "of {STR_VAR_1}.\p"
-	.string "{STR_VAR_2}, as you're probably aware,\n"
-	.string "is known as a POKéMON that's rare\l"
-	.string "and hard to find.\p"
-	.string "It sounds like a rare opportunity to\n"
-	.string "see the mystifying outbreak of\l"
-	.string "{STR_VAR_2} in the wild.\p"
-	.string "That's the news on POKéMON NEWS.$"
+	.string "Xin chào! Đã đến giờ POKéMON NEWS.\p"
+	.string "Chúng tôi vừa nhận được tin về một\n"
+	.string "hiện tượng vô cùng hiếm gặp.\p"
+	.string "Có báo cáo về một đợt xuất hiện hàng\n"
+	.string "loạt của {STR_VAR_2} ở khu vực\l"
+	.string "gần {STR_VAR_1}.\p"
+	.string "Như quý vị có lẽ đã biết,\n"
+	.string "{STR_VAR_2} là một POKéMON hiếm\l"
+	.string "và rất khó tìm.\p"
+	.string "Đây có vẻ là cơ hội hiếm có để chứng\n"
+	.string "kiến đợt xuất hiện bí ẩn của\l"
+	.string "{STR_VAR_2} ngoài tự nhiên.\p"
+	.string "Đó là toàn bộ tin tức từ POKéMON NEWS.$"
 
 gTV3CheersForPokeblocksText00::
-	.string "MC: We hope you're in good cheer,\n"
-	.string "“3 CHEERS FOR {POKEBLOCK}S” is here!\p"
-	.string "Today, we examine the {POKEBLOCK} blended\n"
-	.string "by {STR_VAR_1} and associates.\p"
-	.string "Without any delay, let me feed it\n"
-	.string "to my gourmet POKéMON GULPIN.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …$"
+	.string "MC: Chúc quý vị luôn vui vẻ, “BA LỜI\n"
+	.string "KHEN CHO {POKEBLOCK}” đã lên sóng!\p"
+	.string "Hôm nay, chúng ta sẽ đánh giá\n"
+	.string "{POKEBLOCK} do {STR_VAR_1} và\l"
+	.string "các cộng sự pha chế.\p"
+	.string "Không chần chừ thêm nữa, hãy để tôi\n"
+	.string "cho POKéMON sành ăn GULPIN của mình\l"
+	.string "nếm thử.\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...$"
 
 gTV3CheersForPokeblocksText01::
 	.string "GULPIN: Gubi! Gubii!\p"
-	.string "MC: And the verdict is very {STR_VAR_1}!\n"
-	.string "GULPIN says it tastes “{STR_VAR_2}!”\p"
-	.string "Thank you so much, {STR_VAR_3}!$"
+	.string "MC: Và kết luận là nó rất\n"
+	.string "{STR_VAR_1}! GULPIN nói rằng\l"
+	.string "hương vị của nó là\l"
+	.string "“{STR_VAR_2}!”\p"
+	.string "Cảm ơn rất nhiều, {STR_VAR_3}!$"
 
 gTV3CheersForPokeblocksText02::
-	.string "{STR_VAR_1}'s blending performance\n"
-	.string "left something to be desired.\p"
-	.string "If this TRAINER could blend better,\n"
-	.string "the {POKEBLOCK} would be much tastier.$"
+	.string "Màn pha chế của {STR_VAR_1} vẫn\n"
+	.string "còn nhiều điều chưa đạt yêu cầu.\p"
+	.string "Nếu HLV này pha chế tốt hơn,\n"
+	.string "{POKEBLOCK} sẽ ngon hơn nhiều.$"
 
 gTV3CheersForPokeblocksText03::
 	.string "GULPIN: Gubi! Gubii!\p"
-	.string "MC: Hmm… It's too {STR_VAR_1}.\n"
-	.string "GULPIN says it tastes “{STR_VAR_2}!”\p"
-	.string "It looks like {STR_VAR_3}'s errors\n"
-	.string "hurt the blending quality…$"
+	.string "MC: Hừm... Nó quá {STR_VAR_1}.\n"
+	.string "GULPIN nói rằng hương vị của nó là\l"
+	.string "“{STR_VAR_2}!”\p"
+	.string "Có vẻ những sai sót của\n"
+	.string "{STR_VAR_3} đã làm giảm chất\l"
+	.string "lượng pha chế...$"
 
 gTV3CheersForPokeblocksText04::
-	.string "It's too bad that {STR_VAR_1}'s\n"
-	.string "leading effort went to waste.\p"
-	.string "Let's hope {STR_VAR_2} can turn in\n"
-	.string "a better showing next time!$"
+	.string "Thật đáng tiếc khi nỗ lực dẫn đầu của\n"
+	.string "{STR_VAR_1} đã trở nên vô ích.\p"
+	.string "Hy vọng lần sau {STR_VAR_2} sẽ\n"
+	.string "thể hiện tốt hơn!$"
 
 gTV3CheersForPokeblocksText05::
-	.string "Tune in next time!\n"
-	.string "Our slogan is “3 CHEERS FOR {POKEBLOCK}S!”$"
+	.string "Hẹn gặp lại lần sau! Khẩu hiệu của chúng\n"
+	.string "tôi là “BA LỜI KHEN CHO {POKEBLOCK}!”$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer::
-	.string "Hi, there!\p"
-	.string "I'm a big fan of {STR_VAR_1}.\n"
-	.string "What's your opinion of {STR_VAR_1}?$"
+	.string "Xin chào!\p"
+	.string "Tôi là người hâm mộ cuồng nhiệt của\n"
+	.string "{STR_VAR_1}. Bạn nghĩ gì về\l"
+	.string "{STR_VAR_1}?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink::
-	.string "I see, I see. That's what you think\n"
-	.string "about the TRAINER.$"
+	.string "Tôi hiểu rồi. Vậy đó là suy nghĩ của bạn\n"
+	.string "về HLV ấy.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer::
-	.string "Have you completely forgotten\n"
-	.string "about {STR_VAR_1}?$"
+	.string "Bạn đã hoàn toàn quên mất\n"
+	.string "{STR_VAR_1} rồi sao?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2::
-	.string "I'm a big fan of {STR_VAR_1}.\n"
-	.string "What's your opinion of {STR_VAR_1}?$"
+	.string "Tôi là người hâm mộ cuồng nhiệt của\n"
+	.string "{STR_VAR_1}. Bạn nghĩ gì về\l"
+	.string "{STR_VAR_1}?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer::
-	.string "How strong would you rate {STR_VAR_1}\n"
-	.string "on a scale of one hundred?$"
+	.string "Nếu chấm trên thang điểm một trăm, bạn\n"
+	.string "đánh giá {STR_VAR_1} mạnh đến\l"
+	.string "mức nào?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer2::
-	.string "Have you completely forgotten\n"
-	.string "about {STR_VAR_1}?$"
+	.string "Bạn đã hoàn toàn quên mất\n"
+	.string "{STR_VAR_1} rồi sao?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer::
-	.string "Oh, I see!\n"
-	.string "You should meet {STR_VAR_1} sometime.\l"
-	.string "I'm sure you'll become a fan, too!$"
+	.string "Ồ, tôi hiểu rồi! Khi nào có dịp, bạn nên\n"
+	.string "gặp {STR_VAR_1}. Tôi chắc bạn\l"
+	.string "cũng sẽ trở thành người hâm mộ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo::
-	.string "I see, I see.\p"
-	.string "Thank you!\n"
-	.string "That's very useful to know.\p"
-	.string "I'll share this information with other\n"
-	.string "{STR_VAR_1} fans and discuss it.$"
+	.string "Tôi hiểu rồi.\p"
+	.string "Cảm ơn bạn! Thông tin này rất hữu ích.\p"
+	.string "Tôi sẽ chia sẻ với những người hâm mộ\n"
+	.string "khác của {STR_VAR_1} để cùng bàn\l"
+	.string "luận.$"
 
 LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial::
-	.string "There's going to be a TV special on\n"
-	.string "{STR_VAR_1} very soon.\p"
-	.string "I hope you catch it!$"
+	.string "Sắp tới sẽ có một chương trình TV đặc\n"
+	.string "biệt về {STR_VAR_1}.\p"
+	.string "Hy vọng bạn sẽ đón xem!$"
 
 gTVTrainerFanClubSpecialText00::
-	.string "TRAINER FAN CLUB\n"
-	.string "{STR_VAR_1} SPECIAL!\p"
-	.string "This is a special presentation for\n"
-	.string "the fans of {STR_VAR_1} all over HOENN!\p"
-	.string "Today, we ask the question, “What do\n"
-	.string "people think of {STR_VAR_1}?”\p"
-	.string "We posed the question to {STR_VAR_2}\n"
-	.string "as the TRAINER representative.\p"
-	.string "We asked, “In one word, how would\n"
-	.string "you describe {STR_VAR_1}?”\p"
-	.string "The reply: “{STR_VAR_3}.”\p"
-	.string "Kudos to {STR_VAR_2}!\n"
-	.string "What a perceptive opinion!\p"
-	.string "“{STR_VAR_3} {STR_VAR_1}.”\n"
-	.string "It has such a nice ring to it!\p"
-	.string "{STR_VAR_2} also scored {STR_VAR_1}'s\n"
-	.string "strength from 0 to 100.$"
+	.string "TRAINER FAN CLUB {STR_VAR_1}\n"
+	.string "SPECIAL!\p"
+	.string "Đây là chương trình đặc biệt dành cho\n"
+	.string "người hâm mộ {STR_VAR_1} trên\l"
+	.string "khắp HOENN!\p"
+	.string "Hôm nay, chúng ta sẽ đặt câu hỏi: “Mọi\n"
+	.string "người nghĩ gì về {STR_VAR_1}?”\p"
+	.string "Chúng tôi đã hỏi {STR_VAR_2} với\n"
+	.string "tư cách đại diện cho các HLV.\p"
+	.string "Chúng tôi hỏi: “Nếu dùng một từ để miêu\n"
+	.string "tả {STR_VAR_1}, bạn sẽ chọn từ\l"
+	.string "nào?”\p"
+	.string "Câu trả lời là: “{STR_VAR_3}.”\p"
+	.string "Xin khen ngợi {STR_VAR_2}! Quả là\n"
+	.string "một nhận xét sâu sắc!\p"
+	.string "“{STR_VAR_3}\n"
+	.string "{STR_VAR_1}.” Nghe thật thuận\l"
+	.string "tai!\p"
+	.string "{STR_VAR_2} cũng đã chấm sức\n"
+	.string "mạnh của {STR_VAR_1} theo thang\l"
+	.string "điểm từ 0 đến 100.$"
 
 gTVTrainerFanClubSpecialText01::
-	.string "The score was {STR_VAR_3} points!\n"
-	.string "That is a very high score indeed!\p"
-	.string "{STR_VAR_2} must obviously hold\n"
-	.string "{STR_VAR_1} in very high esteem.$"
+	.string "Số điểm là {STR_VAR_3}! Quả thực\n"
+	.string "là một điểm số rất cao!\p"
+	.string "Rõ ràng {STR_VAR_2} vô cùng kính\n"
+	.string "trọng {STR_VAR_1}.$"
 
 gTVTrainerFanClubSpecialText02::
-	.string "The score was {STR_VAR_3} points!\n"
-	.string "That is quite a good score.\p"
-	.string "{STR_VAR_2} must consider\n"
-	.string "{STR_VAR_1} to be a rival.$"
+	.string "Số điểm là {STR_VAR_3}! Đây là\n"
+	.string "một điểm số khá tốt.\p"
+	.string "Hẳn {STR_VAR_2} coi\n"
+	.string "{STR_VAR_1} là đối thủ.$"
 
 gTVTrainerFanClubSpecialText03::
-	.string "The score was {STR_VAR_3} points!\n"
-	.string "That's a rather weak score.\p"
-	.string "{STR_VAR_2} must consider\n"
-	.string "{STR_VAR_1} to be a mere sidekick.$"
+	.string "Số điểm là {STR_VAR_3}! Đây là\n"
+	.string "một điểm số khá thấp.\p"
+	.string "Hẳn {STR_VAR_2} chỉ coi\n"
+	.string "{STR_VAR_1} là bạn đồng hành phụ\l"
+	.string "trợ.$"
 
 gTVTrainerFanClubSpecialText04::
-	.string "The score was {STR_VAR_3} point(s)!\n"
-	.string "That's a terrible score.\p"
-	.string "{STR_VAR_2} must consider\n"
-	.string "{STR_VAR_1} to be an underling.$"
+	.string "Số điểm là {STR_VAR_3}! Điểm số\n"
+	.string "thật tệ.\p"
+	.string "Hẳn {STR_VAR_2} coi\n"
+	.string "{STR_VAR_1} là cấp dưới.$"
 
 gTVTrainerFanClubSpecialText05::
-	.string "There you have it, folks!\p"
-	.string "I think we all learned something\n"
-	.string "new about {STR_VAR_1}.\p"
-	.string "In closing, I'll leave you with\n"
-	.string "{STR_VAR_2}'s words.\p"
+	.string "Quý vị đã nghe rõ rồi đấy!\p"
+	.string "Tôi nghĩ tất cả chúng ta đều vừa biết\n"
+	.string "thêm một điều mới về\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Để khép lại chương trình, xin gửi đến\n"
+	.string "quý vị lời của {STR_VAR_2}.\p"
 	.string "{STR_VAR_3} {STR_VAR_1}!$"
 
 gTVNameRaterText00::
-	.string "And now, it's time for…\n"
-	.string "THE NAME RATER SHOW.\p"
-	.string "I tell your POKéMON's fortune from\n"
-	.string "the nickname you've bestowed.\p"
-	.string "Advice is what I have to give, and it is\n"
-	.string "helpful advice that I offer.\p"
-	.string "Today, I shall do a reading of\n"
-	.string "the nickname {STR_VAR_3} of {STR_VAR_1}'s\l"
-	.string "POKéMON {STR_VAR_2}.\p"
-	.string "Hmhm…\p"
-	.string "Hmm…\n"
-	.string "This nickname is…$"
+	.string "Và giờ, đã đến lúc dành cho...\n"
+	.string "CHƯƠNG TRÌNH NAME RATER.\p"
+	.string "Tôi sẽ đoán vận mệnh POKéMON của bạn\n"
+	.string "từ biệt danh mà bạn đã đặt cho nó.\p"
+	.string "Việc của tôi là đưa ra lời khuyên, và đó\n"
+	.string "luôn là những lời khuyên hữu ích.\p"
+	.string "Hôm nay, tôi sẽ luận giải biệt danh\n"
+	.string "{STR_VAR_3} của POKéMON\l"
+	.string "{STR_VAR_2} thuộc về\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Hừm hừm...\p"
+	.string "Hừm... Biệt danh này...$"
 
 gTVNameRaterText01::
-	.string "A nickname that hints at talent in many\n"
-	.string "different ways.\p"
-	.string "I urge this TRAINER to take courage\n"
-	.string "and take on many challenges.$"
+	.string "Một biệt danh gợi lên tài năng trên\n"
+	.string "nhiều phương diện.\p"
+	.string "Tôi khuyên HLV này hãy can đảm\n"
+	.string "đương đầu với nhiều thử thách.$"
 
 gTVNameRaterText02::
-	.string "A nickname that perfectly complements\n"
-	.string "{STR_VAR_1}, the TRAINER's name.\p"
-	.string "It suggests that you will forge a fine\n"
-	.string "partnership with precise timing.$"
+	.string "Một biệt danh bổ trợ hoàn hảo cho tên\n"
+	.string "của HLV là {STR_VAR_1}.\p"
+	.string "Nó báo hiệu rằng hai bạn sẽ tạo nên một\n"
+	.string "mối quan hệ hợp tác ăn ý và đúng thời\l"
+	.string "điểm.$"
 
 gTVNameRaterText03::
-	.string "A nickname fit for a unique individual\n"
-	.string "of a POKéMON!\p"
-	.string "If raised properly, this POKéMON's\n"
-	.string "uniqueness will bloom excessively!$"
+	.string "Một biệt danh xứng đáng với một\n"
+	.string "POKéMON độc nhất vô nhị!\p"
+	.string "Nếu được nuôi dạy đúng cách, nét độc\n"
+	.string "đáo của POKéMON này sẽ nở rộ rực rỡ!$"
 
 gTVNameRaterText04::
-	.string "A nickname that will nurture the caring\n"
-	.string "and compassionate side of POKéMON.\p"
-	.string "If raised properly, this POKéMON will\n"
-	.string "come to exhibit real warmth!$"
+	.string "Một biệt danh sẽ vun đắp khía cạnh ân\n"
+	.string "cần và giàu lòng trắc ẩn của POKéMON.\p"
+	.string "Nếu được nuôi dạy đúng cách, POKéMON\n"
+	.string "này sẽ thể hiện sự ấm áp chân thành!$"
 
 gTVNameRaterText05::
-	.string "A very fine nickname that hints at\n"
-	.string "greatness to come.\p"
-	.string "I am intrigued about what the future\n"
-	.string "holds in store for this POKéMON.$"
+	.string "Một biệt danh rất hay, báo hiệu những\n"
+	.string "điều vĩ đại trong tương lai.\p"
+	.string "Tôi rất tò mò muốn biết tương lai đang\n"
+	.string "dành điều gì cho POKéMON này.$"
 
 gTVNameRaterText06::
-	.string "A good nickname that should make the\n"
-	.string "POKéMON hale and hearty!\p"
-	.string "That POKéMON should remain fit and\n"
-	.string "robust for a long, long time.$"
+	.string "Một biệt danh hay, sẽ giúp POKéMON luôn\n"
+	.string "khỏe mạnh và tràn đầy sức sống!\p"
+	.string "POKéMON ấy hẳn sẽ sung sức và cường\n"
+	.string "tráng trong một thời gian rất dài.$"
 
 gTVNameRaterText07::
-	.string "A good nickname that should make the\n"
-	.string "POKéMON very active!\p"
-	.string "I should think that this POKéMON will be\n"
-	.string "a strong performer in battles.$"
+	.string "Một biệt danh hay, sẽ khiến POKéMON vô\n"
+	.string "cùng năng động!\p"
+	.string "Tôi nghĩ POKéMON này sẽ thể hiện rất\n"
+	.string "xuất sắc trong các trận đấu.$"
 
 gTVNameRaterText08::
-	.string "An appealing nickname that should make\n"
-	.string "the POKéMON very charming!\p"
-	.string "I don't doubt that this POKéMON will be\n"
-	.string "quite the charmer in POKéMON CONTESTS.$"
+	.string "Một biệt danh cuốn hút, sẽ khiến\n"
+	.string "POKéMON trở nên vô cùng duyên dáng!\p"
+	.string "Tôi tin POKéMON này sẽ rất biết cách\n"
+	.string "chinh phục khán giả trong POKéMON\l"
+	.string "CONTESTS.$"
 
 gTVNameRaterText09::
-	.string "The nickname {STR_VAR_1} is rooted by\n"
-	.string "the letter “{STR_VAR_3}.”\p"
-	.string "That letter is supported by the first\n"
-	.string "letter “{STR_VAR_2},” which gives it a solid sense\l"
-	.string "of presence as a nickname.$"
+	.string "Biệt danh {STR_VAR_1} lấy chữ\n"
+	.string "“{STR_VAR_3}” làm nền tảng.\p"
+	.string "Chữ ấy được nâng đỡ bởi chữ cái đầu\n"
+	.string "tiên “{STR_VAR_2}”, tạo cho biệt\l"
+	.string "danh một cảm giác hiện diện vững chắc.$"
 
 gTVNameRaterText10::
-	.string "The nickname {STR_VAR_1} is very\n"
-	.string "shapely in a pleasing manner.\p"
-	.string "The presence of the letters “{STR_VAR_2}” and\n"
-	.string "“{STR_VAR_3}”--now that is remarkably good!$"
+	.string "Biệt danh {STR_VAR_1} có hình\n"
+	.string "thức rất cân đối và dễ chịu.\p"
+	.string "Sự hiện diện của hai chữ\n"
+	.string "“{STR_VAR_2}” và\l"
+	.string "“{STR_VAR_3}” quả thực vô cùng\l"
+	.string "tuyệt vời!$"
 
 gTVNameRaterText11::
-	.string "The nickname {STR_VAR_1}--it has a\n"
-	.string "sublime, flowing feel to it.\p"
-	.string "The flow from the initial letter “{STR_VAR_2}” to\n"
-	.string "“{STR_VAR_3}” is especially wonderful.$"
+	.string "Biệt danh {STR_VAR_1} mang một\n"
+	.string "cảm giác uyển chuyển và thanh cao.\p"
+	.string "Đặc biệt tuyệt vời là sự chuyển tiếp\n"
+	.string "từ chữ đầu “{STR_VAR_2}” sang\l"
+	.string "“{STR_VAR_3}”.$"
 
 gTVNameRaterText12::
-	.string "Let's examine other examples of fine\n"
-	.string "nicknames, shall we?$"
+	.string "Chúng ta hãy cùng xem xét những ví dụ\n"
+	.string "khác về các biệt danh hay nhé?$"
 
 gTVNameRaterText13::
-	.string "Try this example. Take a part of the\n"
-	.string "TRAINER name of {STR_VAR_1}, and end\l"
-	.string "up with the fine nickname {STR_VAR_2}{STR_VAR_3}.$"
+	.string "Hãy thử ví dụ này. Lấy một phần từ tên\n"
+	.string "HLV là {STR_VAR_1}, ta sẽ có\l"
+	.string "biệt danh tuyệt vời\l"
+	.string "{STR_VAR_2}{STR_VAR_3}.$"
 
 gTVNameRaterText14::
-	.string "The nickname {STR_VAR_2}{STR_VAR_3} would also work\n"
-	.string "quite well.$"
+	.string "Biệt danh\n"
+	.string "{STR_VAR_2}{STR_VAR_3}\l"
+	.string "cũng sẽ rất phù hợp.$"
 
 gTVNameRaterText15::
-	.string "The POKéMON's species name of\n"
-	.string "{STR_VAR_2} could be used as the basis\l"
-	.string "for making the nickname {STR_VAR_1}{STR_VAR_3}.$"
+	.string "Tên loài POKéMON là {STR_VAR_2}\n"
+	.string "có thể được dùng làm cơ sở để tạo ra\l"
+	.string "biệt danh\l"
+	.string "{STR_VAR_1}{STR_VAR_3}.$"
 
 gTVNameRaterText16::
-	.string "{STR_VAR_1}{STR_VAR_3} would also be an effective\n"
-	.string "nickname.$"
+	.string "{STR_VAR_1}{STR_VAR_3}\n"
+	.string "cũng sẽ là một biệt danh hiệu quả.$"
 
 gTVNameRaterText17::
-	.string "What should always be avoided is using\n"
-	.string "another POKéMON species name.\p"
-	.string "For instance, avoid taking the name of\n"
-	.string "{STR_VAR_2} to make the nickname {STR_VAR_1}{STR_VAR_3}.\l"
-	.string "That is unacceptable.$"
+	.string "Điều luôn phải tránh là sử dụng tên của\n"
+	.string "một loài POKéMON khác.\p"
+	.string "Chẳng hạn, đừng lấy tên\n"
+	.string "{STR_VAR_2} để tạo thành biệt\l"
+	.string "danh\l"
+	.string "{STR_VAR_1}{STR_VAR_3}.\l"
+	.string "Như thế là không thể chấp nhận được.$"
 
 gTVNameRaterText18::
-	.string "I must say that {STR_VAR_1} is quite\n"
-	.string "a good nickname.\p"
-	.string "I hope that the TRAINER will continue\n"
-	.string "to treat {STR_VAR_1} with love.\p"
-	.string "That's it for today's show.\n"
-	.string "May we meet again.$"
+	.string "Tôi phải nói rằng {STR_VAR_1} là\n"
+	.string "một biệt danh khá hay.\p"
+	.string "Tôi hy vọng HLV sẽ tiếp tục dành\n"
+	.string "tình yêu thương cho\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Chương trình hôm nay đến đây là hết.\n"
+	.string "Mong chúng ta sẽ lại gặp nhau.$"
 
 gTVPokemonAnglerText00::
 	.string "{STR_VAR_2} ANGLER\p"
-	.string "ANNOUNCER: Hello! Today, we'll get tips\n"
-	.string "on fishing for {STR_VAR_2}.\p"
-	.string "GURU, what advice can you give for\n"
-	.string "catching {STR_VAR_2}?\p"
-	.string "GURU: Hm? Catching {STR_VAR_2}?\n"
-	.string "Well, let me tell you, be patient and\l"
-	.string "wait. That's the bottom line.\p"
-	.string "Do you see {STR_VAR_1} over there?\n"
-	.string "That TRAINER makes a good example.\p"
-	.string "That TRAINER's already had\n"
-	.string "{STR_VAR_3} POKéMON get away.\p"
-	.string "But there {STR_VAR_1} waits. No giving up.\n"
-	.string "That's the law for catching {STR_VAR_2}.\p"
-	.string "ANNOUNCER: I see…\p"
-	.string "Oh! {STR_VAR_1} has finally landed an\n"
-	.string "elusive {STR_VAR_2}!\p"
-	.string "The TRAINER appears close to tears\n"
-	.string "out of sheer joy!\p"
-	.string "Seeing that elated look, I'm getting\n"
-	.string "the itch to go fishing, too!\p"
-	.string "Viewers, why not take this as a cue to\n"
-	.string "try some {STR_VAR_2} fishing?\p"
-	.string "Until our next broadcast, farewell and\n"
-	.string "good fishing to you all!$"
+	.string "NGƯỜI DẪN: Xin chào! Hôm nay, chúng ta\n"
+	.string "sẽ tìm hiểu bí quyết câu\l"
+	.string "{STR_VAR_2}.\p"
+	.string "GURU, ông có lời khuyên gì để bắt được\n"
+	.string "{STR_VAR_2}?\p"
+	.string "GURU: Hửm? Bắt {STR_VAR_2} à?\n"
+	.string "Tôi nói cho mà biết, hãy kiên nhẫn chờ\l"
+	.string "đợi. Đó là điều quan trọng nhất.\p"
+	.string "Có thấy {STR_VAR_1} ở đằng kia\n"
+	.string "không? HLV đó là một tấm gương\l"
+	.string "tốt.\p"
+	.string "HLV ấy đã để sổng tới\n"
+	.string "{STR_VAR_3} POKéMON rồi.\p"
+	.string "Nhưng {STR_VAR_1} vẫn đứng đó\n"
+	.string "chờ. Không chịu bỏ cuộc. Đó là nguyên\l"
+	.string "tắc để bắt được {STR_VAR_2}.\p"
+	.string "NGƯỜI DẪN: Tôi hiểu rồi...\p"
+	.string "Ồ! Cuối cùng {STR_VAR_1} đã câu\n"
+	.string "được một {STR_VAR_2} khó bắt!\p"
+	.string "HLV ấy dường như sắp rơi nước\n"
+	.string "mắt vì quá vui!\p"
+	.string "Nhìn vẻ mặt hân hoan đó khiến tôi cũng\n"
+	.string "muốn đi câu cá!\p"
+	.string "Quý vị khán giả, sao không nhân dịp này\n"
+	.string "thử đi câu {STR_VAR_2}?\p"
+	.string "Hẹn gặp lại trong buổi phát sóng tiếp\n"
+	.string "theo. Chúc tất cả quý vị câu cá vui vẻ!$"
 
 gTVPokemonAnglerText01::
 	.string "{STR_VAR_2} ANGLER\p"
-	.string "ANNOUNCER: Hello! Today, we'll get tips\n"
-	.string "on fishing for {STR_VAR_2}.\p"
-	.string "GURU, what advice can you give for\n"
-	.string "catching {STR_VAR_2}?\p"
-	.string "GURU: Hm? Catching {STR_VAR_2}?\n"
-	.string "Well, let me tell you, use your fishing\l"
-	.string "ROD with vigor!\p"
-	.string "Do you see {STR_VAR_1} over there?\n"
-	.string "See how the ROD is handled?\p"
-	.string "That TRAINER's already caught\n"
-	.string "{STR_VAR_3} in a row.\p"
-	.string "ANNOUNCER: It's incredible!\n"
-	.string "It looks like a storm…\p"
-	.string "Seeing technique of that caliber, I'm\n"
-	.string "getting the itch to go fishing, too.\p"
-	.string "Viewers, why not take this as a cue to\n"
-	.string "try some {STR_VAR_2} fishing?\p"
-	.string "Until our next broadcast, farewell and\n"
-	.string "good fishing to you all!$"
+	.string "NGƯỜI DẪN: Xin chào! Hôm nay, chúng ta\n"
+	.string "sẽ tìm hiểu bí quyết câu\l"
+	.string "{STR_VAR_2}.\p"
+	.string "GURU, ông có lời khuyên gì để bắt được\n"
+	.string "{STR_VAR_2}?\p"
+	.string "GURU: Hửm? Bắt {STR_VAR_2} à?\n"
+	.string "Tôi nói cho mà biết, hãy vung ROD thật\l"
+	.string "mạnh mẽ!\p"
+	.string "Có thấy {STR_VAR_1} ở đằng kia\n"
+	.string "không? Nhìn cách sử dụng ROD kìa!\p"
+	.string "HLV ấy đã bắt được liên tiếp\n"
+	.string "{STR_VAR_3} con rồi.\p"
+	.string "NGƯỜI DẪN: Thật không thể tin nổi!\n"
+	.string "Trông cứ như một cơn bão...\p"
+	.string "Chứng kiến kỹ thuật điêu luyện đến thế\n"
+	.string "khiến tôi cũng muốn đi câu cá.\p"
+	.string "Quý vị khán giả, sao không nhân dịp này\n"
+	.string "thử đi câu {STR_VAR_2}?\p"
+	.string "Hẹn gặp lại trong buổi phát sóng tiếp\n"
+	.string "theo. Chúc tất cả quý vị câu cá vui vẻ!$"
 
 gTVPokemonTodayFailedText00::
-	.string "Hello!\p"
-	.string "It's time for POKéMON TODAY!\p"
-	.string "BIG SIS: Hi! Is everyone peachy and\n"
-	.string "perky today?\p"
-	.string "Today, we're going to look at {STR_VAR_1}'s\n"
-	.string "POKéMON {STR_VAR_2}!\p"
-	.string "BIG BRO: Yeah! That's what we're going\n"
-	.string "to do!$"
+	.string "Xin chào!\p"
+	.string "Đã đến giờ POKéMON TODAY!\p"
+	.string "BIG SIS: Chào mọi người! Hôm nay tất cả\n"
+	.string "có vui vẻ và tràn đầy năng lượng\l"
+	.string "không?\p"
+	.string "Hôm nay, chúng ta sẽ tìm hiểu POKéMON\n"
+	.string "{STR_VAR_2} của\l"
+	.string "{STR_VAR_1}!\p"
+	.string "BIG BRO: Đúng vậy! Chúng ta sẽ làm thế!$"
 
 gTVPokemonTodayFailedText01::
-	.string "Oh!\n"
-	.string "Speaking of {STR_VAR_1}…\p"
-	.string "BIG SIS, I saw the TRAINER with my very\n"
-	.string "own eyes!\p"
-	.string "BIG SIS: Oh, what did you see?\p"
-	.string "BIG BRO: Well, I had to go on a trip to\n"
+	.string "Ồ! Nhắc đến {STR_VAR_1} mới\n"
+	.string "nhớ...\p"
+	.string "BIG SIS, chính mắt em đã nhìn thấy\n"
+	.string "HLV ấy!\p"
+	.string "BIG SIS: Ồ, em đã thấy gì?\p"
+	.string "BIG BRO: Chuyện là em phải đi đến\n"
 	.string "{STR_VAR_2}.\p"
-	.string "That's when I happened to come across\n"
-	.string "{STR_VAR_1}, who was trying to catch the\l"
-	.string "POKéMON {STR_VAR_3}, but…$"
+	.string "Khi ấy, em tình cờ gặp\n"
+	.string "{STR_VAR_1} đang cố bắt POKéMON\l"
+	.string "{STR_VAR_3}, nhưng...$"
 
 gTVPokemonTodayFailedText02::
-	.string "The POKéMON managed to get away!\p"
-	.string "It ended up wasting this many\n"
-	.string "POKé BALLS: {STR_VAR_2}!\p"
-	.string "You should have seen the expression\n"
-	.string "of frustration on {STR_VAR_1}'s face when\l"
-	.string "the POKéMON took off!$"
+	.string "POKéMON ấy đã chạy thoát!\p"
+	.string "Kết quả là số POKé BALLS bị lãng phí lên\n"
+	.string "đến: {STR_VAR_2}!\p"
+	.string "Mọi người phải thấy vẻ mặt thất vọng\n"
+	.string "của {STR_VAR_1} khi POKéMON ấy\l"
+	.string "bỏ chạy mới được!$"
 
 gTVPokemonTodayFailedText03::
-	.string "But {STR_VAR_1} goofed and made the\n"
-	.string "POKéMON faint!\p"
-	.string "It ended up wasting this many\n"
-	.string "POKé BALLS: {STR_VAR_2}!\p"
-	.string "You should have seen the expression\n"
-	.string "of stunned dismay on {STR_VAR_1}'s face\l"
-	.string "when the POKéMON fainted!$"
+	.string "Nhưng {STR_VAR_1} đã sơ suất và\n"
+	.string "khiến POKéMON ấy ngất xỉu!\p"
+	.string "Kết quả là số POKé BALLS bị lãng phí lên\n"
+	.string "đến: {STR_VAR_2}!\p"
+	.string "Mọi người phải thấy vẻ mặt bàng hoàng\n"
+	.string "của {STR_VAR_1} khi POKéMON ấy\l"
+	.string "ngất xỉu mới được!$"
 
 gTVPokemonTodayFailedText04::
-	.string "BIG SIS: Hey, there!\n"
-	.string "That's not nice!\p"
-	.string "You shouldn't be laughing at other\n"
-	.string "people's misfortune!\p"
-	.string "Oh, poor {STR_VAR_1}.\n"
-	.string "What a shame!\p"
-	.string "BIG BRO: That's true!\n"
-	.string "Sorry for laughing.$"
+	.string "BIG SIS: Này! Như thế không hay đâu!\p"
+	.string "Không nên cười trên nỗi bất hạnh của\n"
+	.string "người khác chứ!\p"
+	.string "Ôi, {STR_VAR_1} đáng thương.\n"
+	.string "Thật tội nghiệp!\p"
+	.string "BIG BRO: Đúng vậy! Xin lỗi vì đã cười.$"
 
 gTVPokemonTodayFailedText05::
-	.string "BIG SIS: Bufufu…\p"
-	.string "BIG BRO: Hey!\n"
-	.string "You just laughed, too!\p"
-	.string "BIG SIS: Huh?!\p"
-	.string "I didn't laugh!\n"
-	.string "Honestly, I didn't!\p"
-	.string "Oh, poor {STR_VAR_1}.\n"
-	.string "What a shame!\p"
-	.string "BIG BRO: …$"
+	.string "BIG SIS: Phư phư phư...\p"
+	.string "BIG BRO: Này! Chị cũng vừa cười đấy\n"
+	.string "thôi!\p"
+	.string "BIG SIS: Hả?!\p"
+	.string "Tôi đâu có cười! Thật đấy, tôi không\n"
+	.string "cười mà!\p"
+	.string "Ôi, {STR_VAR_1} đáng thương.\n"
+	.string "Thật tội nghiệp!\p"
+	.string "BIG BRO: ...$"
 
 gTVPokemonTodayFailedText06::
-	.string "BIG SIS: That's enough silliness!\n"
-	.string "Let's look at today's POKéMON…\p"
-	.string "Huh?\n"
-	.string "We're out of time already?\p"
-	.string "Aww!\n"
-	.string "We couldn't profile a POKéMON today!\p"
-	.string "BIG BRO: See you again next time!\p"
-	.string "BIG SIS: Hey, don't end the show\n"
-	.string "without me!$"
+	.string "BIG SIS: Đùa thế đủ rồi! Hãy cùng xem\n"
+	.string "POKéMON hôm nay...\p"
+	.string "Hả? Đã hết giờ rồi sao?\p"
+	.string "Ôi! Hôm nay chúng ta chưa kịp giới thiệu\n"
+	.string "một POKéMON nào cả!\p"
+	.string "BIG BRO: Hẹn gặp lại lần sau!\p"
+	.string "BIG SIS: Này, đừng kết thúc chương\n"
+	.string "trình khi chưa có tôi chứ!$"
 
 gTVPokemonTodaySuccessfulText00::
-	.string "Hello!\p"
-	.string "It's time for POKéMON TODAY!\p"
-	.string "BIG SIS: Hi! Is everyone peachy and\n"
-	.string "perky today?\p"
-	.string "Today, we're going to look at {STR_VAR_1}'s\n"
-	.string "POKéMON {STR_VAR_2}!\p"
-	.string "BIG BRO: Yeah! That's what we're going\n"
-	.string "to do!$"
+	.string "Xin chào!\p"
+	.string "Đã đến giờ của POKéMON TODAY!\p"
+	.string "BIG SIS: Chào mọi người! Hôm nay ai\n"
+	.string "cũng khỏe khoắn và tràn đầy sức sống\l"
+	.string "chứ?\p"
+	.string "Hôm nay, chúng ta sẽ tìm hiểu về\n"
+	.string "POKéMON {STR_VAR_2} của\l"
+	.string "{STR_VAR_1}!\p"
+	.string "BIG BRO: Phải! Chính xác là vậy!$"
 
 gTVPokemonTodaySuccessfulText01::
-	.string "BIG SIS: {STR_VAR_1} gave the nickname\n"
-	.string "{STR_VAR_3} to the {STR_VAR_2}!\p"
-	.string "It sounds like {STR_VAR_3} is getting\n"
-	.string "good, loving care!$"
+	.string "BIG SIS: {STR_VAR_1} đã đặt biệt\n"
+	.string "danh {STR_VAR_3} cho\l"
+	.string "{STR_VAR_2}!\p"
+	.string "Có vẻ {STR_VAR_3} đang được yêu\n"
+	.string "thương và chăm sóc rất chu đáo!$"
 
 gTVPokemonTodaySuccessfulText02::
-	.string "BIG BRO: The TRAINER had to throw this\n"
-	.string "many POKé BALLS to catch it: {STR_VAR_3}!\p"
-	.string "It finally took a single {STR_VAR_2}\n"
-	.string "to catch it!$"
+	.string "BIG BRO: HLV đã phải ném tổng cộng\n"
+	.string "ngần này POKé BALLS để bắt nó:\l"
+	.string "{STR_VAR_3}!\p"
+	.string "Cuối cùng, chỉ một {STR_VAR_2}\n"
+	.string "đã bắt được nó!$"
 
 gTVPokemonTodaySuccessfulText03::
-	.string "BIG SIS: If it was that easy to catch,\n"
-	.string "it must have been destiny that brought\l"
-	.string "{STR_VAR_1} and the {STR_VAR_2} together!$"
+	.string "BIG SIS: Nếu bắt dễ dàng đến thế, hẳn\n"
+	.string "định mệnh đã đưa {STR_VAR_1} và\l"
+	.string "{STR_VAR_2} đến với nhau!$"
 
 gTVPokemonTodaySuccessfulText04::
-	.string "BIG SIS: Wow! That's so neat!\p"
-	.string "But you know what they say, a POKéMON\n"
-	.string "that takes a lot of effort to catch\l"
-	.string "earns the love of its TRAINER!$"
+	.string "BIG SIS: Chà! Tuyệt quá!\p"
+	.string "Nhưng người ta vẫn nói rằng, POKéMON\n"
+	.string "càng khó bắt thì càng nhận được nhiều\l"
+	.string "tình yêu từ HLV của mình!$"
 
 gTVPokemonTodaySuccessfulText05::
-	.string "BIG SIS: {STR_VAR_1}'s {STR_VAR_2} is a\n"
-	.string "memorable POKéMON because it took an\l"
-	.string "invaluable MASTER BALL to catch!\p"
-	.string "BIG BRO: Wow! That's mega-awesome!\p"
-	.string "BIG SIS: {STR_VAR_1} must have really\n"
-	.string "wanted that {STR_VAR_2}, for sure!$"
+	.string "BIG SIS: {STR_VAR_2} của\n"
+	.string "{STR_VAR_1} là một POKéMON khó\l"
+	.string "quên, vì đã được bắt bằng MASTER BALL\l"
+	.string "vô giá!\p"
+	.string "BIG BRO: Chà! Siêu tuyệt vời!\p"
+	.string "BIG SIS: Chắc chắn {STR_VAR_1}\n"
+	.string "đã rất muốn có {STR_VAR_2}!$"
 
 gTVPokemonTodaySuccessfulText06::
-	.string "BIG BRO: Then to give the nickname\n"
-	.string "{STR_VAR_3} to that {STR_VAR_2}…\p"
-	.string "You really get a good idea about\n"
-	.string "{STR_VAR_1}'s TRAINER sense.\p"
-	.string "BIG SIS: I second that notion!$"
+	.string "BIG BRO: Rồi còn đặt biệt danh\n"
+	.string "{STR_VAR_3} cho\l"
+	.string "{STR_VAR_2} ấy nữa...\p"
+	.string "Chỉ vậy cũng đủ thấy gu của HLV\n"
+	.string "{STR_VAR_1} rồi.\p"
+	.string "BIG SIS: Tôi hoàn toàn đồng ý!$"
 
 gTVPokemonTodaySuccessfulText07::
-	.string "If it were me, I'd give that nickname\n"
-	.string "to something like this {STR_VAR_3}!\p"
-	.string "BIG BRO: Whoa! That could be the start\n"
-	.string "of something new!$"
+	.string "Nếu là tôi, tôi sẽ đặt biệt danh ấy cho\n"
+	.string "một {STR_VAR_3} như thế này!\p"
+	.string "BIG BRO: Chà! Biết đâu đó lại là khởi\n"
+	.string "đầu của một trào lưu mới!$"
 
 gTVPokemonTodaySuccessfulText08::
-	.string "{STR_VAR_2} the {STR_VAR_1}?\n"
-	.string "Doesn't that sound perfect?\p"
-	.string "The letters and everything--they\n"
-	.string "sound just right for the POKéMON\l"
-	.string "{STR_VAR_1}!\p"
-	.string "BIG BRO: Yeah, true, that!$"
+	.string "{STR_VAR_2}, chú\n"
+	.string "{STR_VAR_1} ư? Nghe hoàn hảo\l"
+	.string "quá còn gì?\p"
+	.string "Cả cách ghép chữ lẫn âm điệu đều cực\n"
+	.string "kỳ hợp với POKéMON {STR_VAR_1}!\p"
+	.string "BIG BRO: Ừ, đúng thật!$"
 
 gTVPokemonTodaySuccessfulText09::
-	.string "As far as I know, no TRAINER has ever\n"
-	.string "given the nickname {STR_VAR_2} to their\l"
-	.string "{STR_VAR_1}!\p"
-	.string "BIG BRO: That just goes to show what\n"
-	.string "great taste the TRAINER has in picking\l"
-	.string "nicknames!$"
+	.string "Theo tôi biết, chưa có HLV nào\n"
+	.string "từng đặt biệt danh {STR_VAR_2}\l"
+	.string "cho {STR_VAR_1} của mình!\p"
+	.string "BIG BRO: Thế mới thấy HLV này có gu\n"
+	.string "đặt biệt danh tuyệt vời đến mức nào!$"
 
 gTVPokemonTodaySuccessfulText10::
-	.string "The next time I catch a POKéMON,\n"
-	.string "I should give it the name {STR_VAR_2}.\p"
-	.string "BIG BRO: Huh? Me, too!\n"
-	.string "I'll use the nickname {STR_VAR_2}, too!$"
+	.string "Lần tới bắt được một POKéMON, tôi sẽ\n"
+	.string "đặt tên nó là {STR_VAR_2}.\p"
+	.string "BIG BRO: Hả? Tôi cũng vậy! Tôi cũng sẽ\n"
+	.string "dùng biệt danh {STR_VAR_2}!$"
 
 gTVPokemonTodaySuccessfulText11::
-	.string "BIG SIS: Oh, no!\n"
-	.string "Look at the time!\p"
-	.string "Well, gang, this is it for today.\n"
-	.string "See you again next time!\p"
-	.string "BIG BRO: Remember, it could be your\n"
-	.string "POKéMON in the spotlight next time!$"
+	.string "BIG SIS: Ôi không! Nhìn giờ kìa!\p"
+	.string "Thôi, chương trình hôm nay xin kết\n"
+	.string "thúc tại đây. Hẹn gặp lại lần sau!\p"
+	.string "BIG BRO: Hãy nhớ rằng, lần tới chính\n"
+	.string "POKéMON của bạn có thể sẽ trở thành\l"
+	.string "tâm điểm đấy!$"
 
 SmartShopper_Text_Intro::
-	.string "Hello!\p"
-	.string "It's time for TODAY'S SMART SHOPPER.\p"
-	.string "INTERVIEWER: How are you, viewers?\p"
-	.string "Today we're visiting a shop\n"
-	.string "in {STR_VAR_2}.\p"
-	.string "Let's check on what the hot sellers\n"
-	.string "have been recently.$"
+	.string "Xin chào!\p"
+	.string "Đã đến giờ của TODAY'S SMART SHOPPER.\p"
+	.string "PHỎNG VẤN: Quý khán giả có khỏe\n"
+	.string "không?\p"
+	.string "Hôm nay, chúng tôi sẽ ghé thăm một cửa\n"
+	.string "hàng ở {STR_VAR_2}.\p"
+	.string "Hãy xem gần đây mặt hàng nào đang bán\n"
+	.string "chạy nhất.$"
 
 SmartShopper_Text_ClerkNormal::
-	.string "Let's interview the clerk to get the\n"
-	.string "lowdown.\p"
-	.string "Hi, how's your business?\p"
-	.string "CLERK: Oh, we're doing excellent.\p"
-	.string "Recently, {STR_VAR_2} has been\n"
-	.string "selling especially strongly.\p"
-	.string "Why, just the other day a TRAINER\n"
-	.string "named {STR_VAR_1} bought {STR_VAR_3}.$"
+	.string "Hãy phỏng vấn nhân viên để tìm hiểu\n"
+	.string "tình hình.\p"
+	.string "Xin chào, việc kinh doanh thế nào rồi?\p"
+	.string "NHÂN VIÊN: Ồ, rất thuận lợi.\p"
+	.string "Gần đây, {STR_VAR_2} bán đặc\n"
+	.string "biệt chạy.\p"
+	.string "Mới hôm nọ, một HLV tên\n"
+	.string "{STR_VAR_1} đã mua tới\l"
+	.string "{STR_VAR_3} cái.$"
 
 SmartShopper_Text_RandomComment1::
-	.string "INTERVIEWER: The TRAINER bought\n"
-	.string "{STR_VAR_3} {STR_VAR_2}S? That's a haul!\p"
-	.string "If I may say so, {STR_VAR_1} must have\n"
-	.string "been stocking up for a long journey\l"
-	.string "to far-off places.\p"
-	.string "For traveling, {STR_VAR_2}S are so\n"
-	.string "important!$"
+	.string "PHỎNG VẤN: HLV ấy đã mua tới\n"
+	.string "{STR_VAR_3} {STR_VAR_2}\l"
+	.string "sao? Quả là một mẻ lớn!\p"
+	.string "Theo tôi đoán, hẳn {STR_VAR_1}\n"
+	.string "đang tích trữ để chuẩn bị cho một\l"
+	.string "chuyến đi dài đến những miền xa xôi.\p"
+	.string "Khi đi xa, {STR_VAR_2} rất quan\n"
+	.string "trọng!$"
 
 SmartShopper_Text_RandomComment2::
-	.string "INTERVIEWER: Speaking of the item\n"
-	.string "{STR_VAR_2}, I just bought {STR_VAR_3} of\l"
-	.string "them recently.\p"
-	.string "After all, {STR_VAR_2}'s a great item!$"
+	.string "PHỎNG VẤN: Nhắc đến\n"
+	.string "{STR_VAR_2}, gần đây tôi cũng\l"
+	.string "vừa mua {STR_VAR_3} cái.\p"
+	.string "Dù sao thì {STR_VAR_2} cũng là\n"
+	.string "một vật phẩm tuyệt vời!$"
 
 SmartShopper_Text_RandomComment3::
-	.string "INTERVIEWER: {STR_VAR_2}?!\n"
-	.string "But {STR_VAR_3} of them?!\p"
-	.string "I didn't think there would be anyone\n"
-	.string "buying that many.\p"
-	.string "My goodness, I can only afford one or\n"
-	.string "two at a time…$"
+	.string "PHỎNG VẤN: {STR_VAR_2} ư?! Lại\n"
+	.string "còn tới {STR_VAR_3} cái?!\p"
+	.string "Tôi không ngờ có người lại mua nhiều\n"
+	.string "đến thế.\p"
+	.string "Trời ạ, mỗi lần tôi chỉ đủ tiền mua một\n"
+	.string "hoặc hai cái...$"
 
 SmartShopper_Text_RandomComment4::
-	.string "INTERVIEWER: One time, I bought\n"
-	.string "a whole lot of the item {STR_VAR_2}.\p"
-	.string "But it turned out to be too many.\n"
-	.string "I ended up regretting it…\p"
-	.string "Since then, I only buy strictly what\n"
-	.string "I absolutely need…\p"
-	.string "Oops!\p"
-	.string "There's no point talking about me!$"
+	.string "PHỎNG VẤN: Có lần tôi đã mua cả đống\n"
+	.string "{STR_VAR_2}.\p"
+	.string "Nhưng hóa ra lại nhiều quá. Cuối cùng\n"
+	.string "tôi phải hối hận...\p"
+	.string "Từ đó, tôi chỉ mua đúng những gì thật\n"
+	.string "sự cần thiết...\p"
+	.string "Ôi!\p"
+	.string "Nói về tôi thì có ích gì chứ!$"
 
 SmartShopper_Text_SecondItem::
-	.string "CLERK: {STR_VAR_1} also bought the item\n"
-	.string "{STR_VAR_2} in bulk, taking {STR_VAR_3}.\p"
-	.string "INTERVIEWER: Oh, that's smart.\n"
-	.string "{STR_VAR_2}'s a very good item, too.$"
+	.string "NHÂN VIÊN: {STR_VAR_1} cũng mua số\n"
+	.string "lượng lớn {STR_VAR_2}, tổng\l"
+	.string "cộng {STR_VAR_3} cái.\p"
+	.string "PHỎNG VẤN: Ồ, lựa chọn thông minh\n"
+	.string "đấy. {STR_VAR_2} cũng là một vật\l"
+	.string "phẩm rất hữu ích.$"
 
 SmartShopper_Text_ThirdItem::
-	.string "CLERK: And, the TRAINER also bought\n"
-	.string "{STR_VAR_3} of the item {STR_VAR_2}.$"
+	.string "NHÂN VIÊN: Ngoài ra, HLV ấy còn mua\n"
+	.string "{STR_VAR_3} vật phẩm\l"
+	.string "{STR_VAR_2}.$"
 
 SmartShopper_Text_DuringSale::
-	.string "CLERK: Plus, it was during a big sale.\n"
-	.string "That's smart shopping.$"
+	.string "NHÂN VIÊN: Hơn nữa, lúc đó có đợt\n"
+	.string "đại hạ giá. Quả là mua sắm thông minh.$"
 
 SmartShopper_Text_OutroNormal::
-	.string "INTERVIEWER: Hmm… {STR_VAR_1} sounds like\n"
-	.string "quite the shrewd bargain hunter!\p"
-	.string "In total, {STR_VAR_1}'s purchases came to…\p"
-	.string "¥{STR_VAR_2}?!\n"
-	.string "What an amazing sum!\p"
-	.string "Oops! We're out of time!\n"
-	.string "See you on our next broadcast!$"
+	.string "PHỎNG VẤN: Hừm... Có vẻ\n"
+	.string "{STR_VAR_1} là một tay săn giá\l"
+	.string "hời rất khôn ngoan!\p"
+	.string "Tổng số tiền mua sắm của\n"
+	.string "{STR_VAR_1} là...\p"
+	.string "¥{STR_VAR_2}?! Thật là một khoản\n"
+	.string "đáng kinh ngạc!\p"
+	.string "Ôi! Chúng ta hết giờ rồi! Hẹn gặp lại\n"
+	.string "trong chương trình lần sau!$"
 
 SmartShopper_Text_IsVIP::
-	.string "CLERK: {STR_VAR_1} is a VIP customer,\n"
-	.string "no doubt about it.$"
+	.string "NHÂN VIÊN: Không nghi ngờ gì nữa,\n"
+	.string "{STR_VAR_1} là khách hàng VIP.$"
 
 SmartShopper_Text_ClerkMax::
-	.string "Let's interview the clerk to get the\n"
-	.string "lowdown.\p"
-	.string "Hi, how's your business?\p"
-	.string "CLERK: Oh, we're doing unbelievable\n"
-	.string "business. It's almost overwhelming.\p"
-	.string "Recently, a TRAINER named {STR_VAR_1}\n"
-	.string "bought the item {STR_VAR_2} in bulk.\p"
-	.string "The TRAINER almost cleared out our\n"
-	.string "entire stock of {STR_VAR_2}S.\p"
-	.string "I never dreamt that any customer\n"
-	.string "would ever need so many {STR_VAR_2}S.\l"
-	.string "It's just unheard of!\p"
-	.string "INTERVIEWER: So that would be like 100\n"
-	.string "or 200 sold?\p"
-	.string "CLERK: Oh, no, much more than that!\p"
-	.string "INTERVIEWER: Oh, my goodness!\n"
-	.string "{STR_VAR_1} must be a special shopper!\p"
-	.string "CLERK: {STR_VAR_1} is a VIP customer,\n"
-	.string "no doubt about it.$"
+	.string "Hãy phỏng vấn nhân viên để tìm hiểu\n"
+	.string "tình hình.\p"
+	.string "Xin chào, việc kinh doanh thế nào rồi?\p"
+	.string "NHÂN VIÊN: Ồ, việc kinh doanh tốt\n"
+	.string "cực tốt. Chúng tôi gần như không xuể.\p"
+	.string "Gần đây, một HLV tên\n"
+	.string "{STR_VAR_1} đã mua số lượng lớn\l"
+	.string "vật phẩm {STR_VAR_2}.\p"
+	.string "HLV ấy gần như vét sạch toàn bộ\n"
+	.string "{STR_VAR_2} trong kho.\p"
+	.string "Tôi chưa từng tưởng tượng có khách\n"
+	.string "hàng lại cần nhiều {STR_VAR_2}\l"
+	.string "đến thế. Thật chưa từng thấy!\p"
+	.string "PHỎNG VẤN: Vậy chắc đã bán khoảng\n"
+	.string "100 hoặc 200 cái?\p"
+	.string "NHÂN VIÊN: Ồ không, còn nhiều hơn\n"
+	.string "rất nhiều!\p"
+	.string "PHỎNG VẤN: Trời ơi!\n"
+	.string "{STR_VAR_1} hẳn là một vị khách\l"
+	.string "đặc biệt!\p"
+	.string "NHÂN VIÊN: Không nghi ngờ gì nữa,\n"
+	.string "{STR_VAR_1} là khách hàng VIP.$"
 
 SmartShopper_Text_OutroMax::
-	.string "INTERVIEWER: Hmm…\n"
-	.string "That is amazing.\p"
-	.string "But why would the TRAINER need to buy\n"
-	.string "so many?\p"
-	.string "… …\p"
-	.string "The mystery deepens, but this is all\n"
-	.string "the time we have today.\l"
-	.string "See you on our next broadcast!\p"
-	.string "Still, {STR_VAR_1} is certainly an enigma…$"
+	.string "PHỎNG VẤN: Hừm... Thật đáng kinh\n"
+	.string "ngạc.\p"
+	.string "Nhưng tại sao HLV ấy lại cần mua\n"
+	.string "nhiều đến vậy?\p"
+	.string "... ...\p"
+	.string "Bí ẩn càng thêm sâu, nhưng thời lượng\n"
+	.string "hôm nay đã hết. Hẹn gặp lại trong\l"
+	.string "chương trình lần sau!\p"
+	.string "Dù vậy, {STR_VAR_1} quả thật là\n"
+	.string "một nhân vật bí ẩn...$"
 
 gTVWorldOfMastersText00::
-	.string "THE WORLD OF MASTERS\p"
-	.string "Hello, viewers.\p"
-	.string "Perhaps you are aware of a TRAINER\n"
-	.string "named {STR_VAR_1}.\p"
-	.string "{STR_VAR_1} is famous as a master at\n"
-	.string "catching POKéMON.\p"
-	.string "{STR_VAR_1}'s quest for POKéMON depends\n"
-	.string "entirely on a careful search on foot.\p"
-	.string "On one memorable day, the TRAINER\n"
-	.string "walked some {STR_VAR_2} steps.\p"
-	.string "The total number of POKéMON caught\n"
-	.string "that day reached an impressive {STR_VAR_3}!$"
+	.string "THẾ GIỚI CỦA CÁC BẬC THẦY\p"
+	.string "Xin chào quý khán giả.\p"
+	.string "Có lẽ các bạn đã biết một HLV tên\n"
+	.string "{STR_VAR_1}.\p"
+	.string "{STR_VAR_1} nổi tiếng là bậc thầy\n"
+	.string "bắt POKéMON.\p"
+	.string "Hành trình tìm kiếm POKéMON của\n"
+	.string "{STR_VAR_1} hoàn toàn dựa vào\l"
+	.string "việc kiên trì đi bộ dò tìm.\p"
+	.string "Trong một ngày đáng nhớ, HLV ấy đã\n"
+	.string "đi khoảng {STR_VAR_2} bước.\p"
+	.string "Tổng số POKéMON bắt được trong ngày\n"
+	.string "hôm đó đạt con số ấn tượng là\l"
+	.string "{STR_VAR_3}!$"
 
 gTVWorldOfMastersText01::
-	.string "That remarkable feat must have been\n"
-	.string "possible because of the trust between\l"
-	.string "the TRAINER and {STR_VAR_1}.$"
+	.string "Thành tích đáng nể ấy hẳn có được nhờ\n"
+	.string "sự tin tưởng giữa HLV và\l"
+	.string "{STR_VAR_1}.$"
 
 gTVWorldOfMastersText02::
-	.string "The master caught the day's last\n"
-	.string "{STR_VAR_3} near {STR_VAR_2}.\p"
-	.string "That POKéMON apparently enjoys\n"
-	.string "a special status as a record holder.\p"
-	.string "Skilled TRAINERS should be encouraged\n"
-	.string "to challenge this fine record.\p"
-	.string "That's all for today.\n"
-	.string "Please tune in next time.$"
+	.string "Bậc thầy đã bắt được\n"
+	.string "{STR_VAR_3} cuối cùng trong ngày\l"
+	.string "ở gần {STR_VAR_2}.\p"
+	.string "POKéMON ấy dường như giữ một vị trí\n"
+	.string "đặc biệt với tư cách kỷ lục gia.\p"
+	.string "Các HLV tài năng hãy thử sức với\n"
+	.string "kỷ lục tuyệt vời này.\p"
+	.string "Chương trình hôm nay xin kết thúc tại\n"
+	.string "đây. Hẹn gặp lại lần sau.$"
 
 gTVTodaysRivalTrainerText00::
-	.string "TODAY'S RIVAL TRAINER!\p"
-	.string "Hello, fellow POKéMON TRAINERS!\n"
-	.string "How are we all doing today?\p"
-	.string "Today, like every other day,\n"
-	.string "we'll examine one of our rivals!$"
+	.string "TODAY'S RIVAL HLV!\p"
+	.string "Xin chào toàn thể HLV POKéMON!\n"
+	.string "Hôm nay mọi người thế nào?\p"
+	.string "Như mọi ngày, hôm nay chúng ta sẽ tìm\n"
+	.string "hiểu về một đối thủ!$"
 
 gTVTodaysRivalTrainerText07::
-	.string "Today's rival TRAINER is {STR_VAR_1},\n"
-	.string "who's around {STR_VAR_3} now.\p"
-	.string "{STR_VAR_1} has so far registered\n"
-	.string "{STR_VAR_2} POKéMON in the POKéDEX.$"
+	.string "HLV đối thủ hôm nay là\n"
+	.string "{STR_VAR_1}, hiện đang ở quanh\l"
+	.string "{STR_VAR_3}.\p"
+	.string "Cho đến nay, {STR_VAR_1} đã đăng\n"
+	.string "ký {STR_VAR_2} POKéMON trong\l"
+	.string "POKéDEX.$"
 
 gTVTodaysRivalTrainerText08::
-	.string "Today's rival TRAINER is {STR_VAR_1},\n"
-	.string "who's in a SECRET BASE now.\p"
-	.string "{STR_VAR_1} has so far registered\n"
-	.string "{STR_VAR_2} POKéMON in the POKéDEX.$"
+	.string "HLV đối thủ hôm nay là\n"
+	.string "{STR_VAR_1}, hiện đang ở trong\l"
+	.string "một SECRET BASE.\p"
+	.string "Cho đến nay, {STR_VAR_1} đã đăng\n"
+	.string "ký {STR_VAR_2} POKéMON trong\l"
+	.string "POKéDEX.$"
 
 gTVTodaysRivalTrainerText09::
-	.string "Today's rival TRAINER is {STR_VAR_1}.\p"
-	.string "So far, {STR_VAR_1} has registered\n"
-	.string "{STR_VAR_2} POKéMON in the POKéDEX.$"
+	.string "HLV đối thủ hôm nay là\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Cho đến nay, {STR_VAR_1} đã đăng\n"
+	.string "ký {STR_VAR_2} POKéMON trong\l"
+	.string "POKéDEX.$"
 
 gTVTodaysRivalTrainerText10::
-	.string "Today's rival TRAINER is {STR_VAR_1},\n"
-	.string "who's on a ferry now.\p"
-	.string "{STR_VAR_1} has so far registered\n"
-	.string "{STR_VAR_2} POKéMON in the POKéDEX.$"
+	.string "HLV đối thủ hôm nay là\n"
+	.string "{STR_VAR_1}, hiện đang ở trên\l"
+	.string "một chuyến phà.\p"
+	.string "Cho đến nay, {STR_VAR_1} đã đăng\n"
+	.string "ký {STR_VAR_2} POKéMON trong\l"
+	.string "POKéDEX.$"
 
 	.string "$"
 
 gTVTodaysRivalTrainerText01::
-	.string "And how many BADGES does our rival\n"
-	.string "have? The number is {STR_VAR_1}!$"
+	.string "Vậy đối thủ của chúng ta có bao nhiêu\n"
+	.string "BADGES? Câu trả lời là\l"
+	.string "{STR_VAR_1}!$"
 
 gTVTodaysRivalTrainerText02::
-	.string "But our rival hasn't obtained\n"
-	.string "a single BADGE yet!$"
+	.string "Nhưng đối thủ của chúng ta vẫn chưa\n"
+	.string "giành được một BADGE nào!$"
 
 gTVTodaysRivalTrainerText03::
-	.string "Our rival hasn't obtained a single\n"
-	.string "BATTLE FRONTIER Symbol yet.$"
+	.string "Đối thủ của chúng ta vẫn chưa giành\n"
+	.string "được một BATTLE FRONTIER Symbol nào.$"
 
 gTVTodaysRivalTrainerText04::
-	.string "Let's see how many BATTLE FRONTIER\n"
-	.string "Symbols our rival has.\p"
-	.string "Gold Symbols: {STR_VAR_1}!\n"
-	.string "Silver Symbols: {STR_VAR_2}!$"
+	.string "Hãy xem đối thủ của chúng ta có bao\n"
+	.string "nhiêu BATTLE FRONTIER Symbols.\p"
+	.string "Gold Symbols: {STR_VAR_1}! Silver\n"
+	.string "Symbols: {STR_VAR_2}!$"
 
 gTVTodaysRivalTrainerText05::
-	.string "Our rival has collected {STR_VAR_1} Battle\n"
-	.string "Point(s) at the BATTLE FRONTIER.$"
+	.string "Đối thủ của chúng ta đã tích lũy được\n"
+	.string "{STR_VAR_1} Battle Point(s) tại\l"
+	.string "BATTLE FRONTIER.$"
 
 gTVTodaysRivalTrainerText06::
-	.string "So, how did you measure up in\n"
-	.string "comparison to {STR_VAR_1}?\p"
-	.string "The adventure rolls on!\p"
-	.string "Fellow TRAINERS!\p"
-	.string "Let's all keep moving forward\n"
-	.string "and ahead of our rivals!$"
+	.string "Vậy khi so với {STR_VAR_1}, bạn\n"
+	.string "thể hiện ra sao?\p"
+	.string "Cuộc phiêu lưu vẫn tiếp diễn!\p"
+	.string "Hỡi các HLV!\p"
+	.string "Hãy cùng tiến bước và luôn vượt lên\n"
+	.string "trước các đối thủ!$"
 
 TrendWatcher_Text_Intro::
 	.string "DEWFORD TREND-WATCHER NETWORK!\p"
-	.string "MC: Wassup?\n"
-	.string "We'll keep it real with the latest on\l"
-	.string "what's hip and happening in DEWFORD.\p"
-	.string "Our guest today is this old cat whose\n"
-	.string "claim to fame is being the authority\l"
-	.string "on all things in DEWFORD.\p"
-	.string "Old man: Glad to be here.\p"
-	.string "MC: Let's cut to the chase, right on.\p"
-	.string "What's your word on what's groovin'\n"
-	.string "the good folks of DEWFORD?\p"
-	.string "Old man: {STR_VAR_1} {STR_VAR_2}.\p"
-	.string "MC: {STR_VAR_1} {STR_VAR_2},\n"
-	.string "you say?\p"
-	.string "Old man: No.\p"
-	.string "{STR_VAR_1} {STR_VAR_2} never\n"
-	.string "did get popular at all.\p"
-	.string "Would you like to hear about it?\p"
-	.string "MC: Uh, no. What we want to know is\n"
-	.string "what's the in thing of the moment…$"
+	.string "MC: Khỏe chứ? Chúng tôi sẽ mang đến\n"
+	.string "những tin mới nhất về mọi trào lưu đang\l"
+	.string "nổi ở DEWFORD.\p"
+	.string "Khách mời hôm nay là một bậc lão làng,\n"
+	.string "nổi danh là chuyên gia về mọi chuyện ở\l"
+	.string "DEWFORD.\p"
+	.string "Ông lão: Rất vui được tới đây.\p"
+	.string "MC: Vào thẳng vấn đề nhé.\p"
+	.string "Theo bác, điều gì đang khiến người dân\n"
+	.string "DEWFORD phát cuồng?\p"
+	.string "Ông lão: {STR_VAR_1}\n"
+	.string "{STR_VAR_2}.\p"
+	.string "MC: Bác nói {STR_VAR_1}\n"
+	.string "{STR_VAR_2} sao?\p"
+	.string "Ông lão: Không.\p"
+	.string "{STR_VAR_1} {STR_VAR_2}\n"
+	.string "chưa bao giờ nổi tiếng cả.\p"
+	.string "Cậu có muốn nghe chuyện đó không?\p"
+	.string "MC: Ờ, không. Chúng tôi muốn biết thứ gì\n"
+	.string "đang thịnh hành lúc này...$"
 
 @ Identical to below, may have been different in other languages
 TrendWatcher_Text_MaleTaughtMePhrase::
-	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
-	.string "taught me as being trendy…$"
+	.string "Ông lão: {STR_VAR_1}\n"
+	.string "{STR_VAR_2} là cụm từ mà\l"
+	.string "{STR_VAR_3} ở LITTLEROOT đã dạy\l"
+	.string "tôi, bảo rằng nó rất thời thượng...$"
 
 TrendWatcher_Text_FemaleTaughtMePhrase::
-	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
-	.string "taught me as being trendy…$"
+	.string "Ông lão: {STR_VAR_1}\n"
+	.string "{STR_VAR_2} là cụm từ mà\l"
+	.string "{STR_VAR_3} ở LITTLEROOT đã dạy\l"
+	.string "tôi, bảo rằng nó rất thời thượng...$"
 
 TrendWatcher_Text_PhraseWasHopeless::
-	.string "But it was utterly hopeless.\p"
-	.string "{STR_VAR_1} {STR_VAR_2} festival!\p"
-	.string "{STR_VAR_1} {STR_VAR_2} contest!\p"
-	.string "I tried teaching everyone the best\n"
-	.string "I could, but…\p"
-	.string "Perhaps the {STR_VAR_1} part just\n"
-	.string "wasn't right…\p"
-	.string "MC: Uh, excuse me, compadre, I need\n"
-	.string "to hear about what's in now…$"
+	.string "Nhưng hoàn toàn vô vọng.\p"
+	.string "Lễ hội {STR_VAR_1}\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Cuộc thi {STR_VAR_1}\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Tôi đã cố hết sức truyền bá cho mọi\n"
+	.string "người, nhưng...\p"
+	.string "Có lẽ phần {STR_VAR_1} không ổn...\p"
+	.string "MC: Ờ, xin lỗi bác, nhưng tôi cần nghe về\n"
+	.string "thứ đang thịnh hành...$"
 
 @ Identical to below, may have been different in other languages
 TrendWatcher_Text_MaleTellMeBigger::
-	.string "Old man: {STR_VAR_3}!\n"
-	.string "Please, tell me something bigger than\l"
-	.string "that {STR_VAR_1} {STR_VAR_2}!$"
+	.string "Ông lão: {STR_VAR_3}! Làm ơn hãy\n"
+	.string "cho tôi biết một thứ lớn hơn cả\l"
+	.string "{STR_VAR_1} {STR_VAR_2}!$"
 
 TrendWatcher_Text_FemaleTellMeBigger::
-	.string "Old man: {STR_VAR_3}!\n"
-	.string "Please, tell me something bigger than\l"
-	.string "that {STR_VAR_1} {STR_VAR_2}!$"
+	.string "Ông lão: {STR_VAR_3}! Làm ơn hãy\n"
+	.string "cho tôi biết một thứ lớn hơn cả\l"
+	.string "{STR_VAR_1} {STR_VAR_2}!$"
 
 TrendWatcher_Text_Outro::
-	.string "MC: …Uh… So, there you have it,\n"
-	.string "all you trendy, hep cats out there!\p"
-	.string "{STR_VAR_1} {STR_VAR_2}…uh…\n"
-	.string "Didn't get hip or happening in DEWFORD!\p"
-	.string "My time is up. Catch you on the fly!\p"
-	.string "Old man: {STR_VAR_1} {STR_VAR_2}!$"
+	.string "MC: ...Ờ... Vậy là mọi người đã rõ rồi nhé,\n"
+	.string "hỡi những tín đồ thời thượng!\p"
+	.string "{STR_VAR_1} {STR_VAR_2}...\n"
+	.string "ờ... chưa từng trở nên thịnh hành ở\l"
+	.string "DEWFORD!\p"
+	.string "Tôi hết giờ rồi. Hẹn gặp lại trên sóng!\p"
+	.string "Ông lão: {STR_VAR_1}\n"
+	.string "{STR_VAR_2}!$"
 
 gTVHoennTreasureInvestigatorsText00::
 	.string "HOENN TREASURE INVESTIGATORS!\p"
-	.string "Hi, gang!\n"
-	.string "Score any secret items lately?\p"
-	.string "As always, we'll examine eyewitness\n"
-	.string "reports of secrets from all over!\p"
-	.string "Let's start with a letter.\n"
-	.string "It says, “{STR_VAR_1} discovered!”$"
+	.string "Chào mọi người! Gần đây có tìm được\n"
+	.string "vật phẩm bí mật nào không?\p"
+	.string "Như thường lệ, chúng ta sẽ xem xét\n"
+	.string "những lời kể tận mắt về các bí mật khắp\l"
+	.string "nơi!\p"
+	.string "Hãy bắt đầu bằng một lá thư. Thư viết:\n"
+	.string "Phát hiện {STR_VAR_1}!$"
 
 gTVHoennTreasureInvestigatorsText01::
-	.string "Wow, we'd better check this letter\n"
-	.string "out! Let me read it to you.\p"
-	.string "…Dear INVESTIGATORS,\n"
-	.string "I hope you are well.\p"
-	.string "I recently saw {STR_VAR_2} somewhere\n"
-	.string "around {STR_VAR_3}.\p"
-	.string "The TRAINER found the item\n"
-	.string "{STR_VAR_1}. It made me envious.\p"
-	.string "…Well, good going, {STR_VAR_2}!\p"
-	.string "Viewers, let that motivate you to\n"
-	.string "fire up your ITEMFINDERS and search!\p"
-	.string "I'll be waiting for exciting news\n"
-	.string "from all of you!$"
+	.string "Chà, chúng ta phải xem lá thư này mới\n"
+	.string "được! Tôi sẽ đọc cho mọi người nghe.\p"
+	.string "...Kính gửi INVESTIGATORS, chúc mọi\n"
+	.string "người luôn mạnh khỏe.\p"
+	.string "Gần đây, tôi đã thấy {STR_VAR_2}\n"
+	.string "ở đâu đó quanh {STR_VAR_3}.\p"
+	.string "HLV ấy đã tìm được vật phẩm\n"
+	.string "{STR_VAR_1}. Tôi ghen tị quá.\p"
+	.string "...Giỏi lắm, {STR_VAR_2}!\p"
+	.string "Quý khán giả, hãy lấy đó làm động lực,\n"
+	.string "bật ITEMFINDERS lên và tìm kiếm!\p"
+	.string "Tôi sẽ chờ những tin tức thú vị từ tất\n"
+	.string "cả các bạn!$"
 
 gTVHoennTreasureInvestigatorsText02::
-	.string "Wow, we'd better check this letter\n"
-	.string "out! Let me read it to you.\p"
-	.string "…Dear INVESTIGATORS,\n"
-	.string "I hope you are well.\p"
-	.string "I recently saw {STR_VAR_2} on a ferry.\p"
-	.string "The TRAINER found the item\n"
-	.string "{STR_VAR_1}. It made me envious.\p"
-	.string "…Well, good going, {STR_VAR_2}!\p"
-	.string "Viewers, let that motivate you to\n"
-	.string "fire up your ITEMFINDERS and search!\p"
-	.string "I'll be waiting for exciting news\n"
-	.string "from all of you!$"
+	.string "Chà, chúng ta phải xem lá thư này mới\n"
+	.string "được! Tôi sẽ đọc cho mọi người nghe.\p"
+	.string "...Kính gửi INVESTIGATORS, chúc mọi\n"
+	.string "người luôn mạnh khỏe.\p"
+	.string "Gần đây, tôi đã thấy {STR_VAR_2}\n"
+	.string "trên một chuyến phà.\p"
+	.string "HLV ấy đã tìm được vật phẩm\n"
+	.string "{STR_VAR_1}. Tôi ghen tị quá.\p"
+	.string "...Giỏi lắm, {STR_VAR_2}!\p"
+	.string "Quý khán giả, hãy lấy đó làm động lực,\n"
+	.string "bật ITEMFINDERS lên và tìm kiếm!\p"
+	.string "Tôi sẽ chờ những tin tức thú vị từ tất\n"
+	.string "cả các bạn!$"
 
 gTVFindThatGamerText00::
-	.string "FIND THAT GAMER!\p"
-	.string "Hey, all you gamers!\n"
-	.string "How's your {STR_VAR_2} spinning?\p"
-	.string "Like always, we'll cast our spotlight\n"
-	.string "on a rare TRAINER who's visited the\l"
-	.string "GAME CORNER!\p"
-	.string "Today, our no. 1 gamer is…\n"
+	.string "TÌM TAY CHƠI!\p"
+	.string "Chào tất cả các tay chơi! Vòng quay\n"
+	.string "{STR_VAR_2} của các bạn thế nào\l"
+	.string "rồi?\p"
+	.string "Như thường lệ, chúng ta sẽ hướng ánh\n"
+	.string "đèn vào một HLV hiếm có từng ghé\l"
+	.string "thăm GAME CORNER!\p"
+	.string "Tay chơi số một hôm nay là...\n"
 	.string "{STR_VAR_1}!$"
 
 gTVFindThatGamerText01::
-	.string "{STR_VAR_1} played the {STR_VAR_2} game\n"
-	.string "and won a rare {STR_VAR_3} COINS.\p"
-	.string "“When {STR_VAR_1} comes, we need to\n"
-	.string "make sure we have enough COINS.”\p"
-	.string "That's what the GAME CORNER clerks\n"
-	.string "mutter when our gamer is in play!\p"
-	.string "Viewers, it's best to watch your COINS\n"
-	.string "like {STR_VAR_1} if you visit the GAME\l"
-	.string "CORNER and play the {STR_VAR_2} game.\p"
-	.string "This is live from the GAME CORNER--\n"
-	.string "where you can feel the excitement!\p"
-	.string "That's all for today!$"
+	.string "{STR_VAR_1} đã chơi trò\n"
+	.string "{STR_VAR_2} và thắng được con\l"
+	.string "số đáng nể là {STR_VAR_3} COINS.\p"
+	.string "Khi {STR_VAR_1} tới, chúng ta\n"
+	.string "phải bảo đảm có đủ COINS.\p"
+	.string "Đó là lời các nhân viên GAME CORNER\n"
+	.string "thường lẩm bẩm mỗi khi tay chơi của\l"
+	.string "chúng ta nhập cuộc!\p"
+	.string "Quý khán giả, nếu đến GAME CORNER chơi\n"
+	.string "trò {STR_VAR_2}, tốt nhất hãy\l"
+	.string "trông chừng COINS của mình cẩn thận\l"
+	.string "như {STR_VAR_1}.\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ GAME CORNER, nơi bạn có thể cảm\l"
+	.string "nhận sự phấn khích!\p"
+	.string "Chương trình hôm nay xin kết thúc tại\n"
+	.string "đây!$"
 
 gTVFindThatGamerText02::
-	.string "{STR_VAR_1} played the {STR_VAR_2} game\n"
-	.string "and lost {STR_VAR_3} COINS.\p"
-	.string "“When {STR_VAR_1} comes, our COIN\n"
-	.string "sales seem to increase.”\p"
-	.string "That's what the GAME CORNER clerks\n"
-	.string "say when our gamer is in play!$"
+	.string "{STR_VAR_1} đã chơi trò\n"
+	.string "{STR_VAR_2} và thua mất\l"
+	.string "{STR_VAR_3} COINS.\p"
+	.string "Mỗi khi {STR_VAR_1} tới, doanh số\n"
+	.string "COIN của chúng ta dường như lại tăng.\p"
+	.string "Đó là lời các nhân viên GAME CORNER nói\n"
+	.string "mỗi khi tay chơi của chúng ta nhập\l"
+	.string "cuộc!$"
 
 gTVFindThatGamerText03::
-	.string "Viewers, it's best to watch your COINS\n"
-	.string "like {STR_VAR_1} if you visit the GAME\l"
-	.string "CORNER and play the {STR_VAR_2} game.\p"
-	.string "This is live from the GAME CORNER--\n"
-	.string "where you can feel the excitement!\p"
-	.string "That's all for today!$"
+	.string "Quý khán giả, nếu đến GAME CORNER chơi\n"
+	.string "trò {STR_VAR_2}, tốt nhất hãy\l"
+	.string "trông chừng COINS của mình cẩn thận\l"
+	.string "như {STR_VAR_1}.\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ GAME CORNER, nơi bạn có thể cảm\l"
+	.string "nhận sự phấn khích!\p"
+	.string "Chương trình hôm nay xin kết thúc tại\n"
+	.string "đây!$"
 
 gTVBreakingNewsText00::
-	.string "BREAKING NEWS TV!$"
+	.string "TIN NÓNG TRÊN TV!$"
 
 gTVBreakingNewsText01::
-	.string "Rare {STR_VAR_2} caught by\n"
-	.string "{STR_VAR_1}!\p"
-	.string "We're live from the vicinity of\n"
-	.string "{STR_VAR_3}!\p"
-	.string "{STR_VAR_1} successfully captured\n"
-	.string "a rare {STR_VAR_2} earlier here!$"
+	.string "{STR_VAR_2} quý hiếm đã bị\n"
+	.string "{STR_VAR_1} bắt!\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ khu vực gần {STR_VAR_3}!\p"
+	.string "Trước đó, chính tại đây,\n"
+	.string "{STR_VAR_1} đã bắt thành công\l"
+	.string "một {STR_VAR_2} quý hiếm!$"
 
 gTVBreakingNewsText02::
-	.string "When {STR_VAR_1} encountered the rare\n"
-	.string "{STR_VAR_2}, the TRAINER sent out\l"
-	.string "the POKéMON {STR_VAR_3}.$"
+	.string "Khi {STR_VAR_1} chạm trán\n"
+	.string "{STR_VAR_2} quý hiếm, HLV ấy\l"
+	.string "đã tung POKéMON {STR_VAR_3} ra\l"
+	.string "trận.$"
 
 gTVBreakingNewsText03::
-	.string "In the battle, the number of POKé\n"
-	.string "BALLS thrown by the TRAINER was {STR_VAR_1}.\p"
-	.string "Ultimately, the rare POKéMON was\n"
-	.string "caught by the {STR_VAR_2} used last.$"
+	.string "Trong trận đấu, HLV đã ném tổng\n"
+	.string "cộng {STR_VAR_1} POKé BALLS.\p"
+	.string "Cuối cùng, POKéMON quý hiếm đã bị bắt\n"
+	.string "bằng {STR_VAR_2} được dùng sau\l"
+	.string "cùng.$"
 
 gTVBreakingNewsText04::
-	.string "In that instant, {STR_VAR_2}\n"
-	.string "echoed with {STR_VAR_1}'s roars of\l"
-	.string "triumphant joy.\p"
-	.string "I must say I'm a little envious of\n"
-	.string "{STR_VAR_1}. I'd love to roar, too.\p"
-	.string "…That ends the live feed from\n"
-	.string "the happy scene!$"
+	.string "Ngay khoảnh khắc đó, tiếng reo gào\n"
+	.string "chiến thắng của {STR_VAR_1} vang\l"
+	.string "vọng khắp {STR_VAR_2}.\p"
+	.string "Phải nói rằng tôi hơi ghen tị với\n"
+	.string "{STR_VAR_1}. Tôi cũng muốn reo\l"
+	.string "thật lớn.\p"
+	.string "...Buổi truyền hình trực tiếp từ khung\n"
+	.string "cảnh hân hoan xin kết thúc tại đây!$"
 
 gTVBreakingNewsText05::
-	.string "{STR_VAR_1} fails to capture a rare\n"
-	.string "{STR_VAR_2}!\p"
-	.string "We're live from the vicinity of\n"
-	.string "{STR_VAR_3}!\p"
-	.string "It was here that {STR_VAR_1} failed\n"
-	.string "to capture a rare {STR_VAR_2}!$"
+	.string "{STR_VAR_1} không thể bắt được\n"
+	.string "{STR_VAR_2} quý hiếm!\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ khu vực gần {STR_VAR_3}!\p"
+	.string "Chính tại đây, {STR_VAR_1} đã\n"
+	.string "không thể bắt được một\l"
+	.string "{STR_VAR_2} quý hiếm!$"
 
 gTVBreakingNewsText06::
-	.string "When {STR_VAR_1} encountered the rare\n"
-	.string "{STR_VAR_2}, the TRAINER sent out\l"
-	.string "the POKéMON {STR_VAR_3}.$"
+	.string "Khi {STR_VAR_1} chạm trán\n"
+	.string "{STR_VAR_2} quý hiếm, HLV ấy\l"
+	.string "đã tung POKéMON {STR_VAR_3} ra\l"
+	.string "trận.$"
 
 gTVBreakingNewsText07::
-	.string "The TRAINER made the {STR_VAR_2}\n"
-	.string "use the move {STR_VAR_1}.\p"
-	.string "Without meaning to, the TRAINER\n"
-	.string "made the rare POKéMON faint…$"
+	.string "HLV đã cho {STR_VAR_2} sử\n"
+	.string "dụng chiêu {STR_VAR_1}.\p"
+	.string "Ngoài ý muốn, HLV ấy đã khiến\n"
+	.string "POKéMON quý hiếm ngất đi...$"
 
 gTVBreakingNewsText12::
-	.string "However, {STR_VAR_1} panicked at\n"
-	.string "the sight of the rare {STR_VAR_2}.\p"
-	.string "In confusion, the TRAINER ordered\n"
-	.string "{STR_VAR_3} to attack.\p"
-	.string "Without meaning to, the TRAINER\n"
-	.string "made the rare POKéMON faint.$"
+	.string "Tuy nhiên, {STR_VAR_1} đã hoảng\n"
+	.string "hốt khi trông thấy {STR_VAR_2}\l"
+	.string "quý hiếm.\p"
+	.string "Trong lúc rối trí, HLV ấy đã ra lệnh\n"
+	.string "cho {STR_VAR_3} tấn công.\p"
+	.string "Ngoài ý muốn, HLV ấy đã khiến\n"
+	.string "POKéMON quý hiếm ngất đi.$"
 
 gTVBreakingNewsText08::
-	.string "In that instant, {STR_VAR_2}\n"
-	.string "echoed with {STR_VAR_1}'s shrieks of\l"
-	.string "frustration…$"
+	.string "Ngay khoảnh khắc đó, tiếng hét thất\n"
+	.string "vọng của {STR_VAR_1} vang vọng\l"
+	.string "khắp {STR_VAR_2}...$"
 
 gTVBreakingNewsText09::
-	.string "However, {STR_VAR_1} seemed to run\n"
-	.string "out of POKé BALLS.\p"
-	.string "The TRAINER had to break off\n"
-	.string "the battle with the rare {STR_VAR_2}.\p"
-	.string "In that instant, {STR_VAR_3}\n"
-	.string "echoed with {STR_VAR_1}'s shrieks of\l"
-	.string "frustration…$"
+	.string "Tuy nhiên, có vẻ {STR_VAR_1} đã\n"
+	.string "hết POKé BALLS.\p"
+	.string "HLV ấy buộc phải dừng trận đấu với\n"
+	.string "{STR_VAR_2} quý hiếm.\p"
+	.string "Ngay khoảnh khắc đó, tiếng hét thất\n"
+	.string "vọng của {STR_VAR_1} vang vọng\l"
+	.string "khắp {STR_VAR_3}...$"
 
 gTVBreakingNewsText10::
-	.string "However, the {STR_VAR_2} fled without\n"
-	.string "warning.\p"
-	.string "In that instant, {STR_VAR_3}\n"
-	.string "echoed with {STR_VAR_1}'s shrieks of\l"
-	.string "frustration…$"
+	.string "Tuy nhiên, {STR_VAR_2} đã bất\n"
+	.string "ngờ bỏ chạy.\p"
+	.string "Ngay khoảnh khắc đó, tiếng hét thất\n"
+	.string "vọng của {STR_VAR_1} vang vọng\l"
+	.string "khắp {STR_VAR_3}...$"
 
 gTVBreakingNewsText11::
-	.string "I must say I feel for {STR_VAR_1}.\n"
-	.string "Why, it makes me want to shriek, too.\p"
-	.string "…That ends the live feed from\n"
-	.string "the melancholy scene!$"
+	.string "Phải nói rằng tôi rất thông cảm với\n"
+	.string "{STR_VAR_1}. Chuyện này khiến\l"
+	.string "tôi cũng muốn hét lên.\p"
+	.string "...Buổi truyền hình trực tiếp từ khung\n"
+	.string "cảnh u sầu xin kết thúc tại đây!$"
 
 gTVSecretBaseVisitText00::
-	.string "Hello, folks!\n"
-	.string "It's time again for\l"
-	.string "a SECRET BASE VISIT.\p"
-	.string "Today, we visit the SECRET BASE\n"
-	.string "of {STR_VAR_1}.\p"
-	.string "How has {STR_VAR_1} personalized\n"
-	.string "the SECRET BASE?\p"
-	.string "Let's find out!\n"
-	.string "… … … … … …$"
+	.string "Xin chào mọi người! Lại đến giờ của\n"
+	.string "SECRET BASE VISIT.\p"
+	.string "Hôm nay, chúng ta sẽ ghé thăm SECRET\n"
+	.string "BASE của {STR_VAR_1}.\p"
+	.string "{STR_VAR_1} đã trang trí SECRET\n"
+	.string "BASE theo phong cách riêng như thế\l"
+	.string "nào?\p"
+	.string "Hãy cùng tìm hiểu! ... ... ... ... ... ...$"
 
 gTVSecretBaseVisitText01::
-	.string "Oh!\n"
-	.string "How marvelous!\p"
-	.string "This {STR_VAR_2}…\n"
-	.string "It's not what one would expect to\l"
-	.string "find here!$"
+	.string "Ồ! Tuyệt diệu làm sao!\p"
+	.string "{STR_VAR_2} này... Thật không\n"
+	.string "ngờ lại có thể thấy nó ở đây!$"
 
 gTVSecretBaseVisitText02::
-	.string "Oh!\n"
-	.string "How remarkable!\p"
-	.string "There isn't a single piece\n"
-	.string "of furniture or interior goods!\p"
-	.string "Mere mortals couldn't hope to\n"
-	.string "imitate this bold statement!\p"
-	.string "It's simple, but it bursts, yes,\n"
-	.string "bursts with wildness!\p"
-	.string "My hat's off to you, {STR_VAR_1}.\n"
-	.string "It had to be you!$"
+	.string "Ồ! Thật phi thường!\p"
+	.string "Không có lấy một món đồ nội thất hay\n"
+	.string "vật trang trí nào!\p"
+	.string "Người thường đừng mong bắt chước\n"
+	.string "được tuyên ngôn táo bạo này!\p"
+	.string "Đơn giản, nhưng tràn ngập, phải, tràn\n"
+	.string "ngập nét hoang dã!\p"
+	.string "Xin ngả mũ trước {STR_VAR_1}.\n"
+	.string "Chỉ có thể là bạn!$"
 
 gTVSecretBaseVisitText03::
-	.string "Oh! I see!\n"
-	.string "With perfect clarity, I see it!\p"
-	.string "This {STR_VAR_2} being here…\n"
-	.string "It sends an effective message!$"
+	.string "Ồ! Tôi hiểu rồi! Tôi đã nhìn thấu tất cả!\p"
+	.string "Việc đặt {STR_VAR_2} ở đây... Nó\n"
+	.string "truyền tải một thông điệp đầy hiệu quả!$"
 
 gTVSecretBaseVisitText04::
-	.string "Oh! I see!\n"
-	.string "With perfect clarity, I see it!\p"
-	.string "This space is kept deliberately\n"
-	.string "clear of interior items!\p"
-	.string "It sends an effective message!$"
+	.string "Ồ! Tôi hiểu rồi! Tôi đã nhìn thấu tất cả!\p"
+	.string "Không gian này được cố ý để trống,\n"
+	.string "không bày bất kỳ vật trang trí nào!\p"
+	.string "Nó truyền tải một thông điệp đầy hiệu\n"
+	.string "quả!$"
 
 gTVSecretBaseVisitText05::
-	.string "Wheeew!\p"
-	.string "The pairing of the {STR_VAR_2}\n"
-	.string "with the {STR_VAR_3}!\p"
-	.string "It's a dream combination if there\n"
-	.string "ever was one!$"
+	.string "Chà!\p"
+	.string "Sự kết hợp giữa {STR_VAR_2} và\n"
+	.string "{STR_VAR_3}!\p"
+	.string "Nếu có một sự kết hợp trong mơ thì\n"
+	.string "chính là đây!$"
 
 gTVSecretBaseVisitText06::
-	.string "Wheeew!\p"
-	.string "The placement of this {STR_VAR_2}\n"
-	.string "right here…\p"
-	.string "It has a presence that fills\n"
-	.string "the entire SECRET BASE!$"
+	.string "Chà!\p"
+	.string "Cách đặt {STR_VAR_2} ngay tại vị\n"
+	.string "trí này...\p"
+	.string "Sự hiện diện của nó bao trùm toàn bộ\n"
+	.string "SECRET BASE!$"
 
 gTVSecretBaseVisitText07::
-	.string "Wheeew!\p"
-	.string "There's nothing in place here.\p"
-	.string "This empty space has an effect on\n"
-	.string "the entire SECRET BASE.$"
+	.string "Chà!\p"
+	.string "Ở đây chẳng bày thứ gì cả.\p"
+	.string "Chính khoảng trống này tạo nên ấn tượng\n"
+	.string "cho toàn bộ SECRET BASE.$"
 
 gTVSecretBaseVisitText08::
-	.string "Oh!\n"
-	.string "Here comes {STR_VAR_1}!\l"
-	.string "Let's challenge the TRAINER!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …$"
+	.string "Ồ! {STR_VAR_1} tới rồi! Hãy thách\n"
+	.string "đấu HLV ấy!\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...$"
 
 gTVSecretBaseVisitText09::
-	.string "Sigh…\n"
-	.string "I've got to hand it to {STR_VAR_1}.\p"
-	.string "The TRAINER's POKéMON were truly\n"
-	.string "worthy of the CHAMPION's title.\p"
-	.string "They gave ample proof of {STR_VAR_1}'s\n"
-	.string "toughness as a TRAINER.\p"
-	.string "That the {STR_VAR_2} knew the move\n"
-	.string "{STR_VAR_3}…\p"
-	.string "It shows you what sort of a TRAINER\n"
-	.string "{STR_VAR_1} is.\p"
-	.string "Certainly, it was quite a lesson!$"
+	.string "Haizz... Phải công nhận\n"
+	.string "{STR_VAR_1} rất xuất sắc.\p"
+	.string "Các POKéMON của HLV ấy thật sự\n"
+	.string "xứng đáng với danh hiệu CHAMPION.\p"
+	.string "Chúng đã chứng minh đầy thuyết phục\n"
+	.string "bản lĩnh của HLV\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Việc {STR_VAR_2} biết chiêu\n"
+	.string "{STR_VAR_3}...\p"
+	.string "Điều đó cho thấy {STR_VAR_1} là\n"
+	.string "một HLV như thế nào.\p"
+	.string "Quả là một bài học đáng giá!$"
 
 gTVSecretBaseVisitText10::
-	.string "Aiyeeh!\n"
-	.string "I've got to hand it to {STR_VAR_1}.\p"
-	.string "The TRAINER's POKéMON were\n"
-	.string "monstrously tough!\p"
-	.string "They gave ample proof of {STR_VAR_1}'s\n"
-	.string "tenacity as a TRAINER.\p"
-	.string "That the {STR_VAR_2} knew the move\n"
-	.string "{STR_VAR_3}…\p"
-	.string "It shows you what sort of a TRAINER\n"
-	.string "{STR_VAR_1} is.\p"
-	.string "Certainly, it was quite a lesson!$"
+	.string "Ái chà! Phải công nhận\n"
+	.string "{STR_VAR_1} rất xuất sắc.\p"
+	.string "Các POKéMON của HLV ấy mạnh khủng\n"
+	.string "khiếp!\p"
+	.string "Chúng đã chứng minh đầy thuyết phục\n"
+	.string "sự bền bỉ của HLV\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Việc {STR_VAR_2} biết chiêu\n"
+	.string "{STR_VAR_3}...\p"
+	.string "Điều đó cho thấy {STR_VAR_1} là\n"
+	.string "một HLV như thế nào.\p"
+	.string "Quả là một bài học đáng giá!$"
 
 gTVSecretBaseVisitText11::
-	.string "Wheeew!\n"
-	.string "I've got to hand it to {STR_VAR_1}.\p"
-	.string "The TRAINER's POKéMON were clearly\n"
-	.string "raised in a well-balanced manner.\p"
-	.string "They gave ample proof of {STR_VAR_1}'s\n"
-	.string "thoughtfulness as a TRAINER.\p"
-	.string "That the {STR_VAR_2} knew the move\n"
-	.string "{STR_VAR_3}…\p"
-	.string "It shows you what sort of a TRAINER\n"
-	.string "{STR_VAR_1} is.\p"
-	.string "Certainly, it was quite a lesson!$"
+	.string "Chà! Phải công nhận {STR_VAR_1}\n"
+	.string "rất xuất sắc.\p"
+	.string "Các POKéMON của HLV ấy rõ ràng đã\n"
+	.string "được nuôi dưỡng rất cân bằng.\p"
+	.string "Chúng đã chứng minh đầy thuyết phục\n"
+	.string "sự chu đáo của HLV\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Việc {STR_VAR_2} biết chiêu\n"
+	.string "{STR_VAR_3}...\p"
+	.string "Điều đó cho thấy {STR_VAR_1} là\n"
+	.string "một HLV như thế nào.\p"
+	.string "Quả là một bài học đáng giá!$"
 
 gTVSecretBaseVisitText12::
-	.string "Well, well!\n"
-	.string "I've got to hand it to {STR_VAR_1}.\p"
-	.string "The TRAINER's POKéMON showed\n"
-	.string "great promise for future growth.\p"
-	.string "They represented {STR_VAR_1}'s\n"
-	.string "hopes and dreams.\p"
-	.string "That the {STR_VAR_2} knew the move\n"
-	.string "{STR_VAR_3}…\p"
-	.string "It shows you what sort of a TRAINER\n"
-	.string "{STR_VAR_1} is.\p"
-	.string "Certainly, it was quite a lesson!$"
+	.string "Chà chà! Phải công nhận\n"
+	.string "{STR_VAR_1} rất xuất sắc.\p"
+	.string "Các POKéMON của HLV ấy cho thấy\n"
+	.string "tiềm năng phát triển to lớn trong\l"
+	.string "tương lai.\p"
+	.string "Chúng đại diện cho những hy vọng và\n"
+	.string "ước mơ của {STR_VAR_1}.\p"
+	.string "Việc {STR_VAR_2} biết chiêu\n"
+	.string "{STR_VAR_3}...\p"
+	.string "Điều đó cho thấy {STR_VAR_1} là\n"
+	.string "một HLV như thế nào.\p"
+	.string "Quả là một bài học đáng giá!$"
 
 gTVSecretBaseVisitText13::
-	.string "I must say, what a superb SECRET BASE\n"
-	.string "it was!\p"
-	.string "Viewers, if you have the chance,\n"
-	.string "do visit {STR_VAR_1}'s SECRET BASE.\p"
-	.string "Until next time, I bid you adieu!$"
+	.string "Phải nói rằng đây quả là một SECRET\n"
+	.string "BASE tuyệt vời!\p"
+	.string "Quý khán giả, nếu có cơ hội, hãy ghé\n"
+	.string "thăm SECRET BASE của\l"
+	.string "{STR_VAR_1}.\p"
+	.string "Hẹn gặp lại lần sau, xin kính chào!$"
 
 gTVPokemonLotteryWinnerFlashReportText00::
-	.string "It's exciting!\n"
-	.string "It's dramatic!\p"
-	.string "It's the POKéMON LOTTERY\n"
-	.string "WINNER FLASH REPORT!\p"
-	.string "Hello! We're coming at you live from\n"
-	.string "the POKéMON LOTTERY CORNER on\l"
-	.string "the ground floor of the LILYCOVE\l"
-	.string "DEPARTMENT STORE!\p"
-	.string "Like it always happens, another\n"
-	.string "lucky TRAINER appeared today!\p"
-	.string "That TRAINER's name…\n"
+	.string "Thật hào hứng! Thật kịch tính!\p"
+	.string "Đây là POKéMON LOTTERY WINNER FLASH\n"
+	.string "REPORT!\p"
+	.string "Xin chào! Chúng tôi đang truyền hình\n"
+	.string "trực tiếp từ POKéMON LOTTERY CORNER ở\l"
+	.string "tầng trệt của LILYCOVE DEPARTMENT\l"
+	.string "STORE!\p"
+	.string "Như thường lệ, hôm nay lại xuất hiện\n"
+	.string "thêm một HLV may mắn!\p"
+	.string "Tên của HLV ấy là...\n"
 	.string "{STR_VAR_1}!\p"
-	.string "{STR_VAR_1} won the {STR_VAR_2} prize\n"
-	.string "and took home the {STR_VAR_3}!\p"
-	.string "{STR_VAR_1}!\n"
-	.string "Congratulations!\p"
-	.string "Viewers, don't just watch,\n"
-	.string "get in on the action!\p"
-	.string "All of us at the LILYCOVE DEPARTMENT\n"
-	.string "STORE look forward to your next visit!\p"
-	.string "This has been a live broadcast from\n"
-	.string "the LILYCOVE DEPARTMENT STORE,\l"
-	.string "offering you the greatest selection\l"
-	.string "in all HOENN!$"
+	.string "{STR_VAR_1} đã trúng giải\n"
+	.string "{STR_VAR_2} và mang về\l"
+	.string "{STR_VAR_3}!\p"
+	.string "{STR_VAR_1}! Xin chúc mừng!\p"
+	.string "Quý khán giả, đừng chỉ đứng xem, hãy\n"
+	.string "tham gia ngay!\p"
+	.string "Tất cả chúng tôi tại LILYCOVE\n"
+	.string "DEPARTMENT STORE mong chờ lần ghé\l"
+	.string "thăm tiếp theo của bạn!\p"
+	.string "Chương trình truyền hình trực tiếp từ\n"
+	.string "LILYCOVE DEPARTMENT STORE, nơi có bộ\l"
+	.string "sưu tập hàng hóa phong phú nhất toàn\l"
+	.string "HOENN, xin kết thúc tại đây!$"
 
 gTVThePokemonBattleSeminarText00::
-	.string "THE POKéMON BATTLE SEMINAR!\p"
-	.string "We examine battles to see what\n"
-	.string "lessons we may learn from others.\p"
-	.string "Today's case study is on {STR_VAR_1}'s\n"
-	.string "battle.\p"
-	.string "{STR_VAR_1}'s {STR_VAR_2} was\n"
-	.string "battling one {STR_VAR_3}…$"
+	.string "HỘI THẢO POKéMON trận đấu!\p"
+	.string "Chúng ta phân tích các trận đấu để xem\n"
+	.string "có thể học hỏi được điều gì từ người\l"
+	.string "khác.\p"
+	.string "Tình huống nghiên cứu hôm nay là trận\n"
+	.string "đấu của {STR_VAR_1}.\p"
+	.string "{STR_VAR_2} của\n"
+	.string "{STR_VAR_1} đang chiến đấu với\l"
+	.string "một {STR_VAR_3}...$"
 
 gTVThePokemonBattleSeminarText01::
-	.string "And it used the move {STR_VAR_3}\n"
-	.string "on the {STR_VAR_2}…\p"
-	.string "Hmm… {STR_VAR_1}!\n"
-	.string "That's the wrong thing to do!$"
+	.string "Và nó đã dùng chiêu {STR_VAR_3}\n"
+	.string "lên {STR_VAR_2}...\p"
+	.string "Hừm... {STR_VAR_1}! Làm như vậy\n"
+	.string "là sai rồi!$"
 
 gTVThePokemonBattleSeminarText02::
-	.string "In addition to the doomed move,\n"
-	.string "the TRAINER's {STR_VAR_1} also knew$"
+	.string "Ngoài chiêu thức tai hại đó,\n"
+	.string "{STR_VAR_1} của HLV còn biết$"
 
 gTVThePokemonBattleSeminarText03::
-	.string "the moves {STR_VAR_1}, {STR_VAR_2},\n"
-	.string "and {STR_VAR_3}.$"
+	.string "các chiêu {STR_VAR_1},\n"
+	.string "{STR_VAR_2} và\l"
+	.string "{STR_VAR_3}.$"
 
 gTVThePokemonBattleSeminarText04::
-	.string "the moves {STR_VAR_1} and\n"
+	.string "các chiêu {STR_VAR_1} và\n"
 	.string "{STR_VAR_2}.$"
 
 gTVThePokemonBattleSeminarText05::
-	.string "the move {STR_VAR_2}.$"
+	.string "chiêu {STR_VAR_2}.$"
 
 gTVThePokemonBattleSeminarText06::
-	.string "So, in this situation, what should\n"
-	.string "the TRAINER have used?\p"
-	.string "… … … … … …\n"
-	.string "The move {STR_VAR_1}!\p"
-	.string "The move {STR_VAR_1} would have been\n"
-	.string "absolutely better than {STR_VAR_2}.\p"
-	.string "Viewers, I urge you to learn from this\n"
-	.string "case and battle with intelligence!\p"
-	.string "Until next time, farewell!$"
+	.string "Vậy trong tình huống này, HLV đáng\n"
+	.string "lẽ nên dùng gì?\p"
+	.string "... ... ... ... ... ... Chiêu {STR_VAR_1}!\p"
+	.string "Chiêu {STR_VAR_1} chắc chắn sẽ\n"
+	.string "hiệu quả hơn {STR_VAR_2}.\p"
+	.string "Quý khán giả, hãy rút kinh nghiệm từ\n"
+	.string "tình huống này và chiến đấu thật khôn\l"
+	.string "ngoan!\p"
+	.string "Hẹn gặp lại lần sau, xin kính chào!$"
 
 gTVTrainerFanClubText00::
-	.string "All together now!\n"
-	.string "TRAINER FAN CLUB!\p"
-	.string "MC: How's everyone groovin'?\n"
-	.string "Today, we've rounded up the fans of\l"
-	.string "the hyper-popular TRAINER {STR_VAR_1}!\p"
-	.string "FANS: Wrooooooaaaaah!\p"
-	.string "FANS: {STR_VAR_1}!\p"
-	.string "MC: Everyone!\n"
-	.string "How do you like {STR_VAR_1}?!\p"
-	.string "FANS: We love {STR_VAR_1}!\p"
-	.string "MC: What do you love about\n"
+	.string "Tất cả cùng hô nào! TRAINER FAN CLUB!\p"
+	.string "MC: Mọi người đang sung chứ? Hôm nay,\n"
+	.string "chúng tôi đã tập hợp những người hâm\l"
+	.string "mộ HLV siêu nổi tiếng\l"
+	.string "{STR_VAR_1}!\p"
+	.string "KHÁN GIẢ: Wrooooooaaaaah!\p"
+	.string "KHÁN GIẢ: {STR_VAR_1}!\p"
+	.string "MC: Mọi người! Các bạn thấy\n"
+	.string "{STR_VAR_1} thế nào?!\p"
+	.string "KHÁN GIẢ: Chúng tôi yêu {STR_VAR_1}!\p"
+	.string "MC: Các bạn yêu điều gì ở\n"
 	.string "{STR_VAR_1}?!$"
 
 gTVTrainerFanClubText01::
-	.string "FANS: Their cool way of throwing\n"
-	.string "POKé BALLS!$"
+	.string "KHÁN GIẢ: Ném POKé BALLS cực ngầu!$"
 
 gTVTrainerFanClubText02::
-	.string "FANS: Their adorable way of running!$"
+	.string "KHÁN GIẢ: Dáng chạy đáng yêu!$"
 
 gTVTrainerFanClubText03::
-	.string "FANS: How the TRAINER turns tough\n"
-	.string "when the going gets tough!$"
+	.string "KHÁN GIẢ: Cách HLV ấy trở nên mạnh mẽ\n"
+	.string "khi gặp khó khăn!$"
 
 gTVTrainerFanClubText04::
-	.string "FANS: The TRAINER's knowledge of\n"
+	.string "KHÁN GIẢ: Kiến thức của HLV ấy về\n"
 	.string "POKéMON!$"
 
 gTVTrainerFanClubText05::
-	.string "FANS: The TRAINER's kindness toward\n"
-	.string "all POKéMON!$"
+	.string "KHÁN GIẢ: Sự dịu dàng của HLV ấy dành\n"
+	.string "cho mọi POKéMON!$"
 
 gTVTrainerFanClubText06::
-	.string "FANS: The TRAINER's amazing\n"
-	.string "BIKE-riding techniques!$"
+	.string "KHÁN GIẢ: Kỹ thuật điều khiển BIKE\n"
+	.string "vời của HLV ấy!$"
 
 gTVTrainerFanClubText07::
-	.string "FANS: The TRAINER's impressive\n"
-	.string "item-buying style!$"
+	.string "KHÁN GIẢ: Cách mua vật phẩm đầy ấn\n"
+	.string "tượng của HLV ấy!$"
 
 gTVTrainerFanClubText08::
-	.string "FANS: The TRAINER's charming way\n"
-	.string "of nicknaming POKéMON!$"
+	.string "KHÁN GIẢ: Cách HLV ấy đặt biệt danh\n"
+	.string "thật duyên cho POKéMON!$"
 
 gTVTrainerFanClubText09::
-	.string "FANS: The TRAINER's nifty style of\n"
-	.string "decorating a SECRET BASE!$"
+	.string "KHÁN GIẢ: Cách trang trí SECRET BASE\n"
+	.string "cực chất của HLV!$"
 
 gTVTrainerFanClubText10::
-	.string "FANS: The TRAINER's bold ways of\n"
-	.string "using TMs!$"
+	.string "KHÁN GIẢ: Cách dùng TMs táo bạo của\n"
+	.string "HLV!$"
 
 gTVTrainerFanClubText11::
-	.string "MC: As you've just seen, {STR_VAR_1}\n"
-	.string "is hot! Like, too hot to touch, yow!\p"
-	.string "Among {STR_VAR_1}'s FANS\n"
-	.string "there's a special slogan!\p"
-	.string "MC: When I say {STR_VAR_1},\n"
-	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "MC: That's right, when someone says,\n"
-	.string "“{STR_VAR_1}”…\p"
-	.string "Come back with, “{STR_VAR_2}\n"
+	.string "MC: Như các bạn vừa thấy,\n"
+	.string "{STR_VAR_1} đang cực kỳ nổi!\l"
+	.string "Nóng đến mức chạm vào là bỏng tay, ui\l"
+	.string "da!\p"
+	.string "Người hâm mộ {STR_VAR_1} có một\n"
+	.string "khẩu hiệu đặc biệt!\p"
+	.string "MC: Khi tôi hô {STR_VAR_1}, các\n"
+	.string "bạn đáp...\p"
+	.string "KHÁN GIẢ: {STR_VAR_2}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_3}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_2}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_3}!\p"
+	.string "MC: Đúng vậy, khi ai đó nói\n"
+	.string "“{STR_VAR_1}”...\p"
+	.string "Hãy đáp lại “{STR_VAR_2}\n"
 	.string "{STR_VAR_3}!”\p"
-	.string "That has such a unique ring to it!\n"
-	.string "I can see why people become FANS\l"
-	.string "of {STR_VAR_1}!\p"
-	.string "Okay, you, in front of the TV, join us!\n"
-	.string "All together now!\p"
-	.string "MC: When I say {STR_VAR_1},\n"
-	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "MC: Thanks for joining us, all you\n"
-	.string "wild FANS of {STR_VAR_1}!\l"
-	.string "That's the show! See you again!\p"
-	.string "MC: When I say {STR_VAR_1},\n"
-	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!$"
+	.string "Nghe thật độc đáo! Tôi hiểu vì sao mọi\n"
+	.string "người lại hâm mộ\l"
+	.string "{STR_VAR_1} rồi!\p"
+	.string "Nào, bạn đang ngồi trước TV cũng tham\n"
+	.string "gia đi! Tất cả cùng hô nào!\p"
+	.string "MC: Khi tôi hô {STR_VAR_1}, các\n"
+	.string "bạn đáp...\p"
+	.string "KHÁN GIẢ: {STR_VAR_2}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_3}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_2}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_3}!\p"
+	.string "MC: Cảm ơn những người hâm mộ\n"
+	.string "{STR_VAR_1} đã tham gia! Chương\l"
+	.string "trình đến đây là hết! Hẹn gặp lại!\p"
+	.string "MC: Khi tôi hô {STR_VAR_1}, các\n"
+	.string "bạn đáp...\p"
+	.string "KHÁN GIẢ: {STR_VAR_2}!\p"
+	.string "KHÁN GIẢ: {STR_VAR_3}!$"
 
 TVSpotTheCuties_Text_Intro::
-	.string "SPOT THE CUTIES!\n"
-	.string "POKéMON IN RIBBONS!\p"
-	.string "Hello, my sweet viewers!\p"
-	.string "I just know you'll agree, but a POKéMON\n"
-	.string "wearing RIBBONS is simply divine!\p"
-	.string "Today, I want to share with you\n"
-	.string "a lovely POKéMON I spotted while\l"
-	.string "out on a stroll in town.\p"
-	.string "Today's featured pretty POKéMON\n"
-	.string "is {STR_VAR_1}'s {STR_VAR_2}.$"
+	.string "TÌM POKéMON ĐÁNG YÊU!\n"
+	.string "POKéMON ĐEO RIBBONS!\p"
+	.string "Xin chào, các khán giả thân yêu!\p"
+	.string "Tôi biết các bạn cũng sẽ đồng ý rằng\n"
+	.string "một POKéMON đeo RIBBONS trông thật\l"
+	.string "tuyệt mỹ!\p"
+	.string "Hôm nay, tôi muốn giới thiệu một\n"
+	.string "POKéMON đáng yêu mà tôi bắt gặp khi\l"
+	.string "đang dạo phố.\p"
+	.string "POKéMON xinh đẹp được giới thiệu hôm\n"
+	.string "nay là {STR_VAR_2} của\l"
+	.string "{STR_VAR_1}.$"
 
 TVSpotTheCuties_Text_RibbonsLow::
-	.string "The number of RIBBONS that\n"
-	.string "{STR_VAR_2} wears is {STR_VAR_3}.\p"
-	.string "It says a lot about how much\n"
-	.string "{STR_VAR_1} adores the POKéMON.$"
+	.string "Số RIBBONS mà {STR_VAR_2} đeo là\n"
+	.string "{STR_VAR_3}.\p"
+	.string "Chỉ vậy cũng đủ thấy {STR_VAR_1}\n"
+	.string "yêu quý POKéMON này đến nhường nào.$"
 
 TVSpotTheCuties_Text_RibbonsMid::
-	.string "{STR_VAR_2} wears an amazing\n"
-	.string "{STR_VAR_3} RIBBONS!\p"
-	.string "It speaks volumes about {STR_VAR_1}'s\n"
-	.string "commitment to the POKéMON!$"
+	.string "{STR_VAR_2} đeo tới\n"
+	.string "{STR_VAR_3} RIBBONS tuyệt đẹp!\p"
+	.string "Điều đó cho thấy {STR_VAR_1} tận\n"
+	.string "tâm với POKéMON này đến mức nào!$"
 
 TVSpotTheCuties_Text_RibbonsHigh::
-	.string "{STR_VAR_2} wears an incredible\n"
-	.string "{STR_VAR_3} RIBBONS!\p"
-	.string "It shows you {STR_VAR_1}'s total\n"
-	.string "dedication as a collector!$"
+	.string "{STR_VAR_2} đeo tới\n"
+	.string "{STR_VAR_3} RIBBONS đáng kinh\l"
+	.string "ngạc!\p"
+	.string "Điều đó cho thấy {STR_VAR_1} tận\n"
+	.string "tụy với việc sưu tầm đến mức nào!$"
 
 TVSpotTheCuties_Text_RibbonIntro::
-	.string "Let us take a closer look at the many\n"
-	.string "RIBBONS worn by {STR_VAR_2}.$"
+	.string "Hãy cùng ngắm kỹ vô số RIBBONS mà\n"
+	.string "{STR_VAR_2} đang đeo.$"
 
 TVSpotTheCuties_Text_RibbonChampion::
-	.string "The CHAMPION RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it upon entering\n"
-	.string "the HALL OF FAME.\p"
-	.string "It verily draws out the bravery\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the CHAMP RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "CHAMPION RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó khi\n"
+	.string "bước vào HALL OF FAME.\p"
+	.string "Quả thực nó làm nổi bật lòng dũng cảm\n"
+	.string "của {STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng CHAMP RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonCool::
-	.string "The COOL RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for winning\n"
-	.string "a COOL CONTEST.\p"
-	.string "It verily draws out the coolness\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the COOL RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "COOL RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ chiến thắng một COOL CONTEST.\p"
+	.string "Quả thực nó làm nổi bật vẻ sành điệu\n"
+	.string "của {STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng COOL RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonBeauty::
-	.string "The BEAUTY RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for winning\n"
-	.string "a BEAUTY CONTEST.\p"
-	.string "It verily draws out the beauty\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the BEAUTY RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "BEAUTY RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ chiến thắng một BEAUTY CONTEST.\p"
+	.string "Quả thực nó làm nổi bật vẻ đẹp của\n"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng BEAUTY RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonCute::
-	.string "The CUTE RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for winning\n"
-	.string "a CUTE CONTEST.\p"
-	.string "It verily draws out the cuteness\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the CUTE RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "CUTE RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ chiến thắng một CUTE CONTEST.\p"
+	.string "Quả thực nó làm nổi bật vẻ đáng yêu của\n"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng CUTE RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonSmart::
-	.string "The SMART RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for winning\n"
-	.string "a SMART CONTEST.\p"
-	.string "It verily draws out the smartness\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the SMART RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "SMART RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ chiến thắng một SMART CONTEST.\p"
+	.string "Quả thực nó làm nổi bật sự thông minh\n"
+	.string "của {STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng SMART RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonTough::
-	.string "The TOUGH RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for winning\n"
-	.string "a TOUGH CONTEST.\p"
-	.string "It verily draws out the toughness\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the TOUGH RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "TOUGH RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ chiến thắng một TOUGH CONTEST.\p"
+	.string "Quả thực nó làm nổi bật vẻ cứng cỏi của\n"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng TOUGH RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonWinning::
-	.string "The WINNING RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for its feats\n"
-	.string "at the BATTLE TOWER.\p"
-	.string "It verily draws out the mightiness\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the WINNING RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "WINNING RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ những thành tích tại BATTLE\l"
+	.string "TOWER.\p"
+	.string "Quả thực nó làm nổi bật sức mạnh của\n"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng WINNING\n"
+	.string "RIBBON! Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonVictory::
-	.string "The VICTORY RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for its feats\n"
-	.string "at the BATTLE TOWER.\p"
-	.string "It verily draws out the incredible\n"
-	.string "mightiness of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the VICTORY RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "VICTORY RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ những thành tích tại BATTLE\l"
+	.string "TOWER.\p"
+	.string "Quả thực nó làm nổi bật sức mạnh phi\n"
+	.string "thường của {STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng VICTORY\n"
+	.string "RIBBON! Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonArtist::
-	.string "The ARTIST RIBBON is especially\n"
-	.string "fetching.\p"
-	.string "{STR_VAR_2} received it for being\n"
-	.string "the model for an artist.\p"
-	.string "It verily draws out the pop-star charm\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the ARTIST RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "ARTIST RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ làm mẫu cho một họa sĩ.\p"
+	.string "Quả thực nó làm nổi bật sức hút của một\n"
+	.string "ngôi sao nhạc pop ở {STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng ARTIST RIBBON!\n"
+	.string "Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_RibbonEffort::
-	.string "The Hard Worker RIBBON is\n"
-	.string "especially fetching.\p"
-	.string "{STR_VAR_2} received it for being\n"
-	.string "an especially dedicated worker.\p"
-	.string "It verily draws out the determination\n"
-	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the Hard Worker RIBBON!\n"
-	.string "The combination is super effective!$"
+	.string "Hard Worker RIBBON trông đặc biệt hợp.\p"
+	.string "{STR_VAR_2} đã nhận được nó\n"
+	.string "nhờ tinh thần làm việc đặc biệt chăm\l"
+	.string "chỉ.\p"
+	.string "Quả thực nó làm nổi bật quyết tâm của\n"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_2} cùng Hard Worker\n"
+	.string "RIBBON! Một sự kết hợp siêu hiệu quả!$"
 
 TVSpotTheCuties_Text_Outro::
-	.string "…Sigh…\p"
-	.string "RIBBONS and POKéMON…\n"
-	.string "They go so wonderfully together!\p"
-	.string "Before I swoon,\n"
-	.string "I bid you all farewell!$"
+	.string "Haiz...\p"
+	.string "RIBBONS và POKéMON... Chúng thật là một\n"
+	.string "cặp hoàn hảo!\p"
+	.string "Trước khi ngất ngây, tôi xin chào tạm\n"
+	.string "biệt tất cả các bạn!$"
 
 gTVPokemonNewsBattleFrontierText00::
-	.string "Greetings!\n"
-	.string "It's time for POKéMON NEWS.\p"
-	.string "We've got some uplifting news from\n"
-	.string "the BATTLE FRONTIER.$"
+	.string "Xin chào! Đã đến giờ phát POKéMON NEWS.\p"
+	.string "Chúng tôi có một tin đáng mừng từ\n"
+	.string "BATTLE FRONTIER.$"
 
 gTVPokemonNewsBattleFrontierText01::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE TOWER's SINGLE BATTLE\l"
-	.string "ROOM challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "SINGLE BATTLE ROOM của BATTLE TOWER.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText02::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE TOWER's DOUBLE BATTLE\l"
-	.string "ROOM challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "DOUBLE BATTLE ROOM của BATTLE TOWER.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText03::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE TOWER's MULTI BATTLE\l"
-	.string "ROOM challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "MULTI BATTLE ROOM của BATTLE TOWER.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText04::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE TOWER's LINK MULTI BATTLE\l"
-	.string "ROOM challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "LINK MULTI BATTLE ROOM của BATTLE\l"
+	.string "TOWER.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText05::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-championship-streak record\l"
-	.string "competing in the BATTLE DOME's\l"
-	.string "SINGLE BATTLE Tournaments.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "chức vô địch liên tiếp khi tranh tài tại\l"
+	.string "các giải SINGLE BATTLE của BATTLE\l"
+	.string "DOME.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText06::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-championship-streak record\l"
-	.string "competing in the BATTLE DOME's\l"
-	.string "DOUBLE BATTLE Tournaments.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "chức vô địch liên tiếp khi tranh tài tại\l"
+	.string "các giải DOUBLE BATTLE của BATTLE\l"
+	.string "DOME.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText07::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE FACTORY's Battle\l"
-	.string "Swap Single challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "Battle Swap Single của BATTLE FACTORY.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText08::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE FACTORY's Battle\l"
-	.string "Swap Double challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "Battle Swap Double của BATTLE FACTORY.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText09::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "record of clearing {STR_VAR_2} rooms\l"
-	.string "while on the BATTLE PIKE's Battle\l"
-	.string "Choice challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới khi vượt qua {STR_VAR_2}\l"
+	.string "phòng trong thử thách Battle Choice\l"
+	.string "của BATTLE PIKE.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText10::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while\l"
-	.string "competing in the BATTLE ARENA's\l"
-	.string "Set KO Tournaments.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp khi tranh tài tại\l"
+	.string "Set KO Tournaments của BATTLE ARENA.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText11::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE PALACE's SINGLE BATTLE\l"
-	.string "HALL challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "SINGLE BATTLE HALL của BATTLE PALACE.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText12::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the BATTLE PALACE's DOUBLE BATTLE\l"
-	.string "HALL challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới với chuỗi {STR_VAR_2}\l"
+	.string "trận thắng liên tiếp trong thử thách\l"
+	.string "DOUBLE BATTLE HALL của BATTLE PALACE.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText13::
-	.string "The TRAINER {STR_VAR_1} set a new\n"
-	.string "record of clearing {STR_VAR_2} floors\l"
-	.string "while on the BATTLE PYRAMID's\l"
-	.string "Battle Quest challenge.\p"
-	.string "Here's to {STR_VAR_1}!$"
+	.string "HLV {STR_VAR_1} đã lập kỷ\n"
+	.string "lục mới khi vượt qua {STR_VAR_2}\l"
+	.string "tầng trong thử thách Battle Quest của\l"
+	.string "BATTLE PYRAMID.\p"
+	.string "Xin chúc mừng {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText14::
-	.string "And to the three POKéMON, {STR_VAR_1},\n"
-	.string "{STR_VAR_2}, and {STR_VAR_3}!\p"
-	.string "Congratulations for your\n"
-	.string "record-breaking performance!$"
+	.string "Và cả ba POKéMON, {STR_VAR_1},\n"
+	.string "{STR_VAR_2} và\l"
+	.string "{STR_VAR_3}!\p"
+	.string "Xin chúc mừng màn trình diễn phá kỷ lục\n"
+	.string "của các bạn!$"
 
 gTVPokemonNewsBattleFrontierText15::
-	.string "And to the two POKéMON, {STR_VAR_1}\n"
-	.string "and {STR_VAR_2}!\p"
-	.string "Congratulations for your\n"
-	.string "record-breaking performance!$"
+	.string "Và cả hai POKéMON, {STR_VAR_1} và\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Xin chúc mừng màn trình diễn phá kỷ lục\n"
+	.string "của các bạn!$"
 
 gTVPokemonNewsBattleFrontierText16::
-	.string "And to the four POKéMON: {STR_VAR_1}!\p"
+	.string "Và bốn POKéMON: {STR_VAR_1}!\p"
 	.string "{STR_VAR_2}!\p"
 	.string "{STR_VAR_3}!$"
 
 gTVPokemonNewsBattleFrontierText17::
-	.string "And {STR_VAR_1}!\p"
-	.string "Congratulations for your\n"
-	.string "record-breaking performance!$"
+	.string "Và {STR_VAR_1}!\p"
+	.string "Xin chúc mừng màn trình diễn phá kỷ lục\n"
+	.string "của các bạn!$"
 
 gTVPokemonNewsBattleFrontierText18::
-	.string "Let's hope for more record-setting\n"
-	.string "feats from {STR_VAR_1} and the loyal\l"
-	.string "POKéMON!\p"
-	.string "That's the news on POKéMON NEWS!$"
+	.string "Hãy cùng mong chờ thêm nhiều thành\n"
+	.string "tích lập kỷ lục từ {STR_VAR_1} và\l"
+	.string "những POKéMON trung thành!\p"
+	.string "POKéMON NEWS xin kết thúc tại đây!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "WHAT'S NO. 1 IN HOENN TODAY?\n"
-	.string "Yes, it's that time again!\p"
-	.string "Hello, viewers! Are you giving your\n"
-	.string "best at whatever you do?\p"
-	.string "Let's have a look at the TRAINER\n"
-	.string "who did the very best today!\p"
-	.string "Today's no. 1 TRAINER is none other\n"
-	.string "than {STR_VAR_1}!$"
+	.string "AI LÀ SỐ 1 HOENN HÔM NAY?\p"
+	.string "Vâng, lại đến giờ rồi!\p"
+	.string "Xin chào quý khán giả! Các bạn có đang\n"
+	.string "cố gắng hết sức trong mọi việc không?\p"
+	.string "Hãy cùng xem HLV nào đã thể hiện\n"
+	.string "xuất sắc nhất hôm nay!\p"
+	.string "HLV số 1 hôm nay không ai khác\n"
+	.string "chính là {STR_VAR_1}!$"
 
 gTVWhatsNo1InHoennTodayText01::
-	.string "In one day, {STR_VAR_1} spun the SLOTS\n"
-	.string "at the GAME CORNER {STR_VAR_2} times.\p"
-	.string "While playing, {STR_VAR_1} was heard\n"
-	.string "murmuring, “For me, the reels don't\l"
-	.string "even move…”\l"
-	.string "Isn't that interesting?$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã quay SLOTS tại GAME CORNER\l"
+	.string "{STR_VAR_2} lần.\p"
+	.string "Trong lúc chơi, người ta nghe thấy\n"
+	.string "{STR_VAR_1} lẩm bẩm: “Với mình,\l"
+	.string "mấy vòng quay còn chẳng nhúc nhích...”\l"
+	.string "Thật thú vị, phải không?$"
 
 gTVWhatsNo1InHoennTodayText02::
-	.string "In one day, {STR_VAR_1} played\n"
-	.string "the ROULETTE game at the GAME\l"
-	.string "CORNER {STR_VAR_2} times.\p"
-	.string "While playing, {STR_VAR_1} shouted,\n"
-	.string "“Let the balls decide!”\p"
-	.string "The TRAINER's eyes were focused and\n"
-	.string "the face showed concentration.$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã chơi ROULETTE tại GAME CORNER\l"
+	.string "{STR_VAR_2} lần.\p"
+	.string "Trong lúc chơi, {STR_VAR_1} đã\n"
+	.string "hét lên: “Cứ để những quả bóng quyết\l"
+	.string "định!”\p"
+	.string "Ánh mắt của HLV tập trung cao độ,\n"
+	.string "gương mặt đầy vẻ chăm chú.$"
 
 gTVWhatsNo1InHoennTodayText03::
-	.string "In one day, {STR_VAR_1} battled\n"
-	.string "wild POKéMON {STR_VAR_2} times!\p"
-	.string "Apparently, {STR_VAR_1}'s POKéMON\n"
-	.string "have grown incomparably stronger.\p"
-	.string "They appear eager to battle anywhere,\n"
-	.string "anytime, and anyhow!$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã chiến đấu với POKéMON hoang dã\l"
+	.string "{STR_VAR_2} lần!\p"
+	.string "Có vẻ các POKéMON của\n"
+	.string "{STR_VAR_1} đã mạnh lên vượt\l"
+	.string "bậc.\p"
+	.string "Chúng dường như luôn háo hức chiến\n"
+	.string "đấu ở bất kỳ đâu, bất kỳ lúc nào và\l"
+	.string "bằng mọi cách!$"
 
 gTVWhatsNo1InHoennTodayText04::
-	.string "In just one day, {STR_VAR_1} spun\n"
-	.string "the BERRY BLENDER {STR_VAR_2} times!\p"
-	.string "Toward the end, even {STR_VAR_1}\n"
-	.string "seemed to get dizzy.\p"
-	.string "The TRAINER appeared to totter\n"
-	.string "around like a SPINDA!$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã xoay BERRY BLENDER\l"
+	.string "{STR_VAR_2} lần!\p"
+	.string "Đến cuối, ngay cả {STR_VAR_1}\n"
+	.string "cũng có vẻ chóng mặt.\p"
+	.string "HLV lảo đảo chẳng khác nào một\n"
+	.string "SPINDA!$"
 
 gTVWhatsNo1InHoennTodayText05::
-	.string "In just one day, {STR_VAR_1} planted\n"
-	.string "{STR_VAR_2} BERRIES!\p"
-	.string "As a result, {STR_VAR_1}'s clothes\n"
-	.string "became filthy with dirt.\p"
-	.string "Where the TRAINER planted, countless\n"
-	.string "flowers have burst into bloom.\p"
-	.string "The flowers are said to soothe\n"
-	.string "the emotions of people.$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã trồng {STR_VAR_2} BERRIES!\p"
+	.string "Kết quả là quần áo của\n"
+	.string "{STR_VAR_1} lấm lem đất cát.\p"
+	.string "Vô số hoa đã nở rộ tại những nơi\n"
+	.string "HLV gieo trồng.\p"
+	.string "Người ta nói những bông hoa ấy có thể\n"
+	.string "xoa dịu lòng người.$"
 
 gTVWhatsNo1InHoennTodayText06::
-	.string "In just one day, {STR_VAR_1} picked\n"
-	.string "{STR_VAR_2} BERRIES!\p"
-	.string "{STR_VAR_1}'s BAG became so filled\n"
-	.string "with BERRIES, the TRAINER had trouble\l"
-	.string "walking afterward!$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã hái {STR_VAR_2} BERRIES!\p"
+	.string "TÚI ĐỒ của {STR_VAR_1} đầy ắp\n"
+	.string "BERRIES đến mức sau đó HLV đi lại\l"
+	.string "cũng khó khăn!$"
 
 gTVWhatsNo1InHoennTodayText07::
-	.string "In just one day, {STR_VAR_1} obtained\n"
-	.string "{STR_VAR_2} Battle Points!\p"
-	.string "{STR_VAR_1} was later seen wrestling\n"
-	.string "with the choice of exchanging\l"
-	.string "the Battle Points for a cool item or\l"
-	.string "a nifty interior decoration.\p"
-	.string "The TRAINER reportedly was grinning\n"
-	.string "while mulling options.$"
+	.string "Chỉ trong một ngày, {STR_VAR_1}\n"
+	.string "đã giành được {STR_VAR_2}\l"
+	.string "Battle Points!\p"
+	.string "Sau đó, người ta thấy\n"
+	.string "{STR_VAR_1} phân vân không biết\l"
+	.string "nên đổi Battle Points lấy một món đồ\l"
+	.string "cực chất hay một vật trang trí nội thất\l"
+	.string "độc đáo.\p"
+	.string "Theo ghi nhận, HLV vừa cân nhắc\n"
+	.string "các lựa chọn vừa cười tủm tỉm.$"
 
 gTVWhatsNo1InHoennTodayText08::
-	.string "Well, isn't that something!\p"
-	.string "{STR_VAR_1}!\n"
-	.string "You're today's no. 1 TRAINER!\p"
-	.string "Viewers, take heart from {STR_VAR_1}!\n"
-	.string "You, too, can be no. 1 every day!$"
+	.string "Quả là đáng nể!\p"
+	.string "{STR_VAR_1}! Bạn chính là\n"
+	.string "HLV số 1 hôm nay!\p"
+	.string "Quý khán giả, hãy lấy {STR_VAR_1}\n"
+	.string "làm động lực! Các bạn cũng có thể trở\l"
+	.string "thành số 1 mỗi ngày!$"
 
 TVSecretBaseSecrets_Text_Intro::
 	.string "SECRET BASE SECRETS!\p"
-	.string "What do TRAINERS do in the secrecy\n"
-	.string "of SECRET BASES?\p"
-	.string "Today, we investigate {STR_VAR_1}'s\n"
-	.string "SECRET BASE.\p"
-	.string "Oh? It looks like {STR_VAR_2} has come\n"
-	.string "for a visit.\p"
-	.string "Let's have a peek!\p"
-	.string "What will {STR_VAR_2} do?$"
+	.string "Các HLV làm gì trong chốn riêng\n"
+	.string "tư của SECRET BASES?\p"
+	.string "Hôm nay, chúng ta sẽ điều tra SECRET\n"
+	.string "BASE của {STR_VAR_1}.\p"
+	.string "Ồ? Có vẻ {STR_VAR_2} đã ghé thăm.\p"
+	.string "Hãy cùng nhìn trộm một chút!\p"
+	.string "{STR_VAR_2} sẽ làm gì đây?$"
 
 TVSecretBaseSecrets_Text_WhatWillPlayerDoNext1::
-	.string "What will {STR_VAR_2} do next?$"
+	.string "Tiếp theo, {STR_VAR_2} sẽ làm gì?$"
 
 TVSecretBaseSecrets_Text_WhatWillPlayerDoNext2::
-	.string "And now, what will {STR_VAR_2} do?$"
+	.string "Giờ thì {STR_VAR_2} sẽ làm gì\n"
+	.string "đây?$"
 
 TVSecretBaseSecrets_Text_TookXStepsBeforeLeaving::
-	.string "In the end, {STR_VAR_2} took {STR_VAR_3} steps\n"
-	.string "in {STR_VAR_1}'s SECRET BASE before\l"
-	.string "leaving.$"
+	.string "Cuối cùng, {STR_VAR_2} đã đi\n"
+	.string "{STR_VAR_3} bước trong SECRET\l"
+	.string "BASE của {STR_VAR_1} rồi mới rời\l"
+	.string "đi.$"
 
 TVSecretBaseSecrets_Text_BaseFailedToInterestPlayer::
-	.string "Hmm…\p"
-	.string "It appears as if {STR_VAR_1}'s SECRET\n"
-	.string "BASE failed to interest {STR_VAR_2}…$"
+	.string "Hmm...\p"
+	.string "Có vẻ SECRET BASE của\n"
+	.string "{STR_VAR_1} không khiến\l"
+	.string "{STR_VAR_2} hứng thú...$"
 
 TVSecretBaseSecrets_Text_PlayerEnjoyedBase::
-	.string "{STR_VAR_2} appears to have enjoyed\n"
-	.string "{STR_VAR_1}'s SECRET BASE thoroughly.$"
+	.string "Có vẻ {STR_VAR_2} đã tận hưởng\n"
+	.string "trọn vẹn SECRET BASE của\l"
+	.string "{STR_VAR_1}.$"
 
 TVSecretBaseSecrets_Text_PlayerHugeFanOfBase::
-	.string "{STR_VAR_2} appears to have become\n"
-	.string "a huge fan of {STR_VAR_1}'s\l"
-	.string "SECRET BASE.$"
+	.string "Có vẻ {STR_VAR_2} đã trở thành\n"
+	.string "một người cực kỳ yêu thích SECRET\l"
+	.string "BASE của {STR_VAR_1}.$"
 
 TVSecretBaseSecrets_Text_Outro::
-	.string "Viewers may want to check out\n"
-	.string "{STR_VAR_1}'s SECRET BASE, too.\p"
-	.string "Tune in next time as we visit another\n"
-	.string "SECRET BASE! Thanks for joining us!$"
+	.string "Quý khán giả cũng có thể ghé thăm\n"
+	.string "SECRET BASE của {STR_VAR_1}.\p"
+	.string "Hãy đón xem lần tới khi chúng tôi ghé\n"
+	.string "thăm một SECRET BASE khác! Cảm ơn các\l"
+	.string "bạn đã theo dõi!$"
 
 TVSecretBaseSecrets_Text_StoppedMoving1::
-	.string "The visitor has stopped!\p"
-	.string "The visitor isn't moving at all!\p"
-	.string "Was {STR_VAR_1}'s SECRET BASE\n"
-	.string "that unimpressive?$"
+	.string "Vị khách đã đứng lại!\p"
+	.string "Vị khách hoàn toàn không nhúc nhích!\p"
+	.string "SECRET BASE của {STR_VAR_1} kém\n"
+	.string "ấn tượng đến vậy sao?$"
 
 TVSecretBaseSecrets_Text_StoppedMoving2::
-	.string "The visitor has stopped!\p"
-	.string "The visitor isn't moving at all!\p"
-	.string "Is it fatigue?\n"
-	.string "Has the visitor grown weary?$"
+	.string "Vị khách đã đứng lại!\p"
+	.string "Vị khách hoàn toàn không nhúc nhích!\p"
+	.string "Có phải vì mệt không? Vị khách đã kiệt\n"
+	.string "sức rồi sao?$"
 
 TVSecretBaseSecrets_Text_UsedChair::
-	.string "The visitor sat down on a chair!\n"
-	.string "The visitor is seated!\p"
-	.string "Look at that look of delight!\p"
-	.string "That chair must be very comfortable\n"
-	.string "to get that response!$"
+	.string "Vị khách đã ngồi xuống một chiếc ghế! Vị\n"
+	.string "khách đã yên vị!\p"
+	.string "Nhìn vẻ mặt thích thú ấy kìa!\p"
+	.string "Chiếc ghế hẳn phải rất thoải mái mới\n"
+	.string "khiến vị khách phản ứng như vậy!$"
 
 TVSecretBaseSecrets_Text_UsedBalloon::
-	.string "The visitor charged at a balloon!\p"
-	.string "It burst!\n"
-	.string "Oh, my goodness, it popped!\p"
-	.string "The visitor appears startled by\n"
-	.string "the sudden noise!$"
+	.string "Vị khách lao thẳng vào một quả bóng\n"
+	.string "bay!\p"
+	.string "Nó nổ rồi! Trời ơi, nó nổ tung rồi!\p"
+	.string "Có vẻ vị khách giật mình vì tiếng động\n"
+	.string "bất ngờ!$"
 
 TVSecretBaseSecrets_Text_UsedTent::
-	.string "The visitor entered a TENT!\p"
-	.string "The visitor is running around!\p"
-	.string "Oh, my, the visitor is frolicking!\p"
-	.string "The visitor appears surprised by\n"
-	.string "the TENT's size!$"
+	.string "Vị khách đã chui vào một TENT!\p"
+	.string "Vị khách đang chạy khắp nơi!\p"
+	.string "Ôi chao, vị khách đang nô đùa!\p"
+	.string "Có vẻ vị khách bất ngờ trước kích\n"
+	.string "thước của TENT!$"
 
 TVSecretBaseSecrets_Text_UsedPlant::
-	.string "The visitor is examining\n"
-	.string "a potted plant!\p"
-	.string "The visitor has surprisingly\n"
-	.string "mature taste!$"
+	.string "Vị khách đang ngắm nghía một chậu cây!\p"
+	.string "Thật bất ngờ, vị khách có gu rất chín\n"
+	.string "chắn!$"
 
 TVSecretBaseSecrets_Text_UsedGoldShield::
-	.string "The visitor is examining\n"
-	.string "a GOLD SHIELD!\p"
-	.string "The visitor's eyes appear to be\n"
-	.string "lit up with wonder!$"
+	.string "Vị khách đang ngắm nghía một GOLD\n"
+	.string "SHIELD!\p"
+	.string "Đôi mắt của vị khách dường như sáng\n"
+	.string "lên vì kinh ngạc!$"
 
 TVSecretBaseSecrets_Text_UsedSilverShield::
-	.string "The visitor is examining\n"
-	.string "a SILVER SHIELD!\p"
-	.string "The visitor appears to be wide-eyed!$"
+	.string "Vị khách đang ngắm nghía một SILVER\n"
+	.string "SHIELD!\p"
+	.string "Có vẻ vị khách đang tròn mắt kinh ngạc!$"
 
 TVSecretBaseSecrets_Text_UsedGlassOrnament::
-	.string "The visitor is examining\n"
-	.string "a GLASS ORNAMENT!\p"
-	.string "Oh, no!\p"
-	.string "The visitor is touching it!\p"
-	.string "It's getting covered with\n"
-	.string "fingerprints…$"
+	.string "Vị khách đang ngắm nghía một GLASS\n"
+	.string "ORNAMENT!\p"
+	.string "Ôi không!\p"
+	.string "Vị khách đang chạm vào nó!\p"
+	.string "Nó sắp phủ đầy dấu vân tay rồi...$"
 
 TVSecretBaseSecrets_Text_UsedTV::
-	.string "The visitor is watching television!\p"
-	.string "Looks like we have a big fan of TV!$"
+	.string "Vị khách đang xem truyền hình!\p"
+	.string "Có vẻ chúng ta đã gặp một người cực mê\n"
+	.string "TV!$"
 
 TVSecretBaseSecrets_Text_UsedMudBall::
-	.string "The visitor stomped on a MUD BALL!\p"
-	.string "The visitor looks delighted!$"
+	.string "Vị khách đã giẫm mạnh lên một MUD BALL!\p"
+	.string "Vị khách trông vô cùng thích thú!$"
 
 TVSecretBaseSecrets_Text_UsedBag::
-	.string "…Oh?\p"
-	.string "The visitor is reaching for their own\n"
-	.string "BAG and rummaging about in it!\p"
-	.string "The visitor pulled out\n"
-	.string "one {STR_VAR_2}!\p"
-	.string "Look at the visitor smile while\n"
-	.string "holding up the {STR_VAR_2}!\p"
-	.string "It's like a TV commercial!$"
+	.string "...Ồ?\p"
+	.string "Vị khách đang lục TÚI ĐỒ của mình!\p"
+	.string "Vị khách lấy ra một {STR_VAR_2}!\p"
+	.string "Nhìn vị khách mỉm cười khi giơ\n"
+	.string "{STR_VAR_2} lên kìa!\p"
+	.string "Cứ như quảng cáo trên TV vậy!$"
 
 TVSecretBaseSecrets_Text_UsedCushion::
-	.string "The visitor grabs a cushion and…$"
+	.string "Vị khách chộp lấy một chiếc đệm rồi...$"
 
 TVSecretBaseSecrets_Text_HitCushion::
-	.string "…begins hitting it!\p"
-	.string "Is the visitor under a lot of stress?$"
+	.string "...bắt đầu đập nó!\p"
+	.string "Vị khách đang chịu nhiều căng thẳng lắm\n"
+	.string "sao?$"
 
 TVSecretBaseSecrets_Text_HuggedCushion::
-	.string "…hugs it tight!\p"
-	.string "Could the visitor be feeling happy\n"
-	.string "about something?$"
+	.string "...ôm chặt lấy nó!\p"
+	.string "Có phải vị khách đang vui vì chuyện gì\n"
+	.string "đó không?$"
 
 TVSecretBaseSecrets_Text_BattledWon::
-	.string "The visitor is chatting with\n"
+	.string "Vị khách đang trò chuyện với\n"
 	.string "{STR_VAR_1}!\p"
-	.string "It looks like they're going to\n"
-	.string "have a battle!\p"
-	.string "And…\p"
-	.string "It's the visitor!\n"
-	.string "The visitor won an away match!\p"
-	.string "The visitor is doing\n"
-	.string "a victory dance!$"
+	.string "Có vẻ họ sắp chiến đấu!\p"
+	.string "Và...\p"
+	.string "Vị khách thắng rồi! Vị khách đã giành\n"
+	.string "chiến thắng trên sân khách!\p"
+	.string "Vị khách đang nhảy múa ăn mừng!$"
 
 TVSecretBaseSecrets_Text_BattledLost::
-	.string "The visitor is chatting with\n"
+	.string "Vị khách đang trò chuyện với\n"
 	.string "{STR_VAR_1}!\p"
-	.string "It looks like they're going to\n"
-	.string "have a battle!\p"
-	.string "And…\p"
-	.string "It's {STR_VAR_1}!\n"
-	.string "The visitor has lost!\p"
-	.string "The visitor looks dejected!$"
+	.string "Có vẻ họ sắp chiến đấu!\p"
+	.string "Và...\p"
+	.string "{STR_VAR_1} thắng rồi! Vị khách\n"
+	.string "đã thua!\p"
+	.string "Vị khách trông thật chán nản!$"
 
 TVSecretBaseSecrets_Text_DeclinedBattle::
-	.string "The visitor is chatting with\n"
+	.string "Vị khách đang trò chuyện với\n"
 	.string "{STR_VAR_1}!\p"
-	.string "It looks like they're going to\n"
-	.string "have a battle!\p"
-	.string "And…\p"
-	.string "No, the visitor has refused!\p"
-	.string "There won't be a battle after all!\p"
-	.string "Did the visitor find {STR_VAR_1}\n"
-	.string "unappealing?$"
+	.string "Có vẻ họ sắp chiến đấu!\p"
+	.string "Và...\p"
+	.string "Không, vị khách đã từ chối!\p"
+	.string "Rốt cuộc sẽ không có trận đấu nào cả!\p"
+	.string "Vị khách không thấy {STR_VAR_1}\n"
+	.string "đủ hấp dẫn sao?$"
 
 TVSecretBaseSecrets_Text_UsedPoster::
-	.string "The visitor is staring intently\n"
-	.string "at a poster!\p"
-	.string "Is the poster to the visitor's\n"
-	.string "liking?\p"
-	.string "…But… There's something disturbing\n"
-	.string "about the visitor's stares.$"
+	.string "Vị khách đang chăm chú nhìn một tấm áp\n"
+	.string "phích!\p"
+	.string "Tấm áp phích hợp ý vị khách chăng?\p"
+	.string "...Nhưng... Ánh mắt của vị khách có gì đó\n"
+	.string "thật đáng ngại.$"
 
 TVSecretBaseSecrets_Text_UsedNoteMat::
-	.string "The visitor stepped on a NOTE MAT!\p"
-	.string "…Hmm…\n"
-	.string "The visitor composed a funny tune!$"
+	.string "Vị khách đã giẫm lên một NOTE MAT!\p"
+	.string "...Hmm... Vị khách vừa sáng tác một giai\n"
+	.string "điệu thật vui nhộn!$"
 
 TVSecretBaseSecrets_Text_BattledDraw::
-	.string "The visitor is chatting with\n"
+	.string "Vị khách đang trò chuyện với\n"
 	.string "{STR_VAR_1}!\p"
-	.string "It looks like they're going to\n"
-	.string "have a battle!\p"
-	.string "And…\p"
-	.string "It's a draw!\n"
-	.string "Nothing's resolved!\p"
-	.string "Both TRAINERS appear to be very\n"
-	.string "disappointed!$"
+	.string "Có vẻ họ sắp chiến đấu!\p"
+	.string "Và...\p"
+	.string "Hòa rồi! Vẫn chưa phân thắng bại!\p"
+	.string "Cả hai HLV đều có vẻ vô cùng thất\n"
+	.string "vọng!$"
 
 TVSecretBaseSecrets_Text_UsedSpinMat::
-	.string "The visitor stepped on\n"
-	.string "a SPIN MAT!\p"
-	.string "It looks like the visitor is dizzy!\p"
-	.string "The visitor is tottering about!\n"
-	.string "Look out!$"
+	.string "Vị khách đã giẫm lên một SPIN MAT!\p"
+	.string "Có vẻ vị khách đang chóng mặt!\p"
+	.string "Vị khách đang lảo đảo! Cẩn thận!$"
 
 TVSecretBaseSecrets_Text_UsedSandOrnament::
-	.string "The visitor is reaching for\n"
-	.string "a SAND ORNAMENT!\p"
-	.string "Oh!\p"
-	.string "It crumbled!\n"
-	.string "It's fallen apart!\p"
-	.string "The visitor looks sheepish\n"
-	.string "and guilty!$"
+	.string "Vị khách đang với tay về phía một SAND\n"
+	.string "ORNAMENT!\p"
+	.string "Ôi!\p"
+	.string "Nó vỡ vụn rồi! Nó tan tành rồi!\p"
+	.string "Vị khách trông vừa ngượng ngùng vừa\n"
+	.string "áy náy!$"
 
 TVSecretBaseSecrets_Text_UsedDesk::
-	.string "The visitor is rubbing a desktop\n"
-	.string "with their finger!\p"
-	.string "Apparently, the visitor disapproves\n"
-	.string "of dust!\p"
-	.string "The visitor is surprisingly concerned\n"
-	.string "about neatness!$"
+	.string "Vị khách đang dùng ngón tay quệt trên\n"
+	.string "mặt bàn!\p"
+	.string "Có vẻ vị khách không chấp nhận được\n"
+	.string "bụi bẩn!\p"
+	.string "Thật bất ngờ, vị khách rất quan tâm đến\n"
+	.string "sự ngăn nắp!$"
 
 TVSecretBaseSecrets_Text_UsedBrick::
-	.string "The visitor is staring at a BRICK!\p"
-	.string "Perhaps the visitor is thinking about\n"
-	.string "the object on the BRICK.$"
+	.string "Vị khách đang nhìn chằm chằm vào một\n"
+	.string "BRICK!\p"
+	.string "Có lẽ vị khách đang nghĩ về món đồ đặt\n"
+	.string "trên BRICK.$"
 
 TVSecretBaseSecrets_Text_UsedSolidBoard::
-	.string "The visitor is walking across\n"
-	.string "the SOLID BOARD.\p"
-	.string "The visitor keeps looking down.\p"
-	.string "The visitor appears to be surprisingly\n"
-	.string "timid and cautious!$"
+	.string "Vị khách đang đi qua SOLID BOARD.\p"
+	.string "Vị khách cứ nhìn xuống mãi.\p"
+	.string "Có vẻ vị khách nhút nhát và thận trọng\n"
+	.string "đến bất ngờ!$"
 
 TVSecretBaseSecrets_Text_UsedFence::
-	.string "The visitor is looking intently\n"
-	.string "at a FENCE!\p"
-	.string "Has a new idea for a trap popped\n"
-	.string "into the visitor's head?$"
+	.string "Vị khách đang chăm chú nhìn một FENCE!\p"
+	.string "Phải chăng một ý tưởng mới về bẫy vừa\n"
+	.string "lóe lên trong đầu vị khách?$"
 
 TVSecretBaseSecrets_Text_UsedGlitterMat::
-	.string "The visitor stepped on\n"
-	.string "a GLITTER MAT!\p"
-	.string "The visitor is striking a variety\n"
-	.string "of poses!\p"
-	.string "The visitor appears to be fantasizing\n"
-	.string "about being an idol!$"
+	.string "Vị khách đã giẫm lên một GLITTER MAT!\p"
+	.string "Vị khách đang tạo đủ kiểu dáng!\p"
+	.string "Có vẻ vị khách đang mơ tưởng mình là\n"
+	.string "một thần tượng!$"
 
 TVSecretBaseSecrets_Text_UsedTire::
-	.string "The visitor is staring intently\n"
-	.string "at a TIRE!\p"
-	.string "Could the visitor be thinking about\n"
-	.string "the kind of car that would use it?$"
+	.string "Vị khách đang chăm chú nhìn một TIRE!\p"
+	.string "Có phải vị khách đang nghĩ xem loại xe\n"
+	.string "nào sẽ dùng nó không?$"
 
 TVSecretBaseSecrets_Text_UsedStand::
-	.string "The visitor climbed a STAND!\p"
-	.string "The visitor is looking out across\n"
-	.string "{STR_VAR_1}'s BASE from high up!\p"
-	.string "And…\p"
-	.string "Lets loose a roar!\n"
-	.string "The visitor is roaring!$"
+	.string "Vị khách đã trèo lên một STAND!\p"
+	.string "Từ trên cao, vị khách đang nhìn bao\n"
+	.string "quát BASE của {STR_VAR_1}!\p"
+	.string "Và...\p"
+	.string "Gầm vang một tiếng! Vị khách đang gầm\n"
+	.string "lên!$"
 
 TVSecretBaseSecrets_Text_BrokeDoor::
-	.string "The visitor charged headlong into\n"
-	.string "a BREAKABLE DOOR!\p"
-	.string "The visitor is laughing uproariously!$"
+	.string "Vị khách đã lao thẳng vào một\n"
+	.string "BREAKABLE DOOR!\p"
+	.string "Vị khách đang cười vang khoái chí!$"
 
 TVSecretBaseSecrets_Text_UsedDoll::
-	.string "The visitor is talking to a DOLL!\p"
-	.string "…It's a little creepy…$"
+	.string "Vị khách đang nói chuyện với một DOLL!\p"
+	.string "...Hơi rợn người...$"
 
 TVSecretBaseSecrets_Text_UsedSlide::
-	.string "The visitor is climbing the ladder\n"
-	.string "on a SLIDE!\p"
-	.string "And…\p"
-	.string "The visitor slid down!\p"
-	.string "Looks like the visitor is having\n"
-	.string "a grand old time!$"
+	.string "Vị khách đang trèo lên thang của một\n"
+	.string "SLIDE!\p"
+	.string "Và...\p"
+	.string "Vị khách trượt xuống rồi!\p"
+	.string "Có vẻ vị khách đang vui chơi thỏa\n"
+	.string "thích!$"
 
 TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown::
-	.string "The visitor is climbing the ladder\n"
-	.string "on a SLIDE!\p"
-	.string "And…\p"
-	.string "The visitor went back down\n"
-	.string "the ladder!\p"
-	.string "Did the visitor suddenly chicken out?$"
+	.string "Vị khách đang trèo lên thang của một\n"
+	.string "SLIDE!\p"
+	.string "Và...\p"
+	.string "Vị khách lại trèo xuống bằng thang!\p"
+	.string "Vị khách đột nhiên sợ quá nên đổi ý\n"
+	.string "sao?$"
 
 TVSecretBaseSecrets_Text_UsedJumpMat::
-	.string "The visitor stepped on\n"
-	.string "a JUMP MAT!\p"
-	.string "The visitor jumped once!\p"
-	.string "Jumped twice!\p"
-	.string "And a successful landing!\p"
-	.string "The visitor is clapping!\n"
-	.string "What a solo performance!$"
+	.string "Vị khách đã giẫm lên một JUMP MAT!\p"
+	.string "Vị khách nhảy một lần!\p"
+	.string "Nhảy lần thứ hai!\p"
+	.string "Và tiếp đất thành công!\p"
+	.string "Vị khách đang vỗ tay! Quả là một màn\n"
+	.string "độc diễn!$"
 
 gTVSafariFanClubText00::
-	.string "SAFARI FAN CLUB!\p"
-	.string "REPORTER: All right, mates!\n"
-	.string "Tossing them SAFARI BALLS, are you?\p"
-	.string "You can bet I am here in the SAFARI\n"
-	.string "ZONE chock-full of amazing POKéMON!\p"
-	.string "Let's get with it and have a chat with\n"
-	.string "this good fellow of a SAFARI GUIDE!\p"
-	.string "All right, mate, how are the visiting\n"
-	.string "TRAINERS looking?$"
+	.string "CLB HÂM MỘ SAFARI!\p"
+	.string "PHÓNG VIÊN: Nào, các chiến hữu! Đang\n"
+	.string "ném SAFARI BALLS đấy chứ?\p"
+	.string "Còn tôi thì chắc chắn rồi, vì tôi đang\n"
+	.string "có mặt tại SAFARI ZONE đầy ắp những\l"
+	.string "POKéMON tuyệt vời!\p"
+	.string "Bắt đầu thôi, hãy trò chuyện với người\n"
+	.string "bạn HƯỚNG DẪN VIÊN tốt bụng này!\p"
+	.string "Nào, anh bạn, tình hình các HLV\n"
+	.string "đến đây thế nào?$"
 
 gTVSafariFanClubText01::
-	.string "GUIDE: Everyone seems to be going\n"
-	.string "hard at it.\p"
-	.string "{STR_VAR_1} is doing especially well.\p"
-	.string "Why, before, {STR_VAR_1} caught\n"
-	.string "{STR_VAR_2} POKéMON.$"
+	.string "HƯỚNG DẪN: Có vẻ mọi người đều đang\n"
+	.string "rất hăng.\p"
+	.string "{STR_VAR_1} đặc biệt làm rất tốt.\p"
+	.string "Lần trước, {STR_VAR_1} đã bắt\n"
+	.string "được tới {STR_VAR_2} POKéMON.$"
 
 gTVSafariFanClubText02::
-	.string "The TRAINER is clever with {POKEBLOCK}S.\n"
-	.string "Used {STR_VAR_2} that time, I think.$"
+	.string "HLV này dùng {POKEBLOCK}S rất\n"
+	.string "khéo. Tôi nghĩ lần đó đã dùng\l"
+	.string "{STR_VAR_2}.$"
 
 gTVSafariFanClubText03::
-	.string "The TRAINER didn't use a single\n"
-	.string "{POKEBLOCK}! Not a one!\p"
-	.string "There's an expert for you.$"
+	.string "HLV này không dùng dù chỉ một\n"
+	.string "{POKEBLOCK}! Không một cái nào!\p"
+	.string "Đúng là chuyên gia.$"
 
 gTVSafariFanClubText04::
-	.string "REPORTER: Is that right, then?\p"
-	.string "Sounds like our mate {STR_VAR_1}\n"
-	.string "is a stout SAFARI master!\p"
-	.string "GUIDE: I hope the TRAINER comes back\n"
-	.string "and shows us that great technique.$"
+	.string "PHÓNG VIÊN: Vậy sao?\p"
+	.string "Nghe như người bạn {STR_VAR_1}\n"
+	.string "của chúng ta là một bậc thầy SAFARI cừ\l"
+	.string "khôi!\p"
+	.string "HƯỚNG DẪN: Tôi hy vọng HLV sẽ quay lại\n"
+	.string "và cho chúng tôi xem kỹ thuật tuyệt vời\l"
+	.string "đó.$"
 
 gTVSafariFanClubText05::
-	.string "GUIDE: No one seems to be doing\n"
-	.string "very well.\p"
-	.string "{STR_VAR_1} had it especially bad.\p"
-	.string "Why, before, the TRAINER only\n"
-	.string "managed to catch {STR_VAR_2} POKéMON.$"
+	.string "HƯỚNG DẪN: Có vẻ chẳng ai làm tốt.\p"
+	.string "{STR_VAR_1} đặc biệt kém may\n"
+	.string "mắn.\p"
+	.string "Lần trước, HLV chỉ bắt được\n"
+	.string "{STR_VAR_2} POKéMON.$"
 
 gTVSafariFanClubText06::
-	.string "GUIDE: No one seems to be doing\n"
-	.string "very well.\p"
-	.string "{STR_VAR_1} had it especially bad.\p"
-	.string "Why, before, the TRAINER didn't\n"
-	.string "catch one POKéMON. Not a one!$"
+	.string "HƯỚNG DẪN: Có vẻ chẳng ai làm tốt.\p"
+	.string "{STR_VAR_1} đặc biệt kém may\n"
+	.string "mắn.\p"
+	.string "Lần trước, HLV không bắt được\n"
+	.string "một POKéMON nào. Không một con nào!$"
 
 gTVSafariFanClubText07::
-	.string "The TRAINER does use {POKEBLOCK}S.\n"
-	.string "Used {STR_VAR_2} that time, I think.\p"
-	.string "But, boy, I wish the TRAINER would\n"
-	.string "get a bit better at this.$"
+	.string "HLV này có dùng {POKEBLOCK}S. Tôi\n"
+	.string "nghĩ lần đó đã dùng {STR_VAR_2}.\p"
+	.string "Nhưng trời ạ, tôi mong HLV sẽ khá\n"
+	.string "hơn một chút.$"
 
 gTVSafariFanClubText08::
-	.string "I think the TRAINER would have better\n"
-	.string "luck using {POKEBLOCK}S, which weren't\l"
-	.string "used at all that time.$"
+	.string "Tôi nghĩ HLV sẽ may mắn hơn nếu\n"
+	.string "dùng {POKEBLOCK}S, vì lần đó hoàn toàn\l"
+	.string "không dùng cái nào.$"
 
 gTVSafariFanClubText09::
-	.string "REPORTER: Is that right, then?\p"
-	.string "Sounds like our mate {STR_VAR_1}\n"
-	.string "needs more SAFARI seasoning.\p"
-	.string "GUIDE: I hope the TRAINER visits\n"
-	.string "over and over to get the hang of it.$"
+	.string "PHÓNG VIÊN: Vậy sao?\p"
+	.string "Nghe như người bạn {STR_VAR_1}\n"
+	.string "của chúng ta cần dạn dày kinh nghiệm\l"
+	.string "SAFARI hơn.\p"
+	.string "HƯỚNG DẪN: Tôi hy vọng HLV sẽ ghé lại\n"
+	.string "thật nhiều lần để quen dần.$"
 
 gTVSafariFanClubText10::
-	.string "REPORTER: Quite right, it is!\n"
-	.string "Facing up to challenges is important!\p"
-	.string "Viewers, come on down to the SAFARI\n"
-	.string "and make the challenge yourself!\p"
-	.string "Until next time, cheerio!$"
+	.string "PHÓNG VIÊN: Đúng vậy! Đương đầu với\n"
+	.string "thử thách là điều rất quan trọng!\p"
+	.string "Quý khán giả, hãy đến SAFARI và tự mình\n"
+	.string "thử sức!\p"
+	.string "Hẹn gặp lại lần sau, tạm biệt nhé!$"
 
 ContestLiveUpdates_Text_Intro::
-	.string "“POKéMON CONTEST LIVE UPDATES!”\p"
-	.string "MC: Thanks for joining us!\p"
-	.string "We're live from the just-ended\n"
-	.string "{STR_VAR_1} site.\p"
-	.string "The hall is still filled with\n"
-	.string "an audience unwilling to leave.\p"
-	.string "Spectator: {STR_VAR_2}!\p"
-	.string "Spectator: {STR_VAR_3}!\p"
-	.string "MC: As you've just heard, the CONTEST\n"
-	.string "was won by the POKéMON {STR_VAR_2}\l"
-	.string "of {STR_VAR_3}.\p"
-	.string "Spectator: {STR_VAR_2}!\n"
-	.string "You're the best!\p"
-	.string "Spectator: {STR_VAR_3}!\n"
-	.string "Way to go!\p"
-	.string "MC: Let's hear what the fans have\n"
-	.string "to say about this CONTEST.$"
+	.string "“CẬP NHẬT TRỰC TIẾP CONTEST!”\p"
+	.string "MC: Cảm ơn quý vị đã theo dõi!\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ nơi {STR_VAR_1} vừa kết thúc.\p"
+	.string "Khán phòng vẫn chật kín những khán giả\n"
+	.string "chưa muốn ra về.\p"
+	.string "Khán giả: {STR_VAR_2}!\p"
+	.string "Khán giả: {STR_VAR_3}!\p"
+	.string "MC: Như quý vị vừa nghe, POKéMON\n"
+	.string "{STR_VAR_2} của\l"
+	.string "{STR_VAR_3} đã giành chiến thắng\l"
+	.string "tại cuộc thi.\p"
+	.string "Khán giả: {STR_VAR_2}! Bạn là\n"
+	.string "tuyệt nhất!\p"
+	.string "Khán giả: {STR_VAR_3}! Giỏi lắm!\p"
+	.string "MC: Hãy cùng nghe người hâm mộ nói gì\n"
+	.string "về cuộc thi này.$"
 
 ContestLiveUpdates_Text_WonBothRounds::
-	.string "Spectator: The {STR_VAR_2} was tops in\n"
-	.string "both primary and secondary judging!\p"
-	.string "That {STR_VAR_2} will keep winning!$"
+	.string "Khán giả: {STR_VAR_2} đã dẫn đầu\n"
+	.string "ở cả phần chấm điểm sơ bộ lẫn phần chấm\l"
+	.string "điểm thứ hai!\p"
+	.string "{STR_VAR_2} đó chắc chắn sẽ còn\n"
+	.string "chiến thắng!$"
 
 ContestLiveUpdates_Text_BetterRound2::
-	.string "Spectator: The {STR_VAR_2} didn't do\n"
-	.string "well in the primary judging, but it\l"
-	.string "cleaned up in the secondary judging!\p"
-	.string "It was a miraculous comeback\n"
-	.string "for that {STR_VAR_2}. Yippee!$"
+	.string "Khán giả: {STR_VAR_2} không thể\n"
+	.string "hiện tốt ở phần chấm điểm sơ bộ, nhưng\l"
+	.string "lại thắng lớn ở phần chấm điểm thứ hai!\p"
+	.string "Đó là màn lội ngược dòng kỳ diệu của\n"
+	.string "{STR_VAR_2}. Hoan hô!$"
 
 ContestLiveUpdates_Text_EqualRounds::
-	.string "Spectator: The {STR_VAR_2} remained\n"
-	.string "consistent throughout both primary\l"
-	.string "and secondary judging.\p"
-	.string "{STR_VAR_3} and the {STR_VAR_2},\n"
-	.string "they're no ordinary combo!$"
+	.string "Khán giả: {STR_VAR_2} đã giữ\n"
+	.string "phong độ ổn định suốt cả phần chấm\l"
+	.string "điểm sơ bộ lẫn phần chấm điểm thứ hai.\p"
+	.string "{STR_VAR_3} và\n"
+	.string "{STR_VAR_2} đúng là một bộ đôi\l"
+	.string "không tầm thường!$"
 
 ContestLiveUpdates_Text_BetterRound1::
-	.string "Spectator: In terms of being {STR_VAR_1},\n"
-	.string "that {STR_VAR_2} was outstanding.\p"
-	.string "I hope it makes better appeals\n"
-	.string "next time, though.$"
+	.string "Khán giả: Xét về tiêu chí\n"
+	.string "{STR_VAR_1}, {STR_VAR_2}\l"
+	.string "đó thật sự nổi bật.\p"
+	.string "Tuy nhiên, tôi mong lần sau nó sẽ có\n"
+	.string "những màn trình diễn hay hơn.$"
 
 ContestLiveUpdates_Text_GotNervous::
-	.string "Spectator: When the {STR_VAR_2} got\n"
-	.string "nervous, I couldn't stop myself from\l"
-	.string "shouting encouragement.\p"
-	.string "I'd like to say this to that\n"
-	.string "{STR_VAR_2}, “Congratulations!”$"
+	.string "Khán giả: Khi {STR_VAR_2} trở nên\n"
+	.string "căng thẳng, tôi không thể ngăn mình hét\l"
+	.string "lên cổ vũ.\p"
+	.string "Tôi muốn nhắn với {STR_VAR_2}\n"
+	.string "rằng: “Chúc mừng nhé!”$"
 
 ContestLiveUpdates_Text_StartledFoes::
-	.string "Spectator: That {STR_VAR_2}'s appeal\n"
-	.string "startled even me!\p"
-	.string "{STR_VAR_2}, you were awesome!$"
+	.string "Khán giả: Màn trình diễn của\n"
+	.string "{STR_VAR_2} đó làm cả tôi cũng\l"
+	.string "phải giật mình!\p"
+	.string "{STR_VAR_2}, bạn tuyệt lắm!$"
 
 ContestLiveUpdates_Text_UsedCombo::
-	.string "Spectator: That {STR_VAR_2}'s combo\n"
-	.string "appeal was stunning!\p"
-	.string "It's shaken me to the core!$"
+	.string "Khán giả: Màn trình diễn liên hoàn của\n"
+	.string "{STR_VAR_2} thật ngoạn mục!\p"
+	.string "Tôi xúc động đến tận tâm can!$"
 
 ContestLiveUpdates_Text_ExcitingAppeal::
-	.string "Spectator: The winning {STR_VAR_2}'s\n"
-	.string "appeal got my heart pounding!$"
+	.string "Khán giả: Màn trình diễn của nhà vô địch\n"
+	.string "{STR_VAR_2} khiến tim tôi đập\l"
+	.string "thình thịch!$"
 
 ContestLiveUpdates_Text_WasCool::
-	.string "{STR_VAR_2}!\n"
-	.string "You were cool!$"
+	.string "{STR_VAR_2}! Bạn ngầu lắm!$"
 
 ContestLiveUpdates_Text_WasBeautiful::
-	.string "{STR_VAR_2}!\n"
-	.string "You were beautiful!$"
+	.string "{STR_VAR_2}! Bạn đẹp lắm!$"
 
 ContestLiveUpdates_Text_WasCute::
-	.string "{STR_VAR_2}!\n"
-	.string "You were cute!$"
+	.string "{STR_VAR_2}! Bạn đáng yêu lắm!$"
 
 ContestLiveUpdates_Text_WasSmart::
-	.string "{STR_VAR_2}!\n"
-	.string "You were smart!$"
+	.string "{STR_VAR_2}! Bạn thông minh lắm!$"
 
 ContestLiveUpdates_Text_WasTough::
-	.string "{STR_VAR_2}!\n"
-	.string "You were tough!$"
+	.string "{STR_VAR_2}! Bạn mạnh mẽ lắm!$"
 
 ContestLiveUpdates_Text_VeryExcitingAppeal::
-	.string "Spectator: The winning {STR_VAR_2}'s\n"
-	.string "appeal still has my heart pounding!$"
+	.string "Khán giả: Màn trình diễn của nhà vô địch\n"
+	.string "{STR_VAR_2} vẫn khiến tim tôi đập\l"
+	.string "thình thịch!$"
 
 ContestLiveUpdates_Text_VeryCool::
-	.string "{STR_VAR_2}!\n"
-	.string "You're the last word in cool!$"
+	.string "{STR_VAR_2}! Không ai có thể\n"
+	.string "ngầu hơn bạn!$"
 
 ContestLiveUpdates_Text_VeryBeautiful::
-	.string "{STR_VAR_2}!\n"
-	.string "You're the most beautiful!$"
+	.string "{STR_VAR_2}! Bạn là người đẹp\n"
+	.string "nhất!$"
 
 ContestLiveUpdates_Text_VeryCute::
-	.string "{STR_VAR_2}!\n"
-	.string "You're simply the cutest!$"
+	.string "{STR_VAR_2}! Bạn đúng là đáng\n"
+	.string "yêu nhất!$"
 
 ContestLiveUpdates_Text_VerySmart::
-	.string "{STR_VAR_2}!\n"
-	.string "You're the smartest among the smart!$"
+	.string "{STR_VAR_2}! Bạn là người thông\n"
+	.string "minh nhất trong những người thông\l"
+	.string "minh!$"
 
 ContestLiveUpdates_Text_VeryTough::
-	.string "{STR_VAR_2}!\n"
-	.string "You're the toughest of the tough!$"
+	.string "{STR_VAR_2}! Bạn là người mạnh\n"
+	.string "mẽ nhất trong những người mạnh mẽ!$"
 
 ContestLiveUpdates_Text_TookBreak::
-	.string "Spectator: Even when the {STR_VAR_2}\n"
-	.string "took a break from making appeals,\l"
-	.string "I couldn't take my eyes off it.\p"
-	.string "I'm captivated by that {STR_VAR_2}.$"
+	.string "Khán giả: Ngay cả khi {STR_VAR_2}\n"
+	.string "tạm ngừng trình diễn, tôi vẫn không thể\l"
+	.string "rời mắt khỏi nó.\p"
+	.string "Tôi hoàn toàn bị {STR_VAR_2} đó\n"
+	.string "mê hoặc.$"
 
 ContestLiveUpdates_Text_GotStartled::
-	.string "Spectator: When the {STR_VAR_2} was\n"
-	.string "startled by another POKéMON's appeal,\l"
-	.string "I was close to tears.\p"
-	.string "{STR_VAR_2}, you were resilient!\n"
-	.string "Way to go!$"
+	.string "Khán giả: Khi {STR_VAR_2} bị màn\n"
+	.string "trình diễn của một POKéMON khác làm\l"
+	.string "giật mình, tôi suýt bật khóc.\p"
+	.string "{STR_VAR_2}, bạn đã rất kiên\n"
+	.string "cường! Giỏi lắm!$"
 
 ContestLiveUpdates_Text_MoveWonderful::
-	.string "Spectator: Oh…\n"
-	.string "That {STR_VAR_2}'s {STR_VAR_3}!\l"
-	.string "{STR_VAR_2}'s {STR_VAR_3}!\l"
-	.string "{STR_VAR_2}'s {STR_VAR_3}!\l"
-	.string "How could it be so wonderful?$"
+	.string "Khán giả: Ôi... Chiêu {STR_VAR_3}\n"
+	.string "của {STR_VAR_2}! Chiêu\l"
+	.string "{STR_VAR_3} của\l"
+	.string "{STR_VAR_2}! Chiêu\l"
+	.string "{STR_VAR_3} của\l"
+	.string "{STR_VAR_2}! Sao có thể tuyệt\l"
+	.string "vời đến thế?$"
 
 ContestLiveUpdates_Text_TalkAboutAnotherMon::
-	.string "MC: Well, there you have it. This place\n"
-	.string "is full of the {STR_VAR_1}'s fans!\p"
-	.string "I should also mention that another\n"
-	.string "POKéMON, {STR_VAR_2}'s {STR_VAR_3}, \l"
-	.string "caught my eye.\p"
-	.string "{STR_VAR_2}'s {STR_VAR_3}…$"
+	.string "MC: Vậy là quý vị đã nghe rồi đấy. Nơi\n"
+	.string "này tràn ngập người hâm mộ\l"
+	.string "{STR_VAR_1}!\p"
+	.string "Tôi cũng phải nhắc đến một POKéMON\n"
+	.string "khác đã thu hút sự chú ý của mình, đó\l"
+	.string "là {STR_VAR_3} của\l"
+	.string "{STR_VAR_2}.\p"
+	.string "{STR_VAR_3} của\n"
+	.string "{STR_VAR_2}...$"
 
 ContestLiveUpdates_Text_FailedToAppeal::
-	.string "It failed to make a single appeal during\n"
-	.string "secondary judging out of nervousness.\p"
-	.string "Next time, I would like to see this\n"
-	.string "{STR_VAR_1} make even one appeal.$"
+	.string "Trong phần chấm điểm thứ hai, vì quá\n"
+	.string "căng thẳng nên nó không thể thực hiện\l"
+	.string "dù chỉ một màn trình diễn.\p"
+	.string "Lần sau, tôi mong được thấy\n"
+	.string "{STR_VAR_1} này thực hiện ít\l"
+	.string "nhất một màn trình diễn.$"
 
 ContestLiveUpdates_Text_LastInBothRounds::
-	.string "It came dead last in both primary\n"
-	.string "and secondary judging.\p"
-	.string "I hope that {STR_VAR_1} will retrain this\n"
-	.string "{STR_VAR_2} and erase the shame of\l"
-	.string "this undisputed last-place finish.$"
+	.string "Nó đã đứng chót ở cả phần chấm điểm sơ\n"
+	.string "bộ lẫn phần chấm điểm thứ hai.\p"
+	.string "Tôi hy vọng {STR_VAR_1} sẽ huấn\n"
+	.string "luyện lại {STR_VAR_2} này và xóa\l"
+	.string "đi nỗi hổ thẹn của vị trí chót không thể\l"
+	.string "chối cãi ấy.$"
 
 ContestLiveUpdates_Text_NotExcitingEnough::
-	.string "It failed to take advantage of\n"
-	.string "the audience's excitement and make\l"
-	.string "an appropriate appeal.\p"
-	.string "We hope {STR_VAR_1} will learn how to get\n"
-	.string "a feel for the audience and whip their\l"
-	.string "excitement to a fever pitch next time.$"
+	.string "Nó đã không tận dụng được sự phấn\n"
+	.string "khích của khán giả để thực hiện một\l"
+	.string "màn trình diễn thích hợp.\p"
+	.string "Chúng tôi hy vọng lần sau\n"
+	.string "{STR_VAR_1} sẽ biết cách nắm bắt\l"
+	.string "cảm xúc của khán giả và đẩy sự phấn\l"
+	.string "khích của họ lên đến đỉnh điểm.$"
 
 ContestLiveUpdates_Text_LostAfterWinningRound1::
-	.string "While finishing first in the primary\n"
-	.string "judging, its appeals in the secondary\l"
-	.string "judging failed to click.\p"
-	.string "It suffered a humiliating come-from-\n"
-	.string "behind loss.\p"
-	.string "I'm sure {STR_VAR_1} is studying how to\n"
-	.string "make more effective appeals now.$"
+	.string "Dù đứng đầu phần chấm điểm sơ bộ,\n"
+	.string "những màn trình diễn của nó trong phần\l"
+	.string "chấm điểm thứ hai lại không tạo được\l"
+	.string "ấn tượng.\p"
+	.string "Nó đã phải nhận một trận thua ngược\n"
+	.string "đầy ê chề.\p"
+	.string "Tôi tin rằng giờ đây {STR_VAR_1}\n"
+	.string "đang nghiên cứu cách thực hiện những\l"
+	.string "màn trình diễn hiệu quả hơn.$"
 
 ContestLiveUpdates_Text_NeverExciting::
-	.string "The audience never got excited by its\n"
-	.string "appeals during the secondary judging.\p"
-	.string "We hope it will stop worrying about\n"
-	.string "other POKéMON and learn to pitch\l"
-	.string "its appeals to the audience more.$"
+	.string "Những màn trình diễn của nó trong phần\n"
+	.string "chấm điểm thứ hai chưa từng khiến khán\l"
+	.string "giả phấn khích.\p"
+	.string "Chúng tôi hy vọng nó sẽ thôi bận tâm\n"
+	.string "đến các POKéMON khác và học cách\l"
+	.string "hướng màn trình diễn đến khán giả\l"
+	.string "nhiều hơn.$"
 
 ContestLiveUpdates_Text_LostBySmallMargin::
-	.string "It lost to {STR_VAR_1}'s {STR_VAR_2}\n"
-	.string "by only a small margin.\p"
-	.string "It must be heartbreaking to come\n"
-	.string "so close to victory only to fail.\p"
-	.string "I wouldn't be surprised if {STR_VAR_3}\n"
-	.string "were weeping over this outcome.$"
+	.string "Nó chỉ thua {STR_VAR_2} của\n"
+	.string "{STR_VAR_1} với cách biệt rất\l"
+	.string "nhỏ.\p"
+	.string "Tiến sát chiến thắng đến vậy rồi vẫn\n"
+	.string "thất bại hẳn là đau lòng lắm.\p"
+	.string "Tôi sẽ không ngạc nhiên nếu\n"
+	.string "{STR_VAR_3} đang khóc vì kết quả\l"
+	.string "này.$"
 
 ContestLiveUpdates_Text_RepeatedAppeals::
-	.string "It disappointed the JUDGE by\n"
-	.string "repeating the same appeals.\p"
-	.string "It's an unforgivable error in any\n"
-	.string "CONTEST, and the POKéMON paid.\p"
-	.string "{STR_VAR_1} should feel guilty for\n"
-	.string "this sorry showing.$"
+	.string "Nó khiến GIÁM KHẢO thất vọng vì\n"
+	.string "lặp lại cùng một màn trình diễn.\p"
+	.string "Đó là lỗi không thể tha thứ trong bất\n"
+	.string "kỳ cuộc thi nào, và POKéMON ấy đã phải\l"
+	.string "trả giá.\p"
+	.string "{STR_VAR_1} nên cảm thấy có lỗi\n"
+	.string "vì màn thể hiện đáng buồn này.$"
 
 ContestLiveUpdates_Text_ValiantEffortButLost::
-	.string "{STR_VAR_1} turned in a valiant effort,\n"
-	.string "but…\p"
-	.string "It was all for naught, finishing last.\p"
-	.string "{STR_VAR_1} should learn from this loss\n"
-	.string "and put the knowledge to good use.$"
+	.string "{STR_VAR_1} đã nỗ lực đầy quả\n"
+	.string "cảm, nhưng...\p"
+	.string "Tất cả đều vô ích khi cuối cùng vẫn\n"
+	.string "đứng chót.\p"
+	.string "{STR_VAR_1} nên rút kinh nghiệm\n"
+	.string "từ thất bại này và vận dụng thật tốt\l"
+	.string "những gì đã học được.$"
 
 ContestLiveUpdates_Text_Outro::
-	.string "I'd like to end this program with our\n"
-	.string "usual farewell to the winners.\p"
-	.string "This time, it's {STR_VAR_1} and\n"
-	.string "the {STR_VAR_2}!\p"
-	.string "MC: Is everyone ready?\n"
-	.string "All together now!\p"
-	.string "Audience: {STR_VAR_1}! {STR_VAR_2}!\n"
-	.string "Congratulations!\l"
-	.string "You're the CONTEST winner!$"
+	.string "Tôi xin khép lại chương trình bằng lời\n"
+	.string "chào quen thuộc dành cho những người\l"
+	.string "chiến thắng.\p"
+	.string "Lần này là {STR_VAR_1} và\n"
+	.string "{STR_VAR_2}!\p"
+	.string "MC: Mọi người sẵn sàng chưa? Cùng hô\n"
+	.string "nào!\p"
+	.string "Khán giả: {STR_VAR_1}!\n"
+	.string "{STR_VAR_2}! Xin chúc mừng! Hai\l"
+	.string "bạn là nhà vô địch cuộc thi!$"
 
 gTVPokemonBattleUpdateText00::
 	.string "“POKéMON BATTLE UPDATE!”\p"
-	.string "Bringing you the results of POKéMON\n"
-	.string "battles as they come in!$"
+	.string "Liên tục cập nhật những kết quả mới\n"
+	.string "nhất từ các trận đấu POKéMON!$"
 
 gTVPokemonBattleUpdateText01::
-	.string "The TRAINERS {STR_VAR_1} and\n"
-	.string "{STR_VAR_2} faced each other in\l"
-	.string "a {STR_VAR_3} BATTLE.\p"
-	.string "This match ended in victory for\n"
-	.string "{STR_VAR_1}!$"
+	.string "Hai HLV {STR_VAR_1} và\n"
+	.string "{STR_VAR_2} đã đối đầu trong một\l"
+	.string "trận {STR_VAR_3} trận đấu.\p"
+	.string "Trận đấu kết thúc với chiến thắng\n"
+	.string "thuộc về {STR_VAR_1}!$"
 
 gTVPokemonBattleUpdateText02::
-	.string "In the battle, {STR_VAR_1}'s\n"
-	.string "{STR_VAR_2} was a formidable force\l"
-	.string "using {STR_VAR_3}!$"
+	.string "Trong trận đấu, {STR_VAR_2} của\n"
+	.string "{STR_VAR_1} đã trở thành một\l"
+	.string "thế lực đáng gờm khi sử dụng\l"
+	.string "{STR_VAR_3}!$"
 
 gTVPokemonBattleUpdateText03::
-	.string "{STR_VAR_1}'s {STR_VAR_2} had a weak\n"
-	.string "showing that really hurt.$"
+	.string "Màn thể hiện yếu kém của\n"
+	.string "{STR_VAR_2} thuộc về\l"
+	.string "{STR_VAR_1} đã gây tổn thất rất\l"
+	.string "lớn.$"
 
 gTVPokemonBattleUpdateText04::
-	.string "Congratulations on your victory,\n"
+	.string "Xin chúc mừng chiến thắng của bạn,\n"
 	.string "{STR_VAR_1}!\p"
-	.string "And for the defeated {STR_VAR_2},\n"
-	.string "we hope for a better result next time!\p"
-	.string "This concludes this episode of\n"
-	.string "“POKéMON BATTLE UPDATE!”$"
+	.string "Với người thất bại {STR_VAR_2},\n"
+	.string "chúng tôi mong bạn sẽ có kết quả tốt\l"
+	.string "hơn vào lần sau!\p"
+	.string "Chương trình “POKéMON BATTLE\n"
+	.string "UPDATE!” kỳ này xin được khép lại tại\l"
+	.string "đây.$"
 
 gTVPokemonBattleUpdateText05::
-	.string "The teams of TRAINERS {STR_VAR_1} and\n"
-	.string "{STR_VAR_2} met in a MULTI BATTLE.\p"
-	.string "This match ended in victory for\n"
-	.string "{STR_VAR_1}'s team.$"
+	.string "Hai đội của HLV {STR_VAR_1}\n"
+	.string "và {STR_VAR_2} đã chạm trán\l"
+	.string "trong một trận MULTI BATTLE.\p"
+	.string "Trận đấu kết thúc với chiến thắng\n"
+	.string "thuộc về đội của {STR_VAR_1}.$"
 
 gTVPokemonBattleUpdateText06::
-	.string "In the battle, the {STR_VAR_2} on\n"
-	.string "{STR_VAR_1}'s team was a formidable\l"
-	.string "force using {STR_VAR_3}.$"
+	.string "Trong trận đấu, {STR_VAR_2}\n"
+	.string "thuộc đội của {STR_VAR_1} đã trở\l"
+	.string "thành một thế lực đáng gờm khi sử dụng\l"
+	.string "{STR_VAR_3}.$"
 
 gTVPokemonBattleUpdateText07::
-	.string "The weak showing by the {STR_VAR_3}\n"
-	.string "on {STR_VAR_2}'s team really hurt.\p"
-	.string "Congratulations on your team's\n"
-	.string "victory, {STR_VAR_1}!\p"
-	.string "As for the defeated {STR_VAR_2}'s team,\n"
-	.string "we hope for a better result next time!\p"
-	.string "This concludes this episode of\n"
-	.string "“POKéMON BATTLE UPDATE!”$"
+	.string "Màn thể hiện yếu kém của\n"
+	.string "{STR_VAR_3} thuộc đội\l"
+	.string "{STR_VAR_2} đã gây tổn thất rất\l"
+	.string "lớn.\p"
+	.string "Xin chúc mừng chiến thắng của đội bạn,\n"
+	.string "{STR_VAR_1}!\p"
+	.string "Với đội thất bại của {STR_VAR_2},\n"
+	.string "chúng tôi mong các bạn sẽ có kết quả\l"
+	.string "tốt hơn vào lần sau!\p"
+	.string "Chương trình “POKéMON BATTLE\n"
+	.string "UPDATE!” kỳ này xin được khép lại tại\l"
+	.string "đây.$"
 
 GabbyAndTy_Text_GabbyPreFirstBattle:
-	.string "GABBY: Oh! We've just spotted a tough-\n"
-	.string "looking TRAINER here of all places!\p"
-	.string "Okay, roll camera!\n"
-	.string "Let's get this interview.$"
+	.string "GABBY: Ô! Ngay tại nơi này mà chúng tôi\n"
+	.string "lại phát hiện một HLV trông rất\l"
+	.string "mạnh!\p"
+	.string "Được rồi, quay máy! Bắt đầu cuộc phỏng\n"
+	.string "vấn nào.$"
 
 GabbyAndTy_Text_GabbyIntro:
-	.string "GABBY: Oh! You're {PLAYER}! Hi!\n"
-	.string "Do you remember us from last time?\p"
-	.string "Can you show us how much stronger\n"
-	.string "you've become? Okay, cue interview!$"
+	.string "GABBY: Ô! Bạn là {PLAYER}! Chào bạn!\n"
+	.string "Bạn còn nhớ chúng tôi lần trước không?\p"
+	.string "Bạn có thể cho chúng tôi thấy mình đã\n"
+	.string "mạnh lên đến mức nào không? Được rồi,\l"
+	.string "bắt đầu phỏng vấn!$"
 
 GabbyAndTy_Text_GabbyDefeatFirstTime:
-	.string "GABBY: My eyes didn't lie!\n"
-	.string "I did discover an astonishing TRAINER!$"
+	.string "GABBY: Mắt tôi quả nhiên không nhìn lầm!\n"
+	.string "Tôi đã phát hiện ra một HLV phi\l"
+	.string "thường!$"
 
 GabbyAndTy_Text_WhoAreYouInterview:
-	.string "GABBY: Awesome! Awesome!\n"
-	.string "Who are you?!\p"
-	.string "I knew we were onto something wild\n"
-	.string "when we spotted you!\p"
-	.string "Oh, please let me explain. We travel\n"
-	.string "around everywhere interviewing all\l"
-	.string "sorts of TRAINERS.\p"
-	.string "So, would you give us a bit of your time\n"
-	.string "for an interview?$"
+	.string "GABBY: Tuyệt vời! Tuyệt vời! Bạn là ai\n"
+	.string "vậy?!\p"
+	.string "Tôi đã biết chúng tôi sắp gặp chuyện\n"
+	.string "lớn ngay khi phát hiện ra bạn!\p"
+	.string "Ôi, xin để tôi giải thích. Chúng tôi đi\n"
+	.string "khắp nơi để phỏng vấn đủ loại HLV.\p"
+	.string "Vậy bạn có thể dành chút thời gian cho\n"
+	.string "chúng tôi phỏng vấn không?$"
 
 GabbyAndTy_Text_QuoteFromLastInterview:
 	.string "GABBY: “{STR_VAR_1}!”\p"
-	.string "Remember? That's the quote you gave\n"
-	.string "us as the battle clincher last time.\p"
-	.string "I never, ever forget stuff like that!$"
+	.string "Bạn nhớ chứ? Đó là câu chốt bạn đã nói\n"
+	.string "sau trận đấu lần trước.\p"
+	.string "Những chuyện như thế này tôi không\n"
+	.string "bao giờ quên!$"
 
 GabbyAndTy_Text_YouStompedUsInterviewAgain:
-	.string "The last time we battled, you stomped\n"
-	.string "us before we could brace ourselves…\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "Lần trước giao đấu, bạn đã đánh bại\n"
+	.string "chúng tôi trước khi chúng tôi kịp trở\l"
+	.string "tay...\p"
+	.string "Vậy bạn thấy sao? Bạn có muốn được\n"
+	.string "phỏng vấn lần nữa không?$"
 
 GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain:
-	.string "The last time we battled, didn't you\n"
-	.string "throw a POKé BALL at us?\p"
-	.string "We were shocked! So we told everyone,\n"
-	.string "just everyone, about it!\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "Lần trước giao đấu, bạn đã ném POKé\n"
+	.string "BALL vào chúng tôi, đúng không?\p"
+	.string "Chúng tôi sốc đến mức kể chuyện đó cho\n"
+	.string "tất cả mọi người!\p"
+	.string "Vậy bạn thấy sao? Bạn có muốn được\n"
+	.string "phỏng vấn lần nữa không?$"
 
 GabbyAndTy_Text_CleverItemSkillsInterviewAgain:
-	.string "The last time we battled, your item\n"
-	.string "skills cleverly did us in.\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "Lần trước giao đấu, cách sử dụng vật\n"
+	.string "phẩm khéo léo của bạn đã hạ gục chúng\l"
+	.string "tôi.\p"
+	.string "Vậy bạn thấy sao? Bạn có muốn được\n"
+	.string "phỏng vấn lần nữa không?$"
 
 GabbyAndTy_Text_WeLookedRespectableInterviewAgain:
-	.string "The last time we battled, we managed\n"
-	.string "to look respectable.\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "Lần trước giao đấu, ít ra chúng tôi\n"
+	.string "cũng thể hiện khá ra trò.\p"
+	.string "Vậy bạn thấy sao? Bạn có muốn được\n"
+	.string "phỏng vấn lần nữa không?$"
 
 GabbyAndTy_Text_InterviewAgain:
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "Vậy bạn thấy sao? Bạn có muốn được\n"
+	.string "phỏng vấn lần nữa không?$"
 
 GabbyAndTy_Text_DescribeYourFeelings:
-	.string "You will?\n"
-	.string "Thank you!\p"
-	.string "Okay, I need you to describe your\n"
-	.string "feelings about our battle, but it\l"
-	.string "has to be short and sweet. Go!$"
+	.string "Bạn đồng ý sao? Cảm ơn nhé!\p"
+	.string "Được rồi, hãy diễn tả cảm xúc của bạn\n"
+	.string "về trận đấu với chúng tôi, nhưng phải\l"
+	.string "thật ngắn gọn và ấn tượng. Bắt đầu!$"
 
 GabbyAndTy_Text_PerfectWellBeSeeingYou:
-	.string "GABBY: Mmm, yeah!\n"
-	.string "That's the perfect clincher!\p"
-	.string "I get the feeling that this will make\n"
-	.string "a great TV show.\p"
-	.string "There's a chance that they'll air this\n"
-	.string "on TV, so make sure to look for us!\p"
-	.string "Okay!\n"
-	.string "We'll be seeing you!$"
+	.string "GABBY: Ừm, đúng rồi! Đó là câu chốt hoàn\n"
+	.string "hảo!\p"
+	.string "Tôi có cảm giác chuyện này sẽ tạo nên\n"
+	.string "một chương trình TV tuyệt vời.\p"
+	.string "Có thể chương trình sẽ được phát trên\n"
+	.string "TV, nên nhớ đón xem chúng tôi nhé!\p"
+	.string "Được rồi! Hẹn gặp lại bạn!$"
 
 GabbyAndTy_Text_DontGiveUpKeepingEyeOut:
-	.string "GABBY: Oh…\p"
-	.string "Okay, but don't give up!\n"
-	.string "We'll be keeping an eye out for you!$"
+	.string "GABBY: Ôi...\p"
+	.string "Được rồi, nhưng đừng bỏ cuộc nhé!\n"
+	.string "Chúng tôi sẽ tiếp tục để mắt đến bạn!$"
 
 GabbyAndTy_Text_KeepingAnEyeOutForYou:
-	.string "GABBY: We'll be keeping an eye out\n"
-	.string "for you!$"
+	.string "GABBY: Chúng tôi sẽ tiếp tục để mắt đến\n"
+	.string "bạn!$"
 
 GabbyAndTy_Text_GabbyNotEnoughMons:
-	.string "GABBY: Is there a strong TRAINER\n"
-	.string "anywhere with a lot of POKéMON?$"
+	.string "GABBY: Có HLV mạnh nào sở hữu\n"
+	.string "nhiều POKéMON ở quanh đây không nhỉ?$"
 
 GabbyAndTy_Text_GiveUsAnInterviewThisTime:
-	.string "GABBY: Wow, you are something!\p"
-	.string "You've gotten a lot stronger--a lot--\n"
-	.string "since we last battled.\p"
-	.string "We were right about you when we\n"
-	.string "spotted you as a hot TRAINER.\p"
-	.string "So, anyway, what do you think?\n"
-	.string "Are you willing to give us an interview\l"
-	.string "this time?$"
+	.string "GABBY: Chà, bạn thật đáng nể!\p"
+	.string "So với lần giao đấu trước, bạn đã mạnh\n"
+	.string "lên rất, rất nhiều.\p"
+	.string "Quả nhiên chúng tôi đã đúng khi nhận ra\n"
+	.string "bạn là một HLV đầy triển vọng.\p"
+	.string "Vậy bạn thấy sao? Lần này bạn có sẵn\n"
+	.string "lòng trả lời phỏng vấn không?$"
 
 GabbyAndTy_Text_GabbyDefeat:
-	.string "GABBY: That was an intense battle!\n"
-	.string "Did you get all that on camera?$"
+	.string "GABBY: Trận đấu thật căng thẳng! Anh\n"
+	.string "đã quay lại hết chưa?$"
 
 GabbyAndTy_Text_TyPreFirstBattle:
-	.string "TY: Hey, lookie here! A tough-looking\n"
-	.string "TRAINER here, of all places!\l"
-	.string "Camera's rolling!$"
+	.string "TY: Này, nhìn xem! Ngay tại nơi này lại\n"
+	.string "có một HLV trông rất mạnh! Máy\l"
+	.string "quay đang chạy rồi!$"
 
 GabbyAndTy_Text_TyIntro:
-	.string "TY: Hey, lookie here!\n"
-	.string "I remember you!\p"
-	.string "I'll get this battle all on this\n"
-	.string "here camera!$"
+	.string "TY: Này, nhìn xem! Tôi nhớ bạn rồi!\p"
+	.string "Tôi sẽ dùng chiếc máy quay này ghi lại\n"
+	.string "toàn bộ trận đấu!$"
 
 GabbyAndTy_Text_TyPostBattle:
-	.string "TY: You're a natural!\n"
-	.string "Got me some prime footage right here!$"
+	.string "TY: Bạn đúng là có tố chất! Tôi quay\n"
+	.string "được những cảnh tuyệt vời rồi!$"
 
 GabbyAndTy_Text_TyNotEnoughMons:
-	.string "TY: Do you only have the one POKéMON\n"
-	.string "and that's it?\p"
-	.string "If you had more POKéMON, it'd make for\n"
-	.string "better footage, but…$"
+	.string "TY: Bạn chỉ có đúng một POKéMON thôi\n"
+	.string "sao?\p"
+	.string "Nếu có thêm POKéMON thì cảnh quay sẽ\n"
+	.string "hay hơn, nhưng...$"
 
 GabbyAndTy_Text_TyDefeatFirstTime:
-	.string "TY: Yep, we sure spotted a hot TRAINER.\n"
-	.string "This is a huge scoop for us!$"
+	.string "TY: Đúng là chúng ta đã phát hiện một\n"
+	.string "HLV đầy triển vọng. Đây là tin sốt\l"
+	.string "dẻo lớn đấy!$"
 
 GabbyAndTy_Text_TyDefeat:
-	.string "TY: Yep, I got it all.\n"
-	.string "That whole battle's on camera.$"
+	.string "TY: Ừ, tôi quay được hết rồi. Toàn bộ\n"
+	.string "trận đấu đều đã vào máy.$"
 
 gTVInSearchOfTrainersText00::
-	.string "IN SEARCH OF TRAINERS…\p"
-	.string "GABBY: Hi! Today I'm visiting an area\n"
-	.string "near {STR_VAR_1}.\p"
-	.string "We're trying to spot some up-and-\n"
-	.string "coming new talent in the field.\p"
-	.string "Today, we turned our lens on the\n"
-	.string "TRAINER {PLAYER}.\p"
-	.string "There's something about this TRAINER\n"
-	.string "that piqued our interest.$"
+	.string "IN SEARCH OF HLV...\p"
+	.string "GABBY: Xin chào! Hôm nay tôi đang có mặt\n"
+	.string "ở khu vực gần {STR_VAR_1}.\p"
+	.string "Chúng tôi đang tìm kiếm những tài năng\n"
+	.string "mới đầy triển vọng.\p"
+	.string "Hôm nay, ống kính của chúng tôi hướng\n"
+	.string "về HLV {PLAYER}.\p"
+	.string "HLV này có điều gì đó khiến chúng\n"
+	.string "tôi đặc biệt chú ý.$"
 
 gTVInSearchOfTrainersText01::
-	.string "We've battled {PLAYER} before, but we\n"
-	.string "can attest that the TRAINER has most\l"
-	.string "definitely improved from before.\p"
-	.string "I knew we were onto someone special\n"
-	.string "when we spotted this TRAINER!$"
+	.string "Chúng tôi từng giao đấu với {PLAYER},\n"
+	.string "và có thể khẳng định HLV này chắc\l"
+	.string "chắn đã tiến bộ hơn trước rất nhiều.\p"
+	.string "Tôi đã biết mình phát hiện ra một người\n"
+	.string "đặc biệt ngay khi nhìn thấy HLV\l"
+	.string "này!$"
 
 gTVInSearchOfTrainersText02::
-	.string "The best way to determine how strong\n"
-	.string "a TRAINER is…\p"
-	.string "Well, the fastest way is to battle.\n"
-	.string "And so we began our investigation!\p"
-	.string "… …\p"
-	.string "That's how we ended up in battle\n"
-	.string "with {PLAYER}.\p"
-	.string "In a dominating performance, we were\n"
-	.string "flattened, rolled up, and tossed aside!\p"
-	.string "{PLAYER} is ruthlessly strong…\p"
-	.string "Here's our impressions after having\n"
-	.string "battled our featured TRAINER.$"
+	.string "Cách tốt nhất để xác định sức mạnh của\n"
+	.string "một HLV...\p"
+	.string "À, cách nhanh nhất chính là giao đấu. Và\n"
+	.string "thế là cuộc điều tra của chúng tôi bắt\l"
+	.string "đầu!\p"
+	.string "... ...\p"
+	.string "Đó là lý do chúng tôi bước vào trận đấu\n"
+	.string "với {PLAYER}.\p"
+	.string "Với màn thể hiện áp đảo, chúng tôi đã bị\n"
+	.string "đánh bẹp, cuốn tròn rồi quăng sang một\l"
+	.string "bên!\p"
+	.string "{PLAYER} mạnh đến mức không chút\n"
+	.string "khoan nhượng...\p"
+	.string "Sau đây là cảm nhận của chúng tôi sau\n"
+	.string "khi giao đấu với HLV nổi bật hôm\l"
+	.string "nay.$"
 
 gTVInSearchOfTrainersText03::
-	.string "The combination of {STR_VAR_1} and\n"
-	.string "{STR_VAR_3} was divine!\p"
-	.string "The sight of them--{STR_VAR_1} and\n"
-	.string "{STR_VAR_3}--selflessly supporting\l"
-	.string "each other in the thick of battle…\p"
-	.string "It was a marvelous sight to behold!\p"
-	.string "{STR_VAR_2} was the move the TRAINER\n"
-	.string "used last in our battle.\p"
-	.string "The move {STR_VAR_2} is {STR_VAR_1}\n"
-	.string "and {STR_VAR_3}'s sign of friendship!$"
+	.string "Sự kết hợp giữa {STR_VAR_1} và\n"
+	.string "{STR_VAR_3} thật tuyệt diệu!\p"
+	.string "Hình ảnh {STR_VAR_1} và\n"
+	.string "{STR_VAR_3} hết lòng hỗ trợ lẫn\l"
+	.string "nhau giữa trận chiến ác liệt...\p"
+	.string "Đó là một cảnh tượng tuyệt vời!\p"
+	.string "{STR_VAR_2} là chiêu HLV đã\n"
+	.string "sử dụng cuối cùng trong trận đấu với\l"
+	.string "chúng tôi.\p"
+	.string "Chiêu {STR_VAR_2} chính là biểu\n"
+	.string "tượng cho tình bạn giữa\l"
+	.string "{STR_VAR_1} và\l"
+	.string "{STR_VAR_3}!$"
 
 gTVInSearchOfTrainersText04::
-	.string "…I lost confidence in myself as\n"
-	.string "a result of our encounter.\p"
-	.string "We were beaten before we could launch\n"
-	.string "a single attack.\l"
-	.string "Ohhh… Snivel…\p"
-	.string "In spite of that, {PLAYER}'s battles\n"
-	.string "are worth seeing.\p"
-	.string "I recommend confident TRAINERS to\n"
-	.string "challenge {PLAYER}.$"
+	.string "...Sau cuộc chạm trán ấy, tôi đã mất hết\n"
+	.string "tự tin vào bản thân.\p"
+	.string "Chúng tôi bị đánh bại trước khi kịp\n"
+	.string "tung ra dù chỉ một đòn. Hu hu... Sụt sịt...\p"
+	.string "Dù vậy, những trận đấu của {PLAYER}\n"
+	.string "vẫn rất đáng xem.\p"
+	.string "Tôi khuyên những HLV tự tin hãy\n"
+	.string "đến thách đấu {PLAYER}.$"
 
 gTVInSearchOfTrainersText05::
-	.string "There's only one thing to be said.\n"
-	.string "Don't you dare throw a POKé BALL during\l"
-	.string "a TRAINER battle!\p"
-	.string "{PLAYER} is certainly strong, but has\n"
-	.string "no clue about the basic rules.\p"
-	.string "To our TV audience, I have a request.\p"
-	.string "If you see {PLAYER}, please caution\n"
-	.string "the TRAINER!$"
+	.string "Tôi chỉ có một điều muốn nói. Đừng hòng\n"
+	.string "ném POKé BALL trong trận đấu với\l"
+	.string "HLV!\p"
+	.string "{PLAYER} quả thật rất mạnh, nhưng\n"
+	.string "chẳng hiểu gì về những luật cơ bản.\p"
+	.string "Tôi có một yêu cầu dành cho khán giả\n"
+	.string "truyền hình.\p"
+	.string "Nếu gặp {PLAYER}, xin hãy nhắc nhở\n"
+	.string "HLV này!$"
 
 gTVInSearchOfTrainersText06::
-	.string "{PLAYER} is adept at reading the\n"
-	.string "opponent's actions.\p"
-	.string "The timing of item usage was remarkably\n"
-	.string "effective!$"
+	.string "{PLAYER} rất giỏi phán đoán hành\n"
+	.string "động của đối thủ.\p"
+	.string "Thời điểm sử dụng vật phẩm cũng hiệu\n"
+	.string "quả đáng kinh ngạc!$"
 
 gTVInSearchOfTrainersText07::
-	.string "Honestly speaking, I thought that\n"
-	.string "I might even be pretty good.\p"
-	.string "While we did end up losing, we did have\n"
-	.string "a hotly contested battle.\p"
-	.string "But if you're struggling against me,\n"
-	.string "you have a ways to go, {PLAYER}!$"
+	.string "Nói thật, tôi từng nghĩ mình cũng khá\n"
+	.string "giỏi.\p"
+	.string "Dù cuối cùng vẫn thua, chúng tôi đã có\n"
+	.string "một trận đấu vô cùng quyết liệt.\p"
+	.string "Nhưng nếu đối đầu với tôi mà còn chật\n"
+	.string "vật thì bạn vẫn phải cố gắng nhiều đấy,\l"
+	.string "{PLAYER}!$"
 
 gTVInSearchOfTrainersText08::
-	.string "After our battle, we asked {PLAYER} for\n"
-	.string "a succinct summary.\p"
-	.string "The TRAINER replied, “{STR_VAR_1}.”\p"
-	.string "{PLAYER}'s POKéMON {STR_VAR_2} and\n"
-	.string "{STR_VAR_3}…\l"
-	.string "And “{STR_VAR_1}”…\p"
-	.string "Mmm! That's deep! There's deep\n"
-	.string "significance behind that quote!\p"
-	.string "It's no surprise--a good TRAINER has\n"
-	.string "good things to say.\p"
-	.string "That's all for today!\n"
-	.string "See you again on our next broadcast!$"
+	.string "Sau trận đấu, chúng tôi đề nghị\n"
+	.string "{PLAYER} đưa ra một lời tổng kết\l"
+	.string "ngắn gọn.\p"
+	.string "HLV ấy trả lời:\n"
+	.string "“{STR_VAR_1}.”\p"
+	.string "Hai POKéMON {STR_VAR_2} và\n"
+	.string "{STR_VAR_3} của {PLAYER}...\l"
+	.string "Cùng câu nói “{STR_VAR_1}”...\p"
+	.string "Ừm! Thâm thúy thật! Câu nói ấy hẳn chứa\n"
+	.string "đựng ý nghĩa rất sâu xa!\p"
+	.string "Quả không bất ngờ, một HLV giỏi\n"
+	.string "luôn có những điều hay để nói.\p"
+	.string "Chương trình hôm nay xin kết thúc tại\n"
+	.string "đây! Hẹn gặp lại trong lần phát sóng\l"
+	.string "tới!$"
 
 ContestLadyShow_Text_Intro::
 	.string "“POKéMON CONTEST LIVE UPDATES!”\p"
-	.string "MC: Sorry to interrupt the regular\n"
-	.string "programming, and thanks for joining us!\p"
-	.string "We bring you this live from\n"
-	.string "the scene of a just-completed\l"
-	.string "{STR_VAR_1}!\p"
-	.string "Spectators: ?!!!!\p"
-	.string "MC: Oh! It looks like the CONTEST\n"
-	.string "participants are headed this way!\p"
-	.string "I'll try to get an impromptu interview\n"
-	.string "for you folks at home!\p"
-	.string "Spectators: ?!!!!\n"
-	.string "?!!!!$"
+	.string "MC: Xin lỗi vì đã tạm ngắt chương trình\n"
+	.string "thường lệ, và cảm ơn quý vị đã theo\l"
+	.string "dõi!\p"
+	.string "Chúng tôi đang truyền hình trực tiếp\n"
+	.string "từ nơi {STR_VAR_1} vừa kết\l"
+	.string "thúc!\p"
+	.string "Khán giả: ?!!!!\p"
+	.string "MC: Ô! Có vẻ những người tham gia\n"
+	.string "cuộc thi đang tiến về phía này!\p"
+	.string "Tôi sẽ thử thực hiện một cuộc phỏng\n"
+	.string "vấn bất ngờ dành cho quý vị đang theo\l"
+	.string "dõi tại nhà!\p"
+	.string "Khán giả: ?!!!! ?!!!!$"
 
 ContestLadyShow_Text_Won::
-	.string "MC: Excuse me!\n"
-	.string "Thanks for joining us on live TV!\p"
-	.string "May I congratulate you on your win?\p"
-	.string "What was the key factor in today's\n"
-	.string "stunning victory?\p"
-	.string "BEAUTY: We gave it our best effort\n"
-	.string "today, my {STR_VAR_2} and I!\p"
-	.string "But I'm sure we wouldn't have made it\n"
-	.string "if it weren't for all the help we\l"
-	.string "received leading up to the CONTEST!\p"
-	.string "MC: Do you have a special someone\n"
-	.string "with whom you'd like to share your joy?\l"
-	.string "Let's hear it live!\p"
-	.string "BEAUTY: Hey, out there!\p"
-	.string "{STR_VAR_3}! Are you watching?\n"
-	.string "We did it!\l"
-	.string "Thank you!$"
+	.string "MC: Xin lỗi! Cảm ơn cô đã tham gia\n"
+	.string "chương trình truyền hình trực tiếp!\p"
+	.string "Cho phép tôi chúc mừng chiến thắng của\n"
+	.string "cô nhé?\p"
+	.string "Yếu tố then chốt nào đã tạo nên chiến\n"
+	.string "thắng ngoạn mục hôm nay?\p"
+	.string "BEAUTY: Hôm nay tôi và\n"
+	.string "{STR_VAR_2} đã cố gắng hết sức!\p"
+	.string "Nhưng chắc chắn chúng tôi không thể\n"
+	.string "thành công nếu thiếu mọi sự giúp đỡ đã\l"
+	.string "nhận được trước thềm cuộc thi!\p"
+	.string "MC: Cô có muốn chia sẻ niềm vui với một\n"
+	.string "người đặc biệt nào không? Hãy nhắn gửi\l"
+	.string "trực tiếp nào!\p"
+	.string "BEAUTY: Người đang ở ngoài kia!\p"
+	.string "{STR_VAR_3}! Bạn có đang xem\n"
+	.string "không? Chúng tôi làm được rồi! Cảm ơn\l"
+	.string "bạn!$"
 
 ContestLadyShow_Text_Lost::
-	.string "MC: Excuse me!\n"
-	.string "Thanks for joining us on live TV!\p"
-	.string "You must be disappointed by that turn\n"
-	.string "of events. Do you have any comments?\p"
-	.string "BEAUTY: It's heartbreaking…\n"
-	.string "My {STR_VAR_2} and I, we did our best…\p"
-	.string "But I feel like I've let down everyone\n"
-	.string "who has supported us through this.\p"
-	.string "MC: I hate to say it, but the POKéMON's\n"
-	.string "coloration is a little wanting.\p"
-	.string "BEAUTY: {STR_VAR_3}, I'm so sorry…\n"
-	.string "I'll do better next time, I swear…\l"
-	.string "…Sniff… Waaaaah!\p"
-	.string "Spectators: See that?\n"
-	.string "The poor girl!\p"
-	.string "MC: Uh… Uh-oh…\p"
-	.string "Uh… That's all the time we have today!\n"
-	.string "Thanks for tuning in!$"
+	.string "MC: Xin lỗi! Cảm ơn cô đã tham gia\n"
+	.string "chương trình truyền hình trực tiếp!\p"
+	.string "Cô hẳn rất thất vọng trước diễn biến\n"
+	.string "vừa rồi. Cô có muốn nói gì không?\p"
+	.string "BEAUTY: Đau lòng quá... Tôi và\n"
+	.string "{STR_VAR_2} đã cố gắng hết sức...\p"
+	.string "Nhưng tôi cảm thấy mình đã phụ lòng\n"
+	.string "tất cả những người luôn ủng hộ chúng\l"
+	.string "tôi.\p"
+	.string "MC: Tôi không muốn nói điều này, nhưng\n"
+	.string "màu sắc của POKéMON này hơi kém.\p"
+	.string "BEAUTY: {STR_VAR_3}, tôi xin lỗi...\n"
+	.string "Lần sau tôi sẽ làm tốt hơn, tôi thề\l"
+	.string "đấy... Sụt sịt... Oaaaa!\p"
+	.string "Khán giả: Thấy chưa? Cô gái tội nghiệp\n"
+	.string "quá!\p"
+	.string "MC: Ơ... Nguy rồi...\p"
+	.string "À... Chương trình hôm nay chỉ còn thời\n"
+	.string "lượng đến đây! Cảm ơn quý vị đã theo\l"
+	.string "dõi!$"
 
 ContestLadyShow_Text_LostBadly::
-	.string "MC: Excuse me!\n"
-	.string "Thanks for joining us on live TV!\p"
-	.string "How did your CONTEST appearance go?\p"
-	.string "BEAUTY: Nothing went right…\n"
-	.string "For some reason, my {STR_VAR_2}\l"
-	.string "couldn't attract any popularity.\p"
-	.string "MC: I hate to say it, but the POKéMON's\n"
-	.string "coloration is a little wanting.\p"
-	.string "BEAUTY: … … … … … …\n"
-	.string "…Sniff… Waaaaah!\p"
-	.string "Spectators: See that?\n"
-	.string "The poor girl!\p"
-	.string "MC: Uh… Uh-oh…\p"
-	.string "Uh… That's all the time we have today!\n"
-	.string "Thanks for tuning in!$"
+	.string "MC: Xin lỗi! Cảm ơn cô đã tham gia\n"
+	.string "chương trình truyền hình trực tiếp!\p"
+	.string "Phần thi cuộc thi của cô diễn ra thế\n"
+	.string "nào?\p"
+	.string "BEAUTY: Chẳng có gì suôn sẻ cả... Không\n"
+	.string "hiểu sao {STR_VAR_2} của tôi lại\l"
+	.string "không giành được chút yêu thích nào.\p"
+	.string "MC: Tôi không muốn nói điều này, nhưng\n"
+	.string "màu sắc của POKéMON này hơi kém.\p"
+	.string "BEAUTY: ... ... ... ... ... ... ...Sụt sịt... Oaaaa!\p"
+	.string "Khán giả: Thấy chưa? Cô gái tội nghiệp\n"
+	.string "quá!\p"
+	.string "MC: Ơ... Nguy rồi...\p"
+	.string "À... Chương trình hôm nay chỉ còn thời\n"
+	.string "lượng đến đây! Cảm ơn quý vị đã theo\l"
+	.string "dõi!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_ContestLobby_Text_InterviewRequest
+	.global LilycoveCity_ContestLobby_Text_DescribeContest
+	.global LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX
+	.global LilycoveCity_ContestLobby_Text_ThatsAllForInterview
+	.global LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe
+	.global LilycoveCity_ContestLobby_Text_LookingForwardToNextContest
+	.global gTVBravoTrainerText00
+	.global gTVBravoTrainerText01
+	.global gTVBravoTrainerText02
+	.global gTVBravoTrainerText03
+	.global gTVBravoTrainerText04
+	.global gTVBravoTrainerText05
+	.global gTVBravoTrainerText06
+	.global gTVBravoTrainerText07
+	.global gTVBravoTrainerText08
+	.global BattleFrontier_BattleTowerLobby_Text_InterviewRequest
+	.global BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut
+	.global BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou
+	.global BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle
+	.global BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned
+	.global BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle
+	.global BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine
+	.global BattleFrontier_BattleTowerLobby_Text_SilentType
+	.global BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle
+	.global BravoTrainerBattleTower_Text_Intro
+	.global BravoTrainerBattleTower_Text_NewRecord
+	.global BravoTrainerBattleTower_Text_Lost
+	.global BravoTrainerBattleTower_Text_Won
+	.global BravoTrainerBattleTower_Text_LostFinal
+	.global BravoTrainerBattleTower_Text_Satisfied
+	.global BravoTrainerBattleTower_Text_Unsatisfied
+	.global BravoTrainerBattleTower_Text_None1
+	.global BravoTrainerBattleTower_Text_None2
+	.global BravoTrainerBattleTower_Text_None3
+	.global BravoTrainerBattleTower_Text_None4
+	.global BravoTrainerBattleTower_Text_ResponseSatisfied
+	.global BravoTrainerBattleTower_Text_ResponseUnsatisfied
+	.global BravoTrainerBattleTower_Text_Outro
+	.global SlateportCity_PokemonFanClub_Text_InterviewRequestHasName
+	.global SlateportCity_PokemonFanClub_Text_HereGoesQuickAnswers
+	.global SlateportCity_PokemonFanClub_Text_DescribeFeelingsFirstMetMon
+	.global SlateportCity_PokemonFanClub_Text_LikenMonToSomethingYouLike
+	.global SlateportCity_PokemonFanClub_Text_WhatAttractedYouAboutMon
+	.global SlateportCity_PokemonFanClub_Text_WhatDoPokemonMeanToYou
+	.global SlateportCity_PokemonFanClub_Text_ThatsAllForInterview
+	.global SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe
+	.global SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews
+	.global SlateportCity_PokemonFanClub_Text_InterviewRequest
+	.global SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon
+	.global SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2
+	.global gTVFanClubOpinionsText00
+	.global gTVFanClubOpinionsText01
+	.global gTVFanClubOpinionsText02
+	.global gTVFanClubOpinionsText03
+	.global gTVFanClubOpinionsText04
+	.global gTVFanClubText00
+	.global gTVFanClubText01
+	.global gTVFanClubText02
+	.global gTVFanClubText03
+	.global gTVFanClubText04
+	.global gTVFanClubText05
+	.global gTVFanClubText06
+	.global gTVFanClubText07
+	.global SlateportCity_OceanicMuseum_1F_Text_InterviewRequest
+	.global SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort
+	.global SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon
+	.global SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory
+	.global SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview
+	.global SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory
+	.global gTVRecentHappeningsText00
+	.global gTVRecentHappeningsText01
+	.global gTVRecentHappeningsText02
+	.global gTVRecentHappeningsText03
+	.global gTVRecentHappeningsText04
+	.global gTVRecentHappeningsText05
+	.global gTVMassOutbreakText00
+	.global gTV3CheersForPokeblocksText00
+	.global gTV3CheersForPokeblocksText01
+	.global gTV3CheersForPokeblocksText02
+	.global gTV3CheersForPokeblocksText03
+	.global gTV3CheersForPokeblocksText04
+	.global gTV3CheersForPokeblocksText05
+	.global LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer2
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo
+	.global LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial
+	.global gTVTrainerFanClubSpecialText00
+	.global gTVTrainerFanClubSpecialText01
+	.global gTVTrainerFanClubSpecialText02
+	.global gTVTrainerFanClubSpecialText03
+	.global gTVTrainerFanClubSpecialText04
+	.global gTVTrainerFanClubSpecialText05
+	.global gTVNameRaterText00
+	.global gTVNameRaterText01
+	.global gTVNameRaterText02
+	.global gTVNameRaterText03
+	.global gTVNameRaterText04
+	.global gTVNameRaterText05
+	.global gTVNameRaterText06
+	.global gTVNameRaterText07
+	.global gTVNameRaterText08
+	.global gTVNameRaterText09
+	.global gTVNameRaterText10
+	.global gTVNameRaterText11
+	.global gTVNameRaterText12
+	.global gTVNameRaterText13
+	.global gTVNameRaterText14
+	.global gTVNameRaterText15
+	.global gTVNameRaterText16
+	.global gTVNameRaterText17
+	.global gTVNameRaterText18
+	.global gTVPokemonAnglerText00
+	.global gTVPokemonAnglerText01
+	.global gTVPokemonTodayFailedText00
+	.global gTVPokemonTodayFailedText01
+	.global gTVPokemonTodayFailedText02
+	.global gTVPokemonTodayFailedText03
+	.global gTVPokemonTodayFailedText04
+	.global gTVPokemonTodayFailedText05
+	.global gTVPokemonTodayFailedText06
+	.global gTVPokemonTodaySuccessfulText00
+	.global gTVPokemonTodaySuccessfulText01
+	.global gTVPokemonTodaySuccessfulText02
+	.global gTVPokemonTodaySuccessfulText03
+	.global gTVPokemonTodaySuccessfulText04
+	.global gTVPokemonTodaySuccessfulText05
+	.global gTVPokemonTodaySuccessfulText06
+	.global gTVPokemonTodaySuccessfulText07
+	.global gTVPokemonTodaySuccessfulText08
+	.global gTVPokemonTodaySuccessfulText09
+	.global gTVPokemonTodaySuccessfulText10
+	.global gTVPokemonTodaySuccessfulText11
+	.global SmartShopper_Text_Intro
+	.global SmartShopper_Text_ClerkNormal
+	.global SmartShopper_Text_RandomComment1
+	.global SmartShopper_Text_RandomComment2
+	.global SmartShopper_Text_RandomComment3
+	.global SmartShopper_Text_RandomComment4
+	.global SmartShopper_Text_SecondItem
+	.global SmartShopper_Text_ThirdItem
+	.global SmartShopper_Text_DuringSale
+	.global SmartShopper_Text_OutroNormal
+	.global SmartShopper_Text_IsVIP
+	.global SmartShopper_Text_ClerkMax
+	.global SmartShopper_Text_OutroMax
+	.global gTVWorldOfMastersText00
+	.global gTVWorldOfMastersText01
+	.global gTVWorldOfMastersText02
+	.global gTVTodaysRivalTrainerText00
+	.global gTVTodaysRivalTrainerText07
+	.global gTVTodaysRivalTrainerText08
+	.global gTVTodaysRivalTrainerText09
+	.global gTVTodaysRivalTrainerText10
+	.global gTVTodaysRivalTrainerText01
+	.global gTVTodaysRivalTrainerText02
+	.global gTVTodaysRivalTrainerText03
+	.global gTVTodaysRivalTrainerText04
+	.global gTVTodaysRivalTrainerText05
+	.global gTVTodaysRivalTrainerText06
+	.global TrendWatcher_Text_Intro
+	.global TrendWatcher_Text_MaleTaughtMePhrase
+	.global TrendWatcher_Text_FemaleTaughtMePhrase
+	.global TrendWatcher_Text_PhraseWasHopeless
+	.global TrendWatcher_Text_MaleTellMeBigger
+	.global TrendWatcher_Text_FemaleTellMeBigger
+	.global TrendWatcher_Text_Outro
+	.global gTVHoennTreasureInvestigatorsText00
+	.global gTVHoennTreasureInvestigatorsText01
+	.global gTVHoennTreasureInvestigatorsText02
+	.global gTVFindThatGamerText00
+	.global gTVFindThatGamerText01
+	.global gTVFindThatGamerText02
+	.global gTVFindThatGamerText03
+	.global gTVBreakingNewsText00
+	.global gTVBreakingNewsText01
+	.global gTVBreakingNewsText02
+	.global gTVBreakingNewsText03
+	.global gTVBreakingNewsText04
+	.global gTVBreakingNewsText05
+	.global gTVBreakingNewsText06
+	.global gTVBreakingNewsText07
+	.global gTVBreakingNewsText12
+	.global gTVBreakingNewsText08
+	.global gTVBreakingNewsText09
+	.global gTVBreakingNewsText10
+	.global gTVBreakingNewsText11
+	.global gTVSecretBaseVisitText00
+	.global gTVSecretBaseVisitText01
+	.global gTVSecretBaseVisitText02
+	.global gTVSecretBaseVisitText03
+	.global gTVSecretBaseVisitText04
+	.global gTVSecretBaseVisitText05
+	.global gTVSecretBaseVisitText06
+	.global gTVSecretBaseVisitText07
+	.global gTVSecretBaseVisitText08
+	.global gTVSecretBaseVisitText09
+	.global gTVSecretBaseVisitText10
+	.global gTVSecretBaseVisitText11
+	.global gTVSecretBaseVisitText12
+	.global gTVSecretBaseVisitText13
+	.global gTVPokemonLotteryWinnerFlashReportText00
+	.global gTVThePokemonBattleSeminarText00
+	.global gTVThePokemonBattleSeminarText01
+	.global gTVThePokemonBattleSeminarText02
+	.global gTVThePokemonBattleSeminarText03
+	.global gTVThePokemonBattleSeminarText04
+	.global gTVThePokemonBattleSeminarText05
+	.global gTVThePokemonBattleSeminarText06
+	.global gTVTrainerFanClubText00
+	.global gTVTrainerFanClubText01
+	.global gTVTrainerFanClubText02
+	.global gTVTrainerFanClubText03
+	.global gTVTrainerFanClubText04
+	.global gTVTrainerFanClubText05
+	.global gTVTrainerFanClubText06
+	.global gTVTrainerFanClubText07
+	.global gTVTrainerFanClubText08
+	.global gTVTrainerFanClubText09
+	.global gTVTrainerFanClubText10
+	.global gTVTrainerFanClubText11
+	.global TVSpotTheCuties_Text_Intro
+	.global TVSpotTheCuties_Text_RibbonsLow
+	.global TVSpotTheCuties_Text_RibbonsMid
+	.global TVSpotTheCuties_Text_RibbonsHigh
+	.global TVSpotTheCuties_Text_RibbonIntro
+	.global TVSpotTheCuties_Text_RibbonChampion
+	.global TVSpotTheCuties_Text_RibbonCool
+	.global TVSpotTheCuties_Text_RibbonBeauty
+	.global TVSpotTheCuties_Text_RibbonCute
+	.global TVSpotTheCuties_Text_RibbonSmart
+	.global TVSpotTheCuties_Text_RibbonTough
+	.global TVSpotTheCuties_Text_RibbonWinning
+	.global TVSpotTheCuties_Text_RibbonVictory
+	.global TVSpotTheCuties_Text_RibbonArtist
+	.global TVSpotTheCuties_Text_RibbonEffort
+	.global TVSpotTheCuties_Text_Outro
+	.global gTVPokemonNewsBattleFrontierText00
+	.global gTVPokemonNewsBattleFrontierText01
+	.global gTVPokemonNewsBattleFrontierText02
+	.global gTVPokemonNewsBattleFrontierText03
+	.global gTVPokemonNewsBattleFrontierText04
+	.global gTVPokemonNewsBattleFrontierText05
+	.global gTVPokemonNewsBattleFrontierText06
+	.global gTVPokemonNewsBattleFrontierText07
+	.global gTVPokemonNewsBattleFrontierText08
+	.global gTVPokemonNewsBattleFrontierText09
+	.global gTVPokemonNewsBattleFrontierText10
+	.global gTVPokemonNewsBattleFrontierText11
+	.global gTVPokemonNewsBattleFrontierText12
+	.global gTVPokemonNewsBattleFrontierText13
+	.global gTVPokemonNewsBattleFrontierText14
+	.global gTVPokemonNewsBattleFrontierText15
+	.global gTVPokemonNewsBattleFrontierText16
+	.global gTVPokemonNewsBattleFrontierText17
+	.global gTVPokemonNewsBattleFrontierText18
+	.global gTVWhatsNo1InHoennTodayText00
+	.global gTVWhatsNo1InHoennTodayText01
+	.global gTVWhatsNo1InHoennTodayText02
+	.global gTVWhatsNo1InHoennTodayText03
+	.global gTVWhatsNo1InHoennTodayText04
+	.global gTVWhatsNo1InHoennTodayText05
+	.global gTVWhatsNo1InHoennTodayText06
+	.global gTVWhatsNo1InHoennTodayText07
+	.global gTVWhatsNo1InHoennTodayText08
+	.global TVSecretBaseSecrets_Text_Intro
+	.global TVSecretBaseSecrets_Text_WhatWillPlayerDoNext1
+	.global TVSecretBaseSecrets_Text_WhatWillPlayerDoNext2
+	.global TVSecretBaseSecrets_Text_TookXStepsBeforeLeaving
+	.global TVSecretBaseSecrets_Text_BaseFailedToInterestPlayer
+	.global TVSecretBaseSecrets_Text_PlayerEnjoyedBase
+	.global TVSecretBaseSecrets_Text_PlayerHugeFanOfBase
+	.global TVSecretBaseSecrets_Text_Outro
+	.global TVSecretBaseSecrets_Text_StoppedMoving1
+	.global TVSecretBaseSecrets_Text_StoppedMoving2
+	.global TVSecretBaseSecrets_Text_UsedChair
+	.global TVSecretBaseSecrets_Text_UsedBalloon
+	.global TVSecretBaseSecrets_Text_UsedTent
+	.global TVSecretBaseSecrets_Text_UsedPlant
+	.global TVSecretBaseSecrets_Text_UsedGoldShield
+	.global TVSecretBaseSecrets_Text_UsedSilverShield
+	.global TVSecretBaseSecrets_Text_UsedGlassOrnament
+	.global TVSecretBaseSecrets_Text_UsedTV
+	.global TVSecretBaseSecrets_Text_UsedMudBall
+	.global TVSecretBaseSecrets_Text_UsedBag
+	.global TVSecretBaseSecrets_Text_UsedCushion
+	.global TVSecretBaseSecrets_Text_HitCushion
+	.global TVSecretBaseSecrets_Text_HuggedCushion
+	.global TVSecretBaseSecrets_Text_BattledWon
+	.global TVSecretBaseSecrets_Text_BattledLost
+	.global TVSecretBaseSecrets_Text_DeclinedBattle
+	.global TVSecretBaseSecrets_Text_UsedPoster
+	.global TVSecretBaseSecrets_Text_UsedNoteMat
+	.global TVSecretBaseSecrets_Text_BattledDraw
+	.global TVSecretBaseSecrets_Text_UsedSpinMat
+	.global TVSecretBaseSecrets_Text_UsedSandOrnament
+	.global TVSecretBaseSecrets_Text_UsedDesk
+	.global TVSecretBaseSecrets_Text_UsedBrick
+	.global TVSecretBaseSecrets_Text_UsedSolidBoard
+	.global TVSecretBaseSecrets_Text_UsedFence
+	.global TVSecretBaseSecrets_Text_UsedGlitterMat
+	.global TVSecretBaseSecrets_Text_UsedTire
+	.global TVSecretBaseSecrets_Text_UsedStand
+	.global TVSecretBaseSecrets_Text_BrokeDoor
+	.global TVSecretBaseSecrets_Text_UsedDoll
+	.global TVSecretBaseSecrets_Text_UsedSlide
+	.global TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown
+	.global TVSecretBaseSecrets_Text_UsedJumpMat
+	.global gTVSafariFanClubText00
+	.global gTVSafariFanClubText01
+	.global gTVSafariFanClubText02
+	.global gTVSafariFanClubText03
+	.global gTVSafariFanClubText04
+	.global gTVSafariFanClubText05
+	.global gTVSafariFanClubText06
+	.global gTVSafariFanClubText07
+	.global gTVSafariFanClubText08
+	.global gTVSafariFanClubText09
+	.global gTVSafariFanClubText10
+	.global ContestLiveUpdates_Text_Intro
+	.global ContestLiveUpdates_Text_WonBothRounds
+	.global ContestLiveUpdates_Text_BetterRound2
+	.global ContestLiveUpdates_Text_EqualRounds
+	.global ContestLiveUpdates_Text_BetterRound1
+	.global ContestLiveUpdates_Text_GotNervous
+	.global ContestLiveUpdates_Text_StartledFoes
+	.global ContestLiveUpdates_Text_UsedCombo
+	.global ContestLiveUpdates_Text_ExcitingAppeal
+	.global ContestLiveUpdates_Text_WasCool
+	.global ContestLiveUpdates_Text_WasBeautiful
+	.global ContestLiveUpdates_Text_WasCute
+	.global ContestLiveUpdates_Text_WasSmart
+	.global ContestLiveUpdates_Text_WasTough
+	.global ContestLiveUpdates_Text_VeryExcitingAppeal
+	.global ContestLiveUpdates_Text_VeryCool
+	.global ContestLiveUpdates_Text_VeryBeautiful
+	.global ContestLiveUpdates_Text_VeryCute
+	.global ContestLiveUpdates_Text_VerySmart
+	.global ContestLiveUpdates_Text_VeryTough
+	.global ContestLiveUpdates_Text_TookBreak
+	.global ContestLiveUpdates_Text_GotStartled
+	.global ContestLiveUpdates_Text_MoveWonderful
+	.global ContestLiveUpdates_Text_TalkAboutAnotherMon
+	.global ContestLiveUpdates_Text_FailedToAppeal
+	.global ContestLiveUpdates_Text_LastInBothRounds
+	.global ContestLiveUpdates_Text_NotExcitingEnough
+	.global ContestLiveUpdates_Text_LostAfterWinningRound1
+	.global ContestLiveUpdates_Text_NeverExciting
+	.global ContestLiveUpdates_Text_LostBySmallMargin
+	.global ContestLiveUpdates_Text_RepeatedAppeals
+	.global ContestLiveUpdates_Text_ValiantEffortButLost
+	.global ContestLiveUpdates_Text_Outro
+	.global gTVPokemonBattleUpdateText00
+	.global gTVPokemonBattleUpdateText01
+	.global gTVPokemonBattleUpdateText02
+	.global gTVPokemonBattleUpdateText03
+	.global gTVPokemonBattleUpdateText04
+	.global gTVPokemonBattleUpdateText05
+	.global gTVPokemonBattleUpdateText06
+	.global gTVPokemonBattleUpdateText07
+	.global GabbyAndTy_Text_GabbyPreFirstBattle
+	.global GabbyAndTy_Text_GabbyIntro
+	.global GabbyAndTy_Text_GabbyDefeatFirstTime
+	.global GabbyAndTy_Text_WhoAreYouInterview
+	.global GabbyAndTy_Text_QuoteFromLastInterview
+	.global GabbyAndTy_Text_YouStompedUsInterviewAgain
+	.global GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain
+	.global GabbyAndTy_Text_CleverItemSkillsInterviewAgain
+	.global GabbyAndTy_Text_WeLookedRespectableInterviewAgain
+	.global GabbyAndTy_Text_InterviewAgain
+	.global GabbyAndTy_Text_DescribeYourFeelings
+	.global GabbyAndTy_Text_PerfectWellBeSeeingYou
+	.global GabbyAndTy_Text_DontGiveUpKeepingEyeOut
+	.global GabbyAndTy_Text_KeepingAnEyeOutForYou
+	.global GabbyAndTy_Text_GabbyNotEnoughMons
+	.global GabbyAndTy_Text_GiveUsAnInterviewThisTime
+	.global GabbyAndTy_Text_GabbyDefeat
+	.global GabbyAndTy_Text_TyPreFirstBattle
+	.global GabbyAndTy_Text_TyIntro
+	.global GabbyAndTy_Text_TyPostBattle
+	.global GabbyAndTy_Text_TyNotEnoughMons
+	.global GabbyAndTy_Text_TyDefeatFirstTime
+	.global GabbyAndTy_Text_TyDefeat
+	.global gTVInSearchOfTrainersText00
+	.global gTVInSearchOfTrainersText01
+	.global gTVInSearchOfTrainersText02
+	.global gTVInSearchOfTrainersText03
+	.global gTVInSearchOfTrainersText04
+	.global gTVInSearchOfTrainersText05
+	.global gTVInSearchOfTrainersText06
+	.global gTVInSearchOfTrainersText07
+	.global gTVInSearchOfTrainersText08
+	.global ContestLadyShow_Text_Intro
+	.global ContestLadyShow_Text_Won
+	.global ContestLadyShow_Text_Lost
+	.global ContestLadyShow_Text_LostBadly
+@ END GENERATED LOCALIZATION EXPORTS

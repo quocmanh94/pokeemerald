@@ -381,160 +381,188 @@ SlateportCity_Harbor_EventScript_TradedScanner::
 	end
 
 SlateportCity_Harbor_Text_FerryServiceUnavailable:
-	.string "I beg your pardon?\n"
-	.string "You're looking for a ship?\p"
-	.string "I'm sorry, the ferry service isn't\n"
-	.string "available at present…$"
+	.string "Xin lỗi, bạn nói gì cơ? Bạn đang tìm tàu\n"
+	.string "sao?\p"
+	.string "Rất tiếc, hiện tại dịch vụ phà chưa hoạt\n"
+	.string "động...$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
-	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your TICKET?$"
+	.string "Xin chào, bạn đến để đi phà phải không?\n"
+	.string "Tôi có thể xem TICKET của bạn chứ?$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
-	.string "{PLAYER} doesn't have the TICKET…\p"
-	.string "I'm terribly sorry.\p"
-	.string "You must have a TICKET to board\n"
-	.string "the ferry.$"
+	.string "{PLAYER} không có TICKET...\p"
+	.string "Tôi vô cùng xin lỗi.\p"
+	.string "Bạn phải có TICKET mới được lên phà.$"
 
 SlateportCity_Harbor_Text_FlashedTicketWhereTo:
-	.string "{PLAYER} flashed the TICKET.\p"
-	.string "Perfect! That's all you need!\p"
-	.string "And where would you like to go?$"
+	.string "{PLAYER} đưa TICKET ra.\p"
+	.string "Tuyệt! Bạn chỉ cần thứ này là đủ!\p"
+	.string "Vậy bạn muốn đi đâu?$"
 
 SlateportCity_Harbor_Text_SailAnotherTime:
-	.string "Please sail with us another time!$"
+	.string "Mong bạn sẽ đi cùng chúng tôi vào dịp\n"
+	.string "khác!$"
 
 SlateportCity_Harbor_Text_LilycoveItIs:
-	.string "LILYCOVE CITY it is, then!$"
+	.string "Vậy thì đến LILYCOVE CITY!$"
 
 SlateportCity_Harbor_Text_BattleFrontierItIs:
-	.string "BATTLE FRONTIER it is, then!$"
+	.string "Vậy thì đến BATTLE FRONTIER!$"
 
 SlateportCity_Harbor_Text_PleaseBoardFerry:
-	.string "Please board the ferry and wait for\n"
-	.string "departure.$"
+	.string "Xin hãy lên phà và chờ tàu khởi hành.$"
 
 SlateportCity_Harbor_Text_WhereWouldYouLikeToGo:
-	.string "Then, where would you like to go?$"
+	.string "Vậy bạn muốn đi đâu?$"
 
 SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
-	.string "A journey to the bottom of the sea…\n"
-	.string "I wonder what it'd be like?\p"
-	.string "I'd love to go deep underwater like\n"
-	.string "that someday.$"
+	.string "Một chuyến đi xuống tận đáy biển...\n"
+	.string "Không biết sẽ như thế nào nhỉ?\p"
+	.string "Một ngày nào đó, tôi rất muốn được lặn\n"
+	.string "sâu dưới nước như vậy.$"
 
 SlateportCity_Harbor_Text_AbnormalWeather:
-	.string "For a ship to sail safely, we need to\n"
-	.string "know about the weather!\p"
-	.string "Speaking of weather, I heard something\n"
-	.string "from a guy at the WEATHER INSTITUTE.\p"
-	.string "He was saying abnormal weather has\n"
-	.string "been reported all over the place!\p"
-	.string "You should visit the WEATHER INSTITUTE\n"
-	.string "and ask around!$"
+	.string "Muốn tàu đi lại an toàn, chúng ta phải\n"
+	.string "nắm rõ tình hình thời tiết!\p"
+	.string "Nhắc đến thời tiết, tôi có nghe một\n"
+	.string "người ở WEATHER INSTITUTE kể chuyện\l"
+	.string "này.\p"
+	.string "Anh ta nói thời tiết bất thường đang\n"
+	.string "được ghi nhận ở khắp mọi nơi!\p"
+	.string "Bạn nên đến WEATHER INSTITUTE và hỏi\n"
+	.string "thăm xem sao!$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-	.string "I wanted to go with CAPT. STERN on\n"
-	.string "the ocean floor exploration.\p"
-	.string "But the sub's too small for me.\p"
-	.string "If I squeezed in, there wouldn't be\n"
-	.string "any room for the CAPTAIN…$"
+	.string "Tôi muốn cùng CAPT. STERN tham gia\n"
+	.string "chuyến thám hiểm đáy biển.\p"
+	.string "Nhưng chiếc tàu ngầm quá nhỏ đối với\n"
+	.string "tôi.\p"
+	.string "Nếu tôi cố chen vào thì sẽ chẳng còn\n"
+	.string "chỗ cho CAPTAIN...$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
-	.string "CAPT. STERN: Those thugs…\p"
-	.string "They're the same lot who tried to rob\n"
-	.string "the DEVON GOODS at the MUSEUM.$"
+	.string "CAPT. STERN: Bọn côn đồ đó...\p"
+	.string "Chính là đám đã tìm cách cướp DEVON\n"
+	.string "GOODS tại MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "ARCHIE: Oh?\n"
-	.string "Not you again…\p"
-	.string "You are tenacious to track us here,\n"
-	.string "that much I will give you.\p"
-	.string "But now…\n"
-	.string "No one can stop us! No one!\p"
-	.string "Or, will you follow us back to our\n"
-	.string "HIDEOUT in LILYCOVE CITY?\p"
-	.string "Fwahahahaha…$"
+	.string "ARCHIE: Ồ? Lại là ngươi sao...\p"
+	.string "Ta phải công nhận ngươi rất dai dẳng\n"
+	.string "khi lần theo chúng ta đến tận đây.\p"
+	.string "Nhưng giờ thì... Không ai có thể ngăn\n"
+	.string "cản chúng ta! Không một ai!\p"
+	.string "Hay là ngươi định đuổi theo chúng ta về\n"
+	.string "tận HIDEOUT ở LILYCOVE CITY?\p"
+	.string "Fwahahahaha...$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "CAPT. STERN: Why…\p"
-	.string "Why would TEAM AQUA steal my\n"
-	.string "SUBMARINE EXPLORER 1?\p"
-	.string "They can't be after the slumbering\n"
-	.string "POKéMON at the bottom of the sea…\p"
-	.string "But even if I were to chase them,\n"
-	.string "I don't stand a chance against them…$"
+	.string "CAPT. STERN: Tại sao...\p"
+	.string "Tại sao TEAM AQUA lại đánh cắp\n"
+	.string "SUBMARINE EXPLORER 1 của tôi?\p"
+	.string "Chẳng lẽ chúng đang nhắm đến POKéMON\n"
+	.string "say ngủ dưới đáy biển...\p"
+	.string "Nhưng dù có đuổi theo, tôi cũng không\n"
+	.string "thể chống lại chúng...$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "CAPT. STERN: Oh, {PLAYER}{KUN}…\p"
-	.string "Okay… So TEAM AQUA left before you\n"
-	.string "could stop them…\p"
-	.string "Oh, no, don't blame yourself.\n"
-	.string "You're not responsible for this.\p"
-	.string "Trying to catch a submarine…\n"
-	.string "It's impossible for most people.\p"
-	.string "You would need a POKéMON that knows\n"
-	.string "how to DIVE…\p"
-	.string "Perhaps if you went out to\n"
-	.string "MOSSDEEP CITY…\p"
-	.string "A lot of divers live out there, so\n"
-	.string "someone might teach you…$"
+	.string "CAPT. STERN: Ôi, {PLAYER}{KUN}...\p"
+	.string "Vậy sao... TEAM AQUA đã rời đi trước khi\n"
+	.string "cậu kịp ngăn chúng...\p"
+	.string "Không, đừng tự trách mình. Chuyện này\n"
+	.string "không phải lỗi của cậu.\p"
+	.string "Đuổi theo một chiếc tàu ngầm... Hầu hết\n"
+	.string "mọi người đều không thể làm được.\p"
+	.string "Cậu sẽ cần một POKéMON biết DIVE...\p"
+	.string "Có lẽ nếu cậu đến MOSSDEEP CITY...\p"
+	.string "Nơi đó có nhiều thợ lặn sinh sống, nên\n"
+	.string "có thể ai đó sẽ dạy cậu...$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "CAPT. STERN: Trying to catch a\n"
-	.string "submarine… It's impossible.\p"
-	.string "You would need a POKéMON that knows\n"
-	.string "how to DIVE…\p"
-	.string "Perhaps if you went out to\n"
-	.string "MOSSDEEP CITY…\p"
-	.string "A lot of divers live out there, so\n"
-	.string "someone might teach you…$"
+	.string "CAPT. STERN: Đuổi theo một chiếc tàu\n"
+	.string "ngầm... Đó là chuyện không thể.\p"
+	.string "Cậu sẽ cần một POKéMON biết DIVE...\p"
+	.string "Có lẽ nếu cậu đến MOSSDEEP CITY...\p"
+	.string "Nơi đó có nhiều thợ lặn sinh sống, nên\n"
+	.string "có thể ai đó sẽ dạy cậu...$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "CAPT. STERN: Oh, yes.\n"
-	.string "MR. BRINEY came to our SHIPYARD.\p"
-	.string "It won't be long now before we finish\n"
-	.string "making the ferry!$"
+	.string "CAPT. STERN: À, đúng rồi. MR. BRINEY đã\n"
+	.string "đến SHIPYARD của chúng tôi.\p"
+	.string "Chẳng bao lâu nữa chúng tôi sẽ đóng\n"
+	.string "xong chiếc phà!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
 	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
-	.string "We finally finished making the ferry\n"
+	.string "Cuối cùng chúng tôi cũng đóng xong phà\n"
 	.string "S.S. TIDAL!\p"
-	.string "We couldn't have done it without\n"
-	.string "your friend MR. BRINEY.\p"
-	.string "Please go for a short cruise on it!$"
+	.string "Chúng tôi không thể hoàn thành nó nếu\n"
+	.string "thiếu người bạn MR. BRINEY của cậu.\p"
+	.string "Hãy thử đi một chuyến du ngoạn ngắn\n"
+	.string "trên phà nhé!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
-	.string "CAPT. STERN: Oh?\n"
-	.string "{PLAYER}{KUN}, that item you have…\p"
-	.string "That's a SCANNER! That would sure\n"
-	.string "help us on our explorations.\p"
-	.string "{PLAYER}{KUN}, would you trade your\n"
-	.string "SCANNER for something?\p"
-	.string "Like, say, a DEEPSEATOOTH or\n"
-	.string "a DEEPSEASCALE that I have?$"
+	.string "CAPT. STERN: Ồ? {PLAYER}{KUN}, món đồ\n"
+	.string "cậu đang có...\p"
+	.string "Đó là SCANNER! Nó chắc chắn sẽ giúp ích\n"
+	.string "rất nhiều cho các chuyến thám hiểm của\l"
+	.string "chúng tôi.\p"
+	.string "{PLAYER}{KUN}, cậu có muốn đổi\n"
+	.string "SCANNER lấy thứ gì đó không?\p"
+	.string "Chẳng hạn như DEEPSEATOOTH hoặc\n"
+	.string "DEEPSEASCALE mà tôi đang có?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
-	.string "CAPT. STERN: Are you certain?\n"
-	.string "It's useless to you, {PLAYER}{KUN}…\p"
-	.string "Well, okay, then. If you want to trade\n"
-	.string "your SCANNER, let me know.$"
+	.string "CAPT. STERN: Cậu chắc chứ? Nó đâu có\n"
+	.string "ích gì cho cậu, {PLAYER}{KUN}...\p"
+	.string "Thôi được rồi. Nếu muốn đổi SCANNER\n"
+	.string "thì hãy cho tôi biết.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
-	.string "CAPT. STERN: So you'll trade it for\n"
-	.string "my DEEPSEATOOTH?$"
+	.string "CAPT. STERN: Vậy cậu sẽ đổi nó lấy\n"
+	.string "DEEPSEATOOTH của tôi phải không?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
-	.string "CAPT. STERN: So you'll trade it for\n"
-	.string "my DEEPSEASCALE?$"
+	.string "CAPT. STERN: Vậy cậu sẽ đổi nó lấy\n"
+	.string "DEEPSEASCALE của tôi phải không?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
-	.string "CAPT. STERN: Which one do you want?$"
+	.string "CAPT. STERN: Cậu muốn món nào?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
-	.string "{PLAYER} handed the SCANNER to\n"
-	.string "CAPT. STERN.$"
+	.string "{PLAYER} trao SCANNER cho CAPT.\n"
+	.string "STERN.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
-	.string "This will help our research a lot!$"
+	.string "CAPT. STERN: Cảm ơn, {PLAYER}{KUN}!\n"
+	.string "Thứ này sẽ giúp ích rất nhiều cho công\l"
+	.string "việc nghiên cứu của chúng tôi!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_Harbor_Text_FerryServiceUnavailable
+	.global SlateportCity_Harbor_Text_MayISeeYourTicket
+	.global SlateportCity_Harbor_Text_YouMustHaveTicket
+	.global SlateportCity_Harbor_Text_FlashedTicketWhereTo
+	.global SlateportCity_Harbor_Text_SailAnotherTime
+	.global SlateportCity_Harbor_Text_LilycoveItIs
+	.global SlateportCity_Harbor_Text_BattleFrontierItIs
+	.global SlateportCity_Harbor_Text_PleaseBoardFerry
+	.global SlateportCity_Harbor_Text_WhereWouldYouLikeToGo
+	.global SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday
+	.global SlateportCity_Harbor_Text_AbnormalWeather
+	.global SlateportCity_Harbor_Text_SubTooSmallForMe
+	.global SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum
+	.global SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove
+	.global SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine
+	.global SlateportCity_Harbor_Text_TeamAquaLeftNeedDive
+	.global SlateportCity_Harbor_Text_NeedDiveToCatchSub
+	.global SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry
+	.global SlateportCity_Harbor_Text_FinishedMakingFerry
+	.global SlateportCity_Harbor_Text_WouldYouTradeScanner
+	.global SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow
+	.global SlateportCity_Harbor_Text_TradeForDeepSeaTooth
+	.global SlateportCity_Harbor_Text_TradeForDeepSeaScale
+	.global SlateportCity_Harbor_Text_WhichOneDoYouWant
+	.global SlateportCity_Harbor_Text_HandedScannerToStern
+	.global SlateportCity_Harbor_Text_ThisWillHelpResearch
+@ END GENERATED LOCALIZATION EXPORTS

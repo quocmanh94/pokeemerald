@@ -43,45 +43,56 @@ Route110_TrickHousePuzzle6_EventScript_Sebastian::
 	end
 
 Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is my life.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER là cuộc đời tôi.” ... ... ...\n"
+	.string "... ... ... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle6_Text_SophiaIntro:
-	.string "When I heard there was a strange\n"
-	.string "house, I had to check it out.$"
+	.string "Nghe nói có một ngôi nhà kỳ lạ là tôi\n"
+	.string "phải đến xem ngay.$"
 
 Route110_TrickHousePuzzle6_Text_SophiaDefeat:
-	.string "I've discovered a tough TRAINER!$"
+	.string "Tôi đã phát hiện ra một HLV lợi hại!$"
 
 Route110_TrickHousePuzzle6_Text_SophiaPostBattle:
-	.string "I'm sure having a good time checking\n"
-	.string "this place out.\p"
-	.string "It's a challenge I've found worth\n"
-	.string "repeating!$"
+	.string "Tôi đang rất thích thú khi khám phá nơi\n"
+	.string "này.\p"
+	.string "Đây là thử thách đáng để tôi quay lại\n"
+	.string "nhiều lần!$"
 
 Route110_TrickHousePuzzle6_Text_BennyIntro:
-	.string "Maybe I could get my BIRD POKéMON\n"
-	.string "to fly over the wall…$"
+	.string "Có lẽ tôi có thể cho BIRD POKéMON của\n"
+	.string "mình bay qua bức tường...$"
 
 Route110_TrickHousePuzzle6_Text_BennyDefeat:
-	.string "Gwaaah! I blew it!$"
+	.string "Gwaaah! Tôi làm hỏng hết rồi!$"
 
 Route110_TrickHousePuzzle6_Text_BennyPostBattle:
-	.string "Ehehehe… I guess I lost because\n"
-	.string "I was trying to cheat.$"
+	.string "Ehehehe... Chắc tôi thua vì đã định gian\n"
+	.string "lận.$"
 
 Route110_TrickHousePuzzle6_Text_SebastianIntro:
-	.string "I'm getting dizzy from these rotating\n"
-	.string "doors…$"
+	.string "Mấy cánh cửa xoay này làm tôi chóng mặt\n"
+	.string "quá...$"
 
 Route110_TrickHousePuzzle6_Text_SebastianDefeat:
-	.string "Everything's spinning around and\n"
-	.string "around. I can't take this anymore…$"
+	.string "Mọi thứ cứ quay vòng vòng. Tôi không\n"
+	.string "chịu nổi nữa...$"
 
 Route110_TrickHousePuzzle6_Text_SebastianPostBattle:
-	.string "You don't seem to be affected at all.\n"
-	.string "Or do you have your poker face on?$"
+	.string "Bạn có vẻ chẳng bị ảnh hưởng chút nào.\n"
+	.string "Hay bạn chỉ đang giữ vẻ mặt tỉnh bơ?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle6_Text_SophiaIntro
+	.global Route110_TrickHousePuzzle6_Text_SophiaDefeat
+	.global Route110_TrickHousePuzzle6_Text_SophiaPostBattle
+	.global Route110_TrickHousePuzzle6_Text_BennyIntro
+	.global Route110_TrickHousePuzzle6_Text_BennyDefeat
+	.global Route110_TrickHousePuzzle6_Text_BennyPostBattle
+	.global Route110_TrickHousePuzzle6_Text_SebastianIntro
+	.global Route110_TrickHousePuzzle6_Text_SebastianDefeat
+	.global Route110_TrickHousePuzzle6_Text_SebastianPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

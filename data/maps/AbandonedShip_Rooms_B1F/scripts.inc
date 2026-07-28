@@ -11,8 +11,11 @@ AbandonedShip_Rooms_B1F_EventScript_FatMan::
 	end
 
 AbandonedShip_Rooms_B1F_Text_GettingQueasy:
-	.string "Urrrrppp…\p"
-	.string "I'm getting queasy just being aboard\n"
-	.string "this ship…\p"
-	.string "It's not even moving, but…$"
+	.string "Ựa...\p"
+	.string "Chỉ cần ở trên con tàu này là tôi đã\n"
+	.string "thấy buồn nôn...\p"
+	.string "Nó còn chẳng di chuyển, vậy mà...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Rooms_B1F_Text_GettingQueasy
+@ END GENERATED LOCALIZATION EXPORTS

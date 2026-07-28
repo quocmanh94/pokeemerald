@@ -52,132 +52,164 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
-	.string "I'll show you the sublime techniques\n"
-	.string "I learned from our LEADER JUAN!$"
+	.string "Tôi sẽ cho bạn thấy những kỹ thuật\n"
+	.string "tuyệt đỉnh mà tôi học được từ LEADER\l"
+	.string "JUAN!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "Please forgive me, JUAN…$"
+	.string "Xin hãy tha thứ cho tôi, JUAN...$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "Watch what happens if you crack all\n"
-	.string "the floor tiles.$"
+	.string "Hãy xem chuyện gì xảy ra nếu bạn làm\n"
+	.string "nứt tất cả các ô sàn.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
-	.string "You came all the way here, but you won't\n"
-	.string "get to see JUAN.\p"
-	.string "Not if you lose to me, you won't!$"
+	.string "Bạn đã vất vả tới tận đây, nhưng sẽ\n"
+	.string "không được gặp JUAN đâu.\p"
+	.string "Ít nhất là nếu thua tôi!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
-	.string "You're strong!\n"
-	.string "I was fooled by your cute looks!$"
+	.string "Bạn mạnh thật! Vẻ ngoài dễ thương của\n"
+	.string "bạn đã đánh lừa tôi!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "You might be good enough to avoid\n"
-	.string "being wiped out in one hit by JUAN.$"
+	.string "Có lẽ bạn đủ giỏi để không bị JUAN hạ\n"
+	.string "gục chỉ bằng một đòn.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "The sight of JUAN conducting\n"
-	.string "a battle…\p"
-	.string "The very beauty of it compelled me to\n"
-	.string "become a TRAINER.$"
+	.string "Cảnh tượng JUAN điều khiển một trận\n"
+	.string "đấu...\p"
+	.string "Vẻ đẹp ấy đã thôi thúc tôi trở thành\n"
+	.string "HLV.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
-	.string "You battled with more beauty than\n"
-	.string "I could muster…$"
+	.string "Bạn đã chiến đấu đẹp mắt hơn tất cả\n"
+	.string "những gì tôi có thể thể hiện...$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "The grace you bring to battle is\n"
-	.string "fabulous.\p"
-	.string "Oh… I'm so fortunate to have found\n"
+	.string "Vẻ duyên dáng bạn đem vào trận đấu\n"
+	.string "thật tuyệt vời.\p"
+	.string "Ôi... Tôi thật may mắn khi tìm thấy\n"
 	.string "POKéMON.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
-	.string "I should teach you how harsh battles\n"
-	.string "can be.$"
+	.string "Để tôi dạy bạn biết các trận đấu có thể\n"
+	.string "khắc nghiệt đến mức nào.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieDefeat:
-	.string "Oh.\n"
-	.string "You're strong.$"
+	.string "Ồ. Bạn mạnh thật.$"
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "I'll tell you something good.\p"
-	.string "If you want to reach JUAN, you\n"
-	.string "need to walk on each floor tile once.$"
+	.string "Tôi sẽ mách bạn một điều hữu ích.\p"
+	.string "Nếu muốn tới chỗ JUAN, bạn cần bước\n"
+	.string "lên mỗi ô sàn đúng một lần.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "The POKéMON GYM of the highest level\n"
-	.string "in the HOENN region…\p"
-	.string "That's the SOOTOPOLIS GYM.$"
+	.string "POKéMON GYM cấp cao nhất vùng HOENN...\p"
+	.string "Chính là SOOTOPOLIS GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
-	.string "What a high level you are!$"
+	.string "Trình độ của bạn cao thật đấy!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
-	.string "Rather than being satisfied by being\n"
-	.string "in a strong GYM, I imagine training in\l"
-	.string "other places will make you stronger.\l"
-	.string "But above all, it looks more fun.$"
+	.string "Thay vì mãn nguyện vì được ở trong\n"
+	.string "một GYM mạnh, tôi nghĩ tập luyện ở\l"
+	.string "những nơi khác sẽ giúp mình mạnh hơn.\l"
+	.string "Mà trên hết, có vẻ còn vui hơn nhiều.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
-	.string "I train my POKéMON together with\n"
-	.string "JUAN.\p"
-	.string "Don't think I'm a pushover.$"
+	.string "Tôi rèn luyện POKéMON cùng JUAN.\p"
+	.string "Đừng nghĩ tôi dễ bị bắt nạt.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
-	.string "I was beaten…$"
+	.string "Tôi đã thua...$"
 
 SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
-	.string "I think you have potential.\n"
-	.string "Why don't you stay and train with us?$"
+	.string "Tôi nghĩ bạn có tiềm năng. Sao không ở\n"
+	.string "lại tập luyện cùng chúng tôi?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "A graceful glide across the ice while\n"
-	.string "crossing no lines…\p"
-	.string "A TRAINER putting on that performance\n"
-	.string "would be elegantly beautiful!$"
+	.string "Lướt duyên dáng trên băng mà không\n"
+	.string "cắt ngang bất kỳ đường nào...\p"
+	.string "Một HLV thực hiện được màn trình\n"
+	.string "diễn ấy hẳn sẽ đẹp đẽ và thanh lịch vô\l"
+	.string "cùng!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
-	.string "Well, excuse me?!$"
+	.string "Gì cơ, xin lỗi nhé?!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
-	.string "This is really obvious, but how strong\n"
-	.string "you are as a TRAINER has nothing to do\l"
-	.string "with how young or old you are.$"
+	.string "Điều này quá hiển nhiên, nhưng sức\n"
+	.string "mạnh của một HLV chẳng liên quan\l"
+	.string "gì đến tuổi tác cả.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "When I'm with my POKéMON, the time\n"
-	.string "flies by before you can say, “Oops!”$"
+	.string "Khi ở bên POKéMON của mình, thời gian\n"
+	.string "trôi nhanh đến mức chưa kịp thốt lên\l"
+	.string "'Ối!' đã hết rồi.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
-	.string "Oops!$"
+	.string "Ối!$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-	.string "I wish I could forget about lost causes\n"
-	.string "before I can manage an “Oops!”$"
+	.string "Ước gì tôi có thể quên những chuyện vô\n"
+	.string "vọng trước cả khi kịp thốt lên 'Ối!'.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "I can battle with really rare POKéMON\n"
-	.string "if you'd like.$"
+	.string "Nếu bạn muốn, tôi có thể đấu bằng những\n"
+	.string "POKéMON cực kỳ quý hiếm.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "Oh, there now! Did you have a good look\n"
-	.string "at my POKéMON?$"
+	.string "Ồ, thế nào? Bạn đã ngắm kỹ POKéMON của\n"
+	.string "tôi chưa?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "I came to this GYM because JUAN\n"
-	.string "praised me for my darling POKéMON.\p"
-	.string "Oh, if only I'd met JUAN years ago\n"
-	.string "when I was younger…$"
+	.string "Tôi tới GYM này vì JUAN đã khen những\n"
+	.string "POKéMON đáng yêu của tôi.\p"
+	.string "Ôi, giá mà tôi gặp JUAN từ nhiều năm\n"
+	.string "trước, khi mình còn trẻ...$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
-	.string "Giggle…\n"
-	.string "Your grim look is so charming.$"
+	.string "Khúc khích... Vẻ mặt nghiêm nghị của bạn\n"
+	.string "thật quyến rũ.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaDefeat:
-	.string "Oh, dear.\n"
-	.string "I went much too easy on you.$"
+	.string "Ôi trời. Tôi đã quá nương tay với bạn\n"
+	.string "rồi.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
-	.string "You couldn't lay a finger on JUAN,\n"
-	.string "I'm sure. Giggle…$"
+	.string "Tôi chắc bạn chẳng thể chạm nổi một\n"
+	.string "ngón tay vào JUAN đâu. Khúc khích...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_Gym_B1F_Text_AndreaIntro
+	.global SootopolisCity_Gym_B1F_Text_AndreaDefeat
+	.global SootopolisCity_Gym_B1F_Text_AndreaPostBattle
+	.global SootopolisCity_Gym_B1F_Text_CrissyIntro
+	.global SootopolisCity_Gym_B1F_Text_CrissyDefeat
+	.global SootopolisCity_Gym_B1F_Text_CrissyPostBattle
+	.global SootopolisCity_Gym_B1F_Text_DaphneIntro
+	.global SootopolisCity_Gym_B1F_Text_DaphneDefeat
+	.global SootopolisCity_Gym_B1F_Text_DaphnePostBattle
+	.global SootopolisCity_Gym_B1F_Text_ConnieIntro
+	.global SootopolisCity_Gym_B1F_Text_ConnieDefeat
+	.global SootopolisCity_Gym_B1F_Text_ConniePostBattle
+	.global SootopolisCity_Gym_B1F_Text_BridgetIntro
+	.global SootopolisCity_Gym_B1F_Text_BridgetDefeat
+	.global SootopolisCity_Gym_B1F_Text_BridgetPostBattle
+	.global SootopolisCity_Gym_B1F_Text_OliviaIntro
+	.global SootopolisCity_Gym_B1F_Text_OliviaDefeat
+	.global SootopolisCity_Gym_B1F_Text_OliviaPostBattle
+	.global SootopolisCity_Gym_B1F_Text_TiffanyIntro
+	.global SootopolisCity_Gym_B1F_Text_TiffanyDefeat
+	.global SootopolisCity_Gym_B1F_Text_TiffanyPostBattle
+	.global SootopolisCity_Gym_B1F_Text_BethanyIntro
+	.global SootopolisCity_Gym_B1F_Text_BethanyDefeat
+	.global SootopolisCity_Gym_B1F_Text_BethanyPostBattle
+	.global SootopolisCity_Gym_B1F_Text_AnnikaIntro
+	.global SootopolisCity_Gym_B1F_Text_AnnikaDefeat
+	.global SootopolisCity_Gym_B1F_Text_AnnikaPostBattle
+	.global SootopolisCity_Gym_B1F_Text_BriannaIntro
+	.global SootopolisCity_Gym_B1F_Text_BriannaDefeat
+	.global SootopolisCity_Gym_B1F_Text_BriannaPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

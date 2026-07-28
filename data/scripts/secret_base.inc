@@ -1,26 +1,26 @@
 SecretBase_Text_TreeCanBeClimbed:
-	.string "If some vines drop down, this tree can\n"
-	.string "be climbed.$"
+	.string "Nếu có dây leo thả xuống thì có thể\n"
+	.string "trèo lên cây này.$"
 
 SecretBase_Text_TreeUseSecretPower:
-	.string "If some vines drop down, this tree can\n"
-	.string "be climbed.\p"
-	.string "Use the SECRET POWER?$"
+	.string "Nếu có dây leo thả xuống thì có thể\n"
+	.string "trèo lên cây này.\p"
+	.string "Dùng SECRET POWER chứ?$"
 
 SecretBase_Text_VineDroppedDown:
-	.string "A thick vine dropped down!$"
+	.string "Một dây leo to đã thả xuống!$"
 
 SecretBase_Text_ClumpOfGrass:
-	.string "If this clump of grass can be moved,\n"
-	.string "it might be possible to go inside.$"
+	.string "Nếu có thể dời bụi cỏ này đi, có lẽ sẽ\n"
+	.string "vào bên trong được.$"
 
 SecretBase_Text_ClumpUseSecretPower:
-	.string "If this clump of grass can be moved,\n"
-	.string "it might be possible to go inside.\p"
-	.string "Use the SECRET POWER?$"
+	.string "Nếu có thể dời bụi cỏ này đi, có lẽ sẽ\n"
+	.string "vào bên trong được.\p"
+	.string "Dùng SECRET POWER chứ?$"
 
 SecretBase_Text_DiscoveredSmallEntrance:
-	.string "Discovered a small entrance!$"
+	.string "Đã phát hiện một lối vào nhỏ!$"
 
 	.include "data/text/secret_base_trainers.inc"
 
@@ -671,66 +671,91 @@ SecretBase_EventScript_CushionInteract::
 	end
 
 SecretBase_Text_AllDecorationsWillBeReturned:
-	.string "All decorations and furniture in your\n"
-	.string "SECRET BASE will be returned to your PC.\p"
-	.string "Is that okay?$"
+	.string "Mọi đồ trang trí và nội thất trong\n"
+	.string "SECRET BASE của bạn sẽ được trả về PC.\p"
+	.string "Bạn có đồng ý không?$"
 
 SecretBase_Text_WantToRegisterSecretBase:
-	.string "Do you want to register\n"
-	.string "{STR_VAR_1}'s SECRET BASE?$"
+	.string "Bạn có muốn đăng ký SECRET BASE của\n"
+	.string "{STR_VAR_1} không?$"
 
 SecretBase_Text_AlreadyRegisteredDelete:
-	.string "This data is already registered.\n"
-	.string "Would you like to delete it?$"
+	.string "Dữ liệu này đã được đăng ký. Bạn có\n"
+	.string "muốn xóa không?$"
 
 SecretBase_Text_TooManyBasesDeleteSome:
-	.string "Up to 10 locations can be registered.\p"
-	.string "Delete a location if you want to\n"
-	.string "register another location.$"
+	.string "Có thể đăng ký tối đa 10 địa điểm.\p"
+	.string "Nếu muốn đăng ký địa điểm khác, hãy xóa\n"
+	.string "bớt một địa điểm.$"
 
 SecretBase_Text_RegistrationCompleted:
-	.string "Registration completed.$"
+	.string "Đã đăng ký xong.$"
 
 SecretBase_Text_DataUnregistered:
-	.string "Data has been unregistered.$"
+	.string "Dữ liệu đã được hủy đăng ký.$"
 
 SecretBase_Text_BootUpPC:
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} đã khởi động PC.$"
 
 SecretBase_Text_WhatWouldYouLikeToDo:
-	.string "What would you like to do?$"
+	.string "Bạn muốn làm gì?$"
 
 SecretBase_Text_RegistryInfo:
-	.string "Once registered, a SECRET BASE will not\n"
-	.string "disappear unless the other TRAINER\l"
-	.string "moves it to a different location.\p"
-	.string "If a SECRET BASE is deleted from the\n"
-	.string "registered list, another one may take\l"
-	.string "its place.\p"
-	.string "Up to ten SECRET BASE locations\n"
-	.string "may be registered.$"
+	.string "Sau khi được đăng ký, SECRET BASE sẽ\n"
+	.string "không biến mất trừ khi HLV kia\l"
+	.string "chuyển nó sang địa điểm khác.\p"
+	.string "Nếu một SECRET BASE bị xóa khỏi danh\n"
+	.string "sách đăng ký, một SECRET BASE khác có\l"
+	.string "thể xuất hiện thay thế.\p"
+	.string "Có thể đăng ký tối đa mười địa điểm\n"
+	.string "SECRET BASE.$"
 
 SecretBase_Text_BattleTowerShield:
-	.string "A shield of {STR_VAR_2} that marks winning\n"
-	.string "{STR_VAR_1} times in a row at the BATTLE TOWER.$"
+	.string "Một chiếc khiên {STR_VAR_2}, minh\n"
+	.string "chứng cho {STR_VAR_1} lần thắng\l"
+	.string "liên tiếp tại BATTLE TOWER.$"
 
 SecretBase_Text_ToyTV:
-	.string "A realistic toy TV. It could be easily\n"
-	.string "mistaken for the real thing.$"
+	.string "Một chiếc TV đồ chơi giống như thật.\n"
+	.string "Rất dễ nhầm nó với TV thật.$"
 
 SecretBase_Text_SeedotTV:
-	.string "A toy TV shaped like a SEEDOT.\n"
-	.string "It looks ready to roll away on its own…$"
+	.string "Một chiếc TV đồ chơi hình SEEDOT. Trông\n"
+	.string "như nó sắp tự lăn đi...$"
 
 SecretBase_Text_SkittyTV:
-	.string "A toy TV shaped like a SKITTY.\n"
-	.string "It looks ready to stroll away…$"
+	.string "Một chiếc TV đồ chơi hình SKITTY. Trông\n"
+	.string "như nó sắp tự đi dạo...$"
 
 SecretBase_Text_WouldYouLikeToMoveBases:
-	.string "You may only make one SECRET BASE.\p"
-	.string "Would you like to move from the SECRET\n"
-	.string "BASE near {STR_VAR_1}?$"
+	.string "Bạn chỉ có thể tạo một SECRET BASE.\p"
+	.string "Bạn có muốn chuyển khỏi SECRET BASE\n"
+	.string "gần {STR_VAR_1} không?$"
 
 SecretBase_Text_MovingCompletedUseSecretPower:
-	.string "Moving completed.\p"
-	.string "Would you like to use the SECRET POWER?$"
+	.string "Đã chuyển xong.\p"
+	.string "Bạn có muốn dùng SECRET POWER không?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SecretBase_Text_TreeCanBeClimbed
+	.global SecretBase_Text_TreeUseSecretPower
+	.global SecretBase_Text_VineDroppedDown
+	.global SecretBase_Text_ClumpOfGrass
+	.global SecretBase_Text_ClumpUseSecretPower
+	.global SecretBase_Text_DiscoveredSmallEntrance
+	.global SecretBase_Text_AllDecorationsWillBeReturned
+	.global SecretBase_Text_WantToRegisterSecretBase
+	.global SecretBase_Text_AlreadyRegisteredDelete
+	.global SecretBase_Text_TooManyBasesDeleteSome
+	.global SecretBase_Text_RegistrationCompleted
+	.global SecretBase_Text_DataUnregistered
+	.global SecretBase_Text_BootUpPC
+	.global SecretBase_Text_WhatWouldYouLikeToDo
+	.global SecretBase_Text_RegistryInfo
+	.global SecretBase_Text_BattleTowerShield
+	.global SecretBase_Text_ToyTV
+	.global SecretBase_Text_SeedotTV
+	.global SecretBase_Text_SkittyTV
+	.global SecretBase_Text_WouldYouLikeToMoveBases
+	.global SecretBase_Text_MovingCompletedUseSecretPower
+@ END GENERATED LOCALIZATION EXPORTS

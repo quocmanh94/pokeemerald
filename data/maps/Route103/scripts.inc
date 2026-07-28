@@ -287,67 +287,77 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "MAY: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "MAY: Để xem nào... Các POKéMON xuất hiện\n"
+	.string "trên ROUTE 103 gồm có...$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+	.string "Ồ, chào {PLAYER}{KUN}!\p"
+	.string "...À, ra là ba mình đã tặng cậu một\n"
+	.string "POKéMON.\p"
+	.string "Nhân tiện đang ở đây, chúng ta đấu\n"
+	.string "nhanh một trận nhé!\p"
+	.string "Mình sẽ cho cậu biết cảm giác làm\n"
+	.string "HLV là thế nào.$"
 
 Route103_Text_MayDefeated:
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "Oa! Tuyệt thật! {PLAYER}{KUN}, cậu\n"
+	.string "giỏi lắm!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
-	.string "an eye out for you now.\p"
-	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "MAY: Giờ mình nghĩ mình đã hiểu vì sao\n"
+	.string "ba lại để mắt tới cậu.\p"
+	.string "Cậu vừa mới nhận POKéMON đó mà nó đã\n"
+	.string "quý cậu rồi.\p"
+	.string "Có lẽ cậu có thể dễ dàng kết bạn với bất\n"
+	.string "kỳ POKéMON nào.\p"
+	.string "Đến lúc quay lại LAB rồi.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "BRENDAN: Được rồi, vậy là loài này và\n"
+	.string "loài kia sống trên ROUTE 103...$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Này, là {PLAYER} đây mà!\p"
+	.string "...À phải, ba đã tặng cậu một POKéMON.\p"
+	.string "Nhân tiện đang ở đây, đấu một trận\n"
+	.string "nhé?\p"
+	.string "Tớ sẽ dạy cậu làm HLV là như thế\n"
+	.string "nào!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Hừm, {PLAYER}, cậu cũng khá đấy.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "BRENDAN: Tớ hiểu rồi. Giờ tớ biết vì sao\n"
+	.string "ba lại để mắt tới cậu.\p"
+	.string "Xem này, cậu vừa mới nhận POKéMON mà\n"
+	.string "nó đã quý cậu rồi.\p"
+	.string "{PLAYER}, tớ có cảm giác cậu có thể\n"
+	.string "dễ dàng kết bạn với bất kỳ POKéMON nào.\p"
+	.string "Chúng ta nên quay lại LAB thôi.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "My POKéMON is staggeringly tired…\n"
-	.string "I should have brought a POTION…$"
+	.string "POKéMON của tôi mệt lả rồi... Lẽ ra tôi\n"
+	.string "nên mang theo POTION...$"
 
 Route103_Text_ShortcutToOldale:
-	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
-	.string "Fufufu, that's useful, isn't it?$"
+	.string "Nếu vượt biển từ đây, bạn sẽ có đường\n"
+	.string "tắt đến OLDALE TOWN.\p"
+	.string "Hư hư hư, tiện lợi lắm, phải không?$"
 
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route103_Text_MayRoute103Pokemon
+	.global Route103_Text_MayLetsBattle
+	.global Route103_Text_MayDefeated
+	.global Route103_Text_MayTimeToHeadBack
+	.global Route103_Text_BrendanRoute103Pokemon
+	.global Route103_Text_BrendanLetsBattle
+	.global Route103_Text_BrendanDefeated
+	.global Route103_Text_BrendanTimeToHeadBack
+	.global Route103_Text_ShouldHaveBroughtPotion
+	.global Route103_Text_ShortcutToOldale
+@ END GENERATED LOCALIZATION EXPORTS

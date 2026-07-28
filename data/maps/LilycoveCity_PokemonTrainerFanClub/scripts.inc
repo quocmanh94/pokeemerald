@@ -558,253 +558,299 @@ LilycoveCity_PokemonTrainerFanClub_EventScript_AlreadyInterviewed2::
 	end
 
 LilycoveCity_PokemonTrainerFanClub_Text_OhWowItsPlayer:
-	.string "Oh, wow!\n"
-	.string "It's {PLAYER}!$"
+	.string "Ôi, chà! Là {PLAYER}!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan:
-	.string "I've heard the news!\n"
-	.string "You're really strong, aren't you?\p"
-	.string "We always argue about who is the\n"
-	.string "strongest of all TRAINERS here.\p"
-	.string "So when I heard about you, I decided\n"
-	.string "to be your fan!\p"
-	.string "I hope you'll keep on battling other\n"
-	.string "tough TRAINERS.\p"
-	.string "That way, we'll be able to see more\n"
-	.string "of your hot, hot battles.\p"
-	.string "That will make the others here see\n"
-	.string "exactly how great you are.\p"
-	.string "Remember, I'm cheering for you,\n"
+	.string "Tôi nghe tin rồi! Bạn thật sự rất mạnh,\n"
+	.string "đúng không?\p"
+	.string "Ở đây, chúng tôi lúc nào cũng tranh\n"
+	.string "luận xem ai là người mạnh nhất trong số\l"
+	.string "các HLV.\p"
+	.string "Vì thế, vừa nghe về bạn là tôi quyết\n"
+	.string "định trở thành người hâm mộ của bạn!\p"
+	.string "Mong bạn sẽ tiếp tục đấu với những\n"
+	.string "HLV đáng gờm khác.\p"
+	.string "Như vậy, chúng tôi sẽ được xem thêm\n"
+	.string "nhiều trận đấu nóng bỏng của bạn.\p"
+	.string "Rồi những người khác ở đây sẽ thấy\n"
+	.string "bạn tuyệt vời đến mức nào.\p"
+	.string "Nhớ nhé, tôi luôn cổ vũ cho bạn,\n"
 	.string "{PLAYER}!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin:
-	.string "Yo, {PLAYER}!\n"
-	.string "You're the one we want to win!$"
+	.string "Này, {PLAYER}! Chúng tôi muốn bạn\n"
+	.string "chiến thắng!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest:
-	.string "The others, they don't know that\n"
-	.string "you're the best of the best!\p"
-	.string "Isn't that right, {PLAYER}?\n"
-	.string "Show them you've got guts!$"
+	.string "Những người khác chẳng biết bạn là\n"
+	.string "người giỏi nhất trong những người giỏi\l"
+	.string "nhất!\p"
+	.string "Đúng không, {PLAYER}? Cho họ thấy\n"
+	.string "bản lĩnh của bạn đi!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary:
-	.string "I hate to say this, but the TRAINER\n"
-	.string "everybody's talking about is\l"
-	.string "{STR_VAR_1}, no question about it!\p"
-	.string "That TRAINER's power…\n"
-	.string "It's out of the ordinary.$"
+	.string "Tôi không muốn thừa nhận, nhưng\n"
+	.string "HLV mà mọi người đang bàn tán chắc\l"
+	.string "chắn là {STR_VAR_1}!\p"
+	.string "Sức mạnh của HLV đó... Thật khác\n"
+	.string "thường.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen:
-	.string "Darn it… I've been telling people\n"
-	.string "that {STR_VAR_1} is the best now…\p"
-	.string "But no one wants to listen…$"
+	.string "Khỉ thật... Tôi đã nói với mọi người\n"
+	.string "rằng giờ {STR_VAR_1} là giỏi\l"
+	.string "nhất...\p"
+	.string "Nhưng chẳng ai chịu nghe...$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer:
-	.string "I've been hearing things about\n"
-	.string "a tough new TRAINER.\p"
-	.string "This TRAINER's supposed to be beating\n"
-	.string "GYM LEADERS, even.\p"
-	.string "Do you know anything about this\n"
-	.string "new TRAINER?$"
+	.string "Tôi nghe nhiều lời đồn về một HLV\n"
+	.string "mới rất đáng gờm.\p"
+	.string "Nghe nói HLV này còn đánh bại cả\n"
+	.string "các GYM LEADERS.\p"
+	.string "Bạn có biết gì về HLV mới đó\n"
+	.string "không?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou:
-	.string "Oh!\n"
-	.string "{PLAYER}!\p"
-	.string "Go for it!\n"
-	.string "I'm pulling for you!$"
+	.string "Ô! {PLAYER}!\p"
+	.string "Cố lên! Tôi luôn ủng hộ bạn!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan:
-	.string "Sigh…\n"
-	.string "BRAWLY…\p"
-	.string "Oh, no! Wait!\n"
-	.string "That's not right! No, no, no!\p"
-	.string "I'm your fan through and through!\p"
-	.string "So make me proud!\n"
-	.string "Go for it!$"
+	.string "Haizz... BRAWLY...\p"
+	.string "Ôi, không! Khoan đã! Không đúng! Không,\n"
+	.string "không, không!\p"
+	.string "Tôi là người hâm mộ trung thành của bạn\n"
+	.string "mà!\p"
+	.string "Hãy khiến tôi tự hào nhé! Cố lên!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly:
-	.string "I can't help it, I can only get to\n"
-	.string "like BRAWLY…$"
+	.string "Biết làm sao được, tôi chỉ có thể thích\n"
+	.string "BRAWLY thôi...$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly:
-	.string "Nobody understands the charm of\n"
-	.string "BRAWLY…\p"
-	.string "I don't care!\p"
-	.string "Even if I'm the only one, I'm going\n"
-	.string "to keep cheering for BRAWLY!$"
+	.string "Chẳng ai hiểu được sức cuốn hút của\n"
+	.string "BRAWLY...\p"
+	.string "Tôi không quan tâm!\p"
+	.string "Dù chỉ có một mình, tôi vẫn sẽ tiếp tục\n"
+	.string "cổ vũ cho BRAWLY!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly:
-	.string "Whatever anyone says, my favorite\n"
-	.string "TRAINER is DEWFORD's GYM LEADER\l"
-	.string "BRAWLY!$"
+	.string "Dù ai nói gì, HLV tôi yêu thích nhất\n"
+	.string "vẫn là GYM LEADER BRAWLY của DEWFORD!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather:
-	.string "You've surpassed your own father in\n"
-	.string "every regard!\p"
-	.string "I'm telling you, so there's no question\n"
-	.string "about it at all!$"
+	.string "Bạn đã vượt qua chính ba mình về mọi\n"
+	.string "mặt!\p"
+	.string "Tôi đã nói vậy thì chắc chắn không thể\n"
+	.string "sai!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling:
-	.string "Even when things turned bleak,\n"
-	.string "your father never gave up.\p"
-	.string "This I know to be true.\p"
-	.string "You never give up even if you lose!\n"
-	.string "So keep on battling!$"
+	.string "Ngay cả khi tình thế trở nên tuyệt\n"
+	.string "vọng, cha bạn cũng chưa bao giờ bỏ\l"
+	.string "cuộc.\p"
+	.string "Tôi biết chắc điều đó.\p"
+	.string "Dù thua cũng đừng bao giờ bỏ cuộc! Hãy\n"
+	.string "tiếp tục chiến đấu!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman:
-	.string "NORMAN battled with more power,\n"
-	.string "charisma, and showmanship than you.\p"
-	.string "Even though people may say that\n"
-	.string "you're strong…\p"
-	.string "You've still got a long way to go\n"
-	.string "compared to your father.$"
+	.string "NORMAN chiến đấu mạnh mẽ, lôi cuốn và\n"
+	.string "đầy bản lĩnh trình diễn hơn bạn.\p"
+	.string "Dù mọi người có thể nói rằng bạn rất\n"
+	.string "mạnh...\p"
+	.string "So với ba mình, bạn vẫn còn phải tiến\n"
+	.string "xa lắm.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent:
-	.string "You're beginning to get the same\n"
-	.string "air of awe NORMAN exudes.\p"
-	.string "But there's something conclusively\n"
-	.string "different between you and NORMAN.\p"
-	.string "I can't tell you what that is.\n"
-	.string "You'll have to find it yourself.$"
+	.string "Bạn đang bắt đầu toát ra vẻ uy nghi\n"
+	.string "giống NORMAN.\p"
+	.string "Nhưng giữa bạn và NORMAN vẫn có một\n"
+	.string "điểm khác biệt rõ rệt.\p"
+	.string "Tôi không thể nói đó là gì. Bạn phải tự\n"
+	.string "mình tìm ra.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers:
-	.string "Everyone here, we're all huge fans\n"
-	.string "of POKéMON battles.\p"
-	.string "We discuss who we consider to be\n"
-	.string "the strongest of all TRAINERS.\p"
-	.string "If you were to become famous,\n"
-	.string "we might even become your fans!$"
+	.string "Tất cả chúng tôi ở đây đều cực kỳ hâm\n"
+	.string "mộ các trận đấu POKéMON.\p"
+	.string "Chúng tôi thường bàn luận xem ai là\n"
+	.string "người mạnh nhất trong số các HLV.\p"
+	.string "Nếu bạn trở nên nổi tiếng, có khi chúng\n"
+	.string "tôi cũng sẽ hâm mộ bạn đấy!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer:
-	.string "Oh, woweee! It's {PLAYER}!\n"
-	.string "For real, too!\p"
-	.string "Please, shake my hand, shake my hand!$"
+	.string "Ôi trời ơi! Đúng là {PLAYER} bằng\n"
+	.string "xương bằng thịt!\p"
+	.string "Làm ơn bắt tay tôi đi, bắt tay tôi đi!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou:
-	.string "I'll always cheer for you, {PLAYER}!\n"
-	.string "Always, always!\p"
-	.string "I don't want to see you lose ever,\n"
+	.string "Tôi sẽ luôn cổ vũ cho bạn, {PLAYER}!\n"
+	.string "Luôn luôn, mãi mãi!\p"
+	.string "Tôi không bao giờ muốn thấy bạn thua,\n"
 	.string "{PLAYER}.\p"
-	.string "Because I know you're really,\n"
-	.string "really strong, {PLAYER}!$"
+	.string "Vì tôi biết bạn thật sự, thật sự rất\n"
+	.string "mạnh, {PLAYER}!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool:
-	.string "{STR_VAR_1} is really cool…\p"
-	.string "Everyone thinks so, right, right?$"
+	.string "{STR_VAR_1} thật sự rất ngầu...\p"
+	.string "Ai cũng nghĩ vậy, đúng không, đúng\n"
+	.string "không?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe:
-	.string "{STR_VAR_1} really is cool, don't\n"
-	.string "you think so?\p"
-	.string "Even if it's just me, I'm going to keep\n"
-	.string "cheering my favorite TRAINER.$"
+	.string "{STR_VAR_1} thật sự rất ngầu,\n"
+	.string "bạn cũng thấy vậy phải không?\p"
+	.string "Dù chỉ có mình tôi, tôi vẫn sẽ tiếp tục\n"
+	.string "cổ vũ cho HLV mình yêu thích.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat:
-	.string "My favorite TRAINER is…\p"
-	.string "Cool…\p"
-	.string "Strong…\p"
-	.string "And really nice…\p"
-	.string "I wish there was a TRAINER like that…$"
+	.string "HLV tôi yêu thích phải...\p"
+	.string "Thật ngầu...\p"
+	.string "Thật mạnh...\p"
+	.string "Và cực kỳ tốt bụng...\p"
+	.string "Ước gì có một HLV như thế...$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou:
-	.string "Whoa! It's {PLAYER}!\n"
-	.string "Wicked!\p"
-	.string "When I grow up, I want to be strong\n"
-	.string "like you, {PLAYER}!$"
+	.string "Ồ! Là {PLAYER}! Đỉnh quá!\p"
+	.string "Khi lớn lên, tôi muốn mạnh như bạn,\n"
+	.string "{PLAYER}!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou:
-	.string "Even if I'm the only one…\p"
-	.string "You'll always be the only one\n"
-	.string "I cheer for, {PLAYER}!\p"
-	.string "Because I believe in you, {PLAYER}!$"
+	.string "Dù chỉ có một mình tôi...\p"
+	.string "Bạn vẫn sẽ luôn là người duy nhất tôi\n"
+	.string "cổ vũ, {PLAYER}!\p"
+	.string "Vì tôi tin tưởng bạn, {PLAYER}!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool:
-	.string "{STR_VAR_1} is so wickedly cool…\n"
-	.string "I want to shake hands with my hero.$"
+	.string "{STR_VAR_1} ngầu hết chỗ nói...\n"
+	.string "Tôi muốn được bắt tay với thần tượng\l"
+	.string "của mình.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan:
-	.string "Even if I'm the only one…\p"
-	.string "I'm never going to stop being\n"
-	.string "{STR_VAR_1}'s fan!\p"
-	.string "Because I've heard, {STR_VAR_1}\n"
-	.string "never loses!$"
+	.string "Dù chỉ có một mình tôi...\p"
+	.string "Tôi sẽ không bao giờ ngừng hâm mộ\n"
+	.string "{STR_VAR_1}!\p"
+	.string "Vì tôi nghe nói {STR_VAR_1}\n"
+	.string "không bao giờ thua!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll:
-	.string "{PLAYER}!\n"
-	.string "You are amazing after all!\p"
-	.string "Ever since I set eyes on you,\n"
-	.string "I knew that you were great.\p"
-	.string "It looks like my eyes didn't deceive me.$"
+	.string "{PLAYER}! Quả nhiên bạn rất tuyệt\n"
+	.string "vời!\p"
+	.string "Ngay từ lần đầu nhìn thấy bạn, tôi đã\n"
+	.string "biết bạn rất xuất sắc.\p"
+	.string "Xem ra mắt nhìn người của tôi không hề\n"
+	.string "sai.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner:
-	.string "Who cares about the others.\n"
-	.string "I'm in your corner!\p"
-	.string "You don't need to worry. Just get\n"
-	.string "out there and battle like always.$"
+	.string "Mặc kệ những người khác. Tôi đứng về\n"
+	.string "phía bạn!\p"
+	.string "Bạn không cần lo lắng. Cứ ra đó và chiến\n"
+	.string "đấu như mọi khi.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne:
-	.string "You're a pretty decent TRAINER,\n"
-	.string "I think.\p"
-	.string "But I also think that {STR_VAR_1}\n"
-	.string "is number one right now.\p"
-	.string "That's just my opinion.\n"
-	.string "Don't worry about it too much.$"
+	.string "Theo tôi, bạn cũng là một HLV khá ra\n"
+	.string "trò.\p"
+	.string "Nhưng tôi vẫn nghĩ {STR_VAR_1}\n"
+	.string "đang là số một.\p"
+	.string "Đó chỉ là ý kiến của tôi thôi. Đừng bận\n"
+	.string "tâm quá.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer:
-	.string "Wow, you really are strong.\n"
-	.string "Maybe even stronger than {STR_VAR_1}.\p"
-	.string "But {STR_VAR_1} needs me.\p"
-	.string "If I don't cheer for {STR_VAR_1},\n"
-	.string "who will?$"
+	.string "Chà, bạn thật sự rất mạnh. Có khi còn\n"
+	.string "mạnh hơn cả {STR_VAR_1}.\p"
+	.string "Nhưng {STR_VAR_1} cần tôi.\p"
+	.string "Nếu tôi không cổ vũ cho\n"
+	.string "{STR_VAR_1}, còn ai sẽ làm thế?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind:
-	.string "You've changed my mind!\n"
-	.string "You are strong, aren't you?\p"
-	.string "I'd like you to tell me how you managed\n"
-	.string "to get so strong!$"
+	.string "Bạn đã khiến tôi đổi ý! Bạn mạnh thật\n"
+	.string "đấy, phải không?\p"
+	.string "Tôi muốn biết bạn đã làm cách nào để\n"
+	.string "trở nên mạnh đến vậy!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation:
-	.string "The tougher the situation, the more\n"
-	.string "attractively you battle.\p"
-	.string "I can't wait for your next battle!$"
+	.string "Tình thế càng khó khăn, bạn chiến đấu\n"
+	.string "càng cuốn hút.\p"
+	.string "Tôi nóng lòng muốn xem trận đấu tiếp\n"
+	.string "theo của bạn!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout:
-	.string "Among the recently hot TRAINERS,\n"
-	.string "{STR_VAR_1} is the standout.\p"
-	.string "That toughness, it's simply not normal.\p"
-	.string "You're doing okay, but you're not in\n"
-	.string "the same class as {STR_VAR_1}.$"
+	.string "Trong số các HLV đang nổi gần\n"
+	.string "đây, {STR_VAR_1} là người nổi\l"
+	.string "bật nhất.\p"
+	.string "Sự lì lợm ấy thật sự không bình\n"
+	.string "thường.\p"
+	.string "Bạn cũng khá đấy, nhưng vẫn chưa cùng\n"
+	.string "đẳng cấp với {STR_VAR_1}.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger:
-	.string "You are really popular…\p"
-	.string "You're strong, and you're caring to\n"
-	.string "POKéMON. No one can knock you.\p"
-	.string "But, you know, I believe in {STR_VAR_1}.\p"
-	.string "{STR_VAR_1} is definitely stronger!\n"
-	.string "I'm positive!$"
+	.string "Bạn thật sự rất nổi tiếng...\p"
+	.string "Bạn mạnh mẽ và biết quan tâm đến\n"
+	.string "POKéMON. Không ai chê bạn được.\p"
+	.string "Nhưng bạn biết đấy, tôi tin tưởng\n"
+	.string "{STR_VAR_1}.\p"
+	.string "{STR_VAR_1} chắc chắn mạnh hơn!\n"
+	.string "Tôi dám chắc!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive:
-	.string "You…\p"
-	.string "Impressive!$"
+	.string "Bạn...\p"
+	.string "Ấn tượng đấy!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth:
-	.string "Your true worth, it is fine if only\n"
-	.string "I recognized it.\p"
-	.string "The others I doubt will understand\n"
-	.string "the hidden power that beats within.$"
+	.string "Chỉ mình tôi nhận ra giá trị thật sự của\n"
+	.string "bạn cũng được.\p"
+	.string "Tôi e những người khác chẳng thể hiểu\n"
+	.string "nổi sức mạnh ẩn giấu đang cuộn trào bên\l"
+	.string "trong.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential:
-	.string "Yes, I see strength in your eyes.\p"
-	.string "But!\p"
-	.string "You still haven't realized your\n"
-	.string "potential.$"
+	.string "Đúng vậy, tôi nhìn thấy sức mạnh trong\n"
+	.string "đôi mắt bạn.\p"
+	.string "Nhưng!\p"
+	.string "Bạn vẫn chưa phát huy được tiềm năng\n"
+	.string "của mình.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength:
-	.string "It is true that you are tremendously\n"
-	.string "powerful.\p"
-	.string "But!\n"
-	.string "I can tell…\p"
-	.string "That strength cannot be considered\n"
-	.string "true strength yet!\p"
-	.string "True strength is…!\n"
-	.string "… …\p"
-	.string "Actually, I have no idea, either.$"
+	.string "Đúng là bạn sở hữu sức mạnh phi\n"
+	.string "thường.\p"
+	.string "Nhưng! Tôi có thể nhận ra...\p"
+	.string "Sức mạnh ấy vẫn chưa thể gọi là sức\n"
+	.string "mạnh chân chính!\p"
+	.string "Sức mạnh chân chính là...! ... ...\p"
+	.string "Thật ra tôi cũng chẳng biết.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_PokemonTrainerFanClub_Text_OhWowItsPlayer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin
+	.global LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest
+	.global LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary
+	.global LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou
+	.global LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly
+	.global LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly
+	.global LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling
+	.global LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent
+	.global LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers
+	.global LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou
+	.global LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool
+	.global LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe
+	.global LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat
+	.global LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou
+	.global LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou
+	.global LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool
+	.global LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner
+	.global LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation
+	.global LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout
+	.global LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive
+	.global LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth
+	.global LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential
+	.global LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength
+@ END GENERATED LOCALIZATION EXPORTS

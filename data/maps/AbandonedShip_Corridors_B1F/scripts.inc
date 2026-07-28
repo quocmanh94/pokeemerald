@@ -54,33 +54,40 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
-	.string "When we go out to sea, we SAILORS\n"
-	.string "always bring our POKéMON.\l"
-	.string "How about a quick battle?$"
+	.string "Mỗi khi ra khơi, SAILORS chúng tôi luôn\n"
+	.string "mang theo POKéMON. Đấu nhanh một trận\l"
+	.string "nhé?$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
-	.string "Whoops, I'm sunk!$"
+	.string "Ối, tôi chìm nghỉm rồi!$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
-	.string "The ship's bottom has sunk into the\n"
-	.string "depths.\p"
-	.string "If a POKéMON knew how to go underwater,\n"
-	.string "we might make some progress…$"
+	.string "Phần đáy tàu đã chìm xuống vực sâu.\p"
+	.string "Nếu có POKéMON biết cách đi dưới nước,\n"
+	.string "có lẽ chúng ta sẽ tiến xa hơn...$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
-	.string "Yay!\n"
-	.string "It's a ship!$"
+	.string "Hoan hô! Một con tàu!$"
 
 AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“STORAGE” is painted on the door.$"
+	.string "Cửa đã khóa.\p"
+	.string "Trên cửa có sơn chữ STORAGE.$"
 
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
-	.string "{PLAYER} inserted and turned the\n"
-	.string "STORAGE KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
-	.string "but the door opened.$"
+	.string "{PLAYER} tra STORAGE KEY vào rồi\n"
+	.string "xoay.\p"
+	.string "KEY bị kẹt cứng trong ổ, nhưng cửa đã\n"
+	.string "mở.$"
 
 AbandonedShip_Text_TheDoorIsOpen:
-	.string "The door is open.$"
+	.string "Cửa đang mở.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Corridors_B1F_Text_DuncanIntro
+	.global AbandonedShip_Corridors_B1F_Text_DuncanDefeat
+	.global AbandonedShip_Corridors_B1F_Text_DuncanPostBattle
+	.global AbandonedShip_Corridors_B1F_Text_YayItsAShip
+	.global AbandonedShip_Corridors_B1F_Text_DoorIsLocked
+	.global AbandonedShip_Corridors_B1F_Text_InsertedStorageKey
+	.global AbandonedShip_Text_TheDoorIsOpen
+@ END GENERATED LOCALIZATION EXPORTS

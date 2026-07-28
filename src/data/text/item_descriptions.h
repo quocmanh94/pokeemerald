@@ -3,1554 +3,1727 @@ static const u8 sDummyDesc[] = _(
 
 // Pokeballs
 static const u8 sMasterBallDesc[] = _(
-    "The best BALL that\n"
-    "catches a POKéMON\n"
-    "without fail.");
+    "BALL tốt nhất,\n"
+    "luôn bắt được\n"
+    "POKéMON.");
 
 static const u8 sUltraBallDesc[] = _(
-    "A better BALL with\n"
-    "a higher catch rate\n"
-    "than a GREAT BALL.");
+    "BALL có tỉ lệ bắt\n"
+    "cao hơn GREAT\n"
+    "BALL.");
 
 static const u8 sGreatBallDesc[] = _(
-    "A good BALL with a\n"
-    "higher catch rate\n"
-    "than a POKé BALL.");
+    "BALL có tỉ lệ bắt\n"
+    "cao hơn loại\n"
+    "POKé BALL.");
 
 static const u8 sPokeBallDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "Dùng để bắt\n"
+    "POKéMON hoang dã.");
 
 static const u8 sSafariBallDesc[] = _(
-    "A special BALL that\n"
-    "is used only in the\n"
-    "SAFARI ZONE.");
+    "BALL đặc biệt chỉ\n"
+    "dùng trong SAFARI\n"
+    "ZONE.");
 
 static const u8 sNetBallDesc[] = _(
-    "A BALL that works\n"
-    "well on WATER- and\n"
-    "BUG-type POKéMON.");
+    "Hiệu quả với\n"
+    "POKéMON hệ WATER\n"
+    "và BUG.");
 
 static const u8 sDiveBallDesc[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "on the ocean floor.");
+    "Hiệu quả hơn với\n"
+    "POKéMON dưới đáy\n"
+    "biển.");
 
 static const u8 sNestBallDesc[] = _(
-    "A BALL that works\n"
-    "better on weaker\n"
-    "POKéMON.");
+    "Hiệu quả hơn với\n"
+    "POKéMON cấp thấp.");
 
 static const u8 sRepeatBallDesc[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "caught before.");
+    "Hiệu quả hơn với\n"
+    "POKéMON đã từng\n"
+    "bắt.");
 
 static const u8 sTimerBallDesc[] = _(
-    "A BALL that gains\n"
-    "power in battles\n"
-    "taking many turns.");
+    "Càng mạnh khi trận\n"
+    "đấu kéo dài nhiều\n"
+    "lượt.");
 
 static const u8 sLuxuryBallDesc[] = _(
-    "A cozy BALL that\n"
-    "makes POKéMON\n"
-    "more friendly.");
+    "BALL thoải mái,\n"
+    "tăng độ thân thiết\n"
+    "của POKéMON.");
 
 static const u8 sPremierBallDesc[] = _(
-    "A rare BALL made\n"
-    "in commemoration\n"
-    "of some event.");
+    "BALL hiếm được làm\n"
+    "để kỷ niệm một\n"
+    "sự kiện.");
 
 // Medicine
 static const u8 sPotionDesc[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "20 points.");
+    "Hồi 20 HP cho\n"
+    "một POKéMON.");
 
 static const u8 sAntidoteDesc[] = _(
-    "Heals a poisoned\n"
-    "POKéMON.");
+    "Chữa trúng độc\n"
+    "cho POKéMON.");
 
 static const u8 sBurnHealDesc[] = _(
-    "Heals POKéMON\n"
-    "of a burn.");
+    "Chữa bỏng cho\n"
+    "POKéMON.");
 
 static const u8 sIceHealDesc[] = _(
-    "Defrosts a frozen\n"
-    "POKéMON.");
+    "Rã đông POKéMON\n"
+    "bị đóng băng.");
 
 static const u8 sAwakeningDesc[] = _(
-    "Awakens a sleeping\n"
-    "POKéMON.");
+    "Đánh thức POKéMON\n"
+    "đang ngủ.");
 
 static const u8 sParalyzeHealDesc[] = _(
-    "Heals a paralyzed\n"
+    "Chữa tê liệt cho\n"
     "POKéMON.");
 
 static const u8 sFullRestoreDesc[] = _(
-    "Fully restores the\n"
-    "HP and status of a\n"
-    "POKéMON.");
+    "Hồi đầy HP và chữa\n"
+    "mọi trạng thái bất\n"
+    "lợi cho POKéMON."
+);
 
 static const u8 sMaxPotionDesc[] = _(
-    "Fully restores the\n"
-    "HP of a POKéMON.");
+    "Hồi đầy HP cho\n"
+    "một POKéMON.");
 
 static const u8 sHyperPotionDesc[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "200 points.");
+    "Hồi 200 HP cho\n"
+    "một POKéMON.");
 
 static const u8 sSuperPotionDesc[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "50 points.");
+    "Hồi 50 HP cho\n"
+    "một POKéMON.");
 
 static const u8 sFullHealDesc[] = _(
-    "Heals all the\n"
-    "status problems of\n"
-    "one POKéMON.");
+    "Chữa mọi trạng\n"
+    "thái cho một\n"
+    "POKéMON.");
 
 static const u8 sReviveDesc[] = _(
-    "Revives a fainted\n"
-    "POKéMON with half\n"
-    "its HP.");
+    "Hồi sinh POKéMON\n"
+    "bất tỉnh với nửa\n"
+    "HP tối đa."
+);
 
 static const u8 sMaxReviveDesc[] = _(
-    "Revives a fainted\n"
-    "POKéMON with all\n"
-    "its HP.");
+    "Hồi sinh POKéMON\n"
+    "bất tỉnh với đầy\n"
+    "HP."
+);
 
 static const u8 sFreshWaterDesc[] = _(
-    "A mineral water\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "Nước khoáng hồi\n"
+    "50 HP cho POKéMON."
+);
 
 static const u8 sSodaPopDesc[] = _(
-    "A fizzy soda drink\n"
-    "that restores HP\n"
-    "by 60 points.");
+    "Nước ngọt có ga hồi\n"
+    "60 HP cho POKéMON."
+);
 
 static const u8 sLemonadeDesc[] = _(
-    "A very sweet drink\n"
-    "that restores HP\n"
-    "by 80 points.");
+    "Nước chanh ngọt hồi\n"
+    "80 HP cho POKéMON."
+);
 
 static const u8 sMoomooMilkDesc[] = _(
-    "A nutritious milk\n"
-    "that restores HP\n"
-    "by 100 points.");
+    "Sữa bổ dưỡng hồi\n"
+    "100 HP cho POKéMON."
+);
 
 static const u8 sEnergyPowderDesc[] = _(
-    "A bitter powder\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "Hồi 50 HP cho\n"
+    "POKéMON. Đắng.");
 
 static const u8 sEnergyRootDesc[] = _(
-    "A bitter root\n"
-    "that restores HP\n"
-    "by 200 points.");
+    "Hồi 200 HP cho\n"
+    "POKéMON. Đắng.");
 
 static const u8 sHealPowderDesc[] = _(
-    "A bitter powder\n"
-    "that heals all\n"
-    "status problems.");
+    "Chữa mọi trạng\n"
+    "thái. Đắng.");
 
 static const u8 sRevivalHerbDesc[] = _(
-    "A very bitter herb\n"
-    "that revives a\n"
-    "fainted POKéMON.");
+    "Hồi sinh POKéMON\n"
+    "bất tỉnh. Rất đắng."
+);
 
 static const u8 sEtherDesc[] = _(
-    "Restores the PP\n"
-    "of a selected move\n"
-    "by 10.");
+    "Hồi 10 PP của\n"
+    "một chiêu.");
 
 static const u8 sMaxEtherDesc[] = _(
-    "Fully restores the\n"
-    "PP of a selected\n"
-    "move.");
+    "Hồi đầy PP của\n"
+    "một chiêu.");
 
 static const u8 sElixirDesc[] = _(
-    "Restores the PP\n"
-    "of all moves by 10.");
+    "Hồi 10 PP của\n"
+    "tất cả chiêu.");
 
 static const u8 sMaxElixirDesc[] = _(
-    "Fully restores the\n"
-    "PP of a POKéMON's\n"
-    "moves.");
+    "Hồi đầy PP cho\n"
+    "mọi chiêu của\n"
+    "POKéMON."
+);
 
 static const u8 sLavaCookieDesc[] = _(
-    "A local specialty\n"
-    "that heals all\n"
-    "status problems.");
+    "Đặc sản địa phương,\n"
+    "chữa mọi trạng thái.");
 
 static const u8 sBlueFluteDesc[] = _(
-    "A glass flute that\n"
-    "awakens sleeping\n"
-    "POKéMON.");
+    "Sáo thủy tinh\n"
+    "đánh thức POKéMON.");
 
 static const u8 sYellowFluteDesc[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of confusion.");
+    "Sáo thủy tinh\n"
+    "chữa bối rối."
+);
 
 static const u8 sRedFluteDesc[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of attraction.");
+    "Sáo thủy tinh\n"
+    "chữa si mê."
+);
 
 static const u8 sBlackFluteDesc[] = _(
-    "A glass flute that\n"
-    "keeps away wild\n"
-    "POKéMON.");
+    "Sáo thủy tinh\n"
+    "xua POKéMON\n"
+    "hoang dã.");
 
 static const u8 sWhiteFluteDesc[] = _(
-    "A glass flute that\n"
-    "lures wild POKéMON.");
+    "Sáo thủy tinh\n"
+    "dụ POKéMON hoang dã.");
 
 static const u8 sBerryJuiceDesc[] = _(
-    "A 100% pure juice\n"
-    "that restores HP\n"
-    "by 20 points.");
+    "Nước BERRY nguyên\n"
+    "chất hồi 20 HP cho\n"
+    "POKéMON."
+);
 
 static const u8 sSacredAshDesc[] = _(
-    "Fully revives and\n"
-    "restores all\n"
-    "fainted POKéMON.");
+    "Hồi sinh đầy HP\n"
+    "cho mọi POKéMON\n"
+    "bất tỉnh."
+);
 
 // Collectibles
 static const u8 sShoalSaltDesc[] = _(
-    "Salt obtained from\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "Muối lấy từ sâu\n"
+    "trong SHOAL CAVE.");
 
 static const u8 sShoalShellDesc[] = _(
-    "A seashell found\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "Vỏ sò tìm thấy sâu\n"
+    "trong SHOAL CAVE.");
 
 static const u8 sRedShardDesc[] = _(
-    "A shard from an\n"
-    "ancient item. Can\n"
-    "be sold cheaply.");
+    "Mảnh vật cổ xưa.\n"
+    "Bán được giá thấp.");
 
 static const u8 sBlueShardDesc[] = _(
-    "A shard from an\n"
-    "ancient item. Can\n"
-    "be sold cheaply.");
+    "Mảnh vật cổ xưa.\n"
+    "Bán được giá thấp.");
 
 static const u8 sYellowShardDesc[] = _(
-    "A shard from an\n"
-    "ancient item. Can\n"
-    "be sold cheaply.");
+    "Mảnh vật cổ xưa.\n"
+    "Bán được giá thấp.");
 
 static const u8 sGreenShardDesc[] = _(
-    "A shard from an\n"
-    "ancient item. Can\n"
-    "be sold cheaply.");
+    "Mảnh vật cổ xưa.\n"
+    "Bán được giá thấp.");
 
 // Vitamins
 static const u8 sHPUpDesc[] = _(
-    "Raises the base HP\n"
-    "of one POKéMON.");
+    "Tăng EV HP cho\n"
+    "một POKéMON."
+);
 
 static const u8 sProteinDesc[] = _(
-    "Raises the base\n"
-    "ATTACK stat of one\n"
-    "POKéMON.");
+    "Tăng EV ATTACK\n"
+    "cho một POKéMON."
+);
 
 static const u8 sIronDesc[] = _(
-    "Raises the base\n"
-    "DEFENSE stat of\n"
-    "one POKéMON.");
+    "Tăng EV DEFENSE\n"
+    "cho một POKéMON."
+);
 
 static const u8 sCarbosDesc[] = _(
-    "Raises the base\n"
-    "SPEED stat of one\n"
-    "POKéMON.");
+    "Tăng EV SPEED\n"
+    "cho một POKéMON."
+);
 
 static const u8 sCalciumDesc[] = _(
-    "Raises the base\n"
-    "SP. ATK stat of one\n"
-    "POKéMON.");
+    "Tăng EV SP. ATK\n"
+    "cho một POKéMON."
+);
 
 static const u8 sRareCandyDesc[] = _(
-    "Raises the level\n"
-    "of a POKéMON by\n"
-    "one.");
+    "Tăng một cấp hoặc\n"
+    "kích hoạt tiến hóa\n"
+    "ở cấp 100.");
 
 static const u8 sPPUpDesc[] = _(
-    "Raises the maximum\n"
-    "PP of a selected\n"
-    "move.");
+    "Tăng PP tối đa\n"
+    "của một chiêu.");
 
 static const u8 sZincDesc[] = _(
-    "Raises the base\n"
-    "SP. DEF stat of one\n"
-    "POKéMON.");
+    "Tăng EV SP. DEF\n"
+    "cho một POKéMON."
+);
 
 static const u8 sPPMaxDesc[] = _(
-    "Raises the PP of a\n"
-    "move to its maximum\n"
-    "points.");
+    "Tăng PP của một\n"
+    "chiêu lên tối đa.");
 
 // Battle items
 static const u8 sGuardSpecDesc[] = _(
-    "Prevents stat\n"
-    "reduction when\n"
-    "used in battle.");
+    "Ngăn giảm chỉ số.\n"
+    "(1 TRẬN)");
 
 static const u8 sDireHitDesc[] = _(
-    "Raises the\n"
-    "critical-hit ratio\n"
-    "during one battle.");
+    "Tăng tỉ lệ chí\n"
+    "mạng. (1 TRẬN)");
 
 static const u8 sXAttackDesc[] = _(
-    "Raises the stat\n"
-    "ATTACK during one\n"
-    "battle.");
+    "Tăng ATTACK.\n"
+    "(1 TRẬN)");
 
 static const u8 sXDefendDesc[] = _(
-    "Raises the stat\n"
-    "DEFENSE during one\n"
-    "battle.");
+    "Tăng DEFENSE.\n"
+    "(1 TRẬN)");
 
 static const u8 sXSpeedDesc[] = _(
-    "Raises the stat\n"
-    "SPEED during one\n"
-    "battle.");
+    "Tăng SPEED.\n"
+    "(1 TRẬN)");
 
 static const u8 sXAccuracyDesc[] = _(
-    "Raises accuracy\n"
-    "of attack moves\n"
-    "during one battle.");
+    "Tăng độ chính xác.\n"
+    "(1 TRẬN)"
+);
 
 static const u8 sXSpecialDesc[] = _(
-    "Raises the stat\n"
-    "SP. ATK during one\n"
-    "battle.");
+    "Tăng SP. ATK\n"
+    "(1 TRẬN)");
 
 static const u8 sPokeDollDesc[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "Thoát ngay khỏi trận\n"
+    "với POKéMON\n"
+    "hoang dã."
+);
 
 static const u8 sFluffyTailDesc[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "Thoát ngay khỏi trận\n"
+    "với POKéMON\n"
+    "hoang dã."
+);
 
 // Field items
 static const u8 sSuperRepelDesc[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 200\n"
-    "steps.");
+    "Xua POKéMON yếu\n"
+    "trong 200 bước.");
 
 static const u8 sMaxRepelDesc[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 250\n"
-    "steps.");
+    "Xua POKéMON yếu\n"
+    "trong 250 bước.");
 
 static const u8 sEscapeRopeDesc[] = _(
-    "Use to escape\n"
-    "instantly from a\n"
-    "cave or a dungeon.");
+    "Dùng để thoát\n"
+    "khỏi hang động.");
 
 static const u8 sRepelDesc[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 100\n"
-    "steps.");
+    "Xua POKéMON yếu\n"
+    "trong 100 bước.");
 
 // Evolution stones
 static const u8 sSunStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 static const u8 sMoonStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 static const u8 sFireStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 static const u8 sThunderStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 static const u8 sWaterStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 static const u8 sLeafStoneDesc[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Tiến hoá một số\n"
+    "loại POKéMON.");
 
 // Valuable items
 static const u8 sTinyMushroomDesc[] = _(
-    "A plain mushroom\n"
-    "that would sell\n"
-    "at a cheap price.");
+    "Nấm bình thường.\n"
+    "Bán được giá thấp."
+);
 
 static const u8 sBigMushroomDesc[] = _(
-    "A rare mushroom\n"
-    "that would sell at a\n"
-    "high price.");
+    "Nấm hiếm.\n"
+    "Bán được giá cao."
+);
 
 static const u8 sPearlDesc[] = _(
-    "A pretty pearl\n"
-    "that would sell at a\n"
-    "cheap price.");
+    "Ngọc trai đẹp.\n"
+    "Bán được giá thấp."
+);
 
 static const u8 sBigPearlDesc[] = _(
-    "A lovely large pearl\n"
-    "that would sell at a\n"
-    "high price.");
+    "Ngọc trai lớn đẹp.\n"
+    "Bán được giá cao."
+);
 
 static const u8 sStardustDesc[] = _(
-    "Beautiful red sand.\n"
-    "Can be sold at a\n"
-    "high price.");
+    "Cát đỏ tuyệt đẹp.\n"
+    "Bán được giá cao."
+);
 
 static const u8 sStarPieceDesc[] = _(
-    "A red gem shard.\n"
-    "It would sell for a\n"
-    "very high price.");
+    "Mảnh đá quý đỏ.\n"
+    "Bán được giá rất\n"
+    "cao."
+);
 
 static const u8 sNuggetDesc[] = _(
-    "A nugget of pure\n"
-    "gold. Can be sold at\n"
-    "a high price.");
+    "Cục vàng nguyên\n"
+    "chất. Bán được giá\n"
+    "cao."
+);
 
 static const u8 sHeartScaleDesc[] = _(
-    "A lovely scale.\n"
-    "It is coveted by\n"
-    "collectors.");
+    "Chiếc vảy đẹp,\n"
+    "được giới sưu tầm\n"
+    "ưa chuộng.");
 
 // Mail
 static const u8 sOrangeMailDesc[] = _(
-    "A ZIGZAGOON-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "ZIGZAGOON\n"
+    "cho POKéMON giữ.");
 
 static const u8 sHarborMailDesc[] = _(
-    "A WINGULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "WINGULL\n"
+    "cho POKéMON giữ.");
 
 static const u8 sGlitterMailDesc[] = _(
-    "A PIKACHU-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "PIKACHU\n"
+    "cho POKéMON giữ.");
 
 static const u8 sMechMailDesc[] = _(
-    "A MAGNEMITE-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "MAGNEMITE\n"
+    "cho POKéMON giữ.");
 
 static const u8 sWoodMailDesc[] = _(
-    "A SLAKOTH-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "SLAKOTH\n"
+    "cho POKéMON giữ.");
 
 static const u8 sWaveMailDesc[] = _(
-    "A WAILMER-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "WAILMER\n"
+    "cho POKéMON giữ.");
 
 static const u8 sBeadMailDesc[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "MAIL có hình\n"
+    "POKéMON đang giữ.");
 
 static const u8 sShadowMailDesc[] = _(
-    "A DUSKULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "DUSKULL\n"
+    "cho POKéMON giữ.");
 
 static const u8 sTropicMailDesc[] = _(
-    "A BELLOSSOM-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "MAIL in hình\n"
+    "BELLOSSOM\n"
+    "cho POKéMON giữ.");
 
 static const u8 sDreamMailDesc[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "MAIL có hình\n"
+    "POKéMON đang giữ.");
 
 static const u8 sFabMailDesc[] = _(
-    "A gorgeous-print\n"
-    "MAIL to be held\n"
-    "by a POKéMON.");
+    "MAIL hoa văn\n"
+    "lộng lẫy cho\n"
+    "POKéMON giữ.");
 
 static const u8 sRetroMailDesc[] = _(
-    "MAIL featuring the\n"
-    "drawings of three\n"
-    "POKéMON.");
+    "MAIL có hình vẽ\n"
+    "ba POKéMON.");
 
 // Berries
 static const u8 sCheriBerryDesc[] = _(
-    "A hold item that\n"
-    "heals paralysis\n"
-    "in battle.");
+    "Chữa tê liệt\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sChestoBerryDesc[] = _(
-    "A hold item that\n"
-    "awakens POKéMON\n"
-    "in battle.");
+    "Đánh thức khi ngủ\n"
+    "trong trận. (GIỮ)");
 
 static const u8 sPechaBerryDesc[] = _(
-    "A hold item that\n"
-    "heals poisoning\n"
-    "in battle.");
+    "Chữa trúng độc\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sRawstBerryDesc[] = _(
-    "A hold item that\n"
-    "heals a burn in\n"
-    "battle.");
+    "Chữa bỏng\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sAspearBerryDesc[] = _(
-    "A hold item that\n"
-    "defrosts POKéMON\n"
-    "in battle.");
+    "Rã đông POKéMON\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sLeppaBerryDesc[] = _(
-    "A hold item that\n"
-    "restores 10 PP in\n"
-    "battle.");
+    "Hồi 10 PP\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sOranBerryDesc[] = _(
-    "A hold item that\n"
-    "restores 10 HP in\n"
-    "battle.");
+    "Hồi 10 HP\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sPersimBerryDesc[] = _(
-    "A hold item that\n"
-    "heals confusion\n"
-    "in battle.");
+    "Chữa bối rối\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sLumBerryDesc[] = _(
-    "A hold item that\n"
-    "heals any status\n"
-    "problem in battle.");
+    "Chữa mọi trạng thái\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sSitrusBerryDesc[] = _(
-    "A hold item that\n"
-    "restores 25% HP in\n"
-    "battle.");
+    "Hồi 25% HP\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sFigyBerryDesc[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Hồi HP nhưng có thể\n"
+    "gây bối rối. (GIỮ)");
 
 static const u8 sWikiBerryDesc[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Hồi HP nhưng có thể\n"
+    "gây bối rối. (GIỮ)");
 
 static const u8 sMagoBerryDesc[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Hồi HP nhưng có thể\n"
+    "gây bối rối. (GIỮ)");
 
 static const u8 sAguavBerryDesc[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Hồi HP nhưng có thể\n"
+    "gây bối rối. (GIỮ)");
 
 static const u8 sIapapaBerryDesc[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Hồi HP nhưng có thể\n"
+    "gây bối rối. (GIỮ)");
 
 static const u8 sRazzBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RAZZ.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "RAZZ.");
 
 static const u8 sBlukBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BLUK.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "BLUK.");
 
 static const u8 sNanabBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NANAB.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "NANAB.");
 
 static const u8 sWepearBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WEPEAR.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "WEPEAR.");
 
 static const u8 sPinapBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PINAP.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "PINAP.");
 
 static const u8 sPomegBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base HP.");
+    "Tăng thân thiết,\n"
+    "giảm EV HP.");
 
 static const u8 sKelpsyBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base ATTACK.");
+    "Tăng thân thiết,\n"
+    "giảm EV ATTACK.");
 
 static const u8 sQualotBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base DEFENSE.");
+    "Tăng thân thiết,\n"
+    "giảm EV DEFENSE.");
 
 static const u8 sHondewBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base SP. ATK.");
+    "Tăng thân thiết,\n"
+    "giảm EV SP. ATK.");
 
 static const u8 sGrepaBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base SP. DEF.");
+    "Tăng thân thiết,\n"
+    "giảm EV SP. DEF.");
 
 static const u8 sTamatoBerryDesc[] = _(
-    "Makes a POKéMON\n"
-    "friendly but lowers\n"
-    "base SPEED.");
+    "Tăng thân thiết,\n"
+    "giảm EV SPEED.");
 
 static const u8 sCornnBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow CORNN.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "CORNN.");
 
 static const u8 sMagostBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow MAGOST.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "MAGOST.");
 
 static const u8 sRabutaBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RABUTA.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "RABUTA.");
 
 static const u8 sNomelBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NOMEL.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "NOMEL.");
 
 static const u8 sSpelonBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow SPELON.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "SPELON.");
 
 static const u8 sPamtreBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PAMTRE.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "PAMTRE.");
 
 static const u8 sWatmelBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WATMEL.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "WATMEL.");
 
 static const u8 sDurinBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow DURIN.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "DURIN.");
 
 static const u8 sBelueBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BELUE.");
+    "Nguyên liệu {POKEBLOCK}.\n"
+    "Trồng để thu hoạch\n"
+    "BELUE.");
 
 static const u8 sLiechiBerryDesc[] = _(
-    "A hold item that\n"
-    "raises ATTACK in\n"
-    "a pinch.");
+    "Khi HP thấp, tăng\n"
+    "ATTACK. (GIỮ)");
 
 static const u8 sGanlonBerryDesc[] = _(
-    "A hold item that\n"
-    "raises DEFENSE in\n"
-    "a pinch.");
+    "Khi HP thấp, tăng\n"
+    "DEFENSE. (GIỮ)");
 
 static const u8 sSalacBerryDesc[] = _(
-    "A hold item that\n"
-    "raises SPEED in\n"
-    "a pinch.");
+    "Khi HP thấp, tăng\n"
+    "SPEED. (GIỮ)");
 
 static const u8 sPetayaBerryDesc[] = _(
-    "A hold item that\n"
-    "raises SP. ATK in\n"
-    "a pinch.");
+    "Khi HP thấp, tăng\n"
+    "SP. ATK. (GIỮ)");
 
 static const u8 sApicotBerryDesc[] = _(
-    "A hold item that\n"
-    "raises SP. DEF in\n"
-    "a pinch.");
+    "Khi HP thấp, tăng\n"
+    "SP. DEF. (GIỮ)");
 
 static const u8 sLansatBerryDesc[] = _(
-    "A hold item that\n"
-    "ups the critical-\n"
-    "hit rate in a pinch.");
+    "Khi HP thấp, tăng\n"
+    "tỉ lệ chí mạng. (GIỮ)");
 
 static const u8 sStarfBerryDesc[] = _(
-    "A hold item that\n"
-    "sharply boosts a\n"
-    "stat in a pinch.");
+    "Khi HP thấp,\n"
+    "tăng mạnh một\n"
+    "chỉ số. (GIỮ)");
 
 static const u8 sEnigmaBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow a mystery.");
+    "Dùng làm {POKEBLOCK}.\n"
+    "Trồng ra quả bí ẩn.");
 
 // Hold items
 static const u8 sBrightPowderDesc[] = _(
-    "A hold item that\n"
-    "casts a glare to\n"
-    "reduce accuracy.");
+    "Giảm chính xác\n"
+    "đối thủ. (GIỮ)");
 
 static const u8 sWhiteHerbDesc[] = _(
-    "A hold item that\n"
-    "restores any\n"
-    "lowered stat.");
+    "Khôi phục chỉ số\n"
+    "bị giảm. (GIỮ)");
 
 static const u8 sMachoBraceDesc[] = _(
-    "A hold item that\n"
-    "promotes growth,\n"
-    "but reduces SPEED.");
+    "Tăng EV nhận được,\n"
+    "giảm SPEED.\n"
+    "(GIỮ)");
 
 static const u8 sExpShareDesc[] = _(
-    "A hold item that\n"
-    "gets EXP. points\n"
-    "from battles.");
+    "Chia sẻ điểm EXP\n"
+    "trong trận. (GIỮ)");
 
 static const u8 sQuickClawDesc[] = _(
-    "A hold item that\n"
-    "occasionally allows\n"
-    "the first strike.");
+    "Đôi khi giúp ra\n"
+    "đòn trước. (GIỮ)"
+);
 
 static const u8 sSootheBellDesc[] = _(
-    "A hold item that\n"
-    "calms spirits and\n"
-    "fosters friendship.");
+    "Giúp tăng thân thiết\n"
+    "nhanh hơn. (GIỮ)");
 
 static const u8 sMentalHerbDesc[] = _(
-    "A hold item that\n"
-    "snaps POKéMON out\n"
-    "of infatuation.");
+    "Chữa mê hoặc\n"
+    "khi chiến đấu. (GIỮ)");
 
 static const u8 sChoiceBandDesc[] = _(
-    "Raises a move's\n"
-    "power, but permits\n"
-    "only that move.");
+    "Tăng sức mạnh,\n"
+    "chỉ dùng một chiêu.\n"
+    "(GIỮ)");
 
 static const u8 sKingsRockDesc[] = _(
-    "A hold item that\n"
-    "may cause flinching\n"
-    "when the foe is hit.");
+    "Có thể khiến đối thủ\n"
+    "chùn bước. (GIỮ)");
 
 static const u8 sSilverPowderDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "BUG-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "BUG. (GIỮ)");
 
 static const u8 sAmuletCoinDesc[] = _(
-    "Doubles money in\n"
-    "battle if the\n"
-    "holder takes part.");
+    "Nhân đôi tiền\n"
+    "thưởng. (GIỮ)");
 
 static const u8 sCleanseTagDesc[] = _(
-    "A hold item that\n"
-    "helps repel wild\n"
-    "POKéMON.");
+    "Giúp xua POKéMON\n"
+    "hoang. (GIỮ)");
 
 static const u8 sSoulDewDesc[] = _(
-    "Hold item: raises\n"
-    "SP. ATK & SP. DEF of\n"
-    "LATIOS & LATIAS.");
+    "Tăng SP. ATK và\n"
+    "SP. DEF của LATIOS\n"
+    "và LATIAS. (GIỮ)");
 
 static const u8 sDeepSeaToothDesc[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of CLAMPERL.");
+    "Tăng SP. ATK\n"
+    "của CLAMPERL. (GIỮ)");
 
 static const u8 sDeepSeaScaleDesc[] = _(
-    "A hold item that\n"
-    "raises the SP. DEF\n"
-    "of CLAMPERL.");
+    "Tăng SP. DEF\n"
+    "của CLAMPERL. (GIỮ)");
 
 static const u8 sSmokeBallDesc[] = _(
-    "A hold item that\n"
-    "assures fleeing\n"
-    "from wild POKéMON.");
+    "Thoát khỏi POKéMON\n"
+    "hoang. (GIỮ)");
 
 static const u8 sEverstoneDesc[] = _(
-    "A wondrous hold\n"
-    "item that prevents\n"
-    "evolution.");
+    "Ngăn tiến hoá.\n"
+    "(GIỮ)");
 
 static const u8 sFocusBandDesc[] = _(
-    "A hold item that\n"
-    "occasionally\n"
-    "prevents fainting.");
+    "Đôi khi giúp tránh\n"
+    "bị bất tỉnh. (GIỮ)"
+);
 
 static const u8 sLuckyEggDesc[] = _(
-    "A hold item that\n"
-    "boosts EXP. points\n"
-    "earned in battle.");
+    "Tăng điểm EXP\n"
+    "nhận được. (GIỮ)");
 
 static const u8 sScopeLensDesc[] = _(
-    "A hold item that\n"
-    "improves the\n"
-    "critical-hit rate.");
+    "Tăng tỉ lệ chí\n"
+    "mạng. (GIỮ)");
 
 static const u8 sMetalCoatDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "STEEL-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "STEEL. (GIỮ)");
 
 static const u8 sLeftoversDesc[] = _(
-    "A hold item that\n"
-    "gradually restores\n"
-    "HP in battle.");
+    "Hồi một ít HP mỗi\n"
+    "lượt trong trận.\n"
+    "(GIỮ)"
+);
 
 static const u8 sDragonScaleDesc[] = _(
-    "A strange scale\n"
-    "held by DRAGON-\n"
-    "type POKéMON.");
+    "Chiếc vảy kỳ lạ\n"
+    "của POKéMON hệ\n"
+    "DRAGON."
+);
 
 static const u8 sLightBallDesc[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of PIKACHU.");
+    "Tăng SP. ATK của\n"
+    "PIKACHU. (GIỮ)");
 
 static const u8 sSoftSandDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GROUND-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "GROUND. (GIỮ)");
 
 static const u8 sHardStoneDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ROCK-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "ROCK. (GIỮ)");
 
 static const u8 sMiracleSeedDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GRASS-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "GRASS. (GIỮ)");
 
 static const u8 sBlackGlassesDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DARK-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "DARK. (GIỮ)");
 
 static const u8 sBlackBeltDesc[] = _(
-    "A hold item that\n"
-    "boosts FIGHTING-\n"
-    "type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "FIGHTING. (GIỮ)");
 
 static const u8 sMagnetDesc[] = _(
-    "A hold item that\n"
-    "boosts ELECTRIC-\n"
-    "type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "ELECTRIC. (GIỮ)");
 
 static const u8 sMysticWaterDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "WATER-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "WATER. (GIỮ)");
 
 static const u8 sSharpBeakDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FLYING-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "FLYING. (GIỮ)");
 
 static const u8 sPoisonBarbDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "POISON-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "POISON. (GIỮ)");
 
 static const u8 sNeverMeltIceDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ICE-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "ICE. (GIỮ)");
 
 static const u8 sSpellTagDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GHOST-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "GHOST. (GIỮ)");
 
 static const u8 sTwistedSpoonDesc[] = _(
-    "A hold item that\n"
-    "boosts PSYCHIC-\n"
-    "type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "PSYCHIC. (GIỮ)");
 
 static const u8 sCharcoalDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FIRE-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "FIRE. (GIỮ)");
 
 static const u8 sDragonFangDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DRAGON-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "DRAGON. (GIỮ)");
 
 static const u8 sSilkScarfDesc[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "NORMAL-type moves.");
+    "Tăng sức mạnh chiêu\n"
+    "NORMAL. (GIỮ)");
 
 static const u8 sUpGradeDesc[] = _(
-    "A peculiar box made\n"
-    "by SILPH CO.");
+    "Hộp bí ẩn do\n"
+    "SILPH CO. làm.");
 
 static const u8 sShellBellDesc[] = _(
-    "A hold item that\n"
-    "restores HP upon\n"
-    "striking the foe.");
+    "Hồi HP khi gây\n"
+    "sát thương. (GIỮ)");
 
 static const u8 sSeaIncenseDesc[] = _(
-    "A hold item that\n"
-    "slightly boosts\n"
-    "WATER-type moves.");
+    "Tăng nhẹ sức mạnh\n"
+    "chiêu WATER. (GIỮ)");
 
 static const u8 sLaxIncenseDesc[] = _(
-    "A hold item that\n"
-    "slightly lowers the\n"
-    "foe's accuracy.");
+    "Giảm độ chính xác\n"
+    "của đối thủ. (GIỮ)");
 
 static const u8 sLuckyPunchDesc[] = _(
-    "A hold item that\n"
-    "raises CHANSEY's\n"
-    "critical-hit rate.");
+    "Tăng tỉ lệ chí mạng\n"
+    "của CHANSEY. (GIỮ)");
 
 static const u8 sMetalPowderDesc[] = _(
-    "A hold item that\n"
-    "raises DITTO's\n"
-    "DEFENSE.");
+    "Tăng DEFENSE của\n"
+    "DITTO. (GIỮ)");
 
 static const u8 sThickClubDesc[] = _(
-    "A hold item that \n"
-    "raises CUBONE or\n"
-    "MAROWAK's ATTACK.");
+    "Tăng ATTACK của\n"
+    "CUBONE/MAROWAK.\n"
+    "(GIỮ)");
 
 static const u8 sStickDesc[] = _(
-    "A hold item that\n"
-    "raises FARFETCH'D's\n"
-    "critical-hit ratio.");
+    "Tăng tỉ lệ chí mạng\n"
+    "của FARFETCH'D.\n"
+    "(GIỮ)");
 
 static const u8 sAbilityPatchDesc[] = _(
-    "Switches a POKéMON\n"
-    "between its normal and\n"
-    "Hidden Ability.");
+    "Đổi Ability thường\n"
+    "và Hidden Ability\n"
+    "của POKéMON.");
 
 static const u8 sRedScarfDesc[] = _(
-    "A hold item that\n"
-    "raises COOL in\n"
-    "CONTESTS.");
+    "Tăng COOL\n"
+    "trong cuộc thi. (GIỮ)");
 
 static const u8 sBlueScarfDesc[] = _(
-    "A hold item that\n"
-    "raises BEAUTY in\n"
-    "CONTESTS.");
+    "Tăng BEAUTY\n"
+    "trong cuộc thi. (GIỮ)");
 
 static const u8 sPinkScarfDesc[] = _(
-    "A hold item that\n"
-    "raises CUTE in\n"
-    "CONTESTS.");
+    "Tăng CUTE\n"
+    "trong cuộc thi. (GIỮ)");
 
 static const u8 sGreenScarfDesc[] = _(
-    "A hold item that\n"
-    "raises SMART in\n"
-    "CONTESTS.");
+    "Tăng SMART\n"
+    "trong cuộc thi. (GIỮ)");
 
 static const u8 sYellowScarfDesc[] = _(
-    "A hold item that\n"
-    "raises TOUGH in\n"
-    "CONTESTS.");
+    "Tăng TOUGH\n"
+    "trong cuộc thi. (GIỮ)");
 
 // Key items
 static const u8 sMachBikeDesc[] = _(
-    "A folding bicycle\n"
-    "that doubles your\n"
-    "speed or better.");
+    "Xe đạp gấp gọn\n"
+    "di chuyển cực nhanh.");
 
 static const u8 sCoinCaseDesc[] = _(
-    "A case that holds\n"
-    "up to 9,999 COINS.");
+    "Hộp chứa tối đa\n"
+    "9.999 COIN."
+);
 
 static const u8 sItemfinderDesc[] = _(
-    "A device that\n"
-    "signals an invisible\n"
-    "item by sound.");
+    "Tìm vật phẩm ẩn\n"
+    "trong khu vực.");
 
 static const u8 sOldRodDesc[] = _(
-    "Use by any body of\n"
-    "water to fish for\n"
-    "wild POKéMON.");
+    "Dùng bên nước để\n"
+    "câu POKéMON.");
 
 static const u8 sGoodRodDesc[] = _(
-    "A decent fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "Cần câu tốt để\n"
+    "bắt POKéMON.");
 
 static const u8 sSuperRodDesc[] = _(
-    "The best fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "Cần câu tốt nhất\n"
+    "để bắt POKéMON.");
 
 static const u8 sSSTicketDesc[] = _(
-    "The ticket required\n"
-    "for sailing on a\n"
-    "ferry.");
+    "Vé cần để đi\n"
+    "trên phà.");
 
 static const u8 sContestPassDesc[] = _(
-    "The pass required\n"
-    "for entering\n"
-    "POKéMON CONTESTS.");
+    "Vé tham gia\n"
+    "POKéMON CONTEST.");
 
 static const u8 sWailmerPailDesc[] = _(
-    "A tool used for\n"
-    "watering BERRIES\n"
-    "and plants.");
+    "Bình dùng tưới\n"
+    "BERRY và cây cối.");
 
 static const u8 sDevonGoodsDesc[] = _(
-    "A package that\n"
-    "contains DEVON's\n"
-    "machine parts.");
+    "Gói hàng chứa\n"
+    "linh kiện của DEVON.");
 
 static const u8 sSootSackDesc[] = _(
-    "A sack used to\n"
-    "gather and hold\n"
-    "volcanic ash.");
+    "Túi thu gom và chứa\n"
+    "tro núi lửa.");
 
 static const u8 sBasementKeyDesc[] = _(
-    "The key for NEW\n"
-    "MAUVILLE beneath\n"
+    "Chìa khóa vào\n"
+    "NEW MAUVILLE dưới\n"
     "MAUVILLE CITY.");
 
 static const u8 sAcroBikeDesc[] = _(
-    "A folding bicycle\n"
-    "capable of jumps\n"
-    "and wheelies.");
+    "Xe đạp có thể\n"
+    "nhảy và bốc đầu.");
 
 static const u8 sPokeblockCaseDesc[] = _(
-    "A case for holding\n"
-    "{POKEBLOCK}S made with\n"
-    "a BERRY BLENDER.");
+    "Hộp đựng {POKEBLOCK}\n"
+    "tạo bằng BERRY\n"
+    "BLENDER."
+);
 
 static const u8 sLetterDesc[] = _(
-    "A letter to STEVEN\n"
-    "from the PRESIDENT\n"
-    "of the DEVON CORP.");
+    "Thư của PRESIDENT\n"
+    "DEVON gửi STEVEN.");
 
 static const u8 sEonTicketDesc[] = _(
-    "The ticket for a\n"
-    "ferry to a distant\n"
-    "southern island.");
+    "Vé tàu đến hòn đảo\n"
+    "xa xôi phía nam.");
 
 static const u8 sRedOrbDesc[] = _(
-    "A red, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "Quả cầu đỏ sáng\n"
+    "chứa sức mạnh\n"
+    "cổ xưa.");
 
 static const u8 sBlueOrbDesc[] = _(
-    "A blue, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "Quả cầu xanh sáng\n"
+    "chứa sức mạnh\n"
+    "cổ xưa.");
 
 static const u8 sScannerDesc[] = _(
-    "A device found\n"
-    "inside the\n"
-    "ABANDONED SHIP.");
+    "Thiết bị tìm thấy\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sGoGogglesDesc[] = _(
-    "Nifty goggles that\n"
-    "protect eyes from\n"
-    "desert sandstorms.");
+    "Kính bảo vệ mắt\n"
+    "khỏi bão cát sa mạc.");
 
 static const u8 sMeteoriteDesc[] = _(
-    "A meteorite found\n"
-    "at METEOR FALLS.");
+    "Thiên thạch tìm thấy\n"
+    "tại METEOR FALLS.");
 
 static const u8 sRoom1KeyDesc[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Chìa khóa mở phòng\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sRoom2KeyDesc[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Chìa khóa mở phòng\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sRoom4KeyDesc[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Chìa khóa mở phòng\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sRoom6KeyDesc[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Chìa khóa mở phòng\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sStorageKeyDesc[] = _(
-    "The key to the\n"
-    "storage inside the\n"
-    "ABANDONED SHIP.");
+    "Chìa khóa kho\n"
+    "trong ABANDONED\n"
+    "SHIP.");
 
 static const u8 sRootFossilDesc[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "Hóa thạch cổ của\n"
+    "POKéMON sống dưới\n"
+    "đáy biển.");
 
 static const u8 sClawFossilDesc[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "Hóa thạch cổ của\n"
+    "POKéMON sống dưới\n"
+    "đáy biển.");
 
 static const u8 sDevonScopeDesc[] = _(
-    "A device by DEVON\n"
-    "that signals any\n"
-    "unseeable POKéMON.");
+    "Thiết bị DEVON\n"
+    "phát hiện POKéMON\n"
+    "vô hình.");
 
 // TMs/HMs
 static const u8 sTM01Desc[] = _(
-    "Powerful, but makes\n"
-    "the user flinch if\n"
-    "hit by the foe.");
+    "Đòn cực mạnh nhưng\n"
+    "hỏng nếu bị đánh\n"
+    "trước.");
 
 static const u8 sTM02Desc[] = _(
-    "Hooks and slashes\n"
-    "the foe with long,\n"
-    "sharp claws.");
+    "Chém đối thủ bằng\n"
+    "vuốt sắc.");
 
 static const u8 sTM03Desc[] = _(
-    "Generates an\n"
-    "ultrasonic wave\n"
-    "that may confuse.");
+    "Tấn công bằng sóng\n"
+    "nước, có thể gây\n"
+    "bối rối.");
 
 static const u8 sTM04Desc[] = _(
-    "Raises SP. ATK and\n"
-    "SP. DEF by focusing\n"
-    "the mind.");
+    "Tập trung tâm trí,\n"
+    "tăng SP. ATK và SP.\n"
+    "DEF.");
 
 static const u8 sTM05Desc[] = _(
-    "A savage roar that\n"
-    "makes the foe flee \n"
-    "to end the battle.");
+    "Gầm dữ dội, buộc\n"
+    "đối thủ rời khỏi\n"
+    "trận.");
 
 static const u8 sTM06Desc[] = _(
-    "Poisons the foe\n"
-    "with a toxin that\n"
-    "gradually worsens.");
+    "Gây độc nặng,\n"
+    "sát thương tăng\n"
+    "mỗi lượt.");
 
 static const u8 sTM07Desc[] = _(
-    "Creates a hailstorm\n"
-    "that damages all\n"
-    "types except ICE.");
+    "Gọi mưa đá gây hại\n"
+    "mọi hệ trừ ICE\n"
+    "mỗi lượt."
+);
 
 static const u8 sTM08Desc[] = _(
-    "Bulks up the body\n"
-    "to boost both\n"
-    "ATTACK & DEFENSE.");
+    "Căng cơ để tăng\n"
+    "ATTACK và DEFENSE.");
 
 static const u8 sTM09Desc[] = _(
-    "Shoots 2 to 5 seeds\n"
-    "in a row to strike\n"
-    "the foe.");
+    "Bắn hạt liên tiếp\n"
+    "2-5 lần.");
 
 static const u8 sTM10Desc[] = _(
-    "The attack power\n"
-    "varies among\n"
-    "different POKéMON.");
+    "Sức mạnh tùy theo\n"
+    "POKéMON.");
 
 static const u8 sTM11Desc[] = _(
-    "Raises the power of\n"
-    "FIRE-type moves\n"
-    "for 5 turns.");
+    "Tăng sức mạnh chiêu\n"
+    "FIRE trong 5 lượt.");
 
 static const u8 sTM12Desc[] = _(
-    "Enrages the foe so\n"
-    "it can only use\n"
-    "attack moves.");
+    "Khiêu khích, buộc\n"
+    "đối thủ chỉ dùng\n"
+    "chiêu tấn công.");
 
 static const u8 sTM13Desc[] = _(
-    "Fires an icy cold\n"
-    "beam that may\n"
-    "freeze the foe.");
+    "Bắn tia băng, có\n"
+    "thể đóng băng đối\n"
+    "thủ.");
 
 static const u8 sTM14Desc[] = _(
-    "A brutal snow-and-\n"
-    "wind attack that\n"
-    "may freeze the foe.");
+    "Gọi bão tuyết, có\n"
+    "thể đóng băng đối\n"
+    "thủ.");
 
 static const u8 sTM15Desc[] = _(
-    "Powerful, but needs\n"
-    "recharging the\n"
-    "next turn.");
+    "Lượt 1: Tấn công\n"
+    "Lượt 2: Nghỉ");
 
 static const u8 sTM16Desc[] = _(
-    "Creates a wall of\n"
-    "light that lowers\n"
-    "SP. ATK damage.");
+    "Tường sáng làm yếu\n"
+    "các đòn đặc biệt.");
 
 static const u8 sTM17Desc[] = _(
-    "Negates all damage,\n"
-    "but may fail if used\n"
-    "in succession.");
+    "Chặn mọi đòn trong\n"
+    "lượt. Dùng liên tục\n"
+    "có thể thất bại."
+);
 
 static const u8 sTM18Desc[] = _(
-    "Raises the power of\n"
-    "WATER-type moves\n"
-    "for 5 turns.");
+    "Tăng sức mạnh chiêu\n"
+    "WATER trong 5 lượt.");
 
 static const u8 sTM19Desc[] = _(
-    "Recovers half the\n"
-    "HP of the damage \n"
-    "this move inflicts.");
+    "Hút 1/2 sát thương\n"
+    "gây ra.");
 
 static const u8 sTM20Desc[] = _(
-    "Prevents status\n"
-    "abnormality with a\n"
-    "mystical power.");
+    "Bảo vệ cả đội khỏi\n"
+    "trạng thái bất lợi\n"
+    "trong 5 lượt."
+);
 
 static const u8 sTM21Desc[] = _(
-    "The less the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "Mạnh hơn khi độ\n"
+    "thân thiết thấp.");
 
 static const u8 sTM22Desc[] = _(
-    "Absorbs sunlight in\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "Hấp thụ ánh sáng,\n"
+    "tấn công ở lượt\n"
+    "sau.");
 
 static const u8 sTM23Desc[] = _(
-    "Slams the foe with\n"
-    "a hard tail. It may\n"
-    "lower DEFENSE.");
+    "Quật bằng đuôi cứng,\n"
+    "có thể giảm DEFENSE."
+);
 
 static const u8 sTM24Desc[] = _(
-    "A powerful electric\n"
-    "attack that may\n"
-    "cause paralysis.");
+    "Phóng điện mạnh, có\n"
+    "thể làm đối thủ tê\n"
+    "liệt.");
 
 static const u8 sTM25Desc[] = _(
-    "Strikes the foe\n"
-    "with a thunderbolt.\n"
-    "It may paralyze.");
+    "Gọi sét đánh, có\n"
+    "thể gây tê liệt."
+);
 
 static const u8 sTM26Desc[] = _(
-    "Causes a quake\n"
-    "that has no effect\n"
-    "on flying foes.");
+    "Động đất cực mạnh,\n"
+    "vô hiệu với hệ\n"
+    "FLYING.");
 
 static const u8 sTM27Desc[] = _(
-    "The more the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "Mạnh hơn khi độ\n"
+    "thân thiết cao.");
 
 static const u8 sTM28Desc[] = _(
-    "Digs underground\n"
-    "the 1st turn, then\n"
-    "strikes next turn.");
+    "Lượt 1: Đào hang\n"
+    "Lượt 2: Tấn công");
 
 static const u8 sTM29Desc[] = _(
-    "A powerful psychic\n"
-    "attack that may\n"
-    "lower SP. DEF.");
+    "Đòn PSYCHIC mạnh,\n"
+    "có thể giảm SP.\n"
+    "DEF.");
 
 static const u8 sTM30Desc[] = _(
-    "Hurls a dark lump\n"
-    "at the foe. It may\n"
-    "lower SP. DEF.");
+    "Ném khối bóng tối,\n"
+    "có thể giảm SP.\n"
+    "DEF.");
 
 static const u8 sTM31Desc[] = _(
-    "Destroys barriers\n"
-    "like LIGHT SCREEN\n"
-    "and causes damage.");
+    "Phá REFLECT, LIGHT\n"
+    "SCREEN rồi gây sát\n"
+    "thương.");
 
 static const u8 sTM32Desc[] = _(
-    "Creates illusory\n"
-    "copies to enhance\n"
-    "elusiveness.");
+    "Tạo phân thân ảo để\n"
+    "tăng né tránh."
+);
 
 static const u8 sTM33Desc[] = _(
-    "Creates a wall of\n"
-    "light that weakens\n"
-    "physical attacks.");
+    "Tạo hàng rào làm\n"
+    "yếu các đòn vật lý."
+);
 
 static const u8 sTM34Desc[] = _(
-    "Zaps the foe with a\n"
-    "jolt of electricity\n"
-    "that never misses.");
+    "Phóng điện cực\n"
+    "nhanh, không bao\n"
+    "giờ trượt.");
 
 static const u8 sTM35Desc[] = _(
-    "Looses a stream of\n"
-    "fire that may burn\n"
-    "the foe.");
+    "Phun lửa mạnh, có\n"
+    "thể gây bỏng.");
 
 static const u8 sTM36Desc[] = _(
-    "Hurls sludge at the\n"
-    "foe. It may poison\n"
-    "the foe.");
+    "Ném bùn độc, có thể\n"
+    "khiến đối thủ trúng\n"
+    "độc.");
 
 static const u8 sTM37Desc[] = _(
-    "Causes a sandstorm\n"
-    "that hits the foe\n"
-    "over several turns.");
+    "Gọi bão cát gây hại\n"
+    "trong nhiều lượt."
+);
 
 static const u8 sTM38Desc[] = _(
-    "A powerful fire\n"
-    "attack that may\n"
-    "burn the foe.");
+    "Thiêu đốt đối thủ,\n"
+    "có thể gây bỏng.");
 
 static const u8 sTM39Desc[] = _(
-    "Stops the foe from\n"
-    "moving with rocks.\n"
-    "May lower SPEED.");
+    "Vùi bằng đá và giảm\n"
+    "SPEED đối thủ.");
 
 static const u8 sTM40Desc[] = _(
-    "An extremely fast\n"
-    "attack that can't\n"
-    "be avoided.");
+    "Tấn công cực nhanh,\n"
+    "không bao giờ\n"
+    "trượt.");
 
 static const u8 sTM41Desc[] = _(
-    "Prevents the foe\n"
-    "from using the same\n"
-    "move in a row.");
+    "Không cho đối thủ\n"
+    "dùng một chiêu liên\n"
+    "tiếp.");
 
 static const u8 sTM42Desc[] = _(
-    "Raises ATTACK when\n"
-    "poisoned, burned,\n"
-    "or paralyzed.");
+    "Mạnh hơn khi bản\n"
+    "thân bỏng, độc hoặc\n"
+    "tê liệt."
+);
 
 static const u8 sTM43Desc[] = _(
-    "Adds an effect to\n"
-    "attack depending\n"
-    "on the location.");
+    "Hiệu ứng thay đổi\n"
+    "tùy theo địa hình.");
 
 static const u8 sTM44Desc[] = _(
-    "The user sleeps for\n"
-    "2 turns to restore\n"
-    "health and status.");
+    "Ngủ 2 lượt, hồi đầy\n"
+    "HP và chữa trạng\n"
+    "thái bất lợi."
+);
 
 static const u8 sTM45Desc[] = _(
-    "Makes it tough to\n"
-    "attack a foe of the\n"
-    "opposite gender.");
+    "Làm đối thủ khác\n"
+    "giới si mê.");
 
 static const u8 sTM46Desc[] = _(
-    "While attacking,\n"
-    "it may steal the\n"
-    "foe's held item.");
+    "Tấn công, có thể\n"
+    "cướp vật phẩm đối\n"
+    "thủ đang giữ."
+);
 
 static const u8 sTM47Desc[] = _(
-    "Spreads hard-\n"
-    "edged wings and\n"
-    "slams into the foe.");
+    "Cánh cứng đập vào\n"
+    "đối thủ.");
 
 static const u8 sTM48Desc[] = _(
-    "Switches abilities\n"
-    "with the foe on the\n"
-    "turn this is used.");
+    "Hoán đổi Ability\n"
+    "với mục tiêu.");
 
 static const u8 sTM49Desc[] = _(
-    "Steals the effects\n"
-    "of the move the foe\n"
-    "is trying to use.");
+    "Cướp hiệu ứng chiêu\n"
+    "đối thủ sắp dùng.");
 
 static const u8 sTM50Desc[] = _(
-    "Enables full-power\n"
-    "attack, but sharply\n"
-    "lowers SP. ATK.");
-
+    "Đòn cực mạnh nhưng\n"
+    "giảm mạnh SP. ATK.");
 
 static const u8 sHM01Desc[] = _(
-    "Attacks the foe\n"
-    "with sharp blades\n"
-    "or claws.");
+    "Chém đối thủ bằng\n"
+    "lưỡi hái hoặc vuốt.");
 
 static const u8 sHM02Desc[] = _(
-    "Flies up on the\n"
-    "first turn, then\n"
-    "attacks next turn.");
+    "Bay lên ở lượt đầu,\n"
+    "tấn công ở lượt\n"
+    "sau.");
 
 static const u8 sHM03Desc[] = _(
-    "Creates a huge\n"
-    "wave, then crashes\n"
-    "it down on the foe.");
+    "Tạo sóng lớn rồi\n"
+    "đánh ập vào đối\n"
+    "thủ.");
 
 static const u8 sHM04Desc[] = _(
-    "Builds enormous\n"
-    "power, then slams\n"
-    "the foe.");
+    "Dồn sức mạnh rồi\n"
+    "đập vào đối thủ."
+);
 
 static const u8 sHM05Desc[] = _(
-    "Looses a powerful\n"
-    "blast of light that\n"
-    "reduces accuracy.");
+    "Phát luồng sáng mạnh\n"
+    "làm giảm chính xác."
+);
 
 static const u8 sHM06Desc[] = _(
-    "A rock-crushingly\n"
-    "tough attack that\n"
-    "may lower DEFENSE.");
+    "Nghiền đá tấn công,\n"
+    "có thể giảm DEFENSE."
+);
 
 static const u8 sHM07Desc[] = _(
-    "Attacks the foe\n"
-    "with enough power\n"
-    "to climb waterfalls.");
+    "Lao vào đối thủ với\n"
+    "sức mạnh vượt thác."
+);
 
 static const u8 sHM08Desc[] = _(
-    "Dives underwater\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "Lặn ở lượt đầu, tấn\n"
+    "công ở lượt sau.");
 
 // FireRed/LeafGreen key items
 static const u8 sOaksParcelDesc[] = _(
-    "A parcel for PROF.\n"
-    "OAK from a POKéMON\n"
-    "MART's clerk.");
+    "Bưu kiện từ POKéMON\n"
+    "MART cho PROF. OAK.");
 
 static const u8 sPokeFluteDesc[] = _(
-    "A sweet-sounding\n"
-    "flute that awakens\n"
-    "POKéMON.");
+    "Tiếng sáo êm dịu\n"
+    "đánh thức POKéMON.");
 
 static const u8 sSecretKeyDesc[] = _(
-    "The key to the\n"
-    "CINNABAR ISLAND\n"
-    "GYM's entrance.");
+    "Chìa khóa vào GYM\n"
+    "trên CINNABAR\n"
+    "ISLAND.");
 
 static const u8 sBikeVoucherDesc[] = _(
-    "A voucher for\n"
-    "obtaining a bicycle\n"
-    "from the BIKE SHOP.");
+    "Phiếu đổi xe đạp\n"
+    "tại BIKE SHOP.");
 
 static const u8 sGoldTeethDesc[] = _(
-    "Gold dentures lost\n"
-    "by the SAFARI\n"
-    "ZONE's WARDEN.");
+    "Răng vàng WARDEN\n"
+    "làm mất ở SAFARI\n"
+    "ZONE.");
 
 static const u8 sOldAmberDesc[] = _(
-    "A stone containing\n"
-    "the genes of an\n"
-    "ancient POKéMON.");
+    "Hổ phách chứa gen\n"
+    "POKéMON cổ đại.");
 
 static const u8 sCardKeyDesc[] = _(
-    "A card-type door\n"
-    "key used in SILPH\n"
-    "CO's office.");
+    "Thẻ khóa dùng trong\n"
+    "văn phòng SILPH CO.");
 
 static const u8 sLiftKeyDesc[] = _(
-    "An elevator key\n"
-    "used in TEAM\n"
-    "ROCKET's HIDEOUT.");
+    "Chìa khóa thang máy\n"
+    "TEAM ROCKET\n"
+    "HIDEOUT.");
 
 static const u8 sHelixFossilDesc[] = _(
-    "A piece of an\n"
-    "ancient marine\n"
-    "POKéMON's seashell.");
+    "Mảnh vỏ của POKéMON\n"
+    "biển cổ đại.");
 
 static const u8 sDomeFossilDesc[] = _(
-    "A piece of an\n"
-    "ancient marine\n"
-    "POKéMON's shell.");
+    "Mảnh vỏ cứng của\n"
+    "POKéMON biển\n"
+    "cổ đại."
+);
 
 static const u8 sSilphScopeDesc[] = _(
-    "SILPH CO's scope\n"
-    "makes unseeable\n"
-    "POKéMON visible.");
+    "Ống ngắm SILPH CO.\n"
+    "hiện POKéMON\n"
+    "vô hình.");
 
 static const u8 sBicycleDesc[] = _(
-    "A folding bicycle\n"
-    "that is faster than\n"
-    "the RUNNING SHOES.");
+    "Xe đạp gấp gọn\n"
+    "di chuyển nhanh.");
 
 static const u8 sTownMapDesc[] = _(
-    "Can be viewed\n"
-    "anytime. Shows your\n"
-    "present location.");
+    "Bản đồ xem vị trí\n"
+    "hiện tại bất cứ\n"
+    "lúc nào.");
 
 static const u8 sVSSeekerDesc[] = _(
-    "A rechargeable unit\n"
-    "that flags battle-\n"
-    "ready TRAINERS.");
+    "Thiết bị tìm HLV\n"
+    "sẵn sàng tái đấu.");
 
 static const u8 sFameCheckerDesc[] = _(
-    "Stores information\n"
-    "on famous people\n"
-    "for instant recall.");
+    "Lưu thông tin về\n"
+    "những người\n"
+    "nổi tiếng.");
 
 static const u8 sTMCaseDesc[] = _(
-    "A convenient case \n"
-    "that holds TMs and\n"
-    "HMs.");
+    "Hộp tiện dụng\n"
+    "để chứa TM và HM.");
 
 static const u8 sBerryPouchDesc[] = _(
-    "A convenient\n"
-    "container that\n"
-    "holds BERRIES.");
+    "Túi tiện dụng\n"
+    "để chứa BERRY.");
 
 static const u8 sTeachyTVDesc[] = _(
-    "A TV set tuned to\n"
-    "an advice program\n"
-    "for TRAINERS.");
+    "TV phát chương\n"
+    "trình hướng dẫn\n"
+    "HLV.");
 
 static const u8 sTriPassDesc[] = _(
-    "A pass for ferries\n"
-    "between ONE, TWO,\n"
-    "and THREE ISLAND.");
+    "Vé tàu giữa ONE,\n"
+    "TWO và THREE ISLAND.");
 
 static const u8 sRainbowPassDesc[] = _(
-    "For ferries serving\n"
-    "VERMILION and the\n"
+    "Vé tàu giữa\n"
+    "VERMILION và\n"
     "SEVII ISLANDS.");
 
 static const u8 sTeaDesc[] = _(
-    "A thirst-quenching\n"
-    "tea prepared by an\n"
-    "old lady.");
+    "Trà giải khát do\n"
+    "một bà lão pha.");
 
 static const u8 sMysticTicketDesc[] = _(
-    "A ticket required\n"
-    "to board the ship\n"
-    "to NAVEL ROCK.");
+    "Vé lên tàu đến\n"
+    "NAVEL ROCK.");
 
 static const u8 sAuroraTicketDesc[] = _(
-    "A ticket required\n"
-    "to board the ship\n"
-    "to BIRTH ISLAND.");
+    "Vé lên tàu đến\n"
+    "BIRTH ISLAND.");
 
 static const u8 sPowderJarDesc[] = _(
-    "Stores BERRY\n"
-    "POWDER made using\n"
-    "a BERRY CRUSHER.");
+    "Lọ chứa BERRY\n"
+    "POWDER từ BERRY\n"
+    "CRUSHER.");
 
 static const u8 sRubyDesc[] = _(
-    "An exquisite, red-\n"
-    "glowing gem that\n"
-    "symbolizes passion.");
+    "Đá quý đỏ rực\n"
+    "tượng trưng đam mê.");
 
 static const u8 sSapphireDesc[] = _(
-    "A brilliant blue gem\n"
-    "that symbolizes\n"
-    "honesty.");
+    "Đá quý xanh sáng\n"
+    "tượng trưng sự\n"
+    "trung thực.");
 
 // Emerald-specific key items
 static const u8 sMagmaEmblemDesc[] = _(
-    "A medal-like item in\n"
-    "the same shape as\n"
-    "TEAM MAGMA's mark.");
+    "Huy hiệu mang\n"
+    "biểu tượng\n"
+    "TEAM MAGMA.");
 
 static const u8 sOldSeaMapDesc[] = _(
-    "A faded sea chart\n"
-    "that shows the way\n"
-    "to a certain island.");
+    "Hải đồ cũ chỉ đường\n"
+    "đến một hòn đảo.");
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C01410 = sMasterBallDesc;
+const u8 *const gLocalizationSource_C01411 = sUltraBallDesc;
+const u8 *const gLocalizationSource_C01412 = sGreatBallDesc;
+const u8 *const gLocalizationSource_C01413 = sPokeBallDesc;
+const u8 *const gLocalizationSource_C01414 = sSafariBallDesc;
+const u8 *const gLocalizationSource_C01415 = sNetBallDesc;
+const u8 *const gLocalizationSource_C01416 = sDiveBallDesc;
+const u8 *const gLocalizationSource_C01417 = sNestBallDesc;
+const u8 *const gLocalizationSource_C01418 = sRepeatBallDesc;
+const u8 *const gLocalizationSource_C01419 = sTimerBallDesc;
+const u8 *const gLocalizationSource_C01420 = sLuxuryBallDesc;
+const u8 *const gLocalizationSource_C01421 = sPremierBallDesc;
+const u8 *const gLocalizationSource_C01422 = sPotionDesc;
+const u8 *const gLocalizationSource_C01423 = sAntidoteDesc;
+const u8 *const gLocalizationSource_C01424 = sBurnHealDesc;
+const u8 *const gLocalizationSource_C01425 = sIceHealDesc;
+const u8 *const gLocalizationSource_C01426 = sAwakeningDesc;
+const u8 *const gLocalizationSource_C01427 = sParalyzeHealDesc;
+const u8 *const gLocalizationSource_C01428 = sFullRestoreDesc;
+const u8 *const gLocalizationSource_C01429 = sMaxPotionDesc;
+const u8 *const gLocalizationSource_C01430 = sHyperPotionDesc;
+const u8 *const gLocalizationSource_C01431 = sSuperPotionDesc;
+const u8 *const gLocalizationSource_C01432 = sFullHealDesc;
+const u8 *const gLocalizationSource_C01433 = sReviveDesc;
+const u8 *const gLocalizationSource_C01434 = sMaxReviveDesc;
+const u8 *const gLocalizationSource_C01435 = sFreshWaterDesc;
+const u8 *const gLocalizationSource_C01436 = sSodaPopDesc;
+const u8 *const gLocalizationSource_C01437 = sLemonadeDesc;
+const u8 *const gLocalizationSource_C01438 = sMoomooMilkDesc;
+const u8 *const gLocalizationSource_C01439 = sEnergyPowderDesc;
+const u8 *const gLocalizationSource_C01440 = sEnergyRootDesc;
+const u8 *const gLocalizationSource_C01441 = sHealPowderDesc;
+const u8 *const gLocalizationSource_C01442 = sRevivalHerbDesc;
+const u8 *const gLocalizationSource_C01443 = sEtherDesc;
+const u8 *const gLocalizationSource_C01444 = sMaxEtherDesc;
+const u8 *const gLocalizationSource_C01445 = sElixirDesc;
+const u8 *const gLocalizationSource_C01446 = sMaxElixirDesc;
+const u8 *const gLocalizationSource_C01447 = sLavaCookieDesc;
+const u8 *const gLocalizationSource_C01448 = sBlueFluteDesc;
+const u8 *const gLocalizationSource_C01449 = sYellowFluteDesc;
+const u8 *const gLocalizationSource_C01450 = sRedFluteDesc;
+const u8 *const gLocalizationSource_C01451 = sBlackFluteDesc;
+const u8 *const gLocalizationSource_C01452 = sWhiteFluteDesc;
+const u8 *const gLocalizationSource_C01453 = sBerryJuiceDesc;
+const u8 *const gLocalizationSource_C01454 = sSacredAshDesc;
+const u8 *const gLocalizationSource_C01455 = sShoalSaltDesc;
+const u8 *const gLocalizationSource_C01456 = sShoalShellDesc;
+const u8 *const gLocalizationSource_C01457 = sRedShardDesc;
+const u8 *const gLocalizationSource_C01458 = sBlueShardDesc;
+const u8 *const gLocalizationSource_C01459 = sYellowShardDesc;
+const u8 *const gLocalizationSource_C01460 = sGreenShardDesc;
+const u8 *const gLocalizationSource_C01461 = sHPUpDesc;
+const u8 *const gLocalizationSource_C01462 = sProteinDesc;
+const u8 *const gLocalizationSource_C01463 = sIronDesc;
+const u8 *const gLocalizationSource_C01464 = sCarbosDesc;
+const u8 *const gLocalizationSource_C01465 = sCalciumDesc;
+const u8 *const gLocalizationSource_C01466 = sRareCandyDesc;
+const u8 *const gLocalizationSource_C01467 = sPPUpDesc;
+const u8 *const gLocalizationSource_C01468 = sZincDesc;
+const u8 *const gLocalizationSource_C01469 = sPPMaxDesc;
+const u8 *const gLocalizationSource_C01470 = sGuardSpecDesc;
+const u8 *const gLocalizationSource_C01471 = sDireHitDesc;
+const u8 *const gLocalizationSource_C01472 = sXAttackDesc;
+const u8 *const gLocalizationSource_C01473 = sXDefendDesc;
+const u8 *const gLocalizationSource_C01474 = sXSpeedDesc;
+const u8 *const gLocalizationSource_C01475 = sXAccuracyDesc;
+const u8 *const gLocalizationSource_C01476 = sXSpecialDesc;
+const u8 *const gLocalizationSource_C01477 = sPokeDollDesc;
+const u8 *const gLocalizationSource_C01478 = sFluffyTailDesc;
+const u8 *const gLocalizationSource_C01479 = sSuperRepelDesc;
+const u8 *const gLocalizationSource_C01480 = sMaxRepelDesc;
+const u8 *const gLocalizationSource_C01481 = sEscapeRopeDesc;
+const u8 *const gLocalizationSource_C01482 = sRepelDesc;
+const u8 *const gLocalizationSource_C01483 = sSunStoneDesc;
+const u8 *const gLocalizationSource_C01484 = sMoonStoneDesc;
+const u8 *const gLocalizationSource_C01485 = sFireStoneDesc;
+const u8 *const gLocalizationSource_C01486 = sThunderStoneDesc;
+const u8 *const gLocalizationSource_C01487 = sWaterStoneDesc;
+const u8 *const gLocalizationSource_C01488 = sLeafStoneDesc;
+const u8 *const gLocalizationSource_C01489 = sTinyMushroomDesc;
+const u8 *const gLocalizationSource_C01490 = sBigMushroomDesc;
+const u8 *const gLocalizationSource_C01491 = sPearlDesc;
+const u8 *const gLocalizationSource_C01492 = sBigPearlDesc;
+const u8 *const gLocalizationSource_C01493 = sStardustDesc;
+const u8 *const gLocalizationSource_C01494 = sStarPieceDesc;
+const u8 *const gLocalizationSource_C01495 = sNuggetDesc;
+const u8 *const gLocalizationSource_C01496 = sHeartScaleDesc;
+const u8 *const gLocalizationSource_C01497 = sOrangeMailDesc;
+const u8 *const gLocalizationSource_C01498 = sHarborMailDesc;
+const u8 *const gLocalizationSource_C01499 = sGlitterMailDesc;
+const u8 *const gLocalizationSource_C01500 = sMechMailDesc;
+const u8 *const gLocalizationSource_C01501 = sWoodMailDesc;
+const u8 *const gLocalizationSource_C01502 = sWaveMailDesc;
+const u8 *const gLocalizationSource_C01503 = sBeadMailDesc;
+const u8 *const gLocalizationSource_C01504 = sShadowMailDesc;
+const u8 *const gLocalizationSource_C01505 = sTropicMailDesc;
+const u8 *const gLocalizationSource_C01506 = sDreamMailDesc;
+const u8 *const gLocalizationSource_C01507 = sFabMailDesc;
+const u8 *const gLocalizationSource_C01508 = sRetroMailDesc;
+const u8 *const gLocalizationSource_C01509 = sCheriBerryDesc;
+const u8 *const gLocalizationSource_C01510 = sChestoBerryDesc;
+const u8 *const gLocalizationSource_C01511 = sPechaBerryDesc;
+const u8 *const gLocalizationSource_C01512 = sRawstBerryDesc;
+const u8 *const gLocalizationSource_C01513 = sAspearBerryDesc;
+const u8 *const gLocalizationSource_C01514 = sLeppaBerryDesc;
+const u8 *const gLocalizationSource_C01515 = sOranBerryDesc;
+const u8 *const gLocalizationSource_C01516 = sPersimBerryDesc;
+const u8 *const gLocalizationSource_C01517 = sLumBerryDesc;
+const u8 *const gLocalizationSource_C01518 = sSitrusBerryDesc;
+const u8 *const gLocalizationSource_C01519 = sFigyBerryDesc;
+const u8 *const gLocalizationSource_C01520 = sWikiBerryDesc;
+const u8 *const gLocalizationSource_C01521 = sMagoBerryDesc;
+const u8 *const gLocalizationSource_C01522 = sAguavBerryDesc;
+const u8 *const gLocalizationSource_C01523 = sIapapaBerryDesc;
+const u8 *const gLocalizationSource_C01524 = sRazzBerryDesc;
+const u8 *const gLocalizationSource_C01525 = sBlukBerryDesc;
+const u8 *const gLocalizationSource_C01526 = sNanabBerryDesc;
+const u8 *const gLocalizationSource_C01527 = sWepearBerryDesc;
+const u8 *const gLocalizationSource_C01528 = sPinapBerryDesc;
+const u8 *const gLocalizationSource_C01529 = sPomegBerryDesc;
+const u8 *const gLocalizationSource_C01530 = sKelpsyBerryDesc;
+const u8 *const gLocalizationSource_C01531 = sQualotBerryDesc;
+const u8 *const gLocalizationSource_C01532 = sHondewBerryDesc;
+const u8 *const gLocalizationSource_C01533 = sGrepaBerryDesc;
+const u8 *const gLocalizationSource_C01534 = sTamatoBerryDesc;
+const u8 *const gLocalizationSource_C01535 = sCornnBerryDesc;
+const u8 *const gLocalizationSource_C01536 = sMagostBerryDesc;
+const u8 *const gLocalizationSource_C01537 = sRabutaBerryDesc;
+const u8 *const gLocalizationSource_C01538 = sNomelBerryDesc;
+const u8 *const gLocalizationSource_C01539 = sSpelonBerryDesc;
+const u8 *const gLocalizationSource_C01540 = sPamtreBerryDesc;
+const u8 *const gLocalizationSource_C01541 = sWatmelBerryDesc;
+const u8 *const gLocalizationSource_C01542 = sDurinBerryDesc;
+const u8 *const gLocalizationSource_C01543 = sBelueBerryDesc;
+const u8 *const gLocalizationSource_C01544 = sLiechiBerryDesc;
+const u8 *const gLocalizationSource_C01545 = sGanlonBerryDesc;
+const u8 *const gLocalizationSource_C01546 = sSalacBerryDesc;
+const u8 *const gLocalizationSource_C01547 = sPetayaBerryDesc;
+const u8 *const gLocalizationSource_C01548 = sApicotBerryDesc;
+const u8 *const gLocalizationSource_C01549 = sLansatBerryDesc;
+const u8 *const gLocalizationSource_C01550 = sStarfBerryDesc;
+const u8 *const gLocalizationSource_C01551 = sEnigmaBerryDesc;
+const u8 *const gLocalizationSource_C01552 = sBrightPowderDesc;
+const u8 *const gLocalizationSource_C01553 = sWhiteHerbDesc;
+const u8 *const gLocalizationSource_C01554 = sMachoBraceDesc;
+const u8 *const gLocalizationSource_C01555 = sExpShareDesc;
+const u8 *const gLocalizationSource_C01556 = sQuickClawDesc;
+const u8 *const gLocalizationSource_C01557 = sSootheBellDesc;
+const u8 *const gLocalizationSource_C01558 = sMentalHerbDesc;
+const u8 *const gLocalizationSource_C01559 = sChoiceBandDesc;
+const u8 *const gLocalizationSource_C01560 = sKingsRockDesc;
+const u8 *const gLocalizationSource_C01561 = sSilverPowderDesc;
+const u8 *const gLocalizationSource_C01562 = sAmuletCoinDesc;
+const u8 *const gLocalizationSource_C01563 = sCleanseTagDesc;
+const u8 *const gLocalizationSource_C01564 = sSoulDewDesc;
+const u8 *const gLocalizationSource_C01565 = sDeepSeaToothDesc;
+const u8 *const gLocalizationSource_C01566 = sDeepSeaScaleDesc;
+const u8 *const gLocalizationSource_C01567 = sSmokeBallDesc;
+const u8 *const gLocalizationSource_C01568 = sEverstoneDesc;
+const u8 *const gLocalizationSource_C01569 = sFocusBandDesc;
+const u8 *const gLocalizationSource_C01570 = sLuckyEggDesc;
+const u8 *const gLocalizationSource_C01571 = sScopeLensDesc;
+const u8 *const gLocalizationSource_C01572 = sMetalCoatDesc;
+const u8 *const gLocalizationSource_C01573 = sLeftoversDesc;
+const u8 *const gLocalizationSource_C01574 = sDragonScaleDesc;
+const u8 *const gLocalizationSource_C01575 = sLightBallDesc;
+const u8 *const gLocalizationSource_C01576 = sSoftSandDesc;
+const u8 *const gLocalizationSource_C01577 = sHardStoneDesc;
+const u8 *const gLocalizationSource_C01578 = sMiracleSeedDesc;
+const u8 *const gLocalizationSource_C01579 = sBlackGlassesDesc;
+const u8 *const gLocalizationSource_C01580 = sBlackBeltDesc;
+const u8 *const gLocalizationSource_C01581 = sMagnetDesc;
+const u8 *const gLocalizationSource_C01582 = sMysticWaterDesc;
+const u8 *const gLocalizationSource_C01583 = sSharpBeakDesc;
+const u8 *const gLocalizationSource_C01584 = sPoisonBarbDesc;
+const u8 *const gLocalizationSource_C01585 = sNeverMeltIceDesc;
+const u8 *const gLocalizationSource_C01586 = sSpellTagDesc;
+const u8 *const gLocalizationSource_C01587 = sTwistedSpoonDesc;
+const u8 *const gLocalizationSource_C01588 = sCharcoalDesc;
+const u8 *const gLocalizationSource_C01589 = sDragonFangDesc;
+const u8 *const gLocalizationSource_C01590 = sSilkScarfDesc;
+const u8 *const gLocalizationSource_C01591 = sUpGradeDesc;
+const u8 *const gLocalizationSource_C01592 = sShellBellDesc;
+const u8 *const gLocalizationSource_C01593 = sSeaIncenseDesc;
+const u8 *const gLocalizationSource_C01594 = sLaxIncenseDesc;
+const u8 *const gLocalizationSource_C01595 = sLuckyPunchDesc;
+const u8 *const gLocalizationSource_C01596 = sMetalPowderDesc;
+const u8 *const gLocalizationSource_C01597 = sThickClubDesc;
+const u8 *const gLocalizationSource_C01598 = sStickDesc;
+const u8 *const gLocalizationSource_C01599 = sAbilityPatchDesc;
+const u8 *const gLocalizationSource_C01600 = sRedScarfDesc;
+const u8 *const gLocalizationSource_C01601 = sBlueScarfDesc;
+const u8 *const gLocalizationSource_C01602 = sPinkScarfDesc;
+const u8 *const gLocalizationSource_C01603 = sGreenScarfDesc;
+const u8 *const gLocalizationSource_C01604 = sYellowScarfDesc;
+const u8 *const gLocalizationSource_C01605 = sMachBikeDesc;
+const u8 *const gLocalizationSource_C01606 = sCoinCaseDesc;
+const u8 *const gLocalizationSource_C01607 = sItemfinderDesc;
+const u8 *const gLocalizationSource_C01608 = sOldRodDesc;
+const u8 *const gLocalizationSource_C01609 = sGoodRodDesc;
+const u8 *const gLocalizationSource_C01610 = sSuperRodDesc;
+const u8 *const gLocalizationSource_C01611 = sSSTicketDesc;
+const u8 *const gLocalizationSource_C01612 = sContestPassDesc;
+const u8 *const gLocalizationSource_C01613 = sWailmerPailDesc;
+const u8 *const gLocalizationSource_C01614 = sDevonGoodsDesc;
+const u8 *const gLocalizationSource_C01615 = sSootSackDesc;
+const u8 *const gLocalizationSource_C01616 = sBasementKeyDesc;
+const u8 *const gLocalizationSource_C01617 = sAcroBikeDesc;
+const u8 *const gLocalizationSource_C01618 = sPokeblockCaseDesc;
+const u8 *const gLocalizationSource_C01619 = sLetterDesc;
+const u8 *const gLocalizationSource_C01620 = sEonTicketDesc;
+const u8 *const gLocalizationSource_C01621 = sRedOrbDesc;
+const u8 *const gLocalizationSource_C01622 = sBlueOrbDesc;
+const u8 *const gLocalizationSource_C01623 = sScannerDesc;
+const u8 *const gLocalizationSource_C01624 = sGoGogglesDesc;
+const u8 *const gLocalizationSource_C01625 = sMeteoriteDesc;
+const u8 *const gLocalizationSource_C01626 = sRoom1KeyDesc;
+const u8 *const gLocalizationSource_C01627 = sRoom2KeyDesc;
+const u8 *const gLocalizationSource_C01628 = sRoom4KeyDesc;
+const u8 *const gLocalizationSource_C01629 = sRoom6KeyDesc;
+const u8 *const gLocalizationSource_C01630 = sStorageKeyDesc;
+const u8 *const gLocalizationSource_C01631 = sRootFossilDesc;
+const u8 *const gLocalizationSource_C01632 = sClawFossilDesc;
+const u8 *const gLocalizationSource_C01633 = sDevonScopeDesc;
+const u8 *const gLocalizationSource_C01634 = sTM01Desc;
+const u8 *const gLocalizationSource_C01635 = sTM02Desc;
+const u8 *const gLocalizationSource_C01636 = sTM03Desc;
+const u8 *const gLocalizationSource_C01637 = sTM04Desc;
+const u8 *const gLocalizationSource_C01638 = sTM05Desc;
+const u8 *const gLocalizationSource_C01639 = sTM06Desc;
+const u8 *const gLocalizationSource_C01640 = sTM07Desc;
+const u8 *const gLocalizationSource_C01641 = sTM08Desc;
+const u8 *const gLocalizationSource_C01642 = sTM09Desc;
+const u8 *const gLocalizationSource_C01643 = sTM10Desc;
+const u8 *const gLocalizationSource_C01644 = sTM11Desc;
+const u8 *const gLocalizationSource_C01645 = sTM12Desc;
+const u8 *const gLocalizationSource_C01646 = sTM13Desc;
+const u8 *const gLocalizationSource_C01647 = sTM14Desc;
+const u8 *const gLocalizationSource_C01648 = sTM15Desc;
+const u8 *const gLocalizationSource_C01649 = sTM16Desc;
+const u8 *const gLocalizationSource_C01650 = sTM17Desc;
+const u8 *const gLocalizationSource_C01651 = sTM18Desc;
+const u8 *const gLocalizationSource_C01652 = sTM19Desc;
+const u8 *const gLocalizationSource_C01653 = sTM20Desc;
+const u8 *const gLocalizationSource_C01654 = sTM21Desc;
+const u8 *const gLocalizationSource_C01655 = sTM22Desc;
+const u8 *const gLocalizationSource_C01656 = sTM23Desc;
+const u8 *const gLocalizationSource_C01657 = sTM24Desc;
+const u8 *const gLocalizationSource_C01658 = sTM25Desc;
+const u8 *const gLocalizationSource_C01659 = sTM26Desc;
+const u8 *const gLocalizationSource_C01660 = sTM27Desc;
+const u8 *const gLocalizationSource_C01661 = sTM28Desc;
+const u8 *const gLocalizationSource_C01662 = sTM29Desc;
+const u8 *const gLocalizationSource_C01663 = sTM30Desc;
+const u8 *const gLocalizationSource_C01664 = sTM31Desc;
+const u8 *const gLocalizationSource_C01665 = sTM32Desc;
+const u8 *const gLocalizationSource_C01666 = sTM33Desc;
+const u8 *const gLocalizationSource_C01667 = sTM34Desc;
+const u8 *const gLocalizationSource_C01668 = sTM35Desc;
+const u8 *const gLocalizationSource_C01669 = sTM36Desc;
+const u8 *const gLocalizationSource_C01670 = sTM37Desc;
+const u8 *const gLocalizationSource_C01671 = sTM38Desc;
+const u8 *const gLocalizationSource_C01672 = sTM39Desc;
+const u8 *const gLocalizationSource_C01673 = sTM40Desc;
+const u8 *const gLocalizationSource_C01674 = sTM41Desc;
+const u8 *const gLocalizationSource_C01675 = sTM42Desc;
+const u8 *const gLocalizationSource_C01676 = sTM43Desc;
+const u8 *const gLocalizationSource_C01677 = sTM44Desc;
+const u8 *const gLocalizationSource_C01678 = sTM45Desc;
+const u8 *const gLocalizationSource_C01679 = sTM46Desc;
+const u8 *const gLocalizationSource_C01680 = sTM47Desc;
+const u8 *const gLocalizationSource_C01681 = sTM48Desc;
+const u8 *const gLocalizationSource_C01682 = sTM49Desc;
+const u8 *const gLocalizationSource_C01683 = sTM50Desc;
+const u8 *const gLocalizationSource_C01684 = sHM01Desc;
+const u8 *const gLocalizationSource_C01685 = sHM02Desc;
+const u8 *const gLocalizationSource_C01686 = sHM03Desc;
+const u8 *const gLocalizationSource_C01687 = sHM04Desc;
+const u8 *const gLocalizationSource_C01688 = sHM05Desc;
+const u8 *const gLocalizationSource_C01689 = sHM06Desc;
+const u8 *const gLocalizationSource_C01690 = sHM07Desc;
+const u8 *const gLocalizationSource_C01691 = sHM08Desc;
+const u8 *const gLocalizationSource_C01692 = sOaksParcelDesc;
+const u8 *const gLocalizationSource_C01693 = sPokeFluteDesc;
+const u8 *const gLocalizationSource_C01694 = sSecretKeyDesc;
+const u8 *const gLocalizationSource_C01695 = sBikeVoucherDesc;
+const u8 *const gLocalizationSource_C01696 = sGoldTeethDesc;
+const u8 *const gLocalizationSource_C01697 = sOldAmberDesc;
+const u8 *const gLocalizationSource_C01698 = sCardKeyDesc;
+const u8 *const gLocalizationSource_C01699 = sLiftKeyDesc;
+const u8 *const gLocalizationSource_C01700 = sHelixFossilDesc;
+const u8 *const gLocalizationSource_C01701 = sDomeFossilDesc;
+const u8 *const gLocalizationSource_C01702 = sSilphScopeDesc;
+const u8 *const gLocalizationSource_C01703 = sBicycleDesc;
+const u8 *const gLocalizationSource_C01704 = sTownMapDesc;
+const u8 *const gLocalizationSource_C01705 = sVSSeekerDesc;
+const u8 *const gLocalizationSource_C01706 = sFameCheckerDesc;
+const u8 *const gLocalizationSource_C01707 = sTMCaseDesc;
+const u8 *const gLocalizationSource_C01708 = sBerryPouchDesc;
+const u8 *const gLocalizationSource_C01709 = sTeachyTVDesc;
+const u8 *const gLocalizationSource_C01710 = sTriPassDesc;
+const u8 *const gLocalizationSource_C01711 = sRainbowPassDesc;
+const u8 *const gLocalizationSource_C01712 = sTeaDesc;
+const u8 *const gLocalizationSource_C01713 = sMysticTicketDesc;
+const u8 *const gLocalizationSource_C01714 = sAuroraTicketDesc;
+const u8 *const gLocalizationSource_C01715 = sPowderJarDesc;
+const u8 *const gLocalizationSource_C01716 = sRubyDesc;
+const u8 *const gLocalizationSource_C01717 = sSapphireDesc;
+const u8 *const gLocalizationSource_C01718 = sMagmaEmblemDesc;
+const u8 *const gLocalizationSource_C01719 = sOldSeaMapDesc;
+// END GENERATED LOCALIZATION EXPORTS

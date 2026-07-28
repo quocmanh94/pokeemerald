@@ -85,6 +85,9 @@ BattleFrontier_BattleArenaCorridor_Movement_AttendantMoveOutOfWay:
 	step_end
 
 BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn:
-	.string "Your battles shall be waged in\n"
-	.string "the next room. Please step in!$"
+	.string "Các trận đấu của bạn sẽ diễn ra ở phòng\n"
+	.string "kế tiếp. Xin mời vào!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn
+@ END GENERATED LOCALIZATION EXPORTS

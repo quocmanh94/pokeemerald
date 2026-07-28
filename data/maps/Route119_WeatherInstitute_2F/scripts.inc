@@ -204,123 +204,144 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
+	.string "INSTITUTE đã tạo ra một loài POKéMON\n"
+	.string "có liên quan đến thời tiết. Bọn ta đến\l"
+	.string "đây để bắt chúng!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
-	.string "Our plan's being spoiled by a kid?$"
+	.string "Kế hoạch của bọn ta lại bị một đứa nhóc\n"
+	.string "phá hỏng sao?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
-	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
+	.string "Nếu POKéMON được tạo ra ở đây có thể\n"
+	.string "tự do điều khiển thời tiết thì TEAM\l"
+	.string "AQUA bọn ta nhất định phải có nó!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "We're TEAM AQUA!\n"
-	.string "We appear wherever anything rare is\l"
-	.string "found!$"
+	.string "Bọn ta là TEAM AQUA! Nơi nào phát hiện\n"
+	.string "thứ quý hiếm, nơi đó bọn ta xuất hiện!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-	.string "You got me!$"
+	.string "Ngươi hạ được ta rồi!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "You don't have any idea what we of\n"
-	.string "TEAM AQUA are working towards!\l"
-	.string "You stay out of our way!$"
+	.string "Ngươi chẳng biết TEAM AQUA bọn ta đang\n"
+	.string "hướng tới điều gì đâu! Đừng cản\l"
+	.string "đường bọn ta!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "Don't tell me you're looking for that\n"
-	.string "weather POKéMON, too?\p"
-	.string "That's a no-no!\n"
-	.string "We were here to get it first!$"
+	.string "Đừng nói là nhóc cũng đang tìm POKéMON\n"
+	.string "thời tiết đó nhé?\p"
+	.string "Không được đâu! Bọn ta đến đây lấy nó\n"
+	.string "trước rồi!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "Oh, will you look at my POKéMON?$"
+	.string "Ôi, nhìn POKéMON của ta xem kìa?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "Humph, so what?\n"
-	.string "What we want…\p"
-	.string "What we really want isn't here…\n"
-	.string "Ihihihihi…$"
+	.string "Hừ, thì sao chứ? Thứ bọn ta muốn...\p"
+	.string "Thứ bọn ta thật sự muốn không có ở\n"
+	.string "đây... Hihihihi...$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
-	.string "Ahahahaha!\p"
-	.string "You're going to meddle in TEAM AQUA's\n"
-	.string "affairs?\p"
-	.string "You're either absolutely fearless,\n"
-	.string "simply ignorant, or both!\p"
-	.string "You're so cute, you're disgusting!\n"
-	.string "I'll put you down, kiddy!$"
+	.string "Ahahaha!\p"
+	.string "Nhóc định xen vào chuyện của TEAM AQUA\n"
+	.string "sao?\p"
+	.string "Hoặc là nhóc hoàn toàn không biết sợ,\n"
+	.string "hoặc quá ngây thơ, hoặc cả hai!\p"
+	.string "Nhóc đáng yêu đến phát ghét! Ta sẽ hạ\n"
+	.string "nhóc ngay!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
-	.string "Ahahahaha!\n"
-	.string "You're disgustingly strong!$"
+	.string "Ahahaha! Nhóc mạnh đến phát ghét!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have TEAM MAGMA\n"
-	.string "blunder about, but now there's you!\p"
-	.string "What makes you want to sniff around\n"
-	.string "in our business, anyway?$"
+	.string "TEAM MAGMA phá phách lung tung đã đủ\n"
+	.string "phiền rồi, giờ lại thêm nhóc nữa!\p"
+	.string "Mà sao nhóc cứ thích chõ mũi vào\n"
+	.string "chuyện của bọn ta thế?$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
-	.string "We have a situation here!\p"
-	.string "A TEAM MAGMA mob just passed\n"
-	.string "the WEATHER INSTITUTE.\p"
-	.string "They appear to be headed for\n"
-	.string "MT. PYRE!$"
+	.string "Có chuyện rồi!\p"
+	.string "Một nhóm TEAM MAGMA vừa đi ngang qua\n"
+	.string "WEATHER INSTITUTE.\p"
+	.string "Có vẻ chúng đang tiến về MT. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
-	.string "What?!\p"
-	.string "We can't waste any more time here!\n"
-	.string "We have to hurry to MT. PYRE, too!\p"
-	.string "Ahahahaha!\n"
-	.string "TEAM MAGMA, just you wait!$"
+	.string "Cái gì?!\p"
+	.string "Không thể lãng phí thêm thời gian ở\n"
+	.string "đây! Chúng ta cũng phải mau đến MT.\l"
+	.string "PYRE!\p"
+	.string "Ahahaha! TEAM MAGMA, cứ chờ đấy!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-	.string "Thanks!\n"
-	.string "Thanks to you, we're safe!\p"
-	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "Cảm ơn! Nhờ có bạn mà chúng tôi được\n"
+	.string "an toàn!\p"
+	.string "Cách cảm ơn này có thể hơi kỳ lạ, nhưng\n"
+	.string "hãy nhận lấy POKéMON này.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
-	.string "Hm? You don't seem to have any room\n"
-	.string "for this POKéMON.$"
+	.string "Hmm? Có vẻ bạn không còn chỗ cho\n"
+	.string "POKéMON này.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
-	.string "{PLAYER} received CASTFORM!$"
+	.string "{PLAYER} đã nhận CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That POKéMON changes shape according\n"
-	.string "to the weather conditions.\p"
-	.string "There're plenty of them in the\n"
-	.string "INSTITUTE--go ahead and take it.$"
+	.string "POKéMON đó thay đổi hình dạng tùy theo\n"
+	.string "điều kiện thời tiết.\p"
+	.string "Trong INSTITUTE còn rất nhiều, bạn cứ\n"
+	.string "nhận lấy con này đi.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "I've been researching rain for many\n"
-	.string "years, but it's ridiculous to think that\l"
-	.string "humans can freely change the weather.$"
+	.string "Tôi đã nghiên cứu mưa suốt nhiều năm,\n"
+	.string "nhưng cho rằng con người có thể tùy ý\l"
+	.string "thay đổi thời tiết thì thật nực cười.$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
-	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
-	.string "Presently, a drought has been recorded\n"
-	.string "in {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
-	.string "{STR_VAR_1}…$"
+	.string "Tôi theo dõi các kiểu thời tiết trên\n"
+	.string "toàn vùng HOENN.\p"
+	.string "Hiện tại, một đợt hạn hán đã được ghi\n"
+	.string "nhận tại {STR_VAR_1}.\p"
+	.string "Chẳng lẽ ở đâu đó gần\n"
+	.string "{STR_VAR_1}...$"
 
 Route119_WeatherInstitute_2F_Text_KyogreWeather:
-	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
-	.string "Presently, heavy rainfall has been\n"
-	.string "recorded over {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
-	.string "{STR_VAR_1}…$"
+	.string "Tôi theo dõi các kiểu thời tiết trên\n"
+	.string "toàn vùng HOENN.\p"
+	.string "Hiện tại, mưa lớn đã được ghi nhận tại\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Chẳng lẽ ở đâu đó gần\n"
+	.string "{STR_VAR_1}...$"
 
 Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
-	.string "Abnormal weather conditions are\n"
-	.string "no longer being reported.\p"
-	.string "The occasional rainfall is a blessing,\n"
-	.string "really.$"
+	.string "Không còn báo cáo nào về tình trạng\n"
+	.string "thời tiết bất thường nữa.\p"
+	.string "Thật ra, những cơn mưa thỉnh thoảng\n"
+	.string "kéo đến cũng là một điều may mắn.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route119_WeatherInstitute_2F_Text_Grunt2Intro
+	.global Route119_WeatherInstitute_2F_Text_Grunt2Defeat
+	.global Route119_WeatherInstitute_2F_Text_Grunt2PostBattle
+	.global Route119_WeatherInstitute_2F_Text_Grunt3Intro
+	.global Route119_WeatherInstitute_2F_Text_Grunt3Defeat
+	.global Route119_WeatherInstitute_2F_Text_Grunt3PostBattle
+	.global Route119_WeatherInstitute_2F_Text_Grunt5Intro
+	.global Route119_WeatherInstitute_2F_Text_Grunt5Defeat
+	.global Route119_WeatherInstitute_2F_Text_Grunt5PostBattle
+	.global Route119_WeatherInstitute_2F_Text_ShellyIntro
+	.global Route119_WeatherInstitute_2F_Text_ShellyDefeat
+	.global Route119_WeatherInstitute_2F_Text_ShellyPostBattle
+	.global Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy
+	.global Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre
+	.global Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon
+	.global Route119_WeatherInstitute_2F_Text_NoRoomForPokemon
+	.global Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
+	.global Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather
+	.global Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous
+	.global Route119_WeatherInstitute_2F_Text_GroudonWeather
+	.global Route119_WeatherInstitute_2F_Text_KyogreWeather
+	.global Route119_WeatherInstitute_2F_Text_NoAbnormalWeather
+@ END GENERATED LOCALIZATION EXPORTS

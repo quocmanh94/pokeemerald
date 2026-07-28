@@ -37,24 +37,23 @@ static void BerryFix_HideScene(void);
 static const u8 sText_BerryProgramUpdate[] = _("Berry Program Update");
 static const u8 sText_RubySapphire[] = _("Ruby/Sapphire");
 static const u8 sText_Emerald[] = _("Emerald");
-static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("The Berry Program on your POKéMON\n"
-                                                            "Ruby/Sapphire Game Pak will be updated.\n"
+static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("Berry Program trên POKéMON\n"
+                                                            "Ruby/Sapphire Game Pak sẽ cập nhật.\n"
                                                             "{COLOR RED}{SHADOW LIGHT_RED}Press the A Button.");
-static const u8 sText_EnsureGBAConnectionMatches[] = _("Please ensure the connection of your\n"
-                                                       "Game Boy Advance system matches this.\n"
+static const u8 sText_EnsureGBAConnectionMatches[] = _("Hãy bảo đảm kết nối của máy\n"
+                                                       "Game Boy Advance giống hình trên.\n"
                                                        "{COLOR RED}{SHADOW LIGHT_RED}YES: Press the A Button.\n"
-                                                       "NO: Turn off the power and try again.");
-static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("Please turn on the power of POKéMON\n"
-                                                           "Ruby/Sapphire while holding START and\n"
-                                                           "SELECT simultaneously. Then, ensure\n"
-                                                           "the picture above appears.");
-static const u8 sText_TransmittingPleaseWait[] = _("Transmitting. Please wait.\n"
-                                                   "{COLOR RED}{SHADOW LIGHT_RED}Please do not turn off the power or\n"
-                                                   "unplug the Game Boy Advance Game\nLink Cable.");
-static const u8 sText_PleaseFollowInstructionsOnScreen[] = _("Please follow the instructions on your\n"
-                                                             "POKéMON Ruby/Sapphire screen.");
-static const u8 sText_TransmissionFailureTryAgain[] = _("Transmission failure.\n"
-                                                        "{COLOR RED}{SHADOW LIGHT_RED}Please try again.");
+                                                       "NO: Tắt nguồn rồi thử lại.");
+static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("Hãy bật POKéMON Ruby/Sapphire\n"
+                                                           "trong khi giữ START và SELECT.\n"
+                                                           "Sau đó, bảo đảm hình trên xuất hiện.");
+static const u8 sText_TransmittingPleaseWait[] = _("Đang truyền. Vui lòng chờ.\n"
+                                                   "{COLOR RED}{SHADOW LIGHT_RED}Không tắt nguồn hoặc tháo\n"
+                                                   "Game Boy Advance Game Link Cable.");
+static const u8 sText_PleaseFollowInstructionsOnScreen[] = _("Làm theo hướng dẫn trên màn hình\n"
+                                                             "POKéMON Ruby/Sapphire.");
+static const u8 sText_TransmissionFailureTryAgain[] = _("Truyền dữ liệu thất bại.\n"
+                                                        "{COLOR RED}{SHADOW LIGHT_RED}Vui lòng thử lại.");
 
 static const struct BgTemplate sBerryFixBgTemplates[] = {
     {
@@ -380,3 +379,13 @@ static void BerryFix_HideScene(void)
     HideBg(0);
     HideBg(1);
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C00592 = sText_BerryProgramWillBeUpdatedPressA;
+const u8 *const gLocalizationSource_C00593 = sText_EnsureGBAConnectionMatches;
+const u8 *const gLocalizationSource_C00594 = sText_TurnOffPowerHoldingStartSelect;
+const u8 *const gLocalizationSource_C00595 = sText_TransmittingPleaseWait;
+const u8 *const gLocalizationSource_C00596 = sText_PleaseFollowInstructionsOnScreen;
+const u8 *const gLocalizationSource_C00597 = sText_TransmissionFailureTryAgain;
+// END GENERATED LOCALIZATION EXPORTS

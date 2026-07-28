@@ -177,26 +177,33 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
-	.string "All my POKéMON does is ROAR…\n"
-	.string "No one dares to come near me…\p"
-	.string "Sigh… If you would, please take\n"
-	.string "this TM away…$"
+	.string "POKéMON của tôi chỉ biết dùng ROAR...\n"
+	.string "Chẳng ai dám đến gần tôi...\p"
+	.string "Haiz... Nếu được, xin bạn hãy mang TM\n"
+	.string "này đi...$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains ROAR.\n"
-	.string "A ROAR sends POKéMON scurrying.$"
+	.string "TM05 chứa ROAR. ROAR khiến POKéMON\n"
+	.string "hoảng hốt bỏ chạy.$"
 
 Route114_Text_Poochyena:
-	.string "Bow! Bowwow!$"
+	.string "Gâu! Gâu gâu!$"
 
 Route114_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "RUSTBORO CITY THROUGH HERE$"
+	.string "METEOR FALLS, lối này đến RUSTBORO\n"
+	.string "CITY$"
 
 Route114_Text_FossilManiacsHouseSign:
-	.string "FOSSIL MANIAC'S HOUSE\n"
-	.string "“Fossils gratefully accepted!”$"
+	.string "FOSSIL MANIAC'S HOUSE “Trân trọng tiếp\n"
+	.string "nhận FOSSILS!”$"
 
 Route114_Text_LanettesHouse:
 	.string "LANETTE'S HOUSE$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route114_Text_AllMyMonDoesIsRoarTakeThis
+	.global Route114_Text_ExplainRoar
+	.global Route114_Text_Poochyena
+	.global Route114_Text_MeteorFallsSign
+	.global Route114_Text_FossilManiacsHouseSign
+@ END GENERATED LOCALIZATION EXPORTS

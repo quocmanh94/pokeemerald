@@ -80,16 +80,21 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 	step_end
 
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
-	.string "WALLACE: This room…\p"
-	.string "This is where we keep records of\n"
-	.string "POKéMON that prevailed through\l"
-	.string "harsh battles.\p"
-	.string "It is here that the LEAGUE CHAMPIONS\n"
-	.string "are honored.$"
+	.string "WALLACE: Căn phòng này...\p"
+	.string "Đây là nơi chúng tôi lưu lại hồ sơ của\n"
+	.string "những POKéMON đã chiến thắng qua các\l"
+	.string "trận đấu khắc nghiệt.\p"
+	.string "Đây cũng là nơi tôn vinh các LEAGUE\n"
+	.string "CHAMPIONS.$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
-	.string "WALLACE: Come on, let's record your\n"
-	.string "name as a TRAINER who triumphed over\l"
-	.string "the POKéMON LEAGUE, and the names of\l"
-	.string "the partners who battled with you.$"
+	.string "WALLACE: Nào, hãy ghi lại tên cậu với tư\n"
+	.string "cách một HLV đã chinh phục\l"
+	.string "POKéMON LEAGUE, cùng tên những người\l"
+	.string "bạn đồng hành đã sát cánh chiến đấu\l"
+	.string "với cậu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
+	.global EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
+@ END GENERATED LOCALIZATION EXPORTS

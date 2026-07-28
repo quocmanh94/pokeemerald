@@ -433,249 +433,291 @@ BattleFrontier_BattleDomeLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle:
-	.string "Where the strategies of TRAINERS\n"
-	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE DOME!\p"
-	.string "I am your guide to the SINGLE BATTLE\n"
-	.string "Tournament.$"
+	.string "Nơi chiến thuật của các HLV được\n"
+	.string "thử thách!\p"
+	.string "Chào mừng đến với BATTLE DOME!\p"
+	.string "Tôi sẽ hướng dẫn bạn tham gia giải đấu\n"
+	.string "SINGLE BATTLE.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge:
-	.string "Would you like to challenge\n"
-	.string "the SINGLE BATTLE Tournament?$"
+	.string "Bạn có muốn thử sức ở giải đấu SINGLE\n"
+	.string "BATTLE không?$"
 
 BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
-	.string "We hope to see you again.$"
+	.string "Chúng tôi mong sẽ lại được gặp bạn.$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
-	.string "The SINGLE BATTLE Tournament\n"
-	.string "is exactly as the name suggests--\l"
-	.string "a tournament of SINGLE BATTLES.\p"
-	.string "All participating TRAINERS must\n"
-	.string "enter three POKéMON each.\p"
-	.string "In each battle, one of the three\n"
-	.string "POKéMON must be held in reserve.\p"
-	.string "The other two POKéMON can battle\n"
-	.string "one at a time.\p"
-	.string "Choose the two battling POKéMON after\n"
-	.string "examining the opponent's trio.\p"
-	.string "You win the tournament by defeating\n"
-	.string "four TRAINERS.\p"
-	.string "Battle Points are awarded to\n"
-	.string "the tournament winner.\p"
-	.string "If you want to interrupt your\n"
-	.string "tournament, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "Giải đấu SINGLE BATTLE đúng như tên\n"
+	.string "gọi, là giải đấu gồm các trận SINGLE\l"
+	.string "BATTLES.\p"
+	.string "Tất cả HLV tham gia đều phải đăng\n"
+	.string "ký ba POKéMON.\p"
+	.string "Trong mỗi trận, một trong ba POKéMON\n"
+	.string "phải được giữ làm dự bị.\p"
+	.string "Hai POKéMON còn lại có thể lần lượt ra\n"
+	.string "đấu.\p"
+	.string "Sau khi xem xét bộ ba của đối thủ, hãy\n"
+	.string "chọn hai POKéMON ra trận.\p"
+	.string "Bạn sẽ vô địch nếu đánh bại bốn\n"
+	.string "HLV.\p"
+	.string "Người vô địch giải đấu sẽ nhận được\n"
+	.string "Battle Points.\p"
+	.string "Nếu muốn tạm dừng giải đấu, vui lòng lưu\n"
+	.string "trò chơi.\p"
+	.string "Nếu không lưu trước khi tạm dừng, bạn\n"
+	.string "sẽ bị loại.$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before I show you to the BATTLE DOME,\n"
-	.string "I must save the data. Is that okay?$"
+	.string "Trước khi đưa bạn vào BATTLE DOME, tôi\n"
+	.string "phải lưu dữ liệu. Bạn đồng ý chứ?$"
 
 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
-	.string "The tournament offers two levels\n"
-	.string "of challenge, Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
+	.string "Giải đấu có hai cấp độ thử thách: Level\n"
+	.string "50 và Open Level. Bạn chọn cấp nào?$"
 
 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons:
-	.string "Now select the three POKéMON that\n"
-	.string "you wish to enter, please.$"
+	.string "Bây giờ, vui lòng chọn ba POKéMON mà\n"
+	.string "bạn muốn đăng ký.$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "Also, the POKéMON must be holding\n"
-	.string "different kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
+	.string "Xin lỗi!\p"
+	.string "Bạn không có đủ ba POKéMON hợp lệ.\p"
+	.string "Ngoài ra, các POKéMON phải cầm những\n"
+	.string "loại vật phẩm khác nhau.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Hãy quay lại gặp tôi khi bạn đã sẵn\n"
+	.string "sàng.$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50:
-	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
-	.string "of Level 50 or less to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
+	.string "Xin lỗi!\p"
+	.string "Bạn không có đủ ba POKéMON hợp lệ.\p"
+	.string "Bạn phải có ba POKéMON khác nhau ở\n"
+	.string "Level 50 trở xuống để tham gia.\p"
+	.string "Chúng cũng phải cầm những loại vật\n"
+	.string "phẩm khác nhau.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Hãy quay lại gặp tôi khi bạn đã sẵn\n"
+	.string "sàng.$"
 
 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome:
-	.string "I will now show you to\n"
-	.string "the BATTLE DOME.$"
+	.string "Bây giờ tôi sẽ đưa bạn vào BATTLE DOME.$"
 
 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting:
-	.string "Excuse me!\p"
-	.string "You didn't save before you quit your\n"
-	.string "challenge last time.\p"
-	.string "Because of that, your challenge so far\n"
-	.string "has been disqualified. Sorry!$"
+	.string "Xin lỗi!\p"
+	.string "Lần trước, bạn đã không lưu trước khi\n"
+	.string "bỏ dở thử thách.\p"
+	.string "Vì vậy, thành tích thử thách khi đó của\n"
+	.string "bạn đã bị hủy. Rất tiếc!$"
 
 BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney:
-	.string "Congratulations for winning\n"
-	.string "your Battle Tournament!$"
+	.string "Chúc mừng bạn đã giành chiến thắng\n"
+	.string "trong Battle Tournament!$"
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize:
-	.string "Here is your prize for your Battle\n"
-	.string "Tournament victory.$"
+	.string "Đây là phần thưởng cho chiến thắng của\n"
+	.string "bạn tại Battle Tournament.$"
 
 @ Used by Verdanturf Tent
 BattleFrontier_BattleDomeLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} nhận được phần thưởng\n"
 	.string "{STR_VAR_1}.$"
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom:
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
-	.string "see me.$"
+	.string "Ồ, có vẻ TÚI ĐỒ của bạn đã đầy.\p"
+	.string "Hãy dọn chỗ rồi quay lại gặp tôi.$"
 
 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying:
-	.string "Thank you for playing!$"
+	.string "Cảm ơn bạn đã tham gia!$"
 
 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved:
-	.string "Your record will be saved.\n"
-	.string "Please wait.$"
+	.string "Thành tích của bạn sẽ được lưu. Vui\n"
+	.string "lòng chờ.$"
 
 BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou:
-	.string "We've been waiting for you!$"
+	.string "Chúng tôi vẫn đang chờ bạn!$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2:
-	.string "Before I show you to the BATTLE DOME,\n"
-	.string "I must save the data. Is that okay?$"
+	.string "Trước khi đưa bạn vào BATTLE DOME, tôi\n"
+	.string "phải lưu dữ liệu. Bạn đồng ý chứ?$"
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
-	.string "Where the strategies of TRAINERS\n"
-	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE DOME!\p"
-	.string "I am your guide to the DOUBLE BATTLE\n"
-	.string "Tournament.$"
+	.string "Nơi chiến thuật của các HLV được\n"
+	.string "thử thách!\p"
+	.string "Chào mừng đến với BATTLE DOME!\p"
+	.string "Tôi sẽ hướng dẫn bạn tham gia giải đấu\n"
+	.string "DOUBLE BATTLE.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
-	.string "Would you like to challenge\n"
-	.string "the DOUBLE BATTLE Tournament?$"
+	.string "Bạn có muốn thử sức ở giải đấu DOUBLE\n"
+	.string "BATTLE không?$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
-	.string "The DOUBLE BATTLE Tournament\n"
-	.string "is exactly as the name suggests--\l"
-	.string "a tournament of DOUBLE BATTLES.\p"
-	.string "All participating TRAINERS must\n"
-	.string "enter three POKéMON each.\p"
-	.string "In each battle, one of the three\n"
-	.string "POKéMON must be held in reserve.\p"
-	.string "The remaining two POKéMON must take\n"
-	.string "part in a DOUBLE BATTLE.\p"
-	.string "Choose the two battling POKéMON after\n"
-	.string "examining the opponent's trio.\p"
-	.string "You win the tournament by defeating\n"
-	.string "four TRAINERS.\p"
-	.string "Battle Points are awarded to\n"
-	.string "the tournament winner.\p"
-	.string "If you want to interrupt your\n"
-	.string "tournament, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "Giải đấu DOUBLE BATTLE đúng như tên\n"
+	.string "gọi, là giải đấu gồm các trận DOUBLE\l"
+	.string "BATTLES.\p"
+	.string "Tất cả HLV tham gia đều phải đăng\n"
+	.string "ký ba POKéMON.\p"
+	.string "Trong mỗi trận, một trong ba POKéMON\n"
+	.string "phải được giữ làm dự bị.\p"
+	.string "Hai POKéMON còn lại phải tham gia một\n"
+	.string "trận DOUBLE BATTLE.\p"
+	.string "Sau khi xem xét bộ ba của đối thủ, hãy\n"
+	.string "chọn hai POKéMON ra trận.\p"
+	.string "Bạn sẽ vô địch nếu đánh bại bốn\n"
+	.string "HLV.\p"
+	.string "Người vô địch giải đấu sẽ nhận được\n"
+	.string "Battle Points.\p"
+	.string "Nếu muốn tạm dừng giải đấu, vui lòng lưu\n"
+	.string "trò chơi.\p"
+	.string "Nếu không lưu trước khi tạm dừng, bạn\n"
+	.string "sẽ bị loại.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50:
-	.string "They're the results of the last\n"
-	.string "Level 50 SINGLE BATTLE Tournament.$"
+	.string "Đây là kết quả của giải đấu SINGLE\n"
+	.string "BATTLE Level 50 gần nhất.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50:
-	.string "They're the results of the last\n"
-	.string "Level 50 DOUBLE BATTLE Tournament.$"
+	.string "Đây là kết quả của giải đấu DOUBLE\n"
+	.string "BATTLE Level 50 gần nhất.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen:
-	.string "They're the results of the last\n"
-	.string "Open Level SINGLE BATTLE Tournament.$"
+	.string "Đây là kết quả của giải đấu SINGLE\n"
+	.string "BATTLE Open Level gần nhất.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen:
-	.string "They're the results of the last\n"
-	.string "Open Level DOUBLE BATTLE Tournament.$"
+	.string "Đây là kết quả của giải đấu DOUBLE\n"
+	.string "BATTLE Open Level gần nhất.$"
 
 BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
-	.string "Did you see it?\n"
-	.string "The last Battle Tournament?\p"
-	.string "The winner, {STR_VAR_1}, was seriously\n"
-	.string "tough.\p"
-	.string "You should check out the results\n"
-	.string "on the monitor beside the PC.$"
+	.string "Bạn xem chưa? Battle Tournament vừa\n"
+	.string "rồi ấy?\p"
+	.string "Người chiến thắng, {STR_VAR_1},\n"
+	.string "mạnh kinh khủng.\p"
+	.string "Bạn nên xem kết quả trên màn hình bên\n"
+	.string "cạnh PC.$"
 
 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier:
-	.string "The BATTLE FRONTIER…\n"
-	.string "I've long dreamed about a place like it.$"
+	.string "BATTLE FRONTIER. Từ lâu tôi đã mơ về\n"
+	.string "một nơi như thế.$"
 
 @ Functionally unused
 BattleFrontier_OutsideWest_Text_BattleDomeSign2:
-	.string "The BATTLE DOME\n"
-	.string "Become the Unbeatable Superstar!$"
+	.string "BATTLE DOME: Trở Thành Siêu Sao Bất\n"
+	.string "Bại!$"
 
 @ Functionally unused
 BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction:
-	.string "The ??????\n"
-	.string "Under Construction!$"
+	.string "??????: Đang Thi Công!$"
 
 BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation:
-	.string "When a TRAINER chains tournament\n"
-	.string "wins at the BATTLE DOME, he or she\l"
-	.string "gains a reputation as a star.\p"
-	.string "Tough TRAINERS are drawn by that\n"
-	.string "reputation to the BATTLE DOME.\p"
-	.string "A true superstar is a TRAINER who\n"
-	.string "can keep winning tournaments.$"
+	.string "Khi một HLV liên tiếp vô địch tại\n"
+	.string "BATTLE DOME, họ sẽ nổi danh như một\l"
+	.string "ngôi sao.\p"
+	.string "Danh tiếng ấy thu hút những HLV\n"
+	.string "mạnh đến BATTLE DOME.\p"
+	.string "Một siêu sao đích thực là HLV có\n"
+	.string "thể liên tục giành chức vô địch.$"
 
 BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound:
-	.string "I ran into one of the tournament\n"
-	.string "favorites in the very first round.\p"
-	.string "Of course I got trashed…$"
+	.string "Ngay vòng đầu tiên, tôi đã gặp một\n"
+	.string "trong những ứng viên sáng giá nhất\l"
+	.string "giải.\p"
+	.string "Tất nhiên là tôi bị đánh tơi tả rồi.$"
 
 BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully:
-	.string "I would've won if I'd kept this POKéMON\n"
-	.string "held in reserve.\p"
-	.string "You need to check your opponent's\n"
-	.string "POKéMON carefully before choosing\l"
-	.string "your battling POKéMON.$"
+	.string "Tôi đã có thể thắng nếu để POKéMON này\n"
+	.string "làm dự bị.\p"
+	.string "Bạn phải xem xét kỹ POKéMON của đối thủ\n"
+	.string "trước khi chọn POKéMON ra trận.$"
 
 BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker:
-	.string "Congratulations!\p"
-	.string "You defeated the DOME ACE and won\n"
-	.string "the Battle Tournament!$"
+	.string "Xin chúc mừng!\p"
+	.string "Bạn đã đánh bại DOME ACE và vô địch\n"
+	.string "Battle Tournament!$"
 
 BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
-	.string "In recognition of your strategy--\n"
-	.string "a thing of beauty it was, too--\l"
-	.string "we award you these Battle Point(s)!$"
+	.string "Để ghi nhận chiến thuật đẹp mắt của\n"
+	.string "bạn, chúng tôi trao cho bạn số Battle\l"
+	.string "Point(s) này!$"
 
 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch:
-	.string "Would you like to record your\n"
-	.string "last BATTLE DOME match on your\l"
-	.string "FRONTIER PASS?$"
+	.string "Bạn có muốn ghi lại trận BATTLE DOME\n"
+	.string "vừa rồi vào FRONTIER PASS không?$"
 
 BattleFrontier_BattleDomeLobby_Text_RulesAreListed:
-	.string "The Battle Tournament rules\n"
-	.string "are listed.$"
+	.string "Nội quy Battle Tournament được ghi ở\n"
+	.string "đây.$"
 
 BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Bạn muốn đọc mục nào?$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules:
-	.string "The tournament matchups are drawn up\n"
-	.string "based on the toughness of POKéMON\l"
-	.string "held by TRAINERS.\p"
-	.string "The matchups avoid having tough\n"
-	.string "TRAINERS face each other right away.$"
+	.string "Các cặp đấu trong giải được xếp dựa\n"
+	.string "trên sức mạnh của POKéMON mà các\l"
+	.string "HLV sở hữu.\p"
+	.string "Cách xếp này tránh để những HLV\n"
+	.string "mạnh phải gặp nhau ngay từ đầu.$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree:
-	.string "The tournament chart, or as we call it,\n"
-	.string "the “Tree,” is available for viewing\l"
-	.string "in the Waiting Room from any guide.\p"
-	.string "The Tournament Tree will provide\n"
-	.string "several kinds of data.\p"
-	.string "The data on view includes the previous\n"
-	.string "tournament's results, the POKéMON held\l"
-	.string "by TRAINERS, and the battle styles of\l"
-	.string "TRAINERS.$"
+	.string "Sơ đồ giải đấu, hay chúng tôi gọi là\n"
+	.string "Tree, có thể xem bằng cách hỏi bất kỳ\l"
+	.string "hướng dẫn viên nào trong Waiting Room.\p"
+	.string "Tournament Tree cung cấp nhiều loại dữ\n"
+	.string "liệu.\p"
+	.string "Dữ liệu hiển thị gồm kết quả giải đấu\n"
+	.string "trước, POKéMON của các HLV và\l"
+	.string "phong cách chiến đấu của HLV.$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules:
-	.string "If battling POKéMON faint at the same\n"
-	.string "time--a double KO--in a tournament\l"
-	.string "match, the REFEREES will review\l"
-	.string "the match and declare the winner.$"
+	.string "Nếu các POKéMON đang đấu cùng ngất\n"
+	.string "một lúc, tức double KO, trong một trận\l"
+	.string "đấu giải, REFEREES sẽ xem lại trận đấu\l"
+	.string "và tuyên bố người thắng.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle
+	.global BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge
+	.global BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain
+	.global BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge
+	.global BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge
+	.global BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
+	.global BattleFrontier_BattleDomeLobby_Text_SelectThreeMons
+	.global BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen
+	.global BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50
+	.global BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
+	.global BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting
+	.global BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney
+	.global BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize
+	.global BattleFrontier_BattleDomeLobby_Text_ReceivedPrize
+	.global BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom
+	.global BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying
+	.global BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved
+	.global BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
+	.global BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2
+	.global BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle
+	.global BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge
+	.global BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge
+	.global BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50
+	.global BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50
+	.global BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen
+	.global BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen
+	.global BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough
+	.global BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier
+	.global BattleFrontier_OutsideWest_Text_BattleDomeSign2
+	.global BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction
+	.global BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation
+	.global BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound
+	.global BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully
+	.global BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker
+	.global BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints
+	.global BattleFrontier_BattleDomeLobby_Text_RecordLastMatch
+	.global BattleFrontier_BattleDomeLobby_Text_RulesAreListed
+	.global BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading
+	.global BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules
+	.global BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree
+	.global BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules
+@ END GENERATED LOCALIZATION EXPORTS

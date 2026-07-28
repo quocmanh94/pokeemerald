@@ -896,127 +896,149 @@ Route110_TrickHousePuzzle5_Movement_MechadollShake:
 	step_end
 
 Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is a genius.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER là một thiên tài.” ... ... ...\n"
+	.string "... ... ... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Intro:
-	.string "CLICKETY-CLACK…\n"
-	.string "MECHADOLL 1 AM I!\p"
-	.string "IF YOU ANSWER QUIZZES CORRECTLY,\n"
-	.string "THEN YOU WILL GO TO MECHADOLL 5.\l"
-	.string "THEN YOU CAN OBTAIN THE SECRET CODE.$"
+	.string "CLICKETY-CLACK... TA LÀ MECHADOLL 1!\p"
+	.string "NẾU TRẢ LỜI ĐÚNG CÁC CÂU ĐỐ, NGƯƠI SẼ\n"
+	.string "ĐẾN ĐƯỢC MECHADOLL 5. KHI ĐÓ NGƯƠI\l"
+	.string "CÓ THỂ LẤY MẬT MÃ.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz1:
-	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not found\n"
-	.string "on ROUTE 110. Which one is it?$"
+	.string "CÂU ĐỐ MECHADOLL 1.\p"
+	.string "Một POKéMON trong số này không xuất\n"
+	.string "hiện trên ROUTE 110. Đó là POKéMON nào?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz2:
-	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not of the\n"
-	.string "WATER type. Which one is it?$"
+	.string "CÂU ĐỐ MECHADOLL 1.\p"
+	.string "Một POKéMON trong số này không thuộc\n"
+	.string "hệ WATER. Đó là POKéMON nào?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3:
-	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON does not use\n"
-	.string "LEECH LIFE. Which one is it?$"
+	.string "CÂU ĐỐ MECHADOLL 1.\p"
+	.string "Một POKéMON trong số này không sử dụng\n"
+	.string "LEECH LIFE. Đó là POKéMON nào?$"
 
 Route110_TrickHousePuzzle5_Text_CorrectGoThrough:
-	.string "CONGRATULATIONS. CORRECT YOU ARE.\n"
-	.string "GO THROUGH. PLEASE.$"
+	.string "CHÚC MỪNG. NGƯƠI ĐÃ TRẢ LỜI ĐÚNG. XIN\n"
+	.string "MỜI ĐI QUA.$"
 
 Route110_TrickHousePuzzle5_Text_DisappointmentError:
-	.string "BZZZT. DISAPPOINTMENT.\n"
-	.string "ERROR.$"
+	.string "BZZZT. THẤT VỌNG. LỖI.$"
 
 Route110_TrickHousePuzzle5_Text_Wahahahaha:
 	.string "WAHAHAHAHA! WAHAHAHAHA!\n"
 	.string "CLICKETY-CLACK!$"
 
 Route110_TrickHousePuzzle5_Text_WaitForNextChallenge:
-	.string "YOUR NEXT CHALLENGE WE WAIT FOR.$"
+	.string "BỌN TA CHỜ THỬ THÁCH TIẾP THEO CỦA\n"
+	.string "NGƯƠI.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Intro:
-	.string "CLICKETY-CLACK…\n"
-	.string "MECHADOLL 2 AM I!\p"
-	.string "MECHADOLL 1'S QUIZ DIFFICULTY LEVEL\n"
-	.string "IS SET TOO LOW.$"
+	.string "CLICKETY-CLACK... TA LÀ MECHADOLL 2!\p"
+	.string "MỨC ĐỘ KHÓ CỦA CÂU ĐỐ MECHADOLL 1\n"
+	.string "ĐƯỢC ĐẶT QUÁ THẤP.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1:
-	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did WALLY\n"
-	.string "borrow from your father?$"
+	.string "CÂU ĐỐ MECHADOLL 2.\p"
+	.string "WALLY đã mượn POKéMON nào sau đây từ\n"
+	.string "ba của bạn?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
-	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON was chasing\n"
-	.string "PROF. BIRCH?$"
+	.string "CÂU ĐỐ MECHADOLL 2.\p"
+	.string "POKéMON nào sau đây đã đuổi theo PROF.\n"
+	.string "BIRCH?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
-	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did TEAM AQUA\n"
-	.string "use in PETALBURG FOREST?$"
+	.string "CÂU ĐỐ MECHADOLL 2.\p"
+	.string "TEAM AQUA đã dùng POKéMON nào sau đây\n"
+	.string "trong PETALBURG FOREST?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Intro:
-	.string "CLICKETY-CLACK…\n"
-	.string "MECHADOLL 3 AM I!\p"
-	.string "MATTERS OF MONEY ARE MY SOLE FOCUS.$"
+	.string "CLICKETY-CLACK... TA LÀ MECHADOLL 3!\p"
+	.string "TA CHỈ QUAN TÂM ĐẾN TIỀN BẠC.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1:
-	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Which costs more?\n"
-	.string "Three HARBOR MAILS or one BURN HEAL?$"
+	.string "CÂU ĐỐ MECHADOLL 3.\p"
+	.string "Thứ nào đắt hơn? Ba HARBOR MAILS hay\n"
+	.string "một BURN HEAL?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2:
-	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Sell one GREAT BALL and buy\n"
-	.string "one POTION. How much money remains?$"
+	.string "CÂU ĐỐ MECHADOLL 3.\p"
+	.string "Bán một GREAT BALL rồi mua một POTION.\n"
+	.string "Còn lại bao nhiêu tiền?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3:
-	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Do one REPEL and SODA POP cost\n"
-	.string "more than one SUPER POTION?$"
+	.string "CÂU ĐỐ MECHADOLL 3.\p"
+	.string "Một REPEL và một SODA POP có đắt hơn\n"
+	.string "một SUPER POTION không?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Intro:
-	.string "CLICKETY-CLACK…\n"
-	.string "MECHADOLL 4 THAT IS ME!\p"
-	.string "MY QUIZ IS AN OBJECT OF BEAUTY.$"
+	.string "CLICKETY-CLACK... MECHADOLL 4 CHÍNH LÀ\n"
+	.string "TA!\p"
+	.string "CÂU ĐỐ CỦA TA LÀ MỘT TUYỆT TÁC.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz1:
-	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In SEASHORE HOUSE, were there more men\n"
-	.string "or women?$"
+	.string "CÂU ĐỐ MECHADOLL 4.\p"
+	.string "Ở SEASHORE HOUSE, đàn ông hay phụ nữ\n"
+	.string "đông hơn?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2:
-	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In LAVARIDGE TOWN, were there more\n"
-	.string "elderly men or elderly women?$"
+	.string "CÂU ĐỐ MECHADOLL 4.\p"
+	.string "Ở LAVARIDGE TOWN, cụ ông hay cụ bà\n"
+	.string "đông hơn?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3:
-	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In the TRAINER'S SCHOOL, how many\n"
-	.string "girl students were there?$"
+	.string "CÂU ĐỐ MECHADOLL 4.\p"
+	.string "Trong TRAINER'S SCHOOL có bao nhiêu nữ\n"
+	.string "sinh?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Intro:
-	.string "CLICKETY-CLACK…\n"
-	.string "MECHADOLL 5 AM I!\p"
-	.string "THE MASTER'S BEST AND PROUDEST\n"
-	.string "ACHIEVEMENT AM I.$"
+	.string "CLICKETY-CLACK... TA LÀ MECHADOLL 5!\p"
+	.string "TA LÀ THÀNH TỰU XUẤT SẮC NHẤT VÀ ĐÁNG\n"
+	.string "TỰ HÀO NHẤT CỦA CHỦ NHÂN.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1:
-	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In SLATEPORT's POKéMON FAN CLUB,\n"
-	.string "how many POKéMON were there?$"
+	.string "CÂU ĐỐ MECHADOLL 5.\p"
+	.string "Trong POKéMON FAN CLUB ở SLATEPORT, có\n"
+	.string "bao nhiêu POKéMON?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
-	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In FORTREE CITY, how many\n"
-	.string "tree houses were there?$"
+	.string "CÂU ĐỐ MECHADOLL 5.\p"
+	.string "Ở FORTREE CITY, có bao nhiêu ngôi nhà\n"
+	.string "trên cây?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
-	.string "MECHADOLL 5 QUIZ.\p"
-	.string "On the CYCLING ROAD, how many\n"
-	.string "TRIATHLETES were there?$"
+	.string "CÂU ĐỐ MECHADOLL 5.\p"
+	.string "Trên CYCLING ROAD, có bao nhiêu\n"
+	.string "TRIATHLETES?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll1Intro
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz1
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz2
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3
+	.global Route110_TrickHousePuzzle5_Text_CorrectGoThrough
+	.global Route110_TrickHousePuzzle5_Text_DisappointmentError
+	.global Route110_TrickHousePuzzle5_Text_WaitForNextChallenge
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll2Intro
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll3Intro
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll4Intro
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz1
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll5Intro
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2
+	.global Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3
+@ END GENERATED LOCALIZATION EXPORTS

@@ -49,39 +49,48 @@ PacifidlogTown_House3_EventScript_Girl::
 	end
 
 PacifidlogTown_House3_Text_WillingToTradeIt:
-	.string "Check out this {STR_VAR_2}!\p"
-	.string "It's the {STR_VAR_2} that I caught\n"
-	.string "yesterday to celebrate my birthday!\p"
-	.string "Oh, I can see that you want it!\n"
-	.string "After all, it's priceless!\p"
-	.string "I'll tell you what. I might be willing\n"
-	.string "to trade it for a {STR_VAR_1}.$"
+	.string "Nhìn {STR_VAR_2} này xem!\p"
+	.string "Đây là {STR_VAR_2} tôi bắt được\n"
+	.string "hôm qua để mừng sinh nhật!\p"
+	.string "Ồ, nhìn là biết cậu muốn có nó rồi! Dù\n"
+	.string "sao nó cũng vô giá mà!\p"
+	.string "Thế này nhé. Có lẽ tôi sẽ đồng ý đổi nó\n"
+	.string "lấy một {STR_VAR_1}.$"
 
 PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
-	.string "Oh, so this is a {STR_VAR_1}?\p"
-	.string "It's sort of like a {STR_VAR_2},\n"
-	.string "and yet it's subtly different.\p"
-	.string "Thank you!$"
+	.string "Ồ, vậy đây là một {STR_VAR_1}\n"
+	.string "sao?\p"
+	.string "Nó khá giống một {STR_VAR_2},\n"
+	.string "nhưng vẫn có chút khác biệt tinh tế.\p"
+	.string "Cảm ơn cậu!$"
 
 PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon:
-	.string "No, no, no! I won't accept any\n"
-	.string "less than a real {STR_VAR_1}!$"
+	.string "Không, không, không! Tôi chỉ chấp nhận\n"
+	.string "một {STR_VAR_1} thứ thiệt!$"
 
 PacifidlogTown_House3_Text_NotDesperateOrAnything:
-	.string "Oh, so you're not going to go through\n"
-	.string "with this?\p"
-	.string "That's cool. I'm not desperate to make\n"
-	.string "a trade or anything.$"
+	.string "Ồ, vậy cậu không định thực hiện vụ trao\n"
+	.string "đổi này à?\p"
+	.string "Không sao. Tôi cũng đâu có khao khát\n"
+	.string "trao đổi đến thế.$"
 
 PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
-	.string "I know I could go looking for one\n"
-	.string "on my own, but…\p"
-	.string "But I really wanted to get a BAGON\n"
-	.string "that another TRAINER caught…$"
+	.string "Tôi biết mình có thể tự đi tìm một con,\n"
+	.string "nhưng...\p"
+	.string "Nhưng tôi thật sự muốn có một BAGON do\n"
+	.string "HLV khác bắt được...$"
 
 PacifidlogTown_House3_Text_IsThatAPokedex:
-	.string "Is that a POKéDEX?\p"
-	.string "Did you get to meet a lot of different\n"
-	.string "POKéMON?\p"
-	.string "I wish I was like you.$"
+	.string "Đó là POKéDEX sao?\p"
+	.string "Cậu đã được gặp nhiều POKéMON khác\n"
+	.string "nhau rồi à?\p"
+	.string "Ước gì tôi được như cậu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_House3_Text_WillingToTradeIt
+	.global PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou
+	.global PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon
+	.global PacifidlogTown_House3_Text_NotDesperateOrAnything
+	.global PacifidlogTown_House3_Text_ReallyWantedToGetBagon
+	.global PacifidlogTown_House3_Text_IsThatAPokedex
+@ END GENERATED LOCALIZATION EXPORTS

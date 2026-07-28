@@ -39,20 +39,25 @@ VerdanturfTown_Mart_EventScript_Lass::
 	end
 
 VerdanturfTown_Mart_Text_XSpecialIsCrucial:
-	.string "For any POKéMON match, X SPECIAL\n"
-	.string "is crucial.\p"
-	.string "It jacks up the power of some moves\n"
-	.string "even though it's only for one battle.$"
+	.string "Trong bất kỳ trận đấu POKéMON nào, X\n"
+	.string "SPECIAL cũng rất quan trọng.\p"
+	.string "Nó tăng mạnh uy lực của một số chiêu, dù\n"
+	.string "hiệu quả chỉ kéo dài trong một trận.$"
 
 VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
-	.string "They don't seem to sell any winning\n"
-	.string "strategy guides for the BATTLE TENT…\p"
-	.string "It seems one must rely on one's\n"
-	.string "own wits after all…$"
+	.string "Có vẻ họ không bán cẩm nang chiến thuật\n"
+	.string "giúp chiến thắng tại BATTLE TENT...\p"
+	.string "Rốt cuộc, mỗi người vẫn phải dựa vào\n"
+	.string "trí khôn của chính mình...$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
-	.string "The NEST BALL works better on\n"
-	.string "weakened POKéMON.\p"
-	.string "VERDANTURF is the only place you can\n"
-	.string "buy it.$"
+	.string "NEST BALL hiệu quả hơn với POKéMON đã\n"
+	.string "suy yếu.\p"
+	.string "VERDANTURF là nơi duy nhất bạn có thể\n"
+	.string "mua nó.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_Mart_Text_XSpecialIsCrucial
+	.global VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent
+	.global VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon
+@ END GENERATED LOCALIZATION EXPORTS

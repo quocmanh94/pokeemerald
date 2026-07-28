@@ -1,85 +1,102 @@
 BerryBlender_Text_BlendWithTheBlendMaster:
-	.string "BLEND MASTER: Indeed I am!\n"
-	.string "The BLEND MASTER am I!\p"
-	.string "Blend with me, and you shall witness\n"
-	.string "the mastery I bring to blending!$"
+	.string "BẬC THẦY: Đúng vậy! Ta chính là\n"
+	.string "BẬC THẦY PHA CHẾ!\p"
+	.string "Hãy phối trộn cùng ta, rồi ngươi sẽ\n"
+	.string "được chứng kiến kỹ nghệ bậc thầy của\l"
+	.string "ta!$"
 
 BerryBlender_Text_SeeMyMasteryInAction:
-	.string "BLEND MASTER: Hmmm! So, you wish to\n"
-	.string "see my mastery in action?$"
+	.string "BẬC THẦY: Hừm! Vậy ngươi muốn tận\n"
+	.string "mắt chứng kiến kỹ nghệ bậc thầy của ta\l"
+	.string "sao?$"
 
 BerryBlender_Text_TooBusyNowIsee:
-	.string "Hmmm!\p"
-	.string "So, you are too busy now, I see!\p"
-	.string "But fear not!\n"
-	.string "I shall be here all day!\l"
-	.string "Hurry back from your errand!$"
+	.string "Hừm!\p"
+	.string "Ra là giờ ngươi đang bận!\p"
+	.string "Nhưng đừng lo! Ta sẽ ở đây cả ngày!\n"
+	.string "Làm xong việc thì mau quay lại!$"
 
 BerryBlender_Text_BlendMasterNoBerries:
-	.string "Hmmm!\p"
-	.string "You haven't got a single BERRY!\p"
-	.string "I shall be here all day!\n"
-	.string "Hurry back with some BERRIES!$"
+	.string "Hừm!\p"
+	.string "Ngươi không có lấy một BERRY!\p"
+	.string "Ta sẽ ở đây cả ngày! Mau mang BERRIES\n"
+	.string "quay lại!$"
 
 BerryBlender_Text_BlendMasterKnowHowToMakePokeblocks:
-	.string "Of course!\n"
-	.string "Of course!\p"
-	.string "Incidentally…\n"
-	.string "You do know how to blend {POKEBLOCK}S\l"
-	.string "from BERRIES?$"
+	.string "Tất nhiên! Tất nhiên rồi!\p"
+	.string "À, nhân tiện, ngươi biết cách phối\n"
+	.string "BERRIES thành {POKEBLOCK}S chứ?$"
 
 BerryBlender_Text_BlendMasterExplainBerryBlending:
-	.string "Hmmm!\p"
-	.string "Ah, but it is a simple process!\p"
-	.string "When the BLENDER's arrow comes to\n"
-	.string "your marker, just press the A Button.\p"
-	.string "That's all you have to do.\p"
-	.string "When you see how precisely I press\n"
-	.string "the A Button, you will understand.$"
+	.string "Hừm!\p"
+	.string "À, nhưng cách làm rất đơn giản!\p"
+	.string "Khi mũi tên của BLENDER chạm đến dấu\n"
+	.string "của ngươi, chỉ cần nhấn A Button.\p"
+	.string "Chỉ vậy thôi.\p"
+	.string "Khi thấy ta nhấn A Button chính xác\n"
+	.string "đến mức nào, ngươi sẽ hiểu.$"
 
 BerryBlender_Text_BlendMasterLetsBerryBlender:
-	.string "Fine!\p"
-	.string "Let's get started, then!\p"
-	.string "All together with the BLEND MASTER,\n"
-	.string "let's BERRY BLENDER!$"
+	.string "Tốt!\p"
+	.string "Vậy bắt đầu thôi!\p"
+	.string "Cùng BẬC THẦY, hãy bắt đầu\n"
+	.string "BERRY BLENDER!$"
 
 BerryBlender_Text_BlendMasterNoPokeblockCase:
-	.string "Hmmm!\p"
-	.string "You don't appear to have gotten\n"
-	.string "the {POKEBLOCK} CASE!\p"
-	.string "I shall be here all day!\n"
-	.string "Obtain the {POKEBLOCK} CASE and hurry back!$"
+	.string "Hừm!\p"
+	.string "Có vẻ ngươi chưa lấy được\n"
+	.string "{POKEBLOCK} CASE!\p"
+	.string "Ta sẽ ở đây cả ngày! Hãy lấy\n"
+	.string "{POKEBLOCK} CASE rồi mau quay lại!$"
 
 BerryBlender_Text_BlendMasterPokeblockCaseFull:
-	.string "Hmmm!\p"
-	.string "Your {POKEBLOCK} CASE appears to be full!\p"
-	.string "I shall be here all day!\n"
-	.string "Use some {POKEBLOCK}S and hurry back!$"
+	.string "Hừm!\p"
+	.string "Có vẻ {POKEBLOCK} CASE của ngươi đã\n"
+	.string "đầy!\p"
+	.string "Ta sẽ ở đây cả ngày! Hãy dùng bớt\n"
+	.string "{POKEBLOCK}S rồi mau quay lại!$"
 
 BerryBlender_Text_WhoaAwesome:
-	.string "Whoa!\n"
-	.string "Awesome!$"
+	.string "Chà! Tuyệt quá!$"
 
 BerryBlender_Text_WickedlyFast:
-	.string "Wickedly fast!$"
+	.string "Nhanh kinh khủng!$"
 
 BerryBlender_Text_WhatAnExpert:
-	.string "What an expert!$"
+	.string "Đúng là cao thủ!$"
 
 BerryBlender_Text_MadeAmazingPokeblocksWithMaster:
-	.string "When I blended with the MASTER,\n"
-	.string "we made amazing {POKEBLOCK}S!$"
+	.string "Khi phối trộn cùng BẬC THẦY, chúng tôi\n"
+	.string "đã làm {POKEBLOCK}S tuyệt vời!$"
 
 BerryBlender_Text_QualitiesOfBlendMaster:
-	.string "Eyes that track the arrow with\n"
-	.string "machinelike intensity…\p"
-	.string "A hand that taps the A Button\n"
-	.string "with clockwork-like precision…\p"
-	.string "Possessing these qualities makes\n"
-	.string "the BLEND MASTER truly great.$"
+	.string "Đôi mắt bám theo mũi tên với sự tập\n"
+	.string "trung như máy móc.\p"
+	.string "Bàn tay nhấn A Button chính xác như\n"
+	.string "đồng hồ.\p"
+	.string "Chính những phẩm chất ấy làm nên một\n"
+	.string "BẬC THẦY PHA CHẾ thực thụ.$"
 
 BerryBlender_Text_MasterWorksOnSkillsInMountains:
-	.string "The BLEND MASTER's supposed to work\n"
-	.string "on his skills deep in the mountains.\p"
-	.string "Sometimes, he comes to LILYCOVE\n"
-	.string "to blend BERRIES all day long.$"
+	.string "Nghe nói BẬC THẦY PHA CHẾ rèn kỹ năng\n"
+	.string "sâu trong núi.\p"
+	.string "Thỉnh thoảng ông ấy đến LILYCOVE và\n"
+	.string "phối BERRIES suốt cả ngày.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BerryBlender_Text_BlendWithTheBlendMaster
+	.global BerryBlender_Text_SeeMyMasteryInAction
+	.global BerryBlender_Text_TooBusyNowIsee
+	.global BerryBlender_Text_BlendMasterNoBerries
+	.global BerryBlender_Text_BlendMasterKnowHowToMakePokeblocks
+	.global BerryBlender_Text_BlendMasterExplainBerryBlending
+	.global BerryBlender_Text_BlendMasterLetsBerryBlender
+	.global BerryBlender_Text_BlendMasterNoPokeblockCase
+	.global BerryBlender_Text_BlendMasterPokeblockCaseFull
+	.global BerryBlender_Text_WhoaAwesome
+	.global BerryBlender_Text_WickedlyFast
+	.global BerryBlender_Text_WhatAnExpert
+	.global BerryBlender_Text_MadeAmazingPokeblocksWithMaster
+	.global BerryBlender_Text_QualitiesOfBlendMaster
+	.global BerryBlender_Text_MasterWorksOnSkillsInMountains
+@ END GENERATED LOCALIZATION EXPORTS

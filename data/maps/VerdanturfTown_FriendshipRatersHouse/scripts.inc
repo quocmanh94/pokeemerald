@@ -63,42 +63,50 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_Pikachu::
 	end
 
 VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou:
-	.string "Let me see your POKéMON.\n"
-	.string "I'll check to see how much it likes you.\p"
-	.string "Oh.\n"
-	.string "Your POKéMON…$"
+	.string "Để tôi xem POKéMON của bạn nào. Tôi sẽ\n"
+	.string "xem nó quý bạn đến mức nào.\p"
+	.string "Ồ. POKéMON của bạn...$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou:
-	.string "It adores you.\n"
-	.string "It can't possibly love you any more.\l"
-	.string "I even feel happy seeing it.$"
+	.string "Nó yêu quý bạn vô cùng. Không thể yêu\n"
+	.string "quý bạn hơn được nữa. Nhìn nó, tôi\l"
+	.string "cũng thấy vui lây.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy:
-	.string "It seems to be very happy.\n"
-	.string "It obviously likes you a whole lot.$"
+	.string "Nó có vẻ rất hạnh phúc. Rõ ràng nó vô\n"
+	.string "cùng quý bạn.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot:
-	.string "It likes you quite a lot.\n"
-	.string "It seems to want to be babied a little.$"
+	.string "Nó khá quý bạn. Có vẻ nó muốn được bạn\n"
+	.string "cưng chiều thêm một chút.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou:
-	.string "It's getting used to you.\n"
-	.string "It seems to believe in you.$"
+	.string "Nó đang dần quen với bạn. Có vẻ nó đã\n"
+	.string "tin tưởng bạn.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou:
-	.string "It's not very used to you yet.\n"
-	.string "It neither loves nor hates you.$"
+	.string "Nó vẫn chưa quen với bạn lắm. Nó không\n"
+	.string "yêu quý mà cũng chẳng ghét bạn.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_VeryWary:
-	.string "It's very wary.\n"
-	.string "It has scary viciousness in its eyes.\l"
-	.string "It doesn't like you much at all.$"
+	.string "Nó rất cảnh giác. Ánh mắt nó đầy vẻ hung\n"
+	.string "dữ đáng sợ. Nó chẳng quý bạn chút nào.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou:
-	.string "This is a little hard for me to say…\p"
-	.string "Your POKéMON simply detests you.\n"
-	.string "Doesn't that make you uncomfortable?$"
+	.string "Tôi hơi khó nói điều này...\p"
+	.string "POKéMON của bạn cực kỳ căm ghét bạn.\n"
+	.string "Bạn không thấy bất an sao?$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_Pikachu:
 	.string "PIKACHU: Pika pika!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou
+	.global VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou
+	.global VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy
+	.global VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot
+	.global VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou
+	.global VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou
+	.global VerdanturfTown_FriendshipRatersHouse_Text_VeryWary
+	.global VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou
+@ END GENERATED LOCALIZATION EXPORTS

@@ -65,23 +65,27 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
-	.string "All right! You and me, let's enjoy\n"
-	.string "a battle that can only be staged\l"
-	.string "here in the POKéMON LEAGUE!$"
+	.string "Chào mừng, người thách đấu! Tôi là\n"
+	.string "SIDNEY của ELITE FOUR.\p"
+	.string "Tôi thích ánh mắt cậu đang nhìn tôi\n"
+	.string "đấy. Có vẻ cậu sẽ cho tôi một trận đấu\l"
+	.string "ra trò. Tốt lắm! Trông tuyệt lắm!\p"
+	.string "Được rồi! Cậu và tôi hãy tận hưởng một\n"
+	.string "trận đấu chỉ có thể diễn ra tại POKéMON\l"
+	.string "LEAGUE!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Well, how do you like that? I lost!\n"
-	.string "Eh, it was fun, so it doesn't matter.$"
+	.string "Sao nào, thấy thế nào? Tôi thua rồi! Mà\n"
+	.string "vui là được, nên chẳng sao cả.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Well, listen to what this loser has\n"
-	.string "to say.\p"
-	.string "You've got what it takes to go far.\n"
-	.string "Now, go on to the next room and enjoy\l"
-	.string "your next battle!$"
+	.string "Nào, hãy nghe lời của kẻ bại trận này.\p"
+	.string "Cậu có đủ tố chất để tiến thật xa. Giờ\n"
+	.string "hãy sang căn phòng tiếp theo và tận\l"
+	.string "hưởng trận đấu kế tiếp!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_SidneysRoom_Text_IntroSpeech
+	.global EverGrandeCity_SidneysRoom_Text_Defeat
+	.global EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
+@ END GENERATED LOCALIZATION EXPORTS

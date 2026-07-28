@@ -216,101 +216,114 @@ SeafloorCavern_Room9_Movement_Delay32:
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "ARCHIE: Hold it right there.$"
+	.string "ARCHIE: Đứng lại đó.$"
 
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
-	.string "ARCHIE: Fufufu…\n"
-	.string "So it was you, after all.$"
+	.string "ARCHIE: Fufufu... Quả nhiên lại là ngươi.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "ARCHIE: Behold!\p"
-	.string "See how beautiful it is, the sleeping\n"
-	.string "form of the ancient POKéMON KYOGRE!\p"
-	.string "I have waited so long for this day to\n"
-	.string "come…$"
+	.string "ARCHIE: Hãy chiêm ngưỡng!\p"
+	.string "Hãy nhìn dáng vẻ say ngủ tuyệt đẹp của\n"
+	.string "POKéMON cổ đại KYOGRE!\p"
+	.string "Ta đã chờ ngày này quá lâu rồi...$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
-	.string "ARCHIE: It surprises me, how you've\n"
-	.string "managed to chase me here.\p"
-	.string "But that's all over now.\p"
-	.string "For the realization of my dream,\n"
-	.string "you must disappear now!$"
+	.string "ARCHIE: Ta rất ngạc nhiên khi ngươi có\n"
+	.string "thể đuổi theo ta đến tận đây.\p"
+	.string "Nhưng giờ mọi chuyện đã kết thúc.\p"
+	.string "Để giấc mơ của ta trở thành hiện thực,\n"
+	.string "ngươi phải biến mất!$"
 
 SeafloorCavern_Room9_Text_ArchieDefeat:
-	.string "What?!\n"
-	.string "I lost to a mere child like you?!$"
+	.string "Cái gì?! Ta lại thua một đứa trẻ như\n"
+	.string "ngươi sao?!$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "ARCHIE: Fufufu…\p"
-	.string "I commend you. I must recognize that\n"
-	.string "you are truly gifted.\p"
-	.string "But!\n"
-	.string "I have this in my possession!\p"
-	.string "With this RED ORB, I can make KYOGRE…$"
+	.string "ARCHIE: Fufufu...\p"
+	.string "Ta khen ngợi ngươi. Ta phải công nhận\n"
+	.string "ngươi thật sự rất tài giỏi.\p"
+	.string "Nhưng! Ta đang sở hữu thứ này!\p"
+	.string "Với RED ORB, ta có thể khiến KYOGRE...$"
 
 SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "The RED ORB suddenly began shining\n"
-	.string "by itself!$"
+	.string "RED ORB đột nhiên tự phát sáng!$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
-	.string "ARCHIE: What?!\p"
-	.string "I didn't do anything.\n"
-	.string "Why did the RED ORB…\p"
-	.string "Where did KYOGRE go?$"
+	.string "ARCHIE: Cái gì?!\p"
+	.string "Ta có làm gì đâu. Tại sao RED ORB lại...\p"
+	.string "KYOGRE đã đi đâu rồi?$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
-	.string "ARCHIE: Hm? It's a message from our\n"
-	.string "members outside…$"
+	.string "ARCHIE: Hửm? Có tin nhắn từ các thành\n"
+	.string "viên bên ngoài...$"
 
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
-	.string "ARCHIE: Yes, what is it?\p"
-	.string "Hm…\n"
-	.string "It's raining heavily?\p"
-	.string "Good… That should have happened.\n"
-	.string "That is why we awakened KYOGRE,\l"
-	.string "to realize TEAM AQUA's vision of\l"
-	.string "expanding the sea.\p"
-	.string "What?!\p"
-	.string "It's raining far harder than we\n"
-	.string "envisioned? You're in danger?\p"
-	.string "That can't be…\n"
-	.string "That's just not possible…\p"
-	.string "Hold your position and monitor\n"
-	.string "the situation!$"
+	.string "ARCHIE: Ừ, có chuyện gì?\p"
+	.string "Hửm... Trời đang mưa lớn sao?\p"
+	.string "Tốt... Đúng là phải như vậy. Đó chính là\n"
+	.string "lý do bọn ta đánh thức KYOGRE, để thực\l"
+	.string "hiện lý tưởng mở rộng biển cả của TEAM\l"
+	.string "AQUA.\p"
+	.string "Cái gì?!\p"
+	.string "Mưa lớn hơn dự tính rất nhiều sao? Các\n"
+	.string "ngươi đang gặp nguy hiểm?\p"
+	.string "Không thể nào... Chuyện đó không thể\n"
+	.string "xảy ra...\p"
+	.string "Giữ nguyên vị trí và tiếp tục theo dõi\n"
+	.string "tình hình!$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
-	.string "ARCHIE: There's something wrong…\p"
-	.string "The RED ORB is supposed to awaken\n"
-	.string "and control KYOGRE…\p"
-	.string "But… Why?\n"
-	.string "Why did KYOGRE disappear?\p"
-	.string "Why?!$"
+	.string "ARCHIE: Có gì đó không ổn...\p"
+	.string "RED ORB đáng lẽ phải đánh thức và điều\n"
+	.string "khiển KYOGRE...\p"
+	.string "Nhưng... Tại sao? Tại sao KYOGRE lại biến\n"
+	.string "mất?\p"
+	.string "Tại sao?!$"
 
 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
-	.string "MAXIE: What have you wrought?\p"
-	.string "ARCHIE… You've finally awoken KYOGRE,\n"
-	.string "haven't you?\p"
-	.string "What will happen to the world if this\n"
-	.string "downpour continues for all eternity?\p"
-	.string "The world's landmass will drown in\n"
-	.string "the deepening sea…$"
+	.string "MAXIE: Ngươi đã gây ra chuyện gì thế?\p"
+	.string "ARCHIE... Cuối cùng ngươi cũng đánh\n"
+	.string "thức KYOGRE rồi, phải không?\p"
+	.string "Thế giới sẽ ra sao nếu trận mưa này kéo\n"
+	.string "dài vĩnh viễn?\p"
+	.string "Toàn bộ đất liền sẽ chìm trong biển\n"
+	.string "nước ngày càng dâng cao...$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
-	.string "ARCHIE: W-what?!\n"
-	.string "Don't get all high and mighty with me!\p"
-	.string "Wasn't it you, TEAM MAGMA, that\n"
-	.string "infuriated GROUDON?\p"
-	.string "So long as I have this RED ORB,\n"
-	.string "I should be able to control KYOGRE…\p"
-	.string "I should be able to control it…$"
+	.string "ARCHIE: C-cái gì?! Đừng có lên mặt với\n"
+	.string "ta!\p"
+	.string "Chẳng phải chính TEAM MAGMA các ngươi\n"
+	.string "đã chọc giận GROUDON sao?\p"
+	.string "Chỉ cần có RED ORB, ta phải điều khiển\n"
+	.string "được KYOGRE...\p"
+	.string "Ta phải điều khiển được nó...$"
 
 SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
-	.string "MAXIE: We don't have the time to\n"
-	.string "argue about it here!\p"
-	.string "Get outside and see for yourself!\p"
-	.string "See if what you've wrought is the\n"
-	.string "world that we desired!$"
+	.string "MAXIE: Chúng ta không có thời gian\n"
+	.string "tranh cãi ở đây!\p"
+	.string "Ra ngoài và tự mình nhìn đi!\p"
+	.string "Hãy xem thế giới do ngươi gây nên có\n"
+	.string "phải là thế giới chúng ta mong muốn\l"
+	.string "không!$"
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
-	.string "MAXIE: {PLAYER}, come on, you have\n"
-	.string "to get out of here, too!$"
+	.string "MAXIE: {PLAYER}, mau lên, ngươi cũng\n"
+	.string "phải rời khỏi đây!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SeafloorCavern_Room9_Text_ArchieHoldItRightThere
+	.global SeafloorCavern_Room9_Text_ArchieSoItWasYou
+	.global SeafloorCavern_Room9_Text_ArchieBeholdKyogre
+	.global SeafloorCavern_Room9_Text_ArchieYouMustDisappear
+	.global SeafloorCavern_Room9_Text_ArchieDefeat
+	.global SeafloorCavern_Room9_Text_ArchieWithThisRedOrb
+	.global SeafloorCavern_Room9_Text_RedOrbShinesByItself
+	.global SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo
+	.global SeafloorCavern_Room9_Text_ArchieAMessageFromOutside
+	.global SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard
+	.global SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear
+	.global SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought
+	.global SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty
+	.global SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue
+	.global SeafloorCavern_Room9_Text_MaxieComeOnPlayer
+@ END GENERATED LOCALIZATION EXPORTS

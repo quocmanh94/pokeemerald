@@ -972,104 +972,124 @@ LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase::
 	end
 
 LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase:
-	.string "Yippee!\p"
-	.string "The lady at the reception counter\n"
-	.string "gave me a case for {POKEBLOCK}S!$"
+	.string "Hoan hô!\p"
+	.string "Cô ở quầy tiếp tân đã tặng tôi một\n"
+	.string "chiếc hộp đựng {POKEBLOCK}S!$"
 
 LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries:
-	.string "Make {POKEBLOCK}S and put them in there.\p"
-	.string "When you make a {POKEBLOCK}, everyone\n"
-	.string "has to put in a different BERRY.$"
+	.string "Hãy làm {POKEBLOCK}S rồi cất chúng vào\n"
+	.string "đó.\p"
+	.string "Khi làm một {POKEBLOCK}, mỗi người phải\n"
+	.string "cho vào một loại BERRY khác nhau.$"
 
 LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint:
-	.string "Congratulations!\p"
-	.string "I did a painting of your POKéMON to\n"
-	.string "commemorate its victory…\p"
-	.string "Well, your POKéMON's appeals were\n"
-	.string "so fantastic, it spurred me into\l"
-	.string "painting better than I usually do.\l"
-	.string "Look, see?$"
+	.string "Xin chúc mừng!\p"
+	.string "Tôi đã vẽ một bức tranh POKéMON của\n"
+	.string "bạn để kỷ niệm chiến thắng của nó...\p"
+	.string "Những màn biểu diễn của POKéMON tuyệt\n"
+	.string "vời đến mức truyền cảm hứng cho tôi vẽ\l"
+	.string "đẹp hơn thường lệ. Nhìn xem!$"
 
 LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum:
-	.string "What do you think? I'm confident in\n"
-	.string "what I've done, but do you like it?\p"
-	.string "A work of this caliber, it wouldn't look\n"
-	.string "out of place in an art museum.\p"
-	.string "Huh? An art museum really is looking\n"
-	.string "for paintings?\p"
-	.string "Do you think I should take this there?$"
+	.string "Bạn thấy thế nào? Tôi rất tự tin vào\n"
+	.string "tác phẩm này, nhưng bạn có thích nó\l"
+	.string "không?\p"
+	.string "Một tác phẩm tầm cỡ thế này mà đặt\n"
+	.string "trong bảo tàng mỹ thuật cũng chẳng hề\l"
+	.string "lạc lõng.\p"
+	.string "Hả? Một bảo tàng mỹ thuật thật sự đang\n"
+	.string "tìm tranh để trưng bày sao?\p"
+	.string "Bạn nghĩ tôi có nên mang bức tranh đến\n"
+	.string "đó không?$"
 
 LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum:
-	.string "What, really? Then, sure, I will take\n"
-	.string "this painting there right now.\p"
-	.string "I'll give it a proper title, too.\p"
-	.string "I hope they'll like it and consider\n"
-	.string "exhibiting this.\p"
-	.string "Please check if they did accept this.\n"
-	.string "Thank you!$"
+	.string "Gì cơ, thật sao? Vậy tôi sẽ mang bức\n"
+	.string "tranh đến đó ngay.\p"
+	.string "Tôi cũng sẽ đặt cho nó một cái tên thật\n"
+	.string "đàng hoàng.\p"
+	.string "Mong rằng họ sẽ thích và cân nhắc\n"
+	.string "trưng bày nó.\p"
+	.string "Xin hãy đến xem họ có nhận bức tranh\n"
+	.string "không nhé. Cảm ơn bạn!$"
 
 LilycoveCity_ContestLobby_Text_TakeMementoOfPainting:
-	.string "Oh, that's right!\p"
-	.string "As a memento of me painting your\n"
-	.string "POKéMON, please take this.$"
+	.string "Ồ, phải rồi!\p"
+	.string "Để làm kỷ niệm về việc tôi đã vẽ POKéMON\n"
+	.string "của bạn, xin hãy nhận món này.$"
 
 LilycoveCity_ContestLobby_Text_ReceivedARibbon:
-	.string "{PLAYER} received a RIBBON.$"
+	.string "{PLAYER} nhận được một RIBBON.$"
 
 LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon:
-	.string "{PLAYER} put the RIBBON on\n"
+	.string "{PLAYER} đeo RIBBON cho\n"
 	.string "{STR_VAR_1}.$"
 
 LilycoveCity_ContestLobby_Text_OkaySeeYou:
-	.string "Okay, see you!$"
+	.string "Được rồi, hẹn gặp lại!$"
 
 LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum:
-	.string "Oh… Then, I guess I'll just take\n"
-	.string "this home with me…\p"
-	.string "But, you know, I would like to take\n"
-	.string "this to the art museum… Okay?$"
+	.string "Ồ... Vậy chắc tôi sẽ mang bức tranh này\n"
+	.string "về nhà...\p"
+	.string "Nhưng bạn biết đấy, tôi vẫn muốn mang\n"
+	.string "nó đến bảo tàng mỹ thuật... Được chứ?$"
 
 LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs:
-	.string "Oh, fine, that's the way it is.\n"
-	.string "I will hang this in my own house.\p"
-	.string "I'll just have to try harder next time.\n"
-	.string "Well, be seeing you.$"
+	.string "Ồ, được thôi, nếu đã vậy thì tôi sẽ treo\n"
+	.string "thứ này trong nhà mình.\p"
+	.string "Lần sau tôi đành phải cố gắng hơn nữa.\n"
+	.string "Thôi, hẹn gặp lại.$"
 
 LilycoveCity_ContestLobby_Text_MasterRankHereICome:
-	.string "Hoo, boy… Master Rank CONTESTS,\n"
-	.string "here I come.\p"
-	.string "The world will know that my dearest\n"
-	.string "POKéMON is the cutest being in all\l"
-	.string "existence. The time has come!\l"
-	.string "Uheheheh.$"
+	.string "Chà... Master Rank, ta tới đây!\p"
+	.string "Cả thế giới sẽ biết POKéMON yêu quý\n"
+	.string "nhất của ta là sinh vật đáng yêu nhất\l"
+	.string "trên đời. Thời khắc đã đến! Uheheheh.$"
 
 LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere:
-	.string "You can see a whole variety of\n"
-	.string "POKéMON here.\p"
-	.string "That's why I make this place a regular\n"
-	.string "part of my daily stroll.$"
+	.string "Ở đây có thể thấy đủ loại POKéMON.\p"
+	.string "Vì vậy, ngày nào đi dạo tôi cũng ghé qua\n"
+	.string "nơi này.$"
 
 LilycoveCity_ContestLobby_Text_ContestFeastForEyes:
-	.string "Wow, coming out to a CONTEST is\n"
-	.string "a feast for these eyes!\p"
-	.string "Would you look at all the POKéMON\n"
-	.string "that just scream to be painted?$"
+	.string "Chà, đến xem cuộc thi đúng là đã mắt\n"
+	.string "thật!\p"
+	.string "Nhìn xem, POKéMON nào cũng như đang\n"
+	.string "kêu lên rằng hãy vẽ mình đi!$"
 
 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
-	.string "The TOUGHNESS CONTEST is like\n"
-	.string "extreme, man!\p"
-	.string "Those muscular appeals…\n"
-	.string "Cascading sweat… I swoon!$"
+	.string "TOUGHNESS CONTEST đúng là cực đỉnh,\n"
+	.string "anh bạn!\p"
+	.string "Những màn trình diễn cơ bắp... Mồ hôi\n"
+	.string "tuôn như suối... Tôi ngất mất!$"
 
 LilycoveCity_ContestLobby_Text_LavishedCareOnMon:
-	.string "Day in and day out, I lavished my care\n"
-	.string "on this POKéMON.\p"
-	.string "Its condition is peaking.\n"
-	.string "Today, victory is mine!$"
+	.string "Ngày này qua ngày khác, tôi đã hết lòng\n"
+	.string "chăm sóc POKéMON này.\p"
+	.string "Phong độ của nó đang ở đỉnh cao. Hôm\n"
+	.string "nay, chiến thắng sẽ thuộc về tôi!$"
 
 LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
-	.string "I made {POKEBLOCK}S with Mom, Dad, and\n"
-	.string "Big Sister. They turned out great!\p"
-	.string "I bet you can make smoother, better\n"
-	.string "{POKEBLOCK}S if you have more people.$"
+	.string "Mình đã làm {POKEBLOCK}S cùng mẹ, ba và\n"
+	.string "chị gái. Thành phẩm tuyệt lắm!\p"
+	.string "Mình cá là càng đông người thì càng\n"
+	.string "làm được {POKEBLOCK}S mịn và ngon hơn.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase
+	.global LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries
+	.global LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint
+	.global LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum
+	.global LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum
+	.global LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
+	.global LilycoveCity_ContestLobby_Text_ReceivedARibbon
+	.global LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
+	.global LilycoveCity_ContestLobby_Text_OkaySeeYou
+	.global LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum
+	.global LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs
+	.global LilycoveCity_ContestLobby_Text_MasterRankHereICome
+	.global LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere
+	.global LilycoveCity_ContestLobby_Text_ContestFeastForEyes
+	.global LilycoveCity_ContestLobby_Text_ToughContestIsExtreme
+	.global LilycoveCity_ContestLobby_Text_LavishedCareOnMon
+	.global LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily
+@ END GENERATED LOCALIZATION EXPORTS

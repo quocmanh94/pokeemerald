@@ -14,17 +14,24 @@ BattleFrontier_Lounge4_EventScript_Man::
 	end
 
 BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring:
-	.string "I wonder if they'll be airing interviews\n"
-	.string "with tough TRAINERS today?$"
+	.string "Không biết hôm nay họ có phát sóng cuộc\n"
+	.string "phỏng vấn với những HLV mạnh\l"
+	.string "không nhỉ?$"
 
 BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere:
-	.string "If I opened a restaurant here,\n"
-	.string "it'd make money for sure.$"
+	.string "Nếu mở nhà hàng ở đây, chắc chắn tôi sẽ\n"
+	.string "kiếm bộn tiền.$"
 
 BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles:
-	.string "Whew…\p"
-	.string "I need to take a breather after\n"
-	.string "some intense battles…\p"
-	.string "But even now, I never take a break\n"
-	.string "from plotting strategy and combos.$"
+	.string "Phù.\p"
+	.string "Sau những trận đấu căng thẳng, tôi phải\n"
+	.string "nghỉ lấy hơi một chút.\p"
+	.string "Nhưng ngay cả lúc này, đầu óc tôi vẫn\n"
+	.string "không ngừng tính toán chiến thuật và\l"
+	.string "các chuỗi phối hợp.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring
+	.global BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere
+	.global BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles
+@ END GENERATED LOCALIZATION EXPORTS

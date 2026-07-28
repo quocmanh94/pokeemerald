@@ -1,22 +1,22 @@
-const u8 gRibbonDescriptionPart1_Champion[] = _("CHAMPION-beating, HALL");
-const u8 gRibbonDescriptionPart2_Champion[] = _("OF FAME Member RIBBON");
+const u8 gRibbonDescriptionPart1_Champion[] = _("Hạ CHAMPION, vào HALL");
+const u8 gRibbonDescriptionPart2_Champion[] = _("OF FAME, nhận RIBBON");
 const u8 gRibbonDescriptionPart1_CoolContest[] = _("COOL CONTEST");
 const u8 gRibbonDescriptionPart1_BeautyContest[] = _("BEAUTY CONTEST");
 const u8 gRibbonDescriptionPart1_CuteContest[] = _("CUTE CONTEST");
 const u8 gRibbonDescriptionPart1_SmartContest[] = _("SMART CONTEST");
 const u8 gRibbonDescriptionPart1_ToughContest[] = _("TOUGH CONTEST");
-const u8 gRibbonDescriptionPart2_NormalRank[] = _("Normal Rank winner!");
-const u8 gRibbonDescriptionPart2_SuperRank[] = _("Super Rank winner!");
-const u8 gRibbonDescriptionPart2_HyperRank[] = _("Hyper Rank winner!");
-const u8 gRibbonDescriptionPart2_MasterRank[] = _("Master Rank winner!");
-const u8 gRibbonDescriptionPart1_Winning[] = _("For clearing LV50");
-const u8 gRibbonDescriptionPart2_Winning[] = _("at the BATTLE TOWER.");
-const u8 gRibbonDescriptionPart1_Victory[] = _("For clearing Open Level");
-const u8 gRibbonDescriptionPart2_Victory[] = _("at the BATTLE TOWER.");
-const u8 gRibbonDescriptionPart1_Artist[] = _("RIBBON for being chosen");
-const u8 gRibbonDescriptionPart2_Artist[] = _("as a super sketch model.");
-const u8 gRibbonDescriptionPart1_Effort[] = _("RIBBON awarded for");
-const u8 gRibbonDescriptionPart2_Effort[] = _("being a hard worker.");
+const u8 gRibbonDescriptionPart2_NormalRank[] = _("Quán quân Normal Rank!");
+const u8 gRibbonDescriptionPart2_SuperRank[] = _("Quán quân Super Rank!");
+const u8 gRibbonDescriptionPart2_HyperRank[] = _("Quán quân Hyper Rank!");
+const u8 gRibbonDescriptionPart2_MasterRank[] = _("Quán quân Master Rank!");
+const u8 gRibbonDescriptionPart1_Winning[] = _("Vì đã vượt qua LV50");
+const u8 gRibbonDescriptionPart2_Winning[] = _("tại BATTLE TOWER.");
+const u8 gRibbonDescriptionPart1_Victory[] = _("Vượt Open Level");
+const u8 gRibbonDescriptionPart2_Victory[] = _("tại BATTLE TOWER.");
+const u8 gRibbonDescriptionPart1_Artist[] = _("RIBBON vì được chọn");
+const u8 gRibbonDescriptionPart2_Artist[] = _("làm mẫu ký họa siêu hạng.");
+const u8 gRibbonDescriptionPart1_Effort[] = _("RIBBON được trao vì");
+const u8 gRibbonDescriptionPart2_Effort[] = _("đã luôn nỗ lực hết mình.");
 
 const u8 *const gRibbonDescriptionPointers[][2] =
 {
@@ -46,3 +46,21 @@ const u8 *const gRibbonDescriptionPointers[][2] =
     [ARTIST_RIBBON]        = {gRibbonDescriptionPart1_Artist,        gRibbonDescriptionPart2_Artist},
     [EFFORT_RIBBON]        = {gRibbonDescriptionPart1_Effort,        gRibbonDescriptionPart2_Effort},
 };
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02384 = gRibbonDescriptionPart1_Champion;
+const u8 *const gLocalizationSource_C02385 = gRibbonDescriptionPart2_Champion;
+const u8 *const gLocalizationSource_C02386 = gRibbonDescriptionPart2_NormalRank;
+const u8 *const gLocalizationSource_C02387 = gRibbonDescriptionPart2_SuperRank;
+const u8 *const gLocalizationSource_C02388 = gRibbonDescriptionPart2_HyperRank;
+const u8 *const gLocalizationSource_C02389 = gRibbonDescriptionPart2_MasterRank;
+const u8 *const gLocalizationSource_C02390 = gRibbonDescriptionPart1_Winning;
+const u8 *const gLocalizationSource_C02391 = gRibbonDescriptionPart2_Winning;
+const u8 *const gLocalizationSource_C02392 = gRibbonDescriptionPart1_Victory;
+const u8 *const gLocalizationSource_C02393 = gRibbonDescriptionPart2_Victory;
+const u8 *const gLocalizationSource_C02394 = gRibbonDescriptionPart1_Artist;
+const u8 *const gLocalizationSource_C02395 = gRibbonDescriptionPart2_Artist;
+const u8 *const gLocalizationSource_C02396 = gRibbonDescriptionPart1_Effort;
+const u8 *const gLocalizationSource_C02397 = gRibbonDescriptionPart2_Effort;
+// END GENERATED LOCALIZATION EXPORTS

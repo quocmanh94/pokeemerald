@@ -59,25 +59,31 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "Chào mừng, ta là GLACIA của ELITE FOUR.\p"
+	.string "Ta đã vượt đường xa đến HOENN để rèn\n"
+	.string "luyện kỹ năng băng giá của mình.\p"
+	.string "Nhưng những gì ta chứng kiến chỉ là\n"
+	.string "lời thách đấu từ các HLV yếu đuối\l"
+	.string "cùng POKéMON của họ.\p"
+	.string "Còn ngươi thì sao?\p"
+	.string "Ta sẽ vô cùng mãn nguyện nếu có thể dốc\n"
+	.string "toàn lực đấu với ngươi!$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "Ngươi và POKéMON của ngươi... Tinh\n"
+	.string "thần của các ngươi cháy bỏng biết bao!\p"
+	.string "Sức nóng thiêu đốt tất cả đã áp đảo ta.\p"
+	.string "Chẳng trách kỹ năng băng giá của ta\n"
+	.string "không thể làm tổn thương ngươi.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "Hãy tiến vào căn phòng tiếp theo.\p"
+	.string "Tại đó, ngươi sẽ được chứng kiến bộ\n"
+	.string "mặt thực sự đáng sợ của POKéMON\l"
+	.string "LEAGUE.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_GlaciasRoom_Text_IntroSpeech
+	.global EverGrandeCity_GlaciasRoom_Text_Defeat
+	.global EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
+@ END GENERATED LOCALIZATION EXPORTS

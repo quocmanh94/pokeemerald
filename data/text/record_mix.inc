@@ -1,6 +1,11 @@
 Text_WouldYouLikeToMixRecords:
-	.string "Would you like to mix records with\n"
-	.string "other TRAINERS?$"
+	.string "Bạn có muốn trộn dữ liệu với\n"
+	.string "các HLV khác không?$"
 
 Text_WeHopeToSeeYouAgain:
-	.string "We hope to see you again!$"
+	.string "Hẹn gặp lại bạn!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Text_WouldYouLikeToMixRecords
+	.global Text_WeHopeToSeeYouAgain
+@ END GENERATED LOCALIZATION EXPORTS

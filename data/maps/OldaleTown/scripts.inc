@@ -340,58 +340,64 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "Tôi muốn nghỉ một lát nên đang lưu lại\n"
+	.string "tiến trình.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "Chào! Tôi làm việc tại một POKéMON MART.\p"
+	.string "Cậu đi cùng tôi một chút nhé?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "Đây là một POKéMON MART. Cứ tìm mái nhà\n"
+	.string "màu xanh của chúng tôi.\p"
+	.string "Chúng tôi bán nhiều mặt hàng, gồm cả\n"
+	.string "POKé BALLS dùng để bắt POKéMON.\p"
+	.string "Đây, tôi muốn tặng cậu món quà quảng bá\n"
+	.string "này.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "POTION có thể dùng bất cứ lúc nào, nên\n"
+	.string "trong một số tình huống còn hữu ích\l"
+	.string "hơn cả POKéMON CENTER.$"
 
 OldaleTown_Text_WaitDontComeInHere:
-	.string "Aaaaah! Wait!\n"
-	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Áááá! Khoan đã! Xin đừng đi vào đây.\p"
+	.string "Tôi vừa phát hiện dấu chân của một\n"
+	.string "POKéMON quý hiếm!\p"
+	.string "Chờ đến khi tôi vẽ chúng xong nhé?$"
 
 OldaleTown_Text_DiscoveredFootprints:
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Tôi vừa phát hiện dấu chân của một\n"
+	.string "POKéMON quý hiếm!\p"
+	.string "Chờ đến khi tôi vẽ chúng xong nhé?$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints…$"
+	.string "Tôi đã vẽ xong dấu chân của một\n"
+	.string "POKéMON quý hiếm.\p"
+	.string "Nhưng hóa ra đó chỉ là dấu chân của\n"
+	.string "chính tôi...$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "MAY: {PLAYER}{KUN}! Bên này! Mau về\n"
+	.string "nhà thôi!$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "BRENDAN: Tớ đang quay về LAB của ba.\n"
+	.string "{PLAYER}, cậu cũng mau quay lại đi.$"
 
 OldaleTown_Text_TownSign:
-	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
+	.string "OLDALE TOWN “Nơi mọi thứ khởi đầu\n"
+	.string "trong thiếu thốn.”$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global OldaleTown_Text_SavingMyProgress
+	.global OldaleTown_Text_IWorkAtPokemonMart
+	.global OldaleTown_Text_ThisIsAPokemonMart
+	.global OldaleTown_Text_PotionExplanation
+	.global OldaleTown_Text_WaitDontComeInHere
+	.global OldaleTown_Text_DiscoveredFootprints
+	.global OldaleTown_Text_FinishedSketchingFootprints
+	.global OldaleTown_Text_MayLetsGoBack
+	.global OldaleTown_Text_BrendanLetsGoBack
+	.global OldaleTown_Text_TownSign
+@ END GENERATED LOCALIZATION EXPORTS

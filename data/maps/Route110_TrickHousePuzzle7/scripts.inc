@@ -105,77 +105,96 @@ Route110_TrickHousePuzzle7_EventScript_Everett::
 	end
 
 Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is huggable.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER thật đáng ôm.” ... ... ... ...\n"
+	.string "... ... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
-	.string "The TRICK MASTER always vanishes\n"
-	.string "like smoke. How does he do it?$"
+	.string "TRICK MASTER lúc nào cũng biến mất như\n"
+	.string "làn khói. Ông ấy làm thế nào vậy?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
-	.string "Aiyeeeh! You're much too strong!\n"
-	.string "How do you do it?$"
+	.string "Aiyeeeh! Bạn mạnh quá sức rồi! Làm sao\n"
+	.string "bạn làm được thế?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaPostBattle:
-	.string "I wish I could appear and disappear as\n"
-	.string "if I were smoke, too.$"
+	.string "Tôi cũng ước mình có thể thoắt ẩn\n"
+	.string "thoắt hiện như làn khói.$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaIntro:
-	.string "Going around the same spot…\n"
-	.string "It begets ill fortune…$"
+	.string "Cứ đi vòng quanh cùng một chỗ... sẽ\n"
+	.string "rước vận rủi...$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaDefeat:
-	.string "Defeated!\n"
-	.string "It's a bad sign…$"
+	.string "Bị đánh bại rồi! Đây là điềm xấu...$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaPostBattle:
-	.string "I've circled the same spot over ten\n"
-	.string "times now… It's ill fortune…$"
+	.string "Tôi đã đi vòng quanh cùng một chỗ hơn\n"
+	.string "mười lần... Đúng là vận rủi...$"
 
 Route110_TrickHousePuzzle7_Text_AlexisIntro:
-	.string "Whoever wins will get through here\n"
-	.string "first. That's the feeling I get.$"
+	.string "Ai thắng sẽ được qua đây trước. Tôi có\n"
+	.string "linh cảm như vậy.$"
 
 Route110_TrickHousePuzzle7_Text_AlexisDefeat:
-	.string "Oh!\n"
-	.string "Well, go ahead, then!$"
+	.string "Ồ! Vậy thì bạn cứ đi trước đi!$"
 
 Route110_TrickHousePuzzle7_Text_AlexisPostBattle:
-	.string "You're solving all the puzzles in the\n"
-	.string "TRICK HOUSE. That's the feeling I get.$"
+	.string "Tôi có cảm giác bạn sẽ giải được hết mọi\n"
+	.string "câu đố trong TRICK HOUSE.$"
 
 Route110_TrickHousePuzzle7_Text_MarielaIntro:
-	.string "Nufufufu, here at last!\n"
-	.string "Let's get right with it!$"
+	.string "Nufufufu, cuối cùng cũng đến rồi! Bắt\n"
+	.string "đầu ngay nào!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaDefeat:
-	.string "You're so casual about winning!$"
+	.string "Bạn thắng mà thản nhiên quá!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaPostBattle:
-	.string "Humph! I'm not upset!\n"
-	.string "Not me!$"
+	.string "Hừ! Tôi không bực đâu! Không hề!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroIntro:
-	.string "I ever so closely watched you coming!$"
+	.string "Tôi đã chăm chú dõi theo bạn đến đây!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
-	.string "This outcome I didn't see coming…$"
+	.string "Kết quả này thì tôi không lường trước\n"
+	.string "được...$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
-	.string "Well, anyway, we both picked a weird\n"
-	.string "place to get acquainted.\p"
-	.string "As one weirdo to another,\n"
-	.string "let's do our best!$"
+	.string "Dù sao thì cả hai ta đã chọn một nơi kỳ\n"
+	.string "quặc để làm quen.\p"
+	.string "Người kỳ quặc gặp người kỳ quặc, cùng\n"
+	.string "cố gắng nhé!$"
 
 Route110_TrickHousePuzzle7_Text_EverettIntro:
-	.string "It's awfully cramped in here…$"
+	.string "Ở đây chật chội quá...$"
 
 Route110_TrickHousePuzzle7_Text_EverettDefeat:
-	.string "Oh, yes, strong you are.$"
+	.string "Ồ, đúng vậy, bạn quả là mạnh.$"
 
 Route110_TrickHousePuzzle7_Text_EverettPostBattle:
-	.string "I was hoping to switch places with you\n"
-	.string "when I beat you, but…$"
+	.string "Tôi đã định thắng bạn rồi đổi chỗ với\n"
+	.string "bạn, nhưng...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle7_Text_JoshuaIntro
+	.global Route110_TrickHousePuzzle7_Text_JoshuaDefeat
+	.global Route110_TrickHousePuzzle7_Text_JoshuaPostBattle
+	.global Route110_TrickHousePuzzle7_Text_PatriciaIntro
+	.global Route110_TrickHousePuzzle7_Text_PatriciaDefeat
+	.global Route110_TrickHousePuzzle7_Text_PatriciaPostBattle
+	.global Route110_TrickHousePuzzle7_Text_AlexisIntro
+	.global Route110_TrickHousePuzzle7_Text_AlexisDefeat
+	.global Route110_TrickHousePuzzle7_Text_AlexisPostBattle
+	.global Route110_TrickHousePuzzle7_Text_MarielaIntro
+	.global Route110_TrickHousePuzzle7_Text_MarielaDefeat
+	.global Route110_TrickHousePuzzle7_Text_MarielaPostBattle
+	.global Route110_TrickHousePuzzle7_Text_AlvaroIntro
+	.global Route110_TrickHousePuzzle7_Text_AlvaroDefeat
+	.global Route110_TrickHousePuzzle7_Text_AlvaroPostBattle
+	.global Route110_TrickHousePuzzle7_Text_EverettIntro
+	.global Route110_TrickHousePuzzle7_Text_EverettDefeat
+	.global Route110_TrickHousePuzzle7_Text_EverettPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

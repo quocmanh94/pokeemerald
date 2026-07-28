@@ -28,27 +28,34 @@ PacifidlogTown_EventScript_TownSign::
 	end
 
 PacifidlogTown_Text_FastRunningCurrent:
-	.string "The sea between PACIFIDLOG and\n"
-	.string "SLATEPORT has a fast-running tide.\p"
-	.string "If you decide to SURF, you could end\n"
-	.string "up swept away somewhere else.$"
+	.string "Vùng biển giữa PACIFIDLOG và\n"
+	.string "SLATEPORT có dòng thủy triều chảy rất\l"
+	.string "xiết.\p"
+	.string "Nếu dùng SURF, cậu có thể bị cuốn trôi\n"
+	.string "đến một nơi khác.$"
 
 PacifidlogTown_Text_NeatHousesOnWater:
-	.string "See, isn't it neat?\n"
-	.string "These houses are on water!\p"
-	.string "I was born here!$"
+	.string "Thấy chưa, tuyệt lắm phải không? Những\n"
+	.string "ngôi nhà này nằm trên mặt nước!\p"
+	.string "Tôi được sinh ra ở đây đấy!$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
-	.string "The SKY PILLAR?\p"
-	.string "…Oh, you must mean that tall, tall\n"
-	.string "tower a little further out.\p"
-	.string "If you asked me, I wouldn't climb it.\n"
-	.string "It's too scary to get up that high.\p"
-	.string "Life at sea level in PACIFIDLOG,\n"
-	.string "that suits me fine.$"
+	.string "SKY PILLAR ư?\p"
+	.string "...À, chắc cậu đang nói tới tòa tháp cao\n"
+	.string "thật cao ở ngoài xa hơn một chút.\p"
+	.string "Nếu là tôi thì tôi sẽ không leo lên đó.\n"
+	.string "Lên cao như vậy đáng sợ lắm.\p"
+	.string "Sống ngang mực nước biển tại\n"
+	.string "PACIFIDLOG là hợp với tôi rồi.$"
 
 PacifidlogTown_Text_TownSign:
 	.string "PACIFIDLOG TOWN\p"
-	.string "“Where the morning sun smiles upon\n"
-	.string "the waters.”$"
+	.string "“Nơi mặt trời ban mai mỉm cười trên\n"
+	.string "sóng nước.”$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_Text_FastRunningCurrent
+	.global PacifidlogTown_Text_NeatHousesOnWater
+	.global PacifidlogTown_Text_SkyPillarTooScary
+	.global PacifidlogTown_Text_TownSign
+@ END GENERATED LOCALIZATION EXPORTS
