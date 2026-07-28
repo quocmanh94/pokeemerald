@@ -7,11 +7,12 @@ gText_LinkStandby4::
 	.string "Link standby!$"
 
 gText_WinnerIsPlayersMonCongrats::
-	.string "The winner is {STR_VAR_1}'s {STR_VAR_2}!\n"
-	.string "Congratulations!$"
+	.string "Người chiến thắng là {STR_VAR_2}\n"
+	.string "của {STR_VAR_1}! Xin chúc mừng!$"
 
 gText_WinnerIsPlayersMon::
-	.string "The winner is {STR_VAR_1}'s {STR_VAR_2}!{PAUSE_UNTIL_PRESS}$"
+	.string "Người chiến thắng là {STR_VAR_2}\n"
+	.string "của {STR_VAR_1}!{PAUSE_UNTIL_PRESS}$"
 
 gText_PrimaryJudgingNumX::
 	.string "Primary judging: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
@@ -23,16 +24,24 @@ gText_SetEventNumX::
 	.string "Set event: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
 
 gText_MoveUsedMostOften::
-	.string "The move used most often:\n"
+	.string "Chiêu được dùng nhiều nhất:\n"
 	.string "{STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
 
 gText_MostImpressiveMon::
-	.string "The most impressive POKéMON:\n"
+	.string "POKéMON gây ấn tượng nhất:\n"
 	.string "{STR_VAR_1}'s {STR_VAR_2}{PAUSE_UNTIL_PRESS}$"
 
 gText_SetEventNumX2::
 	.string "Set event: No. {STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
 
 gText_LinkTVProgramWillNotBeMadeTrainerLost::
-	.string "A link TV program will not be made\n"
-	.string "because the TRAINER lost.{PAUSE_UNTIL_PRESS}$"
+	.string "Không có chương trình link TV\n"
+	.string "vì HLV đã thua.{PAUSE_UNTIL_PRESS}$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_WinnerIsPlayersMonCongrats
+	.global gText_WinnerIsPlayersMon
+	.global gText_MoveUsedMostOften
+	.global gText_MostImpressiveMon
+	.global gText_LinkTVProgramWillNotBeMadeTrainerLost
+@ END GENERATED LOCALIZATION EXPORTS

@@ -63,20 +63,24 @@ PetalburgCity_Mart_EventScript_Man::
 	end
 
 PetalburgCity_Mart_Text_WeakWillGrowStronger:
-	.string "Even if a POKéMON is weak now,\n"
-	.string "it will grow stronger.\p"
-	.string "The most important thing is love!\n"
-	.string "Love for your POKéMON!$"
+	.string "Dù bây giờ một POKéMON còn yếu, nó rồi\n"
+	.string "sẽ mạnh lên.\p"
+	.string "Điều quan trọng nhất là tình yêu! Tình\n"
+	.string "yêu dành cho POKéMON của bạn!$"
 
 PetalburgCity_Mart_Text_RepelIsUseful:
-	.string "Do you use REPEL?\n"
-	.string "It keeps POKéMON away, so it's\l"
-	.string "useful when you're in a hurry.$"
+	.string "Bạn có dùng REPEL không? Nó khiến\n"
+	.string "POKéMON tránh xa, nên rất hữu ích khi\l"
+	.string "bạn đang vội.$"
 
 PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
-	.string "Do you have any ANTIDOTES with\n"
-	.string "you?\p"
-	.string "If you walk around with a poisoned\n"
-	.string "POKéMON, it will lose HP until it faints.\l"
-	.string "Take some ANTIDOTES with you.$"
+	.string "Bạn có mang theo ANTIDOTES không?\p"
+	.string "Nếu đi lại cùng một POKéMON bị trúng\n"
+	.string "độc, nó sẽ mất HP cho đến khi ngất xỉu.\l"
+	.string "Hãy mang theo vài ANTIDOTES.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_Mart_Text_WeakWillGrowStronger
+	.global PetalburgCity_Mart_Text_RepelIsUseful
+	.global PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou
+@ END GENERATED LOCALIZATION EXPORTS

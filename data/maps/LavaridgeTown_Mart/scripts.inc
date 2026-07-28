@@ -33,13 +33,18 @@ LavaridgeTown_Mart_EventScript_OldWoman::
 	end
 
 LavaridgeTown_Mart_Text_XSpeedFirstStrike:
-	.string "Use X SPEED to add to a POKéMON's\n"
-	.string "SPEED in battle.\p"
-	.string "That will help it get in the first\n"
-	.string "strike--a decided advantage!$"
+	.string "Dùng X SPEED để tăng SPEED của POKéMON\n"
+	.string "trong trận đấu.\p"
+	.string "Nhờ vậy nó có thể ra đòn trước, một lợi\n"
+	.string "thế rõ rệt!$"
 
 LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney:
-	.string "On MT. CHIMNEY's peak, there's a local\n"
-	.string "specialty that you can buy only there.\p"
-	.string "Give it to a POKéMON--it will be elated.$"
+	.string "Trên đỉnh MT. CHIMNEY có một đặc sản\n"
+	.string "địa phương chỉ mua được tại đó.\p"
+	.string "Đưa nó cho POKéMON, nó sẽ vui sướng\n"
+	.string "lắm.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LavaridgeTown_Mart_Text_XSpeedFirstStrike
+	.global LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney
+@ END GENERATED LOCALIZATION EXPORTS

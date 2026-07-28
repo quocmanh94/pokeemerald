@@ -1,43 +1,51 @@
 Questionnaire_Text_FillOut::
-	.string "There is a questionnaire.\n"
-	.string "Would you like to fill it out?$"
+	.string "Có một bảng câu hỏi.\n"
+	.string "Bạn có muốn điền không?$"
 
 Questionnaire_Text_ThankYou::
-	.string "Thank you for taking the time to\n"
-	.string "fill out our questionnaire.\p"
-	.string "Your feedback will be used for\n"
-	.string "future reference.$"
+	.string "Cảm ơn bạn đã dành thời gian\n"
+	.string "điền bảng câu hỏi.\p"
+	.string "Phản hồi của bạn sẽ được dùng\n"
+	.string "để tham khảo trong tương lai.$"
 
 Questionnaire_Text_YouKnowThoseWordsGift::
-	.string "Oh, hello!\n"
-	.string "You know those words?\p"
-	.string "That means you must know about\n"
-	.string "the MYSTERY GIFT.\p"
-	.string "From now on, you should be\n"
-	.string "receiving MYSTERY GIFTS!$"
+	.string "Ồ, xin chào!\n"
+	.string "Bạn biết những từ đó sao?\p"
+	.string "Vậy là bạn biết về MYSTERY GIFT.\p"
+	.string "Từ giờ, bạn có thể nhận\n"
+	.string "MYSTERY GIFTS!$"
 
 Questionnaire_Text_YouCanAccessMysteryGift::
-	.string "Once you save your game, you can\n"
-	.string "access the MYSTERY GIFT.$"
+	.string "Sau khi lưu game, bạn có thể\n"
+	.string "truy cập MYSTERY GIFT.$"
 
 Questionnaire_Text_YouKnowThoseWordsEvent::
-	.string "Oh, hello!\n"
-	.string "You know those words?\p"
-	.string "That means you must know about\n"
-	.string "the MYSTERY EVENT.$"
+	.string "Ồ, xin chào!\n"
+	.string "Bạn biết những từ đó sao?\p"
+	.string "Vậy là bạn biết về MYSTERY EVENT.$"
 
 Questionnaire_Text_YouCanAccessMysteryEvent::
-	.string "Once you save your game, you can\n"
-	.string "access the MYSTERY EVENT.$"
+	.string "Sau khi lưu game, bạn có thể\n"
+	.string "truy cập MYSTERY EVENT.$"
 
 MysteryGift_Text_TheresATicketForYou::
-	.string "Thank you for using the MYSTERY\n"
-	.string "EVENT System.\p"
-	.string "You must be {PLAYER}.\n"
-	.string "There is a ticket here for you.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY EVENT.\p"
+	.string "Bạn hẳn là {PLAYER}.\n"
+	.string "Có một ticket dành cho bạn.$"
 
 MysteryGift_Text_TryUsingItAtLilycovePort::
-	.string "It appears to be for use at\n"
-	.string "the LILYCOVE CITY port.\p"
-	.string "Why not give it a try and see what\n"
-	.string "it is about?$"
+	.string "Có vẻ ticket này dùng tại cảng\n"
+	.string "LILYCOVE CITY.\p"
+	.string "Sao bạn không thử dùng xem?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Questionnaire_Text_FillOut
+	.global Questionnaire_Text_ThankYou
+	.global Questionnaire_Text_YouKnowThoseWordsGift
+	.global Questionnaire_Text_YouCanAccessMysteryGift
+	.global Questionnaire_Text_YouKnowThoseWordsEvent
+	.global Questionnaire_Text_YouCanAccessMysteryEvent
+	.global MysteryGift_Text_TheresATicketForYou
+	.global MysteryGift_Text_TryUsingItAtLilycovePort
+@ END GENERATED LOCALIZATION EXPORTS

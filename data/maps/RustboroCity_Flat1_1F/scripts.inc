@@ -10,9 +10,13 @@ RustboroCity_Flat1_1F_EventScript_Woman::
 	end
 
 RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:
-	.string "Every POKéMON has a special ability\n"
-	.string "that it can use.$"
+	.string "Mỗi POKéMON đều có một năng lực đặc\n"
+	.string "biệt mà chúng có thể sử dụng.$"
 
 RustboroCity_Flat1_1F_Text_PokemonStrange:
-	.string "POKéMON are such strange creatures.$"
+	.string "POKéMON đúng là những sinh vật kỳ lạ.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility
+	.global RustboroCity_Flat1_1F_Text_PokemonStrange
+@ END GENERATED LOCALIZATION EXPORTS

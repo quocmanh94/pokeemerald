@@ -130,16 +130,21 @@ Route115_EventScript_Marlene::
 	end
 
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
-	.string "Exploring a cave isn't like walking\n"
-	.string "on a road.\p"
-	.string "You never know when wild POKéMON will\n"
-	.string "appear. It's full of suspense.$"
+	.string "Khám phá hang động không giống như đi\n"
+	.string "trên đường.\p"
+	.string "Bạn không bao giờ biết POKéMON hoang\n"
+	.string "dã sẽ xuất hiện lúc nào. Cảm giác hồi hộp\l"
+	.string "lắm.$"
 
 Route115_Text_RouteSignRustboro:
 	.string "ROUTE 115\n"
 	.string "{DOWN_ARROW} RUSTBORO CITY$"
 
 Route115_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "FALLARBOR TOWN THROUGH HERE$"
+	.string "METEOR FALLS, lối này đến FALLARBOR\n"
+	.string "TOWN$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route115_Text_NeverKnowWhenCavePokemonWillAppear
+	.global Route115_Text_MeteorFallsSign
+@ END GENERATED LOCALIZATION EXPORTS

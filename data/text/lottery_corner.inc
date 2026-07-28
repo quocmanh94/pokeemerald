@@ -1,77 +1,93 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
-	.string "This is the POKéMON LOTTERY CORNER.\p"
-	.string "All shoppers at our DEPARTMENT STORE\n"
-	.string "get to draw a POKéMON LOTO TICKET.\p"
-	.string "If the LOTO TICKET's number matches\n"
-	.string "the ID number of any of your POKéMON,\l"
-	.string "you will receive a fabulous gift.\p"
-	.string "Would you like to draw a POKéMON\n"
-	.string "LOTO TICKET?$"
+	.string "Đây là POKéMON LOTTERY CORNER.\p"
+	.string "Mọi khách hàng của DEPARTMENT STORE\n"
+	.string "đều được rút POKéMON LOTO TICKET.\p"
+	.string "Nếu số trên LOTO TICKET trùng với\n"
+	.string "ID của bất kỳ POKéMON nào, bạn sẽ\l"
+	.string "nhận được một món quà tuyệt vời.\p"
+	.string "Bạn muốn rút một POKéMON\n"
+	.string "LOTO TICKET không?$"
 
 LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow:
-	.string "Please come back tomorrow.$"
+	.string "Vui lòng quay lại vào ngày mai.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain:
-	.string "Please do visit again.$"
+	.string "Hẹn gặp lại bạn.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket:
-	.string "Please pick a LOTO TICKET.\n"
+	.string "Hãy chọn một LOTO TICKET.\n"
 	.string "…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait:
-	.string "The LOTO TICKET number is {STR_VAR_1}.\p"
-	.string "I need to run a check on this number\n"
-	.string "to see if it matches any of your\l"
-	.string "POKéMON's ID numbers. Please wait.$"
+	.string "Số LOTO TICKET là {STR_VAR_1}.\p"
+	.string "Tôi cần kiểm tra xem số này có trùng\n"
+	.string "với ID của POKéMON nào không.\l"
+	.string "Vui lòng chờ.$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon:
-	.string "Congratulations!\p"
-	.string "The ID number of your team's\n"
-	.string "{STR_VAR_1} matches your\l"
-	.string "LOTO TICKET's number!$"
+	.string "Xin chúc mừng!\p"
+	.string "ID của {STR_VAR_1} trong đội\n"
+	.string "trùng với số LOTO TICKET!$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon:
-	.string "Congratulations!\p"
-	.string "The ID number of your PC-boxed\n"
-	.string "{STR_VAR_1} matches your\l"
-	.string "LOTO TICKET's number!$"
+	.string "Xin chúc mừng!\p"
+	.string "ID của {STR_VAR_1} trong PC BOX\n"
+	.string "trùng với số LOTO TICKET!$"
 
 LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched:
-	.string "I'm sorry.\n"
-	.string "None of the numbers matched.$"
+	.string "Rất tiếc.\n"
+	.string "Không có số nào trùng khớp.$"
 
 LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched:
-	.string "Two digits matched, so you win the\n"
-	.string "third prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "Hai chữ số trùng khớp, bạn giành\n"
+	.string "giải ba!\l"
+	.string "Bạn đã nhận được {STR_VAR_1}!$"
 
 LilycoveCity_DepartmentStore_1F_Text_ThreeDigitsMatched:
-	.string "Three digits matched, so you win the\n"
-	.string "second prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "Ba chữ số trùng khớp, bạn giành\n"
+	.string "giải nhì!\l"
+	.string "Bạn đã nhận được {STR_VAR_1}!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FourDigitsMatched:
-	.string "Four digits matched, so you win the\n"
-	.string "first prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "Bốn chữ số trùng khớp, bạn giành\n"
+	.string "giải nhất!\l"
+	.string "Bạn đã nhận được {STR_VAR_1}!$"
 
 LilycoveCity_DepartmentStore_1F_Text_AllFiveDigitsMatched:
-	.string "Oh, my goodness, all five digits\n"
-	.string "matched!\p"
-	.string "You've won the jackpot prize!\n"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "Ôi trời, cả năm chữ số\n"
+	.string "đều trùng khớp!\p"
+	.string "Bạn đã trúng giải độc đắc!\n"
+	.string "Bạn đã nhận được {STR_VAR_1}!$"
 
 LilycoveCity_DepartmentStore_1F_Text_NoRoomForThis:
-	.string "Oh?\n"
-	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
-	.string "let me know.$"
+	.string "Ồ?\n"
+	.string "Có vẻ bạn không còn chỗ cho món này.\p"
+	.string "Hãy dọn chỗ trong TÚI ĐỒ rồi báo lại\n"
+	.string "cho tôi.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding:
 	.string "{PLAYER}?\n"
-	.string "Yes, I've been expecting you.\p"
-	.string "This is the prize we've been holding\n"
-	.string "for you.$"
+	.string "Đúng rồi, tôi đang chờ bạn.\p"
+	.string "Đây là phần thưởng chúng tôi\n"
+	.string "đã giữ cho bạn.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain2:
-	.string "Please do visit again.$"
+	.string "Hẹn gặp lại bạn.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket
+	.global LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow
+	.global LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain
+	.global LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket
+	.global LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait
+	.global LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon
+	.global LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon
+	.global LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched
+	.global LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched
+	.global LilycoveCity_DepartmentStore_1F_Text_ThreeDigitsMatched
+	.global LilycoveCity_DepartmentStore_1F_Text_FourDigitsMatched
+	.global LilycoveCity_DepartmentStore_1F_Text_AllFiveDigitsMatched
+	.global LilycoveCity_DepartmentStore_1F_Text_NoRoomForThis
+	.global LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding
+	.global LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain2
+@ END GENERATED LOCALIZATION EXPORTS

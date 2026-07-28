@@ -10,13 +10,17 @@ SlateportCity_SternsShipyard_2F_EventScript_Scientist2::
 	end
 
 SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding:
-	.string "Designing a large ship is more like\n"
-	.string "making a big building than putting\l"
-	.string "together a transportation vehicle.$"
+	.string "Thiết kế một con tàu lớn giống xây dựng\n"
+	.string "một tòa nhà lớn hơn là lắp ráp một\l"
+	.string "phương tiện giao thông.$"
 
 SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy:
-	.string "Don't you think it's strange that\n"
-	.string "a ship made of heavy iron floats?\p"
-	.string "It floats because of a principle\n"
-	.string "called buoyancy.$"
+	.string "Bạn không thấy lạ khi một con tàu làm\n"
+	.string "bằng sắt nặng nề lại có thể nổi sao?\p"
+	.string "Nó nổi được là nhờ một nguyên lý gọi là\n"
+	.string "lực nổi.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding
+	.global SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy
+@ END GENERATED LOCALIZATION EXPORTS

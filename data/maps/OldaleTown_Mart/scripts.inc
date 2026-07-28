@@ -53,16 +53,21 @@ OldaleTown_Mart_EventScript_Boy::
 	end
 
 OldaleTown_Mart_Text_PokeBallsAreSoldOut:
-	.string "The clerk says they're all sold out.\n"
-	.string "I can't buy any POKé BALLS.$"
+	.string "Nhân viên nói họ đã bán hết sạch. Tôi\n"
+	.string "không mua được POKé BALLS nào cả.$"
 
 OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
-	.string "I'm going to buy a bunch of POKé BALLS\n"
-	.string "and catch a bunch of POKéMON!$"
+	.string "Tôi sẽ mua thật nhiều POKé BALLS rồi\n"
+	.string "bắt thật nhiều POKéMON!$"
 
 OldaleTown_Mart_Text_RestoreHPWithPotion:
-	.string "If a POKéMON gets hurt and loses its HP\n"
-	.string "and faints, it won't be able to battle.\p"
-	.string "To prevent your POKéMON from fainting,\n"
-	.string "restore its HP with a POTION.$"
+	.string "Nếu một POKéMON bị thương, mất hết HP\n"
+	.string "rồi ngất đi, nó sẽ không thể chiến đấu.\p"
+	.string "Để POKéMON của cậu không bị ngất, hãy\n"
+	.string "dùng POTION phục hồi HP cho nó.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global OldaleTown_Mart_Text_PokeBallsAreSoldOut
+	.global OldaleTown_Mart_Text_ImGoingToBuyPokeBalls
+	.global OldaleTown_Mart_Text_RestoreHPWithPotion
+@ END GENERATED LOCALIZATION EXPORTS

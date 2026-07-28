@@ -62,31 +62,41 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
-	.string "In their natural state, POKéMON are\n"
-	.string "wild living things. They are free.\p"
-	.string "At times, they hinder us.\n"
-	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
-	.string "partners, do you know what it takes?\p"
-	.string "Do you know what is needed?\p"
-	.string "If you don't, then you will never\n"
-	.string "prevail over me!$"
+	.string "Ta là thành viên cuối cùng của POKéMON\n"
+	.string "LEAGUE ELITE FOUR, DRAKE, bậc thầy\l"
+	.string "DRAGON!\p"
+	.string "Trong trạng thái tự nhiên, POKéMON là\n"
+	.string "những sinh vật hoang dã. Chúng được\l"
+	.string "tự do.\p"
+	.string "Đôi khi chúng cản trở ta. Đôi khi chúng\n"
+	.string "giúp đỡ ta.\p"
+	.string "Ngươi có biết cần điều gì để con người\n"
+	.string "và POKéMON có thể chiến đấu như những\l"
+	.string "người bạn đồng hành không?\p"
+	.string "Ngươi có biết thứ gì là cần thiết\n"
+	.string "không?\p"
+	.string "Nếu không biết, ngươi sẽ không bao giờ\n"
+	.string "thắng được ta!$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "Superb, it should be said.$"
+	.string "Phải nói là xuất sắc.$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
-	.string "You deserve every credit for coming\n"
-	.string "this far as a TRAINER of POKéMON.\p"
-	.string "You do seem to know what is needed.\p"
-	.string "Yes, what a TRAINER needs is a\n"
-	.string "virtuous heart.\p"
-	.string "POKéMON touch the good hearts of\n"
-	.string "TRAINERS and learn good from wrong.\p"
-	.string "They touch the good hearts of\n"
-	.string "TRAINERS and grow strong.\p"
-	.string "Go! Go onwards!\n"
-	.string "The CHAMPION is waiting!$"
+	.string "Ngươi hoàn toàn xứng đáng được công\n"
+	.string "nhận vì đã tiến xa đến vậy với tư cách\l"
+	.string "HLV của POKéMON.\p"
+	.string "Có vẻ ngươi biết điều gì là cần thiết.\p"
+	.string "Đúng vậy, một HLV cần có tấm lòng\n"
+	.string "chính trực.\p"
+	.string "POKéMON cảm nhận trái tim lương thiện\n"
+	.string "của HLV và học cách phân biệt\l"
+	.string "đúng sai.\p"
+	.string "Chúng cảm nhận trái tim lương thiện của\n"
+	.string "HLV và trở nên mạnh mẽ.\p"
+	.string "Đi đi! Tiến lên! CHAMPION đang đợi!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_DrakesRoom_Text_IntroSpeech
+	.global EverGrandeCity_DrakesRoom_Text_Defeat
+	.global EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
+@ END GENERATED LOCALIZATION EXPORTS

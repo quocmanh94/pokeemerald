@@ -1,10 +1,16 @@
 gText_HowMayIServeYou::
-	.string "Welcome!\p"
-	.string "How may I serve you?$"
+	.string "Chào mừng!\p"
+	.string "Tôi có thể giúp gì cho bạn?$"
 
 gText_PleaseComeAgain::
-	.string "Please come again!$"
+	.string "Hẹn gặp lại!$"
 
 gText_PlayerWhatCanIDoForYou::
-	.string "{PLAYER}{KUN}, welcome!\p"
-	.string "What can I do for you?$"
+	.string "{PLAYER}{KUN}, chào mừng!\p"
+	.string "Tôi có thể giúp gì cho bạn?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_HowMayIServeYou
+	.global gText_PleaseComeAgain
+	.global gText_PlayerWhatCanIDoForYou
+@ END GENERATED LOCALIZATION EXPORTS

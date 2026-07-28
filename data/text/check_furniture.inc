@@ -1,8 +1,8 @@
 Text_PictureBookShelf:
-	.string "There's a set of POKéMON picture books.$"
+	.string "Có một bộ sách tranh về POKéMON.$"
 
 Text_BookShelf:
-	.string "It's filled with all sorts of books.$"
+	.string "Kệ đầy đủ loại sách.$"
 
 Text_PokemonCenterBookShelf:
 	.string "POKéMON magazines!\n"
@@ -11,17 +11,26 @@ Text_PokemonCenterBookShelf:
 	.string "ADORABLE POKéMON…$"
 
 Text_Vase:
-	.string "This vase looks expensive…\n"
-	.string "Peered inside…\p"
-	.string "But, it was empty.$"
+	.string "Chiếc bình này trông đắt tiền…\n"
+	.string "Nhìn vào bên trong…\p"
+	.string "Nhưng nó trống rỗng.$"
 
 Text_EmptyTrashCan:
-	.string "It's empty.$"
+	.string "Bên trong trống không.$"
 
 Text_ShopShelf:
-	.string "The shelves brim with all sorts of\n"
-	.string "POKéMON merchandise.$"
+	.string "Các kệ chất đầy đủ loại\n"
+	.string "hàng hóa POKéMON.$"
 
 Text_Blueprint:
-	.string "A blueprint of some sort?\n"
-	.string "It's too complicated!$"
+	.string "Một loại bản thiết kế nào đó?\n"
+	.string "Phức tạp quá!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Text_PictureBookShelf
+	.global Text_BookShelf
+	.global Text_Vase
+	.global Text_EmptyTrashCan
+	.global Text_ShopShelf
+	.global Text_Blueprint
+@ END GENERATED LOCALIZATION EXPORTS

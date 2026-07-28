@@ -13,11 +13,14 @@ MysteryGiftScript_AlteringCave_:
 	end
 
 sText_MysteryGiftAlteringCave:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "There appears to be a rumor about\n"
-	.string "rare POKéMON sightings.\p"
-	.string "The sightings reportedly came from\n"
-	.string "the ALTERING CAVE on ROUTE 103.\p"
-	.string "Perhaps it would be worthwhile for\n"
-	.string "you to investigate this rumor.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Dường như đang có tin đồn về việc bắt\n"
+	.string "gặp những POKéMON hiếm.\p"
+	.string "Theo lời đồn, chúng xuất hiện tại\n"
+	.string "ALTERING CAVE trên ROUTE 103.\p"
+	.string "Có lẽ tin đồn này đáng để bạn điều tra.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftAlteringCave
+@ END GENERATED LOCALIZATION EXPORTS

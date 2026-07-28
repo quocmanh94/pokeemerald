@@ -418,9 +418,9 @@ void CB2_FlashNotDetectedScreen(void)
 
     static const char errorMsg[] = _(
         "{COLOR RED}ERROR!\n"
-        "{COLOR DARK_GRAY}Flash memory not detected.\n\n"
-        "Set your emulator's save type\nsetting to Flash 1Mb / 128K\n"
-        "and reload the rom.");
+        "{COLOR DARK_GRAY}Không phát hiện flash memory.\n\n"
+        "Hãy đặt save type của emulator\nthành Flash 1Mb / 128K\n"
+        "rồi tải lại ROM.");
 
     if (!gMain.state)
     {

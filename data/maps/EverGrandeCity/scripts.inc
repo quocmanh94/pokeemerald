@@ -24,14 +24,19 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	end
 
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "ENTERING VICTORY ROAD$"
+	.string "ĐANG VÀO VICTORY ROAD$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "ENTERING POKéMON LEAGUE\n"
-	.string "CENTER GATE$"
+	.string "ĐANG VÀO CỔNG TRUNG TÂM POKéMON\n"
+	.string "LEAGUE$"
 
 EverGrandeCity_Text_CitySign:
 	.string "EVER GRANDE CITY\p"
-	.string "“The paradise of flowers, the sea,\n"
-	.string "and POKéMON.”$"
+	.string "“Thiên đường của hoa, biển cả và\n"
+	.string "POKéMON.”$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_Text_EnteringVictoryRoad
+	.global EverGrandeCity_Text_EnteringPokemonLeague
+	.global EverGrandeCity_Text_CitySign
+@ END GENERATED LOCALIZATION EXPORTS

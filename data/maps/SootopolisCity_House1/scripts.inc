@@ -29,15 +29,21 @@ SootopolisCity_House1_EventScript_Kecleon::
 	end
 
 SootopolisCity_House1_Text_DevelopedThisTM:
-	.string "For thirty years I've remained in\n"
-	.string "SOOTOPOLIS honing my skills.\p"
-	.string "I developed a shattering TM.\n"
-	.string "I bequeath it to you!$"
+	.string "Suốt ba mươi năm, ta ở lại SOOTOPOLIS\n"
+	.string "để mài giũa kỹ năng.\p"
+	.string "Ta đã tạo ra một TM có sức công phá\n"
+	.string "kinh hoàng. Giờ ta truyền lại nó cho\l"
+	.string "ngươi!$"
 
 SootopolisCity_House1_Text_ExplainBrickBreak:
-	.string "TM31 contains BRICK BREAK! It's a move\n"
-	.string "so horrible that I can't describe it.$"
+	.string "TM31 chứa BRICK BREAK! Đó là một chiêu\n"
+	.string "khủng khiếp đến mức ta không thể diễn\l"
+	.string "tả nổi.$"
 
 SootopolisCity_House1_Text_Kecleon:
 	.string "KECLEON: Puu puhyaah.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_House1_Text_DevelopedThisTM
+	.global SootopolisCity_House1_Text_ExplainBrickBreak
+@ END GENERATED LOCALIZATION EXPORTS

@@ -35,23 +35,30 @@ AuroraTicket_Obtained:
 	end
 
 sText_AuroraTicketForYou:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "You must be {PLAYER}.\n"
-	.string "There is a ticket here for you.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "Hẳn bạn là {PLAYER}. Ở đây có một tấm\n"
+	.string "vé dành cho bạn.$"
 
 sText_AuroraTicketUseAtPort:
-	.string "It appears to be for use at the\n"
-	.string "LILYCOVE CITY port.\p"
-	.string "Why not give it a try and see what\n"
-	.string "it is about?$"
+	.string "Có vẻ tấm vé này được dùng tại cảng\n"
+	.string "LILYCOVE CITY.\p"
+	.string "Sao bạn không thử dùng xem nó có tác\n"
+	.string "dụng gì?$"
 
 sText_AuroraTicketThankYou:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.$"
 
 sText_AuroraTicketBagFull:
-	.string "Oh, I'm sorry, {PLAYER}.\n"
-	.string "Your BAG's KEY ITEMS POCKET is full.\p"
-	.string "Please store something on your PC,\n"
-	.string "then come back for this.$"
+	.string "Ồ, tôi xin lỗi, {PLAYER}. KEY ITEMS\n"
+	.string "POCKET trong TÚI ĐỒ của bạn đã đầy.\p"
+	.string "Hãy cất thứ gì đó vào PC rồi quay lại\n"
+	.string "nhận món này.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_AuroraTicketForYou
+	.global sText_AuroraTicketUseAtPort
+	.global sText_AuroraTicketThankYou
+	.global sText_AuroraTicketBagFull
+@ END GENERATED LOCALIZATION EXPORTS

@@ -24,13 +24,17 @@ MossdeepCity_PokemonCenter_1F_EventScript_Girl::
 	end
 
 MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable:
-	.string "The GYM LEADERS in this town are\n"
-	.string "a formidable duo.\p"
-	.string "Their combination attacks are, like,\n"
-	.string "excellent and wow!$"
+	.string "Hai GYM LEADERS của thị trấn này là một\n"
+	.string "cặp cực kỳ đáng gờm.\p"
+	.string "Các đòn phối hợp của họ phải nói là\n"
+	.string "tuyệt vời, đỉnh thật sự!$"
 
 MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves:
-	.string "Depending on the special abilities of\n"
-	.string "POKéMON, some moves might change\l"
-	.string "or not work at all.$"
+	.string "Tùy vào năng lực đặc biệt của POKéMON,\n"
+	.string "một số chiêu thức có thể thay đổi hoặc\l"
+	.string "hoàn toàn không có tác dụng.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable
+	.global MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
+@ END GENERATED LOCALIZATION EXPORTS

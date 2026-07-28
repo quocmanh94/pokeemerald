@@ -84,12 +84,17 @@ Route112_CableCarStation_Movement_ExitCableCar:
 	step_end
 
 Route112_CableCarStation_Text_CableCarReadyGetOn:
-	.string "The CABLE CAR is ready to go up.\n"
-	.string "Would you like to be on it?$"
+	.string "CABLE CAR đã sẵn sàng đi lên. Bạn có\n"
+	.string "muốn lên không?$"
 
 Route112_CableCarStation_Text_StepThisWay:
-	.string "Please step this way.$"
+	.string "Xin mời đi lối này.$"
 
 Route112_CableCarStation_Text_RideAnotherTime:
-	.string "Please ride with us another time.$"
+	.string "Xin hãy đi cùng chúng tôi vào dịp khác.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route112_CableCarStation_Text_CableCarReadyGetOn
+	.global Route112_CableCarStation_Text_StepThisWay
+	.global Route112_CableCarStation_Text_RideAnotherTime
+@ END GENERATED LOCALIZATION EXPORTS

@@ -29,20 +29,26 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
-	.string "I think POKéMON get closer to their\n"
-	.string "TRAINERS if they spend time together.\p"
-	.string "The longer the better.\n"
-	.string "That's what I think.$"
+	.string "Tôi nghĩ POKéMON sẽ trở nên thân thiết\n"
+	.string "hơn với HLV nếu họ dành thời gian\l"
+	.string "bên nhau.\p"
+	.string "Càng lâu càng tốt. Tôi nghĩ vậy đấy.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
-	.string "It's sort of magical how just sitting\n"
-	.string "in a hot-spring pool can invigorate.\p"
-	.string "I wish I could let my POKéMON\n"
-	.string "soak, too.$"
+	.string "Chỉ cần ngâm mình trong suối nước nóng\n"
+	.string "mà đã thấy khỏe khoắn hẳn lên, thật kỳ\l"
+	.string "diệu.\p"
+	.string "Ước gì tôi cũng có thể cho POKéMON của\n"
+	.string "mình xuống ngâm.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
-	.string "Hohoho! Hey, kid, you can reach\n"
-	.string "the hot springs from here.\p"
-	.string "If POKéMON are getting rest, so too\n"
-	.string "should their TRAINERS.$"
+	.string "Hô hô hô! Này nhóc, từ đây có thể đi đến\n"
+	.string "suối nước nóng đấy.\p"
+	.string "Nếu POKéMON cần nghỉ ngơi thì\n"
+	.string "HLV của chúng cũng vậy.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether
+	.global LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate
+	.global LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo
+@ END GENERATED LOCALIZATION EXPORTS

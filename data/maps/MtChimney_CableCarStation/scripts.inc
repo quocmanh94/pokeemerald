@@ -83,12 +83,17 @@ MtChimney_CableCarStation_Movement_ExitCableCar:
 	step_end
 
 MtChimney_CableCarStation_Text_CableCarReadyGetOn:
-	.string "The CABLE CAR is ready to go down.\n"
-	.string "Would you like to be on it?$"
+	.string "CABLE CAR đã sẵn sàng đi xuống. Bạn có\n"
+	.string "muốn lên không?$"
 
 MtChimney_CableCarStation_Text_StepThisWay:
-	.string "Please step this way.$"
+	.string "Xin mời đi lối này.$"
 
 MtChimney_CableCarStation_Text_RideAnotherTime:
-	.string "Please ride with us another time.$"
+	.string "Xin hẹn bạn chuyến khác.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtChimney_CableCarStation_Text_CableCarReadyGetOn
+	.global MtChimney_CableCarStation_Text_StepThisWay
+	.global MtChimney_CableCarStation_Text_RideAnotherTime
+@ END GENERATED LOCALIZATION EXPORTS

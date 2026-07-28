@@ -59,14 +59,19 @@ SurfPichu_Slot5:
 	return
 
 sText_MysteryGiftEgg:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "From the POKéMON CENTER we\n"
-	.string "have a gift--a POKéMON EGG!\p"
-	.string "Please raise it with love and\n"
-	.string "kindness.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "MYSTERY GIFT.\p"
+	.string "POKéMON CENTER gửi tặng bạn một món\n"
+	.string "quà, đó là POKéMON EGG!\p"
+	.string "Xin hãy nuôi nấng nó bằng tất cả tình\n"
+	.string "yêu thương.$"
 
 sText_FullParty:
-	.string "Oh, your party appears to be full.\p"
-	.string "Please come see me after storing\n"
-	.string "a POKéMON on a PC.$"
+	.string "Ồ, có vẻ đội của bạn đã đầy.\p"
+	.string "Hãy cất một POKéMON vào PC rồi quay lại\n"
+	.string "gặp tôi.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftEgg
+	.global sText_FullParty
+@ END GENERATED LOCALIZATION EXPORTS

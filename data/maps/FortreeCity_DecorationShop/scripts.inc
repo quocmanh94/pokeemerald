@@ -54,15 +54,20 @@ FortreeCity_DecorationShop_PokemartDecor_Chairs:
 	pokemartlistend
 
 FortreeCity_DecorationShop_Text_MerchandiseSentToPC:
-	.string "Merchandise you buy here is sent to\n"
-	.string "your own PC.\p"
-	.string "That's fantastic! I wish they could\n"
-	.string "also deliver me home like that.$"
+	.string "Hàng hóa mua ở đây sẽ được gửi đến PC\n"
+	.string "riêng của bạn.\p"
+	.string "Tuyệt thật! Ước gì họ cũng có thể gửi\n"
+	.string "tôi về nhà như vậy.$"
 
 FortreeCity_DecorationShop_Text_BuyingDeskForDolls:
-	.string "I'm buying a pretty desk and I'm\n"
-	.string "putting my cute DOLLS on it.\p"
-	.string "If I don't, when I decorate my\n"
-	.string "SECRET BASE, my DOLLS will get\l"
-	.string "dirty or poked with splinters.$"
+	.string "Tôi sẽ mua một chiếc bàn thật đẹp rồi\n"
+	.string "đặt những DOLLS dễ thương của mình\l"
+	.string "lên đó.\p"
+	.string "Nếu không, khi trang trí SECRET BASE,\n"
+	.string "các DOLLS của tôi sẽ bị bẩn hoặc bị dằm\l"
+	.string "gỗ đâm.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_DecorationShop_Text_MerchandiseSentToPC
+	.global FortreeCity_DecorationShop_Text_BuyingDeskForDolls
+@ END GENERATED LOCALIZATION EXPORTS

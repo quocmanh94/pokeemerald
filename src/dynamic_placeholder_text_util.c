@@ -1,4 +1,5 @@
 #include "global.h"
+#include "localization.h"
 #include "text.h"
 #include "dynamic_placeholder_text_util.h"
 #include "string_util.h"
@@ -22,6 +23,8 @@ void DynamicPlaceholderTextUtil_SetPlaceholderPtr(u8 idx, const u8 *ptr)
 
 u8 *DynamicPlaceholderTextUtil_ExpandPlaceholders(u8 *dest, const u8 *src)
 {
+    src = GetLocalizedString(src);
+
     while (*src != EOS)
     {
         if (*src != CHAR_DYNAMIC)

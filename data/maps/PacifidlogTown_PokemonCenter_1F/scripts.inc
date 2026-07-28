@@ -28,21 +28,23 @@ PacifidlogTown_PokemonCenter_1F_EventScript_OldMan::
 	end
 
 PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard:
-	.string "What color is your TRAINER CARD?\n"
-	.string "Mine's copper!$"
+	.string "TRAINER CARD của cậu màu gì? Của tôi\n"
+	.string "màu đồng!$"
 
 PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola:
-	.string "PACIFIDLOG TOWN floats on top of\n"
-	.string "a colony of CORSOLA.\p"
-	.string "If I told you that, would you believe\n"
-	.string "me?$"
+	.string "PACIFIDLOG TOWN nổi trên một quần thể\n"
+	.string "CORSOLA.\p"
+	.string "Nếu tôi nói vậy, cậu có tin không?$"
 
 PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats:
-	.string "The ancestors of the people in\n"
-	.string "PACIFIDLOG were said to have been\l"
-	.string "born on boats and then lived and died \l"
-	.string "aboard them.\p"
-	.string "I understand that they lived that way\n"
-	.string "because they were searching for\l"
-	.string "something.$"
+	.string "Tương truyền tổ tiên của người dân\n"
+	.string "PACIFIDLOG được sinh ra trên thuyền,\l"
+	.string "sống rồi qua đời ngay trên thuyền.\p"
+	.string "Theo tôi biết, họ sống như vậy vì đang\n"
+	.string "tìm kiếm một thứ gì đó.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard
+	.global PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola
+	.global PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats
+@ END GENERATED LOCALIZATION EXPORTS
