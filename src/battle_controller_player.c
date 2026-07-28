@@ -9,6 +9,7 @@
 #include "battle_message.h"
 #include "battle_setup.h"
 #include "battle_tv.h"
+#include "battle_util.h"
 #include "bg.h"
 #include "data.h"
 #include "event_object_movement.h"
@@ -34,6 +35,7 @@
 #include "window.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
+#include "constants/battle_move_effects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
@@ -204,6 +206,7 @@ static const u8 sUnused[] = {0x48, 0x48, 0x20, 0x5a, 0x50, 0x50, 0x50, 0x58};
 
 static const u16 sSplitIcons_Pal[] = INCBIN_U16("graphics/battle_interface/split_icons_battle.gbapal");
 static const u8 sSplitIcons_Gfx[] = INCBIN_U8("graphics/battle_interface/split_icons_battle.4bpp");
+static const u8 sText_MoveInterfaceStab[] = _("STAB/");
 
 void BattleControllerDummy(void)
 {
@@ -1869,6 +1872,77 @@ static u8 GetHiddenPowerTypeFromMon(struct Pokemon *mon)
     return type;
 }
 
+static u8 GetMoveTypeForSelection(u16 move)
+{
+    if (move == MOVE_HIDDEN_POWER)
+        return GetHiddenPowerTypeFromMon(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+
+    if (move == MOVE_WEATHER_BALL && WEATHER_HAS_EFFECT)
+    {
+        if (gBattleWeather & B_WEATHER_RAIN)
+            return TYPE_WATER;
+        if (gBattleWeather & B_WEATHER_SANDSTORM)
+            return TYPE_ROCK;
+        if (gBattleWeather & B_WEATHER_SUN)
+            return TYPE_FIRE;
+        if (gBattleWeather & B_WEATHER_HAIL)
+            return TYPE_ICE;
+    }
+
+    return gBattleMoves[move].type;
+}
+
+static bool32 MoveReceivesStab(u16 move, u8 moveType)
+{
+    if (move == MOVE_NONE || move == MOVE_STRUGGLE || IS_MOVE_STATUS(move))
+        return FALSE;
+
+    switch (gBattleMoves[move].effect)
+    {
+    case EFFECT_OHKO:
+    case EFFECT_SUPER_FANG:
+    case EFFECT_DRAGON_RAGE:
+    case EFFECT_LEVEL_DAMAGE:
+    case EFFECT_PSYWAVE:
+    case EFFECT_COUNTER:
+    case EFFECT_BIDE:
+    case EFFECT_FUTURE_SIGHT:
+    case EFFECT_BEAT_UP:
+    case EFFECT_SONICBOOM:
+    case EFFECT_MIRROR_COAT:
+    case EFFECT_ENDEAVOR:
+        return FALSE;
+    }
+
+    return IS_BATTLER_OF_TYPE(gActiveBattler, moveType);
+}
+
+static u8 *RestoreMoveTypeTextColors(u8 *dst, u8 windowId)
+{
+    u8 color = 13;
+    u8 shadowColor = 15;
+
+    // Match the palette indices configured for these windows in battle_message.c.
+    switch (windowId)
+    {
+    case B_WIN_TYPE_SUPER_EFF:
+        color = 6;
+        shadowColor = 5;
+        break;
+    case B_WIN_TYPE_NOT_VERY_EFF:
+        color = 1;
+        shadowColor = 3;
+        break;
+    case B_WIN_TYPE_NO_EFF:
+        color = 7;
+        shadowColor = 15;
+        break;
+    }
+
+    dst = WriteColorChangeControlCode(dst, 0, color);
+    return WriteColorChangeControlCode(dst, 1, shadowColor);
+}
+
 static void UpdateTypeEffectivenessFlags(u8 multiplier, u16 move, u8 *flags)
 {
     switch (multiplier)
@@ -1950,10 +2024,7 @@ static u8 GetMoveTypeEffectivenessWindow(u8 targetId)
     if (move == MOVE_NONE || gBattleMoves[move].power == 0)
         return B_WIN_MOVE_TYPE;
 
-    if (move == MOVE_HIDDEN_POWER)
-        moveType = GetHiddenPowerTypeFromMon(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
-    else
-        moveType = gBattleMoves[move].type;
+    moveType = GetMoveTypeForSelection(move);
 
     moveFlags = GetMoveEffectivenessFlags(move, moveType, gBattleMons[targetId].species, gBattleMons[targetId].ability);
 
@@ -1974,15 +2045,21 @@ static void MoveSelectionDisplayMoveTypeWithWindow(u8 windowId)
     u16 move = moveInfo->moves[gMoveSelectionCursor[gActiveBattler]];
     u8 type;
 
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+    type = GetMoveTypeForSelection(move);
+    if (MoveReceivesStab(move, type))
+    {
+        txtPtr = WriteColorChangeControlCode(gDisplayedStringBattle, 0, TEXT_COLOR_BLUE);
+        txtPtr = WriteColorChangeControlCode(txtPtr, 1, TEXT_COLOR_LIGHT_BLUE);
+        txtPtr = StringCopy(txtPtr, sText_MoveInterfaceStab);
+        txtPtr = RestoreMoveTypeTextColors(txtPtr, windowId);
+    }
+    else
+    {
+        txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+    }
     *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;
     *(txtPtr)++ = EXT_CTRL_CODE_FONT;
     *(txtPtr)++ = FONT_NORMAL;
-
-    if (move == MOVE_HIDDEN_POWER)
-        type = GetHiddenPowerTypeFromMon(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
-    else
-        type = gBattleMoves[move].type;
 
     StringCopy(txtPtr, gTypeNames[type]);
     BattlePutTextOnWindow(gDisplayedStringBattle, windowId);
