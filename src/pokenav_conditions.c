@@ -2,6 +2,7 @@
 #include "data.h"
 #include "decompress.h"
 #include "main.h"
+#include "localization.h"
 #include "menu_specialized.h"
 #include "mon_markings.h"
 #include "pokenav.h"
@@ -322,6 +323,8 @@ bool32 LoadNextConditionMenuMonData(u8 mode)
 
 u8 *CopyStringLeftAlignedToConditionData(u8 *dst, const u8 *src, s16 n)
 {
+    src = GetLocalizedString(src);
+
     while (*src != EOS)
         *dst++ = *src++, n--;
 

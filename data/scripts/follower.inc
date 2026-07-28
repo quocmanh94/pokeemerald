@@ -1,14 +1,14 @@
 gText_FollowerLovesYou::
-  .string "{STR_VAR_1} is regarding you with\nadoration!$"
+    .string "{STR_VAR_1} đang nhìn bạn\nvới ánh mắt trìu mến!$"
 
 gText_FollowerLostInThought::
-	.string "{STR_VAR_1} seems lost in thought.$"
+	.string "{STR_VAR_1} có vẻ đang suy tư.$"
 
 gText_FollowerDefault::
-	.string "ERROR 404: Script not found.$"
+	.string "LỖI 404: Không tìm thấy script.$"
 
 gText_WantsToFly::
-	.string "{STR_VAR_1} looks up at the\nsky restlessly.\pWould you like to use FLY?$"
+	.string "{STR_VAR_1} bồn chồn nhìn lên\nbầu trời.\pBạn muốn dùng FLY không?$"
 
 .macro playfirstmoncry
 callfunc ScrFunc_playfirstmoncry
@@ -661,3 +661,10 @@ EventScript_FollowerFaceRight:
 	applymovement OBJ_EVENT_ID_FOLLOWER Common_Movement_FaceRight
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	goto EventScript_FollowerGenericSkipFace
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_FollowerLovesYou
+	.global gText_FollowerLostInThought
+	.global gText_FollowerDefault
+	.global gText_WantsToFly
+@ END GENERATED LOCALIZATION EXPORTS

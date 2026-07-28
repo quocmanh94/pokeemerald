@@ -29,22 +29,26 @@ Route111_OldLadysRestStop_EventScript_DeclineRest::
 	end
 
 Route111_OldLadysRestStop_Text_RestUpHere:
-	.string "Oh, dear, dear.\n"
-	.string "Aren't your POKéMON exhausted?\p"
-	.string "If you'd like, rest up here.\n"
-	.string "That's a fine idea! You should do that.$"
+	.string "Ôi chao. POKéMON của cháu mệt lả rồi\n"
+	.string "phải không?\p"
+	.string "Nếu muốn thì hãy nghỉ lại đây. Ý hay\n"
+	.string "đấy! Cháu nên nghỉ đi.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
-	.string "That's right.\n"
-	.string "Take your time and rest up!$"
+	.string "Đúng rồi. Cứ thong thả nghỉ ngơi nhé!$"
 
 Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest:
-	.string "Oh, dear, dear.\n"
-	.string "Are your POKéMON still tired?\p"
-	.string "You should take another rest here.\n"
-	.string "That's a fine idea. You should do that.$"
+	.string "Ôi chao. POKéMON của cháu vẫn còn mệt\n"
+	.string "sao?\p"
+	.string "Cháu nên nghỉ thêm một lần nữa ở đây. Ý\n"
+	.string "hay đấy. Cháu cứ nghỉ đi.$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy:
-	.string "Is that so?\n"
-	.string "You don't need to be shy about it.$"
+	.string "Vậy sao? Cháu không cần phải ngại đâu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route111_OldLadysRestStop_Text_RestUpHere
+	.global Route111_OldLadysRestStop_Text_TakeYourTimeRestUp
+	.global Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest
+	.global Route111_OldLadysRestStop_Text_DontNeedToBeShy
+@ END GENERATED LOCALIZATION EXPORTS

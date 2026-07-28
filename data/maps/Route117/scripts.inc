@@ -179,18 +179,17 @@ Route117_EventScript_Aisha::
 	end
 
 Route117_Text_DayCarePokemonHadNewMove:
-	.string "I left my POKéMON at the DAY CARE.\p"
-	.string "When I got it back, it had a new move\n"
-	.string "that I didn't teach it.\l"
-	.string "I was really, really surprised.$"
+	.string "Tôi đã gửi POKéMON của mình ở DAY CARE.\p"
+	.string "Khi nhận lại, nó biết chiêu mới mà tôi\n"
+	.string "chưa từng dạy. Tôi ngạc nhiên vô cùng.$"
 
 Route117_Text_ArentTheseFlowersPretty:
-	.string "What do you think?\n"
-	.string "Aren't these flowers pretty?\p"
-	.string "I planted them all!$"
+	.string "Bạn thấy sao? Những bông hoa này đẹp\n"
+	.string "lắm phải không?\p"
+	.string "Tôi tự tay trồng hết đấy!$"
 
 Route117_Text_AirIsTastyHere:
-	.string "The air is tasty here!$"
+	.string "Không khí ở đây ngon lành thật!$"
 
 Route117_Text_RouteSignVerdanturf:
 	.string "ROUTE 117\n"
@@ -201,6 +200,12 @@ Route117_Text_RouteSignMauville:
 	.string "{RIGHT_ARROW} MAUVILLE CITY$"
 
 Route117_Text_DayCareSign:
-	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "POKéMON DAY CARE “Hãy để chúng tôi\n"
+	.string "chăm sóc POKéMON của bạn.”$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route117_Text_DayCarePokemonHadNewMove
+	.global Route117_Text_ArentTheseFlowersPretty
+	.global Route117_Text_AirIsTastyHere
+	.global Route117_Text_DayCareSign
+@ END GENERATED LOCALIZATION EXPORTS

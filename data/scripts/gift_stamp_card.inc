@@ -15,7 +15,12 @@ MysteryGiftScript_StampCard::
 	end
 
 sText_MysteryGiftStampCard:
-	.string "Thank you for using the STAMP CARD\n"
-	.string "System.\p"
-	.string "You have {STR_VAR_1} more to collect to\n"
-	.string "fill your STAMP CARD.$"
+	.string "Cảm ơn bạn đã dùng hệ thống\n"
+	.string "STAMP CARD.\p"
+	.string "Bạn cần sưu tầm thêm\n"
+	.string "{STR_VAR_1} dấu nữa để hoàn\l"
+	.string "thành STAMP CARD.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global sText_MysteryGiftStampCard
+@ END GENERATED LOCALIZATION EXPORTS

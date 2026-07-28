@@ -12,6 +12,7 @@
 #include "menu.h"
 #include "dynamic_placeholder_text_util.h"
 #include "fonts.h"
+#include "localization.h"
 
 static u16 RenderText(struct TextPrinter *);
 static u32 RenderFont(struct TextPrinter *);
@@ -275,6 +276,8 @@ bool16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, Tex
 
     if (!gFonts)
         return FALSE;
+
+    printerTemplate->currentChar = GetLocalizedString(printerTemplate->currentChar);
 
     sTempTextPrinter.active = TRUE;
     sTempTextPrinter.state = RENDER_STATE_HANDLE_CHAR;
@@ -1337,6 +1340,8 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
     int glyphWidth;
     s32 width;
 
+    str = GetLocalizedString(str);
+
     isJapanese = 0;
     minGlyphWidth = 0;
 
@@ -1800,7 +1805,7 @@ static void DecompressGlyph_SmallNarrow(u16 glyphId, bool32 isJapanese)
             DecompressGlyphTile(glyphs + 0x18, gCurGlyph.gfxBufferBottom + 8);
         }
 
-        gCurGlyph.height = 12;
+        gCurGlyph.height = 13;
     }
 }
 

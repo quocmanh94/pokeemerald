@@ -52,7 +52,10 @@ InsideOfTruck_EventScript_MovingBox::
 	end
 
 InsideOfTruck_Text_BoxPrintedWithMonLogo:
-	.string "The box is printed with a POKéMON logo.\p"
-	.string "It's a POKéMON brand moving and\n"
-	.string "delivery service.$"
+	.string "Trên thùng có in biểu tượng POKéMON.\p"
+	.string "Đây là dịch vụ chuyển nhà và giao hàng\n"
+	.string "mang thương hiệu POKéMON.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global InsideOfTruck_Text_BoxPrintedWithMonLogo
+@ END GENERATED LOCALIZATION EXPORTS

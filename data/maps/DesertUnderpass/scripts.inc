@@ -28,9 +28,13 @@ DesertUnderpass_EventScript_GiveRootFossil::
 
 @ Unused
 DesertUnderpass_Text_FoundRootFossil::
-	.string "{PLAYER} found the ROOT FOSSIL.$"
+	.string "{PLAYER} đã tìm thấy ROOT FOSSIL.$"
 
 @ Unused
 DesertUnderpass_Text_FoundClawFossil::
-	.string "{PLAYER} found the CLAW FOSSIL.$"
+	.string "{PLAYER} đã tìm thấy CLAW FOSSIL.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DesertUnderpass_Text_FoundRootFossil
+	.global DesertUnderpass_Text_FoundClawFossil
+@ END GENERATED LOCALIZATION EXPORTS

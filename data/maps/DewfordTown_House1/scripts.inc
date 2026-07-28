@@ -20,17 +20,22 @@ DewfordTown_House1_EventScript_Zigzagoon::
 	end
 
 DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland:
-	.string "There's a lot to be said for living on\n"
-	.string "a small island like this in harmony with\l"
-	.string "POKéMON and the family.$"
+	.string "Cuộc sống hòa thuận bên gia đình và\n"
+	.string "POKéMON trên một hòn đảo nhỏ thế này\l"
+	.string "có rất nhiều điều đáng quý.$"
 
 DewfordTown_House1_Text_LifeGoesSlowlyOnIsland:
-	.string "I left the major port of SLATEPORT\n"
-	.string "CITY when I married my husband here.\p"
-	.string "Life goes by slowly on this little\n"
-	.string "island. But being surrounded by the\l"
-	.string "beautiful sea--that's happiness, too.$"
+	.string "Tôi rời cảng lớn SLATEPORT CITY khi kết\n"
+	.string "hôn và theo chồng đến đây.\p"
+	.string "Cuộc sống trôi qua chậm rãi trên hòn\n"
+	.string "đảo nhỏ này. Nhưng được bao quanh bởi\l"
+	.string "biển xanh tuyệt đẹp cũng là một niềm\l"
+	.string "hạnh phúc.$"
 
 DewfordTown_House1_Text_Zigzagoon:
 	.string "ZIGZAGOON: Guguuh!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland
+	.global DewfordTown_House1_Text_LifeGoesSlowlyOnIsland
+@ END GENERATED LOCALIZATION EXPORTS

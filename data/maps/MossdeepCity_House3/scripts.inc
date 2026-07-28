@@ -25,26 +25,31 @@ MossdeepCity_House3_EventScript_DeclineSuperRod::
 	end
 
 MossdeepCity_House3_Text_YouWantSuperRod:
-	.string "Hey there, TRAINER!\n"
-	.string "A SUPER ROD really is super!\p"
-	.string "Say all you want, but this baby can\n"
-	.string "catch POKéMON off the seafloor!\p"
-	.string "What do you think?\n"
-	.string "You want it, don't you?$"
+	.string "Này, HLV! SUPER ROD đúng là siêu\n"
+	.string "hạng!\p"
+	.string "Nói sao thì nói, bảo bối này câu được\n"
+	.string "cả POKéMON dưới đáy biển đấy!\p"
+	.string "Thế nào? Muốn có nó lắm, đúng không?$"
 
 MossdeepCity_House3_Text_SuperRodIsSuper:
-	.string "You bet, you bet!\n"
-	.string "After all, a SUPER ROD is really super!$"
+	.string "Đúng vậy, đúng vậy! Dù sao thì SUPER\n"
+	.string "ROD quả thật là siêu hạng!$"
 
 MossdeepCity_House3_Text_TryDroppingRodInWater:
-	.string "If there's any water, try dropping in\n"
-	.string "your ROD and see what bites!$"
+	.string "Hễ thấy chỗ nào có nước, cứ thả ROD\n"
+	.string "xuống thử xem con gì cắn câu!$"
 
 MossdeepCity_House3_Text_DontYouLikeToFish:
-	.string "Hunh?\n"
-	.string "Don't you like to fish?$"
+	.string "Hả? Cậu không thích câu cá à?$"
 
 MossdeepCity_House3_Text_GoAfterSeafloorPokemon:
-	.string "Go after the seafloor POKéMON with\n"
-	.string "your SUPER ROD.$"
+	.string "Hãy dùng SUPER ROD để săn POKéMON\n"
+	.string "dưới đáy biển.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_House3_Text_YouWantSuperRod
+	.global MossdeepCity_House3_Text_SuperRodIsSuper
+	.global MossdeepCity_House3_Text_TryDroppingRodInWater
+	.global MossdeepCity_House3_Text_DontYouLikeToFish
+	.global MossdeepCity_House3_Text_GoAfterSeafloorPokemon
+@ END GENERATED LOCALIZATION EXPORTS

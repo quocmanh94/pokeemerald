@@ -10,16 +10,19 @@ PacifidlogTown_House1_EventScript_Woman::
 	end
 
 PacifidlogTown_House1_Text_RegiStory:
-	.string "In the HOENN region, there are three\n"
-	.string "POKéMON that represent the power of\l"
-	.string "rock, ice, and steel.\p"
-	.string "Each of them is said to hide away deep\n"
-	.string "inside caves.\p"
-	.string "That's the story I heard when I was\n"
-	.string "just a little kid.$"
+	.string "Ở vùng HOENN có ba POKéMON đại diện\n"
+	.string "cho sức mạnh của đá, băng và thép.\p"
+	.string "Tương truyền mỗi con đều ẩn mình sâu\n"
+	.string "trong các hang động.\p"
+	.string "Đó là câu chuyện tôi được nghe khi còn\n"
+	.string "bé.$"
 
 PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
-	.string "“Six dots open three doors.”\p"
-	.string "Grandpa used to say that, but I don't\n"
-	.string "know what he meant.$"
+	.string "“Sáu dấu chấm mở ba cánh cửa.”\p"
+	.string "Ông tôi thường nói vậy, nhưng tôi\n"
+	.string "không hiểu ông muốn nói gì.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_House1_Text_RegiStory
+	.global PacifidlogTown_House1_Text_SixDotsOpenThreeDoors
+@ END GENERATED LOCALIZATION EXPORTS

@@ -59,26 +59,31 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "A ha ha ha!\p"
+	.string "Tớ là PHOEBE của ELITE FOUR. Tớ đã rèn\n"
+	.string "luyện trên MT. PYRE.\p"
+	.string "Trong quá trình đó, tớ đã học được\n"
+	.string "cách giao tiếp với POKéMON hệ GHOST.\p"
+	.string "Đúng vậy, mối liên kết mà tớ xây dựng\n"
+	.string "với POKéMON vô cùng bền chặt.\p"
+	.string "Nào, cứ thử xem cậu có thể gây nổi chút\n"
+	.string "sát thương nào cho POKéMON của tớ\l"
+	.string "không!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "Ôi, chết thật. Tớ thua mất rồi.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
+	.string "Giữa cậu và POKéMON của cậu cũng có\n"
+	.string "một mối liên kết rõ ràng.\p"
+	.string "Tớ đã không nhận ra điều đó, nên thua\n"
+	.string "cũng là lẽ tự nhiên.\p"
+	.string "Ừ, tớ muốn xem mối liên kết ấy sẽ đưa\n"
+	.string "cậu tiến xa đến đâu.\p"
+	.string "Đi đi, hãy sang căn phòng tiếp theo.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_PhoebesRoom_Text_IntroSpeech
+	.global EverGrandeCity_PhoebesRoom_Text_Defeat
+	.global EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
+@ END GENERATED LOCALIZATION EXPORTS

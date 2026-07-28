@@ -171,19 +171,20 @@ Route123_EventScript_RematchFernando::
 	end
 
 Route123_Text_LoveGrassMonsHaveAny:
-	.string "I love GRASS-type POKéMON!\p"
-	.string "Do you have any GRASS-type POKéMON?$"
+	.string "Tôi yêu POKéMON hệ GRASS!\p"
+	.string "Bạn có POKéMON hệ GRASS nào không?$"
 
 Route123_Text_YouLikeGrassMonsTooHaveThis:
-	.string "Oh?\p"
-	.string "You like GRASS-type POKéMON, too,\n"
-	.string "don't you?\p"
-	.string "I'm so happy, you can have this!\n"
-	.string "It's a token of our friendship.$"
+	.string "Ồ?\p"
+	.string "Bạn cũng thích POKéMON hệ GRASS phải\n"
+	.string "không?\p"
+	.string "Tôi vui quá, bạn hãy nhận lấy cái này!\n"
+	.string "Đây là kỷ vật cho tình bạn của chúng\l"
+	.string "ta.$"
 
 Route123_Text_CheckTreesWithMyGrassMon:
-	.string "I check trees with my GRASS-type\n"
-	.string "POKéMON. I'm like a tree doctor.$"
+	.string "Tôi cùng POKéMON hệ GRASS kiểm tra cây\n"
+	.string "cối. Tôi giống như bác sĩ của cây vậy.$"
 
 Route123_Text_RouteSign:
 	.string "{RIGHT_ARROW} ROUTE 123\n"
@@ -191,8 +192,14 @@ Route123_Text_RouteSign:
 
 Route123_Text_RouteSignMtPyre:
 	.string "{UP_ARROW} MT. PYRE\n"
-	.string "“Forbidden to the faint of heart.”$"
+	.string "“Không dành cho người yếu tim.”$"
 
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route123_Text_LoveGrassMonsHaveAny
+	.global Route123_Text_YouLikeGrassMonsTooHaveThis
+	.global Route123_Text_CheckTreesWithMyGrassMon
+	.global Route123_Text_RouteSignMtPyre
+@ END GENERATED LOCALIZATION EXPORTS

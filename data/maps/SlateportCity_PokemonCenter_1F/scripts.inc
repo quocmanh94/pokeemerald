@@ -25,16 +25,21 @@ SlateportCity_PokemonCenter_1F_EventScript_Woman::
 	end
 
 SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon:
-	.string "Want a tip for battling?\p"
-	.string "I'd say it's raising different kinds\n"
-	.string "of POKéMON in a balanced manner.\p"
-	.string "It's no good to make just one\n"
-	.string "POKéMON strong.\p"
-	.string "If it has a type disadvantage,\n"
-	.string "it might not stand a chance.$"
+	.string "Muốn nghe một lời khuyên khi chiến đấu\n"
+	.string "không?\p"
+	.string "Theo tôi, nên nuôi nhiều loại POKéMON\n"
+	.string "khác nhau một cách cân bằng.\p"
+	.string "Chỉ làm cho một POKéMON thật mạnh thì\n"
+	.string "không ổn đâu.\p"
+	.string "Nếu gặp bất lợi về hệ, nó có thể chẳng\n"
+	.string "có cơ hội chiến thắng.$"
 
 SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
-	.string "I trade POKéMON with my friends.\p"
-	.string "If a traded POKéMON is holding an\n"
-	.string "item, it makes me twice as happy!$"
+	.string "Tôi trao đổi POKéMON với bạn bè.\p"
+	.string "Nếu POKéMON nhận được còn đang giữ\n"
+	.string "một vật phẩm, tôi sẽ vui gấp đôi!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon
+	.global SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend
+@ END GENERATED LOCALIZATION EXPORTS

@@ -22,16 +22,21 @@ RustboroCity_Flat2_2F_EventScript_GavePremierBall::
 	end
 
 RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
-	.string "Way back in the old days, DEVON was just\n"
-	.string "a teeny, tiny company.$"
+	.string "Ngày xửa ngày xưa, DEVON chỉ là một\n"
+	.string "công ty bé tí tẹo.$"
 
 RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
-	.string "My daddy's working at the CORPORATION.\p"
-	.string "My daddy made this!\n"
-	.string "But I can't use it, so you can have it.$"
+	.string "Ba tớ làm việc ở CORPORATION.\p"
+	.string "Cái này do ba tớ làm đấy! Nhưng tớ\n"
+	.string "không dùng được nên cho cậu này.$"
 
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
-	.string "My daddy's working at the CORPORATION.\p"
-	.string "When I grow up, I'm going to work for\n"
-	.string "DEVON, too.$"
+	.string "Ba tớ làm việc ở CORPORATION.\p"
+	.string "Khi lớn lên, tớ cũng sẽ làm việc cho\n"
+	.string "DEVON.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays
+	.global RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt
+	.global RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo
+@ END GENERATED LOCALIZATION EXPORTS

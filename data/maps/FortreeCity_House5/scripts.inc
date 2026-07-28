@@ -20,16 +20,21 @@ FortreeCity_House5_EventScript_Zigzagoon::
 	end
 
 FortreeCity_House5_Text_TreeHousesAreGreat:
-	.string "The tree houses of FORTREE are great!\p"
-	.string "I think it's the number one town for\n"
-	.string "living together with POKéMON.$"
+	.string "Những ngôi nhà trên cây ở FORTREE thật\n"
+	.string "tuyệt!\p"
+	.string "Tôi nghĩ đây là thị trấn số một để sống\n"
+	.string "cùng POKéMON.$"
 
 FortreeCity_House5_Text_AdaptedToNature:
-	.string "POKéMON and people have adapted to\n"
-	.string "nature for survival.\p"
-	.string "There's no need to make nature\n"
-	.string "conform to the way we want to live.$"
+	.string "POKéMON và con người đã thích nghi với\n"
+	.string "thiên nhiên để sinh tồn.\p"
+	.string "Không cần phải uốn thiên nhiên theo\n"
+	.string "cách sống mà chúng ta mong muốn.$"
 
 FortreeCity_House5_Text_Zigzagoon:
 	.string "ZIGZAGOON: Bufuu!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_House5_Text_TreeHousesAreGreat
+	.global FortreeCity_House5_Text_AdaptedToNature
+@ END GENERATED LOCALIZATION EXPORTS

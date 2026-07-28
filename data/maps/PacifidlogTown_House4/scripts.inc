@@ -28,26 +28,35 @@ PacifidlogTown_House4_EventScript_No::
 	end
 
 PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon:
-	.string "People were saying they saw a POKéMON\n"
-	.string "flying high above HOENN.\p"
-	.string "Is it flying around all the time?\n"
-	.string "Doesn't it need to rest somewhere?$"
+	.string "Mọi người nói rằng họ đã thấy một\n"
+	.string "POKéMON bay rất cao trên bầu trời\l"
+	.string "HOENN.\p"
+	.string "Nó cứ bay mãi như vậy sao? Nó không\n"
+	.string "cần nghỉ ở đâu đó à?$"
 
 PacifidlogTown_House4_Text_SkyPokemon:
-	.string "A sky POKéMON!\n"
-	.string "A sky POKéMON!$"
+	.string "POKéMON của bầu trời! POKéMON của bầu\n"
+	.string "trời!$"
 
 PacifidlogTown_House4_Text_WhereDidYouComeFrom:
-	.string "Where did you come from?$"
+	.string "Cậu đến từ đâu?$"
 
 PacifidlogTown_House4_Text_YesTown:
-	.string "Yes?\n"
-	.string "YES TOWN?\p"
-	.string "I've never heard of a place like that.$"
+	.string "Hả? YES TOWN ư?\p"
+	.string "Tôi chưa từng nghe nói đến nơi nào như\n"
+	.string "thế.$"
 
 PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere:
-	.string "No? That doesn't make any sense.\n"
-	.string "You have to come from somewhere.\p"
-	.string "Oh! Wait! You're not going to say you\n"
-	.string "were born at the bottom of the sea?$"
+	.string "Không ư? Vô lý quá. Cậu phải đến từ nơi\n"
+	.string "nào đó chứ.\p"
+	.string "Ồ! Khoan đã! Cậu không định nói rằng\n"
+	.string "mình được sinh ra dưới đáy biển đấy\l"
+	.string "chứ?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon
+	.global PacifidlogTown_House4_Text_SkyPokemon
+	.global PacifidlogTown_House4_Text_WhereDidYouComeFrom
+	.global PacifidlogTown_House4_Text_YesTown
+	.global PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere
+@ END GENERATED LOCALIZATION EXPORTS

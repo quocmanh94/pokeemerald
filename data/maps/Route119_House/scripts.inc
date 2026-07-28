@@ -16,12 +16,16 @@ Route119_House_EventScript_Wingull::
 	end
 
 Route119_House_Text_RumorAboutCaveOfOrigin:
-	.string "I heard about a cave called the CAVE\n"
-	.string "OF ORIGIN.\p"
-	.string "People rumor that the spirits of\n"
-	.string "POKéMON are revived there. Could\l"
-	.string "something like that really happen?$"
+	.string "Tôi nghe nói có một hang động tên là\n"
+	.string "CAVE OF ORIGIN.\p"
+	.string "Người ta đồn rằng linh hồn của POKéMON\n"
+	.string "được hồi sinh ở đó. Chuyện như vậy\l"
+	.string "thật sự có thể xảy ra sao?$"
 
 Route119_House_Text_Wingull:
-	.string "WINGULL: Pihyoh!$"
+	.string "WINGULL: Pi-hyô!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route119_House_Text_RumorAboutCaveOfOrigin
+	.global Route119_House_Text_Wingull
+@ END GENERATED LOCALIZATION EXPORTS

@@ -72,222 +72,261 @@ SafariZone_EventScript_PokeblockPresent::
 	end
 
 SafariZone_Text_WouldYouLikeToExit:
-	.string "Would you like to exit the SAFARI\n"
-	.string "ZONE right now?$"
+	.string "Bạn có muốn rời SAFARI ZONE\n"
+	.string "ngay bây giờ không?$"
 
 SafariZone_Text_TimesUp:
-	.string "Ding-dong! Time's up!\n"
-	.string "Your SAFARI Game is over.$"
+	.string "Ding-dong! Hết giờ!\n"
+	.string "SAFARI Game đã kết thúc.$"
 
 SafariZone_Text_OutOfBalls:
-	.string "You've run out of SAFARI BALLS.\n"
-	.string "Your SAFARI Game is over.$"
+	.string "Bạn đã hết SAFARI BALLS.\n"
+	.string "SAFARI Game đã kết thúc.$"
 
 SafariZone_Text_PlacePokeblockOnFeeder:
-	.string "Would you like to place a {POKEBLOCK}\n"
-	.string "on the {POKEBLOCK} FEEDER?$"
+	.string "Bạn có muốn đặt một {POKEBLOCK}\n"
+	.string "lên {POKEBLOCK} FEEDER không?$"
 
 SafariZone_Text_PokeblockStillHere:
-	.string "The {STR_VAR_1} you left\n"
-	.string "before is still here.$"
+	.string "{STR_VAR_1} bạn đặt trước đó\n"
+	.string "vẫn còn ở đây.$"
 
 SafariZone_Text_PokeblockWasPlaced:
-	.string "The {STR_VAR_1} was placed\n"
-	.string "on the {POKEBLOCK} FEEDER.$"
+	.string "Đã đặt {STR_VAR_1}\n"
+	.string "lên {POKEBLOCK} FEEDER.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
-	.string "What's more, we've thrown open the\n"
-	.string "gates to POKéMON TRAINERS.\p"
-	.string "You're encouraged to catch POKéMON\n"
-	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Chào mừng đến SAFARI ZONE!\p"
+	.string "Tại đây, bạn có thể thấy nhiều loài\n"
+	.string "POKéMON hiếm gặp ở HOENN.\p"
+	.string "Bạn sẽ thấy chúng sống hoang dã\n"
+	.string "trong môi trường tự nhiên.\p"
+	.string "Hơn nữa, chúng tôi đã mở cửa\n"
+	.string "cho các HLV POKéMON.\p"
+	.string "Hãy bắt và mang POKéMON về nhé!\p"
+	.string "Mời vào tận hưởng SAFARI ZONE!$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
-	.string "Welcome to the SAFARI ZONE!\n"
-	.string "Is it your first time here?$"
+	.string "Chào mừng đến SAFARI ZONE!\n"
+	.string "Đây là lần đầu bạn đến sao?$"
 
 Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Mời vào tận hưởng SAFARI ZONE!$"
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
-	.string "When you enter the SAFARI ZONE, you\n"
-	.string "start with 30 SAFARI BALLS for\l"
-	.string "catching POKéMON.\p"
-	.string "The SAFARI Game is over when you run\n"
-	.string "out of SAFARI BALLS, or when you've\l"
-	.string "walked 500 steps.\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Khi vào SAFARI ZONE, bạn sẽ nhận\n"
+	.string "30 SAFARI BALLS để bắt POKéMON.\p"
+	.string "SAFARI Game kết thúc khi bạn hết\n"
+	.string "SAFARI BALLS hoặc đã đi 500 bước.\p"
+	.string "Mời vào tận hưởng SAFARI ZONE!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "All you can catch for just ¥500!\n"
-	.string "Would you like to play a SAFARI Game?$"
+	.string "Chào mừng đến SAFARI ZONE!\p"
+	.string "Chỉ ¥500, bắt được bao nhiêu tùy sức!\n"
+	.string "Bạn muốn chơi SAFARI Game không?$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
-	.string "Okay.\n"
-	.string "Please play another time!$"
+	.string "Được rồi.\n"
+	.string "Hẹn bạn lần sau!$"
 
 Route121_SafariZoneEntrance_Text_NotEnoughMoney:
-	.string "You don't have enough money.\n"
-	.string "Sorry.$"
+	.string "Bạn không có đủ tiền.\n"
+	.string "Xin lỗi nhé.$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥500, please.$"
+	.string "Xin trả ¥500.$"
 
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
-	.string "Here are your SAFARI BALLS.$"
+	.string "Đây là SAFARI BALLS của bạn.$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 30 SAFARI BALLS.$"
+	.string "{PLAYER} đã nhận 30 SAFARI BALLS.$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
-	.string "We'll let you know when your game\n"
-	.string "is over.\p"
-	.string "So, until then, enjoy yourself, please!\n"
-	.string "Off you go on your wild excursion!$"
+	.string "Chúng tôi sẽ báo khi trò chơi\n"
+	.string "kết thúc.\p"
+	.string "Đến lúc đó, hãy tận hưởng nhé!\n"
+	.string "Lên đường khám phá hoang dã nào!$"
 
 Route121_SafariZoneEntrance_Text_PCIsFull:
-	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "Xin lỗi!\n"
+	.string "PC BOX của bạn đã đầy.$"
 
 Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
-	.string "Excuse me!\n"
-	.string "You seem to be without a {POKEBLOCK} CASE.\p"
-	.string "Your SAFARI Game will be much more\n"
-	.string "fruitful if you use {POKEBLOCK}S.\p"
-	.string "Please come back with a {POKEBLOCK} CASE.\p"
-	.string "You may obtain a {POKEBLOCK} CASE from\n"
-	.string "the LILYCOVE CONTEST HALL.$"
+	.string "Xin lỗi!\n"
+	.string "Có vẻ bạn không có {POKEBLOCK} CASE.\p"
+	.string "SAFARI Game sẽ hiệu quả hơn nhiều\n"
+	.string "nếu bạn dùng {POKEBLOCK}.\p"
+	.string "Hãy quay lại cùng {POKEBLOCK} CASE.\p"
+	.string "Bạn có thể nhận {POKEBLOCK} CASE tại\n"
+	.string "LILYCOVE CONTEST HALL.$"
 
 SafariZone_South_Text_StillHaveTimeExit:
-	.string "You still have time left. Would you like\n"
-	.string "to exit the SAFARI ZONE now?$"
+	.string "Bạn vẫn còn thời gian. Bạn có muốn\n"
+	.string "rời SAFARI ZONE ngay không?$"
 
 SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
-	.string "Please enjoy the rest of your wild\n"
-	.string "adventure!$"
+	.string "Hãy tận hưởng phần còn lại của\n"
+	.string "chuyến phiêu lưu hoang dã!$"
 
 SafariZone_South_Text_ExitEarlyThankYouForPlaying:
-	.string "Okay.\p"
-	.string "I'll take back your remaining SAFARI\n"
-	.string "BALLS.\p"
-	.string "Thank you for playing.\n"
-	.string "We hope to see you again.$"
+	.string "Được rồi.\p"
+	.string "Tôi sẽ thu lại số SAFARI BALLS\n"
+	.string "còn dư của bạn.\p"
+	.string "Cảm ơn bạn đã tham gia.\n"
+	.string "Hẹn gặp lại!$"
 
 SafariZone_South_Text_GoodLuck:
-	.string "Good luck!\p"
-	.string "If you need anything, don't hesitate\n"
-	.string "to tell me, please!$"
+	.string "Chúc may mắn!\p"
+	.string "Nếu cần gì, cứ nói với tôi nhé!$"
 
 SafariZone_South_Text_Boy:
-	.string "Did you know?\p"
-	.string "If you put a {POKEBLOCK} in that square box,\n"
-	.string "POKéMON gather around.$"
+	.string "Bạn biết không?\p"
+	.string "Nếu đặt {POKEBLOCK} vào chiếc hộp vuông,\n"
+	.string "POKéMON sẽ tụ tập quanh đó.$"
 
 SafariZone_South_Text_Man:
-	.string "I want to keep going deeper, but I\n"
-	.string "forgot to bring a BIKE.\p"
-	.string "Something tells me that rare POKéMON\n"
-	.string "live in the outlying areas.$"
+	.string "Tôi muốn đi sâu hơn, nhưng lại\n"
+	.string "quên mang theo BIKE.\p"
+	.string "Tôi có cảm giác POKéMON hiếm\n"
+	.string "sống ở những khu vực xa hơn.$"
 
 SafariZone_Southwest_Text_Woman:
-	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
-	.string "POKéMON, it gets ignored.\p"
-	.string "Do POKéMON have likes and dislikes\n"
-	.string "about what they eat?$"
+	.string "Đôi khi tôi ném {POKEBLOCK} cho POKéMON,\n"
+	.string "nhưng chúng lại phớt lờ.\p"
+	.string "POKéMON cũng kén món mình ăn sao?$"
 
 SafariZone_Northwest_Text_Man:
-	.string "Gasp… Gasp…\n"
-	.string "I…made it out here…but…\p"
-	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch POKéMON…$"
+	.string "Hộc… Hộc…\n"
+	.string "Tôi…đã đến được đây…nhưng…\p"
+	.string "Kiệt sức rồi… Tôi không còn\n"
+	.string "sức để bắt POKéMON nữa…$"
 
 SafariZone_North_Text_Fisherman:
-	.string "I'm on a mission to find WATER POKéMON\n"
-	.string "you don't see in HOENN.\p"
-	.string "Do you have any idea where the lake is?$"
+	.string "Tôi đang tìm WATER POKéMON\n"
+	.string "không xuất hiện ở HOENN.\p"
+	.string "Bạn biết hồ nước ở đâu không?$"
 
 SafariZone_North_Text_Man:
-	.string "I'm going to catch a lot of rare POKéMON\n"
-	.string "here and trade them with my friends!$"
+	.string "Tôi sẽ bắt thật nhiều POKéMON hiếm\n"
+	.string "ở đây rồi trao đổi với bạn bè!$"
 
 SafariZone_South_Text_Youngster:
-	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
-	.string "But it seems to have disappeared.\p"
-	.string "I guess POKéMON must have eaten it\n"
-	.string "without me noticing.$"
+	.string "Tôi đặt {POKEBLOCK} lên {POKEBLOCK} FEEDER,\n"
+	.string "nhưng nó biến mất rồi.\p"
+	.string "Chắc POKéMON đã ăn khi tôi không để ý.$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
 	.string "SAFARI ZONE TRAINER TIP!\p"
-	.string "Throw {POKEBLOCK}S at wild POKéMON to make\n"
-	.string "them less likely to flee.$"
+	.string "Ném {POKEBLOCK} cho POKéMON hoang dã\n"
+	.string "để chúng ít bỏ chạy hơn.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
-	.string "“Relieve your tired feet.”\n"
+	.string "“Cho đôi chân mệt mỏi nghỉ ngơi.”\n"
 	.string "REST HOUSE$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "I don't have any {POKEBLOCK}S, but I caught\n"
-	.string "a good number of POKéMON.\p"
-	.string "You can improve your chances of making\n"
-	.string "a catch by getting closer to them\l"
-	.string "before throwing a SAFARI BALL.$"
+	.string "Tôi không có {POKEBLOCK}, nhưng vẫn bắt\n"
+	.string "được khá nhiều POKéMON.\p"
+	.string "Bạn sẽ dễ bắt hơn nếu tiến lại gần\n"
+	.string "trước khi ném SAFARI BALL.$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "If you use {POKEBLOCK}S, wild POKéMON won't\n"
-	.string "be so quick to run away.\p"
-	.string "It's not much use to give {POKEBLOCK}S to\n"
-	.string "POKéMON that don't flee easily.$"
+	.string "Dùng {POKEBLOCK} sẽ khiến POKéMON hoang dã\n"
+	.string "không vội bỏ chạy.\p"
+	.string "Nhưng không cần dùng với POKéMON\n"
+	.string "vốn ít khi bỏ chạy.$"
 
 SafariZone_RestHouse_Text_FatMan:
-	.string "If you put a {POKEBLOCK} on the FEEDER,\n"
-	.string "POKéMON are attracted to it.\p"
-	.string "I think POKéMON with the same sort of\n"
-	.string "nature are drawn by a certain {POKEBLOCK}.$"
+	.string "Đặt {POKEBLOCK} lên FEEDER sẽ thu hút\n"
+	.string "POKéMON đến đó.\p"
+	.string "Có lẽ những POKéMON cùng Nature\n"
+	.string "sẽ bị hấp dẫn bởi một loại {POKEBLOCK}.$"
 
 SafariZone_South_Text_AreaOffLimits1:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "Khu vực này vẫn đang được xây dựng.\n"
+	.string "Xin lỗi, không được vào!$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
-	.string "The SAFARI ZONE's expansion project\n"
-	.string "is finished now.\p"
-	.string "We hope you will enjoy the new area.$"
+	.string "Dự án mở rộng SAFARI ZONE\n"
+	.string "đã hoàn thành.\p"
+	.string "Hy vọng bạn thích khu vực mới.$"
 
 SafariZone_South_Text_AreaOffLimits2:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "Khu vực này vẫn đang được xây dựng.\n"
+	.string "Xin lỗi, không được vào!$"
 
 SafariZone_Southeast_Text_LittleGirl:
-	.string "Wow! Whee! I haven't seen any of\n"
-	.string "these POKéMON before!$"
+	.string "Wow! Tuyệt quá! Mình chưa từng thấy\n"
+	.string "những POKéMON này!$"
 
 SafariZone_Southeast_Text_FatMan:
-	.string "The POKéMON in this area are all\n"
-	.string "new to me.\p"
-	.string "And I'm allowed to catch these rare\n"
-	.string "POKéMON! Too cool!$"
+	.string "POKéMON ở khu vực này đều\n"
+	.string "rất lạ với tôi.\p"
+	.string "Lại còn được phép bắt chúng nữa!\n"
+	.string "Tuyệt thật!$"
 
 SafariZone_Southeast_Text_RichBoy:
-	.string "The POKéMON around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "POKéMON quanh đây có vẻ đến từ\n"
+	.string "một nơi khác ngoài HOENN.$"
 
 SafariZone_Northeast_Text_Boy:
-	.string "I only have a couple SAFARI BALLS left.\p"
-	.string "I'm having a hard time trying to\n"
-	.string "decide what I should catch.$"
+	.string "Tôi chỉ còn vài SAFARI BALLS.\p"
+	.string "Khó quyết định nên bắt gì quá.$"
 
 SafariZone_Northeast_Text_Woman:
-	.string "I heard that you can see PIKACHU here.\n"
-	.string "Where might one be?$"
+	.string "Tôi nghe nói có thể thấy PIKACHU ở đây.\n"
+	.string "Không biết chúng ở đâu nhỉ?$"
 
 SafariZone_Northeast_Text_Girl:
-	.string "Oh, boo!\n"
-	.string "I can't seem to catch anything!\p"
-	.string "I'll end up wasting the admission\n"
-	.string "price if I don't catch something!$"
+	.string "Ôi, chán quá!\n"
+	.string "Tôi chẳng bắt được gì cả!\p"
+	.string "Nếu không bắt được gì thì phí\n"
+	.string "mất tiền vào cửa!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SafariZone_Text_WouldYouLikeToExit
+	.global SafariZone_Text_TimesUp
+	.global SafariZone_Text_OutOfBalls
+	.global SafariZone_Text_PlacePokeblockOnFeeder
+	.global SafariZone_Text_PokeblockStillHere
+	.global SafariZone_Text_PokeblockWasPlaced
+	.global Route121_SafariZoneEntrance_Text_WelcomeToSafariZone
+	.global Route121_SafariZoneEntrance_Text_WelcomeFirstTime
+	.global Route121_SafariZoneEntrance_Text_ComeInAndEnjoy
+	.global Route121_SafariZoneEntrance_Text_FirstTimeInfo
+	.global Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay
+	.global Route121_SafariZoneEntrance_Text_PlayAnotherTime
+	.global Route121_SafariZoneEntrance_Text_NotEnoughMoney
+	.global Route121_SafariZoneEntrance_Text_ThatWillBe500Please
+	.global Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls
+	.global Route121_SafariZoneEntrance_Text_Received30SafariBalls
+	.global Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself
+	.global Route121_SafariZoneEntrance_Text_PCIsFull
+	.global Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase
+	.global SafariZone_South_Text_StillHaveTimeExit
+	.global SafariZone_South_Text_EnjoyTheRestOfYourAdventure
+	.global SafariZone_South_Text_ExitEarlyThankYouForPlaying
+	.global SafariZone_South_Text_GoodLuck
+	.global SafariZone_South_Text_Boy
+	.global SafariZone_South_Text_Man
+	.global SafariZone_Southwest_Text_Woman
+	.global SafariZone_Northwest_Text_Man
+	.global SafariZone_North_Text_Fisherman
+	.global SafariZone_North_Text_Man
+	.global SafariZone_South_Text_Youngster
+	.global Route121_SafariZoneEntrance_Text_TrainerTip
+	.global SafariZone_Southwest_Text_RestHouseSign
+	.global SafariZone_RestHouse_Text_Youngster
+	.global SafariZone_RestHouse_Text_PsychicM
+	.global SafariZone_RestHouse_Text_FatMan
+	.global SafariZone_South_Text_AreaOffLimits1
+	.global SafariZone_Southeast_Text_ExpansionIsFinished
+	.global SafariZone_South_Text_AreaOffLimits2
+	.global SafariZone_Southeast_Text_LittleGirl
+	.global SafariZone_Southeast_Text_FatMan
+	.global SafariZone_Southeast_Text_RichBoy
+	.global SafariZone_Northeast_Text_Boy
+	.global SafariZone_Northeast_Text_Woman
+	.global SafariZone_Northeast_Text_Girl
+@ END GENERATED LOCALIZATION EXPORTS

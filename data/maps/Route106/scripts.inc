@@ -43,6 +43,9 @@ Route106_EventScript_Ned::
 
 Route106_Text_TrainerTips:
 	.string "TRAINER TIPS\p"
-	.string "Advice on catching POKéMON with a ROD:\n"
-	.string "Press the A Button if you get a bite.$"
+	.string "Lời khuyên khi bắt POKéMON bằng ROD:\n"
+	.string "Nhấn A Button khi có cá cắn câu.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route106_Text_TrainerTips
+@ END GENERATED LOCALIZATION EXPORTS

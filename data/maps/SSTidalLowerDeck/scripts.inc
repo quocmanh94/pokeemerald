@@ -12,28 +12,35 @@ SSTidalLowerDeck_EventScript_Leonard::
 	end
 
 SSTidalLowerDeck_Text_PhillipIntro:
-	.string "Arrrgh! I'm fed up and dog-tired of\n"
-	.string "cleaning this huge place!\p"
-	.string "Let's have a quick battle!$"
+	.string "Aaaa! Tôi chán ngấy, mệt bở hơi tai vì\n"
+	.string "phải dọn dẹp chỗ rộng thế này rồi!\p"
+	.string "Đấu nhanh một trận nào!$"
 
 SSTidalLowerDeck_Text_PhillipDefeat:
-	.string "Little bro, I lost!$"
+	.string "Em trai, anh thua rồi!$"
 
 SSTidalLowerDeck_Text_PhillipPostBattle:
-	.string "We're the CLEANUP BROTHERS!\p"
-	.string "The old one dumps the detergent,\n"
-	.string "and the young one does the scrubbing!$"
+	.string "Chúng tôi là CLEANUP BROTHERS!\p"
+	.string "Anh lớn đổ chất tẩy rửa, còn em nhỏ lo\n"
+	.string "cọ rửa!$"
 
 SSTidalLowerDeck_Text_LeonardIntro:
-	.string "This is the bottom of the ship's hull.\n"
-	.string "There's plenty of room.\l"
-	.string "It'll be alright for a POKéMON battle.$"
+	.string "Đây là đáy thân tàu. Rộng rãi lắm. Đủ\n"
+	.string "chỗ cho một trận đấu POKéMON.$"
 
 SSTidalLowerDeck_Text_LeonardDefeat:
-	.string "Big bro, I lost!$"
+	.string "Anh trai, em thua rồi!$"
 
 SSTidalLowerDeck_Text_LeonardPostBattle:
-	.string "We're the CLEANUP BROTHERS!\p"
-	.string "The old one dumps the detergent,\n"
-	.string "and the young one does the scrubbing!$"
+	.string "Chúng tôi là CLEANUP BROTHERS!\p"
+	.string "Anh lớn đổ chất tẩy rửa, còn em nhỏ lo\n"
+	.string "cọ rửa!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SSTidalLowerDeck_Text_PhillipIntro
+	.global SSTidalLowerDeck_Text_PhillipDefeat
+	.global SSTidalLowerDeck_Text_PhillipPostBattle
+	.global SSTidalLowerDeck_Text_LeonardIntro
+	.global SSTidalLowerDeck_Text_LeonardDefeat
+	.global SSTidalLowerDeck_Text_LeonardPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

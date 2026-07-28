@@ -23,44 +23,60 @@ Roulette_EventScript_Play::
 	end
 
 Roulette_Text_PlayMinimumWagerIsX::
-	.string "The minimum wager at this table\n"
-	.string "is {STR_VAR_1}. Do you want to play?$"
+	.string "Mức cược tối thiểu tại bàn này\n"
+	.string "là {STR_VAR_1}. Bạn muốn chơi không?$"
 
 Roulette_Text_NotEnoughCoins::
-	.string "You don't have enough COINS.$"
+	.string "Bạn không có đủ COINS.$"
 
 Roulette_Text_SpecialRateTable::
-	.string "Special rate table right now!$"
+	.string "Bàn này đang có tỷ lệ đặc biệt!$"
 
 Roulette_Text_ControlsInstruction::
-	.string "Place your wager with the + Control\n"
-	.string "Pad, then press the A Button.$"
+	.string "Dùng + Control Pad để đặt cược,\n"
+	.string "sau đó nhấn A Button.$"
 
 Roulette_Text_ItsAHit::
-	.string "It's a hit!$"
+	.string "Trúng rồi!$"
 
 Roulette_Text_Jackpot::
-	.string "Jackpot!$"
+	.string "Trúng độc đắc!$"
 
 Roulette_Text_NothingDoing::
-	.string "Nothing doing!$"
+	.string "Không trúng gì cả!$"
 
 Roulette_Text_YouveWonXCoins::
-	.string "You've won {STR_VAR_1} COINS!$"
+	.string "Bạn đã thắng {STR_VAR_1} COINS!$"
 
 Roulette_Text_NoCoinsLeft::
-	.string "No COINS left…$"
+	.string "Không còn COINS…$"
 
 Roulette_Text_KeepPlaying::
-	.string "Keep playing?$"
+	.string "Tiếp tục chơi không?$"
 
 Roulette_Text_BoardWillBeCleared::
-	.string "The ROULETTE board will be cleared.$"
+	.string "Bàn ROULETTE sẽ được xóa sạch.$"
 
 @ Unused
 Roulette_Text_YouDontHaveACoinCase::
-	.string "You don't have a COIN CASE.$"
+	.string "Bạn không có COIN CASE.$"
 
 Roulette_Text_CoinCaseIsFull::
-	.string "Your COIN CASE is full!\n"
-	.string "Coins can be exchanged for prizes.$"
+	.string "COIN CASE của bạn đã đầy!\n"
+	.string "Có thể đổi Coins lấy phần thưởng.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Roulette_Text_PlayMinimumWagerIsX
+	.global Roulette_Text_NotEnoughCoins
+	.global Roulette_Text_SpecialRateTable
+	.global Roulette_Text_ControlsInstruction
+	.global Roulette_Text_ItsAHit
+	.global Roulette_Text_Jackpot
+	.global Roulette_Text_NothingDoing
+	.global Roulette_Text_YouveWonXCoins
+	.global Roulette_Text_NoCoinsLeft
+	.global Roulette_Text_KeepPlaying
+	.global Roulette_Text_BoardWillBeCleared
+	.global Roulette_Text_YouDontHaveACoinCase
+	.global Roulette_Text_CoinCaseIsFull
+@ END GENERATED LOCALIZATION EXPORTS

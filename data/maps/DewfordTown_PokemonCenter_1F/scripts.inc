@@ -25,13 +25,16 @@ DewfordTown_PokemonCenter_1F_EventScript_Man::
 	end
 
 DewfordTown_PokemonCenter_1F_Text_StoneCavern:
-	.string "There's a stone cavern at the edge\n"
-	.string "of town.\p"
-	.string "I've heard you can find rare stones\n"
-	.string "there.$"
+	.string "Có một hang đá ở rìa thị trấn.\p"
+	.string "Tôi nghe nói có thể tìm thấy những viên\n"
+	.string "đá quý hiếm ở đó.$"
 
 DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM:
-	.string "Even if a POKéMON faints and can't\n"
-	.string "battle, it can still use a move learned\l"
-	.string "from a HIDDEN MACHINE (HM).$"
+	.string "Ngay cả khi POKéMON bị ngất và không\n"
+	.string "thể chiến đấu, nó vẫn có thể dùng chiêu\l"
+	.string "học từ HIDDEN MACHINE (HM).$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_PokemonCenter_1F_Text_StoneCavern
+	.global DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM
+@ END GENERATED LOCALIZATION EXPORTS
