@@ -74,26 +74,33 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
-	.string "The POKéMON LEAGUE is only a short\n"
-	.string "distance after the VICTORY ROAD.\p"
-	.string "If you've come this far, what choice\n"
-	.string "do you have but to keep going?$"
+	.string "POKéMON LEAGUE chỉ cách VICTORY ROAD\n"
+	.string "một quãng ngắn.\p"
+	.string "Đã đi xa đến đây rồi, bạn còn lựa chọn\n"
+	.string "nào ngoài tiếp tục tiến bước chứ?$"
 
 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
-	.string "The long and harrowing VICTORY ROAD…\p"
-	.string "It's like reliving the path one has\n"
-	.string "traveled in life…\p"
-	.string "Believe in your POKéMON and give it\n"
-	.string "your very best!$"
+	.string "VICTORY ROAD dài đằng đẵng và đầy gian\n"
+	.string "nan...\p"
+	.string "Nó giống như sống lại con đường mà mỗi\n"
+	.string "người đã trải qua trong đời...\p"
+	.string "Hãy tin tưởng POKéMON của bạn và cố\n"
+	.string "gắng hết sức!$"
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
-	.string "SCOTT: {PLAYER}{KUN}, you've clawed your\n"
-	.string "way up to face the POKéMON LEAGUE!\p"
-	.string "I'm happy for you!\n"
-	.string "You made my cheering worthwhile!\p"
-	.string "{PLAYER}{KUN}, if you were to become\n"
-	.string "the POKéMON LEAGUE CHAMPION…\p"
-	.string "I'll get in touch with you then.\p"
-	.string "Okay, {PLAYER}{KUN}.\n"
-	.string "Go for greatness!$"
+	.string "SCOTT: {PLAYER}{KUN}, cậu đã nỗ lực\n"
+	.string "vượt mọi chông gai để đến thách đấu\l"
+	.string "POKéMON LEAGUE!\p"
+	.string "Tôi mừng cho cậu! Công cổ vũ của tôi\n"
+	.string "thật không uổng phí!\p"
+	.string "{PLAYER}{KUN}, nếu cậu trở thành\n"
+	.string "POKéMON LEAGUE CHAMPION...\p"
+	.string "Lúc đó tôi sẽ liên lạc với cậu.\p"
+	.string "Được rồi, {PLAYER}{KUN}. Hãy tiến tới\n"
+	.string "đỉnh cao!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad
+	.global EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon
+	.global EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
+@ END GENERATED LOCALIZATION EXPORTS

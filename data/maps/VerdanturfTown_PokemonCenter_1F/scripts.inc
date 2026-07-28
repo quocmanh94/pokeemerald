@@ -25,18 +25,19 @@ VerdanturfTown_PokemonCenter_1F_EventScript_ExpertM::
 	end
 
 VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon:
-	.string "You can't consider yourself a real\n"
-	.string "TRAINER if you don't have faith\l"
-	.string "in your POKéMON.\p"
-	.string "Only those people who can believe\n"
-	.string "in their battling POKéMON can win\l"
-	.string "through to the very end.$"
+	.string "Bạn không thể tự xem mình là một\n"
+	.string "HLV thực thụ nếu không tin tưởng\l"
+	.string "POKéMON.\p"
+	.string "Chỉ những người tin vào POKéMON đang\n"
+	.string "chiến đấu của mình mới có thể giành\l"
+	.string "chiến thắng đến tận cùng.$"
 
 VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent:
-	.string "The reason why anyone would visit\n"
-	.string "VERDANTURF…\p"
-	.string "It's the BATTLE TENT. It goes without\n"
-	.string "saying.\p"
-	.string "Or is there somebody here that you\n"
-	.string "came to see?$"
+	.string "Lý do người ta đến VERDANTURF...\p"
+	.string "Dĩ nhiên là vì BATTLE TENT rồi.\p"
+	.string "Hay bạn đến đây để gặp ai đó?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon
+	.global VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent
+@ END GENERATED LOCALIZATION EXPORTS

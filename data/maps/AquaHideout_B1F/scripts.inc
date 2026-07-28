@@ -107,54 +107,68 @@ AquaHideout_B1F_EventScript_Grunt7::
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
-	.string "If you want to know the secret about\n"
-	.string "our HIDEOUT, you have me to beat!$"
+	.string "Nếu muốn biết bí mật về HIDEOUT của\n"
+	.string "chúng tôi, trước hết bạn phải đánh bại\l"
+	.string "tôi!$"
 
 AquaHideout_B1F_Text_Grunt2Defeat:
-	.string "I can't win at all…$"
+	.string "Tôi hoàn toàn không thắng nổi...$"
 
 AquaHideout_B1F_Text_Grunt2PostBattle:
-	.string "Our HIDEOUT's secret?\p"
-	.string "Well, let's just say…\n"
-	.string "There's a submarine at the far end!\p"
-	.string "But, by now…\n"
-	.string "Kekekeke…$"
+	.string "Bí mật của HIDEOUT ư?\p"
+	.string "Chà, chỉ có thể nói là... Ở tận cùng có\n"
+	.string "một chiếc tàu ngầm!\p"
+	.string "Nhưng đến lúc này thì... Kekekeke...$"
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
-	.string "Nothing left to do but KO a pesky\n"
-	.string "meddler!$"
+	.string "Nhiên liệu đã nạp A-OK! Đồ ăn vặt cho\n"
+	.string "chuyến đi đã nạp A-OK!\p"
+	.string "Giờ chỉ còn KO kẻ phá đám phiền phức\n"
+	.string "này thôi!$"
 
 AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "I took a serious licking!$"
+	.string "Tôi bị đánh cho một trận ra trò!$"
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
-	.string "Humph!\n"
-	.string "This was supposed to happen!\p"
-	.string "My mission was to just hold you up!$"
+	.string "Hừ! Mọi chuyện đúng như dự tính!\p"
+	.string "Nhiệm vụ của tôi chỉ là cầm chân bạn\n"
+	.string "thôi!$"
 
 AquaHideout_B1F_Text_Grunt5Intro:
-	.string "Yawn… Keeping watch over the\n"
-	.string "HIDEOUT bores me. I'll take you on.$"
+	.string "Ngáp... Canh gác HIDEOUT chán quá. Tôi\n"
+	.string "đấu với bạn vậy.$"
 
 AquaHideout_B1F_Text_Grunt5Defeat:
-	.string "Yawn…\n"
-	.string "Oh, I lost…$"
+	.string "Ngáp... Ồ, tôi thua rồi...$"
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "If you scurry too much, other TEAM\n"
-	.string "AQUA members might get you.$"
+	.string "Nếu cứ chạy nháo nhào như thế, bạn có\n"
+	.string "thể bị các thành viên TEAM AQUA khác\l"
+	.string "tóm đấy.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
-	.string "Hey!\n"
-	.string "You there!\p"
-	.string "Which do you think is cooler?\n"
-	.string "TEAM AQUA's uniform or TEAM MAGMA's?$"
+	.string "Này! Bạn kia!\p"
+	.string "Bạn thấy bộ đồng phục nào ngầu hơn?\n"
+	.string "Của TEAM AQUA hay TEAM MAGMA?$"
 
 AquaHideout_B1F_Text_Grunt7Defeat:
-	.string "I lost in a cool way…$"
+	.string "Tôi đã thua một cách thật ngầu...$"
 
 AquaHideout_B1F_Text_Grunt7PostBattle:
-	.string "If you have a cool uniform, you look\n"
-	.string "good even in a loss, don't you think?$"
+	.string "Có bộ đồng phục ngầu thì dù thua trông\n"
+	.string "vẫn oách, bạn thấy đúng không?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AquaHideout_B1F_Text_Grunt2Intro
+	.global AquaHideout_B1F_Text_Grunt2Defeat
+	.global AquaHideout_B1F_Text_Grunt2PostBattle
+	.global AquaHideout_B1F_Text_Grunt3Intro
+	.global AquaHideout_B1F_Text_Grunt3Defeat
+	.global AquaHideout_B1F_Text_Grunt3PostBattle
+	.global AquaHideout_B1F_Text_Grunt5Intro
+	.global AquaHideout_B1F_Text_Grunt5Defeat
+	.global AquaHideout_B1F_Text_Grunt5PostBattle
+	.global AquaHideout_B1F_Text_Grunt7Intro
+	.global AquaHideout_B1F_Text_Grunt7Defeat
+	.global AquaHideout_B1F_Text_Grunt7PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

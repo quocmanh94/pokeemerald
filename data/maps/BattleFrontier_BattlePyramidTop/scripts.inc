@@ -215,116 +215,131 @@ BattleFrontier_BattlePyramidTop_Movement_CameraPanUp:
 	step_end
 
 BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
-	.string "It is a delight to see you here!\n"
-	.string "You have reached the summit of\l"
-	.string "the BATTLE PYRAMID!\p"
-	.string "Above here is the PYRAMID's\n"
-	.string "lookout point.\p"
-	.string "It is a place open only to those\n"
-	.string "who have conquered the PYRAMID.\p"
-	.string "Now, please!\n"
-	.string "Up you go!$"
+	.string "Thật vui khi được thấy bạn ở đây! Bạn\n"
+	.string "đã lên đến đỉnh BATTLE PYRAMID!\p"
+	.string "Phía trên là đài quan sát của PYRAMID.\p"
+	.string "Nơi đó chỉ dành cho những người đã\n"
+	.string "chinh phục PYRAMID.\p"
+	.string "Nào, xin mời! Hãy lên đó!$"
 
 BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid:
-	.string "The PYRAMID's new conqueror!\n"
-	.string "Let the name {PLAYER} be known!$"
+	.string "Người vừa chinh phục PYRAMID! Hãy để\n"
+	.string "cái tên {PLAYER} vang danh!$"
 
 BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
-	.string "It is a delight to see you here!\p"
-	.string "Unfortunately, you were second by\n"
-	.string "a mere fraction of time!\p"
-	.string "Our chief has already conquered\n"
-	.string "the PYRAMID ahead of you.\p"
-	.string "However, my young explorer…\n"
-	.string "You are a TRAINER!\p"
-	.string "Assert your power and take the glory\n"
-	.string "of the pinnacle from our chief!\p"
-	.string "Now, please! When you are ready,\n"
-	.string "take one more step of courage!$"
+	.string "Thật vui khi được thấy bạn ở đây!\p"
+	.string "Đáng tiếc thay, bạn chỉ về nhì vì chậm\n"
+	.string "hơn trong tích tắc!\p"
+	.string "Thủ lĩnh của chúng tôi đã chinh phục\n"
+	.string "PYRAMID trước bạn.\p"
+	.string "Tuy nhiên, nhà thám hiểm trẻ tuổi... Bạn\n"
+	.string "là một HLV!\p"
+	.string "Hãy chứng tỏ sức mạnh và giành lấy vinh\n"
+	.string "quang trên đỉnh cao từ tay thủ lĩnh\l"
+	.string "của chúng tôi!\p"
+	.string "Nào, xin mời! Khi đã sẵn sàng, hãy dũng\n"
+	.string "cảm tiến thêm một bước nữa!$"
 
 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure:
-	.string "Young adventurer…\p"
-	.string "Wouldn't you agree that explorations\n"
-	.string "are the grandest of adventures?\p"
-	.string "Your own wits!\p"
-	.string "Your own strength!\p"
-	.string "Your own POKéMON!\p"
-	.string "And, above all, only your own courage\n"
-	.string "to lead you through unknown worlds…$"
+	.string "Nhà thám hiểm trẻ tuổi...\p"
+	.string "Cậu không thấy rằng khám phá chính là\n"
+	.string "cuộc phiêu lưu vĩ đại nhất sao?\p"
+	.string "Bằng trí tuệ của chính mình!\p"
+	.string "Bằng sức mạnh của chính mình!\p"
+	.string "Bằng POKéMON của chính mình!\p"
+	.string "Và trên hết, chỉ có lòng can đảm của\n"
+	.string "chính cậu dẫn lối qua những thế giới\l"
+	.string "chưa ai biết tới...$"
 
 BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon:
-	.string "Aah, yes, indeed this life is grand!\n"
-	.string "Grand, it is! Eh?\p"
-	.string "I'm BRANDON!\p"
-	.string "I'm the PYRAMID KING, which means\n"
-	.string "I'm in charge here.\p"
-	.string "Most people call me the chief!\p"
-	.string "You coming here means you have\n"
-	.string "that much confidence in yourself,\l"
-	.string "am I right?\p"
-	.string "Hahahah!\n"
-	.string "This should be exciting!$"
+	.string "À, phải, cuộc đời này quả thật tuyệt\n"
+	.string "vời! Tuyệt vời lắm! Hả?\p"
+	.string "Ta là BRANDON!\p"
+	.string "Ta là PYRAMID KING, nghĩa là ta cai quản\n"
+	.string "nơi này.\p"
+	.string "Hầu hết mọi người đều gọi ta là thủ\n"
+	.string "lĩnh!\p"
+	.string "Cậu đã đến tận đây, tức là rất tự tin\n"
+	.string "vào bản thân, đúng không?\p"
+	.string "Ha ha ha! Trận này sẽ hấp dẫn lắm đây!$"
 
 BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle:
-	.string "Now, then!\n"
-	.string "Bring your courage to our battle!$"
+	.string "Nào! Hãy mang lòng can đảm của cậu vào\n"
+	.string "trận đấu này!$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease:
-	.string "BRANDON: Hahahah! Grand it was!\n"
-	.string "Grand, yes, indeed!\p"
-	.string "Well done! You've earned recognition!\n"
-	.string "Your FRONTIER PASS, please!$"
+	.string "BRANDON: Ha ha ha! Quả là một trận đấu\n"
+	.string "tuyệt vời! Thật sự tuyệt vời!\p"
+	.string "Làm tốt lắm! Cậu xứng đáng được công\n"
+	.string "nhận! Cho ta xem FRONTIER PASS nào!$"
 
 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol:
-	.string "The Brave Symbol was embossed on\n"
-	.string "the FRONTIER PASS!$"
+	.string "Brave Symbol đã được khắc lên\n"
+	.string "FRONTIER PASS!$"
 
 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting:
-	.string "Young explorer!\n"
-	.string "I look forward to our next meeting!$"
+	.string "Nhà thám hiểm trẻ tuổi! Ta mong chờ lần\n"
+	.string "gặp tiếp theo của chúng ta!$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned:
-	.string "BRANDON: …You've finally returned,\n"
-	.string "young explorer…\p"
-	.string "Your love of adventure seems to come\n"
-	.string "deep from within your heart…\p"
-	.string "Yes… You are exactly as I was in\n"
-	.string "my own youth…\p"
-	.string "… … …Ah…\p"
-	.string "The passionate!\p"
-	.string "The dangerous!\p"
-	.string "The desperate!\p"
-	.string "Those days of death-defying,\n"
-	.string "life-affirming adventures are back…$"
+	.string "BRANDON: Cuối cùng cậu cũng trở lại, nhà\n"
+	.string "thám hiểm trẻ tuổi...\p"
+	.string "Tình yêu phiêu lưu dường như bắt\n"
+	.string "nguồn từ tận sâu trong tim cậu...\p"
+	.string "Phải... Cậu giống hệt ta khi còn trẻ...\p"
+	.string "... ... ...À...\p"
+	.string "Những tháng ngày đầy nhiệt huyết!\p"
+	.string "Đầy hiểm nguy!\p"
+	.string "Đầy tuyệt vọng!\p"
+	.string "Những tháng ngày phiêu lưu coi thường\n"
+	.string "cái chết và cảm nhận trọn vẹn sự sống\l"
+	.string "đã trở lại...$"
 
 BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter:
-	.string "Now, then!\p"
-	.string "I sense my own courage is off\n"
-	.string "the meter!$"
+	.string "Nào!\p"
+	.string "Ta cảm thấy lòng can đảm của mình đã\n"
+	.string "vượt khỏi mọi giới hạn!$"
 
 BattleFrontier_BattlePyramidTop_Text_EverythingYouHave:
-	.string "Everything you have!\n"
-	.string "I'm braced for it all!$"
+	.string "Hãy tung ra tất cả những gì cậu có! Ta\n"
+	.string "sẵn sàng đón nhận hết!$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis:
-	.string "BRANDON: Hahahah!\n"
-	.string "Remarkable!\l"
-	.string "Yes, it's grand, indeed!\p"
-	.string "Young explorer!\p"
-	.string "You've bested me through and through!\n"
-	.string "Here! I want you to have this!$"
+	.string "BRANDON: Ha ha ha! Phi thường! Quả thật\n"
+	.string "tuyệt vời!\p"
+	.string "Nhà thám hiểm trẻ tuổi!\p"
+	.string "Cậu đã hoàn toàn đánh bại ta! Đây! Ta\n"
+	.string "muốn cậu nhận lấy thứ này!$"
 
 BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine:
-	.string "The Brave Symbol took on\n"
-	.string "a golden shine!$"
+	.string "Brave Symbol đã tỏa ánh vàng rực rỡ!$"
 
 BattleFrontier_BattlePyramidTop_Text_FarewellForNow:
-	.string "Ah, yes! It just goes to show that\n"
-	.string "I have much to learn still!\p"
-	.string "May our paths cross again!\n"
-	.string "Farewell for now, young explorer!$"
+	.string "À, phải! Điều này chứng tỏ ta vẫn còn\n"
+	.string "rất nhiều thứ phải học!\p"
+	.string "Mong rằng con đường của chúng ta sẽ\n"
+	.string "lại giao nhau! Tạm biệt nhé, nhà thám\l"
+	.string "hiểm trẻ tuổi!$"
 
 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady:
-	.string "Now, when you are ready, take courage\n"
-	.string "and step forward.$"
+	.string "Khi đã sẵn sàng, hãy lấy hết can đảm và\n"
+	.string "bước lên phía trước.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo
+	.global BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid
+	.global BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere
+	.global BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure
+	.global BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon
+	.global BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle
+	.global BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease
+	.global BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol
+	.global BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting
+	.global BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned
+	.global BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter
+	.global BattleFrontier_BattlePyramidTop_Text_EverythingYouHave
+	.global BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis
+	.global BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine
+	.global BattleFrontier_BattlePyramidTop_Text_FarewellForNow
+	.global BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady
+@ END GENERATED LOCALIZATION EXPORTS

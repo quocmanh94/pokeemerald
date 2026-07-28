@@ -54,38 +54,42 @@ Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil::
 	end
 
 Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
-	.string "I'm the FOSSIL MANIAC…\n"
-	.string "I'm a nice guy who loves FOSSILS…\p"
-	.string "Do you want a FOSSIL?\p"
-	.string "But the FOSSILS around these parts all\n"
-	.string "belong to me… None for you…\p"
-	.string "If you can't bear to go without\n"
-	.string "a FOSSIL, look in a desert where there\l"
-	.string "are boulders and sand that may hide\l"
-	.string "FOSSILS…$"
+	.string "Tôi là FOSSIL MANIAC... Tôi là người tốt\n"
+	.string "và rất yêu FOSSILS...\p"
+	.string "Bạn muốn một FOSSIL sao?\p"
+	.string "Nhưng tất cả FOSSILS quanh vùng này\n"
+	.string "đều thuộc về tôi... Không có phần cho\l"
+	.string "bạn...\p"
+	.string "Nếu không thể chịu nổi cảnh thiếu\n"
+	.string "FOSSIL, hãy tìm ở một sa mạc có những\l"
+	.string "tảng đá và cát có thể che giấu\l"
+	.string "FOSSILS...$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
-	.string "You found a FOSSIL, didn't you?\n"
-	.string "That's so nice… It's so dreamy…\p"
-	.string "What are you going to do with that\n"
-	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS…\p"
-	.string "I love my FOSSILS, so I would never\n"
-	.string "do anything like that…$"
+	.string "Bạn tìm được một FOSSIL rồi phải\n"
+	.string "không? Tuyệt quá... Thật mê hoặc...\p"
+	.string "Bạn định làm gì với FOSSIL đó?\p"
+	.string "Theo tôi nghe được, DEVON đang nghiên\n"
+	.string "cứu cách hồi sinh POKéMON từ FOSSILS...\p"
+	.string "Tôi yêu FOSSILS của mình nên sẽ không\n"
+	.string "bao giờ làm chuyện như thế...$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSILS are so… Wonderful…\n"
-	.string "It's so dreamy…$"
+	.string "FOSSILS thật... Tuyệt vời... Thật mê\n"
+	.string "hoặc...$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
-	.string "Oh…\n"
-	.string "It's not safe that way…\p"
-	.string "I was digging away, you see…\n"
-	.string "When the whole wall collapsed…\p"
-	.string "I think there's a giant cavern\n"
-	.string "underneath now…\p"
-	.string "But I've left it alone because I don't\n"
-	.string "think there are any FOSSILS there…$"
+	.string "Ồ... Phía đó không an toàn đâu...\p"
+	.string "Tôi đang đào thì... Cả bức tường đột\n"
+	.string "nhiên sụp xuống...\p"
+	.string "Tôi nghĩ giờ bên dưới có một hang động\n"
+	.string "khổng lồ...\p"
+	.string "Nhưng tôi mặc kệ nó vì không nghĩ ở đó\n"
+	.string "có FOSSILS...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route114_FossilManiacsTunnel_Text_LookInDesertForFossils
+	.global Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils
+	.global Route114_FossilManiacsTunnel_Text_FossilsAreWonderful
+	.global Route114_FossilManiacsTunnel_Text_NotSafeThatWay
+@ END GENERATED LOCALIZATION EXPORTS

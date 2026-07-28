@@ -29,19 +29,25 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	end
 
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
-	.string "My POKéMON has a NAIVE nature, and my\n"
-	.string "friend's has a JOLLY nature.\p"
-	.string "It's fascinating how POKéMON have\n"
-	.string "personalities!$"
+	.string "POKéMON của tôi có tính cách NAIVE, còn\n"
+	.string "của bạn tôi có tính cách JOLLY.\p"
+	.string "Thật thú vị khi POKéMON cũng có cá tính\n"
+	.string "riêng!$"
 
 RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
-	.string "Just like people, there are male and\n"
-	.string "female POKéMON.\p"
-	.string "But no one seems to have any idea how\n"
-	.string "they're different.$"
+	.string "Cũng giống con người, POKéMON có cả\n"
+	.string "giống đực lẫn giống cái.\p"
+	.string "Nhưng dường như chẳng ai biết chúng\n"
+	.string "khác nhau ở điểm nào.$"
 
 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-	.string "The man next door gave me an HM!\p"
-	.string "I used it to teach my POKéMON how to\n"
-	.string "CUT down skinny trees.$"
+	.string "Người đàn ông nhà bên đã cho tôi một\n"
+	.string "HM!\p"
+	.string "Tôi dùng nó để dạy POKéMON cách dùng\n"
+	.string "CUT chặt những cây nhỏ.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities
+	.global RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon
+	.global RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor
+@ END GENERATED LOCALIZATION EXPORTS

@@ -10,15 +10,19 @@ PetalburgCity_House2_EventScript_SchoolKid::
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
-	.string "NORMAN became our town's new\n"
-	.string "GYM LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "somewhere far away.$"
+	.string "NORMAN đã trở thành GYM LEADER mới\n"
+	.string "của thị trấn chúng ta.\p"
+	.string "Tôi nghĩ anh ấy đã gọi gia đình từ một\n"
+	.string "nơi xa xôi đến đây.$"
 
 PetalburgCity_House2_Text_BattledNormanOnce:
-	.string "I battled NORMAN once, but, whew,\n"
-	.string "he was way too strong.\p"
-	.string "How would I put it?\p"
-	.string "I just got the feeling that he\n"
-	.string "lives for POKéMON.$"
+	.string "Tôi từng đấu với NORMAN một lần, nhưng\n"
+	.string "chà, anh ấy mạnh quá sức.\p"
+	.string "Phải nói thế nào nhỉ?\p"
+	.string "Tôi chỉ có cảm giác anh ấy sống vì\n"
+	.string "POKéMON.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_House2_Text_NormanBecameGymLeader
+	.global PetalburgCity_House2_Text_BattledNormanOnce
+@ END GENERATED LOCALIZATION EXPORTS

@@ -10,11 +10,15 @@ OldaleTown_House2_EventScript_Man::
 	end
 
 OldaleTown_House2_Text_PokemonLevelUp:
-	.string "When POKéMON battle, they eventually\n"
-	.string "level up and become stronger.$"
+	.string "Khi chiến đấu, POKéMON sẽ dần lên cấp và\n"
+	.string "trở nên mạnh hơn.$"
 
 OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon:
-	.string "If the POKéMON with you become\n"
-	.string "stronger, you'll be able to go farther\l"
-	.string "away from here.$"
+	.string "Nếu những POKéMON đi cùng cậu trở nên\n"
+	.string "mạnh hơn, cậu sẽ có thể đi xa hơn khỏi\l"
+	.string "nơi này.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global OldaleTown_House2_Text_PokemonLevelUp
+	.global OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon
+@ END GENERATED LOCALIZATION EXPORTS

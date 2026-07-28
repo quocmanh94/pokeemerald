@@ -33,14 +33,17 @@ SlateportCity_Mart_EventScript_Man::
 	end
 
 SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
-	.string "The MARKET does have some interesting\n"
-	.string "merchandise.\p"
-	.string "But there are some items you can only\n"
-	.string "get at a POKéMON MART.$"
+	.string "MARKET đúng là có vài món hàng thú vị.\p"
+	.string "Nhưng có một số món đồ chỉ mua được\n"
+	.string "tại POKéMON MART.$"
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
-	.string "A GREAT BALL is better than a POKé BALL\n"
-	.string "at catching POKéMON.\p"
-	.string "With this, I should be able to get that\n"
-	.string "elusive POKéMON…$"
+	.string "GREAT BALL bắt POKéMON hiệu quả hơn\n"
+	.string "POKé BALL.\p"
+	.string "Với thứ này, mình sẽ bắt được POKéMON\n"
+	.string "khó tìm đó...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_Mart_Text_SomeItemsOnlyAtMart
+	.global SlateportCity_Mart_Text_GreatBallIsBetter
+@ END GENERATED LOCALIZATION EXPORTS

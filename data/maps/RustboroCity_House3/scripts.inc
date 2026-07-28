@@ -21,17 +21,21 @@ RustboroCity_House3_EventScript_Pekachu::
 	end
 
 RustboroCity_House3_Text_IGivePerfectlySuitedNicknames:
-	.string "For my own POKéMON, I give them\n"
-	.string "perfectly suited nicknames!\p"
-	.string "It's my expression of, uh…\n"
-	.string "originality, yes, that's it!$"
+	.string "Tôi luôn đặt cho POKéMON của mình\n"
+	.string "những biệt danh hoàn toàn phù hợp!\p"
+	.string "Đó là cách tôi thể hiện, ờ... sự độc đáo,\n"
+	.string "đúng rồi, chính là thế!$"
 
 RustboroCity_House3_Text_NamingPikachuPekachu:
-	.string "But giving the name PEKACHU to\n"
-	.string "a PIKACHU? It seems pointless.\p"
-	.string "I suppose it is good to use a name\n"
-	.string "that's easy to understand, but…$"
+	.string "Nhưng đặt tên PEKACHU cho một PIKACHU\n"
+	.string "ư? Có vẻ chẳng để làm gì cả.\p"
+	.string "Dùng một cái tên dễ hiểu cũng tốt,\n"
+	.string "nhưng...$"
 
 RustboroCity_House3_Text_Pekachu:
 	.string "PEKACHU: Peka!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_House3_Text_IGivePerfectlySuitedNicknames
+	.global RustboroCity_House3_Text_NamingPikachuPekachu
+@ END GENERATED LOCALIZATION EXPORTS

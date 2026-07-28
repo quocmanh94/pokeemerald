@@ -40,20 +40,20 @@ static const u8 sText_Lv[] = _("Lv. ");
 static const u8 sText_ThreeDashes[] = _("---");
 static const u8 sText_FourQuestionMarks[] = _("????");
 static const u8 sText_UnusedEmpty[] = _("");
-static const u8 sText_IsThisTradeOkay[] = _("Is this trade okay?");
+static const u8 sText_IsThisTradeOkay[] = _("Bạn đồng ý trao đổi chứ?");
 static const u8 sText_Cancel[] = _("CANCEL");
-static const u8 sText_ChooseAPkmn[] = _("Choose a POKéMON.");
+static const u8 sText_ChooseAPkmn[] = _("Chọn một POKéMON.");
 static const u8 sText_Summary[] = _("SUMMARY");
 static const u8 sText_Trade[] = _("TRADE");
-static const u8 sText_CancelTrade[] = _("Cancel trade?");
+static const u8 sText_CancelTrade[] = _("Hủy trao đổi?");
 static const u8 sJPText_PressBButtonToQuit[] = _("Bボタン　で　もどります");
 static const u8 sText_Summary2[] = _("SUMMARY");
 static const u8 sText_Trade2[] = _("TRADE");
-static const u8 sText_CommunicationStandby[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Communication standby…\nPlease wait.");
-static const u8 sText_TheTradeHasBeenCanceled[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}The trade has\nbeen canceled.");
-static const u8 sText_OnlyPkmnForBattle[] = _("That's your only\nPOKéMON for battle.");
-static const u8 sText_WaitingForYourFriend[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Waiting for your friend\nto finish…");
-static const u8 sText_YourFriendWantsToTrade[] = _("Your friend wants\nto trade POKéMON.");
+static const u8 sText_CommunicationStandby[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Đang chờ liên lạc…\nVui lòng chờ.");
+static const u8 sText_TheTradeHasBeenCanceled[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Cuộc trao đổi\nđã bị hủy.");
+static const u8 sText_OnlyPkmnForBattle[] = _("Đó là POKéMON duy nhất\ncó thể chiến đấu.");
+static const u8 sText_WaitingForYourFriend[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Đang chờ bạn của bạn\nhoàn tất…");
+static const u8 sText_YourFriendWantsToTrade[] = _("Bạn của bạn muốn\ntrao đổi POKéMON.");
 
 static const struct OamData sOamData_MenuText =
 {
@@ -1203,3 +1203,15 @@ static const u8 sWirelessSignalAnimParams[][2] =
     {16, -1},
     {}
 };
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02398 = sText_IsThisTradeOkay;
+const u8 *const gLocalizationSource_C02399 = sText_ChooseAPkmn;
+const u8 *const gLocalizationSource_C02400 = sText_CancelTrade;
+const u8 *const gLocalizationSource_C02401 = sText_CommunicationStandby;
+const u8 *const gLocalizationSource_C02402 = sText_TheTradeHasBeenCanceled;
+const u8 *const gLocalizationSource_C02403 = sText_OnlyPkmnForBattle;
+const u8 *const gLocalizationSource_C02404 = sText_WaitingForYourFriend;
+const u8 *const gLocalizationSource_C02405 = sText_YourFriendWantsToTrade;
+// END GENERATED LOCALIZATION EXPORTS

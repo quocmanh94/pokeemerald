@@ -55,41 +55,51 @@ FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale::
 	end
 
 FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor:
-	.string "I'm the MOVE TUTOR.\p"
-	.string "I know all the moves that POKéMON\n"
-	.string "learn--every one of them--and I can\l"
-	.string "teach POKéMON those moves.\p"
-	.string "I can teach a move to a POKéMON\n"
-	.string "of yours if you'd like.\p"
-	.string "I'll do it for a HEART SCALE.\n"
-	.string "I'm collecting those now.$"
+	.string "Tôi là MOVE TUTOR.\p"
+	.string "Tôi biết tất cả các chiêu mà POKéMON có\n"
+	.string "thể học, không sót một chiêu nào, và tôi\l"
+	.string "có thể dạy chúng cho POKéMON.\p"
+	.string "Nếu muốn, tôi có thể dạy một chiêu cho\n"
+	.string "POKéMON của bạn.\p"
+	.string "Tôi sẽ dạy đổi lấy một HEART SCALE. Hiện\n"
+	.string "tôi đang sưu tầm chúng.$"
 
 FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove:
-	.string "Oh! That's it! That's an honest to\n"
-	.string "goodness HEART SCALE!\p"
-	.string "Let me guess, you want me to teach\n"
-	.string "a move?$"
+	.string "Ồ! Chính nó! Một HEART SCALE chính\n"
+	.string "hiệu!\p"
+	.string "Để tôi đoán nhé, bạn muốn tôi dạy một\n"
+	.string "chiêu phải không?$"
 
 FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon:
-	.string "Which POKéMON needs tutoring?$"
+	.string "POKéMON nào cần tôi chỉ dạy?$"
 
 FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove:
-	.string "Which move should I teach?$"
+	.string "Tôi nên dạy chiêu nào?$"
 
 FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that POKéMON.$"
+	.string "Xin lỗi...\p"
+	.string "Có vẻ tôi không có chiêu nào có thể dạy\n"
+	.string "cho POKéMON đó.$"
 
 FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale:
-	.string "{PLAYER} handed over one HEART SCALE\n"
-	.string "in exchange.$"
+	.string "{PLAYER} đã trao một HEART SCALE để\n"
+	.string "đổi lại.$"
 
 FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale:
-	.string "If your POKéMON need to learn a move,\n"
-	.string "come back with a HEART SCALE.$"
+	.string "Nếu POKéMON của bạn cần học chiêu, hãy\n"
+	.string "quay lại cùng một HEART SCALE.$"
 
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
-	.string "Hunh? There isn't a single move that\n"
-	.string "I can teach an EGG.$"
+	.string "Hả? Tôi không thể dạy cho EGG bất kỳ\n"
+	.string "chiêu nào cả.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor
+	.global FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove
+	.global FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon
+	.global FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove
+	.global FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon
+	.global FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale
+	.global FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale
+	.global FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg
+@ END GENERATED LOCALIZATION EXPORTS

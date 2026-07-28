@@ -698,63 +698,83 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "WALLY nhà ta đã đi đâu rồi?\p"
+	.string "Chúng ta sắp phải lên đường đến\n"
+	.string "VERDANTURF TOWN...$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "Chào cậu! Có phải cậu là... một HLV\n"
+	.string "mới vào nghề không?\p"
+	.string "Cậu có biết HLV POKéMON làm gì khi\n"
+	.string "đến một thành phố mới không?\p"
+	.string "Trước tiên, họ sẽ xem nơi đó có GYM\n"
+	.string "thuộc loại nào.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "Thấy chưa? Đây là GYM của PETALBURG\n"
+	.string "CITY.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "Đây là biển hiệu của GYM. Mỗi khi tìm\n"
+	.string "GYM, hãy để ý loại biển này.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "Khuôn mặt tôi đang phản chiếu trên mặt\n"
+	.string "nước.\p"
+	.string "Đó là nụ cười rạng rỡ, tràn đầy hy\n"
+	.string "vọng...\p"
+	.string "Hoặc có thể là vẻ im lặng u buồn đang\n"
+	.string "chống chọi với nỗi sợ...\p"
+	.string "Cậu nhìn thấy điều gì trên khuôn mặt\n"
+	.string "phản chiếu của mình?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "Giả sử cậu đang có sáu POKéMON. Nếu bắt\n"
+	.string "thêm một con nữa...\p"
+	.string "Nó sẽ tự động được gửi tới STORAGE\n"
+	.string "BOX qua kết nối PC.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "PETALBURG CITY POKéMON GYM LEADER:\n"
+	.string "NORMAN “Người đàn ông theo đuổi sức\l"
+	.string "mạnh!”$"
 
 PetalburgCity_Text_CitySign:
-	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+	.string "PETALBURG CITY “Nơi con người hòa\n"
+	.string "mình cùng thiên nhiên.”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+	.string "NHÀ CỦA WALLY$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "Xin lỗi!\p"
+	.string "Để tôi đoán nhé, nhìn cách ăn mặc của\n"
+	.string "cậu, có phải cậu là một HLV POKéMON\l"
+	.string "không?$"
 
 PetalburgCity_Text_WellMaybeNot:
-	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string ". . . . . .\p"
+	.string "Chà, có lẽ không phải. Quần áo của cậu\n"
+	.string "đâu có bẩn lắm.\p"
+	.string "Hoặc cậu là một HLV mới vào nghề,\n"
+	.string "hoặc chỉ là một đứa trẻ bình thường.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "Tôi đang đi khắp nơi để tìm kiếm những\n"
+	.string "HLV tài năng.\p"
+	.string "Xin lỗi vì đã làm mất thời gian của cậu.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_Text_WhereIsWally
+	.global PetalburgCity_Text_AreYouRookieTrainer
+	.global PetalburgCity_Text_ThisIsPetalburgGym
+	.global PetalburgCity_Text_ThisIsGymSign
+	.global PetalburgCity_Text_WaterReflection
+	.global PetalburgCity_Text_FullPartyExplanation
+	.global PetalburgCity_Text_GymSign
+	.global PetalburgCity_Text_CitySign
+	.global PetalburgCity_Text_WallyHouseSign
+	.global PetalburgCity_Text_AreYouATrainer
+	.global PetalburgCity_Text_WellMaybeNot
+	.global PetalburgCity_Text_ImLookingForTalentedTrainers
+@ END GENERATED LOCALIZATION EXPORTS

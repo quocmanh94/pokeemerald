@@ -1,433 +1,501 @@
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "I welcome you to the BATTLE TENT\n"
+	.string "Chào mừng bạn đến BATTLE TENT\n"
 	.string "FALLARBOR SITE!\p"
-	.string "I am your guide to the Set KO Tourney!$"
+	.string "Tôi là người hướng dẫn bạn tham gia\n"
+	.string "Set KO Tourney!$"
 
 FallarborTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Now, do you wish to take the challenge\n"
-	.string "of a Set KO Tourney?$"
+	.string "Giờ bạn có muốn thử sức với Set KO\n"
+	.string "Tourney không?$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Chúng tôi mong được đón nhận thử\n"
+	.string "thách của bạn vào dịp khác!$"
 
 FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
-	.string "In the FALLARBOR BATTLE TENT,\n"
-	.string "we undertake the Set KO Tourney.\p"
-	.string "All participants enter with a team of\n"
-	.string "three POKéMON.\p"
-	.string "The three POKéMON must be lined up\n"
-	.string "in the order that they are to appear in.\p"
-	.string "During battle, the POKéMON will appear\n"
-	.string "one at a time in the preset order.\p"
-	.string "Once a POKéMON enters battle, it must\n"
-	.string "remain out until the match is decided.\p"
-	.string "If a match remains undecided in\n"
-	.string "three turns, it goes to judging.\p"
-	.string "If you wish to interrupt your challenge,\n"
-	.string "please save the game.\p"
-	.string "If you don't save, you will not be able\n"
-	.string "to continue with your challenge.\p"
-	.string "If you pull off the feat of beating\n"
-	.string "three TRAINERS in succession,\l"
-	.string "we will present you with a fine prize.$"
+	.string "Tại FALLARBOR BATTLE TENT, chúng tôi\n"
+	.string "tổ chức Set KO Tourney.\p"
+	.string "Mỗi người tham gia sẽ thi đấu với một\n"
+	.string "đội gồm ba POKéMON.\p"
+	.string "Ba POKéMON phải được xếp theo thứ tự\n"
+	.string "ra sân.\p"
+	.string "Trong trận đấu, từng POKéMON sẽ lần\n"
+	.string "lượt ra sân theo thứ tự đã chọn.\p"
+	.string "Một khi POKéMON đã ra sân, nó phải tiếp\n"
+	.string "tục chiến đấu cho đến khi trận đấu có\l"
+	.string "kết quả.\p"
+	.string "Nếu sau ba lượt mà trận đấu vẫn chưa\n"
+	.string "phân thắng bại, kết quả sẽ do giám khảo\l"
+	.string "quyết định.\p"
+	.string "Nếu muốn tạm dừng thử thách, vui lòng\n"
+	.string "lưu trò chơi.\p"
+	.string "Nếu không lưu, bạn sẽ không thể tiếp\n"
+	.string "tục thử thách.\p"
+	.string "Nếu đánh bại ba HLV liên tiếp, bạn\n"
+	.string "sẽ nhận được một phần thưởng giá trị.$"
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before showing you to the BATTLE\n"
-	.string "TENT, I must save. Is that okay?$"
+	.string "Trước khi đưa bạn vào BATTLE TENT, tôi\n"
+	.string "phải lưu trò chơi. Bạn đồng ý chứ?$"
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "We offer two levels of challenge,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
+	.string "Chúng tôi có hai cấp độ thử thách:\n"
+	.string "Level 50 và Open Level. Bạn chọn cấp\l"
+	.string "nào?$"
 
 FallarborTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "Very well, now select your\n"
-	.string "three POKéMON, please.$"
+	.string "Được rồi, giờ vui lòng chọn ba POKéMON.$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "They also must not hold the same\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Hỡi nhà thách đấu thân mến!\p"
+	.string "Bạn chưa có đủ ba POKéMON cần thiết để\n"
+	.string "tham gia.\p"
+	.string "Chúng cũng không được giữ cùng loại\n"
+	.string "vật phẩm.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Khi đã chuẩn bị xong, xin hãy quay lại.$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "To qualify, you must bring three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not hold the same\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Hỡi nhà thách đấu thân mến!\p"
+	.string "Bạn chưa có đủ ba POKéMON cần thiết để\n"
+	.string "tham gia.\p"
+	.string "Để đủ điều kiện, bạn phải mang theo ba\n"
+	.string "loài POKéMON khác nhau.\p"
+	.string "Chúng cũng không được giữ cùng loại\n"
+	.string "vật phẩm.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Khi đã chuẩn bị xong, xin hãy quay lại.$"
 
 FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent:
-	.string "I shall now guide you to\n"
-	.string "the BATTLE TENT.$"
+	.string "Bây giờ tôi sẽ đưa bạn đến BATTLE\n"
+	.string "TENT.$"
 
 FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "My dear challenger!\p"
-	.string "You did not save the game before\n"
-	.string "shutting down, did you?\p"
-	.string "It is unfortunate, but that has\n"
-	.string "resulted in your disqualification\l"
-	.string "from your challenge.\p"
-	.string "You may, of course, start with a fresh\n"
-	.string "challenge.$"
+	.string "Hỡi nhà thách đấu thân mến!\p"
+	.string "Bạn đã không lưu trò chơi trước khi\n"
+	.string "tắt máy, đúng không?\p"
+	.string "Thật đáng tiếc, vì vậy bạn đã bị loại\n"
+	.string "khỏi lượt thử thách này.\p"
+	.string "Dĩ nhiên, bạn có thể bắt đầu một lượt\n"
+	.string "thử thách mới.$"
 
 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers:
-	.string "How splendid! You have beaten\n"
-	.string "three TRAINERS in succession!$"
+	.string "Tuyệt vời! Bạn đã đánh bại ba HLV\n"
+	.string "liên tiếp!$"
 
 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame:
-	.string "Please wait while I save the game.$"
+	.string "Vui lòng chờ trong khi tôi lưu trò chơi.$"
 
 FallarborTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "In commemoration of your 3-win streak,\n"
-	.string "we present you with this prize.$"
+	.string "Để kỷ niệm chuỗi 3 trận thắng của bạn,\n"
+	.string "chúng tôi xin trao phần thưởng này.$"
 
 FallarborTown_BattleTentLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} nhận được phần thưởng\n"
 	.string "{STR_VAR_1}.$"
 
 FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize:
-	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
-	.string "I urge you to clear space and\n"
-	.string "return for your prize.$"
+	.string "Ồ? TÚI ĐỒ của bạn hình như đã đầy.\p"
+	.string "Xin hãy dọn chỗ rồi quay lại nhận phần\n"
+	.string "thưởng.$"
 
 FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving:
-	.string "Thank you so much for participating!\p"
-	.string "Please wait while I save the game.$"
+	.string "Cảm ơn bạn rất nhiều vì đã tham gia!\p"
+	.string "Vui lòng chờ trong khi tôi lưu trò chơi.$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Chúng tôi mong được đón nhận thử\n"
+	.string "thách của bạn vào dịp khác!$"
 
 FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
-	.string "We have been looking forward to\n"
-	.string "your arrival.\p"
-	.string "Before I show you to the BATTLE TENT,\n"
-	.string "I must save the game. Please wait.$"
+	.string "Chúng tôi vẫn luôn mong đợi bạn đến.\p"
+	.string "Trước khi đưa bạn vào BATTLE TENT, tôi\n"
+	.string "phải lưu trò chơi. Vui lòng chờ.$"
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "I welcome you to the BATTLE TENT\n"
+	.string "Chào mừng bạn đến BATTLE TENT\n"
 	.string "VERDANTURF SITE!\p"
-	.string "Here, the TRAINER's trust toward\n"
-	.string "POKéMON is tested.$"
+	.string "Tại đây, lòng tin của HLV dành cho\n"
+	.string "POKéMON sẽ được thử thách.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERDANTURF\n"
-	.string "BATTLE TENT challenge?$"
+	.string "Bạn có muốn tham gia thử thách tại\n"
+	.string "VERDANTURF BATTLE TENT không?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERDANTURF BATTLE TENT,\n"
-	.string "there is one crucial rule that must\l"
-	.string "be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
-	.string "their POKéMON in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
-	.string "command their POKéMON.\p"
-	.string "The POKéMON are to behave according\n"
-	.string "to their nature and battle on their own.\p"
-	.string "You must put your trust in your\n"
-	.string "POKéMON and watch over them.\p"
-	.string "If you achieve the honor of beating\n"
-	.string "three TRAINERS in succession,\l"
-	.string "we will present you with a prize.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "Tại VERDANTURF BATTLE TENT, có một quy\n"
+	.string "tắc quan trọng mà bạn phải tuân theo.\p"
+	.string "HLV chỉ được phép đổi POKéMON ra\n"
+	.string "vào trận.\p"
+	.string "Ngoài việc đó, HLV không được ra\n"
+	.string "lệnh cho POKéMON.\p"
+	.string "POKéMON sẽ hành động theo tính cách và\n"
+	.string "tự mình chiến đấu.\p"
+	.string "Bạn phải đặt lòng tin vào POKéMON và\n"
+	.string "dõi theo chúng.\p"
+	.string "Nếu bạn đánh bại ba HLV liên tiếp,\n"
+	.string "bạn sẽ nhận được\l"
+	.string "một phần thưởng.\p"
+	.string "Nếu muốn tạm dừng thử thách, vui lòng\n"
+	.string "lưu trò chơi.\p"
+	.string "Nếu không lưu trước khi tạm dừng, bạn\n"
+	.string "sẽ bị loại.$"
 
 VerdanturfTown_BattleTentLobby_Text_ReturnFortified:
-	.string "When you have fortified your heart\n"
-	.string "and POKéMON, you must return.$"
+	.string "Khi bạn và POKéMON đã vững vàng hơn,\n"
+	.string "hãy quay lại.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "There are two levels of difficulty,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice of a challenge?$"
+	.string "Tại đây có hai độ khó: Level 50 và Open\n"
+	.string "Level. Bạn muốn chọn thử thách nào?$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
-	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+	.string "Haiz...\p"
+	.string "Bạn chưa có đủ ba POKéMON cần thiết\n"
+	.string "cho thử thách.\p"
+	.string "Để tham gia, bạn phải mang theo ba loài\n"
+	.string "POKéMON khác nhau.\p"
+	.string "Chúng cũng không được giữ cùng loại\n"
+	.string "vật phẩm.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Hãy quay lại khi bạn đã chuẩn bị xong.$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+	.string "Haiz...\p"
+	.string "Bạn chưa có đủ ba POKéMON cần thiết\n"
+	.string "cho thử thách.\p"
+	.string "Để tham gia, bạn phải mang theo ba loài\n"
+	.string "POKéMON khác nhau.\p"
+	.string "Chúng cũng không được giữ cùng loại\n"
+	.string "vật phẩm.\p"
+	.string "EGGS{STR_VAR_1} không đủ điều\n"
+	.string "kiện.\p"
+	.string "Hãy quay lại khi bạn đã chuẩn bị xong.$"
 
 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "Good. Now, you must select your\n"
-	.string "three POKéMON.$"
+	.string "Tốt. Giờ bạn phải chọn ba POKéMON.$"
 
 VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "I must save before I show you to\n"
-	.string "the BATTLE TENT. Is that okay?$"
+	.string "Trước khi đưa bạn vào BATTLE TENT, tôi\n"
+	.string "phải lưu trò chơi. Bạn đồng ý chứ?$"
 
 VerdanturfTown_BattleTentLobby_Text_NowFollowMe:
-	.string "Good.\n"
-	.string "Now, follow me.$"
+	.string "Tốt. Giờ hãy theo tôi.$"
 
 VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded:
-	.string "I feel privileged for having seen\n"
-	.string "your POKéMON's exploits.\p"
-	.string "The results will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+	.string "Thật vinh dự khi được chứng kiến màn\n"
+	.string "thể hiện của POKéMON bên bạn.\p"
+	.string "Kết quả sẽ được ghi lại. Xin bạn chờ\n"
+	.string "một lát.$"
 
 VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak:
-	.string "To achieve a 3-win streak…\p"
-	.string "The bonds that bind your heart with\n"
-	.string "your POKéMON seem firm and true.$"
+	.string "Đạt được chuỗi 3 trận thắng...\p"
+	.string "Mối gắn kết giữa bạn và POKéMON dường\n"
+	.string "như thật bền chặt và chân thành.$"
 
 VerdanturfTown_BattleTentLobby_Text_FeatWillBeRecorded:
-	.string "Your feat will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+	.string "Thành tích của bạn sẽ được ghi lại. Xin\n"
+	.string "bạn chờ một lát.$"
 
 VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "For the feat of your 3-win streak,\n"
-	.string "we present you with this prize.$"
+	.string "Để ghi nhận thành tích chuỗi 3 trận\n"
+	.string "thắng, chúng tôi xin trao bạn phần\l"
+	.string "thưởng này.$"
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "Welcome to the BATTLE TENT\n"
+	.string "Chào mừng bạn đến BATTLE TENT\n"
 	.string "SLATEPORT SITE!\p"
-	.string "I am your guide to the Battle Swap\n"
-	.string "Tournament.$"
+	.string "Tôi là người hướng dẫn bạn tham gia\n"
+	.string "Battle Swap Tournament.$"
 
 SlateportCity_BattleTentLobby_Text_TakeChallenge:
-	.string "Would you like to take the Battle\n"
-	.string "Swap challenge?$"
+	.string "Bạn có muốn tham gia thử thách Battle\n"
+	.string "Swap không?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
-	.string "Here at the SLATEPORT BATTLE TENT,\n"
-	.string "we hold Battle Swap events\l"
-	.string "using rental POKéMON.\p"
-	.string "First, you will be loaned three\n"
-	.string "POKéMON specifically for this event.\p"
-	.string "Using the supplied rental POKéMON,\n"
-	.string "you must conduct a SINGLE BATTLE.\p"
-	.string "If you win, you are permitted to trade\n"
-	.string "one of your rental POKéMON.\p"
-	.string "Repeat this cycle of battling and\n"
-	.string "trading--if you win three times in\l"
-	.string "a row, you will earn a fine prize.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "Tại SLATEPORT BATTLE TENT, chúng tôi\n"
+	.string "tổ chức các sự kiện Battle Swap bằng\l"
+	.string "POKéMON cho thuê.\p"
+	.string "Trước tiên, bạn sẽ được cho mượn ba\n"
+	.string "POKéMON dành riêng cho sự kiện này.\p"
+	.string "Bạn phải dùng những POKéMON cho thuê\n"
+	.string "đó để đấu một trận SINGLE BATTLE.\p"
+	.string "Nếu thắng, bạn được phép đổi một\n"
+	.string "POKéMON cho thuê của mình.\p"
+	.string "Hãy lặp lại chu trình chiến đấu và đổi\n"
+	.string "POKéMON này. Nếu thắng ba trận liên\l"
+	.string "tiếp, bạn sẽ nhận được một phần\l"
+	.string "thưởng giá trị.\p"
+	.string "Nếu muốn tạm dừng thử thách, vui lòng\n"
+	.string "lưu trò chơi.\p"
+	.string "Nếu không lưu trước khi tạm dừng, bạn\n"
+	.string "sẽ bị loại.$"
 
 SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit:
-	.string "We look forward to your next visit.$"
+	.string "Chúng tôi mong được đón bạn trong lần\n"
+	.string "tới.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_WhichLevelMode:
-	.string "Which level do you wish to challenge?\n"
-	.string "Level 50 or Level 100?$"
+	.string "Bạn muốn thử thách ở cấp nào? Level 50\n"
+	.string "hay Level 100?$"
 
 SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before you begin your challenge,\n"
-	.string "I need to save data. Is that okay?$"
+	.string "Trước khi bạn bắt đầu thử thách, tôi\n"
+	.string "cần lưu dữ liệu. Bạn đồng ý chứ?$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping:
-	.string "Okay, I will hold your POKéMON for\n"
-	.string "safekeeping while you compete.$"
+	.string "Được rồi, tôi sẽ giữ POKéMON của bạn an\n"
+	.string "toàn trong lúc bạn thi đấu.$"
 
 SlateportCity_BattleTentLobby_Text_StepThisWay:
-	.string "Please step this way.$"
+	.string "Xin mời đi lối này.$"
 
 SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults:
-	.string "Thank you for participating!\p"
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.\p"
-	.string "I must also save your event results.\n"
-	.string "Please wait.$"
+	.string "Cảm ơn bạn đã tham gia!\p"
+	.string "Tôi sẽ trả lại POKéMON của bạn và nhận\n"
+	.string "lại POKéMON cho thuê của chúng tôi.\p"
+	.string "Tôi còn phải lưu kết quả sự kiện của\n"
+	.string "bạn. Vui lòng chờ.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnMonsExchangeRentals:
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.$"
+	.string "Tôi sẽ trả lại POKéMON của bạn và nhận\n"
+	.string "lại POKéMON cho thuê của chúng tôi.$"
 
 SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons:
-	.string "Congratulations!\n"
-	.string "You've won three straight matches!\p"
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.\p"
-	.string "I must also save your event results.\n"
-	.string "Please wait.$"
+	.string "Chúc mừng! Bạn đã thắng ba trận liên\n"
+	.string "tiếp!\p"
+	.string "Tôi sẽ trả lại POKéMON của bạn và nhận\n"
+	.string "lại POKéMON cho thuê của chúng tôi.\p"
+	.string "Tôi còn phải lưu kết quả sự kiện của\n"
+	.string "bạn. Vui lòng chờ.$"
 
 SlateportCity_BattleTentLobby_Text_AwardYouThisPrize:
-	.string "In recognition of your 3-win streak,\n"
-	.string "we award you this prize.$"
+	.string "Để ghi nhận chuỗi 3 trận thắng của bạn,\n"
+	.string "chúng tôi xin trao phần thưởng này.$"
 
 SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom:
-	.string "Oh?\n"
-	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
-	.string "let me know.$"
+	.string "Ồ? Có vẻ bạn không còn chỗ cho món này.\p"
+	.string "Vui lòng dọn chỗ trong TÚI ĐỒ rồi\n"
+	.string "báo cho tôi.$"
 
 SlateportCity_BattleTentLobby_Text_BeenWaitingForYou:
-	.string "We've been waiting for you!\p"
-	.string "Before we resume your challenge,\n"
-	.string "I must save the game.$"
+	.string "Chúng tôi đã chờ bạn!\p"
+	.string "Trước khi tiếp tục thử thách, tôi phải\n"
+	.string "lưu trò chơi.$"
 
 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "I'm sorry to say this, but you didn't\n"
-	.string "save before you quit playing last time.\p"
-	.string "As a result, you have been disqualified\n"
-	.string "from your challenge.$"
+	.string "Tôi rất tiếc phải nói điều này, nhưng\n"
+	.string "lần trước bạn đã không lưu trước khi\l"
+	.string "ngừng chơi.\p"
+	.string "Vì vậy, bạn đã bị loại khỏi lượt thử\n"
+	.string "thách.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnPersonalMons:
-	.string "We'll return your personal POKéMON.$"
+	.string "Chúng tôi sẽ trả lại POKéMON của riêng\n"
+	.string "bạn.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} nhận được phần thưởng\n"
 	.string "{STR_VAR_1}.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_RulesAreListed:
-	.string "The Battle Swap rules are listed.$"
+	.string "Các luật của Battle Swap được liệt kê\n"
+	.string "ở đây.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Bạn muốn đọc mục nào?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
-	.string "In a Battle Swap event, you may use\n"
-	.string "only three POKéMON.\p"
-	.string "Whether you are renting or swapping,\n"
-	.string "your team may not have two or more\l"
-	.string "of the same POKéMON.$"
+	.string "Trong sự kiện Battle Swap, bạn chỉ\n"
+	.string "được sử dụng ba POKéMON.\p"
+	.string "Dù đang thuê hay đổi POKéMON, đội của\n"
+	.string "bạn cũng không được có từ hai POKéMON\l"
+	.string "cùng loài trở lên.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules:
-	.string "You may swap POKéMON only with\n"
-	.string "the TRAINER you have just defeated.\p"
-	.string "You may swap for only those POKéMON\n"
-	.string "used by the beaten TRAINER.$"
+	.string "Bạn chỉ được đổi POKéMON với HLV\n"
+	.string "vừa bị mình đánh bại.\p"
+	.string "Bạn cũng chỉ được đổi lấy những\n"
+	.string "POKéMON mà HLV đó đã sử dụng.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules:
-	.string "After every battle you win, you may\n"
-	.string "swap for one of your defeated\l"
-	.string "opponent's POKéMON.\p"
-	.string "You will not be able to swap POKéMON\n"
-	.string "with the third TRAINER in the event.$"
+	.string "Sau mỗi trận thắng, bạn có thể đổi lấy\n"
+	.string "một POKéMON của đối thủ vừa bị đánh\l"
+	.string "bại.\p"
+	.string "Bạn không thể đổi POKéMON với HLV\n"
+	.string "thứ ba trong sự kiện.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
-	.string "There are two key points to be aware\n"
-	.string "of when swapping POKéMON.\p"
-	.string "First, when swapping, you can't check\n"
-	.string "the stats of the POKéMON you are\l"
-	.string "about to receive.\p"
-	.string "Second, the POKéMON on your team\n"
-	.string "are lined up in sequence, depending on\l"
-	.string "the order in which you rented them.\p"
-	.string "This sequence remains unchanged\n"
-	.string "even when swaps are made.$"
+	.string "Có hai điểm quan trọng cần lưu ý khi đổi\n"
+	.string "POKéMON.\p"
+	.string "Thứ nhất, khi đổi, bạn không thể kiểm\n"
+	.string "tra chỉ số của POKéMON mình sắp nhận.\p"
+	.string "Thứ hai, POKéMON trong đội được xếp\n"
+	.string "theo thứ tự bạn đã thuê chúng.\p"
+	.string "Thứ tự này không thay đổi ngay cả khi\n"
+	.string "bạn đổi POKéMON.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainMonRules:
-	.string "The POKéMON of the SLATEPORT\n"
-	.string "BATTLE TENT are all rentals.\p"
-	.string "All rental POKéMON are kept at\n"
-	.string "Level 30.$"
+	.string "Toàn bộ POKéMON tại SLATEPORT BATTLE\n"
+	.string "TENT đều là POKéMON cho thuê.\p"
+	.string "Tất cả POKéMON cho thuê đều được giữ\n"
+	.string "ở Level 30.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The VERDANTURF BATTLE TENT\n"
-	.string "rules are listed.$"
+	.string "Các luật của VERDANTURF BATTLE TENT\n"
+	.string "được liệt kê ở đây.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Bạn muốn đọc mục nào?$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the VERDANTURF BATTLE TENT,\n"
-	.string "POKéMON are required to think and\l"
-	.string "battle by themselves.\p"
-	.string "Unlike in the wild, POKéMON that live\n"
-	.string "with people behave differently\l"
-	.string "depending on their nature.$"
+	.string "Tại VERDANTURF BATTLE TENT, POKéMON\n"
+	.string "phải tự suy nghĩ và chiến đấu.\p"
+	.string "Khác với POKéMON hoang dã, POKéMON\n"
+	.string "sống cùng con người sẽ hành động khác\l"
+	.string "nhau tùy theo tính cách.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules:
-	.string "Depending on its nature, a POKéMON\n"
-	.string "may prefer to attack no matter what.\p"
-	.string "Another POKéMON may prefer to protect\n"
-	.string "itself from any harm.\p"
-	.string "Yet another may enjoy vexing or\n"
-	.string "confounding its foes.\p"
-	.string "Depending on its nature, a POKéMON\n"
-	.string "will have favorite moves that it is good\l"
-	.string "at using.\p"
-	.string "It may also dislike certain moves that\n"
-	.string "it has trouble using.$"
+	.string "Tùy theo tính cách, có POKéMON luôn\n"
+	.string "thích tấn công bất kể tình huống.\p"
+	.string "POKéMON khác lại thích bảo vệ bản thân\n"
+	.string "khỏi mọi tổn hại.\p"
+	.string "Một số khác lại thích quấy rối hoặc làm\n"
+	.string "đối thủ rối trí.\p"
+	.string "Tùy theo tính cách, POKéMON sẽ có\n"
+	.string "những chiêu thức yêu thích mà nó sử\l"
+	.string "dụng thành thạo.\p"
+	.string "Nó cũng có thể không thích một số chiêu\n"
+	.string "thức mà nó khó sử dụng.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
-	.string "There are offensive moves that inflict\n"
-	.string "direct damage on the foe.\p"
-	.string "There are defensive moves that are\n"
-	.string "used to prepare for enemy attacks or\l"
-	.string "used to heal HP and so on.\p"
-	.string "There are also other somewhat-odd\n"
-	.string "moves that may enfeeble the foes with\l"
-	.string "stat problems including poison and \l"
-	.string "paralysis.\p"
-	.string "POKéMON will consider using moves in\n"
-	.string "these three categories.$"
+	.string "Có những chiêu thức tấn công gây sát\n"
+	.string "thương trực tiếp cho đối thủ.\p"
+	.string "Có những chiêu thức phòng thủ dùng để\n"
+	.string "chuẩn bị đối phó đòn tấn công của đối\l"
+	.string "phương, hồi HP và nhiều việc khác.\p"
+	.string "Ngoài ra còn có các chiêu thức hơi khác\n"
+	.string "thường, có thể làm đối thủ suy yếu bằng\l"
+	.string "những trạng thái bất lợi như trúng độc\l"
+	.string "và tê liệt.\p"
+	.string "POKéMON sẽ cân nhắc sử dụng chiêu\n"
+	.string "thức thuộc ba nhóm này.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "When not under command by its TRAINER,\n"
-	.string "a POKéMON may be unable to effectively\l"
-	.string "use certain moves.\p"
-	.string "A POKéMON is not good at using any\n"
-	.string "move that it dislikes.\p"
-	.string "If a POKéMON only knows moves that\n"
-	.string "do not match its nature, it will often\l"
-	.string "be unable to live up to its potential.$"
+	.string "Khi không được HLV chỉ huy,\n"
+	.string "POKéMON có thể không sử dụng hiệu quả\l"
+	.string "một số chiêu thức.\p"
+	.string "POKéMON không giỏi sử dụng những chiêu\n"
+	.string "thức mà nó không thích.\p"
+	.string "Nếu POKéMON chỉ biết các chiêu thức\n"
+	.string "không phù hợp với tính cách, nó\l"
+	.string "thường không thể phát huy hết tiềm\l"
+	.string "năng.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules:
-	.string "Depending on its nature, a POKéMON may\n"
-	.string "start using moves that don't match its\l"
-	.string "nature when it is in trouble.\p"
-	.string "If a POKéMON begins behaving oddly\n"
-	.string "in a pinch, watch it carefully.$"
+	.string "Tùy theo tính cách, khi gặp nguy hiểm,\n"
+	.string "POKéMON có thể bắt đầu dùng những\l"
+	.string "chiêu thức không phù hợp với tính\l"
+	.string "cách của nó.\p"
+	.string "Nếu POKéMON bỗng hành động kỳ lạ trong\n"
+	.string "tình thế nguy cấp, hãy quan sát nó thật\l"
+	.string "kỹ.$"
 
 BattleTentLobby_Text_ExplainLevelRules:
-	.string "At this BATTLE TENT, the levels of\n"
-	.string "your opponents will be adjusted to\l"
-	.string "match the levels of your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 30.$"
+	.string "Tại BATTLE TENT này, cấp độ của đối thủ\n"
+	.string "sẽ được điều chỉnh cho phù hợp với\l"
+	.string "cấp độ POKéMON của bạn.\p"
+	.string "Tuy nhiên, không HLV nào bạn đối\n"
+	.string "đầu có POKéMON dưới Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "The VERDANTURF BATTLE TENT\n"
-	.string "rules are listed.$"
+	.string "Các luật của VERDANTURF BATTLE TENT\n"
+	.string "được liệt kê ở đây.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent
+	.global FallarborTown_BattleTentLobby_Text_TakeChallenge
+	.global FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge
+	.global FallarborTown_BattleTentLobby_Text_ExplainFallarborTent
+	.global FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge
+	.global FallarborTown_BattleTentLobby_Text_WhichLevelMode
+	.global FallarborTown_BattleTentLobby_Text_SelectThreeMons
+	.global FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50
+	.global FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
+	.global FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent
+	.global FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting
+	.global FallarborTown_BattleTentLobby_Text_BeatThreeTrainers
+	.global FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame
+	.global FallarborTown_BattleTentLobby_Text_PresentYouWithPrize
+	.global FallarborTown_BattleTentLobby_Text_ReceivedPrize
+	.global FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize
+	.global FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving
+	.global FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2
+	.global FallarborTown_BattleTentLobby_Text_LookingForwardToArrival
+	.global VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent
+	.global VerdanturfTown_BattleTentLobby_Text_TakeChallenge
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent
+	.global VerdanturfTown_BattleTentLobby_Text_ReturnFortified
+	.global VerdanturfTown_BattleTentLobby_Text_WhichLevelMode
+	.global VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50
+	.global VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
+	.global VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
+	.global VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge
+	.global VerdanturfTown_BattleTentLobby_Text_NowFollowMe
+	.global VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded
+	.global VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak
+	.global VerdanturfTown_BattleTentLobby_Text_FeatWillBeRecorded
+	.global VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize
+	.global SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent
+	.global SlateportCity_BattleTentLobby_Text_TakeChallenge
+	.global SlateportCity_BattleTentLobby_Text_ExplainSlateportTent
+	.global SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit
+	.global SlateportCity_BattleTentLobby_Text_WhichLevelMode
+	.global SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge
+	.global SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping
+	.global SlateportCity_BattleTentLobby_Text_StepThisWay
+	.global SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults
+	.global SlateportCity_BattleTentLobby_Text_ReturnMonsExchangeRentals
+	.global SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons
+	.global SlateportCity_BattleTentLobby_Text_AwardYouThisPrize
+	.global SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom
+	.global SlateportCity_BattleTentLobby_Text_BeenWaitingForYou
+	.global SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting
+	.global SlateportCity_BattleTentLobby_Text_ReturnPersonalMons
+	.global SlateportCity_BattleTentLobby_Text_ReceivedPrize
+	.global SlateportCity_BattleTentLobby_Text_RulesAreListed
+	.global SlateportCity_BattleTentLobby_Text_ReadWhichHeading
+	.global SlateportCity_BattleTentLobby_Text_ExplainBasicRules
+	.global SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules
+	.global SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules
+	.global SlateportCity_BattleTentLobby_Text_ExplainSwapNotes
+	.global SlateportCity_BattleTentLobby_Text_ExplainMonRules
+	.global VerdanturfTown_BattleTentLobby_Text_RulesAreListed2
+	.global VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules
+	.global VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules
+	.global BattleTentLobby_Text_ExplainLevelRules
+	.global VerdanturfTown_BattleTentLobby_Text_RulesAreListed
+@ END GENERATED LOCALIZATION EXPORTS

@@ -9,14 +9,19 @@ MtPyre_5F_EventScript_Atsushi::
 	end
 
 MtPyre_5F_Text_AtsushiIntro:
-	.string "Teacher…\n"
-	.string "Please watch over my progress!$"
+	.string "Sư phụ... Xin hãy dõi theo sự tiến bộ của\n"
+	.string "con!$"
 
 MtPyre_5F_Text_AtsushiDefeat:
-	.string "Teacher…\n"
-	.string "Please forgive me!$"
+	.string "Sư phụ... Xin hãy tha thứ cho con!$"
 
 MtPyre_5F_Text_AtsushiPostBattle:
-	.string "Until I improve, my teacher, who rests\n"
-	.string "here, will never find true peace…$"
+	.string "Chừng nào tôi còn chưa tiến bộ, sư phụ\n"
+	.string "đang yên nghỉ tại đây sẽ chưa thể thật\l"
+	.string "sự thanh thản...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_5F_Text_AtsushiIntro
+	.global MtPyre_5F_Text_AtsushiDefeat
+	.global MtPyre_5F_Text_AtsushiPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

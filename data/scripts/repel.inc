@@ -18,11 +18,11 @@ EventScript_RepelWoreOff_End::
 	end
 
 Text_RepelWoreOff:
-	.string "REPEL's effect wore off…$"
+	.string "Tác dụng của REPEL đã hết…$"
 
 Text_UseAnotherRepel:
-	.string "Would you like to use\n"
-	.string "another {STR_VAR_2}?$"
+	.string "Bạn có muốn dùng thêm\n"
+	.string "một {STR_VAR_2} không?$"
 
 EventScript_SelectRepelToReuse::
 	copyvar VAR_0x8004, VAR_REPEL_LAST_USED
@@ -52,3 +52,8 @@ EventScript_TryUseMaxRepel::
 
 EventScript_EndCycleThroughRepels::
 	return
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Text_RepelWoreOff
+	.global Text_UseAnotherRepel
+@ END GENERATED LOCALIZATION EXPORTS

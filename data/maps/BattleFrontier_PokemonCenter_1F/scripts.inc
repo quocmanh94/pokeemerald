@@ -38,22 +38,28 @@ BattleFrontier_PokemonCenter_1F_EventScript_Skitty::
 	end
 
 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon:
-	.string "There was someone here using a \n"
-	.string "POKéMON I've never seen before.\p"
-	.string "I never learned about it at\n"
-	.string "TRAINER'S SCHOOL at least.\p"
-	.string "I wonder where you can catch POKéMON\n"
-	.string "like that.$"
+	.string "Có người ở đây dùng một POKéMON mà tôi\n"
+	.string "chưa từng thấy.\p"
+	.string "Ít nhất thì tôi chưa hề học về nó ở\n"
+	.string "TRAINER'S SCHOOL.\p"
+	.string "Không biết có thể bắt POKéMON như thế\n"
+	.string "ở đâu nhỉ.$"
 
 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena:
-	.string "Okay! Next stop, the BATTLE ARENA!\n"
-	.string "I'd better get the right POKéMON from\l"
-	.string "the PC Storage System.$"
+	.string "Được rồi! Điểm đến tiếp theo là BATTLE\n"
+	.string "ARENA! Mình nên lấy đúng POKéMON từ PC\l"
+	.string "Storage System.$"
 
 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge:
-	.string "Giggle… I'm going to go through every\n"
-	.string "challenge with just this baby!$"
+	.string "Hí hí... Tôi sẽ vượt qua mọi thử thách\n"
+	.string "chỉ với bé cưng này!$"
 
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
-	.string "SKITTY: Mya myaaah!$"
+	.string "SKITTY: Meo meooo!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
+	.global BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
+	.global BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
+	.global BattleFrontier_PokemonCenter_1F_Text_Skitty
+@ END GENERATED LOCALIZATION EXPORTS

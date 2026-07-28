@@ -100,42 +100,53 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is smart.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER thật thông minh.” ... ... ...\n"
+	.string "... ... ... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle2_Text_TedIntro:
-	.string "Which switch closes which hole?$"
+	.string "Công tắc nào sẽ lấp cái hố nào nhỉ?$"
 
 Route110_TrickHousePuzzle2_Text_TedDefeat:
-	.string "After that battle, I'm even more\n"
-	.string "confused!$"
+	.string "Đấu xong tôi lại càng rối hơn!$"
 
 Route110_TrickHousePuzzle2_Text_TedPostBattle:
-	.string "Can I get you to push all the buttons\n"
-	.string "for me?$"
+	.string "Bạn bấm hết các nút giúp tôi được\n"
+	.string "không?$"
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
-	.string "Oh! You're on your second TRICK HOUSE\n"
-	.string "challenge!$"
+	.string "Ồ! Đây là lần thứ hai bạn thử sức tại\n"
+	.string "TRICK HOUSE!$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
-	.string "You're good at battling too?$"
+	.string "Bạn còn giỏi chiến đấu nữa sao?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "The TRICK MASTER rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "TRICK MASTER đã tự tay bố trí tất cả\n"
+	.string "trò đánh đố trong ngôi nhà này.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
-	.string "I want to make my own GYM one day.\n"
-	.string "So, I'm studying how to set traps.$"
+	.string "Một ngày nào đó tôi muốn mở GYM của\n"
+	.string "riêng mình. Vì thế, tôi đang học cách bố\l"
+	.string "trí cạm bẫy.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat:
-	.string "I didn't study battling enough!$"
+	.string "Tôi chưa học chiến đấu đủ kỹ!$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle:
-	.string "You're strong, aren't you?\n"
-	.string "Maybe even enough to be a GYM LEADER!$"
+	.string "Bạn mạnh thật đấy! Có khi còn đủ sức\n"
+	.string "trở thành GYM LEADER!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle2_Text_TedIntro
+	.global Route110_TrickHousePuzzle2_Text_TedDefeat
+	.global Route110_TrickHousePuzzle2_Text_TedPostBattle
+	.global Route110_TrickHousePuzzle2_Text_PaulIntro
+	.global Route110_TrickHousePuzzle2_Text_PaulDefeat
+	.global Route110_TrickHousePuzzle2_Text_PaulPostBattle
+	.global Route110_TrickHousePuzzle2_Text_GeorgiaIntro
+	.global Route110_TrickHousePuzzle2_Text_GeorgiaDefeat
+	.global Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

@@ -250,87 +250,106 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
-	.string "SCOTT: Well, hi, hi!\n"
-	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
-	.string "Something's come up, so I have to\n"
-	.string "disembark, but am I glad to see you!\p"
-	.string "Congratulations, LEAGUE CHAMPION!\p"
-	.string "There's a place I'd like to invite\n"
-	.string "someone like you.\p"
-	.string "It's the…\n"
-	.string "BATTLE FRONTIER!\p"
-	.string "What's the place like?\n"
-	.string "You'll understand when you see it!\p"
-	.string "I've spoken with the ship's CAPTAIN\n"
-	.string "about this.\p"
-	.string "The next time you take a ferry,\n"
-	.string "you should be able to sail to\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "Okay, {PLAYER}{KUN}, I'll be waiting for you\n"
-	.string "at the BATTLE FRONTIER!$"
+	.string "SCOTT: Chào, chào! {PLAYER}{KUN},\n"
+	.string "{PLAYER}{KUN}!\p"
+	.string "Có chút việc nên tôi phải xuống tàu,\n"
+	.string "nhưng gặp được bạn thật mừng quá!\p"
+	.string "Chúc mừng, LEAGUE CHAMPION!\p"
+	.string "Tôi muốn mời một người như bạn đến một\n"
+	.string "nơi.\p"
+	.string "Đó là... BATTLE FRONTIER!\p"
+	.string "Nơi đó thế nào ư? Tới tận mắt thấy là\n"
+	.string "bạn sẽ hiểu!\p"
+	.string "Tôi đã nói chuyện này với CAPTAIN của\n"
+	.string "tàu rồi.\p"
+	.string "Lần tới đi phà, bạn sẽ có thể tới\n"
+	.string "BATTLE FRONTIER.\p"
+	.string "Được rồi, {PLAYER}{KUN}, tôi sẽ chờ\n"
+	.string "bạn tại BATTLE FRONTIER!$"
 
 SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage:
-	.string "This ferry is built to plow through\n"
-	.string "fast-running currents.\p"
-	.string "We hope you enjoy your voyage with us.\n"
-	.string "Feel free to explore the ship.$"
+	.string "Chiếc phà này được chế tạo để rẽ qua\n"
+	.string "những dòng hải lưu xiết.\p"
+	.string "Chúc bạn có chuyến đi vui vẻ cùng chúng\n"
+	.string "tôi. Cứ tự nhiên tham quan con tàu.$"
 
 SSTidal_Text_HopeYouEnjoyVoyage:
-	.string "We hope you enjoy your voyage on\n"
-	.string "our ferry.$"
+	.string "Chúc bạn có chuyến đi vui vẻ trên phà\n"
+	.string "của chúng tôi.$"
 
 SSTidal_Text_MadeLandInSlateport:
-	.string "We have made land in SLATEPORT CITY.\n"
-	.string "Thank you for sailing with us.$"
+	.string "Chúng ta đã cập bến SLATEPORT CITY.\n"
+	.string "Cảm ơn bạn đã đồng hành cùng chúng\l"
+	.string "tôi.$"
 
 SSTidal_Text_MadeLandInLilycove:
-	.string "We have made land in LILYCOVE CITY.\n"
-	.string "Thank you for sailing with us.$"
+	.string "Chúng ta đã cập bến LILYCOVE CITY. Cảm\n"
+	.string "ơn bạn đã đồng hành cùng chúng tôi.$"
 
 SSTidalCorridor_Text_CanRestInCabin2:
-	.string "It'll be some time before we make land,\n"
-	.string "I reckon.\p"
-	.string "You can rest up in your cabin if you'd\n"
-	.string "like. Your cabin's No. 2.\p"
-	.string "The bed in there is soft and plushy.\n"
-	.string "I can attest to how comfy it is!$"
+	.string "Tôi đoán còn lâu mới cập bến.\p"
+	.string "Nếu muốn, bạn có thể nghỉ trong phòng\n"
+	.string "của mình. Phòng của bạn là số 2.\p"
+	.string "Giường trong đó mềm mại, êm ái lắm. Tôi\n"
+	.string "xin bảo đảm nó thoải mái vô cùng!$"
 
 SSTidalCorridor_Text_WeveArrived:
-	.string "We've arrived!$"
+	.string "Chúng ta đến nơi rồi!$"
 
 SSTidalCorridor_Text_VisitOtherCabins:
-	.string "Go visit other cabins.\n"
-	.string "TRAINERS bored of the boat trip will\l"
-	.string "be itching to battle.$"
+	.string "Hãy ghé thăm các phòng khác đi. Những\n"
+	.string "HLV chán chuyến tàu chắc đang\l"
+	.string "nóng lòng muốn đấu.$"
 
 SSTidalCorridor_Text_EnjoyYourCruise:
-	.string "Enjoy your cruise!$"
+	.string "Chúc bạn tận hưởng chuyến hải trình!$"
 
 SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
-	.string "The horizon spreads beyond\n"
-	.string "the porthole.$"
+	.string "Đường chân trời trải rộng bên ngoài ô\n"
+	.string "cửa tàu.$"
 
 SSTidalCorridor_Text_BrineyWelcomeAboard:
-	.string "MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\p"
-	.string "They made me honorary captain of\n"
-	.string "the S.S. TIDAL!\p"
-	.string "You can call me CAPTAIN BRINEY now!\p"
-	.string "You know, I retired once before,\n"
-	.string "but when I saw this majestic ship…\p"
-	.string "Let me just say, it stirred my sleeping\n"
-	.string "soul as a sailor!$"
+	.string "MR. BRINEY: Chào mừng lên tàu,\n"
+	.string "{PLAYER}{KUN}!\p"
+	.string "Họ phong ta làm thuyền trưởng danh dự\n"
+	.string "của S.S. TIDAL!\p"
+	.string "Giờ cháu có thể gọi ta là CAPTAIN\n"
+	.string "BRINEY!\p"
+	.string "Cháu biết đấy, ta từng nghỉ hưu rồi,\n"
+	.string "nhưng khi thấy con tàu oai vệ này...\p"
+	.string "Phải nói rằng nó đã đánh thức tâm hồn\n"
+	.string "thủy thủ ngủ quên trong ta!$"
 
 SSTidalCorridor_Text_Peeko:
-	.string "PEEKO: Pihyo pihyohyo…$"
+	.string "PEEKO: Pihyo pihyohyo...$"
 
 SSTidalCorridor_Text_Cabin1:
-	.string "Cabin 1$"
+	.string "Phòng 1$"
 
 SSTidalCorridor_Text_Cabin2:
-	.string "Cabin 2$"
+	.string "Phòng 2$"
 
 SSTidalCorridor_Text_Cabin3:
-	.string "Cabin 3$"
+	.string "Phòng 3$"
 
 SSTidalCorridor_Text_Cabin4:
-	.string "Cabin 4$"
+	.string "Phòng 4$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SSTidalCorridor_Text_ScottBattleFrontierInvite
+	.global SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage
+	.global SSTidal_Text_HopeYouEnjoyVoyage
+	.global SSTidal_Text_MadeLandInSlateport
+	.global SSTidal_Text_MadeLandInLilycove
+	.global SSTidalCorridor_Text_CanRestInCabin2
+	.global SSTidalCorridor_Text_WeveArrived
+	.global SSTidalCorridor_Text_VisitOtherCabins
+	.global SSTidalCorridor_Text_EnjoyYourCruise
+	.global SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole
+	.global SSTidalCorridor_Text_BrineyWelcomeAboard
+	.global SSTidalCorridor_Text_Peeko
+	.global SSTidalCorridor_Text_Cabin1
+	.global SSTidalCorridor_Text_Cabin2
+	.global SSTidalCorridor_Text_Cabin3
+	.global SSTidalCorridor_Text_Cabin4
+@ END GENERATED LOCALIZATION EXPORTS

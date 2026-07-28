@@ -253,148 +253,177 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 	end
 
 SlateportCity_PokemonFanClub_Text_MeetChairman:
-	.string "Er-hem! I am the CHAIRMAN of the\n"
-	.string "POKéMON FAN CLUB!\p"
-	.string "Being the CHAIRMAN, I am naturally\n"
-	.string "the most important!\p"
-	.string "No one can best me when it comes\n"
-	.string "to raising POKéMON. No one!\p"
-	.string "Well, let me tell you about\n"
-	.string "POKéMON CONTESTS.\p"
-	.string "They're events where one can show off\n"
-	.string "POKéMON for the world to see!\p"
-	.string "However, they're held in far-off towns,\n"
-	.string "so I cannot participate often enough.\p"
-	.string "That is why we gather here to show\n"
-	.string "off our POKéMON, and have others\l"
-	.string "show us theirs.$"
+	.string "Khụ khụ! Ta là CHỦ TỊCH của POKéMON\n"
+	.string "FAN CLUB!\p"
+	.string "Là CHỦ TỊCH, đương nhiên ta là người\n"
+	.string "quan trọng nhất!\p"
+	.string "Không ai có thể vượt qua ta trong việc\n"
+	.string "nuôi dưỡng POKéMON. Không một ai!\p"
+	.string "Để ta kể cho cậu nghe về POKéMON\n"
+	.string "CONTESTS.\p"
+	.string "Đó là những sự kiện cho phép mọi người\n"
+	.string "khoe POKéMON của mình với cả thế giới!\p"
+	.string "Tuy nhiên, chúng được tổ chức tại\n"
+	.string "những thị trấn xa xôi nên ta không thể\l"
+	.string "tham gia thường xuyên.\p"
+	.string "Vì thế, chúng ta tụ họp ở đây để khoe\n"
+	.string "POKéMON của mình và ngắm POKéMON của\l"
+	.string "người khác.$"
 
 SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon:
-	.string "The POKéMON of a TRAINER who has\n"
-	.string "entered a POKéMON CONTEST…\l"
-	.string "That, I would like to see.$"
+	.string "POKéMON của một HLV từng tham gia\n"
+	.string "POKéMON CONTEST... Ta rất muốn được\l"
+	.string "tận mắt chứng kiến.$"
 
 SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon:
-	.string "Er-hem! I see you've participated in\n"
-	.string "a POKéMON CONTEST!\p"
-	.string "Please! Allow me to examine how you\n"
-	.string "have raised your POKéMON.\p"
-	.string "It delights me no end to see POKéMON\n"
-	.string "raised by other TRAINERS.\p"
-	.string "The happy expressions of POKéMON\n"
-	.string "raised with proper care…\p"
-	.string "The kindly eyes of the TRAINER that\n"
-	.string "nurtured and raised the POKéMON…\p"
-	.string "The very thought fills my heart to\n"
-	.string "overwhelming with joy.\p"
-	.string "Oh! I do beg your pardon!\n"
-	.string "Forgive me for prattling on so!\p"
-	.string "Please! Allow me to examine how much\n"
-	.string "your POKéMON has grown!$"
+	.string "Khụ khụ! Ta thấy cậu đã tham gia\n"
+	.string "POKéMON CONTEST!\p"
+	.string "Xin hãy cho phép ta xem cậu đã nuôi\n"
+	.string "dưỡng POKéMON của mình thế nào.\p"
+	.string "Ta vui sướng vô cùng khi được ngắm\n"
+	.string "những POKéMON do các HLV khác\l"
+	.string "nuôi dưỡng.\p"
+	.string "Vẻ mặt hạnh phúc của những POKéMON\n"
+	.string "được chăm sóc chu đáo...\p"
+	.string "Ánh mắt hiền hậu của HLV đã chăm\n"
+	.string "chút và nuôi dưỡng POKéMON...\p"
+	.string "Chỉ nghĩ đến thôi cũng khiến trái tim ta\n"
+	.string "ngập tràn niềm vui.\p"
+	.string "Ô! Ta thật thất lễ! Xin thứ lỗi vì ta đã\n"
+	.string "thao thao bất tuyệt!\p"
+	.string "Xin hãy cho phép ta xem POKéMON của cậu\n"
+	.string "đã trưởng thành đến mức nào!$"
 
 SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing:
-	.string "How is your POKéMON growing?\n"
-	.string "Allow me to examine it.$"
+	.string "POKéMON của cậu trưởng thành thế nào\n"
+	.string "rồi? Hãy để ta xem thử.$"
 
 SlateportCity_PokemonFanClub_Text_HmHmISee:
-	.string "Hm, hm…\n"
-	.string "I see…$"
+	.string "Hừm, hừm... Ta hiểu rồi...$"
 
 SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks:
-	.string "Hmmm… It's not bad, but it's not\n"
-	.string "good, either…\p"
-	.string "You, the TRAINER, must put more\n"
-	.string "effort into raising this POKéMON!\p"
-	.string "For instance, may I suggest that\n"
-	.string "you give it more {POKEBLOCK}S?$"
+	.string "Hừm... Không tệ, nhưng cũng chưa tốt...\p"
+	.string "Cậu, với tư cách HLV, phải cố gắng\n"
+	.string "hơn nữa để nuôi dưỡng POKéMON này!\p"
+	.string "Chẳng hạn, ta đề nghị cậu cho nó dùng\n"
+	.string "thêm {POKEBLOCK}S nhé?$"
 
 SlateportCity_PokemonFanClub_Text_NoSpaceForReward:
-	.string "Oh, my…\p"
-	.string "Your POKéMON is growing quite well,\n"
-	.string "so you deserve a reward.\p"
-	.string "Unfortunately, you have no space for\n"
-	.string "this in your BAG.$"
+	.string "Ôi chao...\p"
+	.string "POKéMON của cậu đang trưởng thành rất\n"
+	.string "tốt, nên cậu xứng đáng nhận phần\l"
+	.string "thưởng.\p"
+	.string "Tiếc là TÚI ĐỒ của cậu không còn chỗ\n"
+	.string "chứa vật này.$"
 
 SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis:
-	.string "Your {STR_VAR_1}, it is growing in\n"
-	.string "a most impressive manner!\l"
-	.string "It is one fine specimen!\p"
-	.string "But! If you were to give it this,\n"
-	.string "it would grow even better! Indeed!$"
+	.string "{STR_VAR_1} của cậu đang trưởng\n"
+	.string "thành cực kỳ ấn tượng! Quả là một cá\l"
+	.string "thể xuất sắc!\p"
+	.string "Nhưng! Nếu cậu cho nó dùng thứ này, nó\n"
+	.string "sẽ còn trưởng thành tốt hơn nữa! Đúng\l"
+	.string "vậy!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainRedScarf:
-	.string "Let a POKéMON hold that RED SCARF.\p"
-	.string "Everyone will recognize the coolness\n"
-	.string "of that POKéMON!$"
+	.string "Hãy để một POKéMON giữ RED SCARF.\p"
+	.string "Mọi người sẽ nhận ra vẻ phong độ của\n"
+	.string "POKéMON đó!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainBlueScarf:
-	.string "Let a POKéMON hold that BLUE SCARF.\p"
-	.string "Its beauty will be accentuated much\n"
-	.string "more than now!$"
+	.string "Hãy để một POKéMON giữ BLUE SCARF.\p"
+	.string "Vẻ đẹp của nó sẽ nổi bật hơn bây giờ\n"
+	.string "rất nhiều!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainPinkScarf:
-	.string "Let a POKéMON hold that PINK SCARF.\p"
-	.string "It will draw out the cuteness of\n"
-	.string "the POKéMON some more!$"
+	.string "Hãy để một POKéMON giữ PINK SCARF.\p"
+	.string "Vẻ đáng yêu của POKéMON đó sẽ được\n"
+	.string "thể hiện rõ hơn!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainGreenScarf:
-	.string "Let a POKéMON hold that GREEN SCARF.\p"
-	.string "That will enhance the\n"
-	.string "smartness of POKéMON!$"
+	.string "Hãy để một POKéMON giữ GREEN SCARF.\p"
+	.string "Nó sẽ làm tăng vẻ thông minh của\n"
+	.string "POKéMON!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainYellowScarf:
-	.string "Let a POKéMON hold that YELLOW SCARF.\p"
-	.string "It will bolster your POKéMON's\n"
-	.string "toughness so much more!$"
+	.string "Hãy để một POKéMON giữ YELLOW SCARF.\p"
+	.string "Nó sẽ làm tăng đáng kể vẻ cứng cỏi của\n"
+	.string "POKéMON!$"
 
 SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou:
-	.string "I'm sorry, but I've nothing else to\n"
-	.string "give you! None at all!\p"
-	.string "After all, you're blessed with the gift\n"
-	.string "of raising POKéMON without resorting\l"
-	.string "to any items!$"
+	.string "Ta xin lỗi, nhưng chẳng còn gì khác để\n"
+	.string "tặng cậu nữa! Hoàn toàn không còn!\p"
+	.string "Dù sao, cậu cũng có tài nuôi dưỡng\n"
+	.string "POKéMON mà chẳng cần nhờ đến bất kỳ\l"
+	.string "vật phẩm nào!$"
 
 SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou:
-	.string "I love seeing POKéMON that love\n"
-	.string "their TRAINERS.\p"
-	.string "POKéMON are very sensitive to\n"
-	.string "the feelings of their TRAINERS.\p"
-	.string "If you treat your POKéMON with love\n"
-	.string "and care, they'll love you back.\p"
-	.string "When your POKéMON grow to love you,\n"
-	.string "please come show me.$"
+	.string "Tôi rất thích ngắm những POKéMON yêu\n"
+	.string "quý HLV của mình.\p"
+	.string "POKéMON rất nhạy cảm với tình cảm của\n"
+	.string "HLV.\p"
+	.string "Nếu bạn đối xử với POKéMON bằng tình\n"
+	.string "yêu và sự quan tâm, chúng cũng sẽ yêu\l"
+	.string "quý bạn.\p"
+	.string "Khi POKéMON đã thật sự yêu quý bạn, hãy\n"
+	.string "đến cho tôi xem nhé.$"
 
 SlateportCity_PokemonFanClub_Text_PokemonAdoresYou:
-	.string "Your POKéMON really adores you.\p"
-	.string "For you, a most compassionate\n"
-	.string "TRAINER, a gift from the FAN CLUB!$"
+	.string "POKéMON của bạn thật sự rất yêu quý\n"
+	.string "bạn.\p"
+	.string "Đây là món quà từ FAN CLUB dành cho một\n"
+	.string "HLV giàu lòng yêu thương như bạn!$"
 
 SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove:
-	.string "POKéMON are very sensitive to\n"
-	.string "the feelings of their TRAINERS.\p"
-	.string "If you treat your POKéMON with love\n"
-	.string "and care, they'll love you back.$"
+	.string "POKéMON rất nhạy cảm với tình cảm của\n"
+	.string "HLV.\p"
+	.string "Nếu bạn đối xử với POKéMON bằng tình\n"
+	.string "yêu và sự quan tâm, chúng cũng sẽ yêu\l"
+	.string "quý bạn.$"
 
 SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting:
-	.string "If you keep letting a POKéMON faint\n"
-	.string "in battle, it'll come to resent it.\p"
-	.string "Soon, it will become less trusting\n"
-	.string "of the TRAINER.\p"
-	.string "In other words, it certainly won't\n"
-	.string "like you very much.$"
+	.string "Nếu bạn cứ để một POKéMON gục ngã\n"
+	.string "trong trận đấu, nó sẽ dần oán ghét điều\l"
+	.string "đó.\p"
+	.string "Chẳng bao lâu, nó sẽ không còn tin\n"
+	.string "tưởng HLV của mình như trước.\p"
+	.string "Nói cách khác, nó chắc chắn sẽ không\n"
+	.string "yêu quý bạn cho lắm.$"
 
 SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein:
-	.string "Do POKéMON enjoy having items used\n"
-	.string "on them?\p"
-	.string "Mine acted really happy when I gave\n"
-	.string "it some PROTEIN.$"
+	.string "POKéMON có thích được dùng vật phẩm\n"
+	.string "lên mình không nhỉ?\p"
+	.string "POKéMON của tôi tỏ ra rất vui khi tôi\n"
+	.string "cho nó dùng PROTEIN.$"
 
 SlateportCity_PokemonFanClub_Text_Skitty:
-	.string "SKITTY: Fffnyaaaah…$"
+	.string "SKITTY: Fffnyaaaah...$"
 
 SlateportCity_PokemonFanClub_Text_Zigzagoon:
-	.string "ZIGZAGOON: Kyuuu…$"
+	.string "ZIGZAGOON: Kyuuu...$"
 
 SlateportCity_PokemonFanClub_Text_Azumarill:
 	.string "AZUMARILL: Marimari?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_PokemonFanClub_Text_MeetChairman
+	.global SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon
+	.global SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon
+	.global SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing
+	.global SlateportCity_PokemonFanClub_Text_HmHmISee
+	.global SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks
+	.global SlateportCity_PokemonFanClub_Text_NoSpaceForReward
+	.global SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis
+	.global SlateportCity_PokemonFanClub_Text_ExplainRedScarf
+	.global SlateportCity_PokemonFanClub_Text_ExplainBlueScarf
+	.global SlateportCity_PokemonFanClub_Text_ExplainPinkScarf
+	.global SlateportCity_PokemonFanClub_Text_ExplainGreenScarf
+	.global SlateportCity_PokemonFanClub_Text_ExplainYellowScarf
+	.global SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou
+	.global SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou
+	.global SlateportCity_PokemonFanClub_Text_PokemonAdoresYou
+	.global SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove
+	.global SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting
+	.global SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein
+	.global SlateportCity_PokemonFanClub_Text_Skitty
+	.global SlateportCity_PokemonFanClub_Text_Zigzagoon
+@ END GENERATED LOCALIZATION EXPORTS

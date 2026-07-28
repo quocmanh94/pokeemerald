@@ -55,6 +55,9 @@ BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor:
 	step_end
 
 BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun:
-	.string "Your Battle Choice challenge\n"
-	.string "has now begun…$"
+	.string "Thử thách Battle Choice của bạn đã bắt\n"
+	.string "đầu...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun
+@ END GENERATED LOCALIZATION EXPORTS

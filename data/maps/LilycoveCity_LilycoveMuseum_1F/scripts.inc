@@ -159,133 +159,158 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_FatMan::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:
-	.string "Welcome to LILYCOVE MUSEUM.\p"
-	.string "Please take the time to enjoy our\n"
-	.string "collection of fantastic artwork\l"
-	.string "featuring POKéMON.$"
+	.string "Chào mừng đến với LILYCOVE MUSEUM.\p"
+	.string "Xin hãy thong thả thưởng lãm bộ sưu\n"
+	.string "tập tác phẩm nghệ thuật tuyệt vời về\l"
+	.string "POKéMON của chúng tôi.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings:
-	.string "I'm the CURATOR of this MUSEUM of\n"
-	.string "fine arts.\p"
-	.string "It's heartening to see someone so\n"
-	.string "young as you in our MUSEUM.\p"
-	.string "Have you viewed our collection of\n"
-	.string "paintings already?$"
+	.string "Tôi là CURATOR của MUSEUM mỹ thuật này.\p"
+	.string "Thật đáng mừng khi thấy một người trẻ\n"
+	.string "như bạn đến MUSEUM của chúng tôi.\p"
+	.string "Bạn đã xem bộ sưu tập tranh của chúng\n"
+	.string "tôi chưa?$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime:
-	.string "Ah, then let me not disturb you.\n"
-	.string "Please, do take your time.$"
+	.string "À, vậy tôi xin không làm phiền. Xin cứ\n"
+	.string "thong thả thưởng lãm.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings:
-	.string "Oh? I do believe that you seem to\n"
-	.string "be a POKéMON TRAINER.\p"
-	.string "Have you an interest in paintings,\n"
-	.string "too?$"
+	.string "Ồ? Tôi tin rằng bạn là một POKéMON\n"
+	.string "HLV.\p"
+	.string "Bạn cũng hứng thú với hội họa sao?$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat:
-	.string "I see…\p"
-	.string "I'm honored that you would visit\n"
-	.string "us in spite of that.$"
+	.string "Tôi hiểu...\p"
+	.string "Dù vậy, bạn vẫn ghé thăm chúng tôi, thật\n"
+	.string "là một vinh hạnh.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe:
-	.string "Ah, excellent!\n"
-	.string "You do like paintings!\p"
-	.string "Then, may I ask you to come with me?$"
+	.string "À, tuyệt vời! Bạn quả thật thích tranh!\p"
+	.string "Vậy, tôi có thể mời bạn đi cùng tôi\n"
+	.string "không?$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_VeryOldPainting:
-	.string "It's a very old painting.\n"
-	.string "The paint is peeling here and there.$"
+	.string "Đây là một bức tranh rất cổ. Màu sơn\n"
+	.string "bong tróc chỗ này chỗ kia.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery:
-	.string "It's an odd landscape with bizarre\n"
-	.string "and fantastic scenery.$"
+	.string "Đây là một bức phong cảnh kỳ lạ với\n"
+	.string "cảnh vật quái dị và huyền ảo.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman:
-	.string "It's a painting of a beautiful, smiling\n"
-	.string "woman with a POKéMON on her lap.$"
+	.string "Đây là tranh một người phụ nữ xinh đẹp\n"
+	.string "đang mỉm cười, với một POKéMON ngồi\l"
+	.string "trên đùi.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon:
-	.string "It's a painting of a legendary POKéMON\n"
-	.string "from long ago.\p"
-	.string "The artist painted this from\n"
-	.string "imagination.$"
+	.string "Đây là tranh một POKéMON huyền thoại\n"
+	.string "từ thời xa xưa.\p"
+	.string "Họa sĩ đã vẽ nó từ trí tưởng tượng.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon:
-	.string "It's a painting of GRASS POKéMON\n"
-	.string "swaying in a breeze.\p"
-	.string "They appear to be enjoying the wind's\n"
-	.string "gentle caress.$"
+	.string "Đây là tranh những GRASS POKéMON đung\n"
+	.string "đưa trong làn gió.\p"
+	.string "Trông chúng như đang tận hưởng sự\n"
+	.string "vuốt ve dịu dàng của gió.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries:
-	.string "It's a delicious-looking painting\n"
-	.string "of BERRIES.\p"
-	.string "This painting could make you hungry!$"
+	.string "Đây là một bức tranh BERRIES trông\n"
+	.string "ngon tuyệt.\p"
+	.string "Bức tranh này có thể khiến bạn thấy\n"
+	.string "đói!$"
 
 LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica:
-	.string "It's a replica of a famous sculpture.\p"
-	.string "It depicts an ancient BIRD POKéMON.$"
+	.string "Đây là bản sao của một tác phẩm điêu\n"
+	.string "khắc nổi tiếng.\p"
+	.string "Nó khắc họa một BIRD POKéMON cổ đại.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone:
-	.string "It's a big POKé BALL carved from\n"
-	.string "a black stone.\p"
-	.string "It was apparently used in festivals\n"
-	.string "in the olden days.$"
+	.string "Đây là một POKé BALL lớn được tạc từ\n"
+	.string "đá đen.\p"
+	.string "Có vẻ nó từng được dùng trong các lễ\n"
+	.string "hội thời xưa.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText:
-	.string "It's a huge stone tablet inscribed\n"
-	.string "with POKéMON and dense text in the\l"
-	.string "small characters of an ancient,\l"
-	.string "unreadable language.$"
+	.string "Đây là một phiến đá khổng lồ, khắc hình\n"
+	.string "POKéMON cùng những dòng chữ dày đặc\l"
+	.string "bằng các ký tự nhỏ của một ngôn ngữ cổ\l"
+	.string "không thể đọc được.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence:
-	.string "Hmmm…\n"
-	.string "What works of great magnificence…$"
+	.string "Hừm... Quả là những tác phẩm vô cùng\n"
+	.string "tráng lệ...$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts:
-	.string "Battling with POKéMON is fun,\n"
-	.string "I'll grant you that.\p"
-	.string "But one mustn't forget our love for\n"
-	.string "the fine arts.$"
+	.string "Tôi công nhận chiến đấu cùng POKéMON\n"
+	.string "rất vui.\p"
+	.string "Nhưng ta không được quên tình yêu\n"
+	.string "dành cho mỹ thuật.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration:
-	.string "This ART MUSEUM… Well, you could\n"
-	.string "see many fantastic paintings.\p"
-	.string "And the CURATOR is a wonderful person.\p"
-	.string "Among artists like myself, this MUSEUM\n"
-	.string "is an inspiration.$"
+	.string "ART MUSEUM này... Ừm, ở đây có thể chiêm\n"
+	.string "ngưỡng nhiều bức tranh tuyệt vời.\p"
+	.string "Và CURATOR là một người tuyệt vời.\p"
+	.string "Với những nghệ sĩ như tôi, MUSEUM này\n"
+	.string "là nguồn cảm hứng.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty:
-	.string "This lady is pretty!\n"
-	.string "She's like Mommy!$"
+	.string "Cô này xinh quá! Giống mẹ mình vậy!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable:
-	.string "This POKéMON is adorable!\n"
-	.string "Just like our little boy!$"
+	.string "POKéMON này đáng yêu quá! Giống hệt\n"
+	.string "cậu con trai bé bỏng của chúng tôi!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings:
-	.string "I'd heard that this ART MUSEUM got\n"
-	.string "in some new paintings.\p"
-	.string "So, naturally I hurried over.\p"
-	.string "Are the new paintings up on\n"
-	.string "the second floor?$"
+	.string "Tôi nghe nói ART MUSEUM này vừa có vài\n"
+	.string "bức tranh mới.\p"
+	.string "Thế là tôi vội tới ngay.\p"
+	.string "Những bức tranh mới được trưng bày ở\n"
+	.string "tầng hai phải không?$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful:
-	.string "Lately, the CURATOR has been\n"
-	.string "unusually cheerful.\p"
-	.string "I bet something good happened for him.\n"
-	.string "Definitely.$"
+	.string "Gần đây, CURATOR vui vẻ khác thường.\p"
+	.string "Tôi cá là ông ấy gặp chuyện gì đó tốt\n"
+	.string "lành. Chắc chắn luôn.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings:
-	.string "I aim to see many great paintings\n"
-	.string "here and learn from them.\p"
-	.string "I have this dream of one day having\n"
-	.string "my artwork exhibited here.$"
+	.string "Tôi muốn xem thật nhiều tranh tuyệt vời\n"
+	.string "ở đây và học hỏi từ chúng.\p"
+	.string "Tôi mơ một ngày nào đó tác phẩm của\n"
+	.string "mình sẽ được trưng bày tại đây.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination:
-	.string "The ART MUSEUM has become a favorite\n"
-	.string "tourist destination.\p"
-	.string "It's great for LILYCOVE…\n"
-	.string "No, great for the HOENN region!\p"
-	.string "This is what I've heard--a lone TRAINER\n"
-	.string "procured all the paintings upstairs.$"
+	.string "ART MUSEUM đã trở thành điểm đến yêu\n"
+	.string "thích của du khách.\p"
+	.string "Thật tuyệt cho LILYCOVE... Không, cho\n"
+	.string "cả vùng HOENN!\p"
+	.string "Tôi nghe nói toàn bộ tranh trên tầng\n"
+	.string "đều do một HLV duy nhất sưu tầm\l"
+	.string "được.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum
+	.global LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings
+	.global LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime
+	.global LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings
+	.global LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat
+	.global LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe
+	.global LilycoveCity_LilycoveMuseum_1F_Text_VeryOldPainting
+	.global LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery
+	.global LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman
+	.global LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon
+	.global LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon
+	.global LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries
+	.global LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica
+	.global LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone
+	.global LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText
+	.global LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence
+	.global LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts
+	.global LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration
+	.global LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty
+	.global LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable
+	.global LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings
+	.global LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful
+	.global LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings
+	.global LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination
+@ END GENERATED LOCALIZATION EXPORTS

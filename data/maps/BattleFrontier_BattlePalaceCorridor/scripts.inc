@@ -120,30 +120,39 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
-	.string "People and POKéMON, they are but\n"
-	.string "the same…\p"
-	.string "Their individual nature makes them\n"
-	.string "good at certain things, and not good\l"
-	.string "at others.$"
+	.string "Con người và POKéMON vốn chẳng khác\n"
+	.string "nhau...\p"
+	.string "Tính cách riêng khiến mỗi cá thể giỏi\n"
+	.string "một số việc và không giỏi những việc\l"
+	.string "khác.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes:
-	.string "Rather than trying to make a POKéMON\n"
-	.string "do what it dislikes, try to let it do\l"
-	.string "what it likes and is good at doing.\p"
-	.string "Put yourself in the POKéMON's position\n"
-	.string "and consider what moves it would like.$"
+	.string "Thay vì cố bắt một POKéMON làm điều nó\n"
+	.string "không thích, hãy để nó làm điều nó\l"
+	.string "thích và giỏi.\p"
+	.string "Hãy đặt mình vào vị trí của POKéMON và\n"
+	.string "nghĩ xem nó muốn dùng những chiêu\l"
+	.string "thức nào.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered:
-	.string "A POKéMON's nature is a remarkable\n"
-	.string "thing…\p"
-	.string "Some POKéMON behave in a completely\n"
-	.string "different way when they are cornered.$"
+	.string "Tính cách của POKéMON quả là điều kỳ\n"
+	.string "diệu...\p"
+	.string "Một số POKéMON hành xử hoàn toàn khác\n"
+	.string "khi bị dồn vào đường cùng.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature:
-	.string "Are you beginning to understand how\n"
-	.string "a POKéMON's nature makes it behave?$"
+	.string "Bạn đã bắt đầu hiểu tính cách của\n"
+	.string "POKéMON ảnh hưởng đến hành vi của nó\l"
+	.string "thế nào chưa?$"
 
 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons:
-	.string "Ah… I see a strong, heartfelt bond\n"
-	.string "between you and your POKéMON…$"
+	.string "À... Ta thấy giữa bạn và POKéMON có một\n"
+	.string "mối liên kết chân thành và bền chặt...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame
+	.global BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes
+	.global BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered
+	.global BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature
+	.global BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
+@ END GENERATED LOCALIZATION EXPORTS

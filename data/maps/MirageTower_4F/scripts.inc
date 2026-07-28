@@ -57,20 +57,26 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	end
 
 MirageTower_4F_Text_TakeRootFossil:
-	.string "You found the ROOT FOSSIL.\p"
-	.string "If this FOSSIL is taken, the ground\n"
-	.string "around it will likely crumble away…\p"
-	.string "Take the ROOT FOSSIL anyway?$"
+	.string "Bạn tìm thấy ROOT FOSSIL.\p"
+	.string "Nếu lấy FOSSIL này, vùng đất xung\n"
+	.string "quanh có lẽ sẽ sụp xuống...\p"
+	.string "Vẫn lấy ROOT FOSSIL chứ?$"
 
 MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{PLAYER} left the ROOT FOSSIL alone.$"
+	.string "{PLAYER} không lấy ROOT FOSSIL.$"
 
 MirageTower_4F_Text_TakeClawFossil:
-	.string "You found the CLAW FOSSIL.\p"
-	.string "If this FOSSIL is taken, the ground\n"
-	.string "around it will likely crumble away…\p"
-	.string "Take the CLAW FOSSIL anyway?$"
+	.string "Bạn tìm thấy CLAW FOSSIL.\p"
+	.string "Nếu lấy FOSSIL này, vùng đất xung\n"
+	.string "quanh có lẽ sẽ sụp xuống...\p"
+	.string "Vẫn lấy CLAW FOSSIL chứ?$"
 
 MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{PLAYER} left the CLAW FOSSIL alone.$"
+	.string "{PLAYER} không lấy CLAW FOSSIL.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MirageTower_4F_Text_TakeRootFossil
+	.global MirageTower_4F_Text_LeftRootFossilAlone
+	.global MirageTower_4F_Text_TakeClawFossil
+	.global MirageTower_4F_Text_LeaveClawFossilAlone
+@ END GENERATED LOCALIZATION EXPORTS

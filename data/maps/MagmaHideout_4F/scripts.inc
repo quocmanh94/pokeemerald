@@ -125,99 +125,113 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "I want to see GROUDON, too, but they\n"
-	.string "won't let me see even its tail…\p"
-	.string "It's got me feeling really frustrated.\p"
-	.string "Oh, no!\n"
-	.string "I blabbed about GROUDON!$"
+	.string "Tôi cũng muốn thấy GROUDON, nhưng họ\n"
+	.string "đến cái đuôi của nó cũng không cho tôi\l"
+	.string "nhìn...\p"
+	.string "Bực thật đấy.\p"
+	.string "Ôi không! Tôi lỡ mồm nói về GROUDON rồi!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "I guess it's impossible to win if one\n"
-	.string "doesn't have a calm mind…$"
+	.string "Xem ra tâm không tĩnh thì không thể\n"
+	.string "thắng được...$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "I wonder if GROUDON even has a tail?$"
+	.string "Không biết GROUDON có đuôi thật không\n"
+	.string "nhỉ?$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "Fuhahaha!\n"
-	.string "Soon! Very soon!\l"
-	.string "Our grand objective will be achieved!$"
+	.string "Fuhahaha! Sắp rồi! Rất sắp rồi! Mục tiêu\n"
+	.string "vĩ đại của bọn ta sẽ thành hiện thực!$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "Grrr…\n"
-	.string "I've come so far, but now this?$"
+	.string "Grrr... Ta đã đi xa đến thế, vậy mà giờ\n"
+	.string "lại thế này sao?$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "MAXIE, sir!\n"
-	.string "An intruder is headed your way!$"
+	.string "Ngài MAXIE! Có kẻ xâm nhập đang tiến về\n"
+	.string "phía ngài!$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "You're not finished yet!\n"
-	.string "You're not getting by me easily!$"
+	.string "Ngươi vẫn chưa xong đâu! Đừng hòng dễ\n"
+	.string "dàng vượt qua ta!$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "Was I that easy to knock down?$"
+	.string "Ta dễ bị đánh gục đến vậy sao?$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "C-come on, one more match…$"
+	.string "N-nào, đấu thêm một trận nữa đi...$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "Hehehe!\n"
-	.string "You made it this far, so I'll tell you!\p"
-	.string "That's right!\n"
-	.string "Up ahead, GROUDON is sleeping!\p"
-	.string "MAXIE went to GROUDON just seconds\n"
-	.string "ago!\p"
-	.string "It's going to awaken real soon!\n"
-	.string "Hehe! Hehehe!$"
+	.string "Hehehe! Ngươi đã đến tận đây, vậy ta\n"
+	.string "sẽ nói cho ngươi biết!\p"
+	.string "Đúng thế! Phía trước, GROUDON đang\n"
+	.string "ngủ!\p"
+	.string "MAXIE vừa đến chỗ GROUDON cách đây ít\n"
+	.string "giây!\p"
+	.string "Nó sắp thức tỉnh rồi! Hehe! Hehehe!$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "Taken down again…\n"
-	.string "Hehe…$"
+	.string "Lại bị hạ nữa rồi... Hehe...$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "…And while you wasted time with me,\n"
-	.string "MAXIE should have awakened GROUDON…$"
+	.string "...Và trong lúc ngươi lãng phí thời gian\n"
+	.string "với ta, MAXIE hẳn đã đánh thức\l"
+	.string "GROUDON...$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "MAXIE: GROUDON…\p"
-	.string "Nothing could awaken you from your\n"
-	.string "sleep bathed in magma…\p"
-	.string "This BLUE ORB is what you sought.\n"
-	.string "Wasn't it?\p"
-	.string "I have brought you the BLUE ORB.\n"
-	.string "Let its shine awaken you!\p"
-	.string "And show me…\n"
-	.string "Show me the full extent of your power!$"
+	.string "MAXIE: GROUDON...\p"
+	.string "Không gì có thể đánh thức ngươi khỏi\n"
+	.string "giấc ngủ giữa dung nham...\p"
+	.string "BLUE ORB này chính là thứ ngươi tìm\n"
+	.string "kiếm. Đúng không?\p"
+	.string "Ta đã mang BLUE ORB đến cho ngươi. Hãy\n"
+	.string "để ánh sáng của nó đánh thức ngươi!\p"
+	.string "Và cho ta thấy... Cho ta thấy toàn bộ\n"
+	.string "sức mạnh của ngươi!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "MAXIE: GROUDON!\n"
-	.string "What's wrong?\p"
-	.string "Wasn't the BLUE ORB the key?\p"
-	.string "GROUDON!\n"
-	.string "Where have you gone…$"
+	.string "MAXIE: GROUDON! Có chuyện gì vậy?\p"
+	.string "BLUE ORB chẳng phải là chìa khóa sao?\p"
+	.string "GROUDON! Ngươi đã đi đâu rồi...$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "MAXIE: Oh, so it was you?\p"
-	.string "I've seen you poking around uninvited\n"
-	.string "here and there…\p"
-	.string "I get it now!\n"
-	.string "You must have pulled a cheap stunt!$"
+	.string "MAXIE: Ồ, hóa ra là ngươi sao?\p"
+	.string "Ta đã thấy ngươi tự tiện lảng vảng hết\n"
+	.string "chỗ này đến chỗ khác...\p"
+	.string "Giờ ta hiểu rồi! Hẳn ngươi đã giở trò\n"
+	.string "hèn hạ!$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "What makes you so adept at handling\n"
-	.string "POKéMON?$"
+	.string "Điều gì khiến ngươi điều khiển POKéMON\n"
+	.string "thành thạo đến vậy?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "MAXIE: There has to be some reason\n"
-	.string "why GROUDON fled…\p"
-	.string "That's what you're trying to say,\n"
-	.string "aren't you?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Humph…\n"
-	.string "You think I didn't know that?\p"
-	.string "With GROUDON gone, there is no longer\n"
-	.string "any need for this blasted volcano.\p"
-	.string "I am going after GROUDON, so this\n"
-	.string "is where we part!$"
+	.string "MAXIE: GROUDON bỏ chạy hẳn phải có lý\n"
+	.string "do nào đó...\p"
+	.string "Đó là điều ngươi muốn nói, đúng không?\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "Hừm... Ngươi tưởng ta không biết sao?\p"
+	.string "GROUDON đã đi rồi, ngọn núi lửa chết\n"
+	.string "tiệt này cũng không còn cần thiết nữa.\p"
+	.string "Ta sẽ đuổi theo GROUDON, chúng ta chia\n"
+	.string "tay tại đây!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MagmaHideout_4F_Text_Grunt11Intro
+	.global MagmaHideout_4F_Text_Grunt11Defeat
+	.global MagmaHideout_4F_Text_Grunt11PostBattle
+	.global MagmaHideout_4F_Text_Grunt12Intro
+	.global MagmaHideout_4F_Text_Grunt12Defeat
+	.global MagmaHideout_4F_Text_Grunt12PostBattle
+	.global MagmaHideout_4F_Text_Grunt13Intro
+	.global MagmaHideout_4F_Text_Grunt13Defeat
+	.global MagmaHideout_4F_Text_Grunt13PostBattle
+	.global MagmaHideout_4F_Text_TabithaIntro
+	.global MagmaHideout_4F_Text_TabithaDefeat
+	.global MagmaHideout_4F_Text_TabithaPostBattle
+	.global MagmaHideout_4F_Text_MaxieAwakenGroudon
+	.global MagmaHideout_4F_Text_MaxieGroudonWhatsWrong
+	.global MagmaHideout_4F_Text_MaxieOhItWasYou
+	.global MagmaHideout_4F_Text_MaxieDefeat
+	.global MagmaHideout_4F_Text_MaxieImGoingAfterGroudon
+@ END GENERATED LOCALIZATION EXPORTS

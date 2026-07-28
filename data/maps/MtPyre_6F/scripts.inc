@@ -28,42 +28,54 @@ MtPyre_6F_EventScript_Cedric::
 	end
 
 MtPyre_6F_Text_ValerieIntro:
-	.string "When I'm here…\n"
-	.string "A curious power flows into me…$"
+	.string "Khi ở đây... Một sức mạnh kỳ lạ chảy vào\n"
+	.string "cơ thể tôi...$"
 
 MtPyre_6F_Text_ValerieDefeat:
-	.string "The power is ebbing away…$"
+	.string "Sức mạnh đang dần rút đi...$"
 
 MtPyre_6F_Text_ValeriePostBattle:
-	.string "Perhaps the power is from the spirits\n"
-	.string "of POKéMON in fitful sleep here…$"
+	.string "Có lẽ sức mạnh ấy đến từ linh hồn của\n"
+	.string "những POKéMON đang chập chờn yên\l"
+	.string "nghỉ tại đây...$"
 
 MtPyre_6F_Text_ValerieRegister:
-	.string "Fufufu… I lost the match, but…\n"
-	.string "I have this little ability…\p"
-	.string "Without ever laying my hands on\n"
-	.string "your POKéNAV… Hiyah!$"
+	.string "Fufufu... Tôi đã thua trận, nhưng... tôi\n"
+	.string "có chút năng lực này...\p"
+	.string "Không cần chạm tay vào POKéNAV của\n"
+	.string "bạn... Hiyah!$"
 
 MtPyre_6F_Text_ValerieRematchIntro:
-	.string "Behind you…\n"
-	.string "What is it…$"
+	.string "Sau lưng bạn... Là thứ gì vậy...$"
 
 MtPyre_6F_Text_ValerieRematchDefeat:
-	.string "Something faded away…$"
+	.string "Có thứ gì đó vừa tan biến...$"
 
 MtPyre_6F_Text_ValeriePostRematch:
-	.string "The POKéMON at rest here…\n"
-	.string "Sometimes, they play…$"
+	.string "Những POKéMON an nghỉ tại đây... Đôi\n"
+	.string "khi, chúng vui đùa...$"
 
 MtPyre_6F_Text_CedricIntro:
-	.string "Have you lost your bearings?\n"
-	.string "Have no fear for I am here!$"
+	.string "Bạn mất phương hướng rồi sao? Đừng\n"
+	.string "sợ, vì đã có tôi đây!$"
 
 MtPyre_6F_Text_CedricDefeat:
-	.string "Weren't you lost?$"
+	.string "Chẳng phải bạn bị lạc sao?$"
 
 MtPyre_6F_Text_CedricPostBattle:
-	.string "I had this feeling that a lost TRAINER\n"
-	.string "would be panicked and easy to beat.\p"
-	.string "It's dirty and I won't try it again…$"
+	.string "Tôi cứ nghĩ một HLV bị lạc sẽ hoảng\n"
+	.string "loạn và dễ đánh bại.\p"
+	.string "Thật hèn hạ, tôi sẽ không làm thế nữa...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_6F_Text_ValerieIntro
+	.global MtPyre_6F_Text_ValerieDefeat
+	.global MtPyre_6F_Text_ValeriePostBattle
+	.global MtPyre_6F_Text_ValerieRegister
+	.global MtPyre_6F_Text_ValerieRematchIntro
+	.global MtPyre_6F_Text_ValerieRematchDefeat
+	.global MtPyre_6F_Text_ValeriePostRematch
+	.global MtPyre_6F_Text_CedricIntro
+	.global MtPyre_6F_Text_CedricDefeat
+	.global MtPyre_6F_Text_CedricPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

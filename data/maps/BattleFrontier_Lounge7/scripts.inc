@@ -283,192 +283,206 @@ BattleFrontier_Lounge7_EventScript_Gentleman::
 	end
 
 BattleFrontier_Lounge7_Text_LeftTutorIntro:
-	.string "Buhahaha!\p"
-	.string "You couldn't tell it from looking now,\n"
-	.string "but I used to be one tough TRAINER.\p"
-	.string "I had a reputation as the toughest\n"
-	.string "BEAUTY around, I tell you!\p"
-	.string "… … … … … …\p"
-	.string "What is it now?\n"
-	.string "You don't believe me.\p"
-	.string "I'm not like that blowhard woman over\n"
-	.string "there. I'm actually talented!\p"
-	.string "Let me prove it to you.\n"
-	.string "I can teach your POKéMON special and\l"
-	.string "yet cute moves.\p"
-	.string "But my lessons don't come free.\n"
-	.string "How about paying for the moves I teach\l"
-	.string "with a wee bit of Battle Points?$"
+	.string "Bwahaha!\p"
+	.string "Nhìn bà bây giờ chắc cháu không thể\n"
+	.string "ngờ, nhưng trước kia bà từng là một\l"
+	.string "HLV cực kỳ mạnh.\p"
+	.string "Bà từng nổi danh là BEAUTY mạnh nhất\n"
+	.string "vùng đấy!\p"
+	.string ". . . . . .\p"
+	.string "Sao nào? Cháu không tin bà à.\p"
+	.string "Bà không giống mụ chỉ giỏi ba hoa bên\n"
+	.string "kia đâu. Bà có tài thật sự!\p"
+	.string "Để bà chứng minh cho cháu xem. Bà có\n"
+	.string "thể dạy POKéMON của cháu những chiêu\l"
+	.string "thức vừa đặc biệt vừa dễ thương.\p"
+	.string "Nhưng bà không dạy miễn phí đâu. Cháu\n"
+	.string "trả một ít Battle Points cho những\l"
+	.string "chiêu bà dạy nhé?$"
 
 BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack:
-	.string "Buhahaha!\p"
-	.string "Are you back to learn special and\n"
-	.string "yet cute POKéMON moves?$"
+	.string "Bwahaha!\p"
+	.string "Cháu quay lại để học những chiêu thức\n"
+	.string "POKéMON vừa đặc biệt vừa dễ thương\l"
+	.string "sao?$"
 
 BattleFrontier_Lounge7_Text_TeachWhichMove:
-	.string "Fine, fine, look here!\n"
-	.string "Which move should I teach?$"
+	.string "Được, được, xem đây! Bà nên dạy chiêu\n"
+	.string "nào?$"
 
 BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints:
-	.string "The move {STR_VAR_1}, is it?\n"
-	.string "That will be {STR_VAR_2} Battle Points, okay?$"
+	.string "Chiêu {STR_VAR_1}, phải không?\n"
+	.string "Chiêu đó sẽ tốn {STR_VAR_2}\l"
+	.string "Battle Points, được chứ?$"
 
 BattleFrontier_Lounge7_Text_TeachMoveToWhichMon:
-	.string "Fine, fine, now pick the POKéMON\n"
-	.string "I should teach the move to.$"
+	.string "Được, được, giờ hãy chọn POKéMON mà\n"
+	.string "bà sẽ dạy chiêu này.$"
 
 BattleFrontier_Lounge7_Text_HaventGotEnoughPoints:
-	.string "What the…\n"
-	.string "You haven't got enough Battle Points!$"
+	.string "Cái gì cơ? Cháu không có đủ Battle\n"
+	.string "Points!$"
 
 BattleFrontier_Lounge7_Text_IllTakeBattlePoints:
-	.string "Do you see how skilled I am now?\n"
-	.string "I'll take your Battle Points, thanks!$"
+	.string "Giờ cháu thấy bà tài giỏi thế nào rồi\n"
+	.string "chứ? Bà xin nhận Battle Points nhé!$"
 
 BattleFrontier_Lounge7_Text_YouDontWantTo:
-	.string "What's that?\n"
-	.string "You don't want to…\p"
-	.string "If you want to see how skilled I am,\n"
-	.string "you come see me anytime!$"
+	.string "Gì cơ? Cháu không muốn à?\p"
+	.string "Nếu muốn chứng kiến tài nghệ của bà, cứ\n"
+	.string "đến gặp bà bất cứ lúc nào!$"
 
 BattleFrontier_Lounge7_Text_RightTutorIntro:
-	.string "Ihihihi!\p"
-	.string "I know it's hard to see now, but I used\n"
-	.string "to be one fantastic TRAINER.\p"
-	.string "I had a reputation as the most\n"
-	.string "invincible SWIMMER around, I tell you!\p"
-	.string "… … … … … …\p"
-	.string "What's wrong?\n"
-	.string "You don't believe me.\p"
-	.string "I'm not like that buffoonish woman over\n"
-	.string "there. I'm actually experienced!\p"
-	.string "I can prove it to you.\n"
-	.string "I can teach your POKéMON hard and\l"
-	.string "yet pretty moves.\p"
-	.string "But my lessons don't come free.\n"
-	.string "How about paying for the moves I teach\l"
-	.string "with a wee bit of Battle Points?$"
+	.string "Hihihi!\p"
+	.string "Giờ nhìn bà có lẽ khó mà nhận ra, nhưng\n"
+	.string "trước kia bà từng là một HLV xuất\l"
+	.string "sắc.\p"
+	.string "Bà từng nổi danh là SWIMMER bất khả\n"
+	.string "chiến bại nhất vùng đấy!\p"
+	.string ". . . . . .\p"
+	.string "Sao thế? Cháu không tin bà à.\p"
+	.string "Bà không giống mụ ngốc nghếch bên kia\n"
+	.string "đâu. Bà có kinh nghiệm thực sự!\p"
+	.string "Bà có thể chứng minh cho cháu xem. Bà\n"
+	.string "có thể dạy POKéMON của cháu những\l"
+	.string "chiêu thức vừa mạnh mẽ vừa đẹp mắt.\p"
+	.string "Nhưng bà không dạy miễn phí đâu. Cháu\n"
+	.string "trả một ít Battle Points cho những\l"
+	.string "chiêu bà dạy nhé?$"
 
 BattleFrontier_Lounge7_Text_RightTutorWelcomeBack:
-	.string "Ihihihi!\p"
-	.string "Have you come to learn hard and\n"
-	.string "yet pretty POKéMON moves?$"
+	.string "Hihihi!\p"
+	.string "Cháu đến để học những chiêu thức\n"
+	.string "POKéMON vừa mạnh mẽ vừa đẹp mắt sao?$"
 
 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong:
-	.string "Those ladies, the way they bad-mouth\n"
-	.string "each other, you probably think that\l"
-	.string "they don't get along.\p"
-	.string "But if that were true, they wouldn't\n"
-	.string "stay out here together, would they?$"
+	.string "Thấy hai bà ấy cứ chê bai nhau, có lẽ\n"
+	.string "bạn nghĩ họ không hòa thuận.\p"
+	.string "Nhưng nếu thật sự như vậy, họ đâu ở\n"
+	.string "ngoài này cùng nhau, đúng không?$"
 
 BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful:
-	.string "When I was just a wee YOUNGSTER,\n"
-	.string "those ladies were strong and beautiful.\p"
-	.string "They were idols among us TRAINERS.\p"
-	.string "Even now, age hasn't dulled their\n"
-	.string "abilities.\p"
-	.string "In fact, their POKéMON moves have\n"
-	.string "grown even more polished.\p"
-	.string "But… For some reason, I can't help\n"
-	.string "but feel this…\p"
-	.string "Time is so cruel…$"
+	.string "Khi tôi còn là một YOUNGSTER bé tí, hai\n"
+	.string "bà ấy vừa mạnh mẽ vừa xinh đẹp.\p"
+	.string "Họ là thần tượng của HLV chúng\n"
+	.string "tôi.\p"
+	.string "Ngay cả bây giờ, tuổi tác vẫn chưa làm\n"
+	.string "tài nghệ của họ mai một.\p"
+	.string "Thật ra, các chiêu thức POKéMON của họ\n"
+	.string "còn trở nên điêu luyện hơn.\p"
+	.string "Nhưng vì lý do nào đó, tôi không khỏi\n"
+	.string "nghĩ rằng...\p"
+	.string "Thời gian thật tàn nhẫn.$"
 
 BattleFrontier_Lounge7_Text_SoftboiledDesc::
-	.string "Recovers up to\n"
-	.string "half the user's\n"
-	.string "maximum HP.$"
+	.string "Hồi phục tối đa một nửa lượng HP tối đa\n"
+	.string "của người dùng.$"
 
 BattleFrontier_Lounge7_Text_SeismicTossDesc::
-	.string "Inflicts damage\n"
-	.string "identical to the\n"
-	.string "user's level.$"
+	.string "Gây sát thương đúng bằng cấp độ của\n"
+	.string "người dùng.$"
 
 BattleFrontier_Lounge7_Text_DreamEaterDesc::
-	.string "Recovers half the\n"
-	.string "damage inflicted\n"
-	.string "on a sleeping foe.$"
+	.string "Hồi phục một nửa lượng sát thương gây\n"
+	.string "ra cho đối thủ đang ngủ.$"
 
 BattleFrontier_Lounge7_Text_MegaPunchDesc::
-	.string "A strong punch\n"
-	.string "thrown with\n"
-	.string "incredible power.$"
+	.string "Cú đấm mạnh được tung ra với sức mạnh\n"
+	.string "kinh người.$"
 
 BattleFrontier_Lounge7_Text_MegaKickDesc::
-	.string "An extremely\n"
-	.string "powerful kick with\n"
-	.string "intense force.$"
+	.string "Cú đá cực mạnh được tung ra với lực\n"
+	.string "dữ dội.$"
 
 BattleFrontier_Lounge7_Text_BodySlamDesc::
-	.string "A full-body slam\n"
-	.string "that may cause\n"
-	.string "paralysis.$"
+	.string "Cú đè bằng toàn thân có thể gây tê liệt.$"
 
 BattleFrontier_Lounge7_Text_RockSlideDesc::
-	.string "Large boulders\n"
-	.string "are hurled. May\n"
-	.string "cause flinching.$"
+	.string "Ném những tảng đá lớn. Có thể khiến đối\n"
+	.string "thủ chùn bước.$"
 
 BattleFrontier_Lounge7_Text_CounterDesc::
-	.string "Retaliates any\n"
-	.string "physical hit with\n"
-	.string "double the power.$"
+	.string "Đáp trả mọi đòn đánh vật lý với sức\n"
+	.string "mạnh gấp đôi.$"
 
 BattleFrontier_Lounge7_Text_ThunderWaveDesc::
-	.string "A weak jolt of\n"
-	.string "electricity that\n"
-	.string "paralyzes the foe.$"
+	.string "Luồng điện yếu làm đối thủ tê liệt.$"
 
 BattleFrontier_Lounge7_Text_SwordsDanceDesc::
-	.string "A fighting dance\n"
-	.string "that sharply\n"
-	.string "raises ATTACK.$"
+	.string "Điệu múa chiến đấu làm ATTACK tăng\n"
+	.string "mạnh.$"
 
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
-	.string "Curls up to con-\n"
-	.string "ceal weak spots\n"
-	.string "and raise DEFENSE.$"
+	.string "Cuộn tròn để che giấu điểm yếu và tăng\n"
+	.string "DEFENSE.$"
 
 BattleFrontier_Lounge7_Text_SnoreDesc::
-	.string "A loud attack\n"
-	.string "that can be used\n"
-	.string "only while asleep.$"
+	.string "Đòn tấn công bằng tiếng ngáy lớn, chỉ\n"
+	.string "dùng được khi đang ngủ.$"
 
 BattleFrontier_Lounge7_Text_MudSlapDesc::
-	.string "Hurls mud in the\n"
-	.string "foe's face to re-\n"
-	.string "duce its accuracy.$"
+	.string "Hất bùn vào mặt đối thủ để giảm độ\n"
+	.string "chính xác.$"
 
 BattleFrontier_Lounge7_Text_SwiftDesc::
-	.string "Sprays star-\n"
-	.string "shaped rays\n"
-	.string "that never miss.$"
+	.string "Bắn ra những tia sáng hình ngôi sao\n"
+	.string "không bao giờ trượt.$"
 
 BattleFrontier_Lounge7_Text_IcyWindDesc::
-	.string "A chilling attack\n"
-	.string "that lowers the\n"
-	.string "foe's SPEED.$"
+	.string "Đòn tấn công lạnh buốt làm giảm SPEED\n"
+	.string "của đối thủ.$"
 
 BattleFrontier_Lounge7_Text_EndureDesc::
-	.string "Endures any at-\n"
-	.string "tack for 1 turn,\n"
-	.string "leaving 1HP.$"
+	.string "Chịu đựng mọi đòn tấn công trong 1\n"
+	.string "lượt và còn lại 1 HP.$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
-	.string "Copies the foe's\n"
-	.string "effect(s) and\n"
-	.string "gives to the user.$"
+	.string "Sao chép các hiệu ứng của đối thủ sang\n"
+	.string "người dùng.$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
-	.string "An icy punch\n"
-	.string "that may\n"
-	.string "freeze the foe.$"
+	.string "Một cú đấm băng giá có thể đóng băng\n"
+	.string "đối thủ.$"
 
 BattleFrontier_Lounge7_Text_ThunderPunchDesc::
-	.string "An electrified\n"
-	.string "punch that may\n"
-	.string "paralyze the foe.$"
+	.string "Một cú đấm tích điện có thể làm đối thủ\n"
+	.string "tê liệt.$"
 
 BattleFrontier_Lounge7_Text_FirePunchDesc::
-	.string "A fiery punch\n"
-	.string "that may burn\n"
-	.string "the foe.$"
+	.string "Một cú đấm rực lửa có thể thiêu bỏng\n"
+	.string "đối thủ.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge7_Text_LeftTutorIntro
+	.global BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack
+	.global BattleFrontier_Lounge7_Text_TeachWhichMove
+	.global BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints
+	.global BattleFrontier_Lounge7_Text_TeachMoveToWhichMon
+	.global BattleFrontier_Lounge7_Text_HaventGotEnoughPoints
+	.global BattleFrontier_Lounge7_Text_IllTakeBattlePoints
+	.global BattleFrontier_Lounge7_Text_YouDontWantTo
+	.global BattleFrontier_Lounge7_Text_RightTutorIntro
+	.global BattleFrontier_Lounge7_Text_RightTutorWelcomeBack
+	.global BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong
+	.global BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful
+	.global BattleFrontier_Lounge7_Text_SoftboiledDesc
+	.global BattleFrontier_Lounge7_Text_SeismicTossDesc
+	.global BattleFrontier_Lounge7_Text_DreamEaterDesc
+	.global BattleFrontier_Lounge7_Text_MegaPunchDesc
+	.global BattleFrontier_Lounge7_Text_MegaKickDesc
+	.global BattleFrontier_Lounge7_Text_BodySlamDesc
+	.global BattleFrontier_Lounge7_Text_RockSlideDesc
+	.global BattleFrontier_Lounge7_Text_CounterDesc
+	.global BattleFrontier_Lounge7_Text_ThunderWaveDesc
+	.global BattleFrontier_Lounge7_Text_SwordsDanceDesc
+	.global BattleFrontier_Lounge7_Text_DefenseCurlDesc
+	.global BattleFrontier_Lounge7_Text_SnoreDesc
+	.global BattleFrontier_Lounge7_Text_MudSlapDesc
+	.global BattleFrontier_Lounge7_Text_SwiftDesc
+	.global BattleFrontier_Lounge7_Text_IcyWindDesc
+	.global BattleFrontier_Lounge7_Text_EndureDesc
+	.global BattleFrontier_Lounge7_Text_PsychUpDesc
+	.global BattleFrontier_Lounge7_Text_IcePunchDesc
+	.global BattleFrontier_Lounge7_Text_ThunderPunchDesc
+	.global BattleFrontier_Lounge7_Text_FirePunchDesc
+@ END GENERATED LOCALIZATION EXPORTS

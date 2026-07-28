@@ -47,12 +47,17 @@ ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
 	end
 
 ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
-	.string "The penetrating cold around these\n"
-	.string "parts is an impediment to training.\p"
-	.string "But with focus, one can overcome!\p"
-	.string "With this FOCUS BAND, buckle down and\n"
-	.string "withstand the cold!$"
+	.string "Cái lạnh thấu xương quanh đây cản trở\n"
+	.string "việc rèn luyện.\p"
+	.string "Nhưng chỉ cần tập trung, ta có thể\n"
+	.string "vượt qua!\p"
+	.string "Hãy dùng FOCUS BAND này, quyết tâm chịu\n"
+	.string "đựng cái lạnh!$"
 
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
-	.string "Everything starts with focus!$"
+	.string "Mọi thứ đều bắt đầu từ sự tập trung!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus
+	.global ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus
+@ END GENERATED LOCALIZATION EXPORTS

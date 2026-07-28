@@ -255,186 +255,201 @@ DewfordTown_Hall_EventScript_ReceivedSludgeBomb::
 	end
 
 DewfordTown_Hall_Text_CantImagineLifeWithoutTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "I can't imagine what life would be like\n"
-	.string "without “{STR_VAR_1}”!$"
+	.string "Thứ gì đang thịnh hành ư? Tất nhiên\n"
+	.string "phải là “{STR_VAR_1}” rồi!\p"
+	.string "Tôi không thể tưởng tượng nổi cuộc\n"
+	.string "sống thiếu “{STR_VAR_1}” sẽ ra\l"
+	.string "sao!$"
 
 DewfordTown_Hall_Text_GettingBoredOfTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "But I'm getting kind of bored with it.\p"
-	.string "I should look for the next big thing.$"
+	.string "Thứ gì đang thịnh hành ư? Tất nhiên\n"
+	.string "phải là “{STR_VAR_1}” rồi!\p"
+	.string "Nhưng tôi bắt đầu thấy hơi chán nó rồi.\p"
+	.string "Tôi nên tìm trào lưu lớn tiếp theo thôi.$"
 
 DewfordTown_Hall_Text_TeachingMonAboutTrend:
-	.string "I'm teaching my POKéMON about\n"
-	.string "“{STR_VAR_1},”\l"
-	.string "but it's not going well.\p"
-	.string "It's a bit too much, I think.$"
+	.string "Tôi đang dạy POKéMON của mình về\n"
+	.string "“{STR_VAR_1}”, nhưng chẳng suôn\l"
+	.string "sẻ gì cả.\p"
+	.string "Có lẽ thứ này hơi quá sức với nó.$"
 
 DewfordTown_Hall_Text_DeepLinkBetweenXAndY:
-	.string "I'm studying up on the hip and trendy\n"
-	.string "“{STR_VAR_1}” now.\p"
-	.string "Is it true that there's a deep link\n"
-	.string "between “{STR_VAR_1}”\l"
-	.string "and “{STR_VAR_2}”?$"
+	.string "Giờ tôi đang tìm hiểu về\n"
+	.string "“{STR_VAR_1}” cực kỳ thời\l"
+	.string "thượng.\p"
+	.string "Có thật là “{STR_VAR_1}” và\n"
+	.string "“{STR_VAR_2}” có mối liên hệ sâu\l"
+	.string "sắc không?$"
 
 DewfordTown_Hall_Text_MyHunchWasRight:
-	.string "Oh!\n"
-	.string "So, my hunch was right!\p"
-	.string "I'm one step closer to being hip and\n"
-	.string "happening, yowza!$"
+	.string "Ồ! Vậy là linh cảm của tôi đã đúng!\p"
+	.string "Tôi lại tiến gần thêm một bước đến đỉnh\n"
+	.string "cao sành điệu rồi, tuyệt quá!$"
 
 DewfordTown_Hall_Text_NotEasyToKeepUp:
-	.string "What?!\n"
-	.string "Is that so?!\p"
-	.string "It's not easy for an older fellow like\n"
-	.string "me to keep up with trends!$"
+	.string "Gì cơ?! Thật vậy sao?!\p"
+	.string "Một người lớn tuổi như tôi đâu dễ bắt\n"
+	.string "kịp các trào lưu!$"
 
 DewfordTown_Hall_Text_TVShowAboutTrend:
-	.string "This whole business about\n"
-	.string "“{STR_VAR_1}”…\l"
-	.string "Isn't there a TV show on it?$"
+	.string "Cả câu chuyện về “{STR_VAR_1}”\n"
+	.string "này... Chẳng phải có một chương trình\l"
+	.string "TV nói về nó sao?$"
 
 DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea:
-	.string "Across the sea…\p"
-	.string "Is “{STR_VAR_1}”\n"
-	.string "even more popular?$"
+	.string "Ở bên kia biển...\p"
+	.string "“{STR_VAR_1}” còn nổi tiếng hơn\n"
+	.string "nữa sao?$"
 
 DewfordTown_Hall_Text_CollectTrendMerchandise:
-	.string "I collect official\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "licensed merchandise.\p"
-	.string "I have official\n"
-	.string "“{STR_VAR_1}” DOLLS…\p"
-	.string "Official “{STR_VAR_1}”\n"
-	.string "brand clothing…\p"
-	.string "And officially licensed\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "picture books.\p"
-	.string "Heheh, I own!\n"
-	.string "I'm not sharing anything with you!$"
+	.string "Tôi sưu tầm hàng hóa\n"
+	.string "“{STR_VAR_1}” được cấp phép\l"
+	.string "chính thức.\p"
+	.string "Tôi có DOLLS “{STR_VAR_1}” chính\n"
+	.string "hãng...\p"
+	.string "Quần áo mang thương hiệu\n"
+	.string "“{STR_VAR_1}” chính hãng...\p"
+	.string "Và cả sách tranh “{STR_VAR_1}”\n"
+	.string "được cấp phép chính thức.\p"
+	.string "Hê hê, tất cả đều là của tôi! Tôi không\n"
+	.string "chia cho bạn thứ gì đâu!$"
 
 DewfordTown_Hall_Text_BooksAboutTrend:
-	.string "IDENTIFYING GOOD\n"
-	.string "“{STR_VAR_1}” &\l"
-	.string "BAD “{STR_VAR_1}”…\p"
-	.string "THE LINK BETWEEN\n"
-	.string "“{STR_VAR_1}” AND\l"
-	.string "POKéMON…\p"
-	.string "USEFUL\n"
-	.string "“{STR_VAR_1}”…\p"
-	.string "It's neatly jammed with books about\n"
-	.string "“{STR_VAR_1}.”$"
+	.string "PHÂN BIỆT “{STR_VAR_1}” TỐT VÀ\n"
+	.string "“{STR_VAR_1}” XẤU...\p"
+	.string "MỐI LIÊN HỆ GIỮA “{STR_VAR_1}”\n"
+	.string "VÀ POKéMON...\p"
+	.string "“{STR_VAR_1}” HỮU ÍCH...\p"
+	.string "Trên giá xếp kín những cuốn sách về\n"
+	.string "“{STR_VAR_1}”.$"
 
 DewfordTown_Hall_Text_TrendsScream:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SCREAM” is the title.$"
-
-DewfordTown_Hall_Text_TrendsSmile:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SMILE” is the title.$"
-
-DewfordTown_Hall_Text_LastTrend:
-	.string "It's titled “THE LAST\n"
+	.string "Tựa sách là “TIẾNG HÉT CỦA\n"
 	.string "{STR_VAR_1}”.$"
 
+DewfordTown_Hall_Text_TrendsSmile:
+	.string "Tựa sách là “NỤ CƯỜI CỦA\n"
+	.string "{STR_VAR_1}”.$"
+
+DewfordTown_Hall_Text_LastTrend:
+	.string "Tựa sách là “{STR_VAR_1} CUỐI\n"
+	.string "CÙNG”.$"
+
 DewfordTown_Hall_Text_BirthOfTrend:
-	.string "It's titled “THE BIRTH OF\n"
+	.string "Tựa sách là “SỰ RA ĐỜI CỦA\n"
 	.string "{STR_VAR_1}”.$"
 
 DewfordTown_Hall_Text_SawTrendCoolestThing:
-	.string "I saw “{STR_VAR_1}”!\n"
-	.string "Cool, huh?\p"
-	.string "It's, like, the coolest thing going!\p"
-	.string "It was awesome!\n"
-	.string "It was the real thing, oh yeah!$"
+	.string "Tôi đã thấy “{STR_VAR_1}” đấy!\n"
+	.string "Ngầu chứ hả?\p"
+	.string "Nó phải gọi là thứ ngầu nhất hiện giờ\n"
+	.string "luôn!\p"
+	.string "Tuyệt vời lắm! Hàng thật chính hiệu\n"
+	.string "đấy, đúng vậy!$"
 
 DewfordTown_Hall_Text_AllegedTrendNotAuthentic:
-	.string "Oh, no, no, no.\p"
-	.string "That alleged\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "you claim to have seen--it's not.\p"
-	.string "The authentic article is much…\n"
-	.string "How should I say it?\l"
-	.string "Sharper, yet more mellow!\p"
-	.string "Ah, no matter. It's astonishing!$"
+	.string "Ồ, không, không, không.\p"
+	.string "Thứ được cho là “{STR_VAR_1}”\n"
+	.string "mà bạn bảo đã nhìn thấy ấy, không phải\l"
+	.string "đâu.\p"
+	.string "Hàng thật phải... Nói sao nhỉ? Sắc sảo\n"
+	.string "hơn, nhưng cũng dịu hơn!\p"
+	.string "À, chẳng quan trọng. Nó tuyệt vời đến\n"
+	.string "kinh ngạc!$"
 
 DewfordTown_Hall_Text_ComposedTrendThemeSong:
-	.string "Hey, listen, I composed a theme song\n"
-	.string "for “{STR_VAR_1}.”\p"
-	.string "“{STR_VAR_1}”\n"
-	.string "is really popular right now.\p"
-	.string "Okay, listen!\n"
-	.string "… …\p"
-	.string "Oh!\n"
-	.string "{STR_VAR_1}!\p"
-	.string "Wonderful\n"
-	.string "{STR_VAR_1}!$"
+	.string "Này, nghe nhé, tôi đã sáng tác một bài\n"
+	.string "hát chủ đề cho “{STR_VAR_1}”.\p"
+	.string "“{STR_VAR_1}” hiện đang nổi\n"
+	.string "tiếng lắm.\p"
+	.string "Được rồi, nghe này! ... ...\p"
+	.string "Ôi! {STR_VAR_1}!\p"
+	.string "{STR_VAR_1} tuyệt vời!$"
 
 DewfordTown_Hall_Text_WorkOnYourSinging:
-	.string "… …\p"
-	.string "I dare say, chap, it would pay for you\n"
-	.string "to work on your singing before you\l"
-	.string "trifle yourself with\l"
-	.string "“{STR_VAR_1}.”$"
+	.string "... ...\p"
+	.string "Theo tôi thì anh bạn nên luyện giọng\n"
+	.string "cho khá hơn trước khi thử sức với\l"
+	.string "“{STR_VAR_1}”.$"
 
 DewfordTown_Hall_Text_OrganizeTrendParty:
-	.string "Anyway, as I was saying earlier, we\n"
-	.string "should get together and organize a\l"
-	.string "“{STR_VAR_1}” party\l"
-	.string "on the island.$"
+	.string "Dù sao, như tôi vừa nói, chúng ta nên tụ\n"
+	.string "họp và tổ chức một bữa tiệc\l"
+	.string "“{STR_VAR_1}” trên đảo.$"
 
 DewfordTown_Hall_Text_BrilliantIndeed:
-	.string "Oh, a smashing good idea!\p"
-	.string "It will settle once and for all\n"
-	.string "who is the best at\l"
-	.string "“{STR_VAR_1}.”\l"
-	.string "Brilliant, indeed!\p"
-	.string "Starting today, our lives will revolve\n"
-	.string "around “{STR_VAR_1}”!$"
+	.string "Ồ, ý tưởng tuyệt cú mèo!\p"
+	.string "Nhờ vậy, chúng ta sẽ phân định dứt\n"
+	.string "khoát ai giỏi “{STR_VAR_1}” nhất.\l"
+	.string "Quả là xuất sắc!\p"
+	.string "Từ hôm nay, cuộc sống của chúng ta sẽ\n"
+	.string "xoay quanh “{STR_VAR_1}”!$"
 
 DewfordTown_Hall_Text_TrendHasBecomePartOfLife:
-	.string "I was thinking, though…\p"
-	.string "Wouldn't you agree that\n"
-	.string "“{STR_VAR_1}” has\l"
-	.string "grown from being something trendy to\l"
-	.string "being a part of our daily lives?$"
+	.string "Nhưng tôi đang nghĩ...\p"
+	.string "Bạn có đồng ý rằng “{STR_VAR_1}”\n"
+	.string "đã từ một trào lưu trở thành một phần\l"
+	.string "trong cuộc sống hằng ngày của chúng ta\l"
+	.string "không?$"
 
 DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind:
-	.string "Beg pardon?\n"
-	.string "That much, what?\p"
-	.string "However, it's true that\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "weighs heavily on your mind, whether\l"
-	.string "you're awake or asleep.\p"
-	.string "Absolutely, you're the\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "PROFESSOR, old sport!$"
+	.string "Xin lỗi? Nhiều đến mức nào cơ?\p"
+	.string "Tuy nhiên, đúng là “{STR_VAR_1}”\n"
+	.string "luôn canh cánh trong tâm trí bạn, dù\l"
+	.string "thức hay ngủ.\p"
+	.string "Chắc chắn rồi, anh bạn chính là\n"
+	.string "PROFESSOR “{STR_VAR_1}”!$"
 
 DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible:
-	.string "If you and me team up as a combo,\n"
-	.string "we'll be invincible when it comes to all\l"
-	.string "things “{STR_VAR_1}”!$"
+	.string "Nếu cậu và tôi hợp thành một đội, chúng\n"
+	.string "ta sẽ vô địch trong mọi chuyện liên quan\l"
+	.string "đến “{STR_VAR_1}”!$"
 
 DewfordTown_Hall_Text_WellBeTrendDuo:
-	.string "Spot on, my friend!\p"
-	.string "We shall be the\n"
-	.string "“{STR_VAR_1}” DUO!\p"
-	.string "Isn't that a ripe image?\n"
-	.string "Hahahah!$"
+	.string "Chính xác, bạn tôi!\p"
+	.string "Chúng ta sẽ là DUO\n"
+	.string "“{STR_VAR_1}”!\p"
+	.string "Nghe oách lắm chứ? Ha ha ha!$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
-	.string "For me, SLUDGE BOMB is at the peak\n"
-	.string "of popularity. It's the one.\p"
-	.string "Hunh? You're telling me that you don't\n"
-	.string "know about SLUDGE BOMB?\p"
-	.string "That's outright pitiful.\n"
-	.string "I'll give you one.$"
+	.string "Với tôi, SLUDGE BOMB đang ở đỉnh cao\n"
+	.string "thịnh hành. Nó là số một.\p"
+	.string "Hả? Cậu bảo mình không biết SLUDGE\n"
+	.string "BOMB sao?\p"
+	.string "Đáng thương thật đấy. Tôi sẽ cho cậu\n"
+	.string "một cái.$"
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
-	.string "I love SLUDGE BOMB.\p"
-	.string "But POKéMON with the move\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "are in, too.$"
+	.string "Tôi rất thích SLUDGE BOMB.\p"
+	.string "Nhưng POKéMON biết chiêu\n"
+	.string "“{STR_VAR_1}” cũng đang thịnh\l"
+	.string "hành.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_Hall_Text_CantImagineLifeWithoutTrend
+	.global DewfordTown_Hall_Text_GettingBoredOfTrend
+	.global DewfordTown_Hall_Text_TeachingMonAboutTrend
+	.global DewfordTown_Hall_Text_DeepLinkBetweenXAndY
+	.global DewfordTown_Hall_Text_MyHunchWasRight
+	.global DewfordTown_Hall_Text_NotEasyToKeepUp
+	.global DewfordTown_Hall_Text_TVShowAboutTrend
+	.global DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea
+	.global DewfordTown_Hall_Text_CollectTrendMerchandise
+	.global DewfordTown_Hall_Text_BooksAboutTrend
+	.global DewfordTown_Hall_Text_TrendsScream
+	.global DewfordTown_Hall_Text_TrendsSmile
+	.global DewfordTown_Hall_Text_LastTrend
+	.global DewfordTown_Hall_Text_BirthOfTrend
+	.global DewfordTown_Hall_Text_SawTrendCoolestThing
+	.global DewfordTown_Hall_Text_AllegedTrendNotAuthentic
+	.global DewfordTown_Hall_Text_ComposedTrendThemeSong
+	.global DewfordTown_Hall_Text_WorkOnYourSinging
+	.global DewfordTown_Hall_Text_OrganizeTrendParty
+	.global DewfordTown_Hall_Text_BrilliantIndeed
+	.global DewfordTown_Hall_Text_TrendHasBecomePartOfLife
+	.global DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind
+	.global DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible
+	.global DewfordTown_Hall_Text_WellBeTrendDuo
+	.global DewfordTown_Hall_Text_GiveYouSludgeBomb
+	.global DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo
+@ END GENERATED LOCALIZATION EXPORTS

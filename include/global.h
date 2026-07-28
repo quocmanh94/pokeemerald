@@ -543,7 +543,8 @@ struct SaveBlock2
              u16 optionsMatchCalls:1;
              u16 optionsModernSmallMechanicsOff:1;
              u16 optionsMidBattleEvolutionOff:1;
-             u16 optionsPadding:6;
+             u16 optionsLanguage:1;
+             u16 optionsPadding:5;
     /*0x92*/ u8 filler_92[0x6];
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;

@@ -34,21 +34,26 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:
-	.string "That man over there, he says weird\n"
-	.string "things!\p"
-	.string "He's funny in a weird way.\n"
-	.string "I doubt I'll forget about him!$"
+	.string "Người đàn ông đằng kia nói toàn những\n"
+	.string "điều kỳ quặc!\p"
+	.string "Ông ấy kỳ quặc mà buồn cười lắm. Chắc\n"
+	.string "tôi chẳng quên được ông ấy đâu!$"
 
 MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
-	.string "When I accessed the RECORD CORNER,\n"
-	.string "the data for what's hot in DEWFORD\l"
-	.string "got updated.\p"
-	.string "Now that bit of data is the same\n"
-	.string "as my friend's!$"
+	.string "Khi tôi truy cập RECORD CORNER, dữ liệu\n"
+	.string "về chủ đề đang thịnh hành ở DEWFORD đã\l"
+	.string "được cập nhật.\p"
+	.string "Giờ phần dữ liệu đó giống hệt của bạn\n"
+	.string "tôi rồi!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
-	.string "A RECORD CORNER opened upstairs in\n"
-	.string "the POKéMON CENTER.\p"
-	.string "I don't know what it's about, but it\n"
-	.string "sounds fun. I'll go check it out!$"
+	.string "Một RECORD CORNER vừa mở ở tầng trên\n"
+	.string "của POKéMON CENTER.\p"
+	.string "Tôi không biết đó là gì, nhưng nghe có\n"
+	.string "vẻ vui. Tôi sẽ lên xem!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings
+	.global MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner
+	.global MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun
+@ END GENERATED LOCALIZATION EXPORTS

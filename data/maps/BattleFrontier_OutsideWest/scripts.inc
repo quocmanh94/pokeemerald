@@ -299,219 +299,250 @@ BattleFrontier_OutsideWest_EventScript_PokefanF::
 	end
 
 BattleFrontier_OutsideWest_Text_BattleDomeSign:
-	.string "This is the BATTLE DOME!\n"
-	.string "Your path to the invincible superstar!$"
+	.string "Đây là BATTLE DOME! Con đường đưa bạn\n"
+	.string "trở thành siêu sao bất bại!$"
 
 BattleFrontier_OutsideWest_Text_BattleFactorySign:
-	.string "This is the BATTLE FACTORY!\n"
-	.string "Seek out the toughest POKéMON!$"
+	.string "Đây là BATTLE FACTORY! Hãy tìm kiếm\n"
+	.string "những POKéMON mạnh nhất!$"
 
 BattleFrontier_OutsideWest_Text_BattlePikeSign:
-	.string "This is the BATTLE PIKE!\n"
-	.string "Choose one of three paths!$"
+	.string "Đây là BATTLE PIKE! Hãy chọn một trong\n"
+	.string "ba lối đi!$"
 
 BattleFrontier_OutsideWest_Text_ThisIsBattleTower:
-	.string "This is the BATTLE TOWER.\p"
-	.string "TRAINERS bring their best-raised\n"
-	.string "POKéMON for elimination-style matches.$"
+	.string "Đây là BATTLE TOWER.\p"
+	.string "HLV đưa những POKéMON được\n"
+	.string "huấn luyện tốt nhất của mình tới tranh\l"
+	.string "tài theo thể thức loại trực tiếp.$"
 
 BattleFrontier_OutsideWest_Text_MayISeeYourTicket:
-	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your TICKET?$"
+	.string "Xin chào, bạn đến để đi phà phải không?\n"
+	.string "Cho tôi xem TICKET được chứ?$"
 
 BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard:
-	.string "{PLAYER} doesn't have the TICKET…\p"
-	.string "I'm terribly sorry.\p"
-	.string "You must have a TICKET to board\n"
-	.string "the ferry.$"
+	.string "{PLAYER} không có TICKET...\p"
+	.string "Tôi vô cùng xin lỗi.\p"
+	.string "Bạn phải có TICKET mới được lên phà.$"
 
 BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo:
-	.string "{PLAYER} flashed the TICKET.\p"
-	.string "Perfect! That's all you need!\p"
-	.string "And where would you like to go?$"
+	.string "{PLAYER} giơ TICKET ra.\p"
+	.string "Hoàn hảo! Chỉ cần vậy thôi!\p"
+	.string "Bạn muốn đi đâu?$"
 
 BattleFrontier_OutsideWest_Text_SlateportItIs:
-	.string "SLATEPORT CITY it is, then!$"
+	.string "Vậy thì đến SLATEPORT CITY!$"
 
 BattleFrontier_OutsideWest_Text_LilycoveItIs:
-	.string "LILYCOVE CITY it is, then!$"
+	.string "Vậy thì đến LILYCOVE CITY!$"
 
 BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime:
-	.string "Please sail with us another time!$"
+	.string "Mong lần sau bạn lại đi cùng chúng tôi!$"
 
 BattleFrontier_OutsideWest_Text_PleaseBoardFerry:
-	.string "Please board the ferry and wait for\n"
-	.string "departure.$"
+	.string "Xin hãy lên phà và chờ khởi hành.$"
 
 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo:
-	.string "Then, where would you like to go?$"
+	.string "Vậy bạn muốn đi đâu?$"
 
 BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends:
-	.string "I'm the best out of all my friends.\n"
-	.string "But here…\l"
-	.string "I've been useless!$"
+	.string "Trong nhóm bạn, tôi là người giỏi nhất.\n"
+	.string "Nhưng ở đây... tôi chẳng làm được gì\l"
+	.string "cả!$"
 
 BattleFrontier_OutsideWest_Text_CantFindBattleTower:
-	.string "I want to go to the BATTLE TOWER,\n"
-	.string "but I can't find it even though I have\l"
-	.string "a map of the BATTLE FRONTIER.\p"
-	.string "This place is just too big!$"
+	.string "Tôi muốn đến BATTLE TOWER, nhưng dù có\n"
+	.string "bản đồ BATTLE FRONTIER, tôi vẫn không\l"
+	.string "tìm ra.\p"
+	.string "Nơi này rộng quá!$"
 
 BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere:
-	.string "I wanted to take a challenge as soon\n"
-	.string "as I arrived here.\p"
-	.string "But on the way, I got seasick…\n"
-	.string "Urrrrp…$"
+	.string "Tôi định vừa tới nơi là tham gia thử\n"
+	.string "thách ngay.\p"
+	.string "Nhưng dọc đường tôi bị say sóng... Ựa...$"
 
 BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere:
-	.string "It's not as if just anyone can come\n"
-	.string "here, you know?\p"
-	.string "Only those TRAINERS who've been\n"
-	.string "recognized as tough are brought here.\p"
-	.string "That's why many TRAINERS don't even\n"
-	.string "know about the BATTLE FRONTIER.$"
+	.string "Không phải ai cũng có thể đến đây đâu,\n"
+	.string "biết không?\p"
+	.string "Chỉ những HLV được công nhận là\n"
+	.string "mạnh mới được đưa tới đây.\p"
+	.string "Vì thế nhiều HLV thậm chí còn\n"
+	.string "không biết đến BATTLE FRONTIER.$"
 
 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons:
-	.string "Hey, bro…\p"
-	.string "Are you sure we can make challenges\n"
-	.string "even if we don't have any POKéMON?$"
+	.string "Này, anh...\p"
+	.string "Anh có chắc là không có POKéMON thì\n"
+	.string "chúng ta vẫn tham gia thử thách được\l"
+	.string "không?$"
 
 BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons:
-	.string "Uh…\n"
-	.string "I'm sure it'll be okay.\p"
-	.string "I think…\p"
-	.string "But remember that big scary guy?\n"
-	.string "He said, “I'll lend you POKéMON!”$"
+	.string "Ừm... chắc là không sao đâu.\p"
+	.string "Anh nghĩ vậy...\p"
+	.string "Nhưng em nhớ gã to xác đáng sợ đó\n"
+	.string "chứ? Hắn nói: 'Tôi sẽ cho các cậu mượn\l"
+	.string "POKéMON!'$"
 
 BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons:
-	.string "That's the BATTLE FACTORY.\n"
-	.string "You can rent strong POKéMON there.\p"
-	.string "But it makes me wonder.\n"
-	.string "Who's raising those rental POKéMON?$"
+	.string "Đó là BATTLE FACTORY. Bạn có thể thuê\n"
+	.string "những POKéMON mạnh ở đó.\p"
+	.string "Nhưng tôi cứ thắc mắc. Ai đã nuôi những\n"
+	.string "POKéMON cho thuê ấy nhỉ?$"
 
 BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper:
-	.string "I'm scared of going into the BATTLE\n"
-	.string "PIKE because of SEVIPER…\p"
-	.string "B-but I came all the way here, so I will\n"
-	.string "try to conquer everything!\l"
-	.string "…Shudder…$"
+	.string "Tôi sợ vào BATTLE PIKE vì SEVIPER...\p"
+	.string "N-nhưng tôi đã lặn lội đến tận đây, nên\n"
+	.string "sẽ cố chinh phục mọi thứ! ...R-run quá...$"
 
 BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors:
-	.string "Let's play rock, paper, scissors!\n"
-	.string "One, two, three!\p"
-	.string "… … … … … …$"
+	.string "Chơi oẳn tù tì nhé! Một, hai, ba!\p"
+	.string "... ... ... ... ... ...$"
 
 BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge:
-	.string "Yay! I won!\n"
-	.string "I will take the BATTLE PIKE challenge!$"
+	.string "Hay quá! Tôi thắng rồi! Tôi sẽ thử sức ở\n"
+	.string "BATTLE PIKE!$"
 
 BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge:
-	.string "Oh, no…\n"
-	.string "I lost.\p"
-	.string "I guess I'm not very lucky today.\n"
-	.string "I'll put off my BATTLE PIKE challenge\l"
-	.string "until tomorrow.$"
+	.string "Ôi không... Tôi thua rồi.\p"
+	.string "Hôm nay chắc tôi không may mắn lắm. Thử\n"
+	.string "thách BATTLE PIKE để mai vậy.$"
 
 BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling:
-	.string "I believe I'm the only person here who,\n"
-	.string "for some unknown reason, would choose\l"
-	.string "fishing over battling.\p"
-	.string "Huh? You can't catch anything here?\n"
-	.string "That's disappointing…$"
+	.string "Có lẽ tôi là người duy nhất ở đây,\n"
+	.string "chẳng hiểu vì sao, lại thích câu cá hơn\l"
+	.string "chiến đấu.\p"
+	.string "Hả? Ở đây không câu được gì à? Thất\n"
+	.string "vọng thật...$"
 
 BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol:
-	.string "Today, I'm going to keep battling, no\n"
-	.string "matter what, until I get a Symbol.$"
+	.string "Hôm nay, dù có chuyện gì, tôi cũng sẽ\n"
+	.string "tiếp tục chiến đấu cho đến khi giành\l"
+	.string "được một Symbol.$"
 
 BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome:
-	.string "Oh? You're off to challenge\n"
-	.string "the BATTLE DOME?\p"
-	.string "I'll wish you the best of luck.\n"
-	.string "Let us both win our way up and meet\l"
-	.string "in challenges.$"
+	.string "Ồ? Bạn sắp đến thử thách BATTLE DOME\n"
+	.string "à?\p"
+	.string "Chúc bạn thật nhiều may mắn. Mong cả\n"
+	.string "hai chúng ta cùng chiến thắng và gặp lại\l"
+	.string "nhau trong các thử thách.$"
 
 BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa:
-	.string "Grandpa, over here!\n"
-	.string "The BATTLE DOME is here!\l"
-	.string "Go get 'em, Grandpa!$"
+	.string "Ông ơi, bên này! BATTLE DOME ở đây! Cố\n"
+	.string "lên ông!$"
 
 BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe:
-	.string "Ah, so this here is the BATTLE DOME?\n"
-	.string "I won't let GENTLEMEN beat me!\p"
-	.string "But where is the entrance?$"
+	.string "À, vậy đây là BATTLE DOME sao? Ta sẽ\n"
+	.string "không để GENTLEMEN đánh bại mình!\p"
+	.string "Nhưng lối vào ở đâu nhỉ?$"
 
 BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo:
-	.string "There used to be nothing here not all\n"
-	.string "that long ago.\p"
-	.string "But, now look at this place! Amazing!\n"
-	.string "I'll bring my mother out to see this.$"
+	.string "Cách đây chưa lâu, nơi này chẳng có gì\n"
+	.string "cả.\p"
+	.string "Nhưng giờ nhìn xem! Thật đáng kinh\n"
+	.string "ngạc! Tôi sẽ đưa mẹ đến đây xem.$"
 
 BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier:
-	.string "I've finally arrived at the BATTLE\n"
+	.string "Cuối cùng tôi cũng đến BATTLE\n"
 	.string "FRONTIER!\p"
-	.string "I'm sure to grab attention with\n"
-	.string "my looks and ability!$"
+	.string "Với ngoại hình và năng lực của mình,\n"
+	.string "chắc chắn tôi sẽ thu hút mọi ánh nhìn!$"
 
 BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople:
-	.string "Munch, munch…\p"
-	.string "It looks like this square's filled with\n"
-	.string "tough people.\p"
-	.string "Munch, munch…$"
+	.string "Nhai, nhai...\p"
+	.string "Có vẻ quảng trường này toàn người\n"
+	.string "mạnh.\p"
+	.string "Nhai, nhai...$"
 
 BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike:
-	.string "Crunch, munch…\p"
-	.string "A while back, I met this older girl\n"
-	.string "at the BATTLE PIKE.\p"
-	.string "She had these eyes that were scary\n"
-	.string "in a real ornery way.\p"
-	.string "Crunch, munch…\p"
-	.string "She got all furious: “Will you quit\n"
-	.string "eating!” Then she whaled on me.\p"
-	.string "It was a hair-raising kind of\n"
-	.string "scary experience, sure enough.\p"
-	.string "Crunch, munch…$"
+	.string "Rôm rốp, nhồm nhoàm...\p"
+	.string "Một thời gian trước, tôi gặp một chị\n"
+	.string "lớn tuổi hơn ở BATTLE PIKE.\p"
+	.string "Ánh mắt chị ta dữ dằn đến đáng sợ.\p"
+	.string "Rôm rốp, nhồm nhoàm...\p"
+	.string "Chị ta nổi giận đùng đùng: 'Có thôi ăn đi\n"
+	.string "không!' Rồi cho tôi một trận.\p"
+	.string "Quả là một trải nghiệm đáng sợ đến\n"
+	.string "dựng tóc gáy.\p"
+	.string "Rôm rốp, nhồm nhoàm...$"
 
 BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet:
-	.string "Huh? Will you listen to yourself?\n"
-	.string "That's nothing!\p"
-	.string "Why, the last time I cheered for him,\n"
-	.string "our eyes met and sparks flew!$"
+	.string "Hả? Nghe cậu nói kìa! Chuyện đó có là\n"
+	.string "gì!\p"
+	.string "Lần trước tôi cổ vũ anh ấy, mắt chúng\n"
+	.string "tôi chạm nhau, tia lửa bắn tung tóe đấy!$"
 
 BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering:
-	.string "Whaaaaaat?!\n"
-	.string "Pfft!\p"
-	.string "That only happened because\n"
-	.string "I happened to be sitting next to you!\p"
-	.string "The DOME ACE only looked our way\n"
-	.string "because my cheering was so loud!$"
+	.string "Cááááái gì?! Hừ!\p"
+	.string "Chuyện đó chỉ xảy ra vì tôi tình cờ\n"
+	.string "ngồi cạnh cậu thôi!\p"
+	.string "DOME ACE nhìn về phía chúng ta chỉ vì\n"
+	.string "tôi cổ vũ quá lớn!$"
 
 BattleFrontier_OutsideWest_Text_DomeAceIsMine:
-	.string "Oh, shush!\n"
-	.string "Keep that racket down!\p"
-	.string "You fair-weather fans should stick\n"
-	.string "to cheering for some GYM LEADER!\p"
-	.string "The DOME ACE is mine!\n"
-	.string "The only idol for me!$"
+	.string "Ôi, im đi! Bớt ồn ào lại!\p"
+	.string "Đám người hâm mộ lúc nắng lúc mưa các\n"
+	.string "cậu cứ đi cổ vũ GYM LEADER nào đó đi!\p"
+	.string "DOME ACE là của tôi! Là thần tượng duy\n"
+	.string "nhất của tôi!$"
 
 BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
-	.string "Those people squabbling over there…\p"
-	.string "It's hard to believe, but they once\n"
-	.string "were TRAINERS, and good ones, too.\p"
-	.string "They used to be incredibly tough,\n"
-	.string "and they were famous, too.\p"
-	.string "But they were obliterated by this\n"
-	.string "certain TRAINER at a tournament.\p"
-	.string "They were so thoroughly whipped,\n"
-	.string "they became smitten by the TRAINER.\p"
-	.string "Now they're just fans of the TRAINER.\n"
-	.string "They go cheer for their idol at the\l"
-	.string "BATTLE DOME every day now.$"
+	.string "Những người đang cãi nhau đằng kia...\p"
+	.string "Khó tin thật, nhưng trước đây họ từng\n"
+	.string "là HLV, lại còn rất giỏi.\p"
+	.string "Họ từng mạnh khủng khiếp và cũng rất\n"
+	.string "nổi tiếng.\p"
+	.string "Nhưng rồi họ bị một HLV nọ nghiền\n"
+	.string "nát tại một giải đấu.\p"
+	.string "Thua tâm phục khẩu phục đến mức họ mê\n"
+	.string "mẩn HLV đó.\p"
+	.string "Giờ họ chỉ còn là người hâm mộ của\n"
+	.string "HLV ấy. Ngày nào họ cũng đến\l"
+	.string "BATTLE DOME cổ vũ thần tượng.$"
 
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
-	.string "I heard a rumor that someone saw\n"
-	.string "a POKéMON with an unusually long tail\l"
-	.string "somewhere in the BATTLE FRONTIER.\p"
-	.string "It must be adorable. I'm sure of it…\p"
-	.string "Oh, challenges can wait. I feel driven\n"
-	.string "to find the delightful creature!$"
+	.string "Tôi nghe đồn có người nhìn thấy một\n"
+	.string "POKéMON với cái đuôi dài khác thường ở\l"
+	.string "đâu đó trong BATTLE FRONTIER.\p"
+	.string "Hẳn nó phải đáng yêu lắm. Tôi chắc\n"
+	.string "chắn...\p"
+	.string "Thôi, thử thách để sau. Tôi nhất định\n"
+	.string "phải tìm cho ra sinh vật đáng yêu ấy!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_OutsideWest_Text_BattleDomeSign
+	.global BattleFrontier_OutsideWest_Text_BattleFactorySign
+	.global BattleFrontier_OutsideWest_Text_BattlePikeSign
+	.global BattleFrontier_OutsideWest_Text_ThisIsBattleTower
+	.global BattleFrontier_OutsideWest_Text_MayISeeYourTicket
+	.global BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard
+	.global BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo
+	.global BattleFrontier_OutsideWest_Text_SlateportItIs
+	.global BattleFrontier_OutsideWest_Text_LilycoveItIs
+	.global BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime
+	.global BattleFrontier_OutsideWest_Text_PleaseBoardFerry
+	.global BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo
+	.global BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends
+	.global BattleFrontier_OutsideWest_Text_CantFindBattleTower
+	.global BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere
+	.global BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere
+	.global BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons
+	.global BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons
+	.global BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons
+	.global BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper
+	.global BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors
+	.global BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge
+	.global BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge
+	.global BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling
+	.global BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol
+	.global BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome
+	.global BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa
+	.global BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe
+	.global BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo
+	.global BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier
+	.global BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople
+	.global BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike
+	.global BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet
+	.global BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering
+	.global BattleFrontier_OutsideWest_Text_DomeAceIsMine
+	.global BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers
+	.global BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier
+@ END GENERATED LOCALIZATION EXPORTS

@@ -419,109 +419,121 @@ RusturfTunnel_EventScript_Mike::
 	end
 
 RusturfTunnel_Text_ComeAndGetSome:
-	.string "What, are you coming?\n"
-	.string "Come and get some, then!$"
+	.string "Gì, ngươi đến thật à? Vậy thì nhào vô!$"
 
 RusturfTunnel_Text_Peeko:
 	.string "PEEKO: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
-	.string "Grah, keelhaul it all!\p"
-	.string "That hostage POKéMON turned out to\n"
-	.string "be worthless!\p"
-	.string "And to think I made a getaway…\n"
-	.string "In this tunnel to nowhere!\p"
-	.string "Hey! You!\n"
-	.string "So you want to battle me?$"
+	.string "Gừ, quỷ tha ma bắt!\p"
+	.string "Con POKéMON làm con tin đó hóa ra chẳng\n"
+	.string "có giá trị gì!\p"
+	.string "Thế mà ta lại chạy trốn... Vào cái đường\n"
+	.string "hầm chẳng dẫn đến đâu này!\p"
+	.string "Này! Ngươi! Muốn đấu với ta sao?$"
 
 RusturfTunnel_Text_GruntDefeat:
-	.string "Urrrggh! My career in crime comes to\n"
-	.string "a dead end!$"
+	.string "Ưrrr! Sự nghiệp tội phạm của ta đến\n"
+	.string "đường cùng rồi!$"
 
 RusturfTunnel_Text_GruntTakePackage:
-	.string "This is plain not right…\p"
-	.string "The BOSS told me this would be a\n"
-	.string "slick-and-easy job to pull.\p"
-	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
-	.string "Tch!\n"
-	.string "You want it back that badly, take it!$"
+	.string "Chuyện này thật chẳng ra làm sao...\p"
+	.string "Thủ lĩnh bảo ta đây sẽ là phi vụ ngon ăn\n"
+	.string "và dễ như trở bàn tay.\p"
+	.string "Ta chỉ cần đánh cắp một kiện hàng nào\n"
+	.string "đó từ DEVON.\p"
+	.string "Chậc! Ngươi muốn lấy lại đến thế thì\n"
+	.string "cầm đi!$"
 
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
-	.string "PEEKO!\n"
-	.string "Am I glad to see you're safe!$"
+	.string "PEEKO! Thấy con bình an ta mừng quá!$"
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
-	.string "PEEKO owes her life to you!\p"
-	.string "They call me MR. BRINEY.\n"
-	.string "And, you are?\p"
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "Ah, so you are {PLAYER}{KUN}!\n"
-	.string "I sincerely thank you!\p"
-	.string "Now, if there's anything that troubles\n"
-	.string "you, don't hesitate to tell me!\p"
-	.string "You can usually find me in my cottage\n"
-	.string "by the sea near PETALBURG WOODS.\p"
-	.string "Come, PEEKO, we should make our way\n"
-	.string "home.\p"
+	.string "PEEKO mang ơn cứu mạng của bạn!\p"
+	.string "Mọi người gọi tôi là MR. BRINEY. Còn bạn\n"
+	.string "là?\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...\p"
+	.string "À, vậy bạn là {PLAYER}{KUN}! Tôi chân\n"
+	.string "thành cảm ơn bạn!\p"
+	.string "Sau này nếu có chuyện gì khó khăn,\n"
+	.string "đừng ngần ngại nói với tôi!\p"
+	.string "Bạn thường có thể tìm thấy tôi tại căn\n"
+	.string "nhà nhỏ bên biển gần PETALBURG WOODS.\p"
+	.string "Đi thôi, PEEKO, chúng ta nên về nhà.\p"
 	.string "PEEKO: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
-	.string "… …\p"
-	.string "Why can't they keep digging?\n"
-	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
-	.string "TOWN just beyond here…\p"
-	.string "If RUSTBORO and VERDANTURF were\n"
-	.string "joined by this tunnel, I could visit\l"
-	.string "her every day…\p"
-	.string "But this…\n"
-	.string "What am I to do?$"
+	.string "... ...\p"
+	.string "Tại sao họ không thể đào tiếp? Lớp đá\n"
+	.string "nền quá cứng sao?\p"
+	.string "Người tôi yêu đang chờ tại VERDANTURF\n"
+	.string "TOWN, ngay phía bên kia...\p"
+	.string "Nếu RUSTBORO và VERDANTURF được nối\n"
+	.string "với nhau bằng đường hầm này, ngày nào\l"
+	.string "tôi cũng có thể đến thăm cô ấy...\p"
+	.string "Nhưng thế này... Tôi phải làm sao đây?$"
 
 RusturfTunnel_Text_ToGetToVerdanturf:
-	.string "To get from RUSTBORO to VERDANTURF,\n"
-	.string "you need to go to DEWFORD, then pass\l"
-	.string "through SLATEPORT and MAUVILLE…$"
+	.string "Muốn đi từ RUSTBORO đến VERDANTURF,\n"
+	.string "bạn phải tới DEWFORD, rồi đi qua\l"
+	.string "SLATEPORT và MAUVILLE...$"
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM:
-	.string "Wow! You shattered that boulder\n"
-	.string "blocking the way.\p"
-	.string "To show you how much I appreciate it,\n"
-	.string "I'd like you to have this HM.$"
+	.string "Chà! Bạn đã phá tan tảng đá chắn\n"
+	.string "đường đó.\p"
+	.string "Để bày tỏ lòng biết ơn, tôi muốn tặng\n"
+	.string "bạn HM này.$"
 
 RusturfTunnel_Text_ExplainStrength:
-	.string "That HM contains STRENGTH.\p"
-	.string "If a muscular POKéMON were to learn\n"
-	.string "that, it would be able to move even\l"
-	.string "large boulders.$"
+	.string "HM đó chứa STRENGTH.\p"
+	.string "Nếu một POKéMON khỏe mạnh học được\n"
+	.string "chiêu này, nó sẽ có thể di chuyển cả\l"
+	.string "những tảng đá lớn.$"
 
 RusturfTunnel_Text_WandaReunion:
-	.string "WANDA!\n"
-	.string "Now I can see you anytime!\p"
-	.string "WANDA: That's…wonderful.\p"
-	.string "Please, take some rest at my home.$"
+	.string "WANDA! Giờ anh có thể gặp em bất cứ lúc\n"
+	.string "nào!\p"
+	.string "WANDA: Thật... tuyệt vời.\p"
+	.string "Anh hãy về nhà em nghỉ ngơi một chút\n"
+	.string "nhé.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
-	.string "On the other side of this rock…\n"
-	.string "My boyfriend is there.\p"
-	.string "He… He's not just digging the tunnel\n"
-	.string "to come see me.\p"
-	.string "He works his hands raw and rough\n"
-	.string "for the benefit of everyone.$"
+	.string "Ở phía bên kia tảng đá này... Bạn trai\n"
+	.string "tôi đang ở đó.\p"
+	.string "Anh ấy... Anh ấy đào đường hầm không\n"
+	.string "chỉ để đến gặp tôi.\p"
+	.string "Anh ấy làm đến chai sần cả tay vì lợi\n"
+	.string "ích của mọi người.$"
 
 RusturfTunnel_Text_MikeIntro:
-	.string "What do you call a wild man up in the\n"
-	.string "mountains? A mountain man, right?\p"
-	.string "So why don't they call a POKéMON in\n"
-	.string "the mountains a mountain POKéMON?$"
+	.string "Người đàn ông sống hoang dã trên núi\n"
+	.string "được gọi là gì? Người miền núi, phải\l"
+	.string "không?\p"
+	.string "Vậy sao POKéMON sống trên núi lại không\n"
+	.string "được gọi là POKéMON miền núi?$"
 
 RusturfTunnel_Text_MikeDefeat:
-	.string "My POKéMON…\n"
-	.string "Ran out of power…$"
+	.string "POKéMON của tôi... Hết sức rồi...$"
 
 RusturfTunnel_Text_MikePostBattle:
-	.string "They halted development here to\n"
-	.string "protect POKéMON, right?\l"
-	.string "There's a feel-good story!$"
+	.string "Họ đã dừng việc khai phá nơi này để bảo\n"
+	.string "vệ POKéMON, phải không? Nghe thật ấm\l"
+	.string "lòng!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RusturfTunnel_Text_ComeAndGetSome
+	.global RusturfTunnel_Text_GruntIntro
+	.global RusturfTunnel_Text_GruntDefeat
+	.global RusturfTunnel_Text_GruntTakePackage
+	.global RusturfTunnel_Text_PeekoGladToSeeYouSafe
+	.global RusturfTunnel_Text_ThankYouLetsGoHomePeeko
+	.global RusturfTunnel_Text_WhyCantTheyKeepDigging
+	.global RusturfTunnel_Text_ToGetToVerdanturf
+	.global RusturfTunnel_Text_YouShatteredBoulderTakeHM
+	.global RusturfTunnel_Text_ExplainStrength
+	.global RusturfTunnel_Text_WandaReunion
+	.global RusturfTunnel_Text_BoyfriendOnOtherSideOfRock
+	.global RusturfTunnel_Text_MikeIntro
+	.global RusturfTunnel_Text_MikeDefeat
+	.global RusturfTunnel_Text_MikePostBattle
+@ END GENERATED LOCALIZATION EXPORTS

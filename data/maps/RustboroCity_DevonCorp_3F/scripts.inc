@@ -196,111 +196,128 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
-	.string "I'm MR. STONE, the PRESIDENT of\n"
-	.string "the DEVON CORPORATION.\p"
-	.string "I'd just got word about you!\p"
-	.string "You saved our staff not just once,\n"
-	.string "but twice!\p"
-	.string "I have a favor to ask of an amazing\n"
-	.string "person like you.\p"
-	.string "I understand that you're delivering\n"
-	.string "a package to SLATEPORT's SHIPYARD.\p"
-	.string "Well, on the way, could you stop off in\n"
-	.string "DEWFORD TOWN?\p"
-	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in DEWFORD.$"
+	.string "Tôi là MR. STONE, PRESIDENT của DEVON\n"
+	.string "CORPORATION.\p"
+	.string "Tôi vừa nghe tin về cháu!\p"
+	.string "Cháu đã cứu nhân viên của chúng tôi\n"
+	.string "không chỉ một mà đến hai lần!\p"
+	.string "Tôi có một việc muốn nhờ một người\n"
+	.string "tuyệt vời như cháu.\p"
+	.string "Tôi được biết cháu đang giao một kiện\n"
+	.string "hàng đến SHIPYARD ở SLATEPORT.\p"
+	.string "Trên đường đi, cháu có thể ghé qua\n"
+	.string "DEWFORD TOWN không?\p"
+	.string "Tôi mong cháu chuyển một LETTER cho\n"
+	.string "STEVEN ở DEWFORD.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
-	.string "MR. STONE: Now, you should know that\n"
-	.string "I am a great PRESIDENT.\p"
-	.string "So, I'd never be so cheap as to ask\n"
-	.string "a favor for nothing in return.\p"
-	.string "That's why I want you to have this!$"
+	.string "MR. STONE: Cháu nên biết rằng tôi là một\n"
+	.string "PRESIDENT tài giỏi.\p"
+	.string "Vì thế, tôi không đời nào keo kiệt đến\n"
+	.string "mức nhờ vả mà không đáp lại.\p"
+	.string "Cho nên tôi muốn cháu nhận lấy thứ này!$"
 
 RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
-	.string "{PLAYER} received a POKéNAV.$"
+	.string "{PLAYER} đã nhận được một POKéNAV.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
-	.string "MR. STONE: That device…\p"
-	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
-	.string "for short.\p"
-	.string "It's an indispensable tool for any\n"
-	.string "TRAINER on an adventure.\p"
-	.string "It has a map of the HOENN region.\p"
-	.string "You can check the locations of\n"
-	.string "DEWFORD and SLATEPORT easily!\p"
-	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
-	.string "I think it would be best if you rested\n"
-	.string "up before you go on your way.$"
+	.string "MR. STONE: Thiết bị đó...\p"
+	.string "Nó là POKéMON NAVIGATOR, gọi tắt là\n"
+	.string "POKéNAV.\p"
+	.string "Đây là công cụ không thể thiếu với mọi\n"
+	.string "HLV đang phiêu lưu.\p"
+	.string "Nó có bản đồ vùng HOENN.\p"
+	.string "Cháu có thể dễ dàng kiểm tra vị trí của\n"
+	.string "DEWFORD và SLATEPORT!\p"
+	.string "Nhân tiện, tôi nghe nói những kẻ tội\n"
+	.string "phạm nham hiểm, hình như là MAGMA và\l"
+	.string "AQUA, đang gây rắc rối khắp nơi.\p"
+	.string "Tôi nghĩ tốt nhất cháu nên nghỉ ngơi\n"
+	.string "trước khi tiếp tục lên đường.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
-	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
-	.string "go with caution and care!$"
+	.string "MR. STONE: Vậy nhé, {PLAYER}{KUN}, hãy\n"
+	.string "luôn thận trọng và cẩn thận!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
-	.string "MR. STONE: I'm counting on you!$"
+	.string "MR. STONE: Tôi trông cậy vào cháu!$"
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
-	.string "MR. STONE: You delivered my LETTER?\n"
-	.string "Thank you kindly!\p"
-	.string "This is my way of thanking you.\n"
-	.string "It should help you, a TRAINER.$"
+	.string "MR. STONE: Cháu đã giao LETTER của tôi\n"
+	.string "rồi sao? Cảm ơn cháu rất nhiều!\p"
+	.string "Đây là cách tôi cảm ơn cháu. Nó hẳn sẽ\n"
+	.string "giúp ích cho một HLV như cháu.$"
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: A POKéMON holding that\n"
-	.string "EXP. SHARE will be given some of the\l"
-	.string "EXP Points from battle.\p"
-	.string "It will get EXP Points even if it didn't\n"
-	.string "actually battle.\p"
-	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
+	.string "MR. STONE: POKéMON mang EXP. SHARE sẽ\n"
+	.string "nhận được một phần EXP Points từ trận\l"
+	.string "đấu.\p"
+	.string "Nó vẫn nhận được EXP Points ngay cả\n"
+	.string "khi không trực tiếp chiến đấu.\p"
+	.string "Theo tôi, EXP. SHARE rất hữu ích khi rèn\n"
+	.string "luyện POKéMON yếu.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
-	.string "MR. STONE: Since my youth, I've immersed\n"
-	.string "myself in work.\p"
-	.string "Consequently, I'm not familiar with\n"
-	.string "trends and that sort of thing.\p"
-	.string "But do young people all want to be\n"
-	.string "TRAINERS in the POKéMON LEAGUE?$"
+	.string "MR. STONE: Từ thời trẻ, tôi đã vùi mình\n"
+	.string "vào công việc.\p"
+	.string "Vì vậy, tôi không hiểu rõ các trào lưu\n"
+	.string "và những thứ tương tự.\p"
+	.string "Nhưng có phải giới trẻ đều muốn trở\n"
+	.string "thành HLV trong POKéMON LEAGUE\l"
+	.string "không?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
-	.string "This is the DEVON CORPORATION's\n"
-	.string "third floor.\p"
-	.string "Our PRESIDENT's OFFICE is on\n"
-	.string "this floor.\p"
-	.string "Anyway, I can't tell you how much I'm\n"
-	.string "grateful for what you've done.\p"
-	.string "Um… By the way, that parcel\n"
-	.string "you got back for us…\p"
-	.string "Could I get you to deliver that to\n"
-	.string "the SHIPYARD in SLATEPORT?\p"
-	.string "It would be awful if those robbers\n"
-	.string "tried to take it again.\p"
-	.string "Uh… Hehehe, so, uh, could I count\n"
-	.string "on you to do that for me?\p"
-	.string "Oh, that's right.\n"
-	.string "Could you wait here a second?$"
+	.string "Đây là tầng ba của DEVON CORPORATION.\p"
+	.string "PRESIDENT's OFFICE nằm trên tầng này.\p"
+	.string "Dù sao, tôi thật sự không biết phải cảm\n"
+	.string "ơn bạn thế nào vì những việc bạn đã\l"
+	.string "làm.\p"
+	.string "Ờ... Nhân tiện, kiện hàng bạn lấy lại cho\n"
+	.string "chúng tôi...\p"
+	.string "Tôi có thể nhờ bạn giao nó đến\n"
+	.string "SHIPYARD ở SLATEPORT không?\p"
+	.string "Sẽ rất tệ nếu bọn cướp lại tìm cách lấy\n"
+	.string "nó.\p"
+	.string "Ờ... Hehehe, vậy, ờ, tôi có thể trông cậy\n"
+	.string "vào bạn chứ?\p"
+	.string "Ồ, phải rồi. Bạn có thể chờ ở đây một lát\n"
+	.string "không?$"
 
 RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe:
-	.string "Our PRESIDENT would like to have\n"
-	.string "a word with you.\p"
-	.string "Please come with me.$"
+	.string "Ngài PRESIDENT của chúng tôi muốn nói\n"
+	.string "chuyện với bạn.\p"
+	.string "Xin hãy đi cùng tôi.$"
 
 RustboroCity_DevonCorp_3F_Text_PleaseGoAhead:
-	.string "Please, go ahead.$"
+	.string "Xin mời đi tiếp.$"
 
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
-	.string "If you visit the SHIPYARD in SLATEPORT,\n"
-	.string "you should go see CAPT. STERN.$"
+	.string "Nếu đến SHIPYARD ở SLATEPORT, bạn nên\n"
+	.string "ghé gặp CAPT. STERN.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
-	.string "DEVON's new products, the REPEAT BALL\n"
-	.string "and TIMER BALL, have become hugely\l"
-	.string "popular among TRAINERS.$"
+	.string "Hai sản phẩm mới của DEVON là REPEAT\n"
+	.string "BALL và TIMER BALL đã trở nên cực kỳ\l"
+	.string "phổ biến với các HLV.$"
 
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
-	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by the PRESIDENT.$"
+	.string "Đây là bộ sưu tập đá quý hiếm do\n"
+	.string "PRESIDENT sưu tầm.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor
+	.global RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis
+	.global RustboroCity_DevonCorp_3F_Text_ReceivedPokenav
+	.global RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp
+	.global RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare
+	.global RustboroCity_DevonCorp_3F_Text_CountingOnYou
+	.global RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter
+	.global RustboroCity_DevonCorp_3F_Text_ExplainExpShare
+	.global RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends
+	.global RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere
+	.global RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe
+	.global RustboroCity_DevonCorp_3F_Text_PleaseGoAhead
+	.global RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard
+	.global RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular
+	.global RustboroCity_DevonCorp_3F_Text_RareRocksDisplay
+@ END GENERATED LOCALIZATION EXPORTS

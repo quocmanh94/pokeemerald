@@ -1,17 +1,26 @@
 Text_BootUpPC:
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} đã khởi động PC.$"
 
 gText_WhichPCShouldBeAccessed::
-	.string "Which PC should be accessed?$"
+	.string "Bạn muốn truy cập PC nào?$"
 
 gText_AccessedSomeonesPC::
-	.string "Accessed SOMEONE'S PC.$"
+	.string "Đã truy cập SOMEONE'S PC.$"
 
 gText_StorageSystemOpened::
-	.string "POKéMON Storage System opened.$"
+	.string "POKéMON Storage System đã mở.$"
 
 gText_AccessedPlayersPC::
-	.string "Accessed {PLAYER}'s PC.$"
+	.string "Đã truy cập PC của {PLAYER}.$"
 
 gText_AccessedLanettesPC::
-	.string "Accessed LANETTE's PC.$"
+	.string "Đã truy cập PC của LANETTE.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Text_BootUpPC
+	.global gText_WhichPCShouldBeAccessed
+	.global gText_AccessedSomeonesPC
+	.global gText_StorageSystemOpened
+	.global gText_AccessedPlayersPC
+	.global gText_AccessedLanettesPC
+@ END GENERATED LOCALIZATION EXPORTS

@@ -269,122 +269,140 @@ BattleFrontier_BattleDomePreBattleRoom_Movement_PlayerEnterDoor:
 	step_end
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound1:
-	.string "Your 1st-round match is next.\n"
-	.string "Are you ready?$"
+	.string "Trận vòng 1 của bạn sắp bắt đầu. Bạn\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound2:
-	.string "Your 2nd-round match is next.\n"
-	.string "Are you ready?$"
+	.string "Trận vòng 2 của bạn sắp bắt đầu. Bạn\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForSemifinals:
-	.string "Your semifinal match is next.\n"
-	.string "Are you ready?$"
+	.string "Trận bán kết của bạn sắp bắt đầu. Bạn\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals:
-	.string "Your final match is next.\n"
-	.string "Are you ready?$"
+	.string "Trận chung kết của bạn sắp bắt đầu. Bạn\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons:
-	.string "Please choose the two POKéMON\n"
-	.string "that are to appear in battle.$"
+	.string "Vui lòng chọn hai POKéMON sẽ ra trận.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
-	.string "Right this way, please.$"
+	.string "Xin mời đi lối này.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth:
-	.string "Thank you for competing!\p"
-	.string "I'll restore your POKéMON to\n"
-	.string "full health.$"
+	.string "Cảm ơn bạn đã thi đấu!\p"
+	.string "Tôi sẽ hồi phục hoàn toàn cho POKéMON\n"
+	.string "của bạn.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete:
-	.string "All 1st-round matches have been\n"
-	.string "completed.\p"
-	.string "These are the teams that advanced!$"
+	.string "Tất cả các trận vòng 1 đã kết thúc.\p"
+	.string "Đây là những đội đã đi tiếp!$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round2Complete:
-	.string "All 2nd-round matches have been\n"
-	.string "completed.\p"
-	.string "These are the teams that advanced!$"
+	.string "Tất cả các trận vòng 2 đã kết thúc.\p"
+	.string "Đây là những đội đã đi tiếp!$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete:
-	.string "All semifinal matches have been\n"
-	.string "completed.\p"
-	.string "These are the teams that advanced!$"
+	.string "Tất cả các trận bán kết đã kết thúc.\p"
+	.string "Đây là những đội đã đi tiếp!$"
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2:
-	.string "Congratulations for getting through\n"
-	.string "the 1st round.\p"
-	.string "The 2nd round is next.\n"
-	.string "Are you ready?$"
+	.string "Chúc mừng bạn đã vượt qua vòng 1.\p"
+	.string "Tiếp theo là vòng 2. Bạn sẵn sàng chưa?$"
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals:
-	.string "Congratulations for advancing\n"
-	.string "to the semifinals.\p"
-	.string "The best four teams meet in this round.\n"
-	.string "Are you ready?$"
+	.string "Chúc mừng bạn đã vào bán kết.\p"
+	.string "Bốn đội mạnh nhất sẽ gặp nhau ở vòng\n"
+	.string "này. Bạn sẵn sàng chưa?$"
 
 @ Unused
 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals:
-	.string "Congratulations for advancing\n"
-	.string "to the final match.\p"
-	.string "You're one win from the championship.\n"
-	.string "Are you ready?$"
+	.string "Chúc mừng bạn đã vào chung kết.\p"
+	.string "Bạn chỉ còn cách chức vô địch một trận\n"
+	.string "thắng. Bạn sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer:
-	.string "{PLAYER}'s next opponent\n"
-	.string "is this TRAINER.$"
+	.string "Đối thủ tiếp theo của {PLAYER} là\n"
+	.string "HLV này.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound1:
-	.string "The tournament is in the 1st round.$"
+	.string "Giải đấu đang ở vòng 1.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound2:
-	.string "The tournament is in the 2nd round.$"
+	.string "Giải đấu đang ở vòng 2.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInSemifinals:
-	.string "The tournament is in the semifinals.$"
+	.string "Giải đấu đang ở vòng bán kết.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals:
-	.string "The tournament is up to the final.$"
+	.string "Giải đấu đã đi đến trận chung kết.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame:
-	.string "Would you like to save and\n"
-	.string "quit the game?$"
+	.string "Bạn có muốn lưu rồi thoát trò chơi\n"
+	.string "không?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge:
-	.string "Would you like to retire from your\n"
-	.string "Battle Tournament challenge?$"
+	.string "Bạn có muốn rút khỏi thử thách Battle\n"
+	.string "Tournament không?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait:
-	.string "I am saving your data.\n"
-	.string "Please wait.$"
+	.string "Tôi đang lưu dữ liệu của bạn. Vui lòng\n"
+	.string "chờ.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch:
-	.string "Should I record your last match\n"
-	.string "on your FRONTIER PASS?$"
+	.string "Tôi có nên ghi lại trận đấu vừa rồi vào\n"
+	.string "FRONTIER PASS của bạn không?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver:
-	.string "Congratulations for advancing\n"
-	.string "to the final match.\p"
-	.string "For the final match, you will challenge\n"
-	.string "the DOME ACE TUCKER.\p"
-	.string "Are you ready?$"
+	.string "Chúc mừng bạn đã vào chung kết.\p"
+	.string "Trong trận chung kết, bạn sẽ thách đấu\n"
+	.string "DOME ACE TUCKER.\p"
+	.string "Bạn sẵn sàng chưa?$"
 
 @ Identical to ReadyForTuckerSilver
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold:
-	.string "Congratulations for advancing\n"
-	.string "to the final match.\p"
-	.string "For the final match, you will challenge\n"
-	.string "the DOME ACE TUCKER.\p"
-	.string "Are you ready?$"
+	.string "Chúc mừng bạn đã vào chung kết.\p"
+	.string "Trong trận chung kết, bạn sẽ thách đấu\n"
+	.string "DOME ACE TUCKER.\p"
+	.string "Bạn sẵn sàng chưa?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort:
-	.string "Your final battle against TUCKER is\n"
-	.string "next. Are you ready?$"
+	.string "Tiếp theo là trận chung kết của bạn với\n"
+	.string "TUCKER. Bạn sẵn sàng chưa?$"
 
 @ Identical again
 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort:
-	.string "Your final battle against TUCKER is\n"
-	.string "next. Are you ready?$"
+	.string "Tiếp theo là trận chung kết của bạn với\n"
+	.string "TUCKER. Bạn sẵn sàng chưa?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound1
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound2
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForSemifinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_Round2Complete
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound1
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound2
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInSemifinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort
+	.global BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort
+@ END GENERATED LOCALIZATION EXPORTS

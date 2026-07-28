@@ -12,6 +12,7 @@
 #include "international_string_util.h"
 #include "item.h"
 #include "item_icon.h"
+#include "localization.h"
 #include "main.h"
 #include "malloc.h"
 #include "menu.h"
@@ -193,24 +194,24 @@ static const u8 sText_Dex_OWN[] = _("OWN");
 
 static const u8 sText_EVO_Buttons[] = _("{DPAD_UPDOWN}EVOs  {A_BUTTON}CHECK");
 static const u8 sText_EVO_Name[] = _("{STR_VAR_3}:");
-static const u8 sText_EVO_PreEvo[] = _("{STR_VAR_1} evolves from {STR_VAR_2}");
-static const u8 sText_EVO_FRIENDSHIP[] = _("{LV}{UP_ARROW}, high friendship");
-static const u8 sText_EVO_FRIENDSHIP_DAY[] = _("{LV}{UP_ARROW}, high friendship, day");
-static const u8 sText_EVO_FRIENDSHIP_NIGHT[] = _("{LV}{UP_ARROW}, high friendship, night");
-static const u8 sText_EVO_LEVEL[] = _("{LV}{UP_ARROW} to {STR_VAR_2}");
-static const u8 sText_EVO_TRADE[] = _("Trading");
-static const u8 sText_EVO_TRADE_ITEM[] = _("Trading, holding {STR_VAR_2}");
-static const u8 sText_EVO_ITEM[] = _("{STR_VAR_2} is used");
-static const u8 sText_EVO_LEVEL_ATK_GT_DEF[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Atk > Def");
-static const u8 sText_EVO_LEVEL_ATK_EQ_DEF[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Atk = Def");
-static const u8 sText_EVO_LEVEL_ATK_LT_DEF[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Atk < Def");
-static const u8 sText_EVO_LEVEL_SILCOON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Silcoon persona");
-static const u8 sText_EVO_LEVEL_CASCOON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Cascoon persona");
-static const u8 sText_EVO_LEVEL_NINJASK[] = _("{LV}{UP_ARROW} to {STR_VAR_2}");
-static const u8 sText_EVO_LEVEL_SHEDINJA[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, party<6, 1x POKéBALL");
-static const u8 sText_EVO_BEAUTY[] = _("{LV}{UP_ARROW}, high beauty");
-static const u8 sText_EVO_UNKNOWN[] = _("Method unknown");
-static const u8 sText_EVO_NONE[] = _("{STR_VAR_1} has no evolution.");
+static const u8 sText_EVO_PreEvo[] = _("{STR_VAR_1} tiến hoá từ {STR_VAR_2}");
+static const u8 sText_EVO_FRIENDSHIP[] = _("{LV}{UP_ARROW}, thân thiết cao");
+static const u8 sText_EVO_FRIENDSHIP_DAY[] = _("{LV}{UP_ARROW}, thân thiết cao, ban ngày");
+static const u8 sText_EVO_FRIENDSHIP_NIGHT[] = _("{LV}{UP_ARROW}, thân thiết cao, ban đêm");
+static const u8 sText_EVO_LEVEL[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}");
+static const u8 sText_EVO_TRADE[] = _("Trao đổi");
+static const u8 sText_EVO_TRADE_ITEM[] = _("Trao đổi khi giữ {STR_VAR_2}");
+static const u8 sText_EVO_ITEM[] = _("Dùng {STR_VAR_2}");
+static const u8 sText_EVO_LEVEL_ATK_GT_DEF[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, Atk > Def");
+static const u8 sText_EVO_LEVEL_ATK_EQ_DEF[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, Atk = Def");
+static const u8 sText_EVO_LEVEL_ATK_LT_DEF[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, Atk < Def");
+static const u8 sText_EVO_LEVEL_SILCOON[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, dạng Silcoon");
+static const u8 sText_EVO_LEVEL_CASCOON[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, dạng Cascoon");
+static const u8 sText_EVO_LEVEL_NINJASK[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}");
+static const u8 sText_EVO_LEVEL_SHEDINJA[] = _("{LV}{UP_ARROW} đến {STR_VAR_2}, đội<6, 1 POKéBALL");
+static const u8 sText_EVO_BEAUTY[] = _("{LV}{UP_ARROW}, BEAUTY cao");
+static const u8 sText_EVO_UNKNOWN[] = _("Chưa rõ cách tiến hoá");
+static const u8 sText_EVO_NONE[] = _("{STR_VAR_1} không tiến hoá.");
 static const u8 sText_PlusSymbol[] = _("+");
 
 static const u16 sPokedexPlus_Default_Pal[] = INCBIN_U16("graphics/pokedex/plus/palette_default.gbapal");
@@ -1296,6 +1297,10 @@ static const struct BgTemplate sInfoScreen_BgTemplate[] =
 #define WIN_VU_METER 3
 #define WIN_NAVIGATION_BUTTONS 4
 
+#define INFO_DESCRIPTION_LEFT 8
+#define INFO_DESCRIPTION_WIDTH 224
+#define INFO_DESCRIPTION_MAX_LINES 4
+
 static const struct WindowTemplate sInfoScreen_WindowTemplates[] =
 {
     [WIN_INFO] =
@@ -1362,6 +1367,10 @@ static const struct WindowTemplate sInfoScreen_WindowTemplates[] =
 #define WIN_STATS_ABILITIES 9
 #define WIN_STATS_LEFT_UNUSED 10
 #define WIN_STATS_END WIN_STATS_LEFT_UNUSED
+
+#define STATS_MOVE_DESCRIPTION_LEFT 5
+#define STATS_MOVE_DESCRIPTION_TOP 5
+#define STATS_MOVE_DESCRIPTION_WIDTH 134
 
 static const struct WindowTemplate sStatsScreen_WindowTemplates[] =
 {
@@ -4185,15 +4194,61 @@ static void SpriteCB_SlideCaughtMonToCenter(struct Sprite *sprite)
 #undef tPersonalityLo
 #undef tPersonalityHi
 
+static u8 CopyWrappedPokedexText(u8 *dst, const u8 *src, u8 fontId, u16 maxWidth)
+{
+    u8 *lineStart = dst;
+    u8 *lastSpace = NULL;
+    u8 lineCount = 1;
+
+    src = GetLocalizedString(src);
+
+    while (*src != EOS)
+    {
+        u8 character = *src++;
+
+        if (character == CHAR_NEWLINE || character == CHAR_PROMPT_SCROLL || character == CHAR_PROMPT_CLEAR)
+            character = CHAR_SPACE;
+
+        if (character == CHAR_SPACE)
+        {
+            if (dst == lineStart || dst[-1] == CHAR_SPACE || dst[-1] == CHAR_NEWLINE)
+                continue;
+            lastSpace = dst;
+        }
+
+        *dst++ = character;
+        *dst = EOS;
+
+        if (GetStringWidth(fontId, lineStart, 0) > maxWidth && lastSpace != NULL)
+        {
+            *lastSpace = CHAR_NEWLINE;
+            lineStart = lastSpace + 1;
+            lastSpace = NULL;
+            lineCount++;
+        }
+    }
+
+    if (dst > lineStart && dst[-1] == CHAR_SPACE)
+        dst--;
+    *dst = EOS;
+
+    return lineCount;
+}
+
 // Print data
-static void PrintInfoScreenText(const u8 *str, u8 left, u8 top)
+static void PrintInfoScreenTextWithFont(const u8 *str, u8 fontId, u8 left, u8 top)
 {
     u8 color[3];
     color[0] = TEXT_COLOR_TRANSPARENT;
     color[1] = TEXT_DYNAMIC_COLOR_6;
     color[2] = TEXT_COLOR_LIGHT_GRAY;
 
-    AddTextPrinterParameterized4(0, 1, left, top, 0, 0, color, -1, str);
+    AddTextPrinterParameterized4(0, fontId, left, top, 0, 0, color, -1, str);
+}
+
+static void PrintInfoScreenText(const u8 *str, u8 left, u8 top)
+{
+    PrintInfoScreenTextWithFont(str, FONT_NORMAL, left, top);
 }
 
 static void PrintInfoScreenTextWhite(const u8 *str, u8 left, u8 top)
@@ -4246,7 +4301,7 @@ static void PrintStatsScreenTextSmall(u8 windowId, const u8 *str, u8 left, u8 to
     color[1] = TEXT_DYNAMIC_COLOR_6;
     color[2] = TEXT_COLOR_LIGHT_GRAY;
 
-    AddTextPrinterParameterized4(windowId, 0, left, top, 0, 0, color, 0, str);
+    AddTextPrinterParameterized4(windowId, FONT_SMALL, left, top, 0, 0, color, 0, str);
 }
 
 static void PrintStatsScreenTextSmallWhite(u8 windowId, const u8 *str, u8 left, u8 top)
@@ -4353,6 +4408,8 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
 {
     u8 str[16];
     u8 str2[32];
+    u8 descriptionFont;
+    u8 descriptionLines;
     u16 species;
     const u8 *name;
     const u8 *category;
@@ -4398,7 +4455,20 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     }
     else
         description = sExpandedPlaceholder_PokedexDescription;
-    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 93);
+
+    descriptionFont = FONT_NORMAL;
+    descriptionLines = CopyWrappedPokedexText(gStringVar4, description, descriptionFont, INFO_DESCRIPTION_WIDTH);
+    if (descriptionLines > INFO_DESCRIPTION_MAX_LINES)
+    {
+        descriptionFont = FONT_NARROW;
+        CopyWrappedPokedexText(gStringVar4, description, descriptionFont, INFO_DESCRIPTION_WIDTH);
+    }
+    PrintInfoScreenTextWithFont(
+        gStringVar4,
+        descriptionFont,
+        INFO_DESCRIPTION_LEFT + GetStringCenterAlignXOffset(descriptionFont, gStringVar4, INFO_DESCRIPTION_WIDTH),
+        93
+    );
 
     // Type Icon(s)
     if (owned)
@@ -5164,23 +5234,24 @@ static void PrintStatsScreen_Moves_Description(u8 taskId)
 {
     u8 selected = sPokedexView->moveSelected;
     u16 move;
-    u8 moves_x = 5;
-    u8 moves_y = 5;
+    const u8 *description;
 
     // Move
     move = sStatsMoves[selected];
 
     // Move description
     if (gTasks[taskId].data[5] == 0)
-    {
-        StringCopy(gStringVar4, gMoveDescriptionPointers[(move - 1)]);
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_DESCRIPTION, gStringVar4, moves_x, moves_y);
-    }
+        description = gMoveDescriptionPointers[move - 1];
     else
-    {
-        StringCopy(gStringVar4, gContestEffectDescriptionPointers[gContestMoves[move].effect]);
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_DESCRIPTION, gStringVar4, moves_x, moves_y);
-    }
+        description = gContestEffectDescriptionPointers[gContestMoves[move].effect];
+
+    CopyWrappedPokedexText(gStringVar4, description, FONT_SMALL, STATS_MOVE_DESCRIPTION_WIDTH);
+    PrintStatsScreenTextSmall(
+        WIN_STATS_MOVES_DESCRIPTION,
+        gStringVar4,
+        STATS_MOVE_DESCRIPTION_LEFT,
+        STATS_MOVE_DESCRIPTION_TOP
+    );
 }
 
 static void PrintStatsScreen_Moves_BottomText(u8 taskId)
@@ -7959,3 +8030,25 @@ static void ClearSearchParameterBoxText(void)
 {
     ClearSearchMenuRect(144, 8, 96, 96);
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02647 = sText_EVO_PreEvo;
+const u8 *const gLocalizationSource_C02648 = sText_EVO_FRIENDSHIP;
+const u8 *const gLocalizationSource_C02649 = sText_EVO_FRIENDSHIP_DAY;
+const u8 *const gLocalizationSource_C02650 = sText_EVO_FRIENDSHIP_NIGHT;
+const u8 *const gLocalizationSource_C02651 = sText_EVO_LEVEL;
+const u8 *const gLocalizationSource_C02652 = sText_EVO_TRADE;
+const u8 *const gLocalizationSource_C02653 = sText_EVO_TRADE_ITEM;
+const u8 *const gLocalizationSource_C02654 = sText_EVO_ITEM;
+const u8 *const gLocalizationSource_C02655 = sText_EVO_LEVEL_ATK_GT_DEF;
+const u8 *const gLocalizationSource_C02656 = sText_EVO_LEVEL_ATK_EQ_DEF;
+const u8 *const gLocalizationSource_C02657 = sText_EVO_LEVEL_ATK_LT_DEF;
+const u8 *const gLocalizationSource_C02658 = sText_EVO_LEVEL_SILCOON;
+const u8 *const gLocalizationSource_C02659 = sText_EVO_LEVEL_CASCOON;
+const u8 *const gLocalizationSource_C02660 = sText_EVO_LEVEL_NINJASK;
+const u8 *const gLocalizationSource_C02661 = sText_EVO_LEVEL_SHEDINJA;
+const u8 *const gLocalizationSource_C02662 = sText_EVO_BEAUTY;
+const u8 *const gLocalizationSource_C02663 = sText_EVO_UNKNOWN;
+const u8 *const gLocalizationSource_C02664 = sText_EVO_NONE;
+// END GENERATED LOCALIZATION EXPORTS

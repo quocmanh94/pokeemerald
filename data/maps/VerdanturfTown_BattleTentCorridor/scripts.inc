@@ -43,32 +43,38 @@ VerdanturfTown_BattleTentCorridor_Movement_AttendantEnterDoor:
 @ Leftover text from when this was a Contest Hall in R/S
 @ Unused
 VerdanturfTown_ContestHall_Text_WhichContestYouEntering:
-	.string "Which CONTEST are you entering?\n"
-	.string "Want a piece of advice?\p"
-	.string "In any CONTEST, for example, a CUTE\n"
-	.string "CONTEST, I don't think they judge you\l"
-	.string "only on cuteness in the first round.\p"
-	.string "You need to work out ways for raising\n"
-	.string "POKéMON better.$"
+	.string "Bạn sẽ tham gia cuộc thi nào? Muốn nghe\n"
+	.string "một lời khuyên không?\p"
+	.string "Trong bất kỳ cuộc thi nào, chẳng hạn\n"
+	.string "CUTE CONTEST, tôi nghĩ vòng đầu không\l"
+	.string "chỉ chấm mỗi độ đáng yêu.\p"
+	.string "Bạn cần tìm cách nuôi dưỡng POKéMON\n"
+	.string "tốt hơn nữa.$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_RaisedMonToBeCute:
-	.string "I raised my POKéMON to be cute.\p"
-	.string "I found out you can put POKéMON in\n"
-	.string "a CONTEST for cuteness!\p"
-	.string "I'm so glad I raised my POKéMON with\n"
-	.string "loving care…$"
+	.string "Tôi đã nuôi POKéMON của mình thật đáng\n"
+	.string "yêu.\p"
+	.string "Rồi tôi phát hiện có thể cho POKéMON\n"
+	.string "tham gia cuộc thi về độ đáng yêu!\p"
+	.string "Tôi thật mừng vì đã hết lòng yêu\n"
+	.string "thương và chăm sóc POKéMON...$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_MyMonRules:
-	.string "My POKéMON rules!\p"
-	.string "It's cool, tough yet beautiful, cute,\n"
-	.string "and smart. It's complete!\p"
-	.string "I may as well go for wins in every\n"
-	.string "single CONTEST.$"
+	.string "POKéMON của tôi là số một!\p"
+	.string "Nó ngầu, mạnh mẽ mà vẫn xinh đẹp, đáng\n"
+	.string "yêu và thông minh. Hoàn hảo!\p"
+	.string "Tôi sẽ giành chiến thắng trong mọi\n"
+	.string "cuộc thi luôn.$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_NormalRankStage:
-	.string "POKéMON CONTESTS\n"
-	.string "NORMAL RANK STAGE!$"
+	.string "POKéMON CONTESTS NORMAL RANK STAGE!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_ContestHall_Text_WhichContestYouEntering
+	.global VerdanturfTown_ContestHall_Text_RaisedMonToBeCute
+	.global VerdanturfTown_ContestHall_Text_MyMonRules
+	.global VerdanturfTown_ContestHall_Text_NormalRankStage
+@ END GENERATED LOCALIZATION EXPORTS

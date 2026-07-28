@@ -459,205 +459,232 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy:
-	.string "UNCLE: It's because of POKéMON that\n"
-	.string "this boy's got more pep, I suppose…\l"
-	.string "But he's become a bit too peppy…$"
+	.string "CHÚ: Chắc nhờ POKéMON mà cậu bé này\n"
+	.string "khỏe khoắn hơn... Nhưng giờ nó lại hơi\l"
+	.string "quá sung sức...$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
-	.string "WALLY: Aww, UNCLE, please?\p"
-	.string "I want to challenge this GYM and see\n"
-	.string "how much better I've become.\p"
-	.string "Please? May I, please?$"
+	.string "WALLY: Ôi, CHÚ, cho cháu thử đi mà!\p"
+	.string "Cháu muốn thách đấu GYM này để xem\n"
+	.string "mình đã tiến bộ đến đâu.\p"
+	.string "Đi mà? Cho cháu thử nhé?$"
 
 MauvilleCity_Text_UncleYourePushingIt:
-	.string "UNCLE: Now hold on, WALLY.\p"
-	.string "Since you started living with POKéMON,\n"
-	.string "you have grown quite a lot stronger.\p"
-	.string "But don't you think you're pushing it\n"
-	.string "to suddenly challenge a GYM?$"
+	.string "CHÚ: Khoan đã, WALLY.\p"
+	.string "Từ khi bắt đầu sống cùng POKéMON, cháu\n"
+	.string "đã mạnh lên rất nhiều.\p"
+	.string "Nhưng đột nhiên thách đấu một GYM,\n"
+	.string "cháu không thấy mình hơi quá sức sao?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
-	.string "WALLY: I'm not pushing it.\p"
-	.string "If I combine forces with RALTS,\n"
-	.string "we can beat anyone!$"
+	.string "WALLY: Cháu không hề quá sức.\p"
+	.string "Nếu cháu và RALTS hợp sức, bọn cháu có\n"
+	.string "thể đánh bại bất kỳ ai!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
-	.string "WALLY: Oh! Hi, {PLAYER}!\p"
-	.string "I've gotten a lot stronger since\n"
-	.string "we met.\p"
-	.string "{PLAYER}, I want you and my UNCLE to\n"
-	.string "understand that.\p"
-	.string "{PLAYER}, please, will you have\n"
-	.string "a battle with me?$"
+	.string "WALLY: Ồ! Chào {PLAYER}!\p"
+	.string "Từ lần gặp trước, mình đã mạnh lên rất\n"
+	.string "nhiều.\p"
+	.string "{PLAYER}, mình muốn cậu và CHÚ hiểu\n"
+	.string "điều đó.\p"
+	.string "{PLAYER}, làm ơn đấu với mình một\n"
+	.string "trận nhé?$"
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
-	.string "WALLY: Oh… If you won't battle me,\n"
-	.string "{PLAYER}, my UNCLE won't know that I've\l"
-	.string "become really strong.$"
+	.string "WALLY: Ồ... Nếu cậu không đấu với mình,\n"
+	.string "{PLAYER}, CHÚ sẽ không biết mình đã\l"
+	.string "trở nên mạnh đến mức nào.$"
 
 MauvilleCity_Text_UncleCanYouBattleWally:
-	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
-	.string "On WALLY's behalf, can I ask you to\l"
-	.string "battle with him just this once?\p"
-	.string "I don't think he's going to listen to\n"
-	.string "any reason the way he is now.$"
+	.string "CHÚ: {PLAYER}{KUN}, phải không? Vì\n"
+	.string "WALLY, chú có thể nhờ cháu đấu với nó\l"
+	.string "đúng một lần được không?\p"
+	.string "Với tình trạng hiện giờ, chú nghĩ nó sẽ\n"
+	.string "chẳng chịu nghe ai khuyên đâu.$"
 
 MauvilleCity_Text_WallyPleaseBattleMe:
-	.string "WALLY: {PLAYER}, please!\n"
-	.string "Battle with me, please.$"
+	.string "WALLY: {PLAYER}, làm ơn! Hãy đấu với\n"
+	.string "mình đi.$"
 
 MauvilleCity_Text_WallyHereICome:
-	.string "WALLY: {PLAYER}, thank you.\p"
-	.string "Okay… Here I come!$"
+	.string "WALLY: {PLAYER}, cảm ơn cậu.\p"
+	.string "Được rồi... Mình tới đây!$"
 
 MauvilleCity_Text_WallyDefeat:
-	.string "WALLY: … … … … … … …\p"
-	.string "… … … … … … … …\p"
-	.string "I lost…$"
+	.string "WALLY: ... ... ... ... ... ... ...\p"
+	.string "... ... ... ... ... ... ... ...\p"
+	.string "Mình thua rồi...$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
-	.string "WALLY: UNCLE…\n"
-	.string "I'll go back to VERDANTURF…$"
+	.string "WALLY: CHÚ... Cháu sẽ trở về\n"
+	.string "VERDANTURF...$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
-	.string "{PLAYER}, thank you.\n"
-	.string "Being a TRAINER is tough, isn't it?\p"
-	.string "It's not enough just to have POKéMON\n"
-	.string "and make them battle. That isn't what\l"
-	.string "being a real TRAINER is about.$"
+	.string "{PLAYER}, cảm ơn cậu. Làm HLV\n"
+	.string "thật khó, phải không?\p"
+	.string "Chỉ có POKéMON rồi cho chúng chiến đấu\n"
+	.string "thôi thì chưa đủ. Một HLV thực thụ\l"
+	.string "không chỉ có vậy.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
-	.string "UNCLE: WALLY, there's no need to be so\n"
-	.string "down on yourself.\p"
-	.string "Why, what's keeping you from becoming\n"
-	.string "stronger and stronger?\p"
-	.string "Come on, let's go home.\n"
-	.string "Everyone's waiting for you.$"
+	.string "CHÚ: WALLY, cháu không cần phải thất\n"
+	.string "vọng về bản thân như thế.\p"
+	.string "Có gì ngăn cháu ngày càng mạnh hơn\n"
+	.string "đâu?\p"
+	.string "Nào, về nhà thôi. Mọi người đang chờ\n"
+	.string "cháu.$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
-	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
-	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
-	.string "Why don't you visit us in VERDANTURF\n"
-	.string "sometime?\l"
-	.string "I'm sure WALLY would enjoy it.$"
+	.string "CHÚ: {PLAYER}{KUN}, giờ chú mới\n"
+	.string "nhận ra cháu hẳn là HLV đã trông\l"
+	.string "chừng WALLY khi nó bắt POKéMON.\p"
+	.string "Khi nào ghé thăm nhà chú ở VERDANTURF\n"
+	.string "nhé? Chú chắc WALLY sẽ vui lắm.$"
 
 
 MauvilleCity_Text_WallyPokenavCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "WALLY: Oh, hello, {PLAYER}!\p"
-	.string "I just wanted to tell you that\n"
-	.string "my uncle bought me a POKéNAV!\p"
-	.string "Now I can get in touch with you\n"
-	.string "anytime, {PLAYER}!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+	.string "... ... ... ... ... ... ... ... ... ... ... Bíp!\p"
+	.string "WALLY: Ồ, chào {PLAYER}!\p"
+	.string "Mình chỉ muốn báo rằng CHÚ đã mua\n"
+	.string "cho mình một chiếc POKéNAV!\p"
+	.string "Giờ mình có thể liên lạc với cậu bất cứ\n"
+	.string "lúc nào, {PLAYER}!\p"
+	.string "... ... ... ... ... ... ... ... ... ... ... Tách!$"
 
 MauvilleCity_Text_RegisteredWally:
-	.string "Registered WALLY\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký WALLY vào POKéNAV.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "SCOTT: Hehe…\n"
-	.string "I was watching that match!\p"
-	.string "You're friends with that boy WALLY,\n"
-	.string "aren't you?\p"
-	.string "But you didn't hold anything back\n"
-	.string "and beat him impressively.\p"
-	.string "Yeah! That's what a real POKéMON\n"
-	.string "battle is all about!\p"
-	.string "I idolize TRAINERS like that!\p"
-	.string "… … … … … …\n"
-	.string "I'll be cheering for you!$"
+	.string "SCOTT: Hehe... Ta đã xem trận đấu đó!\p"
+	.string "Cháu là bạn của cậu bé WALLY ấy, phải\n"
+	.string "không?\p"
+	.string "Nhưng cháu không hề nương tay và đã\n"
+	.string "đánh bại cậu ấy thật ngoạn mục.\p"
+	.string "Đúng vậy! Một trận đấu POKéMON thực\n"
+	.string "thụ phải như thế!\p"
+	.string "Ta rất ngưỡng mộ những HLV như\n"
+	.string "vậy!\p"
+	.string "... ... ... ... ... ... Ta sẽ cổ vũ cho cháu!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
-	.string "You look like you have a lot of zip!\l"
-	.string "That's a good thing, wahahahaha!\p"
-	.string "Fine! I've decided!\n"
-	.string "I need a favor, {PLAYER}{KUN}!\p"
-	.string "MAUVILLE CITY has an underground\n"
-	.string "sector called NEW MAUVILLE.\p"
-	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
-	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
-	.string "haywire. It's getting unsafe.\p"
-	.string "Here, this is the KEY to get into\n"
-	.string "NEW MAUVILLE.$"
+	.string "WATTSON: Ô, {PLAYER}{KUN}! Trông cháu\n"
+	.string "đầy sức sống đấy! Tốt lắm, wahahahaha!\p"
+	.string "Được! Ta quyết định rồi! Ta cần cháu\n"
+	.string "giúp một việc, {PLAYER}{KUN}!\p"
+	.string "Bên dưới MAUVILLE CITY có một khu vực\n"
+	.string "gọi là NEW MAUVILLE.\p"
+	.string "{PLAYER}{KUN}, ta muốn cháu đến đó và\n"
+	.string "tắt GENERATOR.\p"
+	.string "GENERATOR gần đây hoạt động hơi mất\n"
+	.string "kiểm soát. Nó đang trở nên nguy hiểm.\p"
+	.string "Đây, KEY để vào NEW MAUVILLE.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "WATTSON: Don't you worry about it.\n"
-	.string "It won't be a challenge to you.\p"
-	.string "The entrance to NEW MAUVILLE is just\n"
-	.string "a short SURF away from ROUTE 110.\p"
-	.string "That's it, then, you have my trust!\n"
+	.string "WATTSON: Đừng lo. Việc đó chẳng thể làm\n"
+	.string "khó cháu đâu.\p"
+	.string "Lối vào NEW MAUVILLE chỉ cách ROUTE\n"
+	.string "110 một đoạn SURF ngắn.\p"
+	.string "Quyết vậy nhé, ta tin tưởng ở cháu!\n"
 	.string "Wahahahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "WATTSON: Wahahahaha!\p"
-	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
-	.string "the right choice asking you!\p"
-	.string "This is my thanks--a TM containing\n"
+	.string "Ta biết mà, {PLAYER}{KUN}! Ta biết nhờ\n"
+	.string "cháu là lựa chọn đúng đắn!\p"
+	.string "Đây là lời cảm ơn của ta: một TM chứa\n"
 	.string "THUNDERBOLT!\p"
-	.string "Go on, you've earned it!$"
+	.string "Cầm lấy đi, cháu xứng đáng nhận nó!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
 	.string "WATTSON: Wahahahaha!\p"
-	.string "It pleases me to no end to see\n"
-	.string "the young step up and take charge!$"
+	.string "Không gì khiến ta vui hơn khi thấy\n"
+	.string "người trẻ đứng ra gánh vác trách\l"
+	.string "nhiệm!$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
-	.string "You know, it's cool to have POKéMON\n"
-	.string "battles and stuff…\p"
-	.string "But if your POKéMON gets hurt,\n"
-	.string "you have to nurse it back to health.$"
+	.string "Cậu biết đấy, đấu POKéMON các kiểu thì\n"
+	.string "rất ngầu...\p"
+	.string "Nhưng nếu POKéMON bị thương, cậu phải\n"
+	.string "chăm sóc cho nó khỏe lại.$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
-	.string "The roads of this town stretch north\n"
-	.string "and south, and east and west.\p"
-	.string "Because of that, we get all sorts of\n"
-	.string "people coming through.$"
+	.string "Đường phố ở thị trấn này chạy theo cả\n"
+	.string "hướng bắc nam lẫn đông tây.\p"
+	.string "Nhờ vậy, đủ mọi kiểu người đều đi qua\n"
+	.string "đây.$"
 
 MauvilleCity_Text_RydelVeryGenerous:
-	.string "Have you been to RYDEL'S CYCLES yet?\p"
-	.string "RYDEL, the owner, is a very generous\n"
-	.string "man.$"
+	.string "Cậu đã đến RYDEL'S CYCLES chưa?\p"
+	.string "Chủ tiệm RYDEL là một người rất hào\n"
+	.string "phóng.$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
-	.string "Even if you're riding a BIKE,\n"
-	.string "wild POKéMON could jump you.$"
+	.string "Ngay cả khi đang đi BIKE, cậu vẫn có thể\n"
+	.string "bị POKéMON hoang dã bất ngờ tấn công.$"
 
 MauvilleCity_Text_CitySign:
-	.string "MAUVILLE CITY\n"
-	.string "“The bright and shiny city of fun!”$"
+	.string "MAUVILLE CITY Thành phố vui chơi sáng\n"
+	.string "sủa và lấp lánh!$"
 
 MauvilleCity_Text_GymSign:
-	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
-	.string "“The cheerfully electrifying man!”$"
+	.string "MAUVILLE CITY POKéMON GYM LEADER:\n"
+	.string "WATTSON Người đàn ông vui vẻ, tràn đầy\l"
+	.string "điện lực!$"
 
 MauvilleCity_Text_BikeShopSign:
-	.string "“Ride in gravel and shake up your\n"
-	.string "soul!”\l"
+	.string "Lướt trên sỏi đá, lay động tâm hồn!\n"
 	.string "RYDEL'S CYCLES$"
 
 MauvilleCity_Text_GameCornerSign:
-	.string "“The play spot for all!”\n"
+	.string "Nơi vui chơi dành cho tất cả mọi người!\n"
 	.string "MAUVILLE GAME CORNER$"
 
 MauvilleCity_Text_ExplainTV:
-	.string "Hi, do you check out TV at all?\p"
-	.string "They've added a bunch of cool new\n"
-	.string "shows recently.\p"
-	.string "TV is so cool. I've seen my friends on\n"
-	.string "TV just out of the blue.\p"
-	.string "And, sometimes, they even put you on TV\n"
-	.string "without telling you.\p"
-	.string "I wish I would be on TV sometime.\p"
-	.string "That's why I think you should check\n"
-	.string "out TVs whenever you can.$"
+	.string "Chào, cậu có hay xem TV không?\p"
+	.string "Gần đây họ thêm vào rất nhiều chương\n"
+	.string "trình mới cực hay.\p"
+	.string "TV tuyệt lắm. Có lần bạn tôi bỗng dưng\n"
+	.string "xuất hiện trên TV.\p"
+	.string "Đôi khi họ còn đưa cả cậu lên TV mà\n"
+	.string "chẳng báo trước.\p"
+	.string "Tôi cũng mong một ngày nào đó được lên\n"
+	.string "TV.\p"
+	.string "Vì vậy, tôi nghĩ hễ có dịp là cậu nên xem\n"
+	.string "TV.$"
 
 MauvilleCity_Text_BeenCheckingOutTV:
-	.string "Hi, have you been checking out TVs?$"
+	.string "Chào, dạo này cậu có xem TV không?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_Text_UncleHesTooPeppy
+	.global MauvilleCity_Text_WallyWantToChallengeGym
+	.global MauvilleCity_Text_UncleYourePushingIt
+	.global MauvilleCity_Text_WallyWeCanBeatAnyone
+	.global MauvilleCity_Text_WallyWillYouBattleMe
+	.global MauvilleCity_Text_WallyMyUncleWontKnowImStrong
+	.global MauvilleCity_Text_UncleCanYouBattleWally
+	.global MauvilleCity_Text_WallyPleaseBattleMe
+	.global MauvilleCity_Text_WallyHereICome
+	.global MauvilleCity_Text_WallyDefeat
+	.global MauvilleCity_Text_WallyIllGoBackToVerdanturf
+	.global MauvilleCity_Text_ThankYouNotEnoughToBattle
+	.global MauvilleCity_Text_UncleNoNeedToBeDown
+	.global MauvilleCity_Text_UncleVisitUsSometime
+	.global MauvilleCity_Text_WallyPokenavCall
+	.global MauvilleCity_Text_RegisteredWally
+	.global MauvilleCity_Text_ScottYouDidntHoldBack
+	.global MauvilleCity_Text_WattsonNeedFavorTakeKey
+	.global MauvilleCity_Text_WattsonWontBeChallenge
+	.global MauvilleCity_Text_WattsonThanksTakeTM
+	.global MauvilleCity_Text_WattsonYoungTakeCharge
+	.global MauvilleCity_Text_NurseHurtMonBackToHealth
+	.global MauvilleCity_Text_AllSortsOfPeopleComeThrough
+	.global MauvilleCity_Text_RydelVeryGenerous
+	.global MauvilleCity_Text_PokemonCanJumpYouOnBike
+	.global MauvilleCity_Text_CitySign
+	.global MauvilleCity_Text_GymSign
+	.global MauvilleCity_Text_BikeShopSign
+	.global MauvilleCity_Text_GameCornerSign
+	.global MauvilleCity_Text_ExplainTV
+	.global MauvilleCity_Text_BeenCheckingOutTV
+@ END GENERATED LOCALIZATION EXPORTS

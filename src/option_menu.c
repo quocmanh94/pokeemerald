@@ -41,6 +41,7 @@ enum
     OPTION_BATTLE_STYLE,
     OPTION_SOUND,
     OPTION_BUTTON_MODE,
+    OPTION_LANGUAGE,
     OPTION_FRAME_TYPE,
     OPTION_DIFFICULTY,
     OPTION_POKEMON_FOLLOWERS,
@@ -121,6 +122,7 @@ static void ButtonMode_DrawChoices(u8 selection, u8 y);
 static u8 Toggle_ProcessInput(u8 selection);
 static u8 Difficulty_ProcessInput(u8 selection);
 static void DrawTwoChoices(const u8 *left, const u8 *right, u8 selection, u8 y);
+static void Language_DrawChoices(u8 selection, u8 y);
 static void OnOff_DrawChoices(u8 selection, u8 y);
 static void Difficulty_DrawChoices(u8 selection, u8 y);
 static void PokedexTheme_DrawChoices(u8 selection, u8 y);
@@ -144,6 +146,7 @@ static const u8 sText_LButton[] = _("{L_BUTTON}");
 static const u8 sText_RButton[] = _("{R_BUTTON}");
 
 static const u8 sText_Difficulty[] = _("DIFFICULTY");
+static const u8 sText_Language[] = _("LANGUAGE");
 static const u8 sText_PokemonFollowers[] = _("FOLLOWERS");
 static const u8 sText_PokedexTheme[] = _("POKEDEX THEME");
 static const u8 sText_BattleBarSpeed[] = _("BATTLE BARS");
@@ -164,6 +167,8 @@ static const u8 sText_Dark[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}DARK");
 static const u8 sText_Fast[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
 static const u8 sText_Rematch[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}REMATCH");
 static const u8 sText_All[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ALL");
+static const u8 sText_English[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EN");
+static const u8 sText_Vietnamese[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}VI");
 
 static const u8 sText_DescTextSpeedSlow[] = _("Display text at a relaxed speed.");
 static const u8 sText_DescTextSpeedMid[] = _("Display text at the standard speed.");
@@ -178,6 +183,8 @@ static const u8 sText_DescButtonNormal[] = _("Use the standard button controls."
 static const u8 sText_DescButtonLR[] = _("Use L and R as left and right on\nsupported screens.");
 static const u8 sText_DescButtonLEqualsA[] = _("Use the L Button as another A Button.");
 static const u8 sText_DescFrameType[] = _("Choose the border used for text boxes.");
+static const u8 sText_DescLanguageVietnamese[] = _("Use available Vietnamese translations.");
+static const u8 sText_DescLanguageEnglish[] = _("Use the original English text.");
 static const u8 sText_DescDifficultyEasy[] = _("Lower opposing Trainer Pokemon levels.");
 static const u8 sText_DescDifficultyNormal[] = _("Use the standard Trainer Pokemon levels.");
 static const u8 sText_DescDifficultyHard[] = _("Raise opposing Trainer Pokemon levels.");
@@ -238,6 +245,12 @@ static const u8 *const sButtonModeDescriptions[] =
 static const u8 *const sFrameTypeDescriptions[] =
 {
     sText_DescFrameType,
+};
+
+static const u8 *const sLanguageDescriptions[] =
+{
+    sText_DescLanguageVietnamese,
+    sText_DescLanguageEnglish,
 };
 
 static const u8 *const sDifficultyDescriptions[] =
@@ -312,6 +325,7 @@ static const u8 sGeneralPageItems[] =
     OPTION_TEXT_SPEED,
     OPTION_SOUND,
     OPTION_BUTTON_MODE,
+    OPTION_LANGUAGE,
     OPTION_FRAME_TYPE,
     OPTION_POKEDEX_THEME,
     OPTION_SAVE,
@@ -380,6 +394,14 @@ static const struct OptionMenuItem sOptionMenuItems[OPTION_COUNT] =
         .drawChoices = ButtonMode_DrawChoices,
         .descriptions = sButtonModeDescriptions,
         .descriptionCount = ARRAY_COUNT(sButtonModeDescriptions),
+    },
+    [OPTION_LANGUAGE] =
+    {
+        .name = sText_Language,
+        .processInput = Toggle_ProcessInput,
+        .drawChoices = Language_DrawChoices,
+        .descriptions = sLanguageDescriptions,
+        .descriptionCount = ARRAY_COUNT(sLanguageDescriptions),
     },
     [OPTION_FRAME_TYPE] =
     {
@@ -642,6 +664,7 @@ void CB2_InitOptionMenu(void)
         sOptions->selections[OPTION_BATTLE_STYLE] = gSaveBlock2Ptr->optionsBattleStyle;
         sOptions->selections[OPTION_SOUND] = gSaveBlock2Ptr->optionsSound;
         sOptions->selections[OPTION_BUTTON_MODE] = gSaveBlock2Ptr->optionsButtonMode;
+        sOptions->selections[OPTION_LANGUAGE] = gSaveBlock2Ptr->optionsLanguage;
         sOptions->selections[OPTION_FRAME_TYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
         switch (VarGet(VAR_DIFFICULTY))
         {
@@ -770,6 +793,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsBattleStyle = sOptions->selections[OPTION_BATTLE_STYLE];
     gSaveBlock2Ptr->optionsSound = sOptions->selections[OPTION_SOUND];
     gSaveBlock2Ptr->optionsButtonMode = sOptions->selections[OPTION_BUTTON_MODE];
+    gSaveBlock2Ptr->optionsLanguage = sOptions->selections[OPTION_LANGUAGE];
     gSaveBlock2Ptr->optionsWindowFrameType = sOptions->selections[OPTION_FRAME_TYPE];
     switch (sOptions->selections[OPTION_DIFFICULTY])
     {
@@ -1132,6 +1156,15 @@ static void DrawTwoChoices(const u8 *left, const u8 *right, u8 selection, u8 y)
 static void OnOff_DrawChoices(u8 selection, u8 y)
 {
     DrawTwoChoices(sText_On, sText_Off, selection, y);
+}
+
+static void Language_DrawChoices(u8 selection, u8 y)
+{
+    u8 styles[2] = {0};
+
+    styles[selection] = 1;
+    DrawOptionMenuChoice(sText_English, 104, y, styles[OPTIONS_LANGUAGE_ENGLISH]);
+    DrawOptionMenuChoice(sText_Vietnamese, GetStringRightAlignXOffset(FONT_NORMAL, sText_Vietnamese, 198), y, styles[OPTIONS_LANGUAGE_VIETNAMESE]);
 }
 
 static void Difficulty_DrawChoices(u8 selection, u8 y)

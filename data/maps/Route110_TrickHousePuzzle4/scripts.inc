@@ -28,43 +28,53 @@ Route110_TrickHousePuzzle4_EventScript_Paula::
 	end
 
 Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is cool.”\n"
-	.string "… … … … … … … …\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER} ghi lại mật mã trên cửa.\p"
+	.string "“TRICK MASTER thật ngầu.” ... ... ... ... ...\n"
+	.string "... ... ...\p"
+	.string "Ổ khóa bật mở đánh tách!$"
 
 Route110_TrickHousePuzzle4_Text_CoraIntro:
-	.string "It's too much bother to think this out.\n"
-	.string "I only wanted to battle!$"
+	.string "Nghĩ cách giải phiền phức quá. Tôi chỉ\n"
+	.string "muốn chiến đấu thôi!$"
 
 Route110_TrickHousePuzzle4_Text_CoraDefeat:
-	.string "Even though I lost, I still like battling\n"
-	.string "the best!$"
+	.string "Dù thua, tôi vẫn thích chiến đấu nhất!$"
 
 Route110_TrickHousePuzzle4_Text_CoraPostBattle:
-	.string "Wouldn't you agree? You would go\n"
-	.string "anywhere if TRAINERS were there.$"
+	.string "Bạn cũng thấy vậy chứ? Hễ nơi nào có\n"
+	.string "HLV là bạn sẽ đi đến đó.$"
 
 Route110_TrickHousePuzzle4_Text_YujiIntro:
-	.string "Heh! Boulders like this, I can brush\n"
-	.string "aside with one finger!$"
+	.string "Hê! Mấy tảng đá thế này, tôi chỉ cần một\n"
+	.string "ngón tay là gạt đi được!$"
 
 Route110_TrickHousePuzzle4_Text_YujiDefeat:
-	.string "I can push boulders, but I can't solve\n"
-	.string "the puzzle…$"
+	.string "Tôi đẩy được đá, nhưng lại không giải\n"
+	.string "nổi câu đố...$"
 
 Route110_TrickHousePuzzle4_Text_YujiPostBattle:
-	.string "It's not good enough to be brawny…\n"
-	.string "You have to use your head. Be brainy!$"
+	.string "Chỉ có cơ bắp thôi chưa đủ... Còn phải\n"
+	.string "biết động não. Phải có đầu óc nữa!$"
 
 Route110_TrickHousePuzzle4_Text_PaulaIntro:
-	.string "The TRICK HOUSE is getting trickier,\n"
-	.string "isn't it?$"
+	.string "TRICK HOUSE ngày càng hóc búa hơn,\n"
+	.string "đúng không?$"
 
 Route110_TrickHousePuzzle4_Text_PaulaDefeat:
-	.string "Aaak!$"
+	.string "Ááá!$"
 
 Route110_TrickHousePuzzle4_Text_PaulaPostBattle:
-	.string "Has anyone made it to the end?$"
+	.string "Đã có ai đi đến cuối chưa?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened
+	.global Route110_TrickHousePuzzle4_Text_CoraIntro
+	.global Route110_TrickHousePuzzle4_Text_CoraDefeat
+	.global Route110_TrickHousePuzzle4_Text_CoraPostBattle
+	.global Route110_TrickHousePuzzle4_Text_YujiIntro
+	.global Route110_TrickHousePuzzle4_Text_YujiDefeat
+	.global Route110_TrickHousePuzzle4_Text_YujiPostBattle
+	.global Route110_TrickHousePuzzle4_Text_PaulaIntro
+	.global Route110_TrickHousePuzzle4_Text_PaulaDefeat
+	.global Route110_TrickHousePuzzle4_Text_PaulaPostBattle
+@ END GENERATED LOCALIZATION EXPORTS

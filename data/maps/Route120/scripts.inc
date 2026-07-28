@@ -360,65 +360,66 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "STEVEN: Hm? {PLAYER}{KUN}, hi.\n"
-	.string "It's been a while.\p"
-	.string "There's something here that you can't\n"
-	.string "see, right?\p"
-	.string "Now, if I were to use this device on\n"
-	.string "the invisible obstacle…\p"
-	.string "No, no. Rather than describing it,\n"
-	.string "I should just show you.\l"
-	.string "That would be more fun.\p"
-	.string "{PLAYER}{KUN}, are your POKéMON ready for\n"
-	.string "battle?$"
+	.string "STEVEN: Hmm? Chào em, {PLAYER}{KUN}.\n"
+	.string "Lâu rồi không gặp.\p"
+	.string "Có thứ gì đó ở đây mà em không nhìn\n"
+	.string "thấy, đúng không?\p"
+	.string "Giờ nếu tôi dùng thiết bị này lên vật\n"
+	.string "cản vô hình đó...\p"
+	.string "Không, không. Thay vì giải thích, tôi\n"
+	.string "nên cho em xem luôn. Như vậy sẽ thú vị\l"
+	.string "hơn.\p"
+	.string "{PLAYER}{KUN}, POKéMON của em đã sẵn\n"
+	.string "sàng chiến đấu chưa?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "STEVEN: No?\p"
-	.string "I'll wait here, so you can get ready.$"
+	.string "STEVEN: Chưa sao?\p"
+	.string "Tôi sẽ chờ ở đây để em chuẩn bị.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "STEVEN: {PLAYER}{KUN}, are your POKéMON\n"
-	.string "ready for battle?$"
+	.string "STEVEN: {PLAYER}{KUN}, POKéMON của em\n"
+	.string "đã sẵn sàng chiến đấu chưa?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "STEVEN: {PLAYER}{KUN}, show me your true\n"
-	.string "power as a TRAINER!$"
+	.string "STEVEN: {PLAYER}{KUN}, hãy cho tôi\n"
+	.string "thấy sức mạnh thực sự của em với tư\l"
+	.string "cách một HLV!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "STEVEN used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
-	.string "The startled POKéMON attacked!$"
+	.string "STEVEN đã dùng DEVON SCOPE.\p"
+	.string "Một POKéMON vô hình đã hiện ra hoàn\n"
+	.string "toàn!\p"
+	.string "POKéMON bị giật mình và tấn công!$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "STEVEN: I see…\n"
-	.string "Your battle style is intriguing.\p"
-	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
-	.string "I'd like you to have this\n"
-	.string "DEVON SCOPE.\p"
-	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "STEVEN: Ra vậy... Phong cách chiến đấu\n"
+	.string "của em thật thú vị.\p"
+	.string "POKéMON của em rõ ràng đã trưởng\n"
+	.string "thành hơn nhiều kể từ lần đầu chúng ta\l"
+	.string "gặp nhau ở DEWFORD.\p"
+	.string "Tôi muốn em nhận lấy DEVON SCOPE này.\p"
+	.string "Biết đâu vẫn còn những POKéMON khác\n"
+	.string "đang ẩn mình.$"
 
 Route120_Text_StevenGoodbye:
 	.string "STEVEN: {PLAYER}{KUN}.\p"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
-	.string "who strive together.\p"
-	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "Tôi rất thích được thấy POKéMON và\n"
+	.string "HLV cùng nhau nỗ lực.\p"
+	.string "Tôi nghĩ em đang làm rất tốt.\p"
+	.string "Vậy nhé, hẹn gặp lại ở đâu đó.$"
 
 Kecleon_Text_SomethingUnseeable:
-	.string "Something unseeable is in the way.$"
+	.string "Có thứ gì đó vô hình đang chắn đường.$"
 
 Kecleon_Text_WantToUseDevonScope:
-	.string "Something unseeable is in the way.\p"
-	.string "Want to use the DEVON SCOPE?$"
+	.string "Có thứ gì đó vô hình đang chắn đường.\p"
+	.string "Có muốn dùng DEVON SCOPE không?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
-	.string "The startled POKéMON attacked!$"
+	.string "{PLAYER} đã dùng DEVON SCOPE.\p"
+	.string "Một POKéMON vô hình đã hiện ra hoàn\n"
+	.string "toàn!\p"
+	.string "POKéMON bị giật mình và tấn công!$"
 
 Route120_Text_RouteSignFortree:
 	.string "ROUTE 120\n"
@@ -427,3 +428,16 @@ Route120_Text_RouteSignFortree:
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route120_Text_StevenGreeting
+	.global Route120_Text_StevenIllWaitHere
+	.global Route120_Text_StevenReadyForBattle
+	.global Route120_Text_StevenShowMeYourPower
+	.global Route120_Text_StevenUsedDevonScope
+	.global Route120_Text_StevenGiveDevonScope
+	.global Route120_Text_StevenGoodbye
+	.global Kecleon_Text_SomethingUnseeable
+	.global Kecleon_Text_WantToUseDevonScope
+	.global Kecleon_Text_UseDevonScopeMonAttacked
+@ END GENERATED LOCALIZATION EXPORTS

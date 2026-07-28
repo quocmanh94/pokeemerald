@@ -16,11 +16,15 @@ LilycoveCity_House1_EventScript_Kecleon::
 	end
 
 LilycoveCity_House1_Text_PokemonPartnersNotTools:
-	.string "POKéMON are partners to people.\n"
-	.string "They aren't our tools.\p"
-	.string "Unfortunately, there are some people\n"
-	.string "who fail to understand that…$"
+	.string "POKéMON là bạn đồng hành của con\n"
+	.string "người. Chúng không phải công cụ của\l"
+	.string "chúng ta.\p"
+	.string "Đáng tiếc là vẫn có những người không\n"
+	.string "hiểu điều đó...$"
 
 LilycoveCity_House1_Text_Kecleon:
 	.string "KECLEON: Ruroro?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_House1_Text_PokemonPartnersNotTools
+@ END GENERATED LOCALIZATION EXPORTS

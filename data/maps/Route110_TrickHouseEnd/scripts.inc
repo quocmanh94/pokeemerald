@@ -248,109 +248,129 @@ Route110_TrickHouseEnd_Movement_TrickMasterSurprise:
 	step_end
 
 Route110_TrickHouseEnd_Text_YouveMadeItToMe:
-	.string "Aak!\n"
-	.string "You've made it to me?\l"
-	.string "Hmmm… You're sharp!$"
+	.string "Á! Ngươi đã tới được chỗ ta sao?\n"
+	.string "Hừm... Sắc bén lắm!$"
 
 Route110_TrickHouseEnd_Text_AllNightToPlantTrees:
-	.string "It took me all night to plant all those\n"
-	.string "trees…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five, six places!$"
+	.string "Ta đã mất cả đêm để trồng hết đám cây\n"
+	.string "đó...\p"
+	.string "Ngươi chỉ còn kém sự vĩ đại của ta một,\n"
+	.string "hai, ba, bốn, năm, sáu bậc thôi!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMaze:
-	.string "It took me all night to make the maze…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five places!$"
+	.string "Ta đã mất cả đêm để làm mê cung...\p"
+	.string "Ngươi chỉ còn kém sự vĩ đại của ta một,\n"
+	.string "hai, ba, bốn, năm bậc thôi!$"
 
 Route110_TrickHouseEnd_Text_AllNightToPreparePanels:
-	.string "It took me all night to prepare\n"
-	.string "the wall panels…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four places!$"
+	.string "Ta đã mất cả đêm để chuẩn bị những tấm\n"
+	.string "vách...\p"
+	.string "Ngươi chỉ còn kém sự vĩ đại của ta một,\n"
+	.string "hai, ba, bốn bậc thôi!$"
 
 Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
-	.string "It took me all night to shove in those\n"
-	.string "boulders…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three places!$"
+	.string "Ta đã mất cả đêm để đẩy những tảng đá\n"
+	.string "vào chỗ...\p"
+	.string "Ngươi chỉ còn kém sự vĩ đại của ta một,\n"
+	.string "hai, ba bậc thôi!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
-	.string "It took me all night to make MECHADOLLS\n"
-	.string "and another to think up the quiz…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two places!$"
+	.string "Ta mất cả đêm để làm MECHADOLLS, rồi\n"
+	.string "thêm một đêm nữa để nghĩ ra câu đố...\p"
+	.string "Ngươi chỉ còn kém sự vĩ đại của ta một,\n"
+	.string "hai bậc thôi!$"
 
 Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
-	.string "It took me all night to install\n"
-	.string "the doors…\p"
-	.string "You're almost my equal in greatness!$"
+	.string "Ta đã mất cả đêm để lắp những cánh\n"
+	.string "cửa...\p"
+	.string "Ngươi gần ngang hàng với ta về độ vĩ\n"
+	.string "đại!$"
 
 Route110_TrickHouseEnd_Text_AllNightSettingUpArrows:
-	.string "It took me all night setting up arrows…\p"
-	.string "You're my equal in greatness!$"
+	.string "Ta đã mất cả đêm để bố trí các mũi tên...\p"
+	.string "Ngươi ngang hàng với ta về độ vĩ đại!$"
 
 Route110_TrickHouseEnd_Text_AllNightPolishingFloors:
-	.string "It took me all night polishing floors…\p"
-	.string "You're above me in greatness!\n"
-	.string "Possibly…$"
+	.string "Ta đã mất cả đêm để đánh bóng sàn nhà...\p"
+	.string "Ngươi còn vĩ đại hơn cả ta! Có lẽ vậy...$"
 
 Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
-	.string "Wh-what should I do?\n"
-	.string "My fountain of ideas for tricks has\l"
-	.string "run dry…\p"
-	.string "Perhaps it is time I toured the country\n"
-	.string "on a quest to devise new tricks…$"
+	.string "T-ta phải làm sao đây? Suối nguồn ý\n"
+	.string "tưởng trò mẹo của ta đã cạn...\p"
+	.string "Có lẽ đã đến lúc ta chu du khắp đất\n"
+	.string "nước để tìm cách nghĩ ra những trò\l"
+	.string "mẹo mới...$"
 
 Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
-	.string "I hate to admit defeat, but you have\n"
-	.string "bested me!\p"
-	.string "Still, you must have been reeled in by\n"
-	.string "my charisma for you to visit me again\l"
-	.string "and again. Yes, you must have!\p"
-	.string "But that has nothing to do with my\n"
-	.string "losing!\p"
-	.string "In recognition of the friendship\n"
-	.string "between you, the driven, and the genius\l"
-	.string "that is myself, I demand that you take\l"
-	.string "this keepsake!\p"
-	.string "Actually there are two--\n"
-	.string "a RED TENT and a BLUE TENT.\l"
-	.string "Which do you prefer?$"
+	.string "Ta không muốn thừa nhận thất bại,\n"
+	.string "nhưng ngươi đã thắng ta!\p"
+	.string "Dù vậy, hẳn ngươi đã bị sức hút của ta\n"
+	.string "mê hoặc nên mới đến thăm ta hết lần này\l"
+	.string "đến lần khác. Đúng, nhất định là vậy!\p"
+	.string "Nhưng chuyện đó chẳng liên quan gì đến\n"
+	.string "việc ta thua!\p"
+	.string "Để ghi nhận tình bạn giữa ngươi, kẻ\n"
+	.string "đầy quyết tâm, và thiên tài là ta, ta yêu\l"
+	.string "cầu ngươi nhận lấy kỷ vật này!\p"
+	.string "Thực ra có hai món: RED TENT và BLUE\n"
+	.string "TENT. Ngươi thích món nào?$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
-	.string "What? No room in your PC?\n"
-	.string "What am I to make of that?\p"
-	.string "I wish I could say that, but I am much\n"
-	.string "too kind and caring, so come back later!$"
+	.string "Gì cơ? PC của ngươi không còn chỗ? Ta\n"
+	.string "phải hiểu chuyện này thế nào đây?\p"
+	.string "Ta muốn nói thế lắm, nhưng ta quá tử tế\n"
+	.string "và chu đáo, nên hãy quay lại sau!$"
 
 Route110_TrickHouseEnd_Text_LeavingOnJourney:
-	.string "… … … … … …\p"
-	.string "I am leaving on a journey of discovery.\n"
-	.string "A quest in search of new tricks.\p"
-	.string "I wish that you will one day visit and\n"
-	.string "entertain me again.\p"
-	.string "And now, farewell!$"
+	.string "... ... ... ... ... ...\p"
+	.string "Ta sẽ lên đường khám phá. Một hành\n"
+	.string "trình tìm kiếm những trò mẹo mới.\p"
+	.string "Ta mong một ngày nào đó ngươi lại ghé\n"
+	.string "thăm và mua vui cho ta.\p"
+	.string "Giờ thì, vĩnh biệt!$"
 
 Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
-	.string "Fine!\n"
-	.string "You have earned this reward!$"
+	.string "Được! Ngươi xứng đáng nhận phần\n"
+	.string "thưởng này!$"
 
 Route110_TrickHouseEnd_Text_NoRoomForThis:
-	.string "What? Have you no room for this?\n"
-	.string "What manner of items do you carry?\p"
-	.string "But fine, since you've reached me,\n"
-	.string "your reward will be with me till later.$"
+	.string "Gì cơ? Ngươi không còn chỗ cho thứ\n"
+	.string "này sao? Ngươi mang theo toàn thứ gì\l"
+	.string "vậy?\p"
+	.string "Nhưng thôi, vì ngươi đã tới được chỗ\n"
+	.string "ta, ta sẽ giữ phần thưởng đến khi\l"
+	.string "ngươi quay lại.$"
 
 Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
-	.string "Scrub that smug smirk from your face!\n"
-	.string "It's much too early to think you've won!\p"
-	.string "I'll make new tricks to stump you, I will.\n"
-	.string "You may mock me only when you're done.\p"
-	.string "Come back for the next exciting\n"
-	.string "installment!$"
+	.string "Gạt nụ cười tự mãn đó khỏi mặt ngươi\n"
+	.string "đi! Còn quá sớm để nghĩ rằng ngươi đã\l"
+	.string "thắng!\p"
+	.string "Ta sẽ nghĩ ra những trò mẹo mới để làm\n"
+	.string "khó ngươi. Chỉ khi vượt qua hết, ngươi\l"
+	.string "mới được chế giễu ta.\p"
+	.string "Hãy quay lại đón xem màn tiếp theo đầy\n"
+	.string "gay cấn!$"
 
 Route110_TrickHouseEnd_Text_YoureIgnoringMe:
-	.string "Now, now! You're ignoring me now?\n"
-	.string "Now that, I consider heartbreaking!$"
+	.string "Này, này! Giờ ngươi phớt lờ ta sao?\n"
+	.string "Chuyện đó làm ta đau lòng lắm đấy!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route110_TrickHouseEnd_Text_YouveMadeItToMe
+	.global Route110_TrickHouseEnd_Text_AllNightToPlantTrees
+	.global Route110_TrickHouseEnd_Text_AllNightToMakeMaze
+	.global Route110_TrickHouseEnd_Text_AllNightToPreparePanels
+	.global Route110_TrickHouseEnd_Text_AllNightToShoveBoulders
+	.global Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls
+	.global Route110_TrickHouseEnd_Text_AllNightToInstallDoors
+	.global Route110_TrickHouseEnd_Text_AllNightSettingUpArrows
+	.global Route110_TrickHouseEnd_Text_AllNightPolishingFloors
+	.global Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry
+	.global Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent
+	.global Route110_TrickHouseEnd_Text_NoRoomInPC
+	.global Route110_TrickHouseEnd_Text_LeavingOnJourney
+	.global Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward
+	.global Route110_TrickHouseEnd_Text_NoRoomForThis
+	.global Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou
+	.global Route110_TrickHouseEnd_Text_YoureIgnoringMe
+@ END GENERATED LOCALIZATION EXPORTS

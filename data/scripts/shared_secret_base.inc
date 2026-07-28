@@ -202,14 +202,22 @@ SecretBase_EventScript_SkittyTV::
 	end
 
 SecretBase_Text_SmallIndentInWall::
-	.string "There's a small indent in the wall.$"
+	.string "Trên tường có một chỗ lõm nhỏ.$"
 
 SecretBase_Text_IndentUseSecretPower::
-	.string "There's a small indent in the wall.\p"
-	.string "Use the SECRET POWER?$"
+	.string "Trên tường có một chỗ lõm nhỏ.\p"
+	.string "Dùng SECRET POWER chứ?$"
 
 SecretBase_Text_DiscoveredSmallCavern::
-	.string "Discovered a small cavern!$"
+	.string "Đã phát hiện một hang nhỏ!$"
 
 SecretBase_Text_WantToMakeYourSecretBaseHere:
-	.string "Want to make your SECRET BASE here?$"
+	.string "Bạn có muốn tạo SECRET BASE ở đây\n"
+	.string "không?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SecretBase_Text_SmallIndentInWall
+	.global SecretBase_Text_IndentUseSecretPower
+	.global SecretBase_Text_DiscoveredSmallCavern
+	.global SecretBase_Text_WantToMakeYourSecretBaseHere
+@ END GENERATED LOCALIZATION EXPORTS

@@ -101,34 +101,43 @@ BattleFrontier_RankingHall_EventScript_Boy::
 	end
 
 BattleFrontier_RankingHall_Text_ExplainRankingHall:
-	.string "This is the RANKING HALL.\p"
-	.string "This is where we recognize the immortal\n"
-	.string "TRAINERS who left great records in\l"
-	.string "BATTLE FRONTIER events.$"
+	.string "Đây là RANKING HALL.\p"
+	.string "Nơi đây tôn vinh những HLV bất\n"
+	.string "tử đã lập nên các kỷ lục vĩ đại trong\l"
+	.string "những sự kiện của BATTLE FRONTIER.$"
 
 BattleFrontier_RankingHall_Text_DomePikeFactoryRecords:
-	.string "BATTLE DOME, BATTLE PIKE,\n"
-	.string "and BATTLE FACTORY Records$"
+	.string "Kỷ lục BATTLE DOME, BATTLE PIKE và\n"
+	.string "BATTLE FACTORY$"
 
 BattleFrontier_RankingHall_Text_PalaceArenaPyramidRecords:
-	.string "BATTLE PALACE, BATTLE ARENA,\n"
-	.string "and BATTLE PYRAMID Records$"
+	.string "Kỷ lục BATTLE PALACE, BATTLE ARENA và\n"
+	.string "BATTLE PYRAMID$"
 
 BattleFrontier_RankingHall_Text_IsYourNameOnThisList:
-	.string "Hi, is your name on this list?$"
+	.string "Chào bạn, tên bạn có trong danh sách\n"
+	.string "này không?$"
 
 BattleFrontier_RankingHall_Text_WowThatsSuper:
-	.string "Wow, that's super!\n"
-	.string "I'll have to try harder, too!$"
+	.string "Chà, tuyệt thật! Tôi cũng phải cố gắng\n"
+	.string "hơn mới được!$"
 
 BattleFrontier_RankingHall_Text_WorkHarderIfYouSawFriendsName:
-	.string "Oh, is that right?\p"
-	.string "If you saw your friend's name up here,\n"
-	.string "I bet it would make you work harder!$"
+	.string "Ồ, vậy sao?\p"
+	.string "Nếu thấy tên bạn mình ở đây, chắc bạn\n"
+	.string "sẽ càng muốn cố gắng hơn!$"
 
 BattleFrontier_RankingHall_Text_MyNamesNotUpThere:
-	.string "Hmm…\n"
-	.string "My name's not up there…\p"
-	.string "Well, it's only natural since I haven't\n"
-	.string "taken any challenges yet.$"
+	.string "Hừm... Tên tôi không có ở đó...\p"
+	.string "Cũng phải thôi, vì tôi còn chưa tham gia\n"
+	.string "thử thách nào.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_RankingHall_Text_ExplainRankingHall
+	.global BattleFrontier_RankingHall_Text_DomePikeFactoryRecords
+	.global BattleFrontier_RankingHall_Text_PalaceArenaPyramidRecords
+	.global BattleFrontier_RankingHall_Text_IsYourNameOnThisList
+	.global BattleFrontier_RankingHall_Text_WowThatsSuper
+	.global BattleFrontier_RankingHall_Text_WorkHarderIfYouSawFriendsName
+	.global BattleFrontier_RankingHall_Text_MyNamesNotUpThere
+@ END GENERATED LOCALIZATION EXPORTS

@@ -169,20 +169,26 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
-	.string "Okay!\n"
-	.string "We're to move out to MT. PYRE!$"
+	.string "Được rồi! Chúng ta lên đường tới MT.\n"
+	.string "PYRE!$"
 
 Route121_Text_AheadLoomsMtPyre:
-	.string "Ahead looms MT. PYRE…\p"
-	.string "It is a natural monument to the spirits \n"
-	.string "of departed POKéMON…$"
+	.string "Phía trước sừng sững MT. PYRE...\p"
+	.string "Đó là đài tưởng niệm tự nhiên dành cho\n"
+	.string "linh hồn của những POKéMON đã khuất...$"
 
 Route121_Text_MtPyrePierSign:
 	.string "MT. PYRE PIER\p"
-	.string "…The sign is old and worn out.\n"
-	.string "The words are barely legible…$"
+	.string "...Tấm biển đã cũ kỹ và mòn vẹt. Chữ trên\n"
+	.string "đó gần như không thể đọc được...$"
 
 Route121_Text_SafariZoneSign:
-	.string "“Filled with rare POKéMON!”\n"
-	.string "SAFARI ZONE$"
+	.string "“Tràn ngập POKéMON quý hiếm!” SAFARI\n"
+	.string "ZONE$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route121_Text_OkayMoveOutToMtPyre
+	.global Route121_Text_AheadLoomsMtPyre
+	.global Route121_Text_MtPyrePierSign
+	.global Route121_Text_SafariZoneSign
+@ END GENERATED LOCALIZATION EXPORTS

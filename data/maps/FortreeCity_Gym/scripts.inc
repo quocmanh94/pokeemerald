@@ -135,146 +135,145 @@ FortreeCity_Gym_EventScript_GymStatue::
 	end
 
 FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "FORTREE GYM LEADER WINONA is\n"
-	.string "a master of FLYING-type POKéMON.\p"
-	.string "She's waiting at the back of this GYM,\n"
-	.string "behind the rotating doors.\p"
-	.string "She's waiting for new challengers\n"
-	.string "who are trying to take wing!\p"
-	.string "Okay, go for it!$"
+	.string "Này, khỏe chứ, {PLAYER}, người đang\n"
+	.string "hướng tới ngôi CHAMPION?\p"
+	.string "FORTREE GYM LEADER WINONA là bậc thầy\n"
+	.string "về POKéMON hệ FLYING.\p"
+	.string "Cô ấy đang chờ ở cuối GYM này, phía sau\n"
+	.string "những cánh cửa xoay.\p"
+	.string "Cô ấy đang chờ những người thách đấu\n"
+	.string "mới muốn tung cánh!\p"
+	.string "Được rồi, tiến lên nào!$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
-	.string "You did it!\n"
-	.string "You've achieved liftoff!$"
+	.string "Bạn làm được rồi! Bạn đã cất cánh\n"
+	.string "thành công!$"
 
 FortreeCity_Gym_Text_JaredIntro:
-	.string "Behold the elegant battle style of\n"
-	.string "BIRD POKéMON!$"
+	.string "Hãy chiêm ngưỡng phong cách chiến đấu\n"
+	.string "thanh nhã của BIRD POKéMON!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
-	.string "You…\n"
-	.string "You're strong…$"
+	.string "Bạn... Bạn mạnh thật...$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "A TRAINER has to be smart to keep\n"
-	.string "up with unexpected turns of events.\p"
-	.string "Do you have the smarts to get to\n"
-	.string "our LEADER?$"
+	.string "Một HLV phải thật nhạy bén mới ứng\n"
+	.string "phó được với những biến chuyển bất\l"
+	.string "ngờ.\p"
+	.string "Bạn có đủ thông minh để đến được chỗ\n"
+	.string "LEADER của chúng tôi không?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "The lovers of BIRD POKéMON aspire\n"
-	.string "to join this GYM.\p"
-	.string "As a member of the FORTREE GYM,\n"
-	.string "I'm not allowed to lose!$"
+	.string "Những người yêu BIRD POKéMON đều\n"
+	.string "khao khát được gia nhập GYM này.\p"
+	.string "Là một thành viên của FORTREE GYM, tôi\n"
+	.string "không được phép thua!$"
 
 FortreeCity_Gym_Text_EdwardoDefeat:
-	.string "It was too much of a load for me\n"
-	.string "to bear…$"
+	.string "Gánh nặng này vượt quá sức tôi...$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
-	.string "I'm going to keep training and make\n"
-	.string "myself even stronger.$"
+	.string "Thế giới rộng lớn, và có vô số HLV\n"
+	.string "mạnh mẽ.\p"
+	.string "Tôi sẽ tiếp tục rèn luyện để trở nên\n"
+	.string "mạnh hơn nữa.$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "There's no need for WINONA, our GYM\n"
-	.string "LEADER, to deal with you!\p"
-	.string "I'm plenty good enough for you!$"
+	.string "Không cần GYM LEADER WINONA của chúng\n"
+	.string "tôi phải ra tay với bạn!\p"
+	.string "Chỉ mình tôi là quá đủ rồi!$"
 
 FortreeCity_Gym_Text_FlintDefeat:
-	.string "WINONA, I…\n"
-	.string "I lost!$"
+	.string "WINONA, tôi... Tôi thua rồi!$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "WINONA is cute and she's strong.\n"
-	.string "She's the ultimate LEADER!\p"
-	.string "Blush…$"
+	.string "WINONA vừa đáng yêu vừa mạnh mẽ. Cô ấy\n"
+	.string "là LEADER tuyệt đỉnh!\p"
+	.string "Ngượng quá...$"
 
 FortreeCity_Gym_Text_AshleyIntro:
-	.string "WINONA taught me personally!\n"
-	.string "You can't beat me easily!$"
+	.string "WINONA đã đích thân dạy tôi! Bạn không\n"
+	.string "dễ thắng tôi đâu!$"
 
 FortreeCity_Gym_Text_AshleyDefeat:
-	.string "I was beaten…$"
+	.string "Tôi đã bị đánh bại...$"
 
 FortreeCity_Gym_Text_AshleyPostBattle:
-	.string "Thanks to WINONA, the people of\n"
-	.string "FORTREE can live without fear.$"
+	.string "Nhờ có WINONA, người dân FORTREE có\n"
+	.string "thể sống mà không phải sợ hãi.$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
-	.string "When WINONA takes to battle, her face\n"
-	.string "shines with beautiful determination…\p"
-	.string "I'm not letting you witness that\n"
-	.string "lovely sight!$"
+	.string "Khi WINONA bước vào trận đấu, gương\n"
+	.string "mặt cô ấy sáng lên với quyết tâm tuyệt\l"
+	.string "đẹp...\p"
+	.string "Tôi sẽ không để bạn được chứng kiến\n"
+	.string "cảnh tượng đáng yêu ấy!$"
 
 FortreeCity_Gym_Text_HumbertoDefeat:
-	.string "Urk!\n"
-	.string "I couldn't stop you.$"
+	.string "Ư! Tôi không thể ngăn bạn lại.$"
 
 FortreeCity_Gym_Text_HumbertoPostBattle:
-	.string "You'd better watch it!\n"
-	.string "Don't get distracted staring at WINONA\l"
-	.string "or you'll go crashing down in a heap!$"
+	.string "Cẩn thận đấy! Đừng mải ngắm WINONA rồi\n"
+	.string "phân tâm, nếu không bạn sẽ ngã nhào tan\l"
+	.string "tác!$"
 
 FortreeCity_Gym_Text_DariusIntro:
-	.string "You'd better know that there are all\n"
-	.string "sorts of FLYING-type POKéMON.\p"
-	.string "You do know that, right?$"
+	.string "Bạn nên biết POKéMON hệ FLYING có đủ\n"
+	.string "mọi loại.\p"
+	.string "Bạn biết điều đó rồi, phải không?$"
 
 FortreeCity_Gym_Text_DariusDefeat:
-	.string "You seem to know your stuff!$"
+	.string "Có vẻ bạn rất am hiểu đấy!$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
-	.string "Sure, you beat me all right.\n"
-	.string "But you'd better watch it! Our LEADER\l"
-	.string "WINONA's POKéMON are all business.$"
+	.string "Đúng là bạn đã thắng tôi. Nhưng hãy cẩn\n"
+	.string "thận! POKéMON của LEADER WINONA không\l"
+	.string "hề đùa đâu.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "I am WINONA. I am the LEADER of\n"
-	.string "the FORTREE POKéMON GYM.\p"
-	.string "I have become one with BIRD POKéMON\n"
-	.string "and have soared the skies…\p"
-	.string "However grueling the battle, we have\n"
-	.string "triumphed with grace…\p"
-	.string "Witness the elegant choreography\n"
-	.string "of BIRD POKéMON and I!$"
+	.string "Tôi là WINONA. Tôi là LEADER của FORTREE\n"
+	.string "POKéMON GYM.\p"
+	.string "Tôi đã hòa làm một với BIRD POKéMON và\n"
+	.string "sải cánh trên bầu trời...\p"
+	.string "Dù trận đấu có khắc nghiệt đến đâu,\n"
+	.string "chúng tôi vẫn chiến thắng đầy thanh\l"
+	.string "nhã...\p"
+	.string "Hãy chiêm ngưỡng vũ điệu chiến đấu\n"
+	.string "thanh nhã của tôi và BIRD POKéMON!$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
-	.string "than I…\p"
-	.string "In recognition of your prowess,\n"
-	.string "I present to you this GYM BADGE.$"
+	.string "Trước nay, tôi chưa từng thấy một\n"
+	.string "HLV nào điều khiển POKéMON thanh\l"
+	.string "thoát đến mức vượt cả tôi...\p"
+	.string "Để công nhận tài năng của bạn, tôi xin\n"
+	.string "trao tặng GYM BADGE này.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{PLAYER} received the FEATHER BADGE\n"
-	.string "from WINONA.$"
+	.string "{PLAYER} đã nhận FEATHER BADGE từ\n"
+	.string "WINONA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use\n"
-	.string "the HM move FLY outside of battle.\p"
-	.string "And this…\n"
-	.string "This is a gift from me.$"
+	.string "Với FEATHER BADGE, mọi POKéMON đến LV\n"
+	.string "70, kể cả những POKéMON nhận qua trao\l"
+	.string "đổi, đều sẽ tuân theo mọi mệnh lệnh của\l"
+	.string "bạn.\p"
+	.string "Bạn cũng sẽ có thể dùng chiêu HM FLY\n"
+	.string "ngoài trận đấu.\p"
+	.string "Và đây... Đây là món quà của tôi.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "TM40 contains AERIAL ACE.\p"
-	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
-	.string "… … … … … …$"
+	.string "TM40 chứa AERIAL ACE.\p"
+	.string "Tốc độ của nó... Không POKéMON nào có\n"
+	.string "thể né tránh.\p"
+	.string "... ... ... ... ... ...$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
-	.string "Registered GYM LEADER WINONA\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký GYM LEADER WINONA vào\n"
+	.string "POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "Though I fell to you, I will remain\n"
-	.string "devoted to BIRD POKéMON.$"
+	.string "Dù đã thua bạn, tôi vẫn sẽ luôn tận tâm\n"
+	.string "với BIRD POKéMON.$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "FORTREE CITY POKéMON GYM$"
@@ -285,35 +284,74 @@ FortreeCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "WINONA: We humans can never escape\n"
-	.string "gravity's pull on the ground.\p"
-	.string "But by striving for excellence,\n"
-	.string "we have the power to soar!\p"
-	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
-	.string "Please, allow me to see your power\n"
-	.string "at full flight!$"
+	.string "WINONA: Con người chúng ta không bao\n"
+	.string "giờ thoát khỏi sức hút của trọng lực\l"
+	.string "nơi mặt đất.\p"
+	.string "Nhưng bằng cách không ngừng vươn tới\n"
+	.string "sự hoàn hảo, chúng ta có sức mạnh để\l"
+	.string "bay cao!\p"
+	.string "Bạn đã vươn tới đỉnh cao với tư cách\n"
+	.string "CHAMPION đương nhiệm.\p"
+	.string "Xin hãy cho tôi được chứng kiến sức\n"
+	.string "mạnh của bạn khi tung cánh hết mình!$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat:
-	.string "I failed to reach your height again…$"
+	.string "Một lần nữa, tôi vẫn không thể vươn\n"
+	.string "tới tầm cao của bạn...$"
 
 FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "WINONA: Even though I have lost,\n"
-	.string "the wings of my heart remain unbroken.\p"
-	.string "I can rise and soar again and\n"
-	.string "yet again.\p"
-	.string "I am convinced of it!$"
+	.string "WINONA: Dù đã thua, đôi cánh trong tim\n"
+	.string "tôi vẫn không gãy.\p"
+	.string "Tôi có thể đứng dậy và lại bay cao, hết\n"
+	.string "lần này đến lần khác.\p"
+	.string "Tôi tin chắc như vậy!$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "WINONA: We humans can never escape\n"
-	.string "gravity's pull on the ground.\p"
-	.string "But by striving for excellence,\n"
-	.string "we have the power to soar!\p"
-	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
-	.string "Please, allow me to see your power\n"
-	.string "at full flight!\p"
-	.string "Oh, no… Do you have but one\n"
-	.string "POKéMON with you?\p"
-	.string "Please return with two POKéMON\n"
-	.string "at the very least.$"
+	.string "WINONA: Con người chúng ta không bao\n"
+	.string "giờ thoát khỏi sức hút của trọng lực\l"
+	.string "nơi mặt đất.\p"
+	.string "Nhưng bằng cách không ngừng vươn tới\n"
+	.string "sự hoàn hảo, chúng ta có sức mạnh để\l"
+	.string "bay cao!\p"
+	.string "Bạn đã vươn tới đỉnh cao với tư cách\n"
+	.string "CHAMPION đương nhiệm.\p"
+	.string "Xin hãy cho tôi được chứng kiến sức\n"
+	.string "mạnh của bạn khi tung cánh hết mình!\p"
+	.string "Ồ, không... Bạn chỉ mang theo một\n"
+	.string "POKéMON thôi sao?\p"
+	.string "Xin hãy quay lại với ít nhất hai\n"
+	.string "POKéMON.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_Gym_Text_GymGuideAdvice
+	.global FortreeCity_Gym_Text_GymGuidePostVictory
+	.global FortreeCity_Gym_Text_JaredIntro
+	.global FortreeCity_Gym_Text_JaredDefeat
+	.global FortreeCity_Gym_Text_JaredPostBattle
+	.global FortreeCity_Gym_Text_EdwardoIntro
+	.global FortreeCity_Gym_Text_EdwardoDefeat
+	.global FortreeCity_Gym_Text_EdwardoPostBattle
+	.global FortreeCity_Gym_Text_FlintIntro
+	.global FortreeCity_Gym_Text_FlintDefeat
+	.global FortreeCity_Gym_Text_FlintPostBattle
+	.global FortreeCity_Gym_Text_AshleyIntro
+	.global FortreeCity_Gym_Text_AshleyDefeat
+	.global FortreeCity_Gym_Text_AshleyPostBattle
+	.global FortreeCity_Gym_Text_HumbertoIntro
+	.global FortreeCity_Gym_Text_HumbertoDefeat
+	.global FortreeCity_Gym_Text_HumbertoPostBattle
+	.global FortreeCity_Gym_Text_DariusIntro
+	.global FortreeCity_Gym_Text_DariusDefeat
+	.global FortreeCity_Gym_Text_DariusPostBattle
+	.global FortreeCity_Gym_Text_WinonaIntro
+	.global FortreeCity_Gym_Text_WinonaDefeat
+	.global FortreeCity_Gym_Text_ReceivedFeatherBadge
+	.global FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis
+	.global FortreeCity_Gym_Text_ExplainAerialAce
+	.global FortreeCity_Gym_Text_RegisteredWinona
+	.global FortreeCity_Gym_Text_WinonaPostBattle
+	.global FortreeCity_Gym_Text_WinonaPreRematch
+	.global FortreeCity_Gym_Text_WinonaRematchDefeat
+	.global FortreeCity_Gym_Text_WinonaPostRematch
+	.global FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS

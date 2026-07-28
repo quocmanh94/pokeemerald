@@ -838,126 +838,129 @@ Common_EventScript_PlayerHandedOverTheItem::
 
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign::
-	.string "“Selected items for your convenience!”\n"
+	.string "“Vật phẩm chọn lọc, mua sắm tiện lợi!”\n"
 	.string "POKéMON MART$"
 
 gText_PokemonCenterSign::
-	.string "“Rejuvenate your tired partners!”\n"
+	.string "“Hồi sức cho những người bạn mệt mỏi!”\n"
 	.string "POKéMON CENTER$"
 
 gText_MomOrDadMightLikeThisProgram::
-	.string "{STR_VAR_1} might like this program.\n"
+	.string "{STR_VAR_1} chắc sẽ thích chương trình này.\n"
 	.string "… … … … … … … … … … … … … … … …\p"
-	.string "Better get going!$"
+	.string "Mình nên đi thôi!$"
 
 gText_WhichFloorWouldYouLike::
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
-	.string "Which floor would you like?$"
+	.string "Chào mừng đến LILYCOVE\n"
+	.string "DEPARTMENT STORE.\p"
+	.string "Bạn muốn đến tầng nào?$"
 
 gText_SandstormIsVicious::
-	.string "The sandstorm is vicious.\n"
-	.string "It's impossible to keep going.$"
+	.string "Bão cát đang dữ dội.\n"
+	.string "Không thể đi tiếp.$"
 
 gText_SelectWithoutRegisteredItem::
-	.string "An item in the BAG can be\n"
-	.string "registered to SELECT for easy use.$"
+	.string "Có thể đăng ký một vật phẩm\n"
+	.string "trong TÚI ĐỒ vào SELECT để dùng nhanh.$"
 
 gText_SelectWithoutRegisteredLongItem::
-	.string "A second item in the BAG can be\n"
-	.string "registered to holding SELECT.$"
+	.string "Có thể đăng ký vật phẩm thứ hai\n"
+	.string "trong TÚI ĐỒ bằng cách giữ SELECT.$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "There's an e-mail from POKéMON TRAINER\n"
+	.string "Có e-mail từ HLV POKéMON\n"
 	.string "SCHOOL.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
-	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
+	.string "Mỗi POKéMON có thể học tối đa\n"
+	.string "bốn chiêu.\p"
+	.string "Tài năng của HLV được đánh giá\n"
+	.string "qua các chiêu đã chọn cho POKéMON.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} đã khởi động PC.$"
 
 gText_PokeblockLinkCanceled::
-	.string "The link was canceled.$"
+	.string "Kết nối đã bị hủy.$"
 
 gText_UnusedNicknameReceivedPokemon::
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_2} you received?$"
+	.string "Bạn có muốn đặt tên cho\n"
+	.string "{STR_VAR_2} vừa nhận không?$"
 
 gText_PlayerWhitedOut::
-	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "{PLAYER} không còn POKéMON\n"
+	.string "nào có thể chiến đấu!\p"
+	.string "{PLAYER} đã kiệt sức!$"
 
 gText_RegisteredTrainerinPokeNav::
-	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký {STR_VAR_1} {STR_VAR_2}\n"
+	.string "vào POKéNAV.$"
 
 gText_ComeBackWithSecretPower::
-	.string "Do you know the TM SECRET POWER?\p"
-	.string "Our group, we love the TM SECRET\n"
-	.string "POWER.\p"
-	.string "One of our members will give it to you.\n"
-	.string "Come back and show me if you get it.\p"
-	.string "We'll accept you as a member and sell\n"
-	.string "you good stuff in secrecy.$"
+	.string "Bạn biết TM SECRET POWER chứ?\p"
+	.string "Nhóm chúng tôi rất yêu thích\n"
+	.string "TM SECRET POWER.\p"
+	.string "Một thành viên sẽ tặng nó cho bạn.\n"
+	.string "Có rồi thì quay lại cho tôi xem nhé.\p"
+	.string "Chúng tôi sẽ nhận bạn vào nhóm và\n"
+	.string "bí mật bán cho bạn đồ tốt.$"
 
 gText_PokerusExplanation::
-	.string "Your POKéMON may be infected with\n"
+	.string "POKéMON của bạn có thể đã nhiễm\n"
 	.string "POKéRUS.\p"
-	.string "Little is known about the POKéRUS\n"
-	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
-	.string "While infected, POKéMON are said to\n"
-	.string "grow exceptionally well.$"
+	.string "Người ta biết rất ít về POKéRUS,\n"
+	.string "ngoài việc chúng là những sinh vật\l"
+	.string "siêu nhỏ bám vào POKéMON.\p"
+	.string "POKéMON nhiễm POKéRUS được cho là\n"
+	.string "sẽ phát triển đặc biệt tốt.$"
 
 	.include "data/text/surf.inc"
 
 gText_DoorOpenedFarAway::
-	.string "It sounded as if a door opened\n"
-	.string "somewhere far away.$"
+	.string "Có tiếng một cánh cửa mở ra\n"
+	.string "ở nơi nào đó rất xa.$"
 
 gText_BigHoleInTheWall::
-	.string "There is a big hole in the wall.$"
+	.string "Có một lỗ lớn trên tường.$"
 
 gText_SorryWirelessClubAdjustments::
-	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
-	.string "undergoing adjustments now.$"
+	.string "Thành thật xin lỗi.\n"
+	.string "POKéMON WIRELESS CLUB hiện đang\l"
+	.string "được điều chỉnh.$"
 
 gText_UndergoingAdjustments::
-	.string "It appears to be undergoing\n"
-	.string "adjustments…$"
+	.string "Có vẻ nơi này đang được\n"
+	.string "điều chỉnh…$"
 
 @ Unused
 gText_SorryTradeCenterInspections::
-	.string "I'm terribly sorry. The TRADE CENTER\n"
-	.string "is undergoing inspections.$"
+	.string "Thành thật xin lỗi. TRADE CENTER\n"
+	.string "hiện đang được kiểm tra.$"
 
 @ Unused
 gText_SorryRecordCornerPreparation::
-	.string "I'm terribly sorry. The RECORD CORNER\n"
-	.string "is under preparation.$"
+	.string "Thành thật xin lỗi. RECORD CORNER\n"
+	.string "hiện đang được chuẩn bị.$"
 
 gText_PlayerHandedOverTheItem::
-	.string "{PLAYER} handed over the\n"
+	.string "{PLAYER} đã giao\n"
 	.string "{STR_VAR_1}.$"
 
 gText_ThankYouForAccessingMysteryGift::
-	.string "Thank you for accessing the\n"
-	.string "MYSTERY GIFT System.$"
+	.string "Cảm ơn bạn đã truy cập\n"
+	.string "hệ thống MYSTERY GIFT.$"
 
 gText_PlayerFoundOneTMHM::
-	.string "{PLAYER} found one {STR_VAR_1}\n"
+	.string "{PLAYER} tìm thấy {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
 gText_Sudowoodo_Attacked::
-	.string "The weird tree doesn't like the\n"
+	.string "Cái cây kỳ lạ không thích\n"
 	.string "WAILMER PAIL!\p"
-	.string "The weird tree attacked!$"
+	.string "Cái cây kỳ lạ đã tấn công!$"
 
 gText_LegendaryFlewAway::
-	.string "The {STR_VAR_1} flew away!$"
+	.string "{STR_VAR_1} đã bay đi!$"
 
 	.include "data/text/pc_transfer.inc"
 	.include "data/text/questionnaire.inc"
@@ -1069,3 +1072,32 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_PokemartSign
+	.global gText_PokemonCenterSign
+	.global gText_MomOrDadMightLikeThisProgram
+	.global gText_WhichFloorWouldYouLike
+	.global gText_SandstormIsVicious
+	.global gText_SelectWithoutRegisteredItem
+	.global gText_SelectWithoutRegisteredLongItem
+	.global gText_PokemonTrainerSchoolEmail
+	.global gText_PlayerHouseBootPC
+	.global gText_PokeblockLinkCanceled
+	.global gText_UnusedNicknameReceivedPokemon
+	.global gText_PlayerWhitedOut
+	.global gText_RegisteredTrainerinPokeNav
+	.global gText_ComeBackWithSecretPower
+	.global gText_PokerusExplanation
+	.global gText_DoorOpenedFarAway
+	.global gText_BigHoleInTheWall
+	.global gText_SorryWirelessClubAdjustments
+	.global gText_UndergoingAdjustments
+	.global gText_SorryTradeCenterInspections
+	.global gText_SorryRecordCornerPreparation
+	.global gText_PlayerHandedOverTheItem
+	.global gText_ThankYouForAccessingMysteryGift
+	.global gText_PlayerFoundOneTMHM
+	.global gText_Sudowoodo_Attacked
+	.global gText_LegendaryFlewAway
+@ END GENERATED LOCALIZATION EXPORTS

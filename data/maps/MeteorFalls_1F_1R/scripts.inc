@@ -233,77 +233,89 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
 	.string "Hehehe!\p"
-	.string "With this METEORITE, that thing in\n"
-	.string "MT. CHIMNEY will…$"
+	.string "Có METEORITE này, thứ đó ở MT. CHIMNEY\n"
+	.string "sẽ...$"
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
-	.string "Heh?\p"
-	.string "I don't know who you are, but if you get\n"
-	.string "in the way of TEAM MAGMA, don't\l"
-	.string "expect any mercy!$"
+	.string "Hả?\p"
+	.string "Ta không biết ngươi là ai, nhưng nếu\n"
+	.string "cản đường TEAM MAGMA thì đừng mong\l"
+	.string "được nương tay!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
-	.string "Hold it right there, TEAM MAGMA!\p"
-	.string "You're badly mistaken if you think you\n"
-	.string "can have your way with the world!$"
+	.string "Đứng lại đó, TEAM MAGMA!\p"
+	.string "Nếu nghĩ có thể muốn làm gì với thế\n"
+	.string "giới cũng được thì các ngươi lầm to\l"
+	.string "rồi!$"
 
 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
-	.string "Hehehe!\n"
-	.string "Even TEAM AQUA joins us!\p"
-	.string "But it's too much trouble to deal with\n"
-	.string "you all…\p"
-	.string "Heh, it doesn't matter!\p"
-	.string "We've got the METEORITE, so off to\n"
-	.string "MT. CHIMNEY we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "AQUA dingbats!$"
+	.string "Hehehe! Cả TEAM AQUA cũng tới góp vui\n"
+	.string "à!\p"
+	.string "Nhưng đối phó với tất cả các ngươi thì\n"
+	.string "phiền quá...\p"
+	.string "Hừ, chẳng sao cả!\p"
+	.string "Bọn ta đã có METEORITE, giờ lên đường\n"
+	.string "đến MT. CHIMNEY!\p"
+	.string "Hehehe! Hẹn gặp lại, lũ ngốc TEAM AQUA!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
-	.string "ARCHIE: Didn't I see you before?\n"
-	.string "At SLATEPORT's MUSEUM?\p"
-	.string "Ah, so your name is {PLAYER}.\p"
-	.string "At the time, I thought you were one\n"
-	.string "of TEAM MAGMA's goons.\p"
-	.string "Humph…\n"
-	.string "You're one odd kid.\p"
-	.string "TEAM MAGMA is a dangerous group of\n"
-	.string "total fanatics.\p"
-	.string "They engage in destruction, claiming\n"
-	.string "to expand the land mass.\p"
-	.string "They are the rivals to us,\n"
-	.string "the sea-loving TEAM AQUA!$"
+	.string "ARCHIE: Chẳng phải ta đã gặp nhóc\n"
+	.string "trước đây sao? Ở MUSEUM của\l"
+	.string "SLATEPORT?\p"
+	.string "À, vậy tên nhóc là {PLAYER}.\p"
+	.string "Lúc đó, ta tưởng nhóc là một tên tay\n"
+	.string "sai của TEAM MAGMA.\p"
+	.string "Hừm... Nhóc đúng là một đứa kỳ lạ.\p"
+	.string "TEAM MAGMA là một nhóm cuồng tín cực\n"
+	.string "đoan và nguy hiểm.\p"
+	.string "Chúng phá hoại khắp nơi, viện cớ để mở\n"
+	.string "rộng đất liền.\p"
+	.string "Chúng là đối thủ của TEAM AQUA chúng\n"
+	.string "ta, những người yêu biển cả!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
-	.string "BOSS, we should give chase to\n"
-	.string "TEAM MAGMA…$"
+	.string "Thủ lĩnh, chúng ta nên đuổi theo TEAM\n"
+	.string "MAGMA...$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
-	.string "ARCHIE: Yes, yes, we must!\n"
-	.string "We've got to hurry.\p"
-	.string "There's no telling what TEAM MAGMA\n"
-	.string "will do at MT. CHIMNEY!$"
+	.string "ARCHIE: Phải, phải, nhất định rồi! Chúng\n"
+	.string "ta phải nhanh lên.\p"
+	.string "Không biết TEAM MAGMA sẽ làm gì ở MT.\n"
+	.string "CHIMNEY đâu!$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
-	.string "ARCHIE: {PLAYER}, you should keep\n"
-	.string "an eye out for TEAM MAGMA, too.\p"
-	.string "Farewell!$"
+	.string "ARCHIE: {PLAYER}, nhóc cũng nên đề\n"
+	.string "phòng TEAM MAGMA.\p"
+	.string "Tạm biệt!$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
-	.string "I… I'm COZMO…\n"
-	.string "I'm a PROFESSOR…\p"
-	.string "TEAM MAGMA asked me to guide them\n"
-	.string "to METEOR FALLS…\p"
-	.string "But they tricked me.\n"
-	.string "They even took my METEORITE away…\p"
-	.string "And then another similar bunch,\n"
-	.string "TEAM AQUA showed up.\p"
-	.string "After that…\n"
-	.string "I don't understand any of it.\p"
-	.string "But that TEAM MAGMA…\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "Tôi... Tôi là COZMO... Tôi là một\n"
+	.string "PROFESSOR...\p"
+	.string "TEAM MAGMA nhờ tôi dẫn chúng đến\n"
+	.string "METEOR FALLS...\p"
+	.string "Nhưng chúng đã lừa tôi. Chúng còn lấy\n"
+	.string "mất METEORITE của tôi...\p"
+	.string "Rồi một nhóm tương tự khác là TEAM\n"
+	.string "AQUA xuất hiện.\p"
+	.string "Sau đó... Tôi chẳng hiểu gì nữa.\p"
+	.string "Nhưng TEAM MAGMA đó...\p"
+	.string "Chúng định làm gì với METEORITE ở MT.\n"
+	.string "CHIMNEY?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. COZMO: But that TEAM MAGMA…\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "PROF. COZMO: Nhưng TEAM MAGMA đó...\p"
+	.string "Chúng định làm gì với METEORITE ở MT.\n"
+	.string "CHIMNEY?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MeteorFalls_1F_1R_Text_WithThisMeteorite
+	.global MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma
+	.global MeteorFalls_1F_1R_Text_HoldItRightThereMagma
+	.global MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua
+	.global MeteorFalls_1F_1R_Text_ArchieSeenYouBefore
+	.global MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma
+	.global MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo
+	.global MeteorFalls_1F_1R_Text_ArchieFarewell
+	.global MeteorFalls_1F_1R_Text_MeetProfCozmo
+	.global MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney
+@ END GENERATED LOCALIZATION EXPORTS

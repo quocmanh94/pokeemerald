@@ -150,108 +150,131 @@ BattleFrontier_Lounge1_EventScript_Boy2::
 	end
 
 BattleFrontier_Lounge1_Text_PokemonBreederIntro:
-	.string "For 70 years I have raised POKéMON!\n"
-	.string "I am the man they revere as\l"
-	.string "the legendary top POKéMON BREEDER!\p"
-	.string "If you ever become as seasoned as me,\n"
-	.string "you'll see the abilities of POKéMON\l"
-	.string "at a glance.\p"
-	.string "You're a TRAINER. Doesn't it interest\n"
-	.string "you to know your own POKéMON's\l"
-	.string "abilities?\p"
-	.string "Here!\n"
-	.string "Let's have a look at your POKéMON!$"
+	.string "Suốt 70 năm qua, ta đã nuôi dưỡng\n"
+	.string "POKéMON! Ta chính là người được thiên\l"
+	.string "hạ tôn kính như POKéMON BREEDER số\l"
+	.string "một trong truyền thuyết!\p"
+	.string "Khi dày dạn kinh nghiệm như ta, chỉ cần\n"
+	.string "nhìn qua là cháu sẽ biết được năng lực\l"
+	.string "của POKéMON.\p"
+	.string "Cháu là một HLV. Cháu không muốn\n"
+	.string "biết năng lực của POKéMON mình sao?\p"
+	.string "Đây! Để ta xem POKéMON của cháu nào!$"
 
 BattleFrontier_Lounge1_Text_AverageAbility:
-	.string "…Hmm…\p"
-	.string "This one, overall, I would describe\n"
-	.string "as being of average ability.$"
+	.string "...Hừm...\p"
+	.string "Xét tổng thể, ta cho rằng năng lực của\n"
+	.string "con này ở mức trung bình.$"
 
 BattleFrontier_Lounge1_Text_BetterThanAverageAbility:
-	.string "…Hmm…\p"
-	.string "This one, overall, I would describe as\n"
-	.string "having better-than-average ability.$"
+	.string "...Hừm...\p"
+	.string "Xét tổng thể, ta cho rằng năng lực của\n"
+	.string "con này trên mức trung bình.$"
 
 BattleFrontier_Lounge1_Text_ImpressiveAbility:
-	.string "…Hmm…\p"
-	.string "This one, overall, I would say is\n"
-	.string "quite impressive in ability!$"
+	.string "...Hừm...\p"
+	.string "Xét tổng thể, ta phải nói năng lực của\n"
+	.string "con này khá ấn tượng!$"
 
 BattleFrontier_Lounge1_Text_OutstandingAbility:
-	.string "…Hmm…\p"
-	.string "This one, overall, I would say is\n"
-	.string "wonderfully outstanding in ability!$"
+	.string "...Hừm...\p"
+	.string "Xét tổng thể, ta phải nói năng lực của\n"
+	.string "con này vô cùng xuất sắc!$"
 
 BattleFrontier_Lounge1_Text_BestAspectHP:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its HP…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là HP...$"
 
 BattleFrontier_Lounge1_Text_BestAspectAtk:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its ATTACK…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là ATTACK...$"
 
 BattleFrontier_Lounge1_Text_BestAspectDef:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its DEFENSE…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là DEFENSE...$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpAtk:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its SPECIAL ATTACK…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là SPECIAL ATTACK...$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpDef:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its SPECIAL DEFENSE…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là SPECIAL DEFENSE...$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpeed:
-	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its SPEED…$"
+	.string "Nhân tiện, điểm nổi trội nhất của nó,\n"
+	.string "theo ta, là SPEED...$"
 
 BattleFrontier_Lounge1_Text_StatRelativelyGood:
-	.string "That stat is relatively good.\n"
-	.string "…Hm… That's how I call it.$"
+	.string "Chỉ số đó khá tốt. ...Hừm... Ta đánh giá\n"
+	.string "như vậy.$"
 
 BattleFrontier_Lounge1_Text_StatImpressive:
-	.string "That stat is quite impressive.\n"
-	.string "…Hm… That's how I call it.$"
+	.string "Chỉ số đó rất ấn tượng. ...Hừm... Ta đánh\n"
+	.string "giá như vậy.$"
 
 BattleFrontier_Lounge1_Text_StatOutstanding:
-	.string "That stat is outstanding!\n"
-	.string "…Hm… That's how I call it.$"
+	.string "Chỉ số đó thật xuất sắc! ...Hừm... Ta\n"
+	.string "đánh giá như vậy.$"
 
 BattleFrontier_Lounge1_Text_StatFlawless:
-	.string "It's flawless! A thing of perfection!\n"
-	.string "…Hm… That's how I call it.$"
+	.string "Hoàn hảo! Một tuyệt phẩm không tì vết!\n"
+	.string "...Hừm... Ta đánh giá như vậy.$"
 
 BattleFrontier_Lounge1_Text_NoTimeForMyAdvice:
-	.string "What?\n"
-	.string "You have no time for my advice?\p"
-	.string "You should always be eager to learn\n"
-	.string "from the experiences of your elders!$"
+	.string "Sao? Cháu không có thời gian nghe lời\n"
+	.string "khuyên của ta à?\p"
+	.string "Phải luôn ham học hỏi từ kinh nghiệm của\n"
+	.string "người lớn tuổi chứ!$"
 
 @ Unused
 BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending:
-	.string "Yes, what is it now?\p"
-	.string "I have business that needs tending!\n"
-	.string "Save it for next time!$"
+	.string "Ừ, giờ lại có chuyện gì?\p"
+	.string "Ta còn việc cần lo! Để lần sau đi!$"
 
 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon:
-	.string "Ah, youngster! Do your POKéMON's\n"
-	.string "abilities intrigue you?\p"
-	.string "Here, here!\n"
-	.string "Let's have a look at your POKéMON!$"
+	.string "À, người trẻ tuổi! Cháu tò mò về năng\n"
+	.string "lực của POKéMON mình sao?\p"
+	.string "Lại đây! Để ta xem POKéMON của cháu\n"
+	.string "nào!$"
 
 BattleFrontier_Lounge1_Text_EvenICantTell:
-	.string "An expert I am, but even I can't tell\n"
-	.string "anything about an unhatched POKéMON!\p"
-	.string "Show me a POKéMON!\n"
-	.string "A POKéMON is what I need to see!$"
+	.string "Ta là chuyên gia, nhưng đến ta cũng\n"
+	.string "chẳng thể biết gì về một POKéMON chưa\l"
+	.string "nở!\p"
+	.string "Cho ta xem một POKéMON! Ta cần nhìn\n"
+	.string "thấy một POKéMON cơ!$"
 
 BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding:
-	.string "He said my POKéMON is outstanding!\n"
-	.string "I'm glad I raised it carefully!$"
+	.string "Ông ấy nói POKéMON của tôi rất xuất\n"
+	.string "sắc! Thật mừng vì tôi đã chăm sóc nó\l"
+	.string "cẩn thận!$"
 
 BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt:
-	.string "He said my POKéMON is outstanding!\n"
-	.string "But I didn't do anything special\l"
-	.string "raising it…$"
+	.string "Ông ấy nói POKéMON của tôi rất xuất\n"
+	.string "sắc! Nhưng tôi đâu làm gì đặc biệt khi\l"
+	.string "nuôi nó...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge1_Text_PokemonBreederIntro
+	.global BattleFrontier_Lounge1_Text_AverageAbility
+	.global BattleFrontier_Lounge1_Text_BetterThanAverageAbility
+	.global BattleFrontier_Lounge1_Text_ImpressiveAbility
+	.global BattleFrontier_Lounge1_Text_OutstandingAbility
+	.global BattleFrontier_Lounge1_Text_BestAspectHP
+	.global BattleFrontier_Lounge1_Text_BestAspectAtk
+	.global BattleFrontier_Lounge1_Text_BestAspectDef
+	.global BattleFrontier_Lounge1_Text_BestAspectSpAtk
+	.global BattleFrontier_Lounge1_Text_BestAspectSpDef
+	.global BattleFrontier_Lounge1_Text_BestAspectSpeed
+	.global BattleFrontier_Lounge1_Text_StatRelativelyGood
+	.global BattleFrontier_Lounge1_Text_StatImpressive
+	.global BattleFrontier_Lounge1_Text_StatOutstanding
+	.global BattleFrontier_Lounge1_Text_StatFlawless
+	.global BattleFrontier_Lounge1_Text_NoTimeForMyAdvice
+	.global BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending
+	.global BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon
+	.global BattleFrontier_Lounge1_Text_EvenICantTell
+	.global BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding
+	.global BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt
+@ END GENERATED LOCALIZATION EXPORTS

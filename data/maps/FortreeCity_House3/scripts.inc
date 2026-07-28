@@ -10,20 +10,24 @@ FortreeCity_House3_EventScript_SchoolKidM::
 	end
 
 FortreeCity_House3_Text_MetStevenHadAmazingPokemon:
-	.string "While speaking about POKéDEXES,\n"
-	.string "I remembered something.\p"
-	.string "I met this TRAINER, STEVEN, when\n"
-	.string "I was searching for rare stones.\p"
-	.string "Hoo, boy, he had some amazing POKéMON\n"
-	.string "with him.\p"
-	.string "They weren't just rare, they were\n"
-	.string "trained to terrifying extremes!\p"
-	.string "He might even be stronger than the\n"
-	.string "GYM LEADER in this town…$"
+	.string "Nhắc đến POKéDEXES làm tôi nhớ ra một\n"
+	.string "chuyện.\p"
+	.string "Khi đang tìm những viên đá hiếm, tôi đã\n"
+	.string "gặp một HLV tên là STEVEN.\p"
+	.string "Chà, cậu ấy mang theo những POKéMON\n"
+	.string "thật đáng kinh ngạc.\p"
+	.string "Chúng không chỉ hiếm mà còn được rèn\n"
+	.string "luyện đến mức đáng sợ!\p"
+	.string "Có khi cậu ấy còn mạnh hơn cả GYM\n"
+	.string "LEADER của thị trấn này...$"
 
 FortreeCity_House3_Text_OhYouHavePokedex:
-	.string "What's that thing you have there?\p"
-	.string "… … … … … …\p"
-	.string "Oh, it's called a POKéDEX?\n"
-	.string "It's really awesome!$"
+	.string "Bạn đang có thứ gì thế?\p"
+	.string "... ... ... ... ... ...\p"
+	.string "Ồ, nó được gọi là POKéDEX sao? Tuyệt\n"
+	.string "thật đấy!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_House3_Text_MetStevenHadAmazingPokemon
+	.global FortreeCity_House3_Text_OhYouHavePokedex
+@ END GENERATED LOCALIZATION EXPORTS

@@ -44,27 +44,34 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
-	.string "WALLACE is rumored to be the toughest\n"
-	.string "TRAINER in the whole HOENN region.\p"
-	.string "This town's GYM is led by the TRAINER\n"
-	.string "who taught WALLACE.\p"
-	.string "But the ELITE FOUR… They're said to be\n"
-	.string "even stronger than WALLACE's mentor.\p"
-	.string "How strong could they be?$"
+	.string "Nghe đồn WALLACE là HLV mạnh nhất\n"
+	.string "toàn vùng HOENN.\p"
+	.string "GYM của thành phố này do HLV từng\n"
+	.string "dạy WALLACE dẫn dắt.\p"
+	.string "Nhưng ELITE FOUR... Người ta nói họ còn\n"
+	.string "mạnh hơn cả sư phụ của WALLACE.\p"
+	.string "Rốt cuộc họ mạnh đến mức nào nhỉ?$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
-	.string "Everyone in town has taken refuge\n"
-	.string "and won't come out of their homes.\p"
-	.string "Even I would rather not venture\n"
-	.string "outside.$"
+	.string "Mọi người trong thành phố đều đã đi\n"
+	.string "lánh nạn và không chịu ra khỏi nhà.\p"
+	.string "Ngay cả tôi cũng chẳng muốn mạo hiểm ra\n"
+	.string "ngoài.$"
 
 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon:
-	.string "Whenever, wherever, and whatever\n"
-	.string "happens, I will always be friends with\l"
-	.string "POKéMON.\p"
-	.string "Because it's fun to be with POKéMON!$"
+	.string "Dù khi nào, ở đâu hay xảy ra chuyện gì,\n"
+	.string "tôi vẫn sẽ luôn là bạn của POKéMON.\p"
+	.string "Vì ở bên POKéMON vui lắm!$"
 
 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends:
-	.string "Aren't POKéMON our friends?\p"
-	.string "Why are they going wild this way?$"
+	.string "POKéMON chẳng phải là bạn của chúng ta\n"
+	.string "sao?\p"
+	.string "Sao chúng lại trở nên hung hăng thế\n"
+	.string "này?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn
+	.global SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge
+	.global SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon
+	.global SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends
+@ END GENERATED LOCALIZATION EXPORTS

@@ -1,63 +1,84 @@
 @ Only contains the text for the Mauville Man named Giddy. The rest is in scripts/mauville_man.inc
 GiddyText_SoPretty::
-	.string " so pretty!$"
+	.string "đẹp quá!$"
 
 GiddyText_SoDarling::
-	.string " so darling!$"
+	.string "đáng yêu quá!$"
 
 GiddyText_SoRelaxed::
-	.string " so relaxed!$"
+	.string "thư thái quá!$"
 
 GiddyText_SoSunny::
-	.string " so sunny!$"
+	.string "rạng rỡ quá!$"
 
 GiddyText_SoDesirable::
-	.string " so desirable!$"
+	.string "hấp dẫn quá!$"
 
 GiddyText_SoExciting::
-	.string " so exciting!$"
+	.string "thú vị quá!$"
 
 GiddyText_SoAmusing::
-	.string " so amusing!$"
+	.string "vui nhộn quá!$"
 
 GiddyText_SoMagical::
-	.string " so magical!$"
+	.string "kỳ diệu quá!$"
 
 GiddyText_Is::
-	.string " is$"
+	.string "thật là$"
 
 GiddyText_DontYouAgree::
-	.string "\n"
-	.string "Don't you agree?$"
+	.string "Bạn không thấy vậy sao?$"
 
 GiddyText_ISoWantToGoOnAVacation::
-	.string "I so want to go on a vacation.\n"
-	.string "Would you happen to know a nice place?$"
+	.string "Tôi muốn đi nghỉ mát quá. Bạn có biết\n"
+	.string "nơi nào đẹp không?$"
 
 GiddyText_IBoughtCrayonsWith120Colors::
-	.string "I bought crayons with 120 colors!\n"
-	.string "Don't you think that's nice?$"
+	.string "Tôi đã mua một hộp bút sáp có 120 màu!\n"
+	.string "Bạn không thấy tuyệt sao?$"
 
 GiddyText_WouldntItBeNiceIfWeCouldFloat::
-	.string "Wouldn't it be nice if we could float\n"
-	.string "away on a cloud of bubbles?$"
+	.string "Giá mà chúng ta có thể bồng bềnh bay đi\n"
+	.string "trên một đám mây bong bóng thì tuyệt\l"
+	.string "biết bao?$"
 
 GiddyText_WhenYouWriteOnASandyBeach::
-	.string "When you write on a sandy beach,\n"
-	.string "they wash away. It makes me sad.$"
+	.string "Những chữ viết trên bãi cát sẽ bị sóng\n"
+	.string "cuốn trôi. Điều đó khiến tôi buồn.$"
 
 GiddyText_WhatsTheBottomOfTheSeaLike::
-	.string "What's the bottom of the sea like?\n"
-	.string "Just once I would so love to go!$"
+	.string "Đáy biển trông như thế nào nhỉ? Tôi rất\n"
+	.string "muốn được đến đó dù chỉ một lần!$"
 
 GiddyText_WhenYouSeeTheSettingSunDoesIt::
-	.string "When you see the setting sun, does it\n"
-	.string "make you want to go home?$"
+	.string "Khi nhìn thấy hoàng hôn, bạn có muốn\n"
+	.string "trở về nhà không?$"
 
 GiddyText_LyingBackInTheGreenGrass::
-	.string "Lying back in the green grass…\n"
-	.string "Oh, it's so, so nice!$"
+	.string "Nằm ngửa trên thảm cỏ xanh... Ôi, dễ chịu\n"
+	.string "ơi là dễ chịu!$"
 
 GiddyText_SecretBasesAreSoWonderful::
-	.string "SECRET BASES are so wonderful!\n"
-	.string "Can't you feel the excitement?$"
+	.string "SECRET BASES tuyệt vời quá! Bạn không\n"
+	.string "thấy háo hức sao?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global GiddyText_SoPretty
+	.global GiddyText_SoDarling
+	.global GiddyText_SoRelaxed
+	.global GiddyText_SoSunny
+	.global GiddyText_SoDesirable
+	.global GiddyText_SoExciting
+	.global GiddyText_SoAmusing
+	.global GiddyText_SoMagical
+	.global GiddyText_Is
+	.global GiddyText_DontYouAgree
+	.global GiddyText_ISoWantToGoOnAVacation
+	.global GiddyText_IBoughtCrayonsWith120Colors
+	.global GiddyText_WouldntItBeNiceIfWeCouldFloat
+	.global GiddyText_WhenYouWriteOnASandyBeach
+	.global GiddyText_WhatsTheBottomOfTheSeaLike
+	.global GiddyText_WhenYouSeeTheSettingSunDoesIt
+	.global GiddyText_LyingBackInTheGreenGrass
+	.global GiddyText_SecretBasesAreSoWonderful
+@ END GENERATED LOCALIZATION EXPORTS

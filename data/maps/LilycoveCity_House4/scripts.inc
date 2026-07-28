@@ -10,12 +10,17 @@ LilycoveCity_House4_EventScript_Man2::
 	end
 
 LilycoveCity_House4_Text_MysteriesAtBottomOfSea:
-	.string "This planet's biggest mysteries are\n"
-	.string "at the bottom of the sea.\p"
-	.string "Somebody said that, but I don't know…$"
+	.string "Những bí ẩn lớn nhất của hành tinh này\n"
+	.string "nằm dưới đáy biển.\p"
+	.string "Có người nói thế, nhưng tôi cũng không\n"
+	.string "biết...$"
 
 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis:
-	.string "There's a deep underwater trench\n"
-	.string "between MOSSDEEP and SOOTOPOLIS.\p"
-	.string "That's what someone told me, anyway.$"
+	.string "Có một rãnh biển sâu dưới nước nằm\n"
+	.string "giữa MOSSDEEP và SOOTOPOLIS.\p"
+	.string "Dù sao thì có người đã kể tôi như vậy.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_House4_Text_MysteriesAtBottomOfSea
+	.global LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
+@ END GENERATED LOCALIZATION EXPORTS

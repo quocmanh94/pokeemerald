@@ -23,19 +23,25 @@ AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus::
 	end
 
 AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner:
-	.string "I'm investigating this ship on behalf\n"
-	.string "of CAPT. STERN.\p"
-	.string "He also asked me to find a SCANNER,\n"
-	.string "but I haven't had any success…$"
+	.string "Tôi đang điều tra con tàu này theo yêu\n"
+	.string "cầu của CAPT. STERN.\p"
+	.string "Ông ấy còn nhờ tôi tìm một SCANNER,\n"
+	.string "nhưng đến giờ tôi vẫn chưa có kết\l"
+	.string "quả...$"
 
 AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner:
-	.string "Oh! That's a SCANNER!\p"
-	.string "Listen, can I get you to deliver that\n"
-	.string "to CAPT. STERN?\p"
-	.string "I want to investigate this ship a\n"
-	.string "little more.$"
+	.string "Ồ! Đó là một SCANNER!\p"
+	.string "Nghe này, bạn có thể mang nó đến cho\n"
+	.string "CAPT. STERN được không?\p"
+	.string "Tôi muốn điều tra con tàu này thêm một\n"
+	.string "chút nữa.$"
 
 AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus:
-	.string "This ship is called S.S. CACTUS.\n"
-	.string "It seems to be from an earlier era.$"
+	.string "Con tàu này tên là S.S. CACTUS. Có vẻ nó\n"
+	.string "thuộc về một thời đại trước.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner
+	.global AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner
+	.global AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus
+@ END GENERATED LOCALIZATION EXPORTS

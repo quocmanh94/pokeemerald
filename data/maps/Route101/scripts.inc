@@ -257,42 +257,48 @@ Route101_Movement_BirchApproachPlayer:
 	step_end
 
 Route101_Text_HelpMe:
-	.string "H-help me!$"
+	.string "C-cứu tôi với!$"
 
 Route101_Text_PleaseHelp:
-	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "Này! Người ở đằng kia! Làm ơn! Cứu tôi!\p"
+	.string "Trong TÚI ĐỒ của tôi! Có một POKé BALL!$"
 
 Route101_Text_DontLeaveMe:
-	.string "Wh-Where are you going?!\n"
-	.string "Don't leave me like this!$"
+	.string "C-Cậu đi đâu vậy?! Đừng bỏ mặc tôi thế\n"
+	.string "này!$"
 
 Route101_Text_YouSavedMe:
-	.string "PROF. BIRCH: Whew…\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
-	.string "Oh?\p"
-	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
+	.string "PROF. BIRCH: Phù...\p"
+	.string "Ta đang nghiên cứu POKéMON hoang dã\n"
+	.string "trong cỏ cao thì bất ngờ bị tấn công.\p"
+	.string "Cháu đã cứu ta. Cảm ơn cháu nhiều lắm!\p"
+	.string "Ồ?\p"
+	.string "Chào cháu, cháu là {PLAYER}{KUN}!\p"
+	.string "Đây không phải nơi thích hợp để trò\n"
+	.string "chuyện, nên lát nữa hãy đến POKéMON\l"
+	.string "LAB của ta nhé?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
-	.string "TOWN right close by.$"
+	.string "Nếu POKéMON mệt, hãy đưa chúng đến\n"
+	.string "POKéMON CENTER.\p"
+	.string "Ngay gần đây có một POKéMON CENTER tại\n"
+	.string "OLDALE TOWN.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "POKéMON hoang dã sẽ nhảy ra tấn công\n"
+	.string "cậu trong cỏ cao.\p"
+	.string "Nếu muốn bắt POKéMON, cậu phải đi vào\n"
+	.string "cỏ cao để tìm kiếm.$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route101_Text_HelpMe
+	.global Route101_Text_PleaseHelp
+	.global Route101_Text_DontLeaveMe
+	.global Route101_Text_YouSavedMe
+	.global Route101_Text_TakeTiredPokemonToPokeCenter
+	.global Route101_Text_WildPokemonInTallGrass
+@ END GENERATED LOCALIZATION EXPORTS

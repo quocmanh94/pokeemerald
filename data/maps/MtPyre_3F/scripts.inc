@@ -33,67 +33,82 @@ MtPyre_3F_EventScript_RematchGabrielle::
 	end
 
 MtPyre_3F_Text_WilliamIntro:
-	.string "The rich atmosphere of the mountain\n"
-	.string "has elevated my psychic power!\p"
-	.string "A mere child like you…\n"
-	.string "You dream of winning?$"
+	.string "Bầu không khí linh thiêng của ngọn núi\n"
+	.string "đã nâng sức mạnh tâm linh của ta lên\l"
+	.string "một tầm cao mới!\p"
+	.string "Chỉ là một đứa trẻ như ngươi... Mà cũng\n"
+	.string "mơ chiến thắng sao?$"
 
 MtPyre_3F_Text_WilliamDefeat:
-	.string "I drown in self-pity…$"
+	.string "Ta chìm trong nỗi tự thương thân...$"
 
 MtPyre_3F_Text_WilliamPostBattle:
-	.string "My psychic powers have surely\n"
-	.string "grown several times, but…$"
+	.string "Năng lực tâm linh của ta rõ ràng đã tăng\n"
+	.string "lên gấp mấy lần, vậy mà...$"
 
 MtPyre_3F_Text_KaylaIntro:
 	.string "Ahahahaha!\p"
-	.string "This is no place for children, least\n"
-	.string "of all you!$"
+	.string "Đây không phải nơi dành cho trẻ con,\n"
+	.string "nhất là nhóc!$"
 
 MtPyre_3F_Text_KaylaDefeat:
-	.string "I lost that cleanly…$"
+	.string "Tôi thua tâm phục khẩu phục...$"
 
 MtPyre_3F_Text_KaylaPostBattle:
-	.string "This means my training is still not\n"
-	.string "enough…\p"
-	.string "I've got to keep working toward the\n"
-	.string "summit…\p"
-	.string "Go, me!$"
+	.string "Vậy nghĩa là tôi vẫn chưa luyện tập\n"
+	.string "đủ...\p"
+	.string "Tôi phải tiếp tục nỗ lực tiến tới đỉnh\n"
+	.string "núi...\p"
+	.string "Cố lên nào, tôi ơi!$"
 
 MtPyre_3F_Text_GabrielleIntro:
-	.string "Why have you come here?$"
+	.string "Tại sao bạn lại đến đây?$"
 
 MtPyre_3F_Text_GabrielleDefeat:
-	.string "That was amazing!\n"
-	.string "You're a very special TRAINER.$"
+	.string "Thật tuyệt vời! Bạn là một HLV rất\n"
+	.string "đặc biệt.$"
 
 MtPyre_3F_Text_GabriellePostBattle:
-	.string "POKéMON no longer of this world.\n"
-	.string "POKéMON that are with you now.\p"
-	.string "And the POKéMON that you will meet\n"
-	.string "in the future…\p"
-	.string "They are all to be equally cherished.\n"
-	.string "Please remember that.$"
+	.string "Những POKéMON đã rời khỏi thế giới này.\n"
+	.string "Những POKéMON đang ở bên bạn.\p"
+	.string "Và những POKéMON bạn sẽ gặp trong\n"
+	.string "tương lai...\p"
+	.string "Tất cả đều đáng được trân trọng như\n"
+	.string "nhau. Xin hãy ghi nhớ điều đó.$"
 
 MtPyre_3F_Text_GabrielleRegister:
-	.string "I would like to see your POKéMON\n"
-	.string "when they grow up some more…\p"
-	.string "Please, I need to see your POKéNAV.$"
+	.string "Tôi muốn được thấy POKéMON của bạn khi\n"
+	.string "chúng trưởng thành hơn nữa...\p"
+	.string "Xin hãy cho tôi xem POKéNAV của bạn.$"
 
 MtPyre_3F_Text_GabrielleRematchIntro:
-	.string "Oh, it's you…\p"
-	.string "Have you come to show me your grown\n"
-	.string "POKéMON?$"
+	.string "Ồ, là bạn...\p"
+	.string "Bạn đến cho tôi xem những POKéMON đã\n"
+	.string "trưởng thành sao?$"
 
 MtPyre_3F_Text_GabrielleRematchDefeat:
-	.string "How amazing!\n"
-	.string "You are a special person.$"
+	.string "Thật kỳ diệu! Bạn là một người đặc biệt.$"
 
 MtPyre_3F_Text_GabriellePostRematch:
-	.string "POKéMON no longer of this world.\n"
-	.string "POKéMON that are with you now.\p"
-	.string "And the POKéMON that you will meet\n"
-	.string "in the future…\p"
-	.string "They are all to be equally cherished.\n"
-	.string "I see that you've remembered that.$"
+	.string "Những POKéMON đã rời khỏi thế giới này.\n"
+	.string "Những POKéMON đang ở bên bạn.\p"
+	.string "Và những POKéMON bạn sẽ gặp trong\n"
+	.string "tương lai...\p"
+	.string "Tất cả đều đáng được trân trọng như\n"
+	.string "nhau. Tôi thấy bạn vẫn nhớ điều đó.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_3F_Text_WilliamIntro
+	.global MtPyre_3F_Text_WilliamDefeat
+	.global MtPyre_3F_Text_WilliamPostBattle
+	.global MtPyre_3F_Text_KaylaIntro
+	.global MtPyre_3F_Text_KaylaDefeat
+	.global MtPyre_3F_Text_KaylaPostBattle
+	.global MtPyre_3F_Text_GabrielleIntro
+	.global MtPyre_3F_Text_GabrielleDefeat
+	.global MtPyre_3F_Text_GabriellePostBattle
+	.global MtPyre_3F_Text_GabrielleRegister
+	.global MtPyre_3F_Text_GabrielleRematchIntro
+	.global MtPyre_3F_Text_GabrielleRematchDefeat
+	.global MtPyre_3F_Text_GabriellePostRematch
+@ END GENERATED LOCALIZATION EXPORTS

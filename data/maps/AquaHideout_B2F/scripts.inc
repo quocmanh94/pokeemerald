@@ -87,73 +87,88 @@ AquaHideout_B2F_EventScript_Grunt8::
 	end
 
 AquaHideout_B2F_Text_MattIntro:
-	.string "Hehehe…\p"
-	.string "Got here already, did you?\n"
-	.string "We underestimated you!\p"
-	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
-	.string "I'm not stalling for time.\n"
-	.string "I'm going to pulverize you!$"
+	.string "Hehehe...\p"
+	.string "Đã tới đây rồi sao? Bọn ta đã đánh giá\n"
+	.string "thấp ngươi!\p"
+	.string "Nhưng đến đây là hết!\p"
+	.string "Ta vượt xa đám lính ngươi đã gặp từ\n"
+	.string "nãy tới giờ.\p"
+	.string "Ta không câu giờ đâu. Ta sẽ nghiền nát\n"
+	.string "ngươi!$"
 
 AquaHideout_B2F_Text_MattDefeat:
-	.string "Hehehe…\n"
-	.string "So, I lost, too…$"
+	.string "Hehehe... Vậy là ta cũng thua...$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
 	.string "Hehehe!\p"
-	.string "While I was toying with you, our BOSS\n"
-	.string "got through his preparations!$"
+	.string "Lúc ta đùa giỡn với ngươi, thủ lĩnh\n"
+	.string "của bọn ta đã chuẩn bị xong hết rồi!$"
 
 AquaHideout_B2F_Text_MattPostBattle:
 	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
-	.string "some cave under the sea!\p"
-	.string "If you're going to give chase, you'd\n"
-	.string "better search the big, wide sea beyond\l"
-	.string "LILYCOVE.\p"
-	.string "But will you find it then?\n"
+	.string "Thủ lĩnh bọn ta đã lên đường tới một\n"
+	.string "hang động nào đó dưới biển rồi!\p"
+	.string "Nếu muốn đuổi theo, tốt nhất ngươi nên\n"
+	.string "tìm khắp vùng biển mênh mông phía\l"
+	.string "ngoài LILYCOVE.\p"
+	.string "Nhưng liệu ngươi có tìm thấy không?\n"
 	.string "Hehehe!$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
-	.string "Wahahah, I grew weary of waiting!\n"
-	.string "You owe me a battle, too!$"
+	.string "Wahahah, ta chờ đến phát chán rồi!\n"
+	.string "Ngươi cũng nợ ta một trận đấu!$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
-	.string "Tired of waiting…\n"
-	.string "Lost and dazed…$"
+	.string "Chờ đến mệt mỏi... Thua đến choáng\n"
+	.string "váng...$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "BOSS…\n"
-	.string "Is this good enough?$"
+	.string "Thủ lĩnh... Thế này đã đủ chưa?$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "Warp panels, the HIDEOUT's pride\n"
-	.string "and joy!\p"
-	.string "You're clueless about where you are,\n"
-	.string "aren't you?\p"
-	.string "Fluster and tire out the enemy, then\n"
-	.string "lower the boom! That's our plan!$"
+	.string "Các tấm dịch chuyển, niềm kiêu hãnh của\n"
+	.string "HIDEOUT!\p"
+	.string "Ngươi chẳng biết mình đang ở đâu,\n"
+	.string "đúng không?\p"
+	.string "Làm kẻ địch rối trí và kiệt sức, rồi\n"
+	.string "giáng đòn kết liễu! Đó là kế hoạch của\l"
+	.string "bọn ta!$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "What's wrong with you?\n"
-	.string "You're not tired at all!$"
+	.string "Ngươi bị làm sao vậy? Chẳng mệt chút\n"
+	.string "nào cả!$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "That reminds me… I can't remember\n"
-	.string "where I put the MASTER BALL.\p"
-	.string "If I fail to guard it, our BOSS will\n"
-	.string "chew me out…$"
+	.string "Nhắc mới nhớ... Ta không nhớ đã để\n"
+	.string "MASTER BALL ở đâu.\p"
+	.string "Nếu để mất nó, thủ lĩnh sẽ\n"
+	.string "mắng ta một trận...$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "When I joined TEAM AQUA, the first\n"
-	.string "thing I had to learn was how these\l"
-	.string "warp panels connected.$"
+	.string "Khi gia nhập TEAM AQUA, điều đầu tiên\n"
+	.string "tôi phải học là các tấm dịch chuyển này\l"
+	.string "nối với nhau thế nào.$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "I was too occupied thinking about\n"
-	.string "the warp panels…$"
+	.string "Tôi cứ mải nghĩ về các tấm dịch\n"
+	.string "chuyển...$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "I'll have to learn about how I can\n"
-	.string "battle more effectively…$"
+	.string "Tôi sẽ phải học cách chiến đấu hiệu quả\n"
+	.string "hơn...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AquaHideout_B2F_Text_MattIntro
+	.global AquaHideout_B2F_Text_MattDefeat
+	.global AquaHideout_B2F_Text_OurBossGotThroughHisPreparations
+	.global AquaHideout_B2F_Text_MattPostBattle
+	.global AquaHideout_B2F_Text_Grunt4Intro
+	.global AquaHideout_B2F_Text_Grunt4Defeat
+	.global AquaHideout_B2F_Text_Grunt4PostBattle
+	.global AquaHideout_B2F_Text_Grunt6Intro
+	.global AquaHideout_B2F_Text_Grunt6Defeat
+	.global AquaHideout_B2F_Text_Grunt6PostBattle
+	.global AquaHideout_B2F_Text_Grunt8Intro
+	.global AquaHideout_B2F_Text_Grunt8Defeat
+	.global AquaHideout_B2F_Text_Grunt8PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

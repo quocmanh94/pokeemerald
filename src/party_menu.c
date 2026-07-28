@@ -504,6 +504,14 @@ static bool8 SetUpFieldMove_Dive(void);
 #include "data/pokemon/tutor_learnsets.h"
 #include "data/party_menu.h"
 
+static const u8 sText_AbilityChanged[] = _("Ability của {STR_VAR_1} đã đổi thành\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_EggBallCannotBeChanged[] = _("Không thể đổi Ball của EGG.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_HatchedMonBallCannotBeChanged[] = _("Không thể đổi Ball của POKéMON\nđược nở từ EGG.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_StarterBallCannotBeChanged[] = _("Không thể đổi Ball của\nPOKéMON khởi đầu.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_SafariBallCannotBeChanged[] = _("Không thể đổi SAFARI BALL.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ChangePokeBallPrompt[] = _("Đổi Ball của {STR_VAR_1} từ\n{STR_VAR_2} sang {STR_VAR_3}?");
+static const u8 sText_PokeBallChanged[] = _("Đã chuyển {STR_VAR_1} sang\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
+
 // code
 static void InitPartyMenu(u8 menuType, u8 layout, u8 partyAction, bool8 keepCursorPos, u8 messageId, TaskFunc task, MainCallback callback)
 {
@@ -5015,7 +5023,6 @@ void ItemUseCB_PPUp(u8 taskId, TaskFunc task)
 
 void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
 {
-    static const u8 sText_AbilityChanged[] = _("{STR_VAR_1}'s Ability changed to\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
     u8 hiddenAbility = GetAbilityBySpecies(species, ABILITY_SLOT_HIDDEN);
@@ -5053,11 +5060,6 @@ void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
 
 void ItemUseCB_PokeBall(u8 taskId, TaskFunc task)
 {
-    static const u8 sText_EggBallCannotBeChanged[] = _("An EGG's Ball can't be changed.{PAUSE_UNTIL_PRESS}");
-    static const u8 sText_HatchedMonBallCannotBeChanged[] = _("A hatched POKéMON's Ball\ncan't be changed.{PAUSE_UNTIL_PRESS}");
-    static const u8 sText_StarterBallCannotBeChanged[] = _("A starter POKéMON's Ball\ncan't be changed.{PAUSE_UNTIL_PRESS}");
-    static const u8 sText_SafariBallCannotBeChanged[] = _("A SAFARI BALL can't be changed.{PAUSE_UNTIL_PRESS}");
-    static const u8 sText_ChangePokeBallPrompt[] = _("Change {STR_VAR_1}'s Ball from\n{STR_VAR_2} to {STR_VAR_3}?");
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 oldBall = GetMonData(mon, MON_DATA_POKEBALL);
     u16 newBall = gSpecialVar_ItemId;
@@ -5155,7 +5157,6 @@ static void Task_PromptChangePokeBall(u8 taskId)
 
 static void Task_HandleChangePokeBallInput(u8 taskId)
 {
-    static const u8 sText_PokeBallChanged[] = _("{STR_VAR_1} was moved to the\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 oldBall = sPartyMenuItemId;
     u16 newBall = gSpecialVar_ItemId;
@@ -6994,3 +6995,14 @@ void IsLastMonThatKnowsSurf(void)
             gSpecialVar_Result = TRUE;
     }
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02640 = sText_AbilityChanged;
+const u8 *const gLocalizationSource_C02641 = sText_EggBallCannotBeChanged;
+const u8 *const gLocalizationSource_C02642 = sText_HatchedMonBallCannotBeChanged;
+const u8 *const gLocalizationSource_C02643 = sText_StarterBallCannotBeChanged;
+const u8 *const gLocalizationSource_C02644 = sText_SafariBallCannotBeChanged;
+const u8 *const gLocalizationSource_C02645 = sText_ChangePokeBallPrompt;
+const u8 *const gLocalizationSource_C02646 = sText_PokeBallChanged;
+// END GENERATED LOCALIZATION EXPORTS

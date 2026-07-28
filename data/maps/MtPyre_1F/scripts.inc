@@ -26,22 +26,27 @@ MtPyre_1F_EventScript_Man::
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
-	.string "All sorts of beings wander the slopes\n"
-	.string "of MT. PYRE…\p"
-	.string "There is no telling what may happen.\n"
-	.string "Take this. It's for your own good.$"
+	.string "Đủ loại sinh vật lang thang trên sườn\n"
+	.string "MT. PYRE...\p"
+	.string "Không ai biết chuyện gì có thể xảy ra.\n"
+	.string "Hãy cầm lấy. Vì sự an toàn của bạn.$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "Have a POKéMON hold that\n"
-	.string "CLEANSE TAG.\p"
-	.string "It will help ward off wild POKéMON.$"
+	.string "Hãy để một POKéMON cầm CLEANSE TAG đó.\p"
+	.string "Nó sẽ giúp xua đuổi POKéMON hoang dã.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
-	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+	.string "Bạn đến để viếng hương hồn những\n"
+	.string "POKéMON đã khuất sao?\p"
+	.string "Hẳn bạn rất yêu quý POKéMON của mình.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
-	.string "This is the final resting place of my\n"
-	.string "ZIGZAGOON. I cherished it…$"
+	.string "Đây là nơi ZIGZAGOON của tôi an nghỉ.\n"
+	.string "Tôi từng yêu quý nó biết bao...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MtPyre_1F_Text_TakeThisForYourOwnGood
+	.global MtPyre_1F_Text_ExplainCleanseTag
+	.global MtPyre_1F_Text_ComeToPayRespects
+	.global MtPyre_1F_Text_RestingPlaceOfZigzagoon
+@ END GENERATED LOCALIZATION EXPORTS

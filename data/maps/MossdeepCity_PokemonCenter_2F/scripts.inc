@@ -23,7 +23,11 @@ MossdeepCity_PokemonCenter_2F_EventScript_Woman5::
 	end
 
 MossdeepCity_PokemonCenter_2F_Text_Woman5:
-	.string "If I win a whole lot of link battles\n"
-	.string "and show everyone how good I am,\l"
-	.string "I might get a fan following!$"
+	.string "Nếu thắng thật nhiều trận đấu liên kết\n"
+	.string "và cho mọi người thấy mình giỏi thế\l"
+	.string "nào, có khi tôi sẽ có cả một hội người\l"
+	.string "hâm mộ!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_PokemonCenter_2F_Text_Woman5
+@ END GENERATED LOCALIZATION EXPORTS

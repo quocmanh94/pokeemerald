@@ -283,177 +283,206 @@ DewfordTown_Gym_EventScript_GymStatue::
 	end
 
 DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
-	.string "FIGHTING-type POKéMON.\p"
-	.string "Going against him with NORMAL-type\n"
-	.string "POKéMON is asking for trouble.\p"
-	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "smack down on NORMAL POKéMON,\l"
-	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
-	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
-	.string "Hey, okay, go for it!$"
+	.string "Này, dạo này sao rồi, {PLAYER}, nhà\n"
+	.string "CHAMPION tương lai?\p"
+	.string "GYM LEADER BRAWLY của DEWFORD chỉ huy\n"
+	.string "các POKéMON hệ FIGHTING.\p"
+	.string "Dùng POKéMON hệ NORMAL đối đầu anh ấy\n"
+	.string "chẳng khác nào tự chuốc rắc rối.\p"
+	.string "POKéMON hệ FIGHTING sẽ đánh POKéMON\n"
+	.string "hệ NORMAL tơi tả, nên hãy cẩn thận!\p"
+	.string "Tệ hơn nữa, GYM tối như đáy đại dương.\p"
+	.string "Nhưng nơi này sẽ sáng dần lên sau khi\n"
+	.string "cậu đánh bại các HLV chắn đường.\p"
+	.string "Được rồi, tiến lên nào!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "Whoah! It's turned too bright in here!\p"
-	.string "Your future is bright, too!$"
+	.string "Chà! Trong này sáng quá rồi!\p"
+	.string "Tương lai của cậu cũng sáng lạn như\n"
+	.string "vậy!$"
 
 DewfordTown_Gym_Text_TakaoIntro:
-	.string "Might is right!\n"
-	.string "Come on!$"
+	.string "Sức mạnh là lẽ phải! Tới đi!$"
 
 DewfordTown_Gym_Text_TakaoDefeat:
-	.string "Not enough power…$"
+	.string "Chưa đủ sức mạnh...$"
 
 DewfordTown_Gym_Text_TakaoPostBattle:
-	.string "Your skill overcame my strength!\n"
-	.string "Your technique is commendable!$"
+	.string "Kỹ năng của cậu đã vượt qua sức mạnh\n"
+	.string "của tôi! Kỹ thuật thật đáng khen!$"
 
 DewfordTown_Gym_Text_JocelynIntro:
-	.string "There's no need for BRAWLY to be\n"
-	.string "involved!\p"
-	.string "I'll crush you!$"
+	.string "Không cần BRAWLY phải ra tay!\p"
+	.string "Tôi sẽ nghiền nát cậu!$"
 
 DewfordTown_Gym_Text_JocelynDefeat:
-	.string "But… How?\n"
-	.string "How could I lose so easily?$"
+	.string "Nhưng... Tại sao? Sao tôi có thể thua dễ\n"
+	.string "dàng đến thế?$"
 
 DewfordTown_Gym_Text_JocelynPostBattle:
-	.string "I'm not going to waste this loss.\n"
-	.string "I'll use it to motivate me to train!\p"
-	.string "One day I'll become a GYM LEADER…\p"
-	.string "No, I'll become the POKéMON LEAGUE\n"
+	.string "Tôi sẽ không để thất bại này trở nên vô\n"
+	.string "ích. Tôi sẽ lấy nó làm động lực luyện\l"
+	.string "tập!\p"
+	.string "Một ngày nào đó tôi sẽ trở thành GYM\n"
+	.string "LEADER...\p"
+	.string "Không, tôi sẽ trở thành POKéMON LEAGUE\n"
 	.string "CHAMPION!$"
 
 DewfordTown_Gym_Text_LauraIntro:
-	.string "Don't you dare brush me off!\n"
-	.string "It's not my fault if you cry!$"
+	.string "Đừng có coi thường tôi! Có khóc thì\n"
+	.string "cũng đừng trách tôi!$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "Waaaaaaah!\n"
-	.string "I lost!$"
+	.string "Oaaaaaaa! Tôi thua rồi!$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
-	.string "I battle in the dark to make my heart\n"
-	.string "stronger.\p"
-	.string "But because it's so dark, I can never\n"
-	.string "see BRAWLY's face…$"
+	.string "Tôi chiến đấu trong bóng tối để khiến\n"
+	.string "trái tim mình mạnh mẽ hơn.\p"
+	.string "Nhưng vì ở đây tối quá nên tôi chẳng\n"
+	.string "bao giờ nhìn thấy mặt BRAWLY...$"
 
 DewfordTown_Gym_Text_LilithIntro:
-	.string "Ufufu…\n"
-	.string "Are you stumbling around in the dark?$"
+	.string "Ufufu... Cậu đang loạng choạng trong\n"
+	.string "bóng tối à?$"
 
 DewfordTown_Gym_Text_LilithDefeat:
-	.string "Oh, you…\n"
-	.string "I don't want to know you!$"
+	.string "Ôi, cậu... Tôi chẳng muốn biết cậu là ai\n"
+	.string "nữa!$"
 
 DewfordTown_Gym_Text_LilithPostBattle:
-	.string "You deserve to stay lost and end up\n"
-	.string "back at the entrance again!$"
+	.string "Cậu đáng bị lạc đường rồi quay lại tận\n"
+	.string "lối vào!$"
 
 DewfordTown_Gym_Text_BrendenIntro:
-	.string "I'll show you the gumption of\n"
-	.string "a sailing man!$"
+	.string "Ta sẽ cho cậu thấy khí phách của một\n"
+	.string "thủy thủ!$"
 
 DewfordTown_Gym_Text_BrendenDefeat:
-	.string "How'd this happen?\n"
-	.string "It's not like me to lose this way!$"
+	.string "Sao lại thế này? Ta đâu có dễ dàng thua\n"
+	.string "như vậy!$"
 
 DewfordTown_Gym_Text_BrendenPostBattle:
-	.string "Oh, aye! You're worthy of seeing\n"
-	.string "our GYM LEADER.$"
+	.string "Ồ, phải rồi! Cậu xứng đáng được diện\n"
+	.string "kiến GYM LEADER của chúng tôi.$"
 
 DewfordTown_Gym_Text_CristianIntro:
-	.string "If you mean to pass, it has to be\n"
-	.string "through me!$"
+	.string "Muốn đi tiếp thì cậu phải vượt qua tôi!$"
 
 DewfordTown_Gym_Text_CristianDefeat:
-	.string "Grrrrr!\n"
-	.string "Vastly overpowered!$"
+	.string "Grrrrr! Bị áp đảo hoàn toàn!$"
 
 DewfordTown_Gym_Text_CristianPostBattle:
-	.string "You win!\n"
-	.string "Go after that BADGE!$"
+	.string "Cậu thắng! Tiến tới giành BADGE đi!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "I'm BRAWLY!\n"
-	.string "DEWFORD's GYM LEADER!\p"
-	.string "I've been churned in the rough waves\n"
-	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
-	.string "So you wanted to challenge me?\n"
-	.string "Let me see what you're made of!$"
+	.string "Tôi là BRAWLY! GYM LEADER của DEWFORD!\p"
+	.string "Tôi đã được những con sóng dữ nơi đây\n"
+	.string "nhào luyện và trở nên cứng cỏi trong\l"
+	.string "hang động tối đen!\p"
+	.string "Vậy cậu muốn thách đấu tôi sao? Để tôi\n"
+	.string "xem cậu có bản lĩnh đến đâu!$"
 
 DewfordTown_Gym_Text_BrawlyDefeat:
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
-	.string "You swamped me!\p"
-	.string "Okay, you've got me.\n"
-	.string "Take this GYM BADGE!$"
+	.string "Ghê thật! Cậu đã tạo ra con sóng lớn\n"
+	.string "hơn tôi tưởng nhiều!\p"
+	.string "Cậu cuốn phăng tôi luôn!\p"
+	.string "Được rồi, tôi chịu thua. Hãy nhận GYM\n"
+	.string "BADGE này!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
-	.string "from BRAWLY.$"
+	.string "{PLAYER} đã nhận KNUCKLE BADGE từ\n"
+	.string "BRAWLY.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The KNUCKLE BADGE makes all POKéMON\n"
-	.string "up to Level 30, even those you get in\l"
-	.string "trades, obey without question.\p"
-	.string "And, you'll be able to use the HM move\n"
-	.string "FLASH outside of battle.\p"
-	.string "If you'd like, use this TECHNICAL\n"
-	.string "MACHINE, too.$"
+	.string "KNUCKLE BADGE sẽ khiến mọi POKéMON từ\n"
+	.string "Level 30 trở xuống, kể cả những\l"
+	.string "POKéMON nhận qua trao đổi, tuyệt đối\l"
+	.string "nghe lời.\p"
+	.string "Ngoài ra, cậu sẽ có thể dùng chiêu HM\n"
+	.string "FLASH bên ngoài trận đấu.\p"
+	.string "Nếu thích, hãy dùng cả TECHNICAL\n"
+	.string "MACHINE này nữa.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "That TM08 contains BULK UP.\p"
-	.string "It's a move that raises both ATTACK\n"
-	.string "and DEFENSE stats.\p"
-	.string "… … … … … …$"
+	.string "TM08 đó chứa BULK UP.\p"
+	.string "Chiêu này tăng cả chỉ số ATTACK lẫn\n"
+	.string "DEFENSE.\p"
+	.string "... ... ... ... ... ...$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "Registered GYM LEADER BRAWLY\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký GYM LEADER BRAWLY vào\n"
+	.string "POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
-	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "Tôi có thể thấy một ngày nào đó tài\n"
+	.string "năng của cậu sẽ hóa thành con sóng\l"
+	.string "khổng lồ, tạo nên cơn bão kinh ngạc\l"
+	.string "giữa các HLV!$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "DEWFORD TOWN POKéMON GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
 	.string "DEWFORD TOWN POKéMON GYM\p"
-	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
+	.string "HLV ĐƯỢC BRAWLY CÔNG NHẬN:\n"
 	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
-	.string "BRAWLY: A wave may draw back, but it\n"
-	.string "always returns to the shore.\p"
-	.string "A giant wave of a talent like you…\n"
-	.string "I knew you would return!\p"
-	.string "Show me how much higher\n"
-	.string "you've gone!$"
+	.string "BRAWLY: Sóng có thể rút xa, nhưng rồi\n"
+	.string "luôn trở lại bờ.\p"
+	.string "Một tài năng cuồn cuộn như sóng lớn\n"
+	.string "của cậu... Tôi biết cậu sẽ trở lại mà!\p"
+	.string "Cho tôi xem cậu đã tiến xa đến mức nào!$"
 
 DewfordTown_Gym_Text_BrawlyRematchDefeat:
-	.string "Wow!\n"
-	.string "Swamped again!$"
+	.string "Chà! Lại bị nhấn chìm rồi!$"
 
 DewfordTown_Gym_Text_BrawlyPostRematch:
-	.string "BRAWLY: Battling is vast and it's deep.\n"
-	.string "You can't see the bottom.\l"
-	.string "It's just like the sea of HOENN!$"
+	.string "BRAWLY: Chiến đấu thật bao la và sâu\n"
+	.string "thẳm. Không thể nào nhìn thấy đáy. Hệt\l"
+	.string "như biển cả HOENN vậy!$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
-	.string "BRAWLY: A wave may draw back, but it\n"
-	.string "always returns to the shore.\p"
-	.string "A giant wave of a talent like you…\n"
-	.string "I knew you would return!\p"
-	.string "Oh? You only have one POKéMON\n"
-	.string "that can battle.\p"
-	.string "I'm sorry, but I'd like you to come back\n"
-	.string "with at least two POKéMON.$"
+	.string "BRAWLY: Sóng có thể rút xa, nhưng rồi\n"
+	.string "luôn trở lại bờ.\p"
+	.string "Một tài năng cuồn cuộn như sóng lớn\n"
+	.string "của cậu... Tôi biết cậu sẽ trở lại mà!\p"
+	.string "Ồ? Cậu chỉ có một POKéMON có thể chiến\n"
+	.string "đấu thôi à.\p"
+	.string "Xin lỗi, nhưng hãy quay lại khi cậu có ít\n"
+	.string "nhất hai POKéMON nhé.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_Gym_Text_GymGuideAdvice
+	.global DewfordTown_Gym_Text_GymGuidePostVictory
+	.global DewfordTown_Gym_Text_TakaoIntro
+	.global DewfordTown_Gym_Text_TakaoDefeat
+	.global DewfordTown_Gym_Text_TakaoPostBattle
+	.global DewfordTown_Gym_Text_JocelynIntro
+	.global DewfordTown_Gym_Text_JocelynDefeat
+	.global DewfordTown_Gym_Text_JocelynPostBattle
+	.global DewfordTown_Gym_Text_LauraIntro
+	.global DewfordTown_Gym_Text_LauraDefeat
+	.global DewfordTown_Gym_Text_LauraPostBattle
+	.global DewfordTown_Gym_Text_LilithIntro
+	.global DewfordTown_Gym_Text_LilithDefeat
+	.global DewfordTown_Gym_Text_LilithPostBattle
+	.global DewfordTown_Gym_Text_BrendenIntro
+	.global DewfordTown_Gym_Text_BrendenDefeat
+	.global DewfordTown_Gym_Text_BrendenPostBattle
+	.global DewfordTown_Gym_Text_CristianIntro
+	.global DewfordTown_Gym_Text_CristianDefeat
+	.global DewfordTown_Gym_Text_CristianPostBattle
+	.global DewfordTown_Gym_Text_BrawlyIntro
+	.global DewfordTown_Gym_Text_BrawlyDefeat
+	.global DewfordTown_Gym_Text_ReceivedKnuckleBadge
+	.global DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis
+	.global DewfordTown_Gym_Text_ExplainBulkUp
+	.global DewfordTown_Gym_Text_RegisteredBrawly
+	.global DewfordTown_Gym_Text_BrawlyPostBattle
+	.global DewfordTown_Gym_Text_GymStatueCertified
+	.global DewfordTown_Gym_Text_BrawlyPreRematch
+	.global DewfordTown_Gym_Text_BrawlyRematchDefeat
+	.global DewfordTown_Gym_Text_BrawlyPostRematch
+	.global DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS

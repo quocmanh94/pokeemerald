@@ -27,31 +27,38 @@ DewfordTown_House2_EventScript_Boy::
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
-	.string "Gorge your eyes on this!\p"
-	.string "It's a SILK SCARF. It's right at the\n"
-	.string "cutting edge of fashion, yeah!\p"
-	.string "Oh, I can see your eyes twinkling!\n"
-	.string "You appreciate my dazzling style!\p"
-	.string "Oh, you're a delight!\n"
-	.string "Here you go. I want you to have it!$"
+	.string "Mở to mắt mà ngắm này!\p"
+	.string "Đây là SILK SCARF. Nó đang dẫn đầu xu\n"
+	.string "hướng thời trang đấy!\p"
+	.string "Ôi, tôi thấy mắt cậu sáng lên rồi! Cậu\n"
+	.string "biết thưởng thức phong cách chói lóa\l"
+	.string "của tôi!\p"
+	.string "Ôi, cậu thật dễ mến! Đây, tôi muốn tặng\n"
+	.string "nó cho cậu!$"
 
 DewfordTown_House2_Text_NoRoom:
-	.string "Oh, you don't have room?\p"
-	.string "Now, listen tight, this SCARF is a must-\n"
-	.string "have! Why, I would sell all my items\l"
-	.string "in order to get it!$"
+	.string "Ồ, cậu không còn chỗ trống sao?\p"
+	.string "Nghe kỹ này, SCARF này là món nhất định\n"
+	.string "phải có! Tôi sẵn sàng bán hết đồ của\l"
+	.string "mình để sở hữu nó!$"
 
 DewfordTown_House2_Text_ExplainSilkScarf:
-	.string "The SILK SCARF raises the power of\n"
-	.string "NORMAL-type moves.\p"
-	.string "It's a marvelous SCARF that will go\n"
-	.string "with almost all POKéMON!$"
+	.string "SILK SCARF làm tăng sức mạnh của các\n"
+	.string "chiêu hệ NORMAL.\p"
+	.string "Đây là một chiếc SCARF tuyệt vời, phù\n"
+	.string "hợp với gần như mọi POKéMON!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "Wow, you bothered to cross the sea\n"
-	.string "to visit DEWFORD?\p"
-	.string "Did you maybe come here because you\n"
-	.string "heard about BRAWLY?\p"
-	.string "He's so cool…\n"
-	.string "Everyone idolizes him.$"
+	.string "Chà, cậu đã cất công vượt biển đến\n"
+	.string "thăm DEWFORD sao?\p"
+	.string "Có phải cậu đến vì đã nghe nói về\n"
+	.string "BRAWLY không?\p"
+	.string "Anh ấy ngầu lắm... Ai cũng thần tượng\n"
+	.string "anh ấy.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_House2_Text_WantYouToHaveSilkScarf
+	.global DewfordTown_House2_Text_NoRoom
+	.global DewfordTown_House2_Text_ExplainSilkScarf
+	.global DewfordTown_House2_Text_BrawlySoCool
+@ END GENERATED LOCALIZATION EXPORTS

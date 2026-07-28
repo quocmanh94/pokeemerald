@@ -23,10 +23,13 @@ MauvilleCity_PokemonCenter_2F_EventScript_Youngster::
 	end
 
 MauvilleCity_PokemonCenter_2F_Text_Youngster:
-	.string "Did you know that you can link battle\n"
-	.string "at the COLOSSEUM here?\p"
-	.string "They put up your record on the wall\n"
-	.string "for everyone to see.\p"
-	.string "It's embarrassing if you lose more\n"
-	.string "often than you win…$"
+	.string "Bạn có biết ở COLOSSEUM này có thể đấu\n"
+	.string "liên kết không?\p"
+	.string "Họ sẽ treo thành tích của bạn lên\n"
+	.string "tường cho mọi người xem.\p"
+	.string "Nếu thua nhiều hơn thắng thì xấu hổ\n"
+	.string "lắm...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_PokemonCenter_2F_Text_Youngster
+@ END GENERATED LOCALIZATION EXPORTS

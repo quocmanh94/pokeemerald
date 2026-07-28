@@ -286,164 +286,191 @@ TrainerHill_Entrance_Pokemart_Expanded:
 	pokemartlistend
 
 TrainerHill_Entrance_Text_StillGettingReady:
-	.string "This is the TRAINER HILL where\n"
-	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS.\p"
-	.string "Unfortunately, we're still getting\n"
-	.string "things ready. Please come back later!$"
+	.string "Đây là TRAINER HILL, nơi bạn có thể\n"
+	.string "tham gia các trận đấu cặp với nhiều\l"
+	.string "HLV.\p"
+	.string "Đáng tiếc, chúng tôi vẫn đang chuẩn bị.\n"
+	.string "Xin hãy quay lại sau!$"
 
 TrainerHill_Entrance_Text_WelcomeToTrainerHill:
-	.string "Welcome!\p"
-	.string "This is the TRAINER HILL where\n"
-	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS!$"
+	.string "Chào mừng!\p"
+	.string "Đây là TRAINER HILL, nơi bạn có thể\n"
+	.string "tham gia các trận đấu cặp với nhiều\l"
+	.string "HLV!$"
 
 TrainerHill_Entrance_Text_SaveGameBeforeEnter:
-	.string "Is this your first visit here?\p"
-	.string "Before you enter, please save\n"
-	.string "your game.$"
+	.string "Đây là lần đầu bạn đến sao?\p"
+	.string "Trước khi vào, xin hãy lưu trò chơi.$"
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
-	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
-	.string "Up to floor no. {STR_VAR_1}.$"
+	.string "Để xem... Các HLV hiện có mặt...\p"
+	.string "Đến tận tầng số {STR_VAR_1}.$"
 
 TrainerHill_Entrance_Text_TrainersInEveryRoom:
-	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
-	.string "There appear to be TRAINERS gathered\n"
-	.string "in every room.$"
+	.string "Để xem... Các HLV hiện có mặt...\p"
+	.string "Có vẻ HLV đã tập trung trong mọi\n"
+	.string "căn phòng.$"
 
 TrainerHill_Entrance_Text_LikeToChallengeTrainers:
-	.string "Would you like to challenge the\n"
-	.string "waiting TRAINERS?$"
+	.string "Bạn có muốn thách đấu những HLV\n"
+	.string "đang chờ không?$"
 
 TrainerHill_Entrance_Text_TimeProgessGetSetGo:
-	.string "I will time your progress.\n"
-	.string "Best of luck!\p"
-	.string "On your marks…\p"
-	.string "Get set…\p"
-	.string "Go!$"
+	.string "Tôi sẽ tính thời gian của bạn. Chúc may\n"
+	.string "mắn!\p"
+	.string "Vào vị trí...\p"
+	.string "Sẵn sàng...\p"
+	.string "Bắt đầu!$"
 
 TrainerHill_Entrance_Text_PleaseVisitUsAgain:
-	.string "Please do visit us again!$"
+	.string "Mong bạn lại ghé thăm!$"
 
 TrainerHill_Entrance_Text_TooBadTremendousEffort:
-	.string "That was too bad.\p"
-	.string "I think you put in a tremendous\n"
-	.string "effort in your battling.\p"
-	.string "Please come back and try again!$"
+	.string "Tiếc quá.\p"
+	.string "Tôi nghĩ bạn đã nỗ lực hết sức trong\n"
+	.string "các trận đấu.\p"
+	.string "Hãy quay lại thử lần nữa nhé!$"
 
 TrainerHill_Entrance_Text_HopeYouGiveItYourBest:
-	.string "I hope you give it your best.$"
+	.string "Mong bạn cố gắng hết sức.$"
 
 TrainerHill_Entrance_Text_MovedReceptionHereForSwitch:
-	.string "When the TRAINERS switch places,\n"
-	.string "the movement can be hectic.\p"
-	.string "To avoid the stampede, we moved\n"
-	.string "the reception counter here.\p"
-	.string "I'm sorry for the inconvenience.$"
+	.string "Khi các HLV đổi chỗ, việc di\n"
+	.string "chuyển có thể rất hỗn loạn.\p"
+	.string "Để tránh cảnh chen lấn, chúng tôi đã\n"
+	.string "chuyển quầy tiếp tân đến đây.\p"
+	.string "Xin lỗi vì sự bất tiện này.$"
 
 TrainerHill_Entrance_Text_ThankYouForPlaying:
-	.string "Thank you for playing!$"
+	.string "Cảm ơn bạn đã chơi!$"
 
 TrainerHill_Entrance_Text_ExplainTrainerHill:
-	.string "Here at the TRAINER HILL, we conduct\n"
-	.string "an event called the Time Attack.\p"
-	.string "It is a race that measures how long\n"
-	.string "you take to reach our owner on\l"
-	.string "the rooftop from this counter.\p"
-	.string "The fastest times are posted on\n"
-	.string "the Time Board--try competing with\l"
-	.string "your friends.\p"
-	.string "In TRAINER battles along the way,\n"
-	.string "neither Exp. Points nor money will\l"
-	.string "be awarded.$"
+	.string "Tại TRAINER HILL, chúng tôi tổ chức một\n"
+	.string "sự kiện mang tên Time Attack.\p"
+	.string "Đây là cuộc đua đo thời gian bạn đi từ\n"
+	.string "quầy này đến gặp chủ nhân của chúng\l"
+	.string "tôi trên sân thượng.\p"
+	.string "Các thành tích nhanh nhất sẽ được ghi\n"
+	.string "lên Time Board. Hãy thử tranh tài với\l"
+	.string "bạn bè.\p"
+	.string "Trong các trận đấu HLV dọc đường,\n"
+	.string "bạn sẽ không nhận được Exp. Points hay\l"
+	.string "tiền.$"
 
 @ Unused
 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon:
-	.string "Oh, I'm sorry, but you appear to have\n"
-	.string "only one POKéMON with you.\p"
-	.string "You will need at least two POKéMON\n"
-	.string "to enter this event.$"
+	.string "Ồ, xin lỗi, nhưng hình như bạn chỉ mang\n"
+	.string "theo một POKéMON.\p"
+	.string "Bạn cần ít nhất hai POKéMON để tham gia\n"
+	.string "sự kiện này.$"
 
 TrainerHill_Roof_Text_YouFinallyCameBravo:
-	.string "Hm! Hm!\p"
-	.string "You finally came!\n"
-	.string "Yes, you have arrived!\p"
-	.string "Wait! Don't say it!\n"
-	.string "I know why you came all the way\l"
-	.string "here by yourself!\p"
-	.string "You wanted to see me, the owner\n"
-	.string "of the TRAINER HILL, because…\p"
-	.string "You want to form a tag team with me!\n"
-	.string "Wa-hoo!\p"
-	.string "…Uh?\n"
-	.string "That's not it?\p"
-	.string "Anyway, I watched you on your way up.\n"
-	.string "Marvelous battling! Bravo, indeed!$"
+	.string "Hừm! Hừm!\p"
+	.string "Cuối cùng bạn cũng tới! Đúng, bạn đã\n"
+	.string "tới rồi!\p"
+	.string "Khoan! Đừng nói! Tôi biết tại sao bạn\n"
+	.string "lặn lội một mình đến tận đây!\p"
+	.string "Bạn muốn gặp tôi, chủ nhân của TRAINER\n"
+	.string "HILL, bởi vì...\p"
+	.string "Bạn muốn lập đội cặp với tôi! Wa-hoo!\p"
+	.string "...Ơ? Không phải sao?\p"
+	.string "Dù sao, tôi đã dõi theo bạn trên đường\n"
+	.string "lên đây. Chiến đấu tuyệt diệu! Quả là\l"
+	.string "xuất sắc!$"
 
 TrainerHill_Roof_Text_HaveTheMostMarvelousGift:
-	.string "For a marvelous someone like you,\n"
-	.string "I have the most marvelous gift!$"
+	.string "Với một người tuyệt vời như bạn, tôi\n"
+	.string "có món quà tuyệt vời nhất!$"
 
 TrainerHill_Roof_Text_FullUpBeBackLaterForThis:
-	.string "Oh, no, full up with things!\n"
-	.string "You'll be back later for this!$"
+	.string "Ôi không, bạn mang đầy đồ rồi! Lần sau\n"
+	.string "hãy quay lại lấy thứ này nhé!$"
 
 TrainerHill_Roof_Text_GotHereMarvelouslyQuickly:
-	.string "Oh, hold on here! Did you possibly get\n"
-	.string "here marvelously quickly?\p"
-	.string "How splendid! You needn't have\n"
-	.string "hurried so to see me!\p"
-	.string "That is so delightful. I'll have the Time\n"
-	.string "Board at the reception updated!$"
+	.string "Ồ, khoan đã! Chẳng lẽ bạn đã tới đây\n"
+	.string "nhanh một cách tuyệt diệu sao?\p"
+	.string "Xuất sắc! Bạn đâu cần vội đến thế chỉ\n"
+	.string "để gặp tôi!\p"
+	.string "Thật vui làm sao. Tôi sẽ cho cập nhật\n"
+	.string "Time Board ở quầy tiếp tân!$"
 
 TrainerHill_Roof_Text_YouWerentVeryQuick:
-	.string "But, oh…\n"
-	.string "You weren't very quick getting here.$"
+	.string "Nhưng, ôi... Bạn đến đây không nhanh\n"
+	.string "lắm.$"
 
 TrainerHill_Roof_Text_ArriveZippierNextTime:
-	.string "Perhaps it would please me more if you\n"
-	.string "arrived zippier next time.\p"
-	.string "Then, I should be pleased to form\n"
-	.string "a tag team with you!\p"
-	.string "Until we meet again, amigo!$"
+	.string "Có lẽ lần sau bạn tới nhanh hơn sẽ làm\n"
+	.string "tôi vui hơn.\p"
+	.string "Khi đó, tôi sẽ rất vui lòng lập đội cặp\n"
+	.string "với bạn!\p"
+	.string "Hẹn gặp lại, amigo!$"
 
 @ Unused
 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner:
-	.string "I had the TRAINER HILL built for but\n"
-	.string "one reason and one only!\p"
-	.string "To find the most suitable partner\n"
-	.string "with whom I may form a tag team!$"
+	.string "Tôi xây TRAINER HILL chỉ vì một lý do\n"
+	.string "duy nhất!\p"
+	.string "Để tìm người đồng đội phù hợp nhất mà\n"
+	.string "tôi có thể lập đội cặp cùng!$"
 
 TrainerHill_Entrance_Text_ChallengeTime:
-	.string "{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.$"
+	.string "{STR_VAR_1} phút\n"
+	.string "{STR_VAR_2}.{STR_VAR_3}\l"
+	.string "giây.$"
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
-	.string "Who knows what sort of TRAINERS\n"
-	.string "and POKéMON combos are ahead?\p"
-	.string "All I know is that I'll knock aside\n"
-	.string "anyone that stands in my way!$"
+	.string "Ai biết phía trước có những tổ hợp\n"
+	.string "HLV và POKéMON nào?\p"
+	.string "Tôi chỉ biết rằng bất kỳ ai cản đường,\n"
+	.string "tôi sẽ hất văng hết!$"
 
 TrainerHill_Entrance_Text_CantWaitToTestTheWaters:
-	.string "I heard tough TRAINERS come to this\n"
-	.string "TRAINER HILL from all over.\p"
-	.string "I can't wait to test the waters!\p"
-	.string "I'll knock aside anyone that stands\n"
-	.string "in my way!$"
+	.string "Tôi nghe nói các HLV mạnh từ khắp\n"
+	.string "nơi đều đến TRAINER HILL này.\p"
+	.string "Tôi nóng lòng muốn thử sức!\p"
+	.string "Bất kỳ ai cản đường, tôi sẽ hất văng\n"
+	.string "hết!$"
 
 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop:
-	.string "Do you see the Time Board over there?\p"
-	.string "My friends and I are trying to see who\n"
-	.string "can reach the top in the least time.$"
+	.string "Bạn thấy Time Board đằng kia chứ?\p"
+	.string "Tôi và bạn bè đang thi xem ai có thể lên\n"
+	.string "tới đỉnh trong thời gian ngắn nhất.$"
 
 TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen:
-	.string "Do you know when they're opening\n"
-	.string "this place up?\p"
-	.string "I'm waiting here to be the first\n"
-	.string "challenger ever!$"
+	.string "Bạn có biết khi nào nơi này mở cửa\n"
+	.string "không?\p"
+	.string "Tôi đang chờ để trở thành người thách\n"
+	.string "đấu đầu tiên ở đây!$"
 
 TrainerHill_Elevator_Text_ReturnToReception:
-	.string "Would you like to return to\n"
-	.string "the reception counter?$"
+	.string "Bạn có muốn quay lại quầy tiếp tân\n"
+	.string "không?$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global TrainerHill_Entrance_Text_StillGettingReady
+	.global TrainerHill_Entrance_Text_WelcomeToTrainerHill
+	.global TrainerHill_Entrance_Text_SaveGameBeforeEnter
+	.global TrainerHill_Entrance_Text_TrainersUpToFloorX
+	.global TrainerHill_Entrance_Text_TrainersInEveryRoom
+	.global TrainerHill_Entrance_Text_LikeToChallengeTrainers
+	.global TrainerHill_Entrance_Text_TimeProgessGetSetGo
+	.global TrainerHill_Entrance_Text_PleaseVisitUsAgain
+	.global TrainerHill_Entrance_Text_TooBadTremendousEffort
+	.global TrainerHill_Entrance_Text_HopeYouGiveItYourBest
+	.global TrainerHill_Entrance_Text_MovedReceptionHereForSwitch
+	.global TrainerHill_Entrance_Text_ThankYouForPlaying
+	.global TrainerHill_Entrance_Text_ExplainTrainerHill
+	.global TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon
+	.global TrainerHill_Roof_Text_YouFinallyCameBravo
+	.global TrainerHill_Roof_Text_HaveTheMostMarvelousGift
+	.global TrainerHill_Roof_Text_FullUpBeBackLaterForThis
+	.global TrainerHill_Roof_Text_GotHereMarvelouslyQuickly
+	.global TrainerHill_Roof_Text_YouWerentVeryQuick
+	.global TrainerHill_Roof_Text_ArriveZippierNextTime
+	.global TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner
+	.global TrainerHill_Entrance_Text_ChallengeTime
+	.global TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead
+	.global TrainerHill_Entrance_Text_CantWaitToTestTheWaters
+	.global TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop
+	.global TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen
+	.global TrainerHill_Elevator_Text_ReturnToReception
+@ END GENERATED LOCALIZATION EXPORTS

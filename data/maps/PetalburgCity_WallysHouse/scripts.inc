@@ -66,70 +66,77 @@ PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 	end
 
 PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
-	.string "You're…\n"
-	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
-	.string "Thank you for playing with WALLY a\n"
-	.string "little while ago.\p"
-	.string "He's been frail and sickly ever\n"
-	.string "since he was a baby.\p"
-	.string "We've sent him to stay with my relatives\n"
-	.string "in VERDANTURF TOWN for a while.\p"
-	.string "The air is a lot cleaner there\n"
-	.string "than it is here.\p"
-	.string "What's that? Where's WALLY?\n"
-	.string "He's already left, our WALLY.\p"
-	.string "I wonder where he could have\n"
-	.string "gotten by now?$"
+	.string "Cháu là... A, cháu hẳn là {PLAYER}{KUN},\n"
+	.string "đúng không?\p"
+	.string "Cảm ơn cháu đã chơi cùng WALLY lúc nãy.\p"
+	.string "Thằng bé vốn yếu ớt và hay đau bệnh từ\n"
+	.string "khi còn nhỏ.\p"
+	.string "Chúng tôi đã gửi nó đến ở với họ hàng\n"
+	.string "tại VERDANTURF TOWN một thời gian.\p"
+	.string "Không khí ở đó trong lành hơn ở đây\n"
+	.string "nhiều.\p"
+	.string "Gì cơ? WALLY đâu à? WALLY nhà chú đã\n"
+	.string "đi rồi.\p"
+	.string "Không biết giờ nó đã tới đâu rồi?$"
 
 PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
-	.string "I wonder how our WALLY is doing?$"
+	.string "Không biết WALLY nhà mình dạo này thế\n"
+	.string "nào?$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
-	.string "{PLAYER}{KUN}! Please excuse us for\n"
-	.string "dragging you here this way.\p"
-	.string "But our WALLY's become very healthy\n"
-	.string "since he went to VERDANTURF TOWN.\p"
-	.string "We owe it all to you!\p"
-	.string "When WALLY left town, you helped\n"
-	.string "him catch a POKéMON, right?\p"
-	.string "I think that made WALLY really\n"
-	.string "happy.\p"
-	.string "Actually, not just WALLY.\n"
-	.string "It made me, his father, happy too.\p"
-	.string "Happy that he's gained such a great\n"
-	.string "friend as you.\p"
-	.string "This isn't a bribe or anything, but\n"
-	.string "I'd really like you to have this.$"
+	.string "{PLAYER}{KUN}! Xin lỗi vì đã kéo cháu\n"
+	.string "tới đây như vậy.\p"
+	.string "Nhưng WALLY nhà chú đã khỏe lên rất\n"
+	.string "nhiều từ khi đến VERDANTURF TOWN.\p"
+	.string "Tất cả là nhờ cháu!\p"
+	.string "Khi WALLY rời thị trấn, cháu đã giúp nó\n"
+	.string "bắt một POKéMON, đúng không?\p"
+	.string "Chú nghĩ việc đó đã khiến WALLY rất vui.\p"
+	.string "Thật ra không chỉ WALLY. Chú, ba của nó,\n"
+	.string "cũng rất vui.\p"
+	.string "Chú vui vì nó có được một người bạn\n"
+	.string "tuyệt vời như cháu.\p"
+	.string "Đây không phải hối lộ gì đâu, nhưng chú\n"
+	.string "thật sự muốn cháu nhận thứ này.$"
 
 PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
-	.string "If your POKéMON can SURF, you'll be\n"
-	.string "able to go to all sorts of places.$"
+	.string "Nếu POKéMON của bạn có thể dùng SURF,\n"
+	.string "bạn sẽ đến được đủ mọi nơi.$"
 
 PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
-	.string "WALLY's coming home soon.\n"
-	.string "I'm looking forward to that.$"
+	.string "WALLY sắp về nhà rồi. Tôi mong đến ngày\n"
+	.string "đó lắm.$"
 
 PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
-	.string "Oh? You met WALLY in\n"
-	.string "EVER GRANDE CITY?\p"
-	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"
-	.string "He may have gotten healthy, but he\n"
-	.string "can't go somewhere far away like\l"
-	.string "that all by himself.$"
+	.string "Ồ? Cháu đã gặp WALLY ở EVER GRANDE\n"
+	.string "CITY sao?\p"
+	.string "Ôi, {PLAYER}{KUN}, đừng đùa chứ.\p"
+	.string "Dù đã khỏe hơn, nó vẫn không thể một\n"
+	.string "mình đi tới nơi xa như vậy.$"
 
 PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
-	.string "WALLY was really happy when he told\n"
-	.string "us that he caught a POKéMON.\p"
-	.string "It's been ages since I've seen him\n"
-	.string "smile like that.$"
+	.string "WALLY đã rất vui khi kể với chúng tôi\n"
+	.string "rằng nó bắt được một POKéMON.\p"
+	.string "Đã lâu lắm rồi tôi mới thấy nó cười như\n"
+	.string "vậy.$"
 
 PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
-	.string "I want you to keep this a secret\n"
-	.string "from my husband…\p"
-	.string "But our WALLY left VERDANTURF TOWN\n"
-	.string "without telling anyone.\p"
-	.string "You know, WALLY is frail, but\n"
-	.string "he's surprisingly strong-willed.\p"
-	.string "I'm sure that he'll come back safe\n"
-	.string "and sound one day!$"
+	.string "Cháu hãy giữ kín chuyện này với chồng\n"
+	.string "cô...\p"
+	.string "Nhưng WALLY nhà cô đã rời VERDANTURF\n"
+	.string "TOWN mà không nói với ai.\p"
+	.string "Cháu biết đấy, WALLY tuy yếu ớt nhưng\n"
+	.string "lại có ý chí mạnh mẽ đáng ngạc nhiên.\p"
+	.string "Cô tin một ngày nào đó nó sẽ bình an\n"
+	.string "trở về!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally
+	.global PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing
+	.global PetalburgCity_WallysHouse_Text_PleaseExcuseUs
+	.global PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces
+	.global PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon
+	.global PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity
+	.global PetalburgCity_WallysHouse_Text_WallyWasReallyHappy
+	.global PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling
+@ END GENERATED LOCALIZATION EXPORTS

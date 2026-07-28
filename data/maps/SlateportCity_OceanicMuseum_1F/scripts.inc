@@ -223,156 +223,181 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth:
 	step_end
 
 SlateportCity_OceanicMuseum_1F_Text_WouldYouLikeToEnter:
-	.string "Welcome to the OCEANIC MUSEUM.\p"
-	.string "The entrance fee is ¥50.\n"
-	.string "Would you like to enter?$"
+	.string "Chào mừng đến với OCEANIC MUSEUM.\p"
+	.string "Vé vào cửa là ¥50. Bạn có muốn vào\n"
+	.string "không?$"
 
 SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself:
-	.string "Please enjoy yourself.$"
+	.string "Chúc bạn tham quan vui vẻ.$"
 
 SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney:
-	.string "Oh? I'm sorry, but you don't seem to\n"
-	.string "have enough money.$"
+	.string "Ồ? Tôi xin lỗi, nhưng có vẻ bạn không có\n"
+	.string "đủ tiền.$"
 
 SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
-	.string "Oh? You're with that group that\n"
-	.string "went in earlier?\p"
-	.string "You're the only one who's late.\n"
-	.string "You'd better go catch up to them!$"
+	.string "Ồ? Bạn đi cùng nhóm đã vào trước đó\n"
+	.string "sao?\p"
+	.string "Chỉ có mình bạn đến muộn thôi. Mau vào\n"
+	.string "đuổi kịp họ đi!$"
 
 SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
-	.string "We, TEAM AQUA, exist for the good\n"
-	.string "of all!$"
+	.string "TEAM AQUA chúng ta tồn tại vì lợi ích\n"
+	.string "của tất cả mọi người!$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
-	.string "We were told to assemble here,\n"
-	.string "so we did, but…\p"
-	.string "Our BOSS, the linchpin, isn't here.$"
+	.string "Chúng tôi được lệnh tập hợp ở đây nên\n"
+	.string "đã đến, nhưng...\p"
+	.string "Thủ lĩnh của chúng tôi lại không\n"
+	.string "có mặt.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich:
-	.string "If I ripped off the stuff here,\n"
-	.string "would it make me rich?$"
+	.string "Nếu mình cuỗm đồ ở đây thì có trở nên\n"
+	.string "giàu có không nhỉ?$"
 
 SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds:
-	.string "What I learn here, I can put to use on\n"
-	.string "nefarious deeds…$"
+	.string "Những gì học được ở đây có thể dùng\n"
+	.string "vào các phi vụ bất chính...$"
 
 SlateportCity_OceanicMuseum_1F_Text_RustboroBungled:
-	.string "If our goons didn't bungle things\n"
-	.string "in RUSTBORO, we wouldn't be here!$"
+	.string "Nếu đám tay chân của chúng ta không\n"
+	.string "làm hỏng việc ở RUSTBORO thì chúng ta\l"
+	.string "đã chẳng phải đến đây!$"
 
 SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney:
-	.string "I didn't have ¥50, so it took a long\n"
-	.string "time getting by the receptionist.$"
+	.string "Tôi không có ¥50 nên phải mất rất lâu\n"
+	.string "mới qua được cô lễ tân.$"
 
 SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
-	.string "I want to learn about the sea and\n"
-	.string "use that knowledge for battling.$"
+	.string "Tôi muốn tìm hiểu về biển cả rồi dùng\n"
+	.string "kiến thức đó trong chiến đấu.$"
 
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
-	.string "I get all giddy and gooey when\n"
-	.string "I see the sea!\p"
-	.string "For me, CAPT. STERN is the number\n"
-	.string "one role model!$"
+	.string "Mỗi khi nhìn thấy biển, tôi lại nôn nao\n"
+	.string "và mềm nhũn cả người!\p"
+	.string "Với tôi, CAPT. STERN là hình mẫu số một!$"
 
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
-	.string "The sea is vast without end, and\n"
-	.string "infinitely deep…\p"
-	.string "There must be many POKéMON that\n"
-	.string "we don't know about.$"
+	.string "Biển cả rộng lớn vô tận và sâu không\n"
+	.string "thấy đáy...\p"
+	.string "Chắc chắn vẫn còn nhiều POKéMON mà\n"
+	.string "chúng ta chưa biết đến.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
-	.string "I want a sea POKéMON.\p"
-	.string "I think it would feel cool and nice\n"
-	.string "to hug.$"
+	.string "Tôi muốn có một POKéMON sống dưới biển.\p"
+	.string "Ôm nó chắc sẽ mát lạnh và dễ chịu lắm.$"
 
 SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
-	.string "Aiyeeeh!\n"
-	.string "What are you doing here?\p"
-	.string "Me? I'm the TEAM AQUA member\n"
-	.string "you thumped before, remember?\l"
-	.string "Back in RUSTURF TUNNEL?\p"
-	.string "Here, take this!\n"
-	.string "You have to forgive me!$"
+	.string "Áaaa! Cậu làm gì ở đây vậy?\p"
+	.string "Tôi sao? Tôi là thành viên TEAM AQUA\n"
+	.string "từng bị cậu cho một trận, nhớ không? Ở\l"
+	.string "RUSTURF TUNNEL ấy?\p"
+	.string "Đây, cầm lấy! Cậu phải tha thứ cho tôi\n"
+	.string "đấy!$"
 
 SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain:
-	.string "That TM, it suits you more than it\n"
-	.string "does me.\p"
-	.string "Hope I never see you again!\n"
-	.string "Wahahaha!$"
+	.string "TM đó hợp với ngươi hơn là với ta.\p"
+	.string "Mong rằng ta không bao giờ phải gặp lại\n"
+	.string "ngươi! Wahahaha!$"
 
 SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis:
-	.string "Awww, come on!\n"
-	.string "You have to take this and let me go!$"
+	.string "Thôi nào! Cậu phải nhận cái này rồi thả\n"
+	.string "tôi đi chứ!$"
 
 SlateportCity_OceanicMuseum_1F_Text_WhirlpoolExperiment:
-	.string "A blue fluid is spiraling inside\n"
-	.string "a glass vessel.\p"
-	.string "“This is an experiment to create a\n"
-	.string "WHIRLPOOL artificially using wind.”$"
+	.string "Một chất lỏng màu xanh đang xoáy tròn\n"
+	.string "bên trong bình thủy tinh.\p"
+	.string "Đây là thí nghiệm dùng gió để tạo ra\n"
+	.string "WHIRLPOOL nhân tạo.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment:
-	.string "A red ball is bobbing up and down\n"
-	.string "inside a glass vessel.\p"
-	.string "“This is an experiment simulating a\n"
-	.string "WATERFALL using the ball's buoyancy.”$"
+	.string "Một quả bóng đỏ đang nhấp nhô bên\n"
+	.string "trong bình thủy tinh.\p"
+	.string "Đây là thí nghiệm mô phỏng WATERFALL\n"
+	.string "bằng lực nổi của quả bóng.$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay:
-	.string "It's a sample of soil from the ocean\n"
-	.string "floor.\p"
-	.string "“Over many years, the remains of\n"
-	.string "life-forms settle at the bottom of\l"
-	.string "the sea, making sedimentary layers.\p"
-	.string "“By analyzing these layers, the\n"
-	.string "ancient past is revealed.”$"
+	.string "Đây là mẫu đất lấy từ đáy đại dương.\p"
+	.string "Qua nhiều năm, xác các sinh vật lắng\n"
+	.string "xuống đáy biển, hình thành những tầng\l"
+	.string "trầm tích.\p"
+	.string "Phân tích những tầng này sẽ hé lộ quá\n"
+	.string "khứ xa xưa.$"
 
 SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay:
-	.string "It's a sample of beach sand.\p"
-	.string "“Stones from mountains are washed\n"
-	.string "down by rivers where they are\l"
-	.string "chipped and ground down.\p"
-	.string "“They are reduced to grains and end\n"
-	.string "up as sand on beaches.”$"
+	.string "Đây là mẫu cát lấy từ bãi biển.\p"
+	.string "Đá từ trên núi bị sông cuốn xuống, va\n"
+	.string "đập rồi bị bào mòn.\p"
+	.string "Chúng vỡ thành những hạt nhỏ và cuối\n"
+	.string "cùng trở thành cát trên bãi biển.$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
-	.string "“OCEANIC MINIFACT 1\n"
-	.string "Why is seawater blue?\p"
-	.string "“Light is composed of many colors.\p"
-	.string "“When light passes through water,\n"
-	.string "most kinds of light lose color.\p"
-	.string "“However, blue light retains its\n"
-	.string "color, making the sea appear blue.”$"
+	.string "OCEANIC MINIFACT 1 Vì sao nước biển\n"
+	.string "có màu xanh?\p"
+	.string "Ánh sáng được tạo thành từ nhiều màu\n"
+	.string "sắc.\p"
+	.string "Khi ánh sáng đi qua nước, hầu hết các\n"
+	.string "màu đều bị hấp thụ.\p"
+	.string "Tuy nhiên, ánh sáng xanh vẫn giữ được\n"
+	.string "màu sắc, khiến biển trông có màu xanh.$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
-	.string "“OCEANIC MINIFACT 2\n"
-	.string "Why is the sea salty?\p"
-	.string "“Seawater contains dissolved salt in\n"
-	.string "the form of sodium and chlorine ions.\p"
-	.string "“These ions leech out of rocks\n"
-	.string "and are carried out to sea by rain.\p"
-	.string "“The concentration of dissolved salt\n"
-	.string "makes the sea salty.”$"
+	.string "OCEANIC MINIFACT 2 Vì sao biển lại mặn?\p"
+	.string "Nước biển chứa muối hòa tan dưới dạng\n"
+	.string "các ion natri và clo.\p"
+	.string "Những ion này tách ra từ đá rồi được\n"
+	.string "nước mưa đưa ra biển.\p"
+	.string "Nồng độ muối hòa tan khiến nước biển\n"
+	.string "có vị mặn.$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3:
-	.string "“OCEANIC MINIFACT 3\n"
-	.string "Which is bigger? The sea or land?\p"
-	.string "“The sea covers about 70% of\n"
-	.string "the planet, and the rest is land.\p"
-	.string "“The sea is therefore more than twice\n"
-	.string "the size of land.”$"
+	.string "OCEANIC MINIFACT 3 Biển và đất liền,\n"
+	.string "bên nào lớn hơn?\p"
+	.string "Biển bao phủ khoảng 70% hành tinh, phần\n"
+	.string "còn lại là đất liền.\p"
+	.string "Vì vậy, biển rộng hơn đất liền trên hai\n"
+	.string "lần.$"
 
 SlateportCity_OceanicMuseum_1F_Text_FossilDisplay:
-	.string "It's a fossil with wavy ridges on it.\p"
-	.string "“Soil on the ocean floor gets scoured\n"
-	.string "by the tide.\p"
-	.string "“The flowing seawater marks the soil\n"
-	.string "with small ridges and valleys.\p"
-	.string "“If this soil becomes fossilized, it is\n"
-	.string "called a ripple mark.”$"
+	.string "Đây là một hóa thạch có những đường\n"
+	.string "gợn sóng.\p"
+	.string "Đất dưới đáy đại dương bị thủy triều\n"
+	.string "bào mòn.\p"
+	.string "Dòng nước biển tạo ra những đường gờ\n"
+	.string "và rãnh nhỏ trên mặt đất.\p"
+	.string "Nếu lớp đất này hóa thạch, nó được gọi\n"
+	.string "là dấu gợn sóng.$"
 
 SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine:
-	.string "A strange machine is rotating under\n"
-	.string "a glass dome.\p"
-	.string "Maybe it's for measuring the depth\n"
-	.string "of something…$"
+	.string "Một cỗ máy kỳ lạ đang xoay dưới mái vòm\n"
+	.string "thủy tinh.\p"
+	.string "Có lẽ nó dùng để đo độ sâu của thứ gì\n"
+	.string "đó...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_OceanicMuseum_1F_Text_WouldYouLikeToEnter
+	.global SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself
+	.global SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney
+	.global SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup
+	.global SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll
+	.global SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere
+	.global SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich
+	.global SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds
+	.global SlateportCity_OceanicMuseum_1F_Text_RustboroBungled
+	.global SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney
+	.global SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling
+	.global SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel
+	.global SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow
+	.global SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon
+	.global SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis
+	.global SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain
+	.global SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis
+	.global SlateportCity_OceanicMuseum_1F_Text_WhirlpoolExperiment
+	.global SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment
+	.global SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay
+	.global SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay
+	.global SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1
+	.global SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2
+	.global SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3
+	.global SlateportCity_OceanicMuseum_1F_Text_FossilDisplay
+	.global SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine
+@ END GENERATED LOCALIZATION EXPORTS

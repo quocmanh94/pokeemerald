@@ -1,53 +1,63 @@
 ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere:
-	.string "Are you planning on going deep\n"
-	.string "in there?\p"
-	.string "How about bringing me back some\n"
-	.string "SHOAL SALT and SHOAL SHELLS?\p"
-	.string "I can make you something good if\n"
-	.string "you bring me the ingredients.$"
+	.string "Cháu định đi sâu vào trong đó sao?\p"
+	.string "Cháu mang về cho ta một ít SHOAL SALT\n"
+	.string "và SHOAL SHELLS nhé?\p"
+	.string "Nếu cháu mang đủ nguyên liệu, ta có thể\n"
+	.string "làm cho cháu một món đồ tốt.$"
 
 ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells:
-	.string "If you bring me four each of the\n"
-	.string "SHOAL SALT and SHOAL SHELLS,\l"
-	.string "I can make you a SHELL BELL…\p"
-	.string "You can get those ingredients\n"
-	.string "every day.$"
+	.string "Nếu cháu mang cho ta bốn phần SHOAL\n"
+	.string "SALT và bốn chiếc SHOAL SHELLS, ta có\l"
+	.string "thể làm một chiếc SHELL BELL cho cháu.\p"
+	.string "Ngày nào cháu cũng có thể kiếm những\n"
+	.string "nguyên liệu ấy.$"
 
 ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell:
-	.string "Oh, hey! SHOAL SALT and SHOAL SHELLS!\n"
-	.string "And enough of them, too!\p"
-	.string "Would you like me to make you\n"
-	.string "a SHELL BELL with them?$"
+	.string "Ồ, xem này! SHOAL SALT và SHOAL SHELLS!\n"
+	.string "Số lượng cũng đủ rồi!\p"
+	.string "Cháu có muốn ta dùng chúng làm một\n"
+	.string "chiếc SHELL BELL không?$"
 
 ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway:
-	.string "All righty, then! I'll make you\n"
-	.string "a SHELL BELL right away.\p"
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "There! Done!$"
+	.string "Được rồi! Ta sẽ làm ngay một chiếc\n"
+	.string "SHELL BELL cho cháu.\p"
+	.string "Chờ ta một chút.\p"
+	.string "Xong rồi!$"
 
 ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell:
-	.string "Have a POKéMON hold on to that.\n"
-	.string "It'll love it, that's for certain.\p"
-	.string "Why, the SHELL BELL's chime…\n"
-	.string "It's simply sublime!\p"
-	.string "You can get its ingredients every day,\n"
-	.string "so I can make you more.$"
+	.string "Hãy cho một POKéMON cầm nó. Chắc chắn\n"
+	.string "nó sẽ rất thích.\p"
+	.string "Âm thanh của SHELL BELL mới tuyệt diệu\n"
+	.string "làm sao!\p"
+	.string "Ngày nào cháu cũng có thể kiếm nguyên\n"
+	.string "liệu, nên ta có thể làm thêm cho cháu.$"
 
 ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell:
-	.string "Oh… Is that so…\n"
-	.string "I wanted to make a SHELL BELL…$"
+	.string "Ồ. Vậy sao. Ta đã muốn làm một chiếc\n"
+	.string "SHELL BELL lắm.$"
 
 ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag:
-	.string "You don't have space in your BAG\n"
-	.string "if I were to make it for you.\p"
-	.string "You should make room and come back\n"
-	.string "for a SHELL BELL.$"
+	.string "TÚI ĐỒ của cháu không đủ chỗ nếu\n"
+	.string "ta làm nó.\p"
+	.string "Hãy dọn chỗ rồi quay lại nhận SHELL\n"
+	.string "BELL nhé.$"
 
 ShoalCave_Text_WasShoalSaltNowNothing:
-	.string "There was some SHOAL SALT here.\n"
-	.string "But, there's nothing here now.$"
+	.string "Ở đây từng có SHOAL SALT, nhưng giờ\n"
+	.string "chẳng còn gì nữa.$"
 
 ShoalCave_Text_WasShoallShellNowNothing:
-	.string "There was a SHOAL SHELL here.\n"
-	.string "But, there's nothing here now.$"
+	.string "Ở đây từng có một chiếc SHOAL SHELL,\n"
+	.string "nhưng giờ chẳng còn gì nữa.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere
+	.global ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells
+	.global ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell
+	.global ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway
+	.global ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell
+	.global ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell
+	.global ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag
+	.global ShoalCave_Text_WasShoalSaltNowNothing
+	.global ShoalCave_Text_WasShoallShellNowNothing
+@ END GENERATED LOCALIZATION EXPORTS

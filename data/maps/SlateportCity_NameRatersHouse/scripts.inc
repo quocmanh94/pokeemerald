@@ -56,49 +56,58 @@ SlateportCity_NameRatersHouse_EventScript_NewNameDifferent::
 	end
 
 SlateportCity_NameRatersHouse_Text_PleasedToRateMonNickname:
-	.string "Hi, hi! I'm the NAME RATER!\n"
-	.string "I'm the fortune-teller of names!\p"
-	.string "I shall be pleased to rate your\n"
-	.string "POKéMON's nickname.$"
+	.string "Chào, chào! Ta là NAME RATER! Ta là thầy\n"
+	.string "bói của những cái tên!\p"
+	.string "Ta rất hân hạnh được đánh giá biệt\n"
+	.string "danh POKéMON của cháu.$"
 
 SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname:
-	.string "Which POKéMON's nickname should\n"
-	.string "I critique?$"
+	.string "Ta nên đánh giá biệt danh của POKéMON\n"
+	.string "nào đây?$"
 
 SlateportCity_NameRatersHouse_Text_FineNameSuggestBetterOne:
-	.string "Hmmm… {STR_VAR_1}, is it? That is\n"
-	.string "quite a fine name you bestowed.\p"
-	.string "But! What say you, if I were to\n"
-	.string "suggest a slightly better name?$"
+	.string "Hừm... {STR_VAR_1}, phải không?\n"
+	.string "Cháu đã đặt một cái tên khá hay đấy.\p"
+	.string "Nhưng! Cháu nghĩ sao nếu ta đề xuất\n"
+	.string "một cái tên hay hơn một chút?$"
 
 SlateportCity_NameRatersHouse_Text_WhatShallNewNameBe:
-	.string "Ah, good. Then, what shall the new\n"
-	.string "nickname be?$"
+	.string "À, tốt lắm. Vậy biệt danh mới sẽ là gì?$"
 
 SlateportCity_NameRatersHouse_Text_MonShallBeKnownAsName:
-	.string "Done! From now on, this POKéMON\n"
-	.string "shall be known as {STR_VAR_1}!\p"
-	.string "It is a better name than before!\n"
-	.string "How fortunate for you!$"
+	.string "Xong! Từ giờ POKéMON này sẽ được gọi\n"
+	.string "là {STR_VAR_1}!\p"
+	.string "Cái tên này hay hơn trước! Cháu thật\n"
+	.string "may mắn!$"
 
 SlateportCity_NameRatersHouse_Text_DoVisitAgain:
-	.string "I see.\n"
-	.string "Do come visit again.$"
+	.string "Ta hiểu rồi. Nhớ ghé thăm lần nữa nhé.$"
 
 SlateportCity_NameRatersHouse_Text_NameNoDifferentYetSuperior:
-	.string "Done! From now on, this POKéMON\n"
-	.string "shall be known as {STR_VAR_1}!\p"
-	.string "It looks no different from before,\n"
-	.string "and yet, this is vastly superior!\p"
-	.string "How fortunate for you!$"
+	.string "Xong! Từ giờ POKéMON này sẽ được gọi\n"
+	.string "là {STR_VAR_1}!\p"
+	.string "Trông chẳng khác gì trước, vậy mà hay\n"
+	.string "hơn hẳn!\p"
+	.string "Cháu thật may mắn!$"
 
 SlateportCity_NameRatersHouse_Text_MagnificentName:
-	.string "Hmmm… {STR_VAR_1} it is!\p"
-	.string "This is a magnificent nickname!\n"
-	.string "It is impeccably beyond reproach!\p"
-	.string "You'll do well to cherish your\n"
-	.string "{STR_VAR_1} now and beyond.$"
+	.string "Hừm... Chính là {STR_VAR_1}!\p"
+	.string "Đây là một biệt danh tuyệt mỹ! Hoàn hảo\n"
+	.string "đến mức không thể chê vào đâu được!\p"
+	.string "Hãy luôn trân trọng {STR_VAR_1},\n"
+	.string "từ giờ và mãi về sau.$"
 
 SlateportCity_NameRatersHouse_Text_ThatIsMerelyAnEgg:
-	.string "Now, now.\n"
-	.string "That is merely an EGG!$"
+	.string "Nào, nào. Đó chỉ là một EGG thôi!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_NameRatersHouse_Text_PleasedToRateMonNickname
+	.global SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname
+	.global SlateportCity_NameRatersHouse_Text_FineNameSuggestBetterOne
+	.global SlateportCity_NameRatersHouse_Text_WhatShallNewNameBe
+	.global SlateportCity_NameRatersHouse_Text_MonShallBeKnownAsName
+	.global SlateportCity_NameRatersHouse_Text_DoVisitAgain
+	.global SlateportCity_NameRatersHouse_Text_NameNoDifferentYetSuperior
+	.global SlateportCity_NameRatersHouse_Text_MagnificentName
+	.global SlateportCity_NameRatersHouse_Text_ThatIsMerelyAnEgg
+@ END GENERATED LOCALIZATION EXPORTS

@@ -154,122 +154,142 @@ SlateportCity_BattleTentCorridor_Movement_AttendantExit:
 @ Leftover text from when this was a Contest Hall in R/S
 @ Unused
 SlateportCity_ContestHall_Text_AdviceForContests:
-	.string "Want a tasty little bit of advice\n"
-	.string "for CONTESTS?\p"
-	.string "Using a certain move after another\n"
-	.string "certain kind of move sometimes gets\l"
-	.string "you extra attention.\p"
-	.string "If you know what you're doing,\n"
-	.string "you can score big in appeal.\p"
-	.string "Of course, your opponents might try\n"
-	.string "disrupting your POKéMON's showing.$"
+	.string "Muốn nghe một lời khuyên hay ho về\n"
+	.string "các cuộc thi không?\p"
+	.string "Đôi khi, dùng một chiêu nhất định sau\n"
+	.string "một loại chiêu nhất định khác sẽ giúp\l"
+	.string "bạn thu hút thêm sự chú ý.\p"
+	.string "Nếu biết mình đang làm gì, bạn có thể\n"
+	.string "ghi rất nhiều điểm trình diễn.\p"
+	.string "Tất nhiên, đối thủ cũng có thể tìm cách\n"
+	.string "phá phần trình diễn của POKéMON bên\l"
+	.string "bạn.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyPapaIsContestJudge:
-	.string "My papa, he's a CONTEST JUDGE.\p"
-	.string "I wonder what I should be when I\n"
-	.string "grow up, a JUDGE or a GYM LEADER?$"
+	.string "Ba cháu là GIÁM KHẢO CONTEST đấy.\p"
+	.string "Không biết khi lớn lên cháu nên làm\n"
+	.string "GIÁM KHẢO hay GYM LEADER nhỉ?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ImLikeMajorlyCheesed:
-	.string "Hey, man, I'm like majorly cheesed,\n"
-	.string "you know. Like, you know, I just\l"
-	.string "wanted to know why my POKéMON\l"
-	.string "never won, you know, like, hey?\p"
-	.string "So, like, I gave the JUDGE my two\n"
-	.string "cents, you know, they're free.\p"
-	.string "And he wouldn't hear me out, like, hey!\n"
-	.string "So, like, total bummer, man!\p"
-	.string "Hey, like, you! Zip it, you know?\n"
-	.string "Just, you know, take this!$"
+	.string "Này, ông bạn, tôi đang bực mình kinh\n"
+	.string "khủng luôn ấy, biết không. Kiểu như, tôi\l"
+	.string "chỉ muốn biết tại sao POKéMON của tôi\l"
+	.string "chẳng bao giờ thắng thôi, hiểu không,\l"
+	.string "kiểu, hả?\p"
+	.string "Thế là tôi góp vài lời với GIÁM KHẢO,\n"
+	.string "hoàn toàn miễn phí luôn.\p"
+	.string "Vậy mà ông ta chẳng chịu nghe tôi nói,\n"
+	.string "kiểu, này! Đúng là chán hết sức luôn,\l"
+	.string "ông bạn!\p"
+	.string "Này, cậu kia! Im đi, biết chưa? Cứ cầm\n"
+	.string "lấy thứ này đi!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ExplainTorment:
-	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's TORMENT, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
-	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+	.string "Đó là TM41 đấy, biết không? Này, nó là\n"
+	.string "TORMENT, nghe rõ chưa?\p"
+	.string "Nó sẽ không cho đối phương dùng cùng\n"
+	.string "một chiêu hai lần liên tiếp, hiểu chứ?\p"
+	.string "Này, nghe cho rõ đây, tôi đâu có định\n"
+	.string "hành hạ cậu!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MCStepUpTakePartInContest:
-	.string "MC: Oh, my, my!\n"
-	.string "Now isn't that a dandy of a POKéMON?\p"
-	.string "Please! Do step right up and take\n"
-	.string "part in our splendid CONTESTS!\p"
-	.string "You'll do well! I'm sure of it!\n"
-	.string "My eyes have never failed me!$"
+	.string "MC: Ôi chao! Quả là một POKéMON tuyệt\n"
+	.string "vời!\p"
+	.string "Xin mời! Hãy bước lên và tham gia những\n"
+	.string "các cuộc thi tuyệt vời của chúng tôi!\p"
+	.string "Bạn sẽ làm tốt thôi! Tôi chắc chắn đấy!\n"
+	.string "Đôi mắt này chưa từng nhìn nhầm!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:
-	.string "JUDGE: Well, hello there!\n"
-	.string "I see that you're a TRAINER!\p"
-	.string "Then, it just wouldn't do for you\n"
-	.string "to miss a POKéMON CONTEST!\p"
-	.string "Get a CONTEST PASS in VERDANTURF\n"
-	.string "CITY and enter anytime!$"
+	.string "GIÁM KHẢO: Chà, xin chào! Ta thấy\n"
+	.string "cháu là một HLV!\p"
+	.string "Vậy thì cháu tuyệt đối không nên bỏ lỡ\n"
+	.string "POKéMON CONTEST!\p"
+	.string "Hãy lấy CONTEST PASS ở VERDANTURF\n"
+	.string "CITY rồi tham gia bất cứ lúc nào!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ItsAppealTime:
-	.string "It's appeal time!\n"
-	.string "What should I lead with?$"
+	.string "Đến lúc trình diễn rồi! Mình nên mở màn\n"
+	.string "bằng chiêu nào đây?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal:
-	.string "They didn't pay much attention to\n"
-	.string "my POKéMON's appeal…\p"
-	.string "Humph, that JUDGE, he doesn't know\n"
-	.string "a good thing when he sees it.$"
+	.string "Họ chẳng mấy chú ý đến màn trình diễn\n"
+	.string "của POKéMON bên mình...\p"
+	.string "Hừ, GIÁM KHẢO đó chẳng biết nhìn\n"
+	.string "ra cái hay.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_RewardWithSageAdvice:
-	.string "Oh, hi! You must be a serious fan to get\n"
-	.string "this close to the action.\p"
-	.string "I'll reward your enthusiasm with\n"
-	.string "this sage advice.\p"
-	.string "If a move goes over really well,\n"
-	.string "the audience will get excited.\p"
-	.string "The POKéMON that makes its appeal\n"
-	.string "right when everyone's excited…\p"
-	.string "Well, you'd think something good has\n"
-	.string "to happen!$"
+	.string "Ồ, chào bạn! Phải là một người hâm mộ\n"
+	.string "cuồng nhiệt lắm bạn mới đến gần sân đấu\l"
+	.string "thế này.\p"
+	.string "Tôi sẽ đáp lại sự nhiệt tình ấy bằng một\n"
+	.string "lời khuyên quý giá.\p"
+	.string "Nếu một chiêu được đón nhận nồng\n"
+	.string "nhiệt, khán giả sẽ trở nên phấn khích.\p"
+	.string "POKéMON trình diễn đúng lúc mọi người\n"
+	.string "đang phấn khích...\p"
+	.string "Chà, chắc chắn sẽ có chuyện tốt xảy ra!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MoreFreakedOutThanMon:
-	.string "I can't do this! I'm more freaked out\n"
-	.string "than my POKéMON.\p"
-	.string "I'm shivering and my heart is racing!$"
+	.string "Tôi không làm nổi đâu! Tôi còn hoảng\n"
+	.string "hơn cả POKéMON của mình.\p"
+	.string "Tôi đang run lẩy bẩy, tim thì đập thình\n"
+	.string "thịch!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_BattleAndContestAlike:
-	.string "A battle and a CONTEST aren't the\n"
-	.string "same, but they are alike, too.\p"
-	.string "You need to work hard and believe\n"
-	.string "in the POKéMON you've raised.$"
+	.string "Trận đấu và cuộc thi không giống nhau,\n"
+	.string "nhưng cũng có những điểm tương đồng.\p"
+	.string "Bạn phải nỗ lực hết mình và tin tưởng\n"
+	.string "vào POKéMON mình đã nuôi dưỡng.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MonLooksOnTopOfGame:
-	.string "That POKéMON looks like it's on top\n"
-	.string "of its game, huh?\p"
-	.string "A POKéMON that does good in the\n"
-	.string "secondary judging seems to be more\l"
-	.string "relaxed when it's doing appeals.$"
+	.string "POKéMON đó trông đang có phong độ tốt\n"
+	.string "nhất, phải không?\p"
+	.string "Một POKéMON đạt kết quả tốt ở phần\n"
+	.string "chấm điểm phụ dường như sẽ thoải mái\l"
+	.string "hơn khi trình diễn.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyMonBetterThanThatLot:
-	.string "Will you look at that sorry sight?\p"
-	.string "Heh, my POKéMON's absolutely better\n"
-	.string "than that lot!$"
+	.string "Nhìn cảnh tượng thảm hại đó kìa!\p"
+	.string "Hừm, POKéMON của tôi chắc chắn giỏi hơn\n"
+	.string "cả đám ấy!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_GetUrgeToMoveWithMon:
-	.string "Don't you get the urge to move with\n"
-	.string "POKéMON if they're putting on an\l"
-	.string "energetic appeal?$"
+	.string "Khi POKéMON trình diễn đầy năng lượng,\n"
+	.string "bạn không thấy muốn nhún nhảy theo\l"
+	.string "sao?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_HyperRankStage:
-	.string "POKéMON CONTESTS\n"
-	.string "HYPER RANK STAGE!$"
+	.string "POKéMON CONTESTS HYPER RANK STAGE!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SlateportCity_ContestHall_Text_AdviceForContests
+	.global SlateportCity_ContestHall_Text_MyPapaIsContestJudge
+	.global SlateportCity_ContestHall_Text_ImLikeMajorlyCheesed
+	.global SlateportCity_ContestHall_Text_ExplainTorment
+	.global SlateportCity_ContestHall_Text_MCStepUpTakePartInContest
+	.global SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest
+	.global SlateportCity_ContestHall_Text_ItsAppealTime
+	.global SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal
+	.global SlateportCity_ContestHall_Text_RewardWithSageAdvice
+	.global SlateportCity_ContestHall_Text_MoreFreakedOutThanMon
+	.global SlateportCity_ContestHall_Text_BattleAndContestAlike
+	.global SlateportCity_ContestHall_Text_MonLooksOnTopOfGame
+	.global SlateportCity_ContestHall_Text_MyMonBetterThanThatLot
+	.global SlateportCity_ContestHall_Text_GetUrgeToMoveWithMon
+	.global SlateportCity_ContestHall_Text_HyperRankStage
+@ END GENERATED LOCALIZATION EXPORTS

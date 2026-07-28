@@ -74,31 +74,29 @@ Route102_EventScript_Allen::
 	end
 
 Route102_Text_WatchMeCatchPokemon:
-	.string "WALLY: {PLAYER}…\n"
-	.string "POKéMON hide in tall grass like this,\l"
-	.string "don't they?\p"
-	.string "Please watch me and see if I can\n"
-	.string "catch one properly.\p"
-	.string "…Whoa!$"
+	.string "WALLY: {PLAYER}... POKéMON thường ẩn\n"
+	.string "trong cỏ cao như thế này, phải không?\p"
+	.string "Cậu hãy xem mình có thể bắt nó đúng\n"
+	.string "cách không nhé.\p"
+	.string "...Oa!$"
 
 Route102_Text_WallyIDidIt:
-	.string "WALLY: I did it… It's my…\n"
-	.string "My POKéMON!$"
+	.string "WALLY: Mình làm được rồi... Đây là...\n"
+	.string "POKéMON của mình!$"
 
 Route102_Text_LetsGoBack:
-	.string "{PLAYER}, thank you!\n"
-	.string "Let's go back to the GYM!$"
+	.string "{PLAYER}, cảm ơn cậu! Chúng ta quay\n"
+	.string "lại GYM nhé!$"
 
 Route102_Text_ImNotVeryTall:
-	.string "I'm…not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and…\n"
-	.string "Fwafwafwafwafwa…\p"
-	.string "Fwatchoo!$"
+	.string "Mình... không cao lắm nên cứ lọt thỏm\n"
+	.string "trong cỏ cao.\p"
+	.string "Cỏ chui cả vào mũi mình rồi... Phư phư\n"
+	.string "phư phư...\p"
+	.string "Hắt xì!$"
 
 Route102_Text_CatchWholeBunchOfPokemon:
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "Tớ sẽ bắt thật nhiều POKéMON!$"
 
 Route102_Text_RouteSignOldale:
 	.string "ROUTE 102\n"
@@ -107,3 +105,11 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route102_Text_WatchMeCatchPokemon
+	.global Route102_Text_WallyIDidIt
+	.global Route102_Text_LetsGoBack
+	.global Route102_Text_ImNotVeryTall
+	.global Route102_Text_CatchWholeBunchOfPokemon
+@ END GENERATED LOCALIZATION EXPORTS

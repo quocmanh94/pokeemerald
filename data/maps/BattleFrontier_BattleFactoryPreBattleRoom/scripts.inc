@@ -448,198 +448,248 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantReturnToPlayer:
 	step_end
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection:
-	.string "First, we will hold your POKéMON for\n"
-	.string "safekeeping.\p"
-	.string "You may then choose from our\n"
-	.string "selection of POKéMON.$"
+	.string "Trước tiên, chúng tôi sẽ giữ POKéMON\n"
+	.string "của bạn để bảo quản an toàn.\p"
+	.string "Sau đó, bạn có thể chọn trong số\n"
+	.string "POKéMON chúng tôi cung cấp.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
-	.string "Thank you for competing!\n"
-	.string "Let us restore your POKéMON!$"
+	.string "Cảm ơn bạn đã tham gia! Hãy để chúng\n"
+	.string "tôi hồi phục cho POKéMON của bạn!$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
-	.string "The 2nd match is next!\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là trận thứ 2! Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
-	.string "The 3rd match is next!\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là trận thứ 3! Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
-	.string "The 4th match is next!\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là trận thứ 4! Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
-	.string "The 5th match is next!\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là trận thứ 5! Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
-	.string "The 6th match is next!\n"
-	.string "Are you ready?$"
+	.string "Tiếp theo là trận thứ 6! Bạn đã sẵn\n"
+	.string "sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
-	.string "Finally, the 7th match is next!\n"
-	.string "Are you ready?$"
+	.string "Cuối cùng cũng đến trận thứ 7! Bạn đã\n"
+	.string "sẵn sàng chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:
-	.string "Would you like to save and quit\n"
-	.string "the game?$"
+	.string "Bạn có muốn lưu rồi thoát trò chơi\n"
+	.string "không?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RetireFromChallenge:
-	.string "Would you like to retire from your\n"
-	.string "Battle Swap challenge?$"
+	.string "Bạn có muốn rút khỏi thử thách Battle\n"
+	.string "Swap không?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent:
-	.string "I've conducted a little investigation\n"
-	.string "about your upcoming opponent.$"
+	.string "Tôi đã tìm hiểu đôi chút về đối thủ sắp\n"
+	.string "tới của bạn.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the NORMAL type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ NORMAL.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the FIRE type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ FIRE.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the WATER type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ WATER.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the ELECTRIC type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ ELECTRIC.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GRASS type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ GRASS.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the ICE type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ ICE.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the FIGHTING type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ FIGHTING.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the POISON type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ POISON.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GROUND type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ GROUND.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the FLYING type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ FLYING.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the PSYCHIC type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ PSYCHIC.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the BUG type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ BUG.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the ROCK type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ ROCK.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GHOST type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ GHOST.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the DRAGON type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ DRAGON.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the DARK type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ DARK.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the STEEL type.$"
+	.string "Có vẻ HLV này rất thành thạo trong\n"
+	.string "việc sử dụng hệ STEEL.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
-	.string "The TRAINER appears to have no clear\n"
-	.string "favorites when it comes to type.$"
+	.string "Có vẻ HLV này không đặc biệt ưa\n"
+	.string "thích hệ nào.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady:
-	.string "The favorite battle style appears to\n"
-	.string "be slow and steady.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ là\n"
+	.string "chậm mà chắc.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance:
-	.string "The favorite battle style appears to\n"
-	.string "be one of endurance.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ\n"
+	.string "thiên về sức bền.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk:
-	.string "The favorite battle style appears to\n"
-	.string "be high risk, high return.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ là\n"
+	.string "rủi ro cao, lợi ích lớn.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow:
-	.string "The favorite battle style appears to\n"
-	.string "depend on the battle's flow.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ\n"
+	.string "tùy theo diễn biến trận đấu.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation:
-	.string "The favorite battle style appears to\n"
-	.string "be one based on total preparation.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ\n"
+	.string "dựa trên sự chuẩn bị toàn diện.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe:
-	.string "The favorite battle style appears\n"
-	.string "to be weakening the foe to start.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ là\n"
+	.string "làm suy yếu đối thủ ngay từ đầu.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible:
-	.string "The favorite battle style appears to\n"
-	.string "be flexibly adaptable to the situation.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ là\n"
+	.string "linh hoạt thích ứng với tình huống.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict:
-	.string "The favorite battle style appears to\n"
-	.string "be impossible to predict.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ\n"
+	.string "hoàn toàn không thể đoán trước.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained:
-	.string "The favorite battle style appears to\n"
-	.string "be free-spirited and unrestrained.$"
+	.string "Phong cách chiến đấu ưa thích có vẻ\n"
+	.string "phóng khoáng và không bị gò bó.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon:
-	.string "Before starting the battle, would you\n"
-	.string "like to swap a POKéMON?$"
+	.string "Trước khi bắt đầu trận đấu, bạn có\n"
+	.string "muốn đổi một POKéMON không?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete:
-	.string "Thank you!\n"
-	.string "Your POKéMON swap is complete.$"
+	.string "Cảm ơn bạn! Việc đổi POKéMON đã hoàn\n"
+	.string "tất.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay:
-	.string "Right this way, please!$"
+	.string "Xin mời đi lối này!$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
-	.string "I am saving your data.\n"
-	.string "Please wait.$"
+	.string "Tôi đang lưu dữ liệu của bạn. Xin vui\n"
+	.string "lòng chờ.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
-	.string "Would you like to record your latest\n"
-	.string "battle on your FRONTIER PASS?$"
+	.string "Bạn có muốn ghi lại trận đấu gần nhất\n"
+	.string "vào FRONTIER PASS không?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
-	.string "Excuse me! Excuse me, please!\n"
-	.string "May I get you to wait a few moments?$"
+	.string "Xin lỗi! Xin thứ lỗi! Bạn có thể chờ một\n"
+	.string "lát được không?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
-	.string "…Uh-huh? What?! …Whoa!\n"
-	.string "Understood, sir! Will do!$"
+	.string "...Hửm? Gì cơ?! ...Chà! Tôi hiểu rồi, thưa\n"
+	.string "ngài! Tôi sẽ làm ngay!$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:
-	.string "Oh, my…\n"
-	.string "Sorry to keep you waiting!\p"
-	.string "I have a message from this facility's\n"
-	.string "boss, the FACTORY HEAD.\p"
-	.string "He says, “We're going to do it!\n"
-	.string "Come here right now!”$"
+	.string "Ôi trời... Xin lỗi đã để bạn phải chờ!\p"
+	.string "Tôi có lời nhắn từ người đứng đầu cơ\n"
+	.string "sở này, FACTORY HEAD.\p"
+	.string "Ngài ấy nói: “Chúng ta sẽ đấu! Đến đây\n"
+	.string "ngay!”$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead:
-	.string "The FACTORY HEAD is demanding you.\n"
-	.string "Are you prepared to face him?$"
+	.string "FACTORY HEAD đang yêu cầu gặp bạn. Bạn\n"
+	.string "đã sẵn sàng đối mặt với ông ấy chưa?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead:
-	.string "I'm terribly sorry, but I can't tell you\n"
-	.string "anything about the FACTORY HEAD.$"
+	.string "Tôi vô cùng xin lỗi, nhưng tôi không thể\n"
+	.string "tiết lộ bất cứ điều gì về FACTORY HEAD.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_RetireFromChallenge
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead
+	.global BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead
+@ END GENERATED LOCALIZATION EXPORTS

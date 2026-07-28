@@ -274,8 +274,8 @@ static const struct ListMenuTemplate sItemListMenu =
 
 const u8 gMenuText_Tap[] = _("TAP");
 const u8 gMenuText_Hold[] = _("HOLD");
-const u8 gText_RegisterHow[] = _("Register this\nitem by tapping or\nholding SELECT?");
-static const u8 sText_SwitchedToBike[] = _("Switched to the\n{STR_VAR_1}.");
+const u8 gText_RegisterHow[] = _("Đăng ký vật phẩm\nbằng cách nhấn hay\ngiữ SELECT?");
+static const u8 sText_SwitchedToBike[] = _("Đã đổi sang\n{STR_VAR_1}.");
 
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,      {ItemMenu_UseOutOfBattle}},
@@ -2770,3 +2770,9 @@ static void PrintTMHMMoveData(u16 itemId)
         CopyWindowToVram(WIN_TMHM_INFO, COPYWIN_GFX);
     }
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02624 = gText_RegisterHow;
+const u8 *const gLocalizationSource_C02625 = sText_SwitchedToBike;
+// END GENERATED LOCALIZATION EXPORTS

@@ -12,25 +12,32 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Who are you?\n"
-	.string "Where did you come in from?$"
+	.string "Ngươi là ai? Ngươi chui vào từ đâu?$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "Lost it…$"
+	.string "Thua mất rồi...$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "I can't find the way out!\p"
-	.string "I'm not afraid. Don't get me wrong!$"
+	.string "Ta không tìm thấy đường ra!\p"
+	.string "Ta không sợ đâu. Đừng có hiểu lầm!$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "Who are you?\n"
-	.string "Where do you think you're going?$"
+	.string "Ngươi là ai? Ngươi tưởng mình đang đi\n"
+	.string "đâu vậy?$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "I failed to win!$"
+	.string "Ta đã không thắng được!$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "My partner forgot the map in that\n"
-	.string "submarine!\p"
-	.string "How's that for being useless?$"
+	.string "Tên đồng đội của ta để quên bản đồ trên\n"
+	.string "tàu ngầm rồi!\p"
+	.string "Đúng là vô dụng hết chỗ nói!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SeafloorCavern_Room4_Text_Grunt3Intro
+	.global SeafloorCavern_Room4_Text_Grunt3Defeat
+	.global SeafloorCavern_Room4_Text_Grunt3PostBattle
+	.global SeafloorCavern_Room4_Text_Grunt4Intro
+	.global SeafloorCavern_Room4_Text_Grunt4Defeat
+	.global SeafloorCavern_Room4_Text_Grunt4PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

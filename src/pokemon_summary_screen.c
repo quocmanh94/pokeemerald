@@ -20,6 +20,7 @@
 #include "international_string_util.h"
 #include "item.h"
 #include "link.h"
+#include "localization.h"
 #include "m4a.h"
 #include "malloc.h"
 #include "menu.h"
@@ -106,6 +107,7 @@ enum {
 #define PSS_DATA_WINDOW_MOVE_NAMES 0
 #define PSS_DATA_WINDOW_MOVE_PP 1
 #define PSS_DATA_WINDOW_MOVE_DESCRIPTION 2
+#define PSS_MOVE_DESCRIPTION_WIDTH 148
 
 #define MOVE_SELECTOR_SPRITES_COUNT 10
 #define TYPE_ICON_SPRITE_COUNT (MAX_MON_MOVES + 1)
@@ -286,6 +288,8 @@ static void PrintMoveNameAndPP(u8);
 static void PrintContestMoves(void);
 static void Task_PrintContestMoves(u8);
 static void PrintContestMoveDescription(u8);
+static u8 CopyWrappedMoveDescription(u8 *, const u8 *, u8, u16);
+static void PrintMoveDescription(u8, const u8 *);
 static void PrintMoveDetails(u16);
 static void PrintNewMoveDetailsOrCancelText(void);
 static void AddAndFillMoveNamesWindow(void);
@@ -3959,8 +3963,62 @@ static void PrintContestMoveDescription(u8 moveSlot)
     if (move != MOVE_NONE)
     {
         u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_DESCRIPTION);
-        PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[gContestMoves[move].effect], 6, 1, 0, 0);
+        PrintMoveDescription(windowId, gContestEffectDescriptionPointers[gContestMoves[move].effect]);
     }
+}
+
+static u8 CopyWrappedMoveDescription(u8 *dst, const u8 *src, u8 fontId, u16 maxWidth)
+{
+    u8 *lineStart = dst;
+    u8 *lastSpace = NULL;
+    u8 lineCount = 1;
+
+    src = GetLocalizedString(src);
+
+    while (*src != EOS)
+    {
+        u8 character = *src++;
+
+        if (character == CHAR_NEWLINE || character == CHAR_PROMPT_SCROLL || character == CHAR_PROMPT_CLEAR)
+            character = CHAR_SPACE;
+
+        if (character == CHAR_SPACE)
+        {
+            if (dst == lineStart || dst[-1] == CHAR_SPACE || dst[-1] == CHAR_NEWLINE)
+                continue;
+            lastSpace = dst;
+        }
+
+        *dst++ = character;
+        *dst = EOS;
+
+        if (GetStringWidth(fontId, lineStart, 0) > maxWidth && lastSpace != NULL)
+        {
+            *lastSpace = CHAR_NEWLINE;
+            lineStart = lastSpace + 1;
+            lastSpace = NULL;
+            lineCount++;
+        }
+    }
+
+    if (dst > lineStart && dst[-1] == CHAR_SPACE)
+        dst--;
+    *dst = EOS;
+
+    return lineCount;
+}
+
+static void PrintMoveDescription(u8 windowId, const u8 *description)
+{
+    u8 fontId = FONT_NORMAL;
+
+    if (CopyWrappedMoveDescription(gStringVar4, description, fontId, PSS_MOVE_DESCRIPTION_WIDTH) > 2)
+    {
+        fontId = FONT_NARROW;
+        CopyWrappedMoveDescription(gStringVar4, description, fontId, PSS_MOVE_DESCRIPTION_WIDTH);
+    }
+
+    AddTextPrinterParameterized4(windowId, fontId, 6, 1, 0, 0, sTextColors[0], 0, gStringVar4);
 }
 
 static void PrintMoveDetails(u16 move)
@@ -3973,12 +4031,12 @@ static void PrintMoveDetails(u16 move)
         {
             UpdateSplitIconForMove(move);
             PrintMovePowerAndAccuracy(move);
-            PrintTextOnWindow(windowId, gMoveDescriptionPointers[move - 1], 6, 1, 0, 0);
+            PrintMoveDescription(windowId, gMoveDescriptionPointers[move - 1]);
         }
         else
         {
             HideSplitIcon();
-            PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[gContestMoves[move].effect], 6, 1, 0, 0);
+            PrintMoveDescription(windowId, gContestEffectDescriptionPointers[gContestMoves[move].effect]);
         }
         PutWindowTilemap(windowId);
     }

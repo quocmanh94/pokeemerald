@@ -132,24 +132,30 @@ AbandonedShip_HiddenFloorCorridors_EventScript_TheDoorIsOpen::
 	end
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 1” is painted on the door.$"
+	.string "Cửa đã khóa.\p"
+	.string "Trên cửa có sơn chữ RM. 1.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 2” is painted on the door.$"
+	.string "Cửa đã khóa.\p"
+	.string "Trên cửa có sơn chữ RM. 2.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 4” is painted on the door.$"
+	.string "Cửa đã khóa.\p"
+	.string "Trên cửa có sơn chữ RM. 4.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“RM. 6” is painted on the door.$"
+	.string "Cửa đã khóa.\p"
+	.string "Trên cửa có sơn chữ RM. 6.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey:
-	.string "{PLAYER} inserted and turned the\n"
-	.string "KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
-	.string "but the door opened.$"
+	.string "{PLAYER} tra KEY vào rồi xoay.\p"
+	.string "KEY bị kẹt cứng trong ổ, nhưng cửa đã\n"
+	.string "mở.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked
+	.global AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked
+	.global AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked
+	.global AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked
+	.global AbandonedShip_HiddenFloorCorridors_Text_InsertedKey
+@ END GENERATED LOCALIZATION EXPORTS

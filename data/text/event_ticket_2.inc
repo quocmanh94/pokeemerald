@@ -1,71 +1,82 @@
 EventTicket_Text_OldSeaMapTooFar:
-	.string "What's up, youngster?\p"
-	.string "What, it's you who's supposed to have\n"
-	.string "a tattered old map?\p"
-	.string "Let's have a look.\n"
-	.string "… … … … … …\p"
-	.string "Boy, this is quite a ways away.\n"
-	.string "I'm afraid I can't help you…$"
+	.string "Có chuyện gì vậy, nhóc?\p"
+	.string "Gì cơ, chính cậu là người có tấm bản đồ\n"
+	.string "cũ rách nát đó sao?\p"
+	.string "Đưa ta xem nào. ... ... ... ... ... ...\p"
+	.string "Ôi, nơi này xa lắm. E rằng ta không giúp\n"
+	.string "được cậu...$"
 
 EventTicket_Text_BrineyHoldOnASecond:
-	.string "BRINEY: Hold on a second!\p"
-	.string "What's the idea of turning down\n"
-	.string "someone that I owe so much to?$"
+	.string "BRINEY: Khoan đã!\p"
+	.string "Sao anh lại từ chối người mà tôi mang\n"
+	.string "ơn rất nhiều chứ?$"
 
 EventTicket_Text_BrineyLetsSail:
-	.string "{PLAYER}{KUN}, I'm terribly sorry.\p"
-	.string "You came to me seeking my help,\n"
-	.string "and we almost turned you away.\p"
-	.string "Well, let me make things right.\p"
-	.string "We'll sail right away, of course!\p"
-	.string "Let's find this island on\n"
-	.string "this OLD SEA MAP!$"
+	.string "{PLAYER}{KUN}, tôi thật sự xin lỗi.\p"
+	.string "Cháu đã tìm đến nhờ tôi giúp, vậy mà\n"
+	.string "chúng tôi suýt từ chối cháu.\p"
+	.string "Để tôi sửa sai nhé.\p"
+	.string "Tất nhiên, chúng ta sẽ khởi hành ngay!\p"
+	.string "Hãy cùng tìm hòn đảo trên OLD SEA MAP\n"
+	.string "này!$"
 
 EventTicket_Text_OddTicketGetOnBoard:
-	.string "Is it you who brought that odd\n"
-	.string "ticket?\p"
-	.string "Where you're trying to go is an island\n"
-	.string "that's far, far away.\p"
-	.string "No one knows what awaits there…\p"
-	.string "The very thought excites my blood\n"
-	.string "as a sailing man!\p"
-	.string "Get on board, youngster!$"
+	.string "Có phải cậu mang tấm vé kỳ lạ đó tới\n"
+	.string "không?\p"
+	.string "Nơi cậu muốn đến là một hòn đảo xa thật\n"
+	.string "xa.\p"
+	.string "Không ai biết điều gì đang chờ ở đó...\p"
+	.string "Chỉ nghĩ đến thôi, máu của một thủy thủ\n"
+	.string "như ta đã sôi lên rồi!\p"
+	.string "Lên tàu đi, nhóc!$"
 
 FarawayIsland_Entrance_Text_SailorReturn:
-	.string "CAPT. BRINEY can be so maddeningly\n"
-	.string "fickle…\p"
-	.string "Do you want to return to LILYCOVE?$"
+	.string "CAPT. BRINEY đúng là hay thay đổi đến\n"
+	.string "phát bực...\p"
+	.string "Cậu có muốn quay lại LILYCOVE không?$"
 
 BirthIsland_Harbor_Text_SailorReturn:
-	.string "What an oddly shaped island, eh?\n"
-	.string "Do you want to return to LILYCOVE?$"
+	.string "Hòn đảo này có hình thù kỳ lạ thật nhỉ?\n"
+	.string "Cậu có muốn quay lại LILYCOVE không?$"
 
 EventTicket_Text_OddTicketsWhereTo:
-	.string "Is it you who brought those\n"
-	.string "odd tickets?\p"
-	.string "… … …Hm.\p"
-	.string "These tickets will get you to islands\n"
-	.string "that are far, far away.\p"
-	.string "No one knows what awaits there,\n"
-	.string "or what may happen there.\p"
-	.string "The very thought excites my blood\n"
-	.string "as a sailing man!\p"
-	.string "Get on board, youngster!\n"
-	.string "Where shall we sail first?$"
+	.string "Có phải cậu mang những tấm vé kỳ lạ đó\n"
+	.string "tới không?\p"
+	.string "... ... ... Hừm.\p"
+	.string "Những tấm vé này sẽ đưa cậu đến các\n"
+	.string "hòn đảo xa thật xa.\p"
+	.string "Không ai biết điều gì đang chờ ở đó,\n"
+	.string "hay chuyện gì có thể xảy ra.\p"
+	.string "Chỉ nghĩ đến thôi, máu của một thủy thủ\n"
+	.string "như ta đã sôi lên rồi!\p"
+	.string "Lên tàu đi, nhóc! Ta sẽ đến đâu trước?$"
 
 NavelRock_Harbor_Text_SailorReturn:
-	.string "Did… Did you hear that?\n"
-	.string "That low growling from deep in there.\p"
-	.string "Are you sure it's safe?\n"
-	.string "Do you think we should leave?$"
+	.string "Cậu... Cậu có nghe thấy không? Tiếng gầm\n"
+	.string "trầm thấp từ sâu bên trong ấy.\p"
+	.string "Cậu chắc nơi này an toàn chứ? Hay\n"
+	.string "chúng ta nên rời đi?$"
 
 FarawayIsland_Entrance_Text_Sign:
-	.string "The writing is fading as if it was\n"
-	.string "written a long time ago…\p"
-	.string "“…ber, 6th day\n"
-	.string "If any human…sets foot here…\l"
-	.string "again…et it be a kindhearted pers…\l"
-	.string "…ith that hope, I depar…”$"
+	.string "Chữ viết đang phai dần, như thể đã\n"
+	.string "được viết từ rất lâu...\p"
+	.string "“...ber, ngày 6 Nếu có con người\n"
+	.string "nào...đặt chân đến đây... lần nữa...ãy để\l"
+	.string "đó là một người nhân hậu... ...ới hy vọng\l"
+	.string "ấy, ta rời...”$"
 
 FarawayIsland_Interior_Text_Mew:
-	.string "Myuu…$"
+	.string "Myuu...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global EventTicket_Text_OldSeaMapTooFar
+	.global EventTicket_Text_BrineyHoldOnASecond
+	.global EventTicket_Text_BrineyLetsSail
+	.global EventTicket_Text_OddTicketGetOnBoard
+	.global FarawayIsland_Entrance_Text_SailorReturn
+	.global BirthIsland_Harbor_Text_SailorReturn
+	.global EventTicket_Text_OddTicketsWhereTo
+	.global NavelRock_Harbor_Text_SailorReturn
+	.global FarawayIsland_Entrance_Text_Sign
+	.global FarawayIsland_Interior_Text_Mew
+@ END GENERATED LOCALIZATION EXPORTS

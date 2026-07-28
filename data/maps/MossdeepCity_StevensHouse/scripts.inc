@@ -148,67 +148,76 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "STEVEN: {PLAYER}{KUN}…\p"
-	.string "As you can see, there's not much here,\n"
-	.string "but this is my home.\p"
-	.string "Thank you for all that you've done.\p"
-	.string "This is my token of appreciation.\n"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
-	.string "No need to be shy--you've earned\n"
-	.string "this HM.$"
+	.string "STEVEN: {PLAYER}{KUN}...\p"
+	.string "Như em thấy đấy, ở đây không có gì\n"
+	.string "nhiều, nhưng đây là nhà anh.\p"
+	.string "Cảm ơn em vì tất cả những gì em đã làm.\p"
+	.string "Đây là chút lòng cảm kích của anh. Đó là\n"
+	.string "HIDDEN MACHINE DIVE.\p"
+	.string "Không cần ngại, em xứng đáng nhận HM\n"
+	.string "này.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "STEVEN: While you're using SURF, you\n"
-	.string "should notice dark patches of water.\p"
-	.string "Use DIVE if you come to deep water\n"
-	.string "like it. You'll drop to the seafloor.\p"
-	.string "When you want to come back up, use\n"
-	.string "DIVE again.\p"
-	.string "In some places, it won't be possible\n"
-	.string "for you to surface, though.$"
+	.string "STEVEN: Khi đang dùng SURF, em sẽ thấy\n"
+	.string "những vùng nước sẫm màu.\p"
+	.string "Nếu gặp vùng nước sâu như thế, hãy\n"
+	.string "dùng DIVE. Em sẽ lặn xuống đáy biển.\p"
+	.string "Khi muốn trở lại mặt nước, hãy dùng\n"
+	.string "DIVE lần nữa.\p"
+	.string "Tuy vậy, ở một số nơi em sẽ không thể\n"
+	.string "nổi lên.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "STEVEN: Apparently, there's an\n"
-	.string "underwater cavern between\l"
-	.string "MOSSDEEP and SOOTOPOLIS.\p"
-	.string "You know, the one that CAPT. STERN\n"
-	.string "found in his submarine.$"
+	.string "STEVEN: Nghe nói có một hang động dưới\n"
+	.string "biển nằm giữa MOSSDEEP và SOOTOPOLIS.\p"
+	.string "Em biết đấy, chính là hang mà CAPT.\n"
+	.string "STERN đã tìm thấy trong chuyến đi bằng\l"
+	.string "tàu ngầm.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the POKé BALL.\p"
-	.string "It contained the POKéMON\n"
-	.string "BELDUM.\p"
-	.string "Take the POKé BALL?$"
+	.string "{PLAYER} kiểm tra POKé BALL.\p"
+	.string "Bên trong có POKéMON BELDUM.\p"
+	.string "Có lấy POKé BALL không?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a BELDUM.$"
+	.string "{PLAYER} nhận được một BELDUM.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "There is no space for another POKéMON.$"
+	.string "Không còn chỗ cho thêm POKéMON.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
-	.string "it was.$"
+	.string "{PLAYER} để nguyên POKé BALL tại chỗ\n"
+	.string "cũ.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "It's a letter.\p"
-	.string "… … … … … …\p"
-	.string "To {PLAYER}{KUN}…\p"
-	.string "I've decided to do a little soul-\n"
-	.string "searching and train on the road.\p"
-	.string "I don't plan to return home for some\n"
-	.string "time.\p"
-	.string "I have a favor to ask of you.\p"
-	.string "I want you to take the POKé BALL on\n"
-	.string "the desk.\p"
-	.string "Inside it is a BELDUM, my favorite\n"
-	.string "POKéMON.\p"
-	.string "I'm counting on you.\p"
-	.string "May our paths cross someday.\p"
+	.string "Đó là một lá thư.\p"
+	.string "...\p"
+	.string "Gửi {PLAYER}{KUN}...\p"
+	.string "Tôi đã quyết định lên đường rèn luyện\n"
+	.string "và dành thời gian nhìn lại chính mình.\p"
+	.string "Tôi sẽ không về nhà trong một thời gian.\p"
+	.string "Tôi có một việc muốn nhờ em.\p"
+	.string "Hãy nhận lấy POKé BALL trên bàn.\p"
+	.string "Bên trong là BELDUM, POKéMON tôi yêu\n"
+	.string "thích nhất.\p"
+	.string "Tôi trông cậy vào em.\p"
+	.string "Mong một ngày nào đó chúng ta sẽ lại\n"
+	.string "gặp nhau.\p"
 	.string "STEVEN STONE$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
-	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by STEVEN.$"
+	.string "Đây là bộ sưu tập những loại đá quý\n"
+	.string "hiếm do STEVEN thu thập.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_StevensHouse_Text_YouveEarnedHMDive
+	.global MossdeepCity_StevensHouse_Text_ExplainDive
+	.global MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis
+	.global MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum
+	.global MossdeepCity_StevensHouse_Text_ObtainedBeldum
+	.global MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon
+	.global MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas
+	.global MossdeepCity_StevensHouse_Text_LetterFromSteven
+	.global MossdeepCity_StevensHouse_Text_CollectionOfRareRocks
+@ END GENERATED LOCALIZATION EXPORTS

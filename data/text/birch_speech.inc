@@ -1,61 +1,72 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
+	.string "Xin chào! Xin lỗi đã để bạn phải chờ!\p"
+	.string "Chào mừng đến với thế giới POKéMON!\p"
+	.string "Tên tôi là BIRCH.\p"
+	.string "Nhưng mọi người đều gọi tôi là POKéMON\n"
 	.string "PROFESSOR.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
-	.string "\n"
+	.string "Đây là sinh vật mà chúng ta gọi là\n"
+	.string "POKéMON.\p"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "Khắp thế giới này là nơi sinh sống của\n"
+	.string "những sinh vật được gọi là POKéMON.\p"
+	.string "Con người chúng ta sống bên POKéMON,\n"
+	.string "khi thì là bạn thân thiết, khi lại là\l"
+	.string "cộng sự cùng làm việc.\p"
+	.string "Đôi khi, chúng ta còn sát cánh chiến\n"
+	.string "đấu với những người khác cũng giống\l"
+	.string "mình.\p"
+	.string "Nhưng dù gần gũi như vậy, chúng ta vẫn\n"
+	.string "chưa biết mọi điều về POKéMON.\p"
+	.string "Thật ra, POKéMON vẫn còn ẩn chứa vô vàn\n"
+	.string "bí mật.\p"
+	.string "Để khám phá những bí ẩn về POKéMON, tôi\n"
+	.string "vẫn luôn tiến hành nghiên cứu. Đó là\l"
+	.string "công việc của tôi.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "Còn bạn là?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Bạn là con trai? Hay là con gái?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "Được rồi. Bạn tên gì?$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "Vậy bạn là {PLAYER}{KUN} phải không?$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
+	.string "À, ra vậy!\p"
+	.string "Bạn là {PLAYER}{KUN}, người sắp chuyển\n"
+	.string "đến quê tôi, LITTLEROOT. Giờ thì tôi\l"
+	.string "hiểu rồi!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "Được rồi, bạn sẵn sàng chưa?\p"
+	.string "Cuộc phiêu lưu của riêng bạn sắp bắt\n"
+	.string "đầu.\p"
+	.string "Hãy can đảm bước vào thế giới POKéMON,\n"
+	.string "nơi những ước mơ, cuộc phiêu lưu và\l"
+	.string "tình bạn đang chờ đón!\p"
+	.string "Tôi sẽ đợi bạn. Lát nữa hãy đến gặp tôi\n"
+	.string "tại POKéMON LAB.\p"
 	.string "$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_Birch_Welcome
+	.global gText_Birch_Pokemon
+	.global gText_Birch_MainSpeech
+	.global gText_Birch_AndYouAre
+	.global gText_Birch_BoyOrGirl
+	.global gText_Birch_WhatsYourName
+	.global gText_Birch_SoItsPlayer
+	.global gText_Birch_YourePlayer
+	.global gText_Birch_AreYouReady
+@ END GENERATED LOCALIZATION EXPORTS

@@ -198,271 +198,309 @@ BattleFrontier_Lounge3_EventScript_FaceOriginalDirection::
 	end
 
 BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere::
-	.string "…What's that you want?\p"
-	.string "Can't you see we're kind of busy here?\n"
-	.string "Can't your business wait till later?$"
+	.string "...Bạn muốn gì?\p"
+	.string "Không thấy bọn tôi đang khá bận sao?\n"
+	.string "Chuyện của bạn không để sau được à?$"
 
 BattleFrontier_Lounge3_Text_YouLookToughExplainGambling::
-	.string "…Huh?\n"
-	.string "You look to me like a tough TRAINER.\p"
-	.string "Heheh…\n"
-	.string "Listen, I have this proposition.\p"
-	.string "We have a little group going here,\n"
-	.string "and we play a little game with what\l"
-	.string "goes on in the BATTLE FRONTIER.\p"
-	.string "The rules are really simple.\p"
-	.string "First, we pick one of the facilities\n"
-	.string "in the BATTLE FRONTIER.\p"
-	.string "Then, we each pick a different TRAINER\n"
-	.string "who's taking that facility's challenge,\l"
-	.string "and bet with our Battle Points.\p"
-	.string "The guy who bet on the TRAINER with\n"
-	.string "the best record takes all the Battle\l"
-	.string "Points in the pool.\p"
-	.string "Sounds simple, huh?\n"
-	.string "So, anyway…$"
+	.string "...Hả? Trông bạn có vẻ là một HLV\n"
+	.string "mạnh đấy.\p"
+	.string "Hê hê... Nghe này, tôi có một đề nghị.\p"
+	.string "Bọn tôi có một nhóm nhỏ ở đây, cùng\n"
+	.string "chơi một trò dựa trên những gì diễn ra\l"
+	.string "tại BATTLE FRONTIER.\p"
+	.string "Luật rất đơn giản.\p"
+	.string "Trước tiên, bọn tôi chọn một cơ sở\n"
+	.string "trong BATTLE FRONTIER.\p"
+	.string "Sau đó, mỗi người chọn một HLV\n"
+	.string "khác nhau đang tham gia thử thách tại\l"
+	.string "cơ sở đó rồi đặt cược bằng Battle\l"
+	.string "Points.\p"
+	.string "Người cược vào HLV có thành tích\n"
+	.string "tốt nhất sẽ lấy toàn bộ Battle Points\l"
+	.string "trong quỹ.\p"
+	.string "Nghe đơn giản nhỉ? Vậy nên...$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "TOWER's SINGLE BATTLE ROOMS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sắp thách đấu\n"
+	.string "SINGLE BATTLE ROOMS của BATTLE TOWER.\p"
+	.string "Nhưng đến giờ tôi vẫn chưa thấy\n"
+	.string "HLV nào có tố chất chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "TOWER's DOUBLE BATTLE ROOMS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sắp thách đấu\n"
+	.string "DOUBLE BATTLE ROOMS của BATTLE TOWER.\p"
+	.string "Nhưng đến giờ tôi vẫn chưa thấy\n"
+	.string "HLV nào có tố chất chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "TOWER's MULTI BATTLE ROOMS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sắp thách đấu\n"
+	.string "MULTI BATTLE ROOMS của BATTLE TOWER.\p"
+	.string "Nhưng đến giờ tôi vẫn chưa thấy\n"
+	.string "HLV nào có tố chất chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "DOME's SINGLE BATTLE Tourney.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sắp tham gia\n"
+	.string "giải đấu SINGLE BATTLE của BATTLE\l"
+	.string "DOME.\p"
+	.string "Nhưng đến giờ tôi vẫn chưa thấy\n"
+	.string "HLV nào có tố chất chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "DOME's DOUBLE BATTLE Tourney.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "giải DOUBLE BATTLE của BATTLE DOME.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "FACTORY's Battle Swap Single Tourney.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "Battle Swap Single Tourney của BATTLE\l"
+	.string "FACTORY.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "FACTORY's Battle Swap Double Tourney.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "Battle Swap Double Tourney của BATTLE\l"
+	.string "FACTORY.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "PALACE's SINGLE BATTLE HALLS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ thử sức\n"
+	.string "tại SINGLE BATTLE HALLS của BATTLE\l"
+	.string "PALACE.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "PALACE's DOUBLE BATTLE HALLS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ thử sức\n"
+	.string "tại DOUBLE BATTLE HALLS của BATTLE\l"
+	.string "PALACE.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleArena::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "ARENA's Set KO Tourney.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "Set KO Tourney của BATTLE ARENA.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePike::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE PIKE's\l"
-	.string "Battle Choice.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "Battle Choice của BATTLE PIKE.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePyramid::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "PYRAMID's Battle Quest.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
-	.string "that has that winning quality.$"
+	.string "Tôi đang tìm một HLV sẽ tham gia\n"
+	.string "Battle Quest của BATTLE PYRAMID.\p"
+	.string "Nhưng đến giờ, tôi vẫn chưa thấy\n"
+	.string "HLV nào có khí chất của người\l"
+	.string "chiến thắng.$"
 
 BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe::
-	.string "I'll see to it that you benefit, too.\n"
-	.string "So how about it?\l"
-	.string "How about entering that event for me?$"
+	.string "Tôi cũng sẽ bảo đảm cậu được hưởng\n"
+	.string "lợi. Thế nào? Cậu tham gia sự kiện đó\l"
+	.string "giúp tôi nhé?$"
 
 BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints::
-	.string "All right, that's perfect.\n"
-	.string "So, uh… How about spotting me some\l"
-	.string "of your Battle Points?\p"
-	.string "Trust me, I'll show you my gratitude\n"
-	.string "afterward.$"
+	.string "Được rồi, hoàn hảo! Vậy thì, cậu cho tôi\n"
+	.string "vay một ít Battle Points được không?\p"
+	.string "Tin tôi đi, sau đó tôi sẽ hậu tạ cậu.$"
 
 BattleFrontier_Lounge3_Text_HowMuchCanYouSpot::
-	.string "Great, great!\n"
-	.string "So, how much can you spot me?$"
+	.string "Tuyệt, tuyệt lắm! Vậy cậu có thể cho tôi\n"
+	.string "vay bao nhiêu?$"
 
 BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints::
-	.string "Oh, no, no, no!\n"
-	.string "You don't have enough Battle Points!\p"
-	.string "I wish you wouldn't monkey around and\n"
-	.string "waste everyone's time!$"
+	.string "Ôi, không, không, không! Cậu không có đủ\n"
+	.string "Battle Points!\p"
+	.string "Đừng làm trò khỉ rồi phí thời gian của\n"
+	.string "mọi người chứ!$"
 
 BattleFrontier_Lounge3_Text_ThanksOffYouGo::
-	.string "Heheh! Thanks much!\n"
-	.string "So, off you go!$"
+	.string "Hê hê! Cảm ơn nhiều! Giờ thì lên đường\n"
+	.string "đi!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerSingle::
-	.string "Get to the BATTLE TOWER's\n"
-	.string "SINGLE BATTLE ROOMS pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến SINGLE BATTLE ROOMS của BATTLE\n"
+	.string "TOWER ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerDouble::
-	.string "Get to the BATTLE TOWER's\n"
-	.string "DOUBLE BATTLE ROOMS pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến DOUBLE BATTLE ROOMS của BATTLE\n"
+	.string "TOWER ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerMulti::
-	.string "Get to the BATTLE TOWER's\n"
-	.string "MULTI BATTLE ROOMS pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến MULTI BATTLE ROOMS của BATTLE\n"
+	.string "TOWER ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleDomeSingle::
-	.string "Get to the BATTLE DOME's\n"
-	.string "SINGLE BATTLE Tourney pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến giải SINGLE BATTLE của BATTLE DOME\n"
+	.string "ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleDomeDouble::
-	.string "Get to the BATTLE DOME's\n"
-	.string "DOUBLE BATTLE Tourney pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến giải DOUBLE BATTLE của BATTLE DOME\n"
+	.string "ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleFactorySingle::
-	.string "Get to the BATTLE FACTORY's\n"
-	.string "Battle Swap Single Tourney pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến Battle Swap Single Tourney của\n"
+	.string "BATTLE FACTORY ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble::
-	.string "Get to the BATTLE FACTORY's\n"
-	.string "Battle Swap Double Tourney pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến Battle Swap Double Tourney của\n"
+	.string "BATTLE FACTORY ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle::
-	.string "Get to the BATTLE PALACE's\n"
-	.string "SINGLE BATTLE HALLS pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến SINGLE BATTLE HALLS của BATTLE\n"
+	.string "PALACE ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble::
-	.string "Get to the BATTLE PALACE's\n"
-	.string "DOUBLE BATTLE HALLS pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến DOUBLE BATTLE HALLS của BATTLE\n"
+	.string "PALACE ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleArena::
-	.string "Get to the BATTLE ARENA's\n"
-	.string "Set KO Tourney pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến Set KO Tourney của BATTLE ARENA\n"
+	.string "ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePike::
-	.string "Get to the BATTLE PIKE's\n"
-	.string "Battle Choice pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến Battle Choice của BATTLE PIKE\n"
+	.string "ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePyramid::
-	.string "Get to the BATTLE PYRAMID's\n"
-	.string "Battle Quest pronto!\p"
-	.string "It's a must-win situation!\n"
-	.string "Don't blow your chance!\l"
-	.string "Both of our futures depend on you!$"
+	.string "Đến Battle Quest của BATTLE PYRAMID\n"
+	.string "ngay!\p"
+	.string "Trận này nhất định phải thắng! Đừng bỏ\n"
+	.string "lỡ cơ hội! Tương lai của cả hai ta phụ\l"
+	.string "thuộc vào cậu!$"
 
 BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints::
-	.string "Oh, it's you…\n"
-	.string "Nice try…\p"
-	.string "I hate to break it to you, but I can't\n"
-	.string "return your Battle Points…\p"
-	.string "I guess we'll have to let it motivate\n"
-	.string "us to try harder next time!$"
+	.string "Ồ, là cậu à. Cậu đã cố gắng rồi.\p"
+	.string "Tôi rất tiếc phải nói rằng tôi không thể\n"
+	.string "trả lại Battle Points cho cậu.\p"
+	.string "Xem như đây là động lực để lần sau\n"
+	.string "chúng ta cố gắng hơn nữa nhé!$"
 
 BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints::
-	.string "Oh, yes!\n"
-	.string "Hello there, champ!\p"
-	.string "I knew you could!\n"
-	.string "I knew you would!\l"
-	.string "We're both big winners!\p"
-	.string "I'll return your Battle Points and,\n"
-	.string "of course, a little extra from me!$"
+	.string "Ồ, tuyệt quá! Chào nhà vô địch!\p"
+	.string "Tôi biết cậu làm được mà! Tôi biết cậu\n"
+	.string "sẽ thắng! Cả hai ta đều thắng lớn!\p"
+	.string "Tôi sẽ trả lại Battle Points cho cậu, và\n"
+	.string "tất nhiên còn tặng thêm một ít nữa!$"
 
 BattleFrontier_Lounge3_Text_ObtainedBattlePoints::
-	.string "{PLAYER} obtained\n"
+	.string "{PLAYER} nhận được\n"
 	.string "{STR_VAR_1} Battle Points.$"
 
 BattleFrontier_Lounge3_Text_ThinkOfMeForAnotherChallenge::
-	.string "If you're up for another challenge,\n"
-	.string "please do think of me!$"
+	.string "Nếu muốn thử sức lần nữa, nhớ nghĩ đến\n"
+	.string "tôi nhé!$"
 
 BattleFrontier_Lounge3_Text_NotInterested::
-	.string "Not interested?! You shouldn't be\n"
-	.string "so afraid to take a chance!$"
+	.string "Không hứng thú sao?! Cậu đừng sợ mạo\n"
+	.string "hiểm như thế chứ!$"
 
 BattleFrontier_Lounge3_Text_Oh::
-	.string "Oh…$"
+	.string "Ồ.$"
 
 BattleFrontier_Lounge3_Text_BackedWrongTrainer::
-	.string "I backed the wrong TRAINER again!\p"
-	.string "Maybe I should be battling normally\n"
-	.string "like everyone else…$"
+	.string "Tôi lại đặt cược nhầm HLV rồi!\p"
+	.string "Có lẽ tôi nên chiến đấu bình thường\n"
+	.string "như mọi người.$"
 
 BattleFrontier_Lounge3_Text_TrainerGoodButRattled::
-	.string "That TRAINER…\p"
-	.string "He's good, but he gets rattled too\n"
-	.string "easily to survive the BATTLE DOME…$"
+	.string "HLV đó.\p"
+	.string "Cậu ta giỏi, nhưng quá dễ mất bình tĩnh\n"
+	.string "để có thể trụ lại BATTLE DOME.$"
 
 BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne::
-	.string "Giggle!\n"
-	.string "I know a winner when I see one!$"
+	.string "Hí hí! Nhìn là tôi biết ngay ai sẽ chiến\n"
+	.string "thắng!$"
 
 BattleFrontier_Lounge3_Text_ShouldBeTakingChallenges::
-	.string "Those TRAINERS…\n"
-	.string "What are they doing?\l"
-	.string "They should be taking challenges.$"
+	.string "Các HLV đó đang làm gì vậy? Lẽ ra\n"
+	.string "họ phải đi thử sức chứ.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere
+	.global BattleFrontier_Lounge3_Text_YouLookToughExplainGambling
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble
+	.global BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle
+	.global BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble
+	.global BattleFrontier_Lounge3_Text_ChallengeBattleArena
+	.global BattleFrontier_Lounge3_Text_ChallengeBattlePike
+	.global BattleFrontier_Lounge3_Text_ChallengeBattlePyramid
+	.global BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe
+	.global BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints
+	.global BattleFrontier_Lounge3_Text_HowMuchCanYouSpot
+	.global BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints
+	.global BattleFrontier_Lounge3_Text_ThanksOffYouGo
+	.global BattleFrontier_Lounge3_Text_GetToBattleTowerSingle
+	.global BattleFrontier_Lounge3_Text_GetToBattleTowerDouble
+	.global BattleFrontier_Lounge3_Text_GetToBattleTowerMulti
+	.global BattleFrontier_Lounge3_Text_GetToBattleDomeSingle
+	.global BattleFrontier_Lounge3_Text_GetToBattleDomeDouble
+	.global BattleFrontier_Lounge3_Text_GetToBattleFactorySingle
+	.global BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble
+	.global BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle
+	.global BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble
+	.global BattleFrontier_Lounge3_Text_GetToBattleArena
+	.global BattleFrontier_Lounge3_Text_GetToBattlePike
+	.global BattleFrontier_Lounge3_Text_GetToBattlePyramid
+	.global BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints
+	.global BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints
+	.global BattleFrontier_Lounge3_Text_ObtainedBattlePoints
+	.global BattleFrontier_Lounge3_Text_ThinkOfMeForAnotherChallenge
+	.global BattleFrontier_Lounge3_Text_NotInterested
+	.global BattleFrontier_Lounge3_Text_Oh
+	.global BattleFrontier_Lounge3_Text_BackedWrongTrainer
+	.global BattleFrontier_Lounge3_Text_TrainerGoodButRattled
+	.global BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne
+	.global BattleFrontier_Lounge3_Text_ShouldBeTakingChallenges
+@ END GENERATED LOCALIZATION EXPORTS

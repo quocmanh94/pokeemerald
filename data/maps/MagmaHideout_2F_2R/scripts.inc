@@ -22,57 +22,71 @@ MagmaHideout_2F_2R_EventScript_Grunt8::
 	end
 
 MagmaHideout_2F_2R_Text_Grunt15Intro:
-	.string "I don't have a bone to pick with you.\n"
-	.string "I'm just following orders!$"
+	.string "Ta chẳng có thù oán gì với ngươi. Ta\n"
+	.string "chỉ làm theo lệnh thôi!$"
 
 MagmaHideout_2F_2R_Text_Grunt15Defeat:
-	.string "I may have lost, but…$"
+	.string "Có thể ta đã thua, nhưng...$"
 
 MagmaHideout_2F_2R_Text_Grunt15PostBattle:
-	.string "We dug up something beyond belief!\n"
-	.string "And, we got the BLUE ORB!\p"
-	.string "All that's left is for our leader to…\n"
-	.string "Fufufu… Fwahahaha!$"
+	.string "Bọn ta đã đào được một thứ không thể\n"
+	.string "tin nổi! Lại còn lấy được BLUE ORB!\p"
+	.string "Giờ chỉ còn chờ thủ lĩnh của bọn ta...\n"
+	.string "Fufufu... Fwahahaha!$"
 
 MagmaHideout_2F_2R_Text_Grunt6Intro:
-	.string "I can't stand heat. Maybe I should've\n"
-	.string "joined TEAM AQUA instead…$"
+	.string "Tôi không chịu nổi nóng. Có lẽ lẽ ra tôi\n"
+	.string "nên gia nhập TEAM AQUA...$"
 
 MagmaHideout_2F_2R_Text_Grunt6Defeat:
-	.string "Yeah, I really may not be right for\n"
-	.string "TEAM MAGMA…$"
+	.string "Ừ, có lẽ tôi thật sự không hợp với TEAM\n"
+	.string "MAGMA...$"
 
 MagmaHideout_2F_2R_Text_Grunt6PostBattle:
-	.string "Don't you get lonely for the sea\n"
-	.string "being in a place like this?$"
+	.string "Ở một nơi thế này, ngươi không thấy\n"
+	.string "nhớ biển sao?$"
 
 MagmaHideout_2F_2R_Text_Grunt7Intro:
-	.string "You can hear tremors here sometimes.\p"
-	.string "Could it be the volcano rattling?\n"
-	.string "Or is it GROU…\p"
-	.string "Whoops!\n"
-	.string "No, no, never mind!$"
+	.string "Thỉnh thoảng ở đây có thể nghe thấy\n"
+	.string "rung chấn.\p"
+	.string "Núi lửa đang rung chuyển chăng? Hay là\n"
+	.string "GROU...\p"
+	.string "Úi! Không, không, đừng bận tâm!$"
 
 MagmaHideout_2F_2R_Text_Grunt7Defeat:
-	.string "You're a fiery battler.\n"
-	.string "Just like a volcano!$"
+	.string "Ngươi chiến đấu bốc lửa thật. Hệt như\n"
+	.string "núi lửa!$"
 
 MagmaHideout_2F_2R_Text_Grunt7PostBattle:
-	.string "You just happened to win this time,\n"
-	.string "but that doesn't matter.\p"
-	.string "TEAM MAGMA's goal is about to be\n"
-	.string "reached!$"
+	.string "Lần này ngươi chỉ tình cờ thắng thôi,\n"
+	.string "nhưng không quan trọng.\p"
+	.string "Mục tiêu của TEAM MAGMA sắp thành hiện\n"
+	.string "thực rồi!$"
 
 MagmaHideout_2F_2R_Text_Grunt8Intro:
-	.string "One of our guys was freaking out that\n"
-	.string "he lost his MAGMA EMBLEM…\p"
-	.string "Wait a minute!\n"
-	.string "Was it you who found it?$"
+	.string "Một người trong bọn ta đang cuống lên\n"
+	.string "vì làm mất MAGMA EMBLEM...\p"
+	.string "Khoan đã! Chính ngươi đã tìm thấy nó\n"
+	.string "sao?$"
 
 MagmaHideout_2F_2R_Text_Grunt8Defeat:
-	.string "I'm having trouble believing this…$"
+	.string "Ta khó mà tin nổi chuyện này...$"
 
 MagmaHideout_2F_2R_Text_Grunt8PostBattle:
-	.string "I'm getting this feeling that our plan\n"
-	.string "is going to end in failure…$"
+	.string "Ta có linh cảm kế hoạch của bọn ta sẽ\n"
+	.string "thất bại...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MagmaHideout_2F_2R_Text_Grunt15Intro
+	.global MagmaHideout_2F_2R_Text_Grunt15Defeat
+	.global MagmaHideout_2F_2R_Text_Grunt15PostBattle
+	.global MagmaHideout_2F_2R_Text_Grunt6Intro
+	.global MagmaHideout_2F_2R_Text_Grunt6Defeat
+	.global MagmaHideout_2F_2R_Text_Grunt6PostBattle
+	.global MagmaHideout_2F_2R_Text_Grunt7Intro
+	.global MagmaHideout_2F_2R_Text_Grunt7Defeat
+	.global MagmaHideout_2F_2R_Text_Grunt7PostBattle
+	.global MagmaHideout_2F_2R_Text_Grunt8Intro
+	.global MagmaHideout_2F_2R_Text_Grunt8Defeat
+	.global MagmaHideout_2F_2R_Text_Grunt8PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

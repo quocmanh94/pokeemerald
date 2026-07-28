@@ -924,255 +924,299 @@ BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit:
 	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome:
-	.string "{PLAYER} has entered the BATTLE DOME!$"
+	.string "{PLAYER} đã tiến vào BATTLE DOME!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer:
-	.string "{STR_VAR_1}\n"
-	.string "match!\p"
-	.string "{PLAYER} versus {STR_VAR_2}!\p"
-	.string "Let the battle begin!$"
+	.string "Trận {STR_VAR_1}!\p"
+	.string "{PLAYER} đấu với {STR_VAR_2}!\p"
+	.string "Trận đấu bắt đầu!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsWinner:
-	.string "{PLAYER} is the winner!\n"
-	.string "Congratulations!$"
+	.string "{PLAYER} là người chiến thắng! Xin\n"
+	.string "chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner:
-	.string "{STR_VAR_2} is the winner!\n"
-	.string "Congratulations!$"
+	.string "{STR_VAR_2} là người chiến\n"
+	.string "thắng! Xin chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ:
-	.string "{PLAYER} is the Level 50\n"
-	.string "Battle Tournament Champion!\p"
-	.string "Congratulations!$"
+	.string "{PLAYER} là Level 50 Battle\n"
+	.string "Tournament Champion!\p"
+	.string "Xin chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp:
-	.string "{PLAYER} is the Open Level\n"
-	.string "Battle Tournament Champion!\p"
-	.string "Congratulations!$"
+	.string "{PLAYER} là Open Level Battle\n"
+	.string "Tournament Champion!\p"
+	.string "Xin chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait:
-	.string "What an unbelievable finish!\n"
-	.string "We have a double knockout!\p"
-	.string "In this event, the Battle Tournament\n"
-	.string "rules call for a REFEREE'S decision.\p"
-	.string "Please wait while the judging\n"
-	.string "is under way.$"
+	.string "Một kết thúc không thể tin nổi! Cả hai\n"
+	.string "đã cùng gục ngã!\p"
+	.string "Trong tình huống này, theo luật Battle\n"
+	.string "Tournament, kết quả sẽ do trọng tài\l"
+	.string "quyết định.\p"
+	.string "Xin chờ trong khi việc chấm điểm được\n"
+	.string "tiến hành.$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer:
-	.string "The REFEREES have reached\n"
-	.string "a decision!\p"
-	.string "The winner is…\n"
-	.string "Oh, my goodness!\l"
-	.string "The winner is {STR_VAR_1}!\l"
-	.string "Congratulations!$"
+	.string "Các REFEREES đã đưa ra quyết định!\p"
+	.string "Người chiến thắng là... Ôi trời! Người\n"
+	.string "chiến thắng là {STR_VAR_1}! Xin\l"
+	.string "chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerPlayer:
-	.string "The REFEREES have reached\n"
-	.string "a decision!\p"
-	.string "The winner is…\n"
-	.string "Oh, my goodness!\l"
-	.string "The winner is {PLAYER}!\l"
-	.string "Congratulations!$"
+	.string "Các REFEREES đã đưa ra quyết định!\p"
+	.string "Người chiến thắng là... Ôi trời! Người\n"
+	.string "chiến thắng là {PLAYER}! Xin chúc\l"
+	.string "mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope:
-	.string "The bright new hope!\p"
+	.string "Niềm hy vọng mới sáng ngời!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RisingStar:
-	.string "The rising star!\p"
+	.string "Ngôi sao đang lên!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship:
-	.string "Will this TRAINER race to\n"
-	.string "the championship?\p"
+	.string "Liệu HLV này có tiến thẳng tới\n"
+	.string "chức vô địch?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanAchieveChampionFirstTry:
-	.string "Can the feat of a championship\n"
-	.string "on the first try be achieved?\p"
+	.string "Liệu kỳ tích vô địch ngay lần thử đầu\n"
+	.string "tiên có thành hiện thực?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanLossBeAvenged:
-	.string "Can the loss of the last match\n"
-	.string "be avenged?\p"
+	.string "Liệu thất bại ở trận trước có được\n"
+	.string "báo thù?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_OnFireForChampionship:
-	.string "The TRAINER is on fire for\n"
-	.string "the first championship try!\p"
+	.string "HLV đang bừng bừng khí thế trong\n"
+	.string "lần đầu tranh chức vô địch!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WinHereAdvancesToFinal:
-	.string "A win here means this TRAINER\n"
-	.string "advances to the final!\p"
+	.string "Thắng trận này, HLV sẽ tiến vào\n"
+	.string "chung kết!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillLongHeldDreamComeTrue:
-	.string "Will the long-held dream of\n"
-	.string "a championship finally come true?\p"
+	.string "Liệu giấc mơ vô địch ấp ủ bấy lâu cuối\n"
+	.string "cùng có thành hiện thực?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion:
-	.string "The invincible champion!\p"
+	.string "Nhà vô địch bất khả chiến bại!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanAnyoneHopeToBeatTrainer:
-	.string "Can anyone hope to beat this\n"
-	.string "TRAINER?\p"
+	.string "Liệu có ai đánh bại nổi HLV này?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_DoBattlesExistSolelyForTrainer:
-	.string "Do battles exist solely for\n"
-	.string "this TRAINER?\p"
+	.string "Phải chăng các trận đấu tồn tại chỉ\n"
+	.string "dành riêng cho HLV này?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle:
-	.string "The current champion aiming to\n"
-	.string "retain the title!\p"
+	.string "Nhà đương kim vô địch đang nhắm tới\n"
+	.string "việc bảo vệ danh hiệu!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned:
-	.string "The former champion has returned!\p"
+	.string "Cựu vô địch đã trở lại!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned:
-	.string "The former toughness has returned!\p"
+	.string "Sức mạnh năm xưa đã trở lại!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals:
-	.string "Will this TRAINER do as expected\n"
-	.string "and advance to the finals?\p"
+	.string "Liệu HLV này có đúng như kỳ vọng\n"
+	.string "và tiến vào chung kết?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillFormerChampRegainGlory:
-	.string "Will the former champ regain\n"
-	.string "lost glory?\p"
+	.string "Liệu cựu vô địch có giành lại ánh hào\n"
+	.string "quang đã mất?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster:
-	.string "Feel the glow of a true master!$"
+	.string "Hãy cảm nhận hào quang của một bậc\n"
+	.string "thầy đích thực!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker:
-	.string "And now… The TRAINER standing in\n"
-	.string "{PLAYER}'s record-setting path…\p"
-	.string "Yes! The one and only!\n"
-	.string "The BATTLE DOME COMMISSIONER!\l"
-	.string "Our very own DOME ACE!\l"
-	.string "Make way for TUCKER!$"
+	.string "Và bây giờ... HLV đang cản bước\n"
+	.string "{PLAYER} trên con đường lập kỷ lục...\p"
+	.string "Phải! Độc nhất vô nhị! BATTLE DOME\n"
+	.string "COMMISSIONER! DOME ACE của chúng ta!\l"
+	.string "Hãy nhường đường cho TUCKER!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_SpectatorTuckerChant:
-	.string "Spectators: TUCKER! TUCKER!\n"
-	.string "TUCKER! TUCKER! TUCKER!$"
+	.string "Khán giả: TUCKER! TUCKER! TUCKER!\n"
+	.string "TUCKER! TUCKER!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro:
 	.string "TUCKER: Ahahah!\p"
-	.string "Do you hear it? This crowd!\n"
-	.string "They're all itching to see our match!\p"
+	.string "Bạn có nghe thấy không? Đám đông này!\n"
+	.string "Tất cả đều nóng lòng muốn xem trận đấu\l"
+	.string "của chúng ta!\p"
 	.string "Ahahah!\p"
-	.string "I bet you're twitching all over from\n"
-	.string "the tension of getting to battle me!\p"
-	.string "But don't you worry about a thing!\p"
-	.string "I'm the no. 1 star of the BATTLE DOME!\n"
-	.string "I, TUCKER the DOME ACE, will bathe you\l"
-	.string "in my brilliant glow!$"
+	.string "Tôi cá là cả người bạn đang run lên vì\n"
+	.string "căng thẳng khi sắp được đấu với tôi!\p"
+	.string "Nhưng đừng lo gì cả!\p"
+	.string "Tôi là ngôi sao số 1 của BATTLE DOME!\n"
+	.string "Tôi, TUCKER, DOME ACE, sẽ cho bạn đắm\l"
+	.string "mình trong ánh hào quang chói lọi của\l"
+	.string "tôi!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LetsSeeYourStrategy:
-	.string "Your strategy!\n"
-	.string "Let's see it!$"
+	.string "Chiến thuật của bạn! Hãy cho tôi xem!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_IncredibleVictorIsPlayer:
-	.string "Unbelievable! It's incredible!\n"
-	.string "The victor is {PLAYER}!$"
+	.string "Không thể tin nổi! Thật phi thường!\n"
+	.string "Người chiến thắng là {PLAYER}!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WinnerIsTucker:
-	.string "The winner is TUCKER!\n"
-	.string "The DOME ACE has prevailed!\p"
-	.string "Congratulations, TUCKER!$"
+	.string "Người chiến thắng là TUCKER! DOME ACE\n"
+	.string "đã giành chiến thắng!\p"
+	.string "Xin chúc mừng, TUCKER!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass:
-	.string "TUCKER: Rules are rules!\n"
-	.string "Let me see your FRONTIER PASS.$"
+	.string "TUCKER: Luật là luật! Cho tôi xem\n"
+	.string "FRONTIER PASS nào.$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol:
-	.string "The Tactics Symbol was embossed on\n"
-	.string "the FRONTIER PASS!$"
+	.string "Tactics Symbol đã được dập nổi lên\n"
+	.string "FRONTIER PASS!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime:
-	.string "… … … … … …\p"
-	.string "I sorely underestimated you. I won't\n"
-	.string "make the same mistake next time…$"
+	.string "... ... ... ... ... ...\p"
+	.string "Tôi đã đánh giá bạn quá thấp. Lần sau\n"
+	.string "tôi sẽ không phạm lại sai lầm đó...$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanWinStreakBeStretched:
-	.string "Can the win streak be stretched?\n"
-	.string "The confidence is there!$"
+	.string "Liệu chuỗi thắng có kéo dài? Sự tự tin\n"
+	.string "thì có thừa!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker:
-	.string "Ladies and gentlemen!\n"
-	.string "Boys, girls, and POKéMON!\p"
-	.string "Finally!\n"
-	.string "Finally, the legend has returned!\p"
-	.string "Yes, the name of that legend!\n"
-	.string "Our very own DOME ACE!\l"
-	.string "It's none other than TUCKER!$"
+	.string "Thưa quý vị! Các cậu bé, cô bé và\n"
+	.string "POKéMON!\p"
+	.string "Cuối cùng! Cuối cùng huyền thoại đã trở\n"
+	.string "lại!\p"
+	.string "Phải, tên của huyền thoại ấy! DOME ACE\n"
+	.string "của chúng ta! Không ai khác ngoài\l"
+	.string "TUCKER!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro:
-	.string "TUCKER: Ah…\n"
-	.string "The pummeling roar of the crowd…\l"
-	.string "Their furnace-like heat of excitement…\l"
-	.string "This is a wonderful place…\p"
-	.string "To the crowd, I am the DOME ACE…\n"
-	.string "I represent their hopes and dreams…\l"
-	.string "I must never fade from their sight…\p"
-	.string "I must burn!\n"
-	.string "Brighter and more brilliant!\l"
-	.string "I must light all that gather here!$"
+	.string "TUCKER: A... Tiếng gầm dồn dập của đám\n"
+	.string "đông... Sức nóng hừng hực từ niềm phấn\l"
+	.string "khích của họ... Đây là một nơi tuyệt\l"
+	.string "vời...\p"
+	.string "Với đám đông, tôi là DOME ACE... Tôi đại\n"
+	.string "diện cho hy vọng và ước mơ của họ... Tôi\l"
+	.string "không bao giờ được phép lu mờ trước\l"
+	.string "mắt họ...\p"
+	.string "Tôi phải bùng cháy! Sáng hơn, rực rỡ\n"
+	.string "hơn! Tôi phải soi sáng tất cả những ai\l"
+	.string "tụ hội nơi đây!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_UnleashAllPowerIPossess:
-	.string "I will unleash all the power that\n"
-	.string "I possess! Right here and now!$"
+	.string "Tôi sẽ giải phóng toàn bộ sức mạnh mình\n"
+	.string "có! Ngay tại đây, ngay lúc này!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed:
-	.string "TUCKER: You're genuinely fantastic!\p"
-	.string "Never before! I haven't ever lost in the\n"
-	.string "times I've had to unleash my power.\p"
-	.string "Yes, quite fantastic!\n"
-	.string "Your FRONTIER PASS, please?$"
+	.string "TUCKER: Bạn thật sự tuyệt vời!\p"
+	.string "Chưa từng có! Tôi chưa bao giờ thua\n"
+	.string "trong những lần buộc phải giải phóng\l"
+	.string "sức mạnh của mình.\p"
+	.string "Phải, quả là tuyệt vời! Cho tôi xem\n"
+	.string "FRONTIER PASS được chứ?$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine:
-	.string "The Tactics Symbol took on\n"
-	.string "a golden shine!$"
+	.string "Tactics Symbol đã tỏa ánh vàng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter:
-	.string "You're strong, but above all,\n"
-	.string "you have a unique charm!\p"
-	.string "In you, I see a definite potential for\n"
-	.string "a superstar like me.\p"
-	.string "I will very much look forward to\n"
-	.string "our next encounter!$"
+	.string "Bạn mạnh, nhưng hơn hết, bạn có một\n"
+	.string "sức hút độc đáo!\p"
+	.string "Ở bạn, tôi thấy rõ tiềm năng trở thành\n"
+	.string "một siêu sao như tôi.\p"
+	.string "Tôi sẽ vô cùng mong chờ lần gặp tới của\n"
+	.string "chúng ta!$"
 
 @ Unused
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ2:
-	.string "{PLAYER} is the Level 50\n"
-	.string "Battle Tournament Champion!\p"
-	.string "Congratulations!$"
+	.string "{PLAYER} là Level 50 Battle\n"
+	.string "Tournament Champion!\p"
+	.string "Xin chúc mừng!$"
 
 @ Unused
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp2:
-	.string "{PLAYER} is the Open Level\n"
-	.string "Battle Tournament Champion!\p"
-	.string "Congratulations!$"
+	.string "{PLAYER} là Open Level Battle\n"
+	.string "Tournament Champion!\p"
+	.string "Xin chúc mừng!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker:
-	.string "The final match!\p"
-	.string "{PLAYER} versus the DOME ACE, TUCKER!\p"
-	.string "Let the battle begin!$"
+	.string "Trận chung kết!\p"
+	.string "{PLAYER} đối đầu DOME ACE, TUCKER!\p"
+	.string "Trận đấu bắt đầu!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker:
-	.string "The REFEREES have reached\n"
-	.string "a decision!\p"
-	.string "The winner is…\n"
-	.string "Oh, my goodness!\l"
-	.string "The winner is our very own DOME ACE!\l"
-	.string "It's TUCKER!\p"
-	.string "Congratulations! And thank you!\n"
-	.string "Let's hear it for the DOME ACE, TUCKER!$"
+	.string "Các REFEREES đã đưa ra phán quyết!\p"
+	.string "Người chiến thắng là ai ư? Ôi trời!\n"
+	.string "Người thắng chính là DOME ACE của\l"
+	.string "chúng ta! Chính là TUCKER!\p"
+	.string "Xin chúc mừng! Và cảm ơn! Hãy dành một\n"
+	.string "tràng pháo tay cho DOME ACE, TUCKER!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsWinner
+	.global BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp
+	.global BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait
+	.global BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerPlayer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope
+	.global BattleFrontier_BattleDomeBattleRoom_Text_RisingStar
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship
+	.global BattleFrontier_BattleDomeBattleRoom_Text_CanAchieveChampionFirstTry
+	.global BattleFrontier_BattleDomeBattleRoom_Text_CanLossBeAvenged
+	.global BattleFrontier_BattleDomeBattleRoom_Text_OnFireForChampionship
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WinHereAdvancesToFinal
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WillLongHeldDreamComeTrue
+	.global BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion
+	.global BattleFrontier_BattleDomeBattleRoom_Text_CanAnyoneHopeToBeatTrainer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_DoBattlesExistSolelyForTrainer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle
+	.global BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned
+	.global BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WillFormerChampRegainGlory
+	.global BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster
+	.global BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker
+	.global BattleFrontier_BattleDomeBattleRoom_Text_SpectatorTuckerChant
+	.global BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro
+	.global BattleFrontier_BattleDomeBattleRoom_Text_LetsSeeYourStrategy
+	.global BattleFrontier_BattleDomeBattleRoom_Text_IncredibleVictorIsPlayer
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WinnerIsTucker
+	.global BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass
+	.global BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol
+	.global BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime
+	.global BattleFrontier_BattleDomeBattleRoom_Text_CanWinStreakBeStretched
+	.global BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker
+	.global BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro
+	.global BattleFrontier_BattleDomeBattleRoom_Text_UnleashAllPowerIPossess
+	.global BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed
+	.global BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine
+	.global BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ2
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp2
+	.global BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker
+	.global BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
+@ END GENERATED LOCALIZATION EXPORTS

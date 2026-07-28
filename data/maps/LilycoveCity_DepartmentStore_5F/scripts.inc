@@ -143,19 +143,27 @@ LilycoveCity_DepartmentStore_5F_EventScript_LittleGirl::
 	end
 
 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls:
-	.string "This place is full of cute DOLLS.\p"
-	.string "I should buy some for me, instead of\n"
-	.string "just for my children.$"
+	.string "Nơi này đầy những DOLLS dễ thương.\p"
+	.string "Mình nên mua vài con cho bản thân thay\n"
+	.string "vì chỉ mua cho các con.$"
 
 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon:
-	.string "I'm not big enough to raise POKéMON,\n"
-	.string "so I'm getting a cute DOLL instead.$"
+	.string "Mình chưa đủ lớn để nuôi POKéMON, nên\n"
+	.string "thay vào đó mình sẽ mua một DOLL dễ\l"
+	.string "thương.$"
 
 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
-	.string "They sell many cute MATS here.\p"
-	.string "I wonder which one I should get?\n"
-	.string "Maybe I'll buy them all…$"
+	.string "Ở đây bán nhiều MATS dễ thương quá.\p"
+	.string "Không biết nên chọn cái nào nhỉ? Hay\n"
+	.string "mua hết luôn...$"
 
 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
-	.string "I think they closed the rooftop\n"
-	.string "because the weather is wild today.$"
+	.string "Tôi nghĩ họ đã đóng cửa sân thượng vì\n"
+	.string "thời tiết hôm nay quá dữ dội.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
+	.global LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
+	.global LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
+	.global LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
+@ END GENERATED LOCALIZATION EXPORTS

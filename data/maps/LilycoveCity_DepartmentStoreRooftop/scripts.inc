@@ -185,35 +185,46 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_ExitVendingMachine::
 	end
 
 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales:
-	.string "Don't they have set dates for their\n"
-	.string "clear-out sales?\p"
-	.string "I watch TV, but they never show any\n"
-	.string "commercials.$"
+	.string "Chẳng phải họ có ngày cố định cho các\n"
+	.string "đợt xả hàng sao?\p"
+	.string "Tôi vẫn xem TV, nhưng chẳng bao giờ\n"
+	.string "thấy quảng cáo.$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale:
-	.string "Yes! I've been waiting a long time for\n"
-	.string "this clear-out sale.\p"
-	.string "They have items that you can only get\n"
-	.string "here. I'm going to load up, that I am!$"
+	.string "Đúng rồi! Tôi đã chờ đợt xả hàng này\n"
+	.string "lâu lắm rồi.\p"
+	.string "Họ có những món chỉ mua được ở đây.\n"
+	.string "Tôi phải mua thật nhiều mới được!$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty:
-	.string "Ohh… I'm bone-dry thirsty!$"
+	.string "Ôi... Tôi khát khô cả người rồi!$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike:
-	.string "It's a VENDING MACHINE.\n"
-	.string "Which drink would you like?$"
+	.string "Đây là một VENDING MACHINE. Bạn muốn\n"
+	.string "uống gì?$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown:
-	.string "Clang!\p"
-	.string "A can of {STR_VAR_1} dropped down.$"
+	.string "Keng!\p"
+	.string "Một lon {STR_VAR_1} rơi xuống.$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown:
-	.string "Clang!\p"
-	.string "Score! An extra can of {STR_VAR_1}\n"
-	.string "dropped down!$"
+	.string "Keng!\p"
+	.string "Hời rồi! Thêm một lon {STR_VAR_1}\n"
+	.string "rơi xuống!$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney:
-	.string "Not enough money…$"
+	.string "Không đủ tiền...$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink:
-	.string "Decided against buying a drink.$"
+	.string "Đã quyết định không mua đồ uống.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+	.global LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+	.global LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+	.global LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+	.global LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+	.global LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+	.global LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+	.global LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
+@ END GENERATED LOCALIZATION EXPORTS

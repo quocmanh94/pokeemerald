@@ -175,52 +175,69 @@ BerryTree_EventScript_PlantBerry::
 	return
 
 BerryTree_Text_ItsSoftLoamySoil:
-	.string "It's soft, loamy soil.$"
+	.string "Đất ở đây mềm và tơi xốp.$"
 
 BerryTree_Text_BerryGrowthStage1:
-	.string "One {STR_VAR_1} was planted here.$"
+	.string "Đã trồng một {STR_VAR_1} ở đây.$"
 
 BerryTree_Text_BerryGrowthStage1Water:
-	.string "One {STR_VAR_1} was planted here.\n"
-	.string "Want to water it with the WAILMER PAIL?$"
+	.string "Đã trồng một {STR_VAR_1} ở đây.\n"
+	.string "Tưới bằng WAILMER PAIL chứ?$"
 
 BerryTree_Text_BerryGrowthStage2:
-	.string "{STR_VAR_1} has sprouted.$"
+	.string "{STR_VAR_1} đã nảy mầm.$"
 
 BerryTree_Text_BerryGrowthStage2Water:
-	.string "{STR_VAR_1} has sprouted.\n"
-	.string "Want to water it with the WAILMER PAIL?$"
+	.string "{STR_VAR_1} đã nảy mầm.\n"
+	.string "Tưới bằng WAILMER PAIL chứ?$"
 
 BerryTree_Text_BerryGrowthStage3:
-	.string "This {STR_VAR_1} plant is growing taller.$"
+	.string "Cây {STR_VAR_1} đang lớn dần.$"
 
 BerryTree_Text_BerryGrowthStage3Water:
-	.string "This {STR_VAR_1} plant is growing taller.\n"
-	.string "Want to water it with the WAILMER PAIL?$"
+	.string "Cây {STR_VAR_1} đang lớn dần.\n"
+	.string "Tưới bằng WAILMER PAIL chứ?$"
 
 BerryTree_Text_BerryGrowthStage4:
-	.string "These {STR_VAR_1} flowers are blooming\n"
+	.string "Hoa {STR_VAR_1} đang nở\n"
 	.string "{STR_VAR_2}.$"
 
 BerryTree_Text_BerryGrowthStage4Water:
-	.string "These {STR_VAR_1} flowers are blooming\n"
-	.string "{STR_VAR_2}. Want to water them?$"
+	.string "Hoa {STR_VAR_1} đang nở {STR_VAR_2}.\n"
+	.string "Bạn muốn tưới cây chứ?$"
 
 BerryTree_Text_CareAdverbGreat:
-	.string "very beautifully$"
+	.string "rất đẹp$"
 
 BerryTree_Text_CareAdverbPoor:
-	.string "cutely$"
+	.string "dễ thương$"
 
 BerryTree_Text_CareAdverbGood:
-	.string "prettily$"
+	.string "xinh xắn$"
 
 BerryTree_Text_PickedTheBerry:
-	.string "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1}.$"
+	.string "{PLAYER} hái {STR_VAR_2} {STR_VAR_1}.$"
 
 BerryTree_Text_BerryPocketFull:
-	.string "The BAG's BERRIES POCKET is full.\p"
-	.string "The {STR_VAR_1} couldn't be taken.$"
+	.string "BERRIES POCKET trong TÚI ĐỒ đã đầy.\p"
+	.string "Không thể lấy {STR_VAR_1}.$"
 
 BerryTree_Text_ExclamationPoint:
 	.string "!$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BerryTree_Text_ItsSoftLoamySoil
+	.global BerryTree_Text_BerryGrowthStage1
+	.global BerryTree_Text_BerryGrowthStage1Water
+	.global BerryTree_Text_BerryGrowthStage2
+	.global BerryTree_Text_BerryGrowthStage2Water
+	.global BerryTree_Text_BerryGrowthStage3
+	.global BerryTree_Text_BerryGrowthStage3Water
+	.global BerryTree_Text_BerryGrowthStage4
+	.global BerryTree_Text_BerryGrowthStage4Water
+	.global BerryTree_Text_CareAdverbGreat
+	.global BerryTree_Text_CareAdverbPoor
+	.global BerryTree_Text_CareAdverbGood
+	.global BerryTree_Text_PickedTheBerry
+	.global BerryTree_Text_BerryPocketFull
+@ END GENERATED LOCALIZATION EXPORTS

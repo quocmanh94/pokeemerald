@@ -48,32 +48,43 @@ RustboroCity_House1_EventScript_Hiker::
 	end
 
 RustboroCity_House1_Text_IllTradeIfYouWant:
-	.string "Huh? My POKéMON is cute?\n"
-	.string "Sure, I knew that.\p"
-	.string "But if you really want, I'm willing\n"
-	.string "to trade it to you.\p"
-	.string "I'll trade you my {STR_VAR_2} for\n"
-	.string "a {STR_VAR_1} if you want.$"
+	.string "Hả? POKéMON của tôi dễ thương sao?\n"
+	.string "Tất nhiên, tôi biết mà.\p"
+	.string "Nhưng nếu bạn thật sự muốn, tôi sẵn\n"
+	.string "lòng đổi nó cho bạn.\p"
+	.string "Nếu muốn, tôi sẽ đổi {STR_VAR_2}\n"
+	.string "của mình lấy một {STR_VAR_1} của\l"
+	.string "bạn.$"
 
 RustboroCity_House1_Text_PleaseBeGoodToMyPokemon:
-	.string "Eheheh…\n"
-	.string "Please be good to my POKéMON.$"
+	.string "Hì hì... Hãy chăm sóc tốt POKéMON của\n"
+	.string "tôi nhé.$"
 
 RustboroCity_House1_Text_DoesntLookLikeMonToMe:
-	.string "Huh? That doesn't look anything like\n"
-	.string "a {STR_VAR_1} to me.$"
+	.string "Hả? Tôi thấy nó chẳng giống\n"
+	.string "{STR_VAR_1} chút nào.$"
 
 RustboroCity_House1_Text_YouDontWantToThatsOkay:
-	.string "Oh, if you don't want to, that's okay.\n"
-	.string "But my POKéMON is cute, you know…$"
+	.string "Ồ, nếu bạn không muốn thì cũng không\n"
+	.string "sao. Nhưng POKéMON của tôi dễ thương\l"
+	.string "lắm đấy...$"
 
 RustboroCity_House1_Text_AnyPokemonCanBeCute:
-	.string "Any POKéMON can be cute if you raise\n"
-	.string "it with care and kindness.$"
+	.string "POKéMON nào cũng có thể trở nên dễ\n"
+	.string "thương nếu được nuôi dưỡng bằng sự\l"
+	.string "quan tâm và lòng yêu thương.$"
 
 RustboroCity_House1_Text_AllSortsOfPlaces:
-	.string "In all sorts of places, there are all\n"
-	.string "sorts of POKéMON and people.\p"
-	.string "I find that fascinating, so I go to all\n"
-	.string "sorts of places.$"
+	.string "Ở muôn vàn nơi khác nhau có muôn vàn\n"
+	.string "POKéMON và con người khác nhau.\p"
+	.string "Tôi thấy điều đó thật hấp dẫn nên\n"
+	.string "thường đi khắp mọi nơi.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_House1_Text_IllTradeIfYouWant
+	.global RustboroCity_House1_Text_PleaseBeGoodToMyPokemon
+	.global RustboroCity_House1_Text_DoesntLookLikeMonToMe
+	.global RustboroCity_House1_Text_YouDontWantToThatsOkay
+	.global RustboroCity_House1_Text_AnyPokemonCanBeCute
+	.global RustboroCity_House1_Text_AllSortsOfPlaces
+@ END GENERATED LOCALIZATION EXPORTS

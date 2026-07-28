@@ -52,17 +52,20 @@ MossdeepCity_House2_Movement_WingullExitEast:
 	step_end
 
 MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree:
-	.string "My little sister exchanges MAIL with\n"
-	.string "her boyfriend in FORTREE.\p"
-	.string "I don't envy her one bit at all.$"
+	.string "Em gái tôi trao đổi MAIL với bạn trai ở\n"
+	.string "FORTREE.\p"
+	.string "Tôi chẳng ghen tị với nó chút nào đâu.$"
 
 MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth:
-	.string "Even though I can't see my friend in\n"
-	.string "FORTREE, my POKéMON carries MAIL\l"
-	.string "back and forth for us.\p"
-	.string "I'm not lonesome, even though we're\n"
-	.string "apart.$"
+	.string "Dù không thể gặp người bạn ở FORTREE,\n"
+	.string "POKéMON của tôi vẫn mang MAIL qua lại\l"
+	.string "giúp chúng tôi.\p"
+	.string "Dù xa nhau, tôi vẫn không thấy cô đơn.$"
 
 MossdeepCity_House2_Text_Wingull:
 	.string "WINGULL: Pihyoh!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
+	.global MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
+@ END GENERATED LOCALIZATION EXPORTS

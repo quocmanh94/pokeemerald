@@ -18,22 +18,25 @@ GraniteCave_1F_EventScript_ReceivedFlash::
 	end
 
 GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
-	.string "Hey, you.\n"
-	.string "It gets awfully dark ahead.\l"
-	.string "It'll be tough trying to explore.\p"
-	.string "That guy who came by earlier…\n"
-	.string "STEVEN, I think it was.\p"
-	.string "He knew how to use FLASH, so he ought\n"
-	.string "to be all right, but…\p"
-	.string "Well, for us HIKERS, helping out those\n"
-	.string "that we meet is our motto.\p"
-	.string "Here you go, I'll pass this on to you.$"
+	.string "Này, bạn kia. Phía trước tối lắm, khám\n"
+	.string "phá sẽ rất khó khăn.\p"
+	.string "Người đã đi qua lúc nãy... Hình như tên\n"
+	.string "là STEVEN.\p"
+	.string "Cậu ấy biết dùng FLASH nên chắc sẽ ổn,\n"
+	.string "nhưng...\p"
+	.string "Với HIKERS chúng tôi, giúp đỡ những\n"
+	.string "người mình gặp là phương châm sống.\p"
+	.string "Đây, tôi sẽ trao thứ này cho bạn.$"
 
 GraniteCave_1F_Text_ExplainFlash:
-	.string "Teach that hidden move FLASH to\n"
-	.string "a POKéMON and use it.\p"
-	.string "It lights up even the inky darkness\n"
-	.string "of caves.\p"
-	.string "But, to use it, you need the GYM BADGE\n"
-	.string "from DEWFORD's POKéMON GYM.$"
+	.string "Hãy dạy chiêu thức ẩn FLASH cho một\n"
+	.string "POKéMON rồi sử dụng nó.\p"
+	.string "Nó có thể thắp sáng cả bóng tối đen kịt\n"
+	.string "trong hang động.\p"
+	.string "Nhưng để sử dụng, bạn cần GYM BADGE từ\n"
+	.string "POKéMON GYM ở DEWFORD.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global GraniteCave_1F_Text_GetsDarkAheadHereYouGo
+	.global GraniteCave_1F_Text_ExplainFlash
+@ END GENERATED LOCALIZATION EXPORTS

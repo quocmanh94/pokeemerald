@@ -95,64 +95,76 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "MR. BRINEY: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "MR. BRINEY: Khoan nào, cô bé! Chờ ta\n"
+	.string "với, PEEKO!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
-	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
-	.string "We owe so much to you!\p"
-	.string "What's that?\n"
-	.string "You want to sail with me?\p"
-	.string "Hmhm…\p"
-	.string "You have a LETTER bound for DEWFORD\n"
-	.string "and a package for SLATEPORT, then?\p"
-	.string "Quite the busy life you must lead!\p"
-	.string "But, certainly, what you're asking is\n"
-	.string "no problem at all.\p"
-	.string "You've come to the right man!\n"
-	.string "We'll set sail for DEWFORD.$"
+	.string "Hửm? Cháu là {PLAYER}{KUN}! Cháu đã\n"
+	.string "cứu PEEKO yêu quý của ta! Ta nợ cháu\l"
+	.string "nhiều lắm!\p"
+	.string "Gì cơ? Cháu muốn ra khơi cùng ta à?\p"
+	.string "Hừm hừm...\p"
+	.string "Cháu có một LETTER cần gửi đến DEWFORD\n"
+	.string "và một kiện hàng cần chuyển đến\l"
+	.string "SLATEPORT, đúng không?\p"
+	.string "Cuộc sống của cháu bận rộn thật đấy!\p"
+	.string "Nhưng tất nhiên, chuyện cháu nhờ hoàn\n"
+	.string "toàn không thành vấn đề.\p"
+	.string "Cháu tìm đúng người rồi! Chúng ta sẽ ra\n"
+	.string "khơi đến DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY: Vậy thì đến DEWFORD!\p"
+	.string "Nhổ neo! PEEKO, chúng ta ra khơi thôi,\n"
+	.string "cục cưng!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Your deliveries can wait?\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "MR. BRINEY: Vậy sao? Chuyện giao hàng\n"
+	.string "của cháu có thể đợi à?\p"
+	.string "Khi nào muốn ra khơi thì cứ bảo ta nhé!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a LETTER to DEWFORD\n"
-	.string "and a package to SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "MR. BRINEY: A-hô! Ta biết chính xác\n"
+	.string "cháu muốn nói gì!\p"
+	.string "Cháu cần chuyển một LETTER đến\n"
+	.string "DEWFORD và một kiện hàng đến\l"
+	.string "SLATEPORT.\p"
+	.string "Việc cháu cần ta làm chẳng có gì khó. Ta\n"
+	.string "chính là người phù hợp!\p"
+	.string "Trước tiên, chúng ta sẽ ra khơi đến\n"
+	.string "DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a package to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "MR. BRINEY: A-hô! Ta biết chính xác\n"
+	.string "cháu muốn nói gì!\p"
+	.string "Cháu cần chuyển một kiện hàng cho CAPT.\n"
+	.string "STERN tại SLATEPORT.\p"
+	.string "Việc cháu cần ta làm chẳng có gì khó. Ta\n"
+	.string "chính là người phù hợp!\p"
+	.string "Trước tiên, chúng ta sẽ ra khơi đến\n"
+	.string "DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "MR. BRINEY: A-hô! Vì cháu, ta có thể ra\n"
+	.string "khơi bất cứ lúc nào!\p"
+	.string "Nào, người bạn của ta, chúng ta sẽ đi\n"
+	.string "đâu?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "MR. BRINEY: Vậy sao? PEEKO nợ cháu cả\n"
+	.string "mạng sống.\p"
+	.string "Khi nào muốn ra khơi thì cứ bảo ta nhé!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
 	.string "PEEKO: Pii piihyoro!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route104_MrBrineysHouse_Text_WaitUpPeeko
+	.global Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
+	.global Route104_MrBrineysHouse_Text_SetSailForDewford
+	.global Route104_MrBrineysHouse_Text_DeclineDeliverySail
+	.global Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
+	.global Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
+	.global Route104_MrBrineysHouse_Text_WhereAreWeBound
+	.global Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
+@ END GENERATED LOCALIZATION EXPORTS

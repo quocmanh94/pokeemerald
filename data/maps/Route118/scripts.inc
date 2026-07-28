@@ -243,51 +243,50 @@ Route118_EventScript_Deandre::
 	end
 
 Route118_Text_StevenQuestions:
-	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
-	.string "It's me, STEVEN!\n"
-	.string "We met in the cave near DEWFORD.\p"
-	.string "Have you met many kinds of POKéMON\n"
-	.string "since I last saw you?\p"
-	.string "There are many, many kinds of POKéMON\n"
-	.string "in this wide world of ours.\p"
-	.string "If you wanted to raise only your\n"
-	.string "favorites, that's fine.\p"
-	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
-	.string "As a TRAINER of POKéMON,\n"
-	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "STEVEN: Chào em, {PLAYER}{KUN}!\p"
+	.string "Tôi là STEVEN đây! Chúng ta từng gặp\n"
+	.string "nhau trong hang động gần DEWFORD.\p"
+	.string "Từ lần gặp trước đến giờ, em đã gặp\n"
+	.string "được nhiều loài POKéMON chưa?\p"
+	.string "Thế giới rộng lớn của chúng ta có vô\n"
+	.string "vàn loài POKéMON.\p"
+	.string "Nếu em chỉ muốn nuôi những loài mình\n"
+	.string "yêu thích thì cũng tốt thôi.\p"
+	.string "Hoặc có lẽ em thấy nuôi đủ loại POKéMON\n"
+	.string "sẽ thú vị hơn.\p"
+	.string "Là một HLV của POKéMON, em nghĩ\n"
+	.string "sao?\p"
+	.string "Tất nhiên, đó cũng không phải chuyện\n"
+	.string "của tôi.\p"
+	.string "Hy vọng chúng ta sẽ gặp lại nhau ở đâu\n"
+	.string "đó.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
-	.string "Hmm!\n"
-	.string "A GOOD ROD is really good!\p"
-	.string "Wouldn't you agree?$"
+	.string "Hmm! GOOD ROD quả thật rất tuyệt!\p"
+	.string "Bạn cũng thấy vậy phải không?$"
 
 Route118_Text_IdenticalMindsTakeThis:
-	.string "Hmm!\n"
-	.string "We're of identical minds!\p"
-	.string "Hmm!\n"
-	.string "Take this GOOD ROD!$"
+	.string "Hmm! Chúng ta đúng là cùng chung suy\n"
+	.string "nghĩ!\p"
+	.string "Hmm! Hãy nhận lấy GOOD ROD này!$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "Wherever there's water, try your luck\n"
-	.string "at fishing.$"
+	.string "Hễ nơi nào có nước thì cứ thử vận may\n"
+	.string "bằng cách câu cá.$"
 
 Route118_Text_DontYouLikeToFish:
-	.string "Don't you like to fish?$"
+	.string "Bạn không thích câu cá sao?$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
-	.string "Try catching all sorts of POKéMON\n"
-	.string "with your GOOD ROD.$"
+	.string "Hãy dùng GOOD ROD để thử bắt đủ loại\n"
+	.string "POKéMON.$"
 
 Route118_Text_CanCrossRiversWithSurf:
-	.string "Even if there isn't a boat, you can\n"
-	.string "cross rivers and the sea if you have\l"
-	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
-	.string "much!$"
+	.string "Ngay cả khi không có thuyền, bạn vẫn có\n"
+	.string "thể vượt sông và biển nếu có một\l"
+	.string "POKéMON biết SURF.\p"
+	.string "POKéMON thật sự giúp được chúng ta\n"
+	.string "rất nhiều!$"
 
 Route118_Text_RouteSignMauville:
 	.string "ROUTE 118\n"
@@ -297,3 +296,12 @@ Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route118_Text_StevenQuestions
+	.global Route118_Text_YouAgreeGoodRodIsGood
+	.global Route118_Text_IdenticalMindsTakeThis
+	.global Route118_Text_TryYourLuckFishing
+	.global Route118_Text_DontYouLikeToFish
+	.global Route118_Text_TryCatchingMonWithGoodRod
+	.global Route118_Text_CanCrossRiversWithSurf
+@ END GENERATED LOCALIZATION EXPORTS

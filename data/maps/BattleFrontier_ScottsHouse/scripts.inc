@@ -210,138 +210,161 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
-	.string "SCOTT: Well, hello and welcome!\n"
-	.string "Heheh… Sorry about the cramped space.\p"
-	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
-	.string "welcome you to the BATTLE FRONTIER.\p"
-	.string "This is my dream come true.\n"
-	.string "It took me years and years, but I've\l"
-	.string "finally given shape to my dream.$"
+	.string "SCOTT: Chào cậu, hoan nghênh cậu!\n"
+	.string "Heheh... Xin lỗi vì chỗ này hơi chật.\p"
+	.string "Dù sao thì, {PLAYER}{KUN}, cho phép\n"
+	.string "tôi chính thức chào mừng cậu đến\l"
+	.string "BATTLE FRONTIER.\p"
+	.string "Đây là giấc mơ của tôi đã thành hiện\n"
+	.string "thực. Tôi đã mất hết năm này qua năm\l"
+	.string "khác, nhưng cuối cùng cũng biến được\l"
+	.string "giấc mơ ấy thành hình.$"
 
 BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal:
-	.string "On reflection, it was a terribly long\n"
-	.string "journey…\p"
-	.string "I left home alone on a quest to find\n"
-	.string "strong TRAINERS.\p"
-	.string "No one can imagine how much effort\n"
-	.string "or time it took to make this real.$"
+	.string "Nghĩ lại, đó quả là một hành trình dài\n"
+	.string "đằng đẵng...\p"
+	.string "Tôi một mình rời quê nhà để tìm kiếm\n"
+	.string "những HLV mạnh mẽ.\p"
+	.string "Không ai có thể tưởng tượng được tôi\n"
+	.string "đã mất bao nhiêu công sức và thời gian\l"
+	.string "để biến nơi này thành hiện thực.$"
 
 BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing:
-	.string "But that's all in the past.\n"
-	.string "No point dwelling on that!\p"
-	.string "All I want for you is to enjoy battling\n"
-	.string "to your heart's content here.\p"
-	.string "{PLAYER}{KUN}, I want you to have this\n"
-	.string "as a memento for all the time our\l"
-	.string "paths crossed on our journeys.$"
+	.string "Nhưng tất cả đã là chuyện quá khứ.\n"
+	.string "Chẳng cần bận lòng về nó nữa!\p"
+	.string "Tôi chỉ mong cậu có thể thỏa sức tận\n"
+	.string "hưởng các trận đấu tại đây.\p"
+	.string "{PLAYER}{KUN}, tôi muốn cậu nhận lấy\n"
+	.string "món này làm kỷ niệm cho bao lần chúng ta\l"
+	.string "gặp nhau trên hành trình.$"
 
 BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
-	.string "{PLAYER} obtained\n"
+	.string "{PLAYER} đã nhận được\n"
 	.string "{STR_VAR_1} Battle Point(s).$"
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
-	.string "SCOTT: You can check your Battle\n"
-	.string "Points on your FRONTIER PASS.\p"
-	.string "The more success you have here at\n"
-	.string "the BATTLE FRONTIER, the more Battle\l"
-	.string "Points you will collect.\p"
-	.string "Use your Battle Points the way you\n"
-	.string "see fit, like trading them for items.$"
+	.string "SCOTT: Cậu có thể kiểm tra Battle\n"
+	.string "Points trên FRONTIER PASS.\p"
+	.string "Càng thành công tại BATTLE FRONTIER,\n"
+	.string "cậu càng tích lũy được nhiều Battle\l"
+	.string "Points.\p"
+	.string "Hãy dùng Battle Points theo cách cậu\n"
+	.string "muốn, chẳng hạn như đổi chúng lấy vật\l"
+	.string "phẩm.$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
-	.string "I'm expecting great things from you!$"
+	.string "Tôi rất kỳ vọng vào cậu!$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
-	.string "SCOTT: Every TRAINER is an individual.\n"
-	.string "They all lead lives of their own.\p"
-	.string "But when they're in a battle,\n"
-	.string "it doesn't matter who they are.\p"
-	.string "They're all the same!\p"
-	.string "I love the purity of battle,\n"
-	.string "where everyone is equal.\p"
-	.string "That's why I go everywhere seeking\n"
-	.string "TRAINERS who are serious about\l"
-	.string "battling, and invite them here.$"
+	.string "SCOTT: Mỗi HLV đều là một con\n"
+	.string "người riêng biệt. Ai cũng có cuộc sống\l"
+	.string "của riêng mình.\p"
+	.string "Nhưng khi bước vào trận đấu, họ là ai\n"
+	.string "không còn quan trọng.\p"
+	.string "Tất cả đều như nhau!\p"
+	.string "Tôi yêu sự thuần khiết của trận đấu,\n"
+	.string "nơi mọi người đều bình đẳng.\p"
+	.string "Vì thế, tôi đi khắp nơi tìm kiếm những\n"
+	.string "HLV nghiêm túc với việc thi đấu và\l"
+	.string "mời họ đến đây.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
-	.string "SCOTT: Have you met any of\n"
-	.string "the FRONTIER BRAINS?\p"
-	.string "Better yet, have you obtained any\n"
-	.string "symbols from them?\p"
-	.string "I handpicked the FRONTIER BRAINS\n"
-	.string "as the toughest TRAINERS anywhere.\p"
-	.string "But I'm sure that seeing how tough\n"
-	.string "you are will startle even them!$"
+	.string "SCOTT: Cậu đã gặp ai trong số FRONTIER\n"
+	.string "BRAINS chưa?\p"
+	.string "Hay tuyệt hơn nữa, cậu đã giành được\n"
+	.string "biểu tượng nào từ họ chưa?\p"
+	.string "Tôi đã đích thân chọn FRONTIER BRAINS\n"
+	.string "từ những HLV mạnh nhất khắp nơi.\p"
+	.string "Nhưng tôi tin rằng ngay cả họ cũng sẽ\n"
+	.string "sửng sốt khi chứng kiến sức mạnh của\l"
+	.string "cậu!$"
 
 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
-	.string "SCOTT: You don't just train for battle,\n"
-	.string "right?\p"
-	.string "I think I remember you working on\n"
-	.string "a POKéDEX as well.\p"
-	.string "Well, guess what?\p"
-	.string "You may run into wild POKéMON in\n"
-	.string "the BATTLE FRONTIER somewhere…\l"
+	.string "SCOTT: Cậu đâu chỉ luyện tập để chiến\n"
+	.string "đấu, đúng không?\p"
+	.string "Hình như tôi còn nhớ cậu đang hoàn\n"
+	.string "thiện một POKéDEX nữa.\p"
+	.string "Này, đoán xem?\p"
+	.string "Có thể cậu sẽ bắt gặp POKéMON hoang dã\n"
+	.string "ở đâu đó trong BATTLE FRONTIER...\l"
 	.string "Fufufu!$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
-	.string "SCOTT: Are you enjoying things in\n"
-	.string "the BATTLE FRONTIER?\p"
-	.string "…Wait a second…\n"
-	.string "Oh!\p"
-	.string "Your FRONTIER PASS!\n"
-	.string "You've collected the full set\l"
-	.string "of silver symbols!\p"
-	.string "That's more than impressive!\n"
-	.string "You are tough, just as I suspected!\p"
-	.string "Normally, I wouldn't do something\n"
-	.string "like this, but this is a special time!\p"
-	.string "I want you to have this.\n"
-	.string "I'm sure you can put it to proper use.$"
+	.string "SCOTT: Cậu có đang tận hưởng BATTLE\n"
+	.string "FRONTIER không?\p"
+	.string "...Khoan đã... Ồ!\p"
+	.string "FRONTIER PASS của cậu! Cậu đã thu thập\n"
+	.string "đủ bộ biểu tượng bạc rồi!\p"
+	.string "Thật hơn cả ấn tượng! Cậu quả nhiên\n"
+	.string "rất mạnh, đúng như tôi nghĩ!\p"
+	.string "Bình thường tôi sẽ không làm thế này,\n"
+	.string "nhưng đây là một dịp đặc biệt!\p"
+	.string "Tôi muốn cậu nhận lấy món này. Tôi tin\n"
+	.string "cậu sẽ sử dụng nó thật hữu ích.$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
-	.string "SCOTT: I hope you're enjoying\n"
-	.string "everything in the BATTLE FRONTIER.\p"
-	.string "…Wait a second…\n"
-	.string "Oh, my disbelieving eyes!\p"
-	.string "Your FRONTIER PASS!\n"
-	.string "You've gathered up the full set\l"
-	.string "of gold symbols!\p"
-	.string "That's more than stupendous!\n"
-	.string "You're incredible, just as I suspected!\p"
-	.string "… … … … … …\p"
-	.string "{PLAYER}, you've got to accept this!\p"
-	.string "I think you will be able to\n"
-	.string "appreciate the value of my gift!$"
+	.string "SCOTT: Tôi hy vọng cậu đang tận hưởng\n"
+	.string "mọi thứ tại BATTLE FRONTIER.\p"
+	.string "...Khoan đã... Ôi, mắt tôi không thể tin\n"
+	.string "nổi!\p"
+	.string "FRONTIER PASS của cậu! Cậu đã thu thập\n"
+	.string "đủ bộ biểu tượng vàng rồi!\p"
+	.string "Thật hơn cả phi thường! Cậu quả nhiên\n"
+	.string "tuyệt vời, đúng như tôi nghĩ!\p"
+	.string "... ... ... ... ... ...\p"
+	.string "{PLAYER}, cậu nhất định phải nhận món\n"
+	.string "này!\p"
+	.string "Tôi tin cậu sẽ hiểu được giá trị món quà\n"
+	.string "của tôi!$"
 
 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
-	.string "I must say I have the gift of knowing\n"
-	.string "a good TRAINER when I see one.\p"
-	.string "I'm so glad I had the foresight to\n"
-	.string "bring you here!$"
+	.string "Phải nói rằng tôi rất có tài nhận ra một\n"
+	.string "HLV giỏi ngay khi gặp họ.\p"
+	.string "Tôi thật mừng vì đã sáng suốt đưa cậu\n"
+	.string "đến đây!$"
 
 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
-	.string "Your BERRY POCKET seems to\n"
-	.string "be stuffed.$"
+	.string "BERRY POCKET của bạn có vẻ đã đầy ắp.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
-	.string "SCOTT: Oh, I heard about you!\n"
-	.string "How you ruled the BATTLE TOWER!\l"
-	.string "You beat over 50 TRAINERS in a row?\p"
-	.string "That's fantastic!\n"
-	.string "I want you to have this!$"
+	.string "SCOTT: Ồ, tôi nghe chuyện về cậu rồi!\n"
+	.string "Cậu đã thống trị BATTLE TOWER! Cậu\l"
+	.string "đánh bại hơn 50 HLV liên tiếp sao?\p"
+	.string "Tuyệt vời! Tôi muốn cậu nhận lấy món\n"
+	.string "này!$"
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
-	.string "SCOTT: Oh, my! I heard about you!\n"
-	.string "How you overwhelmed the BATTLE TOWER!\l"
-	.string "You beat over 100 TRAINERS in a row?\p"
-	.string "That's ridiculously spectacular!\n"
-	.string "You've got to have this!$"
+	.string "SCOTT: Trời ơi! Tôi nghe chuyện về cậu\n"
+	.string "rồi! Cậu đã áp đảo hoàn toàn BATTLE\l"
+	.string "TOWER! Cậu đánh bại hơn 100 HLV\l"
+	.string "liên tiếp sao?\p"
+	.string "Quá sức ngoạn mục! Cậu nhất định phải\n"
+	.string "nhận món này!$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings:
-	.string "I'll be expecting to hear even greater\n"
-	.string "things about you now!$"
+	.string "Từ giờ tôi sẽ mong được nghe những\n"
+	.string "thành tích còn vĩ đại hơn nữa của cậu!$"
 
 BattleFrontier_ScottsHouse_Text_ComeBackForThisLater:
-	.string "Oops, well, if you have too much\n"
-	.string "stuff, come back for this later.$"
+	.string "Ôi, nếu đồ đạc của cậu nhiều quá thì hãy\n"
+	.string "quay lại nhận món này sau nhé.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier
+	.global BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal
+	.global BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing
+	.global BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints
+	.global BattleFrontier_ScottsHouse_Text_ExplainBattlePoints
+	.global BattleFrontier_ScottsHouse_Text_ExpectingGreatThings
+	.global BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers
+	.global BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain
+	.global BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier
+	.global BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols
+	.global BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols
+	.global BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere
+	.global BattleFrontier_ScottsHouse_Text_BerryPocketStuffed
+	.global BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow
+	.global BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow
+	.global BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings
+	.global BattleFrontier_ScottsHouse_Text_ComeBackForThisLater
+@ END GENERATED LOCALIZATION EXPORTS

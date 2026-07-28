@@ -63,14 +63,19 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
-	.string "Learn to use items properly.\n"
-	.string "That's basic, really.$"
+	.string "Hãy học cách sử dụng vật phẩm cho\n"
+	.string "đúng. Đó thực sự là điều cơ bản.$"
 
 LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
-	.string "My husband is waiting at home.\n"
-	.string "What would make a good gift for him?$"
+	.string "Chồng tôi đang đợi ở nhà. Mua gì làm\n"
+	.string "quà cho ông ấy thì hợp nhỉ?$"
 
 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
-	.string "I'm leaving on a long journey soon.\n"
-	.string "I need to stock up on items.$"
+	.string "Tôi sắp lên đường trong một chuyến đi\n"
+	.string "dài. Tôi cần tích trữ vật phẩm.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly
+	.global LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband
+	.global LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
+@ END GENERATED LOCALIZATION EXPORTS

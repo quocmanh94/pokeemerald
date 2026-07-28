@@ -113,257 +113,300 @@ BattleFrontier_Lounge2_EventScript_TriathleteF::
 	end
 
 BattleFrontier_Lounge2_Text_FrontierManiacIntro::
-	.string "Howdy! When it comes to news about\n"
-	.string "the BATTLE FRONTIER, I'm no. 1.\p"
-	.string "You can think of me as\n"
-	.string "the FRONTIER MANIAC.\p"
-	.string "Just checking, but you are a TRAINER,\n"
-	.string "isn't that right?\p"
-	.string "I'll happily share the hottest news\n"
-	.string "I gathered about the BATTLE FRONTIER.$"
+	.string "Chào nhé! Về tin tức BATTLE FRONTIER\n"
+	.string "thì tôi là số 1.\p"
+	.string "Cứ xem tôi là FRONTIER MANIAC.\p"
+	.string "Chỉ hỏi lại cho chắc, bạn là một HLV,\n"
+	.string "đúng không?\p"
+	.string "Tôi rất sẵn lòng chia sẻ những tin nóng\n"
+	.string "nhất mình thu thập được về BATTLE\l"
+	.string "FRONTIER.$"
 
 BattleFrontier_Lounge2_Text_SwingByForTheLatestWord::
-	.string "Howdy! Did you swing by to grill me\n"
-	.string "about the latest word? Oh, all right!$"
+	.string "Chào nhé! Bạn ghé qua để tra hỏi tôi về\n"
+	.string "tin mới nhất à? Ôi, được thôi!$"
 
 @ Unused
 BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight::
-	.string "Well? Well? Well?\p"
-	.string "I'm sure my information's been\n"
-	.string "seriously useful to you, right?$"
+	.string "Thế nào? Thế nào? Thế nào?\p"
+	.string "Thông tin của tôi hẳn đã giúp ích rất\n"
+	.string "nhiều cho bạn, đúng không?$"
 
 BattleFrontier_Lounge2_Text_FacilityIsHottest::
-	.string "Let's see now…\p"
-	.string "It sounds like the {STR_VAR_1}\n"
-	.string "is the hottest place going.$"
+	.string "Để xem nào...\p"
+	.string "Có vẻ {STR_VAR_1} đang là nơi\n"
+	.string "được chú ý nhất.$"
 
 BattleFrontier_Lounge2_Text_BattleTowerIsHottest::
-	.string "Let's see now…\p"
-	.string "It sounds like BATTLE TOWER\n"
-	.string "{STR_VAR_1} is the hottest.$"
+	.string "Để xem nào...\p"
+	.string "Có vẻ BATTLE TOWER {STR_VAR_1}\n"
+	.string "đang được chú ý nhất.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this mysterious TRAINER called\n"
-	.string "the SALON MAIDEN that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV bí ẩn mang danh SALON\n"
+	.string "MAIDEN đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenSilverMons::
-	.string "Have you battled the SALON MAIDEN?\p"
-	.string "When she's measuring up her opponent,\n"
-	.string "she apparently uses these POKéMON:\p"
-	.string "A PSYCHIC-type PSI POKéMON,\n"
-	.string "a FIRE-type VOLCANO POKéMON,\l"
-	.string "and a NORMAL-type SLEEPING POKéMON.$"
+	.string "Bạn đã đấu với SALON MAIDEN chưa?\p"
+	.string "Khi thăm dò thực lực đối thủ, nghe nói\n"
+	.string "cô ấy dùng những POKéMON này:\p"
+	.string "Một PSI POKéMON hệ PSYCHIC, một\n"
+	.string "VOLCANO POKéMON hệ FIRE và một\l"
+	.string "SLEEPING POKéMON hệ NORMAL.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
-	.string "Have you battled the SALON MAIDEN\n"
-	.string "when she's serious?\p"
-	.string "When she's battling flat out,\n"
-	.string "she apparently uses these POKéMON:\p"
-	.string "A DRAGON & PSYCHIC EON POKéMON,\n"
-	.string "an ELECTRIC-type THUNDER POKéMON,\l"
-	.string "and a NORMAL-type SLEEPING POKéMON.$"
+	.string "Bạn đã đấu với SALON MAIDEN khi cô ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi chiến đấu hết sức, nghe nói cô ấy\n"
+	.string "dùng những POKéMON này:\p"
+	.string "Một EON POKéMON hệ DRAGON & PSYCHIC,\n"
+	.string "một THUNDER POKéMON hệ ELECTRIC và\l"
+	.string "một SLEEPING POKéMON hệ NORMAL.$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this flamboyant TRAINER called\n"
-	.string "the DOME ACE that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV hào hoa mang danh DOME ACE\n"
+	.string "đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_DomeAceSilverMons::
-	.string "Have you battled the DOME ACE?\p"
-	.string "When he's treating the opponent\n"
-	.string "lightly, he uses these three POKéMON:\p"
-	.string "A DRAGON & FLYING DRAGON POKéMON,\n"
-	.string "a WATER & GROUND MUD FISH POKéMON,\l"
-	.string "and a FIRE & FLYING FLAME POKéMON.$"
+	.string "Bạn đã đấu với DOME ACE chưa?\p"
+	.string "Khi chưa coi đối thủ là mối đe dọa, anh\n"
+	.string "ấy dùng ba POKéMON này:\p"
+	.string "Một DRAGON POKéMON hệ DRAGON & FLYING,\n"
+	.string "một MUD FISH POKéMON hệ WATER & GROUND\l"
+	.string "và một FLAME POKéMON hệ FIRE & FLYING.$"
 
 BattleFrontier_Lounge2_Text_DomeAceGoldMons::
-	.string "Have you battled the DOME ACE\n"
-	.string "when he's serious?\p"
-	.string "When he's demonstrating his strategy,\n"
-	.string "he uses these three POKéMON:\p"
-	.string "A DRAGON & FLYING EON POKéMON,\n"
-	.string "a WATER & GROUND MUD FISH POKéMON,\l"
-	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
-	.string "POKéMON.$"
+	.string "Bạn đã đấu với DOME ACE khi anh ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi phô diễn chiến thuật, anh ấy dùng ba\n"
+	.string "POKéMON này:\p"
+	.string "Một EON POKéMON hệ DRAGON & FLYING,\n"
+	.string "một MUD FISH POKéMON hệ WATER & GROUND\l"
+	.string "và một IRON LEG POKéMON hệ STEEL &\l"
+	.string "PSYCHIC.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this freaky TRAINER called\n"
-	.string "the FACTORY HEAD that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV quái dị mang danh FACTORY\n"
+	.string "HEAD đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadSilverMons::
-	.string "Have you battled the FACTORY HEAD\n"
-	.string "already?\p"
-	.string "Let me think… When he goes to battle,\n"
-	.string "he just gets three rental POKéMON.\p"
-	.string "He battles under pretty much the same\n"
-	.string "conditions as you.$"
+	.string "Bạn đã đấu với FACTORY HEAD chưa?\p"
+	.string "Để tôi nghĩ xem... Khi ra trận, anh ấy chỉ\n"
+	.string "nhận ba POKéMON thuê.\p"
+	.string "Anh ấy chiến đấu trong điều kiện gần\n"
+	.string "như giống hệt bạn.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadGoldMons::
-	.string "Have you battled the FACTORY HEAD\n"
-	.string "when he's serious?\p"
-	.string "When he goes seriously to battle,\n"
-	.string "he still gets three rental POKéMON.\p"
-	.string "He battles under virtually the same\n"
-	.string "conditions as you.$"
+	.string "Bạn đã đấu với FACTORY HEAD khi anh ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Ngay cả khi nghiêm túc ra trận, anh ấy\n"
+	.string "vẫn nhận ba POKéMON thuê.\p"
+	.string "Anh ấy chiến đấu trong điều kiện hầu\n"
+	.string "như giống hệt bạn.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this scary TRAINER called\n"
-	.string "the PIKE QUEEN that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV đáng sợ mang danh PIKE\n"
+	.string "QUEEN đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
-	.string "Have you battled the PIKE QUEEN\n"
-	.string "before?\p"
-	.string "When she's in a good mood, they say\n"
-	.string "she uses these three POKéMON:\p"
-	.string "A POISON-type FANG SNAKE POKéMON,\n"
-	.string "a BUG & ROCK MOLD POKéMON,\l"
-	.string "and a WATER-type TENDER POKéMON.$"
+	.string "Bạn từng đấu với PIKE QUEEN chưa?\p"
+	.string "Khi tâm trạng tốt, nghe nói cô ấy dùng\n"
+	.string "ba POKéMON này:\p"
+	.string "Một FANG SNAKE POKéMON hệ POISON, một\n"
+	.string "MOLD POKéMON hệ BUG & ROCK và một\l"
+	.string "TENDER POKéMON hệ WATER.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
-	.string "Have you battled the PIKE QUEEN\n"
-	.string "when she's serious?\p"
-	.string "When she's seriously annoyed, they say\n"
-	.string "she uses these three POKéMON:\p"
-	.string "A POISON-type FANG SNAKE POKéMON,\n"
-	.string "a STEEL & GROUND IRON SNAKE POKéMON,\l"
-	.string "and a WATER- & FLYING-type ATROCIOUS\l"
-	.string "POKéMON.$"
+	.string "Bạn đã đấu với PIKE QUEEN khi cô ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi thực sự nổi giận, nghe nói cô ấy\n"
+	.string "dùng ba POKéMON này:\p"
+	.string "Một FANG SNAKE POKéMON hệ POISON, một\n"
+	.string "IRON SNAKE POKéMON hệ STEEL & GROUND\l"
+	.string "và một ATROCIOUS POKéMON hệ WATER &\l"
+	.string "FLYING.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this cute TRAINER called\n"
-	.string "the ARENA TYCOON that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV đáng yêu mang danh ARENA\n"
+	.string "TYCOON đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
-	.string "Have you battled the ARENA TYCOON\n"
-	.string "before?\p"
-	.string "When she's assessing the foe's ability,\n"
-	.string "she supposedly uses these POKéMON:\p"
-	.string "A BUG & FIGHTING SINGLE HORN POKéMON,\n"
-	.string "a DARK-type MOONLIGHT POKéMON,\l"
-	.string "and a BUG & GHOST SHED POKéMON.$"
+	.string "Bạn từng đấu với ARENA TYCOON chưa?\p"
+	.string "Khi đánh giá năng lực đối thủ, nghe nói\n"
+	.string "cô ấy dùng những POKéMON này:\p"
+	.string "Một SINGLE HORN POKéMON hệ BUG &\n"
+	.string "FIGHTING, một MOONLIGHT POKéMON hệ\l"
+	.string "DARK và một SHED POKéMON hệ BUG &\l"
+	.string "GHOST.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
-	.string "Have you battled the ARENA TYCOON\n"
-	.string "when she's serious?\p"
-	.string "When she battles for keeps,\n"
-	.string "she supposedly uses these POKéMON:\p"
-	.string "A DARK-type MOONLIGHT POKéMON,\n"
-	.string "a GHOST & POISON SHADOW POKéMON\l"
-	.string "and a GRASS- & FIGHTING-type\l"
-	.string "MUSHROOM POKéMON.$"
+	.string "Bạn đã đấu với ARENA TYCOON khi cô ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi quyết chiến, nghe nói cô ấy dùng\n"
+	.string "những POKéMON này:\p"
+	.string "Một MOONLIGHT POKéMON hệ DARK, một\n"
+	.string "SHADOW POKéMON hệ GHOST & POISON và\l"
+	.string "một MUSHROOM POKéMON hệ GRASS &\l"
+	.string "FIGHTING.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this sinister TRAINER called\n"
-	.string "the PALACE MAVEN that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV nham hiểm mang danh PALACE\n"
+	.string "MAVEN đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
-	.string "Have you battled the PALACE MAVEN\n"
-	.string "before?\p"
-	.string "When he's testing the opponent's\n"
-	.string "spirit, he's said to use these POKéMON:\p"
-	.string "A POISON & FLYING-type BAT POKéMON,\n"
-	.string "a NORMAL-type LAZY POKéMON, and a\l"
-	.string "WATER- & ICE-type TRANSPORT POKéMON.$"
+	.string "Bạn từng đấu với PALACE MAVEN chưa?\p"
+	.string "Khi thử thách tinh thần đối thủ, nghe\n"
+	.string "nói ông ấy dùng những POKéMON này:\p"
+	.string "Một BAT POKéMON hệ POISON & FLYING,\n"
+	.string "một LAZY POKéMON hệ NORMAL và một\l"
+	.string "TRANSPORT POKéMON hệ WATER & ICE.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
-	.string "Have you battled the PALACE MAVEN\n"
-	.string "when he's serious?\p"
-	.string "When he throws his entire might into\n"
-	.string "battle, he's said to use these POKéMON:\p"
-	.string "A FIRE-type LEGENDARY POKéMON,\n"
-	.string "a NORMAL-type LAZY POKéMON,\l"
-	.string "and a WATER-type AURORA POKéMON.$"
+	.string "Bạn đã đấu với PALACE MAVEN khi ông ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi dốc toàn bộ sức mạnh vào trận đấu,\n"
+	.string "nghe nói ông ấy dùng những POKéMON\l"
+	.string "này:\p"
+	.string "Một LEGENDARY POKéMON hệ FIRE, một\n"
+	.string "LAZY POKéMON hệ NORMAL và một AURORA\l"
+	.string "POKéMON hệ WATER.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this fiery-hot TRAINER called\n"
-	.string "the PYRAMID KING that runs the place.$"
+	.string "Có điều này chắc bạn chưa biết!\p"
+	.string "Một trong những HLV hàng đầu mà\n"
+	.string "SCOTT gọi là FRONTIER BRAINS đang ở\l"
+	.string "đó.\p"
+	.string "Một HLV bừng bừng khí thế mang\n"
+	.string "danh PYRAMID KING đang quản lý nơi ấy.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
-	.string "Have you battled the PYRAMID KING\n"
-	.string "before?\p"
-	.string "When he's checking the foe's power,\n"
-	.string "he apparently uses these POKéMON:\p"
-	.string "A ROCK-type ROCK PEAK POKéMON,\n"
-	.string "an ICE-type ICEBERG POKéMON,\l"
-	.string "and a STEEL-type IRON POKéMON.$"
+	.string "Bạn từng đấu với PYRAMID KING chưa?\p"
+	.string "Khi kiểm tra sức mạnh đối thủ, nghe nói\n"
+	.string "ông ấy dùng những POKéMON này:\p"
+	.string "Một ROCK PEAK POKéMON hệ ROCK, một\n"
+	.string "ICEBERG POKéMON hệ ICE và một IRON\l"
+	.string "POKéMON hệ STEEL.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
-	.string "Have you battled the PYRAMID KING\n"
-	.string "when he's serious?\p"
-	.string "When he's pumped with hot power,\n"
-	.string "he apparently uses these POKéMON:\p"
-	.string "An ICE & FLYING FREEZE POKéMON, an\n"
-	.string "ELECTRIC & FLYING ELECTRIC POKéMON,\l"
-	.string "and a FIRE- & FLYING-type FLAME\l"
-	.string "POKéMON.$"
+	.string "Bạn đã đấu với PYRAMID KING khi ông ấy\n"
+	.string "nghiêm túc chưa?\p"
+	.string "Khi sức mạnh nóng bỏng dâng trào, nghe\n"
+	.string "nói ông ấy dùng những POKéMON này:\p"
+	.string "Một FREEZE POKéMON hệ ICE & FLYING,\n"
+	.string "một ELECTRIC POKéMON hệ ELECTRIC &\l"
+	.string "FLYING và một FLAME POKéMON hệ FIRE &\l"
+	.string "FLYING.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
-	.string "Sure, there are several places where\n"
-	.string "you can enter DOUBLE BATTLES.\p"
-	.string "But the DOUBLE BATTLE ROOMS of\n"
-	.string "the BATTLE TOWER are, like, basic!\p"
-	.string "They're where you should learn about\n"
-	.string "how DOUBLE BATTLES are played here\l"
-	.string "in the BATTLE FRONTIER.$"
+	.string "Đúng là có vài nơi bạn có thể tham gia\n"
+	.string "DOUBLE BATTLES.\p"
+	.string "Nhưng DOUBLE BATTLE ROOMS của BATTLE\n"
+	.string "TOWER mới là nơi cơ bản nhất!\p"
+	.string "Đó là nơi bạn nên học cách chơi DOUBLE\n"
+	.string "BATTLES tại BATTLE FRONTIER.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice2::
-	.string "Watch yourself in the battles here.\p"
-	.string "I hear there are TRAINERS that have\n"
-	.string "strategies they developed just for\l"
-	.string "DOUBLE BATTLES.$"
+	.string "Hãy cẩn thận trong những trận đấu ở\n"
+	.string "đây.\p"
+	.string "Tôi nghe nói có những HLV đã phát\n"
+	.string "triển chiến thuật dành riêng cho DOUBLE\l"
+	.string "BATTLES.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
-	.string "Once you're confident and comfortable\n"
-	.string "with DOUBLE BATTLES here, you should\l"
-	.string "think about challenging other places\l"
-	.string "offering DOUBLE BATTLES.$"
+	.string "Khi đã tự tin và quen thuộc với DOUBLE\n"
+	.string "BATTLES ở đây, bạn nên nghĩ đến việc\l"
+	.string "thách đấu những nơi khác cũng tổ chức\l"
+	.string "DOUBLE BATTLES.$"
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
-	.string "All sorts of TRAINERS gather in\n"
-	.string "the BATTLE SALON.\p"
-	.string "Just think--you may run into your\n"
-	.string "friends or followers!\l"
-	.string "You should look carefully!$"
+	.string "Đủ loại HLV tụ họp tại BATTLE\n"
+	.string "SALON.\p"
+	.string "Cứ nghĩ mà xem, bạn có thể gặp bạn bè\n"
+	.string "hoặc những người hâm mộ mình! Hãy\l"
+	.string "quan sát thật kỹ!$"
 
 BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice::
-	.string "If you're with a friend, head for the\n"
+	.string "Nếu đi cùng một người bạn, hãy đến\n"
 	.string "LINK MULTI BATTLE ROOM.\p"
-	.string "If you play with a strong friend,\n"
-	.string "you can expect to see tough foes!$"
+	.string "Nếu chơi cùng một người bạn mạnh, bạn\n"
+	.string "có thể sẽ gặp những đối thủ đáng gờm!$"
 
 BattleFrontier_Lounge2_Text_NewsGatheringPower::
-	.string "What amazing news-gathering power!\n"
-	.string "My mentor's like none other!$"
+	.string "Khả năng thu thập tin tức thật đáng\n"
+	.string "kinh ngạc! Sư phụ tôi đúng là độc nhất\l"
+	.string "vô nhị!$"
 
 BattleFrontier_Lounge2_Text_AmazingPowersOfObservation::
-	.string "What amazing powers of observation!\n"
-	.string "My mentor's like none other!$"
+	.string "Khả năng quan sát thật đáng kinh ngạc!\n"
+	.string "Sư phụ tôi đúng là độc nhất vô nhị!$"
 
 BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion::
-	.string "What amazing power of persuasion!\n"
-	.string "My mentor's like none other!$"
+	.string "Khả năng thuyết phục thật đáng kinh\n"
+	.string "ngạc! Sư phụ tôi đúng là độc nhất vô\l"
+	.string "nhị!$"
 
 BattleFrontier_Lounge2_Text_ThisPlaceIsScaringMe::
-	.string "…What is this place?\n"
-	.string "It's scaring me…$"
+	.string "...Đây là nơi nào vậy? Nó làm mình sợ\n"
+	.string "quá...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleFrontier_Lounge2_Text_FrontierManiacIntro
+	.global BattleFrontier_Lounge2_Text_SwingByForTheLatestWord
+	.global BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight
+	.global BattleFrontier_Lounge2_Text_FacilityIsHottest
+	.global BattleFrontier_Lounge2_Text_BattleTowerIsHottest
+	.global BattleFrontier_Lounge2_Text_SalonMaidenIsThere
+	.global BattleFrontier_Lounge2_Text_SalonMaidenSilverMons
+	.global BattleFrontier_Lounge2_Text_SalonMaidenGoldMons
+	.global BattleFrontier_Lounge2_Text_DomeAceIsThere
+	.global BattleFrontier_Lounge2_Text_DomeAceSilverMons
+	.global BattleFrontier_Lounge2_Text_DomeAceGoldMons
+	.global BattleFrontier_Lounge2_Text_FactoryHeadIsThere
+	.global BattleFrontier_Lounge2_Text_FactoryHeadSilverMons
+	.global BattleFrontier_Lounge2_Text_FactoryHeadGoldMons
+	.global BattleFrontier_Lounge2_Text_PikeQueenIsThere
+	.global BattleFrontier_Lounge2_Text_PikeQueenSilverMons
+	.global BattleFrontier_Lounge2_Text_PikeQueenGoldMons
+	.global BattleFrontier_Lounge2_Text_ArenaTycoonIsThere
+	.global BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons
+	.global BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons
+	.global BattleFrontier_Lounge2_Text_PalaceMavenIsThere
+	.global BattleFrontier_Lounge2_Text_PalaceMavenSilverMons
+	.global BattleFrontier_Lounge2_Text_PalaceMavenGoldMons
+	.global BattleFrontier_Lounge2_Text_PyramidKingIsThere
+	.global BattleFrontier_Lounge2_Text_PyramidKingSilverMons
+	.global BattleFrontier_Lounge2_Text_PyramidKingGoldMons
+	.global BattleFrontier_Lounge2_Text_DoubleBattleAdvice1
+	.global BattleFrontier_Lounge2_Text_DoubleBattleAdvice2
+	.global BattleFrontier_Lounge2_Text_DoubleBattleAdvice3
+	.global BattleFrontier_Lounge2_Text_MultiBattleAdvice
+	.global BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice
+	.global BattleFrontier_Lounge2_Text_NewsGatheringPower
+	.global BattleFrontier_Lounge2_Text_AmazingPowersOfObservation
+	.global BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion
+	.global BattleFrontier_Lounge2_Text_ThisPlaceIsScaringMe
+@ END GENERATED LOCALIZATION EXPORTS

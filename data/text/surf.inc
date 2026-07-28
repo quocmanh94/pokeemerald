@@ -1,9 +1,15 @@
 gText_WantToUseSurf::
-	.string "The water is dyed a deep blue…\n"
-	.string "Would you like to SURF?$"
+	.string "Mặt nước có màu xanh thẳm…\n"
+	.string "Bạn muốn dùng SURF không?$"
 
 gText_PlayerUsedSurf::
-	.string "{STR_VAR_1} used SURF!$"
+	.string "{STR_VAR_1} đã dùng SURF!$"
 
 gText_CantUseSurf::
-	.string "None of your POKéMON can SURF.$"
+	.string "Không POKéMON nào có thể SURF.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_WantToUseSurf
+	.global gText_PlayerUsedSurf
+	.global gText_CantUseSurf
+@ END GENERATED LOCALIZATION EXPORTS

@@ -183,4 +183,8 @@ FarawayIsland_Interior_EventScript_HideMewWhenGrassCut::
 	end
 
 FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded:
-	.string "The feeling of being watched faded…$"
+	.string "Cảm giác bị theo dõi đã tan biến...$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded
+@ END GENERATED LOCALIZATION EXPORTS

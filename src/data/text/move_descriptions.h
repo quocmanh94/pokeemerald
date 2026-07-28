@@ -2,1420 +2,1526 @@ static const u8 sNullDescription[] = _(
     "");
 
 static const u8 sPoundDescription[] = _(
-    "Pounds the foe with\n"
-    "forelegs or tail.");
+    "Đập đối thủ bằng\n"
+    "chân trước hoặc đuôi.");
 
 static const u8 sKarateChopDescription[] = _(
-    "A chopping attack with a\n"
-    "high critical-hit ratio.");
+    "Chém bằng tay, dễ\n"
+    "gây chí mạng."
+);
 
 static const u8 sDoubleSlapDescription[] = _(
-    "Repeatedly slaps the foe\n"
-    "2 to 5 times.");
+    "Tát liên tục\n"
+    "2-5 lần.");
 
 static const u8 sCometPunchDescription[] = _(
-    "Repeatedly punches the foe\n"
-    "2 to 5 times.");
+    "Đấm liên tục\n"
+    "2-5 lần.");
 
 static const u8 sMegaPunchDescription[] = _(
-    "A strong punch thrown with\n"
-    "incredible power.");
+    "Cú đấm mạnh\n"
+    "dồn hết sức.");
 
 static const u8 sPayDayDescription[] = _(
-    "Throws coins at the foe.\n"
-    "Money is recovered after.");
+    "Ném xu vào đối thủ.\n"
+    "Nhặt tiền sau trận."
+);
 
 static const u8 sFirePunchDescription[] = _(
-    "A fiery punch that may burn\n"
-    "the foe.");
+    "Đấm lửa. Có thể\n"
+    "gây bỏng.");
 
 static const u8 sIcePunchDescription[] = _(
-    "An icy punch that may\n"
-    "freeze the foe.");
+    "Đấm băng. Có thể\n"
+    "gây đóng băng.");
 
 static const u8 sThunderPunchDescription[] = _(
-    "An electrified punch that\n"
-    "may paralyze the foe.");
+    "Đấm điện. Có thể\n"
+    "gây tê liệt.");
 
 static const u8 sScratchDescription[] = _(
-    "Scratches the foe with\n"
-    "sharp claws.");
+    "Cào đối thủ bằng\n"
+    "móng vuốt sắc.");
 
 static const u8 sViceGripDescription[] = _(
-    "Grips the foe with large and\n"
-    "powerful pincers.");
+    "Kẹp chặt đối thủ\n"
+    "bằng chiếc càng lớn."
+);
 
 static const u8 sGuillotineDescription[] = _(
-    "A powerful pincer attack\n"
-    "that may cause fainting.");
+    "Dùng càng kẹp. Trúng\n"
+    "là hạ gục ngay."
+);
 
 static const u8 sRazorWindDescription[] = _(
-    "A 2-turn move that strikes\n"
-    "the foe on the 2nd turn.");
+    "Tích tụ ở lượt đầu,\n"
+    "tấn công lượt kế."
+);
 
 static const u8 sSwordsDanceDescription[] = _(
-    "A fighting dance that\n"
-    "sharply raises ATTACK.");
+    "Điệu múa chiến đấu\n"
+    "tăng mạnh ATTACK.");
 
 static const u8 sCutDescription[] = _(
-    "Cuts the foe with sharp\n"
-    "scythes, claws, etc.");
+    "Chém đối thủ bằng\n"
+    "lưỡi hái hoặc vuốt.");
 
 static const u8 sGustDescription[] = _(
-    "Strikes the foe with a gust\n"
-    "of wind whipped up by wings.");
+    "Tấn công đối thủ bằng\n"
+    "gió do cánh tạo ra.");
 
 static const u8 sWingAttackDescription[] = _(
-    "Strikes the foe with wings\n"
-    "spread wide.");
+    "Tấn công bằng đôi\n"
+    "cánh dang rộng.");
 
 static const u8 sWhirlwindDescription[] = _(
-    "Blows away the foe with\n"
-    "wind and ends the battle.");
+    "Thổi bay đối thủ,\n"
+    "buộc rời khỏi trận.");
 
 static const u8 sFlyDescription[] = _(
-    "Flies up on the first turn,\n"
-    "then strikes the next turn.");
+    "Bay lên ở lượt đầu,\n"
+    "tấn công ở lượt sau.");
 
 static const u8 sBindDescription[] = _(
-    "Binds and squeezes the foe\n"
-    "for 2 to 5 turns.");
+    "Trói đối thủ\n"
+    "trong 2-5 lượt.");
 
 static const u8 sSlamDescription[] = _(
-    "Slams the foe with a long\n"
-    "tail, vine, etc.");
+    "Đập đối thủ bằng\n"
+    "đuôi, dây leo...");
 
 static const u8 sVineWhipDescription[] = _(
-    "Strikes the foe with\n"
-    "slender, whiplike vines.");
+    "Quất đối thủ bằng\n"
+    "những dây leo mảnh.");
 
 static const u8 sStompDescription[] = _(
-    "Stomps the enemy with a big\n"
-    "foot. May cause flinching.");
+    "Dẫm bằng chân lớn,\n"
+    "có thể gây chùn bước.");
 
 static const u8 sDoubleKickDescription[] = _(
-    "A double-kicking attack\n"
-    "that strikes the foe twice.");
+    "Đá hai lần\n"
+    "liên tiếp.");
 
 static const u8 sMegaKickDescription[] = _(
-    "An extremely powerful kick\n"
-    "with intense force.");
+    "Cú đá cực\n"
+    "mạnh.");
 
 static const u8 sJumpKickDescription[] = _(
-    "A strong jumping kick. May\n"
-    "miss and hurt the kicker.");
+    "Cú đá nhảy mạnh.\n"
+    "Trượt sẽ tự bị thương."
+);
 
 static const u8 sRollingKickDescription[] = _(
-    "A fast kick delivered from\n"
-    "a rapid spin.");
+    "Cú đá xoay\n"
+    "nhanh.");
 
 static const u8 sSandAttackDescription[] = _(
-    "Reduces the foe's accuracy\n"
-    "by hurling sand in its face.");
+    "Hất cát vào mặt để\n"
+    "giảm độ chính xác.");
 
 static const u8 sHeadbuttDescription[] = _(
-    "A ramming attack that may\n"
-    "cause flinching.");
+    "Húc đối thủ, có thể\n"
+    "gây chùn bước."
+);
 
 static const u8 sHornAttackDescription[] = _(
-    "Jabs the foe with sharp\n"
-    "horns.");
+    "Đâm đối thủ bằng\n"
+    "chiếc sừng sắc nhọn."
+);
 
 static const u8 sFuryAttackDescription[] = _(
-    "Jabs the foe 2 to 5 times\n"
-    "with sharp horns, etc.");
+    "Húc đối thủ\n"
+    "2-5 lần.");
 
 static const u8 sHornDrillDescription[] = _(
-    "A one-hit KO attack that\n"
-    "uses a horn like a drill.");
+    "Hạ gục 1 đòn,\n"
+    "dùng sừng khoan.");
 
 static const u8 sTackleDescription[] = _(
-    "Charges the foe with a full-\n"
-    "body tackle.");
+    "Lao toàn thân vào\n"
+    "đối thủ.");
 
 static const u8 sBodySlamDescription[] = _(
-    "A full-body slam that may\n"
-    "cause paralysis.");
+    "Đè bằng toàn thân,\n"
+    "có thể gây tê liệt."
+);
 
 static const u8 sWrapDescription[] = _(
-    "Wraps and squeezes the foe\n"
-    "2 to 5 times with vines, etc.");
+    "Siết chặt đối thủ\n"
+    "trong 2-5 lượt.");
 
 static const u8 sTakeDownDescription[] = _(
-    "A reckless charge attack\n"
-    "that also hurts the user.");
+    "Lao liều vào đối thủ,\n"
+    "bản thân cũng bị đau."
+);
 
 static const u8 sThrashDescription[] = _(
-    "A rampage of 2 to 3 turns\n"
-    "that confuses the user.");
+    "Tấn công 2-3 lượt,\n"
+    "sau đó tự bối rối.");
 
 static const u8 sDoubleEdgeDescription[] = _(
-    "A life-risking tackle that\n"
-    "also hurts the user.");
+    "Lao toàn lực vào đối\n"
+    "thủ, bản thân bị đau."
+);
 
 static const u8 sTailWhipDescription[] = _(
-    "Wags the tail to lower the\n"
-    "foe's DEFENSE.");
+    "Vẫy đuôi làm giảm\n"
+    "DEFENSE của đối thủ.");
 
 static const u8 sPoisonStingDescription[] = _(
-    "A toxic attack with barbs,\n"
-    "etc., that may poison.");
+    "Đâm bằng gai độc,\n"
+    "có thể gây trúng độc.");
 
 static const u8 sTwineedleDescription[] = _(
-    "Stingers on the forelegs\n"
-    "jab the foe twice.");
+    "Đâm đối thủ 2 lần\n"
+    "bằng kim.");
 
 static const u8 sPinMissileDescription[] = _(
-    "Sharp pins are fired to\n"
-    "strike 2 to 5 times.");
+    "Bắn kim đâm\n"
+    "2-5 lần.");
 
 static const u8 sLeerDescription[] = _(
-    "Frightens the foe with a\n"
-    "leer to lower DEFENSE.");
+    "Trừng mắt khiến\n"
+    "DEFENSE đối thủ giảm.");
 
 static const u8 sBiteDescription[] = _(
-    "Bites with vicious fangs.\n"
-    "May cause flinching.");
+    "Cắn bằng nanh sắc,\n"
+    "có thể gây chùn bước.");
 
 static const u8 sGrowlDescription[] = _(
-    "Growls cutely to reduce the\n"
-    "foe's ATTACK.");
+    "Kêu dễ thương để\n"
+    "giảm ATTACK đối thủ."
+);
 
 static const u8 sRoarDescription[] = _(
-    "Makes the foe flee to end\n"
-    "the battle.");
+    "Gầm dữ dội, buộc\n"
+    "đối thủ rời khỏi trận.");
 
 static const u8 sSingDescription[] = _(
-    "A soothing song lulls the\n"
-    "foe into a deep slumber.");
+    "Hát ru khiến đối thủ\n"
+    "chìm vào giấc ngủ."
+);
 
 static const u8 sSupersonicDescription[] = _(
-    "Emits bizarre sound waves\n"
-    "that may confuse the foe.");
+    "Phát sóng âm lạ, có\n"
+    "thể gây bối rối."
+);
 
 static const u8 sSonicBoomDescription[] = _(
-    "Launches shock waves that\n"
-    "always inflict 20 HP damage.");
+    "Luôn gây đúng\n"
+    "20 HP sát thương.");
 
 static const u8 sDisableDescription[] = _(
-    "Psychically disables one of\n"
-    "the foe's moves.");
+    "Vô hiệu hoá đòn\n"
+    "đối thủ vừa dùng.");
 
 static const u8 sAcidDescription[] = _(
-    "Sprays a hide-melting acid.\n"
-    "May lower DEFENSE.");
+    "Phun axit, có thể\n"
+    "giảm DEFENSE đối thủ."
+);
 
 static const u8 sEmberDescription[] = _(
-    "A weak fire attack that may\n"
-    "inflict a burn.");
+    "Tấn công bằng lửa nhỏ,\n"
+    "có thể gây bỏng.");
 
 static const u8 sFlamethrowerDescription[] = _(
-    "A powerful fire attack that\n"
-    "may inflict a burn.");
+    "Phun lửa mạnh, có\n"
+    "thể gây bỏng.");
 
 static const u8 sMistDescription[] = _(
-    "Creates a mist that stops\n"
-    "reduction of abilities.");
+    "Tạo sương, ngăn các\n"
+    "chỉ số bị giảm."
+);
 
 static const u8 sWaterGunDescription[] = _(
-    "Squirts water to attack\n"
-    "the foe.");
+    "Phun nước tấn công\n"
+    "đối thủ.");
 
 static const u8 sHydroPumpDescription[] = _(
-    "Blasts water at high power\n"
-    "to strike the foe.");
+    "Phun nước cực mạnh\n"
+    "vào đối thủ.");
 
 static const u8 sSurfDescription[] = _(
-    "Creates a huge wave, then\n"
-    "crashes it down on the foe.");
+    "Tạo sóng lớn rồi\n"
+    "đánh ập vào đối thủ.");
 
 static const u8 sIceBeamDescription[] = _(
-    "Blasts the foe with an icy\n"
-    "beam that may freeze it.");
+    "Bắn tia băng, có thể\n"
+    "đóng băng đối thủ.");
 
 static const u8 sBlizzardDescription[] = _(
-    "Hits the foe with an icy\n"
-    "storm that may freeze it.");
+    "Gọi bão tuyết, có\n"
+    "thể đóng băng đối thủ.");
 
 static const u8 sPsybeamDescription[] = _(
-    "Fires a peculiar ray that\n"
-    "may confuse the foe.");
+    "Bắn tia kỳ lạ, có\n"
+    "thể gây bối rối."
+);
 
 static const u8 sBubbleBeamDescription[] = _(
-    "Forcefully sprays bubbles\n"
-    "that may lower SPEED.");
+    "Phun bong bóng mạnh,\n"
+    "có thể giảm SPEED."
+);
 
 static const u8 sAuroraBeamDescription[] = _(
-    "Fires a rainbow-colored\n"
-    "beam that may lower ATTACK.");
+    "Bắn tia cầu vồng, có\n"
+    "thể giảm ATTACK."
+);
 
 static const u8 sHyperBeamDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Lượt 1: Tấn công\n"
+    "Lượt 2: Nghỉ");
 
 static const u8 sPeckDescription[] = _(
-    "Attacks the foe with a\n"
-    "jabbing beak, etc.");
+    "Mổ đối thủ\n"
+    "bằng mỏ.");
 
 static const u8 sDrillPeckDescription[] = _(
-    "A corkscrewing attack with\n"
-    "the beak acting as a drill.");
+    "Xoay mỏ như mũi khoan\n"
+    "để đâm đối thủ."
+);
 
 static const u8 sSubmissionDescription[] = _(
-    "A reckless body slam that\n"
-    "also hurts the user.");
+    "Lao quật đối thủ, bản\n"
+    "thân cũng bị thương."
+);
 
 static const u8 sLowKickDescription[] = _(
-    "A kick that inflicts more\n"
-    "damage on heavier foes.");
+    "Đối thủ càng nặng\n"
+    "thì sát thương càng cao.");
 
 static const u8 sCounterDescription[] = _(
-    "Retaliates any physical hit\n"
-    "with double the power.");
+    "Phản đòn vật lý\n"
+    "gấp đôi.");
 
 static const u8 sSeismicTossDescription[] = _(
-    "Inflicts damage identical\n"
-    "to the user's level.");
+    "Sát thương bằng\n"
+    "cấp độ bản thân."
+);
 
 static const u8 sStrengthDescription[] = _(
-    "Builds enormous power,\n"
-    "then slams the foe.");
+    "Dồn sức mạnh rồi\n"
+    "đập vào đối thủ."
+);
 
 static const u8 sAbsorbDescription[] = _(
-    "An attack that absorbs\n"
-    "half the damage inflicted.");
+    "Hút 1/2 sát\n"
+    "thương gây ra.");
 
 static const u8 sMegaDrainDescription[] = _(
-    "An attack that absorbs\n"
-    "half the damage inflicted.");
+    "Hút 1/2 sát\n"
+    "thương gây ra.");
 
 static const u8 sLeechSeedDescription[] = _(
-    "Plants a seed on the foe to\n"
-    "steal HP on every turn.");
+    "Gieo hạt hút HP đối\n"
+    "thủ vào mỗi lượt."
+);
 
 static const u8 sGrowthDescription[] = _(
-    "Forces the body to grow\n"
-    "and heightens SP. ATK.");
+    "Làm cơ thể lớn lên\n"
+    "để tăng SP. ATK.");
 
 static const u8 sRazorLeafDescription[] = _(
-    "Cuts the enemy with leaves.\n"
-    "High critical-hit ratio.");
+    "Cắt bằng lá sắc.\n"
+    "Dễ gây chí mạng.");
 
 static const u8 sSolarBeamDescription[] = _(
-    "Absorbs light in one turn,\n"
-    "then attacks next turn.");
+    "Hấp thụ ánh sáng,\n"
+    "tấn công ở lượt sau.");
 
 static const u8 sPoisonPowderDescription[] = _(
-    "Scatters a toxic powder\n"
-    "that may poison the foe.");
+    "Rắc bột có thể làm\n"
+    "đối thủ trúng độc.");
 
 static const u8 sStunSporeDescription[] = _(
-    "Scatters a powder that may\n"
-    "paralyze the foe.");
+    "Rắc bột khiến đối\n"
+    "thủ bị tê liệt."
+);
 
 static const u8 sSleepPowderDescription[] = _(
-    "Scatters a powder that may\n"
-    "cause the foe to sleep.");
+    "Rắc bột có thể làm\n"
+    "đối thủ ngủ.");
 
 static const u8 sPetalDanceDescription[] = _(
-    "A rampage of 2 to 3 turns\n"
-    "that confuses the user.");
+    "Tấn công 2-3 lượt,\n"
+    "sau đó tự bối rối.");
 
 static const u8 sStringShotDescription[] = _(
-    "Binds the foe with string\n"
-    "to reduce its SPEED.");
+    "Dùng tơ trói để\n"
+    "giảm SPEED đối thủ."
+);
 
 static const u8 sDragonRageDescription[] = _(
-    "Launches shock waves that\n"
-    "always inflict 40 HP damage.");
+    "Luôn gây đúng\n"
+    "40 HP sát thương.");
 
 static const u8 sFireSpinDescription[] = _(
-    "Traps the foe in a ring of\n"
-    "fire for 2 to 5 turns.");
+    "Nhốt đối thủ trong\n"
+    "lửa 2-5 lượt.");
 
 static const u8 sThunderShockDescription[] = _(
-    "An electrical attack that\n"
-    "may paralyze the foe.");
+    "Phóng điện, có thể\n"
+    "làm đối thủ tê liệt.");
 
 static const u8 sThunderboltDescription[] = _(
-    "A strong electrical attack\n"
-    "that may paralyze the foe.");
+    "Phóng điện mạnh, có\n"
+    "thể làm đối thủ tê liệt.");
 
 static const u8 sThunderWaveDescription[] = _(
-    "A weak jolt of electricity\n"
-    "that paralyzes the foe.");
+    "Phóng điện yếu khiến\n"
+    "đối thủ tê liệt."
+);
 
 static const u8 sThunderDescription[] = _(
-    "A lightning attack that may\n"
-    "cause paralysis.");
+    "Gọi sét đánh, có thể\n"
+    "gây tê liệt."
+);
 
 static const u8 sRockThrowDescription[] = _(
-    "Throws small rocks to\n"
-    "strike the foe.");
+    "Ném đá vào\n"
+    "đối thủ.");
 
 static const u8 sEarthquakeDescription[] = _(
-    "A powerful quake, but has\n"
-    "no effect on flying foes.");
+    "Động đất cực mạnh,\n"
+    "vô hiệu với hệ FLYING.");
 
 static const u8 sFissureDescription[] = _(
-    "A one-hit KO move that\n"
-    "drops the foe in a fissure.");
+    "Thả đối thủ xuống khe nứt,\n"
+    "trúng là bất tỉnh.");
 
 static const u8 sDigDescription[] = _(
-    "Digs underground the first\n"
-    "turn and strikes next turn.");
+    "Lượt 1: Đào hang\n"
+    "Lượt 2: Tấn công");
 
 static const u8 sToxicDescription[] = _(
-    "Poisons the foe with an\n"
-    "intensifying toxin.");
+    "Độc tăng sát\n"
+    "thương mỗi lượt.");
 
 static const u8 sConfusionDescription[] = _(
-    "A psychic attack that may\n"
-    "cause confusion.");
+    "Tấn công tâm linh, có\n"
+    "thể gây bối rối."
+);
 
 static const u8 sPsychicDescription[] = _(
-    "A powerful psychic attack\n"
-    "that may lower SP. DEF.");
+    "Đòn PSYCHIC mạnh,\n"
+    "có thể giảm SP. DEF.");
 
 static const u8 sHypnosisDescription[] = _(
-    "A hypnotizing move that\n"
-    "may induce sleep.");
+    "Có thể làm đối thủ\n"
+    "ngủ.");
 
 static const u8 sMeditateDescription[] = _(
-    "Meditates in a peaceful\n"
-    "fashion to raise ATTACK.");
+    "Thiền định để tăng\n"
+    "ATTACK."
+);
 
 static const u8 sAgilityDescription[] = _(
-    "Relaxes the body to sharply\n"
-    "boost SPEED.");
+    "Thả lỏng cơ thể để\n"
+    "tăng mạnh SPEED."
+);
 
 static const u8 sQuickAttackDescription[] = _(
-    "An extremely fast attack\n"
-    "that always strikes first.");
+    "Tấn công cực nhanh,\n"
+    "luôn ra đòn trước.");
 
 static const u8 sRageDescription[] = _(
-    "Raises the user's ATTACK\n"
-    "every time it is hit.");
+    "Tăng ATTACK khi\n"
+    "bị đánh trúng.");
 
 static const u8 sTeleportDescription[] = _(
-    "A psychic move for fleeing\n"
-    "from battle instantly.");
+    "Dùng để thoát\n"
+    "khỏi trận đấu.");
 
 static const u8 sNightShadeDescription[] = _(
-    "Inflicts damage identical\n"
-    "to the user's level.");
+    "Sát thương bằng\n"
+    "cấp độ bản thân."
+);
 
 static const u8 sMimicDescription[] = _(
-    "Copies a move used by the\n"
-    "foe during one battle.");
+    "Sao chép tạm thời\n"
+    "chiêu đối thủ vừa dùng."
+);
 
 static const u8 sScreechDescription[] = _(
-    "Emits a screech to sharply\n"
-    "reduce the foe's DEFENSE.");
+    "Giảm mạnh DEFENSE\n"
+    "của đối thủ.");
 
 static const u8 sDoubleTeamDescription[] = _(
-    "Creates illusory copies to\n"
-    "raise evasiveness.");
+    "Tạo phân thân ảo để\n"
+    "tăng né tránh."
+);
 
 static const u8 sRecoverDescription[] = _(
-    "Recovers up to half the\n"
-    "user's maximum HP.");
+    "Hồi 1/2 HP\n"
+    "tối đa.");
 
 static const u8 sHardenDescription[] = _(
-    "Stiffens the body's \n"
-    "muscles to raise DEFENSE.");
+    "Làm cứng cơ thể để\n"
+    "tăng DEFENSE."
+);
 
 static const u8 sMinimizeDescription[] = _(
-    "Minimizes the user's size\n"
-    "to raise evasiveness.");
+    "Thu nhỏ cơ thể để\n"
+    "tăng né tránh."
+);
 
 static const u8 sSmokescreenDescription[] = _(
-    "Lowers the foe's accuracy\n"
-    "using smoke, ink, etc.");
+    "Giảm độ chính\n"
+    "xác của đối thủ.");
 
 static const u8 sConfuseRayDescription[] = _(
-    "A sinister ray that\n"
-    "confuses the foe.");
+    "Gây bối rối\n"
+    "cho đối thủ.");
 
 static const u8 sWithdrawDescription[] = _(
-    "Withdraws the body into its\n"
-    "hard shell to raise DEFENSE.");
+    "Rút vào vỏ cứng để\n"
+    "tăng DEFENSE."
+);
 
 static const u8 sDefenseCurlDescription[] = _(
-    "Curls up to conceal weak\n"
-    "spots and raise DEFENSE.");
+    "Cuộn tròn che điểm yếu,\n"
+    "tăng DEFENSE."
+);
 
 static const u8 sBarrierDescription[] = _(
-    "Creates a barrier that\n"
-    "sharply raises DEFENSE.");
+    "Tạo hàng rào để\n"
+    "tăng mạnh DEFENSE."
+);
 
 static const u8 sLightScreenDescription[] = _(
-    "Creates a wall of light that\n"
-    "lowers SP. ATK damage.");
+    "Tường sáng làm yếu\n"
+    "các đòn đặc biệt.");
 
 static const u8 sHazeDescription[] = _(
-    "Creates a black haze that\n"
-    "eliminates all stat changes.");
+    "Xoá mọi thay đổi\n"
+    "chỉ số.");
 
 static const u8 sReflectDescription[] = _(
-    "Creates a wall of light that\n"
-    "weakens physical attacks.");
+    "Tường sáng làm yếu\n"
+    "các đòn vật lý.");
 
 static const u8 sFocusEnergyDescription[] = _(
-    "Focuses power to raise the\n"
-    "critical-hit ratio.");
+    "Tập trung sức, tăng\n"
+    "tỉ lệ chí mạng."
+);
 
 static const u8 sBideDescription[] = _(
-    "Endures attack for 2\n"
-    "turns to retaliate double.");
+    "Chịu đòn 2 lượt rồi\n"
+    "phản lại gấp đôi.");
 
 static const u8 sMetronomeDescription[] = _(
-    "Waggles a finger to use any\n"
-    "POKéMON move at random.");
+    "Vẫy ngón tay để dùng\n"
+    "ngẫu nhiên một chiêu."
+);
 
 static const u8 sMirrorMoveDescription[] = _(
-    "Counters the foe's attack\n"
-    "with the same move.");
+    "Phản đòn giống\n"
+    "đối thủ vừa dùng.");
 
 static const u8 sSelfDestructDescription[] = _(
-    "Inflicts severe damage but\n"
-    "makes the user faint.");
+    "Gây sát thương lớn\n"
+    "rồi bản thân bất tỉnh."
+);
 
 static const u8 sEggBombDescription[] = _(
-    "An egg is forcibly hurled at\n"
-    "the foe.");
+    "Ném trứng vào\n"
+    "đối thủ.");
 
 static const u8 sLickDescription[] = _(
-    "Licks with a long tongue to\n"
-    "injure. May also paralyze.");
+    "Liếm bằng lưỡi dài,\n"
+    "có thể gây tê liệt."
+);
 
 static const u8 sSmogDescription[] = _(
-    "An exhaust-gas attack\n"
-    "that may also poison.");
+    "Tấn công bằng khí thải,\n"
+    "có thể gây trúng độc.");
 
 static const u8 sSludgeDescription[] = _(
-    "Sludge is hurled to inflict\n"
-    "damage. May also poison.");
+    "Ném bùn độc, có thể\n"
+    "khiến đối thủ trúng độc.");
 
 static const u8 sBoneClubDescription[] = _(
-    "Clubs the foe with a bone.\n"
-    "May cause flinching.");
+    "Đánh bằng khúc xương,\n"
+    "có thể gây chùn bước.");
 
 static const u8 sFireBlastDescription[] = _(
-    "Incinerates everything it\n"
-    "strikes. May cause a burn.");
+    "Thiêu đốt đối thủ,\n"
+    "có thể gây bỏng.");
 
 static const u8 sWaterfallDescription[] = _(
-    "Charges the foe with speed\n"
-    "to climb waterfalls.");
+    "Lao vào đối thủ với\n"
+    "sức mạnh vượt thác."
+);
 
 static const u8 sClampDescription[] = _(
-    "Traps and squeezes the\n"
-    "foe for 2 to 5 turns.");
+    "Kẹp đối thủ\n"
+    "trong 2-5 lượt.");
 
 static const u8 sSwiftDescription[] = _(
-    "Sprays star-shaped rays\n"
-    "that never miss.");
+    "Bắn tia hình sao và\n"
+    "không bao giờ trượt."
+);
 
 static const u8 sSkullBashDescription[] = _(
-    "Tucks in the head, then\n"
-    "attacks on the next turn.");
+    "Lượt 1: Chuẩn bị\n"
+    "Lượt 2: Tấn công");
 
 static const u8 sSpikeCannonDescription[] = _(
-    "Launches sharp spikes that\n"
-    "strike 2 to 5 times.");
+    "Bắn gai đâm\n"
+    "2-5 lần.");
 
 static const u8 sConstrictDescription[] = _(
-    "Constricts to inflict pain.\n"
-    "May lower SPEED.");
+    "Siết chặt đối thủ, có\n"
+    "thể giảm SPEED."
+);
 
 static const u8 sAmnesiaDescription[] = _(
-    "Forgets about something\n"
-    "and sharply raises SP. DEF.");
+    "Quên mọi chuyện để\n"
+    "tăng mạnh SP. DEF.");
 
 static const u8 sKinesisDescription[] = _(
-    "Distracts the foe.\n"
-    "May lower accuracy.");
+    "Giảm độ chính\n"
+    "xác của đối thủ.");
 
 static const u8 sSoftBoiledDescription[] = _(
-    "Recovers up to half the\n"
-    "user's maximum HP.");
+    "Hồi 1/2 HP\n"
+    "tối đa.");
 
 static const u8 sHiJumpKickDescription[] = _(
-    "A jumping knee kick. If it\n"
-    "misses, the user is hurt.");
+    "Đá bằng đầu gối mạnh.\n"
+    "Trượt sẽ tự bị thương."
+);
 
 static const u8 sGlareDescription[] = _(
-    "Intimidates and frightens\n"
-    "the foe into paralysis.");
+    "Trừng mắt khiến đối\n"
+    "thủ bị tê liệt."
+);
 
 static const u8 sDreamEaterDescription[] = _(
-    "Takes one half the damage\n"
-    "inflicted on a sleeping foe.");
+    "Hút nửa sát thương từ\n"
+    "đối thủ đang ngủ."
+);
 
 static const u8 sPoisonGasDescription[] = _(
-    "Envelops the foe in a toxic\n"
-    "gas that may poison.");
+    "Bao phủ bằng khí độc,\n"
+    "có thể gây trúng độc."
+);
 
 static const u8 sBarrageDescription[] = _(
-    "Hurls round objects at the\n"
-    "foe 2 to 5 times.");
+    "Ném vật tròn\n"
+    "2-5 lần.");
 
 static const u8 sLeechLifeDescription[] = _(
-    "An attack that steals half\n"
-    "the damage inflicted.");
+    "Hút 1/2 sát\n"
+    "thương gây ra.");
 
 static const u8 sLovelyKissDescription[] = _(
-    "Demands a kiss with a scary\n"
-    "face that induces sleep.");
+    "Hôn bằng vẻ đáng sợ\n"
+    "khiến đối thủ ngủ."
+);
 
 static const u8 sSkyAttackDescription[] = _(
-    "Searches out weak spots,\n"
-    "then strikes the next turn.");
+    "Lượt 1: Chuẩn bị\n"
+    "Lượt 2: Tấn công");
 
 static const u8 sTransformDescription[] = _(
-    "Alters the user's cells to\n"
-    "become a copy of the foe.");
+    "Biến đổi tế bào để\n"
+    "thành bản sao đối thủ."
+);
 
 static const u8 sBubbleDescription[] = _(
-    "An attack using bubbles.\n"
-    "May lower the foe's SPEED.");
+    "Tấn công bằng bong bóng.\n"
+    "Có thể giảm SPEED.");
 
 static const u8 sDizzyPunchDescription[] = _(
-    "A rhythmic punch that may\n"
-    "confuse the foe.");
+    "Đấm theo nhịp, có thể\n"
+    "gây bối rối."
+);
 
 static const u8 sSporeDescription[] = _(
-    "Scatters a cloud of spores\n"
-    "that always induce sleep.");
+    "Rắc bào tử khiến\n"
+    "đối thủ ngủ."
+);
 
 static const u8 sFlashDescription[] = _(
-    "Looses a powerful blast of\n"
-    "light that cuts accuracy.");
+    "Chói mắt giảm\n"
+    "độ chính xác.");
 
 static const u8 sPsywaveDescription[] = _(
-    "Attacks with a psychic\n"
-    "wave of varying intensity.");
+    "Sóng tâm linh gây\n"
+    "sát thương thay đổi."
+);
 
 static const u8 sSplashDescription[] = _(
-    "It's just a splash...\n"
-    "Has no effect whatsoever.");
+    "Không có tác\n"
+    "dụng gì.");
 
 static const u8 sAcidArmorDescription[] = _(
-    "Liquifies the user's body\n"
-    "to sharply raise DEFENSE.");
+    "Hóa lỏng cơ thể để\n"
+    "tăng mạnh DEFENSE."
+);
 
 static const u8 sCrabhammerDescription[] = _(
-    "Hammers with a pincer. Has a\n"
-    "high critical-hit ratio.");
+    "Đập bằng càng, dễ\n"
+    "gây chí mạng."
+);
 
 static const u8 sExplosionDescription[] = _(
-    "Inflicts severe damage but\n"
-    "makes the user faint.");
+    "Gây sát thương cực lớn\n"
+    "rồi bản thân bất tỉnh."
+);
 
 static const u8 sFurySwipesDescription[] = _(
-    "Rakes the foe with sharp\n"
-    "claws, etc., 2 to 5 times.");
+    "Cào nhanh\n"
+    "2-5 lần.");
 
 static const u8 sBonemerangDescription[] = _(
-    "Throws a bone boomerang\n"
-    "that strikes twice.");
+    "Ném xương boomerang\n"
+    "đánh trúng hai lần."
+);
 
 static const u8 sRestDescription[] = _(
-    "The user sleeps for 2 turns,\n"
-    "restoring HP and status.");
+    "Ngủ 2 lượt, hồi đầy\n"
+    "HP và chữa trạng thái."
+);
 
 static const u8 sRockSlideDescription[] = _(
-    "Large boulders are hurled.\n"
-    "May cause flinching.");
+    "Ném đá lớn, có thể\n"
+    "khiến đối thủ chùn bước."
+);
 
 static const u8 sHyperFangDescription[] = _(
-    "Attacks with sharp fangs.\n"
-    "May cause flinching.");
+    "Cắn bằng nanh sắc, có\n"
+    "thể gây chùn bước."
+);
 
 static const u8 sSharpenDescription[] = _(
-    "Reduces the polygon count\n"
-    "and raises ATTACK.");
+    "Gọt cơ thể để tăng\n"
+    "ATTACK."
+);
 
 static const u8 sConversionDescription[] = _(
-    "Changes the user's type\n"
-    "into a known move's type.");
+    "Đổi hệ bản thân theo\n"
+    "hệ một chiêu đã biết."
+);
 
 static const u8 sTriAttackDescription[] = _(
-    "Fires three types of beams\n"
-    "at the same time.");
+    "Bắn ba tia, có thể\n"
+    "gây bỏng, tê hoặc đông."
+);
 
 static const u8 sSuperFangDescription[] = _(
-    "Attacks with sharp fangs\n"
-    "and cuts half the foe's HP.");
+    "Cắn bằng nanh sắc,\n"
+    "giảm nửa HP đối thủ."
+);
 
 static const u8 sSlashDescription[] = _(
-    "Slashes with claws, etc. Has\n"
-    "a high critical-hit ratio.");
+    "Chém bằng vuốt sắc,\n"
+    "dễ gây chí mạng."
+);
 
 static const u8 sSubstituteDescription[] = _(
-    "Creates a decoy using 1/4\n"
-    "of the user's maximum HP.");
+    "Tạo phân thân\n"
+    "bằng 1/4 HP.");
 
 static const u8 sStruggleDescription[] = _(
-    "Used only if all PP are gone.\n"
-    "Also hurts the user a little.");
+    "Chỉ dùng khi hết PP,\n"
+    "bản thân cũng bị đau."
+);
 
 static const u8 sSketchDescription[] = _(
-    "Copies the foe's last move\n"
-    "permanently.");
+    "Chép vĩnh viễn\n"
+    "đòn của đối thủ.");
 
 static const u8 sTripleKickDescription[] = _(
-    "Kicks the foe 3 times in a\n"
-    "row with rising intensity.");
+    "Đá 3 lần, sức\n"
+    "mạnh tăng dần.");
 
 static const u8 sThiefDescription[] = _(
-    "While attacking, it may\n"
-    "steal the foe's held item.");
+    "Tấn công và cướp\n"
+    "vật phẩm đối thủ giữ."
+);
 
 static const u8 sSpiderWebDescription[] = _(
-    "Ensnares the foe to stop it\n"
-    "from fleeing or switching.");
+    "Ngăn đối thủ chạy\n"
+    "hoặc đổi POKéMON.");
 
 static const u8 sMindReaderDescription[] = _(
-    "Senses the foe's action to\n"
-    "ensure the next move's hit.");
+    "Đọc hành động, khiến\n"
+    "chiêu kế tiếp trúng."
+);
 
 static const u8 sNightmareDescription[] = _(
-    "Inflicts 1/4 damage on a\n"
-    "sleeping foe every turn.");
+    "Đối thủ ngủ mất\n"
+    "1/4 HP mỗi lượt.");
 
 static const u8 sFlameWheelDescription[] = _(
-    "A fiery charge attack that\n"
-    "may inflict a burn.");
+    "Lao tới trong lửa,\n"
+    "có thể gây bỏng.");
 
 static const u8 sSnoreDescription[] = _(
-    "A loud attack that can be\n"
-    "used only while asleep.");
+    "Chỉ dùng được\n"
+    "khi đang ngủ.");
 
 static const u8 sCurseDescription[] = _(
-    "A move that functions\n"
-    "differently for GHOSTS.");
+    "Hiệu ứng khác nếu\n"
+    "POKéMON hệ GHOST dùng."
+);
 
 static const u8 sFlailDescription[] = _(
-    "Inflicts more damage when\n"
-    "the user's HP is down.");
+    "Mạnh hơn khi HP\n"
+    "bản thân càng thấp."
+);
 
 static const u8 sConversion2Description[] = _(
-    "Makes the user resistant\n"
-    "to the last attack's type.");
+    "Đổi hệ để kháng\n"
+    "chiêu vừa trúng.");
 
 static const u8 sAeroblastDescription[] = _(
-    "Launches a vacuumed blast.\n"
-    "High critical-hit ratio.");
+    "Bắn luồng chân không,\n"
+    "dễ gây chí mạng."
+);
 
 static const u8 sCottonSporeDescription[] = _(
-    "Spores cling to the foe,\n"
-    "sharply reducing SPEED.");
+    "Giảm mạnh SPEED\n"
+    "của đối thủ.");
 
 static const u8 sReversalDescription[] = _(
-    "Inflicts more damage when\n"
-    "the user's HP is down.");
+    "Mạnh hơn khi HP\n"
+    "bản thân càng thấp."
+);
 
 static const u8 sSpiteDescription[] = _(
-    "Spitefully cuts the PP\n"
-    "of the foe's last move.");
+    "Giảm PP của đòn\n"
+    "đối thủ vừa dùng.");
 
 static const u8 sPowderSnowDescription[] = _(
-    "Blasts the foe with a snowy\n"
-    "gust. May cause freezing.");
+    "Thổi tuyết vào đối thủ,\n"
+    "có thể gây đóng băng.");
 
 static const u8 sProtectDescription[] = _(
-    "Evades attack, but may fail\n"
-    "if used in succession.");
+    "Chặn mọi đòn lượt đó.\n"
+    "Dùng liên tục dễ hỏng."
+);
 
 static const u8 sMachPunchDescription[] = _(
-    "A punch is thrown at wicked\n"
-    "speed to strike first.");
+    "Cú đấm nhanh\n"
+    "luôn đánh trước.");
 
 static const u8 sScaryFaceDescription[] = _(
-    "Frightens with a scary face\n"
-    "to sharply reduce SPEED.");
+    "Giảm mạnh SPEED\n"
+    "của đối thủ.");
 
 static const u8 sFaintAttackDescription[] = _(
-    "Draws the foe close, then\n"
-    "strikes without fail.");
+    "Dụ lại gần rồi đánh,\n"
+    "không bao giờ trượt."
+);
 
 static const u8 sSweetKissDescription[] = _(
-    "Demands a kiss with a cute\n"
-    "look. May cause confusion.");
+    "Hôn bằng vẻ đáng yêu,\n"
+    "có thể gây bối rối."
+);
 
 static const u8 sBellyDrumDescription[] = _(
-    "Maximizes ATTACK while\n"
-    "sacrificing HP.");
+    "Giảm HP để tối\n"
+    "đa hoá ATTACK.");
 
 static const u8 sSludgeBombDescription[] = _(
-    "Sludge is hurled to inflict\n"
-    "damage. May also poison.");
+    "Ném bùn độc, có thể\n"
+    "khiến đối thủ trúng độc.");
 
 static const u8 sMudSlapDescription[] = _(
-    "Hurls mud in the foe's face\n"
-    "to reduce its accuracy.");
+    "Giảm độ chính\n"
+    "xác của đối thủ.");
 
 static const u8 sOctazookaDescription[] = _(
-    "Fires a lump of ink to\n"
-    "damage and cut accuracy.");
+    "Bắn mực, có thể giảm\n"
+    "độ chính xác đối thủ."
+);
 
 static const u8 sSpikesDescription[] = _(
-    "Sets spikes that hurt a \n"
-    "foe switching in.");
+    "Rải gai gây hại POKéMON\n"
+    "đối thủ vừa vào sân."
+);
 
 static const u8 sZapCannonDescription[] = _(
-    "Powerful and sure to cause\n"
-    "paralysis, but inaccurate.");
+    "Luôn gây tê liệt\n"
+    "nhưng rất dễ trượt."
+);
 
 static const u8 sForesightDescription[] = _(
-    "Negates the foe's efforts\n"
-    "to heighten evasiveness.");
+    "Bỏ qua né tránh và\n"
+    "giúp đánh trúng GHOST."
+);
 
 static const u8 sDestinyBondDescription[] = _(
-    "If the user faints, the foe\n"
-    "is also made to faint.");
+    "Nếu bản thân bất tỉnh,\n"
+    "đối thủ cũng bất tỉnh."
+);
 
 static const u8 sPerishSongDescription[] = _(
-    "Any POKéMON hearing this\n"
-    "song faints in 3 turns.");
+    "Mọi POKéMON nghe thấy\n"
+    "bất tỉnh sau 3 lượt.");
 
 static const u8 sIcyWindDescription[] = _(
-    "A chilling attack that\n"
-    "lowers the foe's SPEED.");
+    "Gió lạnh gây hại và\n"
+    "giảm SPEED đối thủ."
+);
 
 static const u8 sDetectDescription[] = _(
-    "Evades attack, but may fail\n"
-    "if used in succession.");
+    "Chặn mọi đòn lượt đó.\n"
+    "Dùng liên tục dễ hỏng."
+);
 
 static const u8 sBoneRushDescription[] = _(
-    "Strikes the foe with a bone\n"
-    "in hand 2 to 5 times.");
+    "Đánh bằng khúc xương\n"
+    "liên tiếp 2-5 lần."
+);
 
 static const u8 sLockOnDescription[] = _(
-    "Locks on to the foe to\n"
-    "ensure the next move hits.");
+    "Đảm bảo đòn kế\n"
+    "tiếp trúng.");
 
 static const u8 sOutrageDescription[] = _(
-    "A rampage of 2 to 3 turns\n"
-    "that confuses the user.");
+    "Tấn công 2-3 lượt,\n"
+    "sau đó tự bối rối.");
 
 static const u8 sSandstormDescription[] = _(
-    "Causes a sandstorm that\n"
-    "rages for several turns.");
+    "Gọi bão cát gây hại\n"
+    "trong nhiều lượt."
+);
 
 static const u8 sGigaDrainDescription[] = _(
-    "An attack that steals half\n"
-    "the damage inflicted.");
+    "Hút 1/2 sát\n"
+    "thương gây ra.");
 
 static const u8 sEndureDescription[] = _(
-    "Endures any attack for\n"
-    "1 turn, leaving at least 1HP.");
+    "Chịu mọi đòn trong lượt,\n"
+    "luôn còn ít nhất 1 HP.");
 
 static const u8 sCharmDescription[] = _(
-    "Charms the foe and sharply\n"
-    "reduces its ATTACK.");
+    "Giảm mạnh ATTACK\n"
+    "của đối thủ.");
 
 static const u8 sRolloutDescription[] = _(
-    "An attack lasting 5 turns\n"
-    "with rising intensity.");
+    "Đánh 5 lượt, sức\n"
+    "mạnh tăng dần.");
 
 static const u8 sFalseSwipeDescription[] = _(
-    "An attack that leaves the\n"
-    "foe with at least 1 HP.");
+    "Luôn để đối thủ còn\n"
+    "ít nhất 1 HP.");
 
 static const u8 sSwaggerDescription[] = _(
-    "Confuses the foe, but also\n"
-    "sharply raises ATTACK.");
+    "Làm đối thủ bối rối\n"
+    "nhưng tăng mạnh ATTACK.");
 
 static const u8 sMilkDrinkDescription[] = _(
-    "Recovers up to half the\n"
-    "user's maximum HP.");
+    "Hồi 1/2 HP\n"
+    "tối đa.");
 
 static const u8 sSparkDescription[] = _(
-    "An electrified tackle that\n"
-    "may paralyze the foe.");
+    "Lao tới trong điện,\n"
+    "có thể gây tê liệt."
+);
 
 static const u8 sFuryCutterDescription[] = _(
-    "An attack that intensifies\n"
-    "on each successive hit.");
+    "Đòn liên tiếp\n"
+    "tăng sức mạnh.");
 
 static const u8 sSteelWingDescription[] = _(
-    "Strikes the foe with hard\n"
-    "wings spread wide.");
+    "Cánh cứng đập\n"
+    "vào đối thủ.");
 
 static const u8 sMeanLookDescription[] = _(
-    "Fixes the foe with a mean\n"
-    "look that prevents escape.");
+    "Ngăn đối thủ chạy\n"
+    "hoặc đổi POKéMON.");
 
 static const u8 sAttractDescription[] = _(
-    "Makes the opposite gender\n"
-    "less likely to attack.");
+    "Làm đối thủ khác\n"
+    "giới si mê.");
 
 static const u8 sSleepTalkDescription[] = _(
-    "Uses an available move\n"
-    "randomly while asleep.");
+    "Dùng đòn ngẫu\n"
+    "nhiên khi ngủ.");
 
 static const u8 sHealBellDescription[] = _(
-    "Chimes soothingly to heal\n"
-    "all status abnormalities.");
+    "Chữa mọi trạng\n"
+    "thái bất lợi.");
 
 static const u8 sReturnDescription[] = _(
-    "An attack that increases\n"
-    "in power with friendship.");
+    "Mạnh hơn khi độ\n"
+    "thân thiết cao.");
 
 static const u8 sPresentDescription[] = _(
-    "A gift in the form of a\n"
-    "bomb. May restore HP.");
+    "Quà phát nổ, đôi khi\n"
+    "lại hồi HP mục tiêu."
+);
 
 static const u8 sFrustrationDescription[] = _(
-    "An attack that is stronger\n"
-    "if the TRAINER is disliked.");
+    "Mạnh hơn khi độ\n"
+    "thân thiết thấp.");
 
 static const u8 sSafeguardDescription[] = _(
-    "A mystical force prevents\n"
-    "all status problems.");
+    "Bảo vệ cả đội khỏi\n"
+    "trạng thái trong 5 lượt."
+);
 
 static const u8 sPainSplitDescription[] = _(
-    "Adds the user and foe's HP,\n"
-    "then shares them equally.");
+    "Cộng HP 2 bên\n"
+    "rồi chia đều.");
 
 static const u8 sSacredFireDescription[] = _(
-    "A mystical fire attack that\n"
-    "may inflict a burn.");
+    "Lửa thần bí có thể\n"
+    "khiến đối thủ bị bỏng.");
 
 static const u8 sMagnitudeDescription[] = _(
-    "A ground-shaking attack\n"
-    "of random intensity.");
+    "Đòn GROUND có\n"
+    "sức mạnh ngẫu nhiên.");
 
 static const u8 sDynamicPunchDescription[] = _(
-    "Powerful and sure to cause\n"
-    "confusion, but inaccurate.");
+    "Luôn gây bối rối\n"
+    "nhưng rất dễ trượt."
+);
 
 static const u8 sMegahornDescription[] = _(
-    "A brutal ramming attack\n"
-    "using out-thrust horns.");
+    "Đòn húc sừng\n"
+    "cực mạnh.");
 
 static const u8 sDragonBreathDescription[] = _(
-    "Strikes the foe with an\n"
-    "incredible blast of breath.");
+    "Phun hơi thở rồng,\n"
+    "có thể gây tê liệt."
+);
 
 static const u8 sBatonPassDescription[] = _(
-    "Switches out the user while\n"
-    "keeping effects in play.");
+    "Đổi POKéMON giữ\n"
+    "nguyên hiệu ứng.");
 
 static const u8 sEncoreDescription[] = _(
-    "Makes the foe repeat its\n"
-    "last move over 2 to 6 turns.");
+    "Buộc đối thủ lặp\n"
+    "lại đòn 2-6 lần.");
 
 static const u8 sPursuitDescription[] = _(
-    "Inflicts bad damage if used\n"
-    "on a foe switching out.");
+    "Đánh mạnh POKéMON\n"
+    "đang đổi ra.");
 
 static const u8 sRapidSpinDescription[] = _(
-    "Spins the body at high\n"
-    "speed to strike the foe.");
+    "Xoay cơ thể tốc độ\n"
+    "cao để tấn công."
+);
 
 static const u8 sSweetScentDescription[] = _(
-    "Allures the foe to reduce\n"
-    "evasiveness.");
+    "Giảm khả năng\n"
+    "né của đối thủ.");
 
 static const u8 sIronTailDescription[] = _(
-    "Attacks with a rock-hard\n"
-    "tail. May lower DEFENSE.");
+    "Quật bằng đuôi cứng,\n"
+    "có thể giảm DEFENSE."
+);
 
 static const u8 sMetalClawDescription[] = _(
-    "A claw attack that may\n"
-    "raise the user's ATTACK.");
+    "Chém bằng vuốt thép,\n"
+    "có thể tăng ATTACK.");
 
 static const u8 sVitalThrowDescription[] = _(
-    "Makes the user's move last,\n"
-    "but it never misses.");
+    "Đánh sau nhưng\n"
+    "không trượt.");
 
 static const u8 sMorningSunDescription[] = _(
-    "Restores HP. The amount\n"
-    "varies with the weather.");
+    "Hồi HP, lượng hồi\n"
+    "thay đổi theo thời tiết.");
 
 static const u8 sSynthesisDescription[] = _(
-    "Restores HP. The amount\n"
-    "varies with the weather.");
+    "Hồi HP, lượng hồi\n"
+    "thay đổi theo thời tiết.");
 
 static const u8 sMoonlightDescription[] = _(
-    "Restores HP. The amount\n"
-    "varies with the weather.");
+    "Hồi HP, lượng hồi\n"
+    "thay đổi theo thời tiết.");
 
 static const u8 sHiddenPowerDescription[] = _(
-    "The effectiveness varies\n"
-    "with the user.");
+    "Hệ và sức mạnh tùy\n"
+    "theo POKéMON dùng chiêu."
+);
 
 static const u8 sCrossChopDescription[] = _(
-    "A double-chopping attack.\n"
-    "High critical-hit ratio.");
+    "Chém chéo bằng hai tay,\n"
+    "dễ gây chí mạng."
+);
 
 static const u8 sTwisterDescription[] = _(
-    "Whips up a vicious twister\n"
-    "to tear at the foe.");
+    "Tạo lốc xoáy\n"
+    "để tấn công.");
 
 static const u8 sRainDanceDescription[] = _(
-    "Boosts the power of WATER-\n"
-    "type moves for 5 turns.");
+    "Tăng sức mạnh chiêu\n"
+    "WATER trong 5 lượt.");
 
 static const u8 sSunnyDayDescription[] = _(
-    "Boosts the power of FIRE-\n"
-    "type moves for 5 turns.");
+    "Tăng sức mạnh chiêu\n"
+    "FIRE trong 5 lượt.");
 
 static const u8 sCrunchDescription[] = _(
-    "Crunches with sharp fangs.\n"
-    "May lower SP. DEF.");
+    "Cắn bằng nanh sắc,\n"
+    "có thể giảm SP. DEF.");
 
 static const u8 sMirrorCoatDescription[] = _(
-    "Counters the foe's special\n"
-    "attack at double the power.");
+    "Phản đòn đặc biệt\n"
+    "gấp đôi.");
 
 static const u8 sPsychUpDescription[] = _(
-    "Copies the foe's effect(s)\n"
-    "and gives to the user.");
+    "Sao chép thay đổi\n"
+    "chỉ số của đối thủ.");
 
 static const u8 sExtremeSpeedDescription[] = _(
-    "An extremely fast and\n"
-    "powerful attack.");
+    "Đòn mạnh luôn\n"
+    "đánh trước.");
 
 static const u8 sAncientPowerDescription[] = _(
-    "An attack that may raise\n"
-    "all stats.");
+    "Có thể tăng mọi\n"
+    "chỉ số.");
 
 static const u8 sShadowBallDescription[] = _(
-    "Hurls a black blob that may\n"
-    "lower the foe's SP. DEF.");
+    "Ném khối bóng tối,\n"
+    "có thể giảm SP. DEF.");
 
 static const u8 sFutureSightDescription[] = _(
-    "Heightens inner power to\n"
-    "strike 2 turns later.");
+    "Tích tụ sức mạnh,\n"
+    "tấn công sau 2 lượt.");
 
 static const u8 sRockSmashDescription[] = _(
-    "A rock-crushing attack\n"
-    "that may lower DEFENSE.");
+    "Nghiền đá tấn công,\n"
+    "có thể giảm DEFENSE."
+);
 
 static const u8 sWhirlpoolDescription[] = _(
-    "Traps and hurts the foe in\n"
-    "a whirlpool for 2 to 5 turns.");
+    "Nhốt trong xoáy nước,\n"
+    "gây hại 2-5 lượt."
+);
 
 static const u8 sBeatUpDescription[] = _(
-    "Summons party POKéMON to\n"
-    "join in the attack.");
+    "Cả đội lần lượt\n"
+    "cùng tấn công."
+);
 
 static const u8 sFakeOutDescription[] = _(
-    "A 1st-turn, 1st-strike move\n"
-    "that causes flinching.");
+    "Chỉ dùng lượt đầu.\n"
+    "Ra trước, gây chùn bước.");
 
 static const u8 sUproarDescription[] = _(
-    "Causes an uproar for 2 to 5\n"
-    "turns and prevents sleep.");
+    "Gây náo động 2-5 lượt,\n"
+    "ngăn mọi POKéMON ngủ.");
 
 static const u8 sStockpileDescription[] = _(
-    "Charges up power for up to\n"
-    "3 turns.");
+    "Tích trữ sức mạnh,\n"
+    "tối đa 3 lần.");
 
 static const u8 sSpitUpDescription[] = _(
-    "Releases stockpiled power\n"
-    "(the more the better).");
+    "Xả sức đã tích trữ.\n"
+    "Tích càng nhiều càng mạnh.");
 
 static const u8 sSwallowDescription[] = _(
-    "Absorbs stockpiled power\n"
-    "and restores HP.");
+    "Dùng sức đã tích trữ\n"
+    "để hồi HP.");
 
 static const u8 sHeatWaveDescription[] = _(
-    "Exhales a hot breath on the\n"
-    "foe. May inflict a burn.");
+    "Thổi luồng hơi nóng,\n"
+    "có thể gây bỏng.");
 
 static const u8 sHailDescription[] = _(
-    "Summons a hailstorm that\n"
-    "strikes every turn.");
+    "Gọi mưa đá gây hại\n"
+    "mỗi lượt.");
 
 static const u8 sTormentDescription[] = _(
-    "Torments the foe and stops\n"
-    "successive use of a move.");
+    "Không cho đối thủ dùng\n"
+    "một chiêu liên tiếp.");
 
 static const u8 sFlatterDescription[] = _(
-    "Confuses the foe, but\n"
-    "raises its SP. ATK.");
+    "Tăng SP. ATK nhưng\n"
+    "làm đối thủ bối rối.");
 
 static const u8 sWillOWispDescription[] = _(
-    "Inflicts a burn on the foe\n"
-    "with intense fire.");
+    "Tạo lửa ma trơi\n"
+    "khiến đối thủ bị bỏng.");
 
 static const u8 sMementoDescription[] = _(
-    "The user faints and lowers\n"
-    "the foe's abilities.");
+    "Bản thân bất tỉnh, giảm\n"
+    "ATTACK và SP. ATK địch."
+);
 
 static const u8 sFacadeDescription[] = _(
-    "Boosts ATTACK when burned,\n"
-    "paralyzed, or poisoned.");
+    "Mạnh hơn khi bản thân\n"
+    "bỏng, độc hoặc tê liệt."
+);
 
 static const u8 sFocusPunchDescription[] = _(
-    "A powerful loyalty attack.\n"
-    "The user flinches if hit.");
+    "Đòn cực mạnh nhưng hỏng\n"
+    "nếu bị đánh trước.");
 
 static const u8 sSmellingSaltDescription[] = _(
-    "Powerful against paralyzed\n"
-    "foes, but also heals them.");
+    "Mạnh hơn nếu mục tiêu\n"
+    "tê liệt, rồi chữa khỏi."
+);
 
 static const u8 sFollowMeDescription[] = _(
-    "Draws attention to make\n"
-    "foes attack only the user.");
+    "Thu hút mọi đối thủ\n"
+    "chỉ đánh vào bản thân."
+);
 
 static const u8 sNaturePowerDescription[] = _(
-    "The type of attack varies\n"
-    "depending on the location.");
+    "Biến thành chiêu khác\n"
+    "tùy theo địa hình.");
 
 static const u8 sChargeDescription[] = _(
-    "Charges power to boost the\n"
-    "electric move used next.");
+    "Tích điện, tăng sức mạnh\n"
+    "chiêu ELECTRIC kế tiếp.");
 
 static const u8 sTauntDescription[] = _(
-    "Taunts the foe into only\n"
-    "using attack moves.");
+    "Khiêu khích, buộc đối thủ\n"
+    "chỉ dùng chiêu tấn công.");
 
 static const u8 sHelpingHandDescription[] = _(
-    "Boosts the power of the\n"
-    "recipient's moves.");
+    "Hỗ trợ, tăng sức mạnh\n"
+    "chiêu của đồng đội.");
 
 static const u8 sTrickDescription[] = _(
-    "Tricks the foe into trading\n"
-    "held items.");
+    "Đổi vật phẩm đang giữ\n"
+    "với đối thủ.");
 
 static const u8 sRolePlayDescription[] = _(
-    "Mimics the target and\n"
-    "copies its special ability.");
+    "Sao chép Ability\n"
+    "của mục tiêu.");
 
 static const u8 sWishDescription[] = _(
-    "A wish that restores HP.\n"
-    "It takes time to work.");
+    "Ước nguyện hồi HP\n"
+    "ở cuối lượt kế tiếp.");
 
 static const u8 sAssistDescription[] = _(
-    "Attacks randomly with one\n"
-    "of the partner's moves.");
+    "Dùng ngẫu nhiên một chiêu\n"
+    "của đồng đội.");
 
 static const u8 sIngrainDescription[] = _(
-    "Lays roots that restore HP.\n"
-    "The user can't switch out.");
+    "Cắm rễ hồi HP mỗi lượt,\n"
+    "nhưng không thể đổi ra.");
 
 static const u8 sSuperpowerDescription[] = _(
-    "Boosts strength sharply,\n"
-    "but lowers abilities.");
+    "Đòn cực mạnh nhưng giảm\n"
+    "ATTACK và DEFENSE.");
 
 static const u8 sMagicCoatDescription[] = _(
-    "Reflects special effects\n"
-    "back to the attacker.");
+    "Phản lại các hiệu ứng\n"
+    "trạng thái về đối thủ.");
 
 static const u8 sRecycleDescription[] = _(
-    "Recycles a used item for\n"
-    "one more use.");
+    "Tái sử dụng vật phẩm\n"
+    "đã tiêu hao.");
 
 static const u8 sRevengeDescription[] = _(
-    "An attack that gains power\n"
-    "if injured by the foe.");
+    "Mạnh gấp đôi nếu bị\n"
+    "đối thủ đánh trước.");
 
 static const u8 sBrickBreakDescription[] = _(
-    "Destroys barriers such as\n"
-    "REFLECT and causes damage.");
+    "Phá REFLECT, LIGHT SCREEN\n"
+    "rồi gây sát thương.");
 
 static const u8 sYawnDescription[] = _(
-    "Lulls the foe into yawning,\n"
-    "then sleeping next turn.");
+    "Khiến đối thủ buồn ngủ\n"
+    "và ngủ ở lượt kế.");
 
 static const u8 sKnockOffDescription[] = _(
-    "Knocks down the foe's held\n"
-    "item to prevent its use.");
+    "Đánh rơi vật phẩm\n"
+    "đối thủ đang giữ.");
 
 static const u8 sEndeavorDescription[] = _(
-    "Gains power if the user's HP\n"
-    "is lower than the foe's HP.");
+    "Hạ HP mục tiêu bằng\n"
+    "HP hiện tại bản thân."
+);
 
 static const u8 sEruptionDescription[] = _(
-    "The higher the user's HP,\n"
-    "the more damage caused.");
+    "HP càng cao thì đòn\n"
+    "càng mạnh.");
 
 static const u8 sSkillSwapDescription[] = _(
-    "The user swaps special\n"
-    "abilities with the target.");
+    "Hoán đổi Ability\n"
+    "với mục tiêu.");
 
 static const u8 sImprisonDescription[] = _(
-    "Prevents foes from using\n"
-    "moves known by the user.");
+    "Cấm đối thủ dùng chiêu\n"
+    "bản thân cũng biết."
+);
 
 static const u8 sRefreshDescription[] = _(
-    "Heals poisoning, paralysis,\n"
-    "or a burn.");
+    "Chữa độc, tê liệt\n"
+    "hoặc bỏng.");
 
 static const u8 sGrudgeDescription[] = _(
-    "If the user faints, deletes\n"
-    "all PP of foe's last move.");
+    "Nếu bất tỉnh, xóa hết PP\n"
+    "chiêu cuối của đối thủ.");
 
 static const u8 sSnatchDescription[] = _(
-    "Steals the effects of the\n"
-    "move the target uses next.");
+    "Cướp hiệu ứng chiêu\n"
+    "đối thủ sắp dùng.");
 
 static const u8 sSecretPowerDescription[] = _(
-    "An attack with effects\n"
-    "that vary by location.");
+    "Hiệu ứng thay đổi\n"
+    "tùy theo địa hình.");
 
 static const u8 sDiveDescription[] = _(
-    "Dives underwater the first\n"
-    "turn and strikes next turn.");
+    "Lặn ở lượt đầu,\n"
+    "tấn công ở lượt sau.");
 
 static const u8 sArmThrustDescription[] = _(
-    "Straight-arm punches that\n"
-    "strike the foe 2 to 5 times.");
+    "Đấm thẳng liên tiếp\n"
+    "2-5 lần.");
 
 static const u8 sCamouflageDescription[] = _(
-    "Alters the POKéMON's type\n"
-    "depending on the location.");
+    "Đổi hệ bản thân\n"
+    "tùy theo địa hình."
+);
 
 static const u8 sTailGlowDescription[] = _(
-    "Flashes a light that sharply\n"
-    "raises SP. ATK.");
+    "Phát sáng, tăng mạnh\n"
+    "SP. ATK.");
 
 static const u8 sLusterPurgeDescription[] = _(
-    "Attacks with a burst of\n"
-    "light. May lower SP. DEF.");
+    "Bùng ánh sáng, có thể\n"
+    "giảm SP. DEF đối thủ.");
 
 static const u8 sMistBallDescription[] = _(
-    "Attacks with a flurry of\n"
-    "down. May lower SP. ATK.");
+    "Tấn công bằng lông tơ,\n"
+    "có thể giảm SP. ATK.");
 
 static const u8 sFeatherDanceDescription[] = _(
-    "Envelops the foe with down\n"
-    "to sharply reduce ATTACK.");
+    "Phủ lông tơ, giảm mạnh\n"
+    "ATTACK đối thủ.");
 
 static const u8 sTeeterDanceDescription[] = _(
-    "Confuses all POKéMON on\n"
-    "the scene.");
+    "Điệu nhảy làm mọi\n"
+    "POKéMON khác bối rối.");
 
 static const u8 sBlazeKickDescription[] = _(
-    "A kick with a high critical-\n"
-    "hit ratio. May cause a burn.");
+    "Cú đá dễ chí mạng,\n"
+    "có thể gây bỏng.");
 
 static const u8 sMudSportDescription[] = _(
-    "Covers the user in mud to\n"
-    "raise electrical resistance.");
+    "Phủ bùn để làm yếu\n"
+    "các chiêu ELECTRIC.");
 
 static const u8 sIceBallDescription[] = _(
-    "A 5-turn attack that gains\n"
-    "power on successive hits.");
+    "Đánh 5 lượt liên tiếp,\n"
+    "mỗi lượt càng mạnh.");
 
 static const u8 sNeedleArmDescription[] = _(
-    "Attacks with thorny arms.\n"
-    "May cause flinching.");
+    "Đánh bằng tay có gai,\n"
+    "có thể gây chùn bước.");
 
 static const u8 sSlackOffDescription[] = _(
-    "Slacks off and restores\n"
-    "half the maximum HP.");
+    "Nghỉ ngơi để hồi\n"
+    "một nửa HP tối đa.");
 
 static const u8 sHyperVoiceDescription[] = _(
-    "A loud attack that uses\n"
-    "sound waves to injure.");
+    "Tấn công bằng sóng âm\n"
+    "cực lớn.");
 
 static const u8 sPoisonFangDescription[] = _(
-    "A sharp-fanged attack.\n"
-    "May badly poison the foe.");
+    "Cắn bằng nanh độc,\n"
+    "có thể gây độc nặng.");
 
 static const u8 sCrushClawDescription[] = _(
-    "Tears at the foe with sharp\n"
-    "claws. May lower DEFENSE.");
+    "Xé bằng vuốt sắc,\n"
+    "có thể giảm DEFENSE.");
 
 static const u8 sBlastBurnDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Rất mạnh nhưng phải nghỉ\n"
+    "ở lượt kế tiếp.");
 
 static const u8 sHydroCannonDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Rất mạnh nhưng phải nghỉ\n"
+    "ở lượt kế tiếp.");
 
 static const u8 sMeteorMashDescription[] = _(
-    "Fires a meteor-like punch.\n"
-    "May raise ATTACK.");
+    "Cú đấm như thiên thạch,\n"
+    "có thể tăng ATTACK.");
 
 static const u8 sAstonishDescription[] = _(
-    "An attack that may shock\n"
-    "the foe into flinching.");
+    "Làm đối thủ giật mình,\n"
+    "có thể gây chùn bước.");
 
 static const u8 sWeatherBallDescription[] = _(
-    "The move's type and power\n"
-    "change with the weather.");
+    "Hệ và sức mạnh thay đổi\n"
+    "theo thời tiết.");
 
 static const u8 sAromatherapyDescription[] = _(
-    "Heals all status problems\n"
-    "with a soothing scent.");
+    "Hương thơm chữa mọi\n"
+    "trạng thái cho cả đội.");
 
 static const u8 sFakeTearsDescription[] = _(
-    "Feigns crying to sharply\n"
-    "lower the foe's SP. DEF.");
+    "Giả khóc để giảm mạnh\n"
+    "SP. DEF đối thủ.");
 
 static const u8 sAirCutterDescription[] = _(
-    "Hacks with razorlike wind.\n"
-    "High critical-hit ratio.");
+    "Chém bằng gió sắc,\n"
+    "dễ gây chí mạng.");
 
 static const u8 sOverheatDescription[] = _(
-    "Allows a full-power attack,\n"
-    "but sharply lowers SP. ATK.");
+    "Đòn cực mạnh nhưng giảm\n"
+    "mạnh SP. ATK.");
 
 static const u8 sOdorSleuthDescription[] = _(
-    "Negates the foe's efforts\n"
-    "to heighten evasiveness.");
+    "Vô hiệu thay đổi\n"
+    "né tránh của đối thủ.");
 
 static const u8 sRockTombDescription[] = _(
-    "Stops the foe from moving\n"
-    "with rocks and cuts SPEED.");
+    "Vùi bằng đá và\n"
+    "giảm SPEED đối thủ.");
 
 static const u8 sSilverWindDescription[] = _(
-    "A powdery attack that may\n"
-    "raise abilities.");
+    "Gió phấn có thể tăng\n"
+    "tất cả chỉ số.");
 
 static const u8 sMetalSoundDescription[] = _(
-    "Emits a horrible screech\n"
-    "that sharply lowers SP. DEF.");
+    "Âm kim loại chói tai,\n"
+    "giảm mạnh SP. DEF.");
 
 static const u8 sGrassWhistleDescription[] = _(
-    "Lulls the foe into sleep\n"
-    "with a pleasant melody.");
+    "Giai điệu êm dịu\n"
+    "khiến đối thủ ngủ.");
 
 static const u8 sTickleDescription[] = _(
-    "Makes the foe laugh to\n"
-    "lower ATTACK and DEFENSE.");
+    "Cù làm giảm ATTACK\n"
+    "và DEFENSE đối thủ.");
 
 static const u8 sCosmicPowerDescription[] = _(
-    "Raises DEFENSE and SP. DEF\n"
-    "with a mystic power.");
+    "Sức mạnh vũ trụ tăng\n"
+    "DEFENSE và SP. DEF.");
 
 static const u8 sWaterSpoutDescription[] = _(
-    "Inflicts more damage if the\n"
-    "user's HP is high.");
+    "HP càng cao thì đòn\n"
+    "càng mạnh.");
 
 static const u8 sSignalBeamDescription[] = _(
-    "A strange beam attack that\n"
-    "may confuse the foe.");
+    "Bắn tia sáng lạ,\n"
+    "có thể gây bối rối.");
 
 static const u8 sShadowPunchDescription[] = _(
-    "An unavoidable punch that\n"
-    "is thrown from shadows.");
+    "Cú đấm từ bóng tối,\n"
+    "không bao giờ trượt.");
 
 static const u8 sExtrasensoryDescription[] = _(
-    "Attacks with a peculiar\n"
-    "power. May cause flinching.");
+    "Sức mạnh kỳ lạ có thể\n"
+    "khiến đối thủ chùn bước.");
 
 static const u8 sSkyUppercutDescription[] = _(
-    "An uppercut thrown as if\n"
-    "leaping into the sky.");
+    "Cú đấm móc vươn\n"
+    "thẳng lên trời.");
 
 static const u8 sSandTombDescription[] = _(
-    "Traps and hurts the foe in\n"
-    "quicksand for 2 to 5 turns.");
+    "Nhốt trong cát lún,\n"
+    "gây hại 2-5 lượt.");
 
 static const u8 sSheerColdDescription[] = _(
-    "A chilling attack that\n"
-    "causes fainting if it hits.");
+    "Luồng lạnh khủng khiếp,\n"
+    "trúng là bất tỉnh.");
 
 static const u8 sMuddyWaterDescription[] = _(
-    "Attacks with muddy water.\n"
-    "May lower accuracy.");
+    "Dội nước bùn, có thể\n"
+    "giảm độ chính xác.");
 
 static const u8 sBulletSeedDescription[] = _(
-    "Shoots 2 to 5 seeds in a row\n"
-    "to strike the foe.");
+    "Bắn hạt liên tiếp\n"
+    "2-5 lần.");
 
 static const u8 sAerialAceDescription[] = _(
-    "An extremely speedy and\n"
-    "unavoidable attack.");
+    "Tấn công cực nhanh,\n"
+    "không bao giờ trượt.");
 
 static const u8 sIcicleSpearDescription[] = _(
-    "Attacks the foe by firing\n"
-    "2 to 5 icicles in a row.");
+    "Bắn cột băng liên tiếp\n"
+    "2-5 lần.");
 
 static const u8 sIronDefenseDescription[] = _(
-    "Hardens the body's surface\n"
-    "to sharply raise DEFENSE.");
+    "Làm cứng cơ thể,\n"
+    "tăng mạnh DEFENSE.");
 
 static const u8 sBlockDescription[] = _(
-    "Blocks the foe's way to\n"
-    "prevent escape.");
+    "Chặn đường khiến\n"
+    "đối thủ không thể thoát.");
 
 static const u8 sHowlDescription[] = _(
-    "Howls to raise the spirit\n"
-    "and boosts ATTACK.");
+    "Hú vang để tăng\n"
+    "ATTACK.");
 
 static const u8 sDragonClawDescription[] = _(
-    "Slashes the foe with sharp\n"
-    "claws.");
+    "Chém đối thủ bằng\n"
+    "vuốt sắc.");
 
 static const u8 sFrenzyPlantDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Rất mạnh nhưng phải nghỉ\n"
+    "ở lượt kế tiếp.");
 
 static const u8 sBulkUpDescription[] = _(
-    "Bulks up the body to boost\n"
-    "both ATTACK and DEFENSE.");
+    "Căng cơ để tăng\n"
+    "ATTACK và DEFENSE.");
 
 static const u8 sBounceDescription[] = _(
-    "Bounces up, then down the\n"
-    "next turn. May paralyze.");
+    "Bật lên, đáp ở lượt kế,\n"
+    "có thể gây tê liệt.");
 
 static const u8 sMudShotDescription[] = _(
-    "Hurls mud at the foe and\n"
-    "reduces SPEED.");
+    "Ném bùn và giảm\n"
+    "SPEED đối thủ.");
 
 static const u8 sPoisonTailDescription[] = _(
-    "Has a high critical-hit\n"
-    "ratio. May also poison.");
+    "Dễ gây chí mạng,\n"
+    "có thể gây trúng độc.");
 
 static const u8 sCovetDescription[] = _(
-    "Cutely begs to obtain an\n"
-    "item held by the foe.");
+    "Nài nỉ đáng yêu để\n"
+    "lấy vật phẩm đối thủ giữ.");
 
 static const u8 sVoltTackleDescription[] = _(
-    "A life-risking tackle that\n"
-    "slightly hurts the user.");
+    "Lao điện cực mạnh,\n"
+    "bản thân cũng bị thương."
+);
 
 static const u8 sMagicalLeafDescription[] = _(
-    "Attacks with a strange leaf\n"
-    "that cannot be evaded.");
+    "Lá phép thuật\n"
+    "không bao giờ trượt.");
 
 static const u8 sWaterSportDescription[] = _(
-    "The user becomes soaked to\n"
-    "raise resistance to fire.");
+    "Làm ướt cơ thể để\n"
+    "giảm sức mạnh chiêu FIRE.");
 
 static const u8 sCalmMindDescription[] = _(
-    "Raises SP. ATK and SP. DEF\n"
-    "by focusing the mind.");
+    "Tập trung tâm trí,\n"
+    "tăng SP. ATK và SP. DEF.");
 
 static const u8 sLeafBladeDescription[] = _(
-    "Slashes with a sharp leaf.\n"
-    "High critical-hit ratio.");
+    "Chém bằng lá sắc,\n"
+    "dễ gây chí mạng.");
 
 static const u8 sDragonDanceDescription[] = _(
-    "A mystical dance that ups\n"
-    "ATTACK and SPEED.");
+    "Điệu múa huyền bí\n"
+    "tăng ATTACK và SPEED.");
 
 static const u8 sRockBlastDescription[] = _(
-    "Hurls boulders at the foe\n"
-    "2 to 5 times in a row.");
+    "Ném đá liên tiếp\n"
+    "2-5 lần.");
 
 static const u8 sShockWaveDescription[] = _(
-    "A fast and unavoidable\n"
-    "electric attack.");
+    "Phóng điện cực nhanh,\n"
+    "không bao giờ trượt.");
 
 static const u8 sWaterPulseDescription[] = _(
-    "Attacks with ultrasonic\n"
-    "waves. May confuse the foe.");
+    "Tấn công bằng sóng nước,\n"
+    "có thể gây bối rối.");
 
 static const u8 sDoomDesireDescription[] = _(
-    "Summons strong sunlight to\n"
-    "attack 2 turns later.");
+    "Gọi luồng sáng mạnh\n"
+    "tấn công sau 2 lượt.");
 
 static const u8 sPsychoBoostDescription[] = _(
-    "Allows a full-power attack,\n"
-    "but sharply lowers SP. ATK.");
+    "Đòn cực mạnh nhưng giảm\n"
+    "mạnh SP. ATK.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -1775,3 +1881,361 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
 };
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C02030 = sPoundDescription;
+const u8 *const gLocalizationSource_C02031 = sKarateChopDescription;
+const u8 *const gLocalizationSource_C02032 = sDoubleSlapDescription;
+const u8 *const gLocalizationSource_C02033 = sCometPunchDescription;
+const u8 *const gLocalizationSource_C02034 = sMegaPunchDescription;
+const u8 *const gLocalizationSource_C02035 = sPayDayDescription;
+const u8 *const gLocalizationSource_C02036 = sFirePunchDescription;
+const u8 *const gLocalizationSource_C02037 = sIcePunchDescription;
+const u8 *const gLocalizationSource_C02038 = sThunderPunchDescription;
+const u8 *const gLocalizationSource_C02039 = sScratchDescription;
+const u8 *const gLocalizationSource_C02040 = sViceGripDescription;
+const u8 *const gLocalizationSource_C02041 = sGuillotineDescription;
+const u8 *const gLocalizationSource_C02042 = sRazorWindDescription;
+const u8 *const gLocalizationSource_C02043 = sSwordsDanceDescription;
+const u8 *const gLocalizationSource_C02044 = sCutDescription;
+const u8 *const gLocalizationSource_C02045 = sGustDescription;
+const u8 *const gLocalizationSource_C02046 = sWingAttackDescription;
+const u8 *const gLocalizationSource_C02047 = sWhirlwindDescription;
+const u8 *const gLocalizationSource_C02048 = sFlyDescription;
+const u8 *const gLocalizationSource_C02049 = sBindDescription;
+const u8 *const gLocalizationSource_C02050 = sSlamDescription;
+const u8 *const gLocalizationSource_C02051 = sVineWhipDescription;
+const u8 *const gLocalizationSource_C02052 = sStompDescription;
+const u8 *const gLocalizationSource_C02053 = sDoubleKickDescription;
+const u8 *const gLocalizationSource_C02054 = sMegaKickDescription;
+const u8 *const gLocalizationSource_C02055 = sJumpKickDescription;
+const u8 *const gLocalizationSource_C02056 = sRollingKickDescription;
+const u8 *const gLocalizationSource_C02057 = sSandAttackDescription;
+const u8 *const gLocalizationSource_C02058 = sHeadbuttDescription;
+const u8 *const gLocalizationSource_C02059 = sHornAttackDescription;
+const u8 *const gLocalizationSource_C02060 = sFuryAttackDescription;
+const u8 *const gLocalizationSource_C02061 = sHornDrillDescription;
+const u8 *const gLocalizationSource_C02062 = sTackleDescription;
+const u8 *const gLocalizationSource_C02063 = sBodySlamDescription;
+const u8 *const gLocalizationSource_C02064 = sWrapDescription;
+const u8 *const gLocalizationSource_C02065 = sTakeDownDescription;
+const u8 *const gLocalizationSource_C02066 = sThrashDescription;
+const u8 *const gLocalizationSource_C02067 = sDoubleEdgeDescription;
+const u8 *const gLocalizationSource_C02068 = sTailWhipDescription;
+const u8 *const gLocalizationSource_C02069 = sPoisonStingDescription;
+const u8 *const gLocalizationSource_C02070 = sTwineedleDescription;
+const u8 *const gLocalizationSource_C02071 = sPinMissileDescription;
+const u8 *const gLocalizationSource_C02072 = sLeerDescription;
+const u8 *const gLocalizationSource_C02073 = sBiteDescription;
+const u8 *const gLocalizationSource_C02074 = sGrowlDescription;
+const u8 *const gLocalizationSource_C02075 = sRoarDescription;
+const u8 *const gLocalizationSource_C02076 = sSingDescription;
+const u8 *const gLocalizationSource_C02077 = sSupersonicDescription;
+const u8 *const gLocalizationSource_C02078 = sSonicBoomDescription;
+const u8 *const gLocalizationSource_C02079 = sDisableDescription;
+const u8 *const gLocalizationSource_C02080 = sAcidDescription;
+const u8 *const gLocalizationSource_C02081 = sEmberDescription;
+const u8 *const gLocalizationSource_C02082 = sFlamethrowerDescription;
+const u8 *const gLocalizationSource_C02083 = sMistDescription;
+const u8 *const gLocalizationSource_C02084 = sWaterGunDescription;
+const u8 *const gLocalizationSource_C02085 = sHydroPumpDescription;
+const u8 *const gLocalizationSource_C02086 = sSurfDescription;
+const u8 *const gLocalizationSource_C02087 = sIceBeamDescription;
+const u8 *const gLocalizationSource_C02088 = sBlizzardDescription;
+const u8 *const gLocalizationSource_C02089 = sPsybeamDescription;
+const u8 *const gLocalizationSource_C02090 = sBubbleBeamDescription;
+const u8 *const gLocalizationSource_C02091 = sAuroraBeamDescription;
+const u8 *const gLocalizationSource_C02092 = sHyperBeamDescription;
+const u8 *const gLocalizationSource_C02093 = sPeckDescription;
+const u8 *const gLocalizationSource_C02094 = sDrillPeckDescription;
+const u8 *const gLocalizationSource_C02095 = sSubmissionDescription;
+const u8 *const gLocalizationSource_C02096 = sLowKickDescription;
+const u8 *const gLocalizationSource_C02097 = sCounterDescription;
+const u8 *const gLocalizationSource_C02098 = sSeismicTossDescription;
+const u8 *const gLocalizationSource_C02099 = sStrengthDescription;
+const u8 *const gLocalizationSource_C02100 = sAbsorbDescription;
+const u8 *const gLocalizationSource_C02101 = sMegaDrainDescription;
+const u8 *const gLocalizationSource_C02102 = sLeechSeedDescription;
+const u8 *const gLocalizationSource_C02103 = sGrowthDescription;
+const u8 *const gLocalizationSource_C02104 = sRazorLeafDescription;
+const u8 *const gLocalizationSource_C02105 = sSolarBeamDescription;
+const u8 *const gLocalizationSource_C02106 = sPoisonPowderDescription;
+const u8 *const gLocalizationSource_C02107 = sStunSporeDescription;
+const u8 *const gLocalizationSource_C02108 = sSleepPowderDescription;
+const u8 *const gLocalizationSource_C02109 = sPetalDanceDescription;
+const u8 *const gLocalizationSource_C02110 = sStringShotDescription;
+const u8 *const gLocalizationSource_C02111 = sDragonRageDescription;
+const u8 *const gLocalizationSource_C02112 = sFireSpinDescription;
+const u8 *const gLocalizationSource_C02113 = sThunderShockDescription;
+const u8 *const gLocalizationSource_C02114 = sThunderboltDescription;
+const u8 *const gLocalizationSource_C02115 = sThunderWaveDescription;
+const u8 *const gLocalizationSource_C02116 = sThunderDescription;
+const u8 *const gLocalizationSource_C02117 = sRockThrowDescription;
+const u8 *const gLocalizationSource_C02118 = sEarthquakeDescription;
+const u8 *const gLocalizationSource_C02119 = sFissureDescription;
+const u8 *const gLocalizationSource_C02120 = sDigDescription;
+const u8 *const gLocalizationSource_C02121 = sToxicDescription;
+const u8 *const gLocalizationSource_C02122 = sConfusionDescription;
+const u8 *const gLocalizationSource_C02123 = sPsychicDescription;
+const u8 *const gLocalizationSource_C02124 = sHypnosisDescription;
+const u8 *const gLocalizationSource_C02125 = sMeditateDescription;
+const u8 *const gLocalizationSource_C02126 = sAgilityDescription;
+const u8 *const gLocalizationSource_C02127 = sQuickAttackDescription;
+const u8 *const gLocalizationSource_C02128 = sRageDescription;
+const u8 *const gLocalizationSource_C02129 = sTeleportDescription;
+const u8 *const gLocalizationSource_C02130 = sNightShadeDescription;
+const u8 *const gLocalizationSource_C02131 = sMimicDescription;
+const u8 *const gLocalizationSource_C02132 = sScreechDescription;
+const u8 *const gLocalizationSource_C02133 = sDoubleTeamDescription;
+const u8 *const gLocalizationSource_C02134 = sRecoverDescription;
+const u8 *const gLocalizationSource_C02135 = sHardenDescription;
+const u8 *const gLocalizationSource_C02136 = sMinimizeDescription;
+const u8 *const gLocalizationSource_C02137 = sSmokescreenDescription;
+const u8 *const gLocalizationSource_C02138 = sConfuseRayDescription;
+const u8 *const gLocalizationSource_C02139 = sWithdrawDescription;
+const u8 *const gLocalizationSource_C02140 = sDefenseCurlDescription;
+const u8 *const gLocalizationSource_C02141 = sBarrierDescription;
+const u8 *const gLocalizationSource_C02142 = sLightScreenDescription;
+const u8 *const gLocalizationSource_C02143 = sHazeDescription;
+const u8 *const gLocalizationSource_C02144 = sReflectDescription;
+const u8 *const gLocalizationSource_C02145 = sFocusEnergyDescription;
+const u8 *const gLocalizationSource_C02146 = sBideDescription;
+const u8 *const gLocalizationSource_C02147 = sMetronomeDescription;
+const u8 *const gLocalizationSource_C02148 = sMirrorMoveDescription;
+const u8 *const gLocalizationSource_C02149 = sSelfDestructDescription;
+const u8 *const gLocalizationSource_C02150 = sEggBombDescription;
+const u8 *const gLocalizationSource_C02151 = sLickDescription;
+const u8 *const gLocalizationSource_C02152 = sSmogDescription;
+const u8 *const gLocalizationSource_C02153 = sSludgeDescription;
+const u8 *const gLocalizationSource_C02154 = sBoneClubDescription;
+const u8 *const gLocalizationSource_C02155 = sFireBlastDescription;
+const u8 *const gLocalizationSource_C02156 = sWaterfallDescription;
+const u8 *const gLocalizationSource_C02157 = sClampDescription;
+const u8 *const gLocalizationSource_C02158 = sSwiftDescription;
+const u8 *const gLocalizationSource_C02159 = sSkullBashDescription;
+const u8 *const gLocalizationSource_C02160 = sSpikeCannonDescription;
+const u8 *const gLocalizationSource_C02161 = sConstrictDescription;
+const u8 *const gLocalizationSource_C02162 = sAmnesiaDescription;
+const u8 *const gLocalizationSource_C02163 = sKinesisDescription;
+const u8 *const gLocalizationSource_C02164 = sSoftBoiledDescription;
+const u8 *const gLocalizationSource_C02165 = sHiJumpKickDescription;
+const u8 *const gLocalizationSource_C02166 = sGlareDescription;
+const u8 *const gLocalizationSource_C02167 = sDreamEaterDescription;
+const u8 *const gLocalizationSource_C02168 = sPoisonGasDescription;
+const u8 *const gLocalizationSource_C02169 = sBarrageDescription;
+const u8 *const gLocalizationSource_C02170 = sLeechLifeDescription;
+const u8 *const gLocalizationSource_C02171 = sLovelyKissDescription;
+const u8 *const gLocalizationSource_C02172 = sSkyAttackDescription;
+const u8 *const gLocalizationSource_C02173 = sTransformDescription;
+const u8 *const gLocalizationSource_C02174 = sBubbleDescription;
+const u8 *const gLocalizationSource_C02175 = sDizzyPunchDescription;
+const u8 *const gLocalizationSource_C02176 = sSporeDescription;
+const u8 *const gLocalizationSource_C02177 = sFlashDescription;
+const u8 *const gLocalizationSource_C02178 = sPsywaveDescription;
+const u8 *const gLocalizationSource_C02179 = sSplashDescription;
+const u8 *const gLocalizationSource_C02180 = sAcidArmorDescription;
+const u8 *const gLocalizationSource_C02181 = sCrabhammerDescription;
+const u8 *const gLocalizationSource_C02182 = sExplosionDescription;
+const u8 *const gLocalizationSource_C02183 = sFurySwipesDescription;
+const u8 *const gLocalizationSource_C02184 = sBonemerangDescription;
+const u8 *const gLocalizationSource_C02185 = sRestDescription;
+const u8 *const gLocalizationSource_C02186 = sRockSlideDescription;
+const u8 *const gLocalizationSource_C02187 = sHyperFangDescription;
+const u8 *const gLocalizationSource_C02188 = sSharpenDescription;
+const u8 *const gLocalizationSource_C02189 = sConversionDescription;
+const u8 *const gLocalizationSource_C02190 = sTriAttackDescription;
+const u8 *const gLocalizationSource_C02191 = sSuperFangDescription;
+const u8 *const gLocalizationSource_C02192 = sSlashDescription;
+const u8 *const gLocalizationSource_C02193 = sSubstituteDescription;
+const u8 *const gLocalizationSource_C02194 = sStruggleDescription;
+const u8 *const gLocalizationSource_C02195 = sSketchDescription;
+const u8 *const gLocalizationSource_C02196 = sTripleKickDescription;
+const u8 *const gLocalizationSource_C02197 = sThiefDescription;
+const u8 *const gLocalizationSource_C02198 = sSpiderWebDescription;
+const u8 *const gLocalizationSource_C02199 = sMindReaderDescription;
+const u8 *const gLocalizationSource_C02200 = sNightmareDescription;
+const u8 *const gLocalizationSource_C02201 = sFlameWheelDescription;
+const u8 *const gLocalizationSource_C02202 = sSnoreDescription;
+const u8 *const gLocalizationSource_C02203 = sCurseDescription;
+const u8 *const gLocalizationSource_C02204 = sFlailDescription;
+const u8 *const gLocalizationSource_C02205 = sConversion2Description;
+const u8 *const gLocalizationSource_C02206 = sAeroblastDescription;
+const u8 *const gLocalizationSource_C02207 = sCottonSporeDescription;
+const u8 *const gLocalizationSource_C02208 = sReversalDescription;
+const u8 *const gLocalizationSource_C02209 = sSpiteDescription;
+const u8 *const gLocalizationSource_C02210 = sPowderSnowDescription;
+const u8 *const gLocalizationSource_C02211 = sProtectDescription;
+const u8 *const gLocalizationSource_C02212 = sMachPunchDescription;
+const u8 *const gLocalizationSource_C02213 = sScaryFaceDescription;
+const u8 *const gLocalizationSource_C02214 = sFaintAttackDescription;
+const u8 *const gLocalizationSource_C02215 = sSweetKissDescription;
+const u8 *const gLocalizationSource_C02216 = sBellyDrumDescription;
+const u8 *const gLocalizationSource_C02217 = sSludgeBombDescription;
+const u8 *const gLocalizationSource_C02218 = sMudSlapDescription;
+const u8 *const gLocalizationSource_C02219 = sOctazookaDescription;
+const u8 *const gLocalizationSource_C02220 = sSpikesDescription;
+const u8 *const gLocalizationSource_C02221 = sZapCannonDescription;
+const u8 *const gLocalizationSource_C02222 = sForesightDescription;
+const u8 *const gLocalizationSource_C02223 = sDestinyBondDescription;
+const u8 *const gLocalizationSource_C02224 = sPerishSongDescription;
+const u8 *const gLocalizationSource_C02225 = sIcyWindDescription;
+const u8 *const gLocalizationSource_C02226 = sDetectDescription;
+const u8 *const gLocalizationSource_C02227 = sBoneRushDescription;
+const u8 *const gLocalizationSource_C02228 = sLockOnDescription;
+const u8 *const gLocalizationSource_C02229 = sOutrageDescription;
+const u8 *const gLocalizationSource_C02230 = sSandstormDescription;
+const u8 *const gLocalizationSource_C02231 = sGigaDrainDescription;
+const u8 *const gLocalizationSource_C02232 = sEndureDescription;
+const u8 *const gLocalizationSource_C02233 = sCharmDescription;
+const u8 *const gLocalizationSource_C02234 = sRolloutDescription;
+const u8 *const gLocalizationSource_C02235 = sFalseSwipeDescription;
+const u8 *const gLocalizationSource_C02236 = sSwaggerDescription;
+const u8 *const gLocalizationSource_C02237 = sMilkDrinkDescription;
+const u8 *const gLocalizationSource_C02238 = sSparkDescription;
+const u8 *const gLocalizationSource_C02239 = sFuryCutterDescription;
+const u8 *const gLocalizationSource_C02240 = sSteelWingDescription;
+const u8 *const gLocalizationSource_C02241 = sMeanLookDescription;
+const u8 *const gLocalizationSource_C02242 = sAttractDescription;
+const u8 *const gLocalizationSource_C02243 = sSleepTalkDescription;
+const u8 *const gLocalizationSource_C02244 = sHealBellDescription;
+const u8 *const gLocalizationSource_C02245 = sReturnDescription;
+const u8 *const gLocalizationSource_C02246 = sPresentDescription;
+const u8 *const gLocalizationSource_C02247 = sFrustrationDescription;
+const u8 *const gLocalizationSource_C02248 = sSafeguardDescription;
+const u8 *const gLocalizationSource_C02249 = sPainSplitDescription;
+const u8 *const gLocalizationSource_C02250 = sSacredFireDescription;
+const u8 *const gLocalizationSource_C02251 = sMagnitudeDescription;
+const u8 *const gLocalizationSource_C02252 = sDynamicPunchDescription;
+const u8 *const gLocalizationSource_C02253 = sMegahornDescription;
+const u8 *const gLocalizationSource_C02254 = sDragonBreathDescription;
+const u8 *const gLocalizationSource_C02255 = sBatonPassDescription;
+const u8 *const gLocalizationSource_C02256 = sEncoreDescription;
+const u8 *const gLocalizationSource_C02257 = sPursuitDescription;
+const u8 *const gLocalizationSource_C02258 = sRapidSpinDescription;
+const u8 *const gLocalizationSource_C02259 = sSweetScentDescription;
+const u8 *const gLocalizationSource_C02260 = sIronTailDescription;
+const u8 *const gLocalizationSource_C02261 = sMetalClawDescription;
+const u8 *const gLocalizationSource_C02262 = sVitalThrowDescription;
+const u8 *const gLocalizationSource_C02263 = sMorningSunDescription;
+const u8 *const gLocalizationSource_C02264 = sSynthesisDescription;
+const u8 *const gLocalizationSource_C02265 = sMoonlightDescription;
+const u8 *const gLocalizationSource_C02266 = sHiddenPowerDescription;
+const u8 *const gLocalizationSource_C02267 = sCrossChopDescription;
+const u8 *const gLocalizationSource_C02268 = sTwisterDescription;
+const u8 *const gLocalizationSource_C02269 = sRainDanceDescription;
+const u8 *const gLocalizationSource_C02270 = sSunnyDayDescription;
+const u8 *const gLocalizationSource_C02271 = sCrunchDescription;
+const u8 *const gLocalizationSource_C02272 = sMirrorCoatDescription;
+const u8 *const gLocalizationSource_C02273 = sPsychUpDescription;
+const u8 *const gLocalizationSource_C02274 = sExtremeSpeedDescription;
+const u8 *const gLocalizationSource_C02275 = sAncientPowerDescription;
+const u8 *const gLocalizationSource_C02276 = sShadowBallDescription;
+const u8 *const gLocalizationSource_C02277 = sFutureSightDescription;
+const u8 *const gLocalizationSource_C02278 = sRockSmashDescription;
+const u8 *const gLocalizationSource_C02279 = sWhirlpoolDescription;
+const u8 *const gLocalizationSource_C02280 = sBeatUpDescription;
+const u8 *const gLocalizationSource_C02281 = sFakeOutDescription;
+const u8 *const gLocalizationSource_C02282 = sUproarDescription;
+const u8 *const gLocalizationSource_C02283 = sStockpileDescription;
+const u8 *const gLocalizationSource_C02284 = sSpitUpDescription;
+const u8 *const gLocalizationSource_C02285 = sSwallowDescription;
+const u8 *const gLocalizationSource_C02286 = sHeatWaveDescription;
+const u8 *const gLocalizationSource_C02287 = sHailDescription;
+const u8 *const gLocalizationSource_C02288 = sTormentDescription;
+const u8 *const gLocalizationSource_C02289 = sFlatterDescription;
+const u8 *const gLocalizationSource_C02290 = sWillOWispDescription;
+const u8 *const gLocalizationSource_C02291 = sMementoDescription;
+const u8 *const gLocalizationSource_C02292 = sFacadeDescription;
+const u8 *const gLocalizationSource_C02293 = sFocusPunchDescription;
+const u8 *const gLocalizationSource_C02294 = sSmellingSaltDescription;
+const u8 *const gLocalizationSource_C02295 = sFollowMeDescription;
+const u8 *const gLocalizationSource_C02296 = sNaturePowerDescription;
+const u8 *const gLocalizationSource_C02297 = sChargeDescription;
+const u8 *const gLocalizationSource_C02298 = sTauntDescription;
+const u8 *const gLocalizationSource_C02299 = sHelpingHandDescription;
+const u8 *const gLocalizationSource_C02300 = sTrickDescription;
+const u8 *const gLocalizationSource_C02301 = sRolePlayDescription;
+const u8 *const gLocalizationSource_C02302 = sWishDescription;
+const u8 *const gLocalizationSource_C02303 = sAssistDescription;
+const u8 *const gLocalizationSource_C02304 = sIngrainDescription;
+const u8 *const gLocalizationSource_C02305 = sSuperpowerDescription;
+const u8 *const gLocalizationSource_C02306 = sMagicCoatDescription;
+const u8 *const gLocalizationSource_C02307 = sRecycleDescription;
+const u8 *const gLocalizationSource_C02308 = sRevengeDescription;
+const u8 *const gLocalizationSource_C02309 = sBrickBreakDescription;
+const u8 *const gLocalizationSource_C02310 = sYawnDescription;
+const u8 *const gLocalizationSource_C02311 = sKnockOffDescription;
+const u8 *const gLocalizationSource_C02312 = sEndeavorDescription;
+const u8 *const gLocalizationSource_C02313 = sEruptionDescription;
+const u8 *const gLocalizationSource_C02314 = sSkillSwapDescription;
+const u8 *const gLocalizationSource_C02315 = sImprisonDescription;
+const u8 *const gLocalizationSource_C02316 = sRefreshDescription;
+const u8 *const gLocalizationSource_C02317 = sGrudgeDescription;
+const u8 *const gLocalizationSource_C02318 = sSnatchDescription;
+const u8 *const gLocalizationSource_C02319 = sSecretPowerDescription;
+const u8 *const gLocalizationSource_C02320 = sDiveDescription;
+const u8 *const gLocalizationSource_C02321 = sArmThrustDescription;
+const u8 *const gLocalizationSource_C02322 = sCamouflageDescription;
+const u8 *const gLocalizationSource_C02323 = sTailGlowDescription;
+const u8 *const gLocalizationSource_C02324 = sLusterPurgeDescription;
+const u8 *const gLocalizationSource_C02325 = sMistBallDescription;
+const u8 *const gLocalizationSource_C02326 = sFeatherDanceDescription;
+const u8 *const gLocalizationSource_C02327 = sTeeterDanceDescription;
+const u8 *const gLocalizationSource_C02328 = sBlazeKickDescription;
+const u8 *const gLocalizationSource_C02329 = sMudSportDescription;
+const u8 *const gLocalizationSource_C02330 = sIceBallDescription;
+const u8 *const gLocalizationSource_C02331 = sNeedleArmDescription;
+const u8 *const gLocalizationSource_C02332 = sSlackOffDescription;
+const u8 *const gLocalizationSource_C02333 = sHyperVoiceDescription;
+const u8 *const gLocalizationSource_C02334 = sPoisonFangDescription;
+const u8 *const gLocalizationSource_C02335 = sCrushClawDescription;
+const u8 *const gLocalizationSource_C02336 = sBlastBurnDescription;
+const u8 *const gLocalizationSource_C02337 = sHydroCannonDescription;
+const u8 *const gLocalizationSource_C02338 = sMeteorMashDescription;
+const u8 *const gLocalizationSource_C02339 = sAstonishDescription;
+const u8 *const gLocalizationSource_C02340 = sWeatherBallDescription;
+const u8 *const gLocalizationSource_C02341 = sAromatherapyDescription;
+const u8 *const gLocalizationSource_C02342 = sFakeTearsDescription;
+const u8 *const gLocalizationSource_C02343 = sAirCutterDescription;
+const u8 *const gLocalizationSource_C02344 = sOverheatDescription;
+const u8 *const gLocalizationSource_C02345 = sOdorSleuthDescription;
+const u8 *const gLocalizationSource_C02346 = sRockTombDescription;
+const u8 *const gLocalizationSource_C02347 = sSilverWindDescription;
+const u8 *const gLocalizationSource_C02348 = sMetalSoundDescription;
+const u8 *const gLocalizationSource_C02349 = sGrassWhistleDescription;
+const u8 *const gLocalizationSource_C02350 = sTickleDescription;
+const u8 *const gLocalizationSource_C02351 = sCosmicPowerDescription;
+const u8 *const gLocalizationSource_C02352 = sWaterSpoutDescription;
+const u8 *const gLocalizationSource_C02353 = sSignalBeamDescription;
+const u8 *const gLocalizationSource_C02354 = sShadowPunchDescription;
+const u8 *const gLocalizationSource_C02355 = sExtrasensoryDescription;
+const u8 *const gLocalizationSource_C02356 = sSkyUppercutDescription;
+const u8 *const gLocalizationSource_C02357 = sSandTombDescription;
+const u8 *const gLocalizationSource_C02358 = sSheerColdDescription;
+const u8 *const gLocalizationSource_C02359 = sMuddyWaterDescription;
+const u8 *const gLocalizationSource_C02360 = sBulletSeedDescription;
+const u8 *const gLocalizationSource_C02361 = sAerialAceDescription;
+const u8 *const gLocalizationSource_C02362 = sIcicleSpearDescription;
+const u8 *const gLocalizationSource_C02363 = sIronDefenseDescription;
+const u8 *const gLocalizationSource_C02364 = sBlockDescription;
+const u8 *const gLocalizationSource_C02365 = sHowlDescription;
+const u8 *const gLocalizationSource_C02366 = sDragonClawDescription;
+const u8 *const gLocalizationSource_C02367 = sFrenzyPlantDescription;
+const u8 *const gLocalizationSource_C02368 = sBulkUpDescription;
+const u8 *const gLocalizationSource_C02369 = sBounceDescription;
+const u8 *const gLocalizationSource_C02370 = sMudShotDescription;
+const u8 *const gLocalizationSource_C02371 = sPoisonTailDescription;
+const u8 *const gLocalizationSource_C02372 = sCovetDescription;
+const u8 *const gLocalizationSource_C02373 = sVoltTackleDescription;
+const u8 *const gLocalizationSource_C02374 = sMagicalLeafDescription;
+const u8 *const gLocalizationSource_C02375 = sWaterSportDescription;
+const u8 *const gLocalizationSource_C02376 = sCalmMindDescription;
+const u8 *const gLocalizationSource_C02377 = sLeafBladeDescription;
+const u8 *const gLocalizationSource_C02378 = sDragonDanceDescription;
+const u8 *const gLocalizationSource_C02379 = sRockBlastDescription;
+const u8 *const gLocalizationSource_C02380 = sShockWaveDescription;
+const u8 *const gLocalizationSource_C02381 = sWaterPulseDescription;
+const u8 *const gLocalizationSource_C02382 = sDoomDesireDescription;
+const u8 *const gLocalizationSource_C02383 = sPsychoBoostDescription;
+// END GENERATED LOCALIZATION EXPORTS

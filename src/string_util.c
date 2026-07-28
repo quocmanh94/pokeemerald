@@ -1,4 +1,5 @@
 #include "global.h"
+#include "localization.h"
 #include "string_util.h"
 #include "text.h"
 #include "strings.h"
@@ -74,6 +75,8 @@ u8 *StringCopy_PlayerName(u8 *dest, const u8 *src)
 
 u8 *StringCopy(u8 *dest, const u8 *src)
 {
+    src = GetLocalizedString(src);
+
     while (*src != EOS)
     {
         *dest = *src;
@@ -96,6 +99,8 @@ u8 *StringAppend(u8 *dest, const u8 *src)
 u8 *StringCopyN(u8 *dest, const u8 *src, u8 n)
 {
     u16 i;
+
+    src = GetLocalizedString(src);
 
     for (i = 0; i < n; i++)
         dest[i] = src[i];
@@ -334,6 +339,8 @@ u8 *ConvertIntToHexStringN(u8 *dest, s32 value, enum StringConvertMode mode, u8 
 
 u8 *StringExpandPlaceholders(u8 *dest, const u8 *src)
 {
+    src = GetLocalizedString(src);
+
     for (;;)
     {
         u8 c = *src++;
@@ -537,6 +544,8 @@ u8 *StringFill(u8 *dest, u8 c, u16 n)
 
 u8 *StringCopyPadded(u8 *dest, const u8 *src, u8 c, u16 n)
 {
+    src = GetLocalizedString(src);
+
     while (*src != EOS)
     {
         *dest++ = *src++;

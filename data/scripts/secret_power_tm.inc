@@ -1,37 +1,38 @@
 Route111_Text_MakingRoomUseTMToMakeYourOwn:
-	.string "What's that?\n"
-	.string "What am I doing?\p"
-	.string "I'm thinking about making my own room\n"
-	.string "here using a POKéMON move.\p"
-	.string "I know! I'll give you this TM.\n"
-	.string "Will you use it to make your own room?$"
+	.string "Sao cơ? Tôi đang làm gì à?\p"
+	.string "Tôi đang nghĩ đến việc dùng một chiêu\n"
+	.string "thức của POKéMON để tạo căn phòng\l"
+	.string "riêng ở đây.\p"
+	.string "Biết rồi! Tôi sẽ tặng bạn TM này. Bạn có\n"
+	.string "muốn dùng nó để tạo căn phòng riêng\l"
+	.string "không?$"
 
 Route111_Text_ExplainSecretPower:
-	.string "Find a big tree that looks like it might\n"
-	.string "drop some vines.\p"
-	.string "Use SECRET POWER in front of the tree.\n"
-	.string "Some vines should get free and drop\l"
-	.string "down, so you can climb the tree.\p"
-	.string "You'll find a lot of space for putting\n"
-	.string "your favorite things.\p"
-	.string "It'll be your own secret room…\n"
-	.string "A SECRET BASE!\p"
-	.string "You should make one, too.\p"
-	.string "Another thing, you don't always have\n"
-	.string "to make your SECRET BASE in a tree.\p"
-	.string "Try using SECRET POWER on rock walls\n"
-	.string "that have small indents in them.\p"
-	.string "I'm going to look for other places, too.\n"
-	.string "Okay, bye!$"
+	.string "Hãy tìm một cây lớn trông như có thể\n"
+	.string "thả dây leo xuống.\p"
+	.string "Dùng SECRET POWER trước cái cây. Một\n"
+	.string "số dây leo sẽ bung ra và thả xuống để\l"
+	.string "bạn có thể trèo lên cây.\p"
+	.string "Bên trong sẽ có rất nhiều chỗ để đặt\n"
+	.string "những món đồ bạn yêu thích.\p"
+	.string "Đó sẽ là căn phòng bí mật của riêng\n"
+	.string "bạn... Một SECRET BASE!\p"
+	.string "Bạn cũng nên tạo một nơi như thế.\p"
+	.string "Còn nữa, bạn không nhất thiết phải tạo\n"
+	.string "SECRET BASE trên cây.\p"
+	.string "Hãy thử dùng SECRET POWER lên những\n"
+	.string "vách đá có chỗ lõm nhỏ.\p"
+	.string "Tôi cũng sẽ đi tìm những nơi khác.\n"
+	.string "Được rồi, tạm biệt!$"
 
 Route111_Text_DontWantThis:
-	.string "Oh, you don't want this?\n"
-	.string "If you change your mind, tell me, okay?$"
+	.string "Ồ, bạn không muốn món này sao? Nếu đổi\n"
+	.string "ý thì hãy nói với tôi nhé?$"
 
 Route111_Text_DontHaveAnyRoom:
-	.string "Oh, you don't have any room for this.\p"
-	.string "I'll hold on to it, so come back for it\n"
-	.string "another time, okay?$"
+	.string "Ồ, bạn không còn chỗ để nhận món này.\p"
+	.string "Tôi sẽ giữ nó, nên lần khác quay lại lấy\n"
+	.string "nhé?$"
 
 Route111_EventScript_SecretPowerMan::
 	lock
@@ -98,3 +99,10 @@ Route111_Movement_SecretPowerManExitNorth:
 	walk_down
 	walk_down
 	step_end
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global Route111_Text_MakingRoomUseTMToMakeYourOwn
+	.global Route111_Text_ExplainSecretPower
+	.global Route111_Text_DontWantThis
+	.global Route111_Text_DontHaveAnyRoom
+@ END GENERATED LOCALIZATION EXPORTS

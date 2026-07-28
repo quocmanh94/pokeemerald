@@ -74,56 +74,62 @@ LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn:
 	step_end
 
 LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
-	.string "Hm, so they doubled the guests by\n"
-	.string "using POKéMON as attractions?\p"
-	.string "Hm, well, maybe I should make a cute\n"
-	.string "POKéMON our inn's mascot.\p"
-	.string "I wonder if that will attract more\n"
-	.string "guests to stay with us?$"
+	.string "Ừm, họ đã tăng gấp đôi lượng khách nhờ\n"
+	.string "dùng POKéMON làm điểm thu hút sao?\p"
+	.string "Ừm, có lẽ mình cũng nên chọn một\n"
+	.string "POKéMON dễ thương làm linh vật cho nhà\l"
+	.string "trọ.\p"
+	.string "Không biết như vậy có thu hút thêm\n"
+	.string "khách đến nghỉ không nhỉ?$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "Since that TEAM AQUA came to town,\n"
-	.string "the tourists have been staying away.$"
+	.string "Ôi, xin lỗi, xin lỗi! Tôi mải xem TV quá!\p"
+	.string "Từ khi TEAM AQUA đến thành phố, khách\n"
+	.string "du lịch chẳng còn bén mảng tới đây.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
-	.string "Hey, down in front!\n"
-	.string "I can't see the TV!$"
+	.string "Này, cúi xuống đi! Tôi không thấy TV!$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem:
-	.string "Amazing! You're telling me a POKéMON\n"
-	.string "found someone's lost item?\p"
-	.string "That's something. If we had some smart\n"
-	.string "POKéMON like that…\p"
-	.string "We could recover anything that our\n"
-	.string "guests mislaid…$"
+	.string "Tuyệt thật! Bạn nói một POKéMON đã tìm\n"
+	.string "thấy đồ thất lạc của người khác sao?\p"
+	.string "Đúng là đáng nể. Nếu chúng tôi có một\n"
+	.string "POKéMON thông minh như vậy...\p"
+	.string "Chúng tôi có thể tìm lại bất cứ thứ gì\n"
+	.string "khách để thất lạc...$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "I heard that someone busted\n"
-	.string "the TEAM AQUA HIDEOUT.\p"
-	.string "Thanks to that, we just booked\n"
-	.string "a reservation from a big group.\p"
-	.string "It was a company called… Uh…\n"
-	.string "GAME something…$"
+	.string "Ôi, xin lỗi, xin lỗi! Tôi mải xem TV quá!\p"
+	.string "Tôi nghe nói có người đã triệt phá TEAM\n"
+	.string "AQUA HIDEOUT.\p"
+	.string "Nhờ vậy, chúng tôi vừa nhận được đơn\n"
+	.string "đặt phòng của một đoàn khách lớn.\p"
+	.string "Họ là một công ty tên là... Ờ... GAME gì\n"
+	.string "đó...$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar:
-	.string "Amazing! A house-sitting POKéMON\n"
-	.string "caught a burglar?\p"
-	.string "That's something. If we had a tough\n"
-	.string "POKéMON as a security guard…\p"
-	.string "We would be able to provide our guests\n"
-	.string "with greater safety.$"
+	.string "Tuyệt thật! Một POKéMON trông nhà đã\n"
+	.string "bắt được kẻ trộm sao?\p"
+	.string "Đúng là đáng nể. Nếu chúng tôi có một\n"
+	.string "POKéMON mạnh mẽ làm bảo vệ...\p"
+	.string "Chúng tôi có thể đảm bảo an toàn hơn\n"
+	.string "cho khách nghỉ.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV.\p"
-	.string "Oh, yes. A big group of guests arrived\n"
-	.string "a little while ago.\p"
-	.string "They booked in as GAME FREAK,\n"
-	.string "so I guess they must make games.\p"
-	.string "Uh-oh, I'd better get working on\n"
-	.string "their dinner!$"
+	.string "Ôi, xin lỗi, xin lỗi! Tôi mải xem TV quá.\p"
+	.string "À, đúng rồi. Một đoàn khách lớn vừa đến\n"
+	.string "cách đây không lâu.\p"
+	.string "Họ đăng ký dưới tên GAME FREAK, chắc\n"
+	.string "họ là công ty làm game.\p"
+	.string "Chết rồi, tôi phải mau chuẩn bị bữa tối\n"
+	.string "cho họ!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot
+	.global LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua
+	.global LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV
+	.global LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem
+	.global LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted
+	.global LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar
+	.global LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner
+@ END GENERATED LOCALIZATION EXPORTS

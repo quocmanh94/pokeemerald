@@ -8,6 +8,7 @@
 #include "graphics.h"
 #include "menu.h"
 #include "international_string_util.h"
+#include "localization.h"
 #include "menu.h"
 #include "menu_specialized.h"
 #include "move_relearner.h"
@@ -986,6 +987,8 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
 // Buffers the string in src to dest up to n chars. If src is less than n chars, fill with spaces
 static u8 *BufferConditionMenuSpacedStringN(u8 *dst, const u8 *src, s16 n)
 {
+    src = GetLocalizedString(src);
+
     while (*src != EOS)
     {
         *(dst++) = *(src++);

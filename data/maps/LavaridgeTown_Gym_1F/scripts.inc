@@ -181,180 +181,181 @@ LavaridgeTown_Gym_1F_EventScript_GymStatue::
 	end
 
 LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "LAVARIDGE's GYM LEADER FLANNERY\n"
-	.string "uses FIRE-type POKéMON.\p"
-	.string "Her passion for POKéMON burns stronger\n"
-	.string "and hotter than a volcano.\p"
-	.string "Don't get too close to her--you'll burn!\n"
-	.string "Hose her down with water and then\l"
-	.string "go for it!$"
+	.string "Này, mọi chuyện thế nào rồi, CHAMPION\n"
+	.string "tương lai {PLAYER}?\p"
+	.string "FLANNERY, GYM LEADER của LAVARIDGE,\n"
+	.string "sử dụng POKéMON hệ FIRE.\p"
+	.string "Niềm đam mê POKéMON của cô ấy còn cháy\n"
+	.string "dữ dội và nóng bỏng hơn cả núi lửa.\p"
+	.string "Đừng đến quá gần cô ấy, không là bỏng\n"
+	.string "đấy! Cứ dội nước cho nguội rồi xông\l"
+	.string "lên!$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! That was a scorching-hot battle!$"
+	.string "Chà! Đúng là một trận đấu nóng bỏng!$"
 
 LavaridgeTown_Gym_1F_Text_ColeIntro:
-	.string "Owowowowow!\n"
-	.string "Yikes, it's hot!$"
+	.string "Ái ái ái ái! Khiếp, nóng quá!$"
 
 LavaridgeTown_Gym_1F_Text_ColeDefeat:
-	.string "I'm blinded by sweat in my eyes…$"
+	.string "Mồ hôi chảy vào mắt làm tôi chẳng nhìn\n"
+	.string "thấy gì...$"
 
 LavaridgeTown_Gym_1F_Text_ColePostBattle:
-	.string "Being buried in hot sand promotes\n"
-	.string "circulation.\p"
-	.string "It's effective for healing pain in\n"
-	.string "your joints.$"
+	.string "Vùi mình trong cát nóng giúp máu lưu\n"
+	.string "thông tốt hơn.\p"
+	.string "Cách này rất hiệu quả để chữa đau\n"
+	.string "khớp.$"
 
 LavaridgeTown_Gym_1F_Text_AxleIntro:
-	.string "I'm trying to relieve my stress.\n"
-	.string "Don't come along and stress me out!$"
+	.string "Tôi đang cố giải tỏa căng thẳng. Đừng\n"
+	.string "đến đây làm tôi căng thẳng thêm!$"
 
 LavaridgeTown_Gym_1F_Text_AxleDefeat:
-	.string "I hope FLANNERY flames you good!$"
+	.string "Mong FLANNERY sẽ thiêu cậu ra trò!$"
 
 LavaridgeTown_Gym_1F_Text_AxlePostBattle:
-	.string "Haaah… Whew…\p"
-	.string "If you spend too much time buried in\n"
-	.string "hot sand, it tuckers you out…$"
+	.string "Hààà... Phù...\p"
+	.string "Vùi mình trong cát nóng quá lâu sẽ\n"
+	.string "khiến người ta kiệt sức...$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganIntro:
-	.string "You must be getting tired by now.\n"
-	.string "You'd like to rest in the hot sand,\l"
-	.string "wouldn't you?\p"
-	.string "But you should know that maintaining\n"
-	.string "your willpower is an important ability\l"
-	.string "for all TRAINERS.$"
+	.string "Chắc giờ bạn đã bắt đầu mệt rồi. Bạn\n"
+	.string "muốn nghỉ ngơi trong cát nóng, phải\l"
+	.string "không?\p"
+	.string "Nhưng bạn nên biết rằng giữ vững ý chí\n"
+	.string "là một năng lực quan trọng đối với mọi\l"
+	.string "HLV.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganDefeat:
-	.string "Play with fire, and be burned…$"
+	.string "Đùa với lửa thì có ngày bị bỏng...$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganPostBattle:
-	.string "Your skill is real…\n"
-	.string "But our LEADER FLANNERY is strong.\p"
-	.string "If you don't watch yourself, you'll be\n"
-	.string "burned seriously.$"
+	.string "Thực lực của bạn là thật... Nhưng\n"
+	.string "LEADER FLANNERY của chúng tôi rất\l"
+	.string "mạnh.\p"
+	.string "Nếu không cẩn thận, bạn sẽ bị bỏng nặng\n"
+	.string "đấy.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro:
-	.string "Can your POKéMON withstand\n"
-	.string "392-degree heat?$"
+	.string "POKéMON của bạn có chịu nổi sức nóng\n"
+	.string "392 độ không?$"
 
 LavaridgeTown_Gym_1F_Text_GeraldDefeat:
-	.string "It didn't burn hotly enough…$"
+	.string "Lửa vẫn chưa cháy đủ nóng...$"
 
 LavaridgeTown_Gym_1F_Text_GeraldPostBattle:
-	.string "The temperature of magma is\n"
-	.string "392 degrees.\p"
-	.string "Your POKéMON beat me, so they should\n"
-	.string "easily survive in magma.$"
+	.string "Nhiệt độ của magma là 392 độ.\p"
+	.string "POKéMON của bạn đã đánh bại tôi, vậy\n"
+	.string "nên chúng chắc chắn sống khỏe trong\l"
+	.string "magma.$"
 
 LavaridgeTown_Gym_1F_Text_DanielleIntro:
-	.string "Um…\n"
-	.string "Okay, I'll battle with you.$"
+	.string "Ừm... Được thôi, tôi sẽ đấu với bạn.$"
 
 LavaridgeTown_Gym_1F_Text_DanielleDefeat:
-	.string "Oh, but you're too strong.$"
+	.string "Ôi, nhưng bạn mạnh quá.$"
 
 LavaridgeTown_Gym_1F_Text_DaniellePostBattle:
-	.string "I'm going to be a pretty and strong\n"
-	.string "TRAINER just like FLANNERY.$"
+	.string "Tôi sẽ trở thành một HLV vừa xinh\n"
+	.string "đẹp vừa mạnh mẽ như FLANNERY.$"
 
 LavaridgeTown_Gym_B1F_Text_JaceIntro:
-	.string "Come on, get with it!\n"
-	.string "Let's go before my feelings cool!$"
+	.string "Nhanh lên nào! Đánh đi trước khi nhiệt\n"
+	.string "huyết của tôi nguội mất!$"
 
 LavaridgeTown_Gym_B1F_Text_JaceDefeat:
-	.string "It's so hot, and yet my heart is\n"
-	.string "clutched by ice…$"
+	.string "Nơi này nóng đến vậy mà trái tim tôi lại\n"
+	.string "bị băng giá siết chặt...$"
 
 LavaridgeTown_Gym_B1F_Text_JacePostBattle:
-	.string "The way the battling spirit burns\n"
-	.string "within you, you may stand a chance\l"
-	.string "against our LEADER.$"
+	.string "Với tinh thần chiến đấu đang rực cháy\n"
+	.string "trong bạn, có lẽ bạn đủ sức đối đầu với\l"
+	.string "LEADER của chúng tôi.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffIntro:
-	.string "See how the flames blaze wildly?\n"
-	.string "They flare in anticipation of my win!$"
+	.string "Thấy ngọn lửa bùng cháy dữ dội chưa?\n"
+	.string "Chúng đang phấn khích chờ tôi chiến\l"
+	.string "thắng đấy!$"
 
 LavaridgeTown_Gym_B1F_Text_JeffDefeat:
-	.string "Something didn't go right.$"
+	.string "Có gì đó không ổn rồi.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffPostBattle:
-	.string "Well, so what? I say so what?\n"
-	.string "I can walk on hot coals barefoot!\p"
-	.string "…Don't even think about trying it!$"
+	.string "Thì sao chứ? Tôi hỏi thì sao nào? Tôi\n"
+	.string "có thể đi chân trần trên than hồng!\p"
+	.string "...Đừng hòng bắt chước đấy!$"
 
 LavaridgeTown_Gym_B1F_Text_EliIntro:
-	.string "As much as I love mountains,\n"
-	.string "I especially love volcanoes.$"
+	.string "Tôi yêu núi non, nhưng đặc biệt yêu núi\n"
+	.string "lửa.$"
 
 LavaridgeTown_Gym_B1F_Text_EliDefeat:
-	.string "Well, it seems to me I lost without\n"
-	.string "ever being in control.$"
+	.string "Có vẻ tôi đã thua mà chưa lúc nào nắm\n"
+	.string "được thế chủ động.$"
 
 LavaridgeTown_Gym_B1F_Text_EliPostBattle:
-	.string "I stay here because I became a fan\n"
-	.string "of FLANNERY's power.\p"
-	.string "Hehehehe.$"
+	.string "Tôi ở lại đây vì đã trở thành người hâm\n"
+	.string "mộ sức mạnh của FLANNERY.\p"
+	.string "Hê hê hê.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro:
-	.string "Welcome… No, wait.\p"
-	.string "Puny TRAINER, how good to see you've\n"
-	.string "made it here!\p"
-	.string "I have been entrusted with the…\n"
-	.string "No, wait.\p"
-	.string "I am FLANNERY, and I'm the GYM\n"
-	.string "LEADER here!\p"
-	.string "Uh…\n"
-	.string "Dare not underestimate me, though\l"
-	.string "I have been LEADER only a short time!\p"
-	.string "With skills inherited from my grand-\n"
-	.string "father, I shall, uh…demonstrate the\l"
-	.string "hot moves we have honed on this land!$"
+	.string "Chào mừng... Không, khoan đã.\p"
+	.string "HLV bé nhỏ kia, thật đáng khen khi\n"
+	.string "ngươi đã đến được đây!\p"
+	.string "Ta được giao trọng trách... Không,\n"
+	.string "khoan đã.\p"
+	.string "Ta là FLANNERY, GYM LEADER của nơi này!\p"
+	.string "Ờm... Chớ coi thường ta dù ta mới chỉ\n"
+	.string "làm LEADER chưa lâu!\p"
+	.string "Với kỹ năng thừa hưởng từ ông mình,\n"
+	.string "ta sẽ, ờm... cho ngươi thấy những chiêu\l"
+	.string "thức nóng bỏng mà chúng ta đã tôi\l"
+	.string "luyện trên mảnh đất này!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
-	.string "Oh…\n"
-	.string "I guess I was trying too hard…\p"
-	.string "I… I've only recently become\n"
-	.string "a GYM LEADER.\p"
-	.string "I tried too hard to be someone\n"
-	.string "I'm not.\p"
-	.string "I have to do things my natural way. If\n"
-	.string "I don't, my POKéMON will be confused.\p"
-	.string "Thanks for teaching me that.\n"
-	.string "For that, you deserve this.$"
+	.string "Ôi... Có lẽ tôi đã cố gắng quá sức...\p"
+	.string "Tôi... Tôi chỉ mới trở thành GYM LEADER\n"
+	.string "gần đây.\p"
+	.string "Tôi đã quá cố gắng để trở thành một\n"
+	.string "người không phải mình.\p"
+	.string "Tôi phải làm mọi thứ theo cách tự nhiên\n"
+	.string "của mình. Nếu không, POKéMON của tôi sẽ\l"
+	.string "bối rối.\p"
+	.string "Cảm ơn bạn đã giúp tôi hiểu ra. Vì điều\n"
+	.string "đó, bạn xứng đáng nhận thứ này.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
-	.string "{PLAYER} received the HEAT BADGE\n"
-	.string "from FLANNERY.$"
+	.string "{PLAYER} đã nhận được HEAT BADGE từ\n"
+	.string "FLANNERY.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "If you have a HEAT BADGE, all POKéMON\n"
-	.string "up to Level 50, even those you get in\l"
-	.string "trades from other people, will obey\l"
-	.string "you completely.\p"
-	.string "And, it lets POKéMON use the HM move\n"
-	.string "STRENGTH outside of battle.\p"
-	.string "This is a token of my appreciation.\n"
-	.string "Don't be shy about taking it!$"
+	.string "Khi có HEAT BADGE, mọi POKéMON từ Level\n"
+	.string "50 trở xuống, kể cả những POKéMON bạn\l"
+	.string "nhận được qua trao đổi, sẽ hoàn toàn\l"
+	.string "nghe lời bạn.\p"
+	.string "Nó cũng cho phép POKéMON sử dụng chiêu\n"
+	.string "HM STRENGTH ngoài trận đấu.\p"
+	.string "Đây là món quà thay cho lời cảm ơn của\n"
+	.string "tôi. Đừng ngại, cứ nhận lấy!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
-	.string "That TM50 contains OVERHEAT.\p"
-	.string "That move inflicts serious damage on\n"
-	.string "the opponent.\p"
-	.string "But it also sharply cuts the SP. ATK\n"
-	.string "of the POKéMON using it. It might not\l"
-	.string "be suitable for longer battles.$"
+	.string "TM50 đó chứa OVERHEAT.\p"
+	.string "Chiêu này gây sát thương cực lớn cho\n"
+	.string "đối thủ.\p"
+	.string "Nhưng nó cũng làm SP. ATK của POKéMON\n"
+	.string "sử dụng giảm mạnh. Có lẽ nó không thích\l"
+	.string "hợp với những trận đấu kéo dài.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
-	.string "Registered GYM LEADER FLANNERY\n"
-	.string "in the POKéNAV.$"
+	.string "Đã đăng ký GYM LEADER FLANNERY vào\n"
+	.string "POKéNAV.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
-	.string "Your power reminds me of someone…\p"
-	.string "Oh! I know! You battle like NORMAN,\n"
-	.string "the GYM LEADER of PETALBURG.$"
+	.string "Sức mạnh của bạn khiến tôi nhớ đến một\n"
+	.string "người...\p"
+	.string "A! Tôi biết rồi! Cách bạn chiến đấu giống\n"
+	.string "NORMAN, GYM LEADER của PETALBURG.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
 	.string "LAVARIDGE TOWN POKéMON GYM$"
@@ -365,35 +366,73 @@ LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
-	.string "FLANNERY: Losing a battle isn't going\n"
-	.string "to deflate me.\p"
-	.string "I love POKéMON.\n"
-	.string "I love to battle.\l"
-	.string "And… I love this GYM!\p"
-	.string "Let's exchange superhot moves\n"
-	.string "in another battle!$"
+	.string "FLANNERY: Thua một trận không thể\n"
+	.string "khiến tôi nhụt chí.\p"
+	.string "Tôi yêu POKéMON. Tôi yêu chiến đấu. Và...\n"
+	.string "Tôi yêu GYM này!\p"
+	.string "Hãy trao đổi những chiêu thức siêu\n"
+	.string "nóng bỏng trong một trận đấu nữa nào!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat:
-	.string "Whew!\n"
-	.string "On the verge of eruption!$"
+	.string "Phù! Sắp phun trào rồi!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostRematch:
-	.string "FLANNERY: I lost the match,\n"
-	.string "but I'm completely satisfied.\p"
-	.string "It's not often I get to enjoy a battle\n"
-	.string "this heated.\p"
-	.string "Let's have another one like this\n"
-	.string "again sometime!$"
+	.string "FLANNERY: Tôi đã thua, nhưng hoàn toàn\n"
+	.string "mãn nguyện.\p"
+	.string "Hiếm khi tôi được tận hưởng một trận\n"
+	.string "đấu nóng bỏng đến vậy.\p"
+	.string "Lần sau chúng ta lại đấu một trận như\n"
+	.string "thế nhé!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
-	.string "FLANNERY: Losing a battle isn't going\n"
-	.string "to deflate me.\p"
-	.string "I love POKéMON.\n"
-	.string "I love to battle.\l"
-	.string "And… I love this GYM!\p"
-	.string "Let's exchange superhot moves\n"
-	.string "in another battle!\p"
-	.string "Oh, wait. Do you only have one POKéMON\n"
-	.string "that can battle?\p"
-	.string "I hate to say this, but when you come\n"
-	.string "see me, bring at least two POKéMON.$"
+	.string "FLANNERY: Thua một trận không thể\n"
+	.string "khiến tôi nhụt chí.\p"
+	.string "Tôi yêu POKéMON. Tôi yêu chiến đấu. Và...\n"
+	.string "Tôi yêu GYM này!\p"
+	.string "Hãy trao đổi những chiêu thức siêu\n"
+	.string "nóng bỏng trong một trận đấu nữa nào!\p"
+	.string "Ơ, khoan đã. Bạn chỉ có một POKéMON có\n"
+	.string "thể chiến đấu thôi sao?\p"
+	.string "Tôi rất tiếc phải nói thế này, nhưng lần\n"
+	.string "tới gặp tôi, hãy mang theo ít nhất hai\l"
+	.string "POKéMON.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global LavaridgeTown_Gym_1F_Text_GymGuideAdvice
+	.global LavaridgeTown_Gym_1F_Text_GymGuidePostVictory
+	.global LavaridgeTown_Gym_1F_Text_ColeIntro
+	.global LavaridgeTown_Gym_1F_Text_ColeDefeat
+	.global LavaridgeTown_Gym_1F_Text_ColePostBattle
+	.global LavaridgeTown_Gym_1F_Text_AxleIntro
+	.global LavaridgeTown_Gym_1F_Text_AxleDefeat
+	.global LavaridgeTown_Gym_1F_Text_AxlePostBattle
+	.global LavaridgeTown_Gym_B1F_Text_KeeganIntro
+	.global LavaridgeTown_Gym_B1F_Text_KeeganDefeat
+	.global LavaridgeTown_Gym_B1F_Text_KeeganPostBattle
+	.global LavaridgeTown_Gym_1F_Text_GeraldIntro
+	.global LavaridgeTown_Gym_1F_Text_GeraldDefeat
+	.global LavaridgeTown_Gym_1F_Text_GeraldPostBattle
+	.global LavaridgeTown_Gym_1F_Text_DanielleIntro
+	.global LavaridgeTown_Gym_1F_Text_DanielleDefeat
+	.global LavaridgeTown_Gym_1F_Text_DaniellePostBattle
+	.global LavaridgeTown_Gym_B1F_Text_JaceIntro
+	.global LavaridgeTown_Gym_B1F_Text_JaceDefeat
+	.global LavaridgeTown_Gym_B1F_Text_JacePostBattle
+	.global LavaridgeTown_Gym_B1F_Text_JeffIntro
+	.global LavaridgeTown_Gym_B1F_Text_JeffDefeat
+	.global LavaridgeTown_Gym_B1F_Text_JeffPostBattle
+	.global LavaridgeTown_Gym_B1F_Text_EliIntro
+	.global LavaridgeTown_Gym_B1F_Text_EliDefeat
+	.global LavaridgeTown_Gym_B1F_Text_EliPostBattle
+	.global LavaridgeTown_Gym_1F_Text_FlanneryIntro
+	.global LavaridgeTown_Gym_1F_Text_FlanneryDefeat
+	.global LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge
+	.global LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis
+	.global LavaridgeTown_Gym_1F_Text_ExplainOverheat
+	.global LavaridgeTown_Gym_1F_Text_RegisteredFlannery
+	.global LavaridgeTown_Gym_1F_Text_FlanneryPostBattle
+	.global LavaridgeTown_Gym_1F_Text_FlanneryPreRematch
+	.global LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat
+	.global LavaridgeTown_Gym_1F_Text_FlanneryPostRematch
+	.global LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS

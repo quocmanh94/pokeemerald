@@ -13,46 +13,52 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 
 SeafloorCavern_Room3_Text_ShellyIntro:
 	.string "Ahahahaha!\p"
-	.string "How did you manage to get here without\n"
-	.string "a submarine?\l"
-	.string "What an impressive child!\p"
-	.string "But… It won't do to have you\n"
-	.string "meddling about here.\p"
-	.string "And, I do want payback for what\n"
-	.string "happened at the WEATHER INSTITUTE…\p"
-	.string "I'm going to give you a little taste\n"
-	.string "of pain! Resign yourself to it!$"
+	.string "Không có tàu ngầm mà ngươi vẫn đến\n"
+	.string "được đây sao? Quả là một đứa trẻ đáng\l"
+	.string "nể!\p"
+	.string "Nhưng... Ta không thể để ngươi xen vào\n"
+	.string "chuyện ở đây.\p"
+	.string "Với lại, ta cũng muốn trả món nợ ở\n"
+	.string "WEATHER INSTITUTE...\p"
+	.string "Ta sẽ cho ngươi nếm chút đau đớn!\n"
+	.string "Chuẩn bị chịu trận đi!$"
 
 SeafloorCavern_Room3_Text_ShellyDefeat:
 	.string "Ahahahaha!\p"
-	.string "Ouch!$"
+	.string "Đau quá!$"
 
 SeafloorCavern_Room3_Text_ShellyPostBattle:
-	.string "Ahahahaha!\n"
-	.string "You're so darn strong.\p"
-	.string "It's terribly disappointing that you're\n"
-	.string "not a TEAM AQUA member.\p"
-	.string "You could have enjoyed the fabulous\n"
-	.string "world our BOSS has promised as\l"
-	.string "one of us…$"
+	.string "Ahahahaha! Ngươi mạnh kinh khủng.\p"
+	.string "Thật đáng tiếc khi ngươi không phải\n"
+	.string "thành viên của TEAM AQUA.\p"
+	.string "Nếu gia nhập bọn ta, ngươi đã có thể\n"
+	.string "tận hưởng thế giới mà thủ lĩnh hứa\l"
+	.string "hẹn...$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-	.string "For our dream to become real, we need\n"
-	.string "the power of POKéMON.\p"
-	.string "But meddlers like you use the power of\n"
-	.string "POKéMON to mess with us even at\l"
-	.string "a place like this!\p"
-	.string "Life just doesn't work the way we\n"
-	.string "need it to!$"
+	.string "Để biến giấc mơ thành hiện thực, bọn ta\n"
+	.string "cần sức mạnh của POKéMON.\p"
+	.string "Vậy mà kẻ thích xen vào như ngươi lại\n"
+	.string "dùng sức mạnh của POKéMON để phá bọn\l"
+	.string "ta ngay cả ở nơi này!\p"
+	.string "Cuộc đời chẳng bao giờ diễn ra theo ý\n"
+	.string "mình!$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
 	.string "Gwah!$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "You know, we don't dare question\n"
-	.string "the motives of our leader.\p"
-	.string "But here you are, just some punk,\n"
-	.string "going up against our BOSS.\p"
-	.string "Maybe…\n"
-	.string "You must be something…$"
+	.string "Bọn ta không dám chất vấn mục đích của\n"
+	.string "thủ lĩnh.\p"
+	.string "Thế mà một nhóc ranh như ngươi lại dám\n"
+	.string "đối đầu với thủ lĩnh của bọn ta.\p"
+	.string "Có lẽ... Ngươi không phải hạng tầm\n"
+	.string "thường...$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global SeafloorCavern_Room3_Text_ShellyIntro
+	.global SeafloorCavern_Room3_Text_ShellyDefeat
+	.global SeafloorCavern_Room3_Text_ShellyPostBattle
+	.global SeafloorCavern_Room3_Text_Grunt5Intro
+	.global SeafloorCavern_Room3_Text_Grunt5PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

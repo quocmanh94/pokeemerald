@@ -627,164 +627,187 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	end
 
 DewfordTown_Text_TinyIslandCommunity:
-	.string "DEWFORD is a tiny island community.\n"
-	.string "If something gets trendy here,\l"
-	.string "everyone picks up on it right away.$"
+	.string "DEWFORD là một cộng đồng nhỏ bé trên\n"
+	.string "đảo. Nếu có thứ gì trở thành trào lưu\l"
+	.string "tại đây, mọi người sẽ hưởng ứng ngay\l"
+	.string "lập tức.$"
 
 DewfordTown_Text_TownSign:
-	.string "DEWFORD TOWN\n"
-	.string "“A tiny island in the blue sea.”$"
+	.string "DEWFORD TOWN “Một hòn đảo nhỏ giữa\n"
+	.string "biển xanh.”$"
 
 DewfordTown_Text_GymSign:
-	.string "DEWFORD TOWN POKéMON GYM\n"
-	.string "LEADER: BRAWLY\l"
-	.string "“A big wave in fighting!”$"
+	.string "DEWFORD TOWN POKéMON GYM LEADER:\n"
+	.string "BRAWLY “Một con sóng lớn trong chiến\l"
+	.string "đấu!”$"
 
 DewfordTown_Text_HallSign:
-	.string "DEWFORD HALL\n"
-	.string "“Everyone's information exchange!”$"
+	.string "DEWFORD HALL “Nơi mọi người trao đổi\n"
+	.string "thông tin!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DEWFORD.\p"
-	.string "I suppose you're off to deliver that\n"
-	.string "LETTER to, who was it now, STEVEN!$"
+	.string "MR. BRINEY: A-hoy! Ta đã cập bến\n"
+	.string "DEWFORD.\p"
+	.string "Chắc cháu định đi giao LETTER cho... ai\n"
+	.string "ấy nhỉ, STEVEN!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
-	.string "MR. BRINEY: Have you delivered your\n"
-	.string "LETTER?\p"
-	.string "Or were you meaning to sail back to\n"
+	.string "MR. BRINEY: Cháu đã giao LETTER chưa?\p"
+	.string "Hay cháu định đi thuyền trở về\n"
 	.string "PETALBURG?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
-	.string "MR. BRINEY: PETALBURG it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY: Vậy thì đến PETALBURG!\p"
+	.string "Nhổ neo! PEEKO, ra khơi thôi, cục cưng\n"
+	.string "của ta!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the LETTER. I'll be waiting.$"
+	.string "MR. BRINEY: Vậy cháu cứ đi giao LETTER\n"
+	.string "đi. Ta sẽ chờ ở đây.$"
 
 DewfordTown_Text_BrineyLandedInDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DEWFORD!\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail again!$"
+	.string "MR. BRINEY: A-hoy! Ta đã cập bến\n"
+	.string "DEWFORD!\p"
+	.string "Khi nào muốn ra khơi lần nữa, cháu chỉ\n"
+	.string "cần nói với ta!$"
 
 DewfordTown_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "MR. BRINEY: A-hoy! Vì cháu, ta sẵn sàng\n"
+	.string "ra khơi bất cứ lúc nào!\p"
+	.string "Nào, bạn nhỏ, chúng ta đi đâu đây?$"
 
 DewfordTown_Text_PetalburgWereSettingSail:
-	.string "MR. BRINEY: PETALBURG, is it?\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY: Đến PETALBURG phải không?\p"
+	.string "Nhổ neo! PEEKO, ra khơi thôi, cục cưng\n"
+	.string "của ta!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
-	.string "MR. BRINEY: SLATEPORT, is it?\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY: Đến SLATEPORT phải không?\p"
+	.string "Nhổ neo! PEEKO, ra khơi thôi, cục cưng\n"
+	.string "của ta!$"
 
 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "MR. BRINEY: Khi nào cần ra khơi lần nữa,\n"
+	.string "cháu chỉ việc nói với ta!$"
 
 DewfordTown_Text_GettingItchToFish:
-	.string "This is a renowned fishing spot.\n"
-	.string "Are you getting the itch to fish?$"
+	.string "Đây là một địa điểm câu cá nổi tiếng.\n"
+	.string "Cậu đã thấy nôn nao muốn câu chưa?$"
 
 DewfordTown_Text_GiveYouOneOfMyRods:
-	.string "I hear you, and I like what\n"
-	.string "you're saying!\p"
-	.string "I'll give you one of my fishing RODS.$"
+	.string "Nghe là tôi khoái rồi đấy!\p"
+	.string "Tôi sẽ tặng cậu một trong những RODS\n"
+	.string "câu cá của mình.$"
 
 DewfordTown_Text_ThrowInFishingAdvice:
-	.string "And, as an added bonus, I'll even throw\n"
-	.string "in a little fishing advice!\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "Và để khuyến mãi thêm, tôi còn tặng cậu\n"
+	.string "một chút lời khuyên về câu cá!\p"
+	.string "Trước tiên, hãy quay mặt về phía mặt\n"
+	.string "nước rồi dùng ROD.\p"
+	.string "Hãy tập trung... Nếu cá cắn câu, hãy giật\n"
+	.string "ROD.\p"
+	.string "Đôi khi cậu có thể câu được ngay,\n"
+	.string "nhưng với những con lớn hơn, cậu phải\l"
+	.string "canh đúng nhịp để giật ROD và kéo chúng\l"
+	.string "lên.$"
 
 DewfordTown_Text_ThatsTooBadThen:
-	.string "Oh, is that so?\n"
-	.string "That's too bad, then.$"
+	.string "Ồ, vậy sao? Thế thì tiếc thật.$"
 
 DewfordTown_Text_HowsYourFishing:
-	.string "Yo!\n"
-	.string "How's your fishing?$"
+	.string "Này! Câu cá thế nào rồi?$"
 
 DewfordTown_Text_GreatHaulInSomeBigOnes:
-	.string "Is that right! That's great!\n"
-	.string "Haul in some big ones!$"
+	.string "Thật sao! Tuyệt lắm! Hãy câu vài con\n"
+	.string "thật lớn nhé!$"
 
 DewfordTown_Text_FishingAdvice:
-	.string "Oh, hey, don't get down on yourself!\n"
-	.string "I'll give you a little fishing advice.\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "Này, đừng nản lòng chứ! Tôi sẽ cho cậu\n"
+	.string "một chút lời khuyên về câu cá.\p"
+	.string "Trước tiên, hãy quay mặt về phía mặt\n"
+	.string "nước rồi dùng ROD.\p"
+	.string "Hãy tập trung... Nếu cá cắn câu, hãy giật\n"
+	.string "ROD.\p"
+	.string "Đôi khi cậu có thể câu được ngay,\n"
+	.string "nhưng với những con lớn hơn, cậu phải\l"
+	.string "canh đúng nhịp để giật ROD và kéo chúng\l"
+	.string "lên.$"
 
 DewfordTown_Text_XIsTheBiggestHappeningThingRight:
-	.string "I like what's hip, happening, and trendy.\n"
-	.string "I'm always checking it out.\p"
-	.string "Listen, have you heard about this new\n"
-	.string "“{STR_VAR_1}”?\p"
-	.string "That's right!\n"
-	.string "Of course you know!\p"
-	.string "I mean, sheesh,\n"
-	.string "“{STR_VAR_1}”…\l"
-	.string "It's the hottest thing in cool!\p"
-	.string "Wherever you're from,\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "is the biggest happening thing, right?$"
+	.string "Tôi mê những gì sành điệu, đang nổi và\n"
+	.string "hợp mốt. Tôi lúc nào cũng theo dõi\l"
+	.string "chúng.\p"
+	.string "Này, cậu đã nghe về\n"
+	.string "“{STR_VAR_1}” mới nổi chưa?\p"
+	.string "Đúng rồi! Tất nhiên là cậu biết!\p"
+	.string "Ý tôi là, trời ạ, “{STR_VAR_1}”...\n"
+	.string "Nó đang cực kỳ thời thượng!\p"
+	.string "Ở chỗ cậu sống, “{STR_VAR_1}”\n"
+	.string "cũng là trào lưu đình đám nhất, đúng\l"
+	.string "không?$"
 
 DewfordTown_Text_TellMeWhatsNewAndIn:
-	.string "Hunh?\n"
-	.string "It's not the hip and happening thing?\p"
-	.string "Well, hey, you have to tell me,\n"
-	.string "what's new and what's “in”?$"
+	.string "Hả? Nó không phải thứ sành điệu đang\n"
+	.string "thịnh hành sao?\p"
+	.string "Vậy thì cậu phải cho tôi biết thứ gì\n"
+	.string "đang mới và hợp mốt chứ?$"
 
 DewfordTown_Text_OfCourseIKnowAboutThat:
-	.string "Hunh?\n"
-	.string "“{STR_VAR_2}”?\p"
-	.string "… …\p"
-	.string "…Uh… Yeah! That's right!\n"
-	.string "Yeah, I knew that! Knew it all along!\p"
-	.string "Of course I know about that!\n"
-	.string "“{STR_VAR_2},” right?\p"
-	.string "Yeah, that's it, it's there!\n"
-	.string "Isn't “{STR_VAR_2}”\l"
-	.string "the coolest, or what?\p"
-	.string "It's the hippest thing in hip.\n"
-	.string "You think I'd not know about it?\p"
-	.string "“{STR_VAR_1}”…\n"
-	.string "It's, like, so five minutes ago.\p"
-	.string "Now, “{STR_VAR_2}” is\n"
-	.string "what's vital and in tune with the times!$"
+	.string "Hả? “{STR_VAR_2}” ư?\p"
+	.string "... ...\p"
+	.string "...Ờ... Đúng! Chính nó! Tôi biết mà! Biết\n"
+	.string "từ đầu rồi!\p"
+	.string "Tất nhiên tôi biết chuyện đó!\n"
+	.string "“{STR_VAR_2}”, đúng chứ?\p"
+	.string "Ừ, chính là nó, nó đang nổi!\n"
+	.string "“{STR_VAR_2}” ngầu nhất còn gì?\p"
+	.string "Đó là thứ thời thượng nhất trong mọi\n"
+	.string "thứ thời thượng. Cậu nghĩ tôi lại\l"
+	.string "không biết sao?\p"
+	.string "“{STR_VAR_1}”... Xưa như chuyện\n"
+	.string "năm phút trước rồi.\p"
+	.string "Giờ “{STR_VAR_2}” mới là thứ\n"
+	.string "quan trọng và bắt kịp thời đại!$"
 
 DewfordTown_Text_XHuhIThinkYIsCool:
-	.string "Hmm…\n"
-	.string "“{STR_VAR_2},” huh?\p"
-	.string "But personally, I think\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "is what's real in cool.$"
+	.string "Hmm... “{STR_VAR_2}” à?\p"
+	.string "Nhưng riêng tôi thấy\n"
+	.string "“{STR_VAR_1}” mới thật sự chất.$"
 
 DewfordTown_Text_HearOfAnyTrendsComeShareWithMe:
-	.string "Well, if you hear of any happening new\n"
-	.string "trends, come share them with me, okay?$"
+	.string "Nếu nghe được trào lưu mới nào đang\n"
+	.string "nổi, hãy đến chia sẻ với tôi nhé?$"
 
 DewfordTown_Text_YeahDefinitionOfInRightNow:
-	.string "Yeah, absolutely right!\p"
-	.string "“{STR_VAR_1}” is the\n"
-	.string "definition of “in” right now.$"
+	.string "Đúng, hoàn toàn chính xác!\p"
+	.string "“{STR_VAR_1}” chính là định\n"
+	.string "nghĩa của “hợp mốt” lúc này.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global DewfordTown_Text_TinyIslandCommunity
+	.global DewfordTown_Text_TownSign
+	.global DewfordTown_Text_GymSign
+	.global DewfordTown_Text_HallSign
+	.global Route104_Text_LandedInDewfordDeliverLetter
+	.global DewfordTown_Text_SetSailBackToPetalburg
+	.global DewfordTown_Text_PetalburgWereSettingSail2
+	.global DewfordTown_Text_GoDeliverIllBeWaiting
+	.global DewfordTown_Text_BrineyLandedInDewford
+	.global DewfordTown_Text_WhereAreWeBound
+	.global DewfordTown_Text_PetalburgWereSettingSail
+	.global DewfordTown_Text_SlateportWereSettingSail
+	.global DewfordTown_Text_JustTellMeWhenYouNeedToSetSail
+	.global DewfordTown_Text_GettingItchToFish
+	.global DewfordTown_Text_GiveYouOneOfMyRods
+	.global DewfordTown_Text_ThrowInFishingAdvice
+	.global DewfordTown_Text_ThatsTooBadThen
+	.global DewfordTown_Text_HowsYourFishing
+	.global DewfordTown_Text_GreatHaulInSomeBigOnes
+	.global DewfordTown_Text_FishingAdvice
+	.global DewfordTown_Text_XIsTheBiggestHappeningThingRight
+	.global DewfordTown_Text_TellMeWhatsNewAndIn
+	.global DewfordTown_Text_OfCourseIKnowAboutThat
+	.global DewfordTown_Text_XHuhIThinkYIsCool
+	.global DewfordTown_Text_HearOfAnyTrendsComeShareWithMe
+	.global DewfordTown_Text_YeahDefinitionOfInRightNow
+@ END GENERATED LOCALIZATION EXPORTS

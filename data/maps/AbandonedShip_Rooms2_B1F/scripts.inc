@@ -6,8 +6,11 @@ AbandonedShip_Rooms2_B1F_EventScript_Camper::
 	end
 
 AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring:
-	.string "This is a perfect place to go exploring!\n"
-	.string "It's exciting here!\p"
-	.string "I bet there're amazing treasures on\n"
-	.string "board.$"
+	.string "Đây là nơi hoàn hảo để thám hiểm! Ở đây\n"
+	.string "thú vị thật!\p"
+	.string "Tôi cá là trên tàu có những kho báu\n"
+	.string "tuyệt vời.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring
+@ END GENERATED LOCALIZATION EXPORTS

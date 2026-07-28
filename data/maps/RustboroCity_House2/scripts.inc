@@ -10,12 +10,17 @@ RustboroCity_House2_EventScript_LittleGirl::
 	end
 
 RustboroCity_House2_Text_TrainerSchoolExcellent:
-	.string "The TRAINER'S SCHOOL is excellent.\p"
-	.string "If you study there, you could even\n"
-	.string "become a GYM LEADER.$"
+	.string "TRAINER'S SCHOOL là một ngôi trường\n"
+	.string "xuất sắc.\p"
+	.string "Nếu học ở đó, bạn thậm chí có thể trở\n"
+	.string "thành GYM LEADER.$"
 
 RustboroCity_House2_Text_RoxanneKnowsALot:
-	.string "ROXANNE, the GYM LEADER, really knows\n"
-	.string "a lot about POKéMON.\p"
-	.string "She's really strong, too!$"
+	.string "GYM LEADER ROXANNE thật sự biết rất\n"
+	.string "nhiều về POKéMON.\p"
+	.string "Cô ấy cũng rất mạnh!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RustboroCity_House2_Text_TrainerSchoolExcellent
+	.global RustboroCity_House2_Text_RoxanneKnowsALot
+@ END GENERATED LOCALIZATION EXPORTS

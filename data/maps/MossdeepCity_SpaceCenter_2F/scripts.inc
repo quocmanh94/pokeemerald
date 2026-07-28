@@ -358,151 +358,177 @@ MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall::
 	return
 
 MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
-	.string "MOSSDEEP has mainly sunny weather,\n"
-	.string "and its winds are stable.\p"
-	.string "It's an ideal location for launching\n"
-	.string "rockets.$"
+	.string "MOSSDEEP hầu như luôn có nắng và gió ổn\n"
+	.string "định.\p"
+	.string "Đây là địa điểm lý tưởng để phóng tên\n"
+	.string "lửa.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "Why would TEAM MAGMA want to steal\n"
-	.string "our rocket fuel in the first place?$"
+	.string "Ngay từ đầu, tại sao TEAM MAGMA lại\n"
+	.string "muốn trộm nhiên liệu tên lửa của chúng\l"
+	.string "ta chứ?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
-	.string "If only I was a little younger, I would\n"
-	.string "have liked being an astronaut…\p"
-	.string "No… It's not too late!\n"
-	.string "I can and will try!$"
+	.string "Giá mà tôi trẻ hơn một chút, tôi đã muốn\n"
+	.string "trở thành phi hành gia...\p"
+	.string "Không... Vẫn chưa quá muộn! Tôi có thể\n"
+	.string "thử và nhất định sẽ thử!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "If TEAM MAGMA takes the rocket fuel,\n"
-	.string "I won't be able to go to space!\p"
-	.string "They can't be allowed to get away\n"
-	.string "with such an outrage!$"
+	.string "Nếu TEAM MAGMA lấy mất nhiên liệu tên\n"
+	.string "lửa, tôi sẽ không thể bay vào vũ trụ!\p"
+	.string "Không thể để chúng ngang nhiên làm\n"
+	.string "chuyện quá quắt như vậy!$"
 
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
-	.string "I wish ordinary people could go into\n"
-	.string "space one day…$"
+	.string "Ước gì một ngày nào đó người bình\n"
+	.string "thường cũng có thể bay vào vũ trụ...$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "TEAM MAGMA…\n"
-	.string "Do they want to go to space, too?$"
+	.string "TEAM MAGMA... Chẳng lẽ họ cũng muốn bay\n"
+	.string "vào vũ trụ?$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
-	.string "What's wrong with you?\p"
-	.string "You're outnumbered three to one,\n"
-	.string "but you still want to take us on?$"
+	.string "Ngươi bị làm sao vậy?\p"
+	.string "Một mình đấu ba người mà vẫn muốn đối\n"
+	.string "đầu với bọn ta ư?$"
 
 MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
-	.string "Good answer!\n"
-	.string "That's what a smart person'll do!$"
+	.string "Trả lời hay lắm! Người thông minh phải\n"
+	.string "làm thế chứ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "A reckless go-getter, are you?\n"
-	.string "Okay, I'll go first!$"
+	.string "Đúng là kẻ liều lĩnh thích xông pha\n"
+	.string "nhỉ? Được, ta lên trước!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
-	.string "I lost!\n"
-	.string "But!$"
+	.string "Ta thua rồi! Nhưng mà!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
-	.string "It's too soon to be relieved!\n"
-	.string "I'm up next!$"
+	.string "Còn quá sớm để nhẹ nhõm! Tiếp theo là\n"
+	.string "ta!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
-	.string "I lost, too!\n"
-	.string "But!$"
+	.string "Ta cũng thua rồi! Nhưng mà!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "I bet you want to take a break.\n"
-	.string "But I'm not about to let you do that!$"
+	.string "Chắc ngươi đang muốn nghỉ một lát.\n"
+	.string "Nhưng ta sẽ không để ngươi làm vậy\l"
+	.string "đâu!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "We should've taken a break…\n"
-	.string "That's what we should've done…$"
+	.string "Lẽ ra bọn ta nên nghỉ một lát... Đáng lẽ\n"
+	.string "phải làm thế...$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
-	.string "Three of us here, and look at the sorry\n"
-	.string "mess we got ourselves into.$"
+	.string "Ba người bọn ta ở đây mà xem đã tự đẩy\n"
+	.string "mình vào cảnh thảm hại gì này.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
-	.string "We three losing like this…\n"
-	.string "We look worse than usual by triple!$"
+	.string "Cả ba bọn ta cùng thua thế này... Trông\n"
+	.string "bọn ta thảm hại gấp ba ngày thường!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
-	.string "Are we being useful to our leader\n"
-	.string "at all?$"
+	.string "Rốt cuộc bọn ta có giúp ích gì cho thủ\n"
+	.string "lĩnh không?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
-	.string "Hehehe!\p"
-	.string "We come all the way here to get some\n"
-	.string "fuel, and we're interfered with again!\p"
-	.string "If you're going to mess with us too,\n"
-	.string "we'll take care of you at the same time!$"
+	.string "Hê hê hê!\p"
+	.string "Bọn ta lặn lội tới tận đây lấy chút\n"
+	.string "nhiên liệu mà lại bị cản trở!\p"
+	.string "Nếu ngươi cũng định phá bọn ta, tiện\n"
+	.string "thể bọn ta sẽ xử luôn ngươi!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "MAXIE: Clear out of the way!\n"
-	.string "Don't you dare interfere!$"
+	.string "MAXIE: Tránh ra! Đừng hòng xen vào!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "STEVEN: TEAM MAGMA…\p"
-	.string "What's the point of stealing rocket\n"
-	.string "fuel?$"
+	.string "STEVEN: TEAM MAGMA...\p"
+	.string "Trộm nhiên liệu tên lửa thì có ích gì\n"
+	.string "chứ?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "MAXIE: Fufufu… Since you're so\n"
-	.string "curious, you deserve an explanation.\p"
-	.string "We're going to jettison the entire\n"
-	.string "load into MT. CHIMNEY!\p"
-	.string "With GROUDON gone, we have no need\n"
-	.string "for that slag heap of a mountain!\p"
-	.string "So we'll use the fuel's power to make\n"
-	.string "the volcano erupt!\p"
-	.string "It will be savage!$"
+	.string "MAXIE: Hư hư hư... Nếu đã tò mò đến thế,\n"
+	.string "ngươi xứng đáng được nghe giải thích.\p"
+	.string "Bọn ta sẽ trút toàn bộ số nhiên liệu đó\n"
+	.string "xuống MT. CHIMNEY!\p"
+	.string "GROUDON đã biến mất, nên bọn ta không\n"
+	.string "còn cần ngọn núi phế thải ấy nữa!\p"
+	.string "Vì vậy, bọn ta sẽ dùng sức mạnh của\n"
+	.string "nhiên liệu để khiến núi lửa phun trào!\p"
+	.string "Cảnh tượng sẽ vô cùng dữ dội!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
-	.string "STEVEN: {PLAYER}{KUN}!\n"
-	.string "You're going to help me?\p"
-	.string "Let's go into battle together!\n"
-	.string "Are you ready?$"
+	.string "STEVEN: {PLAYER}{KUN}! Em sẽ giúp anh\n"
+	.string "sao?\p"
+	.string "Hãy cùng nhau chiến đấu! Em sẵn sàng\n"
+	.string "chưa?$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "STEVEN: Then, hurry!\n"
-	.string "Get ready quickly!$"
+	.string "STEVEN: Vậy thì mau lên! Chuẩn bị nhanh\n"
+	.string "đi!$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
-	.string "All I want…\n"
-	.string "I just want to expand the land mass…$"
+	.string "Điều ta muốn... Ta chỉ muốn mở rộng đất\n"
+	.string "liền...$"
 
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:
-	.string "I'm with our leader…$"
+	.string "Ta luôn sát cánh cùng thủ lĩnh...$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "MAXIE: We failed to make the volcano\n"
-	.string "erupt…\p"
-	.string "We failed to control GROUDON after\n"
-	.string "we had awoken it…\p"
-	.string "Is our goal to expand the land\n"
-	.string "misguided?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "If…\n"
-	.string "If we, TEAM MAGMA, are wrong…\l"
-	.string "… … … … … …\p"
-	.string "Then might TEAM AQUA's goal to expand\n"
-	.string "the sea also be equally misguided?$"
+	.string "MAXIE: Bọn ta đã không thể khiến núi\n"
+	.string "lửa phun trào...\p"
+	.string "Bọn ta cũng không thể kiểm soát\n"
+	.string "GROUDON sau khi đánh thức nó...\p"
+	.string "Chẳng lẽ mục tiêu mở rộng đất liền của\n"
+	.string "bọn ta là sai lầm?\p"
+	.string "...\p"
+	.string "Nếu... Nếu TEAM MAGMA bọn ta sai...\p"
+	.string "Vậy mục tiêu mở rộng biển cả của TEAM\n"
+	.string "AQUA cũng có thể sai lầm như thế sao?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "MAXIE: All right…\n"
-	.string "We will give up on the fuel…\p"
-	.string "There appear to be more important\n"
-	.string "matters that I must examine…$"
+	.string "MAXIE: Được rồi... Bọn ta sẽ từ bỏ số\n"
+	.string "nhiên liệu...\p"
+	.string "Có vẻ còn những vấn đề quan trọng hơn\n"
+	.string "mà ta phải xem xét...$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
-	.string "STEVEN: Whew, that was too tense.\n"
-	.string "{PLAYER}{KUN}, thank you.\p"
-	.string "I have something to give you as\n"
-	.string "thanks for your support.\p"
-	.string "Please come see me at home\n"
-	.string "after this.\p"
-	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
-	.string "I live right here on this island.$"
+	.string "STEVEN: Phù, vừa rồi căng thẳng quá.\n"
+	.string "{PLAYER}{KUN}, cảm ơn em.\p"
+	.string "Anh có thứ muốn tặng em để cảm ơn vì\n"
+	.string "đã giúp đỡ.\p"
+	.string "Sau chuyện này, hãy ghé nhà anh nhé.\p"
+	.string "À phải, anh không sống ở RUSTBORO CITY.\n"
+	.string "Anh sống ngay trên hòn đảo này.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets
+	.global MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel
+	.global MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut
+	.global MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis
+	.global MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace
+	.global MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace
+	.global MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn
+	.global MossdeepCity_SpaceCenter_2F_Text_GoodAnswer
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle
+	.global MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle
+	.global MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou
+	.global MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere
+	.global MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel
+	.global MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano
+	.global MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle
+	.global MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly
+	.global MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand
+	.global MossdeepCity_SpaceCenter_Text_TabithaDefeat
+	.global MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided
+	.global MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp
+	.global MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome
+@ END GENERATED LOCALIZATION EXPORTS

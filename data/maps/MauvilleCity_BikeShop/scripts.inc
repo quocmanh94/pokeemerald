@@ -175,146 +175,162 @@ MauvilleCity_BikeShop_EventScript_ExitAcroHandbook::
 	end
 
 MauvilleCity_BikeShop_Text_RydelGreeting:
-	.string "Well, well, what have we here?\n"
-	.string "A most energetic customer!\p"
-	.string "Me? You may call me RYDEL.\n"
-	.string "I'm the owner of this cycle shop.$"
+	.string "Ồ, ồ, xem ai đến đây nào? Một vị khách\n"
+	.string "tràn đầy năng lượng!\p"
+	.string "Tôi ư? Cứ gọi tôi là RYDEL. Tôi là chủ\n"
+	.string "cửa hàng xe đạp này.$"
 
 MauvilleCity_BikeShop_Text_DidYouComeFromFarAway:
-	.string "RYDEL: Your RUNNING SHOES…\n"
-	.string "They're awfully filthy.\p"
-	.string "Did you come from far away?$"
+	.string "RYDEL: Đôi RUNNING SHOES của cậu... Bẩn\n"
+	.string "kinh khủng.\p"
+	.string "Cậu đến từ nơi xa lắm sao?$"
 
 MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
-	.string "RYDEL: Is that right?\p"
-	.string "Then, I guess you have no need for\n"
-	.string "any of my BIKES.$"
+	.string "RYDEL: Vậy à?\p"
+	.string "Thế thì chắc cậu chẳng cần đến BIKES\n"
+	.string "của tôi.$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
-	.string "RYDEL: Hm, hm… … … … …\p"
-	.string "You're saying that you came all this\n"
-	.string "way from LITTLEROOT?\p"
-	.string "My goodness!\n"
-	.string "That's ridiculously far!\p"
-	.string "If you had one of my BIKES, you could\n"
-	.string "go anywhere easily while feeling the\l"
-	.string "gentle caress of the wind!\p"
-	.string "I'll tell you what!\n"
-	.string "I'll give you a BIKE!\p"
-	.string "Oh, wait a second!\p"
-	.string "I forgot to tell you that there are\n"
-	.string "two kinds of BIKES!\p"
-	.string "They are the MACH BIKE and\n"
-	.string "the ACRO BIKE!\p"
-	.string "The MACH BIKE is for cyclists who want\n"
-	.string "to feel the wind with their bodies!\p"
-	.string "And an ACRO BIKE is for those who\n"
-	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "RYDEL: Hừm, hừm... ... ... ... ...\p"
+	.string "Cậu nói mình đã đi suốt quãng đường\n"
+	.string "từ LITTLEROOT tới đây sao?\p"
+	.string "Trời đất! Xa khủng khiếp!\p"
+	.string "Nếu có một chiếc BIKE của tôi, cậu có\n"
+	.string "thể dễ dàng đi khắp nơi trong làn gió\l"
+	.string "dịu dàng ve vuốt!\p"
+	.string "Thế này nhé! Tôi sẽ tặng cậu một chiếc\n"
+	.string "BIKE!\p"
+	.string "Ồ, khoan đã!\p"
+	.string "Tôi quên nói có hai loại BIKES!\p"
+	.string "Đó là MACH BIKE và ACRO BIKE!\p"
+	.string "MACH BIKE dành cho người muốn cảm\n"
+	.string "nhận làn gió bằng cả cơ thể!\p"
+	.string "Còn ACRO BIKE dành cho người thích kỹ\n"
+	.string "thuật điều khiển!\p"
+	.string "Tôi đúng là tốt bụng, nên cậu thích\n"
+	.string "chiếc nào cũng được!\p"
+	.string "Cậu sẽ chọn chiếc nào?$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
-	.string "{PLAYER} chose the MACH BIKE.$"
+	.string "{PLAYER} đã chọn MACH BIKE.$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike:
-	.string "{PLAYER} chose the ACRO BIKE.$"
+	.string "{PLAYER} đã chọn ACRO BIKE.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+	.string "RYDEL: Nếu muốn đổi BIKES, cứ đến gặp\n"
+	.string "tôi!$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
-	.string "RYDEL: Oh? Were you thinking about\n"
-	.string "switching BIKES?$"
+	.string "RYDEL: Ồ? Cậu đang tính đổi BIKES à?$"
 
 MauvilleCity_BikeShop_Text_IllSwitchBikes:
-	.string "RYDEL: Okay, no problem!\n"
-	.string "I'll switch BIKES for you!$"
+	.string "RYDEL: Được, không vấn đề gì! Tôi sẽ\n"
+	.string "đổi BIKES cho cậu!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
-	.string "for an ACRO BIKE.$"
+	.string "{PLAYER} đã đổi MACH BIKE lấy ACRO\n"
+	.string "BIKE.$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
-	.string "for a MACH BIKE.$"
+	.string "{PLAYER} đã đổi ACRO BIKE lấy MACH\n"
+	.string "BIKE.$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
-	.string "RYDEL: Good, good!\n"
-	.string "I'm happy that you like it!$"
+	.string "RYDEL: Tốt, tốt! Tôi rất vui vì cậu\n"
+	.string "thích nó!$"
 
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
-	.string "Oh? What happened to that BIKE\n"
-	.string "I gave you?\p"
-	.string "Oh, I get it, you stored it using your PC.\p"
-	.string "Well, take it out of PC storage,\n"
-	.string "and I'll be happy to exchange it!\p"
-	.string "May the wind always be at your back\n"
-	.string "on your adventure!$"
+	.string "Ồ? Chiếc BIKE tôi tặng cậu đâu rồi?\p"
+	.string "À, tôi hiểu rồi, cậu đã cất nó bằng PC.\p"
+	.string "Vậy hãy lấy nó ra khỏi kho PC, rồi tôi sẽ\n"
+	.string "vui lòng đổi cho cậu!\p"
+	.string "Mong gió luôn nâng bước cậu trên hành\n"
+	.string "trình!$"
 
 MauvilleCity_BikeShop_Text_HandbooksAreInBack:
-	.string "I'm learning about BIKES while\n"
-	.string "I work here.\p"
-	.string "If you need advice on how to ride your\n"
-	.string "BIKE, there're a couple handbooks in\l"
-	.string "the back.$"
+	.string "Tôi vừa làm việc ở đây vừa học hỏi về\n"
+	.string "BIKES.\p"
+	.string "Nếu cần lời khuyên về cách đi BIKE,\n"
+	.string "phía sau có vài cuốn sổ hướng dẫn.$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
-	.string "It's a handbook on the MACH BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "Đây là sổ hướng dẫn về MACH BIKE.\p"
+	.string "Cậu muốn đọc trang nào?$"
 
 MauvilleCity_BikeShop_Text_HowToRideMachBike:
-	.string "A BIKE moves in the direction that\n"
-	.string "the + Control Pad is pressed.\p"
-	.string "It will speed up once it gets rolling.\p"
-	.string "To stop, release the + Control Pad.\n"
-	.string "The BIKE will slow to a stop.\p"
-	.string "Want to read a different page?$"
+	.string "BIKE di chuyển theo hướng cậu nhấn\n"
+	.string "trên + Control Pad.\p"
+	.string "Khi đã bắt đầu lăn bánh, nó sẽ tăng tốc.\p"
+	.string "Muốn dừng lại, hãy thả + Control Pad.\n"
+	.string "BIKE sẽ giảm tốc rồi dừng hẳn.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
 MauvilleCity_BikeShop_Text_HowToTurnMachBike:
-	.string "A MACH BIKE is speedy, but it can't\n"
-	.string "stop very quickly.\p"
-	.string "It gets a little tricky to get around\n"
-	.string "a corner.\p"
-	.string "Release the + Control Pad a little\n"
-	.string "before the corner and slow down.\p"
-	.string "Want to read a different page?$"
+	.string "MACH BIKE rất nhanh, nhưng không thể\n"
+	.string "dừng lại ngay.\p"
+	.string "Vì vậy, vào cua sẽ hơi khó.\p"
+	.string "Hãy thả + Control Pad một chút trước\n"
+	.string "khi tới góc cua để giảm tốc.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
 MauvilleCity_BikeShop_Text_SandySlopes:
-	.string "There are small sandy slopes\n"
-	.string "throughout the HOENN region.\p"
-	.string "The loose, crumbly sand makes it\n"
-	.string "impossible to climb normally.\p"
-	.string "But if you have a MACH BIKE, you can\n"
-	.string "zip up a sandy slope.\p"
-	.string "Want to read a different page?$"
+	.string "Khắp vùng HOENN có những dốc cát nhỏ.\p"
+	.string "Lớp cát tơi xốp khiến ta không thể leo\n"
+	.string "lên theo cách thông thường.\p"
+	.string "Nhưng nếu có MACH BIKE, cậu có thể\n"
+	.string "phóng vút lên dốc cát.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
 MauvilleCity_BikeShop_Text_AcroHandbookWhichPage:
-	.string "It's a handbook on the ACRO BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "Đây là sổ hướng dẫn về ACRO BIKE.\p"
+	.string "Cậu muốn đọc trang nào?$"
 
 MauvilleCity_BikeShop_Text_Wheelies:
-	.string "Press the B Button while riding,\n"
-	.string "and the front wheel lifts up.\p"
-	.string "You can zip around with the front\n"
-	.string "wheel up using the + Control Pad.\p"
-	.string "This technique is called a wheelie.\p"
-	.string "Want to read a different page?$"
+	.string "Khi đang đi, nhấn B Button để nhấc bánh\n"
+	.string "trước lên.\p"
+	.string "Cậu có thể dùng + Control Pad để chạy\n"
+	.string "quanh khi bánh trước vẫn nhấc lên.\p"
+	.string "Kỹ thuật này gọi là bốc đầu.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
 MauvilleCity_BikeShop_Text_BunnyHops:
-	.string "Keeping the B Button pressed,\n"
-	.string "your BIKE can hop on the spot.\p"
-	.string "This technique is called a bunny hop.\p"
-	.string "You can ride while hopping, too.\p"
-	.string "Want to read a different page?$"
+	.string "Giữ B Button, BIKE của cậu có thể nhảy\n"
+	.string "tại chỗ.\p"
+	.string "Kỹ thuật này gọi là nhảy thỏ.\p"
+	.string "Cậu cũng có thể vừa chạy vừa nhảy.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
 MauvilleCity_BikeShop_Text_Jumps:
-	.string "Press the B Button and the + Control\n"
-	.string "Pad at the same time to jump.\p"
-	.string "Press the + Control Pad to the side\n"
-	.string "to jump sideways.\p"
-	.string "Press it backwards to make the BIKE\n"
-	.string "change directions while jumping.\p"
-	.string "Want to read a different page?$"
+	.string "Nhấn đồng thời B Button và + Control\n"
+	.string "Pad để nhảy.\p"
+	.string "Nhấn + Control Pad sang bên để nhảy\n"
+	.string "ngang.\p"
+	.string "Nhấn về phía sau để BIKE đổi hướng\n"
+	.string "trong lúc nhảy.\p"
+	.string "Cậu muốn đọc trang khác không?$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MauvilleCity_BikeShop_Text_RydelGreeting
+	.global MauvilleCity_BikeShop_Text_DidYouComeFromFarAway
+	.global MauvilleCity_BikeShop_Text_GuessYouDontNeedBike
+	.global MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne
+	.global MauvilleCity_BikeShop_Text_ChoseMachBike
+	.global MauvilleCity_BikeShop_Text_ChoseAcroBike
+	.global MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes
+	.global MauvilleCity_BikeShop_Text_WantToSwitchBikes
+	.global MauvilleCity_BikeShop_Text_IllSwitchBikes
+	.global MauvilleCity_BikeShop_Text_ExchangedMachForAcro
+	.global MauvilleCity_BikeShop_Text_ExchangedAcroForMach
+	.global MauvilleCity_BikeShop_Text_HappyYouLikeIt
+	.global MauvilleCity_BikeShop_Text_OhYourBikeIsInPC
+	.global MauvilleCity_BikeShop_Text_HandbooksAreInBack
+	.global MauvilleCity_BikeShop_Text_MachHandbookWhichPage
+	.global MauvilleCity_BikeShop_Text_HowToRideMachBike
+	.global MauvilleCity_BikeShop_Text_HowToTurnMachBike
+	.global MauvilleCity_BikeShop_Text_SandySlopes
+	.global MauvilleCity_BikeShop_Text_AcroHandbookWhichPage
+	.global MauvilleCity_BikeShop_Text_Wheelies
+	.global MauvilleCity_BikeShop_Text_BunnyHops
+	.global MauvilleCity_BikeShop_Text_Jumps
+@ END GENERATED LOCALIZATION EXPORTS

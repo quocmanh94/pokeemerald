@@ -39,49 +39,64 @@ RS_MysteryEventsHouse_EventScript_Door::
 	end
 
 RS_MysteryEventsHouse_Text_OldManGreeting:
-	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
-	.string "Now that I've become an old buzzard,\n"
-	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "Khi còn trẻ, ông từng chu du khắp thế\n"
+	.string "giới với tư cách một HLV POKéMON.\p"
+	.string "Giờ đã thành một lão già, thú vui duy\n"
+	.string "nhất của ông là xem các HLV trẻ\l"
+	.string "tuổi thi đấu.$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
-	.string "The door appears to be locked.$"
+	.string "Cánh cửa có vẻ đã bị khóa.$"
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
-	.string "A TRAINER named {STR_VAR_1} is\n"
-	.string "visiting my home.\p"
-	.string "Would you like to challenge\n"
-	.string "{STR_VAR_1}?$"
+	.string "Một HLV tên {STR_VAR_1}\n"
+	.string "đang ghé thăm nhà ông.\p"
+	.string "Cháu có muốn thách đấu\n"
+	.string "{STR_VAR_1} không?$"
 
 RS_MysteryEventsHouse_Text_YouWontBattle:
-	.string "You won't battle? I'm disappointed\n"
-	.string "that I can't see you battle…$"
+	.string "Cháu không đấu sao? Ông thất vọng vì\n"
+	.string "không được xem cháu thi đấu...$"
 
 RS_MysteryEventsHouse_Text_KeepItToA3On3:
-	.string "Oh, good, good!\p"
-	.string "But my house isn't all that sturdy.\p"
-	.string "Could I ask you to keep it down to\n"
-	.string "a 3-on-3 match?$"
+	.string "Ồ, tốt lắm, tốt lắm!\p"
+	.string "Nhưng nhà ông không được kiên cố cho\n"
+	.string "lắm.\p"
+	.string "Hai cháu có thể chỉ đấu trận 3 đấu 3\n"
+	.string "thôi được không?$"
 
 RS_MysteryEventsHouse_Text_SaveYourProgress:
-	.string "Before you two battle, you should\n"
-	.string "save your progress.$"
+	.string "Trước khi hai cháu thi đấu, cháu nên\n"
+	.string "lưu tiến trình lại.$"
 
 RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch:
-	.string "I hope to see a good match!$"
+	.string "Ông mong được xem một trận đấu thật\n"
+	.string "hay!$"
 
 RS_MysteryEventsHouse_Text_BattleTie:
-	.string "So, it became a standoff.\p"
-	.string "It was a brilliant match in which\n"
-	.string "neither side conceded a step!$"
+	.string "Vậy là hai bên bất phân thắng bại.\p"
+	.string "Một trận đấu xuất sắc, không bên nào\n"
+	.string "chịu nhường dù chỉ một bước!$"
 
 RS_MysteryEventsHouse_Text_BattleWon:
-	.string "That was superlative!\p"
-	.string "Why, it was like seeing myself in\n"
-	.string "my youth again!$"
+	.string "Thật tuyệt vời!\p"
+	.string "Cứ như ông đang được nhìn lại chính\n"
+	.string "mình thời trẻ vậy!$"
 
 RS_MysteryEventsHouse_Text_BattleLost:
-	.string "Ah, too bad for you!\p"
-	.string "But it was a good match.\n"
-	.string "I hope you can win next time.$"
+	.string "A, tiếc cho cháu quá!\p"
+	.string "Nhưng đó là một trận đấu hay. Ông hy\n"
+	.string "vọng lần tới cháu sẽ thắng.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global RS_MysteryEventsHouse_Text_OldManGreeting
+	.global RS_MysteryEventsHouse_Text_DoorIsLocked
+	.global RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer
+	.global RS_MysteryEventsHouse_Text_YouWontBattle
+	.global RS_MysteryEventsHouse_Text_KeepItToA3On3
+	.global RS_MysteryEventsHouse_Text_SaveYourProgress
+	.global RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch
+	.global RS_MysteryEventsHouse_Text_BattleTie
+	.global RS_MysteryEventsHouse_Text_BattleWon
+	.global RS_MysteryEventsHouse_Text_BattleLost
+@ END GENERATED LOCALIZATION EXPORTS

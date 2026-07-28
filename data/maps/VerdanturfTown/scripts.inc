@@ -62,64 +62,75 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	end
 
 VerdanturfTown_Text_ManTryingToDigTunnel:
-	.string "My papa told me.\p"
-	.string "He says this tunnel is full of\n"
-	.string "timid POKéMON.\p"
-	.string "They get all scared of loud noise and\n"
-	.string "make a big uproar.\p"
-	.string "So they had to stop the big tunnel\n"
-	.string "project.\p"
-	.string "But there's one man. He's trying to dig\n"
-	.string "the tunnel by himself!$"
+	.string "Ba tôi kể đấy.\p"
+	.string "Ba nói đường hầm này có rất nhiều\n"
+	.string "POKéMON nhút nhát.\p"
+	.string "Chúng hoảng sợ trước tiếng động lớn\n"
+	.string "rồi làm náo loạn cả lên.\p"
+	.string "Vì thế, dự án đường hầm lớn đã phải\n"
+	.string "dừng lại.\p"
+	.string "Nhưng có một người vẫn đang tự mình\n"
+	.string "đào đường hầm!$"
 
 VerdanturfTown_Text_ManDugTunnelForLove:
-	.string "There was a man who dug a tunnel for\n"
-	.string "a lady he loved.\p"
-	.string "I don't really get it, but hey!$"
+	.string "Có một người đã đào đường hầm vì\n"
+	.string "người con gái mình yêu.\p"
+	.string "Tôi cũng chẳng hiểu lắm, nhưng mà, ghê\n"
+	.string "thật!$"
 
 VerdanturfTown_Text_AirCleanHere:
-	.string "The way the winds blow, volcanic ash\n"
-	.string "is never blown in this direction.\p"
-	.string "The air is clean and delicious here.\n"
-	.string "Living here should do wonders for even\l"
-	.string "frail and sickly people.$"
+	.string "Do hướng gió nên tro núi lửa không bao\n"
+	.string "giờ bay đến đây.\p"
+	.string "Không khí nơi này trong lành và dễ chịu.\n"
+	.string "Sống ở đây hẳn sẽ rất tốt ngay cả với\l"
+	.string "những người yếu ớt, hay đau ốm.$"
 
 VerdanturfTown_Text_MakeBattleTentDebut:
-	.string "My POKéMON and I, we've been riding\n"
-	.string "a hot winning streak.\p"
-	.string "So I decided to make my BATTLE TENT\n"
-	.string "debut in this town.$"
+	.string "Tôi và POKéMON của mình đang thắng như\n"
+	.string "chẻ tre.\p"
+	.string "Vì thế, tôi quyết định ra mắt tại BATTLE\n"
+	.string "TENT ở thị trấn này.$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave:
-	.string "Did you see the cave next to the\n"
-	.string "POKéMON MART?\p"
-	.string "There's a guy in there who's trying to\n"
-	.string "bust up boulders so he can bust out\l"
-	.string "through to the other side.\p"
-	.string "It'd be great if we could go through…\n"
-	.string "It'll make it easy to visit RUSTBORO.$"
+	.string "Bạn thấy hang động cạnh POKéMON MART\n"
+	.string "chưa?\p"
+	.string "Trong đó có một người đang cố đập vỡ\n"
+	.string "đá tảng để mở đường sang phía bên kia.\p"
+	.string "Nếu có thể đi xuyên qua thì tuyệt quá...\n"
+	.string "Đến RUSTBORO sẽ dễ dàng hơn nhiều.$"
 
 VerdanturfTown_Text_EasyToGetToRustboroNow:
-	.string "That cave next to the POKéMON MART\n"
-	.string "is now a tunnel to the other side.\p"
-	.string "It's great--it's easy to go shop for\n"
-	.string "new DEVON products in RUSTBORO now.$"
+	.string "Hang động cạnh POKéMON MART giờ đã\n"
+	.string "trở thành đường hầm thông sang phía\l"
+	.string "bên kia.\p"
+	.string "Tuyệt thật, giờ đến RUSTBORO mua sản\n"
+	.string "phẩm DEVON mới dễ dàng hơn nhiều.$"
 
 VerdanturfTown_Text_TownSign:
 	.string "VERDANTURF TOWN\p"
-	.string "“The windswept highlands with the\n"
-	.string "sweet fragrance of grass.”$"
+	.string "Cao nguyên lộng gió, thoảng hương cỏ\n"
+	.string "ngọt ngào.$"
 
 VerdanturfTown_Text_WandasHouse:
 	.string "WANDA'S HOUSE$"
 
 VerdanturfTown_Text_BattleTentSign:
-	.string "BATTLE TENT VERDANTURF SITE\n"
-	.string "“Feast Your Eyes on Battles!”$"
+	.string "BATTLE TENT VERDANTURF SITE Hãy mãn\n"
+	.string "nhãn với những trận đấu!$"
 
 VerdanturfTown_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
-	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+	.string "RUSTURF TUNNEL Nối liền RUSTBORO và\n"
+	.string "VERDANTURF\p"
+	.string "Dự án đường hầm đã bị hủy bỏ.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global VerdanturfTown_Text_ManTryingToDigTunnel
+	.global VerdanturfTown_Text_ManDugTunnelForLove
+	.global VerdanturfTown_Text_AirCleanHere
+	.global VerdanturfTown_Text_MakeBattleTentDebut
+	.global VerdanturfTown_Text_GuyTryingToBustThroughCave
+	.global VerdanturfTown_Text_EasyToGetToRustboroNow
+	.global VerdanturfTown_Text_TownSign
+	.global VerdanturfTown_Text_BattleTentSign
+	.global VerdanturfTown_Text_RusturfTunnelSign
+@ END GENERATED LOCALIZATION EXPORTS

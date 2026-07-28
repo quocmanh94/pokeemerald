@@ -51,43 +51,54 @@ FallarborTown_EventScript_MoveTutorSign::
 	end
 
 FallarborTown_Text_ShadyCharactersCozmosHome:
-	.string "Something's happening,\n"
-	.string "and I don't like it!\p"
-	.string "I've seen shady characters wandering\n"
-	.string "in and out of PROF. COZMO's home…$"
+	.string "Có chuyện gì đó đang xảy ra, và tôi\n"
+	.string "không thích chút nào!\p"
+	.string "Tôi đã thấy những kẻ khả nghi cứ ra vào\n"
+	.string "nhà của PROF. COZMO...$"
 
 FallarborTown_Text_RegionKnownForMeteors:
-	.string "This region's been known for meteors\n"
-	.string "since the olden days.\p"
-	.string "They say METEOR FALLS was gouged out\n"
-	.string "by a falling meteorite long ago.$"
+	.string "Vùng này đã nổi tiếng với thiên thạch\n"
+	.string "từ thời xa xưa.\p"
+	.string "Người ta nói METEOR FALLS được tạo\n"
+	.string "thành khi một thiên thạch rơi xuống và\l"
+	.string "khoét sâu vào mặt đất từ lâu lắm rồi.$"
 
 FallarborTown_Text_MyPreciousAzurill:
-	.string "See! Take a look!\n"
-	.string "This is my precious AZURILL!\p"
-	.string "It's slick and smooth and plushy, too!$"
+	.string "Thấy chưa! Nhìn này! Đây là AZURILL\n"
+	.string "quý giá của tôi!\p"
+	.string "Nó trơn mượt, mềm mại, lại còn êm ái\n"
+	.string "nữa!$"
 
 FallarborTown_Text_Azurill:
 	.string "AZURILL: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
-	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
-	.string "The girl's grandfather was famous.\n"
-	.string "He was one of the ELITE FOUR in the\l"
-	.string "POKéMON LEAGUE at one point.\p"
-	.string "It wouldn't surprise me to see FLANNERY\n"
-	.string "become a great TRAINER in her own\l"
-	.string "right.$"
+	.string "Bạn đã thách đấu FLANNERY, LEADER của\n"
+	.string "LAVARIDGE GYM chưa?\p"
+	.string "Ông của cô ấy từng rất nổi tiếng. Ông\n"
+	.string "từng là một thành viên ELITE FOUR của\l"
+	.string "POKéMON LEAGUE.\p"
+	.string "Tôi sẽ chẳng ngạc nhiên nếu FLANNERY\n"
+	.string "tự mình trở thành một HLV vĩ đại.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "BATTLE TENT FALLARBOR SITE\n"
-	.string "“May the Greatest Teams Gather!”$"
+	.string "BATTLE TENT, KHU FALLARBOR “Nơi những\n"
+	.string "đội hình xuất sắc nhất hội tụ!”$"
 
 FallarborTown_Text_TownSign:
-	.string "FALLARBOR TOWN\n"
-	.string "“A farm community with small gardens.”$"
+	.string "FALLARBOR TOWN “Cộng đồng nông nghiệp\n"
+	.string "với những khu vườn nhỏ.”$"
 
 FallarborTown_Text_MoveTutorSign:
-	.string "MOVE TUTOR'S HOUSE\n"
-	.string "“New moves taught to POKéMON.”$"
+	.string "NHÀ CỦA MOVE TUTOR “Dạy POKéMON những\n"
+	.string "chiêu mới.”$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FallarborTown_Text_ShadyCharactersCozmosHome
+	.global FallarborTown_Text_RegionKnownForMeteors
+	.global FallarborTown_Text_MyPreciousAzurill
+	.global FallarborTown_Text_HaveYouChallengedFlannery
+	.global FallarborTown_Text_BattleTentSign
+	.global FallarborTown_Text_TownSign
+	.global FallarborTown_Text_MoveTutorSign
+@ END GENERATED LOCALIZATION EXPORTS

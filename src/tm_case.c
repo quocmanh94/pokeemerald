@@ -180,7 +180,7 @@ static const u8 sMenuActionIndices_UnionRoom[] = {0, 1};
 static const u8 sText_ClearTo18[] = _("{CLEAR_TO 18}");
 static const u8 sText_SingleSpace[] = _(" ");
 
-const u8 gItemDescription_ITEM_TM_CASE[] = _("A case that holds TMs and HMs.\nIt is attached to the BAG's\ncompartment for important items.");
+const u8 gItemDescription_ITEM_TM_CASE[] = _("Hộp đựng TM và HM.\nNó nằm trong ngăn vật phẩm\nquan trọng của BAG.");
 //const u16 gTMCaseMainWindowPalette[] = INCBIN_U16("graphics/tm_case/unk_841F408.gbapal");
 
 static ALIGNED(4) const u16 sPal3Override[] = {RGB(8, 8, 8), RGB(30, 16, 6)};
@@ -1208,3 +1208,8 @@ static void DestroyPartyMonIcons(void)
     }
     FreeMonIconPalettes();
 }
+
+// BEGIN GENERATED LOCALIZATION EXPORTS
+// These pointers expose file-local translated strings to the runtime resolver.
+const u8 *const gLocalizationSource_C03306 = gItemDescription_ITEM_TM_CASE;
+// END GENERATED LOCALIZATION EXPORTS

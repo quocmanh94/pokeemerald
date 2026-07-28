@@ -1,341 +1,485 @@
 BattleDome_Text_Potential1::
-	.string "The best candidate to be a champ!$"
+	.string "Ứng viên sáng giá nhất cho ngôi vô\n"
+	.string "địch!$"
 
 BattleDome_Text_Potential2::
-	.string "A sure-finalist team.$"
+	.string "Đội chắc suất vào chung kết.$"
 
 BattleDome_Text_Potential3::
-	.string "A likely top-three finisher.$"
+	.string "Nhiều khả năng lọt vào tốp ba.$"
 
 BattleDome_Text_Potential4::
-	.string "A candidate to finish first.$"
+	.string "Ứng viên cho vị trí số một.$"
 
 BattleDome_Text_Potential5::
-	.string "A team with top-class potential.$"
+	.string "Đội có tiềm năng hàng đầu.$"
 
 BattleDome_Text_Potential6::
-	.string "The dark horse team this tournament.$"
+	.string "Đội ngựa ô của giải đấu này.$"
 
 BattleDome_Text_Potential7::
-	.string "A better-than-average team.$"
+	.string "Đội mạnh hơn mức trung bình.$"
 
 BattleDome_Text_Potential8::
-	.string "This tournament's average team.$"
+	.string "Đội tầm trung của giải đấu này.$"
 
 BattleDome_Text_Potential9::
-	.string "A team with average potential.$"
+	.string "Đội có tiềm năng trung bình.$"
 
 BattleDome_Text_Potential10::
-	.string "A weaker-than-average team.$"
+	.string "Đội yếu hơn mức trung bình.$"
 
 BattleDome_Text_Potential11::
-	.string "A team looking for its first win.$"
+	.string "Một đội đang hướng tới chiến thắng\n"
+	.string "đầu tiên.$"
 
 BattleDome_Text_Potential12::
-	.string "One win will make this team proud.$"
+	.string "Một chiến thắng sẽ khiến đội này tự\n"
+	.string "hào.$"
 
 BattleDome_Text_Potential13::
-	.string "Overall, a weak team.$"
+	.string "Nhìn chung, đây là một đội yếu.$"
 
 BattleDome_Text_Potential14::
-	.string "A team with very low potential.$"
+	.string "Một đội có tiềm năng rất thấp.$"
 
 BattleDome_Text_Potential15::
-	.string "A team unlikely to win the tournament.$"
+	.string "Một đội khó có thể vô địch giải đấu.$"
 
 BattleDome_Text_Potential16::
-	.string "The team most unlikely to win.$"
+	.string "Đội khó có khả năng chiến thắng nhất.$"
 
 BattleDome_Text_PotentialDomeAceTucker::
-	.string "The perfect, invincible superstar!$"
+	.string "Siêu sao hoàn hảo, bất khả chiến bại!$"
 
 BattleDome_Text_StyleRiskDisaster::
-	.string "Willing to risk total disaster at times.$"
+	.string "Đôi khi sẵn sàng mạo hiểm, bất chấp nguy\n"
+	.string "cơ thảm bại.$"
 
 BattleDome_Text_StyleEndureLongBattles::
-	.string "Skilled at enduring long battles.$"
+	.string "Giỏi trụ vững trong những trận đấu kéo\n"
+	.string "dài.$"
 
 BattleDome_Text_StyleVariesTactics::
-	.string "Varies tactics to suit the opponent.$"
+	.string "Thay đổi chiến thuật cho phù hợp với\n"
+	.string "đối thủ.$"
 
 BattleDome_Text_StyleToughWinningPattern::
-	.string "Has a tough winning pattern.$"
+	.string "Có chiến thuật giành chiến thắng rất\n"
+	.string "khó hóa giải.$"
 
 BattleDome_Text_StyleUsesVeryRareMove::
-	.string "Occasionally uses a very rare move.$"
+	.string "Thỉnh thoảng dùng một chiêu thức rất\n"
+	.string "hiếm gặp.$"
 
 BattleDome_Text_StyleUsesStartlingMoves::
-	.string "Uses startling and disruptive moves.$"
+	.string "Dùng những chiêu thức gây bất ngờ và\n"
+	.string "quấy nhiễu.$"
 
 BattleDome_Text_StyleConstantlyWatchesHP::
-	.string "Constantly watches HP in battle.$"
+	.string "Luôn theo dõi HP trong trận đấu.$"
 
 BattleDome_Text_StyleStoresAndLoosesPower::
-	.string "Good at storing then loosing power.$"
+	.string "Giỏi tích tụ rồi giải phóng sức mạnh.$"
 
 BattleDome_Text_StyleEnfeeblesFoes::
-	.string "Skilled at enfeebling foes.$"
+	.string "Giỏi làm suy yếu đối thủ.$"
 
 BattleDome_Text_StylePrefersLuckTactics::
-	.string "Prefers tactics that rely on luck.$"
+	.string "Ưa chuộng chiến thuật dựa vào may mắn.$"
 
 BattleDome_Text_StyleRegalAtmosphere::
-	.string "Attacks with a regal atmosphere.$"
+	.string "Tấn công với khí chất vương giả.$"
 
 BattleDome_Text_StylePowerfulLowPPMoves::
-	.string "Attacks with powerful, low-PP moves.$"
+	.string "Tấn công bằng những chiêu thức mạnh\n"
+	.string "nhưng ít PP.$"
 
 BattleDome_Text_StyleEnfeebleThenAttack::
-	.string "Skilled at enfeebling, then attacking.$"
+	.string "Giỏi làm suy yếu rồi tấn công.$"
 
 BattleDome_Text_StyleBattlesWhileEnduring::
-	.string "Battles while enduring all attacks.$"
+	.string "Vừa chiến đấu vừa trụ vững trước mọi\n"
+	.string "đòn tấn công.$"
 
 BattleDome_Text_StyleUpsetsFoesEmotionally::
-	.string "Skilled at upsetting foes emotionally.$"
+	.string "Giỏi khiến đối thủ rối loạn tinh thần.$"
 
 BattleDome_Text_StyleStrongAndStraightforward::
-	.string "Uses strong and straightforward moves.$"
+	.string "Dùng những chiêu thức mạnh mẽ và\n"
+	.string "thẳng thắn.$"
 
 BattleDome_Text_StyleAggressivelyStrongMoves::
-	.string "Aggressively uses strong moves.$"
+	.string "Liên tục tung ra những chiêu thức\n"
+	.string "mạnh.$"
 
 BattleDome_Text_StyleCleverlyDodgesAttacks::
-	.string "Battles while cleverly dodging attacks.$"
+	.string "Chiến đấu bằng cách khéo léo né đòn.$"
 
 BattleDome_Text_StyleUsesUpsettingMoves::
-	.string "Skilled at using upsetting attacks.$"
+	.string "Giỏi dùng những đòn tấn công khiến đối\n"
+	.string "thủ mất bình tĩnh.$"
 
 BattleDome_Text_StyleUsesPopularMoves::
-	.string "Uses many popular moves.$"
+	.string "Dùng nhiều chiêu thức phổ biến.$"
 
 BattleDome_Text_StyleHasPowerfulComboMoves::
-	.string "Has moves for powerful combinations.$"
+	.string "Có những chiêu thức tạo nên sự kết\n"
+	.string "hợp mạnh mẽ.$"
 
 BattleDome_Text_StyleUsesHighProbabilityMoves::
-	.string "Uses high-probability attacks.$"
+	.string "Dùng các đòn tấn công có xác suất\n"
+	.string "trúng cao.$"
 
 BattleDome_Text_StyleAggressivelySpectacularMoves::
-	.string "Aggressively uses spectacular moves.$"
+	.string "Liên tục dùng những chiêu thức ngoạn\n"
+	.string "mục.$"
 
 BattleDome_Text_StyleEmphasizesOffenseOverDefense::
-	.string "Emphasizes offense over defense.$"
+	.string "Chú trọng tấn công hơn phòng thủ.$"
 
 BattleDome_Text_StyleEmphasizesDefenseOverOffense::
-	.string "Emphasizes defense over offense.$"
+	.string "Chú trọng phòng thủ hơn tấn công.$"
 
 BattleDome_Text_StyleAttacksQuicklyStrongMoves::
-	.string "Attacks quickly with strong moves.$"
+	.string "Nhanh chóng tấn công bằng những chiêu\n"
+	.string "thức mạnh.$"
 
 BattleDome_Text_StyleUsesAddedEffectMoves::
-	.string "Often uses moves with added effects.$"
+	.string "Thường dùng các chiêu thức có hiệu\n"
+	.string "ứng phụ.$"
 
 BattleDome_Text_StyleUsesBalancedMixOfMoves::
-	.string "Uses a well-balanced mix of moves.$"
+	.string "Kết hợp nhiều chiêu thức một cách cân\n"
+	.string "bằng.$"
 
 BattleDome_Text_StyleSampleMessage1::
-	.string "This is sample message 1.$"
+	.string "Đây là thông điệp mẫu 1.$"
 
 BattleDome_Text_StyleSampleMessage2::
-	.string "This is sample message 2.$"
+	.string "Đây là thông điệp mẫu 2.$"
 
 BattleDome_Text_StyleSampleMessage3::
-	.string "This is sample message 3.$"
+	.string "Đây là thông điệp mẫu 3.$"
 
 BattleDome_Text_StyleSampleMessage4::
-	.string "This is sample message 4.$"
+	.string "Đây là thông điệp mẫu 4.$"
 
 BattleDome_Text_EmphasizesHPAndAtk::
-	.string "Emphasizes HP and ATTACK.$"
+	.string "Chú trọng HP và ATTACK.$"
 
 BattleDome_Text_EmphasizesHPAndDef::
-	.string "Emphasizes HP and DEFENSE.$"
+	.string "Chú trọng HP và DEFENSE.$"
 
 BattleDome_Text_EmphasizesHPAndSpeed::
-	.string "Emphasizes HP and SPEED.$"
+	.string "Chú trọng HP và SPEED.$"
 
 BattleDome_Text_EmphasizesHPAndSpAtk::
-	.string "Emphasizes HP and SP. ATTACK.$"
+	.string "Chú trọng HP và SP. ATTACK.$"
 
 BattleDome_Text_EmphasizesHPAndSpDef::
-	.string "Emphasizes HP and SP. DEFENSE.$"
+	.string "Chú trọng HP và SP. DEFENSE.$"
 
 BattleDome_Text_EmphasizesAtkAndDef::
-	.string "Emphasizes ATTACK and DEFENSE.$"
+	.string "Chú trọng ATTACK và DEFENSE.$"
 
 BattleDome_Text_EmphasizesAtkAndSpeed::
-	.string "Emphasizes ATTACK and SPEED.$"
+	.string "Chú trọng ATTACK và SPEED.$"
 
 BattleDome_Text_EmphasizesAtkAndSpAtk::
-	.string "Emphasizes ATTACK and SP. ATTACK.$"
+	.string "Chú trọng ATTACK và SP. ATTACK.$"
 
 BattleDome_Text_EmphasizesAtkAndSpDef::
-	.string "Emphasizes ATTACK and SP. DEFENSE.$"
+	.string "Chú trọng ATTACK và SP. DEFENSE.$"
 
 BattleDome_Text_EmphasizesDefAndSpeed::
-	.string "Emphasizes DEFENSE and SPEED.$"
+	.string "Chú trọng DEFENSE và SPEED.$"
 
 BattleDome_Text_EmphasizesDefAndSpAtk::
-	.string "Emphasizes DEFENSE and SP. ATTACK.$"
+	.string "Chú trọng DEFENSE và SP. ATTACK.$"
 
 BattleDome_Text_EmphasizesDefAndSpDef::
-	.string "Emphasizes DEFENSE and SP. DEFENSE.$"
+	.string "Chú trọng DEFENSE và SP. DEFENSE.$"
 
 BattleDome_Text_EmphasizesSpeedAndSpAtk::
-	.string "Emphasizes SPEED and SP. ATTACK.$"
+	.string "Chú trọng SPEED và SP. ATTACK.$"
 
 BattleDome_Text_EmphasizesSpeedAndSpDef::
-	.string "Emphasizes SPEED and SP. DEFENSE.$"
+	.string "Chú trọng SPEED và SP. DEFENSE.$"
 
 BattleDome_Text_EmphasizesSpAtkAndSpDef::
-	.string "Emphasizes SP. ATTACK and SP. DEFENSE.$"
+	.string "Chú trọng SP. ATTACK và SP. DEFENSE.$"
 
 BattleDome_Text_EmphasizesHP::
-	.string "Emphasizes HP.$"
+	.string "Chú trọng HP.$"
 
 BattleDome_Text_EmphasizesAtk::
-	.string "Emphasizes ATTACK.$"
+	.string "Chú trọng ATTACK.$"
 
 BattleDome_Text_EmphasizesDef::
-	.string "Emphasizes DEFENSE.$"
+	.string "Chú trọng DEFENSE.$"
 
 BattleDome_Text_EmphasizesSpeed::
-	.string "Emphasizes SPEED.$"
+	.string "Chú trọng SPEED.$"
 
 BattleDome_Text_EmphasizesSpAtk::
-	.string "Emphasizes SP. ATTACK.$"
+	.string "Chú trọng SP. ATTACK.$"
 
 BattleDome_Text_EmphasizesSpDef::
-	.string "Emphasizes SP. DEFENSE.$"
+	.string "Chú trọng SP. DEFENSE.$"
 
 BattleDome_Text_NeglectsHPAndAtk::
-	.string "Neglects HP and ATTACK.$"
+	.string "Không chú trọng HP và ATTACK.$"
 
 BattleDome_Text_NeglectsHPAndDef::
-	.string "Neglects HP and DEFENSE.$"
+	.string "Không chú trọng HP và DEFENSE.$"
 
 BattleDome_Text_NeglectsHPAndSpeed::
-	.string "Neglects HP and SPEED.$"
+	.string "Không chú trọng HP và SPEED.$"
 
 BattleDome_Text_NeglectsHPAndSpAtk::
-	.string "Neglects HP and SP. ATTACK.$"
+	.string "Không chú trọng HP và SP. ATTACK.$"
 
 BattleDome_Text_NeglectsHPAndSpDef::
-	.string "Neglects HP and SP. DEFENSE.$"
+	.string "Không chú trọng HP và SP. DEFENSE.$"
 
 BattleDome_Text_NeglectsAtkAndDef::
-	.string "Neglects ATTACK and DEFENSE.$"
+	.string "Không chú trọng ATTACK và DEFENSE.$"
 
 BattleDome_Text_NeglectsAtkAndSpeed::
-	.string "Neglects ATTACK and SPEED.$"
+	.string "Không chú trọng ATTACK và SPEED.$"
 
 BattleDome_Text_NeglectsAtkAndSpAtk::
-	.string "Neglects ATTACK and SP. ATTACK.$"
+	.string "Không chú trọng ATTACK và SP. ATTACK.$"
 
 BattleDome_Text_NeglectsAtkAndSpDef::
-	.string "Neglects ATTACK and SP. DEFENSE.$"
+	.string "Không chú trọng ATTACK và SP. DEFENSE.$"
 
 BattleDome_Text_NeglectsDefAndSpeed::
-	.string "Neglects DEFENSE and SPEED.$"
+	.string "Không chú trọng DEFENSE và SPEED.$"
 
 BattleDome_Text_NeglectsDefAndSpAtk::
-	.string "Neglects DEFENSE and SP. ATTACK.$"
+	.string "Không chú trọng DEFENSE và SP. ATTACK.$"
 
 BattleDome_Text_NeglectsDefAndSpDef::
-	.string "Neglects DEFENSE and SP. DEFENSE.$"
+	.string "Không chú trọng DEFENSE và SP.\n"
+	.string "DEFENSE.$"
 
 BattleDome_Text_NeglectsSpeedAndSpAtk::
-	.string "Neglects SPEED and SP. ATTACK.$"
+	.string "Không chú trọng SPEED và SP. ATTACK.$"
 
 BattleDome_Text_NeglectsSpeedAndSpDef::
-	.string "Neglects SPEED and SP. DEFENSE.$"
+	.string "Không chú trọng SPEED và SP. DEFENSE.$"
 
 BattleDome_Text_NeglectsSpAtkAndSpDef::
-	.string "Neglects SP. ATTACK and SP. DEFENSE.$"
+	.string "Không chú trọng SP. ATTACK và SP.\n"
+	.string "DEFENSE.$"
 
 BattleDome_Text_NeglectsHP::
-	.string "Neglects HP.$"
+	.string "Không chú trọng HP.$"
 
 BattleDome_Text_NeglectsAtk::
-	.string "Neglects ATTACK.$"
+	.string "Không chú trọng ATTACK.$"
 
 BattleDome_Text_NeglectsDef::
-	.string "Neglects DEFENSE.$"
+	.string "Không chú trọng DEFENSE.$"
 
 BattleDome_Text_NeglectsSpeed::
-	.string "Neglects SPEED.$"
+	.string "Không chú trọng SPEED.$"
 
 BattleDome_Text_NeglectsSpAtk::
-	.string "Neglects SP. ATTACK.$"
+	.string "Không chú trọng SP. ATTACK.$"
 
 BattleDome_Text_NeglectsSpDef::
-	.string "Neglects SP. DEFENSE.$"
+	.string "Không chú trọng SP. DEFENSE.$"
 
 BattleDome_Text_RaisesMonsWellBalanced::
-	.string "Raises POKéMON in a well-balanced way.$"
+	.string "Huấn luyện POKéMON một cách cân bằng.$"
 
 BattleDome_Text_LetTheBattleBegin::
-	.string "Let the battle begin!$"
+	.string "Trận đấu bắt đầu!$"
 
 BattleDome_Text_TrainerWonUsingMove::
-	.string "{STR_VAR_1} won using {STR_VAR_2}!$"
+	.string "{STR_VAR_1} đã chiến thắng nhờ\n"
+	.string "{STR_VAR_2}!$"
 
 BattleDome_Text_TrainerBecameChamp::
-	.string "{STR_VAR_1} became the champ!$"
+	.string "{STR_VAR_1} đã trở thành nhà vô\n"
+	.string "địch!$"
 
 BattleDome_Text_TrainerWonByDefault::
-	.string "{STR_VAR_1} won by default!$"
+	.string "{STR_VAR_1} được xử thắng!$"
 
 BattleDome_Text_TrainerWonOutrightByDefault::
-	.string "{STR_VAR_1} won outright by default!$"
+	.string "{STR_VAR_1} được xử thắng\n"
+	.string "tuyệt đối!$"
 
 BattleDome_Text_TrainerWonNoMoves::
-	.string "{STR_VAR_1} won without using a move!$"
+	.string "{STR_VAR_1} đã thắng mà không\n"
+	.string "dùng chiêu thức nào!$"
 
 BattleDome_Text_TrainerWonOutrightNoMoves::
-	.string "{STR_VAR_1} won outright with no moves!$"
+	.string "{STR_VAR_1} đã thắng tuyệt đối\n"
+	.string "mà không dùng chiêu thức nào!$"
 
 BattleDome_Text_Round1Match1::
-	.string "Round 1, Match 1$"
+	.string "Vòng 1, Trận 1$"
 
 BattleDome_Text_Round1Match2::
-	.string "Round 1, Match 2$"
+	.string "Vòng 1, Trận 2$"
 
 BattleDome_Text_Round1Match3::
-	.string "Round 1, Match 3$"
+	.string "Vòng 1, Trận 3$"
 
 BattleDome_Text_Round1Match4::
-	.string "Round 1, Match 4$"
+	.string "Vòng 1, Trận 4$"
 
 BattleDome_Text_Round1Match5::
-	.string "Round 1, Match 5$"
+	.string "Vòng 1, Trận 5$"
 
 BattleDome_Text_Round1Match6::
-	.string "Round 1, Match 6$"
+	.string "Vòng 1, Trận 6$"
 
 BattleDome_Text_Round1Match7::
-	.string "Round 1, Match 7$"
+	.string "Vòng 1, Trận 7$"
 
 BattleDome_Text_Round1Match8::
-	.string "Round 1, Match 8$"
+	.string "Vòng 1, Trận 8$"
 
 BattleDome_Text_Round2Match1::
-	.string "Round 2, Match 1$"
+	.string "Vòng 2, Trận 1$"
 
 BattleDome_Text_Round2Match2::
-	.string "Round 2, Match 2$"
+	.string "Vòng 2, Trận 2$"
 
 BattleDome_Text_Round2Match3::
-	.string "Round 2, Match 3$"
+	.string "Vòng 2, Trận 3$"
 
 BattleDome_Text_Round2Match4::
-	.string "Round 2, Match 4$"
+	.string "Vòng 2, Trận 4$"
 
 BattleDome_Text_SemifinalMatch1::
-	.string "Semifinal Match 1$"
+	.string "Trận bán kết 1$"
 
 BattleDome_Text_SemifinalMatch2::
-	.string "Semifinal Match 2$"
+	.string "Trận bán kết 2$"
 
 BattleDome_Text_FinalMatch::
-	.string "Final Match$"
+	.string "Trận chung kết$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global BattleDome_Text_Potential1
+	.global BattleDome_Text_Potential2
+	.global BattleDome_Text_Potential3
+	.global BattleDome_Text_Potential4
+	.global BattleDome_Text_Potential5
+	.global BattleDome_Text_Potential6
+	.global BattleDome_Text_Potential7
+	.global BattleDome_Text_Potential8
+	.global BattleDome_Text_Potential9
+	.global BattleDome_Text_Potential10
+	.global BattleDome_Text_Potential11
+	.global BattleDome_Text_Potential12
+	.global BattleDome_Text_Potential13
+	.global BattleDome_Text_Potential14
+	.global BattleDome_Text_Potential15
+	.global BattleDome_Text_Potential16
+	.global BattleDome_Text_PotentialDomeAceTucker
+	.global BattleDome_Text_StyleRiskDisaster
+	.global BattleDome_Text_StyleEndureLongBattles
+	.global BattleDome_Text_StyleVariesTactics
+	.global BattleDome_Text_StyleToughWinningPattern
+	.global BattleDome_Text_StyleUsesVeryRareMove
+	.global BattleDome_Text_StyleUsesStartlingMoves
+	.global BattleDome_Text_StyleConstantlyWatchesHP
+	.global BattleDome_Text_StyleStoresAndLoosesPower
+	.global BattleDome_Text_StyleEnfeeblesFoes
+	.global BattleDome_Text_StylePrefersLuckTactics
+	.global BattleDome_Text_StyleRegalAtmosphere
+	.global BattleDome_Text_StylePowerfulLowPPMoves
+	.global BattleDome_Text_StyleEnfeebleThenAttack
+	.global BattleDome_Text_StyleBattlesWhileEnduring
+	.global BattleDome_Text_StyleUpsetsFoesEmotionally
+	.global BattleDome_Text_StyleStrongAndStraightforward
+	.global BattleDome_Text_StyleAggressivelyStrongMoves
+	.global BattleDome_Text_StyleCleverlyDodgesAttacks
+	.global BattleDome_Text_StyleUsesUpsettingMoves
+	.global BattleDome_Text_StyleUsesPopularMoves
+	.global BattleDome_Text_StyleHasPowerfulComboMoves
+	.global BattleDome_Text_StyleUsesHighProbabilityMoves
+	.global BattleDome_Text_StyleAggressivelySpectacularMoves
+	.global BattleDome_Text_StyleEmphasizesOffenseOverDefense
+	.global BattleDome_Text_StyleEmphasizesDefenseOverOffense
+	.global BattleDome_Text_StyleAttacksQuicklyStrongMoves
+	.global BattleDome_Text_StyleUsesAddedEffectMoves
+	.global BattleDome_Text_StyleUsesBalancedMixOfMoves
+	.global BattleDome_Text_StyleSampleMessage1
+	.global BattleDome_Text_StyleSampleMessage2
+	.global BattleDome_Text_StyleSampleMessage3
+	.global BattleDome_Text_StyleSampleMessage4
+	.global BattleDome_Text_EmphasizesHPAndAtk
+	.global BattleDome_Text_EmphasizesHPAndDef
+	.global BattleDome_Text_EmphasizesHPAndSpeed
+	.global BattleDome_Text_EmphasizesHPAndSpAtk
+	.global BattleDome_Text_EmphasizesHPAndSpDef
+	.global BattleDome_Text_EmphasizesAtkAndDef
+	.global BattleDome_Text_EmphasizesAtkAndSpeed
+	.global BattleDome_Text_EmphasizesAtkAndSpAtk
+	.global BattleDome_Text_EmphasizesAtkAndSpDef
+	.global BattleDome_Text_EmphasizesDefAndSpeed
+	.global BattleDome_Text_EmphasizesDefAndSpAtk
+	.global BattleDome_Text_EmphasizesDefAndSpDef
+	.global BattleDome_Text_EmphasizesSpeedAndSpAtk
+	.global BattleDome_Text_EmphasizesSpeedAndSpDef
+	.global BattleDome_Text_EmphasizesSpAtkAndSpDef
+	.global BattleDome_Text_EmphasizesHP
+	.global BattleDome_Text_EmphasizesAtk
+	.global BattleDome_Text_EmphasizesDef
+	.global BattleDome_Text_EmphasizesSpeed
+	.global BattleDome_Text_EmphasizesSpAtk
+	.global BattleDome_Text_EmphasizesSpDef
+	.global BattleDome_Text_NeglectsHPAndAtk
+	.global BattleDome_Text_NeglectsHPAndDef
+	.global BattleDome_Text_NeglectsHPAndSpeed
+	.global BattleDome_Text_NeglectsHPAndSpAtk
+	.global BattleDome_Text_NeglectsHPAndSpDef
+	.global BattleDome_Text_NeglectsAtkAndDef
+	.global BattleDome_Text_NeglectsAtkAndSpeed
+	.global BattleDome_Text_NeglectsAtkAndSpAtk
+	.global BattleDome_Text_NeglectsAtkAndSpDef
+	.global BattleDome_Text_NeglectsDefAndSpeed
+	.global BattleDome_Text_NeglectsDefAndSpAtk
+	.global BattleDome_Text_NeglectsDefAndSpDef
+	.global BattleDome_Text_NeglectsSpeedAndSpAtk
+	.global BattleDome_Text_NeglectsSpeedAndSpDef
+	.global BattleDome_Text_NeglectsSpAtkAndSpDef
+	.global BattleDome_Text_NeglectsHP
+	.global BattleDome_Text_NeglectsAtk
+	.global BattleDome_Text_NeglectsDef
+	.global BattleDome_Text_NeglectsSpeed
+	.global BattleDome_Text_NeglectsSpAtk
+	.global BattleDome_Text_NeglectsSpDef
+	.global BattleDome_Text_RaisesMonsWellBalanced
+	.global BattleDome_Text_LetTheBattleBegin
+	.global BattleDome_Text_TrainerWonUsingMove
+	.global BattleDome_Text_TrainerBecameChamp
+	.global BattleDome_Text_TrainerWonByDefault
+	.global BattleDome_Text_TrainerWonOutrightByDefault
+	.global BattleDome_Text_TrainerWonNoMoves
+	.global BattleDome_Text_TrainerWonOutrightNoMoves
+	.global BattleDome_Text_Round1Match1
+	.global BattleDome_Text_Round1Match2
+	.global BattleDome_Text_Round1Match3
+	.global BattleDome_Text_Round1Match4
+	.global BattleDome_Text_Round1Match5
+	.global BattleDome_Text_Round1Match6
+	.global BattleDome_Text_Round1Match7
+	.global BattleDome_Text_Round1Match8
+	.global BattleDome_Text_Round2Match1
+	.global BattleDome_Text_Round2Match2
+	.global BattleDome_Text_Round2Match3
+	.global BattleDome_Text_Round2Match4
+	.global BattleDome_Text_SemifinalMatch1
+	.global BattleDome_Text_SemifinalMatch2
+	.global BattleDome_Text_FinalMatch
+@ END GENERATED LOCALIZATION EXPORTS

@@ -88,69 +88,83 @@ FortreeCity_Movement_KecleonFlee:
 	step_end
 
 FortreeCity_Text_SawGiganticPokemonInSky:
-	.string "No one believes me, but I saw this\n"
-	.string "gigantic POKéMON in the sky.\p"
-	.string "It seemed to squirm as it flew toward\n"
-	.string "ROUTE 131.\p"
-	.string "By the way… Sniff…\n"
-	.string "Um… You, uh…smell singed.\p"
-	.string "Were you at a volcano or something?$"
+	.string "Không ai tin tôi, nhưng tôi đã thấy một\n"
+	.string "POKéMON khổng lồ trên bầu trời.\p"
+	.string "Nó có vẻ uốn éo khi bay về phía ROUTE\n"
+	.string "131.\p"
+	.string "Mà này... Khịt... Ừm... Bạn, ờ... có mùi\n"
+	.string "khét.\p"
+	.string "Bạn vừa ở núi lửa hay đâu đó sao?$"
 
 FortreeCity_Text_SomethingBlockingGym:
-	.string "I want to go to the POKéMON GYM,\n"
-	.string "but something's blocking the way.\p"
-	.string "After all the bother I went through\n"
-	.string "training on ROUTE 120…$"
+	.string "Tôi muốn đến POKéMON GYM, nhưng có thứ\n"
+	.string "gì đó chặn đường.\p"
+	.string "Bao công sức tôi luyện tập trên ROUTE\n"
+	.string "120...$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
-	.string "I've got my pride-and-joy POKéMON\n"
-	.string "with me. This time, I'll beat WINONA.$"
+	.string "Tôi đã mang theo POKéMON niềm tự hào\n"
+	.string "của mình. Lần này, tôi sẽ đánh bại\l"
+	.string "WINONA.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
-	.string "The ground absorbs rainwater, and\n"
-	.string "trees grow by drinking that water…\p"
-	.string "Our FORTREE CITY exists because\n"
-	.string "there's both water and soil.$"
+	.string "Mặt đất hấp thụ nước mưa, rồi cây cối\n"
+	.string "hút lấy nguồn nước ấy để lớn lên...\p"
+	.string "FORTREE CITY của chúng tôi tồn tại nhờ\n"
+	.string "có cả nước lẫn đất.$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
-	.string "The CITY consists of homes built on\n"
-	.string "trees.\p"
-	.string "Perhaps because of that lifestyle,\n"
-	.string "everyone is healthy and lively.\p"
-	.string "Why, even myself--I feel as if I've\n"
-	.string "grown thirty years younger.$"
+	.string "CITY gồm những ngôi nhà được xây trên\n"
+	.string "cây.\p"
+	.string "Có lẽ nhờ lối sống đó mà ai cũng khỏe\n"
+	.string "mạnh và tràn đầy sức sống.\p"
+	.string "Ngay cả tôi cũng cảm thấy như mình trẻ\n"
+	.string "lại ba mươi tuổi.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Living on top of trees is okay.\p"
-	.string "But sometimes BUG POKéMON come in\n"
-	.string "through windows.\l"
-	.string "It can be really startling.$"
+	.string "Sống trên ngọn cây cũng ổn.\p"
+	.string "Nhưng đôi khi BUG POKéMON bay vào qua\n"
+	.string "cửa sổ. Giật mình lắm đấy.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
-	.string "There are POKéMON that evolve when\n"
-	.string "you trade them! That's what I heard.$"
+	.string "Nghe nói có những POKéMON sẽ tiến hóa\n"
+	.string "khi được trao đổi!$"
 
 FortreeCity_Text_SomethingUnseeable:
-	.string "Something unseeable is in the way.$"
+	.string "Có thứ gì đó không nhìn thấy đang chắn\n"
+	.string "đường.$"
 
 FortreeCity_Text_UnseeableUseDevonScope:
-	.string "Something unseeable is in the way.\p"
-	.string "Want to use the DEVON SCOPE?$"
+	.string "Có thứ gì đó không nhìn thấy đang chắn\n"
+	.string "đường.\p"
+	.string "Bạn có muốn dùng DEVON SCOPE không?$"
 
 FortreeCity_Text_UsedDevonScopePokemonFled:
-	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
-	.string "The startled POKéMON fled!$"
+	.string "{PLAYER} đã dùng DEVON SCOPE.\p"
+	.string "POKéMON vô hình đã hiện ra hoàn toàn!\p"
+	.string "POKéMON giật mình rồi bỏ chạy!$"
 
 FortreeCity_Text_CitySign:
-	.string "FORTREE CITY\n"
-	.string "“The treetop city that frolics with\l"
-	.string "nature.”$"
+	.string "FORTREE CITY: Thành phố trên ngọn cây\n"
+	.string "vui đùa cùng thiên nhiên.$"
 
 FortreeCity_Text_GymSign:
-	.string "FORTREE CITY POKéMON GYM\n"
-	.string "LEADER: WINONA\p"
-	.string "“The bird user taking flight into\n"
-	.string "the world.”$"
+	.string "FORTREE CITY POKéMON GYM LEADER:\n"
+	.string "WINONA\p"
+	.string "Người điều khiển chim cất cánh bay ra\n"
+	.string "thế giới.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global FortreeCity_Text_SawGiganticPokemonInSky
+	.global FortreeCity_Text_SomethingBlockingGym
+	.global FortreeCity_Text_ThisTimeIllBeatWinona
+	.global FortreeCity_Text_TreesGrowByDrinkingRainwater
+	.global FortreeCity_Text_EveryoneHealthyAndLively
+	.global FortreeCity_Text_BugPokemonComeThroughWindow
+	.global FortreeCity_Text_PokemonThatEvolveWhenTraded
+	.global FortreeCity_Text_SomethingUnseeable
+	.global FortreeCity_Text_UnseeableUseDevonScope
+	.global FortreeCity_Text_UsedDevonScopePokemonFled
+	.global FortreeCity_Text_CitySign
+	.global FortreeCity_Text_GymSign
+@ END GENERATED LOCALIZATION EXPORTS

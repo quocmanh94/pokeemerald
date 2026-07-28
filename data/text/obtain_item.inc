@@ -1,39 +1,53 @@
 gText_ObtainedTheItem::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "Nhận được {STR_VAR_2}!$"
 
 gText_TheBagIsFull::
-	.string "The BAG is full…$"
+	.string "TÚI ĐỒ đã đầy…$"
 
 gText_PutItemInPocket::
-	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3} POCKET.$"
+	.string "{PLAYER} đã cất {STR_VAR_2}\n"
+	.string "vào {STR_VAR_3} POCKET.$"
 
 gText_PutItemInPC::
-	.string "The BAG is full, so {PLAYER}\n"
-	.string "sent the {STR_VAR_2} to the PC.$"
+	.string "TÚI ĐỒ đã đầy, nên {PLAYER}\n"
+	.string "gửi {STR_VAR_2} vào PC.$"
 
 gText_PlayerFoundOneItem::
-	.string "{PLAYER} found one {STR_VAR_2}!$"
+	.string "{PLAYER} tìm thấy {STR_VAR_2}!$"
 
 gText_TooBadBagIsFull::
-	.string "Too bad!\n"
-	.string "The BAG is full…$"
+	.string "Tiếc quá!\n"
+	.string "TÚI ĐỒ đã đầy…$"
 
 gText_TooBadBagAndPCAreFull::
-	.string "Too bad!\n"
-	.string "The BAG and PC are full…$"
+	.string "Tiếc quá!\n"
+	.string "TÚI ĐỒ và PC đều đã đầy…$"
 
 gText_PlayerPutItemInBag::
-	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the BAG.$"
+	.string "{PLAYER} đã cất {STR_VAR_2}\n"
+	.string "vào TÚI ĐỒ.$"
 
 gText_ObtainedTheDecor::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "Nhận được {STR_VAR_2}!$"
 
 gText_NoRoomLeftForAnother::
-	.string "Too bad! There's no room left for\n"
-	.string "another {STR_VAR_2}…$"
+	.string "Tiếc quá! Không còn chỗ để cất\n"
+	.string "thêm {STR_VAR_2}…$"
 
 gText_TheDecorWasTransferredToThePC::
-	.string "The {STR_VAR_2} was transferred\n"
-	.string "to the PC.$"
+	.string "Đã chuyển {STR_VAR_2}\n"
+	.string "vào PC.$"
+
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global gText_ObtainedTheItem
+	.global gText_TheBagIsFull
+	.global gText_PutItemInPocket
+	.global gText_PutItemInPC
+	.global gText_PlayerFoundOneItem
+	.global gText_TooBadBagIsFull
+	.global gText_TooBadBagAndPCAreFull
+	.global gText_PlayerPutItemInBag
+	.global gText_ObtainedTheDecor
+	.global gText_NoRoomLeftForAnother
+	.global gText_TheDecorWasTransferredToThePC
+@ END GENERATED LOCALIZATION EXPORTS

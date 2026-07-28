@@ -12,32 +12,41 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "What did I do to deserve this guard\n"
-	.string "posting?\p"
-	.string "My left ear is burning up!$"
+	.string "Ta đã làm gì mà phải chịu phiên gác này\n"
+	.string "chứ?\p"
+	.string "Tai trái của ta nóng ran lên rồi!$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "I'm getting heat exhaustion…$"
+	.string "Ta sắp kiệt sức vì nóng rồi...$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "Do you think it's odd that we're wearing\n"
-	.string "hoods in this magma-filled volcano?$"
+	.string "Ngươi có thấy kỳ lạ khi bọn ta trùm kín\n"
+	.string "đầu trong ngọn núi lửa đầy dung nham\l"
+	.string "này không?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "We joined so we can help our leader\n"
-	.string "achieve his fantastic vision.\p"
-	.string "I don't care if you're with TEAM AQUA\n"
-	.string "or if you're just some kid passing by.\p"
-	.string "No one interferes with us and gets\n"
-	.string "away with it!$"
+	.string "Bọn ta gia nhập để giúp thủ lĩnh thực\n"
+	.string "hiện tầm nhìn vĩ đại của ông ấy.\p"
+	.string "Dù ngươi thuộc TEAM AQUA hay chỉ là\n"
+	.string "một đứa trẻ đi ngang qua, ta cũng chẳng\l"
+	.string "quan tâm.\p"
+	.string "Không ai cản đường bọn ta mà có thể\n"
+	.string "yên thân!$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "Oh, no!\n"
-	.string "You're not to be trusted at all!$"
+	.string "Ôi không! Ngươi hoàn toàn không đáng\n"
+	.string "tin!$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "Listen to me.\n"
-	.string "TEAM MAGMA is right!\p"
-	.string "Don't listen to TEAM AQUA.\n"
-	.string "Don't believe their lies!$"
+	.string "Nghe ta nói đây. TEAM MAGMA mới đúng!\p"
+	.string "Đừng nghe TEAM AQUA. Đừng tin những\n"
+	.string "lời dối trá của chúng!$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global MagmaHideout_3F_1R_Text_Grunt9Intro
+	.global MagmaHideout_3F_1R_Text_Grunt9Defeat
+	.global MagmaHideout_3F_1R_Text_Grunt9PostBattle
+	.global MagmaHideout_3F_1R_Text_Grunt16Intro
+	.global MagmaHideout_3F_1R_Text_Grunt16Defeat
+	.global MagmaHideout_3F_1R_Text_Grunt16PostBattle
+@ END GENERATED LOCALIZATION EXPORTS

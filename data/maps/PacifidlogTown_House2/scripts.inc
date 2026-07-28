@@ -91,57 +91,64 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 	end
 
 PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation:
-	.string "Er-hem!\p"
-	.string "I am the POKéMON FAN CLUB's most\n"
-	.string "important person, the CHAIRMAN's\l"
-	.string "younger brother.\p"
-	.string "I'm here enjoying my vacation with\n"
-	.string "POKéMON, yes, indeed.$"
+	.string "Khụ khụ!\p"
+	.string "Tôi là nhân vật quan trọng nhất của\n"
+	.string "POKéMON FAN CLUB, em trai của CHỦ TỊCH.\p"
+	.string "Tôi đang tận hưởng kỳ nghỉ cùng\n"
+	.string "POKéMON tại đây, đúng vậy đấy.$"
 
 PacifidlogTown_House2_Text_AhYourPokemon:
-	.string "Ah!\n"
-	.string "Your POKéMON…$"
+	.string "Ồ! POKéMON của cậu...$"
 
 PacifidlogTown_House2_Text_AdoringPokemonTakeThis:
-	.string "It clearly likes you very much.\p"
-	.string "A POKéMON that adoring and adorable\n"
-	.string "deserves a TM like this, no?$"
+	.string "Rõ ràng nó rất yêu quý cậu.\p"
+	.string "Một POKéMON vừa đáng yêu vừa quý mến\n"
+	.string "cậu như thế xứng đáng nhận một TM thế\l"
+	.string "này, phải không?$"
 
 PacifidlogTown_House2_Text_PutInSomeMoreEffort:
-	.string "Hmm…\n"
-	.string "It's not bad, but it's also not good.\p"
-	.string "You, as the TRAINER, need to put in\n"
-	.string "some more effort.$"
+	.string "Hừm... Không tệ, nhưng cũng chẳng tốt.\p"
+	.string "Với tư cách HLV, cậu cần cố gắng\n"
+	.string "thêm nữa.$"
 
 PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
-	.string "It has a vicious look to it.\p"
-	.string "A frightening POKéMON like that\n"
-	.string "deserves a TM like this.$"
+	.string "Trông nó thật hung dữ.\p"
+	.string "Một POKéMON đáng sợ như thế xứng\n"
+	.string "đáng nhận một TM thế này.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
-	.string "If a POKéMON likes you a lot, RETURN's\n"
-	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
-	.string "power goes up.$"
+	.string "Nếu một POKéMON rất quý mến cậu, sức\n"
+	.string "mạnh của RETURN sẽ tăng lên.\p"
+	.string "Nếu nó không quý cậu, sức mạnh của\n"
+	.string "FRUSTRATION sẽ tăng.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:
-	.string "Oh, yes. In about {STR_VAR_1} or so days,\n"
-	.string "I should be getting a good TM or two.\p"
-	.string "You should come see me then.\n"
-	.string "I'll give you a TM that's suitable for\l"
-	.string "your POKéMON.$"
+	.string "À, phải rồi. Khoảng {STR_VAR_1}\n"
+	.string "ngày nữa, tôi sẽ nhận được một hoặc\l"
+	.string "hai TM tốt.\p"
+	.string "Khi đó hãy đến gặp tôi. Tôi sẽ tặng cậu\n"
+	.string "một TM phù hợp với POKéMON của cậu.$"
 
 PacifidlogTown_House2_Text_Rurii:
 	.string "AZURILL: Rurii.$"
 
 PacifidlogTown_House2_Text_VeryFriendlyWithTrainer:
-	.string "It appears to be very friendly with the\n"
-	.string "TRAINER.$"
+	.string "Có vẻ nó rất thân thiết với HLV.$"
 
 PacifidlogTown_House2_Text_Rururi:
 	.string "AZURILL: Rururi!$"
 
 PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch:
-	.string "It doesn't appear to like the TRAINER\n"
-	.string "very much.$"
+	.string "Có vẻ nó không quý HLV cho lắm.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation
+	.global PacifidlogTown_House2_Text_AhYourPokemon
+	.global PacifidlogTown_House2_Text_AdoringPokemonTakeThis
+	.global PacifidlogTown_House2_Text_PutInSomeMoreEffort
+	.global PacifidlogTown_House2_Text_ViciousPokemonTakeThis
+	.global PacifidlogTown_House2_Text_ExplainReturnFrustration
+	.global PacifidlogTown_House2_Text_GetGoodTMInXDays
+	.global PacifidlogTown_House2_Text_VeryFriendlyWithTrainer
+	.global PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch
+@ END GENERATED LOCALIZATION EXPORTS

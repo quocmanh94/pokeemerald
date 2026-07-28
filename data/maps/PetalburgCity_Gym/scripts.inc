@@ -1137,411 +1137,398 @@ PetalburgCity_Gym_EventScript_GymStatue::
 	end
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
-	.string "DAD: Hm?\p"
-	.string "Well, if it isn't {PLAYER}!\n"
-	.string "So you're all finished moving in?\p"
-	.string "I'm surprised that you managed to\n"
-	.string "get here by yourself.\p"
-	.string "Oh, I see.\n"
-	.string "You're with your POKéMON.\p"
-	.string "Hm… Then I guess you're going to\n"
-	.string "become a TRAINER like me, {PLAYER}.\p"
-	.string "That's great news!\n"
-	.string "I'll be looking forward to it!$"
+	.string "BA: Hửm?\p"
+	.string "Hóa ra là {PLAYER}! Con đã chuyển nhà\n"
+	.string "xong hết rồi à?\p"
+	.string "Ba ngạc nhiên vì con có thể tự mình đến\n"
+	.string "tận đây.\p"
+	.string "À, ba hiểu rồi. Con đi cùng POKéMON của\n"
+	.string "mình.\p"
+	.string "Hừm... Vậy chắc con cũng sẽ trở thành\n"
+	.string "HLV giống ba, {PLAYER}.\p"
+	.string "Tin tuyệt quá! Ba rất mong chờ đấy!$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
-	.string "Um… I…\n"
-	.string "I'd like to get a POKéMON, please…$"
+	.string "Dạ... Cháu... cháu muốn có một POKéMON\n"
+	.string "ạ...$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "DAD: Hm? You're… Uh… Oh, right.\n"
-	.string "You're WALLY, right?$"
+	.string "BA: Hửm? Cháu là... À... Phải rồi. Cháu là\n"
+	.string "WALLY, đúng không?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
-	.string "WALLY: I'm going to go stay with my\n"
-	.string "relatives in VERDANTURF TOWN.\p"
-	.string "I thought I would be lonely by myself,\n"
-	.string "so I wanted to take a POKéMON along.\p"
-	.string "But I've never caught a POKéMON before.\n"
-	.string "I don't know how…$"
+	.string "WALLY: Cháu sắp đến ở cùng họ hàng tại\n"
+	.string "VERDANTURF TOWN.\p"
+	.string "Cháu nghĩ ở một mình sẽ rất cô đơn nên\n"
+	.string "muốn đưa một POKéMON đi cùng.\p"
+	.string "Nhưng cháu chưa từng bắt POKéMON.\n"
+	.string "Cháu không biết phải làm thế nào...$"
 
 PetalburgCity_Gym_Text_DadHmISee:
-	.string "DAD: Hm. I see.$"
+	.string "BA: Ừm. Chú hiểu rồi.$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
-	.string "DAD: {PLAYER}, you heard that,\n"
-	.string "right?\p"
-	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a POKéMON.$"
+	.string "BA: {PLAYER}, con nghe rồi chứ?\p"
+	.string "Hãy đi cùng WALLY và bảo đảm cậu ấy bắt\n"
+	.string "được một POKéMON an toàn.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "WALLY, here, I'll loan you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "WALLY, chú cho cháu mượn POKéMON của\n"
+	.string "chú nhé.\p"
+	.string "WALLY nhận được ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
-	.string "WALLY: Oh, wow!\n"
-	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
-	.string "Go for it!\p"
-	.string "WALLY received a POKé BALL!$"
+	.string "WALLY: Ôi, tuyệt quá! Một POKéMON!\p"
+	.string "BA: Ừm. Chú sẽ cho cháu thêm một POKé\n"
+	.string "BALL. Cố lên nhé!\p"
+	.string "WALLY nhận được POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
-	.string "WALLY: Oh, wow!\n"
-	.string "Thank you!$"
+	.string "WALLY: Ôi, tuyệt quá! Cảm ơn chú!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
-	.string "{PLAYER}… Would you really come\n"
-	.string "with me?$"
+	.string "{PLAYER}... Bạn thật sự sẽ đi cùng\n"
+	.string "mình sao?$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
-	.string "DAD: So, did it work out?$"
+	.string "BA: Thế nào, có suôn sẻ không?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
-	.string "WALLY: Thank you, yes, it did.\n"
-	.string "Here's your POKéMON back.\p"
-	.string "{PLAYER}, thank you for coming along\n"
-	.string "with me.\p"
-	.string "You two are why I was able to catch\n"
-	.string "my POKéMON.\p"
-	.string "I promise I'll take really good\n"
-	.string "care of it.\p"
-	.string "Oh! My mom's waiting for me,\n"
-	.string "so I have to go!\p"
-	.string "Bye, {PLAYER}!$"
+	.string "WALLY: Vâng, được rồi ạ. Cháu trả lại\n"
+	.string "POKéMON cho chú đây.\p"
+	.string "{PLAYER}, cảm ơn bạn đã đi cùng mình.\p"
+	.string "Nhờ hai người mà mình mới bắt được\n"
+	.string "POKéMON.\p"
+	.string "Mình hứa sẽ chăm sóc nó thật tốt.\p"
+	.string "Ôi! Mẹ đang chờ nên mình phải đi rồi!\p"
+	.string "Tạm biệt, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
-	.string "DAD: Now…\p"
-	.string "{PLAYER}, if you want to become a\n"
-	.string "strong TRAINER, here's my advice.\p"
-	.string "Head for RUSTBORO CITY beyond this\n"
-	.string "town.\p"
-	.string "There, you should challenge\n"
-	.string "the GYM LEADER, ROXANNE.\p"
-	.string "After her, go on to other POKéMON\n"
-	.string "GYMS and defeat their LEADERS.\p"
-	.string "Collect BADGES from them,\n"
-	.string "understood?\p"
-	.string "Of course, I'm a GYM LEADER, too.\n"
-	.string "We'll battle one day, {PLAYER}.\p"
-	.string "But that's only after you become\n"
-	.string "stronger.$"
+	.string "BA: Nào...\p"
+	.string "{PLAYER}, nếu muốn trở thành một\n"
+	.string "HLV mạnh, ba có lời khuyên cho con.\p"
+	.string "Hãy đến RUSTBORO CITY ở phía bên kia\n"
+	.string "thị trấn này.\p"
+	.string "Tại đó, con nên thách đấu GYM LEADER\n"
+	.string "ROXANNE.\p"
+	.string "Sau cô ấy, hãy đến các POKéMON GYMS\n"
+	.string "khác và đánh bại những LEADERS ở đó.\p"
+	.string "Thu thập BADGES từ họ, con hiểu chứ?\p"
+	.string "Tất nhiên, ba cũng là một GYM LEADER.\n"
+	.string "Một ngày nào đó chúng ta sẽ đấu,\l"
+	.string "{PLAYER}.\p"
+	.string "Nhưng chỉ sau khi con mạnh hơn.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
-	.string "DAD: Hm? Aren't you going to the\n"
-	.string "POKéMON GYM in RUSTBORO CITY?\p"
-	.string "There's no challenge for me to\n"
-	.string "battle a greenhorn TRAINER.\p"
-	.string "{PLAYER}, I want you to challenge me\n"
-	.string "when you become a lot stronger.\p"
-	.string "I'll battle you, {PLAYER}, when you\n"
-	.string "can show me four GYM BADGES, okay?$"
+	.string "BA: Hửm? Con không định đến POKéMON\n"
+	.string "GYM ở RUSTBORO CITY sao?\p"
+	.string "Đấu với một HLV non nớt thì chẳng\n"
+	.string "có gì đáng để ba thử sức.\p"
+	.string "{PLAYER}, ba muốn con thách đấu ba\n"
+	.string "khi đã mạnh hơn thật nhiều.\p"
+	.string "Ba sẽ đấu với con, {PLAYER}, khi con\n"
+	.string "có thể cho ba xem bốn GYM BADGES, được\l"
+	.string "chứ?$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
-	.string "DAD: I see… So, you've beaten\n"
-	.string "the GYM LEADER in RUSTBORO CITY.\p"
-	.string "But there are many more TRAINERS\n"
-	.string "who are stronger than you, {PLAYER}.\p"
-	.string "Across the sea in DEWFORD TOWN is a\n"
-	.string "GYM LEADER named BRAWLY.\p"
-	.string "You should go challenge him.$"
+	.string "BA: Ba hiểu rồi... Vậy là con đã đánh bại\n"
+	.string "GYM LEADER ở RUSTBORO CITY.\p"
+	.string "Nhưng vẫn còn rất nhiều HLV mạnh\n"
+	.string "hơn con, {PLAYER}.\p"
+	.string "Bên kia biển, tại DEWFORD TOWN, có một\n"
+	.string "GYM LEADER tên BRAWLY.\p"
+	.string "Con nên đến thách đấu cậu ấy.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
-	.string "DAD: Hm… {PLAYER}, you have gotten\n"
-	.string "stronger.\p"
-	.string "I can tell by the number of BADGES\n"
-	.string "that you've earned.$"
+	.string "BA: Ừm... {PLAYER}, con đã mạnh hơn\n"
+	.string "rồi.\p"
+	.string "Ba nhìn số BADGES con giành được là\n"
+	.string "biết.$"
 
 PetalburgCity_Gym_Text_NormanIntro:
-	.string "DAD: Hm…\n"
-	.string "So, you did get four GYM BADGES.\p"
-	.string "Fine, as I promised, we will have\n"
-	.string "a POKéMON battle.\p"
-	.string "{PLAYER}…\p"
-	.string "I'm so happy that I can have\n"
-	.string "a real battle with my own child.\p"
-	.string "But, a battle is a battle!\p"
-	.string "I will do everything in my power as\n"
-	.string "a GYM LEADER to win.\p"
-	.string "{PLAYER}, you'd better give it your\n"
-	.string "best shot, too!$"
+	.string "BA: Ừm... Vậy là con thật sự đã có bốn\n"
+	.string "GYM BADGES.\p"
+	.string "Được, như đã hứa, chúng ta sẽ đấu\n"
+	.string "POKéMON.\p"
+	.string "{PLAYER}...\p"
+	.string "Ba rất vui vì có thể thực sự so tài với\n"
+	.string "chính con mình.\p"
+	.string "Nhưng đấu là đấu!\p"
+	.string "Ba sẽ dốc toàn lực trên cương vị một\n"
+	.string "GYM LEADER để giành chiến thắng.\p"
+	.string "{PLAYER}, con cũng phải cố hết sức\n"
+	.string "đấy!$"
 
 PetalburgCity_Gym_Text_NormanDefeat:
-	.string "…\p"
-	.string "I… I can't…\p"
-	.string "I can't believe it. {PLAYER}…\p"
-	.string "I lost to {PLAYER}?\p"
-	.string "But, rules are rules!\n"
-	.string "Here, take this.$"
+	.string "...\p"
+	.string "Ba... Ba không thể...\p"
+	.string "Ba không thể tin được. {PLAYER}...\p"
+	.string "Ba đã thua {PLAYER} sao?\p"
+	.string "Nhưng luật là luật! Cầm lấy thứ này.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
-	.string "{PLAYER} received the BALANCE BADGE\n"
-	.string "from DAD!$"
+	.string "{PLAYER} nhận BALANCE BADGE từ BA!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your POKéMON will increase.\p"
-	.string "POKéMON that know the HM move SURF\n"
-	.string "will be able to travel over water.\p"
-	.string "This is my gift to you. {PLAYER}, I'm\n"
-	.string "sure you can use it correctly.$"
+	.string "BA: Với BADGE đó, DEFENSE của tất cả\n"
+	.string "POKéMON của con sẽ tăng.\p"
+	.string "POKéMON biết chiêu HM SURF sẽ có thể di\n"
+	.string "chuyển trên mặt nước.\p"
+	.string "Đây là món quà ba tặng con. {PLAYER},\n"
+	.string "ba tin con sẽ dùng nó đúng cách.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "DAD: TM42 contains FACADE.\p"
-	.string "It doubles the power of moves if\n"
-	.string "the POKéMON is poisoned, paralyzed,\l"
-	.string "or burned.\p"
-	.string "It might be able to turn a bad\n"
-	.string "situation into an advantage.$"
+	.string "BA: TM42 chứa FACADE.\p"
+	.string "Nó tăng gấp đôi sức mạnh của các chiêu\n"
+	.string "thức nếu POKéMON bị trúng độc, tê liệt\l"
+	.string "hoặc bỏng.\p"
+	.string "Nó có thể biến tình thế bất lợi thành\n"
+	.string "lợi thế.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
-	.string "DAD: As the GYM LEADER, I can't\n"
-	.string "express how upset I am…\p"
-	.string "But as a father, it makes me both\n"
-	.string "happy and a little sad. It's odd…$"
+	.string "BA: Với tư cách GYM LEADER, ba không\n"
+	.string "thể diễn tả hết mình thất vọng đến mức\l"
+	.string "nào...\p"
+	.string "Nhưng với tư cách một người cha, ba\n"
+	.string "vừa vui vừa hơi buồn. Thật lạ...$"
 
 PetalburgCity_Gym_Text_PleaseComeWithMe:
-	.string "Ah, there you are, {PLAYER}{KUN}!\p"
-	.string "Please come with me.\n"
-	.string "I have something I want you to have.$"
+	.string "A, {PLAYER}{KUN}, cháu đây rồi!\p"
+	.string "Đi cùng chú nhé. Chú có thứ muốn tặng\n"
+	.string "cháu.$"
 
 PetalburgCity_Gym_Text_LetMeBorrowPlayer:
-	.string "NORMAN, you don't mind, do you?\p"
-	.string "Let me borrow your {PLAYER}{KUN} for\n"
-	.string "a minute or two.$"
+	.string "NORMAN, anh không phiền chứ?\p"
+	.string "Cho tôi mượn {PLAYER}{KUN} một lát\n"
+	.string "nhé.$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining:
-	.string "DAD: {PLAYER}, you should go visit\n"
-	.string "your mother every so often.\p"
-	.string "I'm going to stay here and redouble\n"
-	.string "my training.\p"
-	.string "It would bother me as a TRAINER to\n"
-	.string "not avenge my loss to you, {PLAYER}!$"
+	.string "BA: {PLAYER}, thỉnh thoảng con nên\n"
+	.string "về thăm mẹ.\p"
+	.string "Ba sẽ ở lại đây và tăng cường rèn\n"
+	.string "luyện.\p"
+	.string "Nếu không thể rửa hận trận thua trước\n"
+	.string "con, lòng tự trọng của một HLV\l"
+	.string "trong ba sẽ không yên đâu, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
-	.string "DAD: {PLAYER}, how are things going?\p"
-	.string "The world of POKéMON is deep.\p"
-	.string "I honestly think that no amount of\n"
-	.string "training would ever be enough.$"
+	.string "BA: {PLAYER}, mọi chuyện thế nào rồi?\p"
+	.string "Thế giới POKéMON sâu rộng lắm.\p"
+	.string "Thành thật mà nói, ba nghĩ dù rèn luyện\n"
+	.string "bao nhiêu cũng không bao giờ là đủ.$"
 
 PetalburgCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "The doors in this GYM open when you\n"
-	.string "beat the awaiting TRAINERS.\p"
-	.string "Whoops! The doors in this room are\n"
-	.string "already open, so don't attack me!\p"
-	.string "The TRAINERS of PETALBURG GYM\n"
-	.string "use all kinds of items.\p"
-	.string "The door at the left leads to\n"
-	.string "the SPEED ROOM.\p"
-	.string "The door at the right leads to\n"
-	.string "the ACCURACY ROOM.\p"
-	.string "The room's name will be on\n"
-	.string "the door, so choose carefully.\p"
-	.string "Once you've chosen the door…\n"
-	.string "Well, hey, go for it!$"
+	.string "Này, khỏe chứ, {PLAYER}, người đang\n"
+	.string "hướng tới ngôi CHAMPION?\p"
+	.string "Các cánh cửa trong GYM này sẽ mở khi\n"
+	.string "bạn đánh bại những HLV đang chờ.\p"
+	.string "Ấy chết! Cửa phòng này đã mở sẵn rồi,\n"
+	.string "nên đừng tấn công tôi nhé!\p"
+	.string "Các HLV của PETALBURG GYM sử\n"
+	.string "dụng đủ loại vật phẩm.\p"
+	.string "Cửa bên trái dẫn tới SPEED ROOM.\p"
+	.string "Cửa bên phải dẫn tới ACCURACY ROOM.\p"
+	.string "Tên phòng được ghi trên cửa, nên hãy\n"
+	.string "chọn cẩn thận.\p"
+	.string "Một khi đã chọn cửa... Nào, cứ tiến lên!$"
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
-	.string "{PLAYER}! Whoa! You've overcome even\n"
-	.string "your own father!\p"
-	.string "Like, whoa!\n"
-	.string "What a stunning turn of events!$"
+	.string "{PLAYER}! Ôi chao! Bạn đã vượt qua cả\n"
+	.string "chính ba mình!\p"
+	.string "Thật không thể tin nổi! Diễn biến quá\n"
+	.string "bất ngờ!$"
 
 PetalburgCity_Gym_Text_RandallIntro:
-	.string "The ability to attack before the\n"
-	.string "opponent…\p"
-	.string "Just that alone puts me at a great\n"
-	.string "advantage, don't you agree?$"
+	.string "Khả năng ra đòn trước đối thủ...\p"
+	.string "Chỉ riêng điều đó đã cho tôi lợi thế rất\n"
+	.string "lớn, bạn không thấy vậy sao?$"
 
 PetalburgCity_Gym_Text_RandallDefeat:
-	.string "That was a magnificent battle!$"
+	.string "Đó là một trận đấu tuyệt vời!$"
 
 PetalburgCity_Gym_Text_RandallPostBattle:
-	.string "Go on to the next room where a new\n"
-	.string "challenge awaits you.\p"
-	.string "At the left is the CONFUSION ROOM.\p"
-	.string "The right door leads to the DEFENSE\n"
-	.string "ROOM.$"
+	.string "Hãy sang phòng tiếp theo, nơi một thử\n"
+	.string "thách mới đang chờ bạn.\p"
+	.string "Bên trái là CONFUSION ROOM.\p"
+	.string "Cửa bên phải dẫn tới DEFENSE ROOM.$"
 
 PetalburgCity_Gym_Text_RandallPostBadge:
-	.string "Whomever you beat, and whomever you\n"
-	.string "may lose to, you never shirk from\l"
-	.string "training yourself and your POKéMON.\p"
-	.string "That's what I think being a\n"
-	.string "GYM LEADER is all about.$"
+	.string "Dù thắng ai hay thua ai, bạn cũng không\n"
+	.string "bao giờ chểnh mảng việc rèn luyện bản\l"
+	.string "thân và POKéMON.\p"
+	.string "Theo tôi, đó mới là ý nghĩa của việc làm\n"
+	.string "một GYM LEADER.$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
-	.string "This is the CONFUSION ROOM.\p"
-	.string "Let me see how well bonded you are\n"
-	.string "with your POKéMON!$"
+	.string "Đây là CONFUSION ROOM.\p"
+	.string "Để tôi xem mối gắn kết giữa bạn và\n"
+	.string "POKéMON sâu sắc đến đâu!$"
 
 PetalburgCity_Gym_Text_ParkerDefeat:
-	.string "I couldn't confuse your team enough…\n"
-	.string "You share a strong bond together.$"
+	.string "Tôi không thể khiến đội của bạn đủ rối\n"
+	.string "loạn... Mối gắn kết của các bạn thật bền\l"
+	.string "chặt.$"
 
 PetalburgCity_Gym_Text_ParkerPostBattle:
-	.string "The next room is the STRENGTH ROOM.\n"
-	.string "Can you withstand brute force?$"
+	.string "Phòng tiếp theo là STRENGTH ROOM. Bạn\n"
+	.string "có chịu nổi sức mạnh thô bạo không?$"
 
 PetalburgCity_Gym_Text_ParkerPostBadge:
-	.string "After you beat our LEADER, the\n"
-	.string "training has become a lot tougher.$"
+	.string "Kể từ khi bạn đánh bại LEADER của\n"
+	.string "chúng tôi, việc rèn luyện đã trở nên\l"
+	.string "khắc nghiệt hơn nhiều.$"
 
 PetalburgCity_Gym_Text_GeorgeIntro:
-	.string "Just when you think you're going to\n"
-	.string "win, your opponent restores HP…\p"
-	.string "Can you just imagine how awful that\n"
-	.string "must feel?\p"
-	.string "I'll show you exactly how awful it\n"
-	.string "feels!$"
+	.string "Đúng lúc bạn nghĩ mình sắp thắng thì\n"
+	.string "đối thủ lại hồi HP...\p"
+	.string "Bạn có tưởng tượng nổi cảm giác đó tồi\n"
+	.string "tệ đến mức nào không?\p"
+	.string "Tôi sẽ cho bạn nếm thử chính xác cảm\n"
+	.string "giác ấy!$"
 
 PetalburgCity_Gym_Text_GeorgeDefeat:
-	.string "I couldn't restore HP enough…\n"
-	.string "What ATTACK power…$"
+	.string "Tôi không thể hồi đủ HP... Sức mạnh\n"
+	.string "ATTACK khủng khiếp thật...$"
 
 PetalburgCity_Gym_Text_GeorgePostBattle:
-	.string "I should have expected no less from\n"
-	.string "our LEADER's kid.\p"
-	.string "No, wait! A TRAINER's abilities are\n"
-	.string "earned only through effort.\p"
-	.string "I lost because my own efforts\n"
-	.string "weren't enough.\p"
-	.string "Go on! The ONE-HIT KO ROOM is next.$"
+	.string "Đúng là con của LEADER chúng tôi, không\n"
+	.string "thể xem thường.\p"
+	.string "Không, khoan đã! Năng lực của một\n"
+	.string "HLV chỉ có được nhờ nỗ lực.\p"
+	.string "Tôi thua vì chính mình chưa cố gắng đủ.\p"
+	.string "Tiến lên đi! Tiếp theo là ONE-HIT KO\n"
+	.string "ROOM.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
-	.string "I'm going to keep training at GYMS.\n"
-	.string "One day, I'll become a LEADER.$"
+	.string "Tôi sẽ tiếp tục rèn luyện tại các GYMS.\n"
+	.string "Một ngày nào đó, tôi sẽ trở thành\l"
+	.string "LEADER.$"
 
 PetalburgCity_Gym_Text_BerkeIntro:
-	.string "I'm not going to take it easy just\n"
-	.string "because you're our LEADER's kid.\p"
-	.string "I'll show you how horrid it is for\n"
-	.string "a POKéMON to take a critical hit!$"
+	.string "Tôi sẽ không nương tay chỉ vì bạn là\n"
+	.string "con của LEADER chúng tôi.\p"
+	.string "Tôi sẽ cho bạn thấy một POKéMON phải\n"
+	.string "chịu đòn chí mạng khủng khiếp đến mức\l"
+	.string "nào!$"
 
 PetalburgCity_Gym_Text_BerkeDefeat:
-	.string "Your power…\n"
-	.string "You're the real deal.$"
+	.string "Sức mạnh của bạn... Bạn quả là hàng\n"
+	.string "thật.$"
 
 PetalburgCity_Gym_Text_BerkePostBattle:
-	.string "Your father really is strong.\n"
-	.string "He's a TRAINER worth my respect.\p"
-	.string "And, I sense the same glow coming\n"
-	.string "from you as your father.\p"
-	.string "I hope that you'll stage a terrific\n"
-	.string "battle with your father!$"
+	.string "Ba bạn thật sự rất mạnh. Ông ấy là một\n"
+	.string "HLV đáng để tôi kính trọng.\p"
+	.string "Tôi cũng cảm nhận được ở bạn khí chất\n"
+	.string "giống như ba bạn.\p"
+	.string "Tôi hy vọng bạn sẽ có một trận đấu\n"
+	.string "tuyệt vời với ba mình!$"
 
 PetalburgCity_Gym_Text_BerkePostBadge:
-	.string "Since your dad became the LEADER,\n"
-	.string "the TRAINERS of PETALBURG CITY have\l"
-	.string "become a lot tougher.$"
+	.string "Từ khi ba bạn trở thành LEADER, các\n"
+	.string "HLV của PETALBURG CITY đã mạnh\l"
+	.string "lên rất nhiều.$"
 
 PetalburgCity_Gym_Text_MaryIntro:
-	.string "Giggle…\n"
-	.string "This is the ACCURACY ROOM.\p"
-	.string "It's pretty nasty when every attack\n"
-	.string "lands without fail.$"
+	.string "Hì hì... Đây là ACCURACY ROOM.\p"
+	.string "Mỗi đòn tấn công đều trúng không\n"
+	.string "trượt phát nào thì đáng sợ lắm đấy.$"
 
 PetalburgCity_Gym_Text_MaryDefeat:
-	.string "You were a cut above me…$"
+	.string "Bạn vượt tôi một bậc...$"
 
 PetalburgCity_Gym_Text_MaryPostBattle:
-	.string "There are some even stronger\n"
-	.string "TRAINERS waiting for you.\p"
-	.string "The left is the DEFENSE ROOM, and\n"
-	.string "the right is the RECOVERY ROOM.\p"
-	.string "Your POKéMON's ATTACK power will be\n"
-	.string "on trial either way.$"
+	.string "Còn có những HLV mạnh hơn đang\n"
+	.string "chờ bạn.\p"
+	.string "Bên trái là DEFENSE ROOM, còn bên phải\n"
+	.string "là RECOVERY ROOM.\p"
+	.string "Dù chọn bên nào, sức mạnh ATTACK của\n"
+	.string "POKéMON cũng sẽ bị thử thách.$"
 
 PetalburgCity_Gym_Text_MaryPostBadge:
-	.string "Do you know what we're trying to\n"
-	.string "achieve as TRAINERS?\p"
-	.string "We're striving to become soul mates\n"
-	.string "with our POKéMON.$"
+	.string "Bạn có biết chúng tôi đang cố đạt được\n"
+	.string "điều gì với tư cách HLV không?\p"
+	.string "Chúng tôi đang nỗ lực trở thành tri kỷ\n"
+	.string "của POKéMON.$"
 
 PetalburgCity_Gym_Text_AlexiaIntro:
-	.string "The higher the DEFENSE, the more\n"
-	.string "reckless I can be in attack.$"
+	.string "DEFENSE càng cao, tôi càng có thể tấn\n"
+	.string "công liều lĩnh.$"
 
 PetalburgCity_Gym_Text_AlexiaDefeat:
-	.string "Our defenses weren't enough…$"
+	.string "Phòng thủ của chúng tôi vẫn chưa đủ...$"
 
 PetalburgCity_Gym_Text_AlexiaPostBattle:
-	.string "I think you've taught me a valuable\n"
-	.string "lesson here.\p"
-	.string "Now, go on! The left door goes to\n"
-	.string "the STRENGTH ROOM.\p"
-	.string "The right door opens to\n"
-	.string "the ONE-HIT KO ROOM.\p"
-	.string "Both of them have TRAINERS who are\n"
-	.string "skilled at offense.$"
+	.string "Tôi nghĩ bạn đã dạy tôi một bài học quý\n"
+	.string "giá.\p"
+	.string "Giờ thì tiến lên đi! Cửa bên trái dẫn\n"
+	.string "tới STRENGTH ROOM.\p"
+	.string "Cửa bên phải mở ra ONE-HIT KO ROOM.\p"
+	.string "Cả hai phòng đều có những HLV\n"
+	.string "giỏi tấn công.$"
 
 PetalburgCity_Gym_Text_AlexiaPostBadge:
-	.string "Hi! Have you tried using SURF?$"
+	.string "Chào! Bạn đã thử dùng SURF chưa?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
-	.string "Our GYM LEADER told us to go all out\n"
-	.string "and beat you.\p"
-	.string "Even if you happen to be the\n"
-	.string "LEADER's kid!$"
+	.string "GYM LEADER đã bảo chúng tôi dốc toàn\n"
+	.string "lực đánh bại bạn.\p"
+	.string "Dù bạn có là con của LEADER đi nữa!$"
 
 PetalburgCity_Gym_Text_JodyDefeat:
-	.string "But… I went all out!$"
+	.string "Nhưng... Tôi đã dốc toàn lực rồi mà!$"
 
 PetalburgCity_Gym_Text_JodyPostBattle:
-	.string "The way you use your POKéMON…\n"
-	.string "It's like your father's style.\p"
-	.string "Go on through! The GYM LEADER, your\n"
-	.string "father, is waiting!$"
+	.string "Cách bạn sử dụng POKéMON... Rất giống\n"
+	.string "phong cách của ba bạn.\p"
+	.string "Tiến lên đi! GYM LEADER, cũng là ba bạn,\n"
+	.string "đang chờ!$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
-	.string "Sure, it's fine to make your POKéMON\n"
-	.string "stronger.\p"
-	.string "But what decides the winner?\p"
-	.string "Why, it's the feelings TRAINERS have\n"
-	.string "for their POKéMON.$"
+	.string "Đúng là làm POKéMON mạnh hơn thì tốt.\p"
+	.string "Nhưng điều gì quyết định người thắng?\p"
+	.string "Chính là tình cảm HLV dành cho\n"
+	.string "POKéMON của họ.$"
 
 PetalburgCity_Gym_Text_DoorAppearsLocked:
-	.string "This door appears to be locked\n"
-	.string "right now…$"
+	.string "Cánh cửa này hiện có vẻ đang bị khóa...$"
 
 PetalburgCity_Gym_Text_EnterSpeedRoom:
-	.string "“SPEED ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi SPEED ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 @ Unused
 PetalburgCity_Gym_Text_DoorAppearsLocked2:
-	.string "This door appears to be locked\n"
-	.string "right now…$"
+	.string "Cánh cửa này hiện có vẻ đang bị khóa...$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "“ACCURACY ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi ACCURACY ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "“CONFUSION ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi CONFUSION ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
-	.string "“DEFENSE ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi DEFENSE ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterRecoveryRoom:
-	.string "“RECOVERY ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi RECOVERY ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterStrengthRoom:
-	.string "“STRENGTH ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi STRENGTH ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "“ONE-HIT KO ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi ONE-HIT KO ROOM.\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
-	.string "“GYM LEADER'S ROOM\p"
-	.string "“See for yourself what POKéMON await\n"
-	.string "you!” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "Biển ghi GYM LEADER'S ROOM\p"
+	.string "Hãy tự mình xem những POKéMON nào\n"
+	.string "đang chờ đợi!\p"
+	.string "Bạn có muốn đi qua không?$"
 
 PetalburgCity_Gym_Text_GymStatue:
 	.string "PETALBURG CITY POKéMON GYM$"
@@ -1552,39 +1539,108 @@ PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "DAD: {PLAYER}…\n"
-	.string "I had a feeling that you would come.\p"
-	.string "I would never refuse to accept\n"
-	.string "a challenge from you.\p"
-	.string "You do understand, don't you?\p"
-	.string "Inside a GYM, it doesn't matter that\n"
-	.string "we are a parent and child.\p"
-	.string "…No, because we are parent and child,\n"
-	.string "we owe it to each other to do the best\l"
-	.string "we can. Isn't that right, {PLAYER}?$"
+	.string "BA: {PLAYER}... Ba đã có cảm giác con\n"
+	.string "sẽ đến.\p"
+	.string "Ba sẽ không bao giờ từ chối lời thách\n"
+	.string "đấu của con.\p"
+	.string "Con hiểu chứ?\p"
+	.string "Bên trong GYM, chuyện chúng ta là cha\n"
+	.string "con không còn quan trọng.\p"
+	.string "...Không, chính vì là cha con, chúng ta\n"
+	.string "càng phải dốc hết sức vì nhau. Đúng\l"
+	.string "không, {PLAYER}?$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat:
-	.string "Uh… Haha…\n"
-	.string "Maybe that was going too hard…$"
+	.string "Ừm... Ha ha... Có lẽ ba hơi quá tay...$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "DAD: {PLAYER}…\n"
-	.string "What is your dream?\p"
-	.string "My dream…\n"
-	.string "Hahaha…\l"
-	.string "It has already come true, actually.$"
+	.string "BA: {PLAYER}... Ước mơ của con là gì?\p"
+	.string "Ước mơ của ba... Ha ha ha... Thật ra nó\n"
+	.string "đã thành hiện thực rồi.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
-	.string "DAD: {PLAYER}…\n"
-	.string "I had a feeling that you would come.\p"
-	.string "I would never refuse to accept\n"
-	.string "a challenge from you.\p"
-	.string "You do understand, don't you?\p"
-	.string "Inside a GYM, it doesn't matter that\n"
-	.string "we are a parent and child.\p"
-	.string "Hm? Wait a second, {PLAYER}.\p"
-	.string "Do you only have one POKéMON that is\n"
-	.string "capable of battle?\p"
-	.string "Sorry, but you'll have to come back\n"
-	.string "with at least two POKéMON.$"
+	.string "BA: {PLAYER}... Ba đã có cảm giác con\n"
+	.string "sẽ đến.\p"
+	.string "Ba sẽ không bao giờ từ chối lời thách\n"
+	.string "đấu của con.\p"
+	.string "Con hiểu chứ?\p"
+	.string "Bên trong GYM, chuyện chúng ta là cha\n"
+	.string "con không còn quan trọng.\p"
+	.string "Hửm? Khoan đã, {PLAYER}.\p"
+	.string "Con chỉ có một POKéMON còn khả năng\n"
+	.string "chiến đấu sao?\p"
+	.string "Xin lỗi, nhưng con phải quay lại với ít\n"
+	.string "nhất hai POKéMON.$"
 
+@ BEGIN GENERATED LOCALIZATION EXPORTS
+	.global PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon
+	.global PetalburgCity_Gym_Text_WallyIdLikeAPokemon
+	.global PetalburgCity_Gym_Text_DadOhYoureWallyRight
+	.global PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon
+	.global PetalburgCity_Gym_Text_DadHmISee
+	.global PetalburgCity_Gym_Text_DadPlayerGoWithWally
+	.global PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon
+	.global PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall
+	.global PetalburgCity_Gym_Text_WallyOhWowThankYou
+	.global PetalburgCity_Gym_Text_WouldYouReallyComeWithMe
+	.global PetalburgCity_Gym_Text_DadSoDidItWorkOut
+	.global PetalburgCity_Gym_Text_WallyThankYouBye
+	.global PetalburgCity_Gym_Text_DadGoCollectBadges
+	.global PetalburgCity_Gym_Text_NormanGoToRustboro
+	.global PetalburgCity_Gym_Text_NormanGoToDewford
+	.global PetalburgCity_Gym_Text_YouHaveGottenStronger
+	.global PetalburgCity_Gym_Text_NormanIntro
+	.global PetalburgCity_Gym_Text_NormanDefeat
+	.global PetalburgCity_Gym_Text_ReceivedBalanceBadge
+	.global PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis
+	.global PetalburgCity_Gym_Text_ExplainFacade
+	.global PetalburgCity_Gym_Text_DadHappyAndSad
+	.global PetalburgCity_Gym_Text_PleaseComeWithMe
+	.global PetalburgCity_Gym_Text_LetMeBorrowPlayer
+	.global PetalburgCity_Gym_Text_DadGoingToKeepTraining
+	.global PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough
+	.global PetalburgCity_Gym_Text_GymGuideAdvice
+	.global PetalburgCity_Gym_Text_GymGuidePostVictory
+	.global PetalburgCity_Gym_Text_RandallIntro
+	.global PetalburgCity_Gym_Text_RandallDefeat
+	.global PetalburgCity_Gym_Text_RandallPostBattle
+	.global PetalburgCity_Gym_Text_RandallPostBadge
+	.global PetalburgCity_Gym_Text_ParkerIntro
+	.global PetalburgCity_Gym_Text_ParkerDefeat
+	.global PetalburgCity_Gym_Text_ParkerPostBattle
+	.global PetalburgCity_Gym_Text_ParkerPostBadge
+	.global PetalburgCity_Gym_Text_GeorgeIntro
+	.global PetalburgCity_Gym_Text_GeorgeDefeat
+	.global PetalburgCity_Gym_Text_GeorgePostBattle
+	.global PetalburgCity_Gym_Text_GeorgePostBadge
+	.global PetalburgCity_Gym_Text_BerkeIntro
+	.global PetalburgCity_Gym_Text_BerkeDefeat
+	.global PetalburgCity_Gym_Text_BerkePostBattle
+	.global PetalburgCity_Gym_Text_BerkePostBadge
+	.global PetalburgCity_Gym_Text_MaryIntro
+	.global PetalburgCity_Gym_Text_MaryDefeat
+	.global PetalburgCity_Gym_Text_MaryPostBattle
+	.global PetalburgCity_Gym_Text_MaryPostBadge
+	.global PetalburgCity_Gym_Text_AlexiaIntro
+	.global PetalburgCity_Gym_Text_AlexiaDefeat
+	.global PetalburgCity_Gym_Text_AlexiaPostBattle
+	.global PetalburgCity_Gym_Text_AlexiaPostBadge
+	.global PetalburgCity_Gym_Text_JodyIntro
+	.global PetalburgCity_Gym_Text_JodyDefeat
+	.global PetalburgCity_Gym_Text_JodyPostBattle
+	.global PetalburgCity_Gym_Text_JodyPostBadge
+	.global PetalburgCity_Gym_Text_DoorAppearsLocked
+	.global PetalburgCity_Gym_Text_EnterSpeedRoom
+	.global PetalburgCity_Gym_Text_DoorAppearsLocked2
+	.global PetalburgCity_Gym_Text_EnterAccuracyRoom
+	.global PetalburgCity_Gym_Text_EnterConfusionRoom
+	.global PetalburgCity_Gym_Text_EnterDefenseRoom
+	.global PetalburgCity_Gym_Text_EnterRecoveryRoom
+	.global PetalburgCity_Gym_Text_EnterStrengthRoom
+	.global PetalburgCity_Gym_Text_EnterOHKORoom
+	.global PetalburgCity_Gym_Text_EnterGymLeadersRoom
+	.global PetalburgCity_Gym_Text_NormanPreRematch
+	.global PetalburgCity_Gym_Text_NormanRematchDefeat
+	.global PetalburgCity_Gym_Text_NormanPostRematch
+	.global PetalburgCity_Gym_Text_NormanRematchNeedTwoMons
+@ END GENERATED LOCALIZATION EXPORTS
